@@ -1,0 +1,542 @@
+@prefix : <http://www.geoscienceontology.org/svl/property#> .
+@prefix svu: <http://www.geoscienceontology.org/svu#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://www.geoscienceontology.org/svl/> .
+
+<http://www.geoscienceontology.org/svl/property> rdf:type owl:Ontology ;
+				rdfs:comment " Scientific Variables Lower Ontology, BETA VERSION." .
+
+
+#################################################################
+#    Property   
+# 
+#################################################################
+##Last generated on: 2018-08-19 17:37
+
+###Property
+
+
+###  http://www.geoscienceontology.org/svl/property#ability
+:ability rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "ability"@en .
+
+###  http://www.geoscienceontology.org/svl/property#absorptivity
+:absorptivity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "absorptivity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#accountability
+:accountability rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "accountability"@en .
+
+###  http://www.geoscienceontology.org/svl/property#adequacy
+:adequacy rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "adequacy"@en .
+
+###  http://www.geoscienceontology.org/svl/property#affinity
+:affinity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Affinity" ;
+			skos:prefLabel "affinity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#alkalinity
+:alkalinity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "alkalinity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#amplitude
+:amplitude rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Amplitude" ;
+			skos:prefLabel "amplitude"@en .
+
+###  http://www.geoscienceontology.org/svl/property#availability
+:availability rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "availability"@en .
+
+###  http://www.geoscienceontology.org/svl/property#capacity
+:capacity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Capacity" ;
+			skos:prefLabel "capacity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#charge
+:charge rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Charge" ;
+			skos:prefLabel "charge"@en .
+
+###  http://www.geoscienceontology.org/svl/property#classification
+:classification rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "classification"@en .
+
+###  http://www.geoscienceontology.org/svl/property#completeness
+:completeness rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "completeness"@en .
+
+###  http://www.geoscienceontology.org/svl/property#composition
+:composition rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "composition"@en .
+
+###  http://www.geoscienceontology.org/svl/property#concentration
+:concentration rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Concentration" ;
+			skos:prefLabel "concentration"@en .
+
+###  http://www.geoscienceontology.org/svl/property#conductance
+:conductance rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Conductance" ;
+			skos:prefLabel "conductance"@en .
+
+###  http://www.geoscienceontology.org/svl/property#conductivity
+:conductivity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Conductivity" ;
+			skos:prefLabel "conductivity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#configuration
+:configuration rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "configuration"@en .
+
+###  http://www.geoscienceontology.org/svl/property#connectivity
+:connectivity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "connectivity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#coverage
+:coverage rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "coverage"@en .
+
+###  http://www.geoscienceontology.org/svl/property#density
+:density rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Density" ;
+			skos:prefLabel "density"@en .
+
+###  http://www.geoscienceontology.org/svl/property#efficiency
+:efficiency rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Efficiency" ;
+			skos:prefLabel "efficiency"@en .
+
+###  http://www.geoscienceontology.org/svl/property#elasticity
+:elasticity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "elasticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#emittance
+:emittance rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Emittance" ;
+			skos:prefLabel "emittance"@en .
+
+###  http://www.geoscienceontology.org/svl/property#equality
+:equality rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "equality"@en .
+
+###  http://www.geoscienceontology.org/svl/property#equity
+:equity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "equity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#fertility
+:fertility rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "fertility"@en .
+
+###  http://www.geoscienceontology.org/svl/property#frequency
+:frequency rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "frequency"@en .
+
+###  http://www.geoscienceontology.org/svl/property#gender
+:gender rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "gender"@en .
+
+###  http://www.geoscienceontology.org/svl/property#hardness
+:hardness rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "hardness"@en .
+
+###  http://www.geoscienceontology.org/svl/property#hydrophilicity
+:hydrophilicity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "hydrophilicity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#hydrophobicity
+:hydrophobicity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "hydrophobicity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#immiscibility
+:immiscibility rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "immiscibility"@en .
+
+###  http://www.geoscienceontology.org/svl/property#impedance
+:impedance rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Impedance" ;
+			skos:prefLabel "impedance"@en .
+
+###  http://www.geoscienceontology.org/svl/property#inability
+:inability rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "inability"@en .
+
+###  http://www.geoscienceontology.org/svl/property#inertia
+:inertia rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Inertia" ;
+			skos:prefLabel "inertia"@en .
+
+###  http://www.geoscienceontology.org/svl/property#inhibition
+:inhibition rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "inhibition"@en .
+
+###  http://www.geoscienceontology.org/svl/property#insecurity
+:insecurity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "insecurity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#insolubility
+:insolubility rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "insolubility"@en .
+
+###  http://www.geoscienceontology.org/svl/property#intensity
+:intensity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Intensity" ;
+			skos:prefLabel "intensity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude
+:magnitude rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Magnitude_(mathematics)" ;
+			skos:prefLabel "magnitude"@en .
+
+###  http://www.geoscienceontology.org/svl/property#maturity
+:maturity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "maturity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#miscibility
+:miscibility rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "miscibility"@en .
+
+###  http://www.geoscienceontology.org/svl/property#moment
+:moment rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Moment_(physics)" ;
+			skos:prefLabel "moment"@en .
+
+###  http://www.geoscienceontology.org/svl/property#momentum
+:momentum rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "momentum"@en .
+
+###  http://www.geoscienceontology.org/svl/property#mortality
+:mortality rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "mortality"@en .
+
+###  http://www.geoscienceontology.org/svl/property#name
+:name rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "name"@en .
+
+###  http://www.geoscienceontology.org/svl/property#number
+:number rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Number" ;
+			skos:prefLabel "number"@en .
+
+###  http://www.geoscienceontology.org/svl/property#odor
+:odor rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "odor"@en .
+
+###  http://www.geoscienceontology.org/svl/property#order
+:order rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Order" ;
+			skos:prefLabel "order"@en .
+
+###  http://www.geoscienceontology.org/svl/property#orientation
+:orientation rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "orientation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#periodicity
+:periodicity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "periodicity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#permeability
+:permeability rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Permeability" ;
+			skos:prefLabel "permeability"@en .
+
+###  http://www.geoscienceontology.org/svl/property#permittivity
+:permittivity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "permittivity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#persistence
+:persistence rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "persistence"@en .
+
+###  http://www.geoscienceontology.org/svl/property#phase
+:phase rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "phase"@en .
+
+###  http://www.geoscienceontology.org/svl/property#potential
+:potential rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Potential_(disambiguation)" ;
+			skos:prefLabel "potential"@en .
+
+###  http://www.geoscienceontology.org/svl/property#presence
+:presence rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "presence"@en .
+
+###  http://www.geoscienceontology.org/svl/property#prevalence
+:prevalence rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "prevalence"@en .
+
+###  http://www.geoscienceontology.org/svl/property#productivity
+:productivity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "productivity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#quality
+:quality rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Quality" ;
+			skos:prefLabel "quality"@en .
+
+###  http://www.geoscienceontology.org/svl/property#radioactivity
+:radioactivity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "radioactivity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#rating
+:rating rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "rating"@en .
+
+###  http://www.geoscienceontology.org/svl/property#resistance
+:resistance rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Resistance" ;
+			skos:prefLabel "resistance"@en .
+
+###  http://www.geoscienceontology.org/svl/property#resistivity
+:resistivity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Resistivity" ;
+			skos:prefLabel "resistivity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#roughness
+:roughness rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "roughness"@en .
+
+###  http://www.geoscienceontology.org/svl/property#salinity
+:salinity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "salinity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#saturation
+:saturation rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Saturation" ;
+			skos:prefLabel "saturation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#security
+:security rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "security"@en .
+
+###  http://www.geoscienceontology.org/svl/property#sodicity
+:sodicity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "sodicity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#speed
+:speed rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "speed"@en .
+
+###  http://www.geoscienceontology.org/svl/property#stability
+:stability rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "stability"@en .
+
+###  http://www.geoscienceontology.org/svl/property#state
+:state rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "state"@en .
+
+###  http://www.geoscienceontology.org/svl/property#susceptibility
+:susceptibility rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Susceptibility" ;
+			skos:prefLabel "susceptibility"@en .
+
+###  http://www.geoscienceontology.org/svl/property#sustainability
+:sustainability rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "sustainability"@en .
+
+###  http://www.geoscienceontology.org/svl/property#tension
+:tension rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Tension" ;
+			skos:prefLabel "tension"@en .
+
+###  http://www.geoscienceontology.org/svl/property#transparency
+:transparency rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "transparency"@en .
+
+###  http://www.geoscienceontology.org/svl/property#transphilicity
+:transphilicity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "transphilicity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#turbidity
+:turbidity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Turbidity" ;
+			skos:prefLabel "turbidity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#type
+:type rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "type"@en .
+
+###  http://www.geoscienceontology.org/svl/property#unity
+:unity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "unity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#velocity
+:velocity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#viscosity
+:viscosity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Viscosity" ;
+			skos:prefLabel "viscosity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#wetness
+:wetness rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "wetness"@en .
+
+###  http://www.geoscienceontology.org/svl/property#yield
+:yield rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Yield" ;
+			skos:prefLabel "yield"@en .
+
+###  http://www.geoscienceontology.org/svl/property#chemical_composition
+:chemical_composition rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:isDerivedFrom :composition ;
+			skos:prefLabel "chemical_composition"@en .
+
+###  http://www.geoscienceontology.org/svl/property#physical_state
+:physical_state rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:isDerivedFrom :state ;
+			skos:prefLabel "physical_state"@en .
+
+###  http://www.geoscienceontology.org/svl/property#area_type
+:area_type rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:isDerivedFrom :type ;
+			skos:prefLabel "area_type"@en .
+
+###  http://www.geoscienceontology.org/svl/property#volition
+:volition rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Volition_(psychology)" ;
+			skos:prefLabel "volition"@en .
+
+###  http://www.geoscienceontology.org/svl/property#exteroception
+:exteroception rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "exteroception"@en .
+
+###  http://www.geoscienceontology.org/svl/property#interoception
+:interoception rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Interoception" ;
+			skos:prefLabel "interoception"@en .
+
+###  http://www.geoscienceontology.org/svl/property#independence
+:independence rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Independence" ;
+			skos:prefLabel "independence"@en .
+
+###  http://www.geoscienceontology.org/svl/property#proprioception
+:proprioception rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Proprioception" ;
+			skos:prefLabel "proprioception"@en .
+
+###  http://www.geoscienceontology.org/svl/property#turbulence
+:turbulence rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Turbulence" ;
+			skos:prefLabel "turbulence"@en .
+
+###  http://www.geoscienceontology.org/svl/property#incidence
+:incidence rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Incidence_(epidemiology)" ;
+			skos:prefLabel "incidence"@en .
+
+###  http://www.geoscienceontology.org/svl/property#lifetime
+:lifetime rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Product_lifetime" ;
+			skos:altLabel "lifespan"@en ;
+			skos:prefLabel "lifetime"@en .
+
+###  http://www.geoscienceontology.org/svl/property#resilience
+:resilience rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Resilience" ;
+			skos:prefLabel "resilience"@en .
