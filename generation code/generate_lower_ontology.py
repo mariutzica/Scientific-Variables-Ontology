@@ -27,6 +27,7 @@ qual_property_file  = 'qualitative_property.csv'
 property_quantification_file  = 'property_quantification.csv'
 property_role_file  = 'property_role.csv'
 property_type_file  = 'property_type.csv'
+quantitative_property_file  = 'quantitative_property.csv'
 
 ################################
 #   INITIAL DATA LOAD          #
@@ -39,7 +40,9 @@ property_role_vocabulary = \
             utils.load_data( ext_vocabulary, property_role_file )
 property_type_vocabulary = \
             utils.load_data( ext_vocabulary, property_type_file )
-            
+quantitative_property_vocabulary = \
+            utils.load_data( ext_vocabulary, quantitative_property_file )
+           
 ######################
 #  OUTPUT FILE SETUP #
 ######################
@@ -73,6 +76,12 @@ label = '\n\n###PropertyType\n\n'
 utils.create_bb_file( property_type_vocabulary, property_ttl, \
                       'PropertyType', 'property_type', \
                       'property', label = label )
+
+label = '\n\n###QuantitativeProperty (Quantity)\n\n'
+utils.create_bb_file( quantitative_property_vocabulary, property_ttl, \
+                      'QuantitativeProperty', 'quantity', \
+                      'property', label = label )
+
 ######################
 #    File Cleanup    #
 ######################
