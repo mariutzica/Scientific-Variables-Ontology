@@ -93,21 +93,20 @@ def open_write_file(fileptr,rep):
 
 # create building block (bb) file to output all of the relationships
 # for core classes
-def create_bb_file( vocab, ttl_file, classname, label=None, \
+def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                     wikifilename='wikipedia_page' ):
     if label:
         ttl_file.write( label )
     for index in vocab.index:
-        if classname+'_id' in vocab.columns.values:
-            element = vocab.loc[index,classname+'_id']
+        if collabel+'_id' in vocab.columns.values:
+            element = vocab.loc[ index, collabel + '_id' ]
         else:
-            print ( 'ERROR: No '+classname+'_id column found!' )
+            print ( 'ERROR: No ' + collabel + '_id column found!' )
             sys.exit(0)
         element_esc = urllib.quote(element)
-        class_n = classname.capitalize()
-        ttl_file.write( '\n' + prefix.format( classname, element_esc ) )
+        ttl_file.write( '\n' + prefix.format( pref, element_esc ) )
         ttl_file.write( declaration_instance.format( \
-                        element_esc, 'svu', class_n, ';' ) )
+                        element_esc, 'svu', classname, ';' ) )
         if wikifilename in vocab.columns.values:
             attr = vocab.loc[ index, wikifilename]
             if attr != '':
@@ -119,11 +118,11 @@ def create_bb_file( vocab, ttl_file, classname, label=None, \
                 synonyms = synonyms.split(', ')
                 for syn in synonyms:
                     ttl_file.write( synonym.format(h.unescape(syn)))
-        if classname + '_taxonomic' in vocab.columns.values and \
-            vocab.loc[ index, classname + '_taxonomic' ] != '' :
-            derivation = vocab.loc[ index, classname + '_taxonomic' ]
+        if collabel + '_taxonomic' in vocab.columns.values and \
+            vocab.loc[ index, collabel + '_taxonomic' ] != '' :
+            derivation = vocab.loc[ index, collabel + '_taxonomic' ]
             ttl_file.write( attribute.format( 'isDerivedFrom', \
                             ':' + urllib.quote( derivation ), ';' ) )
-        if classname + '_label' in vocab.columns.values:
-            element = vocab.loc[ index, classname + '_label' ]
+        if collabel + '_label' in vocab.columns.values:
+            element = vocab.loc[ index, collabel + '_label' ]
         ttl_file.write( preflabel.format( element ) )

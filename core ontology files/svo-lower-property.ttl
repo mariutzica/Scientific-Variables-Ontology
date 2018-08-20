@@ -17,7 +17,7 @@
 #    Property   
 # 
 #################################################################
-##Last generated on: 2018-08-20 11:59
+##Last generated on: 2018-08-20 13:03
 
 ###Property
 
@@ -541,3 +541,105 @@
 			svu:Property ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Resilience" ;
 			skos:prefLabel "resilience"@en .
+
+
+###PropertyQuantification
+
+
+###  http://www.geoscienceontology.org/svl/property#code
+:code rdf:type owl:NamedIndividual ,
+			svu:PropertyQuantification ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Code" ;
+			skos:prefLabel "code"@en .
+
+###  http://www.geoscienceontology.org/svl/property#index
+:index rdf:type owl:NamedIndividual ,
+			svu:PropertyQuantification ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Index_(statistics)" ;
+			skos:prefLabel "index"@en .
+
+###  http://www.geoscienceontology.org/svl/property#scale
+:scale rdf:type owl:NamedIndividual ,
+			svu:PropertyQuantification ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Scale" ;
+			skos:prefLabel "scale"@en .
+
+###  http://www.geoscienceontology.org/svl/property#rating
+:rating rdf:type owl:NamedIndividual ,
+			svu:PropertyQuantification ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Rating" ;
+			skos:prefLabel "rating"@en .
+
+
+###PropertyRole
+
+
+###  http://www.geoscienceontology.org/svl/property#coefficient
+:coefficient rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Coefficient" ;
+			skos:prefLabel "coefficient"@en .
+
+###  http://www.geoscienceontology.org/svl/property#constant
+:constant rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mathematical_constant" ;
+			skos:prefLabel "constant"@en .
+
+###  http://www.geoscienceontology.org/svl/property#exponent
+:exponent rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Exponent" ;
+			skos:prefLabel "exponent"@en .
+
+###  http://www.geoscienceontology.org/svl/property#parameter
+:parameter rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Parameter" ;
+			skos:prefLabel "parameter"@en .
+
+###  http://www.geoscienceontology.org/svl/property#term
+:term rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Term_(logic)" ;
+			skos:prefLabel "term"@en .
+
+
+###PropertyType
+
+
+###  http://www.geoscienceontology.org/svl/property#field
+:field rdf:type owl:NamedIndividual ,
+			svu:PropertyType ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Field_(physics)" ;
+			skos:prefLabel "field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#tensor
+:tensor rdf:type owl:NamedIndividual ,
+			svu:PropertyType ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Tensor" ;
+			skos:prefLabel "tensor"@en .
+
+###  http://www.geoscienceontology.org/svl/property#vector
+:vector rdf:type owl:NamedIndividual ,
+			svu:PropertyType ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics)" ;
+			skos:prefLabel "vector"@en .
+
+###  http://www.geoscienceontology.org/svl/property#scalar
+:scalar rdf:type owl:NamedIndividual ,
+			svu:PropertyType ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Scalar_(physics)" ;
+			skos:prefLabel "scalar"@en .
+
+###  http://www.geoscienceontology.org/svl/property#dimension
+:dimension rdf:type owl:NamedIndividual ,
+			svu:PropertyType ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Dimension" ;
+			skos:prefLabel "dimension"@en .
+
+###  http://www.geoscienceontology.org/svl/property#function
+:function rdf:type owl:NamedIndividual ,
+			svu:PropertyType ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Function_(mathematics)" ;
+			skos:prefLabel "function"@en .
