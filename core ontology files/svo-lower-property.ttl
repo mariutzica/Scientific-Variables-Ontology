@@ -9,14 +9,15 @@
 @base <http://www.geoscienceontology.org/svl/> .
 
 <http://www.geoscienceontology.org/svl/property> rdf:type owl:Ontology ;
-				rdfs:comment " Scientific Variables Lower Ontology, BETA VERSION." .
+				rdfs:comment " Scientific Variables Lower Ontology, Property BETA VERSION." .
+#				owl:imports <http://www.geoscienceontology.org/svu> .
 
 
 #################################################################
 #    Property   
 # 
 #################################################################
-##Last generated on: 2018-08-19 17:37
+##Last generated on: 2018-08-20 11:59
 
 ###Property
 
@@ -44,7 +45,7 @@
 ###  http://www.geoscienceontology.org/svl/property#affinity
 :affinity rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Affinity" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Affinity" ;
 			skos:prefLabel "affinity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#alkalinity
@@ -55,7 +56,7 @@
 ###  http://www.geoscienceontology.org/svl/property#amplitude
 :amplitude rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Amplitude" ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Amplitude" ;
 			skos:prefLabel "amplitude"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#availability
@@ -66,13 +67,13 @@
 ###  http://www.geoscienceontology.org/svl/property#capacity
 :capacity rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Capacity" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Capacity" ;
 			skos:prefLabel "capacity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#charge
 :charge rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Charge" ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Charge" ;
 			skos:prefLabel "charge"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#classification
@@ -93,19 +94,19 @@
 ###  http://www.geoscienceontology.org/svl/property#concentration
 :concentration rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Concentration" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Concentration" ;
 			skos:prefLabel "concentration"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#conductance
 :conductance rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Conductance" ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Conductance" ;
 			skos:prefLabel "conductance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#conductivity
 :conductivity rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Conductivity" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Conductivity" ;
 			skos:prefLabel "conductivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#configuration
@@ -126,13 +127,13 @@
 ###  http://www.geoscienceontology.org/svl/property#density
 :density rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Density" ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Density" ;
 			skos:prefLabel "density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#efficiency
 :efficiency rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Efficiency" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Efficiency" ;
 			skos:prefLabel "efficiency"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#elasticity
@@ -143,7 +144,7 @@
 ###  http://www.geoscienceontology.org/svl/property#emittance
 :emittance rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Emittance" ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Emittance" ;
 			skos:prefLabel "emittance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#equality
@@ -194,7 +195,7 @@
 ###  http://www.geoscienceontology.org/svl/property#impedance
 :impedance rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Impedance" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Impedance" ;
 			skos:prefLabel "impedance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#inability
@@ -205,7 +206,7 @@
 ###  http://www.geoscienceontology.org/svl/property#inertia
 :inertia rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Inertia" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Inertia" ;
 			skos:prefLabel "inertia"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#inhibition
@@ -226,13 +227,13 @@
 ###  http://www.geoscienceontology.org/svl/property#intensity
 :intensity rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Intensity" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Intensity" ;
 			skos:prefLabel "intensity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#magnitude
 :magnitude rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Magnitude_(mathematics)" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Magnitude_(mathematics)" ;
 			skos:prefLabel "magnitude"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#maturity
@@ -248,7 +249,7 @@
 ###  http://www.geoscienceontology.org/svl/property#moment
 :moment rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Moment_(physics)" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Moment_(physics)" ;
 			skos:prefLabel "moment"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#momentum
@@ -269,7 +270,7 @@
 ###  http://www.geoscienceontology.org/svl/property#number
 :number rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Number" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Number" ;
 			skos:prefLabel "number"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#odor
@@ -280,7 +281,7 @@
 ###  http://www.geoscienceontology.org/svl/property#order
 :order rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Order" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Order" ;
 			skos:prefLabel "order"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#orientation
@@ -296,7 +297,7 @@
 ###  http://www.geoscienceontology.org/svl/property#permeability
 :permeability rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Permeability" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Permeability" ;
 			skos:prefLabel "permeability"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#permittivity
@@ -317,7 +318,7 @@
 ###  http://www.geoscienceontology.org/svl/property#potential
 :potential rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Potential_(disambiguation)" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Potential_(disambiguation)" ;
 			skos:prefLabel "potential"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#presence
@@ -338,7 +339,7 @@
 ###  http://www.geoscienceontology.org/svl/property#quality
 :quality rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Quality" ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Quality" ;
 			skos:prefLabel "quality"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#radioactivity
@@ -354,13 +355,13 @@
 ###  http://www.geoscienceontology.org/svl/property#resistance
 :resistance rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Resistance" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Resistance" ;
 			skos:prefLabel "resistance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#resistivity
 :resistivity rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Resistivity" ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Resistivity" ;
 			skos:prefLabel "resistivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#roughness
@@ -376,7 +377,7 @@
 ###  http://www.geoscienceontology.org/svl/property#saturation
 :saturation rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Saturation" ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Saturation" ;
 			skos:prefLabel "saturation"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#security
@@ -407,7 +408,7 @@
 ###  http://www.geoscienceontology.org/svl/property#susceptibility
 :susceptibility rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Susceptibility" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Susceptibility" ;
 			skos:prefLabel "susceptibility"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#sustainability
@@ -418,7 +419,7 @@
 ###  http://www.geoscienceontology.org/svl/property#tension
 :tension rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Tension" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Tension" ;
 			skos:prefLabel "tension"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#transparency
@@ -434,7 +435,7 @@
 ###  http://www.geoscienceontology.org/svl/property#turbidity
 :turbidity rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Turbidity" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Turbidity" ;
 			skos:prefLabel "turbidity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#type
@@ -455,7 +456,7 @@
 ###  http://www.geoscienceontology.org/svl/property#viscosity
 :viscosity rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Viscosity" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Viscosity" ;
 			skos:prefLabel "viscosity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#wetness
@@ -466,7 +467,7 @@
 ###  http://www.geoscienceontology.org/svl/property#yield
 :yield rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "http://en.wikipedia.org/wiki/Yield" ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Yield" ;
 			skos:prefLabel "yield"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#chemical_composition
@@ -490,7 +491,7 @@
 ###  http://www.geoscienceontology.org/svl/property#volition
 :volition rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Volition_(psychology)" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Volition_(psychology)" ;
 			skos:prefLabel "volition"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#exteroception
@@ -501,42 +502,42 @@
 ###  http://www.geoscienceontology.org/svl/property#interoception
 :interoception rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Interoception" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Interoception" ;
 			skos:prefLabel "interoception"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#independence
 :independence rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Independence" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Independence" ;
 			skos:prefLabel "independence"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#proprioception
 :proprioception rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Proprioception" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Proprioception" ;
 			skos:prefLabel "proprioception"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#turbulence
 :turbulence rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Turbulence" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Turbulence" ;
 			skos:prefLabel "turbulence"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#incidence
 :incidence rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Incidence_(epidemiology)" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Incidence_(epidemiology)" ;
 			skos:prefLabel "incidence"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#lifetime
 :lifetime rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Product_lifetime" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Product_lifetime" ;
 			skos:altLabel "lifespan"@en ;
 			skos:prefLabel "lifetime"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#resilience
 :resilience rdf:type owl:NamedIndividual ,
 			svu:Property ;
-			svu:hasRelatedWikipediaPage "https://en.wikipedia.org/wiki/Resilience" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Resilience" ;
 			skos:prefLabel "resilience"@en .

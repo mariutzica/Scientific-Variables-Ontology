@@ -35,8 +35,9 @@ header = ( '@prefix : <http://www.geoscienceontology.org/svl/{}#> .\n'
            '@base <http://www.geoscienceontology.org/svl/> .\n'
            '\n'
            '<http://www.geoscienceontology.org/svl/{}> rdf:type owl:Ontology ;\n'
-           '\t\t\t\trdfs:comment " Scientific Variables Lower Ontology, '
+           '\t\t\t\trdfs:comment " Scientific Variables Lower Ontology, {} '
            'BETA VERSION." .\n'
+           '#\t\t\t\towl:imports <http://www.geoscienceontology.org/svu> .\n'
            '\n\n'
            '#################################################################\n'
            '#    {}   \n'
@@ -87,7 +88,7 @@ def load_data( ext, filename, usecols=None ):
 # open the different RDF files, output header
 def open_write_file(fileptr,rep):
     now = datetime.datetime.now()    
-    fileptr.write( header.format(rep.lower(), rep.lower(), rep) )
+    fileptr.write( header.format(rep.lower(), rep.lower(), rep, rep) )
     fileptr.write( '##Last generated on: ' + now.strftime( "%Y-%m-%d %H:%M" ) )
 
 # create building block (bb) file to output all of the relationships
@@ -110,7 +111,7 @@ def create_bb_file( vocab, ttl_file, classname, label=None, \
         if wikifilename in vocab.columns.values:
             attr = vocab.loc[ index, wikifilename]
             if attr != '':
-                ttl_file.write( attribute.format( 'hasRelatedWikipediaPage', \
+                ttl_file.write( attribute.format( 'hasAssociatedWikipediaPage', \
                             '\"' + h.unescape(attr) + '\"', ';'))
         if 'synonym' in vocab.columns.values:
             synonyms = vocab.loc[ index, 'synonym' ]
