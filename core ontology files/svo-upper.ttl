@@ -23,6 +23,18 @@
 #    Object Properties
 #################################################################
 
+###  http://www.geoscienceontology.org/svu#hasPropertyQuantification
+:hasPropertyQuantification rdf:type owl:ObjectProperty .
+
+
+###  http://www.geoscienceontology.org/svu#hasPropertyRole
+:hasPropertyRole rdf:type owl:ObjectProperty .
+
+
+###  http://www.geoscienceontology.org/svu#hasPropertyType
+:hasPropertyType rdf:type owl:ObjectProperty .
+
+
 ###  http://www.geoscienceontology.org/svu#isDerivedFrom
 :isDerivedFrom rdf:type owl:ObjectProperty ;
                rdfs:comment "isDerivedFrom links more specific concepts to more generic concepts. It is a mechanism for linking Individuals in the ontology, bypassing explicitly defined taxonomic class hierarchies." .
@@ -54,7 +66,23 @@
 
 ###  http://www.geoscienceontology.org/svu#QuantitativeProperty
 :QuantitativeProperty rdf:type owl:Class ;
-                      rdfs:subClassOf :Property ;
+                      rdfs:subClassOf :Property ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasPropertyQuantification ;
+                                        owl:allValuesFrom :PropertyQuantification
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasPropertyRole ;
+                                        owl:allValuesFrom :PropertyRole
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasPropertyType ;
+                                        owl:allValuesFrom :PropertyType
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :isDerivedFrom ;
+                                        owl:allValuesFrom :Property
+                                      ] ;
                       rdfs:comment "A Quantitative Property (Quantity in shorthand) is a property that has been quantified in some way." .
 
 

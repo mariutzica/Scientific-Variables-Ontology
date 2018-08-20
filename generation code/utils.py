@@ -123,6 +123,28 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
             derivation = vocab.loc[ index, collabel + '_taxonomic' ]
             ttl_file.write( attribute.format( 'isDerivedFrom', \
                             ':' + urllib.quote( derivation ), ';' ) )
+        if collabel == 'quantity':
+            if vocab.loc[ index, 'property_taxonomic' ] != '' :
+                if vocab.loc[ index, 'quantity_taxonomic' ] == '' :
+                    derivation = vocab.loc[ index, 'property_taxonomic' ]
+                    ttl_file.write( attribute.format( 'isDerivedFrom', \
+                            ':' + urllib.quote( derivation ), ';' ) )
+                else:
+                    print('WARNING: ' + element + ' has both property and ' + \
+                          'quantity derivation. Only quantity derivation ' + \
+                          'written to file.' )
+            if vocab.loc[ index, 'property_type' ] != '' :
+                ptype = vocab.loc[ index, 'property_type' ]
+                ttl_file.write( attribute.format( 'hasPropertyType', \
+                            ':' + urllib.quote( ptype ), ';' ) )
+            if vocab.loc[ index, 'property_role' ] != '' :
+                prole = vocab.loc[ index, 'property_role' ]
+                ttl_file.write( attribute.format( 'hasPropertyRole', \
+                            ':' + urllib.quote( prole ), ';' ) )
+            if vocab.loc[ index, 'property_quantification' ] != '' :
+                pquant = vocab.loc[ index, 'property_quantification' ]
+                ttl_file.write( attribute.format( 'hasPropertyQuantification', \
+                            ':' + urllib.quote( pquant ), ';' ) )
         if collabel + '_label' in vocab.columns.values:
             element = vocab.loc[ index, collabel + '_label' ]
         ttl_file.write( preflabel.format( element ) )
