@@ -17,7 +17,7 @@
 #    Property   
 # 
 #################################################################
-##Last generated on: 2018-08-20 16:47
+##Last generated on: 2018-08-21 15:33
 
 ###Property
 
@@ -670,6 +670,7 @@
 :absorbance rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Absorbance" ;
+			svu:hasUnits "L^-1" ;
 			skos:prefLabel "absorbance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#absorptance
@@ -677,12 +678,14 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Absorptance" ;
 			skos:altLabel "absorption_coefficient"@en ;
+			svu:hasUnits "dimensionless" ;
 			skos:prefLabel "absorptance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#acceleration
 :acceleration rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Acceleration" ;
+			svu:hasUnits "L T^-2" ;
 			skos:prefLabel "acceleration"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#gravitational_acceleration
@@ -703,6 +706,7 @@
 ###  http://www.geoscienceontology.org/svl/property#acidity
 :acidity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L^-3 M" ;
 			skos:prefLabel "acidity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#chemical_affinity
@@ -710,6 +714,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Chemical_affinity" ;
 			svu:isDerivedFrom :affinity ;
+			svu:hasUnits "L^2 M T^-2 N^-1" ;
 			skos:prefLabel "chemical_affinity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#electron_affinity
@@ -717,12 +722,14 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Electron_affinity" ;
 			svu:isDerivedFrom :affinity ;
+			svu:hasUnits "L^2 M T^-2 N^-1" ;
 			skos:prefLabel "electron_affinity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#age
 :age rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Age" ;
+			svu:hasUnits "T" ;
 			skos:prefLabel "age"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#deposition_age
@@ -736,6 +743,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Albedo" ;
 			skos:altLabel "reflection_coefficient"@en ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "albedo"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#black-sky_albedo
@@ -778,6 +786,7 @@
 :mass-per-volume_alkalinity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :alkalinity ;
+			svu:hasUnits "L^-3 M" ;
 			skos:prefLabel "mass-per-volume_alkalinity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#per-volume_alkalinity
@@ -785,6 +794,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Alkalinity" ;
 			svu:isDerivedFrom :alkalinity ;
+			svu:hasUnits "L^-3" ;
 			skos:prefLabel "per-volume_alkalinity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#altitude
@@ -792,6 +802,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Altitude" ;
 			skos:altLabel "geopotential_height"@en ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "altitude"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#initial_altitude
@@ -803,18 +814,21 @@
 ###  http://www.geoscienceontology.org/svl/property#amount
 :amount rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "amount"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#shaking_amplitude
 :shaking_amplitude rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :amplitude ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "shaking_amplitude"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#angle
 :angle rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Angle" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "angle"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#actual_angle
@@ -1038,6 +1052,7 @@
 :area rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Area" ;
+			svu:hasUnits "L^2" ;
 			skos:prefLabel "area"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#contact_area
@@ -1099,17 +1114,22 @@
 ###  http://www.geoscienceontology.org/svl/property#detection
 :detection rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :boolean ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "detection"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#presence
 :presence rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :boolean ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "presence"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#amount-per-volume_capacity
 :amount-per-volume_capacity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :capacity ;
+			svu:hasUnits "L^-3" ;
 			skos:prefLabel "amount-per-volume_capacity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#acid-neutralizing_amount-per-volume_capacity
@@ -1123,6 +1143,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cation-exchange_capacity" ;
 			svu:isDerivedFrom :capacity ;
+			svu:hasUnits "M^-1 N" ;
 			skos:prefLabel "cation-exchange_capacity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#heat_capacity
@@ -1131,6 +1152,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Heat_capacity" ;
 			skos:altLabel "thermal_capacity"@en ;
 			svu:isDerivedFrom :capacity ;
+			svu:hasUnits "L^2 M O^-1 T^-2" ;
 			skos:prefLabel "heat_capacity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#isobaric_heat_capacity
@@ -1150,6 +1172,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Heat_capacity#Specific_heat_capacity" ;
 			svu:isDerivedFrom :capacity ;
+			svu:hasUnits "L^2 O^-1 T^-2" ;
 			skos:prefLabel "mass-specific_heat_capacity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#latent_fusion_mass-specific_heat_capacity
@@ -1186,6 +1209,7 @@
 :mole-specific_heat_capacity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Heat_capacity#Specific_heat_capacity" ;
+			svu:hasUnits "L^2 M O^-1 T^-2 N^-1" ;
 			skos:prefLabel "mole-specific_heat_capacity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume-specific_heat_capacity
@@ -1194,6 +1218,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Volumetric_heat_capacity" ;
 			skos:altLabel "volumetric_heat_capacity"@en ;
 			skos:altLabel "thermal_inertia"@en ;
+			svu:hasUnits "L^-1 M O^-1 T^-2" ;
 			skos:prefLabel "volume-specific_heat_capacity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#isobaric_volume-specific_heat_capacity
@@ -1213,12 +1238,14 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Interception_(water)" ;
 			svu:isDerivedFrom :capacity ;
+			svu:hasUnits "L^3 T^-1" ;
 			skos:prefLabel "interception_capacity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-time_capacity
 :mass-per-time_capacity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :capacity ;
+			svu:hasUnits "M T^-1" ;
 			skos:prefLabel "mass-per-time_capacity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#acid-neutralizing_mass-per-time_capacity
@@ -1231,6 +1258,7 @@
 :mass-per-volume_capacity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :capacity ;
+			svu:hasUnits "L^-3 M" ;
 			skos:prefLabel "mass-per-volume_capacity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#acid-neutralizing_mass-per-volume_capacity
@@ -1243,6 +1271,7 @@
 :number_capacity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :capacity ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "number_capacity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#carrying_capacity
@@ -1263,67 +1292,88 @@
 :electric_charge rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Electric_charge" ;
+			svu:hasUnits "T I" ;
 			skos:prefLabel "electric_charge"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#circulation
 :circulation rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Circulation_(fluid_dynamics)" ;
+			svu:hasUnits "L^2 T^-1" ;
 			skos:prefLabel "circulation"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#circumference
 :circumference rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Circumference" ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "circumference"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#usgs_hydrologic_unit_code
 :usgs_hydrologic_unit_code rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Hydrological_code#United_States" ;
+			svu:hasPropertyQuantification :code ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "usgs_hydrologic_unit_code"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#pfafstetter_code
 :pfafstetter_code rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Pfafstetter_Coding_System#Description" ;
+			svu:hasPropertyQuantification :code ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "pfafstetter_code"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#postal_code
 :postal_code rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Postal_code" ;
+			svu:hasPropertyQuantification :code ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "postal_code"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#severity_code
 :severity_code rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyQuantification :code ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "severity_code"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#coverage_severity_code
 :coverage_severity_code rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyQuantification :code ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "coverage_severity_code"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#odor_severity_code
 :odor_severity_code rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyQuantification :code ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "odor_severity_code"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#stage_severity_code
 :stage_severity_code rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyQuantification :code ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "stage_severity_code"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#turbidity_severity_code
 :turbidity_severity_code rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyQuantification :code ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "turbidity_severity_code"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#activity_coefficient
 :activity_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Activity_coefficient" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "activity_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#attenuation_coefficient
@@ -1332,6 +1382,8 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Attenuation_coefficient" ;
 			skos:altLabel "narrow_beam_attenuation_coefficient"@en ;
 			skos:altLabel "extinction_coefficient"@en ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "L^-1" ;
 			skos:prefLabel "attenuation_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#beer-lambert-law_attenuation_coefficient
@@ -1344,27 +1396,37 @@
 :binomial_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Binomial_coefficient" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "binomial_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#casson-model_viscosity_coefficient
 :casson-model_viscosity_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			skos:altLabel "casson-model_k_parameter"@en ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "T^-2" ;
 			skos:prefLabel "casson-model_viscosity_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#chezy-formula_coefficient
 :chezy-formula_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "L^0.5 T^-1" ;
 			skos:prefLabel "chezy-formula_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#degree-day_coefficient
 :degree-day_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "degree-day_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#depth-vs-discharge_coefficient
 :depth-vs-discharge_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "depth-vs-discharge_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hydraulic_geometry_depth-vs-discharge_coefficient
@@ -1376,35 +1438,47 @@
 ###  http://www.geoscienceontology.org/svl/property#depth-vs-half-width_coefficient
 :depth-vs-half-width_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "depth-vs-half-width_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#determination_coefficient
 :determination_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Coefficient_of_determination" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "determination_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#discharge_coefficient
 :discharge_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Discharge_coefficient" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "discharge_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#drag_coefficient
 :drag_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Drag_coefficient" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "drag_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#excess_temperature_coefficient
 :excess_temperature_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/w/index.php?title=Excess_temperature_coefficient&action=edit&redlink=1" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "excess_temperature_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#expansion_coefficient
 :expansion_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "expansion_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#thermal_expansion_coefficient
@@ -1424,12 +1498,16 @@
 ###  http://www.geoscienceontology.org/svl/property#flint-law_coefficient
 :flint-law_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "flint-law_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#friction_coefficient
 :friction_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Friction_coefficient" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "friction_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#kinetic_friction_coefficient
@@ -1447,17 +1525,23 @@
 ###  http://www.geoscienceontology.org/svl/property#glen-law_coefficient
 :glen-law_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "glen-law_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hack-law_coefficient
 :hack-law_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "hack-law_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#heat_transfer_coefficient
 :heat_transfer_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Heat_transfer_coefficient" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "M O^-1 T^-3" ;
 			skos:prefLabel "heat_transfer_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#bulk_heat_transfer_coefficient
@@ -1512,28 +1596,38 @@
 :herschel-bulkley_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Herschel%E2%80%93Bulkley_fluid#Definition" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "herschel-bulkley_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hooke-law_coefficient
 :hooke-law_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "hooke-law_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#leading_coefficient
 :leading_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "leading_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#lift_coefficient
 :lift_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Lift_coefficient" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "lift_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass_transfer_coefficient
 :mass_transfer_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Mass_transfer_coefficient" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "L T^-1" ;
 			skos:prefLabel "mass_transfer_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#bulk_mass_transfer_coefficient
@@ -1551,6 +1645,8 @@
 ###  http://www.geoscienceontology.org/svl/property#momentum_transfer_coefficient
 :momentum_transfer_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "momentum_transfer_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#bulk_momentum_transfer_coefficient
@@ -1570,41 +1666,55 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Partition_coefficient" ;
 			skos:altLabel "distribution_coefficient"@en ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "partition_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#pressure_coefficient
 :pressure_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Pressure_coefficient" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "pressure_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#priestley-taylor_alpha_coefficient
 :priestley-taylor_alpha_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Penman%E2%80%93Monteith_equation#Priestley%E2%80%93Taylor" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "priestley-taylor_alpha_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#reaeration_coefficient
 :reaeration_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Streeter%E2%80%93Phelps_equation#Estimation_of_reaeration_rate" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "L^-1" ;
 			skos:prefLabel "reaeration_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#rolling_resistance_coefficient
 :rolling_resistance_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Rolling_resistance#Rolling_resistance_coefficient_examples" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "rolling_resistance_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#sieving_coefficient
 :sieving_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sieving_coefficient" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "sieving_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#slope-vs-discharge_coefficient
 :slope-vs-discharge_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "slope-vs-discharge_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hydraulic_geometry_slope-vs-discharge_coefficient
@@ -1616,6 +1726,8 @@
 ###  http://www.geoscienceontology.org/svl/property#speed-vs-discharge_coefficient
 :speed-vs-discharge_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "speed-vs-discharge_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hydraulic_geometry_speed-vs-discharge_coefficient
@@ -1628,33 +1740,44 @@
 :thermal_expansion_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Thermal_expansion#Coefficient_of_thermal_expansion" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "O^-1" ;
 			skos:prefLabel "thermal_expansion_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volumetric_thermal_expansion_coefficient
 :volumetric_thermal_expansion_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :thermal_expansion_coefficient ;
+			svu:hasPropertyRole :coefficient ;
 			skos:prefLabel "volumetric_thermal_expansion_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#variation_coefficient
 :variation_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Coefficient_of_variation" ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "variation_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume-flow-rate-law_coefficient
 :volume-flow-rate-law_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "volume-flow-rate-law_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume-vs-area-law_coefficient
 :volume-vs-area-law_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "volume-vs-area-law_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#width-vs-discharge_coefficient
 :width-vs-discharge_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :coefficient ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "width-vs-discharge_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hydraulic_geometry_width-vs-discharge_coefficient
@@ -1668,6 +1791,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Compressibility, http://en.wikipedia.org/wiki/Incompressibility" ;
 			skos:altLabel "incompressibility"@en ;
+			svu:hasUnits "L M^-1 T^2" ;
 			skos:prefLabel "compressibility"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#isentropic_compressibility
@@ -1686,12 +1810,14 @@
 :amount_concentration rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :concentration ;
+			svu:hasUnits "L^-3" ;
 			skos:prefLabel "amount_concentration"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#cell-equivalents_concentration
 :cell-equivalents_concentration rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :concentration ;
+			svu:hasUnits "L^-3" ;
 			skos:prefLabel "cell-equivalents_concentration"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#callibrator_cell-equivalents_concentration
@@ -1704,6 +1830,7 @@
 :count_concentration rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :concentration ;
+			svu:hasUnits "L^-3" ;
 			skos:prefLabel "count_concentration"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#plate_count_concentration
@@ -1722,12 +1849,14 @@
 :count-per-mass_concentration rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :concentration ;
+			svu:hasUnits "M^-1" ;
 			skos:prefLabel "count-per-mass_concentration"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#enthalpy_concentration
 :enthalpy_concentration rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :concentration ;
+			svu:hasUnits "L^-1 M T^-2" ;
 			skos:prefLabel "enthalpy_concentration"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass_concentration
@@ -1735,6 +1864,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mass_concentration_(chemistry)" ;
 			svu:isDerivedFrom :concentration ;
+			svu:hasUnits "L^-3 M" ;
 			skos:prefLabel "mass_concentration"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass_demand_concentration
@@ -1749,6 +1879,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mass_concentration_(chemistry)#Molar_concentration" ;
 			skos:altLabel "molarity"@en ;
 			svu:isDerivedFrom :concentration ;
+			svu:hasUnits "L^-3 N" ;
 			skos:prefLabel "molar_concentration"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#molal_concentration
@@ -1757,18 +1888,21 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Molality" ;
 			skos:altLabel "molality"@en ;
 			svu:isDerivedFrom :concentration ;
+			svu:hasUnits "M^-1" ;
 			skos:prefLabel "molal_concentration"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#presence_concentration
 :presence_concentration rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :concentration ;
+			svu:hasUnits "L^-3" ;
 			skos:prefLabel "presence_concentration"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume_concentration
 :volume_concentration rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :concentration ;
+			svu:hasUnits "dimensionless" ;
 			skos:prefLabel "volume_concentration"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume-per-mass_concentration
@@ -1776,12 +1910,14 @@
 			svu:QuantitativeProperty ;
 			skos:altLabel "inverse_of_mass_concentration"@en ;
 			svu:isDerivedFrom :concentration ;
+			svu:hasUnits "L^3 M^-1" ;
 			skos:prefLabel "volume-per-mass_concentration"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#aerodynamic_conductance
 :aerodynamic_conductance rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :conductance ;
+			svu:hasUnits "L T^-1" ;
 			skos:prefLabel "aerodynamic_conductance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#bulk_aerodynamic_conductance
@@ -1848,12 +1984,14 @@
 :electrical_conductance rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :conductance ;
+			svu:hasUnits "L^-2 M^-1 T^3 I^2" ;
 			skos:prefLabel "electrical_conductance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#thermal_conductance
 :thermal_conductance rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :conductance ;
+			svu:hasUnits "L^2 M O^-1 T^-3" ;
 			skos:prefLabel "thermal_conductance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#electrical_conductivity
@@ -1861,6 +1999,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Electrical_conductivity" ;
 			svu:isDerivedFrom :conductivity ;
+			svu:hasUnits "L^-3 M^-1 T^3 I^2" ;
 			skos:prefLabel "electrical_conductivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hydraulic_conductivity
@@ -1868,6 +2007,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Hydraulic_conductivity" ;
 			svu:isDerivedFrom :conductivity ;
+			svu:hasUnits "L T^-1" ;
 			skos:prefLabel "hydraulic_conductivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#effective_hydraulic_conductivity
@@ -1927,6 +2067,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Ionic_conductivity_(solid_state)" ;
 			svu:isDerivedFrom :conductivity ;
+			svu:hasUnits "L^-3 M^-1 T^3 I^2" ;
 			skos:prefLabel "ionic_conductivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#molar_conductivity
@@ -1934,6 +2075,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Molar_conductivity" ;
 			svu:isDerivedFrom :conductivity ;
+			svu:hasUnits "M^-1 T^3 I^2 N^-1" ;
 			skos:prefLabel "molar_conductivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#thermal_conductivity
@@ -1942,36 +2084,47 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Thermal_conductivity" ;
 			skos:altLabel "inverse_of_thermal_resistivity"@en ;
 			svu:isDerivedFrom :conductivity ;
+			svu:hasUnits "L M O^-1 T^-3" ;
 			skos:prefLabel "thermal_conductivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#atomic-mass_constant
 :atomic-mass_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Atomic_mass_constant" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "M" ;
 			skos:prefLabel "atomic-mass_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#avogadro_constant
 :avogadro_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Avogadro_constant" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "N^-1" ;
 			skos:prefLabel "avogadro_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#bohr_radius_constant
 :bohr_radius_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Bohr_radius" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "bohr_radius_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#boltzmann_constant
 :boltzmann_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Boltzmann_constant" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L^2 M O^-1 T^-2" ;
 			skos:prefLabel "boltzmann_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#catalan_constant
 :catalan_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Catalan_constant" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "catalan_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#chaitin_constant
@@ -1980,6 +2133,8 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Chaitin_constant" ;
 			skos:altLabel "chaitin_omega_number"@en ;
 			skos:altLabel "halting_probability"@en ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "chaitin_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#conway_constant
@@ -1987,30 +2142,40 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Look-and-say_sequence" ;
 			skos:altLabel "conway-sequence_constant"@en ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "conway_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#cosmological_constant
 :cosmological_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Cosmological_constant" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L^-2" ;
 			skos:prefLabel "cosmological_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#coulomb_constant
 :coulomb_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Coulomb_constant" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L^3 M T^-4 I^-2" ;
 			skos:prefLabel "coulomb_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#e_constant
 :e_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/E_(mathematical_constant)" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "e_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#elementary-electric-charge_constant
 :elementary-electric-charge_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Elementary_charge" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "T I" ;
 			skos:prefLabel "elementary-electric-charge_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#euler_gamma_constant
@@ -2019,6 +2184,8 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Euler%E2%80%93Mascheroni_constant" ;
 			skos:altLabel "euler-mascheroni_constant"@en ;
 			skos:altLabel "euler_constant"@en ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "euler_gamma_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#feigenbaum_alpha_constant
@@ -2026,6 +2193,8 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Feigenbaum_constants" ;
 			skos:altLabel "Feigenbaum_second_constant"@en ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "feigenbaum_alpha_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#feigenbaum_delta_constant
@@ -2033,6 +2202,8 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Feigenbaum_constants" ;
 			skos:altLabel "Feigenbaum_first_constant"@en ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "feigenbaum_delta_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#fine-structure_constant
@@ -2040,35 +2211,47 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Fine-structure_constant" ;
 			skos:altLabel "sommerfeld_constant"@en ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "fine-structure_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#ideal_gas_constant
 :ideal_gas_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "ideal_gas_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-specific_gas_constant
 :mass-specific_gas_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Gas_constant#Specific_gas_constant" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L^2 O^-1 T^-2" ;
 			skos:prefLabel "mass-specific_gas_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mole-specific_gas_constant
 :mole-specific_gas_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Ideal_gas_constant" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L^2 M O^-1 T^-2 N^-1" ;
 			skos:prefLabel "mole-specific_gas_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#golden-ratio_constant
 :golden-ratio_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Golden_ratio" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "golden-ratio_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#googol_constant
 :googol_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Googol" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "googol_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#universal_gravitation_constant
@@ -2076,191 +2259,257 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Gravitational_constant" ;
 			skos:altLabel "newtons_constant"@en ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L^3 M^-1 T^-2" ;
 			skos:prefLabel "universal_gravitation_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#gravitational-coupling_constant
 :gravitational-coupling_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Gravitational_coupling_constant" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "gravitational-coupling_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hartree_energy_constant
 :hartree_energy_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Hartree" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L^2 M T^-2" ;
 			skos:prefLabel "hartree_energy_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#solar_irradiation_constant
 :solar_irradiation_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Solar_constant#Solar_irradiance" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L^2 M T^-3" ;
 			skos:prefLabel "solar_irradiation_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#khinchin_constant
 :khinchin_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Khinchin%27s_constant" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "khinchin_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#pi_constant
 :pi_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Pi" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "pi_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#planck_constant
 :planck_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Planck_constant" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L^2 M T^-1" ;
 			skos:prefLabel "planck_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#planck_electric-charge_constant
 :planck_electric-charge_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Planck_charge" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "T I" ;
 			skos:prefLabel "planck_electric-charge_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#planck_length_constant
 :planck_length_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Planck_length" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "planck_length_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#planck_mass_constant
 :planck_mass_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Planck_mass" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "M" ;
 			skos:prefLabel "planck_mass_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#planck_temperature_constant
 :planck_temperature_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Planck_temperature" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "O" ;
 			skos:prefLabel "planck_temperature_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#planck_time_constant
 :planck_time_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Planck_time" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "T" ;
 			skos:prefLabel "planck_time_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#reduced_planck_constant
 :reduced_planck_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "reduced_planck_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#plasma-physics_beta_constant
 :plasma-physics_beta_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Beta_(plasma_physics)" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "plasma-physics_beta_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#pythagoras_constant
 :pythagoras_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Square_root_of_2" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "pythagoras_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#first_radiation_constant
 :first_radiation_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Planck%27s_law#First_and_second_radiation_constants" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L^4 M T^-3" ;
 			skos:prefLabel "first_radiation_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#second_radiation_constant
 :second_radiation_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Planck%27s_law#First_and_second_radiation_constants" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L O" ;
 			skos:prefLabel "second_radiation_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#rydberg_constant
 :rydberg_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Rydberg_constant" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L^-1" ;
 			skos:prefLabel "rydberg_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#sierpinski_constant
 :sierpinski_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sierpi_ski%27s_constant" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "sierpinski_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#solar_constant
 :solar_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Solar_constant" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "M T^-3" ;
 			skos:prefLabel "solar_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#stefan-boltzmann_constant
 :stefan-boltzmann_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Stefan-boltzmann_constant" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "O^-4" ;
 			skos:prefLabel "stefan-boltzmann_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#twin-prime_constant
 :twin-prime_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Twin_prime#First_Hardy.E2.80.93Littlewood_conjecture" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "twin-prime_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#electrical_impedance_constant
 :electrical_impedance_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Impedance_of_free_space" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L^2 M T^-3 I^-2" ;
 			skos:prefLabel "electrical_impedance_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#speed_constant
 :speed_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Speed_of_light" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L T^-1" ;
 			skos:prefLabel "speed_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#magnetic_permeability_constant
 :magnetic_permeability_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Permeability_(electromagnetism)" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L M T^-2 I^-2" ;
 			skos:prefLabel "magnetic_permeability_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#permittivity_constant
 :permittivity_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Vacuum_permittivity" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "L^-3 M^-1 T^4 I^2" ;
 			skos:prefLabel "permittivity_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#von-karman_constant
 :von-karman_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Von_K%C3%A1rm%C3%A1n_constant" ;
+			svu:hasPropertyRole :constant ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "von-karman_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#along-shore_coordinate
 :along-shore_coordinate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :coordinate ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "along-shore_coordinate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#cross-shore_coordinate
 :cross-shore_coordinate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :coordinate ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "cross-shore_coordinate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#cross-stream_coordinate
 :cross-stream_coordinate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :coordinate ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "cross-stream_coordinate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#phi_coordinate
 :phi_coordinate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :coordinate ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "phi_coordinate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#r_coordinate
 :r_coordinate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :coordinate ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "r_coordinate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#s_coordinate
 :s_coordinate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :coordinate ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "s_coordinate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#g1_s_coordinate
@@ -2278,57 +2527,78 @@
 ###  http://www.geoscienceontology.org/svl/property#south_coordinate
 :south_coordinate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :coordinate ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "south_coordinate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#streamwise_coordinate
 :streamwise_coordinate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :coordinate ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "streamwise_coordinate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#theta_coordinate
 :theta_coordinate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :coordinate ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "theta_coordinate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#u_coordinate
 :u_coordinate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :coordinate ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "u_coordinate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#v_coordinate
 :v_coordinate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :coordinate ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "v_coordinate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#w_coordinate
 :w_coordinate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :coordinate ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "w_coordinate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#west_coordinate
 :west_coordinate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :coordinate ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "west_coordinate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#x_coordinate
 :x_coordinate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :coordinate ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "x_coordinate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#y_coordinate
 :y_coordinate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :coordinate ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "y_coordinate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#z_coordinate
 :z_coordinate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :coordinate ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "z_coordinate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#count
 :count rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Count_(disambiguation)" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "count"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#detection_number_count
@@ -2372,6 +2642,7 @@
 :curvature rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Curvature" ;
+			svu:hasUnits "L^-1" ;
 			skos:prefLabel "curvature"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#gaussian_curvature
@@ -2414,12 +2685,14 @@
 :bits-per-area_density rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "L^-2" ;
 			skos:prefLabel "bits-per-area_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#count-per-volume_density
 :count-per-volume_density rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "L^-3" ;
 			skos:prefLabel "count-per-volume_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#critical_density
@@ -2428,6 +2701,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Friedmann_equations#Density_parameter" ;
 			skos:altLabel "cosmological_critical_density"@en ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "L^-3 M" ;
 			skos:prefLabel "critical_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#current_density
@@ -2435,6 +2709,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Current_density" ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "L^-2 I" ;
 			skos:prefLabel "current_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#drainage_density
@@ -2442,12 +2717,14 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Drainage_density" ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "L^-1" ;
 			skos:prefLabel "drainage_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#electric_charge-per-area_density
 :electric_charge-per-area_density rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "L^-2 T I" ;
 			skos:prefLabel "electric_charge-per-area_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#energy-per-area_density
@@ -2455,6 +2732,7 @@
 			svu:QuantitativeProperty ;
 			skos:altLabel "energy-per-area_content"@en ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "M T^-2" ;
 			skos:prefLabel "energy-per-area_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#cold_energy-per-area_density
@@ -2470,6 +2748,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Specific_energy" ;
 			skos:altLabel "specific_energy"@en ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "L^2 T^-2" ;
 			skos:prefLabel "energy-per-mass_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#metabolizable_energy-per-mass_density
@@ -2485,6 +2764,7 @@
 			skos:altLabel "energy_density"@en ;
 			skos:altLabel "energy_content"@en ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "L^-1 M T^-2" ;
 			skos:prefLabel "energy-per-volume_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#thermal_energy-per-volume_density
@@ -2497,12 +2777,14 @@
 :enthalpy-per-volume_density rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "L^-1 M T^-2" ;
 			skos:prefLabel "enthalpy-per-volume_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#length-per-area_density
 :length-per-area_density rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "L^-1" ;
 			skos:prefLabel "length-per-area_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-area_density
@@ -2514,12 +2796,14 @@
 			skos:altLabel "superficial_density"@en ;
 			skos:altLabel "density_thickness"@en ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "L^-2 M" ;
 			skos:prefLabel "mass-per-area_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-unit_density
 :mass-per-unit_density rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "M" ;
 			skos:prefLabel "mass-per-unit_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-volume_density
@@ -2528,6 +2812,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Density" ;
 			skos:altLabel "volumetric_mass_density"@en ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "L^-3 M" ;
 			skos:prefLabel "mass-per-volume_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mean_mass-per-volume_density
@@ -2541,30 +2826,35 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Number_density" ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "L^-2" ;
 			skos:prefLabel "number-per-area_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#number-per-volume_density
 :number-per-volume_density rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "L^-3" ;
 			skos:prefLabel "number-per-volume_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#power-per-area_density
 :power-per-area_density rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "M T^-3" ;
 			skos:prefLabel "power-per-area_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#power-per-length_density
 :power-per-length_density rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "L M T^-3" ;
 			skos:prefLabel "power-per-length_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#power-per-volume_density
 :power-per-volume_density rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "L^-1 M T^-3" ;
 			skos:prefLabel "power-per-volume_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#spectral_density
@@ -2572,18 +2862,21 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Spectral_density" ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "spectral_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#torque-per-volume_density
 :torque-per-volume_density rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :density ;
+			svu:hasUnits "L^-1 M T^-2" ;
 			skos:prefLabel "torque-per-volume_density"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#depth
 :depth rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Depth" ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "depth"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#attenuation_depth
@@ -2733,6 +3026,7 @@
 :diameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Diameter" ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "diameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#d50_diameter
@@ -2758,6 +3052,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Diffusivity" ;
 			skos:altLabel "diffusion_coefficient"@en ;
+			svu:hasUnits "L^2 T^-1" ;
 			skos:prefLabel "diffusivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#energy_diffusivity
@@ -2822,7 +3117,8 @@
 :hausdorff_dimension rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Hausdorff_dimension" ;
-			svu:isDerivedFrom :dimension%7Ehausdorff ;
+			svu:isDerivedFrom :dimension ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "hausdorff_dimension"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#displacement
@@ -2830,6 +3126,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Displacement_(vector)" ;
 			skos:altLabel "position_displacement"@en ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "displacement"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#static_displacement
@@ -2842,6 +3139,7 @@
 :distance rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Distance" ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "distance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#average_distance
@@ -2944,6 +3242,7 @@
 :duration rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Duration" ;
+			svu:hasUnits "T" ;
 			skos:prefLabel "duration"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#precipitation_duration
@@ -2968,6 +3267,7 @@
 :eccentricity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Eccentricity_(mathematics)" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "eccentricity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#electrical_efficiency
@@ -2975,6 +3275,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Electrical_efficiency" ;
 			svu:isDerivedFrom :efficiency ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "electrical_efficiency"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#luminous_efficiency
@@ -2983,6 +3284,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Luminous_efficacy" ;
 			skos:altLabel "luminous_efficacy"@en ;
 			svu:isDerivedFrom :efficiency ;
+			svu:hasUnits "L^-2 M^-1 T^3" ;
 			skos:prefLabel "luminous_efficiency"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mechanical_efficiency
@@ -2990,6 +3292,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mechanical_efficiency" ;
 			svu:isDerivedFrom :efficiency ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "mechanical_efficiency"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#thermal_efficiency
@@ -2997,12 +3300,14 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Thermal_efficiency" ;
 			svu:isDerivedFrom :efficiency ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "thermal_efficiency"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#elasticity
 :elasticity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Elasticity_(economics)" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "elasticity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#elevation
@@ -3010,6 +3315,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Elevation" ;
 			skos:altLabel "geometric_height"@en ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "elevation"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#initial_elevation
@@ -3022,12 +3328,14 @@
 :emissivity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Emissivity" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "emissivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#per-wavelength_emittance
 :per-wavelength_emittance rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :emittance ;
+			svu:hasUnits "L^-1 M T^-3" ;
 			skos:prefLabel "per-wavelength_emittance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#spectral_per-wavelength_emittance
@@ -3044,12 +3352,14 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Radiant_exitance" ;
 			skos:altLabel "radiant_exitance"@en ;
 			svu:isDerivedFrom :emittance ;
+			svu:hasUnits "M T^-3" ;
 			skos:prefLabel "radiant_emittance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#energy
 :energy rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Energy" ;
+			svu:hasUnits "L^2 M T^-2" ;
 			skos:prefLabel "energy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#activation_energy
@@ -3208,6 +3518,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Enthalpy" ;
 			skos:altLabel "thermodynamic_potential"@en ;
+			svu:hasUnits "L^2 M T^-2" ;
 			skos:prefLabel "enthalpy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#atomization_enthalpy
@@ -3275,12 +3586,14 @@
 ###  http://www.geoscienceontology.org/svl/property#mass-specific_enthalpy
 :mass-specific_enthalpy rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L^2 T^-2" ;
 			skos:prefLabel "mass-specific_enthalpy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-specific_heat
 :mass-specific_heat rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			skos:altLabel "mass-specific_enthalpy"@en ;
+			svu:hasUnits "L^2 T^-2" ;
 			skos:prefLabel "mass-specific_heat"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#latent_mass-specific_heat
@@ -3318,6 +3631,7 @@
 :mole-specific_heat rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			skos:altLabel "mole-specific_enthalpy"@en ;
+			svu:hasUnits "L^2 M T^-2 N^-1" ;
 			skos:prefLabel "mole-specific_heat"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#latent_mole-specific_heat
@@ -3369,11 +3683,15 @@
 :angstrom_exponent rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Angstrom_exponent" ;
+			svu:hasPropertyRole :exponent ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "angstrom_exponent"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#depth-vs-discharge_exponent
 :depth-vs-discharge_exponent rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :exponent ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "depth-vs-discharge_exponent"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hydraulic_geometry_depth-vs-discharge_exponent
@@ -3385,6 +3703,8 @@
 ###  http://www.geoscienceontology.org/svl/property#depth-vs-half-width_exponent
 :depth-vs-half-width_exponent rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :exponent ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "depth-vs-half-width_exponent"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hydraulic_geometry_depth-vs-half-width_exponent
@@ -3396,32 +3716,44 @@
 ###  http://www.geoscienceontology.org/svl/property#flint-law_exponent
 :flint-law_exponent rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :exponent ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "flint-law_exponent"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#glen-law_exponent
 :glen-law_exponent rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :exponent ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "glen-law_exponent"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hack-law_exponent
 :hack-law_exponent rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :exponent ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "hack-law_exponent"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#herschel-bulkley_exponent
 :herschel-bulkley_exponent rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Herschel%E2%80%93Bulkley_fluid#Definition" ;
+			svu:hasPropertyRole :exponent ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "herschel-bulkley_exponent"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#power-law-fluid_viscosity_exponent
 :power-law-fluid_viscosity_exponent rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :exponent ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "power-law-fluid_viscosity_exponent"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#slope-vs-discharge_exponent
 :slope-vs-discharge_exponent rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :exponent ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "slope-vs-discharge_exponent"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hydraulic_geometry_slope-vs-discharge_exponent
@@ -3433,6 +3765,8 @@
 ###  http://www.geoscienceontology.org/svl/property#speed-vs-discharge_exponent
 :speed-vs-discharge_exponent rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :exponent ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "speed-vs-discharge_exponent"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hydraulic_geometry_speed-vs-discharge_exponent
@@ -3444,26 +3778,36 @@
 ###  http://www.geoscienceontology.org/svl/property#power-law-fluid_viscosity_exponent
 :power-law-fluid_viscosity_exponent rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :exponent ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "power-law-fluid_viscosity_exponent"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume-flow-rate-law_area_exponent
 :volume-flow-rate-law_area_exponent rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :exponent ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "volume-flow-rate-law_area_exponent"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume-flow-rate-law_slope_exponent
 :volume-flow-rate-law_slope_exponent rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :exponent ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "volume-flow-rate-law_slope_exponent"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume-vs-area-law_exponent
 :volume-vs-area-law_exponent rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :exponent ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "volume-vs-area-law_exponent"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#width-vs-discharge_exponent
 :width-vs-discharge_exponent rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :exponent ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "width-vs-discharge_exponent"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hydraulic_geometry_width-vs-discharge_exponent
@@ -3476,12 +3820,15 @@
 :extent rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Extent" ;
+			svu:hasUnits "L^2" ;
 			skos:prefLabel "extent"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#cilton-colburn_j_factor
 :cilton-colburn_j_factor rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Chilton_and_Colburn_J-factor_analogy" ;
+			svu:hasPropertyRole :factor ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "cilton-colburn_j_factor"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#crest_factor
@@ -3489,11 +3836,15 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Crest_factor" ;
 			skos:altLabel "crest-factor_ratio"@en ;
+			svu:hasPropertyRole :factor ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "crest_factor"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#emissivity_factor
 :emissivity_factor rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :factor ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "emissivity_factor"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#brutsaert_emissivity_factor
@@ -3505,6 +3856,8 @@
 ###  http://www.geoscienceontology.org/svl/property#friction_factor
 :friction_factor rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :factor ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "friction_factor"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#darcy_friction_factor
@@ -3529,29 +3882,39 @@
 :power_factor rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Power_factor" ;
+			svu:hasPropertyRole :factor ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "power_factor"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#protection_factor
 :protection_factor rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sun_protective_clothing#UPF_rating" ;
+			svu:hasPropertyRole :factor ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "protection_factor"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#q_factor
 :q_factor rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Q_factor" ;
+			svu:hasPropertyRole :factor ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "q_factor"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#equivalent_reflectivity_factor
 :equivalent_reflectivity_factor rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :factor ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "equivalent_reflectivity_factor"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#shape_factor
 :shape_factor rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Compactness_measure_of_a_shape" ;
+			svu:hasPropertyRole :factor ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "shape_factor"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#area-diameter_shape_factor
@@ -3594,6 +3957,8 @@
 :vant-hoff_factor rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Van_%27t_Hoff_factor" ;
+			svu:hasPropertyRole :factor ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "vant-hoff_factor"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#electric-d-field
@@ -3602,6 +3967,8 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Electric_displacement_field" ;
 			skos:altLabel "electric_displacement"@en ;
 			skos:altLabel "electric_displacement_field"@en ;
+			svu:hasPropertyType :field ;
+			svu:hasUnits "L^-2 T I" ;
 			skos:prefLabel "electric-d-field"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#electric-e-field
@@ -3609,6 +3976,8 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Electric_field" ;
 			skos:altLabel "electric_field"@en ;
+			svu:hasPropertyType :field ;
+			svu:hasUnits "L M T^-3 I^-1" ;
 			skos:prefLabel "electric-e-field"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#electric-p-field
@@ -3617,6 +3986,8 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Electric_polarization" ;
 			skos:altLabel "electric_polarization"@en ;
 			skos:altLabel "polarization"@en ;
+			svu:hasPropertyType :field ;
+			svu:hasUnits "L^-2 T I" ;
 			skos:prefLabel "electric-p-field"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#magnetic-b-field
@@ -3625,6 +3996,8 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Magnetic_field#The_B-field" ;
 			skos:altLabel "magnetic_flux_density"@en ;
 			skos:altLabel "magnetic-field"@en ;
+			svu:hasPropertyType :field ;
+			svu:hasUnits "M T^-2 I^-1" ;
 			skos:prefLabel "magnetic-b-field"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#magnetic-h-field
@@ -3635,6 +4008,8 @@
 			skos:altLabel "magnetic-field_intensity"@en ;
 			skos:altLabel "magnetic-field"@en ;
 			skos:altLabel "magnetizing-field"@en ;
+			svu:hasPropertyType :field ;
+			svu:hasUnits "L^-1 I" ;
 			skos:prefLabel "magnetic-h-field"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#magnetic-m-field
@@ -3642,17 +4017,21 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Magnetization" ;
 			skos:altLabel "magnetization"@en ;
+			svu:hasPropertyType :field ;
+			svu:hasUnits "L^-1 I" ;
 			skos:prefLabel "magnetic-m-field"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#eliassen-palm_flux
 :eliassen-palm_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "eliassen-palm_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#energy_flux
 :energy_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Energy_flux" ;
+			svu:hasUnits "M T^-3" ;
 			skos:prefLabel "energy_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#absorbed_energy_flux
@@ -3765,12 +4144,14 @@
 ###  http://www.geoscienceontology.org/svl/property#energy-per-wavelength_flux
 :energy-per-wavelength_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L M T^-3" ;
 			skos:prefLabel "energy-per-wavelength_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass_flux
 :mass_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mass_flux" ;
+			svu:hasUnits "L^-2 M T^-1" ;
 			skos:prefLabel "mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#baseflow_mass_flux
@@ -3831,12 +4212,14 @@
 :mole_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mass_flux#Molar_fluxes" ;
+			svu:hasUnits "L^-2 T^-1 N" ;
 			skos:prefLabel "mole_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#momentum_flux
 :momentum_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Transport_phenomena#Momentum_transfer" ;
+			svu:hasUnits "L^-1 M T^-2" ;
 			skos:prefLabel "momentum_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume_flux
@@ -3844,6 +4227,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Volumetric_flux" ;
 			skos:altLabel "volumetric_flux"@en ;
+			svu:hasUnits "L T^-1" ;
 			skos:prefLabel "volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#baseflow_volume_flux
@@ -3952,6 +4336,7 @@
 :force rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Force" ;
+			svu:hasUnits "L M T^-2" ;
 			skos:prefLabel "force"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#braking_force
@@ -3993,11 +4378,13 @@
 ###  http://www.geoscienceontology.org/svl/property#amount_fraction
 :amount_fraction rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "amount_fraction"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#area_fraction
 :area_fraction rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "area_fraction"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#coverage_area_fraction
@@ -4009,11 +4396,13 @@
 ###  http://www.geoscienceontology.org/svl/property#count_fraction
 :count_fraction rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "count_fraction"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass_fraction
 :mass_fraction rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "mass_fraction"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#oven-dried_mass_fraction
@@ -4027,21 +4416,25 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mole_fraction" ;
 			skos:altLabel "molar_fraction"@en ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "mole_fraction"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#size_fraction
 :size_fraction rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "size_fraction"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#time_fraction
 :time_fraction rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "time_fraction"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume_fraction
 :volume_fraction rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "volume_fraction"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#atterberg_liquid_limit_volume_fraction
@@ -4121,6 +4514,7 @@
 ###  http://www.geoscienceontology.org/svl/property#weight_fraction
 :weight_fraction rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "weight_fraction"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#angular_frequency
@@ -4132,6 +4526,7 @@
 			skos:altLabel "orbital_frequency"@en ;
 			skos:altLabel "radian_frequency"@en ;
 			skos:altLabel "pulsatance"@en ;
+			svu:hasUnits "T^-1" ;
 			skos:prefLabel "angular_frequency"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#intrinsic_angular_frequency
@@ -4183,29 +4578,37 @@
 :frequency rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Frequency" ;
+			svu:hasUnits "T^-1" ;
 			skos:prefLabel "frequency"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#fugacity
 :fugacity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Fugacity" ;
+			svu:hasUnits "L^-1 M T^-2" ;
 			skos:prefLabel "fugacity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#exner_function
 :exner_function rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Exner_function" ;
+			svu:hasPropertyType :function ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "exner_function"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass_streamfunction
 :mass_streamfunction rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyType :function ;
+			svu:hasUnits "M T^-1" ;
 			skos:prefLabel "mass_streamfunction"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#streamfunction
 :streamfunction rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Stream_function" ;
+			svu:hasPropertyType :function ;
+			svu:hasUnits "L^2 T^-1" ;
 			skos:prefLabel "streamfunction"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#carbonate_hardness
@@ -4213,6 +4616,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Carbonate_hardness" ;
 			svu:isDerivedFrom :hardness ;
+			svu:hasUnits "L^-3 M" ;
 			skos:prefLabel "carbonate_hardness"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mechanical_hardness
@@ -4220,6 +4624,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Hardness" ;
 			svu:isDerivedFrom :hardness ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "mechanical_hardness"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#indentation_hardness
@@ -4233,6 +4638,7 @@
 :noncarbonate_hardness rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :hardness ;
+			svu:hasUnits "L^-3 M" ;
 			skos:prefLabel "noncarbonate_hardness"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#scratch_hardness
@@ -4251,6 +4657,7 @@
 :head rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Hydraulic_head#.22Head.22_in_fluid_dynamics" ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "head"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#friction_head
@@ -4323,6 +4730,7 @@
 :height rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Height" ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "height"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#clearance_height
@@ -4378,6 +4786,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Acoustic_impedance" ;
 			svu:isDerivedFrom :impedance ;
+			svu:hasUnits "L^-4 M T^-1" ;
 			skos:prefLabel "acoustic_impedance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#electrical_impedance
@@ -4385,6 +4794,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Electrical_impedance" ;
 			svu:isDerivedFrom :impedance ;
+			svu:hasUnits "L^2 M T^-3 I^-2" ;
 			skos:prefLabel "electrical_impedance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mechanical_impedance
@@ -4392,6 +4802,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mechanical_impedance" ;
 			svu:isDerivedFrom :impedance ;
+			svu:hasUnits "L^-4 M T^-1" ;
 			skos:prefLabel "mechanical_impedance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#wave_impedance
@@ -4399,12 +4810,14 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Wave_impedance" ;
 			svu:isDerivedFrom :impedance ;
+			svu:hasUnits "L^2 M T^-3 I^-2" ;
 			skos:prefLabel "wave_impedance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#impulse
 :impulse rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Impulse_(physics)" ;
+			svu:hasUnits "L M T^-1" ;
 			skos:prefLabel "impulse"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#impact_impulse
@@ -4418,6 +4831,8 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Atterberg_limits#Activity" ;
 			svu:isDerivedFrom :activity ;
+			svu:hasPropertyQuantification :index ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "atterberg_activity_index"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#atterberg_liquidity_index
@@ -4425,6 +4840,8 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Atterberg_limits#Liquidity_index" ;
 			svu:isDerivedFrom :liquidity ;
+			svu:hasPropertyQuantification :index ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "atterberg_liquidity_index"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#atterberg_plasticity_index
@@ -4432,19 +4849,23 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Atterberg_limits#Plasticity_index" ;
 			svu:isDerivedFrom :plasticity ;
+			svu:hasPropertyQuantification :index ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "atterberg_plasticity_index"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#consumer_price_index
 :consumer_price_index rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Consumer_price_index" ;
-			svu:isDerivedFrom :price ;
+			svu:hasPropertyQuantification :index ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "consumer_price_index"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#depth_index
 :depth_index rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
-			svu:isDerivedFrom :depth ;
+			svu:hasPropertyQuantification :index ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "depth_index"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#diversity_index
@@ -4452,30 +4873,38 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Diversity_index" ;
 			svu:isDerivedFrom :diversity ;
+			svu:hasPropertyQuantification :index ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "diversity_index"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#internal_code_index
 :internal_code_index rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyQuantification :index ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "internal_code_index"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#leaf-area_index
 :leaf-area_index rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Leaf_area_index" ;
-			svu:isDerivedFrom :area ;
+			svu:hasPropertyQuantification :index ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "leaf-area_index"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#row-major-offset_index
 :row-major-offset_index rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Row-_and_column-major_order" ;
+			svu:hasPropertyQuantification :index ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "row-major-offset_index"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#price_index
 :price_index rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
-			svu:isDerivedFrom :price ;
+			svu:hasPropertyQuantification :index ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "price_index"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#topographic_wetness_index
@@ -4483,6 +4912,8 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Topographic_Wetness_Index" ;
 			svu:isDerivedFrom :wetness ;
+			svu:hasPropertyQuantification :index ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "topographic_wetness_index"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#rotational_inertia
@@ -4491,12 +4922,14 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Rotational_inertia" ;
 			skos:altLabel "moment_of_inertia"@en ;
 			svu:isDerivedFrom :inertia ;
+			svu:hasUnits "L^2 M" ;
 			skos:prefLabel "rotational_inertia"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#thermal_inertia
 :thermal_inertia rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :inertia ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "thermal_inertia"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#convective_inhibition
@@ -4504,6 +4937,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Convective_inhibition" ;
 			svu:isDerivedFrom :inhibition ;
+			svu:hasUnits "L^2 T^-2" ;
 			skos:prefLabel "convective_inhibition"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#energy_intensity
@@ -4512,6 +4946,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Radiant_exposure" ;
 			skos:altLabel "radiant_exposure"@en ;
 			svu:isDerivedFrom :intensity ;
+			svu:hasUnits "M T^-2" ;
 			skos:prefLabel "energy_intensity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#radiant_intensity
@@ -4519,6 +4954,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Radiant_intensity" ;
 			svu:isDerivedFrom :intensity ;
+			svu:hasUnits "L^2 M T^-3" ;
 			skos:prefLabel "radiant_intensity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#jerk
@@ -4528,12 +4964,14 @@
 			skos:altLabel "jolt"@en ;
 			skos:altLabel "surge"@en ;
 			skos:altLabel "lurch"@en ;
+			svu:hasUnits "L T^-3" ;
 			skos:prefLabel "jerk"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#jounce
 :jounce rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Jounce" ;
+			svu:hasUnits "L T^-4" ;
 			skos:prefLabel "jounce"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#latitude
@@ -4541,6 +4979,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Latitude" ;
 			skos:altLabel "north_coordinate"@en ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "latitude"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#authalic_latitude
@@ -4614,6 +5053,7 @@
 :length rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Length" ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "length"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#capillary_length
@@ -4706,6 +5146,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Longitude" ;
 			skos:altLabel "east_coordinate"@en ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "longitude"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#initial_longitude
@@ -4724,6 +5165,7 @@
 :shreve_magnitude rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :magnitude ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "shreve_magnitude"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass
@@ -4734,6 +5176,7 @@
 			skos:altLabel "intrinsic_mass"@en ;
 			skos:altLabel "proper_mass"@en ;
 			skos:altLabel "rest_mass"@en ;
+			svu:hasUnits "M" ;
 			skos:prefLabel "mass"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#chandrasekhar-limit_mass
@@ -4764,6 +5207,7 @@
 :modulus rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Modulus" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "modulus"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#bulk_modulus
@@ -4793,6 +5237,7 @@
 :moles rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mole_(unit)" ;
+			svu:hasUnits "N" ;
 			skos:prefLabel "moles"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#seismic_moment
@@ -4800,6 +5245,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Seismic_moment" ;
 			svu:isDerivedFrom :moment ;
+			svu:hasUnits "L^2 M T^-2" ;
 			skos:prefLabel "seismic_moment"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#angular_momentum
@@ -4808,6 +5254,7 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Angular_momentum" ;
 			skos:altLabel "rotational_momentum"@en ;
 			svu:isDerivedFrom :momentum ;
+			svu:hasUnits "L^2 M T^-1" ;
 			skos:prefLabel "angular_momentum"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#initial_angular_momentum
@@ -4821,6 +5268,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Momentum" ;
 			svu:isDerivedFrom :momentum ;
+			svu:hasUnits "L M T^-1" ;
 			skos:prefLabel "momentum"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#dimensionless_number
@@ -4828,6 +5276,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Dimensionless_quantity" ;
 			svu:isDerivedFrom :number ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "dimensionless_number"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#abbe_number
@@ -5453,6 +5902,7 @@
 			svu:QuantitativeProperty ;
 			skos:altLabel "TON"@en ;
 			svu:isDerivedFrom :odor ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "threshold-odor-number"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#horton-strahler_order
@@ -5461,80 +5911,110 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Strahler_number" ;
 			skos:altLabel "strahler_number"@en ;
 			skos:altLabel "horton-strahler_number"@en ;
+			svu:hasPropertyQuantification :order ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "horton-strahler_order"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#antoine-vapor-pressure_a_parameter
 :antoine-vapor-pressure_a_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Antoine_equation#The_equation" ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "antoine-vapor-pressure_a_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#antoine-vapor-pressure_b_parameter
 :antoine-vapor-pressure_b_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Antoine_equation#The_equation" ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "O" ;
 			skos:prefLabel "antoine-vapor-pressure_b_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#antoine-vapor-pressure_c_parameter
 :antoine-vapor-pressure_c_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Antoine_equation#The_equation" ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "O" ;
 			skos:prefLabel "antoine-vapor-pressure_c_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#ashton-et-al_approach_angle_asymmetry_parameter
 :ashton-et-al_approach_angle_asymmetry_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "ashton-et-al_approach_angle_asymmetry_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#ashton-et-al_approach_angle_highness_parameter
 :ashton-et-al_approach_angle_highness_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "ashton-et-al_approach_angle_highness_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#brooks-corey_b_parameter
 :brooks-corey_b_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "brooks-corey_b_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#brooks-corey_eta_parameter
 :brooks-corey_eta_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "brooks-corey_eta_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#brooks-corey_lambda_parameter
 :brooks-corey_lambda_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "brooks-corey_lambda_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#brooks-corey-smith_c_parameter
 :brooks-corey-smith_c_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "brooks-corey-smith_c_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#brooks-corey-smith_pressure_head_offset_parameter
 :brooks-corey-smith_pressure_head_offset_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "brooks-corey-smith_pressure_head_offset_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#casson-model_a_parameter
 :casson-model_a_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "casson-model_a_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#gutenberg-richter-law_a_parameter
 :gutenberg-richter-law_a_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "gutenberg-richter-law_a_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#gutenberg-richter-law_b_parameter
 :gutenberg-richter-law_b_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "gutenberg-richter-law_b_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#havnes_parameter
 :havnes_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/w/index.php?title=Havnes_parameter&action=edit&redlink=1" ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "havnes_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#lame_first_parameter
@@ -5542,94 +6022,125 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Lam%C3%A9_parameters" ;
 			skos:altLabel "lame_lambda_parameter"@en ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "L^-1 M T^-2" ;
 			skos:prefLabel "lame_first_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#lockhart-martinelli_parameter
 :lockhart-martinelli_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Lockhart%E2%80%93Martinelli_parameter" ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "lockhart-martinelli_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#manning-formula_k_parameter
 :manning-formula_k_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "manning-formula_k_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#manning-formula_n_parameter
 :manning-formula_n_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Manning_formula#Manning_coefficient_of_roughness" ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "L^-0.33 T" ;
 			skos:prefLabel "manning-formula_n_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#modified-omori-law_c_parameter
 :modified-omori-law_c_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "modified-omori-law_c_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#modified-omori-law_k_parameter
 :modified-omori-law_k_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "modified-omori-law_k_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#modified-omori-law_p_parameter
 :modified-omori-law_p_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "modified-omori-law_p_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#pierce_parameter
 :pierce_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/w/index.php?title=Pierce_parameter&action=edit&redlink=1" ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "pierce_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#shields_parameter
 :shields_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Shields_parameter" ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "shields_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#smith-parlange_gamma_parameter
 :smith-parlange_gamma_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "smith-parlange_gamma_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#van-genuchten_alpha_parameter
 :van-genuchten_alpha_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "van-genuchten_alpha_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#van-genuchten_m_parameter
 :van-genuchten_m_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "van-genuchten_m_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#van-genuchten_n_parameter
 :van-genuchten_n_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "van-genuchten_n_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#wallis_parameter
 :wallis_parameter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/w/index.php?title=Wallis_parameter&action=edit&redlink=1" ;
+			svu:hasPropertyRole :parameter ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "wallis_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#activity_ratio
 :activity_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			skos:altLabel "percent_modern"@en ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "activity_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#relative_saturation
 :relative_saturation rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			skos:altLabel "percent_of_saturation"@en ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "relative_saturation"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#perimeter
 :perimeter rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Perimeter" ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "perimeter"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#wetted_perimeter
@@ -5700,6 +6211,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Permeability_(earth_sciences)#Intrinsic_and_absolute_permeability" ;
 			skos:altLabel "intrinsic_permeability"@en ;
 			svu:isDerivedFrom :permeability ;
+			svu:hasUnits "L^2" ;
 			skos:prefLabel "absolute_permeability"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#magnetic_permeability
@@ -5707,6 +6219,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Magnetic_permeability" ;
 			svu:isDerivedFrom :permeability ;
+			svu:hasUnits "L M T^-2 I^-2" ;
 			skos:prefLabel "magnetic_permeability"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#absolute_permittivity
@@ -5714,18 +6227,21 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Permittivity" ;
 			svu:isDerivedFrom :permittivity ;
+			svu:hasUnits "L^-3 M^-1 T^4 I^2" ;
 			skos:prefLabel "absolute_permittivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#perveance
 :perveance rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Perveance" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "perveance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#ph
 :ph rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Ph" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "ph"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#algal_growth_potential
@@ -5733,6 +6249,7 @@
 			svu:QuantitativeProperty ;
 			skos:altLabel "agp"@en ;
 			svu:isDerivedFrom :potential ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "algal_growth_potential"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#electric_potential
@@ -5741,6 +6258,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Electric_potential" ;
 			skos:altLabel "electric-field-potential"@en ;
 			svu:isDerivedFrom :potential ;
+			svu:hasUnits "L^2 M T^-3 I^-1" ;
 			skos:prefLabel "electric_potential"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#oxidation-reduction_potential
@@ -5750,6 +6268,7 @@
 			skos:altLabel "redox_potential"@en ;
 			skos:altLabel "orp"@en ;
 			svu:isDerivedFrom :potential ;
+			svu:hasUnits "L^2 M T^-3 I^-1" ;
 			skos:prefLabel "oxidation-reduction_potential"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#scalar_potential
@@ -5757,12 +6276,14 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Scalar_potential" ;
 			svu:isDerivedFrom :potential ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "scalar_potential"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#power
 :power rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Power_(physics)" ;
+			svu:hasUnits "L^2 M T^-3" ;
 			skos:prefLabel "power"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#output_power
@@ -5776,6 +6297,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Pressure" ;
 			skos:altLabel "total_pressure"@en ;
+			svu:hasUnits "L^-1 M T^-2" ;
 			skos:prefLabel "pressure"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#dynamic_pressure
@@ -5829,17 +6351,20 @@
 ###  http://www.geoscienceontology.org/svl/property#debt
 :debt rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "debt"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#income
 :income rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "income"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#price
 :price rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Price" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "price"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#kelley-blue-book_price
@@ -5873,37 +6398,44 @@
 ###  http://www.geoscienceontology.org/svl/property#savings
 :savings rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "savings"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#revenue
 :revenue rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "revenue"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#credit
 :credit rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "credit"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#profit
 :profit rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "profit"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#wage
 :wage rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "wage"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#probability
 :probability rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "probability"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#psychrometric_constant
 :psychrometric_constant rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Psychrometric_constant" ;
+			svu:hasUnits "L^-1 M O^-1 T^-2" ;
 			skos:prefLabel "psychrometric_constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#thermal_quality
@@ -5912,12 +6444,14 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Energy_quality" ;
 			skos:altLabel "energy_quality"@en ;
 			svu:isDerivedFrom :quality ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "thermal_quality"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#activity-per-mass_radioactivity
 :activity-per-mass_radioactivity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :radioactivity ;
+			svu:hasUnits "M^-1 T^-1" ;
 			skos:prefLabel "activity-per-mass_radioactivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#gross_activity-per-mass_radioactivity
@@ -5930,6 +6464,7 @@
 :activity-per-volume_radioactivity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :radioactivity ;
+			svu:hasUnits "L^-3 T^-1" ;
 			skos:prefLabel "activity-per-volume_radioactivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#gross_activity-per-volume_radioactivity
@@ -5942,6 +6477,7 @@
 :count-per-mass_radioactivity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :radioactivity ;
+			svu:hasUnits "M^-1 T^-1" ;
 			skos:prefLabel "count-per-mass_radioactivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#disintegration_count-per-mass_radioactivity
@@ -5954,6 +6490,7 @@
 :count-per-volume_radioactivity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :radioactivity ;
+			svu:hasUnits "L^-3 T^-1" ;
 			skos:prefLabel "count-per-volume_radioactivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#disintegration_count-per-volume_radioactivity
@@ -5966,6 +6503,7 @@
 :mass-per-mass_radioactivity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :radioactivity ;
+			svu:hasUnits "T^-1" ;
 			skos:prefLabel "mass-per-mass_radioactivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#gross_mass-per-mass_radioactivity
@@ -5978,6 +6516,7 @@
 :mass-per-volume_radioactivity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :radioactivity ;
+			svu:hasUnits "L^-3 M" ;
 			skos:prefLabel "mass-per-volume_radioactivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#per-time_radioactivity
@@ -5985,6 +6524,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Radioactive_decay" ;
 			svu:isDerivedFrom :radioactivity ;
+			svu:hasUnits "T^-1" ;
 			skos:prefLabel "per-time_radioactivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#scintillation_radioactivity
@@ -6046,36 +6586,43 @@
 :ablation_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Ablation" ;
+			svu:hasUnits "L^-2 M T^-1" ;
 			skos:prefLabel "ablation_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#accumulation_rate
 :accumulation_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L^-2 M T^-1" ;
 			skos:prefLabel "accumulation_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#advance_rate
 :advance_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L T^-1" ;
 			skos:prefLabel "advance_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#calving_rate
 :calving_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L T^-1" ;
 			skos:prefLabel "calving_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#consumption_rate
 :consumption_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "consumption_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#count_flow_rate
 :count_flow_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "T^-1" ;
 			skos:prefLabel "count_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#count-per-hour_rate
 :count-per-hour_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "count-per-hour_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#nonunique_count-per-hour_rate
@@ -6093,37 +6640,44 @@
 ###  http://www.geoscienceontology.org/svl/property#elevation_lowering_rate
 :elevation_lowering_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L T^-1" ;
 			skos:prefLabel "elevation_lowering_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#emission_rate
 :emission_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "emission_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#energy_flow_rate
 :energy_flow_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L M^2 T^-3" ;
 			skos:prefLabel "energy_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#energy-per-area_flow_rate
 :energy-per-area_flow_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L^-1 M^2 T^-3" ;
 			skos:prefLabel "energy-per-area_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#energy-per-length_flow_rate
 :energy-per-length_flow_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "M^2 T^-3" ;
 			skos:prefLabel "energy-per-length_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#energy-per-volume_dissipation_rate
 :energy-per-volume_dissipation_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L^-1 M T^-2" ;
 			skos:prefLabel "energy-per-volume_dissipation_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#infiltration_rate
 :infiltration_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Infiltration_(hydrology)" ;
+			svu:hasUnits "L T^-1" ;
 			skos:prefLabel "infiltration_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#pressure_lapse_rate
@@ -6132,6 +6686,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Vertical_pressure_variation" ;
 			skos:altLabel "vertical_pressure_variation"@en ;
 			svu:isDerivedFrom :lapse ;
+			svu:hasUnits "L^-2 M T^-2" ;
 			skos:prefLabel "pressure_lapse_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#static_pressure_lapse_rate
@@ -6153,6 +6708,7 @@
 :temperature_lapse_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Lapse_rate" ;
+			svu:hasUnits "L^-1 O" ;
 			skos:prefLabel "temperature_lapse_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#adiabatic_temperature_lapse_rate
@@ -6188,6 +6744,7 @@
 ###  http://www.geoscienceontology.org/svl/property#mass_rate
 :mass_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "M T^-1" ;
 			skos:prefLabel "mass_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass_demand_rate
@@ -6214,6 +6771,7 @@
 ###  http://www.geoscienceontology.org/svl/property#mass-per-area_rate
 :mass-per-area_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L^-2 M T^-1" ;
 			skos:prefLabel "mass-per-area_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-area_deposition_rate
@@ -6231,6 +6789,7 @@
 ###  http://www.geoscienceontology.org/svl/property#mass-per-volume_rate
 :mass-per-volume_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L^-3 M T^-1" ;
 			skos:prefLabel "mass-per-volume_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-volume_demand_rate
@@ -6242,6 +6801,7 @@
 ###  http://www.geoscienceontology.org/svl/property#mass-per-width_rate
 :mass-per-width_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L^-1 M T^-1" ;
 			skos:prefLabel "mass-per-width_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-width_flow_rate
@@ -6253,11 +6813,13 @@
 ###  http://www.geoscienceontology.org/svl/property#migration_rate
 :migration_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "T^-1" ;
 			skos:prefLabel "migration_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mole_rate
 :mole_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "T^-1" ;
 			skos:prefLabel "mole_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mole_flow_rate
@@ -6269,39 +6831,46 @@
 ###  http://www.geoscienceontology.org/svl/property#momentum_flow_rate
 :momentum_flow_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L M T^-2" ;
 			skos:prefLabel "momentum_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#nutation_rate
 :nutation_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Nutation" ;
+			svu:hasUnits "T^-1" ;
 			skos:prefLabel "nutation_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#precession_rate
 :precession_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Precession" ;
+			svu:hasUnits "T^-1" ;
 			skos:prefLabel "precession_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#production_rate
 :production_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "production_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#progradation_rate
 :progradation_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Progradation" ;
+			svu:hasUnits "L T^-1" ;
 			skos:prefLabel "progradation_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#retreat_rate
 :retreat_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L T^-1" ;
 			skos:prefLabel "retreat_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#rotation_rate
 :rotation_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "T^-1" ;
 			skos:prefLabel "rotation_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#roll_rotation_rate
@@ -6313,12 +6882,14 @@
 ###  http://www.geoscienceontology.org/svl/property#scour_rate
 :scour_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L T^-1" ;
 			skos:prefLabel "scour_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#strain_rate
 :strain_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Strain_rate" ;
+			svu:hasUnits "T^-1" ;
 			skos:prefLabel "strain_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#deviatoric_strain_rate
@@ -6331,6 +6902,7 @@
 :subsidence_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Subsidence" ;
+			svu:hasUnits "L T^-1" ;
 			skos:prefLabel "subsidence_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mean_subsidence_rate
@@ -6342,7 +6914,14 @@
 ###  http://www.geoscienceontology.org/svl/property#uplift_rate
 :uplift_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L T^-1" ;
 			skos:prefLabel "uplift_rate"@en .
+
+###  http://www.geoscienceontology.org/svl/property#volume_rate
+:volume_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasUnits "L^3 T^-1" ;
+			skos:prefLabel "volume_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume_flow_rate
 :volume_flow_rate rdf:type owl:NamedIndividual ,
@@ -6351,6 +6930,7 @@
 			skos:altLabel "discharge"@en ;
 			skos:altLabel "volumetric_flow_rate"@en ;
 			skos:altLabel "volume_velocity"@en ;
+			svu:isDerivedFrom :volume_rate ;
 			skos:prefLabel "volume_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#instantaneous_volume_flow_rate
@@ -6366,16 +6946,19 @@
 ###  http://www.geoscienceontology.org/svl/property#volume_withdrawal_rate
 :volume_withdrawal_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L^3 T^-1" ;
 			skos:prefLabel "volume_withdrawal_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume-per-length_flow_rate
 :volume-per-length_flow_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L^2 T^-1" ;
 			skos:prefLabel "volume-per-length_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume-per-width_flow_rate
 :volume-per-width_flow_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L^2 T^-1" ;
 			skos:prefLabel "volume-per-width_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#safety_rating
@@ -6383,6 +6966,8 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Safety#Standards_organizations" ;
 			svu:isDerivedFrom :safety ;
+			svu:hasPropertyQuantification :rating ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "safety_rating"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#motor-trend-magazine_safety_rating
@@ -6394,44 +6979,52 @@
 ###  http://www.geoscienceontology.org/svl/property#area_ratio
 :area_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "area_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#aspect_ratio
 :aspect_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "aspect_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#bowen_ratio
 :bowen_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Bowen_ratio" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "bowen_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#count_ratio
 :count_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "count_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#per-mil_ratio
 :per-mil_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "per-mil_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#damping_ratio
 :damping_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Damping_ratio" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "damping_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#relative_density_ratio
 :relative_density_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Relative_density" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "relative_density_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#electric_charge-to-mass_ratio
 :electric_charge-to-mass_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "M^-1 T I" ;
 			skos:prefLabel "electric_charge-to-mass_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#equivalence_ratio
@@ -6439,11 +7032,13 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Air-fuel_ratio#Equivalence_ratio" ;
 			skos:altLabel "equivalence_mass_ratio"@en ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "equivalence_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#flattening_ratio
 :flattening_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "flattening_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#second_flattening_ratio
@@ -6462,53 +7057,63 @@
 :gain_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Bicycle_gearing" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "gain_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#gas_constant_ratio
 :gas_constant_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "gas_constant_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#group-speed-to-phase-speed_ratio
 :group-speed-to-phase-speed_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "group-speed-to-phase-speed_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#heat_capacity_ratio
 :heat_capacity_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "heat_capacity_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#height-to-depth_ratio
 :height-to-depth_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "height-to-depth_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#horton_bifurcation_ratio
 :horton_bifurcation_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Strahler_number#Bifurcation_ratio" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "horton_bifurcation_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#relative_hydraulic_conductivity_ratio
 :relative_hydraulic_conductivity_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "relative_hydraulic_conductivity_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#relative_hydraulic_roughness_ratio
 :relative_hydraulic_roughness_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "relative_hydraulic_roughness_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#relative_magnetic_permeability_ratio
 :relative_magnetic_permeability_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Permeability_(electromagnetism)#Relative_permeability_and_magnetic_susceptibility" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "relative_magnetic_permeability_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass_ratio
 :mass_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "mass_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#relative_atomic_mass
@@ -6533,12 +7138,14 @@
 ###  http://www.geoscienceontology.org/svl/property#mass-to-electric-charge_ratio
 :mass-to-electric-charge_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "M T^-1 I^-1" ;
 			skos:prefLabel "mass-to-electric-charge_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mixing_ratio
 :mixing_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mixing_ratio" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "mixing_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass_mixing_ratio
@@ -6558,50 +7165,59 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Relative_permittivity" ;
 			skos:altLabel "dielectric_constant"@en ;
+			svu:hasUnits "dimensionless" ;
 			skos:prefLabel "relative_permittivity_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#poisson_ratio
 :poisson_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Poisson_ratio" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "poisson_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#slip_ratio
 :slip_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Induction_motor#Slip" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "slip_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#relative_smoothness_ratio
 :relative_smoothness_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "relative_smoothness_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#specific_gravity_ratio
 :specific_gravity_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Specific_gravity" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "specific_gravity_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#stroke_ratio
 :stroke_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "stroke_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#thickness-to-depth_ratio
 :thickness-to-depth_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "thickness-to-depth_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#velocity_ratio
 :velocity_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "velocity_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#reflectance
 :reflectance rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Reflectance" ;
+			svu:hasUnits "dimensionless" ;
 			skos:prefLabel "reflectance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#aerodynamic_resistance
@@ -6610,6 +7226,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Drag_(physics)" ;
 			skos:altLabel "drag"@en ;
 			svu:isDerivedFrom :resistance ;
+			svu:hasUnits "L M T^-2" ;
 			skos:prefLabel "aerodynamic_resistance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#stomatal_resistance
@@ -6618,6 +7235,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Stomatal_conductance" ;
 			skos:altLabel "inverse_of_stomatal_conductance"@en ;
 			svu:isDerivedFrom :resistance ;
+			svu:hasUnits "L^-2 T^-1 N" ;
 			skos:prefLabel "stomatal_resistance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#reference_stomatal_resistance
@@ -6632,6 +7250,7 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Electrical_resistivity" ;
 			skos:altLabel "inverse_of_electrical_conductivity"@en ;
 			svu:isDerivedFrom :resistivity ;
+			svu:hasUnits "L^3 M T^-3 I^-2" ;
 			skos:prefLabel "electrical_resistivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#thermal_resistivity
@@ -6640,6 +7259,7 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Thermal_resistivity" ;
 			skos:altLabel "inverse_of_thermal_conductivity"@en ;
 			svu:isDerivedFrom :resistivity ;
+			svu:hasUnits "L^-1 M^-1 O T^3" ;
 			skos:prefLabel "thermal_resistivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hydraulic_roughness
@@ -6647,6 +7267,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Hydraulic_roughness" ;
 			svu:isDerivedFrom :roughness ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "hydraulic_roughness"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#absolute_salinity
@@ -6654,18 +7275,21 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Salinity" ;
 			svu:isDerivedFrom :salinity ;
+			svu:hasUnits "dimensionless" ;
 			skos:prefLabel "absolute_salinity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#count_fraction_salinity
 :count_fraction_salinity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :salinity ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "count_fraction_salinity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-volume_salinity
 :mass-per-volume_salinity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :salinity ;
+			svu:hasUnits "L^-3 M" ;
 			skos:prefLabel "mass-per-volume_salinity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#practical-salinity-scale_salinity
@@ -6673,48 +7297,62 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Salinity#Definitions" ;
 			svu:isDerivedFrom :salinity ;
+			svu:hasPropertyQuantification :scale ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "practical-salinity-scale_salinity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#apparent-magnitude_scale
 :apparent-magnitude_scale rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Apparent_magnitude" ;
+			svu:hasPropertyQuantification :scale ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "apparent-magnitude_scale"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#modified-mercalli-intensity_scale
 :modified-mercalli-intensity_scale rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mercalli_intensity_scale" ;
+			svu:hasPropertyQuantification :scale ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "modified-mercalli-intensity_scale"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#moment-magnitude_scale
 :moment-magnitude_scale rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Moment_magnitude_scale" ;
+			svu:hasPropertyQuantification :scale ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "moment-magnitude_scale"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#platinum-cobalt_scale
 :platinum-cobalt_scale rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Pt/Co_scale" ;
+			svu:hasPropertyQuantification :scale ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "platinum-cobalt_scale"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#richter-magnitude_scale
 :richter-magnitude_scale rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Richter_magnitude_scale" ;
+			svu:hasPropertyQuantification :scale ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "richter-magnitude_scale"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#rockwell_scale
 :rockwell_scale rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Rockwell_scale" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "rockwell_scale"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#sinuosity
 :sinuosity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Sinuosity" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "sinuosity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#downvalley_sinuosity
@@ -6726,6 +7364,7 @@
 ###  http://www.geoscienceontology.org/svl/property#slip
 :slip rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "slip"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#seismic_slip
@@ -6734,6 +7373,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Fault_(geology)#Slip.2C_heave.2C_throw" ;
 			skos:altLabel "slip_vector"@en ;
 			svu:isDerivedFrom :slip ;
+			svu:hasPropertyType :vector ;
 			skos:prefLabel "seismic_slip"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mean_slope
@@ -6747,6 +7387,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Slope" ;
 			skos:altLabel "steepness"@en ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "slope"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#d8_slope
@@ -6766,6 +7407,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sodium_adsorption_ratio" ;
 			svu:isDerivedFrom :sodicity ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "sodium-adsorption-ratio_sodicity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-volume_solubility
@@ -6773,12 +7415,14 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Solubility" ;
 			svu:isDerivedFrom :solubility ;
+			svu:hasUnits "L^-3 M" ;
 			skos:prefLabel "mass-per-volume_solubility"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#sorptivity
 :sorptivity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sorptivity" ;
+			svu:hasUnits "L T^-0.5" ;
 			skos:prefLabel "sorptivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#philip_sorptivity
@@ -6791,18 +7435,21 @@
 :span rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Span_(engineering)" ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "span"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#specific_absorbance
 :specific_absorbance rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Specific_ultraviolet_absorbance" ;
+			svu:hasUnits "L^2 M^-1" ;
 			skos:prefLabel "specific_absorbance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#specific_energy
 :specific_energy rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Specific_energy" ;
+			svu:hasUnits "L^2 T^-2" ;
 			skos:prefLabel "specific_energy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#specific_kinetic_energy
@@ -6829,6 +7476,7 @@
 			skos:altLabel "orbital_frequency"@en ;
 			skos:altLabel "radian_frequency"@en ;
 			skos:altLabel "pulsatance"@en ;
+			svu:hasUnits "T^-1" ;
 			skos:prefLabel "angular_speed"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#rotation_angular_speed
@@ -6846,6 +7494,7 @@
 ###  http://www.geoscienceontology.org/svl/property#degrees-per-hour_speed
 :degrees-per-hour_speed rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "T^-1" ;
 			skos:prefLabel "degrees-per-hour_speed"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#drift_speed
@@ -6882,7 +7531,8 @@
 :linear_speed rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Speed" ;
-			skos:prefLabel "linear_speed"@en .
+			svu:hasUnits "L T^-1" ;
+			skos:prefLabel "speed"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#top_speed
 :top_speed rdf:type owl:NamedIndividual ,
@@ -6965,6 +7615,7 @@
 ###  http://www.geoscienceontology.org/svl/property#time_step
 :time_step rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "T" ;
 			skos:prefLabel "time_step"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#max_allowed_time_step
@@ -6989,6 +7640,7 @@
 :strain rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Deformation_(mechanics)#Strain" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "strain"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#deviatoric_plastic_strain
@@ -7000,6 +7652,7 @@
 ###  http://www.geoscienceontology.org/svl/property#strength
 :strength rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L^-1 M T^-2" ;
 			skos:prefLabel "strength"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#compressive_strength
@@ -7029,6 +7682,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Stress_(mechanics)" ;
 			skos:altLabel "mechanical_stress"@en ;
+			svu:hasUnits "L^-1 M T^-2" ;
 			skos:prefLabel "stress"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#deviatoric_stress
@@ -7109,6 +7763,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Electric_susceptibility" ;
 			svu:isDerivedFrom :susceptibility ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "electric_susceptibility"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#magnetic_susceptibility
@@ -7117,12 +7772,14 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Magnetic_susceptibility" ;
 			skos:altLabel "volume_magnetic_susceptibility"@en ;
 			svu:isDerivedFrom :susceptibility ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "magnetic_susceptibility"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#temperature
 :temperature rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Temperature" ;
+			svu:hasUnits "O" ;
 			skos:prefLabel "temperature"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#average_temperature
@@ -7279,57 +7936,77 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Surface_tension" ;
 			svu:isDerivedFrom :tension ;
+			svu:hasUnits "L^2 M T^-2" ;
 			skos:prefLabel "surface_tension"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#force_term
 :force_term rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :term ;
+			svu:hasUnits "L^-2 M T^-2" ;
 			skos:prefLabel "force_term"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#convection_term
 :convection_term rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :term ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "convection_term"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#convective_acceleration_term
 :convective_acceleration_term rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :term ;
+			svu:hasUnits "L^-2 M" ;
 			skos:prefLabel "convective_acceleration_term"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#diffusion_term
 :diffusion_term rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :term ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "diffusion_term"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#laplacian_term
 :laplacian_term rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :term ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "laplacian_term"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#pressure_gradient_term
 :pressure_gradient_term rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :term ;
+			svu:hasUnits "L^-2 M" ;
 			skos:prefLabel "pressure_gradient_term"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#source_term
 :source_term rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :term ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "source_term"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#unsteady_acceleration_term
 :unsteady_acceleration_term rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :term ;
+			svu:hasUnits "L^-2 M" ;
 			skos:prefLabel "unsteady_acceleration_term"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#viscosity_term
 :viscosity_term rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole :term ;
+			svu:hasUnits "L^-2 M" ;
 			skos:prefLabel "viscosity_term"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#thickness
 :thickness rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Thickness" ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "thickness"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#initial_thickness
@@ -7348,6 +8025,7 @@
 :time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Time" ;
+			svu:hasUnits "T" ;
 			skos:prefLabel "time"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#acceleration_time
@@ -7486,12 +8164,14 @@
 :torque rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Torque" ;
+			svu:hasUnits "L^2 M T^-2" ;
 			skos:prefLabel "torque"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#transmittance
 :transmittance rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Transmittance" ;
+			svu:hasUnits "dimensionless" ;
 			skos:prefLabel "transmittance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#jackson_turbidity
@@ -7499,12 +8179,14 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Turbidity#Measurement" ;
 			svu:isDerivedFrom :turbidity ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "jackson_turbidity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-volume_turbidity
 :mass-per-volume_turbidity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :turbidity ;
+			svu:hasUnits "L^-3 M" ;
 			skos:prefLabel "mass-per-volume_turbidity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#nephelometric_turbidity
@@ -7512,6 +8194,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Turbidity#Measurement" ;
 			svu:isDerivedFrom :turbidity ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "nephelometric_turbidity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#formazin_nephelometric_turbidity
@@ -7519,12 +8202,14 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Turbidity#Measurement" ;
 			svu:isDerivedFrom :turbidity ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "formazin_nephelometric_turbidity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#in-vivo_fluorescence
 :in-vivo_fluorescence rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :fluorescence ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "in-vivo_fluorescence"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#relative_fluorescence
@@ -7533,6 +8218,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Relative_fluorescence_units" ;
 			skos:altLabel "rfu"@en ;
 			svu:isDerivedFrom :fluorescence ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "relative_fluorescence"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#tritium_fluorescence
@@ -7541,18 +8227,23 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Tritium#Use_as_an_oceanic_transient_tracer" ;
 			skos:altLabel "tu"@en ;
 			svu:isDerivedFrom :fluorescence ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "tritium_fluorescence"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#normal-vector
 :normal-vector rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Normal_(geometry)" ;
+			svu:hasPropertyType :vector ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "normal-vector"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#tangent-vector
 :tangent-vector rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Tangent" ;
+			svu:hasPropertyType :vector ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "tangent-vector"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#angular_velocity
@@ -7560,6 +8251,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Angular_velocity" ;
 			svu:isDerivedFrom :velocity ;
+			svu:hasUnits "T^-1" ;
 			skos:prefLabel "angular_velocity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#linear_velocity
@@ -7567,6 +8259,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Velocity" ;
 			svu:isDerivedFrom :velocity ;
+			svu:hasUnits "L T^-1" ;
 			skos:prefLabel "velocity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#bolus_velocity
@@ -7632,6 +8325,7 @@
 ###  http://www.geoscienceontology.org/svl/property#dynamic_viscosity
 :dynamic_viscosity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L^-1 M T^-1" ;
 			skos:prefLabel "dynamic_viscosity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#extensional_dynamic_viscosity
@@ -7679,6 +8373,7 @@
 ###  http://www.geoscienceontology.org/svl/property#kinematic_viscosity
 :kinematic_viscosity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasUnits "L^2 T^-1" ;
 			skos:prefLabel "kinematic_viscosity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#extensional_kinematic_viscosity
@@ -7706,12 +8401,14 @@
 			skos:altLabel "electric_potential_difference"@en ;
 			skos:altLabel "electric_pressure"@en ;
 			skos:altLabel "electric_tension"@en ;
+			svu:hasUnits "L^2 M T^-3 I^-1" ;
 			skos:prefLabel "voltage"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume
 :volume rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Volume" ;
+			svu:hasUnits "L^3" ;
 			skos:prefLabel "volume"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#initial_volume
@@ -7732,6 +8429,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Vorticity" ;
 			skos:altLabel "angular_vorticity"@en ;
+			svu:hasUnits "T^-2" ;
 			skos:prefLabel "vorticity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#bolus_vorticity
@@ -7750,6 +8448,7 @@
 :wavelength rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Wavelength" ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "wavelength"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#compton_wavelength
@@ -7764,6 +8463,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Wavenumber" ;
 			svu:isDerivedFrom :wavenumber ;
+			svu:hasUnits "L^-1" ;
 			skos:prefLabel "angular_wavenumber"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#linear_wavenumber
@@ -7771,12 +8471,14 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Wavenumber" ;
 			svu:isDerivedFrom :wavenumber ;
+			svu:hasUnits "L^-1 I" ;
 			skos:prefLabel "linear_wavenumber"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#weight
 :weight rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Weight" ;
+			svu:hasUnits "L M T^-2" ;
 			skos:prefLabel "weight"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#atomic_weight
@@ -7796,6 +8498,7 @@
 :width rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Width" ;
+			svu:hasUnits "L" ;
 			skos:prefLabel "width"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#bankfull_width
@@ -7826,6 +8529,7 @@
 :year rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Year" ;
+			svu:hasUnits "none" ;
 			skos:prefLabel "year"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#manufacture_year
@@ -7838,10 +8542,12 @@
 :mass-per-area_yield rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :yield ;
+			svu:hasUnits "L^-3 M" ;
 			skos:prefLabel "mass-per-area_yield"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-time_yield
 :mass-per-time_yield rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :yield ;
+			svu:hasUnits "M T^-1" ;
 			skos:prefLabel "mass-per-time_yield"@en .

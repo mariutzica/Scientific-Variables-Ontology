@@ -51,6 +51,14 @@ property_ttl = open( ext_output + 'svo-lower-property.ttl', 'w' )
 
 utils.open_write_file( property_ttl, 'Property' )
 
+################################
+#   DATA PREPROCESSING         #
+################################
+
+utils.preprocess_quantity( quantitative_property_vocabulary )
+utils.assign_units( quantitative_property_vocabulary )
+utils.create_unit_strings( quantitative_property_vocabulary )
+
 ##################################
 #    Write Base Individuals      #
 ##################################

@@ -79,6 +79,50 @@ def load_data( ext, filename, usecols=None ):
         sys.exit(0)
     return data
 
+# Format quantity information for futher processing
+def preprocess_quantity( quantity ):    
+    # Set non-values to 0 in units columns, reset units for ratios
+    col = [ 'L', 'M', 'O', 'T', 'I', 'N', 'radian', 'number', 'currency' ]
+    quantity[ col ] = quantity[ col ].replace( '', 0 )
+    quantity.loc[ quantity[ 'unitless_ratio' ] == 'yes', col ] = 0
+
+# use root_quantity columne to assign units to modified quantities    
+def assign_units( quantity ):
+    dim = [ [ 'L', 'M', 'O', 'T', 'I', 'N'] ]
+    for i in quantity.index:
+        if quantity.loc[i,'root_quantity'] != '':
+            quantity.loc[i,dim[0]] = quantity.loc[ \
+                        (quantity['quantity_id']==quantity.loc[i,'root_quantity']), \
+                        dim[0]].iloc[0]
+
+# create strings to represent units;
+# general form, L^# M^# O^# T^# I^# N^#
+def create_unit_strings(quantities):
+    quantities['units_string'] = ''
+    quantities.loc[ quantities['L'] != 0, 'units_string' ] += \
+                    'L^' + quantities.loc[quantities['L']!=0,'L']\
+                    .map('{:,.2g}'.format) + ' '
+    quantities.loc[ quantities['M'] != 0, 'units_string' ] += \
+                    'M^' + quantities.loc[quantities['M']!=0,'M']\
+                    .map('{:,.2g}'.format)+' '
+    quantities.loc[ quantities['O'] != 0, 'units_string' ] += \
+                    'O^' + quantities.loc[quantities['O']!=0,'O']\
+                    .map('{:,.2g}'.format)+' '
+    quantities.loc[ quantities['T'] != 0, 'units_string' ] += \
+                    'T^' + quantities.loc[quantities['T']!=0,'T']\
+                    .map('{:,.2g}'.format)+' '
+    quantities.loc[ quantities['I'] != 0, 'units_string' ] += \
+                    'I^' + quantities.loc[quantities['I']!=0,'I']\
+                    .map('{:,.2g}'.format)+' '
+    quantities.loc[ quantities['N'] != 0, 'units_string' ] += \
+                    'N^' + quantities.loc[quantities['N']!=0,'N']\
+                    .map('{:,.2g}'.format)+' '
+    quantities['units_string'] = quantities['units_string']\
+                                .str.replace('\^1 ',' ').str.rstrip(' ')\
+                                .str.rstrip('.0')
+    quantities.loc[ quantities[ 'unitless_ratio' ] == 'yes', \
+                  'units_string' ] = 'dimensionless'
+                   
 ##############################################################################
 #                                                                            #
 #                       PRINT RELATED FUNCTIONS                              #
@@ -145,6 +189,11 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 pquant = vocab.loc[ index, 'property_quantification' ]
                 ttl_file.write( attribute.format( 'hasPropertyQuantification', \
                             ':' + urllib.quote( pquant ), ';' ) )
+            if vocab.loc[ index, 'quantity_taxonomic' ] == '' :
+                    units = vocab.loc[ index, 'units_string' ]
+                    ttl_file.write( attribute.format( 'hasUnits', \
+                            '\"' + (units if units!='' else 'none') + \
+                            '\"', ';' ) )
         if collabel + '_label' in vocab.columns.values:
             element = vocab.loc[ index, collabel + '_label' ]
         ttl_file.write( preflabel.format( element ) )
