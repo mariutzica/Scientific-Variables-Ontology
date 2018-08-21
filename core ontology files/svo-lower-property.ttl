@@ -17,10 +17,15 @@
 #    Property   
 # 
 #################################################################
-##Last generated on: 2018-08-21 15:33
+##Last generated on: 2018-08-21 15:55
 
 ###Property
 
+
+###  http://www.geoscienceontology.org/svl/property#activity
+:activity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "activity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#ability
 :ability rdf:type owl:NamedIndividual ,
@@ -130,6 +135,11 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Density" ;
 			skos:prefLabel "density"@en .
 
+###  http://www.geoscienceontology.org/svl/property#diversity
+:diversity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "diversity"@en .
+
 ###  http://www.geoscienceontology.org/svl/property#efficiency
 :efficiency rdf:type owl:NamedIndividual ,
 			svu:Property ;
@@ -161,6 +171,11 @@
 :fertility rdf:type owl:NamedIndividual ,
 			svu:Property ;
 			skos:prefLabel "fertility"@en .
+
+###  http://www.geoscienceontology.org/svl/property#fluorescence
+:fluorescence rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "fluorescence"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#frequency
 :frequency rdf:type owl:NamedIndividual ,
@@ -229,6 +244,11 @@
 			svu:Property ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Intensity" ;
 			skos:prefLabel "intensity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#liquidity
+:liquidity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "liquidity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#magnitude
 :magnitude rdf:type owl:NamedIndividual ,
@@ -315,6 +335,11 @@
 			svu:Property ;
 			skos:prefLabel "phase"@en .
 
+###  http://www.geoscienceontology.org/svl/property#plasticity
+:plasticity rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "plasticity"@en .
+
 ###  http://www.geoscienceontology.org/svl/property#potential
 :potential rdf:type owl:NamedIndividual ,
 			svu:Property ;
@@ -369,6 +394,11 @@
 			svu:Property ;
 			skos:prefLabel "roughness"@en .
 
+###  http://www.geoscienceontology.org/svl/property#safety
+:safety rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "safety"@en .
+
 ###  http://www.geoscienceontology.org/svl/property#salinity
 :salinity rdf:type owl:NamedIndividual ,
 			svu:Property ;
@@ -389,6 +419,11 @@
 :sodicity rdf:type owl:NamedIndividual ,
 			svu:Property ;
 			skos:prefLabel "sodicity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#solubility
+:solubility rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "solubility"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#speed
 :speed rdf:type owl:NamedIndividual ,
@@ -541,6 +576,11 @@
 			svu:Property ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Resilience" ;
 			skos:prefLabel "resilience"@en .
+
+###  http://www.geoscienceontology.org/svl/property#wavenumber
+:wavenumber rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "wavenumber"@en .
 
 
 ###PropertyQuantification
@@ -3117,7 +3157,7 @@
 :hausdorff_dimension rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Hausdorff_dimension" ;
-			svu:isDerivedFrom :dimension ;
+			svu:hasPropertyType :dimension ;
 			svu:hasUnits "none" ;
 			skos:prefLabel "hausdorff_dimension"@en .
 
@@ -6685,7 +6725,6 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Vertical_pressure_variation" ;
 			skos:altLabel "vertical_pressure_variation"@en ;
-			svu:isDerivedFrom :lapse ;
 			svu:hasUnits "L^-2 M T^-2" ;
 			skos:prefLabel "pressure_lapse_rate"@en .
 
