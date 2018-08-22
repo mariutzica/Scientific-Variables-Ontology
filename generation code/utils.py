@@ -190,10 +190,18 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 ttl_file.write( attribute.format( 'hasPropertyQuantification', \
                             ':' + urllib.quote( pquant ), ';' ) )
             if vocab.loc[ index, 'quantity_taxonomic' ] == '' :
-                    units = vocab.loc[ index, 'units_string' ]
-                    ttl_file.write( attribute.format( 'hasUnits', \
+                units = vocab.loc[ index, 'units_string' ]
+                ttl_file.write( attribute.format( 'hasUnits', \
                             '\"' + (units if units!='' else 'none') + \
                             '\"', ';' ) )
+        if collabel == 'operator':
+            if vocab.loc[ index, 'operator_taxonomic' ] == '' :
+                units = vocab.loc[ index, 'units' ]
+                ttl_file.write( attribute.format( 'hasMultiplierUnits', \
+                            '\"' + units + '\"', ';' ) )
+                units = vocab.loc[ index, 'f_units' ]
+                ttl_file.write( attribute.format( 'hasPowerUnits', \
+                            str(units), ';' ) )
         if collabel + '_label' in vocab.columns.values:
             element = vocab.loc[ index, collabel + '_label' ]
         ttl_file.write( preflabel.format( element ) )

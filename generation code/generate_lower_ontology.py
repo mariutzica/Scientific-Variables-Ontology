@@ -29,6 +29,8 @@ property_role_file  = 'property_role.csv'
 property_type_file  = 'property_type.csv'
 quantitative_property_file  = 'quantitative_property.csv'
 
+operator_file  = 'operator.csv'
+
 ################################
 #   INITIAL DATA LOAD          #
 ################################
@@ -42,14 +44,18 @@ property_type_vocabulary = \
             utils.load_data( ext_vocabulary, property_type_file )
 quantitative_property_vocabulary = \
             utils.load_data( ext_vocabulary, quantitative_property_file )
-           
+operator_vocabulary = \
+            utils.load_data( ext_vocabulary, operator_file )
+            
 ######################
 #  OUTPUT FILE SETUP #
 ######################
 
 property_ttl = open( ext_output + 'svo-lower-property.ttl', 'w' )
+operator_ttl = open( ext_output + 'svo-lower-operator.ttl', 'w' )
 
 utils.open_write_file( property_ttl, 'Property' )
+utils.open_write_file( operator_ttl, 'Operator' )
 
 ################################
 #   DATA PREPROCESSING         #
@@ -90,8 +96,13 @@ utils.create_bb_file( quantitative_property_vocabulary, property_ttl, \
                       'QuantitativeProperty', 'quantity', \
                       'property', label = label )
 
+# create Operator file
+label = '\n\n###Operator\n\n'
+utils.create_bb_file( operator_vocabulary, operator_ttl, \
+                      'Operator', 'operator', 'operator', label = label )
 ######################
 #    File Cleanup    #
 ######################
 
 property_ttl.close()
+operator_ttl.close()

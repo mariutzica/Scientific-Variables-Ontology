@@ -44,6 +44,16 @@
 #    Data properties
 #################################################################
 
+###  http://www.geoscienceontology.org/svu#hasMultiplierUnits
+:hasMultiplierUnits rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :hasUnits .
+
+
+###  http://www.geoscienceontology.org/svu#hasPowerUnits
+:hasPowerUnits rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :hasUnits .
+
+
 ###  http://www.geoscienceontology.org/svu#hasUnits
 :hasUnits rdf:type owl:DatatypeProperty .
 

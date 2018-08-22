@@ -17,7 +17,7 @@
 #    Property   
 # 
 #################################################################
-##Last generated on: 2018-08-21 15:55
+##Last generated on: 2018-08-22 15:16
 
 ###Property
 
@@ -701,6 +701,12 @@
 			svu:PropertyType ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Coordinate_system" ;
 			skos:prefLabel "coordinate"@en .
+
+###  http://www.geoscienceontology.org/svl/property#order
+:order rdf:type owl:NamedIndividual ,
+			svu:PropertyType ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Order_(mathematics)" ;
+			skos:prefLabel "order"@en .
 
 
 ###QuantitativeProperty (Quantity)
@@ -5951,7 +5957,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Strahler_number" ;
 			skos:altLabel "strahler_number"@en ;
 			skos:altLabel "horton-strahler_number"@en ;
-			svu:hasPropertyQuantification :order ;
+			svu:hasPropertyType :order ;
 			svu:hasUnits "none" ;
 			skos:prefLabel "horton-strahler_order"@en .
 
