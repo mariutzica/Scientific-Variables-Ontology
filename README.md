@@ -2,6 +2,6 @@
 
 This repository will contain all supporting materials for the Scientific 
 Variables Ontology. More information about the origins of this ontology 
-can be found [here](www.geoscienceontology.org).
+can be found [here](http://www.geoscienceontology.org).
 
 
