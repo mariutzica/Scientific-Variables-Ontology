@@ -30,6 +30,7 @@ property_type_file  = 'property_type.csv'
 quantitative_property_file  = 'quantitative_property.csv'
 
 operator_file  = 'operator.csv'
+operator_quantity_file  = 'quantitative_property_with_operator.csv'
 
 ################################
 #   INITIAL DATA LOAD          #
@@ -46,6 +47,8 @@ quantitative_property_vocabulary = \
             utils.load_data( ext_vocabulary, quantitative_property_file )
 operator_vocabulary = \
             utils.load_data( ext_vocabulary, operator_file )
+operator_quantity_vocabulary = \
+            utils.load_data( ext_vocabulary, operator_quantity_file )
             
 ######################
 #  OUTPUT FILE SETUP #
@@ -62,8 +65,13 @@ utils.open_write_file( operator_ttl, 'Operator' )
 ################################
 
 utils.preprocess_quantity( quantitative_property_vocabulary )
-utils.assign_units( quantitative_property_vocabulary )
+compound_operator_vocabulary = utils.preprocess_operator( operator_vocabulary, \
+                               operator_quantity_vocabulary )
+
+utils.assign_units( quantitative_property_vocabulary, \
+                    operator_quantity_vocabulary, operator_vocabulary )
 utils.create_unit_strings( quantitative_property_vocabulary )
+utils.create_unit_strings( operator_quantity_vocabulary )
 
 ##################################
 #    Write Base Individuals      #
@@ -96,10 +104,19 @@ utils.create_bb_file( quantitative_property_vocabulary, property_ttl, \
                       'QuantitativeProperty', 'quantity', \
                       'property', label = label )
 
+label = '\n\n###OperatorQuantitativeProperty (OperatorQuantity)\n\n'
+utils.create_bb_file( operator_quantity_vocabulary, property_ttl, \
+                      'OperatorQuantitativeProperty', 'operator_quantity', \
+                      'property', label = label )
+
 # create Operator file
 label = '\n\n###Operator\n\n'
 utils.create_bb_file( operator_vocabulary, operator_ttl, \
                       'Operator', 'operator', 'operator', label = label )
+label = '\n\n###(Compound)Operator\n\n'
+utils.create_bb_file( compound_operator_vocabulary, operator_ttl, \
+                      'Operator', 'operator', 'operator', label = label )
+
 ######################
 #    File Cleanup    #
 ######################

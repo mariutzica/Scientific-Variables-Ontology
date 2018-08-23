@@ -17,7 +17,7 @@
 #    Property   
 # 
 #################################################################
-##Last generated on: 2018-08-22 15:16
+##Last generated on: 2018-08-23 12:59
 
 ###Property
 
@@ -2651,7 +2651,7 @@
 :detection_number_count rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :count ;
-			skos:prefLabel "detection_number_count"@en .
+			skos:prefLabel "detection_count"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#number_count
 :number_count rdf:type owl:NamedIndividual ,
@@ -6991,7 +6991,7 @@
 ###  http://www.geoscienceontology.org/svl/property#volume_withdrawal_rate
 :volume_withdrawal_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
-			svu:hasUnits "L^3 T^-1" ;
+			svu:hasUnits "L^3" ;
 			skos:prefLabel "volume_withdrawal_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume-per-length_flow_rate
@@ -7894,12 +7894,13 @@
 			svu:isDerivedFrom :temperature ;
 			skos:prefLabel "heat-content_temperature"@en .
 
-###  http://www.geoscienceontology.org/svl/property#pressure_melting-point_temperature
-:pressure_melting-point_temperature rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/property#melting-point_temperature
+:melting-point_temperature rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Melting_point" ;
 			skos:altLabel "melting-point"@en ;
 			svu:isDerivedFrom :temperature ;
-			skos:prefLabel "pressure_melting-point_temperature"@en .
+			skos:prefLabel "melting-point_temperature"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#potential_temperature
 :potential_temperature rdf:type owl:NamedIndividual ,
@@ -8596,3 +8597,2986 @@
 			svu:isDerivedFrom :yield ;
 			svu:hasUnits "M T^-1" ;
 			skos:prefLabel "mass-per-time_yield"@en .
+
+
+###OperatorQuantitativeProperty (OperatorQuantity)
+
+
+###  http://www.geoscienceontology.org/svl/property#x_component_of_acceleration
+:x_component_of_acceleration rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :acceleration ;
+			svu:hasUnits "L T^-2" ;
+			svu:hasOperator <operator#x_component> ;
+			skos:prefLabel "x_component_of_acceleration"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_component_of_acceleration
+:y_component_of_acceleration rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :acceleration ;
+			svu:hasUnits "L T^-2" ;
+			svu:hasOperator <operator#y_component> ;
+			skos:prefLabel "y_component_of_acceleration"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_component_of_acceleration
+:z_component_of_acceleration rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :acceleration ;
+			svu:hasUnits "L T^-2" ;
+			svu:hasOperator <operator#z_component> ;
+			skos:prefLabel "z_component_of_acceleration"@en .
+
+###  http://www.geoscienceontology.org/svl/property#max_of_altitude
+:max_of_altitude rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :altitude ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#max> ;
+			skos:prefLabel "max_of_altitude"@en .
+
+###  http://www.geoscienceontology.org/svl/property#peak_time_of_altitude
+:peak_time_of_altitude rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :altitude ;
+			svu:hasUnits "T" ;
+			svu:hasOperator <operator#peak_time> ;
+			skos:prefLabel "peak_time_of_altitude"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_derivative_of_depth
+:east_derivative_of_depth rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :depth ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#east_derivative> ;
+			skos:prefLabel "east_derivative_of_depth"@en .
+
+###  http://www.geoscienceontology.org/svl/property#max_of_depth
+:max_of_depth rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :depth ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#max> ;
+			skos:prefLabel "max_of_depth"@en .
+
+###  http://www.geoscienceontology.org/svl/property#mean_of_depth
+:mean_of_depth rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :depth ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#mean> ;
+			skos:prefLabel "mean_of_depth"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_derivative_of_depth
+:north_derivative_of_depth rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :depth ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#north_derivative> ;
+			skos:prefLabel "north_derivative_of_depth"@en .
+
+###  http://www.geoscienceontology.org/svl/property#peak_time_of_depth
+:peak_time_of_depth rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :depth ;
+			svu:hasUnits "T" ;
+			svu:hasOperator <operator#peak_time> ;
+			skos:prefLabel "peak_time_of_depth"@en .
+
+###  http://www.geoscienceontology.org/svl/property#range_of_depth
+:range_of_depth rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :depth ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#range> ;
+			skos:prefLabel "range_of_depth"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_depth
+:time_derivative_of_depth rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :depth ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#time_derivative> ;
+			skos:prefLabel "time_derivative_of_depth"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_derivative_of_depth
+:x_derivative_of_depth rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :depth ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#x_derivative> ;
+			skos:prefLabel "x_derivative_of_depth"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_derivative_of_depth
+:y_derivative_of_depth rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :depth ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#y_derivative> ;
+			skos:prefLabel "y_derivative_of_depth"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_max_of_mean_depth
+:domain_max_of_mean_depth rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :mean_depth ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#domain_max> ;
+			skos:prefLabel "domain_max_of_mean_depth"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_min_of_mean_depth
+:domain_min_of_mean_depth rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :mean_depth ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#domain_min> ;
+			skos:prefLabel "domain_min_of_mean_depth"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_mean_depth
+:time_derivative_of_mean_depth rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :mean_depth ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#time_derivative> ;
+			skos:prefLabel "time_derivative_of_mean_depth"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_max_of_mean_depth
+:time_max_of_mean_depth rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :mean_depth ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#time_max> ;
+			skos:prefLabel "time_max_of_mean_depth"@en .
+
+###  http://www.geoscienceontology.org/svl/property#min_of_distance
+:min_of_distance rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :distance ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#min> ;
+			skos:prefLabel "min_of_distance"@en .
+
+###  http://www.geoscienceontology.org/svl/property#max_of_duration
+:max_of_duration rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :duration ;
+			svu:hasUnits "T" ;
+			svu:hasOperator <operator#max> ;
+			skos:prefLabel "max_of_duration"@en .
+
+###  http://www.geoscienceontology.org/svl/property#antigradient_of_elevation
+:antigradient_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L^2" ;
+			svu:hasOperator <operator#antigradient> ;
+			skos:prefLabel "antigradient_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#cross-stream_derivative_of_elevation
+:cross-stream_derivative_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#cross-stream_derivative> ;
+			skos:prefLabel "cross-stream_derivative_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_max_of_elevation
+:domain_max_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#domain_max> ;
+			skos:prefLabel "domain_max_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_max_of_increment_of_elevation
+:domain_max_of_increment_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#domain_max_of_increment> ;
+			skos:prefLabel "domain_max_of_increment_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_min_of_elevation
+:domain_min_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#domain_min> ;
+			skos:prefLabel "domain_min_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_min_of_increment_of_elevation
+:domain_min_of_increment_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#domain_min_of_increment> ;
+			skos:prefLabel "domain_min_of_increment_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_range_of_elevation
+:domain_range_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#domain_range> ;
+			skos:prefLabel "domain_range_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_time_max_of_elevation
+:domain_time_max_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#domain_time_max> ;
+			skos:prefLabel "domain_time_max_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_time_min_of_elevation
+:domain_time_min_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#domain_time_min> ;
+			skos:prefLabel "domain_time_min_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#downstream_derivative_of_elevation
+:downstream_derivative_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#downstream_derivative> ;
+			skos:prefLabel "downstream_derivative_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#increment_of_elevation
+:increment_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#increment> ;
+			skos:prefLabel "increment_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#laplacian_of_elevation
+:laplacian_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#laplacian> ;
+			skos:prefLabel "laplacian_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#max_of_elevation
+:max_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#max> ;
+			skos:prefLabel "max_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#mean_of_elevation
+:mean_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#mean> ;
+			skos:prefLabel "mean_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#mid-range_of_elevation
+:mid-range_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#mid-range> ;
+			skos:prefLabel "mid-range_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#min_of_elevation
+:min_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#min> ;
+			skos:prefLabel "min_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#range_of_elevation
+:range_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#range> ;
+			skos:prefLabel "range_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_elevation
+:time_derivative_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#time_derivative> ;
+			skos:prefLabel "time_derivative_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_max_of_elevation
+:time_max_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#time_max> ;
+			skos:prefLabel "time_max_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_min_of_elevation
+:time_min_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#time_min> ;
+			skos:prefLabel "time_min_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_derivative_of_elevation
+:x_derivative_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#x_derivative> ;
+			skos:prefLabel "x_derivative_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_x_derivative_of_elevation
+:x_x_derivative_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#x_x_derivative> ;
+			skos:prefLabel "x_x_derivative_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_y_derivative_of_elevation
+:x_y_derivative_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#x_y_derivative> ;
+			skos:prefLabel "x_y_derivative_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_derivative_of_elevation
+:y_derivative_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#y_derivative> ;
+			skos:prefLabel "y_derivative_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_y_derivative_of_elevation
+:y_y_derivative_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#y_y_derivative> ;
+			skos:prefLabel "y_y_derivative_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#difference_of_elevation
+:difference_of_elevation rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			skos:prefLabel "difference_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/property#loss_of_energy
+:loss_of_energy rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :energy ;
+			svu:hasUnits "L^2 M T^-2" ;
+			svu:hasOperator <operator#loss> ;
+			skos:prefLabel "loss_of_energy"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_extent
+:time_derivative_of_extent rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :extent ;
+			svu:hasUnits "L^2 T^-1" ;
+			svu:hasOperator <operator#time_derivative> ;
+			skos:prefLabel "time_derivative_of_extent"@en .
+
+###  http://www.geoscienceontology.org/svl/property#half_of_fanning_friction_factor
+:half_of_fanning_friction_factor rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :fanning_friction_factor ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#half> ;
+			skos:prefLabel "half_of_fanning_friction_factor"@en .
+
+###  http://www.geoscienceontology.org/svl/property#down_component_of_electric-d-field
+:down_component_of_electric-d-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :electric-d-field ;
+			svu:hasUnits "L^-2 T I" ;
+			svu:hasOperator <operator#down_component> ;
+			skos:prefLabel "down_component_of_electric-d-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_component_of_electric-d-field
+:east_component_of_electric-d-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :electric-d-field ;
+			svu:hasUnits "L^-2 T I" ;
+			svu:hasOperator <operator#east_component> ;
+			skos:prefLabel "east_component_of_electric-d-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_component_of_electric-d-field
+:north_component_of_electric-d-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :electric-d-field ;
+			svu:hasUnits "L^-2 T I" ;
+			svu:hasOperator <operator#north_component> ;
+			skos:prefLabel "north_component_of_electric-d-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#down_component_of_electric-e-field
+:down_component_of_electric-e-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :electric-e-field ;
+			svu:hasUnits "L M T^-3 I^-1" ;
+			svu:hasOperator <operator#down_component> ;
+			skos:prefLabel "down_component_of_electric-e-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_component_of_electric-e-field
+:east_component_of_electric-e-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :electric-e-field ;
+			svu:hasUnits "L M T^-3 I^-1" ;
+			svu:hasOperator <operator#east_component> ;
+			skos:prefLabel "east_component_of_electric-e-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_component_of_electric-e-field
+:north_component_of_electric-e-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :electric-e-field ;
+			svu:hasUnits "L M T^-3 I^-1" ;
+			svu:hasOperator <operator#north_component> ;
+			skos:prefLabel "north_component_of_electric-e-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#down_component_of_electric-p-field
+:down_component_of_electric-p-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :electric-p-field ;
+			svu:hasUnits "L^-2 T I" ;
+			svu:hasOperator <operator#down_component> ;
+			skos:prefLabel "down_component_of_electric-p-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_component_of_electric-p-field
+:east_component_of_electric-p-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :electric-p-field ;
+			svu:hasUnits "L^-2 T I" ;
+			svu:hasOperator <operator#east_component> ;
+			skos:prefLabel "east_component_of_electric-p-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_component_of_electric-p-field
+:north_component_of_electric-p-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :electric-p-field ;
+			svu:hasUnits "L^-2 T I" ;
+			svu:hasOperator <operator#north_component> ;
+			skos:prefLabel "north_component_of_electric-p-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#down_component_of_magnetic-b-field
+:down_component_of_magnetic-b-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :magnetic-b-field ;
+			svu:hasUnits "M T^-2 I^-1" ;
+			svu:hasOperator <operator#down_component> ;
+			skos:prefLabel "down_component_of_magnetic-b-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_component_of_magnetic-b-field
+:east_component_of_magnetic-b-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :magnetic-b-field ;
+			svu:hasUnits "M T^-2 I^-1" ;
+			svu:hasOperator <operator#east_component> ;
+			skos:prefLabel "east_component_of_magnetic-b-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_component_of_magnetic-b-field
+:north_component_of_magnetic-b-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :magnetic-b-field ;
+			svu:hasUnits "M T^-2 I^-1" ;
+			svu:hasOperator <operator#north_component> ;
+			skos:prefLabel "north_component_of_magnetic-b-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#down_component_of_magnetic-h-field
+:down_component_of_magnetic-h-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :magnetic-h-field ;
+			svu:hasUnits "L^-1 I" ;
+			svu:hasOperator <operator#down_component> ;
+			skos:prefLabel "down_component_of_magnetic-h-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_component_of_magnetic-h-field
+:east_component_of_magnetic-h-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :magnetic-h-field ;
+			svu:hasUnits "L^-1 I" ;
+			svu:hasOperator <operator#east_component> ;
+			skos:prefLabel "east_component_of_magnetic-h-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_component_of_magnetic-h-field
+:north_component_of_magnetic-h-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :magnetic-h-field ;
+			svu:hasUnits "L^-1 I" ;
+			svu:hasOperator <operator#north_component> ;
+			skos:prefLabel "north_component_of_magnetic-h-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#down_component_of_magnetic-m-field
+:down_component_of_magnetic-m-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :magnetic-m-field ;
+			svu:hasUnits "L^-1 I" ;
+			svu:hasOperator <operator#down_component> ;
+			skos:prefLabel "down_component_of_magnetic-m-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_component_of_magnetic-m-field
+:east_component_of_magnetic-m-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :magnetic-m-field ;
+			svu:hasUnits "L^-1 I" ;
+			svu:hasOperator <operator#east_component> ;
+			skos:prefLabel "east_component_of_magnetic-m-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_component_of_magnetic-m-field
+:north_component_of_magnetic-m-field rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :magnetic-m-field ;
+			svu:hasUnits "L^-1 I" ;
+			svu:hasOperator <operator#north_component> ;
+			skos:prefLabel "north_component_of_magnetic-m-field"@en .
+
+###  http://www.geoscienceontology.org/svl/property#hourly_time_integral_of_energy_flux
+:hourly_time_integral_of_energy_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :energy_flux ;
+			svu:hasUnits "M T^-2" ;
+			svu:hasOperator <operator#hourly_time_integral> ;
+			skos:prefLabel "hourly_time_integral_of_energy_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_max_of_energy_flux
+:time_max_of_energy_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :energy_flux ;
+			svu:hasUnits "M T^-3" ;
+			svu:hasOperator <operator#time_max> ;
+			skos:prefLabel "time_max_of_energy_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_max_of_volume_flux
+:domain_max_of_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :volume_flux ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#domain_max> ;
+			skos:prefLabel "domain_max_of_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_min_of_volume_flux
+:domain_min_of_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :volume_flux ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#domain_min> ;
+			skos:prefLabel "domain_min_of_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_time_integral_of_volume_flux
+:domain_time_integral_of_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#domain_time_integral> ;
+			skos:prefLabel "domain_time_integral_of_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#peak_time_of_volume_flux
+:peak_time_of_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :volume_flux ;
+			svu:hasUnits "T" ;
+			svu:hasOperator <operator#peak_time> ;
+			skos:prefLabel "peak_time_of_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_max_of_volume_flux
+:time_max_of_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :volume_flux ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#time_max> ;
+			skos:prefLabel "time_max_of_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_time_integral_of_baseflow_volume_flux
+:domain_time_integral_of_baseflow_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :baseflow_volume_flux ;
+			svu:hasUnits "L T" ;
+			svu:hasOperator <operator#domain_time_integral> ;
+			skos:prefLabel "domain_time_integral_of_baseflow_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_time_integral_of_desublimation_volume_flux
+:domain_time_integral_of_desublimation_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :desublimation_volume_flux ;
+			svu:hasUnits "L T" ;
+			svu:hasOperator <operator#domain_time_integral> ;
+			skos:prefLabel "domain_time_integral_of_desublimation_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_time_integral_of_evaporation_volume_flux
+:domain_time_integral_of_evaporation_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :evaporation_volume_flux ;
+			svu:hasUnits "L T" ;
+			svu:hasOperator <operator#domain_time_integral> ;
+			skos:prefLabel "domain_time_integral_of_evaporation_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_time_integral_of_infiltration_volume_flux
+:domain_time_integral_of_infiltration_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :infiltration_volume_flux ;
+			svu:hasUnits "L T" ;
+			svu:hasOperator <operator#domain_time_integral> ;
+			skos:prefLabel "domain_time_integral_of_infiltration_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_integral_of_infiltration_volume_flux
+:time_integral_of_infiltration_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :infiltration_volume_flux ;
+			svu:hasUnits "L T" ;
+			svu:hasOperator <operator#time_integral> ;
+			skos:prefLabel "time_integral_of_infiltration_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_time_integral_of_precipitation_leq_volume_flux
+:domain_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L T" ;
+			svu:hasOperator <operator#domain_time_integral> ;
+			skos:prefLabel "domain_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_time_max_of_precipitation_leq_volume_flux
+:domain_time_max_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#domain_time_max> ;
+			skos:prefLabel "domain_time_max_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#daily_time_integral_of_precipitation_leq_volume_flux
+:daily_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L T" ;
+			svu:hasOperator <operator#daily_time_integral> ;
+			skos:prefLabel "daily_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#hourly_time_integral_of_precipitation_leq_volume_flux
+:hourly_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L T" ;
+			svu:hasOperator <operator#daily_time_integral> ;
+			skos:prefLabel "hourly_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#monthly_time_integral_of_precipitation_leq_volume_flux
+:monthly_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L T" ;
+			svu:hasOperator <operator#monthly_time_integral> ;
+			skos:prefLabel "monthly_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#yearly_time_integral_of_precipitation_leq_volume_flux
+:yearly_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L T" ;
+			svu:hasOperator <operator#yearly_time_integral> ;
+			skos:prefLabel "yearly_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_time_integral_of_melt_volume_flux
+:domain_time_integral_of_melt_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :melt_volume_flux ;
+			svu:hasUnits "L T" ;
+			svu:hasOperator <operator#domain_time_integral> ;
+			skos:prefLabel "domain_time_integral_of_melt_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#geologic_time_average_of_precipitation_volume_flux
+:geologic_time_average_of_precipitation_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#geologic_time_average> ;
+			skos:prefLabel "geologic_time_average_of_precipitation_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#globe_time_average_of_precipitation_volume_flux
+:globe_time_average_of_precipitation_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#globe_time_average> ;
+			skos:prefLabel "globe_time_average_of_precipitation_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_time_integral_of_precipitation_volume_flux
+:domain_time_integral_of_precipitation_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_volume_flux ;
+			svu:hasUnits "L T" ;
+			svu:hasOperator <operator#domain_time_integral> ;
+			skos:prefLabel "domain_time_integral_of_precipitation_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_time_integral_of_recharge_volume_flux
+:domain_time_integral_of_recharge_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :recharge_volume_flux ;
+			svu:hasUnits "L T" ;
+			svu:hasOperator <operator#domain_time_integral> ;
+			skos:prefLabel "domain_time_integral_of_recharge_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_integral_of_recharge_volume_flux
+:time_integral_of_recharge_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :recharge_volume_flux ;
+			svu:hasUnits "L T" ;
+			svu:hasOperator <operator#time_integral> ;
+			skos:prefLabel "time_integral_of_recharge_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_time_integral_of_runoff_volume_flux
+:domain_time_integral_of_runoff_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :runoff_volume_flux ;
+			svu:hasUnits "L T" ;
+			svu:hasOperator <operator#domain_time_integral> ;
+			skos:prefLabel "domain_time_integral_of_runoff_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_time_integral_of_sublimation_volume_flux
+:domain_time_integral_of_sublimation_volume_flux rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :sublimation_volume_flux ;
+			svu:hasUnits "L T" ;
+			svu:hasOperator <operator#domain_time_integral> ;
+			skos:prefLabel "domain_time_integral_of_sublimation_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude_of_drag_force
+:magnitude_of_drag_force rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :drag_force ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#magnitude> ;
+			skos:prefLabel "magnitude_of_drag_force"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude_of_lift_force
+:magnitude_of_lift_force rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :lift_force ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#magnitude> ;
+			skos:prefLabel "magnitude_of_lift_force"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_area_fraction
+:time_derivative_of_area_fraction rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :area_fraction ;
+			svu:hasUnits "T^-1" ;
+			svu:hasOperator <operator#time_derivative> ;
+			skos:prefLabel "time_derivative_of_area_fraction"@en .
+
+###  http://www.geoscienceontology.org/svl/property#lower_limit_of_hearing_frequency
+:lower_limit_of_hearing_frequency rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :hearing_frequency ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#lower_limit> ;
+			skos:prefLabel "lower_limit_of_hearing_frequency"@en .
+
+###  http://www.geoscienceontology.org/svl/property#upper_limit_of_hearing_frequency
+:upper_limit_of_hearing_frequency rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :hearing_frequency ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#upper_limit> ;
+			skos:prefLabel "upper_limit_of_hearing_frequency"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_derivative_of_pressure_head
+:east_derivative_of_pressure_head rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure_head ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#east_derivative> ;
+			skos:prefLabel "east_derivative_of_pressure_head"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_derivative_of_pressure_head
+:north_derivative_of_pressure_head rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure_head ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#north_derivative> ;
+			skos:prefLabel "north_derivative_of_pressure_head"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_pressure_head
+:time_derivative_of_pressure_head rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure_head ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#time_derivative> ;
+			skos:prefLabel "time_derivative_of_pressure_head"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_derivative_of_pressure_head
+:x_derivative_of_pressure_head rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure_head ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#x_derivative> ;
+			skos:prefLabel "x_derivative_of_pressure_head"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_derivative_of_pressure_head
+:y_derivative_of_pressure_head rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure_head ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#y_derivative> ;
+			skos:prefLabel "y_derivative_of_pressure_head"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_mean_of_height
+:time_mean_of_height rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :height ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#time_mean> ;
+			skos:prefLabel "time_mean_of_height"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_median_of_height
+:time_median_of_height rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :height ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#time_median> ;
+			skos:prefLabel "time_median_of_height"@en .
+
+###  http://www.geoscienceontology.org/svl/property#anomaly_of_geopotential_height
+:anomaly_of_geopotential_height rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :geopotential_height ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#anomaly> ;
+			skos:prefLabel "anomaly_of_geopotential_height"@en .
+
+###  http://www.geoscienceontology.org/svl/property#annual_time_max_of_leaf-area_index
+:annual_time_max_of_leaf-area_index rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :leaf-area_index ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#annual_time_max> ;
+			skos:prefLabel "annual_time_max_of_leaf-area_index"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_max_of_log-law_roughness_length
+:domain_max_of_log-law_roughness_length rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :log-law_roughness_length ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#domain_max> ;
+			skos:prefLabel "domain_max_of_log-law_roughness_length"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_min_of_log-law_roughness_length
+:domain_min_of_log-law_roughness_length rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :log-law_roughness_length ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#domain_min> ;
+			skos:prefLabel "domain_min_of_log-law_roughness_length"@en .
+
+###  http://www.geoscienceontology.org/svl/property#change_from_annual_min_of_mass
+:change_from_annual_min_of_mass rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :mass ;
+			svu:hasUnits "M" ;
+			svu:hasOperator <operator#change_from_annual_min> ;
+			skos:prefLabel "change_from_annual_min_of_mass"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_mass
+:time_derivative_of_mass rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :mass ;
+			svu:hasUnits "M T^-1" ;
+			svu:hasOperator <operator#time_derivative> ;
+			skos:prefLabel "time_derivative_of_mass"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_east_component_of_seismic_moment
+:east_east_component_of_seismic_moment rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :seismic_moment ;
+			svu:hasUnits "L^2 M T^-2" ;
+			svu:hasOperator <operator#east_east_component> ;
+			skos:prefLabel "east_east_component_of_seismic_moment"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_up_component_of_seismic_moment
+:east_up_component_of_seismic_moment rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :seismic_moment ;
+			svu:hasUnits "L^2 M T^-2" ;
+			svu:hasOperator <operator#east_up_component> ;
+			skos:prefLabel "east_up_component_of_seismic_moment"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude_of_seismic_moment
+:magnitude_of_seismic_moment rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :seismic_moment ;
+			svu:hasUnits "L^2 M T^-2" ;
+			svu:hasOperator <operator#magnitude> ;
+			skos:prefLabel "magnitude_of_seismic_moment"@en .
+
+###  http://www.geoscienceontology.org/svl/property#south_east_component_of_seismic_moment
+:south_east_component_of_seismic_moment rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :seismic_moment ;
+			svu:hasUnits "L^2 M T^-2" ;
+			svu:hasOperator <operator#south_east_component> ;
+			skos:prefLabel "south_east_component_of_seismic_moment"@en .
+
+###  http://www.geoscienceontology.org/svl/property#south_south_component_of_seismic_moment
+:south_south_component_of_seismic_moment rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :seismic_moment ;
+			svu:hasUnits "L^2 M T^-2" ;
+			svu:hasOperator <operator#south_south_component> ;
+			skos:prefLabel "south_south_component_of_seismic_moment"@en .
+
+###  http://www.geoscienceontology.org/svl/property#up_south_component_of_seismic_moment
+:up_south_component_of_seismic_moment rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :seismic_moment ;
+			svu:hasUnits "L^2 M T^-2" ;
+			svu:hasOperator <operator#up_south_component> ;
+			skos:prefLabel "up_south_component_of_seismic_moment"@en .
+
+###  http://www.geoscienceontology.org/svl/property#up_up_component_of_seismic_moment
+:up_up_component_of_seismic_moment rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :seismic_moment ;
+			svu:hasUnits "L^2 M T^-2" ;
+			svu:hasOperator <operator#up_up_component> ;
+			skos:prefLabel "up_up_component_of_seismic_moment"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_linear_momentum
+:azimuth_angle_of_linear_momentum rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_momentum ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle> ;
+			skos:prefLabel "azimuth_angle_of_linear_momentum"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_component_of_linear_momentum
+:east_component_of_linear_momentum rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_momentum ;
+			svu:hasUnits "L M T^-1" ;
+			svu:hasOperator <operator#east_component> ;
+			skos:prefLabel "east_component_of_linear_momentum"@en .
+
+###  http://www.geoscienceontology.org/svl/property#elevation_angle_of_linear_momentum
+:elevation_angle_of_linear_momentum rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_momentum ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#elevation_angle> ;
+			skos:prefLabel "elevation_angle_of_linear_momentum"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude_of_linear_momentum
+:magnitude_of_linear_momentum rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_momentum ;
+			svu:hasUnits "L M T^-1" ;
+			svu:hasOperator <operator#magnitude> ;
+			skos:prefLabel "magnitude_of_linear_momentum"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_component_of_linear_momentum
+:north_component_of_linear_momentum rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_momentum ;
+			svu:hasUnits "L M T^-1" ;
+			svu:hasOperator <operator#north_component> ;
+			skos:prefLabel "north_component_of_linear_momentum"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_average_of_z_integral_of_square_of_x_component_of_linear_momentum
+:time_average_of_z_integral_of_square_of_x_component_of_linear_momentum rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_momentum ;
+			svu:hasUnits "L^3 M^2 T^-2" ;
+			svu:hasOperator <operator#time_average_of_z_integral_of_square_of_x_component> ;
+			skos:prefLabel "time_average_of_z_integral_of_square_of_x_component_of_linear_momentum"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_average_of_z_integral_of_square_of_y_component_of_linear_momentum
+:time_average_of_z_integral_of_square_of_y_component_of_linear_momentum rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_momentum ;
+			svu:hasUnits "L^3 M^2 T^-2" ;
+			svu:hasOperator <operator#time_average_of_z_integral_of_square_of_y_component> ;
+			skos:prefLabel "time_average_of_z_integral_of_square_of_y_component_of_linear_momentum"@en .
+
+###  http://www.geoscienceontology.org/svl/property#up_component_of_linear_momentum
+:up_component_of_linear_momentum rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_momentum ;
+			svu:hasUnits "L M T^-1" ;
+			svu:hasOperator <operator#up_component> ;
+			skos:prefLabel "up_component_of_linear_momentum"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_component_of_linear_momentum
+:x_component_of_linear_momentum rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_momentum ;
+			svu:hasUnits "L M T^-1" ;
+			svu:hasOperator <operator#x_component> ;
+			skos:prefLabel "x_component_of_linear_momentum"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_component_of_linear_momentum
+:y_component_of_linear_momentum rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_momentum ;
+			svu:hasUnits "L M T^-1" ;
+			svu:hasOperator <operator#y_component> ;
+			skos:prefLabel "y_component_of_linear_momentum"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_component_of_linear_momentum
+:z_component_of_linear_momentum rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_momentum ;
+			svu:hasUnits "L M T^-1" ;
+			svu:hasOperator <operator#z_component> ;
+			skos:prefLabel "z_component_of_linear_momentum"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_integral_of_u_component_of_linear_momentum
+:z_integral_of_u_component_of_linear_momentum rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_momentum ;
+			svu:hasUnits "L^2 M T^-1" ;
+			svu:hasOperator <operator#z_integral_of_u_component> ;
+			skos:prefLabel "z_integral_of_u_component_of_linear_momentum"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_integral_of_v_component_of_linear_momentum
+:z_integral_of_v_component_of_linear_momentum rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_momentum ;
+			svu:hasUnits "L^2 M T^-1" ;
+			svu:hasOperator <operator#z_integral_of_v_component> ;
+			skos:prefLabel "z_integral_of_v_component_of_linear_momentum"@en .
+
+###  http://www.geoscienceontology.org/svl/property#max_of_output_power
+:max_of_output_power rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :output_power ;
+			svu:hasUnits "L^2" ;
+			svu:hasOperator <operator#max> ;
+			skos:prefLabel "max_of_output_power"@en .
+
+###  http://www.geoscienceontology.org/svl/property#elevation_angle_of_gradient_of_pressure
+:elevation_angle_of_gradient_of_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#elevation_angle_of_gradient> ;
+			skos:prefLabel "elevation_angle_of_gradient_of_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#anomaly_of_pressure
+:anomaly_of_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#anomaly> ;
+			skos:prefLabel "anomaly_of_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_gradient_of_pressure
+:azimuth_angle_of_gradient_of_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle_of_gradient> ;
+			skos:prefLabel "azimuth_angle_of_gradient_of_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_derivative_of_pressure
+:east_derivative_of_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure ;
+			svu:hasUnits "L^-2 M T^-2" ;
+			svu:hasOperator <operator#east_derivative> ;
+			skos:prefLabel "east_derivative_of_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#elevation_angle_of_gradient_of_pressure
+:elevation_angle_of_gradient_of_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#elevation_angle_of_gradient> ;
+			skos:prefLabel "elevation_angle_of_gradient_of_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#gradient_of_pressure
+:gradient_of_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure ;
+			svu:hasUnits "L^-2 M T^-2" ;
+			svu:hasOperator <operator#gradient> ;
+			skos:prefLabel "gradient_of_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#increment_of_pressure
+:increment_of_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#increment> ;
+			skos:prefLabel "increment_of_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude_of_gradient_of_pressure
+:magnitude_of_gradient_of_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure ;
+			svu:hasUnits "L^-2 M T^-2" ;
+			svu:hasOperator <operator#magnitude_of_gradient> ;
+			skos:prefLabel "magnitude_of_gradient_of_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_derivative_of_pressure
+:north_derivative_of_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure ;
+			svu:hasUnits "L^-2 M T^-2" ;
+			svu:hasOperator <operator#north_derivative> ;
+			skos:prefLabel "north_derivative_of_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_pressure
+:time_derivative_of_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure ;
+			svu:hasUnits "L^-1 M T^-3" ;
+			svu:hasOperator <operator#time_derivative> ;
+			skos:prefLabel "time_derivative_of_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#up_derivative_of_pressure
+:up_derivative_of_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure ;
+			svu:hasUnits "L^-2 M T^-2" ;
+			svu:hasOperator <operator#up_derivative> ;
+			skos:prefLabel "up_derivative_of_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_derivative_of_pressure
+:x_derivative_of_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure ;
+			svu:hasUnits "L^-2 M T^-2" ;
+			svu:hasOperator <operator#x_derivative> ;
+			skos:prefLabel "x_derivative_of_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_derivative_of_pressure
+:y_derivative_of_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure ;
+			svu:hasUnits "L^-2 M T^-2" ;
+			svu:hasOperator <operator#y_derivative> ;
+			skos:prefLabel "y_derivative_of_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_derivative_of_pressure
+:z_derivative_of_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :pressure ;
+			svu:hasUnits "L^-2 M T^-2" ;
+			svu:hasOperator <operator#z_derivative> ;
+			skos:prefLabel "z_derivative_of_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_gradient_of_static_pressure
+:azimuth_angle_of_gradient_of_static_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :static_pressure ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle_of_gradient> ;
+			skos:prefLabel "azimuth_angle_of_gradient_of_static_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#down_derivative_of_static_pressure
+:down_derivative_of_static_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :static_pressure ;
+			svu:hasUnits "L^-2" ;
+			svu:hasOperator <operator#down_derivative> ;
+			skos:prefLabel "down_derivative_of_static_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_derivative_of_static_pressure
+:east_derivative_of_static_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :static_pressure ;
+			svu:hasUnits "L^-2" ;
+			svu:hasOperator <operator#east_derivative> ;
+			skos:prefLabel "east_derivative_of_static_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude_of_gradient_of_static_pressure
+:magnitude_of_gradient_of_static_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :static_pressure ;
+			svu:hasUnits "L^-2" ;
+			svu:hasOperator <operator#magnitude_of_gradient> ;
+			skos:prefLabel "magnitude_of_gradient_of_static_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_derivative_of_static_pressure
+:north_derivative_of_static_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :static_pressure ;
+			svu:hasUnits "L^-2" ;
+			svu:hasOperator <operator#north_derivative> ;
+			skos:prefLabel "north_derivative_of_static_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_derivative_of_static_pressure
+:x_derivative_of_static_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :static_pressure ;
+			svu:hasUnits "L^-2" ;
+			svu:hasOperator <operator#x_derivative> ;
+			skos:prefLabel "x_derivative_of_static_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_derivative_of_static_pressure
+:y_derivative_of_static_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :static_pressure ;
+			svu:hasUnits "L^-2" ;
+			svu:hasOperator <operator#y_derivative> ;
+			skos:prefLabel "y_derivative_of_static_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_derivative_of_static_pressure
+:z_derivative_of_static_pressure rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :static_pressure ;
+			svu:hasUnits "L^-2" ;
+			svu:hasOperator <operator#z_derivative> ;
+			skos:prefLabel "z_derivative_of_static_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/property#second_invariant_of_deviatoric_strain_rate
+:second_invariant_of_deviatoric_strain_rate rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :deviatoric_strain_rate ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#second_invariant> ;
+			skos:prefLabel "second_invariant_of_deviatoric_strain_rate"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_max_of_volume_flow_rate
+:domain_max_of_volume_flow_rate rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :volume_flow_rate ;
+			svu:hasUnits "L^3" ;
+			svu:hasOperator <operator#domain_max> ;
+			skos:prefLabel "domain_max_of_volume_flow_rate"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_min_of_volume_flow_rate
+:domain_min_of_volume_flow_rate rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :volume_flow_rate ;
+			svu:hasUnits "L^3" ;
+			svu:hasOperator <operator#domain_min> ;
+			skos:prefLabel "domain_min_of_volume_flow_rate"@en .
+
+###  http://www.geoscienceontology.org/svl/property#peak_time_of_volume_flow_rate
+:peak_time_of_volume_flow_rate rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :volume_flow_rate ;
+			svu:hasUnits "T" ;
+			svu:hasOperator <operator#peak_time> ;
+			skos:prefLabel "peak_time_of_volume_flow_rate"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_integral_of_volume_flow_rate
+:time_integral_of_volume_flow_rate rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :volume_flow_rate ;
+			svu:hasUnits "L^3 T" ;
+			svu:hasOperator <operator#time_integral> ;
+			skos:prefLabel "time_integral_of_volume_flow_rate"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_max_of_volume_flow_rate
+:time_max_of_volume_flow_rate rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :volume_flow_rate ;
+			svu:hasUnits "L^3" ;
+			svu:hasOperator <operator#time_max> ;
+			skos:prefLabel "time_max_of_volume_flow_rate"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_min_of_volume_flow_rate
+:time_min_of_volume_flow_rate rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :volume_flow_rate ;
+			svu:hasUnits "L^3" ;
+			svu:hasOperator <operator#time_min> ;
+			skos:prefLabel "time_min_of_volume_flow_rate"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_gradient_of_absolute_salinity
+:azimuth_angle_of_gradient_of_absolute_salinity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :absolute_salinity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle_of_gradient> ;
+			skos:prefLabel "azimuth_angle_of_gradient_of_absolute_salinity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_derivative_of_absolute_salinity
+:east_derivative_of_absolute_salinity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :absolute_salinity ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#east_derivative> ;
+			skos:prefLabel "east_derivative_of_absolute_salinity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#elevation_angle_of_gradient_of_absolute_salinity
+:elevation_angle_of_gradient_of_absolute_salinity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :absolute_salinity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#elevation_angle_of_gradient> ;
+			skos:prefLabel "elevation_angle_of_gradient_of_absolute_salinity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude_of_gradient_of_absolute_salinity
+:magnitude_of_gradient_of_absolute_salinity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :absolute_salinity ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#magnitude_of_gradient> ;
+			skos:prefLabel "magnitude_of_gradient_of_absolute_salinity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_derivative_of_absolute_salinity
+:north_derivative_of_absolute_salinity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :absolute_salinity ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#north_derivative> ;
+			skos:prefLabel "north_derivative_of_absolute_salinity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_average_of_square_of_absolute_salinity
+:time_average_of_square_of_absolute_salinity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :absolute_salinity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#time_average_of_square> ;
+			skos:prefLabel "time_average_of_square_of_absolute_salinity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_derivative_of_absolute_salinity
+:x_derivative_of_absolute_salinity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :absolute_salinity ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#x_derivative> ;
+			skos:prefLabel "x_derivative_of_absolute_salinity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_derivative_of_absolute_salinity
+:y_derivative_of_absolute_salinity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :absolute_salinity ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#y_derivative> ;
+			skos:prefLabel "y_derivative_of_absolute_salinity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_derivative_of_absolute_salinity
+:z_derivative_of_absolute_salinity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :absolute_salinity ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#z_derivative> ;
+			skos:prefLabel "z_derivative_of_absolute_salinity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_component_of_seismic_slip
+:east_component_of_seismic_slip rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :seismic_slip ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#east_component> ;
+			skos:prefLabel "east_component_of_seismic_slip"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_component_of_seismic_slip
+:north_component_of_seismic_slip rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :seismic_slip ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#north_component> ;
+			skos:prefLabel "north_component_of_seismic_slip"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_slope
+:time_derivative_of_slope rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :slope ;
+			svu:hasUnits "T^-1" ;
+			svu:hasOperator <operator#time_derivative> ;
+			skos:prefLabel "time_derivative_of_slope"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_derivative_of_slope
+:x_derivative_of_slope rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :slope ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#x_derivative> ;
+			skos:prefLabel "x_derivative_of_slope"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_derivative_of_slope
+:y_derivative_of_slope rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :slope ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#y_derivative> ;
+			skos:prefLabel "y_derivative_of_slope"@en .
+
+###  http://www.geoscienceontology.org/svl/property#max_of_linear_speed
+:max_of_linear_speed rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_speed ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#max> ;
+			skos:prefLabel "max_of_linear_speed"@en .
+
+###  http://www.geoscienceontology.org/svl/property#min_of_linear_speed
+:min_of_linear_speed rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_speed ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#min> ;
+			skos:prefLabel "min_of_linear_speed"@en .
+
+###  http://www.geoscienceontology.org/svl/property#range_of_linear_speed
+:range_of_linear_speed rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_speed ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#range> ;
+			skos:prefLabel "range_of_linear_speed"@en .
+
+###  http://www.geoscienceontology.org/svl/property#down_east_component_of_stress
+:down_east_component_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#down_east_component> ;
+			skos:prefLabel "down_east_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#down_north_component_of_stress
+:down_north_component_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#down_north_component> ;
+			skos:prefLabel "down_north_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_down_component_of_stress
+:east_down_component_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#east_down_component> ;
+			skos:prefLabel "east_down_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_east_component_of_stress
+:east_east_component_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#east_east_component> ;
+			skos:prefLabel "east_east_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_north_component_of_stress
+:east_north_component_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#east_north_component> ;
+			skos:prefLabel "east_north_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_up_component_of_stress
+:east_up_component_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#east_up_component> ;
+			skos:prefLabel "east_up_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude_of_stress
+:magnitude_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#magnitude> ;
+			skos:prefLabel "magnitude_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#normal_component_of_stress
+:normal_component_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#normal_component> ;
+			skos:prefLabel "normal_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_down_component_of_stress
+:north_down_component_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#north_down_component> ;
+			skos:prefLabel "north_down_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_north_component_of_stress
+:north_north_component_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#north_north_component> ;
+			skos:prefLabel "north_north_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_up_component_of_stress
+:north_up_component_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#north_up_component> ;
+			skos:prefLabel "north_up_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#up_up_component_of_stress
+:up_up_component_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#up_up_component> ;
+			skos:prefLabel "up_up_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_x_component_of_stress
+:x_x_component_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#x_x_component> ;
+			skos:prefLabel "x_x_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_y_component_of_stress
+:x_y_component_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#x_y_component> ;
+			skos:prefLabel "x_y_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_z_component_of_stress
+:x_z_component_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#x_z_component> ;
+			skos:prefLabel "x_z_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_y_component_of_stress
+:y_y_component_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#y_y_component> ;
+			skos:prefLabel "y_y_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_z_component_of_stress
+:y_z_component_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#y_z_component> ;
+			skos:prefLabel "y_z_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_z_component_of_stress
+:z_z_component_of_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stress ;
+			svu:hasUnits "L^-1 M T^-2" ;
+			svu:hasOperator <operator#z_z_component> ;
+			skos:prefLabel "z_z_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#second_invariant_of_deviatoric_stress
+:second_invariant_of_deviatoric_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :deviatoric_stress ;
+			svu:hasUnits "L^-2" ;
+			svu:hasOperator <operator#second_invariant> ;
+			skos:prefLabel "second_invariant_of_deviatoric_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#drop_of_dynamic_stress
+:drop_of_dynamic_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :dynamic_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#drop> ;
+			skos:prefLabel "drop_of_dynamic_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_x_component_of_radiation_stress
+:x_x_component_of_radiation_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :radiation_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#x_x_component> ;
+			skos:prefLabel "x_x_component_of_radiation_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_y_component_of_radiation_stress
+:x_y_component_of_radiation_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :radiation_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#x_y_component> ;
+			skos:prefLabel "x_y_component_of_radiation_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_y_component_of_radiation_stress
+:y_y_component_of_radiation_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :radiation_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#y_y_component> ;
+			skos:prefLabel "y_y_component_of_radiation_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_integral_of_x_x_component_of_radiation_stress
+:z_integral_of_x_x_component_of_radiation_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :radiation_stress ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#z_integral_of_x_x_component> ;
+			skos:prefLabel "z_integral_of_x_x_component_of_radiation_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_integral_of_x_y_component_of_radiation_stress
+:z_integral_of_x_y_component_of_radiation_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :radiation_stress ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#z_integral_of_x_y_component> ;
+			skos:prefLabel "z_integral_of_x_y_component_of_radiation_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_integral_of_y_y_component_of_radiation_stress
+:z_integral_of_y_y_component_of_radiation_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :radiation_stress ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#z_integral_of_y_y_component> ;
+			skos:prefLabel "z_integral_of_y_y_component_of_radiation_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_x_component_of_radiation_stress
+:z_x_component_of_radiation_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :radiation_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#z_x_component> ;
+			skos:prefLabel "z_x_component_of_radiation_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_y_component_of_radiation_stress
+:z_y_component_of_radiation_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :radiation_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#z_y_component> ;
+			skos:prefLabel "z_y_component_of_radiation_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#down_east_component_of_reynolds_stress
+:down_east_component_of_reynolds_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :reynolds_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#down_east_component> ;
+			skos:prefLabel "down_east_component_of_reynolds_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_east_component_of_reynolds_stress
+:east_east_component_of_reynolds_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :reynolds_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#east_east_component> ;
+			skos:prefLabel "east_east_component_of_reynolds_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_north_component_of_reynolds_stress
+:east_north_component_of_reynolds_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :reynolds_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#east_north_component> ;
+			skos:prefLabel "east_north_component_of_reynolds_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_up_component_of_reynolds_stress
+:east_up_component_of_reynolds_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :reynolds_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#east_up_component> ;
+			skos:prefLabel "east_up_component_of_reynolds_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_north_component_of_reynolds_stress
+:north_north_component_of_reynolds_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :reynolds_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#north_north_component> ;
+			skos:prefLabel "north_north_component_of_reynolds_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_up_component_of_reynolds_stress
+:north_up_component_of_reynolds_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :reynolds_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#north_up_component> ;
+			skos:prefLabel "north_up_component_of_reynolds_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#up_up_component_of_reynolds_stress
+:up_up_component_of_reynolds_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :reynolds_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#up_up_component> ;
+			skos:prefLabel "up_up_component_of_reynolds_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_x_component_of_reynolds_stress
+:x_x_component_of_reynolds_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :reynolds_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#x_x_component> ;
+			skos:prefLabel "x_x_component_of_reynolds_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_y_component_of_reynolds_stress
+:x_y_component_of_reynolds_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :reynolds_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#x_y_component> ;
+			skos:prefLabel "x_y_component_of_reynolds_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_z_component_of_reynolds_stress
+:x_z_component_of_reynolds_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :reynolds_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#x_z_component> ;
+			skos:prefLabel "x_z_component_of_reynolds_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_y_component_of_reynolds_stress
+:y_y_component_of_reynolds_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :reynolds_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#y_y_component> ;
+			skos:prefLabel "y_y_component_of_reynolds_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_z_component_of_reynolds_stress
+:y_z_component_of_reynolds_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :reynolds_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#y_z_component> ;
+			skos:prefLabel "y_z_component_of_reynolds_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_z_component_of_reynolds_stress
+:z_z_component_of_reynolds_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :reynolds_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#z_z_component> ;
+			skos:prefLabel "z_z_component_of_reynolds_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude_of_shear_stress
+:magnitude_of_shear_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :shear_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#magnitude> ;
+			skos:prefLabel "magnitude_of_shear_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_z_component_of_shear_stress
+:x_z_component_of_shear_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :shear_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#x_z_component> ;
+			skos:prefLabel "x_z_component_of_shear_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#drop_of_static_stress
+:drop_of_static_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :static_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#drop> ;
+			skos:prefLabel "drop_of_static_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#down_east_component_of_viscous_stress
+:down_east_component_of_viscous_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :viscous_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#down_east_component> ;
+			skos:prefLabel "down_east_component_of_viscous_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_east_component_of_viscous_stress
+:east_east_component_of_viscous_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :viscous_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#east_east_component> ;
+			skos:prefLabel "east_east_component_of_viscous_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_north_component_of_viscous_stress
+:east_north_component_of_viscous_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :viscous_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#east_north_component> ;
+			skos:prefLabel "east_north_component_of_viscous_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_up_component_of_viscous_stress
+:east_up_component_of_viscous_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :viscous_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#east_up_component> ;
+			skos:prefLabel "east_up_component_of_viscous_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_north_component_of_viscous_stress
+:north_north_component_of_viscous_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :viscous_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#north_north_component> ;
+			skos:prefLabel "north_north_component_of_viscous_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_up_component_of_viscous_stress
+:north_up_component_of_viscous_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :viscous_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#north_up_component> ;
+			skos:prefLabel "north_up_component_of_viscous_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#up_up_component_of_viscous_stress
+:up_up_component_of_viscous_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :viscous_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#up_up_component> ;
+			skos:prefLabel "up_up_component_of_viscous_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_x_component_of_viscous_stress
+:x_x_component_of_viscous_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :viscous_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#x_x_component> ;
+			skos:prefLabel "x_x_component_of_viscous_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_y_component_of_viscous_stress
+:x_y_component_of_viscous_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :viscous_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#x_y_component> ;
+			skos:prefLabel "x_y_component_of_viscous_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_z_component_of_viscous_stress
+:x_z_component_of_viscous_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :viscous_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#x_z_component> ;
+			skos:prefLabel "x_z_component_of_viscous_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_y_component_of_viscous_stress
+:y_y_component_of_viscous_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :viscous_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#y_y_component> ;
+			skos:prefLabel "y_y_component_of_viscous_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_z_component_of_viscous_stress
+:y_z_component_of_viscous_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :viscous_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#y_z_component> ;
+			skos:prefLabel "y_z_component_of_viscous_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_z_component_of_viscous_stress
+:z_z_component_of_viscous_stress rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :viscous_stress ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#z_z_component> ;
+			skos:prefLabel "z_z_component_of_viscous_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/property#anomaly_of_temperature
+:anomaly_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#anomaly> ;
+			skos:prefLabel "anomaly_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_gradient_of_temperature
+:azimuth_angle_of_gradient_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle_of_gradient> ;
+			skos:prefLabel "azimuth_angle_of_gradient_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#difference_of_temperature
+:difference_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#difference> ;
+			skos:prefLabel "difference_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#diurnal_max_of_temperature
+:diurnal_max_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#diurnal_max> ;
+			skos:prefLabel "diurnal_max_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#diurnal_min_of_temperature
+:diurnal_min_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#diurnal_min> ;
+			skos:prefLabel "diurnal_min_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#diurnal_range_of_temperature
+:diurnal_range_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#diurnal_range> ;
+			skos:prefLabel "diurnal_range_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#down_derivative_of_temperature
+:down_derivative_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "L^-1 O" ;
+			svu:hasOperator <operator#down_derivative> ;
+			skos:prefLabel "down_derivative_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#down_z_derivative_of_temperature
+:down_z_derivative_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "L^-1 O" ;
+			svu:hasOperator <operator#down_z_derivative> ;
+			skos:prefLabel "down_z_derivative_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_derivative_of_temperature
+:east_derivative_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "L^-1 O" ;
+			svu:hasOperator <operator#east_derivative> ;
+			skos:prefLabel "east_derivative_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#elevation_angle_of_gradient_of_temperature
+:elevation_angle_of_gradient_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#elevation_angle_of_gradient> ;
+			skos:prefLabel "elevation_angle_of_gradient_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#increment_of_temperature
+:increment_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#increment> ;
+			skos:prefLabel "increment_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude_of_gradient_of_temperature
+:magnitude_of_gradient_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "L^-1 O" ;
+			svu:hasOperator <operator#magnitude_of_gradient> ;
+			skos:prefLabel "magnitude_of_gradient_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#mean_of_temperature
+:mean_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#mean> ;
+			skos:prefLabel "mean_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_derivative_of_temperature
+:north_derivative_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "L^-1 O" ;
+			svu:hasOperator <operator#north_derivative> ;
+			skos:prefLabel "north_derivative_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_temperature
+:time_derivative_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O T^-1" ;
+			svu:hasOperator <operator#time_derivative> ;
+			skos:prefLabel "time_derivative_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_derivative_of_temperature
+:x_derivative_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "L^-1 O" ;
+			svu:hasOperator <operator#x_derivative> ;
+			skos:prefLabel "x_derivative_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_derivative_of_temperature
+:y_derivative_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "L^-1 O" ;
+			svu:hasOperator <operator#y_derivative> ;
+			skos:prefLabel "y_derivative_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_derivative_of_temperature
+:z_derivative_of_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "L^-1 O" ;
+			svu:hasOperator <operator#z_derivative> ;
+			skos:prefLabel "z_derivative_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#range_of_diurnal_temperature
+:range_of_diurnal_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :diurnal_temperature ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#range> ;
+			skos:prefLabel "range_of_diurnal_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#depression_of_melting-point_temperature
+:depression_of_melting-point_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :melting-point_temperature ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#depression> ;
+			skos:prefLabel "depression_of_melting-point_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_average_of_square_of_potential_temperature
+:time_average_of_square_of_potential_temperature rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :potential_temperature ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#time_average_of_square> ;
+			skos:prefLabel "time_average_of_square_of_potential_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/property#change_from_annual_min_of_thickness
+:change_from_annual_min_of_thickness rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :thickness ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#change_from_annual_min> ;
+			skos:prefLabel "change_from_annual_min_of_thickness"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_thickness
+:time_derivative_of_thickness rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :thickness ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#time_derivative> ;
+			skos:prefLabel "time_derivative_of_thickness"@en .
+
+###  http://www.geoscienceontology.org/svl/property#reduction_of_transmittance
+:reduction_of_transmittance rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			skos:prefLabel "reduction_of_transmittance"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_normal-vector
+:azimuth_angle_of_normal-vector rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :normal-vector ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle> ;
+			skos:prefLabel "azimuth_angle_of_normal-vector"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_tangent-vector
+:azimuth_angle_of_tangent-vector rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :tangent-vector ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle> ;
+			skos:prefLabel "azimuth_angle_of_tangent-vector"@en .
+
+###  http://www.geoscienceontology.org/svl/property#product_of_depth_and_slope
+:product_of_depth_and_slope rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			skos:prefLabel "product_of_depth_and_slope"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_linear_velocity
+:azimuth_angle_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle> ;
+			skos:prefLabel "azimuth_angle_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_z_integral_of_linear_velocity
+:azimuth_angle_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle_of_z_integral> ;
+			skos:prefLabel "azimuth_angle_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#cross-stream_component_of_linear_velocity
+:cross-stream_component_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#cross-stream_component> ;
+			skos:prefLabel "cross-stream_component_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#curl_of_linear_velocity
+:curl_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "T^-1" ;
+			svu:hasOperator <operator#curl> ;
+			skos:prefLabel "curl_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#down_component_of_linear_velocity
+:down_component_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#down_component> ;
+			skos:prefLabel "down_component_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#downstream_component_of_linear_velocity
+:downstream_component_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#downstream_component> ;
+			skos:prefLabel "downstream_component_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_component_of_linear_velocity
+:east_component_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#east_component> ;
+			skos:prefLabel "east_component_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_component_of_z_integral_of_linear_velocity
+:east_component_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L^2 T^-1" ;
+			svu:hasOperator <operator#east_component_of_z_integral> ;
+			skos:prefLabel "east_component_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_derivative_of_east_component_of_z_integral_of_linear_velocity
+:east_derivative_of_east_component_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#east_derivative_of_east_component_of_z_integral> ;
+			skos:prefLabel "east_derivative_of_east_component_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_derivative_of_north_component_of_z_integral_of_linear_velocity
+:east_derivative_of_north_component_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#east_derivative_of_north_component_of_z_integral> ;
+			skos:prefLabel "east_derivative_of_north_component_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#elevation_angle_of_linear_velocity
+:elevation_angle_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#elevation_angle> ;
+			skos:prefLabel "elevation_angle_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#inverse_of_linear_velocity
+:inverse_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L^-1 T" ;
+			svu:hasOperator <operator#inverse> ;
+			skos:prefLabel "inverse_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude_of_linear_velocity
+:magnitude_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#magnitude> ;
+			skos:prefLabel "magnitude_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude_of_z_integral_of_linear_velocity
+:magnitude_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L^2 T^-1" ;
+			svu:hasOperator <operator#magnitude_of_z_integral> ;
+			skos:prefLabel "magnitude_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_component_of_linear_velocity
+:north_component_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#north_component> ;
+			skos:prefLabel "north_component_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_component_of_z_integral_of_linear_velocity
+:north_component_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L^2 T^-1" ;
+			svu:hasOperator <operator#north_component_of_z_integral> ;
+			skos:prefLabel "north_component_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_derivative_of_east_component_of_z_integral_of_linear_velocity
+:north_derivative_of_east_component_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#north_derivative_of_east_component_of_z_integral> ;
+			skos:prefLabel "north_derivative_of_east_component_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_derivative_of_north_component_of_z_integral_of_linear_velocity
+:north_derivative_of_north_component_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#north_derivative_of_north_component_of_z_integral> ;
+			skos:prefLabel "north_derivative_of_north_component_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#south_component_of_linear_velocity
+:south_component_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#south_component> ;
+			skos:prefLabel "south_component_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_down_component_of_linear_velocity
+:time_derivative_of_down_component_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-2" ;
+			svu:hasOperator <operator#time_derivative_of_down_component> ;
+			skos:prefLabel "time_derivative_of_down_component_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_east_component_of_linear_velocity
+:time_derivative_of_east_component_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-2" ;
+			svu:hasOperator <operator#time_derivative_of_east_component> ;
+			skos:prefLabel "time_derivative_of_east_component_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_east_component_of_z_integral_of_linear_velocity
+:time_derivative_of_east_component_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L^2 T^-2" ;
+			svu:hasOperator <operator#time_derivative_of_east_component_of_z_integral> ;
+			skos:prefLabel "time_derivative_of_east_component_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_north_component_of_linear_velocity
+:time_derivative_of_north_component_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-2" ;
+			svu:hasOperator <operator#time_derivative_of_north_component> ;
+			skos:prefLabel "time_derivative_of_north_component_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_north_component_of_z_integral_of_linear_velocity
+:time_derivative_of_north_component_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L^2 T^-2" ;
+			svu:hasOperator <operator#time_derivative_of_north_component_of_z_integral> ;
+			skos:prefLabel "time_derivative_of_north_component_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_x_component_of_linear_velocity
+:time_derivative_of_x_component_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-2" ;
+			svu:hasOperator <operator#time_derivative_of_x_component> ;
+			skos:prefLabel "time_derivative_of_x_component_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_x_component_of_z_integral_of_linear_velocity
+:time_derivative_of_x_component_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L^2 T^-2" ;
+			svu:hasOperator <operator#time_derivative_of_x_component_of_z_integral> ;
+			skos:prefLabel "time_derivative_of_x_component_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_y_component_of_linear_velocity
+:time_derivative_of_y_component_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-2" ;
+			svu:hasOperator <operator#time_derivative_of_y_component> ;
+			skos:prefLabel "time_derivative_of_y_component_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_y_component_of_z_integral_of_linear_velocity
+:time_derivative_of_y_component_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L^2 T^-2" ;
+			svu:hasOperator <operator#time_derivative_of_y_component_of_z_integral> ;
+			skos:prefLabel "time_derivative_of_y_component_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_z_component_of_linear_velocity
+:time_derivative_of_z_component_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-2" ;
+			svu:hasOperator <operator#time_derivative_of_z_component> ;
+			skos:prefLabel "time_derivative_of_z_component_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#up_component_of_linear_velocity
+:up_component_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#up_component> ;
+			skos:prefLabel "up_component_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#west_component_of_linear_velocity
+:west_component_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#west_component> ;
+			skos:prefLabel "west_component_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_component_of_linear_velocity
+:x_component_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#x_component> ;
+			skos:prefLabel "x_component_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_component_of_z_integral_of_linear_velocity
+:x_component_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L^2 T^-1" ;
+			svu:hasOperator <operator#x_component_of_z_integral> ;
+			skos:prefLabel "x_component_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_derivative_of_x_component_of_z_integral_of_linear_velocity
+:x_derivative_of_x_component_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#x_derivative_of_x_component_of_z_integral> ;
+			skos:prefLabel "x_derivative_of_x_component_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_derivative_of_y_component_of_z_integral_of_linear_velocity
+:x_derivative_of_y_component_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#x_derivative_of_y_component_of_z_integral> ;
+			skos:prefLabel "x_derivative_of_y_component_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_component_of_linear_velocity
+:y_component_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#y_component> ;
+			skos:prefLabel "y_component_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_component_of_z_integral_of_linear_velocity
+:y_component_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L^2 T^-1" ;
+			svu:hasOperator <operator#y_component_of_z_integral> ;
+			skos:prefLabel "y_component_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_derivative_of_x_component_of_z_integral_of_linear_velocity
+:y_derivative_of_x_component_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#y_derivative_of_x_component_of_z_integral> ;
+			skos:prefLabel "y_derivative_of_x_component_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_derivative_of_y_component_of_z_integral_of_linear_velocity
+:y_derivative_of_y_component_of_z_integral_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#y_derivative_of_y_component_of_z_integral> ;
+			skos:prefLabel "y_derivative_of_y_component_of_z_integral_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_component_of_linear_velocity
+:z_component_of_linear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :linear_velocity ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasOperator <operator#z_component> ;
+			skos:prefLabel "z_component_of_linear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_bolus_velocity
+:azimuth_angle_of_bolus_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :bolus_velocity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle> ;
+			skos:prefLabel "azimuth_angle_of_bolus_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_component_of_bolus_velocity
+:east_component_of_bolus_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :bolus_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#east_component> ;
+			skos:prefLabel "east_component_of_bolus_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#elevation_angle_of_bolus_velocity
+:elevation_angle_of_bolus_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :bolus_velocity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#elevation_angle> ;
+			skos:prefLabel "elevation_angle_of_bolus_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_component_of_bolus_velocity
+:north_component_of_bolus_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :bolus_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#north_component> ;
+			skos:prefLabel "north_component_of_bolus_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#up_component_of_bolus_velocity
+:up_component_of_bolus_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :bolus_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#up_component> ;
+			skos:prefLabel "up_component_of_bolus_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_component_of_bolus_velocity
+:x_component_of_bolus_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :bolus_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#x_component> ;
+			skos:prefLabel "x_component_of_bolus_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_component_of_bolus_velocity
+:y_component_of_bolus_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :bolus_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#y_component> ;
+			skos:prefLabel "y_component_of_bolus_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_component_of_bolus_velocity
+:z_component_of_bolus_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :bolus_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#z_component> ;
+			skos:prefLabel "z_component_of_bolus_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_darcy_velocity
+:azimuth_angle_of_darcy_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :darcy_velocity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle> ;
+			skos:prefLabel "azimuth_angle_of_darcy_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#elevation_angle_of_darcy_velocity
+:elevation_angle_of_darcy_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :darcy_velocity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#elevation_angle> ;
+			skos:prefLabel "elevation_angle_of_darcy_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_component_of_darcy_velocity
+:x_component_of_darcy_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :darcy_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#x_component> ;
+			skos:prefLabel "x_component_of_darcy_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_component_of_darcy_velocity
+:y_component_of_darcy_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :darcy_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#y_component> ;
+			skos:prefLabel "y_component_of_darcy_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_component_of_darcy_velocity
+:z_component_of_darcy_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :darcy_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#z_component> ;
+			skos:prefLabel "z_component_of_darcy_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_component_of_drift_velocity
+:x_component_of_drift_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :drift_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#x_component> ;
+			skos:prefLabel "x_component_of_drift_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_component_of_drift_velocity
+:y_component_of_drift_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :drift_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#y_component> ;
+			skos:prefLabel "y_component_of_drift_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#elevation_angle_of_stokes_drift_velocity
+:elevation_angle_of_stokes_drift_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stokes_drift_velocity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#elevation_angle> ;
+			skos:prefLabel "elevation_angle_of_stokes_drift_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude_of_stokes_drift_velocity
+:magnitude_of_stokes_drift_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stokes_drift_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#magnitude> ;
+			skos:prefLabel "magnitude_of_stokes_drift_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_component_of_stokes_drift_velocity
+:x_component_of_stokes_drift_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stokes_drift_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#x_component> ;
+			skos:prefLabel "x_component_of_stokes_drift_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_component_of_stokes_drift_velocity
+:y_component_of_stokes_drift_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stokes_drift_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#y_component> ;
+			skos:prefLabel "y_component_of_stokes_drift_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_component_of_stokes_drift_velocity
+:z_component_of_stokes_drift_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stokes_drift_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#z_component> ;
+			skos:prefLabel "z_component_of_stokes_drift_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_stokes_drift_velocity
+:azimuth_angle_of_stokes_drift_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stokes_drift_velocity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle> ;
+			skos:prefLabel "azimuth_angle_of_stokes_drift_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_group_velocity
+:azimuth_angle_of_group_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :group_velocity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle> ;
+			skos:prefLabel "azimuth_angle_of_group_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#elevation_angle_of_impact_velocity
+:elevation_angle_of_impact_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :impact_velocity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#elevation_angle> ;
+			skos:prefLabel "elevation_angle_of_impact_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_impact_velocity
+:azimuth_angle_of_impact_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :impact_velocity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle> ;
+			skos:prefLabel "azimuth_angle_of_impact_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_impact_velocity
+:azimuth_angle_of_impact_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :impact_velocity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle> ;
+			skos:prefLabel "azimuth_angle_of_impact_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#elevation_angle_of_impact_velocity
+:elevation_angle_of_impact_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :impact_velocity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#elevation_angle> ;
+			skos:prefLabel "elevation_angle_of_impact_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_phase_velocity
+:azimuth_angle_of_phase_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :phase_velocity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle> ;
+			skos:prefLabel "azimuth_angle_of_phase_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_left_normal_of_phase_velocity
+:azimuth_angle_of_left_normal_of_phase_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :phase_velocity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle_of_left_normal> ;
+			skos:prefLabel "azimuth_angle_of_left_normal_of_phase_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude_of_shear_velocity
+:magnitude_of_shear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :shear_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#magnitude> ;
+			skos:prefLabel "magnitude_of_shear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_component_of_shear_velocity
+:x_component_of_shear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :shear_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#x_component> ;
+			skos:prefLabel "x_component_of_shear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_component_of_shear_velocity
+:y_component_of_shear_velocity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :shear_velocity ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#y_component> ;
+			skos:prefLabel "y_component_of_shear_velocity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#log10_of_dynamic_viscosity
+:log10_of_dynamic_viscosity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :dynamic_viscosity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#log10> ;
+			skos:prefLabel "log10_of_dynamic_viscosity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_z_component_of_dynamic_viscosity
+:x_z_component_of_dynamic_viscosity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :dynamic_viscosity ;
+			svu:hasUnits "L^-1 M T^-1" ;
+			svu:hasOperator <operator#x_z_component> ;
+			skos:prefLabel "x_z_component_of_dynamic_viscosity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#change_from_annual_min_of_volume
+:change_from_annual_min_of_volume rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :volume ;
+			svu:hasUnits "L^3" ;
+			svu:hasOperator <operator#change_from_annual_min> ;
+			skos:prefLabel "change_from_annual_min_of_volume"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_volume
+:time_derivative_of_volume rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :volume ;
+			svu:hasUnits "L^3 T^-1" ;
+			svu:hasOperator <operator#time_derivative> ;
+			skos:prefLabel "time_derivative_of_volume"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_vorticity
+:azimuth_angle_of_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :vorticity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle> ;
+			skos:prefLabel "azimuth_angle_of_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#down_component_of_vorticity
+:down_component_of_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :vorticity ;
+			svu:hasUnits "T^-2" ;
+			svu:hasOperator <operator#down_component> ;
+			skos:prefLabel "down_component_of_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_component_of_vorticity
+:east_component_of_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :vorticity ;
+			svu:hasUnits "T^-2" ;
+			svu:hasOperator <operator#east_component> ;
+			skos:prefLabel "east_component_of_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#elevation_angle_of_vorticity
+:elevation_angle_of_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :vorticity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#elevation_angle> ;
+			skos:prefLabel "elevation_angle_of_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude_of_vorticity
+:magnitude_of_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :vorticity ;
+			svu:hasUnits "T^-2" ;
+			svu:hasOperator <operator#magnitude> ;
+			skos:prefLabel "magnitude_of_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_component_of_vorticity
+:north_component_of_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :vorticity ;
+			svu:hasUnits "T^-2" ;
+			svu:hasOperator <operator#north_component> ;
+			skos:prefLabel "north_component_of_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#south_component_of_vorticity
+:south_component_of_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :vorticity ;
+			svu:hasUnits "T^-2" ;
+			svu:hasOperator <operator#south_component> ;
+			skos:prefLabel "south_component_of_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#up_component_of_vorticity
+:up_component_of_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :vorticity ;
+			svu:hasUnits "T^-2" ;
+			svu:hasOperator <operator#up_component> ;
+			skos:prefLabel "up_component_of_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#west_component_of_vorticity
+:west_component_of_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :vorticity ;
+			svu:hasUnits "T^-2" ;
+			svu:hasOperator <operator#west_component> ;
+			skos:prefLabel "west_component_of_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_component_of_vorticity
+:x_component_of_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :vorticity ;
+			svu:hasUnits "T^-2" ;
+			svu:hasOperator <operator#x_component> ;
+			skos:prefLabel "x_component_of_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_component_of_vorticity
+:y_component_of_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :vorticity ;
+			svu:hasUnits "T^-2" ;
+			svu:hasOperator <operator#y_component> ;
+			skos:prefLabel "y_component_of_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_component_of_vorticity
+:z_component_of_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :vorticity ;
+			svu:hasUnits "T^-2" ;
+			svu:hasOperator <operator#z_component> ;
+			skos:prefLabel "z_component_of_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude_of_bolus_vorticity
+:magnitude_of_bolus_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :bolus_vorticity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#magnitude> ;
+			skos:prefLabel "magnitude_of_bolus_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#east_derivative_of_potential_vorticity
+:east_derivative_of_potential_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :potential_vorticity ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#east_derivative> ;
+			skos:prefLabel "east_derivative_of_potential_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#azimuth_angle_of_gradient_of_potential_vorticity
+:azimuth_angle_of_gradient_of_potential_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :potential_vorticity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#azimuth_angle_of_gradient> ;
+			skos:prefLabel "azimuth_angle_of_gradient_of_potential_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#elevation_angle_of_gradient_of_potential_vorticity
+:elevation_angle_of_gradient_of_potential_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :potential_vorticity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#elevation_angle_of_gradient> ;
+			skos:prefLabel "elevation_angle_of_gradient_of_potential_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#magnitude_of_gradient_of_potential_vorticity
+:magnitude_of_gradient_of_potential_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :potential_vorticity ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#magnitude_of_gradient> ;
+			skos:prefLabel "magnitude_of_gradient_of_potential_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#north_derivative_of_potential_vorticity
+:north_derivative_of_potential_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :potential_vorticity ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#north_derivative> ;
+			skos:prefLabel "north_derivative_of_potential_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_potential_vorticity
+:time_derivative_of_potential_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :potential_vorticity ;
+			svu:hasUnits "T^-1" ;
+			svu:hasOperator <operator#time_derivative> ;
+			skos:prefLabel "time_derivative_of_potential_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#x_derivative_of_potential_vorticity
+:x_derivative_of_potential_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :potential_vorticity ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#x_derivative> ;
+			skos:prefLabel "x_derivative_of_potential_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#y_derivative_of_potential_vorticity
+:y_derivative_of_potential_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :potential_vorticity ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#y_derivative> ;
+			skos:prefLabel "y_derivative_of_potential_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_derivative_of_potential_vorticity
+:z_derivative_of_potential_vorticity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :potential_vorticity ;
+			svu:hasUnits "L^-1" ;
+			svu:hasOperator <operator#z_derivative> ;
+			skos:prefLabel "z_derivative_of_potential_vorticity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#second_invariant_of_deviatoric_plastic_strain
+:second_invariant_of_deviatoric_plastic_strain rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :deviatoric_plastic_strain ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#second_invariant> ;
+			skos:prefLabel "second_invariant_of_deviatoric_plastic_strain"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_min_of_stomatal_resistance
+:time_min_of_stomatal_resistance rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :stomatal_resistance ;
+			svu:hasUnits "L^-2 T^-1 N" ;
+			svu:hasOperator <operator#time_min> ;
+			skos:prefLabel "time_min_of_stomatal_resistance"@en .
+
+###  http://www.geoscienceontology.org/svl/property#width-to-depth_ratio
+:width-to-depth_ratio rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			skos:prefLabel "width-to-depth_ratio"@en .
+
+###  http://www.geoscienceontology.org/svl/property#power-to-weight_ratio
+:power-to-weight_ratio rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			skos:prefLabel "power-to-weight_ratio"@en .
+
+###  http://www.geoscienceontology.org/svl/property#inverse_of_flattening_ratio
+:inverse_of_flattening_ratio rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :flattening_ratio ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#inverse> ;
+			skos:prefLabel "inverse_of_flattening_ratio"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_max_of_manning-formula_n_parameter
+:domain_max_of_manning-formula_n_parameter rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :manning-formula_n_parameter ;
+			svu:hasUnits "L^-0.33 T" ;
+			svu:hasOperator <operator#domain_max> ;
+			skos:prefLabel "domain_max_of_manning-formula_n_parameter"@en .
+
+###  http://www.geoscienceontology.org/svl/property#domain_min_of_manning-formula_n_parameter
+:domain_min_of_manning-formula_n_parameter rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :manning-formula_n_parameter ;
+			svu:hasUnits "L^-0.33 T" ;
+			svu:hasOperator <operator#domain_min> ;
+			skos:prefLabel "domain_min_of_manning-formula_n_parameter"@en .
+
+###  http://www.geoscienceontology.org/svl/property#anomaly_of_mass-per-volume_density
+:anomaly_of_mass-per-volume_density rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :mass-per-volume_density ;
+			svu:hasUnits "L^-3 M" ;
+			svu:hasOperator <operator#anomaly> ;
+			skos:prefLabel "anomaly_of_mass-per-volume_density"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_mean_of_mass-per-volume_density
+:z_mean_of_mass-per-volume_density rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :mass-per-volume_density ;
+			svu:hasUnits "L^-3 M" ;
+			svu:hasOperator <operator#z_mean> ;
+			skos:prefLabel "z_mean_of_mass-per-volume_density"@en .
+
+###  http://www.geoscienceontology.org/svl/property#lower_limit_of_detection_count
+:lower_limit_of_detection_count rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :detection_number_count ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#lower_limit> ;
+			skos:prefLabel "lower_limit_of_detection_count"@en .
+
+###  http://www.geoscienceontology.org/svl/property#time_derivative_of_hydraulic_conductivity
+:time_derivative_of_hydraulic_conductivity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :hydraulic_conductivity ;
+			svu:hasUnits "L T^-2" ;
+			svu:hasOperator <operator#time_derivative> ;
+			skos:prefLabel "time_derivative_of_hydraulic_conductivity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#inverse_of_electrical_conductivity
+:inverse_of_electrical_conductivity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			skos:altLabel "electrical_resistivity"@en ;
+			skos:altLabel "specific_conductance"@en ;
+			svu:isDerivedFrom :electrical_conductivity ;
+			svu:hasUnits "L^3 M T^-3 I^-2" ;
+			svu:hasOperator <operator#inverse> ;
+			skos:prefLabel "inverse_of_electrical_conductivity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#log10_of_electrical_conductivity
+:log10_of_electrical_conductivity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :electrical_conductivity ;
+			svu:hasUnits "" ;
+			svu:hasOperator <operator#log10> ;
+			skos:prefLabel "log10_of_electrical_conductivity"@en .
+
+###  http://www.geoscienceontology.org/svl/property#temperature_derivative_of_isothermal_compressibility
+:temperature_derivative_of_isothermal_compressibility rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :isothermal_compressibility ;
+			svu:hasUnits "L O^-1" ;
+			svu:hasOperator <operator#temperature_derivative> ;
+			skos:prefLabel "temperature_derivative_of_isothermal_compressibility"@en .
+
+###  http://www.geoscienceontology.org/svl/property#z_mean_of_isobaric_mass-specific_heat_capacity
+:z_mean_of_isobaric_mass-specific_heat_capacity rdf:type owl:NamedIndividual ,
+			svu:OperatorQuantitativeProperty ;
+			svu:isDerivedFrom :isobaric_mass-specific_heat_capacity ;
+			svu:hasUnits "L^2" ;
+			svu:hasOperator <operator#z_mean> ;
+			skos:prefLabel "z_mean_of_isobaric_mass-specific_heat_capacity"@en .

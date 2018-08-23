@@ -23,6 +23,15 @@
 #    Object Properties
 #################################################################
 
+###  http://www.geoscienceontology.org/svu#hasHeadOperator
+:hasHeadOperator rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :hasOperator .
+
+
+###  http://www.geoscienceontology.org/svu#hasOperator
+:hasOperator rdf:type owl:ObjectProperty .
+
+
 ###  http://www.geoscienceontology.org/svu#hasPropertyQuantification
 :hasPropertyQuantification rdf:type owl:ObjectProperty .
 
@@ -61,6 +70,15 @@
 #################################################################
 #    Classes
 #################################################################
+
+###  http://www.geoscienceontology.org/svu#Operator
+:Operator rdf:type owl:Class .
+
+
+###  http://www.geoscienceontology.org/svu#OperatorQuantitativeProperty
+:OperatorQuantitativeProperty rdf:type owl:Class ;
+                              rdfs:subClassOf :QuantitativeProperty .
+
 
 ###  http://www.geoscienceontology.org/svu#Property
 :Property rdf:type owl:Class ;
