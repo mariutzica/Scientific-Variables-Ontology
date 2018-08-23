@@ -19,6 +19,16 @@
                             rdfs:subPropertyOf rdfs:comment .
 
 
+###  http://www.geoscienceontology.org/svu#hasNominalization
+:hasNominalization rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf rdfs:label .
+
+
+###  http://www.geoscienceontology.org/svu#hasPresentParticiple
+:hasPresentParticiple rdf:type owl:AnnotationProperty ;
+                      rdfs:subPropertyOf rdfs:label .
+
+
 #################################################################
 #    Object Properties
 #################################################################

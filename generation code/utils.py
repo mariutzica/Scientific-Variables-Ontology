@@ -71,7 +71,7 @@ error_message = ( 'Ooops, the file {} was not found in its expected '
 def load_data( ext, filename, usecols=None ):
     try:
         if not usecols:
-            data = pd.read_csv( ext + filename, encoding='utf-8', \
+            data = pd.read_csv( open(ext + filename,'rU'), encoding='utf-8', \
                                index_col=False ).fillna('')
         else:
             data = pd.read_csv( ext + filename, index_col=False, \
@@ -329,4 +329,14 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                             '<operator#' + urllib.quote( op )+'>', ';' ) )
         if collabel + '_label' in vocab.columns.values:
             element = vocab.loc[ index, collabel + '_label' ]
+        if 'process_present_participle' in vocab.columns.values:
+            attr = vocab.loc[ index, 'process_present_participle']
+            if attr != '':
+                ttl_file.write( attribute.format( 'hasPresentParticiple', \
+                                              '\"' + h.unescape(attr) + '\"', ';'))
+        if 'process_nominalization' in vocab.columns.values:
+            attr = vocab.loc[ index, 'process_nominalization']
+            if attr != '':
+                ttl_file.write( attribute.format( 'hasNominalization', \
+                                              '\"' + h.unescape(attr) + '\"', ';'))
         ttl_file.write( preflabel.format( element ) )
