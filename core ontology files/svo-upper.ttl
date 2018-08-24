@@ -67,6 +67,11 @@
 #    Data properties
 #################################################################
 
+###  http://www.geoscienceontology.org/svu#hasAssignedUnits
+:hasAssignedUnits rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :hasUnits .
+
+
 ###  http://www.geoscienceontology.org/svu#hasMultiplierUnits
 :hasMultiplierUnits rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf :hasUnits .
@@ -79,6 +84,15 @@
 
 ###  http://www.geoscienceontology.org/svu#hasUnits
 :hasUnits rdf:type owl:DatatypeProperty .
+
+
+###  http://www.geoscienceontology.org/svu#hasValue
+:hasValue rdf:type owl:DatatypeProperty .
+
+
+###  http://www.geoscienceontology.org/svu#isNoun
+:isNoun rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty .
 
 
 #################################################################

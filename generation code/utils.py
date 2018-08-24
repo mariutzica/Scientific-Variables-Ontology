@@ -375,6 +375,32 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 op = vocab.loc[ index, 'operator' ]
                 ttl_file.write( attribute.format( 'hasOperator', \
                             '<operator#' + urllib.quote( op )+'>', ';' ) )
+        if collabel == 'attribute':
+            if vocab.loc[ index, 'property_id' ] != '' :
+                prop = vocab.loc[ index, 'property_id' ]
+                ttl_file.write( attribute.format( 'hasProperty', \
+                            '<property#' + urllib.quote( prop )+'>', ';' ) )
+            if vocab.loc[ index, 'value' ] != '' :
+                value = vocab.loc[ index, 'value' ]
+                ttl_file.write( attribute.format( 'hasValue', \
+                            '\"' + value + '\"', ';' ) )
+            if 'canonical_unit' in vocab.columns.values and \
+                ( vocab.loc[ index, 'canonical_unit' ] != '' ):
+                unit = vocab.loc[ index, 'canonical_unit' ]
+                ttl_file.write( attribute.format( 'hasUnits', \
+                            '\"' + unit + '\"', ';' ) )
+            if 'unit' in vocab.columns.values and \
+                vocab.loc[ index, 'unit' ] != '' :
+                unit = vocab.loc[ index, 'unit' ]
+                ttl_file.write( attribute.format( 'hasAsignedUnits', \
+                            '\"' + unit + '\"', ';' ) )
+            if 'noun' in vocab.columns.values and \
+                ( vocab.loc[ index, 'noun' ] == 'noun' ):
+                ttl_file.write( attribute.format( 'isNoun', \
+                            'true', ';' ) )
+            else:
+                ttl_file.write( attribute.format( 'isNoun', \
+                            'false', ';' ) )
         if collabel + '_label' in vocab.columns.values:
             element = vocab.loc[ index, collabel + '_label' ]
         if 'process_present_participle' in vocab.columns.values:

@@ -34,6 +34,9 @@ operator_quantity_file  = 'quantitative_property_with_operator.csv'
 
 process_file  = 'process.csv'
 
+qualitative_attribute_file  = 'qualitative_attribute.csv'
+quantitative_attribute_file  = 'quantitative_attribute.csv'
+
 ################################
 #   INITIAL DATA LOAD          #
 ################################
@@ -52,7 +55,12 @@ operator_vocabulary = \
 operator_quantity_vocabulary = \
             utils.load_data( ext_vocabulary, operator_quantity_file )
 process_vocabulary = \
-            utils.load_data( ext_vocabulary, process_file )            
+            utils.load_data( ext_vocabulary, process_file )   
+qualitative_attribute_vocabulary = \
+            utils.load_data( ext_vocabulary, qualitative_attribute_file )   
+quantitative_attribute_vocabulary = \
+            utils.load_data( ext_vocabulary, quantitative_attribute_file )  
+            
 ######################
 #  OUTPUT FILE SETUP #
 ######################
@@ -60,10 +68,12 @@ process_vocabulary = \
 property_ttl = open( ext_output + 'svo-lower-property.ttl', 'w' )
 operator_ttl = open( ext_output + 'svo-lower-operator.ttl', 'w' )
 process_ttl = open( ext_output + 'svo-lower-process.ttl', 'w' )
+attribute_ttl = open( ext_output + 'svo-lower-attribute.ttl', 'w' )
 
 utils.open_write_file( property_ttl, 'Property' )
 utils.open_write_file( operator_ttl, 'Operator' )
 utils.open_write_file( process_ttl, 'Process' )
+utils.open_write_file( attribute_ttl, 'Attribute' )
 
 ################################
 #   DATA PREPROCESSING         #
@@ -129,6 +139,13 @@ label = '\n\n###Process\n\n'
 utils.create_bb_file( process_vocabulary, process_ttl, \
                       'Process', 'process', 'process', label = label )
 
+# create Attribute file
+label = '\n\n###Attribute\n\n'
+utils.create_bb_file( qualitative_attribute_vocabulary, attribute_ttl, \
+                      'Attribute', 'attribute', 'attribute', label = label )
+utils.create_bb_file( quantitative_attribute_vocabulary, attribute_ttl, \
+                      'Attribute', 'attribute', 'attribute', label = label )
+
 ######################
 #    File Cleanup    #
 ######################
@@ -136,3 +153,4 @@ utils.create_bb_file( process_vocabulary, process_ttl, \
 property_ttl.close()
 operator_ttl.close()
 process_ttl.close()
+attribute_ttl.close()
