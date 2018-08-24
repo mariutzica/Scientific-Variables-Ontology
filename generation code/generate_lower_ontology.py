@@ -107,7 +107,8 @@ utils.create_bb_file( property_type_vocabulary, property_ttl, \
 label = '\n\n###QuantitativeProperty (Quantity)\n\n'
 utils.create_bb_file( quantitative_property_vocabulary, property_ttl, \
                       'QuantitativeProperty', 'quantity', \
-                      'property', label = label )
+                      'property', label = label, \
+                      process_vocab = process_vocabulary )
 
 label = '\n\n###OperatorQuantitativeProperty (OperatorQuantity)\n\n'
 utils.create_bb_file( operator_quantity_vocabulary, property_ttl, \

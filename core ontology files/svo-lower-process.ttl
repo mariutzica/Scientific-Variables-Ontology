@@ -17,7 +17,7 @@
 #    Process   
 # 
 #################################################################
-##Last generated on: 2018-08-23 15:08
+##Last generated on: 2018-08-24 12:34
 
 ###Process
 
@@ -80,13 +80,13 @@
 			svu:hasNominalization "acceptance" ;
 			skos:prefLabel "accept"@en .
 
-###  http://www.geoscienceontology.org/svl/process#accerate
-:accerate rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/process#accelerate
+:accelerate rdf:type owl:NamedIndividual ,
 			svu:Process ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Acceleration" ;
 			svu:hasPresentParticiple "accelerating" ;
 			svu:hasNominalization "acceleration" ;
-			skos:prefLabel "accerate"@en .
+			skos:prefLabel "accelerate"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#acclimate
 :acclimate rdf:type owl:NamedIndividual ,
@@ -193,7 +193,7 @@
 			svu:Process ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Advance" ;
 			svu:hasPresentParticiple "advancing" ;
-			svu:hasNominalization "advancement" ;
+			svu:hasNominalization "advancement, advance" ;
 			skos:prefLabel "advance"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#advect
@@ -2238,6 +2238,7 @@
 :demand rdf:type owl:NamedIndividual ,
 			svu:Process ;
 			svu:hasPresentParticiple "demanding" ;
+			svu:hasNominalization "demand" ;
 			skos:prefLabel "demand"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#demarcate
@@ -2756,7 +2757,7 @@
 :drag rdf:type owl:NamedIndividual ,
 			svu:Process ;
 			svu:hasPresentParticiple "dragging" ;
-			svu:hasNominalization "dragging" ;
+			svu:hasNominalization "dragging, drag" ;
 			skos:prefLabel "drag"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#drain
@@ -2785,7 +2786,7 @@
 :drift rdf:type owl:NamedIndividual ,
 			svu:Process ;
 			svu:hasPresentParticiple "drifting" ;
-			svu:hasNominalization "drifting" ;
+			svu:hasNominalization "drifting, drift" ;
 			skos:prefLabel "drift"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#drill
@@ -3781,7 +3782,7 @@
 			svu:Process ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Freezing" ;
 			svu:hasPresentParticiple "freezing" ;
-			svu:hasNominalization "freezing" ;
+			svu:hasNominalization "freezing, freeze" ;
 			skos:prefLabel "freeze"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#freshen
@@ -4170,7 +4171,7 @@
 			svu:Process ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Impact_(mechanics)" ;
 			svu:hasPresentParticiple "impacting" ;
-			svu:hasNominalization "impaction" ;
+			svu:hasNominalization "impaction, impact" ;
 			skos:prefLabel "impact"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#impair
@@ -4911,7 +4912,7 @@
 :lift rdf:type owl:NamedIndividual ,
 			svu:Process ;
 			svu:hasPresentParticiple "lifting" ;
-			svu:hasNominalization "lifting" ;
+			svu:hasNominalization "lifting, lift" ;
 			skos:prefLabel "lift"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#lift-off
@@ -6167,6 +6168,7 @@
 :propel rdf:type owl:NamedIndividual ,
 			svu:Process ;
 			svu:hasPresentParticiple "propelling" ;
+			svu:hasNominalization "propelling" ;
 			skos:prefLabel "propel"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#protect
@@ -6430,7 +6432,7 @@
 :recharge rdf:type owl:NamedIndividual ,
 			svu:Process ;
 			svu:hasPresentParticiple "recharging" ;
-			svu:hasNominalization "recharging" ;
+			svu:hasNominalization "recharge, recharging" ;
 			skos:prefLabel "recharge"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#reciprocate
@@ -7148,7 +7150,7 @@
 :rise rdf:type owl:NamedIndividual ,
 			svu:Process ;
 			svu:hasPresentParticiple "rising" ;
-			svu:hasNominalization "rising" ;
+			svu:hasNominalization "rising, rise" ;
 			skos:prefLabel "rise"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#risk
@@ -7223,7 +7225,7 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Runoff" ;
 			svu:isDerivedFrom :run ;
 			svu:hasPresentParticiple "running-off" ;
-			svu:hasNominalization "running-off, run-off" ;
+			svu:hasNominalization "running-off, run-off, runoff" ;
 			skos:prefLabel "run-off"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#run-up
@@ -7364,7 +7366,7 @@
 			svu:Process ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Scour" ;
 			svu:hasPresentParticiple "scouring" ;
-			svu:hasNominalization "scouring" ;
+			svu:hasNominalization "scouring, scour" ;
 			skos:prefLabel "scour"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#scratch
@@ -7511,7 +7513,7 @@
 :set rdf:type owl:NamedIndividual ,
 			svu:Process ;
 			svu:hasPresentParticiple "setting" ;
-			svu:hasNominalization "setting" ;
+			svu:hasNominalization "setting, set" ;
 			skos:prefLabel "set"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#set-on
@@ -7768,7 +7770,7 @@
 :slip rdf:type owl:NamedIndividual ,
 			svu:Process ;
 			svu:hasPresentParticiple "slipping" ;
-			svu:hasNominalization "slipping" ;
+			svu:hasNominalization "slipping, slip" ;
 			skos:prefLabel "slip"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#sluice
@@ -7933,7 +7935,7 @@
 			svu:Process ;
 			svu:isDerivedFrom :spin ;
 			svu:hasPresentParticiple "spinning-up" ;
-			svu:hasNominalization "spinning-up" ;
+			svu:hasNominalization "spinning-up, spin-up" ;
 			skos:prefLabel "spin-up"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#splay
@@ -8192,7 +8194,7 @@
 :strike rdf:type owl:NamedIndividual ,
 			svu:Process ;
 			svu:hasPresentParticiple "striking" ;
-			svu:hasNominalization "striking" ;
+			svu:hasNominalization "striking, strike" ;
 			skos:prefLabel "strike"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#strobe
@@ -8206,7 +8208,7 @@
 :stroke rdf:type owl:NamedIndividual ,
 			svu:Process ;
 			svu:hasPresentParticiple "stroking" ;
-			svu:hasNominalization "stroking" ;
+			svu:hasNominalization "stroking, stroke" ;
 			skos:prefLabel "stroke"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#subduct
@@ -8663,7 +8665,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Throughfall" ;
 			svu:isDerivedFrom :fall ;
 			svu:hasPresentParticiple "fall-through" ;
-			svu:hasNominalization "falling-through" ;
+			svu:hasNominalization "falling-through, throughfall" ;
 			skos:prefLabel "throughfall"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#throughflow
@@ -9082,7 +9084,7 @@
 			svu:Process ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Uplift" ;
 			svu:hasPresentParticiple "lift-up" ;
-			svu:hasNominalization "lifting-up" ;
+			svu:hasNominalization "lifting-up, uplift" ;
 			skos:prefLabel "uplift"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#upwell
@@ -10313,43 +10315,51 @@
 ###  http://www.geoscienceontology.org/svl/process#downdraft
 :downdraft rdf:type owl:NamedIndividual ,
 			svu:Process ;
+			svu:hasNominalization "downdraft" ;
 			skos:prefLabel "downdraft"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#eddy
 :eddy rdf:type owl:NamedIndividual ,
 			svu:Process ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Eddy_(fluid_dynamics)" ;
+			svu:hasNominalization "eddy" ;
 			skos:prefLabel "eddy"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#exodus
 :exodus rdf:type owl:NamedIndividual ,
 			svu:Process ;
+			svu:hasNominalization "exodus" ;
 			skos:prefLabel "exodus"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#fecundation
 :fecundation rdf:type owl:NamedIndividual ,
 			svu:Process ;
+			svu:hasNominalization "fecundation" ;
 			skos:prefLabel "fecundation"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#friction
 :friction rdf:type owl:NamedIndividual ,
 			svu:Process ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Friction" ;
+			svu:hasNominalization "friction" ;
 			skos:prefLabel "friction"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#genesis
 :genesis rdf:type owl:NamedIndividual ,
 			svu:Process ;
+			svu:hasNominalization "genesis" ;
 			skos:prefLabel "genesis"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#inception
 :inception rdf:type owl:NamedIndividual ,
 			svu:Process ;
+			svu:hasNominalization "inception" ;
 			skos:prefLabel "inception"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#incursion
 :incursion rdf:type owl:NamedIndividual ,
 			svu:Process ;
+			svu:hasNominalization "incursion" ;
 			skos:prefLabel "incursion"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#inflow
@@ -10384,16 +10394,19 @@
 ###  http://www.geoscienceontology.org/svl/process#onset
 :onset rdf:type owl:NamedIndividual ,
 			svu:Process ;
+			svu:hasNominalization "onset" ;
 			skos:prefLabel "onset"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#outage
 :outage rdf:type owl:NamedIndividual ,
 			svu:Process ;
+			svu:hasNominalization "outage" ;
 			skos:prefLabel "outage"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#sorption
 :sorption rdf:type owl:NamedIndividual ,
 			svu:Process ;
+			svu:hasNominalization "sorption" ;
 			skos:prefLabel "sorption"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#synchronize
@@ -10413,9 +10426,23 @@
 ###  http://www.geoscienceontology.org/svl/process#syzygy
 :syzygy rdf:type owl:NamedIndividual ,
 			svu:Process ;
+			svu:hasNominalization "syzygy" ;
 			skos:prefLabel "syzygy"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#tailspin
 :tailspin rdf:type owl:NamedIndividual ,
 			svu:Process ;
+			svu:hasNominalization "tailspin" ;
 			skos:prefLabel "tailspin"@en .
+
+###  http://www.geoscienceontology.org/svl/process#slip-rake
+:slip-rake rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "slip-rake" ;
+			skos:prefLabel "slip-rake"@en .
+
+###  http://www.geoscienceontology.org/svl/process#progradation
+:progradation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "progradation" ;
+			skos:prefLabel "progradation"@en .

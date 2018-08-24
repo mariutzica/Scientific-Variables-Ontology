@@ -17,7 +17,7 @@
 #    Property   
 # 
 #################################################################
-##Last generated on: 2018-08-23 15:08
+##Last generated on: 2018-08-24 12:34
 
 ###Property
 
@@ -782,6 +782,7 @@
 :deposition_age rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :age ;
+			svu:quantifiesProcess <process#deposit> ;
 			skos:prefLabel "deposition_age"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#albedo
@@ -868,6 +869,7 @@
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :amplitude ;
 			svu:hasUnits "L" ;
+			svu:quantifiesProcess <process#shake> ;
 			skos:prefLabel "shaking_amplitude"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#angle
@@ -887,6 +889,7 @@
 :approach_angle rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :angle ;
+			svu:quantifiesProcess <process#approach> ;
 			skos:prefLabel "approach_angle"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#aspect_angle
@@ -912,6 +915,7 @@
 :breakover_angle rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :angle ;
+			svu:quantifiesProcess <process#break-over> ;
 			skos:prefLabel "breakover_angle"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#camber_angle
@@ -937,12 +941,14 @@
 :departure_angle rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :angle ;
+			svu:quantifiesProcess <process#depart> ;
 			skos:prefLabel "departure_angle"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#dilation_angle
 :dilation_angle rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :angle ;
+			svu:quantifiesProcess <process#dilate> ;
 			skos:prefLabel "dilation_angle"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#dip_angle
@@ -974,6 +980,7 @@
 :friction_angle rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :angle ;
+			svu:quantifiesProcess <process#friction> ;
 			skos:prefLabel "friction_angle"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#ideal_angle
@@ -998,6 +1005,7 @@
 :opening_angle rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :angle ;
+			svu:quantifiesProcess <process#open> ;
 			skos:prefLabel "opening_angle"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#phase_angle
@@ -1016,6 +1024,7 @@
 :refraction_angle rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :angle ;
+			svu:quantifiesProcess <process#refract> ;
 			skos:prefLabel "refraction_angle"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#repose_angle
@@ -1028,18 +1037,21 @@
 :rotation_angle rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :angle ;
+			svu:quantifiesProcess <process#rotate> ;
 			skos:prefLabel "rotation_angle"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#seismic_slip_angle
 :seismic_slip_angle rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :angle ;
+			svu:quantifiesProcess <process#slip> ;
 			skos:prefLabel "seismic_slip_angle"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#seismic_slip-rake_angle
 :seismic_slip-rake_angle rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :angle ;
+			svu:quantifiesProcess <process#slip-rake> ;
 			skos:prefLabel "seismic_slip-rake_angle"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#slope_angle
@@ -1052,6 +1064,7 @@
 :strike_angle rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :angle ;
+			svu:quantifiesProcess <process#strike> ;
 			skos:prefLabel "strike_angle"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#subtended_angle
@@ -1065,6 +1078,7 @@
 :takeoff_angle rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :angle ;
+			svu:quantifiesProcess <process#take-off> ;
 			skos:prefLabel "takeoff_angle"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#tilt_angle
@@ -1148,6 +1162,7 @@
 :rupture_area rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :area ;
+			svu:quantifiesProcess <process#rupture> ;
 			skos:prefLabel "rupture_area"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#wetted_area
@@ -1225,6 +1240,7 @@
 :latent_fusion_mass-specific_heat_capacity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass-specific_heat_capacity ;
+			svu:quantifiesProcess <process#fuse> ;
 			skos:prefLabel "latent_fusion_mass-specific_heat_capacity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#isobaric_mass-specific_heat_capacity
@@ -1243,12 +1259,14 @@
 :latent_sublimation_mass-specific_heat_capacity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass-specific_heat_capacity ;
+			svu:quantifiesProcess <process#sublimate> ;
 			skos:prefLabel "latent_sublimation_mass-specific_heat_capacity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#latent_vaporization_mass-specific_heat_capacity
 :latent_vaporization_mass-specific_heat_capacity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass-specific_heat_capacity ;
+			svu:quantifiesProcess <process#vaporize> ;
 			skos:prefLabel "latent_vaporization_mass-specific_heat_capacity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mole-specific_heat_capacity
@@ -1285,6 +1303,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Interception_(water)" ;
 			svu:isDerivedFrom :capacity ;
 			svu:hasUnits "L^3 T^-1" ;
+			svu:quantifiesProcess <process#intercept> ;
 			skos:prefLabel "interception_capacity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-time_capacity
@@ -1430,12 +1449,14 @@
 			skos:altLabel "extinction_coefficient"@en ;
 			svu:hasPropertyRole :coefficient ;
 			svu:hasUnits "L^-1" ;
+			svu:quantifiesProcess <process#attenuate> ;
 			skos:prefLabel "attenuation_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#beer-lambert-law_attenuation_coefficient
 :beer-lambert-law_attenuation_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :attenuation_coefficient ;
+			svu:quantifiesProcess <process#attenuate> ;
 			skos:prefLabel "beer-lambert-law_attenuation_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#binomial_coefficient
@@ -1510,6 +1531,7 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Drag_coefficient" ;
 			svu:hasPropertyRole :coefficient ;
 			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#drag> ;
 			skos:prefLabel "drag_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#excess_temperature_coefficient
@@ -1525,6 +1547,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasPropertyRole :coefficient ;
 			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#expand> ;
 			skos:prefLabel "expansion_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#thermal_expansion_coefficient
@@ -1532,6 +1555,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Thermal_expansion#Coefficient_of_thermal_expansion" ;
 			svu:isDerivedFrom :expansion_coefficient ;
+			svu:quantifiesProcess <process#expand> ;
 			skos:prefLabel "thermal_expansion_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volumetric_thermal_expansion_coefficient
@@ -1539,6 +1563,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Thermal_expansion#General_volumetric_thermal_expansion_coefficient" ;
 			svu:isDerivedFrom :thermal_expansion_coefficient ;
+			svu:quantifiesProcess <process#expand> ;
 			skos:prefLabel "volumetric_thermal_expansion_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#flint-law_coefficient
@@ -1554,18 +1579,21 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Friction_coefficient" ;
 			svu:hasPropertyRole :coefficient ;
 			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#friction> ;
 			skos:prefLabel "friction_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#kinetic_friction_coefficient
 :kinetic_friction_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :friction_coefficient ;
+			svu:quantifiesProcess <process#friction> ;
 			skos:prefLabel "kinetic_friction_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#static_friction_coefficient
 :static_friction_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :friction_coefficient ;
+			svu:quantifiesProcess <process#friction> ;
 			skos:prefLabel "static_friction_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#glen-law_coefficient
@@ -1666,6 +1694,7 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Lift_coefficient" ;
 			svu:hasPropertyRole :coefficient ;
 			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#lift> ;
 			skos:prefLabel "lift_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass_transfer_coefficient
@@ -1738,6 +1767,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Streeter%E2%80%93Phelps_equation#Estimation_of_reaeration_rate" ;
 			svu:hasPropertyRole :coefficient ;
 			svu:hasUnits "L^-1" ;
+			svu:quantifiesProcess <process#reaerate> ;
 			skos:prefLabel "reaeration_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#rolling_resistance_coefficient
@@ -1746,6 +1776,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Rolling_resistance#Rolling_resistance_coefficient_examples" ;
 			svu:hasPropertyRole :coefficient ;
 			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#roll> ;
 			skos:prefLabel "rolling_resistance_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#sieving_coefficient
@@ -1917,6 +1948,7 @@
 :mass_demand_concentration rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass_concentration ;
+			svu:quantifiesProcess <process#demand> ;
 			skos:prefLabel "mass_demand_concentration"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#molar_concentration
@@ -2651,6 +2683,7 @@
 :detection_number_count rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :count ;
+			svu:quantifiesProcess <process#detect> ;
 			skos:prefLabel "detection_count"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#number_count
@@ -2929,18 +2962,21 @@
 :attenuation_depth rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :depth ;
+			svu:quantifiesProcess <process#attenuate> ;
 			skos:prefLabel "attenuation_depth"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#50-percent_attenuation_depth
 :50-percent_attenuation_depth rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :attenuation_depth ;
+			svu:quantifiesProcess <process#attenuate> ;
 			skos:prefLabel "50-percent_attenuation_depth"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#99-percent_attenuation_depth
 :99-percent_attenuation_depth rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :attenuation_depth ;
+			svu:quantifiesProcess <process#attenuate> ;
 			skos:prefLabel "99-percent_attenuation_depth"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#closure_depth
@@ -2968,12 +3004,14 @@
 			skos:altLabel "frost_line"@en ;
 			skos:altLabel "frost_depth"@en ;
 			svu:isDerivedFrom :depth ;
+			svu:quantifiesProcess <process#freeze> ;
 			skos:prefLabel "freeze_depth"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#impact_depth
 :impact_depth rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :depth ;
+			svu:quantifiesProcess <process#impact> ;
 			skos:prefLabel "impact_depth"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#initial_depth
@@ -3016,6 +3054,8 @@
 :infiltration_ponding_depth rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :depth ;
+			svu:quantifiesProcess <process#pond> ;
+			svu:quantifiesProcess <process#infiltrate> ;
 			skos:prefLabel "infiltration_ponding_depth"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#reference_depth
@@ -3046,6 +3086,7 @@
 :reworking_depth rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :depth ;
+			svu:quantifiesProcess <process#rework> ;
 			skos:prefLabel "reworking_depth"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#secchi_depth
@@ -3059,6 +3100,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Thaw_depth" ;
 			svu:isDerivedFrom :depth ;
+			svu:quantifiesProcess <process#thaw> ;
 			skos:prefLabel "thaw_depth"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#transparency
@@ -3198,6 +3240,7 @@
 :braking_distance rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :distance ;
+			svu:quantifiesProcess <process#brake> ;
 			skos:prefLabel "braking_distance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#horizontal_distance
@@ -3234,12 +3277,14 @@
 :reaction_distance rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :distance ;
+			svu:quantifiesProcess <process#react> ;
 			skos:prefLabel "reaction_distance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#separation_distance
 :separation_distance rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :distance ;
+			svu:quantifiesProcess <process#separate> ;
 			skos:prefLabel "separation_distance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#separation_distance
@@ -3276,12 +3321,14 @@
 :stopping_distance rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :distance ;
+			svu:quantifiesProcess <process#stop> ;
 			skos:prefLabel "stopping_distance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#travel_distance
 :travel_distance rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :distance ;
+			svu:quantifiesProcess <process#travel> ;
 			skos:prefLabel "travel_distance"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#duration
@@ -3295,6 +3342,7 @@
 :precipitation_duration rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :duration ;
+			svu:quantifiesProcess <process#precipitate> ;
 			skos:prefLabel "precipitation_duration"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#slip_duration
@@ -3425,6 +3473,7 @@
 :dissociation_energy rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :energy ;
+			svu:quantifiesProcess <process#dissociate> ;
 			skos:prefLabel "dissociation_energy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#electric_energy
@@ -3465,6 +3514,7 @@
 :rotation_kinetic_energy rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :kinetic_energy ;
+			svu:quantifiesProcess <process#rotate> ;
 			skos:prefLabel "rotation_kinetic_energy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#turbulent_kinetic_energy
@@ -3572,6 +3622,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Enthalpy_of_atomization" ;
 			svu:isDerivedFrom :enthalpy ;
+			svu:quantifiesProcess <process#atomize> ;
 			skos:prefLabel "atomization_enthalpy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#combustion_enthalpy
@@ -3579,6 +3630,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Heat_of_combustion" ;
 			svu:isDerivedFrom :enthalpy ;
+			svu:quantifiesProcess <process#combust> ;
 			skos:prefLabel "combustion_enthalpy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#condensation_enthalpy
@@ -3586,12 +3638,14 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Enthalpy_of_condensation" ;
 			svu:isDerivedFrom :enthalpy ;
+			svu:quantifiesProcess <process#condense> ;
 			skos:prefLabel "condensation_enthalpy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#denaturation_enthalpy
 :denaturation_enthalpy rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :enthalpy ;
+			svu:quantifiesProcess <process#denature> ;
 			skos:prefLabel "denaturation_enthalpy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#dissolution_enthalpy
@@ -3600,6 +3654,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Enthalpy_change_of_solution" ;
 			skos:altLabel "solution_enthalpy"@en ;
 			svu:isDerivedFrom :enthalpy ;
+			svu:quantifiesProcess <process#dissolve> ;
 			skos:prefLabel "dissolution_enthalpy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#formation_enthalpy
@@ -3607,6 +3662,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Standard_enthalpy_of_formation" ;
 			svu:isDerivedFrom :enthalpy ;
+			svu:quantifiesProcess <process#form> ;
 			skos:prefLabel "formation_enthalpy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#fusion_enthalpy
@@ -3614,6 +3670,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Enthalpy_of_fusion" ;
 			svu:isDerivedFrom :enthalpy ;
+			svu:quantifiesProcess <process#fuse> ;
 			skos:prefLabel "fusion_enthalpy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hydration_enthalpy
@@ -3621,12 +3678,14 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Hydration_energy" ;
 			svu:isDerivedFrom :enthalpy ;
+			svu:quantifiesProcess <process#hydrate> ;
 			skos:prefLabel "hydration_enthalpy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hydrogenation_enthalpy
 :hydrogenation_enthalpy rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :enthalpy ;
+			svu:quantifiesProcess <process#hydrogenate> ;
 			skos:prefLabel "hydrogenation_enthalpy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-specific_enthalpy
@@ -3652,18 +3711,21 @@
 :latent_fusion_mass-specific_heat rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass-specific_heat ;
+			svu:quantifiesProcess <process#fuse> ;
 			skos:prefLabel "latent_fusion_mass-specific_heat"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#latent_sublimation_mass-specific_heat
 :latent_sublimation_mass-specific_heat rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass-specific_heat ;
+			svu:quantifiesProcess <process#sublimate> ;
 			skos:prefLabel "latent_sublimation_mass-specific_heat"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#latent_vaporization_mass-specific_heat
 :latent_vaporization_mass-specific_heat rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass-specific_heat ;
+			svu:quantifiesProcess <process#vaporize> ;
 			skos:prefLabel "latent_vaporization_mass-specific_heat"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mixing_enthalpy
@@ -3671,6 +3733,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Enthalpy_of_mixing" ;
 			svu:isDerivedFrom :enthalpy ;
+			svu:quantifiesProcess <process#mix> ;
 			skos:prefLabel "mixing_enthalpy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mole-specific_heat
@@ -3690,18 +3753,21 @@
 :latent_fusion_mole-specific_heat rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mole-specific_heat ;
+			svu:quantifiesProcess <process#fuse> ;
 			skos:prefLabel "latent_fusion_mole-specific_heat"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#latent_sublimation_mole-specific_heat
 :latent_sublimation_mole-specific_heat rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mole-specific_heat ;
+			svu:quantifiesProcess <process#sublimate> ;
 			skos:prefLabel "latent_sublimation_mole-specific_heat"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#latent_vaporization_mole-specific_heat
 :latent_vaporization_mole-specific_heat rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mole-specific_heat ;
+			svu:quantifiesProcess <process#vaporize> ;
 			skos:prefLabel "latent_vaporization_mole-specific_heat"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#reaction_enthalpy
@@ -3709,6 +3775,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Standard_enthalpy_of_reaction" ;
 			svu:isDerivedFrom :enthalpy ;
+			svu:quantifiesProcess <process#react> ;
 			skos:prefLabel "reaction_enthalpy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#sublimation_enthalpy
@@ -3716,6 +3783,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Enthalpy_of_sublimation" ;
 			svu:isDerivedFrom :enthalpy ;
+			svu:quantifiesProcess <process#sublimate> ;
 			skos:prefLabel "sublimation_enthalpy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#vaporization_enthalpy
@@ -3723,6 +3791,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Enthalpy_of_vaporization" ;
 			svu:isDerivedFrom :enthalpy ;
+			svu:quantifiesProcess <process#vaporize> ;
 			skos:prefLabel "vaporization_enthalpy"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#angstrom_exponent
@@ -3904,6 +3973,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasPropertyRole :factor ;
 			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#friction> ;
 			skos:prefLabel "friction_factor"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#darcy_friction_factor
@@ -3915,6 +3985,7 @@
 			skos:altLabel "resistance_coefficient"@en ;
 			skos:altLabel "flow_coefficient"@en ;
 			svu:isDerivedFrom :friction_factor ;
+			svu:quantifiesProcess <process#friction> ;
 			skos:prefLabel "darcy_friction_factor"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#fanning_friction_factor
@@ -3922,6 +3993,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Fanning_friction_factor" ;
 			svu:isDerivedFrom :friction_factor ;
+			svu:quantifiesProcess <process#friction> ;
 			skos:prefLabel "fanning_friction_factor"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#power_factor
@@ -4125,18 +4197,21 @@
 :advection_heat_energy_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :energy_flux ;
+			svu:quantifiesProcess <process#advect> ;
 			skos:prefLabel "advection_heat_energy_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#convection_heat_energy_flux
 :convection_heat_energy_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :energy_flux ;
+			svu:quantifiesProcess <process#convect> ;
 			skos:prefLabel "convection_heat_energy_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#diffusion_heat_energy_flux
 :diffusion_heat_energy_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :energy_flux ;
+			svu:quantifiesProcess <process#diffuse> ;
 			skos:prefLabel "diffusion_heat_energy_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#geothermal_heat_energy_flux
@@ -4210,48 +4285,56 @@
 :desublimation_mass_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass_flux ;
+			svu:quantifiesProcess <process#desublimate> ;
 			skos:prefLabel "desublimation_mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#evaporation_mass_flux
 :evaporation_mass_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass_flux ;
+			svu:quantifiesProcess <process#evaporate> ;
 			skos:prefLabel "evaporation_mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#infiltration_mass_flux
 :infiltration_mass_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass_flux ;
+			svu:quantifiesProcess <process#infiltrate> ;
 			skos:prefLabel "infiltration_mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#melt_mass_flux
 :melt_mass_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass_flux ;
+			svu:quantifiesProcess <process#melt> ;
 			skos:prefLabel "melt_mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#precipitation_mass_flux
 :precipitation_mass_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass_flux ;
+			svu:quantifiesProcess <process#precipitate> ;
 			skos:prefLabel "precipitation_mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#recharge_mass_flux
 :recharge_mass_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass_flux ;
+			svu:quantifiesProcess <process#recharge> ;
 			skos:prefLabel "recharge_mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#runoff_mass_flux
 :runoff_mass_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass_flux ;
+			svu:quantifiesProcess <process#run-off> ;
 			skos:prefLabel "runoff_mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#sublimation_mass_flux
 :sublimation_mass_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass_flux ;
+			svu:quantifiesProcess <process#sublimate> ;
 			skos:prefLabel "sublimation_mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mole_flux
@@ -4286,36 +4369,42 @@
 :desublimation_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :volume_flux ;
+			svu:quantifiesProcess <process#desublimate> ;
 			skos:prefLabel "desublimation_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#evaporation_volume_flux
 :evaporation_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :volume_flux ;
+			svu:quantifiesProcess <process#evaporate> ;
 			skos:prefLabel "evaporation_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#potential_evaporation_volume_flux
 :potential_evaporation_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :volume_flux ;
+			svu:quantifiesProcess <process#evaporate> ;
 			skos:prefLabel "potential_evaporation_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#infiltration_volume_flux
 :infiltration_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :volume_flux ;
+			svu:quantifiesProcess <process#infiltrate> ;
 			skos:prefLabel "infiltration_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#potential_infiltration_volume_flux
 :potential_infiltration_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :volume_flux ;
+			svu:quantifiesProcess <process#infiltrate> ;
 			skos:prefLabel "potential_infiltration_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#interception_volume_flux
 :interception_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :volume_flux ;
+			svu:quantifiesProcess <process#intercept> ;
 			skos:prefLabel "interception_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#leq_volume_flux
@@ -4328,54 +4417,63 @@
 :precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :volume_flux ;
+			svu:quantifiesProcess <process#precipitate> ;
 			skos:prefLabel "precipitation_leq_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#melt_volume_flux
 :melt_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :volume_flux ;
+			svu:quantifiesProcess <process#melt> ;
 			skos:prefLabel "melt_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#precipitation_volume_flux
 :precipitation_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :volume_flux ;
+			svu:quantifiesProcess <process#precipitate> ;
 			skos:prefLabel "precipitation_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#instantaneous_precipitation_volume_flux
 :instantaneous_precipitation_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :volume_flux ;
+			svu:quantifiesProcess <process#precipitate> ;
 			skos:prefLabel "instantaneous_precipitation_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#recharge_volume_flux
 :recharge_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :volume_flux ;
+			svu:quantifiesProcess <process#recharge> ;
 			skos:prefLabel "recharge_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#runoff_volume_flux
 :runoff_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :volume_flux ;
+			svu:quantifiesProcess <process#run-off> ;
 			skos:prefLabel "runoff_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#sublimation_volume_flux
 :sublimation_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :volume_flux ;
+			svu:quantifiesProcess <process#sublimate> ;
 			skos:prefLabel "sublimation_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#throughfall_volume_flux
 :throughfall_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :volume_flux ;
+			svu:quantifiesProcess <process#throughfall> ;
 			skos:prefLabel "throughfall_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#transpiration_volume_flux
 :transpiration_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :volume_flux ;
+			svu:quantifiesProcess <process#transpire> ;
 			skos:prefLabel "transpiration_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#force
@@ -4389,6 +4487,7 @@
 :braking_force rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :force ;
+			svu:quantifiesProcess <process#brake> ;
 			skos:prefLabel "braking_force"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#camber_force
@@ -4401,24 +4500,28 @@
 :drag_force rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :force ;
+			svu:quantifiesProcess <process#drag> ;
 			skos:prefLabel "drag_force"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#impact_force
 :impact_force rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :force ;
+			svu:quantifiesProcess <process#impact> ;
 			skos:prefLabel "impact_force"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#lift_force
 :lift_force rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :force ;
+			svu:quantifiesProcess <process#lift> ;
 			skos:prefLabel "lift_force"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#propelling_force
 :propelling_force rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :force ;
+			svu:quantifiesProcess <process#propel> ;
 			skos:prefLabel "propelling_force"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#amount_fraction
@@ -4606,18 +4709,21 @@
 :emission_frequency rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :frequency ;
+			svu:quantifiesProcess <process#emit> ;
 			skos:prefLabel "emission_frequency"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#characteristic_emission_frequency
 :characteristic_emission_frequency rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :emission_frequency ;
+			svu:quantifiesProcess <process#emit> ;
 			skos:prefLabel "characteristic_emission_frequency"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#hearing_frequency
 :hearing_frequency rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :frequency ;
+			svu:quantifiesProcess <process#hear> ;
 			skos:prefLabel "hearing_frequency"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#frequency
@@ -4870,6 +4976,7 @@
 :impact_impulse rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :impulse ;
+			svu:quantifiesProcess <process#impact> ;
 			skos:prefLabel "impact_impulse"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#atterberg_activity_index
@@ -5185,6 +5292,7 @@
 :stroke_length rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :length ;
+			svu:quantifiesProcess <process#stroke> ;
 			skos:prefLabel "stroke_length"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#longitude
@@ -6219,24 +6327,28 @@
 :incubation_period rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :period ;
+			svu:quantifiesProcess <process#incubate> ;
 			skos:prefLabel "incubation_period"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#nutation_period
 :nutation_period rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :period ;
+			svu:quantifiesProcess <process#nutate> ;
 			skos:prefLabel "nutation_period"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#precession_period
 :precession_period rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :period ;
+			svu:quantifiesProcess <process#precess> ;
 			skos:prefLabel "precession_period"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#rotation_period
 :rotation_period rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :period ;
+			svu:quantifiesProcess <process#rotate> ;
 			skos:prefLabel "rotation_period"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#sidereal_period
@@ -6356,6 +6468,7 @@
 :inflation_pressure rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :pressure ;
+			svu:quantifiesProcess <process#inflate> ;
 			skos:prefLabel "inflation_pressure"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#osmotic_pressure
@@ -6439,6 +6552,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cost_of_transport" ;
 			skos:altLabel "transport_cost"@en ;
 			svu:isDerivedFrom :price ;
+			svu:quantifiesProcess <process#transport> ;
 			skos:prefLabel "transport_price"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#savings
@@ -6530,6 +6644,7 @@
 :disintegration_count-per-mass_radioactivity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :count-per-mass_radioactivity ;
+			svu:quantifiesProcess <process#disintegrate> ;
 			skos:prefLabel "disintegration_count-per-mass_radioactivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#count-per-volume_radioactivity
@@ -6543,6 +6658,7 @@
 :disintegration_count-per-volume_radioactivity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :count-per-volume_radioactivity ;
+			svu:quantifiesProcess <process#disintegrate> ;
 			skos:prefLabel "disintegration_count-per-volume_radioactivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-mass_radioactivity
@@ -6577,6 +6693,7 @@
 :scintillation_radioactivity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :per-time_radioactivity ;
+			svu:quantifiesProcess <process#scintillate> ;
 			skos:prefLabel "scintillation_radioactivity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#radius
@@ -6626,6 +6743,7 @@
 :turning_radius rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :radius ;
+			svu:quantifiesProcess <process#turn> ;
 			skos:prefLabel "turning_radius"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#ablation_rate
@@ -6633,36 +6751,42 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Ablation" ;
 			svu:hasUnits "L^-2 M T^-1" ;
+			svu:quantifiesProcess <process#ablate> ;
 			skos:prefLabel "ablation_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#accumulation_rate
 :accumulation_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "L^-2 M T^-1" ;
+			svu:quantifiesProcess <process#accumulate> ;
 			skos:prefLabel "accumulation_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#advance_rate
 :advance_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "L T^-1" ;
+			svu:quantifiesProcess <process#advance> ;
 			skos:prefLabel "advance_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#calving_rate
 :calving_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "L T^-1" ;
+			svu:quantifiesProcess <process#calve> ;
 			skos:prefLabel "calving_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#consumption_rate
 :consumption_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#consume> ;
 			skos:prefLabel "consumption_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#count_flow_rate
 :count_flow_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "T^-1" ;
+			svu:quantifiesProcess <process#flow> ;
 			skos:prefLabel "count_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#count-per-hour_rate
@@ -6687,36 +6811,42 @@
 :elevation_lowering_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "L T^-1" ;
+			svu:quantifiesProcess <process#lower> ;
 			skos:prefLabel "elevation_lowering_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#emission_rate
 :emission_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#emit> ;
 			skos:prefLabel "emission_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#energy_flow_rate
 :energy_flow_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "L M^2 T^-3" ;
+			svu:quantifiesProcess <process#flow> ;
 			skos:prefLabel "energy_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#energy-per-area_flow_rate
 :energy-per-area_flow_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "L^-1 M^2 T^-3" ;
+			svu:quantifiesProcess <process#flow> ;
 			skos:prefLabel "energy-per-area_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#energy-per-length_flow_rate
 :energy-per-length_flow_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "M^2 T^-3" ;
+			svu:quantifiesProcess <process#flow> ;
 			skos:prefLabel "energy-per-length_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#energy-per-volume_dissipation_rate
 :energy-per-volume_dissipation_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "L^-1 M T^-2" ;
+			svu:quantifiesProcess <process#dissipate> ;
 			skos:prefLabel "energy-per-volume_dissipation_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#infiltration_rate
@@ -6724,6 +6854,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Infiltration_(hydrology)" ;
 			svu:hasUnits "L T^-1" ;
+			svu:quantifiesProcess <process#infiltrate> ;
 			skos:prefLabel "infiltration_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#pressure_lapse_rate
@@ -6796,6 +6927,7 @@
 :mass_demand_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass_rate ;
+			svu:quantifiesProcess <process#demand> ;
 			skos:prefLabel "mass_demand_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass_flow_rate
@@ -6803,6 +6935,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Mass_flow_rate" ;
 			svu:isDerivedFrom :mass_rate ;
+			svu:quantifiesProcess <process#flow> ;
 			skos:prefLabel "mass_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass_transport_rate
@@ -6811,6 +6944,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mass_transfer" ;
 			skos:altLabel "mass_transfer_rate"@en ;
 			svu:isDerivedFrom :mass_rate ;
+			svu:quantifiesProcess <process#transport> ;
 			skos:prefLabel "mass_transport_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-area_rate
@@ -6823,12 +6957,14 @@
 :mass-per-area_deposition_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass-per-area_rate ;
+			svu:quantifiesProcess <process#deposit> ;
 			skos:prefLabel "mass-per-area_deposition_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-area_respiration_rate
 :mass-per-area_respiration_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass-per-area_rate ;
+			svu:quantifiesProcess <process#respire> ;
 			skos:prefLabel "mass-per-area_respiration_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-volume_rate
@@ -6841,6 +6977,7 @@
 :mass-per-volume_demand_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass-per-volume_rate ;
+			svu:quantifiesProcess <process#demand> ;
 			skos:prefLabel "mass-per-volume_demand_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-width_rate
@@ -6853,12 +6990,14 @@
 :mass-per-width_flow_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass-per-width_rate ;
+			svu:quantifiesProcess <process#flow> ;
 			skos:prefLabel "mass-per-width_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#migration_rate
 :migration_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "T^-1" ;
+			svu:quantifiesProcess <process#migrate> ;
 			skos:prefLabel "migration_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mole_rate
@@ -6871,12 +7010,14 @@
 :mole_flow_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mole_rate ;
+			svu:quantifiesProcess <process#flow> ;
 			skos:prefLabel "mole_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#momentum_flow_rate
 :momentum_flow_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "L M T^-2" ;
+			svu:quantifiesProcess <process#flow> ;
 			skos:prefLabel "momentum_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#nutation_rate
@@ -6884,6 +7025,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Nutation" ;
 			svu:hasUnits "T^-1" ;
+			svu:quantifiesProcess <process#nutate> ;
 			skos:prefLabel "nutation_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#precession_rate
@@ -6891,12 +7033,14 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Precession" ;
 			svu:hasUnits "T^-1" ;
+			svu:quantifiesProcess <process#precess> ;
 			skos:prefLabel "precession_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#production_rate
 :production_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#produce> ;
 			skos:prefLabel "production_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#progradation_rate
@@ -6904,30 +7048,36 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Progradation" ;
 			svu:hasUnits "L T^-1" ;
+			svu:quantifiesProcess <process#progradation> ;
 			skos:prefLabel "progradation_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#retreat_rate
 :retreat_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "L T^-1" ;
+			svu:quantifiesProcess <process#retreat> ;
 			skos:prefLabel "retreat_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#rotation_rate
 :rotation_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "T^-1" ;
+			svu:quantifiesProcess <process#rotate> ;
 			skos:prefLabel "rotation_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#roll_rotation_rate
 :roll_rotation_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :rotation_rate ;
+			svu:quantifiesProcess <process#rotate> ;
+			svu:quantifiesProcess <process#roll-back> ;
 			skos:prefLabel "roll_rotation_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#scour_rate
 :scour_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "L T^-1" ;
+			svu:quantifiesProcess <process#scour> ;
 			skos:prefLabel "scour_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#strain_rate
@@ -6948,18 +7098,21 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Subsidence" ;
 			svu:hasUnits "L T^-1" ;
+			svu:quantifiesProcess <process#subside> ;
 			skos:prefLabel "subsidence_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mean_subsidence_rate
 :mean_subsidence_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :subsidence_rate ;
+			svu:quantifiesProcess <process#subside> ;
 			skos:prefLabel "mean_subsidence_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#uplift_rate
 :uplift_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "L T^-1" ;
+			svu:quantifiesProcess <process#uplift> ;
 			skos:prefLabel "uplift_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume_rate
@@ -6976,6 +7129,7 @@
 			skos:altLabel "volumetric_flow_rate"@en ;
 			skos:altLabel "volume_velocity"@en ;
 			svu:isDerivedFrom :volume_rate ;
+			svu:quantifiesProcess <process#flow> ;
 			skos:prefLabel "volume_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#instantaneous_volume_flow_rate
@@ -6986,24 +7140,28 @@
 			skos:altLabel "volumetric_flow_rate"@en ;
 			skos:altLabel "volume_velocity"@en ;
 			svu:isDerivedFrom :volume_flow_rate ;
+			svu:quantifiesProcess <process#flow> ;
 			skos:prefLabel "instantaneous_volume_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume_withdrawal_rate
 :volume_withdrawal_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "L^3" ;
+			svu:quantifiesProcess <process#withdraw> ;
 			skos:prefLabel "volume_withdrawal_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume-per-length_flow_rate
 :volume-per-length_flow_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "L^2 T^-1" ;
+			svu:quantifiesProcess <process#flow> ;
 			skos:prefLabel "volume-per-length_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#volume-per-width_flow_rate
 :volume-per-width_flow_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "L^2 T^-1" ;
+			svu:quantifiesProcess <process#flow> ;
 			skos:prefLabel "volume-per-width_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#safety_rating
@@ -7057,6 +7215,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Damping_ratio" ;
 			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#damp> ;
 			skos:prefLabel "damping_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#relative_density_ratio
@@ -7171,6 +7330,7 @@
 :demand_mass_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :mass_ratio ;
+			svu:quantifiesProcess <process#demand> ;
 			skos:prefLabel "demand_mass_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#relative_molecular_mass
@@ -7244,6 +7404,7 @@
 :stroke_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#stroke> ;
 			skos:prefLabel "stroke_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#thickness-to-depth_ratio
@@ -7528,12 +7689,14 @@
 :rotation_angular_speed rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :angular_speed ;
+			svu:quantifiesProcess <process#rotate> ;
 			skos:prefLabel "rotation_angular_speed"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#blowing_speed
 :blowing_speed rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :linear_speed ;
+			svu:quantifiesProcess <process#blow> ;
 			skos:prefLabel "blowing_speed"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#degrees-per-hour_speed
@@ -7546,6 +7709,7 @@
 :drift_speed rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :linear_speed ;
+			svu:quantifiesProcess <process#drift> ;
 			skos:prefLabel "drift_speed"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#escape_speed
@@ -7558,6 +7722,7 @@
 :firing_speed rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :linear_speed ;
+			svu:quantifiesProcess <process#fire> ;
 			skos:prefLabel "firing_speed"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#group_speed
@@ -7613,18 +7778,21 @@
 :rupture_speed rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :linear_speed ;
+			svu:quantifiesProcess <process#rupture> ;
 			skos:prefLabel "rupture_speed"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#settling_speed
 :settling_speed rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :linear_speed ;
+			svu:quantifiesProcess <process#settle> ;
 			skos:prefLabel "settling_speed"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#stokes_settling_speed
 :stokes_settling_speed rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :linear_speed ;
+			svu:quantifiesProcess <process#settle> ;
 			skos:prefLabel "stokes_settling_speed"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#shear_speed
@@ -7637,6 +7805,7 @@
 :sliding_speed rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :linear_speed ;
+			svu:quantifiesProcess <process#slide> ;
 			skos:prefLabel "sliding_speed"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#seismic_slip_speed
@@ -8078,12 +8247,14 @@
 :acceleration_time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :time ;
+			svu:quantifiesProcess <process#accelerate> ;
 			skos:prefLabel "acceleration_time"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#0-to-60mph_acceleration_time
 :0-to-60mph_acceleration_time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :time ;
+			svu:quantifiesProcess <process#accelerate> ;
 			skos:prefLabel "0-to-60mph_acceleration_time"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#arrival_time
@@ -8096,6 +8267,7 @@
 :conching_time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :time ;
+			svu:quantifiesProcess <process#conch> ;
 			skos:prefLabel "conching_time"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#end_time
@@ -8108,12 +8280,14 @@
 :firing_time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :time ;
+			svu:quantifiesProcess <process#fire> ;
 			skos:prefLabel "firing_time"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#impact_time
 :impact_time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :time ;
+			svu:quantifiesProcess <process#impact> ;
 			skos:prefLabel "impact_time"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#solar_noon_time
@@ -8132,48 +8306,57 @@
 :infiltration_ponding_time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :time ;
+			svu:quantifiesProcess <process#pond> ;
+			svu:quantifiesProcess <process#infiltrate> ;
 			skos:prefLabel "infiltration_ponding_time"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#reaction_time
 :reaction_time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :time ;
+			svu:quantifiesProcess <process#react> ;
 			skos:prefLabel "reaction_time"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#rise_time
 :rise_time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :time ;
+			svu:quantifiesProcess <process#rise> ;
 			skos:prefLabel "rise_time"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#local_rise_time
 :local_rise_time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :time ;
+			svu:quantifiesProcess <process#rise> ;
 			skos:prefLabel "local_rise_time"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#run_time
 :run_time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :time ;
+			svu:quantifiesProcess <process#run-off> ;
 			skos:prefLabel "run_time"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#rupture_time
 :rupture_time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :time ;
+			svu:quantifiesProcess <process#rupture> ;
 			skos:prefLabel "rupture_time"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#set_time
 :set_time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :time ;
+			svu:quantifiesProcess <process#set> ;
 			skos:prefLabel "set_time"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#spin-up_time
 :spin-up_time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :time ;
+			svu:quantifiesProcess <process#spin-up> ;
 			skos:prefLabel "spin-up_time"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#start_time
@@ -8192,18 +8375,21 @@
 :stopping_time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :time ;
+			svu:quantifiesProcess <process#stop> ;
 			skos:prefLabel "stopping_time"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#tempering_time
 :tempering_time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :time ;
+			svu:quantifiesProcess <process#temper> ;
 			skos:prefLabel "tempering_time"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#travel_time
 :travel_time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :time ;
+			svu:quantifiesProcess <process#travel> ;
 			skos:prefLabel "travel_time"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#torque
@@ -8324,12 +8510,14 @@
 :drift_velocity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :linear_velocity ;
+			svu:quantifiesProcess <process#drift> ;
 			skos:prefLabel "drift_velocity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#stokes_drift_velocity
 :stokes_drift_velocity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :linear_velocity ;
+			svu:quantifiesProcess <process#drift> ;
 			skos:prefLabel "stokes_drift_velocity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#group_velocity
@@ -8342,6 +8530,7 @@
 :impact_velocity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :linear_velocity ;
+			svu:quantifiesProcess <process#impact> ;
 			skos:prefLabel "impact_velocity"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#initial_velocity
@@ -8563,6 +8752,7 @@
 :rupture_width rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :width ;
+			svu:quantifiesProcess <process#rupture> ;
 			skos:prefLabel "rupture_width"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#top_width
@@ -8582,6 +8772,7 @@
 :manufacture_year rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :year ;
+			svu:quantifiesProcess <process#manufacture> ;
 			skos:prefLabel "manufacture_year"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#mass-per-area_yield

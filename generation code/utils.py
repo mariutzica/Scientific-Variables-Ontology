@@ -249,7 +249,7 @@ def open_write_file(fileptr,rep):
 # create building block (bb) file to output all of the relationships
 # for core classes
 def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
-                    wikifilename='wikipedia_page' ):
+                    wikifilename='wikipedia_page', process_vocab = None ):
     if label:
         ttl_file.write( label )
     for index in vocab.index:
@@ -305,6 +305,54 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 ttl_file.write( attribute.format( 'hasUnits', \
                             '\"' + (units if units!='' else 'none') + \
                             '\"', ';' ) )
+            if 'process_quantity' in vocab.columns.values:
+                pquant = vocab.loc[ index, 'process_quantity' ]
+                if pquant != '':
+                    process2 = ''
+                    if 'process2' in pquant:
+                        process2 = vocab.loc[ index, 'quantity_id' ]\
+                            .replace(pquant.split('process2')[0],'')\
+                            .replace(pquant.split('process2')[1],'')\
+                            .split('_')[1]
+                        try:
+                            process_id = process_vocab.loc[ \
+                                process_vocab['process_nominalization']\
+                                == process2, 'process_id'].iloc[0]
+                        except:
+                            try:
+                                process_id = process_vocab.loc[ \
+                                    process_vocab['process_nominalization']\
+                                    .str.contains(process2+','), 'process_id'].iloc[0]
+                            except:
+                                process_id = process_vocab.loc[ \
+                                    process_vocab['process_nominalization']\
+                                    .str.contains(' '+process2), 'process_id'].iloc[0]
+                        ttl_file.write( attribute.format( 'quantifiesProcess', \
+                            '<process#' + urllib.quote( process_id ) + '>', \
+                            ';' ) )
+                        pquant = pquant.replace('process2','').replace('__','_')
+                    process = vocab.loc[ index, 'quantity_id' ]\
+                        .replace(pquant.split('process')[0],'')\
+                        .replace(pquant.split('process')[1],'')\
+                        .split('_')[0]
+                    try:
+                        process_id = process_vocab.loc[ \
+                            process_vocab['process_nominalization'] == process, \
+                            'process_id'].iloc[0]
+                    except:
+                        try:
+                            process_id = process_vocab.loc[ \
+                                process_vocab['process_nominalization']\
+                                .str.contains(process+','), 'process_id']\
+                                .iloc[0]
+                        except:
+                            process_id = process_vocab.loc[ \
+                                process_vocab['process_nominalization']\
+                                .str.contains(' '+process), 'process_id']\
+                                .iloc[0]
+                    ttl_file.write( attribute.format( 'quantifiesProcess', \
+                        '<process#' + urllib.quote( process_id ) + '>', \
+                        ';' ) )
         if collabel == 'operator':
             if vocab.loc[ index, 'operator_taxonomic' ] == '' :
                 units = vocab.loc[ index, 'units' ]
