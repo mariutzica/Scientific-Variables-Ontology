@@ -51,7 +51,12 @@
 
 
 ###  http://www.geoscienceontology.org/svu#hasPropertyType
-:hasPropertyType rdf:type owl:ObjectProperty .
+:hasPropertyType rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :hasType .
+
+
+###  http://www.geoscienceontology.org/svu#hasType
+:hasType rdf:type owl:ObjectProperty .
 
 
 ###  http://www.geoscienceontology.org/svu#isDerivedFrom
@@ -99,6 +104,19 @@
 #    Classes
 #################################################################
 
+###  http://www.geoscienceontology.org/svu#Attribute
+:Attribute rdf:type owl:Class .
+
+
+###  http://www.geoscienceontology.org/svu#Matter
+:Matter rdf:type owl:Class ;
+        rdfs:subClassOf :MatterType .
+
+
+###  http://www.geoscienceontology.org/svu#MatterType
+:MatterType rdf:type owl:Class .
+
+
 ###  http://www.geoscienceontology.org/svu#Operator
 :Operator rdf:type owl:Class .
 
@@ -106,6 +124,10 @@
 ###  http://www.geoscienceontology.org/svu#OperatorQuantitativeProperty
 :OperatorQuantitativeProperty rdf:type owl:Class ;
                               rdfs:subClassOf :QuantitativeProperty .
+
+
+###  http://www.geoscienceontology.org/svu#Process
+:Process rdf:type owl:Class .
 
 
 ###  http://www.geoscienceontology.org/svu#Property

@@ -17,9 +17,9 @@
 #    Attribute   
 # 
 #################################################################
-##Last generated on: 2018-08-24 14:43
+##Last generated on: 2018-08-24 15:17
 
-###Attribute
+###(Qualitative)Attribute
 
 
 ###  http://www.geoscienceontology.org/svl/attribute#abiotic
@@ -1313,6 +1313,7 @@
 ###  http://www.geoscienceontology.org/svl/attribute#gases
 :gases rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
+			svu:isPluralityOf :gas ;
 			svu:hasProperty <property#phase> ;
 			svu:hasValue "gas" ;
 			svu:isNoun true ;
@@ -1347,6 +1348,7 @@
 ###  http://www.geoscienceontology.org/svl/attribute#solids
 :solids rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
+			svu:isPluralityOf :solid ;
 			svu:hasProperty <property#phase> ;
 			svu:hasValue "solid" ;
 			svu:isNoun true ;
@@ -1370,7 +1372,7 @@
 			skos:prefLabel "moisture"@en .
 
 
-###Attribute
+###(Quantitative)Attribute
 
 
 ###  http://www.geoscienceontology.org/svl/attribute#20C

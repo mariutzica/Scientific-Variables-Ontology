@@ -273,6 +273,10 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 synonyms = synonyms.split(', ')
                 for syn in synonyms:
                     ttl_file.write( synonym.format(h.unescape(syn)))
+        if 'plural_of' in vocab.columns.values:
+            attr = vocab.loc[ index, 'plural_of']
+            if attr != '':
+                ttl_file.write( plurality.format( urllib.quote(attr)))
         if collabel + '_taxonomic' in vocab.columns.values and \
             vocab.loc[ index, collabel + '_taxonomic' ] != '' :
             derivation = vocab.loc[ index, collabel + '_taxonomic' ]
@@ -401,6 +405,15 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
             else:
                 ttl_file.write( attribute.format( 'isNoun', \
                             'false', ';' ) )
+        if collabel == 'matter':
+            if vocab.loc[ index, 'matter_type' ] != '' :
+                mtype = vocab.loc[ index, 'matter_type' ]
+                ttl_file.write( attribute.format( 'hasType', \
+                            ':' + urllib.quote( mtype ), ';' ) )
+            if vocab.loc[ index, 'attribute' ] != '' :
+                attr = vocab.loc[ index, 'attribute' ]
+                ttl_file.write( attribute.format( 'hasAttribute', \
+                            '<attribute#' + urllib.quote( attr )+'>', ';' ) )
         if collabel + '_label' in vocab.columns.values:
             element = vocab.loc[ index, collabel + '_label' ]
         if 'process_present_participle' in vocab.columns.values:

@@ -17,7 +17,7 @@
 #    Property   
 # 
 #################################################################
-##Last generated on: 2018-08-24 14:43
+##Last generated on: 2018-08-24 15:17
 
 ###Property
 
@@ -7384,6 +7384,7 @@
 :slip_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Induction_motor#Slip" ;
+			svu:isPluralityOf :slip_ratio ;
 			svu:hasUnits "none" ;
 			skos:prefLabel "slip_ratio"@en .
 
@@ -7527,6 +7528,7 @@
 :moment-magnitude_scale rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Moment_magnitude_scale" ;
+			svu:isPluralityOf :moment_magnitude_scale ;
 			svu:hasPropertyQuantification :scale ;
 			svu:hasUnits "none" ;
 			skos:prefLabel "moment-magnitude_scale"@en .
@@ -7558,6 +7560,7 @@
 :sinuosity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Sinuosity" ;
+			svu:isPluralityOf :sinuosity_index%2C%20sinuosity_coefficient ;
 			svu:hasUnits "none" ;
 			skos:prefLabel "sinuosity"@en .
 

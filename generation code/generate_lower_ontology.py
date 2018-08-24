@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thurs Mar 16 11:25:06 2017
-Last Edited on Fri May 25 2018
+Last Edited on Fri August 24 2018
 
 @author: Maria Stoica
 @decription: Generate the lower ontology version 1.0.0.
@@ -37,6 +37,9 @@ process_file  = 'process.csv'
 qualitative_attribute_file  = 'qualitative_attribute.csv'
 quantitative_attribute_file  = 'quantitative_attribute.csv'
 
+matter_type_file  = 'matter_type.csv'
+matter_file  = 'matter.csv'
+
 ################################
 #   INITIAL DATA LOAD          #
 ################################
@@ -60,6 +63,10 @@ qualitative_attribute_vocabulary = \
             utils.load_data( ext_vocabulary, qualitative_attribute_file )   
 quantitative_attribute_vocabulary = \
             utils.load_data( ext_vocabulary, quantitative_attribute_file )  
+matter_type_vocabulary = \
+            utils.load_data( ext_vocabulary, matter_type_file ) 
+matter_vocabulary = \
+            utils.load_data( ext_vocabulary, matter_file ) 
             
 ######################
 #  OUTPUT FILE SETUP #
@@ -69,11 +76,13 @@ property_ttl = open( ext_output + 'svo-lower-property.ttl', 'w' )
 operator_ttl = open( ext_output + 'svo-lower-operator.ttl', 'w' )
 process_ttl = open( ext_output + 'svo-lower-process.ttl', 'w' )
 attribute_ttl = open( ext_output + 'svo-lower-attribute.ttl', 'w' )
+matter_ttl = open( ext_output + 'svo-lower-matter.ttl', 'w' )
 
 utils.open_write_file( property_ttl, 'Property' )
 utils.open_write_file( operator_ttl, 'Operator' )
 utils.open_write_file( process_ttl, 'Process' )
 utils.open_write_file( attribute_ttl, 'Attribute' )
+utils.open_write_file( matter_ttl, 'Matter' )
 
 ################################
 #   DATA PREPROCESSING         #
@@ -140,11 +149,20 @@ utils.create_bb_file( process_vocabulary, process_ttl, \
                       'Process', 'process', 'process', label = label )
 
 # create Attribute file
-label = '\n\n###Attribute\n\n'
+label = '\n\n###(Qualitative)Attribute\n\n'
 utils.create_bb_file( qualitative_attribute_vocabulary, attribute_ttl, \
                       'Attribute', 'attribute', 'attribute', label = label )
+label = '\n\n###(Quantitative)Attribute\n\n'
 utils.create_bb_file( quantitative_attribute_vocabulary, attribute_ttl, \
                       'Attribute', 'attribute', 'attribute', label = label )
+
+# create Matter file
+label = '\n\n###MatterType\n\n'
+utils.create_bb_file( matter_type_vocabulary, matter_ttl, \
+                      'MatterType', 'matter_type', 'matter', label = label )
+label = '\n\n###Matter\n\n'
+utils.create_bb_file( matter_vocabulary, matter_ttl, \
+                      'Matter', 'matter', 'matter', label = label )
 
 ######################
 #    File Cleanup    #
@@ -154,3 +172,4 @@ property_ttl.close()
 operator_ttl.close()
 process_ttl.close()
 attribute_ttl.close()
+matter_ttl.close()
