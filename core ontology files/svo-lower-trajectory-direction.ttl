@@ -1,0 +1,57 @@
+@prefix : <http://www.geoscienceontology.org/svl/trajectorydirection#> .
+@prefix svu: <http://www.geoscienceontology.org/svu#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://www.geoscienceontology.org/svl/> .
+
+<http://www.geoscienceontology.org/svl/trajectorydirection> rdf:type owl:Ontology ;
+				rdfs:comment " Scientific Variables Lower Ontology, TrajectoryDirection BETA VERSION." .
+#				owl:imports <http://www.geoscienceontology.org/svu> .
+
+
+#################################################################
+#    TrajectoryDirection   
+# 
+#################################################################
+##Last generated on: 2018-08-25 13:55
+
+###TrajectoryDirection
+
+
+###  http://www.geoscienceontology.org/svl/trajectorydirection#incoming
+:incoming rdf:type owl:NamedIndividual ,
+			svu:TrajectoryDirection ;
+			skos:altLabel "into"@en ;
+			skos:prefLabel "incoming"@en .
+
+###  http://www.geoscienceontology.org/svl/trajectorydirection#outgoing
+:outgoing rdf:type owl:NamedIndividual ,
+			svu:TrajectoryDirection ;
+			skos:altLabel "outward"@en ;
+			skos:altLabel "out-of"@en ;
+			skos:altLabel "moving-away-from"@en ;
+			skos:prefLabel "outgoing"@en .
+
+###  http://www.geoscienceontology.org/svl/trajectorydirection#downward
+:downward rdf:type owl:NamedIndividual ,
+			svu:TrajectoryDirection ;
+			skos:prefLabel "downward"@en .
+
+###  http://www.geoscienceontology.org/svl/trajectorydirection#upward
+:upward rdf:type owl:NamedIndividual ,
+			svu:TrajectoryDirection ;
+			skos:prefLabel "upward"@en .
+
+###  http://www.geoscienceontology.org/svl/trajectorydirection#eastward
+:eastward rdf:type owl:NamedIndividual ,
+			svu:TrajectoryDirection ;
+			skos:prefLabel "eastward"@en .
+
+###  http://www.geoscienceontology.org/svl/trajectorydirection#westward
+:westward rdf:type owl:NamedIndividual ,
+			svu:TrajectoryDirection ;
+			skos:prefLabel "westward"@en .
