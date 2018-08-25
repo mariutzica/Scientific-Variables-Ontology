@@ -40,6 +40,8 @@ quantitative_attribute_file  = 'quantitative_attribute.csv'
 matter_type_file  = 'matter_type.csv'
 matter_file  = 'matter.csv'
 
+form_file  = 'form_and_configuration.csv'
+
 ################################
 #   INITIAL DATA LOAD          #
 ################################
@@ -67,6 +69,8 @@ matter_type_vocabulary = \
             utils.load_data( ext_vocabulary, matter_type_file ) 
 matter_vocabulary = \
             utils.load_data( ext_vocabulary, matter_file ) 
+form_vocabulary = \
+            utils.load_data( ext_vocabulary, form_file ) 
             
 ######################
 #  OUTPUT FILE SETUP #
@@ -77,12 +81,13 @@ operator_ttl = open( ext_output + 'svo-lower-operator.ttl', 'w' )
 process_ttl = open( ext_output + 'svo-lower-process.ttl', 'w' )
 attribute_ttl = open( ext_output + 'svo-lower-attribute.ttl', 'w' )
 matter_ttl = open( ext_output + 'svo-lower-matter.ttl', 'w' )
+form_ttl = open( ext_output + 'svo-lower-form.ttl', 'w' )
 
 utils.open_write_file( property_ttl, 'Property' )
 utils.open_write_file( operator_ttl, 'Operator' )
 utils.open_write_file( process_ttl, 'Process' )
 utils.open_write_file( attribute_ttl, 'Attribute' )
-utils.open_write_file( matter_ttl, 'Matter' )
+utils.open_write_file( form_ttl, 'Form' )
 
 ################################
 #   DATA PREPROCESSING         #
@@ -164,6 +169,11 @@ label = '\n\n###Matter\n\n'
 utils.create_bb_file( matter_vocabulary, matter_ttl, \
                       'Matter', 'matter', 'matter', label = label )
 
+# create Form file
+label = '\n\n###Form\n\n'
+utils.create_bb_file( form_vocabulary, form_ttl, \
+                      'Form', 'form', 'form', label = label )
+
 ######################
 #    File Cleanup    #
 ######################
@@ -173,3 +183,4 @@ operator_ttl.close()
 process_ttl.close()
 attribute_ttl.close()
 matter_ttl.close()
+form_ttl.close()
