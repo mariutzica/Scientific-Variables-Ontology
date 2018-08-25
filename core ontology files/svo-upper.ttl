@@ -208,6 +208,11 @@ _:genid4 a owl:Restriction ;
 
 :QuantitativeProperty rdfs:comment "A Quantitative Property (Quantity in shorthand) is a property that has been quantified in some way." .
 # 
+# http://www.geoscienceontology.org/svu#Relationship
+
+:Relationship a owl:Class ;
+	rdfs:comment "This is the class of spatial and temporal relationships between phenomena used to build variables." .
+# 
 # http://www.geoscienceontology.org/svu#Trajectory
 
 :Trajectory a owl:Class ;

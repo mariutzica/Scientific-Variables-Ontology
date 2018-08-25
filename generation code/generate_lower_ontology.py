@@ -45,6 +45,8 @@ form_file  = 'form_and_configuration.csv'
 trajectory_file  = 'trajectory.csv'
 trajectory_direction_file  = 'trajectory_direction.csv'
 
+relationship_file  = 'relationship.csv'
+
 ################################
 #   INITIAL DATA LOAD          #
 ################################
@@ -78,7 +80,9 @@ trajectory_vocabulary = \
             utils.load_data( ext_vocabulary, trajectory_file ) 
 trajectory_direction_vocabulary = \
             utils.load_data( ext_vocabulary, trajectory_direction_file ) 
-            
+relationship_vocabulary = \
+            utils.load_data( ext_vocabulary, relationship_file )
+             
 ######################
 #  OUTPUT FILE SETUP #
 ######################
@@ -91,6 +95,7 @@ matter_ttl = open( ext_output + 'svo-lower-matter.ttl', 'w' )
 form_ttl = open( ext_output + 'svo-lower-form.ttl', 'w' )
 trajectory_ttl = open( ext_output + 'svo-lower-trajectory.ttl', 'w' )
 trajectory_direction_ttl = open( ext_output + 'svo-lower-trajectory-direction.ttl', 'w' )
+relationship_ttl = open( ext_output + 'svo-lower-relationship.ttl', 'w' )
 
 utils.open_write_file( property_ttl, 'Property' )
 utils.open_write_file( operator_ttl, 'Operator' )
@@ -99,6 +104,7 @@ utils.open_write_file( attribute_ttl, 'Attribute' )
 utils.open_write_file( form_ttl, 'Form' )
 utils.open_write_file( trajectory_ttl, 'Trajectory' )
 utils.open_write_file( trajectory_direction_ttl, 'TrajectoryDirection' )
+utils.open_write_file( relationship_ttl, 'Relationship' )
 
 ################################
 #   DATA PREPROCESSING         #
@@ -190,10 +196,15 @@ label = '\n\n###Trajectory\n\n'
 utils.create_bb_file( trajectory_vocabulary, trajectory_ttl, \
                       'Trajectory', 'trajectory', 'trajectory', label = label )
 
-# create Form file
+# create TrajectoryDirection file
 label = '\n\n###TrajectoryDirection\n\n'
 utils.create_bb_file( trajectory_direction_vocabulary, trajectory_direction_ttl, \
                       'TrajectoryDirection', 'trajectory_direction', 'trajectorydirection', label = label )
+
+# create Relationship file
+label = '\n\n###Relationship\n\n'
+utils.create_bb_file( relationship_vocabulary, relationship_ttl, \
+                      'Relationship', 'relationship', 'relationship', label = label )
 
 ######################
 #    File Cleanup    #
@@ -207,3 +218,4 @@ matter_ttl.close()
 form_ttl.close()
 trajectory_ttl.close()
 trajectory_direction_ttl.close()
+relationship_ttl.close()

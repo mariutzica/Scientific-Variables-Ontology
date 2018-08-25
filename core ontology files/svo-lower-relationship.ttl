@@ -1,0 +1,153 @@
+@prefix : <http://www.geoscienceontology.org/svl/relationship#> .
+@prefix svu: <http://www.geoscienceontology.org/svu#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://www.geoscienceontology.org/svl/> .
+
+<http://www.geoscienceontology.org/svl/relationship> rdf:type owl:Ontology ;
+				rdfs:comment " Scientific Variables Lower Ontology, Relationship BETA VERSION." .
+#				owl:imports <http://www.geoscienceontology.org/svu> .
+
+
+#################################################################
+#    Relationship   
+# 
+#################################################################
+##Last generated on: 2018-08-25 14:01
+
+###Relationship
+
+
+###  http://www.geoscienceontology.org/svl/relationship#above
+:above rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/above#Preposition" ;
+			skos:prefLabel "above"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#across
+:across rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/across#Preposition" ;
+			skos:prefLabel "across"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#at
+:at rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/at#Preposition" ;
+			skos:prefLabel "at"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#before
+:before rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			skos:prefLabel "before"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#below
+:below rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/below#Preposition" ;
+			skos:prefLabel "below"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#from
+:from rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/from#Preposition" ;
+			skos:prefLabel "from"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#intra
+:intra rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			skos:prefLabel "intra"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#mid-depth
+:mid-depth rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			skos:prefLabel "mid-depth"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#near
+:near rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			skos:prefLabel "near"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#on
+:on rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/on#Preposition" ;
+			skos:prefLabel "on"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#onto
+:onto rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			skos:prefLabel "onto"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#orbiting
+:orbiting rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/orbit#Verb" ;
+			skos:prefLabel "orbiting"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#passing-through
+:passing-through rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			skos:prefLabel "passing-through"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#since
+:since rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			skos:prefLabel "since"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#surrounding
+:surrounding rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/surround#English" ;
+			skos:prefLabel "surrounding"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#to
+:to rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/to#Preposition" ;
+			skos:prefLabel "to"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#wrt
+:wrt rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			skos:altLabel "with-respect-to"@en ;
+			skos:prefLabel "wrt"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#within
+:within rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			skos:prefLabel "within"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#10m-above
+:10m-above rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			svu:isDerivedFrom :above ;
+			skos:prefLabel "10m-above"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#1m-above
+:1m-above rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			svu:isDerivedFrom :above ;
+			skos:prefLabel "1m-above"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#1m-below
+:1m-below rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			svu:isDerivedFrom :below ;
+			skos:prefLabel "1m-below"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#clockwise-from
+:clockwise-from rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			svu:isDerivedFrom :from ;
+			skos:prefLabel "clockwise-from"@en .
+
+###  http://www.geoscienceontology.org/svl/relationship#within-25-ft
+:within-25-ft rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			svu:isDerivedFrom :within ;
+			skos:prefLabel "within-25-ft"@en .
