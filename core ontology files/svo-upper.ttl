@@ -213,6 +213,11 @@ _:genid4 a owl:Restriction ;
 :Relationship a owl:Class ;
 	rdfs:comment "This is the class of spatial and temporal relationships between phenomena used to build variables." .
 # 
+# http://www.geoscienceontology.org/svu#Role
+
+:Role a owl:Class ;
+	rdfs:comment "The role class contains the roles that different phenomena may take depending on context. It does not identify the substance or form that identifies the physical existence of a thing; rather, it identifies the ways in which the actions of something determine the role it is playing as part of the bigger picture. Examples include trash, crop, byproduct, and projectile." .
+# 
 # http://www.geoscienceontology.org/svu#Trajectory
 
 :Trajectory a owl:Class ;

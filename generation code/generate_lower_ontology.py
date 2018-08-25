@@ -42,6 +42,8 @@ matter_file  = 'matter.csv'
 
 form_file  = 'form_and_configuration.csv'
 
+role_file  = 'role.csv'
+
 trajectory_file  = 'trajectory.csv'
 trajectory_direction_file  = 'trajectory_direction.csv'
 
@@ -76,6 +78,8 @@ matter_vocabulary = \
             utils.load_data( ext_vocabulary, matter_file ) 
 form_vocabulary = \
             utils.load_data( ext_vocabulary, form_file ) 
+role_vocabulary = \
+            utils.load_data( ext_vocabulary, role_file ) 
 trajectory_vocabulary = \
             utils.load_data( ext_vocabulary, trajectory_file ) 
 trajectory_direction_vocabulary = \
@@ -93,6 +97,7 @@ process_ttl = open( ext_output + 'svo-lower-process.ttl', 'w' )
 attribute_ttl = open( ext_output + 'svo-lower-attribute.ttl', 'w' )
 matter_ttl = open( ext_output + 'svo-lower-matter.ttl', 'w' )
 form_ttl = open( ext_output + 'svo-lower-form.ttl', 'w' )
+role_ttl = open( ext_output + 'svo-lower-role.ttl', 'w' )
 trajectory_ttl = open( ext_output + 'svo-lower-trajectory.ttl', 'w' )
 trajectory_direction_ttl = open( ext_output + 'svo-lower-trajectory-direction.ttl', 'w' )
 relationship_ttl = open( ext_output + 'svo-lower-relationship.ttl', 'w' )
@@ -102,6 +107,7 @@ utils.open_write_file( operator_ttl, 'Operator' )
 utils.open_write_file( process_ttl, 'Process' )
 utils.open_write_file( attribute_ttl, 'Attribute' )
 utils.open_write_file( form_ttl, 'Form' )
+utils.open_write_file( role_ttl, 'Role' )
 utils.open_write_file( trajectory_ttl, 'Trajectory' )
 utils.open_write_file( trajectory_direction_ttl, 'TrajectoryDirection' )
 utils.open_write_file( relationship_ttl, 'Relationship' )
@@ -191,6 +197,11 @@ label = '\n\n###Form\n\n'
 utils.create_bb_file( form_vocabulary, form_ttl, \
                       'Form', 'form', 'form', label = label )
 
+# create Role file
+label = '\n\n###Role\n\n'
+utils.create_bb_file( role_vocabulary, role_ttl, \
+                      'Role', 'role', 'role', label = label )
+
 # create Trajectory file
 label = '\n\n###Trajectory\n\n'
 utils.create_bb_file( trajectory_vocabulary, trajectory_ttl, \
@@ -216,6 +227,7 @@ process_ttl.close()
 attribute_ttl.close()
 matter_ttl.close()
 form_ttl.close()
+role_ttl.close()
 trajectory_ttl.close()
 trajectory_direction_ttl.close()
 relationship_ttl.close()
