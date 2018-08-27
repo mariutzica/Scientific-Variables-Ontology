@@ -1,0 +1,1189 @@
+@prefix : <http://www.geoscienceontology.org/svl/phenomenon#> .
+@prefix svu: <http://www.geoscienceontology.org/svu#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://www.geoscienceontology.org/svl/> .
+
+<http://www.geoscienceontology.org/svl/phenomenon> rdf:type owl:Ontology ;
+				rdfs:comment " Scientific Variables Lower Ontology, Phenomenon BETA VERSION." .
+#				owl:imports <http://www.geoscienceontology.org/svu> .
+
+
+#################################################################
+#    Phenomenon   
+# 
+#################################################################
+##Last generated on: 2018-08-27 10:45
+
+###Phenomenon
+
+
+###  http://www.geoscienceontology.org/svl/phenomenon#anagenesis
+:anagenesis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Anagenesis" ;
+			skos:prefLabel "anagenesis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#aneurysm
+:aneurysm rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Aneurysm" ;
+			skos:prefLabel "aneurysm"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#antibiosis
+:antibiosis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Antibiosis" ;
+			skos:prefLabel "antibiosis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#apoptosis
+:apoptosis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Apoptosis" ;
+			skos:prefLabel "apoptosis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#autolysis
+:autolysis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Autolysis_(biology)" ;
+			skos:prefLabel "autolysis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#autopsy
+:autopsy rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Autopsy" ;
+			skos:prefLabel "autopsy"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#avalanche
+:avalanche rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedProcess <process#avalanche> ;
+			skos:prefLabel "avalanche"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#backflow
+:backflow rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			skos:prefLabel "backflow"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#baseflow
+:baseflow rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Baseflow" ;
+			svu:hasAssociatedProcess <process#flow> ;
+			skos:prefLabel "baseflow"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#bergeron-findeisen-process
+:bergeron-findeisen-process rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Wegener%E2%80%93Bergeron%E2%80%93Findeisen_process" ;
+			skos:prefLabel "bergeron-findeisen-process"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#biogenesis
+:biogenesis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			skos:prefLabel "biogenesis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#biopoiesis
+:biopoiesis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Abiogenesis" ;
+			skos:altLabel "abiogenesis"@en ;
+			skos:prefLabel "biopoiesis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#canalization
+:canalization rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/River_engineering#Canalization_of_rivers" ;
+			skos:prefLabel "canalization"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#carpool
+:carpool rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			skos:prefLabel "carpool"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cascade
+:cascade rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Waterfall" ;
+			skos:altLabel "waterfall"@en ;
+			svu:hasAssociatedProcess <process#fall> ;
+			skos:prefLabel "cascade"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#catagenesis
+:catagenesis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Catagenesis_(geology)" ;
+			skos:prefLabel "catagenesis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cladogenesis
+:cladogenesis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cladogenesis" ;
+			skos:prefLabel "cladogenesis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cryoplanation
+:cryoplanation rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cryoplanation" ;
+			skos:altLabel "altiplanation"@en ;
+			skos:prefLabel "cryoplanation"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#diagenesis
+:diagenesis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Diagenesis" ;
+			skos:prefLabel "diagenesis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#dialysis
+:dialysis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Dialysis" ;
+			skos:prefLabel "dialysis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#drizzle
+:drizzle rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Drizzle" ;
+			svu:hasAssociatedProcess <process#precipitate> ;
+			skos:prefLabel "drizzle"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#earthquake
+:earthquake rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Earthquake" ;
+			svu:hasAssociatedProcess <process#quake> ;
+			skos:prefLabel "earthquake"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#espionage
+:espionage rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Espionage" ;
+			svu:hasAssociatedProcess <process#spy> ;
+			skos:prefLabel "espionage"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#landslide
+:landslide rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedProcess <process#slide> ;
+			skos:prefLabel "landslide"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#lipolysis
+:lipolysis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Lipolysis" ;
+			skos:prefLabel "lipolysis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#litterfall
+:litterfall rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Plant_litter" ;
+			skos:prefLabel "litterfall"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#lordosis
+:lordosis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Lordosis" ;
+			skos:prefLabel "lordosis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#meiosis
+:meiosis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Meiosis" ;
+			skos:prefLabel "meiosis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#mitosis
+:mitosis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedProcess <process#mitose> ;
+			skos:prefLabel "mitosis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#rockfall
+:rockfall rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedProcess <process#fall> ;
+			skos:prefLabel "rockfall"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation
+:radiation rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Radiation" ;
+			svu:hasAssociatedProcess <process#radiate> ;
+			skos:prefLabel "radiation"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7E400-to-680nm
+:radiation%7E400-to-680nm rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasAttribute <attribute#400-to-600nm> ;
+			skos:prefLabel "radiation~400-to-680nm"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7E780-to-900nm
+:radiation%7E780-to-900nm rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasAttribute <attribute#780-to-900nm> ;
+			skos:prefLabel "radiation~780-to-900nm"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eelectromagnetic
+:radiation%7Eelectromagnetic rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Electromagnetic_radiation" ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasAttribute <attribute#electromagnetic> ;
+			skos:prefLabel "radiation~electromagnetic"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Egamma
+:radiation%7Egamma rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Gamma_Radiation" ;
+			skos:altLabel "gamma_rays"@en ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasAttribute <attribute#gamma> ;
+			skos:prefLabel "radiation~gamma"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Elongwave
+:radiation%7Elongwave rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Longwave" ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasAttribute <attribute#longwave> ;
+			skos:prefLabel "radiation~longwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Emicrowave
+:radiation%7Emicrowave rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Microwave" ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasAttribute <attribute#microwave> ;
+			skos:prefLabel "radiation~microwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Ephotosynthetically-active
+:radiation%7Ephotosynthetically-active rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Photosynthetically_active_radiation" ;
+			skos:altLabel "par"@en ;
+			skos:altLabel "radiation~400-to-700nm"@en ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasAttribute <attribute#photosynthetically-active> ;
+			skos:prefLabel "radiation~photosynthetically-active"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eshortwave
+:radiation%7Eshortwave rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Shortwave_radiation" ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasAttribute <attribute#shortwave> ;
+			skos:prefLabel "radiation~shortwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Euv
+:radiation%7Euv rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Ultraviolet" ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasAttribute <attribute#uv> ;
+			skos:prefLabel "radiation~uv"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Euv%7E254nm
+:radiation%7Euv%7E254nm rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasAttribute <attribute#uv> ;
+			svu:hasAttribute <attribute#254nm> ;
+			skos:prefLabel "radiation~uv~254nm"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Evisible
+:radiation%7Evisible rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Visible_spectrum" ;
+			skos:altLabel "radiation~light"@en ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasAttribute <attribute#visible> ;
+			skos:prefLabel "radiation~visible"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#rainfall
+:rainfall rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Rain" ;
+			skos:altLabel "rain"@en ;
+			svu:hasAssociatedProcess <process#precipitate> ;
+			skos:prefLabel "rainfall"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#snowfall
+:snowfall rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedProcess <process#precipitate> ;
+			skos:prefLabel "snowfall"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#thrombosis
+:thrombosis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Thrombosis" ;
+			skos:prefLabel "thrombosis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#vasoconstriction
+:vasoconstriction rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Vasoconstriction" ;
+			svu:hasAssociatedProcess <process#constrict> ;
+			skos:prefLabel "vasoconstriction"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#vasodilation
+:vasodilation rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Vasodilation" ;
+			svu:hasAssociatedProcess <process#dilate> ;
+			skos:prefLabel "vasodilation"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#vortex
+:vortex rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Vortex" ;
+			skos:prefLabel "vortex"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave
+:wave rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Wave" ;
+			skos:prefLabel "wave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Eairy
+:wave%7Eairy rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Airy_wave_theory#Mathematical_formulation_of_the_wave_motion" ;
+			svu:isDerivedFrom :wave ;
+			svu:hasAttribute <attribute#airy> ;
+			skos:prefLabel "wave~airy"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Ebreaking
+:wave%7Ebreaking rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Breaking_wave" ;
+			svu:isDerivedFrom :wave ;
+			svu:hasAttribute <attribute#breaking> ;
+			skos:prefLabel "wave~breaking"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Ecnoidal
+:wave%7Ecnoidal rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cnoidal_wave" ;
+			svu:isDerivedFrom :wave ;
+			svu:hasAttribute <attribute#cnoidal> ;
+			skos:prefLabel "wave~cnoidal"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Edeepwater
+:wave%7Edeepwater rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :wave ;
+			skos:prefLabel "wave~deepwater"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Eelectromagnetic
+:wave%7Eelectromagnetic rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Electromagnetic_radiation" ;
+			svu:isDerivedFrom :wave ;
+			svu:hasAttribute <attribute#electromagnetic> ;
+			skos:prefLabel "wave~electromagnetic"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Egravity
+:wave%7Egravity rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Gravity_wave" ;
+			svu:isDerivedFrom :wave ;
+			skos:prefLabel "wave~gravity"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Egravity%7Einternal
+:wave%7Egravity%7Einternal rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Internal_wave" ;
+			svu:isDerivedFrom :wave%7Egravity ;
+			svu:hasAttribute <attribute#internal> ;
+			skos:prefLabel "wave~gravity~internal"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Egravity%7Enonorographic
+:wave%7Egravity%7Enonorographic rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :wave%7Egravity ;
+			svu:hasAttribute <attribute#nonorographic> ;
+			skos:prefLabel "wave~gravity~nonorographic"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Egravity%7Eorographic
+:wave%7Egravity%7Eorographic rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :wave%7Egravity ;
+			svu:hasAttribute <attribute#orographic> ;
+			skos:prefLabel "wave~gravity~orographic"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Emechanical
+:wave%7Emechanical rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mechanical_wave" ;
+			svu:isDerivedFrom :wave ;
+			svu:hasAttribute <attribute#mechanical> ;
+			skos:prefLabel "wave~mechanical"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Eacoustic
+:wave%7Eacoustic rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Acoustic_wave, https://en.wikipedia.org/wiki/Sound" ;
+			skos:altLabel "sound"@en ;
+			svu:isDerivedFrom :wave%7Emechanical ;
+			svu:hasAttribute <attribute#acoustic> ;
+			skos:prefLabel "wave~acoustic"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#swell
+:swell rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Swell_(ocean)" ;
+			svu:isDerivedFrom :wave%7Emechanical ;
+			skos:prefLabel "swell"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#swell%7Eprimary
+:swell%7Eprimary rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :swell ;
+			svu:hasAttribute <attribute#primary> ;
+			skos:prefLabel "swell~primary"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#swell%7Esecondary
+:swell%7Esecondary rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :swell ;
+			svu:hasAttribute <attribute#secondary> ;
+			skos:prefLabel "swell~secondary"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Eseismic
+:wave%7Eseismic rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Seismic_wave" ;
+			svu:isDerivedFrom :wave ;
+			svu:hasAttribute <attribute#seismic> ;
+			skos:prefLabel "wave~seismic"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Eseismic%7Elove
+:wave%7Eseismic%7Elove rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Seismic_wave#Love_waves" ;
+			svu:isDerivedFrom :wave%7Eseismic ;
+			skos:prefLabel "wave~seismic~love"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Eseismic%7Ep
+:wave%7Eseismic%7Ep rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/P-wave" ;
+			svu:isDerivedFrom :wave%7Eseismic ;
+			skos:prefLabel "wave~seismic~p"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Eseismic%7Erayleigh
+:wave%7Eseismic%7Erayleigh rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Seismic_wave#Rayleigh_waves" ;
+			svu:isDerivedFrom :wave%7Eseismic ;
+			skos:prefLabel "wave~seismic~rayleigh"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Eseismic%7Es
+:wave%7Eseismic%7Es rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/S-wave" ;
+			svu:isDerivedFrom :wave%7Eseismic ;
+			skos:prefLabel "wave~seismic~s"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Eseismic%7Esh
+:wave%7Eseismic%7Esh rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :wave%7Eseismic ;
+			skos:prefLabel "wave~seismic~sh"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Estokes
+:wave%7Estokes rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Stokes_wave" ;
+			svu:isDerivedFrom :wave ;
+			skos:prefLabel "wave~stokes"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wave%7Eseismic%7Esv
+:wave%7Eseismic%7Esv rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :wave%7Eseismic ;
+			skos:prefLabel "wave~seismic~sv"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#waves
+:waves rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			skos:prefLabel "waves"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#waves%7Egravity
+:waves%7Egravity rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			skos:prefLabel "waves~gravity"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#waves%7Egravity%7Eorographic
+:waves%7Egravity%7Eorographic rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :waves%7Egravity ;
+			svu:hasAttribute <attribute#orographic> ;
+			skos:prefLabel "waves~gravity~orographic"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wind
+:wind rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Wind" ;
+			skos:prefLabel "wind"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#twilight
+:twilight rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Twilight" ;
+			skos:prefLabel "twilight"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#updraft
+:updraft rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Vertical_draft" ;
+			skos:altLabel "draft~vertical"@en ;
+			skos:prefLabel "updraft"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#upheaval
+:upheaval rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			skos:prefLabel "upheaval"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#tide
+:tide rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Tide" ;
+			skos:prefLabel "tide"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#tides
+:tides rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isPluralityOf :tide ;
+			skos:prefLabel "tides"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#triage
+:triage rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Triage" ;
+			skos:prefLabel "triage"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cirrhosis
+:cirrhosis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cirrhosis" ;
+			skos:prefLabel "cirrhosis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#coincidence
+:coincidence rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Coincidence" ;
+			skos:prefLabel "coincidence"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cryopreservation
+:cryopreservation rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cryopreservation" ;
+			skos:prefLabel "cryopreservation"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cryosuction
+:cryosuction rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cryosuction" ;
+			skos:prefLabel "cryosuction"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cryoturbation
+:cryoturbation rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cryoturbation" ;
+			skos:prefLabel "cryoturbation"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#rip-current
+:rip-current rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Rip_current" ;
+			svu:hasAssociatedProcess <process#course> ;
+			skos:prefLabel "rip-current"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#bond%7Ec-c-c
+:bond%7Ec-c-c rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedProcess <process#bond> ;
+			skos:prefLabel "bond~c-c-c"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#bond%7Ec-h
+:bond%7Ec-h rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Carbon%E2%80%93hydrogen_bond" ;
+			svu:hasAssociatedProcess <process#bond> ;
+			skos:prefLabel "bond~c-h"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#bond%7Eh-c-c-h
+:bond%7Eh-c-c-h rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedProcess <process#bond> ;
+			skos:prefLabel "bond~h-c-c-h"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#bond%7Eh-h
+:bond%7Eh-h rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedProcess <process#bond> ;
+			skos:prefLabel "bond~h-h"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#bond%7Eh-o
+:bond%7Eh-o rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedProcess <process#bond> ;
+			skos:prefLabel "bond~h-o"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#bond%7Eh-o-h
+:bond%7Eh-o-h rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedProcess <process#bond> ;
+			skos:prefLabel "bond~h-o-h"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#bond%7En-n
+:bond%7En-n rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedProcess <process#bond> ;
+			skos:prefLabel "bond~n-n"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#bond%7Eo-o
+:bond%7Eo-o rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedProcess <process#bond> ;
+			skos:prefLabel "bond~o-o"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cloud%7Econvective
+:cloud%7Econvective rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :cloud ;
+			svu:hasAttribute <attribute#convective> ;
+			skos:prefLabel "cloud~convective"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cloud%7Ehigh-type
+:cloud%7Ehigh-type rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/List_of_cloud_types#High-level_cirriform,_stratocumuliform,_and_stratiform" ;
+			svu:isDerivedFrom :cloud ;
+			svu:hasAttribute <attribute#high-type> ;
+			skos:prefLabel "cloud~high-type"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cloud%7Elow-type
+:cloud%7Elow-type rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/List_of_cloud_types#Low-level_stratocumuliform,_cumuliform,_and_stratiform" ;
+			svu:isDerivedFrom :cloud ;
+			svu:hasAttribute <attribute#low-type> ;
+			skos:prefLabel "cloud~low-type"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cloud%7Emedium-type
+:cloud%7Emedium-type rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/List_of_cloud_types#Mid-level_stratocumuliform_and_stratiform" ;
+			svu:isDerivedFrom :cloud ;
+			svu:hasAttribute <attribute#medium-type> ;
+			skos:prefLabel "cloud~medium-type"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cloud%7Estratiform
+:cloud%7Estratiform rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :cloud ;
+			svu:hasAttribute <attribute#stratiform> ;
+			skos:prefLabel "cloud~stratiform"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#conjunction
+:conjunction rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Conjunction_(astronomy)" ;
+			skos:prefLabel "conjunction"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#crevasse
+:crevasse rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Crevasse" ;
+			skos:prefLabel "crevasse"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cyclone%7Etropical
+:cyclone%7Etropical rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Tropical_cyclone" ;
+			svu:isDerivedFrom :cyclone ;
+			svu:hasAttribute <attribute#tropical> ;
+			skos:prefLabel "cyclone~tropical"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cyclone%7Etropical%7Edvorak
+:cyclone%7Etropical%7Edvorak rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :cyclone%7Etropical ;
+			skos:prefLabel "cyclone~tropical~dvorak"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#day%7Esidereal
+:day%7Esidereal rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sidereal_time" ;
+			svu:isDerivedFrom :day ;
+			svu:hasAttribute <attribute#sidereal> ;
+			skos:prefLabel "day~sidereal"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#day%7Esolar-mean
+:day%7Esolar-mean rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Solar_time" ;
+			svu:isDerivedFrom :day ;
+			skos:prefLabel "day~solar-mean"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#day%7Estellar
+:day%7Estellar rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Earth%27s_rotation#Stellar_day" ;
+			svu:isDerivedFrom :day ;
+			svu:hasAttribute <attribute#stellar> ;
+			skos:prefLabel "day~stellar"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#day
+:day rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Day" ;
+			skos:prefLabel "day"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#dive
+:dive rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			skos:prefLabel "dive"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#equinox
+:equinox rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Equinox" ;
+			skos:prefLabel "equinox"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#sunglint
+:sunglint rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sunglint" ;
+			skos:prefLabel "sunglint"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#sunrise
+:sunrise rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sunrise" ;
+			skos:prefLabel "sunrise"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#sunset
+:sunset rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sunset" ;
+			skos:altLabel "sundown"@en ;
+			skos:prefLabel "sunset"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#sunshine
+:sunshine rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sunshine" ;
+			skos:prefLabel "sunshine"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#frost-front
+:frost-front rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Frost_line" ;
+			svu:isDerivedFrom :front ;
+			skos:prefLabel "frost-front"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#thawing-front
+:thawing-front rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Thaw_(weather)" ;
+			svu:isDerivedFrom :front ;
+			skos:prefLabel "thawing-front"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#wetting-front
+:wetting-front rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :front ;
+			skos:prefLabel "wetting-front"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#front
+:front rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Front" ;
+			skos:prefLabel "front"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#night
+:night rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Night" ;
+			skos:prefLabel "night"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#solstice
+:solstice rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Solstice" ;
+			skos:prefLabel "solstice"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#icefall
+:icefall rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedProcess <process#precipitate> ;
+			skos:prefLabel "icefall"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#ice-shove
+:ice-shove rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Ice_shove" ;
+			skos:altLabel "ice-heave"@en ;
+			skos:altLabel "ivu"@en ;
+			skos:altLabel "ice-surge"@en ;
+			skos:altLabel "shoreline-ice-pileup"@en ;
+			skos:prefLabel "ice-shove"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#atmosphere
+:atmosphere rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Atmosphere" ;
+			skos:prefLabel "atmosphere"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#black-hole
+:black-hole rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Black_hole" ;
+			skos:prefLabel "black-hole"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#bond
+:bond rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Chemical_bond" ;
+			svu:hasAssociatedProcess <process#bond> ;
+			skos:prefLabel "bond"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cloud
+:cloud rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cloud" ;
+			skos:prefLabel "cloud"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#clouds
+:clouds rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isPluralityOf :cloud ;
+			skos:prefLabel "clouds"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cyclone
+:cyclone rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cyclone" ;
+			skos:prefLabel "cyclone"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#ecosystem
+:ecosystem rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Ecosystem" ;
+			skos:prefLabel "ecosystem"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#fire
+:fire rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Fire" ;
+			svu:hasAssociatedProcess <process#combust> ;
+			skos:prefLabel "fire"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#fires
+:fires rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isPluralityOf :fire ;
+			svu:hasAssociatedProcess <process#combust> ;
+			skos:prefLabel "fires"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#flood
+:flood rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Flood" ;
+			svu:hasAssociatedProcess <process#flood> ;
+			skos:prefLabel "flood"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#fog
+:fog rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Fog" ;
+			svu:hasAssociatedProcess <process#fog> ;
+			skos:prefLabel "fog"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#forest
+:forest rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Forest" ;
+			skos:prefLabel "forest"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#forestry
+:forestry rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Forestry" ;
+			skos:prefLabel "forestry"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#ionosphere
+:ionosphere rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Ionosphere" ;
+			skos:prefLabel "ionosphere"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#lightning
+:lightning rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Lightning" ;
+			skos:prefLabel "lightning"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#lithosphere
+:lithosphere rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Lithosphere" ;
+			skos:prefLabel "lithosphere"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#permafrost
+:permafrost rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Permafrost" ;
+			skos:prefLabel "permafrost"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#photon
+:photon rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Photon" ;
+			skos:prefLabel "photon"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#savanna
+:savanna rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Savanna" ;
+			skos:altLabel "savannah"@en ;
+			skos:prefLabel "savanna"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#storm
+:storm rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Storm" ;
+			skos:prefLabel "storm"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cyclone
+:cyclone rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :storm ;
+			skos:prefLabel "cyclone"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#thunderstorm
+:thunderstorm rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Thunderstorm" ;
+			skos:altLabel "storm~electrical"@en ;
+			skos:altLabel "storm~lightning"@en ;
+			skos:altLabel "thundershower"@en ;
+			svu:isDerivedFrom :storm ;
+			skos:prefLabel "thunderstorm"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#tropopause
+:tropopause rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Tropopause" ;
+			skos:prefLabel "tropopause"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#troposphere
+:troposphere rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Troposphere" ;
+			skos:prefLabel "troposphere"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#universe
+:universe rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Universe" ;
+			skos:prefLabel "universe"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#vacuum
+:vacuum rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Vacuum#In_electromagnetism" ;
+			skos:altLabel "free_space"@en ;
+			skos:prefLabel "vacuum"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#habitat
+:habitat rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Habitat" ;
+			skos:prefLabel "habitat"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#drought
+:drought rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Drought" ;
+			skos:prefLabel "drought"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#hydraulic-jump
+:hydraulic-jump rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Hydraulic_jump" ;
+			skos:prefLabel "hydraulic-jump"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#fibrosis
+:fibrosis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Fibrosis" ;
+			skos:prefLabel "fibrosis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#filamentation
+:filamentation rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Filamentation" ;
+			skos:prefLabel "filamentation"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#forecast
+:forecast rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Forecasting" ;
+			skos:prefLabel "forecast"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#gelifluction
+:gelifluction rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Gelifluction" ;
+			skos:prefLabel "gelifluction"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#guttation
+:guttation rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Guttation" ;
+			skos:prefLabel "guttation"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#gyre
+:gyre rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Gyre" ;
+			skos:prefLabel "gyre"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#heterosis
+:heterosis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Heterosis" ;
+			skos:prefLabel "heterosis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#extinction
+:extinction rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Extinction" ;
+			skos:prefLabel "extinction"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#infarction
+:infarction rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Infarction" ;
+			skos:prefLabel "infarction"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#landfall
+:landfall rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Landfall" ;
+			skos:prefLabel "landfall"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#life
+:life rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Life" ;
+			svu:hasAssociatedProcess <process#live> ;
+			skos:prefLabel "life"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#panspermia
+:panspermia rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Panspermia" ;
+			skos:prefLabel "panspermia"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#paralysis
+:paralysis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :%20 ;
+			svu:hasAssociatedProcess <process#paralyze> ;
+			skos:prefLabel "paralysis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#peristalsis
+:peristalsis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Peristalsis" ;
+			skos:prefLabel "peristalsis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#power-blackout
+:power-blackout rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Power_outage" ;
+			skos:prefLabel "power-blackout"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#stemflow
+:stemflow rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Stemflow" ;
+			svu:hasAssociatedProcess <process#flow> ;
+			skos:prefLabel "stemflow"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#symbiosis
+:symbiosis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Symbiosis" ;
+			skos:prefLabel "symbiosis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#synnecrosis
+:synnecrosis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Biological_interaction#Competition" ;
+			skos:prefLabel "synnecrosis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#treefall-gap
+:treefall-gap rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Treefall_gap" ;
+			skos:prefLabel "treefall-gap"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#treethrow
+:treethrow rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Tree_throw" ;
+			skos:altLabel "tree-throw"@en ;
+			skos:altLabel "tree-hole"@en ;
+			skos:prefLabel "treethrow"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#superposition
+:superposition rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Superposition_principle" ;
+			skos:prefLabel "superposition"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#stasis
+:stasis rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Stability_theory" ;
+			skos:prefLabel "stasis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#shortage
+:shortage rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Shortage" ;
+			skos:prefLabel "shortage"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#progradation
+:progradation rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Progradation" ;
+			skos:prefLabel "progradation"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#repercussion
+:repercussion rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			skos:prefLabel "repercussion"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#lateration
+:lateration rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			skos:prefLabel "lateration"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#multilateration
+:multilateration rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Multilateration" ;
+			skos:prefLabel "multilateration"@en .

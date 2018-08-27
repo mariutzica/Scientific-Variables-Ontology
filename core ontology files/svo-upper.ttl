@@ -33,6 +33,10 @@
 #    Object Properties
 #################################################################
 
+###  http://www.geoscienceontology.org/svu#hasAssociatedProcess
+:hasAssociatedProcess rdf:type owl:ObjectProperty .
+
+
 ###  http://www.geoscienceontology.org/svu#hasHeadOperator
 :hasHeadOperator rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :hasOperator .
@@ -122,16 +126,19 @@
 
 ###  http://www.geoscienceontology.org/svu#BodyPart
 :BodyPart rdf:type owl:Class ;
+          rdfs:subClassOf :Phenomenon ;
           rdfs:comment "A body part is in essence a body. However, it is always a part of a bigger whole and would not come into existence otherwise." .
 
 
 ###  http://www.geoscienceontology.org/svu#BodyType
 :BodyType rdf:type owl:Class ;
+          rdfs:subClassOf :Phenomenon ;
           rdfs:comment "A BodyType is the same thing as a Body, except (subjectively) BodyTypes are more generic and usually (although not always) describe a type and are less frequently used as the object of a variable." .
 
 
 ###  http://www.geoscienceontology.org/svu#Form
 :Form rdf:type owl:Class ;
+      rdfs:subClassOf :Phenomenon ;
       rdfs:comment "The Form class contains elements which describe the visible shape or configuration of something; it defines the spatial extent of something without defining substance or essence." .
 
 
@@ -155,6 +162,7 @@
 
 ###  http://www.geoscienceontology.org/svu#MatterType
 :MatterType rdf:type owl:Class ;
+            rdfs:subClassOf :Phenomenon ;
             rdfs:comment "MatterType can also be thought of as matter. However, unlike Matter, MatterType doesn't provide the essence of the substance of which something is made." .
 
 
@@ -172,6 +180,10 @@
 ###  http://www.geoscienceontology.org/svu#Part
 :Part rdf:type owl:Class ;
       rdfs:comment "A part has no essence without being attached to a Body, Form or some other Phenomenon. A Part must be attached to one of these before being included in a variable. Examples include top, bottom, side, core, and subskin." .
+
+
+###  http://www.geoscienceontology.org/svu#Phenomenon
+:Phenomenon rdf:type owl:Class .
 
 
 ###  http://www.geoscienceontology.org/svu#PhysicalAbstraction

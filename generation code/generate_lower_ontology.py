@@ -33,6 +33,7 @@ operator_file  = 'operator.csv'
 operator_quantity_file  = 'quantitative_property_with_operator.csv'
 
 process_file  = 'process.csv'
+phenomenon_file  = 'phenomenon.csv'
 
 qualitative_attribute_file  = 'qualitative_attribute.csv'
 quantitative_attribute_file  = 'quantitative_attribute.csv'
@@ -81,6 +82,8 @@ operator_quantity_vocabulary = \
             utils.load_data( ext_vocabulary, operator_quantity_file )
 process_vocabulary = \
             utils.load_data( ext_vocabulary, process_file )   
+phenomenon_vocabulary = \
+            utils.load_data( ext_vocabulary, phenomenon_file )   
 qualitative_attribute_vocabulary = \
             utils.load_data( ext_vocabulary, qualitative_attribute_file )   
 quantitative_attribute_vocabulary = \
@@ -127,6 +130,7 @@ relationship_vocabulary = \
 property_ttl = open( ext_output + 'svo-lower-property.ttl', 'w' )
 operator_ttl = open( ext_output + 'svo-lower-operator.ttl', 'w' )
 process_ttl = open( ext_output + 'svo-lower-process.ttl', 'w' )
+phenomenon_ttl = open( ext_output + 'svo-lower-phenomenon.ttl', 'w' )
 attribute_ttl = open( ext_output + 'svo-lower-attribute.ttl', 'w' )
 matter_ttl = open( ext_output + 'svo-lower-matter.ttl', 'w' )
 form_ttl = open( ext_output + 'svo-lower-form.ttl', 'w' )
@@ -141,6 +145,7 @@ relationship_ttl = open( ext_output + 'svo-lower-relationship.ttl', 'w' )
 utils.open_write_file( property_ttl, 'Property' )
 utils.open_write_file( operator_ttl, 'Operator' )
 utils.open_write_file( process_ttl, 'Process' )
+utils.open_write_file( phenomenon_ttl, 'Phenomenon' )
 utils.open_write_file( attribute_ttl, 'Attribute' )
 utils.open_write_file( form_ttl, 'Form' )
 utils.open_write_file( body_ttl, 'Body' )
@@ -214,6 +219,11 @@ utils.create_bb_file( compound_operator_vocabulary, operator_ttl, \
 label = '\n\n###Process\n\n'
 utils.create_bb_file( process_vocabulary, process_ttl, \
                       'Process', 'process', 'process', label = label )
+
+# create Phenomenon file
+label = '\n\n###Phenomenon\n\n'
+utils.create_bb_file( phenomenon_vocabulary, phenomenon_ttl, \
+                      'Phenomenon', 'phenomenon', 'phenomenon', label = label )
 
 # create Attribute file
 label = '\n\n###(Qualitative)Attribute\n\n'
@@ -300,6 +310,7 @@ utils.create_bb_file( relationship_vocabulary, relationship_ttl, \
 property_ttl.close()
 operator_ttl.close()
 process_ttl.close()
+phenomenon_ttl.close()
 attribute_ttl.close()
 matter_ttl.close()
 form_ttl.close()
