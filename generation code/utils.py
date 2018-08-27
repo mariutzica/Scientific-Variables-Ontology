@@ -410,7 +410,8 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 mtype = vocab.loc[ index, 'matter_type' ]
                 ttl_file.write( attribute.format( 'hasType', \
                             ':' + urllib.quote( mtype ), ';' ) )
-        if collabel in ['trajectory','matter']:
+        if collabel in ['trajectory','matter','body'] and \
+            'attribute' in vocab.columns.values:
             if vocab.loc[ index, 'attribute' ] != '' :
                 attr = vocab.loc[ index, 'attribute' ]
                 ttl_file.write( attribute.format( 'hasAttribute', \
