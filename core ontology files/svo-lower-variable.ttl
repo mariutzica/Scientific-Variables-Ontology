@@ -1,0 +1,65 @@
+@prefix : <http://www.geoscienceontology.org/svl/variable#> .
+@prefix svu: <http://www.geoscienceontology.org/svu#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://www.geoscienceontology.org/svl/> .
+
+<http://www.geoscienceontology.org/svl/variable> rdf:type owl:Ontology ;
+				rdfs:comment " Scientific Variables Lower Ontology, Variable BETA VERSION." .
+#				owl:imports <http://www.geoscienceontology.org/svu> .
+
+
+#################################################################
+#    Variable   
+# 
+#################################################################
+##Last generated on: 2018-08-27 12:35
+
+###CSN Variables
+
+
+###  http://www.geoscienceontology.org/svl/variable#air__shear_dynamic_viscosity
+:air__shear_dynamic_viscosity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#shear_dynamic_viscosity> ;
+			svu:hasObject <matter#air> ;
+			skos:prefLabel "air__shear_dynamic_viscosity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#air__volume_dynamic_viscosity
+:air__volume_dynamic_viscosity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#volume_dynamic_viscosity> ;
+			svu:hasObject <matter#air> ;
+			skos:prefLabel "air__volume_dynamic_viscosity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#air__shear_kinematic_viscosity
+:air__shear_kinematic_viscosity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#shear_kinematic_viscosity> ;
+			svu:hasObject <matter#air> ;
+			skos:prefLabel "air__shear_kinematic_viscosity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#air__volume_kinematic_viscosity
+:air__volume_kinematic_viscosity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#volume_kinematic_viscosity> ;
+			svu:hasObject <matter#air> ;
+			skos:prefLabel "air__volume_kinematic_viscosity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#air__relative_permittivity
+:air__relative_permittivity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#relative_permittivity_ratio> ;
+			svu:hasObject <matter#air> ;
+			skos:prefLabel "air__relative_permittivity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#air__isochoric_volume-specific_heat_capacity
+:air__isochoric_volume-specific_heat_capacity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#isochoric_volume-specific_heat_capacity> ;
+			svu:hasObject <matter#air> ;
+			skos:prefLabel "air__isochoric_volume-specific_heat_capacity"@en .

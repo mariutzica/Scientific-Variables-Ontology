@@ -436,3 +436,24 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 ttl_file.write( attribute.format( 'hasNominalization', \
                                               '\"' + h.unescape(attr) + '\"', ';'))
         ttl_file.write( preflabel.format( element ) )
+
+# create variable file 
+def create_variable_entries( vocab, ttl_file, label=None ):
+    if label:
+        ttl_file.write( label )
+    for index in vocab.index:
+        element = vocab.loc[ index, 'variable_label' ]
+        element_esc = urllib.quote(element)
+        ttl_file.write( '\n' + prefix.format( 'variable', element_esc ) )
+        ttl_file.write( declaration_instance.format( \
+                        element_esc, 'svu', 'Variable', ';' ) )
+        quantity = vocab.loc[ index, 'quantity_id']
+        if quantity != '':
+            ttl_file.write( attribute.format( 'hasQuantity', \
+                            '<property#' + h.unescape(quantity) + '>', ';'))
+        obj = vocab.loc[ index, 'object_id']
+        pref = vocab.loc[ index, 'object_pref']
+        if obj != '':
+            ttl_file.write( attribute.format( 'hasObject', \
+                            '<'+pref+'#' + h.unescape(obj) + '>', ';'))
+        ttl_file.write( preflabel.format( element ) )

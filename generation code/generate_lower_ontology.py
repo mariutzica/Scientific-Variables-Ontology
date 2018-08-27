@@ -21,6 +21,7 @@ import utils as utils
 ##################################
 
 ext_vocabulary      = '../foundational vocabulary/'
+ext_csn_variable    = '../atomize and standardize csn/'
 ext_output          = '../core ontology files/'
 
 qual_property_file  = 'qualitative_property.csv'
@@ -62,6 +63,8 @@ trajectory_file  = 'trajectory.csv'
 trajectory_direction_file  = 'trajectory_direction.csv'
 
 relationship_file  = 'relationship.csv'
+
+csn_variables_file  = 'CSDMS_standard_names.csv'
 
 ################################
 #   INITIAL DATA LOAD          #
@@ -122,6 +125,9 @@ trajectory_direction_vocabulary = \
             utils.load_data( ext_vocabulary, trajectory_direction_file ) 
 relationship_vocabulary = \
             utils.load_data( ext_vocabulary, relationship_file )
+
+csn_vocabulary = \
+            utils.load_data( ext_csn_variable, csn_variables_file )
              
 ######################
 #  OUTPUT FILE SETUP #
@@ -141,6 +147,7 @@ role_ttl = open( ext_output + 'svo-lower-role.ttl', 'w' )
 trajectory_ttl = open( ext_output + 'svo-lower-trajectory.ttl', 'w' )
 trajectory_direction_ttl = open( ext_output + 'svo-lower-trajectory-direction.ttl', 'w' )
 relationship_ttl = open( ext_output + 'svo-lower-relationship.ttl', 'w' )
+variable_ttl = open( ext_output + 'svo-lower-variable.ttl', 'w' )
 
 utils.open_write_file( property_ttl, 'Property' )
 utils.open_write_file( operator_ttl, 'Operator' )
@@ -155,6 +162,7 @@ utils.open_write_file( role_ttl, 'Role' )
 utils.open_write_file( trajectory_ttl, 'Trajectory' )
 utils.open_write_file( trajectory_direction_ttl, 'TrajectoryDirection' )
 utils.open_write_file( relationship_ttl, 'Relationship' )
+utils.open_write_file( variable_ttl, 'Variable' )
 
 ################################
 #   DATA PREPROCESSING         #
@@ -303,6 +311,10 @@ label = '\n\n###Relationship\n\n'
 utils.create_bb_file( relationship_vocabulary, relationship_ttl, \
                       'Relationship', 'relationship', 'relationship', label = label )
 
+# create Variable file
+label = '\n\n###CSN Variables\n\n'
+utils.create_variable_entries( csn_vocabulary, variable_ttl, label = label )
+
 ######################
 #    File Cleanup    #
 ######################
@@ -320,3 +332,4 @@ role_ttl.close()
 trajectory_ttl.close()
 trajectory_direction_ttl.close()
 relationship_ttl.close()
+variable_ttl.close()
