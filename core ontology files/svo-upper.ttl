@@ -152,6 +152,11 @@
                               rdfs:comment "OperatorQuantitativeProperty is the set of Properies that involve an Operator. This class is not essentially different from a QuantitativeProperty. However, at the moment it is distinguished in the ontology as those QuantitativeProperties that are associated with a hasOperator relationship." .
 
 
+###  http://www.geoscienceontology.org/svu#Part
+:Part rdf:type owl:Class ;
+      rdfs:comment "A part has no essence without being attached to a Body, Form or some other Phenomenon. A Part must be attached to one of these before being included in a variable. Examples include top, bottom, side, core, and subskin." .
+
+
 ###  http://www.geoscienceontology.org/svu#Process
 :Process rdf:type owl:Class ;
          rdfs:comment "A process is something that happens, whether in one step or multiple steps. A process refers specifically to the actions of something. A process along with all of its actors, their roles, etc. is a Phenomenon." .

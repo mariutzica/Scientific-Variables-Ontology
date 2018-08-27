@@ -48,6 +48,8 @@ animate_body_file  = 'animate_body.csv'
 animate_body_type_file  = 'animate_body_type.csv'
 animate_body_part_file  = 'animate_body_part.csv'
 
+part_file  = 'part.csv'
+
 role_file  = 'role.csv'
 
 trajectory_file  = 'trajectory.csv'
@@ -84,6 +86,8 @@ matter_vocabulary = \
             utils.load_data( ext_vocabulary, matter_file ) 
 form_vocabulary = \
             utils.load_data( ext_vocabulary, form_file ) 
+part_vocabulary = \
+            utils.load_data( ext_vocabulary, part_file )
 inanimate_nat_body_vocabulary = \
             utils.load_data( ext_vocabulary, inanimate_nat_body_file ) 
 inanimate_fab_body_vocabulary = \
@@ -114,6 +118,7 @@ attribute_ttl = open( ext_output + 'svo-lower-attribute.ttl', 'w' )
 matter_ttl = open( ext_output + 'svo-lower-matter.ttl', 'w' )
 form_ttl = open( ext_output + 'svo-lower-form.ttl', 'w' )
 body_ttl = open( ext_output + 'svo-lower-body.ttl', 'w' )
+part_ttl = open( ext_output + 'svo-lower-part.ttl', 'w' )
 role_ttl = open( ext_output + 'svo-lower-role.ttl', 'w' )
 trajectory_ttl = open( ext_output + 'svo-lower-trajectory.ttl', 'w' )
 trajectory_direction_ttl = open( ext_output + 'svo-lower-trajectory-direction.ttl', 'w' )
@@ -125,6 +130,7 @@ utils.open_write_file( process_ttl, 'Process' )
 utils.open_write_file( attribute_ttl, 'Attribute' )
 utils.open_write_file( form_ttl, 'Form' )
 utils.open_write_file( body_ttl, 'Body' )
+utils.open_write_file( part_ttl, 'Part' )
 utils.open_write_file( role_ttl, 'Role' )
 utils.open_write_file( trajectory_ttl, 'Trajectory' )
 utils.open_write_file( trajectory_direction_ttl, 'TrajectoryDirection' )
@@ -231,6 +237,11 @@ utils.create_bb_file( animate_body_type_vocabulary, body_ttl, \
 label = '\n\n###Animate Body Part\n\n'
 utils.create_bb_file( animate_body_part_vocabulary, body_ttl, \
                       'BodyPart', 'part', 'body', label = label )
+
+# create Part file
+label = '\n\n###Part\n\n'
+utils.create_bb_file( part_vocabulary, part_ttl, \
+                      'Part', 'part', 'part', label = label )
 
 # create Role file
 label = '\n\n###Role\n\n'
