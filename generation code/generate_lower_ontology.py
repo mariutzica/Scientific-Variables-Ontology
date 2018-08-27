@@ -48,6 +48,11 @@ animate_body_file  = 'animate_body.csv'
 animate_body_type_file  = 'animate_body_type.csv'
 animate_body_part_file  = 'animate_body_part.csv'
 
+math_abstraction_file  = 'abstraction_mathematical.csv'
+phys_abstraction_file  = 'abstraction_physical.csv'
+abstraction_type_file  = 'abstraction_type.csv'
+abstraction_part_file  = 'abstraction_mathematical_part.csv'
+
 part_file  = 'part.csv'
 
 role_file  = 'role.csv'
@@ -86,6 +91,14 @@ matter_vocabulary = \
             utils.load_data( ext_vocabulary, matter_file ) 
 form_vocabulary = \
             utils.load_data( ext_vocabulary, form_file ) 
+math_abstraction_vocabulary = \
+            utils.load_data( ext_vocabulary, math_abstraction_file )
+phys_abstraction_vocabulary = \
+            utils.load_data( ext_vocabulary, phys_abstraction_file )
+abstraction_type_vocabulary = \
+            utils.load_data( ext_vocabulary, abstraction_type_file )
+abstraction_part_vocabulary = \
+            utils.load_data( ext_vocabulary, abstraction_part_file )
 part_vocabulary = \
             utils.load_data( ext_vocabulary, part_file )
 inanimate_nat_body_vocabulary = \
@@ -118,6 +131,7 @@ attribute_ttl = open( ext_output + 'svo-lower-attribute.ttl', 'w' )
 matter_ttl = open( ext_output + 'svo-lower-matter.ttl', 'w' )
 form_ttl = open( ext_output + 'svo-lower-form.ttl', 'w' )
 body_ttl = open( ext_output + 'svo-lower-body.ttl', 'w' )
+abstraction_ttl = open( ext_output + 'svo-lower-abstraction.ttl', 'w' )
 part_ttl = open( ext_output + 'svo-lower-part.ttl', 'w' )
 role_ttl = open( ext_output + 'svo-lower-role.ttl', 'w' )
 trajectory_ttl = open( ext_output + 'svo-lower-trajectory.ttl', 'w' )
@@ -130,6 +144,7 @@ utils.open_write_file( process_ttl, 'Process' )
 utils.open_write_file( attribute_ttl, 'Attribute' )
 utils.open_write_file( form_ttl, 'Form' )
 utils.open_write_file( body_ttl, 'Body' )
+utils.open_write_file( abstraction_ttl, 'Abstraction' )
 utils.open_write_file( part_ttl, 'Part' )
 utils.open_write_file( role_ttl, 'Role' )
 utils.open_write_file( trajectory_ttl, 'Trajectory' )
@@ -238,6 +253,21 @@ label = '\n\n###Animate Body Part\n\n'
 utils.create_bb_file( animate_body_part_vocabulary, body_ttl, \
                       'BodyPart', 'part', 'body', label = label )
 
+# create Abstraction file
+label = '\n\n###Mathematical Abstraction\n\n'
+utils.create_bb_file( math_abstraction_vocabulary, abstraction_ttl, \
+                      'MathematicalAbstraction', 'abstraction', 'abstraction', label = label )
+label = '\n\n###Physical Abstraction\n\n'
+utils.create_bb_file( phys_abstraction_vocabulary, abstraction_ttl, \
+                      'PhysicalAbstraction', 'abstraction', 'abstraction', label = label )
+label = '\n\n###Abstraction Type\n\n'
+utils.create_bb_file( abstraction_type_vocabulary, abstraction_ttl, \
+                      'AbstractionType', 'abstraction', 'abstraction', label = label )
+label = '\n\n###Abstraction Part\n\n'
+utils.create_bb_file( abstraction_part_vocabulary, abstraction_ttl, \
+                      'AbstractionPart', 'abstraction', 'abstraction', label = label )
+
+
 # create Part file
 label = '\n\n###Part\n\n'
 utils.create_bb_file( part_vocabulary, part_ttl, \
@@ -274,6 +304,7 @@ attribute_ttl.close()
 matter_ttl.close()
 form_ttl.close()
 body_ttl.close()
+abstraction_ttl.close()
 role_ttl.close()
 trajectory_ttl.close()
 trajectory_direction_ttl.close()

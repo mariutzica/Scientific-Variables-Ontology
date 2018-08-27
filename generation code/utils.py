@@ -410,12 +410,13 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 mtype = vocab.loc[ index, 'matter_type' ]
                 ttl_file.write( attribute.format( 'hasType', \
                             ':' + urllib.quote( mtype ), ';' ) )
-        if collabel in ['trajectory','matter','body'] and \
+        if collabel in ['trajectory','matter','body','abstraction'] and \
             'attribute' in vocab.columns.values:
             if vocab.loc[ index, 'attribute' ] != '' :
-                attr = vocab.loc[ index, 'attribute' ]
-                ttl_file.write( attribute.format( 'hasAttribute', \
-                            '<attribute#' + urllib.quote( attr )+'>', ';' ) )
+                attr = vocab.loc[ index, 'attribute' ].split(', ')
+                for a in attr:
+                    ttl_file.write( attribute.format( 'hasAttribute', \
+                            '<attribute#' + urllib.quote( a )+'>', ';' ) )
         if collabel + '_label' in vocab.columns.values:
             element = vocab.loc[ index, collabel + '_label' ]
         if 'process_present_participle' in vocab.columns.values:

@@ -104,6 +104,11 @@
 #    Classes
 #################################################################
 
+###  http://www.geoscienceontology.org/svu#AbstractionType
+:AbstractionType rdf:type owl:Class ;
+                 rdfs:comment "An AbstractionType is an abstraction that is generic and is usually (although not always) specified more precisely in a Variable." .
+
+
 ###  http://www.geoscienceontology.org/svu#Attribute
 :Attribute rdf:type owl:Class ;
            rdfs:comment "An attribute consists of a property-value pair. Attributes are used to narrow the identification of an Actor in a variable." .
@@ -128,6 +133,18 @@
 ###  http://www.geoscienceontology.org/svu#Form
 :Form rdf:type owl:Class ;
       rdfs:comment "The Form class contains elements which describe the visible shape or configuration of something; it defines the spatial extent of something without defining substance or essence." .
+
+
+###  http://www.geoscienceontology.org/svu#MathematicalAbstraction
+:MathematicalAbstraction rdf:type owl:Class ;
+                         rdfs:subClassOf :AbstractionType ;
+                         rdfs:comment "A mathematical abstraction is any mathematical entity." .
+
+
+###  http://www.geoscienceontology.org/svu#MathematicalAbstractionPart
+:MathematicalAbstractionPart rdf:type owl:Class ;
+                             rdfs:subClassOf :MathematicalAbstraction ;
+                             rdfs:comment "An Abstraction Part is an abstraction that is usually part of another abstraction and is not likely to be found by itself. Examples include apex and center." .
 
 
 ###  http://www.geoscienceontology.org/svu#Matter
@@ -155,6 +172,12 @@
 ###  http://www.geoscienceontology.org/svu#Part
 :Part rdf:type owl:Class ;
       rdfs:comment "A part has no essence without being attached to a Body, Form or some other Phenomenon. A Part must be attached to one of these before being included in a variable. Examples include top, bottom, side, core, and subskin." .
+
+
+###  http://www.geoscienceontology.org/svu#PhysicalAbstraction
+:PhysicalAbstraction rdf:type owl:Class ;
+                     rdfs:subClassOf :MathematicalAbstraction ;
+                     rdfs:comment "A Physical Abstraction is a Mathematical abstraction that is applied to a physical phenomenon. Examples include wheelbase and shoreline." .
 
 
 ###  http://www.geoscienceontology.org/svu#Process
