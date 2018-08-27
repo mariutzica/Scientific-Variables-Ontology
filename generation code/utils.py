@@ -411,11 +411,30 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 ttl_file.write( attribute.format( 'hasType', \
                             ':' + urllib.quote( mtype ), ';' ) )
         if collabel == 'phenomenon':
-            if vocab.loc[ index, 'associated_process' ] != '' :
+            if 'associated_process' in vocab.columns.values and\
+                vocab.loc[ index, 'associated_process' ] != '' :
                 process = vocab.loc[ index, 'associated_process' ].split(', ')
                 for p in process:
                     ttl_file.write( attribute.format( 'hasAssociatedProcess', \
                             '<process#' + urllib.quote( p )+'>', ';' ) )
+            if 'process' in vocab.columns.values and \
+                vocab.loc[ index, 'process' ] != '' :
+                process = vocab.loc[ index, 'process' ].split(', ')
+                for p in process:
+                    ttl_file.write( attribute.format( 'hasProcess', \
+                        '<process#' + urllib.quote( p )+'>', ';' ) )
+            if 'body' in vocab.columns.values and \
+                vocab.loc[ index, 'body' ] != '' :
+                body = vocab.loc[ index, 'body' ].split(', ')
+                for b in process:
+                    ttl_file.write( attribute.format( 'hasBody', \
+                        '<body#' + urllib.quote( b )+'>', ';' ) )
+            if 'matter' in vocab.columns.values and \
+                vocab.loc[ index, 'matter' ] != '' :
+                body = vocab.loc[ index, 'matter' ].split(', ')
+                for b in process:
+                    ttl_file.write( attribute.format( 'hasMatter', \
+                        '<matter#' + urllib.quote( b )+'>', ';' ) )
         if collabel in ['trajectory','matter','body','abstraction','phenomenon'] and \
             'attribute' in vocab.columns.values:
             if vocab.loc[ index, 'attribute' ] != '' :

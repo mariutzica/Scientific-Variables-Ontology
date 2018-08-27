@@ -17,7 +17,7 @@
 #    Property   
 # 
 #################################################################
-##Last generated on: 2018-08-27 12:35
+##Last generated on: 2018-08-27 16:24
 
 ###Property
 
@@ -3356,6 +3356,13 @@
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :slip_duration ;
 			skos:prefLabel "seismic_slip_duration"@en .
+
+###  http://www.geoscienceontology.org/svl/property#flight_duration
+:flight_duration rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :flight_duration ;
+			svu:quantifiesProcess <process#fly> ;
+			skos:prefLabel "flight_duration"@en .
 
 ###  http://www.geoscienceontology.org/svl/property#eccentricity
 :eccentricity rdf:type owl:NamedIndividual ,

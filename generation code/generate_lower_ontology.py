@@ -35,6 +35,7 @@ operator_quantity_file  = 'quantitative_property_with_operator.csv'
 
 process_file  = 'process.csv'
 phenomenon_file  = 'phenomenon.csv'
+compound_phenomenon_file  = 'phenomenon_compound.csv'
 
 qualitative_attribute_file  = 'qualitative_attribute.csv'
 quantitative_attribute_file  = 'quantitative_attribute.csv'
@@ -86,7 +87,9 @@ operator_quantity_vocabulary = \
 process_vocabulary = \
             utils.load_data( ext_vocabulary, process_file )   
 phenomenon_vocabulary = \
-            utils.load_data( ext_vocabulary, phenomenon_file )   
+            utils.load_data( ext_vocabulary, phenomenon_file )  
+compound_phenomenon_vocabulary = \
+            utils.load_data( ext_vocabulary, compound_phenomenon_file )  
 qualitative_attribute_vocabulary = \
             utils.load_data( ext_vocabulary, qualitative_attribute_file )   
 quantitative_attribute_vocabulary = \
@@ -231,6 +234,9 @@ utils.create_bb_file( process_vocabulary, process_ttl, \
 # create Phenomenon file
 label = '\n\n###Phenomenon\n\n'
 utils.create_bb_file( phenomenon_vocabulary, phenomenon_ttl, \
+                      'Phenomenon', 'phenomenon', 'phenomenon', label = label )
+label = '\n\n###Compound Phenomenon\n\n'
+utils.create_bb_file( compound_phenomenon_vocabulary, phenomenon_ttl, \
                       'Phenomenon', 'phenomenon', 'phenomenon', label = label )
 
 # create Attribute file

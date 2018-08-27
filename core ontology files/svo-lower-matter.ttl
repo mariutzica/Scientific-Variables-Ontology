@@ -11427,3 +11427,31 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Isotopes_of_zirconium#Zirconium-95" ;
 			svu:isDerivedFrom :zirconium ;
 			skos:prefLabel "zirconium-95"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#wood%7Edry
+:wood%7Edry rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :wood ;
+			svu:hasAttribute <attribute#dry> ;
+			skos:prefLabel "wood~dry"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#water%7Evapor
+:water%7Evapor rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :water ;
+			svu:hasAttribute <attribute#vapor> ;
+			skos:prefLabel "water~vapor"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#water%7Eboiling-point
+:water%7Eboiling-point rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :water ;
+			svu:hasAttribute <attribute#boiling-point> ;
+			skos:prefLabel "water"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#water%7Efreezing-point
+:water%7Efreezing-point rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :water ;
+			svu:hasAttribute <attribute#freezing-point> ;
+			skos:prefLabel "water"@en .

@@ -17,7 +17,7 @@
 #    Variable   
 # 
 #################################################################
-##Last generated on: 2018-08-27 12:35
+##Last generated on: 2018-08-27 16:24
 
 ###CSN Variables
 
@@ -63,3 +63,339 @@
 			svu:hasQuantity <property#isochoric_volume-specific_heat_capacity> ;
 			svu:hasObject <matter#air> ;
 			skos:prefLabel "air__isochoric_volume-specific_heat_capacity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#aircraft__flight_duration
+:aircraft__flight_duration rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#flight_duration> ;
+			svu:hasObject <body#aircraft_flight> ;
+			skos:prefLabel "aircraft__flight_duration"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#aluminum__mass-specific_isobaric_heat_capacity
+:aluminum__mass-specific_isobaric_heat_capacity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#mass-specific_isobaric_heat_capacity> ;
+			svu:hasObject <matter#aluminum> ;
+			skos:prefLabel "aluminum__mass-specific_isobaric_heat_capacity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#anvil__isobaric_heat_capacity
+:anvil__isobaric_heat_capacity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#isobaric_heat_capacity> ;
+			svu:hasObject <body#anvil> ;
+			skos:prefLabel "anvil__isobaric_heat_capacity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#appliance%7Eelectric__voltage
+:appliance%7Eelectric__voltage rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#voltage> ;
+			svu:hasObject <#appliance~electric> ;
+			skos:prefLabel "appliance~electric__voltage"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#balloon__altitude
+:balloon__altitude rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#altitude> ;
+			svu:hasObject <body#balloon> ;
+			skos:prefLabel "balloon__altitude"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#basin%7Edrainage__area
+:basin%7Edrainage__area rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#area> ;
+			svu:hasObject <body#basin~drainage> ;
+			skos:prefLabel "basin~drainage__area"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#basin%7Edrainage__d-infinity_contributing_area
+:basin%7Edrainage__d-infinity_contributing_area rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#d-infinity_contributing_area> ;
+			svu:hasObject <body#basin~drainage> ;
+			skos:prefLabel "basin~drainage__d-infinity_contributing_area"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#basin%7Edrainage__d8_contributing_area
+:basin%7Edrainage__d8_contributing_area rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#d8_contributing_area> ;
+			svu:hasObject <body#basin~drainage> ;
+			skos:prefLabel "basin~drainage__d8_contributing_area"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#basin%7Edrainage__flint-law_coefficient
+:basin%7Edrainage__flint-law_coefficient rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#flint-law_coefficient> ;
+			svu:hasObject <body#basin~drainage> ;
+			skos:prefLabel "basin~drainage__flint-law_coefficient"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#basin%7Edrainage__flint-law_exponent
+:basin%7Edrainage__flint-law_exponent rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#flint-law_exponent> ;
+			svu:hasObject <body#basin~drainage> ;
+			skos:prefLabel "basin~drainage__flint-law_exponent"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#basin%7Edrainage__mass-flux_contributing_area
+:basin%7Edrainage__mass-flux_contributing_area rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#mass-flux_contributing_area> ;
+			svu:hasObject <body#basin~drainage> ;
+			skos:prefLabel "basin~drainage__mass-flux_contributing_area"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#basin%7Edrainage__max_of_elevation
+:basin%7Edrainage__max_of_elevation rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#max_of_elevation> ;
+			svu:hasObject <body#basin~drainage> ;
+			skos:prefLabel "basin~drainage__max_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#basin%7Edrainage__mean_of_elevation
+:basin%7Edrainage__mean_of_elevation rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#mean_of_elevation> ;
+			svu:hasObject <body#basin~drainage> ;
+			skos:prefLabel "basin~drainage__mean_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#basin%7Edrainage__min_of_elevation
+:basin%7Edrainage__min_of_elevation rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#min_of_elevation> ;
+			svu:hasObject <body#basin~drainage> ;
+			skos:prefLabel "basin~drainage__min_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#basin%7Edrainage__pfafstetter_code
+:basin%7Edrainage__pfafstetter_code rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#pfafstetter_code> ;
+			svu:hasObject <body#basin~drainage> ;
+			skos:prefLabel "basin~drainage__pfafstetter_code"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#basin%7Edrainage__range_of_elevation
+:basin%7Edrainage__range_of_elevation rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#range_of_elevation> ;
+			svu:hasObject <body#basin~drainage> ;
+			skos:prefLabel "basin~drainage__range_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#basin%7Edrainage__usgs_hydrologic_unit_code
+:basin%7Edrainage__usgs_hydrologic_unit_code rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#usgs_hydrologic_unit_code> ;
+			svu:hasObject <body#basin~drainage> ;
+			skos:prefLabel "basin~drainage__usgs_hydrologic_unit_code"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#bear%7Eblack%7Eamerican__weight
+:bear%7Eblack%7Eamerican__weight rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#weight> ;
+			svu:hasObject <body#bear~black~american> ;
+			skos:prefLabel "bear~black~american__weight"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#bedrock__absolute_permeability
+:bedrock__absolute_permeability rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#absolute_permeability> ;
+			svu:hasObject <body#bedrock> ;
+			skos:prefLabel "bedrock__absolute_permeability"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#bedrock__mass-per-volume_density
+:bedrock__mass-per-volume_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#mass-per-volume_density> ;
+			svu:hasObject <body#bedrock> ;
+			skos:prefLabel "bedrock__mass-per-volume_density"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#bedrock__uplift_rate
+:bedrock__uplift_rate rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#uplift_rate> ;
+			svu:hasObject <body#bedrock> ;
+			skos:prefLabel "bedrock__uplift_rate"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#bedrock__poisson_ratio
+:bedrock__poisson_ratio rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#poisson_ratio> ;
+			svu:hasObject <body#bedrock> ;
+			skos:prefLabel "bedrock__poisson_ratio"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#bedrock__young_modulus
+:bedrock__young_modulus rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#young_modulus> ;
+			svu:hasObject <body#bedrock> ;
+			skos:prefLabel "bedrock__young_modulus"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#black-hole__schwarzchild_radius
+:black-hole__schwarzchild_radius rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#schwarzchild_radius> ;
+			svu:hasObject <phenomenon#black-hole> ;
+			skos:prefLabel "black-hole__schwarzchild_radius"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#bridge__span
+:bridge__span rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#span> ;
+			svu:hasObject <body#bridge> ;
+			skos:prefLabel "bridge__span"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#building%7Eempire-state__height
+:building%7Eempire-state__height rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#height> ;
+			svu:hasObject <body#building~empire-state> ;
+			skos:prefLabel "building~empire-state__height"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#cantor-set__hausdorff_dimension
+:cantor-set__hausdorff_dimension rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#hausdorff_dimension> ;
+			svu:hasObject <abstraction#cantor-set> ;
+			skos:prefLabel "cantor-set__hausdorff_dimension"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#bond%7Ec-h__length
+:bond%7Ec-h__length rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#length> ;
+			svu:hasObject <phenomenon#bond~c-h> ;
+			skos:prefLabel "bond~c-h__length"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#delta__mass
+:delta__mass rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#mass> ;
+			svu:hasObject <body#delta> ;
+			skos:prefLabel "delta__mass"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#delta_subsidence__mean_subsidence_rate
+:delta_subsidence__mean_subsidence_rate rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#mean_subsidence_rate> ;
+			svu:hasObject <phenomenon#delta_subsidence> ;
+			skos:prefLabel "delta_subsidence__mean_subsidence_rate"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#delta__volume
+:delta__volume rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#volume> ;
+			svu:hasObject <body#delta> ;
+			skos:prefLabel "delta__volume"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#virus%7Echicken-pox__incubation_period
+:virus%7Echicken-pox__incubation_period rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#incubation_period> ;
+			svu:hasObject <phenomenon#virus~chicken-pox_incubation> ;
+			skos:prefLabel "virus~chicken-pox__incubation_period"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water__boiling-point_temperature
+:water__boiling-point_temperature rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#boiling-point_temperature> ;
+			svu:hasObject <matter#water~boiling-point> ;
+			skos:prefLabel "water__boiling-point_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water__shear_dynamic_viscosity
+:water__shear_dynamic_viscosity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#shear_dynamic_viscosity> ;
+			svu:hasObject <matter#water> ;
+			skos:prefLabel "water__shear_dynamic_viscosity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water__volume_dynamic_viscosity
+:water__volume_dynamic_viscosity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#volume_dynamic_viscosity> ;
+			svu:hasObject <matter#water> ;
+			skos:prefLabel "water__volume_dynamic_viscosity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water__freezing-point_temperature
+:water__freezing-point_temperature rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#freezing-point_temperature> ;
+			svu:hasObject <matter#water~freezing-point> ;
+			skos:prefLabel "water__freezing-point_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water__gibbs_free_energy
+:water__gibbs_free_energy rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#gibbs_free_energy> ;
+			svu:hasObject <matter#water> ;
+			skos:prefLabel "water__gibbs_free_energy"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water__shear_kinematic_viscosity
+:water__shear_kinematic_viscosity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#shear_kinematic_viscosity> ;
+			svu:hasObject <matter#water> ;
+			skos:prefLabel "water__shear_kinematic_viscosity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water__volume_kinematic_viscosity
+:water__volume_kinematic_viscosity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#volume_kinematic_viscosity> ;
+			svu:hasObject <matter#water> ;
+			skos:prefLabel "water__volume_kinematic_viscosity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water__latent_fusion_mass-specific_heat
+:water__latent_fusion_mass-specific_heat rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#latent_fusion_mass-specific_heat> ;
+			svu:hasObject <phenomenon#water_fusion> ;
+			skos:prefLabel "water__latent_fusion_mass-specific_heat"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water__latent_sublimation_mass-specific_heat
+:water__latent_sublimation_mass-specific_heat rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#latent_sublimation_mass-specific_heat> ;
+			svu:hasObject <phenomenon#water_sublimation> ;
+			skos:prefLabel "water__latent_sublimation_mass-specific_heat"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water__latent_vaporization_mass-specific_heat
+:water__latent_vaporization_mass-specific_heat rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#latent_vaporization_mass-specific_heat> ;
+			svu:hasObject <phenomenon#water_vaporization> ;
+			skos:prefLabel "water__latent_vaporization_mass-specific_heat"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water__latent_fusion_mole-specific_heat
+:water__latent_fusion_mole-specific_heat rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#latent_fusion_mole-specific_heat> ;
+			svu:hasObject <phenomenon#water_fusion> ;
+			skos:prefLabel "water__latent_fusion_mole-specific_heat"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water__latent_sublimation_mole-specific_heat
+:water__latent_sublimation_mole-specific_heat rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#latent_sublimation_mole-specific_heat> ;
+			svu:hasObject <phenomenon#water_sublimation> ;
+			skos:prefLabel "water__latent_sublimation_mole-specific_heat"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water__latent_vaporization_mole-specific_heat
+:water__latent_vaporization_mole-specific_heat rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#latent_vaporization_mole-specific_heat> ;
+			svu:hasObject <phenomenon#water_vaporization> ;
+			skos:prefLabel "water__latent_vaporization_mole-specific_heat"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water__x_z_component_of_viscosity
+:water__x_z_component_of_viscosity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#x_z_component_of_viscosity> ;
+			svu:hasObject <matter#water> ;
+			skos:prefLabel "water__x_z_component_of_viscosity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water%7Evapor__mass-specific_gas_constant
+:water%7Evapor__mass-specific_gas_constant rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#mass-specific_gas_constant> ;
+			svu:hasObject <matter#water~vapor> ;
+			skos:prefLabel "water~vapor__mass-specific_gas_constant"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#wood%7Edry__thermal_energy-per-volume_density
+:wood%7Edry__thermal_energy-per-volume_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#thermal_energy-per-volume_density> ;
+			svu:hasObject <matter#wood~dry> ;
+			skos:prefLabel "wood~dry__thermal_energy-per-volume_density"@en .

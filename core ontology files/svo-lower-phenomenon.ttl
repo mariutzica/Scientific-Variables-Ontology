@@ -17,7 +17,7 @@
 #    Phenomenon   
 # 
 #################################################################
-##Last generated on: 2018-08-27 12:35
+##Last generated on: 2018-08-27 16:24
 
 ###Phenomenon
 
@@ -1187,3 +1187,49 @@
 			svu:Phenomenon ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Multilateration" ;
 			skos:prefLabel "multilateration"@en .
+
+
+###Compound Phenomenon
+
+
+###  http://www.geoscienceontology.org/svl/phenomenon#virus%7Echicken-pox_incubation
+:virus%7Echicken-pox_incubation rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#incubate> ;
+			svu:hasBody <body#incubate> ;
+			skos:prefLabel "virus~chicken-pox"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#water_vaporization
+:water_vaporization rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#vaporize> ;
+			svu:hasMatter <matter#vaporize> ;
+			skos:prefLabel "water"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#water_sublimation
+:water_sublimation rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#sublimate> ;
+			svu:hasMatter <matter#sublimate> ;
+			skos:prefLabel "water"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#water_fusion
+:water_fusion rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#fuse> ;
+			svu:hasMatter <matter#fuse> ;
+			skos:prefLabel "water"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#aircraft_flight
+:aircraft_flight rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#fly> ;
+			svu:hasBody <body#fly> ;
+			skos:prefLabel "aircraft"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#delta_subsidence
+:delta_subsidence rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#subside> ;
+			svu:hasBody <body#subside> ;
+			skos:prefLabel "delta"@en .
