@@ -65,6 +65,8 @@ trajectory_direction_file  = 'trajectory_direction.csv'
 
 relationship_file  = 'relationship.csv'
 
+context_file  = 'context.csv'
+
 csn_variables_file  = 'CSDMS_standard_names.csv'
 
 ################################
@@ -128,7 +130,8 @@ trajectory_direction_vocabulary = \
             utils.load_data( ext_vocabulary, trajectory_direction_file ) 
 relationship_vocabulary = \
             utils.load_data( ext_vocabulary, relationship_file )
-
+context_vocabulary = \
+            utils.load_data( ext_vocabulary, context_file )
 csn_vocabulary = \
             utils.load_data( ext_csn_variable, csn_variables_file )
              
@@ -150,6 +153,7 @@ role_ttl = open( ext_output + 'svo-lower-role.ttl', 'w' )
 trajectory_ttl = open( ext_output + 'svo-lower-trajectory.ttl', 'w' )
 trajectory_direction_ttl = open( ext_output + 'svo-lower-trajectory-direction.ttl', 'w' )
 relationship_ttl = open( ext_output + 'svo-lower-relationship.ttl', 'w' )
+context_ttl = open( ext_output + 'svo-lower-context.ttl', 'w' )
 variable_ttl = open( ext_output + 'svo-lower-variable.ttl', 'w' )
 
 utils.open_write_file( property_ttl, 'Property' )
@@ -165,6 +169,7 @@ utils.open_write_file( role_ttl, 'Role' )
 utils.open_write_file( trajectory_ttl, 'Trajectory' )
 utils.open_write_file( trajectory_direction_ttl, 'TrajectoryDirection' )
 utils.open_write_file( relationship_ttl, 'Relationship' )
+utils.open_write_file( context_ttl, 'Context' )
 utils.open_write_file( variable_ttl, 'Variable' )
 
 ################################
@@ -317,6 +322,11 @@ label = '\n\n###Relationship\n\n'
 utils.create_bb_file( relationship_vocabulary, relationship_ttl, \
                       'Relationship', 'relationship', 'relationship', label = label )
 
+# create Context file
+label = '\n\n###Context\n\n'
+utils.create_bb_file( context_vocabulary, context_ttl, \
+                      'Context', 'context', 'context', label = label )
+
 # create Variable file
 label = '\n\n###CSN Variables\n\n'
 utils.create_variable_entries( csn_vocabulary, variable_ttl, label = label )
@@ -338,4 +348,5 @@ role_ttl.close()
 trajectory_ttl.close()
 trajectory_direction_ttl.close()
 relationship_ttl.close()
+context_ttl.close()
 variable_ttl.close()

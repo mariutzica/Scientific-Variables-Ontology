@@ -17,7 +17,7 @@
 #    Phenomenon   
 # 
 #################################################################
-##Last generated on: 2018-08-27 16:24
+##Last generated on: 2018-08-28 15:41
 
 ###Phenomenon
 
@@ -1188,6 +1188,12 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Multilateration" ;
 			skos:prefLabel "multilateration"@en .
 
+###  http://www.geoscienceontology.org/svl/phenomenon#helium-plume
+:helium-plume rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasMatter <matter#flow> ;
+			skos:prefLabel "helium-plume"@en .
+
 
 ###Compound Phenomenon
 
@@ -1233,3 +1239,24 @@
 			svu:hasProcess <process#subside> ;
 			svu:hasBody <body#subside> ;
 			skos:prefLabel "delta"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#bond%7Eh-o_dissociation
+:bond%7Eh-o_dissociation rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#dissociate> ;
+			svu:hasPhenomenon <phenomenon#dissociate> ;
+			skos:prefLabel "bond~h-o"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#sand_grain_settling
+:sand_grain_settling rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#settle> ;
+			svu:hasBody <body#settle> ;
+			skos:prefLabel "sand_grain"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#human_scuba-diver_dive
+:human_scuba-diver_dive rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#dive> ;
+			svu:hasBody <body#dive> ;
+			skos:prefLabel "scuba-diver"@en .

@@ -435,6 +435,20 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 for b in process:
                     ttl_file.write( attribute.format( 'hasMatter', \
                         '<matter#' + urllib.quote( b )+'>', ';' ) )
+            if 'phenomenon' in vocab.columns.values and \
+                vocab.loc[ index, 'phenomenon' ] != '' :
+                body = vocab.loc[ index, 'phenomenon' ].split(', ')
+                for b in process:
+                    ttl_file.write( attribute.format( 'hasPhenomenon', \
+                        '<phenomenon#' + urllib.quote( b )+'>', ';' ) )
+        if collabel == 'context':
+            rel = vocab.loc[ index, 'relationship' ]
+            ttl_file.write( attribute.format( 'hasRelationship', \
+                '<relationship#' + urllib.quote( rel )+'>', ';' ) )
+            phen = vocab.loc[ index, 'phenomenon' ]
+            pref = vocab.loc[ index, 'phenomenon_pref' ]
+            ttl_file.write( attribute.format( 'hasObject', \
+                '<'+pref+'#' + urllib.quote( phen )+'>', ';' ) )
         if collabel in ['trajectory','matter','body','abstraction','phenomenon'] and \
             'attribute' in vocab.columns.values:
             if vocab.loc[ index, 'attribute' ] != '' :
@@ -475,4 +489,8 @@ def create_variable_entries( vocab, ttl_file, label=None ):
         if obj != '':
             ttl_file.write( attribute.format( 'hasObject', \
                             '<'+pref+'#' + h.unescape(obj) + '>', ';'))
+        context = vocab.loc[ index, 'object_context_id']
+        if context != '':
+            ttl_file.write( attribute.format( 'hasContext', \
+                            '<context#' + h.unescape(context) + '>', ';'))
         ttl_file.write( preflabel.format( element ) )

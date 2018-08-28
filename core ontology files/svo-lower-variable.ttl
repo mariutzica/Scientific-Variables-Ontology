@@ -17,7 +17,7 @@
 #    Variable   
 # 
 #################################################################
-##Last generated on: 2018-08-27 16:24
+##Last generated on: 2018-08-28 15:41
 
 ###CSN Variables
 
@@ -64,6 +64,14 @@
 			svu:hasObject <matter#air> ;
 			skos:prefLabel "air__isochoric_volume-specific_heat_capacity"@en .
 
+###  http://www.geoscienceontology.org/svl/variable#air_helium-plume__richardson_number
+:air_helium-plume__richardson_number rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#richardson_number> ;
+			svu:hasObject <phenomenon#helium-plume> ;
+			svu:hasContext <context#air_in> ;
+			skos:prefLabel "air_helium-plume__richardson_number"@en .
+
 ###  http://www.geoscienceontology.org/svl/variable#aircraft__flight_duration
 :aircraft__flight_duration rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -89,7 +97,7 @@
 :appliance%7Eelectric__voltage rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasQuantity <property#voltage> ;
-			svu:hasObject <#appliance~electric> ;
+			svu:hasObject <body#appliance~electric> ;
 			skos:prefLabel "appliance~electric__voltage"@en .
 
 ###  http://www.geoscienceontology.org/svl/variable#balloon__altitude
@@ -281,6 +289,103 @@
 			svu:hasObject <body#delta> ;
 			skos:prefLabel "delta__volume"@en .
 
+###  http://www.geoscienceontology.org/svl/variable#fence%7Eelectric__voltage
+:fence%7Eelectric__voltage rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#voltage> ;
+			svu:hasObject <body#fence~electric> ;
+			skos:prefLabel "fence~electric__voltage"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#flood__expected_return_period
+:flood__expected_return_period rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#expected_return_period> ;
+			svu:hasObject <phenomenon#flood> ;
+			skos:prefLabel "flood__expected_return_period"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#glacier__glen-law_coefficient
+:glacier__glen-law_coefficient rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#glen-law_coefficient> ;
+			svu:hasObject <body#glacier> ;
+			skos:prefLabel "glacier__glen-law_coefficient"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#glacier__glen-law_exponent
+:glacier__glen-law_exponent rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#glen-law_exponent> ;
+			svu:hasObject <body#glacier> ;
+			skos:prefLabel "glacier__glen-law_exponent"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#lake__bowen_ratio
+:lake__bowen_ratio rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#bowen_ratio> ;
+			svu:hasObject <body#lake> ;
+			skos:prefLabel "lake__bowen_ratio"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#light-bulb%7Eincandescent__radiant_intensity
+:light-bulb%7Eincandescent__radiant_intensity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#radiant_intensity> ;
+			svu:hasObject <body#light-bulb~incandescent> ;
+			skos:prefLabel "light-bulb~incandescent__radiant_intensity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#lithosphere__bulk_modulus
+:lithosphere__bulk_modulus rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#bulk_modulus> ;
+			svu:hasObject <phenomenon#lithosphere> ;
+			skos:prefLabel "lithosphere__bulk_modulus"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#lithosphere__poisson_ratio
+:lithosphere__poisson_ratio rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#poisson_ratio> ;
+			svu:hasObject <phenomenon#lithosphere> ;
+			skos:prefLabel "lithosphere__poisson_ratio"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#lithosphere__young_modulus
+:lithosphere__young_modulus rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#young_modulus> ;
+			svu:hasObject <phenomenon#lithosphere> ;
+			skos:prefLabel "lithosphere__young_modulus"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#oscillator__q_factor
+:oscillator__q_factor rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#q_factor> ;
+			svu:hasObject <body#oscillator> ;
+			skos:prefLabel "oscillator__q_factor"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#paper__thickness
+:paper__thickness rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#thickness> ;
+			svu:hasObject <matter#paper> ;
+			skos:prefLabel "paper__thickness"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#pump__hydraulic_head
+:pump__hydraulic_head rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#hydraulic_head> ;
+			svu:hasObject <body#pump> ;
+			skos:prefLabel "pump__hydraulic_head"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#spring%7Esteel__hooke-law_coefficient
+:spring%7Esteel__hooke-law_coefficient rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#hooke-law_coefficient> ;
+			svu:hasObject <body#spring~steel> ;
+			skos:prefLabel "spring~steel__hooke-law_coefficient"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#sulfuric-acid__ph
+:sulfuric-acid__ph rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasObject <matter#sulfuric-acid> ;
+			skos:prefLabel "sulfuric-acid__ph"@en .
+
 ###  http://www.geoscienceontology.org/svl/variable#virus%7Echicken-pox__incubation_period
 :virus%7Echicken-pox__incubation_period rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -386,12 +491,258 @@
 			svu:hasObject <matter#water> ;
 			skos:prefLabel "water__x_z_component_of_viscosity"@en .
 
+###  http://www.geoscienceontology.org/svl/variable#water_molecule_bond%7Eh-o__dissociation_energy
+:water_molecule_bond%7Eh-o__dissociation_energy rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#dissociation_energy> ;
+			svu:hasObject <phenomenon#bond~h-o_dissociation> ;
+			svu:hasContext <context#water_molecule_part> ;
+			skos:prefLabel "water_molecule_bond~h-o__dissociation_energy"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water_molecule_bond%7Eh-o__length
+:water_molecule_bond%7Eh-o__length rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#length> ;
+			svu:hasObject <phenomenon#bond~h-o> ;
+			svu:hasContext <context#water_molecule_part> ;
+			skos:prefLabel "water_molecule_bond~h-o__length"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water_molecule_bond%7Eh-o-h__actual_angle
+:water_molecule_bond%7Eh-o-h__actual_angle rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#actual_angle> ;
+			svu:hasObject <phenomenon#bond~h-o-h> ;
+			svu:hasContext <context#water_molecule_part> ;
+			skos:prefLabel "water_molecule_bond~h-o-h__actual_angle"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water_molecule_bond%7Eh-o-h__ideal_angle
+:water_molecule_bond%7Eh-o-h__ideal_angle rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#ideal_angle> ;
+			svu:hasObject <phenomenon#bond~h-o-h> ;
+			svu:hasContext <context#water_molecule_part> ;
+			skos:prefLabel "water_molecule_bond~h-o-h__ideal_angle"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water_molecule_hydrogen__number_count
+:water_molecule_hydrogen__number_count rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasObject <matter#hydrogen> ;
+			svu:hasContext <context#water_molecule_part> ;
+			skos:prefLabel "water_molecule_hydrogen__number_count"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water_salt__mass_diffusivity
+:water_salt__mass_diffusivity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#mass_diffusivity> ;
+			svu:hasObject <matter#salt> ;
+			svu:hasContext <context#water_in> ;
+			skos:prefLabel "water_salt__mass_diffusivity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water_sand_grain__settling_speed
+:water_sand_grain__settling_speed rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#settling_speed> ;
+			svu:hasObject <phenomenon#sand_grain_settling> ;
+			svu:hasContext <context#water_in> ;
+			skos:prefLabel "water_sand_grain__settling_speed"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water_scuba-diver__dive_duration
+:water_scuba-diver__dive_duration rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#dive_duration> ;
+			svu:hasObject <phenomenon#human_scuba-diver_dive> ;
+			svu:hasContext <context#water_in> ;
+			skos:prefLabel "water_scuba-diver__dive_duration"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water%7Eliquid__antoine-vapor-pressure_a_parameter
+:water%7Eliquid__antoine-vapor-pressure_a_parameter rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#antoine-vapor-pressure_a_parameter> ;
+			svu:hasObject <matter#water~liquid> ;
+			skos:prefLabel "water~liquid__antoine-vapor-pressure_a_parameter"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water%7Eliquid__antoine-vapor-pressure_b_parameter
+:water%7Eliquid__antoine-vapor-pressure_b_parameter rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#antoine-vapor-pressure_b_parameter> ;
+			svu:hasObject <matter#water~liquid> ;
+			skos:prefLabel "water~liquid__antoine-vapor-pressure_b_parameter"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water%7Eliquid__antoine-vapor-pressure_c_parameter
+:water%7Eliquid__antoine-vapor-pressure_c_parameter rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#antoine-vapor-pressure_c_parameter> ;
+			svu:hasObject <matter#water~liquid> ;
+			skos:prefLabel "water~liquid__antoine-vapor-pressure_c_parameter"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water%7Eliquid__mass-per-volume_density
+:water%7Eliquid__mass-per-volume_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#mass-per-volume_density> ;
+			svu:hasObject <matter#water~liquid> ;
+			skos:prefLabel "water~liquid__mass-per-volume_density"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water%7Eliquid%7E20C__shear_dynamic_viscosity
+:water%7Eliquid%7E20C__shear_dynamic_viscosity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#shear_dynamic_viscosity> ;
+			svu:hasObject <matter#water~liquid~20C> ;
+			skos:prefLabel "water~liquid~20C__shear_dynamic_viscosity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water%7Eliquid%7E20C__volume_dynamic_viscosity
+:water%7Eliquid%7E20C__volume_dynamic_viscosity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#volume_dynamic_viscosity> ;
+			svu:hasObject <matter#water~liquid~20C> ;
+			skos:prefLabel "water~liquid~20C__volume_dynamic_viscosity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water%7Eliquid%7E20C__shear_kinematic_viscosity
+:water%7Eliquid%7E20C__shear_kinematic_viscosity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#shear_kinematic_viscosity> ;
+			svu:hasObject <matter#water~liquid~20C> ;
+			skos:prefLabel "water~liquid~20C__shear_kinematic_viscosity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water%7Eliquid%7E20C__volume_kinematic_viscosity
+:water%7Eliquid%7E20C__volume_kinematic_viscosity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#volume_kinematic_viscosity> ;
+			svu:hasObject <matter#water~liquid~20C> ;
+			skos:prefLabel "water~liquid~20C__volume_kinematic_viscosity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water%7Eliquid%7E20C__mass-per-volume_density
+:water%7Eliquid%7E20C__mass-per-volume_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#mass-per-volume_density> ;
+			svu:hasObject <matter#water~liquid~20C> ;
+			skos:prefLabel "water~liquid~20C__mass-per-volume_density"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#water%7Eliquid%7E20C__vapor_pressure
+:water%7Eliquid%7E20C__vapor_pressure rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#vapor_pressure> ;
+			svu:hasObject <matter#water~liquid~20C> ;
+			skos:prefLabel "water~liquid~20C__vapor_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#air_water%7Eliquid%7E20C__surface_tension
+:air_water%7Eliquid%7E20C__surface_tension rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#surface_tension> ;
+			svu:hasObject <matter#water~liquid~20C> ;
+			svu:hasContext <context#air_in> ;
+			skos:prefLabel "air_water~liquid~20C__surface_tension"@en .
+
 ###  http://www.geoscienceontology.org/svl/variable#water%7Evapor__mass-specific_gas_constant
 :water%7Evapor__mass-specific_gas_constant rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasQuantity <property#mass-specific_gas_constant> ;
 			svu:hasObject <matter#water~vapor> ;
 			skos:prefLabel "water~vapor__mass-specific_gas_constant"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#wave%7Eairy__amplitude
+:wave%7Eairy__amplitude rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#amplitude> ;
+			svu:hasObject <phenomenon#wave~airy> ;
+			skos:prefLabel "wave~airy__amplitude"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#wave%7Eairy__wavelength
+:wave%7Eairy__wavelength rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#wavelength> ;
+			svu:hasObject <phenomenon#wave~airy> ;
+			skos:prefLabel "wave~airy__wavelength"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#wave%7Eairy__wavenumber
+:wave%7Eairy__wavenumber rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#wavenumber> ;
+			svu:hasObject <phenomenon#wave~airy> ;
+			skos:prefLabel "wave~airy__wavenumber"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#wave%7Ecnoidal__amplitude
+:wave%7Ecnoidal__amplitude rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#amplitude> ;
+			svu:hasObject <phenomenon#wave~cnoidal> ;
+			skos:prefLabel "wave~cnoidal__amplitude"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#wave%7Ecnoidal__wavelength
+:wave%7Ecnoidal__wavelength rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#wavelength> ;
+			svu:hasObject <phenomenon#wave~cnoidal> ;
+			skos:prefLabel "wave~cnoidal__wavelength"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#wave%7Ecnoidal__wavenumber
+:wave%7Ecnoidal__wavenumber rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#wavenumber> ;
+			svu:hasObject <phenomenon#wave~cnoidal> ;
+			skos:prefLabel "wave~cnoidal__wavenumber"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#wave%7Eelectromagnetic__amplitude
+:wave%7Eelectromagnetic__amplitude rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#amplitude> ;
+			svu:hasObject <phenomenon#wave~electromagnetic> ;
+			skos:prefLabel "wave~electromagnetic__amplitude"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#wave%7Eelectromagnetic__wavenumber
+:wave%7Eelectromagnetic__wavenumber rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#wavenumber> ;
+			svu:hasObject <phenomenon#wave~electromagnetic> ;
+			skos:prefLabel "wave~electromagnetic__wavenumber"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#wave%7Eseismic__amplitude
+:wave%7Eseismic__amplitude rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#amplitude> ;
+			svu:hasObject <phenomenon#wave~seismic> ;
+			skos:prefLabel "wave~seismic__amplitude"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#wave%7Eseismic__wavenumber
+:wave%7Eseismic__wavenumber rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#wavenumber> ;
+			svu:hasObject <phenomenon#wave~seismic> ;
+			skos:prefLabel "wave~seismic__wavenumber"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#wave%7Esine__crest_factor
+:wave%7Esine__crest_factor rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#crest_factor> ;
+			svu:hasObject <phenomenon#wave~sine> ;
+			skos:prefLabel "wave~sine__crest_factor"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#wave%7Esine__wavelength
+:wave%7Esine__wavelength rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#wavelength> ;
+			svu:hasObject <phenomenon#wave~sine> ;
+			skos:prefLabel "wave~sine__wavelength"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#wave%7Estokes__amplitude
+:wave%7Estokes__amplitude rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#amplitude> ;
+			svu:hasObject <phenomenon#wave~stokes> ;
+			skos:prefLabel "wave~stokes__amplitude"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#wave%7Estokes__wavelength
+:wave%7Estokes__wavelength rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#wavelength> ;
+			svu:hasObject <phenomenon#wave~stokes> ;
+			skos:prefLabel "wave~stokes__wavelength"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#wave%7Estokes__wavenumber
+:wave%7Estokes__wavenumber rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasQuantity <property#wavenumber> ;
+			svu:hasObject <phenomenon#wave~stokes> ;
+			skos:prefLabel "wave~stokes__wavenumber"@en .
 
 ###  http://www.geoscienceontology.org/svl/variable#wood%7Edry__thermal_energy-per-volume_density
 :wood%7Edry__thermal_energy-per-volume_density rdf:type owl:NamedIndividual ,

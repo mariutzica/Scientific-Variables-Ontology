@@ -17,7 +17,7 @@
 #    Body   
 # 
 #################################################################
-##Last generated on: 2018-08-27 16:24
+##Last generated on: 2018-08-28 15:41
 
 ###Inanimate Natural Body
 
@@ -442,6 +442,16 @@
 			skos:altLabel "sulphite"@en ;
 			svu:isDerivedFrom :compound ;
 			skos:prefLabel "sulfite"@en .
+
+###  http://www.geoscienceontology.org/svl/body#water_molecule
+:water_molecule rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			skos:prefLabel "water_molecule"@en .
+
+###  http://www.geoscienceontology.org/svl/body#sand_grain
+:sand_grain rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			skos:prefLabel "sand_grain"@en .
 
 
 ###Inanimate Fabricated Body
@@ -3087,6 +3097,12 @@
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Human" ;
 			skos:prefLabel "human"@en .
+
+###  http://www.geoscienceontology.org/svl/body#human_scuba-diver
+:human_scuba-diver rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isDerivedFrom :human ;
+			skos:prefLabel "scuba-diver"@en .
 
 ###  http://www.geoscienceontology.org/svl/body#hydatophylax
 :hydatophylax rdf:type owl:NamedIndividual ,

@@ -1,0 +1,44 @@
+@prefix : <http://www.geoscienceontology.org/svl/context#> .
+@prefix svu: <http://www.geoscienceontology.org/svu#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://www.geoscienceontology.org/svl/> .
+
+<http://www.geoscienceontology.org/svl/context> rdf:type owl:Ontology ;
+				rdfs:comment " Scientific Variables Lower Ontology, Context BETA VERSION." .
+#				owl:imports <http://www.geoscienceontology.org/svu> .
+
+
+#################################################################
+#    Context   
+# 
+#################################################################
+##Last generated on: 2018-08-28 15:41
+
+###Context
+
+
+###  http://www.geoscienceontology.org/svl/context#air_in
+:air_in rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasRelationship <relationship#in> ;
+			svu:hasObject <matter#air> ;
+			skos:prefLabel "air"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#water_molecule_part
+:water_molecule_part rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasRelationship <relationship#part_of> ;
+			svu:hasObject <body#water_molecule> ;
+			skos:prefLabel "water_molecule"@en .
+
+###  http://www.geoscienceontology.org/svl/body#water_in
+:water_in rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasRelationship <relationship#in> ;
+			svu:hasObject <matter#water> ;
+			skos:prefLabel "water"@en .
