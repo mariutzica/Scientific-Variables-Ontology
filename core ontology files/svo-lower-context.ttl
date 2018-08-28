@@ -17,7 +17,7 @@
 #    Context   
 # 
 #################################################################
-##Last generated on: 2018-08-28 15:41
+##Last generated on: 2018-08-28 16:01
 
 ###Context
 
@@ -42,3 +42,10 @@
 			svu:hasRelationship <relationship#in> ;
 			svu:hasObject <matter#water> ;
 			skos:prefLabel "water"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#atmosphere_in
+:atmosphere_in rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasRelationship <relationship#in> ;
+			svu:hasObject <phenomenon#atmosphere> ;
+			skos:prefLabel "atmosphere"@en .

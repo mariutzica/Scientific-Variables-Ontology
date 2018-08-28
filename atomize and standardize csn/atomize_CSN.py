@@ -78,14 +78,18 @@ csn.loc[ cond_obj0 & cond_obj1, 'quantity_id'] = \
     csn.loc[ cond_obj0 & cond_obj1, 'quantity_label']
 csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']]=''
 
-##air_radiation~visible
-#cond_obj0 = csn['object0'] == 'air'
-#cond_obj1 = csn['object1'] == 'radiation~visible'
-#csn.loc[ cond_obj0 & cond_obj1, 'root_object_context_matter'] = 'air'
-#csn.loc[ cond_obj0 & cond_obj1, 'root_object_phen'] = 'radiation'
-#csn.loc[ cond_obj0 & cond_obj1, 'root_object_phen_descriptor'] = 'visible'
-#csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
-#
+#air_radiation~visible
+cond_obj0 = csn['object0'] == 'air'
+cond_obj1 = csn['object1'] == 'radiation~visible'
+csn.loc[ cond_obj0 & cond_obj1, 'object_context_id'] = 'air_in'
+csn.loc[ cond_obj0 & cond_obj1, 'object_context_label'] = 'air'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'radiation~visible'
+csn.loc[ cond_obj0 & cond_obj1, 'object_label'] = 'radiation~visible'
+csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'phenomenon'
+csn.loc[ cond_obj0 & cond_obj1, 'quantity_id'] = \
+    csn.loc[ cond_obj0 & cond_obj1, 'quantity_label']
+csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
+
 ##air_water~vapor
 #cond_obj0 = csn['object0'] == 'air'
 #cond_obj1 = csn['object1'] == 'water~vapor'
@@ -125,15 +129,20 @@ csn.loc[ cond_obj0, 'object0'] = ''
 #csn.loc[ cond_obj0 & cond_quant, 'root_object_process'] = \
 #        csn.loc[ cond_obj0 & cond_quant, 'quantity'].str.split('_').str[0]
 #csn.loc[ cond_obj0 & cond_quant, 'modified_quantity'] = 'process_coefficient'        
-#
-##airplane(_wing)
-#cond_obj0 = csn['object0'] == 'airplane'
-#cond_obj1 = csn['object1'] == 'wing'
-#csn.loc[ cond_obj0 & cond_obj1, 'modified_quantity'] = 'length'
-#csn.loc[ cond_obj0, 'root_object_form'] = 'airplane'
-#csn.loc[ cond_obj0 & cond_obj1, 'root_object_abstraction'] = 'wingspan'
-#csn.loc[ cond_obj0, ['object0','object1']] = ''
-#
+
+#airplane(_wing)
+cond_obj0 = csn['object0'] == 'airplane'
+cond_obj1 = csn['object1'] == 'wing'
+csn.loc[ cond_obj0 & cond_obj1, 'quantity_label'] = 'length'
+csn.loc[ cond_obj0, 'object_id'] = 'airplane'
+csn.loc[ cond_obj0, 'object_label'] = 'airplane'
+csn.loc[ cond_obj0, 'object_pref'] = 'body'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'airplane_wingspan'
+csn.loc[ cond_obj0 & cond_obj1, 'object_label'] = 'airplane_wingspan'
+csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'abstraction'
+csn.loc[ cond_obj0, 'quantity_id'] = csn.loc[ cond_obj0, 'quantity_label']
+csn.loc[ cond_obj0, ['object0','object1']] = ''
+
 ##air~dry(_water~vapor)
 #cond_obj0 = csn['object0'] == 'air~dry'
 #cond_obj1 = csn['object1'] == 'water~vapor'
@@ -430,25 +439,32 @@ csn.loc[ cond_obj0, 'object0'] = ''
 #        'modified_quantity'] = 'partial_pressure'
 #csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
 #        ['object0','object1','object2']]=''
-#
-##atmosphere_air_flow
-#cond_obj0 = csn['object0'] == 'atmosphere'
-#cond_obj1 = csn['object1'] == 'air'
-#cond_obj2 = csn['object2'] == 'flow'
-#cond_obj3 = csn['object3'] == ''
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
-#        'root_object_matter'] = 'air'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
-#        'root_object_process'] = 'flow'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
-#        'root_object_context_phen'] = 'atmosphere'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
-#        'modified_quantity'] = \
-#        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
-#        'modified_quantity'].str.replace('total_','')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
-#        ['object0','object1','object2']] = ''
-#
+
+#atmosphere_air_flow
+cond_obj0 = csn['object0'] == 'atmosphere'
+cond_obj1 = csn['object1'] == 'air'
+cond_obj2 = csn['object2'] == 'flow'
+cond_obj3 = csn['object3'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object_id'] = 'air_flow'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object_label'] = 'air_flow'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object_pref'] = 'phenomenon'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object_context_label'] = 'atmosphere'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object_context_id'] = 'atmosphere_in'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'quantity_label'] = \
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'quantity_label'].str.replace('total_','')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'quantity_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+                      'quantity_label']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        ['object0','object1','object2']] = ''
+
 ##atmosphere_air_flow_suspended-compound
 #cond_obj0 = csn['object0'] == 'atmosphere'
 #cond_obj1 = csn['object1'] == 'air'
@@ -626,22 +642,25 @@ csn.loc[ cond_obj0, 'object0'] = ''
 #csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
 #        ['object0','object1','object2']] = ''
 #
-##atmosphere_ball
-#cond_obj0 = csn['object0'] == 'atmosphere'
-#cond_obj1 = csn['object1'] == 'ball'
-#csn.loc[ cond_obj0 & cond_obj1, \
-#        'root_object_context_phen'] = 'atmosphere'
-#csn.loc[ cond_obj0 & cond_obj1, \
-#        'root_object_form'] = 'ball'
-#csn.loc[ cond_obj0 & cond_obj1, \
-#        'root_object_process'] = 'fall'
-#csn.loc[ cond_obj0 & cond_obj1, \
-#        'modified_quantity'] = \
-#        csn.loc[ cond_obj0 & cond_obj1, 'modified_quantity']\
-#        .str.replace('fall','process')
-#csn.loc[ cond_obj0 & cond_obj1, \
-#        ['object0','object1']] = ''
-#
+#atmosphere_ball
+cond_obj0 = csn['object0'] == 'atmosphere'
+cond_obj1 = csn['object1'] == 'ball'
+csn.loc[ cond_obj0 & cond_obj1, \
+        'object_context_id'] = 'atmosphere_in'
+csn.loc[ cond_obj0 & cond_obj1, \
+        'object_context_label'] = 'atmosphere'
+csn.loc[ cond_obj0 & cond_obj1, \
+        'object_id'] = 'ball_fall'
+csn.loc[ cond_obj0 & cond_obj1, \
+        'object_label'] = 'ball'
+csn.loc[ cond_obj0 & cond_obj1, \
+        'object_pref'] = 'phenomenon'
+csn.loc[ cond_obj0 & cond_obj1, \
+        'quantity_id'] = \
+        csn.loc[ cond_obj0 & cond_obj1, 'quantity_label']
+csn.loc[ cond_obj0 & cond_obj1, \
+        ['object0','object1']] = ''
+
 ##atmosphere_bottom_air
 #cond_obj0 = csn['object0'] == 'atmosphere'
 #cond_obj1 = csn['object1'] == 'bottom'

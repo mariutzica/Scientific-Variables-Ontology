@@ -17,7 +17,7 @@
 #    Abstraction   
 # 
 #################################################################
-##Last generated on: 2018-08-28 15:41
+##Last generated on: 2018-08-28 16:01
 
 ###Mathematical Abstraction
 
@@ -175,6 +175,12 @@
 
 ###Physical Abstraction
 
+
+###  http://www.geoscienceontology.org/svl/abstraction#aircraft_wingspan
+:aircraft_wingspan rdf:type owl:NamedIndividual ,
+			svu:PhysicalAbstraction ;
+			svu:isDerivedFrom :wingspan ;
+			skos:prefLabel "aircraft_wingspan"@en .
 
 ###  http://www.geoscienceontology.org/svl/abstraction#wheelbase
 :wheelbase rdf:type owl:NamedIndividual ,

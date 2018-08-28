@@ -17,7 +17,7 @@
 #    Phenomenon   
 # 
 #################################################################
-##Last generated on: 2018-08-28 15:41
+##Last generated on: 2018-08-28 16:01
 
 ###Phenomenon
 
@@ -1260,3 +1260,17 @@
 			svu:hasProcess <process#dive> ;
 			svu:hasBody <body#dive> ;
 			skos:prefLabel "scuba-diver"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#air_flow
+:air_flow rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#flow> ;
+			svu:hasMatter <matter#flow> ;
+			skos:prefLabel "air_flow"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#ball_fall
+:ball_fall rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#fall> ;
+			svu:hasBody <body#fall> ;
+			skos:prefLabel "ball"@en .
