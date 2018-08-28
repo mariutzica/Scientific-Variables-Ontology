@@ -163,6 +163,7 @@ csn.loc[ cond_obj0, 'object0'] = ''
 cond_obj0 = csn['object0'] == 'appliance~electric'
 csn.loc[ cond_obj0, 'object_id'] = 'appliance~electric'
 csn.loc[ cond_obj0, 'object_label'] = 'appliance~electric'
+csn.loc[ cond_obj0, 'object_pref'] = 'body'
 csn.loc[ cond_obj0, 'quantity_id'] = csn.loc[ cond_obj0, 'quantity_label']
 csn.loc[ cond_obj0, 'object0'] = ''
 
@@ -4441,17 +4442,23 @@ csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
 #csn.loc[ cond_obj0, 'root_object_abstraction'] = \
 #        csn.loc[ cond_obj0, 'object0']
 #csn.loc[ cond_obj0, 'object0'] = ''
-#
-##fence~electric
-#cond_obj0 = csn['object0'].str.contains('fence~electric')
-#csn.loc[ cond_obj0, 'root_object_form'] = 'fence~electric'
-#csn.loc[ cond_obj0, ['object0','object1']] = ''
-#
-##flood
-#cond_obj0 = csn['object0'] == 'flood'
-#csn.loc[ cond_obj0,'root_object_phen']='flood'
-#csn.loc[ cond_obj0, ['object0','object1']] = ''
-#
+
+#fence~electric
+cond_obj0 = csn['object0'].str.contains('fence~electric')
+csn.loc[ cond_obj0, 'object_id'] = 'fence~electric'
+csn.loc[ cond_obj0, 'object_label'] = 'fence~electric'
+csn.loc[ cond_obj0, 'object_pref'] = 'body'
+csn.loc[ cond_obj0,'quantity_id']=csn.loc[ cond_obj0,'quantity_label']
+csn.loc[ cond_obj0, ['object0','object1']] = ''
+
+#flood
+cond_obj0 = csn['object0'] == 'flood'
+csn.loc[ cond_obj0,'object_id']='flood'
+csn.loc[ cond_obj0,'object_label']='flood'
+csn.loc[ cond_obj0,'object_pref']='phenomenon'
+csn.loc[ cond_obj0,'quantity_id']=csn.loc[ cond_obj0,'quantity_label']
+csn.loc[ cond_obj0, ['object0','object1']] = ''
+
 ##fuel-to-oxidizer
 #cond_obj0 = csn['object0'] == 'fuel-to-oxidizer'
 #csn.loc[ cond_obj0, 'root_object_matter'] = 'fuel'
@@ -4462,13 +4469,16 @@ csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
 #cond_obj0 = csn['object0'] == 'gasoline'
 #csn.loc[ cond_obj0, 'root_object_medium_matter'] = 'gasoline'
 #csn.loc[ cond_obj0, ['object0','object1']] = ''
-#
-##glacier
-#cond_obj0 = csn['object0'] == 'glacier'
-#cond_obj1 = csn['object1'] == ''
-#csn.loc[ cond_obj0 & cond_obj1, 'root_object_form'] = 'glacier'
-#csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
-#
+
+#glacier
+cond_obj0 = csn['object0'] == 'glacier'
+cond_obj1 = csn['object1'] == ''
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'glacier'
+csn.loc[ cond_obj0 & cond_obj1, 'object_label'] = 'glacier'
+csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'body'
+csn.loc[ cond_obj0 & cond_obj1,'quantity_id']=csn.loc[ cond_obj0 & cond_obj1,'quantity_label']
+csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
+
 ##glacier_*-zone
 #cond_obj0 = csn['object0'] == 'glacier'
 #cond_obj1 = csn['object1'].str.contains('zone')
@@ -5003,13 +5013,17 @@ csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
 #csn.loc[ cond_obj0, 'root_object_context_matter_configstate'] = 'atom'
 #csn.loc[ cond_obj0, 'root_object_matter'] = csn.loc[ cond_obj0, 'object2'] 
 #csn.loc[ cond_obj0, ['object0','object1','object2']] = ''
-#
-##lake
-#cond_obj0 = csn['object0'] == 'lake'
-#cond_obj1 = csn['object1'] == ''
-#csn.loc[ cond_obj0 & cond_obj1, 'root_object_form'] = 'lake'
-#csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
-#
+
+#lake
+cond_obj0 = csn['object0'] == 'lake'
+cond_obj1 = csn['object1'] == ''
+csn.loc[ cond_obj0 & cond_obj1, 'object_label'] = 'lake'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'lake'
+csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'body'
+csn.loc[ cond_obj0 & cond_obj1, 'quantity_id'] = \
+    csn.loc[ cond_obj0 & cond_obj1, 'quantity_label']
+csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
+
 ##lake_surface
 #cond_obj0 = csn['object0'] == 'lake'
 #cond_obj1 = csn['object1'] == 'surface'
@@ -5524,17 +5538,23 @@ csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
 #        'modified_quantity'] = 'process_volume_flux'
 #csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
 #        ['object0','object1','object2','object3']] = ''
-#
-##light-bulb~incandescent
-#cond_obj0 = csn['object0'] == 'light-bulb~incandescent'
-#csn.loc[ cond_obj0, 'root_object_form'] = 'light-bulb~incandescent'
-#csn.loc[ cond_obj0, 'object0'] = ''
-#
-##lithosphere
-#cond_obj0 = csn['object0'] == 'lithosphere'
-#csn.loc[ cond_obj0, 'root_object_form'] = 'lithosphere'
-#csn.loc[ cond_obj0, 'object0'] = ''
-#
+
+#light-bulb~incandescent
+cond_obj0 = csn['object0'] == 'light-bulb~incandescent'
+csn.loc[ cond_obj0, 'object_id'] = 'light-bulb~incandescent'
+csn.loc[ cond_obj0, 'object_label'] = 'light-bulb~incandescent'
+csn.loc[ cond_obj0, 'object_pref'] = 'body'
+csn.loc[ cond_obj0, 'quantity_id'] = csn.loc[ cond_obj0, 'quantity_label']
+csn.loc[ cond_obj0, 'object0'] = ''
+
+#lithosphere
+cond_obj0 = csn['object0'] == 'lithosphere'
+csn.loc[ cond_obj0, 'object_label'] = 'lithosphere'
+csn.loc[ cond_obj0, 'object_id'] = 'lithosphere'
+csn.loc[ cond_obj0, 'object_pref'] = 'phenomenon'
+csn.loc[ cond_obj0, 'quantity_id'] = csn.loc[ cond_obj0, 'quantity_label']
+csn.loc[ cond_obj0, 'object0'] = ''
+
 ##location
 #cond_obj0 = csn['object0'] == 'location'
 #csn.loc[ cond_obj0, 'root_object_abstraction'] = 'location'
@@ -5942,12 +5962,15 @@ csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
 #        csn.loc[ cond_obj0, 'modified_quantity']\
 #        .str.replace('precession','process')
 #csn.loc[ cond_obj0, ['object0','object1']] = ''
-#
-##oscillator
-#cond_obj0 = csn['object0'] == 'oscillator'
-#csn.loc[ cond_obj0, 'root_object_abstraction'] = 'oscillator'
-#csn.loc[ cond_obj0, 'object0'] = ''
-#
+
+#oscillator
+cond_obj0 = csn['object0'] == 'oscillator'
+csn.loc[ cond_obj0, 'object_id'] = 'oscillator'
+csn.loc[ cond_obj0, 'object_label'] = 'oscillator'
+csn.loc[ cond_obj0, 'object_pref'] = 'body'
+csn.loc[ cond_obj0, 'quantity_id'] = csn.loc[ cond_obj0, 'quantity_label']
+csn.loc[ cond_obj0, 'object0'] = ''
+
 ##ozone_molecule
 #cond_obj0 = csn['object0'] == 'ozone'
 #csn.loc[ cond_obj0, 'root_object_context_matter'] = 'ozone'
@@ -5955,12 +5978,15 @@ csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
 #csn.loc[ cond_obj0, 'root_object_form'] = 'bond~o-o'
 #csn.loc[ cond_obj0, 'modified_quantity'] = 'length'
 #csn.loc[ cond_obj0, ['object0','object1','object2']] = ''
-#
-##paper
-#cond_obj0 = csn['object0'] == 'paper'
-#csn.loc[ cond_obj0, 'root_object_form'] = 'paper'
-#csn.loc[ cond_obj0, 'object0'] = ''
-#
+
+#paper
+cond_obj0 = csn['object0'] == 'paper'
+csn.loc[ cond_obj0, 'object_id'] = 'paper'
+csn.loc[ cond_obj0, 'object_label'] = 'paper'
+csn.loc[ cond_obj0, 'object_pref'] = 'matter'
+csn.loc[ cond_obj0, 'quantity_id'] = csn.loc[ cond_obj0, 'quantity_label']
+csn.loc[ cond_obj0, 'object0'] = ''
+
 ##pavement_rubber
 #cond_obj0 = csn['object0'] == 'pavement'
 #csn.loc[ cond_obj0, 'root_object_matter'] = 'pavement'
@@ -6168,12 +6194,15 @@ csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
 #        'root_object_abstraction'] = 'x-section'
 #csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
 #        ['object0','object1']] = ''
-#
-##pump
-#cond_obj0 = csn['object0'] == 'pump'
-#csn.loc[ cond_obj0, 'root_object_form'] = 'pump'
-#csn.loc[ cond_obj0, 'object0'] = ''
-#
+
+#pump
+cond_obj0 = csn['object0'] == 'pump'
+csn.loc[ cond_obj0, 'object_id'] = 'pump'
+csn.loc[ cond_obj0, 'object_label'] = 'pump'
+csn.loc[ cond_obj0, 'object_pref'] = 'body'
+csn.loc[ cond_obj0, 'quantity_id'] = csn.loc[ cond_obj0, 'quantity_label']
+csn.loc[ cond_obj0, 'object0'] = ''
+
 ##railway_curve
 #cond_obj0 = csn['object0'] == 'railway'
 #csn.loc[ cond_obj0, 'root_object_form'] = 'railway'
@@ -7853,12 +7882,15 @@ csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
 #csn.loc[ cond_obj0, 'root_object_abstraction'] = 'sphere'
 #csn.loc[ cond_obj0, 'root_object_abstraction_abstraction'] = 'surface'
 #csn.loc[ cond_obj0, ['object0','object1']] = ''
-#
-##spring~steel
-#cond_obj0 = csn['object0'] == 'spring~steel'
-#csn.loc[ cond_obj0, 'root_object_form'] = 'spring~steel'
-#csn.loc[ cond_obj0, 'object0'] = ''
-#
+
+#spring~steel
+cond_obj0 = csn['object0'] == 'spring~steel'
+csn.loc[ cond_obj0, 'object_id'] = 'spring~steel'
+csn.loc[ cond_obj0, 'object_label'] = 'spring~steel'
+csn.loc[ cond_obj0, 'object_pref'] = 'body'
+csn.loc[ cond_obj0, 'quantity_id'] = csn.loc[ cond_obj0, 'quantity_label']
+csn.loc[ cond_obj0, 'object0'] = ''
+
 ##square
 #cond_obj0 = csn['object0'] == 'square'
 #csn.loc[ cond_obj0, 'root_object_abstraction'] = 'square'
@@ -7879,12 +7911,14 @@ csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
 #csn.loc[ cond_obj0, 'root_object_reference_part'] = 'floor'
 #csn.loc[ cond_obj0, 'root_object_reference_relationship'] = 'above'
 #csn.loc[ cond_obj0, ['object0','object1']] = ''
-#
-##sulfuric-acid
-#cond_obj0 = csn['object0'] == 'sulfuric-acid'
-#csn.loc[ cond_obj0, 'root_object_matter'] = 'sufuric-acid'
-#csn.loc[ cond_obj0, ['object0','object1']] = ''
-#
+
+#sulfuric-acid
+cond_obj0 = csn['object0'] == 'sulfuric-acid'
+csn.loc[ cond_obj0, 'object_id'] = 'sulfuric-acid'
+csn.loc[ cond_obj0, 'object_label'] = 'sulfuric-acid'
+csn.loc[ cond_obj0, 'object_pref'] = 'matter'
+csn.loc[ cond_obj0, ['object0','object1']] = ''
+
 ##sulfuric-acid
 #cond_obj0 = csn['object0'] == 'sulphuric-acid'
 #csn.loc[ cond_obj0, 'root_object_matter'] = 'sufuric-acid'
