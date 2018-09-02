@@ -17,7 +17,7 @@
 #    Form   
 # 
 #################################################################
-##Last generated on: 2018-08-28 16:01
+##Last generated on: 2018-09-02 17:22
 
 ###Form
 
@@ -246,77 +246,3 @@
 			skos:prefLabel "particulate"@en .
 
 ###  http://www.geoscienceontology.org/svl/form#platform
-:platform rdf:type owl:NamedIndividual ,
-			svu:Form ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Platform" ;
-			skos:prefLabel "platform"@en .
-
-###  http://www.geoscienceontology.org/svl/form#plume
-:plume rdf:type owl:NamedIndividual ,
-			svu:Form ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Plume_(fluid_dynamics)" ;
-			skos:prefLabel "plume"@en .
-
-###  http://www.geoscienceontology.org/svl/form#pore
-:pore rdf:type owl:NamedIndividual ,
-			svu:Form ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Pore_space_in_soil" ;
-			skos:prefLabel "pore"@en .
-
-###  http://www.geoscienceontology.org/svl/form#pores
-:pores rdf:type owl:NamedIndividual ,
-			svu:Form ;
-			svu:isPluralityOf :pore ;
-			skos:prefLabel "pores"@en .
-
-###  http://www.geoscienceontology.org/svl/form#radical
-:radical rdf:type owl:NamedIndividual ,
-			svu:Form ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Radical_(chemistry)" ;
-			skos:prefLabel "radical"@en .
-
-###  http://www.geoscienceontology.org/svl/form#sample
-:sample rdf:type owl:NamedIndividual ,
-			svu:Form ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sample_(material)" ;
-			skos:prefLabel "sample"@en .
-
-###  http://www.geoscienceontology.org/svl/form#samples
-:samples rdf:type owl:NamedIndividual ,
-			svu:Form ;
-			svu:isPluralityOf :sample ;
-			skos:prefLabel "samples"@en .
-
-###  http://www.geoscienceontology.org/svl/form#sheet
-:sheet rdf:type owl:NamedIndividual ,
-			svu:Form ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sheet" ;
-			skos:prefLabel "sheet"@en .
-
-###  http://www.geoscienceontology.org/svl/form#shelf
-:shelf rdf:type owl:NamedIndividual ,
-			svu:Form ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Shelf" ;
-			skos:prefLabel "shelf"@en .
-
-###  http://www.geoscienceontology.org/svl/form#slick
-:slick rdf:type owl:NamedIndividual ,
-			svu:Form ;
-			skos:prefLabel "slick"@en .
-
-###  http://www.geoscienceontology.org/svl/form#unit
-:unit rdf:type owl:NamedIndividual ,
-			svu:Form ;
-			skos:prefLabel "unit"@en .
-
-###  http://www.geoscienceontology.org/svl/form#units
-:units rdf:type owl:NamedIndividual ,
-			svu:Form ;
-			svu:isPluralityOf :unit ;
-			skos:prefLabel "units"@en .
-
-###  http://www.geoscienceontology.org/svl/form#void
-:void rdf:type owl:NamedIndividual ,
-			svu:Form ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Void_(composites)" ;
-			skos:prefLabel "void"@en .

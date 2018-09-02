@@ -17,7 +17,7 @@
 #    Attribute   
 # 
 #################################################################
-##Last generated on: 2018-08-28 16:01
+##Last generated on: 2018-09-02 17:22
 
 ###(Qualitative)Attribute
 
@@ -2701,26 +2701,3 @@
 :melting-point rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Melting_point" ;
-			svu:hasProperty <property#temperature> ;
-			svu:hasValue "melting-point" ;
-			svu:isNoun false ;
-			skos:prefLabel "melting-point"@en .
-
-###  http://www.geoscienceontology.org/svl/attribute#stp
-:stp rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Standard_conditions_for_temperature_and_pressure" ;
-			skos:altLabel "standard temperature and pressure"@en ;
-			svu:hasProperty <property#temperature%2C%20pressure> ;
-			svu:hasValue "standard" ;
-			svu:isNoun false ;
-			skos:prefLabel "stp"@en .
-
-###  http://www.geoscienceontology.org/svl/attribute#wilting-point
-:wilting-point rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Permanent_wilting_point" ;
-			svu:hasProperty <property#temperature> ;
-			svu:hasValue "wilting-point" ;
-			svu:isNoun false ;
-			skos:prefLabel "wilting-point"@en .

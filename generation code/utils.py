@@ -425,22 +425,44 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                         '<process#' + urllib.quote( p )+'>', ';' ) )
             if 'body' in vocab.columns.values and \
                 vocab.loc[ index, 'body' ] != '' :
-                body = vocab.loc[ index, 'body' ].split(', ')
-                for b in process:
-                    ttl_file.write( attribute.format( 'hasBody', \
-                        '<body#' + urllib.quote( b )+'>', ';' ) )
+                body = vocab.loc[ index, 'body' ]
+                ttl_file.write( attribute.format( 'hasBody', \
+                        '<body#' + urllib.quote( body )+'>', ';' ) )
             if 'matter' in vocab.columns.values and \
                 vocab.loc[ index, 'matter' ] != '' :
-                body = vocab.loc[ index, 'matter' ].split(', ')
-                for b in process:
-                    ttl_file.write( attribute.format( 'hasMatter', \
-                        '<matter#' + urllib.quote( b )+'>', ';' ) )
+                matter = vocab.loc[ index, 'matter' ]
+                ttl_file.write( attribute.format( 'hasMatter', \
+                        '<matter#' + urllib.quote( matter )+'>', ';' ) )
             if 'phenomenon' in vocab.columns.values and \
                 vocab.loc[ index, 'phenomenon' ] != '' :
-                body = vocab.loc[ index, 'phenomenon' ].split(', ')
-                for b in process:
-                    ttl_file.write( attribute.format( 'hasPhenomenon', \
-                        '<phenomenon#' + urllib.quote( b )+'>', ';' ) )
+                phen = vocab.loc[ index, 'phenomenon' ]
+                ttl_file.write( attribute.format( 'hasPhenomenon', \
+                        ':' + urllib.quote( phen ), ';' ) )
+            if 'context_id' in vocab.columns.values and \
+                vocab.loc[ index, 'context_id' ] != '' :
+                context = vocab.loc[ index, 'context_id' ]
+                ttl_file.write( attribute.format( 'hasContext', \
+                        '<context#' + urllib.quote( context )+'>', ';' ) )
+            if 'root_id' in vocab.columns.values and \
+                vocab.loc[ index, 'root_id' ] != '' :
+                root = vocab.loc[ index, 'root_id' ]
+                if 'root_pref' in vocab.columns.values:
+                    pref = vocab.loc[ index, 'root_pref' ]
+                    ttl_file.write( attribute.format( 'hasRootPhenomenon', \
+                        '<'+ pref + '#' + urllib.quote( root ) + '>', ';' ) )
+                else:
+                    ttl_file.write( attribute.format( 'hasRootPhenomenon', \
+                        ':' + urllib.quote( root ), ';' ) )
+            if 'medium_id' in vocab.columns.values and \
+                vocab.loc[ index, 'medium_id' ] != '' :
+                medium = vocab.loc[ index, 'medium_id' ]
+                ttl_file.write( attribute.format( 'hasMediumPhenomenon', \
+                        ':' + urllib.quote( medium ), ';' ) )
+            if 'phen_id' in vocab.columns.values and \
+                vocab.loc[ index, 'phen_id' ] != '' :
+                phen = vocab.loc[ index, 'phen_id' ]
+                ttl_file.write( attribute.format( 'hasPhenomenon', \
+                        ':' + urllib.quote( phen ), ';' ) )
         if collabel == 'context':
             rel = vocab.loc[ index, 'relationship' ]
             ttl_file.write( attribute.format( 'hasRelationship', \
@@ -482,15 +504,16 @@ def create_variable_entries( vocab, ttl_file, label=None ):
                         element_esc, 'svu', 'Variable', ';' ) )
         quantity = vocab.loc[ index, 'quantity_id']
         if quantity != '':
-            ttl_file.write( attribute.format( 'hasQuantity', \
+            ttl_file.write( attribute.format( 'hasProperty', \
                             '<property#' + h.unescape(quantity) + '>', ';'))
         obj = vocab.loc[ index, 'object_id']
         pref = vocab.loc[ index, 'object_pref']
+        cat = vocab.loc[ index, 'object_cat']
         if obj != '':
-            ttl_file.write( attribute.format( 'hasObject', \
+            if cat=='root':
+                ttl_file.write( attribute.format( 'hasRootObject', \
                             '<'+pref+'#' + h.unescape(obj) + '>', ';'))
-        context = vocab.loc[ index, 'object_context_id']
-        if context != '':
-            ttl_file.write( attribute.format( 'hasContext', \
-                            '<context#' + h.unescape(context) + '>', ';'))
+            else:
+                ttl_file.write( attribute.format( 'hasObject', \
+                            '<'+pref+'#' + h.unescape(obj) + '>', ';'))
         ttl_file.write( preflabel.format( element ) )

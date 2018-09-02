@@ -4,271 +4,331 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.geoscienceontology.org/svu> .
 
-<http://www.geoscienceontology.org/svu> rdf:type owl:Ontology ;
-                                         rdfs:comment "Scientific Variables Ontology: Upper Ontology. This Ontology defines the core classes and design patterns for building variables. Class individuals are declared in the lower ontology." .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://www.geoscienceontology.org/svu#hasAssociatedWikipediaPage
-:hasAssociatedWikipediaPage rdf:type owl:AnnotationProperty ;
-                            rdfs:comment "Points to a URL identifying a related Wikipedia Page. Wikipedia pages are used to retrieve narrative, documentation information about entitites in the ontology when available. Wikipedia URLs are not equivalent IRIs." ;
-                            rdfs:subPropertyOf rdfs:comment .
-
-
-###  http://www.geoscienceontology.org/svu#hasNominalization
-:hasNominalization rdf:type owl:AnnotationProperty ;
-                   rdfs:subPropertyOf rdfs:label .
-
-
-###  http://www.geoscienceontology.org/svu#hasPresentParticiple
-:hasPresentParticiple rdf:type owl:AnnotationProperty ;
-                      rdfs:subPropertyOf rdfs:label .
-
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  http://www.geoscienceontology.org/svu#hasAssociatedProcess
-:hasAssociatedProcess rdf:type owl:ObjectProperty .
-
-
-###  http://www.geoscienceontology.org/svu#hasHeadOperator
-:hasHeadOperator rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf :hasOperator .
-
-
-###  http://www.geoscienceontology.org/svu#hasObject
-:hasObject rdf:type owl:ObjectProperty .
-
-
-###  http://www.geoscienceontology.org/svu#hasOperator
-:hasOperator rdf:type owl:ObjectProperty .
-
-
-###  http://www.geoscienceontology.org/svu#hasPropertyQuantification
-:hasPropertyQuantification rdf:type owl:ObjectProperty .
-
-
-###  http://www.geoscienceontology.org/svu#hasPropertyRole
-:hasPropertyRole rdf:type owl:ObjectProperty .
-
-
-###  http://www.geoscienceontology.org/svu#hasPropertyType
-:hasPropertyType rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf :hasType .
-
-
-###  http://www.geoscienceontology.org/svu#hasQuantity
-:hasQuantity rdf:type owl:ObjectProperty .
-
-
-###  http://www.geoscienceontology.org/svu#hasType
-:hasType rdf:type owl:ObjectProperty .
-
-
-###  http://www.geoscienceontology.org/svu#isDerivedFrom
-:isDerivedFrom rdf:type owl:ObjectProperty ;
-               rdfs:comment "isDerivedFrom links more specific concepts to more generic concepts. It is a mechanism for linking Individuals in the ontology, bypassing explicitly defined taxonomic class hierarchies." .
-
-
-###  http://www.geoscienceontology.org/svu#quantifiesProcess
-:quantifiesProcess rdf:type owl:ObjectProperty .
-
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  http://www.geoscienceontology.org/svu#hasAssignedUnits
-:hasAssignedUnits rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf :hasUnits .
-
-
-###  http://www.geoscienceontology.org/svu#hasMultiplierUnits
-:hasMultiplierUnits rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf :hasUnits .
-
-
-###  http://www.geoscienceontology.org/svu#hasPowerUnits
-:hasPowerUnits rdf:type owl:DatatypeProperty ;
-               rdfs:subPropertyOf :hasUnits .
-
-
-###  http://www.geoscienceontology.org/svu#hasUnits
-:hasUnits rdf:type owl:DatatypeProperty .
-
-
-###  http://www.geoscienceontology.org/svu#hasValue
-:hasValue rdf:type owl:DatatypeProperty .
-
-
-###  http://www.geoscienceontology.org/svu#isNoun
-:isNoun rdf:type owl:DatatypeProperty ;
-        rdfs:subPropertyOf owl:topDataProperty .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://www.geoscienceontology.org/svu#AbstractionType
-:AbstractionType rdf:type owl:Class ;
-                 rdfs:comment "An AbstractionType is an abstraction that is generic and is usually (although not always) specified more precisely in a Variable." .
-
-
-###  http://www.geoscienceontology.org/svu#Attribute
-:Attribute rdf:type owl:Class ;
-           rdfs:comment "An attribute consists of a property-value pair. Attributes are used to narrow the identification of an Actor in a variable." .
-
-
-###  http://www.geoscienceontology.org/svu#Body
-:Body rdf:type owl:Class ;
-      rdfs:subClassOf :BodyType ;
-      rdfs:comment "A Body is something that has both a well-defined form and substance." .
-
-
-###  http://www.geoscienceontology.org/svu#BodyPart
-:BodyPart rdf:type owl:Class ;
-          rdfs:subClassOf :Phenomenon ;
-          rdfs:comment "A body part is in essence a body. However, it is always a part of a bigger whole and would not come into existence otherwise." .
-
-
-###  http://www.geoscienceontology.org/svu#BodyType
-:BodyType rdf:type owl:Class ;
-          rdfs:subClassOf :Phenomenon ;
-          rdfs:comment "A BodyType is the same thing as a Body, except (subjectively) BodyTypes are more generic and usually (although not always) describe a type and are less frequently used as the object of a variable." .
-
-
-###  http://www.geoscienceontology.org/svu#Form
-:Form rdf:type owl:Class ;
-      rdfs:subClassOf :Phenomenon ;
-      rdfs:comment "The Form class contains elements which describe the visible shape or configuration of something; it defines the spatial extent of something without defining substance or essence." .
-
-
-###  http://www.geoscienceontology.org/svu#MathematicalAbstraction
-:MathematicalAbstraction rdf:type owl:Class ;
-                         rdfs:subClassOf :AbstractionType ;
-                         rdfs:comment "A mathematical abstraction is any mathematical entity." .
-
-
-###  http://www.geoscienceontology.org/svu#MathematicalAbstractionPart
-:MathematicalAbstractionPart rdf:type owl:Class ;
-                             rdfs:subClassOf :MathematicalAbstraction ;
-                             rdfs:comment "An Abstraction Part is an abstraction that is usually part of another abstraction and is not likely to be found by itself. Examples include apex and center." .
-
-
-###  http://www.geoscienceontology.org/svu#Matter
-:Matter rdf:type owl:Class ;
-        rdfs:subClassOf :MatterType ;
-        rdfs:comment "Matter is the substance of which something is made." .
-
-
-###  http://www.geoscienceontology.org/svu#MatterType
-:MatterType rdf:type owl:Class ;
-            rdfs:subClassOf :Phenomenon ;
-            rdfs:comment "MatterType can also be thought of as matter. However, unlike Matter, MatterType doesn't provide the essence of the substance of which something is made." .
-
-
-###  http://www.geoscienceontology.org/svu#Operator
-:Operator rdf:type owl:Class ;
-          rdfs:comment "An operator is a mathematical operation that can be performed on a quantity." .
-
-
-###  http://www.geoscienceontology.org/svu#OperatorQuantitativeProperty
-:OperatorQuantitativeProperty rdf:type owl:Class ;
-                              rdfs:subClassOf :QuantitativeProperty ;
-                              rdfs:comment "OperatorQuantitativeProperty is the set of Properies that involve an Operator. This class is not essentially different from a QuantitativeProperty. However, at the moment it is distinguished in the ontology as those QuantitativeProperties that are associated with a hasOperator relationship." .
-
-
-###  http://www.geoscienceontology.org/svu#Part
-:Part rdf:type owl:Class ;
-      rdfs:comment "A part has no essence without being attached to a Body, Form or some other Phenomenon. A Part must be attached to one of these before being included in a variable. Examples include top, bottom, side, core, and subskin." .
-
-
-###  http://www.geoscienceontology.org/svu#Phenomenon
-:Phenomenon rdf:type owl:Class .
-
-
-###  http://www.geoscienceontology.org/svu#PhysicalAbstraction
-:PhysicalAbstraction rdf:type owl:Class ;
-                     rdfs:subClassOf :MathematicalAbstraction ;
-                     rdfs:comment "A Physical Abstraction is a Mathematical abstraction that is applied to a physical phenomenon. Examples include wheelbase and shoreline." .
-
-
-###  http://www.geoscienceontology.org/svu#Process
-:Process rdf:type owl:Class ;
-         rdfs:comment "A process is something that happens, whether in one step or multiple steps. A process refers specifically to the actions of something. A process along with all of its actors, their roles, etc. is a Phenomenon." .
-
-
-###  http://www.geoscienceontology.org/svu#Property
-:Property rdf:type owl:Class ;
-          rdfs:comment "A property is a quality or characteristic of something. A property differs from an attribute in that it is not attached to a value. As an example, 'color' is a property of eyes, while 'brown color' is an attribute of a particular eye. A property is shorthand for a Qualitative Property. Quantitative properties are Qualitative Properties that have been quantified." .
-
-
-###  http://www.geoscienceontology.org/svu#PropertyQuantification
-:PropertyQuantification rdf:type owl:Class ;
-                        rdfs:comment "A property quantification is a method for quantifying a property. Examples include index, code, and scale." .
-
-
-###  http://www.geoscienceontology.org/svu#PropertyRole
-:PropertyRole rdf:type owl:Class ;
-              rdfs:comment "A property role provide information about the role a property plays in a larger context. Examples of property roles include exponent, parameter, and coefficient." .
-
-
-###  http://www.geoscienceontology.org/svu#PropertyType
-:PropertyType rdf:type owl:Class ;
-              rdfs:comment "A property type denotes the type of a quantity and is associated with Quantitative Properties. Examples include scalar, vector, tensor, and field." .
-
-
-###  http://www.geoscienceontology.org/svu#QuantitativeProperty
-:QuantitativeProperty rdf:type owl:Class ;
-                      rdfs:subClassOf :Property ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty :hasPropertyQuantification ;
-                                        owl:allValuesFrom :PropertyQuantification
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty :hasPropertyRole ;
-                                        owl:allValuesFrom :PropertyRole
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty :hasPropertyType ;
-                                        owl:allValuesFrom :PropertyType
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty :isDerivedFrom ;
-                                        owl:allValuesFrom :Property
-                                      ] ;
-                      rdfs:comment "A Quantitative Property (Quantity in shorthand) is a property that has been quantified in some way." .
-
-
-###  http://www.geoscienceontology.org/svu#Relationship
-:Relationship rdf:type owl:Class ;
-              rdfs:comment "This is the class of spatial and temporal relationships between phenomena used to build variables." .
-
-
-###  http://www.geoscienceontology.org/svu#Role
-:Role rdf:type owl:Class ;
-      rdfs:comment "The role class contains the roles that different phenomena may take depending on context. It does not identify the substance or form that identifies the physical existence of a thing; rather, it identifies the ways in which the actions of something determine the role it is playing as part of the bigger picture. Examples include trash, crop, byproduct, and projectile." .
-
-
-###  http://www.geoscienceontology.org/svu#Trajectory
-:Trajectory rdf:type owl:Class ;
-            rdfs:comment "Trajectory identifies the path taken by a body undergoing the process of motion in space." .
-
-
-###  http://www.geoscienceontology.org/svu#TrajectoryDirection
-:TrajectoryDirection rdf:type owl:Class ;
-                     rdfs:comment "Associated with a trajectory, indicated direction." .
-
-
-###  http://www.geoscienceontology.org/svu#Variable
-:Variable rdf:type owl:Class .
-
-
-###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
+<http://www.geoscienceontology.org/svu> a owl:Ontology ;
+	rdfs:comment "Scientific Variables Ontology: Upper Ontology. This Ontology defines the core classes and design patterns for building variables. Class individuals are declared in the lower ontology." .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.geoscienceontology.org/svu#hasAssociatedWikipediaPage
+
+:hasAssociatedWikipediaPage a owl:AnnotationProperty ;
+	rdfs:comment "Points to a URL identifying a related Wikipedia Page. Wikipedia pages are used to retrieve narrative, documentation information about entitites in the ontology when available. Wikipedia URLs are not equivalent IRIs." ;
+	rdfs:subPropertyOf rdfs:comment .
+# 
+# http://www.geoscienceontology.org/svu#hasNominalization
+
+:hasNominalization a owl:AnnotationProperty ;
+	rdfs:subPropertyOf rdfs:label .
+# 
+# http://www.geoscienceontology.org/svu#hasPresentParticiple
+
+:hasPresentParticiple a owl:AnnotationProperty ;
+	rdfs:subPropertyOf rdfs:label .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.geoscienceontology.org/svu#hasAssociatedProcess
+
+:hasAssociatedProcess a owl:ObjectProperty .
+# 
+# http://www.geoscienceontology.org/svu#hasContext
+
+:hasContext a owl:ObjectProperty .
+# 
+# http://www.geoscienceontology.org/svu#hasHeadOperator
+
+:hasHeadOperator a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasOperator .
+# 
+# http://www.geoscienceontology.org/svu#hasMediumPhenomenon
+
+:hasMediumPhenomenon a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasPhenomenon .
+# 
+# http://www.geoscienceontology.org/svu#hasObject
+
+:hasObject a owl:ObjectProperty .
+# 
+# http://www.geoscienceontology.org/svu#hasOperator
+
+:hasOperator a owl:ObjectProperty .
+# 
+# http://www.geoscienceontology.org/svu#hasPhenomenon
+
+:hasPhenomenon a owl:ObjectProperty .
+# 
+# http://www.geoscienceontology.org/svu#hasPropertyQuantification
+
+:hasPropertyQuantification a owl:ObjectProperty .
+# 
+# http://www.geoscienceontology.org/svu#hasPropertyRole
+
+:hasPropertyRole a owl:ObjectProperty .
+# 
+# http://www.geoscienceontology.org/svu#hasPropertyType
+
+:hasPropertyType a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasType .
+# 
+# http://www.geoscienceontology.org/svu#hasQuantity
+
+:hasQuantity a owl:ObjectProperty .
+# 
+# http://www.geoscienceontology.org/svu#hasRootPhenomenon
+
+:hasRootPhenomenon a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasPhenomenon .
+# 
+# http://www.geoscienceontology.org/svu#hasType
+
+:hasType a owl:ObjectProperty .
+# 
+# http://www.geoscienceontology.org/svu#isDerivedFrom
+
+:isDerivedFrom a owl:ObjectProperty ;
+	rdfs:comment "isDerivedFrom links more specific concepts to more generic concepts. It is a mechanism for linking Individuals in the ontology, bypassing explicitly defined taxonomic class hierarchies." .
+# 
+# http://www.geoscienceontology.org/svu#quantifiesProcess
+
+:quantifiesProcess a owl:ObjectProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.geoscienceontology.org/svu#hasAssignedUnits
+
+:hasAssignedUnits a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasUnits .
+# 
+# http://www.geoscienceontology.org/svu#hasMultiplierUnits
+
+:hasMultiplierUnits a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasUnits .
+# 
+# http://www.geoscienceontology.org/svu#hasPowerUnits
+
+:hasPowerUnits a owl:DatatypeProperty ;
+	rdfs:subPropertyOf :hasUnits .
+# 
+# http://www.geoscienceontology.org/svu#hasUnits
+
+:hasUnits a owl:DatatypeProperty .
+# 
+# http://www.geoscienceontology.org/svu#hasValue
+
+:hasValue a owl:DatatypeProperty .
+# 
+# http://www.geoscienceontology.org/svu#isNoun
+
+:isNoun a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.geoscienceontology.org/svu#AbstractionType
+
+:AbstractionType a owl:Class ;
+	rdfs:comment "An AbstractionType is an abstraction that is generic and is usually (although not always) specified more precisely in a Variable." .
+# 
+# http://www.geoscienceontology.org/svu#Attribute
+
+:Attribute a owl:Class ;
+	rdfs:comment "An attribute consists of a property-value pair. Attributes are used to narrow the identification of an Actor in a variable." .
+# 
+# http://www.geoscienceontology.org/svu#Body
+
+:Body a owl:Class ;
+	rdfs:subClassOf :BodyType ;
+	rdfs:comment "A Body is something that has both a well-defined form and substance." .
+# 
+# http://www.geoscienceontology.org/svu#BodyPart
+
+:BodyPart a owl:Class ;
+	rdfs:subClassOf :Phenomenon ;
+	rdfs:comment "A body part is in essence a body. However, it is always a part of a bigger whole and would not come into existence otherwise." .
+# 
+# http://www.geoscienceontology.org/svu#BodyType
+
+:BodyType a owl:Class ;
+	rdfs:subClassOf :Phenomenon ;
+	rdfs:comment "A BodyType is the same thing as a Body, except (subjectively) BodyTypes are more generic and usually (although not always) describe a type and are less frequently used as the object of a variable." .
+# 
+# http://www.geoscienceontology.org/svu#Context
+
+:Context a owl:Class ;
+	rdfs:comment "Context provides a phenomenon and a context relationship. It can be attached to any phenomenon to give context." .
+# 
+# http://www.geoscienceontology.org/svu#ContextPhenomenon
+
+:ContextPhenomenon a owl:Class ;
+	rdfs:subClassOf :Phenomenon ;
+	rdfs:comment "A Context Phenomenon is used to attach a context to a Root Phenomenon." .
+# 
+# http://www.geoscienceontology.org/svu#Form
+
+:Form a owl:Class ;
+	rdfs:subClassOf :Phenomenon ;
+	rdfs:comment "The Form class contains elements which describe the visible shape or configuration of something; it defines the spatial extent of something without defining substance or essence." .
+# 
+# http://www.geoscienceontology.org/svu#MathematicalAbstraction
+
+:MathematicalAbstraction a owl:Class ;
+	rdfs:subClassOf :AbstractionType ;
+	rdfs:comment "A mathematical abstraction is any mathematical entity." .
+# 
+# http://www.geoscienceontology.org/svu#MathematicalAbstractionPart
+
+:MathematicalAbstractionPart a owl:Class ;
+	rdfs:subClassOf :MathematicalAbstraction ;
+	rdfs:comment "An Abstraction Part is an abstraction that is usually part of another abstraction and is not likely to be found by itself. Examples include apex and center." .
+# 
+# http://www.geoscienceontology.org/svu#Matter
+
+:Matter a owl:Class ;
+	rdfs:subClassOf :MatterType ;
+	rdfs:comment "Matter is the substance of which something is made." .
+# 
+# http://www.geoscienceontology.org/svu#MatterType
+
+:MatterType a owl:Class ;
+	rdfs:subClassOf :Phenomenon ;
+	rdfs:comment "MatterType can also be thought of as matter. However, unlike Matter, MatterType doesn't provide the essence of the substance of which something is made." .
+# 
+# http://www.geoscienceontology.org/svu#MediumPhenomenon
+
+:MediumPhenomenon a owl:Class ;
+	rdfs:subClassOf :Phenomenon ;
+	rdfs:comment "a MediumPhenomenon is a Phenomenon that has two Phenomena for measurement, a root and a medium." .
+# 
+# http://www.geoscienceontology.org/svu#Operator
+
+:Operator a owl:Class ;
+	rdfs:comment "An operator is a mathematical operation that can be performed on a quantity." .
+# 
+# http://www.geoscienceontology.org/svu#OperatorQuantitativeProperty
+
+:OperatorQuantitativeProperty a owl:Class ;
+	rdfs:subClassOf :QuantitativeProperty ;
+	rdfs:comment "OperatorQuantitativeProperty is the set of Properies that involve an Operator. This class is not essentially different from a QuantitativeProperty. However, at the moment it is distinguished in the ontology as those QuantitativeProperties that are associated with a hasOperator relationship." .
+# 
+# http://www.geoscienceontology.org/svu#Part
+
+:Part a owl:Class ;
+	rdfs:comment "A part has no essence without being attached to a Body, Form or some other Phenomenon. A Part must be attached to one of these before being included in a variable. Examples include top, bottom, side, core, and subskin." .
+# 
+# http://www.geoscienceontology.org/svu#Phenomenon
+
+:Phenomenon a owl:Class .
+# 
+# http://www.geoscienceontology.org/svu#PhysicalAbstraction
+
+:PhysicalAbstraction a owl:Class ;
+	rdfs:subClassOf :MathematicalAbstraction ;
+	rdfs:comment "A Physical Abstraction is a Mathematical abstraction that is applied to a physical phenomenon. Examples include wheelbase and shoreline." .
+# 
+# http://www.geoscienceontology.org/svu#Process
+
+:Process a owl:Class ;
+	rdfs:comment "A process is something that happens, whether in one step or multiple steps. A process refers specifically to the actions of something. A process along with all of its actors, their roles, etc. is a Phenomenon." .
+# 
+# http://www.geoscienceontology.org/svu#Property
+
+:Property a owl:Class ;
+	rdfs:comment "A property is a quality or characteristic of something. A property differs from an attribute in that it is not attached to a value. As an example, 'color' is a property of eyes, while 'brown color' is an attribute of a particular eye. A property is shorthand for a Qualitative Property. Quantitative properties are Qualitative Properties that have been quantified." .
+# 
+# http://www.geoscienceontology.org/svu#PropertyQuantification
+
+:PropertyQuantification a owl:Class ;
+	rdfs:comment "A property quantification is a method for quantifying a property. Examples include index, code, and scale." .
+# 
+# http://www.geoscienceontology.org/svu#PropertyRole
+
+:PropertyRole a owl:Class ;
+	rdfs:comment "A property role provide information about the role a property plays in a larger context. Examples of property roles include exponent, parameter, and coefficient." .
+# 
+# http://www.geoscienceontology.org/svu#PropertyType
+
+:PropertyType a owl:Class ;
+	rdfs:comment "A property type denotes the type of a quantity and is associated with Quantitative Properties. Examples include scalar, vector, tensor, and field." .
+# 
+# http://www.geoscienceontology.org/svu#QuantitativeProperty
+
+:QuantitativeProperty a owl:Class ;
+	rdfs:subClassOf :Property , _:genid1 .
+
+_:genid1 a owl:Restriction ;
+	owl:onProperty :hasPropertyQuantification ;
+	owl:allValuesFrom :PropertyQuantification .
+
+:QuantitativeProperty rdfs:subClassOf _:genid2 .
+
+_:genid2 a owl:Restriction ;
+	owl:onProperty :hasPropertyRole ;
+	owl:allValuesFrom :PropertyRole .
+
+:QuantitativeProperty rdfs:subClassOf _:genid3 .
+
+_:genid3 a owl:Restriction ;
+	owl:onProperty :hasPropertyType ;
+	owl:allValuesFrom :PropertyType .
+
+:QuantitativeProperty rdfs:subClassOf _:genid4 .
+
+_:genid4 a owl:Restriction ;
+	owl:onProperty :isDerivedFrom ;
+	owl:allValuesFrom :Property .
+
+:QuantitativeProperty rdfs:comment "A Quantitative Property (Quantity in shorthand) is a property that has been quantified in some way." .
+# 
+# http://www.geoscienceontology.org/svu#Relationship
+
+:Relationship a owl:Class ;
+	rdfs:comment "This is the class of spatial and temporal relationships between phenomena used to build variables." .
+# 
+# http://www.geoscienceontology.org/svu#Role
+
+:Role a owl:Class ;
+	rdfs:comment "The role class contains the roles that different phenomena may take depending on context. It does not identify the substance or form that identifies the physical existence of a thing; rather, it identifies the ways in which the actions of something determine the role it is playing as part of the bigger picture. Examples include trash, crop, byproduct, and projectile." .
+# 
+# http://www.geoscienceontology.org/svu#Trajectory
+
+:Trajectory a owl:Class ;
+	rdfs:comment "Trajectory identifies the path taken by a body undergoing the process of motion in space." .
+# 
+# http://www.geoscienceontology.org/svu#TrajectoryDirection
+
+:TrajectoryDirection a owl:Class ;
+	rdfs:comment "Associated with a trajectory, indicated direction." .
+# 
+# http://www.geoscienceontology.org/svu#Variable
+
+:Variable a owl:Class .
+# 
+# Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi

@@ -17,7 +17,7 @@
 #    Body   
 # 
 #################################################################
-##Last generated on: 2018-08-28 16:01
+##Last generated on: 2018-09-02 17:22
 
 ###Inanimate Natural Body
 
@@ -5915,99 +5915,3 @@
 			skos:prefLabel "brain"@en .
 
 ###  http://www.geoscienceontology.org/svl/body#eye
-:eye rdf:type owl:NamedIndividual ,
-			svu:BodyPart ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Eye" ;
-			skos:prefLabel "eye"@en .
-
-###  http://www.geoscienceontology.org/svl/body#hair
-:hair rdf:type owl:NamedIndividual ,
-			svu:BodyPart ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Hair" ;
-			skos:prefLabel "hair"@en .
-
-###  http://www.geoscienceontology.org/svl/body#head
-:head rdf:type owl:NamedIndividual ,
-			svu:BodyPart ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Head" ;
-			skos:prefLabel "head"@en .
-
-###  http://www.geoscienceontology.org/svl/body#leaf
-:leaf rdf:type owl:NamedIndividual ,
-			svu:BodyPart ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Leaf" ;
-			skos:prefLabel "leaf"@en .
-
-###  http://www.geoscienceontology.org/svl/body#leaves
-:leaves rdf:type owl:NamedIndividual ,
-			svu:BodyPart ;
-			svu:isPluralityOf :leaf ;
-			skos:prefLabel "leaves"@en .
-
-###  http://www.geoscienceontology.org/svl/body#oocyst
-:oocyst rdf:type owl:NamedIndividual ,
-			svu:BodyPart ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Apicomplexan_life_cycle#oocyst" ;
-			skos:prefLabel "oocyst"@en .
-
-###  http://www.geoscienceontology.org/svl/body#oocysts
-:oocysts rdf:type owl:NamedIndividual ,
-			svu:BodyPart ;
-			svu:isPluralityOf :oocyst ;
-			skos:prefLabel "oocysts"@en .
-
-###  http://www.geoscienceontology.org/svl/body#root
-:root rdf:type owl:NamedIndividual ,
-			svu:BodyPart ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Root" ;
-			skos:prefLabel "root"@en .
-
-###  http://www.geoscienceontology.org/svl/body#roots
-:roots rdf:type owl:NamedIndividual ,
-			svu:BodyPart ;
-			svu:isPluralityOf :root ;
-			skos:prefLabel "roots"@en .
-
-###  http://www.geoscienceontology.org/svl/body#skin
-:skin rdf:type owl:NamedIndividual ,
-			svu:BodyPart ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Skin" ;
-			skos:prefLabel "skin"@en .
-
-###  http://www.geoscienceontology.org/svl/body#trunk
-:trunk rdf:type owl:NamedIndividual ,
-			svu:BodyPart ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Trunk_(botany)" ;
-			skos:prefLabel "trunk"@en .
-
-###  http://www.geoscienceontology.org/svl/body#stoma
-:stoma rdf:type owl:NamedIndividual ,
-			svu:BodyPart ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Stoma" ;
-			skos:altLabel "stomate"@en ;
-			skos:prefLabel "stoma"@en .
-
-###  http://www.geoscienceontology.org/svl/body#stomata
-:stomata rdf:type owl:NamedIndividual ,
-			svu:BodyPart ;
-			skos:altLabel "stomates"@en ;
-			svu:isPluralityOf :stoma ;
-			skos:prefLabel "stomata"@en .
-
-###  http://www.geoscienceontology.org/svl/body#cyst
-:cyst rdf:type owl:NamedIndividual ,
-			svu:BodyPart ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cyst" ;
-			skos:prefLabel "cyst"@en .
-
-###  http://www.geoscienceontology.org/svl/body#cysts
-:cysts rdf:type owl:NamedIndividual ,
-			svu:BodyPart ;
-			svu:isPluralityOf :cyst ;
-			skos:prefLabel "cysts"@en .
-
-###  http://www.geoscienceontology.org/svl/body#neck
-:neck rdf:type owl:NamedIndividual ,
-			svu:BodyPart ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Neck" ;
-			skos:prefLabel "neck"@en .
