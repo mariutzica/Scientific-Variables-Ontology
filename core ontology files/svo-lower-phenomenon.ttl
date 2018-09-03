@@ -17,7 +17,7 @@
 #    Phenomenon   
 # 
 #################################################################
-##Last generated on: 2018-09-02 17:22
+##Last generated on: 2018-09-03 14:17
 
 ###Phenomenon
 
@@ -3443,3 +3443,197 @@
 			skos:prefLabel "life"@en .
 
 ###  http://www.geoscienceontology.org/svl/phenomenon#panspermia
+:panspermia rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Panspermia" ;
+			skos:prefLabel "panspermia"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#paralysis
+:paralysis rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:isDerivedFrom :%20 ;
+			svu:hasAssociatedProcess <process#paralyze> ;
+			skos:prefLabel "paralysis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#peristalsis
+:peristalsis rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Peristalsis" ;
+			skos:prefLabel "peristalsis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#power-blackout
+:power-blackout rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Power_outage" ;
+			skos:prefLabel "power-blackout"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#stemflow
+:stemflow rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Stemflow" ;
+			svu:hasAssociatedProcess <process#flow> ;
+			skos:prefLabel "stemflow"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#symbiosis
+:symbiosis rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Symbiosis" ;
+			skos:prefLabel "symbiosis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#synnecrosis
+:synnecrosis rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Biological_interaction#Competition" ;
+			skos:prefLabel "synnecrosis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#treefall-gap
+:treefall-gap rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Treefall_gap" ;
+			skos:prefLabel "treefall-gap"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#treethrow
+:treethrow rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Tree_throw" ;
+			skos:altLabel "tree-throw"@en ;
+			skos:altLabel "tree-hole"@en ;
+			skos:prefLabel "treethrow"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#superposition
+:superposition rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Superposition_principle" ;
+			skos:prefLabel "superposition"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#stasis
+:stasis rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Stability_theory" ;
+			skos:prefLabel "stasis"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#shortage
+:shortage rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Shortage" ;
+			skos:prefLabel "shortage"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#progradation
+:progradation rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Progradation" ;
+			skos:prefLabel "progradation"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#repercussion
+:repercussion rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			skos:prefLabel "repercussion"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#lateration
+:lateration rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			skos:prefLabel "lateration"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#multilateration
+:multilateration rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Multilateration" ;
+			skos:prefLabel "multilateration"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#helium-plume
+:helium-plume rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasMatter <matter#helium> ;
+			skos:prefLabel "helium-plume"@en .
+
+
+###Compound Phenomenon
+
+
+###  http://www.geoscienceontology.org/svl/phenomenon#virus%7Echicken-pox_incubation
+:virus%7Echicken-pox_incubation rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#incubate> ;
+			svu:hasBody <body#virus%7Echicken-pox> ;
+			skos:prefLabel "virus~chicken-pox"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#water_vaporization
+:water_vaporization rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#vaporize> ;
+			svu:hasMatter <matter#water> ;
+			skos:prefLabel "water"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#water_sublimation
+:water_sublimation rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#sublimate> ;
+			svu:hasMatter <matter#water> ;
+			skos:prefLabel "water"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#water_fusion
+:water_fusion rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#fuse> ;
+			svu:hasMatter <matter#water> ;
+			skos:prefLabel "water"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#aircraft_flight
+:aircraft_flight rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#fly> ;
+			svu:hasBody <body#aircraft> ;
+			skos:prefLabel "aircraft"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#delta_subsidence
+:delta_subsidence rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#subside> ;
+			svu:hasBody <body#delta> ;
+			skos:prefLabel "delta"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#bond%7Eh-o_dissociation
+:bond%7Eh-o_dissociation rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#dissociate> ;
+			svu:hasPhenomenon :bond%7Eh-o ;
+			skos:prefLabel "bond~h-o"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#sand_grain_settling
+:sand_grain_settling rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#settle> ;
+			svu:hasBody <body#sand_grain> ;
+			skos:prefLabel "sand_grain"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#human_scuba-diver_dive
+:human_scuba-diver_dive rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#dive> ;
+			svu:hasBody <body#scuba-diver> ;
+			skos:prefLabel "scuba-diver"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#air_flow
+:air_flow rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#flow> ;
+			svu:hasMatter <matter#air> ;
+			skos:prefLabel "air_flow"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#ball_fall
+:ball_fall rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#fall> ;
+			svu:hasBody <body#ball> ;
+			skos:prefLabel "ball"@en .
+
+
+###MultiplePhenomenon
+
+
+###  http://www.geoscienceontology.org/svl/phenomenon#air%7Edry-to-water%7Evapor
+:air%7Edry-to-water%7Evapor rdf:type owl:NamedIndividual ,
+			svu:MultiplePhenomenon ;
+			svu:hasFirstRootPhenomenon <matter#air%7Edry> ;
+			svu:hasSecondRootPhenomenon <matter#water%7Evapor> ;
+			skos:prefLabel "air~dry-to-water~vapor"@en .

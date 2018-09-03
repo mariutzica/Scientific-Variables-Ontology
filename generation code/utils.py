@@ -438,6 +438,28 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 phen = vocab.loc[ index, 'phenomenon' ]
                 ttl_file.write( attribute.format( 'hasPhenomenon', \
                         ':' + urllib.quote( phen ), ';' ) )
+            if 'root_one' in vocab.columns.values and \
+                vocab.loc[ index, 'root_one' ] != '' :
+                phen = vocab.loc[ index, 'root_one' ]
+                pref = vocab.loc[ index, 'root_one_pref' ]
+                order = vocab.loc[ index, 'ordered' ]
+                if order == 'yes':
+                    ttl_file.write( attribute.format( 'hasFirstRootPhenomenon', \
+                        '<' + pref + '#' + urllib.quote( phen ) + '>', ';' ) )
+                else:
+                    ttl_file.write( attribute.format( 'hasRootPhenomenon', \
+                        '<' + pref + '#' + urllib.quote( phen ) + '>', ';' ) )
+            if 'root_two' in vocab.columns.values and \
+                vocab.loc[ index, 'root_two' ] != '' :
+                phen = vocab.loc[ index, 'root_two' ]
+                pref = vocab.loc[ index, 'root_two_pref' ]
+                order = vocab.loc[ index, 'ordered' ]
+                if order == 'yes':
+                    ttl_file.write( attribute.format( 'hasSecondRootPhenomenon', \
+                        '<' + pref + '#' + urllib.quote( phen ) + '>', ';' ) )
+                else:
+                    ttl_file.write( attribute.format( 'hasRootPhenomenon', \
+                        '<' + pref + '#' + urllib.quote( phen ) + '>', ';' ) )
             if 'context_id' in vocab.columns.values and \
                 vocab.loc[ index, 'context_id' ] != '' :
                 context = vocab.loc[ index, 'context_id' ]
@@ -471,6 +493,23 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
             pref = vocab.loc[ index, 'phenomenon_pref' ]
             ttl_file.write( attribute.format( 'hasObject', \
                 '<'+pref+'#' + urllib.quote( phen )+'>', ';' ) )
+        if collabel == 'abstraction':
+            if 'abstraction_applied' in vocab.columns.values and \
+                vocab.loc[ index, 'abstraction_applied' ] != '' :
+                abst = vocab.loc[ index, 'abstraction_applied' ]
+                ttl_file.write( attribute.format( 'hasAppliedAbstraction', \
+                        ':' + urllib.quote( abst ), ';' ) )
+            if 'body' in vocab.columns.values and \
+                vocab.loc[ index, 'body' ] != '' :
+                body = vocab.loc[ index, 'body' ]
+                ttl_file.write( attribute.format( 'abstractsPhenomenon', \
+                        '<body#' + urllib.quote( body )+'>', ';' ) )
+            if 'process' in vocab.columns.values and \
+                vocab.loc[ index, 'process' ] != '' :
+                process = vocab.loc[ index, 'process' ].split(', ')
+                for p in process:
+                    ttl_file.write( attribute.format( 'hasProcess', \
+                        '<process#' + urllib.quote( p )+'>', ';' ) )
         if collabel in ['trajectory','matter','body','abstraction','phenomenon'] and \
             'attribute' in vocab.columns.values:
             if vocab.loc[ index, 'attribute' ] != '' :
@@ -510,8 +549,11 @@ def create_variable_entries( vocab, ttl_file, label=None ):
         pref = vocab.loc[ index, 'object_pref']
         cat = vocab.loc[ index, 'object_cat']
         if obj != '':
-            if cat=='root':
+            if (cat=='root') and (pref != 'abstraction'):
                 ttl_file.write( attribute.format( 'hasRootObject', \
+                            '<'+pref+'#' + h.unescape(obj) + '>', ';'))
+            elif pref == 'abstraction':
+                ttl_file.write( attribute.format( 'hasAbstractedObject', \
                             '<'+pref+'#' + h.unescape(obj) + '>', ';'))
             else:
                 ttl_file.write( attribute.format( 'hasObject', \

@@ -41,6 +41,19 @@
 # #################################################################
 # 
 # 
+# http://www.geoscienceontology.org/svu#abstractsPhenomenon
+
+:abstractsPhenomenon a owl:ObjectProperty .
+# 
+# http://www.geoscienceontology.org/svu#hasAbstractedObject
+
+:hasAbstractedObject a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasObject .
+# 
+# http://www.geoscienceontology.org/svu#hasAppliedAbstraction
+
+:hasAppliedAbstraction a owl:ObjectProperty .
+# 
 # http://www.geoscienceontology.org/svu#hasAssociatedProcess
 
 :hasAssociatedProcess a owl:ObjectProperty .
@@ -49,10 +62,20 @@
 
 :hasContext a owl:ObjectProperty .
 # 
+# http://www.geoscienceontology.org/svu#hasContextObject
+
+:hasContextObject a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasObject .
+# 
 # http://www.geoscienceontology.org/svu#hasHeadOperator
 
 :hasHeadOperator a owl:ObjectProperty ;
 	rdfs:subPropertyOf :hasOperator .
+# 
+# http://www.geoscienceontology.org/svu#hasMediumObject
+
+:hasMediumObject a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasObject .
 # 
 # http://www.geoscienceontology.org/svu#hasMediumPhenomenon
 
@@ -61,7 +84,8 @@
 # 
 # http://www.geoscienceontology.org/svu#hasObject
 
-:hasObject a owl:ObjectProperty .
+:hasObject a owl:ObjectProperty ;
+	rdfs:comment "hasObject and related subproperties determine the objects of each variable. A variable has at least one root object, at most one medium object, and may have none or more context objects." .
 # 
 # http://www.geoscienceontology.org/svu#hasOperator
 
@@ -69,7 +93,8 @@
 # 
 # http://www.geoscienceontology.org/svu#hasPhenomenon
 
-:hasPhenomenon a owl:ObjectProperty .
+:hasPhenomenon a owl:ObjectProperty ;
+	rdfs:comment "the hasPhenomenon set of properties are used to build complex phenomena. This property is used to relate phenomena among each other." .
 # 
 # http://www.geoscienceontology.org/svu#hasPropertyQuantification
 
@@ -87,6 +112,11 @@
 # http://www.geoscienceontology.org/svu#hasQuantity
 
 :hasQuantity a owl:ObjectProperty .
+# 
+# http://www.geoscienceontology.org/svu#hasRootObject
+
+:hasRootObject a owl:ObjectProperty ;
+	rdfs:subPropertyOf :hasObject .
 # 
 # http://www.geoscienceontology.org/svu#hasRootPhenomenon
 

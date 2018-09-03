@@ -17,7 +17,7 @@
 #    Process   
 # 
 #################################################################
-##Last generated on: 2018-09-02 17:22
+##Last generated on: 2018-09-03 14:17
 
 ###Process
 
@@ -10253,3 +10253,196 @@
 			svu:hasPresentParticiple "vaccinating" ;
 			svu:hasNominalization "vaccination" ;
 			skos:prefLabel "vaccinate"@en .
+
+###  http://www.geoscienceontology.org/svl/process#downforce
+:downforce rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentParticiple "forcing-down" ;
+			svu:hasNominalization "force-down" ;
+			skos:prefLabel "downforce"@en .
+
+###  http://www.geoscienceontology.org/svl/process#downscale
+:downscale rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentParticiple "scaling-down" ;
+			svu:hasNominalization "scale-down" ;
+			skos:prefLabel "downscale"@en .
+
+###  http://www.geoscienceontology.org/svl/process#downturn
+:downturn rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentParticiple "turning-down" ;
+			svu:hasNominalization "turn-down" ;
+			skos:prefLabel "downturn"@en .
+
+###  http://www.geoscienceontology.org/svl/process#outbreak
+:outbreak rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentParticiple "breaking-out" ;
+			svu:hasNominalization "break-out" ;
+			skos:prefLabel "outbreak"@en .
+
+###  http://www.geoscienceontology.org/svl/process#outburst
+:outburst rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentParticiple "bursting-out" ;
+			svu:hasNominalization "burst-out" ;
+			skos:prefLabel "outburst"@en .
+
+###  http://www.geoscienceontology.org/svl/process#silicificate
+:silicificate rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentParticiple "silicificating" ;
+			svu:hasNominalization "silicification" ;
+			skos:prefLabel "silicificate"@en .
+
+###  http://www.geoscienceontology.org/svl/process#harvest
+:harvest rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Harvest" ;
+			svu:hasPresentParticiple "harvesting" ;
+			svu:hasNominalization "harvest" ;
+			skos:prefLabel "harvest"@en .
+
+###  http://www.geoscienceontology.org/svl/process#downburst
+:downburst rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isDerivedFrom :burst ;
+			svu:hasPresentParticiple "bursting-down" ;
+			svu:hasNominalization "burst-down" ;
+			skos:prefLabel "downburst"@en .
+
+###  http://www.geoscienceontology.org/svl/process#downdraft
+:downdraft rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "downdraft" ;
+			skos:prefLabel "downdraft"@en .
+
+###  http://www.geoscienceontology.org/svl/process#eddy
+:eddy rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Eddy_(fluid_dynamics)" ;
+			svu:hasNominalization "eddy" ;
+			skos:prefLabel "eddy"@en .
+
+###  http://www.geoscienceontology.org/svl/process#exodus
+:exodus rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "exodus" ;
+			skos:prefLabel "exodus"@en .
+
+###  http://www.geoscienceontology.org/svl/process#fecundation
+:fecundation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "fecundation" ;
+			skos:prefLabel "fecundation"@en .
+
+###  http://www.geoscienceontology.org/svl/process#friction
+:friction rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Friction" ;
+			svu:hasNominalization "friction" ;
+			skos:prefLabel "friction"@en .
+
+###  http://www.geoscienceontology.org/svl/process#genesis
+:genesis rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "genesis" ;
+			skos:prefLabel "genesis"@en .
+
+###  http://www.geoscienceontology.org/svl/process#inception
+:inception rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "inception" ;
+			skos:prefLabel "inception"@en .
+
+###  http://www.geoscienceontology.org/svl/process#incursion
+:incursion rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "incursion" ;
+			skos:prefLabel "incursion"@en .
+
+###  http://www.geoscienceontology.org/svl/process#inflow
+:inflow rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isDerivedFrom :%20%20%20 ;
+			svu:hasPresentParticiple "flowing-in" ;
+			svu:hasNominalization "flow-in" ;
+			skos:prefLabel "inflow"@en .
+
+###  http://www.geoscienceontology.org/svl/process#intake
+:intake rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentParticiple "taking-in" ;
+			svu:hasNominalization "take-in" ;
+			skos:prefLabel "intake"@en .
+
+###  http://www.geoscienceontology.org/svl/process#metabolize
+:metabolize rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentParticiple "metabolizing" ;
+			svu:hasNominalization "metabolism" ;
+			skos:prefLabel "metabolize"@en .
+
+###  http://www.geoscienceontology.org/svl/process#omit
+:omit rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentParticiple "omitting" ;
+			svu:hasNominalization "omission" ;
+			skos:prefLabel "omit"@en .
+
+###  http://www.geoscienceontology.org/svl/process#onset
+:onset rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "onset" ;
+			skos:prefLabel "onset"@en .
+
+###  http://www.geoscienceontology.org/svl/process#outage
+:outage rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "outage" ;
+			skos:prefLabel "outage"@en .
+
+###  http://www.geoscienceontology.org/svl/process#sorption
+:sorption rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "sorption" ;
+			skos:prefLabel "sorption"@en .
+
+###  http://www.geoscienceontology.org/svl/process#synchronize
+:synchronize rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentParticiple "synchronizing" ;
+			svu:hasNominalization "synchronization" ;
+			skos:prefLabel "synchronize"@en .
+
+###  http://www.geoscienceontology.org/svl/process#synthesize
+:synthesize rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentParticiple "synthesizing" ;
+			svu:hasNominalization "synthesis" ;
+			skos:prefLabel "synthesize"@en .
+
+###  http://www.geoscienceontology.org/svl/process#syzygy
+:syzygy rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "syzygy" ;
+			skos:prefLabel "syzygy"@en .
+
+###  http://www.geoscienceontology.org/svl/process#tailspin
+:tailspin rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "tailspin" ;
+			skos:prefLabel "tailspin"@en .
+
+###  http://www.geoscienceontology.org/svl/process#slip-rake
+:slip-rake rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "slip-rake" ;
+			skos:prefLabel "slip-rake"@en .
+
+###  http://www.geoscienceontology.org/svl/process#progradation
+:progradation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "progradation" ;
+			skos:prefLabel "progradation"@en .

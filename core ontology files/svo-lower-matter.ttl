@@ -11445,3 +11445,36 @@
 ###  http://www.geoscienceontology.org/svl/matter#water%7Eboiling-point
 :water%7Eboiling-point rdf:type owl:NamedIndividual ,
 			svu:Matter ;
+			svu:isDerivedFrom :water ;
+			svu:hasAttribute <attribute#boiling-point> ;
+			skos:prefLabel "water"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#water%7Efreezing-point
+:water%7Efreezing-point rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :water ;
+			svu:hasAttribute <attribute#freezing-point> ;
+			skos:prefLabel "water"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#water%7Evapor%7Esaturated
+:water%7Evapor%7Esaturated rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :water ;
+			svu:hasAttribute <attribute#vapor> ;
+			svu:hasAttribute <attribute#saturated> ;
+			skos:prefLabel "water~vapor"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#water%7Evapor%7Edew-point
+:water%7Evapor%7Edew-point rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :water ;
+			svu:hasAttribute <attribute#vapor> ;
+			svu:hasAttribute <attribute#dew-point> ;
+			skos:prefLabel "water~vapor"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#air%7Edry
+:air%7Edry rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :air ;
+			svu:hasAttribute <attribute#dry> ;
+			skos:prefLabel "air~dry"@en .
