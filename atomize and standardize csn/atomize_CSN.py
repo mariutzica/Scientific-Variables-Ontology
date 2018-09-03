@@ -186,29 +186,19 @@ csn.loc[ cond_obj0, 'object_pref'] = 'body'
 csn.loc[ cond_obj0, 'quantity_id'] = csn.loc[ cond_obj0, 'quantity_label']
 csn.loc[ cond_obj0, 'object0'] = ''
 
-##atmosphere_aerosol_dust
-#cond_obj0 = csn['object0'] == 'atmosphere'
-#cond_obj1 = csn['object1'] == 'aerosol'
-#cond_obj2 = csn['object2'] == 'dust'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#            'second_root_object_matter_configstate'] = 'aerosol~dust'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#            'root_object_context_phen'] = 'atmosphere'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#            'second_root_object_context_phen'] = 'atmosphere'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2,\
-#            'root_object_in_process_interaction'] = 'transmission'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2,\
-#            'second_root_object_in_process_interaction'] = 'transmission'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2,\
-#            'two_object_operator'] = 'reduction'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2,\
-#            'operator0'] = ''
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'root_quantity1'] = 'transmittance'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'root_quantity2'] = 'transmittance'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2,\
-#            ['object0','object1','object2']]=''
-#
+#atmosphere_aerosol_dust
+cond_obj0 = csn['object0'] == 'atmosphere'
+cond_obj1 = csn['object1'] == 'aerosol'
+cond_obj2 = csn['object2'] == 'dust'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+            'object_id'] = 'atmosphere_in_aerosol~dust_transmission'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+            'object_label'] = 'atmosphere_aerosol~dust'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'quantity_id'] = \
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'quantity_label']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2,\
+            ['object0','object1','object2']]=''
+
 ##atmosphere_aerosol_radiation        
 #cond_obj0 = csn['object0'] == 'atmosphere'
 #cond_obj1 = csn['object1'] == 'aerosol'

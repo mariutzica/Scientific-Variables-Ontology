@@ -299,7 +299,7 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
             if vocab.loc[ index, 'property_role' ] != '' :
                 prole = vocab.loc[ index, 'property_role' ]
                 ttl_file.write( attribute.format( 'hasPropertyRole', \
-                            ':' + urllib.quote( prole ), ';' ) )
+                            '<role#' + urllib.quote( prole ) +'>', ';' ) )
             if vocab.loc[ index, 'property_quantification' ] != '' :
                 pquant = vocab.loc[ index, 'property_quantification' ]
                 ttl_file.write( attribute.format( 'hasPropertyQuantification', \
@@ -460,6 +460,16 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 else:
                     ttl_file.write( attribute.format( 'hasRootPhenomenon', \
                         '<' + pref + '#' + urllib.quote( phen ) + '>', ';' ) )
+            if 'participant_one' in vocab.columns.values and \
+                vocab.loc[ index, 'participant_one' ] != '' :
+                participant = vocab.loc[ index, 'participant_one' ]
+                ttl_file.write( attribute.format( 'hasParticipant', \
+                        '<participant#' + urllib.quote( participant ) + '>', ';' ) )
+            if 'participant_two' in vocab.columns.values and \
+                vocab.loc[ index, 'participant_two' ] != '' :
+                participant = vocab.loc[ index, 'participant_two' ]
+                ttl_file.write( attribute.format( 'hasParticipant', \
+                        '<participant#' + urllib.quote( participant ) + '>', ';' ) )
             if 'context_id' in vocab.columns.values and \
                 vocab.loc[ index, 'context_id' ] != '' :
                 context = vocab.loc[ index, 'context_id' ]
@@ -510,6 +520,18 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 for p in process:
                     ttl_file.write( attribute.format( 'hasProcess', \
                         '<process#' + urllib.quote( p )+'>', ';' ) )
+        if collabel == 'participant':
+            if 'phenomenon' in vocab.columns.values and \
+                vocab.loc[ index, 'phenomenon' ] != '' :
+                phen = vocab.loc[ index, 'phenomenon' ]
+                pref = vocab.loc[ index, 'phenomenon_pref' ]
+                ttl_file.write( attribute.format( 'hasPhenomenon', \
+                        '<'+pref+'#' + urllib.quote( phen )+'>', ';' ) )
+            if 'role' in vocab.columns.values and \
+                vocab.loc[ index, 'role' ] != '' :
+                role = vocab.loc[ index, 'role' ]
+                ttl_file.write( attribute.format( 'hasParticipantRole', \
+                        '<role#' + urllib.quote( role )+'>', ';' ) )
         if collabel in ['trajectory','matter','body','abstraction','phenomenon'] and \
             'attribute' in vocab.columns.values:
             if vocab.loc[ index, 'attribute' ] != '' :

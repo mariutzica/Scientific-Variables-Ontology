@@ -17,7 +17,7 @@
 #    Phenomenon   
 # 
 #################################################################
-##Last generated on: 2018-09-03 14:17
+##Last generated on: 2018-09-03 14:57
 
 ###Phenomenon
 
@@ -3637,3 +3637,15 @@
 			svu:hasFirstRootPhenomenon <matter#air%7Edry> ;
 			svu:hasSecondRootPhenomenon <matter#water%7Evapor> ;
 			skos:prefLabel "air~dry-to-water~vapor"@en .
+
+
+###InteractionPhenomenon
+
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation_aerosol%7Edust_transmission
+:radiation_aerosol%7Edust_transmission rdf:type owl:NamedIndividual ,
+			svu:InteractionPhenomenon ;
+			svu:hasProcess <process#transmission> ;
+			svu:hasParticipant <participant#radiation> ;
+			svu:hasParticipant <participant#aerosol%7Edust> ;
+			skos:prefLabel "aerosol~dust"@en .

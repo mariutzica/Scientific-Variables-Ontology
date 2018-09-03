@@ -17,7 +17,7 @@
 #    Body   
 # 
 #################################################################
-##Last generated on: 2018-09-03 14:17
+##Last generated on: 2018-09-03 14:57
 
 ###Inanimate Natural Body
 
@@ -452,6 +452,13 @@
 :sand_grain rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			skos:prefLabel "sand_grain"@en .
+
+###  http://www.geoscienceontology.org/svl/body#dust%7Eaerosol
+:dust%7Eaerosol rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isDerivedFrom :dust ;
+			svu:hasAttribute <attribute#aerosol> ;
+			skos:prefLabel "dust~aerosol"@en .
 
 
 ###Inanimate Fabricated Body

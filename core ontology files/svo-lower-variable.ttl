@@ -17,7 +17,7 @@
 #    Variable   
 # 
 #################################################################
-##Last generated on: 2018-09-03 14:17
+##Last generated on: 2018-09-03 14:57
 
 ###CSN Variables
 
@@ -173,6 +173,13 @@
 			svu:hasProperty <property#voltage> ;
 			svu:hasRootObject <body#appliance~electric> ;
 			skos:prefLabel "appliance~electric__voltage"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_aerosol%7Edust__reduction_of_transmittance
+:atmosphere_aerosol%7Edust__reduction_of_transmittance rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#reduction_of_transmittance> ;
+			svu:hasObject <#atmosphere_in_aerosol~dust_transmission> ;
+			skos:prefLabel "atmosphere_aerosol~dust__reduction_of_transmittance"@en .
 
 ###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_flow__azimuth_angle_of_bolus_velocity
 :atmosphere_air_flow__azimuth_angle_of_bolus_velocity rdf:type owl:NamedIndividual ,

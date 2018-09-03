@@ -17,7 +17,7 @@
 #    Role   
 # 
 #################################################################
-##Last generated on: 2018-09-03 14:17
+##Last generated on: 2018-09-03 14:57
 
 ###Role
 
@@ -194,3 +194,62 @@
 			svu:Role ;
 			svu:isDerivedFrom :source ;
 			skos:prefLabel "source~of-water"@en .
+
+
+###ParticipantRole
+
+
+###  http://www.geoscienceontology.org/svl/role#sink
+:sink rdf:type owl:NamedIndividual ,
+			svu:ParticipantRole ;
+			skos:prefLabel "sink"@en .
+
+###  http://www.geoscienceontology.org/svl/role#source
+:source rdf:type owl:NamedIndividual ,
+			svu:ParticipantRole ;
+			skos:prefLabel "source"@en .
+
+###  http://www.geoscienceontology.org/svl/role#main
+:main rdf:type owl:NamedIndividual ,
+			svu:ParticipantRole ;
+			skos:prefLabel "main"@en .
+
+
+###PropertyRole
+
+
+###  http://www.geoscienceontology.org/svl/role#coefficient
+:coefficient rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Coefficient" ;
+			skos:prefLabel "coefficient"@en .
+
+###  http://www.geoscienceontology.org/svl/role#constant
+:constant rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mathematical_constant" ;
+			skos:prefLabel "constant"@en .
+
+###  http://www.geoscienceontology.org/svl/role#exponent
+:exponent rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Exponent" ;
+			skos:prefLabel "exponent"@en .
+
+###  http://www.geoscienceontology.org/svl/role#parameter
+:parameter rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Parameter" ;
+			skos:prefLabel "parameter"@en .
+
+###  http://www.geoscienceontology.org/svl/role#term
+:term rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Term_(logic)" ;
+			skos:prefLabel "term"@en .
+
+###  http://www.geoscienceontology.org/svl/role#factor
+:factor rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Factor" ;
+			skos:prefLabel "factor"@en .

@@ -1,0 +1,37 @@
+@prefix : <http://www.geoscienceontology.org/svl/participant#> .
+@prefix svu: <http://www.geoscienceontology.org/svu#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://www.geoscienceontology.org/svl/> .
+
+<http://www.geoscienceontology.org/svl/participant> rdf:type owl:Ontology ;
+				rdfs:comment " Scientific Variables Lower Ontology, Participant BETA VERSION." .
+#				owl:imports <http://www.geoscienceontology.org/svu> .
+
+
+#################################################################
+#    Participant   
+# 
+#################################################################
+##Last generated on: 2018-09-03 14:57
+
+###Participant
+
+
+###  http://www.geoscienceontology.org/svl/participant#radiation_main
+:radiation_main rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <phenomenon#radiation> ;
+			svu:hasParticipantRole <role#main> ;
+			skos:prefLabel "radiation"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#aerosol%7Edust_sink
+:aerosol%7Edust_sink rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <body#aerosol%7Edust> ;
+			svu:hasParticipantRole <role#sink> ;
+			skos:prefLabel "aerosol~dust"@en .

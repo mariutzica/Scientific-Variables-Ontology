@@ -39,6 +39,7 @@ phenomenon_context_file  = 'phenomenon_context.csv'
 phenomenon_medium_file  = 'phenomenon_medium.csv'
 compound_phenomenon_file  = 'phenomenon_compound.csv'
 phenomenon_multiple_file  = 'phenomenon_multiple.csv'
+phenomenon_interaction_system_file  = 'phenomenon_interaction_system.csv'
 
 qualitative_attribute_file  = 'qualitative_attribute.csv'
 quantitative_attribute_file  = 'quantitative_attribute.csv'
@@ -62,6 +63,8 @@ abstraction_part_file  = 'abstraction_mathematical_part.csv'
 part_file  = 'part.csv'
 
 role_file  = 'role.csv'
+participant_file  = 'participant.csv'
+participant_role_file  = 'participant_role.csv'
 
 trajectory_file  = 'trajectory.csv'
 trajectory_direction_file  = 'trajectory_direction.csv'
@@ -99,6 +102,8 @@ phenomenon_medium_vocabulary = \
             utils.load_data( ext_vocabulary, phenomenon_medium_file )  
 phenomenon_multiple_vocabulary = \
             utils.load_data( ext_vocabulary, phenomenon_multiple_file )  
+phenomenon_interaction_system_vocabulary = \
+            utils.load_data( ext_vocabulary, phenomenon_interaction_system_file )  
 compound_phenomenon_vocabulary = \
             utils.load_data( ext_vocabulary, compound_phenomenon_file )  
 qualitative_attribute_vocabulary = \
@@ -133,6 +138,10 @@ animate_body_part_vocabulary = \
             utils.load_data( ext_vocabulary, animate_body_part_file ) 
 role_vocabulary = \
             utils.load_data( ext_vocabulary, role_file ) 
+participant_vocabulary = \
+            utils.load_data( ext_vocabulary, participant_file ) 
+participant_role_vocabulary = \
+            utils.load_data( ext_vocabulary, participant_role_file ) 
 trajectory_vocabulary = \
             utils.load_data( ext_vocabulary, trajectory_file ) 
 trajectory_direction_vocabulary = \
@@ -159,6 +168,8 @@ body_ttl = open( ext_output + 'svo-lower-body.ttl', 'w' )
 abstraction_ttl = open( ext_output + 'svo-lower-abstraction.ttl', 'w' )
 part_ttl = open( ext_output + 'svo-lower-part.ttl', 'w' )
 role_ttl = open( ext_output + 'svo-lower-role.ttl', 'w' )
+participant_ttl = open( ext_output + 'svo-lower-participant.ttl', 'w' )
+participant_role_ttl = open( ext_output + 'svo-lower-participant-role.ttl', 'w' )
 trajectory_ttl = open( ext_output + 'svo-lower-trajectory.ttl', 'w' )
 trajectory_direction_ttl = open( ext_output + 'svo-lower-trajectory-direction.ttl', 'w' )
 relationship_ttl = open( ext_output + 'svo-lower-relationship.ttl', 'w' )
@@ -175,6 +186,8 @@ utils.open_write_file( body_ttl, 'Body' )
 utils.open_write_file( abstraction_ttl, 'Abstraction' )
 utils.open_write_file( part_ttl, 'Part' )
 utils.open_write_file( role_ttl, 'Role' )
+utils.open_write_file( participant_ttl, 'Participant' )
+utils.open_write_file( participant_role_ttl, 'ParticipantRole' )
 utils.open_write_file( trajectory_ttl, 'Trajectory' )
 utils.open_write_file( trajectory_direction_ttl, 'TrajectoryDirection' )
 utils.open_write_file( relationship_ttl, 'Relationship' )
@@ -208,11 +221,6 @@ utils.create_bb_file( qual_property_vocabulary, property_ttl, 'Property', \
 label = '\n\n###PropertyQuantification\n\n'
 utils.create_bb_file( property_quantification_vocabulary, property_ttl, \
                       'PropertyQuantification', 'property_quantification', \
-                      'property', label = label )
-
-label = '\n\n###PropertyRole\n\n'
-utils.create_bb_file( property_role_vocabulary, property_ttl, \
-                      'PropertyRole', 'property_role', \
                       'property', label = label )
 
 label = '\n\n###PropertyType\n\n'
@@ -261,6 +269,9 @@ utils.create_bb_file( compound_phenomenon_vocabulary, phenomenon_ttl, \
 label = '\n\n###MultiplePhenomenon\n\n'
 utils.create_bb_file( phenomenon_multiple_vocabulary, phenomenon_ttl, \
                       'MultiplePhenomenon', 'phenomenon', 'phenomenon', label = label )
+label = '\n\n###InteractionPhenomenon\n\n'
+utils.create_bb_file( phenomenon_interaction_system_vocabulary, phenomenon_ttl, \
+                      'InteractionPhenomenon', 'phenomenon', 'phenomenon', label = label )
 
 # create Attribute file
 label = '\n\n###(Qualitative)Attribute\n\n'
@@ -324,6 +335,18 @@ utils.create_bb_file( part_vocabulary, part_ttl, \
 label = '\n\n###Role\n\n'
 utils.create_bb_file( role_vocabulary, role_ttl, \
                       'Role', 'role', 'role', label = label )
+label = '\n\n###ParticipantRole\n\n'
+utils.create_bb_file( participant_role_vocabulary, role_ttl, \
+                      'ParticipantRole', 'participant_role', 'role', label = label )
+label = '\n\n###PropertyRole\n\n'
+utils.create_bb_file( property_role_vocabulary, role_ttl, \
+                      'PropertyRole', 'property_role', \
+                      'role', label = label )
+
+# create Participant file
+label = '\n\n###Participant\n\n'
+utils.create_bb_file( participant_vocabulary, participant_ttl, \
+                      'Participant', 'participant', 'participant', label = label )
 
 # create Trajectory file
 label = '\n\n###Trajectory\n\n'
@@ -363,6 +386,7 @@ form_ttl.close()
 body_ttl.close()
 abstraction_ttl.close()
 role_ttl.close()
+participant_ttl.close()
 trajectory_ttl.close()
 trajectory_direction_ttl.close()
 relationship_ttl.close()
