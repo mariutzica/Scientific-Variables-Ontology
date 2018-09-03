@@ -199,160 +199,109 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'quantity_id'] = \
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2,\
             ['object0','object1','object2']]=''
 
-##atmosphere_aerosol_radiation        
-#cond_obj0 = csn['object0'] == 'atmosphere'
-#cond_obj1 = csn['object1'] == 'aerosol'
-#cond_quant = csn['quantity'].str.endswith('ance')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-#            'root_object_matter_configstate'] = 'aerosol'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-#            'root_object_context_phen'] = 'atmosphere'
-#cond_obj2 = csn['object2'].str.contains('incoming')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#            'root_object_in_trajectory_direction'] = 'incoming'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#            'root_object_in_phen'] = \
-#        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'object2']\
-#        .str.replace('~incoming','').str.replace('~shortwave','')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#            'root_object_in_phen_descriptor'] = 'shortwave'
-#cond_obj2 = csn['object2'].str.contains('outgoing')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#            'root_object_out_trajectory_direction'] = 'outgoing'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#            'root_object_out_phen'] = \
-#        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'object2']\
-#        .str.replace('~outgoing','').str.replace('~longwave','')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#            'root_object_out_phen_descriptor'] = 'longwave'
-#cond_obj2 = csn['object2'].str.contains('incoming')
-#cond_quant = csn['quantity'].str.endswith('flux')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant,\
-#        'root_object_sink_matter_configstate'] = 'aerosol'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant,\
-#        'root_object_sink_context_phen'] = 'atmosphere'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant,\
-#        'root_object_trajectory_direction'] = 'incoming'
-#cond_obj2 = csn['object2'].str.contains('outgoing')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant,\
-#    'root_object_source_matter_configstate'] = 'aerosol'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant,\
-#    'root_object_source_context_phen'] = 'atmosphere'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant,\
-#        'root_object_trajectory_direction'] = 'outgoing'
-#cond_obj2 = csn['object2'].str.contains('~upward')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant,\
-#        'root_object_trajectory_direction'] = 'outgoing~upward'
-#cond_obj2 = csn['object2'].str.contains('~downward')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant,\
-#        'root_object_trajectory_direction'] = 'outgoing~downward'
-#cond_obj2 = csn['object2'].str.contains('outgoing')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_phen_descriptor'] = 'longwave'
-#cond_obj2 = csn['object2'].str.contains('incoming')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_phen_descriptor'] = 'shortwave'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_quant,'root_object_phen'] = \
-#        csn.loc[ cond_obj0 & cond_obj1 & cond_quant,'object2']\
-#        .str.replace('~outgoing','').str.replace('~upward','')\
-#        .str.replace('~downward','').str.replace('~incoming','')\
-#        .str.replace('~shortwave','').str.replace('~longwave','')
-#cond_quant = csn['quantity'].str.contains('absorptance')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-#        'root_object_in_process_interaction'] = 'absorption'
-#cond_quant = csn['quantity'].str.contains('reflectance')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-#        'root_object_in_process_interaction'] = 'reflection'
-#cond_quant = csn['quantity'].str.contains('transmittance')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-#        'root_object_in_process_interaction'] = 'transmission'
-#cond_quant = csn['quantity'].str.contains('emittance')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-#        'root_object_out_process_interaction'] = 'emission'
-#cond_quant = csn['quantity'].str.contains('absorbed')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-#        'root_object_sink_process_interaction'] = 'absorption'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-#        'root_object_condition'] = 'absorbed'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-#        'modified_quantity'] = 'energy_flux'
-#cond_quant = csn['quantity'].str.contains('reflected')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-#        'root_object_sink_process_interaction'] = 'reflection'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-#        'root_object_condition'] = 'reflected'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-#        'modified_quantity'] = 'energy_flux'
-#cond_quant = csn['quantity'].str.contains('transmitted')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-#        'root_object_sink_process_interaction'] = 'transmission'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-#        'root_object_condition'] = 'transmitted'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-#        'modified_quantity'] = 'energy_flux'
-#csn.loc[ cond_obj0 & cond_obj1, ['object0','object1','object2']] = ''
-#
-##atmosphere_air
-#cond_obj0 = csn['object0'] == 'atmosphere'
-#cond_obj1 = csn['object1'] == 'air'
-#cond_obj2 = csn['object2'] == ''
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_matter'] = 'air'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_context_phen'] = 'atmosphere'
-#cond_quant = csn['quantity'] == 'mass-specific_isobaric_heat_capacity'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'modified_quantity'] = 'mass-specific_heat_capacity'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_condition'] = 'isobaric'
-#cond_quant = csn['quantity'] == 'mass-specific_isochoric_heat_capacity'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'modified_quantity']='mass-specific_heat_capacity'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_condition'] = 'isochoric'
-#cond_quant = csn['quantity'] == 'volume-specific_isobaric_heat_capacity'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'modified_quantity']='volume-specific_heat_capacity'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_condition'] = 'isobaric'
-#cond_quant = csn['quantity']=='volume-specific_isochoric_heat_capacity'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'modified_quantity']='volume-specific_heat_capacity'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_condition'] = 'isochoric'
-#cond_quant = csn['quantity'] == 'static_pressure_environmental_lapse_rate'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'modified_quantity']='environmental_static_pressure_lapse_rate'
-#cond_quant = csn['quantity'] == 'temperature_dry_adiabatic_lapse_rate'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'modified_quantity']='temperature_lapse_rate'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_condition']='adiabatic'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_matter_descriptor']='dry'
-#cond_quant = csn['quantity'] == 'temperature_saturated_adiabatic_lapse_rate'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'modified_quantity']='temperature_lapse_rate'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_condition']='saturated_adiabatic'
-#cond_quant = csn['quantity'] == 'temperature_environmental_lapse_rate'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'modified_quantity']='environmental_temperature_lapse_rate'
-#cond_quant = csn['quantity'] == 'temperature_lapse_rate'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'modified_quantity']='temperature_lapse_rate'
-#cond_quant = csn['quantity'] == 'isentropic_compressibility'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_condition']='isentropic'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'modified_quantity']='compressibility'
-#cond_quant = csn['quantity'] == 'isothermal_compressibility'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_condition']='isothermal'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'modified_quantity']='compressibility'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1']] = ''
-#
+#atmosphere_aerosol_radiation        
+cond_obj0 = csn['object0'] == 'atmosphere'
+cond_obj1 = csn['object1'] == 'aerosol'
+csn.loc[ cond_obj0 & cond_obj1, \
+            'object_id'] = 'atmosphere_in_aerosol_'
+csn.loc[ cond_obj0 & cond_obj1, \
+            'object_pref'] = 'phenomenon'
+cond_quant = csn['quantity'].str.endswith('ance')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+            'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+            'object_id']+'main_'+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+            'object2']
+cond_obj2 = csn['object2'].str.contains('incoming')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+            'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+            'object_id']+'_in_'
+cond_obj2 = csn['object2'].str.contains('outgoing')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+            'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+            'object_id']+'_out_'
+cond_quant = csn['quantity']=='energy_flux'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+            'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+            'object_id']+'source_'+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+            'object2']+'_main_emission'
+cond_quant = csn['quantity'].str.contains('_energy')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+            'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+            'object_id']+'sink_'+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+            'object2']+'_main_'
+csn.loc[ cond_obj0 & cond_obj1, \
+            'object_label'] = csn.loc[ cond_obj0 & cond_obj1, \
+            'object_id'].str.replace('_in_','_').str.replace('_out_','_')\
+            .str.replace('_sink_','_').str.replace('_source_','_')\
+            .str.replace('_main_','_').str.replace('emission','').str.rstrip('_')
+cond_quant = csn['quantity'].str.contains('absor')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_id'] + 'absorption'
+cond_quant = csn['quantity'].str.contains('refl')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_id'] + 'reflection'
+cond_quant = csn['quantity'].str.contains('transmit')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_id'] + 'transmission'
+cond_quant = csn['quantity'].str.contains('emit')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_id'] + 'emission'
+csn.loc[ cond_obj0 & cond_obj1, ['object0','object1','object2']] = ''
+
+#atmosphere_air
+cond_obj0 = csn['object0'] == 'atmosphere'
+cond_obj1 = csn['object1'] == 'air'
+cond_obj2 = csn['object2'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'atmosphere_in_air'
+cond_quant = csn['quantity'] == 'mass-specific_isobaric_heat_capacity'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'quantity_label'] = 'isobaric_mass-specific_heat_capacity'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'atmosphere_in_air_process_isobaric'
+cond_quant = csn['quantity'] == 'mass-specific_isochoric_heat_capacity'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'quantity_label']='isochoric_mass-specific_heat_capacity'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'atmosphere_in_air_process_isochoric'
+cond_quant = csn['quantity'] == 'volume-specific_isobaric_heat_capacity'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'quantity_label']='isobaric_volume-specific_heat_capacity'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'atmosphere_in_air_process_isobaric'
+cond_quant = csn['quantity']=='volume-specific_isochoric_heat_capacity'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'quantity_label']='isochoric_volume-specific_heat_capacity'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'atmosphere_in_air_process_isochoric'
+cond_quant = csn['quantity'] == 'static_pressure_environmental_lapse_rate'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'quantity_label']='environmental_static_pressure_lapse_rate'
+cond_quant = csn['quantity'] == 'temperature_dry_adiabatic_lapse_rate'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'quantity_label']='dry_adiabatic_temperature_lapse_rate'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'atmosphere_in_air~dry_process_adiabatic'
+cond_quant = csn['quantity'] == 'temperature_saturated_adiabatic_lapse_rate'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'quantity_label']='saturated_adiabatic_temperature_lapse_rate'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'atmosphere_in_air~saturated_process_adiabatic'
+cond_quant = csn['quantity'] == 'temperature_environmental_lapse_rate'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'quantity_label']='environmental_temperature_lapse_rate'
+cond_quant = csn['quantity'] == 'isentropic_compressibility'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'atmosphere_in_air_process_isentropic'
+cond_quant = csn['quantity'] == 'isothermal_compressibility'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'atmosphere_in_air_process_isothermal'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1']] = ''
+
 ##atmosphere_air-column_aerosol~dry
 #cond_obj0 = csn['object0'] == 'atmosphere'
 #cond_obj1 = csn['object1'] == 'air-column'

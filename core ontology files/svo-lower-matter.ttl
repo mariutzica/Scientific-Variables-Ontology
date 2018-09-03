@@ -11478,3 +11478,10 @@
 			svu:isDerivedFrom :air ;
 			svu:hasAttribute <attribute#dry> ;
 			skos:prefLabel "air~dry"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#air%7Esaturated
+:air%7Esaturated rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :air ;
+			svu:hasAttribute <attribute#saturated> ;
+			skos:prefLabel "air~saturated"@en .

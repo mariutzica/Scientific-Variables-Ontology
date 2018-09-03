@@ -17,7 +17,7 @@
 #    Participant   
 # 
 #################################################################
-##Last generated on: 2018-09-03 14:57
+##Last generated on: 2018-09-03 17:36
 
 ###Participant
 
@@ -35,3 +35,59 @@
 			svu:hasPhenomenon <body#aerosol%7Edust> ;
 			svu:hasParticipantRole <role#sink> ;
 			skos:prefLabel "aerosol~dust"@en .
+
+###  http://www.geoscienceontology.org/svl/body#aerosol_main
+:aerosol_main rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <form#aerosol> ;
+			svu:hasParticipantRole <role#main> ;
+			skos:prefLabel "aerosol"@en .
+
+###  http://www.geoscienceontology.org/svl/form#radiation%7Eoutgoing%7Elongwave_out
+:radiation%7Eoutgoing%7Elongwave_out rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <phenomenon#radiation%7Eoutgoing%7Elongwave> ;
+			svu:hasParticipantRole <role#out> ;
+			skos:prefLabel "radiation~outgoing~longwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#aerosol_sink
+:aerosol_sink rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <form#aerosol> ;
+			svu:hasParticipantRole <role#sink> ;
+			skos:prefLabel "aerosol"@en .
+
+###  http://www.geoscienceontology.org/svl/form#radiation%7Eincoming%7Eshortwave_main
+:radiation%7Eincoming%7Eshortwave_main rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <phenomenon#radiation%7Eincoming%7Eshortwave> ;
+			svu:hasParticipantRole <role#main> ;
+			skos:prefLabel "radiation~incoming~shortwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eincoming%7Eshortwave_in
+:radiation%7Eincoming%7Eshortwave_in rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <phenomenon#radiation%7Eincoming%7Eshortwave> ;
+			svu:hasParticipantRole <role#in> ;
+			skos:prefLabel "radiation~incoming~shortwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eoutgoing%7Elongwave%7Edownward_main
+:radiation%7Eoutgoing%7Elongwave%7Edownward_main rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <phenomenon#radiation%7Eoutgoing%7Elongwave%7Edownward> ;
+			svu:hasParticipantRole <role#main> ;
+			skos:prefLabel "radiation~outgoing~longwave~downward"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eoutgoing%7Elongwave%7Eupward_main
+:radiation%7Eoutgoing%7Elongwave%7Eupward_main rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <phenomenon#radiation%7Eoutgoing%7Elongwave%7Eupward> ;
+			svu:hasParticipantRole <role#main> ;
+			skos:prefLabel "radiation~outgoing~longwave~upward"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#aerosol_source
+:aerosol_source rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <form#aerosol> ;
+			svu:hasParticipantRole <role#source> ;
+			skos:prefLabel "aerosol"@en .

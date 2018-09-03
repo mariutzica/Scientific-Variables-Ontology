@@ -17,7 +17,7 @@
 #    Phenomenon   
 # 
 #################################################################
-##Last generated on: 2018-09-03 14:57
+##Last generated on: 2018-09-03 17:36
 
 ###Phenomenon
 
@@ -253,6 +253,30 @@
 			svu:hasAttribute <attribute#longwave> ;
 			skos:prefLabel "radiation~longwave"@en .
 
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eoutgoing%7Elongwave
+:radiation%7Eoutgoing%7Elongwave rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasTrajectoryDirection <trajectorydirection#outgoing> ;
+			svu:hasAttribute <attribute#longwave> ;
+			skos:prefLabel "radiation~outgoing~longwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eoutgoing%7Elongwave%7Edownward
+:radiation%7Eoutgoing%7Elongwave%7Edownward rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasTrajectoryDirection <trajectorydirection#outgoing%2C%20downward> ;
+			svu:hasAttribute <attribute#longwave> ;
+			skos:prefLabel "radiation~outgoing~longwave~downward"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eoutgoing%7Elongwave%7Eupward
+:radiation%7Eoutgoing%7Elongwave%7Eupward rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasTrajectoryDirection <trajectorydirection#outgoing%2C%20upward> ;
+			svu:hasAttribute <attribute#longwave> ;
+			skos:prefLabel "radiation~outgoing~longwave~upward"@en .
+
 ###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Emicrowave
 :radiation%7Emicrowave rdf:type owl:NamedIndividual ,
 			svu:Phenomenon ;
@@ -278,6 +302,14 @@
 			svu:isDerivedFrom :radiation ;
 			svu:hasAttribute <attribute#shortwave> ;
 			skos:prefLabel "radiation~shortwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eincoming%7Eshortwave
+:radiation%7Eincoming%7Eshortwave rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasTrajectoryDirection <trajectorydirection#incoming> ;
+			svu:hasAttribute <attribute#shortwave> ;
+			skos:prefLabel "radiation~incoming~shortwave"@en .
 
 ###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Euv
 :radiation%7Euv rdf:type owl:NamedIndividual ,
@@ -1429,6 +1461,30 @@
 			svu:hasAttribute <attribute#longwave> ;
 			skos:prefLabel "radiation~longwave"@en .
 
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eoutgoing%7Elongwave
+:radiation%7Eoutgoing%7Elongwave rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasTrajectoryDirection <trajectorydirection#outgoing> ;
+			svu:hasAttribute <attribute#longwave> ;
+			skos:prefLabel "radiation~outgoing~longwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eoutgoing%7Elongwave%7Edownward
+:radiation%7Eoutgoing%7Elongwave%7Edownward rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasTrajectoryDirection <trajectorydirection#outgoing%2C%20downward> ;
+			svu:hasAttribute <attribute#longwave> ;
+			skos:prefLabel "radiation~outgoing~longwave~downward"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eoutgoing%7Elongwave%7Eupward
+:radiation%7Eoutgoing%7Elongwave%7Eupward rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasTrajectoryDirection <trajectorydirection#outgoing%2C%20upward> ;
+			svu:hasAttribute <attribute#longwave> ;
+			skos:prefLabel "radiation~outgoing~longwave~upward"@en .
+
 ###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Emicrowave
 :radiation%7Emicrowave rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -1454,6 +1510,14 @@
 			svu:isDerivedFrom :radiation ;
 			svu:hasAttribute <attribute#shortwave> ;
 			skos:prefLabel "radiation~shortwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eincoming%7Eshortwave
+:radiation%7Eincoming%7Eshortwave rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasTrajectoryDirection <trajectorydirection#incoming> ;
+			svu:hasAttribute <attribute#shortwave> ;
+			skos:prefLabel "radiation~incoming~shortwave"@en .
 
 ###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Euv
 :radiation%7Euv rdf:type owl:NamedIndividual ,
@@ -2605,6 +2669,30 @@
 			svu:hasAttribute <attribute#longwave> ;
 			skos:prefLabel "radiation~longwave"@en .
 
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eoutgoing%7Elongwave
+:radiation%7Eoutgoing%7Elongwave rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasTrajectoryDirection <trajectorydirection#outgoing> ;
+			svu:hasAttribute <attribute#longwave> ;
+			skos:prefLabel "radiation~outgoing~longwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eoutgoing%7Elongwave%7Edownward
+:radiation%7Eoutgoing%7Elongwave%7Edownward rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasTrajectoryDirection <trajectorydirection#outgoing%2C%20downward> ;
+			svu:hasAttribute <attribute#longwave> ;
+			skos:prefLabel "radiation~outgoing~longwave~downward"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eoutgoing%7Elongwave%7Eupward
+:radiation%7Eoutgoing%7Elongwave%7Eupward rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasTrajectoryDirection <trajectorydirection#outgoing%2C%20upward> ;
+			svu:hasAttribute <attribute#longwave> ;
+			skos:prefLabel "radiation~outgoing~longwave~upward"@en .
+
 ###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Emicrowave
 :radiation%7Emicrowave rdf:type owl:NamedIndividual ,
 			svu:MediumPhenomenon ;
@@ -2630,6 +2718,14 @@
 			svu:isDerivedFrom :radiation ;
 			svu:hasAttribute <attribute#shortwave> ;
 			skos:prefLabel "radiation~shortwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eincoming%7Eshortwave
+:radiation%7Eincoming%7Eshortwave rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasTrajectoryDirection <trajectorydirection#incoming> ;
+			svu:hasAttribute <attribute#shortwave> ;
+			skos:prefLabel "radiation~incoming~shortwave"@en .
 
 ###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Euv
 :radiation%7Euv rdf:type owl:NamedIndividual ,
@@ -3627,6 +3723,48 @@
 			svu:hasBody <body#ball> ;
 			skos:prefLabel "ball"@en .
 
+###  http://www.geoscienceontology.org/svl/phenomenon#air_process_isobaric
+:air_process_isobaric rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#isobaric-process> ;
+			svu:hasMatter <matter#air> ;
+			skos:prefLabel "air"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#air_process_isochoric
+:air_process_isochoric rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#isochoric-process> ;
+			svu:hasMatter <matter#air> ;
+			skos:prefLabel "air"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#air%7Edry_process_adiabatic
+:air%7Edry_process_adiabatic rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#adiabatic-process> ;
+			svu:hasMatter <matter#air%7Edry> ;
+			skos:prefLabel "air"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#air%7Esaturated_process_adiabatic
+:air%7Esaturated_process_adiabatic rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#adiabatic-process> ;
+			svu:hasMatter <matter#air%7Esaturated> ;
+			skos:prefLabel "air"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#air_process_isentropic
+:air_process_isentropic rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#isentropic-process> ;
+			svu:hasMatter <matter#air> ;
+			skos:prefLabel "air"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#air_process_isothermal
+:air_process_isothermal rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#isothermal-process> ;
+			svu:hasMatter <matter#air> ;
+			skos:prefLabel "air"@en .
+
 
 ###MultiplePhenomenon
 
@@ -3646,6 +3784,78 @@
 :radiation_aerosol%7Edust_transmission rdf:type owl:NamedIndividual ,
 			svu:InteractionPhenomenon ;
 			svu:hasProcess <process#transmission> ;
-			svu:hasParticipant <participant#radiation> ;
-			svu:hasParticipant <participant#aerosol%7Edust> ;
+			svu:hasParticipant <participant#radiation_main> ;
+			svu:hasParticipant <participant#aerosol%7Edust_sink> ;
 			skos:prefLabel "aerosol~dust"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#aerosol_main_radiation%7Eincoming%7Eshortwave_in_absorption
+:aerosol_main_radiation%7Eincoming%7Eshortwave_in_absorption rdf:type owl:NamedIndividual ,
+			svu:InteractionPhenomenon ;
+			svu:hasProcess <process#absorption> ;
+			svu:hasParticipant <participant#aerosol_main> ;
+			svu:hasParticipant <participant#radiation%7Eincoming%7Eshortwave_in> ;
+			skos:prefLabel "aerosol_radiation~incoming~shortwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#aerosol_sink_radiation%7Eincoming%7Eshortwave_main_absorption
+:aerosol_sink_radiation%7Eincoming%7Eshortwave_main_absorption rdf:type owl:NamedIndividual ,
+			svu:InteractionPhenomenon ;
+			svu:hasProcess <process#absorption> ;
+			svu:hasParticipant <participant#aerosol_sink> ;
+			svu:hasParticipant <participant#radiation%7Eincoming%7Eshortwave_main> ;
+			skos:prefLabel "aerosol_radiation~incoming~shortwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#aerosol_main_radiation%7Eincoming%7Eshortwave_in_reflection
+:aerosol_main_radiation%7Eincoming%7Eshortwave_in_reflection rdf:type owl:NamedIndividual ,
+			svu:InteractionPhenomenon ;
+			svu:hasProcess <process#reflection> ;
+			svu:hasParticipant <participant#aerosol_main> ;
+			svu:hasParticipant <participant#radiation%7Eincoming%7Eshortwave_in> ;
+			skos:prefLabel "aerosol_radiation~incoming~shortwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#aerosol_sink_radiation%7Eincoming%7Eshortwave_main_reflection
+:aerosol_sink_radiation%7Eincoming%7Eshortwave_main_reflection rdf:type owl:NamedIndividual ,
+			svu:InteractionPhenomenon ;
+			svu:hasProcess <process#reflection> ;
+			svu:hasParticipant <participant#aerosol_sink> ;
+			svu:hasParticipant <participant#radiation%7Eincoming%7Eshortwave_main> ;
+			skos:prefLabel "aerosol_radiation~incoming~shortwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#aerosol_main_radiation%7Eincoming%7Eshortwave_in_transmission
+:aerosol_main_radiation%7Eincoming%7Eshortwave_in_transmission rdf:type owl:NamedIndividual ,
+			svu:InteractionPhenomenon ;
+			svu:hasProcess <process#transmission> ;
+			svu:hasParticipant <participant#aerosol_main> ;
+			svu:hasParticipant <participant#radiation%7Eincoming%7Eshortwave_in> ;
+			skos:prefLabel "aerosol_radiation~incoming~shortwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#aerosol_sink_radiation%7Eincoming%7Eshortwave_main_transmission
+:aerosol_sink_radiation%7Eincoming%7Eshortwave_main_transmission rdf:type owl:NamedIndividual ,
+			svu:InteractionPhenomenon ;
+			svu:hasProcess <process#transmission> ;
+			svu:hasParticipant <participant#aerosol_sink> ;
+			svu:hasParticipant <participant#radiation%7Eincoming%7Eshortwave_main> ;
+			skos:prefLabel "aerosol_radiation~incoming~shortwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#aerosol_main_radiation%7Eoutgoing%7Elongwave_out_emission
+:aerosol_main_radiation%7Eoutgoing%7Elongwave_out_emission rdf:type owl:NamedIndividual ,
+			svu:InteractionPhenomenon ;
+			svu:hasProcess <process#emission> ;
+			svu:hasParticipant <participant#aerosol_main> ;
+			svu:hasParticipant <participant#radiation%7Eoutgoing%7Elongwave_out> ;
+			skos:prefLabel "aerosol_radiation~outgoing~longwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#aerosol_source_radiation%7Eoutgoing%7Elongwave%7Edownward_main
+:aerosol_source_radiation%7Eoutgoing%7Elongwave%7Edownward_main rdf:type owl:NamedIndividual ,
+			svu:InteractionPhenomenon ;
+			svu:hasProcess <process#emission> ;
+			svu:hasParticipant <participant#aerosol_source> ;
+			svu:hasParticipant <participant#radiation%7Eoutgoing%7Elongwave%7Edownward_main> ;
+			skos:prefLabel "aerosol_radiation~outgoing~longwave~downward"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#aerosol_source_radiation%7Eoutgoing%7Elongwave%7Eupward_main
+:aerosol_source_radiation%7Eoutgoing%7Elongwave%7Eupward_main rdf:type owl:NamedIndividual ,
+			svu:InteractionPhenomenon ;
+			svu:hasProcess <process#emission> ;
+			svu:hasParticipant <participant#aerosol_source> ;
+			svu:hasParticipant <participant#radiation%7Eoutgoing%7Elongwave%7Eupward_main> ;
+			skos:prefLabel "aerosol_radiation~outgoing~longwave~upward"@en .

@@ -17,7 +17,7 @@
 #    Process   
 # 
 #################################################################
-##Last generated on: 2018-09-03 14:57
+##Last generated on: 2018-09-03 17:36
 
 ###Process
 
@@ -6114,6 +6114,41 @@
 			svu:hasPresentParticiple "processing" ;
 			svu:hasNominalization "processing" ;
 			skos:prefLabel "process"@en .
+
+###  http://www.geoscienceontology.org/svl/process#isobaric-process
+:isobaric-process rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isDerivedFrom :process ;
+			svu:hasAttribute <attribute#isobaric> ;
+			skos:prefLabel "isobaric-process"@en .
+
+###  http://www.geoscienceontology.org/svl/process#isochoric-process
+:isochoric-process rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isDerivedFrom :process ;
+			svu:hasAttribute <attribute#isochoric> ;
+			skos:prefLabel "isochoric-process"@en .
+
+###  http://www.geoscienceontology.org/svl/process#adiabatic-process
+:adiabatic-process rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isDerivedFrom :process ;
+			svu:hasAttribute <attribute#adiabatic> ;
+			skos:prefLabel "adiabatic-process"@en .
+
+###  http://www.geoscienceontology.org/svl/process#isentropic-process
+:isentropic-process rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isDerivedFrom :process ;
+			svu:hasAttribute <attribute#isentropic> ;
+			skos:prefLabel "isentropic-process"@en .
+
+###  http://www.geoscienceontology.org/svl/process#isothermal-process
+:isothermal-process rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isDerivedFrom :process ;
+			svu:hasAttribute <attribute#isothermal> ;
+			skos:prefLabel "isothermal-process"@en .
 
 ###  http://www.geoscienceontology.org/svl/process#procure
 :procure rdf:type owl:NamedIndividual ,

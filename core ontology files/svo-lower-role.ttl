@@ -17,7 +17,7 @@
 #    Role   
 # 
 #################################################################
-##Last generated on: 2018-09-03 14:57
+##Last generated on: 2018-09-03 17:36
 
 ###Role
 
@@ -213,6 +213,16 @@
 :main rdf:type owl:NamedIndividual ,
 			svu:ParticipantRole ;
 			skos:prefLabel "main"@en .
+
+###  http://www.geoscienceontology.org/svl/role#out
+:out rdf:type owl:NamedIndividual ,
+			svu:ParticipantRole ;
+			skos:prefLabel "out"@en .
+
+###  http://www.geoscienceontology.org/svl/role#in
+:in rdf:type owl:NamedIndividual ,
+			svu:ParticipantRole ;
+			skos:prefLabel "in"@en .
 
 
 ###PropertyRole

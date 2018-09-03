@@ -495,6 +495,11 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 phen = vocab.loc[ index, 'phen_id' ]
                 ttl_file.write( attribute.format( 'hasPhenomenon', \
                         ':' + urllib.quote( phen ), ';' ) )
+            if 'trajectory_direction' in vocab.columns.values and \
+                vocab.loc[ index, 'trajectory_direction' ] != '' :
+                direction = vocab.loc[ index, 'trajectory_direction' ]
+                ttl_file.write( attribute.format( 'hasTrajectoryDirection', \
+                        '<trajectorydirection#' + urllib.quote( direction )+'>', ';' ) )
         if collabel == 'context':
             rel = vocab.loc[ index, 'relationship' ]
             ttl_file.write( attribute.format( 'hasRelationship', \
@@ -532,7 +537,7 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 role = vocab.loc[ index, 'role' ]
                 ttl_file.write( attribute.format( 'hasParticipantRole', \
                         '<role#' + urllib.quote( role )+'>', ';' ) )
-        if collabel in ['trajectory','matter','body','abstraction','phenomenon'] and \
+        if collabel in ['trajectory','matter','body','abstraction','phenomenon','process'] and \
             'attribute' in vocab.columns.values:
             if vocab.loc[ index, 'attribute' ] != '' :
                 attr = vocab.loc[ index, 'attribute' ].split(', ')
