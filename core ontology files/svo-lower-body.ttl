@@ -17,7 +17,7 @@
 #    Body   
 # 
 #################################################################
-##Last generated on: 2018-09-03 17:36
+##Last generated on: 2018-09-04 10:56
 
 ###Inanimate Natural Body
 
@@ -459,6 +459,12 @@
 			svu:isDerivedFrom :dust ;
 			svu:hasAttribute <attribute#aerosol> ;
 			skos:prefLabel "dust~aerosol"@en .
+
+###  http://www.geoscienceontology.org/svl/body#atmosphere_air
+:atmosphere_air rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isDerivedFrom :atmosphere ;
+			skos:prefLabel "atmosphere_air"@en .
 
 
 ###Inanimate Fabricated Body

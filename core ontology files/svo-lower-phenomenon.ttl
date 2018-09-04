@@ -17,7 +17,7 @@
 #    Phenomenon   
 # 
 #################################################################
-##Last generated on: 2018-09-03 17:36
+##Last generated on: 2018-09-04 10:56
 
 ###Phenomenon
 
@@ -310,6 +310,14 @@
 			svu:hasTrajectoryDirection <trajectorydirection#incoming> ;
 			svu:hasAttribute <attribute#shortwave> ;
 			skos:prefLabel "radiation~incoming~shortwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eincoming%7Elongwave
+:radiation%7Eincoming%7Elongwave rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasTrajectoryDirection <trajectorydirection#incoming> ;
+			svu:hasAttribute <attribute#longwave> ;
+			skos:prefLabel "radiation~incoming~longwave"@en .
 
 ###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Euv
 :radiation%7Euv rdf:type owl:NamedIndividual ,
@@ -1519,6 +1527,14 @@
 			svu:hasAttribute <attribute#shortwave> ;
 			skos:prefLabel "radiation~incoming~shortwave"@en .
 
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eincoming%7Elongwave
+:radiation%7Eincoming%7Elongwave rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasTrajectoryDirection <trajectorydirection#incoming> ;
+			svu:hasAttribute <attribute#longwave> ;
+			skos:prefLabel "radiation~incoming~longwave"@en .
+
 ###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Euv
 :radiation%7Euv rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -2727,6 +2743,14 @@
 			svu:hasAttribute <attribute#shortwave> ;
 			skos:prefLabel "radiation~incoming~shortwave"@en .
 
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Eincoming%7Elongwave
+:radiation%7Eincoming%7Elongwave rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:isDerivedFrom :radiation ;
+			svu:hasTrajectoryDirection <trajectorydirection#incoming> ;
+			svu:hasAttribute <attribute#longwave> ;
+			skos:prefLabel "radiation~incoming~longwave"@en .
+
 ###  http://www.geoscienceontology.org/svl/phenomenon#radiation%7Euv
 :radiation%7Euv rdf:type owl:NamedIndividual ,
 			svu:MediumPhenomenon ;
@@ -3765,6 +3789,20 @@
 			svu:hasMatter <matter#air> ;
 			skos:prefLabel "air"@en .
 
+###  http://www.geoscienceontology.org/svl/phenomenon#air_flow
+:air_flow rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasProcess <process#flow> ;
+			svu:hasMatter <matter#air> ;
+			skos:prefLabel "air_flow"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation_optical-path
+:radiation_optical-path rdf:type owl:NamedIndividual ,
+			svu:Phenomenon ;
+			svu:hasPhenomenon :radiation ;
+			svu:hasTrajectory <trajectory#optical-path> ;
+			skos:prefLabel "radiation"@en .
+
 
 ###MultiplePhenomenon
 
@@ -3859,3 +3897,27 @@
 			svu:hasParticipant <participant#aerosol_source> ;
 			svu:hasParticipant <participant#radiation%7Eoutgoing%7Elongwave%7Eupward_main> ;
 			skos:prefLabel "aerosol_radiation~outgoing~longwave~upward"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#atmosphere_air_main_radiation%7Eincoming%7Elongwave_in_absorption
+:atmosphere_air_main_radiation%7Eincoming%7Elongwave_in_absorption rdf:type owl:NamedIndividual ,
+			svu:InteractionPhenomenon ;
+			svu:hasProcess <process#absorption> ;
+			svu:hasParticipant <participant#atmosphere_air_main> ;
+			svu:hasParticipant <participant#radiation%7Eincoming%7Elongwave_in> ;
+			skos:prefLabel "atmosphere_air_radiation~incoming~longwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#atmosphere_air_main_radiation%7Eincoming%7Elongwave_in_reflection
+:atmosphere_air_main_radiation%7Eincoming%7Elongwave_in_reflection rdf:type owl:NamedIndividual ,
+			svu:InteractionPhenomenon ;
+			svu:hasProcess <process#reflection> ;
+			svu:hasParticipant <participant#atmosphere_air_main> ;
+			svu:hasParticipant <participant#radiation%7Eincoming%7Elongwave_in> ;
+			skos:prefLabel "atmosphere_air_radiation~incoming~longwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#atmosphere_air_main_radiation%7Eincoming%7Elongwave_in_transmission
+:atmosphere_air_main_radiation%7Eincoming%7Elongwave_in_transmission rdf:type owl:NamedIndividual ,
+			svu:InteractionPhenomenon ;
+			svu:hasProcess <process#transmission> ;
+			svu:hasParticipant <participant#atmosphere_air_main> ;
+			svu:hasParticipant <participant#radiation%7Eincoming%7Elongwave_in> ;
+			skos:prefLabel "atmosphere_air_radiation~incoming~longwave"@en .

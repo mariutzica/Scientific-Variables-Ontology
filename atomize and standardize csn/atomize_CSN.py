@@ -250,6 +250,9 @@ cond_quant = csn['quantity'].str.contains('emit')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] + 'emission'
+csn.loc[ cond_obj0 & cond_obj1, \
+        'quantity_id'] = csn.loc[ cond_obj0 & cond_obj1, \
+        'quantity_label']
 csn.loc[ cond_obj0 & cond_obj1, ['object0','object1','object2']] = ''
 
 #atmosphere_air
@@ -258,25 +261,29 @@ cond_obj1 = csn['object1'] == 'air'
 cond_obj2 = csn['object2'] == ''
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         'object_id'] = 'atmosphere_in_air'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_label'] = 'atmosphere_air'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'] == 'mass-specific_isobaric_heat_capacity'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'quantity_label'] = 'isobaric_mass-specific_heat_capacity'
-csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'] = 'atmosphere_in_air_process_isobaric'
 cond_quant = csn['quantity'] == 'mass-specific_isochoric_heat_capacity'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'quantity_label']='isochoric_mass-specific_heat_capacity'
-csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'] = 'atmosphere_in_air_process_isochoric'
 cond_quant = csn['quantity'] == 'volume-specific_isobaric_heat_capacity'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'quantity_label']='isobaric_volume-specific_heat_capacity'
-csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'] = 'atmosphere_in_air_process_isobaric'
 cond_quant = csn['quantity']=='volume-specific_isochoric_heat_capacity'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'quantity_label']='isochoric_volume-specific_heat_capacity'
-csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'] = 'atmosphere_in_air_process_isochoric'
 cond_quant = csn['quantity'] == 'static_pressure_environmental_lapse_rate'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
@@ -284,107 +291,108 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
 cond_quant = csn['quantity'] == 'temperature_dry_adiabatic_lapse_rate'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'quantity_label']='dry_adiabatic_temperature_lapse_rate'
-csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'] = 'atmosphere_in_air~dry_process_adiabatic'
 cond_quant = csn['quantity'] == 'temperature_saturated_adiabatic_lapse_rate'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'quantity_label']='saturated_adiabatic_temperature_lapse_rate'
-csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'] = 'atmosphere_in_air~saturated_process_adiabatic'
 cond_quant = csn['quantity'] == 'temperature_environmental_lapse_rate'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'quantity_label']='environmental_temperature_lapse_rate'
 cond_quant = csn['quantity'] == 'isentropic_compressibility'
-csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'] = 'atmosphere_in_air_process_isentropic'
 cond_quant = csn['quantity'] == 'isothermal_compressibility'
-csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'] = 'atmosphere_in_air_process_isothermal'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'quantity_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'quantity_label']
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1']] = ''
 
-##atmosphere_air-column_aerosol~dry
-#cond_obj0 = csn['object0'] == 'atmosphere'
-#cond_obj1 = csn['object1'] == 'air-column'
-#cond_obj2 = csn['object2'] == 'aerosol~dry'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_context_matter'] = 'air'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_context_abstraction'] = 'column'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_context_phen'] = 'atmosphere'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_matter'] = 'ammonium'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_matter_descriptor'] = 'dry'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_matter_configstate'] = 'aerosol'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        ['object0','object1','object2','object3']] = ''
-#
-##atmosphere_air-column_...-as-...
-#cond_obj0 = csn['object0'] == 'atmosphere'
-#cond_obj1 = csn['object1'] == 'air-column'
-#cond_obj2 = csn['object2'].str.contains('-as-')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_context_matter'] = 'air'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_context_abstraction'] = 'column'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_context_phen'] = 'atmosphere'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_matter_expressed-as'] = \
-#        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object2']\
-#        .str.split('-as-').str[1]
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_matter'] = \
-#        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object2']\
-#        .str.split('-as').str[0]
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        ['object0','object1','object2']] = ''
-#
-##atmosphere_air-column_~~~
-#cond_obj0 = csn['object0'] == 'atmosphere'
-#cond_obj1 = csn['object1'] == 'air-column'
-#cond_obj2 = csn['object2'].str.contains('vapor')
-#cond_quant = csn['quantity'] == 'liquid-equivalent_depth'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_matter_phasestate'] = 'vapor'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'modified_quantity'] = 'leq_depth'
-#csn.loc[ cond_obj0 & cond_obj1, \
-#        'root_object_context_abstraction'] = 'column'
-#csn.loc[ cond_obj0 & cond_obj1, \
-#        'root_object_context_phen'] = 'atmosphere'
-#csn.loc[ cond_obj0 & cond_obj1, \
-#        'root_object_context_matter'] = 'air'
-#csn.loc[ cond_obj0 & cond_obj1, 'root_object_matter'] = \
-#        csn.loc[ cond_obj0 & cond_obj1, 'object2']\
-#        .str.split('~').str[0].str.replace('aceto-nitrile','acetonitrile')\
-#        .str.replace('alpha-hexachlorocyclohexane','alpha-hch')
-#csn.loc[ cond_obj0 & cond_obj1,\
-#        ['object0','object1','object2']] = ''
+#atmosphere_air-column_aerosol~dry
+cond_obj0 = csn['object0'] == 'atmosphere'
+cond_obj1 = csn['object1'] == 'air-column'
+cond_obj2 = csn['object2'] == 'aerosol~dry'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'atmosphere_air_column_in_ammonium~aerosol~dry'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_label'] = 'atmosphere_air_column_ammonium~aerosol~dry'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_pref'] = 'phenomenon'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'quantity_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'quantity_label']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2','object3']] = ''
 
-##atmosphere_air_carbon-dioxide
-#cond_obj0 = csn['object0'] == 'atmosphere'
-#cond_obj1 = csn['object1'] == 'air'
-#cond_obj2 = csn['object2'] == 'carbon-dioxide'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_matter'] = 'carbon-dioxide'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_medium_matter'] = 'air'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_medium_phen'] = 'atmosphere'
-#cond_quant = csn['quantity'].str.contains('equilibrium')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_medium_condition'] = 'equilibrium'
-#cond_quant = csn['quantity'].str.contains('saturated')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_medium_condition'] = 'saturated'
-#cond_quant = csn['quantity'].str.contains('equilibrium|saturated')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'modified_quantity'] = 'partial_pressure'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        ['object0','object1','object2']]=''
+#atmosphere_air-column_...-as-...
+cond_obj0 = csn['object0'] == 'atmosphere'
+cond_obj1 = csn['object1'] == 'air-column'
+cond_obj2 = csn['object2'].str.contains('-as-')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'atmosphere_air_column_in_' + \
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object2']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_label'] = 'atmosphere_air_column_' + \
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object2']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_pref'] = 'phenomenon'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'quantity_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'quantity_label']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2']] = ''
+
+#atmosphere_air-column_~~~
+cond_obj0 = csn['object0'] == 'atmosphere'
+cond_obj1 = csn['object1'] == 'air-column'
+cond_obj2 = csn['object2'].str.contains('vapor')
+cond_quant = csn['quantity'] == 'liquid-equivalent_depth'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'root_object_matter_phasestate'] = 'vapor'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'quantity_label'] = 'leq_depth'
+csn.loc[ cond_obj0 & cond_obj1, \
+        'object_id'] = 'atmosphere_air_column_in_' + \
+        csn.loc[ cond_obj0 & cond_obj1, 'object2']\
+        .str.replace('aceto-nitrile','acetonitrile')\
+        .str.replace('alpha-hexachlorocyclohexane','alpha-hch')
+csn.loc[ cond_obj0 & cond_obj1, \
+        'object_label'] = 'atmosphere_air_column_' + \
+        csn.loc[ cond_obj0 & cond_obj1, 'object2']\
+        .str.replace('aceto-nitrile','acetonitrile')\
+        .str.replace('alpha-hexachlorocyclohexane','alpha-hch')
+csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'phenomenon'
+csn.loc[ cond_obj0 & cond_obj1, \
+        'quantity_id'] = csn.loc[ cond_obj0 & cond_obj1, \
+        'quantity_label']
+csn.loc[ cond_obj0 & cond_obj1,\
+        ['object0','object1','object2']] = ''
+
+#atmosphere_air_carbon-dioxide
+cond_obj0 = csn['object0'] == 'atmosphere'
+cond_obj1 = csn['object1'] == 'air'
+cond_obj2 = csn['object2'] == 'carbon-dioxide'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'atmosphere_in_air@medium_carbon-dioxide'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_label'] = 'atmosphere_air_carbon-dioxide'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_pref'] = 'phenomenon'
+cond_quant = csn['quantity'].str.contains('equilibrium')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = 'atmosphere_in_air@medium_equilibrium_carbon-dioxide'
+cond_quant = csn['quantity'].str.contains('saturated')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = 'atmosphere_in_air@medium_saturated_carbon-dioxide'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'quantity_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'quantity_label']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2']]=''
 
 #atmosphere_air_flow
 cond_obj0 = csn['object0'] == 'atmosphere'
@@ -407,183 +415,161 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
         ['object0','object1','object2']] = ''
 
-##atmosphere_air_flow_suspended-compound
-#cond_obj0 = csn['object0'] == 'atmosphere'
-#cond_obj1 = csn['object1'] == 'air'
-#cond_obj2 = csn['object2'] == 'flow'
-#cond_obj3 = csn['object3'].str.contains('snow')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_medium_matter'] = 'air'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_medium_process'] = 'flow'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_medium_context_phen'] = 'atmosphere'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & ~cond_obj3, \
-#        'root_object_matter'] = \
-#        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & ~cond_obj3, 'object3']\
-#        .str.split('~').str[0]
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_matter_state'] = 'suspended'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
-#        'root_object_matter_phasestate'] = 'snow'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        ['object0','object1','object2','object3']] = ''
-#
-##atmosphere_air_mercury/nitrogen~...
-#cond_obj0 = csn['object0'] == 'atmosphere'
-#cond_obj1 = csn['object1'] == 'air'
-#cond_obj2 = csn['object2'].str.contains('mercury|nitrogen')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_medium_matter'] = 'air'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_medium_phen'] = 'atmosphere'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_matter'] = \
-#        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2,'object2']\
-#        .str.split('~').str[0]
-#cond_obj2 = csn['object2'].str.contains('nitrogen')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_matter_state'] = 'atomic'
-#cond_obj2 = csn['object2'].str.contains('mercury')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_matter_phasestate'] = 'gaseous'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_matter_state'] = \
-#        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2,'object2']\
-#        .str.rsplit('~',1).str[1]
-#cond_obj2 = csn['object2'].str.contains('mercury|nitrogen')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        ['object0','object1','object2']] = ''
-#
-##atmosphere_air_nmvoc~...
-#cond_obj0 = csn['object0'] == 'atmosphere'
-#cond_obj1 = csn['object1'] == 'air'
-#cond_obj2 = csn['object2'].str.contains('nmvoc')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_medium_matter'] = 'air'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_medium_phen'] = 'atmosphere'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_matter_expressed-as'] = \
-#        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object3']
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_matter'] = \
-#        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object2']\
-#        .str.split('~').str[0]
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_source'] = \
-#        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object2']\
-#        .str.split('~').str[1]
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        ['object0','object1','object2','object3']] = ''
-#
-##atmosphere_air_radiation
-#cond_obj0 = csn['object0'] == 'atmosphere'
-#cond_obj1 = csn['object1'] == 'air'
-#cond_obj2 = csn['object2'] == 'radiation'
-#cond_obj3 = csn['object3'] != ''
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_medium_matter'] = 'air'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_medium_context_phen'] = 'atmosphere'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_phen'] = 'radiation'
-##csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
-##        'root_object_trajectory'] = 'optical-path'
-#cond_quant = csn['quantity'].str.contains('attenuation')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_medium_process_interaction'] = 'attenuation'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'modified_quantity'] = 'process_coefficient'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'evaluation_method'] = 'beer-lambert-law'
-#cond_quant = csn['quantity'].str.contains('refractive')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_medium_process_interaction'] = 'refraction'
-#cond_quant = csn['quantity'].str.contains('optical-path')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'modified_quantity'] = 'optical-path_length'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 , \
-#        ['object0','object1','object2','object3']] = ''
-#
-##atmosphere_air_radiation~...
-#cond_obj0 = csn['object0'] == 'atmosphere'
-#cond_obj1 = csn['object1'] == 'air'
-#cond_obj2 = csn['object2'].str.contains('radiation~')
-#cond_quant = csn['quantity'].str.contains('intensity')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & ~cond_quant, \
-#        'root_object_matter'] = 'air'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & ~cond_quant, \
-#        'root_object_phen'] = 'atmosphere'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & ~cond_quant, \
-#        'root_object_in_phen'] = \
-#        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & ~cond_quant, 'object2']\
-#        .str.replace('~incoming','')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & ~cond_quant, \
-#        'root_object_in_trajectory_direction'] = 'incoming'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_sink_matter']='air'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_sink_phen'] = 'atmosphere'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_phen'] = \
-#        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'object2']\
-#        .str.replace('~incoming','')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_trajectory_direction'] = 'incoming'
-#cond_quant = csn['quantity'].str.contains('absorp')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_in_process_interaction'] = 'absorption'
-#cond_quant = csn['quantity'].str.contains('trans')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_in_process_interaction']='transmission'
-#cond_quant = csn['quantity'].str.contains('reflect')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_in_process_interaction']='reflection'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        ['object0','object1','object2','object3']] = ''
-#
-##atmosphere_air_water~vapor...
-#cond_obj0 = csn['object0'] == 'atmosphere'
-#cond_obj1 = csn['object1'] == 'air'
-#cond_obj2 = csn['object2'] == 'water~vapor'
-#cond_quant = csn['quantity'].str.contains('density|virtual')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & ~cond_quant, \
-#        'root_object_medium_matter'] = 'air'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & ~cond_quant, \
-#        'root_object_medium_phen'] = 'atmosphere'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_context_matter'] = 'air'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_context_phen'] = 'atmosphere'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_matter'] = 'water'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        'root_object_matter_phasestate'] = 'vapor'
-#cond_quant = csn['quantity'].str.contains('dew_point')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_medium_condition'] = 'dew-point'
-#cond_quant = csn['quantity'].str.contains('bubble_point')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_medium_condition'] = 'bubble-point'
-#cond_quant = csn['quantity'].str.contains('frost_point')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_medium_condition'] = 'frost-point'
-#cond_quant = csn['quantity'].str.contains('equilibrium')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_medium_condition'] = 'equilibrium'
-#cond_quant = csn['quantity'].str.contains('saturated')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'root_object_medium_condition'] = 'saturated'
-#cond_quant = csn['quantity'].str.contains('point')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'modified_quantity'] = 'temperature'
-#cond_quant = csn['quantity'].str.contains('equilibrium|saturated')
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-#        'modified_quantity'] = 'partial_pressure'
-#csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-#        ['object0','object1','object2']] = ''
-#
+#atmosphere_air_flow_suspended-compound
+cond_obj0 = csn['object0'] == 'atmosphere'
+cond_obj1 = csn['object1'] == 'air'
+cond_obj2 = csn['object2'] == 'flow'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'atmosphere_in_air_flow@medium_' + \
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object3']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_label'] = 'atmosphere_air_flow_' + \
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object3']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_pref'] = 'phenomenon'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'quantity_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+                      'quantity_label']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2','object3']] = ''
+
+#atmosphere_air_mercury/nitrogen~...
+cond_obj0 = csn['object0'] == 'atmosphere'
+cond_obj1 = csn['object1'] == 'air'
+cond_obj2 = csn['object2'].str.contains('mercury|nitrogen')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'atmosphere_in_air@medium_'+\
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2,'object2']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_label'] = 'atmosphere_air_'+\
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2,'object2']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_pref'] = 'phenomenon'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'quantity_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'quantity_label']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2']] = ''
+
+#atmosphere_air_nmvoc~...
+cond_obj0 = csn['object0'] == 'atmosphere'
+cond_obj1 = csn['object1'] == 'air'
+cond_obj2 = csn['object2'].str.contains('nmvoc')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'atmosphere_in_air@medium_'+\
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object2']+'-as-'+\
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object3']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_label'] = 'atmosphere_air_'+\
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object2']+'-as-'+\
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object3']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_pref'] = 'phenomenon'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'quantity_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'quantity_label']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2','object3']] = ''
+
+#atmosphere_air_radiation
+cond_obj0 = csn['object0'] == 'atmosphere'
+cond_obj1 = csn['object1'] == 'air'
+cond_obj2 = csn['object2'] == 'radiation'
+cond_obj3 = csn['object3'] != ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_label'] = 'atmosphere_air_radiation'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'atmosphere_in_air@medium_radiation'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object_id'] = 'atmosphere_in_air@medium_radiation_optical-path'
+cond_quant = csn['quantity'].str.contains('attenuation')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = 'atmosphere_in_air@medium_attenuation_radiation'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'evaluation_method'] = 'beer-lambert-law'
+cond_quant = csn['quantity'].str.contains('refractive')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = 'atmosphere_in_air@medium_refraction_radiation'
+cond_quant = csn['quantity'].str.contains('optical-path')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'quantity_label'] = 'optical-path_length'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'quantity_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'quantity_label']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 , \
+        ['object0','object1','object2','object3']] = ''
+
+#atmosphere_air_radiation~...
+cond_obj0 = csn['object0'] == 'atmosphere'
+cond_obj1 = csn['object1'] == 'air'
+cond_obj2 = csn['object2'].str.contains('radiation~')
+cond_quant = csn['quantity'].str.contains('intensity')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_label'] = 'atmosphere_air_'+\
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object2']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_pref'] = 'phenomenon'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & ~cond_quant, \
+        'object_id'] = 'atmosphere_air_main_'+\
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & ~cond_quant, 'object2']\
+        +'_in'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id']='atmosphere_air_in_'+\
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'object2']
+cond_quant = csn['quantity'].str.contains('absorp')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id']+'_absorption'
+cond_quant = csn['quantity'].str.contains('trans')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id']+'_transmission'
+cond_quant = csn['quantity'].str.contains('reflect')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id']+'_reflection'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'quantity_id'] = \
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'quantity_label']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2','object3']] = ''
+
+#atmosphere_air_water~vapor...
+cond_obj0 = csn['object0'] == 'atmosphere'
+cond_obj1 = csn['object1'] == 'air'
+cond_obj2 = csn['object2'] == 'water~vapor'
+cond_quant = csn['quantity'].str.contains('density|virtual')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_label'] = 'atmosphere_air_water~vapor'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_pref'] = 'phenomenon'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & ~cond_quant, \
+        'object_id'] = 'atmosphere_in_air@medium_water~vapor'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = 'atmosphere_air_in_water~vapor'
+cond_quant = csn['quantity'].str.contains('dew_point')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = 'atmosphere_in_air@medium_dew-point_water~vapor'
+cond_quant = csn['quantity'].str.contains('bubble_point')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = 'atmosphere_in_air@medium_bubble-point_water~vapor'
+cond_quant = csn['quantity'].str.contains('frost_point')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = 'atmosphere_in_air@medium_frost-point_water~vapor'
+cond_quant = csn['quantity'].str.contains('equilibrium')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = 'atmosphere_in_air@medium_equilibrium_water~vapor'
+cond_quant = csn['quantity'].str.contains('saturated')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = 'atmosphere_in_air@medium_saturated_water~vapor'
+cond_quant = csn['quantity'].str.contains('point')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'quantity_label'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'quantity_label'].str.replace('_point','-point')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'quantity_id'] = \
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'quantity_label']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2']] = ''
+
 #atmosphere_ball
 cond_obj0 = csn['object0'] == 'atmosphere'
 cond_obj1 = csn['object1'] == 'ball'

@@ -17,7 +17,7 @@
 #    Abstraction   
 # 
 #################################################################
-##Last generated on: 2018-09-03 17:36
+##Last generated on: 2018-09-04 10:56
 
 ###Mathematical Abstraction
 
@@ -510,6 +510,13 @@
 			svu:isDerivedFrom :airfoil ;
 			svu:hasProcess <process#lift> ;
 			skos:prefLabel "airfoil"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#atmosphere_air_column
+:atmosphere_air_column rdf:type owl:NamedIndividual ,
+			svu:PhysicalAbstraction ;
+			svu:isDerivedFrom :column ;
+			svu:abstractsPhenomenon <body#atmosphere_air> ;
+			skos:prefLabel "atmosphere_air_column"@en .
 
 
 ###Abstraction Type

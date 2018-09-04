@@ -17,7 +17,7 @@
 #    Context   
 # 
 #################################################################
-##Last generated on: 2018-09-03 17:36
+##Last generated on: 2018-09-04 10:56
 
 ###Context
 
@@ -49,3 +49,17 @@
 			svu:hasRelationship <relationship#in> ;
 			svu:hasObject <phenomenon#atmosphere> ;
 			skos:prefLabel "atmosphere"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#atmosphere_air_column_in
+:atmosphere_air_column_in rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasRelationship <relationship#in> ;
+			svu:hasObject <abstraction#atmosphere_air_column> ;
+			skos:prefLabel "atmosphere_air_column"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#atmosphere_air_in
+:atmosphere_air_in rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasRelationship <relationship#in> ;
+			svu:hasObject <body#atmosphere_air> ;
+			skos:prefLabel "atmosphere_air"@en .

@@ -11485,3 +11485,100 @@
 			svu:isDerivedFrom :air ;
 			svu:hasAttribute <attribute#saturated> ;
 			skos:prefLabel "air~saturated"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#ammonium%7Eaerosol%7Edry
+:ammonium%7Eaerosol%7Edry rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :ammonium ;
+			svu:hasAttribute <attribute#aerosol> ;
+			svu:hasAttribute <attribute#dry> ;
+			skos:prefLabel "ammonium~aerosol~dry"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#clox-as-chlorine
+:clox-as-chlorine rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :clox ;
+			svu:isExpressedAs :chlorine ;
+			skos:prefLabel "clox-as-chlorine"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#hox-as-hydrogen
+:hox-as-hydrogen rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :hox ;
+			svu:isExpressedAs :hydrogen ;
+			skos:prefLabel "hox-as-hydrogen"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#nox-as-nitrogen
+:nox-as-nitrogen rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :nox ;
+			svu:isExpressedAs :nitrogen ;
+			skos:prefLabel "nox-as-nitrogen"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#sediment%7Esuspended
+:sediment%7Esuspended rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :sediment ;
+			svu:hasAttribute <attribute#suspended> ;
+			skos:prefLabel "sediment~suspended"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#water%7Esnow
+:water%7Esnow rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :water ;
+			svu:hasAttribute <attribute#snow> ;
+			skos:prefLabel "snow"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#water%7Esnow%7Esuspended
+:water%7Esnow%7Esuspended rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :water%7Esnow ;
+			svu:hasAttribute <attribute#suspended> ;
+			skos:prefLabel "snow~suspended"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#mercury%7Egaseous%7Edivalent
+:mercury%7Egaseous%7Edivalent rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :mercury ;
+			svu:hasAttribute <attribute#gaseous> ;
+			svu:hasAttribute <attribute#divalent> ;
+			skos:prefLabel "mercury~gaseous~divalent"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#mercury%7Egaseous%7Eelemental
+:mercury%7Egaseous%7Eelemental rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :mercury ;
+			svu:hasAttribute <attribute#gaseous> ;
+			svu:hasAttribute <attribute#elemental> ;
+			skos:prefLabel "mercury~gaseous~elemental"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#mercury%7Egaseous%7Emonovalent
+:mercury%7Egaseous%7Emonovalent rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :mercury ;
+			svu:hasAttribute <attribute#gaseous> ;
+			svu:hasAttribute <attribute#monovalent> ;
+			skos:prefLabel "mercury~gaseous~monovalent"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#nitrogen%7Eatomic
+:nitrogen%7Eatomic rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :nitrogen ;
+			svu:hasAttribute <attribute#atomic> ;
+			skos:prefLabel "nitrogen~atomic"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#nmvoc%7Eanthropogenic-as-carbon
+:nmvoc%7Eanthropogenic-as-carbon rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :nmvoc ;
+			svu:isExpressedAs :carbon ;
+			svu:hasAttribute <attribute#anthropogenic> ;
+			skos:prefLabel "nmvoc~anthropogenic-as-carbon"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#nmvoc%7Ebiogenic-as-carbon
+:nmvoc%7Ebiogenic-as-carbon rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isDerivedFrom :nmvoc ;
+			svu:isExpressedAs :carbon ;
+			svu:hasAttribute <attribute#biogenic> ;
+			skos:prefLabel "nmvoc~biogenic-as-carbon"@en .

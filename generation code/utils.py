@@ -410,6 +410,10 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 mtype = vocab.loc[ index, 'matter_type' ]
                 ttl_file.write( attribute.format( 'hasType', \
                             ':' + urllib.quote( mtype ), ';' ) )
+            if vocab.loc[ index, 'expressed-as' ] != '' :
+                mtype = vocab.loc[ index, 'expressed-as' ]
+                ttl_file.write( attribute.format( 'isExpressedAs', \
+                            ':' + urllib.quote( mtype ), ';' ) )
         if collabel == 'phenomenon':
             if 'associated_process' in vocab.columns.values and\
                 vocab.loc[ index, 'associated_process' ] != '' :
@@ -495,6 +499,11 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 phen = vocab.loc[ index, 'phen_id' ]
                 ttl_file.write( attribute.format( 'hasPhenomenon', \
                         ':' + urllib.quote( phen ), ';' ) )
+            if 'trajectory' in vocab.columns.values and \
+                vocab.loc[ index, 'trajectory' ] != '' :
+                trajectory = vocab.loc[ index, 'trajectory' ]
+                ttl_file.write( attribute.format( 'hasTrajectory', \
+                        '<trajectory#' + urllib.quote( trajectory )+'>', ';' ) )
             if 'trajectory_direction' in vocab.columns.values and \
                 vocab.loc[ index, 'trajectory_direction' ] != '' :
                 direction = vocab.loc[ index, 'trajectory_direction' ]

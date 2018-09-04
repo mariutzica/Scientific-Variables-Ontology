@@ -17,7 +17,7 @@
 #    Variable   
 # 
 #################################################################
-##Last generated on: 2018-09-03 17:36
+##Last generated on: 2018-09-04 10:56
 
 ###CSN Variables
 
@@ -184,278 +184,429 @@
 ###  http://www.geoscienceontology.org/svl/variable#atmosphere_aerosol_radiation%7Eincoming%7Eshortwave__absorbed_energy_flux
 :atmosphere_aerosol_radiation%7Eincoming%7Eshortwave__absorbed_energy_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
+			svu:hasProperty <property#absorbed_energy_flux> ;
 			svu:hasObject <phenomenon#atmosphere_in_aerosol_sink_radiation~incoming~shortwave_main_absorption> ;
 			skos:prefLabel "atmosphere_aerosol_radiation~incoming~shortwave__absorbed_energy_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/variable#atmosphere_aerosol_radiation%7Eincoming%7Eshortwave__absorptance
 :atmosphere_aerosol_radiation%7Eincoming%7Eshortwave__absorptance rdf:type owl:NamedIndividual ,
 			svu:Variable ;
+			svu:hasProperty <property#absorptance> ;
 			svu:hasObject <phenomenon#atmosphere_in_aerosol_main_radiation~incoming~shortwave_in_absorption> ;
 			skos:prefLabel "atmosphere_aerosol_radiation~incoming~shortwave__absorptance"@en .
 
 ###  http://www.geoscienceontology.org/svl/variable#atmosphere_aerosol_radiation%7Eincoming%7Eshortwave__reflectance
 :atmosphere_aerosol_radiation%7Eincoming%7Eshortwave__reflectance rdf:type owl:NamedIndividual ,
 			svu:Variable ;
+			svu:hasProperty <property#reflectance> ;
 			svu:hasObject <phenomenon#atmosphere_in_aerosol_main_radiation~incoming~shortwave_in_reflection> ;
 			skos:prefLabel "atmosphere_aerosol_radiation~incoming~shortwave__reflectance"@en .
 
 ###  http://www.geoscienceontology.org/svl/variable#atmosphere_aerosol_radiation%7Eincoming%7Eshortwave__reflected_energy_flux
 :atmosphere_aerosol_radiation%7Eincoming%7Eshortwave__reflected_energy_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
+			svu:hasProperty <property#reflected_energy_flux> ;
 			svu:hasObject <phenomenon#atmosphere_in_aerosol_sink_radiation~incoming~shortwave_main_reflection> ;
 			skos:prefLabel "atmosphere_aerosol_radiation~incoming~shortwave__reflected_energy_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/variable#atmosphere_aerosol_radiation%7Eincoming%7Eshortwave__transmittance
 :atmosphere_aerosol_radiation%7Eincoming%7Eshortwave__transmittance rdf:type owl:NamedIndividual ,
 			svu:Variable ;
+			svu:hasProperty <property#transmittance> ;
 			svu:hasObject <phenomenon#atmosphere_in_aerosol_main_radiation~incoming~shortwave_in_transmission> ;
 			skos:prefLabel "atmosphere_aerosol_radiation~incoming~shortwave__transmittance"@en .
 
 ###  http://www.geoscienceontology.org/svl/variable#atmosphere_aerosol_radiation%7Eincoming%7Eshortwave__transmitted_energy_flux
 :atmosphere_aerosol_radiation%7Eincoming%7Eshortwave__transmitted_energy_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
+			svu:hasProperty <property#transmitted_energy_flux> ;
 			svu:hasObject <phenomenon#atmosphere_in_aerosol_sink_radiation~incoming~shortwave_main_transmission> ;
 			skos:prefLabel "atmosphere_aerosol_radiation~incoming~shortwave__transmitted_energy_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/variable#atmosphere_aerosol_radiation%7Eoutgoing%7Elongwave__emittance
 :atmosphere_aerosol_radiation%7Eoutgoing%7Elongwave__emittance rdf:type owl:NamedIndividual ,
 			svu:Variable ;
+			svu:hasProperty <property#emittance> ;
 			svu:hasObject <phenomenon#atmosphere_in_aerosol_main_radiation~outgoing~longwave_out_emission> ;
 			skos:prefLabel "atmosphere_aerosol_radiation~outgoing~longwave__emittance"@en .
 
 ###  http://www.geoscienceontology.org/svl/variable#atmosphere_aerosol_radiation%7Eoutgoing%7Elongwave%7Edownward__energy_flux
 :atmosphere_aerosol_radiation%7Eoutgoing%7Elongwave%7Edownward__energy_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
+			svu:hasProperty <property#energy_flux> ;
 			svu:hasObject <phenomenon#atmosphere_in_aerosol_source_radiation~outgoing~longwave~downward_main_emission> ;
 			skos:prefLabel "atmosphere_aerosol_radiation~outgoing~longwave~downward__energy_flux"@en .
 
 ###  http://www.geoscienceontology.org/svl/variable#atmosphere_aerosol_radiation%7Eoutgoing%7Elongwave%7Eupward__energy_flux
 :atmosphere_aerosol_radiation%7Eoutgoing%7Elongwave%7Eupward__energy_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
+			svu:hasProperty <property#energy_flux> ;
 			svu:hasObject <phenomenon#atmosphere_in_aerosol_source_radiation~outgoing~longwave~upward_main_emission> ;
 			skos:prefLabel "atmosphere_aerosol_radiation~outgoing~longwave~upward__energy_flux"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__anomaly_of_pressure
-:__anomaly_of_pressure rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__anomaly_of_pressure
+:atmosphere_air__anomaly_of_pressure rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasProperty <property#anomaly_of_> ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__anomaly_of_pressure"@en .
+			svu:hasProperty <property#anomaly_of_pressure> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__anomaly_of_pressure"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__anomaly_of_temperature
-:__anomaly_of_temperature rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__anomaly_of_temperature
+:atmosphere_air__anomaly_of_temperature rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasProperty <property#anomaly_of_> ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__anomaly_of_temperature"@en .
+			svu:hasProperty <property#anomaly_of_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__anomaly_of_temperature"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__azimuth_angle_of_gradient_of_temperature
-:__azimuth_angle_of_gradient_of_temperature rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__azimuth_angle_of_gradient_of_temperature
+:atmosphere_air__azimuth_angle_of_gradient_of_temperature rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasProperty <property#azimuth_angle_of_gradient_of_> ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__azimuth_angle_of_gradient_of_temperature"@en .
+			svu:hasProperty <property#azimuth_angle_of_gradient_of_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__azimuth_angle_of_gradient_of_temperature"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__convective_available_potential_energy
-:__convective_available_potential_energy rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__convective_available_potential_energy
+:atmosphere_air__convective_available_potential_energy rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__convective_available_potential_energy"@en .
+			svu:hasProperty <property#convective_available_potential_energy> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__convective_available_potential_energy"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__east_derivative_of_temperature
-:__east_derivative_of_temperature rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__east_derivative_of_temperature
+:atmosphere_air__east_derivative_of_temperature rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasProperty <property#east_derivative_of_> ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__east_derivative_of_temperature"@en .
+			svu:hasProperty <property#east_derivative_of_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__east_derivative_of_temperature"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__elevation_angle_of_gradient_of_temperature
-:__elevation_angle_of_gradient_of_temperature rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__elevation_angle_of_gradient_of_temperature
+:atmosphere_air__elevation_angle_of_gradient_of_temperature rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasProperty <property#elevation_angle_of_gradient_of_> ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__elevation_angle_of_gradient_of_temperature"@en .
+			svu:hasProperty <property#elevation_angle_of_gradient_of_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__elevation_angle_of_gradient_of_temperature"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__equivalent_potential_temperature
-:__equivalent_potential_temperature rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__equivalent_potential_temperature
+:atmosphere_air__equivalent_potential_temperature rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__equivalent_potential_temperature"@en .
+			svu:hasProperty <property#equivalent_potential_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__equivalent_potential_temperature"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__equivalent_temperature
-:__equivalent_temperature rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__equivalent_temperature
+:atmosphere_air__equivalent_temperature rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__equivalent_temperature"@en .
+			svu:hasProperty <property#equivalent_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__equivalent_temperature"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__heat_capacity_ratio
-:__heat_capacity_ratio rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__heat_capacity_ratio
+:atmosphere_air__heat_capacity_ratio rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__heat_capacity_ratio"@en .
+			svu:hasProperty <property#heat_capacity_ratio> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__heat_capacity_ratio"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__increment_of_pressure
-:__increment_of_pressure rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__increment_of_pressure
+:atmosphere_air__increment_of_pressure rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasProperty <property#increment_of_> ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__increment_of_pressure"@en .
+			svu:hasProperty <property#increment_of_pressure> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__increment_of_pressure"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__increment_of_temperature
-:__increment_of_temperature rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__increment_of_temperature
+:atmosphere_air__increment_of_temperature rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasProperty <property#increment_of_> ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__increment_of_temperature"@en .
+			svu:hasProperty <property#increment_of_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__increment_of_temperature"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__isentropic_compressibility
-:__isentropic_compressibility rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__isentropic_compressibility
+:atmosphere_air__isentropic_compressibility rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__isentropic_compressibility"@en .
+			svu:hasProperty <property#isentropic_compressibility> ;
+			svu:hasObject <phenomenon#atmosphere_in_air_process_isentropic> ;
+			skos:prefLabel "atmosphere_air__isentropic_compressibility"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__isothermal_compressibility
-:__isothermal_compressibility rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__isothermal_compressibility
+:atmosphere_air__isothermal_compressibility rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__isothermal_compressibility"@en .
+			svu:hasProperty <property#isothermal_compressibility> ;
+			svu:hasObject <phenomenon#atmosphere_in_air_process_isothermal> ;
+			skos:prefLabel "atmosphere_air__isothermal_compressibility"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__magnitude_of_gradient_of_temperature
-:__magnitude_of_gradient_of_temperature rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__magnitude_of_gradient_of_temperature
+:atmosphere_air__magnitude_of_gradient_of_temperature rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasProperty <property#magnitude_of_gradient_of_> ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__magnitude_of_gradient_of_temperature"@en .
+			svu:hasProperty <property#magnitude_of_gradient_of_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__magnitude_of_gradient_of_temperature"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__mass-per-volume_density
-:__mass-per-volume_density rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__mass-per-volume_density
+:atmosphere_air__mass-per-volume_density rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__mass-per-volume_density"@en .
+			svu:hasProperty <property#mass-per-volume_density> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__mass-per-volume_density"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__isobaric_mass-specific_heat_capacity
-:__isobaric_mass-specific_heat_capacity rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__isobaric_mass-specific_heat_capacity
+:atmosphere_air__isobaric_mass-specific_heat_capacity rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__isobaric_mass-specific_heat_capacity"@en .
+			svu:hasProperty <property#isobaric_mass-specific_heat_capacity> ;
+			svu:hasObject <phenomenon#atmosphere_in_air_process_isobaric> ;
+			skos:prefLabel "atmosphere_air__isobaric_mass-specific_heat_capacity"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__isochoric_mass-specific_heat_capacity
-:__isochoric_mass-specific_heat_capacity rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__isochoric_mass-specific_heat_capacity
+:atmosphere_air__isochoric_mass-specific_heat_capacity rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__isochoric_mass-specific_heat_capacity"@en .
+			svu:hasProperty <property#isochoric_mass-specific_heat_capacity> ;
+			svu:hasObject <phenomenon#atmosphere_in_air_process_isochoric> ;
+			skos:prefLabel "atmosphere_air__isochoric_mass-specific_heat_capacity"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__north_derivative_of_temperature
-:__north_derivative_of_temperature rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__north_derivative_of_temperature
+:atmosphere_air__north_derivative_of_temperature rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasProperty <property#north_derivative_of_> ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__north_derivative_of_temperature"@en .
+			svu:hasProperty <property#north_derivative_of_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__north_derivative_of_temperature"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__potential_temperature
-:__potential_temperature rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__potential_temperature
+:atmosphere_air__potential_temperature rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__potential_temperature"@en .
+			svu:hasProperty <property#potential_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__potential_temperature"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__static_pressure
-:__static_pressure rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__static_pressure
+:atmosphere_air__static_pressure rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__static_pressure"@en .
+			svu:hasProperty <property#static_pressure> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__static_pressure"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__environmental_static_pressure_lapse_rate
-:__environmental_static_pressure_lapse_rate rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__environmental_static_pressure_lapse_rate
+:atmosphere_air__environmental_static_pressure_lapse_rate rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__environmental_static_pressure_lapse_rate"@en .
+			svu:hasProperty <property#environmental_static_pressure_lapse_rate> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__environmental_static_pressure_lapse_rate"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__temperature
-:__temperature rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__temperature
+:atmosphere_air__temperature rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__temperature"@en .
+			svu:hasProperty <property#temperature> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__temperature"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__dry_adiabatic_temperature_lapse_rate
-:__dry_adiabatic_temperature_lapse_rate rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__dry_adiabatic_temperature_lapse_rate
+:atmosphere_air__dry_adiabatic_temperature_lapse_rate rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__dry_adiabatic_temperature_lapse_rate"@en .
+			svu:hasProperty <property#dry_adiabatic_temperature_lapse_rate> ;
+			svu:hasObject <phenomenon#atmosphere_in_air~dry_process_adiabatic> ;
+			skos:prefLabel "atmosphere_air__dry_adiabatic_temperature_lapse_rate"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__environmental_temperature_lapse_rate
-:__environmental_temperature_lapse_rate rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__environmental_temperature_lapse_rate
+:atmosphere_air__environmental_temperature_lapse_rate rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__environmental_temperature_lapse_rate"@en .
+			svu:hasProperty <property#environmental_temperature_lapse_rate> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__environmental_temperature_lapse_rate"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__temperature_lapse_rate
-:__temperature_lapse_rate rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__temperature_lapse_rate
+:atmosphere_air__temperature_lapse_rate rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__temperature_lapse_rate"@en .
+			svu:hasProperty <property#temperature_lapse_rate> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__temperature_lapse_rate"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__saturated_adiabatic_temperature_lapse_rate
-:__saturated_adiabatic_temperature_lapse_rate rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__saturated_adiabatic_temperature_lapse_rate
+:atmosphere_air__saturated_adiabatic_temperature_lapse_rate rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__saturated_adiabatic_temperature_lapse_rate"@en .
+			svu:hasProperty <property#saturated_adiabatic_temperature_lapse_rate> ;
+			svu:hasObject <phenomenon#atmosphere_in_air~saturated_process_adiabatic> ;
+			skos:prefLabel "atmosphere_air__saturated_adiabatic_temperature_lapse_rate"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__thermal_conductivity
-:__thermal_conductivity rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__thermal_conductivity
+:atmosphere_air__thermal_conductivity rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__thermal_conductivity"@en .
+			svu:hasProperty <property#thermal_conductivity> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__thermal_conductivity"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__thermal_diffusivity
-:__thermal_diffusivity rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__thermal_diffusivity
+:atmosphere_air__thermal_diffusivity rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__thermal_diffusivity"@en .
+			svu:hasProperty <property#thermal_diffusivity> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__thermal_diffusivity"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__thermal_inertia
-:__thermal_inertia rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__thermal_inertia
+:atmosphere_air__thermal_inertia rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__thermal_inertia"@en .
+			svu:hasProperty <property#thermal_inertia> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__thermal_inertia"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__thermal_resistivity
-:__thermal_resistivity rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__thermal_resistivity
+:atmosphere_air__thermal_resistivity rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__thermal_resistivity"@en .
+			svu:hasProperty <property#thermal_resistivity> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__thermal_resistivity"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__isobaric_volume-specific_heat_capacity
-:__isobaric_volume-specific_heat_capacity rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__isobaric_volume-specific_heat_capacity
+:atmosphere_air__isobaric_volume-specific_heat_capacity rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__isobaric_volume-specific_heat_capacity"@en .
+			svu:hasProperty <property#isobaric_volume-specific_heat_capacity> ;
+			svu:hasObject <phenomenon#atmosphere_in_air_process_isobaric> ;
+			skos:prefLabel "atmosphere_air__isobaric_volume-specific_heat_capacity"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__isochoric_volume-specific_heat_capacity
-:__isochoric_volume-specific_heat_capacity rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__isochoric_volume-specific_heat_capacity
+:atmosphere_air__isochoric_volume-specific_heat_capacity rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__isochoric_volume-specific_heat_capacity"@en .
+			svu:hasProperty <property#isochoric_volume-specific_heat_capacity> ;
+			svu:hasObject <phenomenon#atmosphere_in_air_process_isochoric> ;
+			skos:prefLabel "atmosphere_air__isochoric_volume-specific_heat_capacity"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__x_derivative_of_temperature
-:__x_derivative_of_temperature rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__x_derivative_of_temperature
+:atmosphere_air__x_derivative_of_temperature rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasProperty <property#x_derivative_of_> ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__x_derivative_of_temperature"@en .
+			svu:hasProperty <property#x_derivative_of_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__x_derivative_of_temperature"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__y_derivative_of_temperature
-:__y_derivative_of_temperature rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__y_derivative_of_temperature
+:atmosphere_air__y_derivative_of_temperature rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasProperty <property#y_derivative_of_> ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__y_derivative_of_temperature"@en .
+			svu:hasProperty <property#y_derivative_of_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__y_derivative_of_temperature"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#__z_derivative_of_temperature
-:__z_derivative_of_temperature rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air__z_derivative_of_temperature
+:atmosphere_air__z_derivative_of_temperature rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasProperty <property#z_derivative_of_> ;
-			svu:hasObject <#atmosphere_in_air_process_isothermal> ;
-			skos:prefLabel "__z_derivative_of_temperature"@en .
+			svu:hasProperty <property#z_derivative_of_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_in_air> ;
+			skos:prefLabel "atmosphere_air__z_derivative_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_column_acetic-acid__mass-per-area_density
+:atmosphere_air_column_acetic-acid__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#mass-per-area_density> ;
+			svu:hasObject <phenomenon#atmosphere_air_column_in_acetic-acid> ;
+			skos:prefLabel "atmosphere_air_column_acetic-acid__mass-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_column_acetonitrile__mass-per-area_density
+:atmosphere_air_column_acetonitrile__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#mass-per-area_density> ;
+			svu:hasObject <phenomenon#atmosphere_air_column_in_acetonitrile> ;
+			skos:prefLabel "atmosphere_air_column_acetonitrile__mass-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_column_ammonium%7Eaerosol%7Edry__mass-per-area_density
+:atmosphere_air_column_ammonium%7Eaerosol%7Edry__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#mass-per-area_density> ;
+			svu:hasObject <phenomenon#atmosphere_air_column_in_ammonium~aerosol~dry> ;
+			skos:prefLabel "atmosphere_air_column_ammonium~aerosol~dry__mass-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_column_alkanes__mass-per-area_density
+:atmosphere_air_column_alkanes__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#mass-per-area_density> ;
+			svu:hasObject <phenomenon#atmosphere_air_column_in_alkanes> ;
+			skos:prefLabel "atmosphere_air_column_alkanes__mass-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_column_alkenes__mass-per-area_density
+:atmosphere_air_column_alkenes__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#mass-per-area_density> ;
+			svu:hasObject <phenomenon#atmosphere_air_column_in_alkenes> ;
+			skos:prefLabel "atmosphere_air_column_alkenes__mass-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_column_alpha-hch__mass-per-area_density
+:atmosphere_air_column_alpha-hch__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#mass-per-area_density> ;
+			svu:hasObject <phenomenon#atmosphere_air_column_in_alpha-hch> ;
+			skos:prefLabel "atmosphere_air_column_alpha-hch__mass-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_column_alpha-pinene__mass-per-area_density
+:atmosphere_air_column_alpha-pinene__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#mass-per-area_density> ;
+			svu:hasObject <phenomenon#atmosphere_air_column_in_alpha-pinene> ;
+			skos:prefLabel "atmosphere_air_column_alpha-pinene__mass-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_column_ammonia__mass-per-area_density
+:atmosphere_air_column_ammonia__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#mass-per-area_density> ;
+			svu:hasObject <phenomenon#atmosphere_air_column_in_ammonia> ;
+			skos:prefLabel "atmosphere_air_column_ammonia__mass-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_column_clox-as-chlorine__mass-per-area_density
+:atmosphere_air_column_clox-as-chlorine__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#mass-per-area_density> ;
+			svu:hasObject <phenomenon#atmosphere_air_column_in_clox-as-chlorine> ;
+			skos:prefLabel "atmosphere_air_column_clox-as-chlorine__mass-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_column_hox-as-hydrogen__mass-per-area_density
+:atmosphere_air_column_hox-as-hydrogen__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#mass-per-area_density> ;
+			svu:hasObject <phenomenon#atmosphere_air_column_in_hox-as-hydrogen> ;
+			skos:prefLabel "atmosphere_air_column_hox-as-hydrogen__mass-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_column_nox-as-nitrogen__mass-per-area_density
+:atmosphere_air_column_nox-as-nitrogen__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#mass-per-area_density> ;
+			svu:hasObject <phenomenon#atmosphere_air_column_in_nox-as-nitrogen> ;
+			skos:prefLabel "atmosphere_air_column_nox-as-nitrogen__mass-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_column_water%7Evapor__leq_depth
+:atmosphere_air_column_water%7Evapor__leq_depth rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#leq_depth> ;
+			svu:hasObject <phenomenon#atmosphere_air_column_in_water~vapor> ;
+			skos:prefLabel "atmosphere_air_column_water~vapor__leq_depth"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_column_water%7Evapor__mass-per-area_density
+:atmosphere_air_column_water%7Evapor__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#mass-per-area_density> ;
+			svu:hasObject <phenomenon#atmosphere_air_column_in_water~vapor> ;
+			skos:prefLabel "atmosphere_air_column_water~vapor__mass-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_carbon-dioxide__equilibrium_partial_pressure
+:atmosphere_air_carbon-dioxide__equilibrium_partial_pressure rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#equilibrium_partial_pressure> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_equilibrium_carbon-dioxide> ;
+			skos:prefLabel "atmosphere_air_carbon-dioxide__equilibrium_partial_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_carbon-dioxide__partial_pressure
+:atmosphere_air_carbon-dioxide__partial_pressure rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#partial_pressure> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_carbon-dioxide> ;
+			skos:prefLabel "atmosphere_air_carbon-dioxide__partial_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_carbon-dioxide__relative_saturation
+:atmosphere_air_carbon-dioxide__relative_saturation rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#relative_saturation> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_carbon-dioxide> ;
+			skos:prefLabel "atmosphere_air_carbon-dioxide__relative_saturation"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_carbon-dioxide__saturated_partial_pressure
+:atmosphere_air_carbon-dioxide__saturated_partial_pressure rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#saturated_partial_pressure> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_saturated_carbon-dioxide> ;
+			skos:prefLabel "atmosphere_air_carbon-dioxide__saturated_partial_pressure"@en .
 
 ###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_flow__azimuth_angle_of_bolus_velocity
 :atmosphere_air_flow__azimuth_angle_of_bolus_velocity rdf:type owl:NamedIndividual ,
@@ -1044,6 +1195,209 @@
 			svu:hasProperty <property#z_z_component_of_stress> ;
 			svu:hasObject <phenomenon#atmosphere_in_air_flow> ;
 			skos:prefLabel "atmosphere_air_flow__z_z_component_of_stress"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_flow_sediment%7Esuspended__mass_concentration
+:atmosphere_air_flow_sediment%7Esuspended__mass_concentration rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#mass_concentration> ;
+			svu:hasObject <phenomenon#atmosphere_in_air_flow@medium_sediment~suspended> ;
+			skos:prefLabel "atmosphere_air_flow_sediment~suspended__mass_concentration"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_flow_sediment%7Esuspended__volume_concentration
+:atmosphere_air_flow_sediment%7Esuspended__volume_concentration rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#volume_concentration> ;
+			svu:hasObject <phenomenon#atmosphere_in_air_flow@medium_sediment~suspended> ;
+			skos:prefLabel "atmosphere_air_flow_sediment~suspended__volume_concentration"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_flow_snow%7Esuspended__mass_concentration
+:atmosphere_air_flow_snow%7Esuspended__mass_concentration rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#mass_concentration> ;
+			svu:hasObject <phenomenon#atmosphere_in_air_flow@medium_snow~suspended> ;
+			skos:prefLabel "atmosphere_air_flow_snow~suspended__mass_concentration"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_flow_snow%7Esuspended__volume_concentration
+:atmosphere_air_flow_snow%7Esuspended__volume_concentration rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#volume_concentration> ;
+			svu:hasObject <phenomenon#atmosphere_in_air_flow@medium_snow~suspended> ;
+			skos:prefLabel "atmosphere_air_flow_snow~suspended__volume_concentration"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_mercury%7Egaseous%7Edivalent__molar_concentration
+:atmosphere_air_mercury%7Egaseous%7Edivalent__molar_concentration rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#molar_concentration> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_mercury~gaseous~divalent> ;
+			skos:prefLabel "atmosphere_air_mercury~gaseous~divalent__molar_concentration"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_mercury%7Egaseous%7Eelemental__molar_concentration
+:atmosphere_air_mercury%7Egaseous%7Eelemental__molar_concentration rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#molar_concentration> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_mercury~gaseous~elemental> ;
+			skos:prefLabel "atmosphere_air_mercury~gaseous~elemental__molar_concentration"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_mercury%7Egaseous%7Emonovalent__molar_concentration
+:atmosphere_air_mercury%7Egaseous%7Emonovalent__molar_concentration rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#molar_concentration> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_mercury~gaseous~monovalent> ;
+			skos:prefLabel "atmosphere_air_mercury~gaseous~monovalent__molar_concentration"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_nitrogen%7Eatomic__molar_concentration
+:atmosphere_air_nitrogen%7Eatomic__molar_concentration rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#molar_concentration> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_nitrogen~atomic> ;
+			skos:prefLabel "atmosphere_air_nitrogen~atomic__molar_concentration"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_nmvoc%7Eanthropogenic-as-carbon__molar_concentration
+:atmosphere_air_nmvoc%7Eanthropogenic-as-carbon__molar_concentration rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#molar_concentration> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_nmvoc~anthropogenic-as-carbon> ;
+			skos:prefLabel "atmosphere_air_nmvoc~anthropogenic-as-carbon__molar_concentration"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_nmvoc%7Ebiogenic-as-carbon__molar_concentration
+:atmosphere_air_nmvoc%7Ebiogenic-as-carbon__molar_concentration rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#molar_concentration> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_nmvoc~biogenic-as-carbon> ;
+			skos:prefLabel "atmosphere_air_nmvoc~biogenic-as-carbon__molar_concentration"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_radiation__beer-lambert-law_attenuation_coefficient
+:atmosphere_air_radiation__beer-lambert-law_attenuation_coefficient rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#beer-lambert-law_attenuation_coefficient> ;
+			svu:hasObject <#atmosphere_in_air@medium_attenuation_radiation> ;
+			skos:prefLabel "atmosphere_air_radiation__beer-lambert-law_attenuation_coefficient"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_radiation__standard_refractive_index
+:atmosphere_air_radiation__standard_refractive_index rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#standard_refractive_index> ;
+			svu:hasObject <#atmosphere_in_air@medium_refraction_radiation> ;
+			skos:prefLabel "atmosphere_air_radiation__standard_refractive_index"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_radiation__length
+:atmosphere_air_radiation__length rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#length> ;
+			svu:hasObject <#atmosphere_in_air@medium_radiation_optical-path> ;
+			skos:prefLabel "atmosphere_air_radiation__length"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_radiation%7Eincoming%7Elongwave__absorptance
+:atmosphere_air_radiation%7Eincoming%7Elongwave__absorptance rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#absorptance> ;
+			svu:hasObject <phenomenon#atmosphere_air_main_radiation~incoming~longwave_in_absorption> ;
+			skos:prefLabel "atmosphere_air_radiation~incoming~longwave__absorptance"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_radiation%7Eincoming%7Elongwave__reflectance
+:atmosphere_air_radiation%7Eincoming%7Elongwave__reflectance rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#reflectance> ;
+			svu:hasObject <phenomenon#atmosphere_air_main_radiation~incoming~longwave_in_reflection> ;
+			skos:prefLabel "atmosphere_air_radiation~incoming~longwave__reflectance"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_radiation%7Eincoming%7Elongwave__transmittance
+:atmosphere_air_radiation%7Eincoming%7Elongwave__transmittance rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#transmittance> ;
+			svu:hasObject <phenomenon#atmosphere_air_main_radiation~incoming~longwave_in_transmission> ;
+			skos:prefLabel "atmosphere_air_radiation~incoming~longwave__transmittance"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_radiation%7Eincoming%7Eshortwave__energy_intensity
+:atmosphere_air_radiation%7Eincoming%7Eshortwave__energy_intensity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#energy_intensity> ;
+			svu:hasObject <phenomenon#atmosphere_air_in_radiation~incoming~shortwave> ;
+			skos:prefLabel "atmosphere_air_radiation~incoming~shortwave__energy_intensity"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_water%7Evapor__bubble-point_temperature
+:atmosphere_air_water%7Evapor__bubble-point_temperature rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#bubble-point_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_bubble-point_water~vapor> ;
+			skos:prefLabel "atmosphere_air_water~vapor__bubble-point_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_water%7Evapor__dew-point_temperature
+:atmosphere_air_water%7Evapor__dew-point_temperature rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#dew-point_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_dew-point_water~vapor> ;
+			skos:prefLabel "atmosphere_air_water~vapor__dew-point_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_water%7Evapor__equilibrium_partial_pressure
+:atmosphere_air_water%7Evapor__equilibrium_partial_pressure rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#equilibrium_partial_pressure> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_equilibrium_water~vapor> ;
+			skos:prefLabel "atmosphere_air_water~vapor__equilibrium_partial_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_water%7Evapor__frost-point_temperature
+:atmosphere_air_water%7Evapor__frost-point_temperature rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#frost-point_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_frost-point_water~vapor> ;
+			skos:prefLabel "atmosphere_air_water~vapor__frost-point_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_water%7Evapor__mass-per-volume_density
+:atmosphere_air_water%7Evapor__mass-per-volume_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#mass-per-volume_density> ;
+			svu:hasObject <phenomenon#atmosphere_air_in_water~vapor> ;
+			skos:prefLabel "atmosphere_air_water~vapor__mass-per-volume_density"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_water%7Evapor__mixing_ratio
+:atmosphere_air_water%7Evapor__mixing_ratio rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#mixing_ratio> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_water~vapor> ;
+			skos:prefLabel "atmosphere_air_water~vapor__mixing_ratio"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_water%7Evapor__partial_pressure
+:atmosphere_air_water%7Evapor__partial_pressure rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#partial_pressure> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_water~vapor> ;
+			skos:prefLabel "atmosphere_air_water~vapor__partial_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_water%7Evapor__psychrometric_constant
+:atmosphere_air_water%7Evapor__psychrometric_constant rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#psychrometric_constant> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_water~vapor> ;
+			skos:prefLabel "atmosphere_air_water~vapor__psychrometric_constant"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_water%7Evapor__relative_saturation
+:atmosphere_air_water%7Evapor__relative_saturation rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#relative_saturation> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_water~vapor> ;
+			skos:prefLabel "atmosphere_air_water~vapor__relative_saturation"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_water%7Evapor__saturated_partial_pressure
+:atmosphere_air_water%7Evapor__saturated_partial_pressure rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#saturated_partial_pressure> ;
+			svu:hasObject <phenomenon#atmosphere_in_air@medium_saturated_water~vapor> ;
+			skos:prefLabel "atmosphere_air_water~vapor__saturated_partial_pressure"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_water%7Evapor__virtual_potential_temperature
+:atmosphere_air_water%7Evapor__virtual_potential_temperature rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#virtual_potential_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_air_in_water~vapor> ;
+			skos:prefLabel "atmosphere_air_water~vapor__virtual_potential_temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_air_water%7Evapor__virtual_temperature
+:atmosphere_air_water%7Evapor__virtual_temperature rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasProperty <property#virtual_temperature> ;
+			svu:hasObject <phenomenon#atmosphere_air_in_water~vapor> ;
+			skos:prefLabel "atmosphere_air_water~vapor__virtual_temperature"@en .
 
 ###  http://www.geoscienceontology.org/svl/variable#atmosphere_ball__fall_speed
 :atmosphere_ball__fall_speed rdf:type owl:NamedIndividual ,

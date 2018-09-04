@@ -17,7 +17,7 @@
 #    Participant   
 # 
 #################################################################
-##Last generated on: 2018-09-03 17:36
+##Last generated on: 2018-09-04 10:56
 
 ###Participant
 
@@ -91,3 +91,17 @@
 			svu:hasPhenomenon <form#aerosol> ;
 			svu:hasParticipantRole <role#source> ;
 			skos:prefLabel "aerosol"@en .
+
+###  http://www.geoscienceontology.org/svl/form#atmosphere_air_main
+:atmosphere_air_main rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <body#atmosphere_air> ;
+			svu:hasParticipantRole <role#main> ;
+			skos:prefLabel "atmosphere_air"@en .
+
+###  http://www.geoscienceontology.org/svl/body#radiation%7Eincoming%7Elongwave_in
+:radiation%7Eincoming%7Elongwave_in rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <phenomenon#radiation%7Eincoming%7Elongwave> ;
+			svu:hasParticipantRole <role#in> ;
+			skos:prefLabel "radiation~incoming~longwave"@en .
