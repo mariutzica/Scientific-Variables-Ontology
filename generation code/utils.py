@@ -474,6 +474,11 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 participant = vocab.loc[ index, 'participant_two' ]
                 ttl_file.write( attribute.format( 'hasParticipant', \
                         '<participant#' + urllib.quote( participant ) + '>', ';' ) )
+            if 'participant_three' in vocab.columns.values and \
+                vocab.loc[ index, 'participant_three' ] != '' :
+                participant = vocab.loc[ index, 'participant_three' ]
+                ttl_file.write( attribute.format( 'hasParticipant', \
+                        '<participant#' + urllib.quote( participant ) + '>', ';' ) )
             if 'context_id' in vocab.columns.values and \
                 vocab.loc[ index, 'context_id' ] != '' :
                 context = vocab.loc[ index, 'context_id' ]

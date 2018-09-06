@@ -17,7 +17,7 @@
 #    Body   
 # 
 #################################################################
-##Last generated on: 2018-09-04 10:56
+##Last generated on: 2018-09-06 09:58
 
 ###Inanimate Natural Body
 
@@ -465,6 +465,29 @@
 			svu:Body ;
 			svu:isDerivedFrom :atmosphere ;
 			skos:prefLabel "atmosphere_air"@en .
+
+###  http://www.geoscienceontology.org/svl/body#vegetation_canopy
+:vegetation_canopy rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isDerivedFrom :vegetation ;
+			skos:prefLabel "vegetation_canopy"@en .
+
+###  http://www.geoscienceontology.org/svl/body#vegetation
+:vegetation rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			skos:prefLabel "vegetation"@en .
+
+###  http://www.geoscienceontology.org/svl/body#atmosphere_bottom
+:atmosphere_bottom rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isDerivedFrom :atmosphere ;
+			skos:prefLabel "atmosphere_bottom"@en .
+
+###  http://www.geoscienceontology.org/svl/body#atmosphere_bottom_air
+:atmosphere_bottom_air rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isDerivedFrom :atmosphere ;
+			skos:prefLabel "atmosphere_bottom_air"@en .
 
 
 ###Inanimate Fabricated Body

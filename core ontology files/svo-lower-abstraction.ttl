@@ -17,7 +17,7 @@
 #    Abstraction   
 # 
 #################################################################
-##Last generated on: 2018-09-04 10:56
+##Last generated on: 2018-09-06 09:58
 
 ###Mathematical Abstraction
 
@@ -25,99 +25,99 @@
 ###  http://www.geoscienceontology.org/svl/abstraction#airfoil
 :airfoil rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Airfoil" ;
 			skos:altLabel "aerofoil"@en ;
-			svu:isPluralityOf :http%3A//en.wikipedia.org/wiki/Airfoil ;
 			svu:isDerivedFrom :shape ;
 			skos:prefLabel "airfoil"@en .
 
 ###  http://www.geoscienceontology.org/svl/abstraction#circle
 :circle rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
-			svu:isPluralityOf :https%3A//en.wikipedia.org/wiki/Circle ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Circle" ;
 			svu:isDerivedFrom :shape ;
 			skos:prefLabel "circle"@en .
 
 ###  http://www.geoscienceontology.org/svl/abstraction#ellipse
 :ellipse rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
-			svu:isPluralityOf :http%3A//en.wikipedia.org/wiki/Ellipse ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Ellipse" ;
 			svu:isDerivedFrom :shape ;
 			skos:prefLabel "ellipse"@en .
 
 ###  http://www.geoscienceontology.org/svl/abstraction#ellipsoid
 :ellipsoid rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
-			svu:isPluralityOf :http%3A//en.wikipedia.org/wiki/Ellipsoid ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Ellipsoid" ;
 			svu:isDerivedFrom :shape ;
 			skos:prefLabel "ellipsoid"@en .
 
 ###  http://www.geoscienceontology.org/svl/abstraction#polygon
 :polygon rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
-			svu:isPluralityOf :http%3A//en.wikipedia.org/wiki/Polygon ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Polygon" ;
 			svu:isDerivedFrom :shape ;
 			skos:prefLabel "polygon"@en .
 
 ###  http://www.geoscienceontology.org/svl/abstraction#sphere
 :sphere rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
-			svu:isPluralityOf :http%3A//en.wikipedia.org/wiki/Sphere ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Sphere" ;
 			svu:isDerivedFrom :shape ;
 			skos:prefLabel "sphere"@en .
 
 ###  http://www.geoscienceontology.org/svl/abstraction#square
 :square rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
-			svu:isPluralityOf :http%3A//en.wikipedia.org/wiki/Square ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Square" ;
 			svu:isDerivedFrom :shape ;
 			skos:prefLabel "square"@en .
 
 ###  http://www.geoscienceontology.org/svl/abstraction#trapezoid
 :trapezoid rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
-			svu:isPluralityOf :https%3A//en.wikipedia.org/wiki/Trapezoid ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Trapezoid" ;
 			svu:isDerivedFrom :shape ;
 			skos:prefLabel "trapezoid"@en .
 
 ###  http://www.geoscienceontology.org/svl/abstraction#triangle
 :triangle rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
-			svu:isPluralityOf :https%3A//en.wikipedia.org/wiki/Triangle ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Triangle" ;
 			svu:isDerivedFrom :shape ;
 			skos:prefLabel "triangle"@en .
 
 ###  http://www.geoscienceontology.org/svl/abstraction#parabola
 :parabola rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
-			svu:isPluralityOf :https%3A//en.wikipedia.org/wiki/Parabola ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Parabola" ;
 			svu:isDerivedFrom :curve ;
 			skos:prefLabel "parabola"@en .
 
 ###  http://www.geoscienceontology.org/svl/abstraction#ray
 :ray rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
-			svu:isPluralityOf :https%3A//en.wikipedia.org/wiki/Line_%28geometry%29%23Ray ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Line_(geometry)#Ray" ;
 			svu:isDerivedFrom :line ;
 			skos:prefLabel "ray"@en .
 
 ###  http://www.geoscienceontology.org/svl/abstraction#polynomial
 :polynomial rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
-			svu:isPluralityOf :https%3A//en.wikipedia.org/wiki/Polynomial ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Polynomial" ;
 			svu:isDerivedFrom :expression ;
 			skos:prefLabel "polynomial"@en .
 
 ###  http://www.geoscienceontology.org/svl/abstraction#cantor-set
 :cantor-set rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
-			svu:isPluralityOf :https%3A//en.wikipedia.org/wiki/Cantor_set ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cantor_set" ;
 			svu:isDerivedFrom :point-set ;
 			skos:prefLabel "cantor-set"@en .
 
 ###  http://www.geoscienceontology.org/svl/abstraction#sierpinski-gasket
 :sierpinski-gasket rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
-			svu:isPluralityOf :https%3A//en.wikipedia.org/wiki/Sierpinski_triangle ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sierpinski_triangle" ;
 			svu:isDerivedFrom :point-set ;
 			svu:hasAttribute <attribute#sierpinski-triangle> ;
 			skos:prefLabel "sierpinski-gasket"@en .
@@ -125,7 +125,7 @@
 ###  http://www.geoscienceontology.org/svl/abstraction#mask
 :mask rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
-			svu:isPluralityOf :https%3A//en.wikipedia.org/wiki/Mask_%28computing%29 ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mask_(computing)" ;
 			svu:isDerivedFrom :grid ;
 			skos:prefLabel "mask"@en .
 
@@ -139,7 +139,7 @@
 ###  http://www.geoscienceontology.org/svl/abstraction#math
 :math rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
-			svu:isPluralityOf :https%3A//en.wikipedia.org/wiki/Mathematics ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mathematics" ;
 			svu:isDerivedFrom :model ;
 			svu:hasAttribute <attribute#mathematical> ;
 			skos:prefLabel "math"@en .
@@ -169,6 +169,7 @@
 ###  http://www.geoscienceontology.org/svl/abstraction#isosurface
 :isosurface rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Isosurface" ;
 			svu:isDerivedFrom :surface ;
 			skos:prefLabel "isosurface"@en .
 
@@ -185,6 +186,13 @@
 			svu:isDerivedFrom :curve ;
 			svu:hasAttribute <attribute#enclosing> ;
 			skos:prefLabel "curve~enclosing"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#datum%7Evertical
+:datum%7Evertical rdf:type owl:NamedIndividual ,
+			svu:MathematicalAbstraction ;
+			svu:isDerivedFrom :datum ;
+			svu:hasAttribute <attribute#vertical> ;
+			skos:prefLabel "datum~vertical"@en .
 
 
 ###Physical Abstraction
@@ -517,6 +525,21 @@
 			svu:isDerivedFrom :column ;
 			svu:abstractsPhenomenon <body#atmosphere_air> ;
 			skos:prefLabel "atmosphere_air_column"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#atmosphere_datum%7Evertical%7Etidal%7Emsl
+:atmosphere_datum%7Evertical%7Etidal%7Emsl rdf:type owl:NamedIndividual ,
+			svu:PhysicalAbstraction ;
+			svu:isDerivedFrom :datum%7Evertical%7Etidal%7Emsl ;
+			svu:abstractsPhenomenon <body#atmosphere> ;
+			skos:prefLabel "atmosphere_datum~vertical~tidal~msl"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#datum%7Evertical%7Etidal%7Emsl
+:datum%7Evertical%7Etidal%7Emsl rdf:type owl:NamedIndividual ,
+			svu:PhysicalAbstraction ;
+			svu:isDerivedFrom :datum%7Evertical ;
+			svu:hasAttribute <attribute#tidal> ;
+			svu:hasAttribute <attribute#msl> ;
+			skos:prefLabel "datum~vertical~tidal~msl"@en .
 
 
 ###Abstraction Type

@@ -258,10 +258,10 @@ label = '\n\n###Phenomenon\n\n'
 utils.create_bb_file( phenomenon_vocabulary, phenomenon_ttl, \
                       'Phenomenon', 'phenomenon', 'phenomenon', label = label )
 label = '\n\n###ContextPhenomenon\n\n'
-utils.create_bb_file( phenomenon_vocabulary, phenomenon_ttl, \
+utils.create_bb_file( phenomenon_context_vocabulary, phenomenon_ttl, \
                       'ContextPhenomenon', 'phenomenon', 'phenomenon', label = label )
 label = '\n\n###MediumPhenomenon\n\n'
-utils.create_bb_file( phenomenon_vocabulary, phenomenon_ttl, \
+utils.create_bb_file( phenomenon_medium_vocabulary, phenomenon_ttl, \
                       'MediumPhenomenon', 'phenomenon', 'phenomenon', label = label )
 label = '\n\n###Compound Phenomenon\n\n'
 utils.create_bb_file( compound_phenomenon_vocabulary, phenomenon_ttl, \

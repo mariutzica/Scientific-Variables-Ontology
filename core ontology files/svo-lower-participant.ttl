@@ -17,7 +17,7 @@
 #    Participant   
 # 
 #################################################################
-##Last generated on: 2018-09-04 10:56
+##Last generated on: 2018-09-06 09:58
 
 ###Participant
 
@@ -105,3 +105,122 @@
 			svu:hasPhenomenon <phenomenon#radiation%7Eincoming%7Elongwave> ;
 			svu:hasParticipantRole <role#in> ;
 			skos:prefLabel "radiation~incoming~longwave"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#air_sink
+:air_sink rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <matter#air> ;
+			svu:hasParticipantRole <role#sink> ;
+			skos:prefLabel "air"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#air_main
+:air_main rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <matter#air> ;
+			svu:hasParticipantRole <role#main> ;
+			skos:prefLabel "air"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#canopy_main
+:canopy_main rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <body#vegetation_canopy> ;
+			svu:hasParticipantRole <role#main> ;
+			skos:prefLabel "canopy"@en .
+
+###  http://www.geoscienceontology.org/svl/body#cloud_main
+:cloud_main rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <phenomenon#cloud> ;
+			svu:hasParticipantRole <role#main> ;
+			skos:prefLabel "cloud"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#radiation_out
+:radiation_out rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <phenomenon#radiation> ;
+			svu:hasParticipantRole <role#out> ;
+			skos:prefLabel "radiation"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#air_flow_main
+:air_flow_main rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <phenomenon#air_flow> ;
+			svu:hasParticipantRole <role#main> ;
+			skos:prefLabel "air_flow"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#buildings_main
+:buildings_main rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <body#buildings> ;
+			svu:hasParticipantRole <role#main> ;
+			skos:prefLabel "buildings"@en .
+
+###  http://www.geoscienceontology.org/svl/body#snowpack_main
+:snowpack_main rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <body#snowpack> ;
+			svu:hasParticipantRole <role#main> ;
+			skos:prefLabel "snowpack"@en .
+
+###  http://www.geoscienceontology.org/svl/body#terrain_main
+:terrain_main rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <body#terrain> ;
+			svu:hasParticipantRole <role#main> ;
+			skos:prefLabel "terrain"@en .
+
+###  http://www.geoscienceontology.org/svl/body#vegetation_main
+:vegetation_main rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <body#vegetation> ;
+			svu:hasParticipantRole <role#main> ;
+			skos:prefLabel "vegetation"@en .
+
+###  http://www.geoscienceontology.org/svl/body#land_sink
+:land_sink rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <body#land> ;
+			svu:hasParticipantRole <role#sink> ;
+			skos:prefLabel "land"@en .
+
+###  http://www.geoscienceontology.org/svl/body#land_main
+:land_main rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <body#land> ;
+			svu:hasParticipantRole <role#main> ;
+			skos:prefLabel "land"@en .
+
+###  http://www.geoscienceontology.org/svl/body#atmosphere_bottom_in_air_source
+:atmosphere_bottom_in_air_source rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <phenomenon#atmosphere_bottom_in_air> ;
+			svu:hasParticipantRole <role#source> ;
+			skos:prefLabel "atmosphere_bottom_air"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#atmosphere_bottom_in_air_main
+:atmosphere_bottom_in_air_main rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <phenomenon#atmosphere_bottom_in_air> ;
+			svu:hasParticipantRole <role#main> ;
+			skos:prefLabel "atmosphere_bottom_air"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#clouds_sink
+:clouds_sink rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <phenomenon#clouds> ;
+			svu:hasParticipantRole <role#sink> ;
+			skos:prefLabel "clouds"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#clouds_main
+:clouds_main rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <phenomenon#clouds> ;
+			svu:hasParticipantRole <role#main> ;
+			skos:prefLabel "clouds"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#clouds_source
+:clouds_source rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasPhenomenon <phenomenon#clouds> ;
+			svu:hasParticipantRole <role#source> ;
+			skos:prefLabel "clouds"@en .
