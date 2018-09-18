@@ -6440,6 +6440,6 @@ csn.loc[csn['quantity_id']=='','quantity_id'] = \
 csn.loc[csn['operator']!='','quantity_id'] = csn.loc[csn['operator']!='','operator']+'_of_'+csn.loc[csn['operator']!='','quantity_id']
 csn.loc[csn['operator']!='','quantity_label'] = csn.loc[csn['operator']!='','operator']+'_of_'+csn.loc[csn['operator']!='','quantity_label']
 csn['variable_label'] = csn['object_label']+'__'+csn['quantity_label']
-#cols_to_print = ['full_name','variable_label','object_cat','object_id','object_label','object_pref','quantity_id','quantity_label']
-cols_to_print = ['full_name','variable_label','object_id','object_label']
+cols_to_print = ['full_name','variable_label','object_cat','object_id','object_label','object_pref','quantity_id','quantity_label']
+#cols_to_print = ['full_name','variable_label','object_id','object_label']
 csn[cols_to_print].to_csv('CSDMS_standard_names.csv',index=False)
