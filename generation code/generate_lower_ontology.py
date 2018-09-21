@@ -35,11 +35,11 @@ operator_quantity_file  = 'quantitative_property_with_operator.csv'
 
 process_file  = 'process.csv'
 phenomenon_file  = 'phenomenon.csv'
-phenomenon_context_file  = 'phenomenon_context.csv'
-phenomenon_medium_file  = 'phenomenon_medium.csv'
 compound_phenomenon_file  = 'phenomenon_compound.csv'
-phenomenon_multiple_file  = 'phenomenon_multiple.csv'
-phenomenon_interaction_system_file  = 'phenomenon_interaction_system.csv'
+#phenomenon_context_file  = 'phenomenon_context.csv'
+#phenomenon_medium_file  = 'phenomenon_medium.csv'
+#phenomenon_multiple_file  = 'phenomenon_multiple.csv'
+#phenomenon_interaction_system_file  = 'phenomenon_interaction_system.csv'
 
 qualitative_attribute_file  = 'qualitative_attribute.csv'
 quantitative_attribute_file  = 'quantitative_attribute.csv'
@@ -96,14 +96,14 @@ process_vocabulary = \
             utils.load_data( ext_vocabulary, process_file )   
 phenomenon_vocabulary = \
             utils.load_data( ext_vocabulary, phenomenon_file )  
-phenomenon_context_vocabulary = \
-            utils.load_data( ext_vocabulary, phenomenon_context_file )  
-phenomenon_medium_vocabulary = \
-            utils.load_data( ext_vocabulary, phenomenon_medium_file )  
-phenomenon_multiple_vocabulary = \
-            utils.load_data( ext_vocabulary, phenomenon_multiple_file )  
-phenomenon_interaction_system_vocabulary = \
-            utils.load_data( ext_vocabulary, phenomenon_interaction_system_file )  
+#phenomenon_context_vocabulary = \
+#            utils.load_data( ext_vocabulary, phenomenon_context_file )  
+#phenomenon_medium_vocabulary = \
+#            utils.load_data( ext_vocabulary, phenomenon_medium_file )  
+#phenomenon_multiple_vocabulary = \
+#            utils.load_data( ext_vocabulary, phenomenon_multiple_file )  
+#phenomenon_interaction_system_vocabulary = \
+#            utils.load_data( ext_vocabulary, phenomenon_interaction_system_file )  
 compound_phenomenon_vocabulary = \
             utils.load_data( ext_vocabulary, compound_phenomenon_file )  
 qualitative_attribute_vocabulary = \
@@ -257,21 +257,21 @@ utils.create_bb_file( process_vocabulary, process_ttl, \
 label = '\n\n###Phenomenon\n\n'
 utils.create_bb_file( phenomenon_vocabulary, phenomenon_ttl, \
                       'Phenomenon', 'phenomenon', 'phenomenon', label = label )
-label = '\n\n###ContextPhenomenon\n\n'
-utils.create_bb_file( phenomenon_context_vocabulary, phenomenon_ttl, \
-                      'ContextPhenomenon', 'phenomenon', 'phenomenon', label = label )
-label = '\n\n###MediumPhenomenon\n\n'
-utils.create_bb_file( phenomenon_medium_vocabulary, phenomenon_ttl, \
-                      'MediumPhenomenon', 'phenomenon', 'phenomenon', label = label )
 label = '\n\n###Compound Phenomenon\n\n'
 utils.create_bb_file( compound_phenomenon_vocabulary, phenomenon_ttl, \
                       'Phenomenon', 'phenomenon', 'phenomenon', label = label )
-label = '\n\n###MultiplePhenomenon\n\n'
-utils.create_bb_file( phenomenon_multiple_vocabulary, phenomenon_ttl, \
-                      'MultiplePhenomenon', 'phenomenon', 'phenomenon', label = label )
-label = '\n\n###InteractionPhenomenon\n\n'
-utils.create_bb_file( phenomenon_interaction_system_vocabulary, phenomenon_ttl, \
-                      'InteractionPhenomenon', 'phenomenon', 'phenomenon', label = label )
+#label = '\n\n###ContextPhenomenon\n\n'
+#utils.create_bb_file( phenomenon_context_vocabulary, phenomenon_ttl, \
+#                      'ContextPhenomenon', 'phenomenon', 'phenomenon', label = label )
+#label = '\n\n###MediumPhenomenon\n\n'
+#utils.create_bb_file( phenomenon_medium_vocabulary, phenomenon_ttl, \
+#                      'MediumPhenomenon', 'phenomenon', 'phenomenon', label = label )
+#label = '\n\n###MultiplePhenomenon\n\n'
+#utils.create_bb_file( phenomenon_multiple_vocabulary, phenomenon_ttl, \
+#                      'MultiplePhenomenon', 'phenomenon', 'phenomenon', label = label )
+#label = '\n\n###InteractionPhenomenon\n\n'
+#utils.create_bb_file( phenomenon_interaction_system_vocabulary, phenomenon_ttl, \
+#                      'InteractionPhenomenon', 'phenomenon', 'phenomenon', label = label )
 
 # create Attribute file
 label = '\n\n###(Qualitative)Attribute\n\n'
