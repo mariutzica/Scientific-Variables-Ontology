@@ -17,60 +17,60 @@
 #    Role   
 # 
 #################################################################
-##Last generated on: 2018-09-20 20:57
+##Last generated on: 2018-10-05 10:00
 
 ###Role
 
 
 ###  http://www.geoscienceontology.org/svl/role#byproduct
 :byproduct rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/By-product" ;
 			skos:prefLabel "byproduct"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#cargo
 :cargo rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cargo" ;
 			skos:prefLabel "cargo"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#cover
 :cover rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			skos:prefLabel "cover"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#debris
 :debris rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Debris" ;
 			skos:prefLabel "debris"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#degradate
 :degradate rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			skos:prefLabel "degradate"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#degradates
 :degradates rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:isPluralityOf :degradate ;
 			skos:prefLabel "degradates"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#diver
 :diver rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Diver" ;
 			skos:prefLabel "diver"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#driver
 :driver rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/driver#Noun" ;
 			skos:prefLabel "driver"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#garbage
 :garbage rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Garbage" ;
 			skos:altLabel "trash"@en ;
 			skos:altLabel "rubbish"@en ;
@@ -80,120 +80,138 @@
 
 ###  http://www.geoscienceontology.org/svl/role#litter
 :litter rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Litter" ;
 			skos:prefLabel "litter"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#outlet
 :outlet rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/outlet#Noun" ;
 			skos:prefLabel "outlet"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#product
 :product rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Product_(chemistry)" ;
 			skos:prefLabel "product"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#products
 :products rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:isPluralityOf :product ;
 			skos:prefLabel "products"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#projectile
 :projectile rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Projectile" ;
 			skos:prefLabel "projectile"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#scatterer
 :scatterer rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Scattering" ;
 			skos:prefLabel "scatterer"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#scatterers
 :scatterers rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:isPluralityOf :scatterer ;
 			skos:prefLabel "scatterers"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#sink
 :sink rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/sink#Noun" ;
 			skos:prefLabel "sink"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#solvent
 :solvent rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Solvent" ;
 			skos:prefLabel "solvent"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#source
 :source rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/source#Noun" ;
 			skos:prefLabel "source"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#sources
 :sources rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/source#Noun" ;
 			svu:isPluralityOf :source ;
 			skos:prefLabel "sources"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#target
 :target rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Target" ;
 			skos:prefLabel "target"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#waste
 :waste rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Waste" ;
 			skos:prefLabel "waste"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#crop
 :crop rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Crop" ;
 			skos:prefLabel "crop"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#deposit
 :deposit rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Deposition_(geology)" ;
 			skos:prefLabel "deposit"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#payload
 :payload rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Payload" ;
 			skos:prefLabel "payload"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#skydiver
 :skydiver rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Parachuting" ;
-			svu:isDerivedFrom :diver ;
+			svu:isTypeOf :diver ;
 			skos:prefLabel "skydiver"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#scuba-diver
 :scuba-diver rdf:type owl:NamedIndividual ,
-			svu:Role ;
+			svu:PhenomenonRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Scuba_diving" ;
-			svu:isDerivedFrom :diver ;
+			svu:isTypeOf :diver ;
 			skos:prefLabel "scuba-diver"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#source%7Eof-water
 :source%7Eof-water rdf:type owl:NamedIndividual ,
-			svu:Role ;
-			svu:isDerivedFrom :source ;
+			svu:PhenomenonRole ;
+			svu:isTypeOf :source ;
 			skos:prefLabel "source~of-water"@en .
+
+###  http://www.geoscienceontology.org/svl/role#entrance
+:entrance rdf:type owl:NamedIndividual ,
+			svu:PhenomenonRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Entrance" ;
+			skos:prefLabel "entrance"@en .
+
+###  http://www.geoscienceontology.org/svl/role#exit
+:exit rdf:type owl:NamedIndividual ,
+			svu:PhenomenonRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Exit" ;
+			skos:prefLabel "exit"@en .
+
+###  http://www.geoscienceontology.org/svl/role#filter
+:filter rdf:type owl:NamedIndividual ,
+			svu:PhenomenonRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Filtration" ;
+			skos:prefLabel "filter"@en .
 
 
 ###ParticipantRole
@@ -232,34 +250,69 @@
 :coefficient rdf:type owl:NamedIndividual ,
 			svu:PropertyRole ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Coefficient" ;
+			svu:isTypeOf :term ;
 			skos:prefLabel "coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#constant
 :constant rdf:type owl:NamedIndividual ,
 			svu:PropertyRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mathematical_constant" ;
+			rdfs:comment "A constant is the opposite of a variable. A constant cannot be a parameter, but it can be a coefficient or an exponent. A physical constant is, in its widest scope, a property of the known universe. A mathematical constant is abstract and may be a property of the known mathematical universe used to describe the known physical universe. See https://www.scientificamerican.com/article/is-the-universe-made-of-math-excerpt/" ;
 			skos:prefLabel "constant"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#exponent
 :exponent rdf:type owl:NamedIndividual ,
 			svu:PropertyRole ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Exponent" ;
+			svu:isTypeOf :term ;
 			skos:prefLabel "exponent"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#parameter
 :parameter rdf:type owl:NamedIndividual ,
 			svu:PropertyRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Parameter" ;
+			rdfs:comment "dictionary definition: a quantity whose value is selected for the particular circumstances and in relation to which other variable quantities may be expressed. A parameter plays a specific role within a particular application. A parameter can be a coefficient or an exponent." ;
 			skos:prefLabel "parameter"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#term
 :term rdf:type owl:NamedIndividual ,
 			svu:PropertyRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Term_(logic)" ;
+			rdfs:comment "Coefficient and exponent have different roles in an equation or expression. Term is more generic and usually describes a component that is part of a summation/subtraction (see addend, summand), although its usage could be broader." ;
 			skos:prefLabel "term"@en .
 
 ###  http://www.geoscienceontology.org/svl/role#factor
 :factor rdf:type owl:NamedIndividual ,
 			svu:PropertyRole ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Factor" ;
+			svu:isTypeOf :coefficient ;
+			svu:isTypeOf :dimensionless_number ;
 			skos:prefLabel "factor"@en .
+
+###  http://www.geoscienceontology.org/svl/role#dimension
+:dimension rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Dimension" ;
+			rdfs:comment "Terms in this category describe the cardinality or rank of a mathematical or physical space
+Think: degrees of freedom, order of a polynomial, dimension of a vector space.
+Examples: the Hausdorff dimension corresponds to the property surface roughness" ;
+			skos:prefLabel "dimension"@en .
+
+###  http://www.geoscienceontology.org/svl/role#degree
+:degree rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:isTypeOf :dimension ;
+			skos:prefLabel "degree"@en .
+
+###  http://www.geoscienceontology.org/svl/role#order
+:order rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Order_(mathematics)" ;
+			svu:isTypeOf :dimension ;
+			skos:prefLabel "order"@en .
+
+###  http://www.geoscienceontology.org/svl/role#dimensionless_number
+:dimensionless_number rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			rdfs:comment "A value that results from a ratio of two (compound) numbers in the same dimension. A factor is a kind of dimensionless number that is also a coefficient. DNs can be coefficients or exponents and may be parameters in a model as well —see e.g. https://en.wikipedia.org/wiki/List_of_dimensionless_quantities. They may also be physical constants: https://en.wikipedia.org/wiki/Dimensionless_physical_constant" ;
+			skos:prefLabel "dimensionless_number"@en .

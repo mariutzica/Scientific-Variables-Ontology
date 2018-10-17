@@ -17,10 +17,46 @@
 #    Form   
 # 
 #################################################################
-##Last generated on: 2018-09-20 20:57
+##Last generated on: 2018-10-05 10:00
 
 ###Form
 
+
+###  http://www.geoscienceontology.org/svl/form#cargo
+:cargo rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "cargo"@en .
+
+###  http://www.geoscienceontology.org/svl/form#sink
+:sink rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "sink"@en .
+
+###  http://www.geoscienceontology.org/svl/form#source
+:source rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "source"@en .
+
+###  http://www.geoscienceontology.org/svl/form#sources
+:sources rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :source ;
+			skos:prefLabel "sources"@en .
+
+###  http://www.geoscienceontology.org/svl/form#source%7Eof-water
+:source%7Eof-water rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "source~of-water"@en .
+
+###  http://www.geoscienceontology.org/svl/form#payload
+:payload rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "payload"@en .
+
+###  http://www.geoscienceontology.org/svl/form#aerosol
+:aerosol rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "aerosol"@en .
 
 ###  http://www.geoscienceontology.org/svl/form#atom
 :atom rdf:type owl:NamedIndividual ,
@@ -53,6 +89,36 @@
 			skos:altLabel "conduit"@en ;
 			skos:prefLabel "channel"@en .
 
+###  http://www.geoscienceontology.org/svl/form#channel_centerline
+:channel_centerline rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "channel_centerline"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel%7Emain
+:channel%7Emain rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :channel ;
+			skos:prefLabel "channel~main"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel%7Elongest
+:channel%7Elongest rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :channel ;
+			skos:prefLabel "channel~longest"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel%7Ewetted
+:channel%7Ewetted rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :channel ;
+			skos:prefLabel "channel~wetted"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel-network
+:channel-network rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :channel ;
+			svu:isTypeOf :network ;
+			skos:prefLabel "channel-network"@en .
+
 ###  http://www.geoscienceontology.org/svl/form#channels
 :channels rdf:type owl:NamedIndividual ,
 			svu:Form ;
@@ -77,6 +143,11 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Crater" ;
 			skos:prefLabel "crater"@en .
 
+###  http://www.geoscienceontology.org/svl/form#crater_circle
+:crater_circle rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "crater_circle"@en .
+
 ###  http://www.geoscienceontology.org/svl/form#crystal
 :crystal rdf:type owl:NamedIndividual ,
 			svu:Form ;
@@ -88,6 +159,17 @@
 			svu:Form ;
 			svu:isPluralityOf :crystal ;
 			skos:prefLabel "crystals"@en .
+
+###  http://www.geoscienceontology.org/svl/form#domain
+:domain rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Territory" ;
+			skos:prefLabel "domain"@en .
+
+###  http://www.geoscienceontology.org/svl/form#domain_boundary
+:domain_boundary rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "domain_boundary"@en .
 
 ###  http://www.geoscienceontology.org/svl/form#dose
 :dose rdf:type owl:NamedIndividual ,
@@ -105,6 +187,17 @@
 			svu:Form ;
 			svu:isPluralityOf :droplet ;
 			skos:prefLabel "droplets"@en .
+
+###  http://www.geoscienceontology.org/svl/form#fault
+:fault rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Fault_(geology)" ;
+			skos:prefLabel "fault"@en .
+
+###  http://www.geoscienceontology.org/svl/form#fault_plane
+:fault_plane rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "fault_plane"@en .
 
 ###  http://www.geoscienceontology.org/svl/form#floe
 :floe rdf:type owl:NamedIndividual ,
@@ -150,21 +243,21 @@
 ###  http://www.geoscienceontology.org/svl/form#anion
 :anion rdf:type owl:NamedIndividual ,
 			svu:Form ;
-			svu:isDerivedFrom :ion ;
+			svu:isTypeOf :ion ;
 			skos:prefLabel "anion"@en .
 
 ###  http://www.geoscienceontology.org/svl/form#cation
 :cation rdf:type owl:NamedIndividual ,
 			svu:Form ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Ion#Anions_and_cations" ;
-			svu:isDerivedFrom :ion ;
+			svu:isTypeOf :ion ;
 			skos:prefLabel "cation"@en .
 
 ###  http://www.geoscienceontology.org/svl/form#cations
 :cations rdf:type owl:NamedIndividual ,
 			svu:Form ;
 			svu:isPluralityOf :cation ;
-			svu:isDerivedFrom :ions ;
+			svu:isTypeOf :ions ;
 			skos:prefLabel "cations"@en .
 
 ###  http://www.geoscienceontology.org/svl/form#isomer
@@ -195,7 +288,7 @@
 :macropores rdf:type owl:NamedIndividual ,
 			svu:Form ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Macropores" ;
-			svu:isDerivedFrom :pores ;
+			svu:isTypeOf :pores ;
 			skos:prefLabel "macropores"@en .
 
 ###  http://www.geoscienceontology.org/svl/form#mat
@@ -321,7 +414,175 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Void_(composites)" ;
 			skos:prefLabel "void"@en .
 
-###  http://www.geoscienceontology.org/svl/form#aerosol
-:aerosol rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/form#cell
+:cell rdf:type owl:NamedIndividual ,
 			svu:Form ;
-			skos:prefLabel "aerosol"@en .
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cell_(biology)" ;
+			skos:prefLabel "cell"@en .
+
+###  http://www.geoscienceontology.org/svl/form#cells
+:cells rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :cell ;
+			skos:prefLabel "cells"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel-network_graph
+:channel-network_graph rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "channel-network_graph"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel_bottom
+:channel_bottom rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "channel_bottom"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel_bottom_surface
+:channel_bottom_surface rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "channel_bottom_surface"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel_centerline_endpoint%7Edownstream
+:channel_centerline_endpoint%7Edownstream rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "channel_centerline_endpoint~downstream"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel_centerline_endpoint%7Eupstream
+:channel_centerline_endpoint%7Eupstream rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "channel_centerline_endpoint~upstream"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel%7Elongest_centerline
+:channel%7Elongest_centerline rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "channel~longest_centerline"@en .
+
+###  http://www.geoscienceontology.org/svl/form#region
+:region rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "region"@en .
+
+###  http://www.geoscienceontology.org/svl/form#region%7Estate
+:region%7Estate rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :region ;
+			skos:prefLabel "state"@en .
+
+###  http://www.geoscienceontology.org/svl/form#terrain
+:terrain rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "terrain"@en .
+
+###  http://www.geoscienceontology.org/svl/form#exit
+:exit rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "exit"@en .
+
+###  http://www.geoscienceontology.org/svl/form#exit_center
+:exit_center rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "exit_center"@en .
+
+###  http://www.geoscienceontology.org/svl/form#entrance
+:entrance rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "entrance"@en .
+
+###  http://www.geoscienceontology.org/svl/form#entrance%7Ewetted
+:entrance%7Ewetted rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :entrance ;
+			skos:prefLabel "entrance~wetted"@en .
+
+###  http://www.geoscienceontology.org/svl/form#entrance_center
+:entrance_center rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "entrance_center"@en .
+
+###  http://www.geoscienceontology.org/svl/form#entrance_x-section
+:entrance_x-section rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "entrance_x-section"@en .
+
+###  http://www.geoscienceontology.org/svl/form#entrance_x-section_top
+:entrance_x-section_top rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "entrance_x-section_top"@en .
+
+###  http://www.geoscienceontology.org/svl/form#entrance%7Ewetted_x-section
+:entrance%7Ewetted_x-section rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "entrance~wetted_x-section"@en .
+
+###  http://www.geoscienceontology.org/svl/form#bank
+:bank rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "bank"@en .
+
+###  http://www.geoscienceontology.org/svl/form#bank%7Eleft
+:bank%7Eleft rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :bank ;
+			skos:prefLabel "bank~left"@en .
+
+###  http://www.geoscienceontology.org/svl/form#bank%7Eright
+:bank%7Eright rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :bank ;
+			skos:prefLabel "bank~right"@en .
+
+###  http://www.geoscienceontology.org/svl/form#link
+:link rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "link"@en .
+
+###  http://www.geoscienceontology.org/svl/form#link%7Eexterior
+:link%7Eexterior rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :link ;
+			skos:prefLabel "link~exterior"@en .
+
+###  http://www.geoscienceontology.org/svl/form#link%7Einterior
+:link%7Einterior rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :link ;
+			skos:prefLabel "link~interior"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel_x-section
+:channel_x-section rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "channel_x-section"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel_x-section_parabola
+:channel_x-section_parabola rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "channel_x-section_parabola"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel_x-section_top
+:channel_x-section_top rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "channel_x-section_top"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel_x-section_trapezoid_bottom
+:channel_x-section_trapezoid_bottom rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "channel_x-section_trapezoid_bottom"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel_x-section_trapezoid_side
+:channel_x-section_trapezoid_side rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "channel_x-section_trapezoid_side"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel_x-section_trapezoid_side%7Eleft
+:channel_x-section_trapezoid_side%7Eleft rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "channel_x-section_trapezoid_side~left"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel_x-section_trapezoid_side%7Eright
+:channel_x-section_trapezoid_side%7Eright rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "channel_x-section_trapezoid_side~right"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel%7Ewetted_x-section
+:channel%7Ewetted_x-section rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "channel~wetted_x-section"@en .

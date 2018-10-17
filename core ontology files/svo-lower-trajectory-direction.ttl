@@ -17,7 +17,7 @@
 #    TrajectoryDirection   
 # 
 #################################################################
-##Last generated on: 2018-09-20 20:57
+##Last generated on: 2018-10-05 10:00
 
 ###TrajectoryDirection
 
@@ -26,6 +26,7 @@
 :incoming rdf:type owl:NamedIndividual ,
 			svu:TrajectoryDirection ;
 			skos:altLabel "into"@en ;
+			skos:altLabel "inward"@en ;
 			skos:prefLabel "incoming"@en .
 
 ###  http://www.geoscienceontology.org/svl/trajectorydirection#outgoing
@@ -55,3 +56,13 @@
 :westward rdf:type owl:NamedIndividual ,
 			svu:TrajectoryDirection ;
 			skos:prefLabel "westward"@en .
+
+###  http://www.geoscienceontology.org/svl/trajectorydirection#northward
+:northward rdf:type owl:NamedIndividual ,
+			svu:TrajectoryDirection ;
+			skos:prefLabel "northward"@en .
+
+###  http://www.geoscienceontology.org/svl/trajectorydirection#southward
+:southward rdf:type owl:NamedIndividual ,
+			svu:TrajectoryDirection ;
+			skos:prefLabel "southward"@en .

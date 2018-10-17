@@ -17,10 +17,65 @@
 #    Attribute   
 # 
 #################################################################
-##Last generated on: 2018-09-20 20:57
+##Last generated on: 2018-10-05 10:00
 
 ###(Qualitative)Attribute
 
+
+###  http://www.geoscienceontology.org/svl/attribute#oven-dried
+:oven-dried rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "oven-dried"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#storage
+:storage rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "storage"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#open-top
+:open-top rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "open-top"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#convective
+:convective rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "convective"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#sorbent
+:sorbent rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "sorbent"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#incandescent
+:incandescent rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "incandescent"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#american
+:american rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "american"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#drainage
+:drainage rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "drainage"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#methylene-blue-active
+:methylene-blue-active rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#activity> ;
+			svu:isNoun false ;
+			skos:prefLabel "methylene-blue-active"@en .
 
 ###  http://www.geoscienceontology.org/svl/attribute#abiotic
 :abiotic rdf:type owl:NamedIndividual ,
@@ -28,6 +83,13 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Abiotic_component" ;
 			svu:isNoun false ;
 			skos:prefLabel "abiotic"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#photosynthetically-active
+:photosynthetically-active rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#activity> ;
+			svu:isNoun false ;
+			skos:prefLabel "photosynthetically-active"@en .
 
 ###  http://www.geoscienceontology.org/svl/attribute#absorbed
 :absorbed rdf:type owl:NamedIndividual ,
@@ -302,6 +364,12 @@
 			svu:Attribute ;
 			svu:isNoun false ;
 			skos:prefLabel "commercial"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#composite
+:composite rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "composite"@en .
 
 ###  http://www.geoscienceontology.org/svl/attribute#condensed
 :condensed rdf:type owl:NamedIndividual ,
@@ -883,6 +951,12 @@
 			svu:isNoun false ;
 			skos:prefLabel "nucleation-mode"@en .
 
+###  http://www.geoscienceontology.org/svl/attribute#fresh
+:fresh rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "fresh"@en .
+
 ###  http://www.geoscienceontology.org/svl/attribute#oil-range
 :oil-range rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -1270,6 +1344,15 @@
 			svu:isNoun true ;
 			skos:prefLabel "hydrometeor"@en .
 
+###  http://www.geoscienceontology.org/svl/attribute#liquid
+:liquid rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Liquid" ;
+			svu:hasProperty <property#phase> ;
+			svu:hasValue "liquid" ;
+			svu:isNoun false ;
+			skos:prefLabel "liquid"@en .
+
 ###  http://www.geoscienceontology.org/svl/attribute#ice
 :ice rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -1315,7 +1398,6 @@
 			svu:Attribute ;
 			svu:isPluralityOf :gas ;
 			svu:hasProperty <property#phase> ;
-			svu:hasValue "gas" ;
 			svu:isNoun true ;
 			skos:prefLabel "gases"@en .
 
@@ -1326,6 +1408,12 @@
 			svu:hasProperty <property#phase> ;
 			svu:isNoun true ;
 			skos:prefLabel "melt"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#melt%7Epartial
+:melt%7Epartial rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "melt~partial"@en .
 
 ###  http://www.geoscienceontology.org/svl/attribute#mineral
 :mineral rdf:type owl:NamedIndividual ,
@@ -1350,7 +1438,6 @@
 			svu:Attribute ;
 			svu:isPluralityOf :solid ;
 			svu:hasProperty <property#phase> ;
-			svu:hasValue "solid" ;
 			svu:isNoun true ;
 			skos:prefLabel "solids"@en .
 
@@ -1370,6 +1457,239 @@
 			svu:hasProperty <property#phase> ;
 			svu:isNoun true ;
 			skos:prefLabel "moisture"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#semi-major
+:semi-major rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "semi-major"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#semi-minor
+:semi-minor rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "semi-minor"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#binary
+:binary rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "binary"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#dual
+:dual rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "dual"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#amphidromic
+:amphidromic rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "amphidromic"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#between-core-and-mantle
+:between-core-and-mantle rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "between-core-and-mantle"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#between-lithosphere-and-asthenosphere
+:between-lithosphere-and-asthenosphere rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "between-lithosphere-and-asthenosphere"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#between-crust-and-mantle
+:between-crust-and-mantle rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "between-crust-and-mantle"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#seaward
+:seaward rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "seaward"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#geodetic
+:geodetic rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "geodetic"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#gravimetric
+:gravimetric rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "gravimetric"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#high-type
+:high-type rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#type> ;
+			svu:hasValue "high" ;
+			svu:isNoun false ;
+			skos:prefLabel "high-type"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#medium-type
+:medium-type rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#type> ;
+			svu:hasValue "medium" ;
+			svu:isNoun false ;
+			skos:prefLabel "medium-type"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#low-type
+:low-type rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#type> ;
+			svu:hasValue "low" ;
+			svu:isNoun false ;
+			skos:prefLabel "low-type"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#stratiform
+:stratiform rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "stratiform"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#tropical
+:tropical rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "tropical"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#sidereal
+:sidereal rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "sidereal"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#stellar
+:stellar rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "stellar"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#electromagnetic
+:electromagnetic rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "electromagnetic"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#gamma
+:gamma rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#wavelength> ;
+			svu:isNoun false ;
+			skos:prefLabel "gamma"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#longwave
+:longwave rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#wavelength> ;
+			svu:isNoun false ;
+			skos:prefLabel "longwave"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#shortwave
+:shortwave rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#wavelength> ;
+			svu:isNoun false ;
+			skos:prefLabel "shortwave"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#microwave
+:microwave rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#wavelength> ;
+			svu:isNoun false ;
+			skos:prefLabel "microwave"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#uv
+:uv rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			skos:altLabel "ultraviolet"@en ;
+			svu:hasProperty <property#wavelength> ;
+			svu:isNoun false ;
+			skos:prefLabel "uv"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#visible
+:visible rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#wavelength> ;
+			svu:isNoun false ;
+			skos:prefLabel "visible"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#secondary
+:secondary rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "secondary"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#orographic
+:orographic rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "orographic"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#acoustic
+:acoustic rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "acoustic"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#airy
+:airy rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "airy"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#cnoidal
+:cnoidal rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "cnoidal"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#internal
+:internal rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "internal"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#nonorographic
+:nonorographic rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "nonorographic"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#mechanical
+:mechanical rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "mechanical"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#seismic
+:seismic rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "seismic"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#mineral-phase
+:mineral-phase rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#phase> ;
+			svu:hasValue "mineral" ;
+			svu:isNoun false ;
+			skos:prefLabel "mineral-phase"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#mineral-phase%7Emelt
+:mineral-phase%7Emelt rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#phase> ;
+			svu:hasValue "mineral, melt" ;
+			svu:isNoun false ;
+			skos:prefLabel "mineral-phase~melt"@en .
 
 
 ###(Quantitative)Attribute
@@ -2618,6 +2938,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Boiling_point" ;
 			svu:hasProperty <property#temperature> ;
 			svu:hasValue "boiling-point" ;
+			svu:hasUnits "O" ;
 			svu:isNoun false ;
 			skos:prefLabel "boiling-point"@en .
 
@@ -2627,6 +2948,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Bubble_point" ;
 			svu:hasProperty <property#temperature> ;
 			svu:hasValue "bubble-point" ;
+			svu:hasUnits "O" ;
 			svu:isNoun false ;
 			skos:prefLabel "bubble-point"@en .
 
@@ -2645,6 +2967,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Dew_point" ;
 			svu:hasProperty <property#temperature> ;
 			svu:hasValue "dew-point" ;
+			svu:hasUnits "O" ;
 			svu:isNoun false ;
 			skos:prefLabel "dew-point"@en .
 
@@ -2654,6 +2977,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Melting_point" ;
 			svu:hasProperty <property#temperature> ;
 			svu:hasValue "freezing-point" ;
+			svu:hasUnits "O" ;
 			svu:isNoun false ;
 			skos:prefLabel "freezing-point"@en .
 
@@ -2663,6 +2987,7 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Dew_point#Frost_point" ;
 			svu:hasProperty <property#temperature> ;
 			svu:hasValue "frost-point" ;
+			svu:hasUnits "O" ;
 			svu:isNoun false ;
 			skos:prefLabel "frost-point"@en .
 
@@ -2724,3 +3049,150 @@
 			svu:hasValue "wilting-point" ;
 			svu:isNoun false ;
 			skos:prefLabel "wilting-point"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#north
+:north rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/North" ;
+			svu:hasProperty <property#cardinal_direction> ;
+			svu:hasValue "north" ;
+			svu:isNoun false ;
+			skos:prefLabel "north"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#south
+:south rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/South" ;
+			svu:hasProperty <property#cardinal_direction> ;
+			svu:hasValue "south" ;
+			svu:isNoun false ;
+			skos:prefLabel "south"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#east
+:east rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/East" ;
+			svu:hasProperty <property#cardinal_direction> ;
+			svu:hasValue "east" ;
+			svu:isNoun false ;
+			skos:prefLabel "east"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#west
+:west rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/West" ;
+			svu:hasProperty <property#cardinal_direction> ;
+			svu:hasValue "west" ;
+			svu:isNoun false ;
+			skos:prefLabel "west"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#north%7Egeodetic
+:north%7Egeodetic rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/True_north" ;
+			svu:hasProperty <property#cardinal_direction> ;
+			svu:hasValue "north" ;
+			svu:isNoun false ;
+			skos:prefLabel "north~geodetic"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#north%7Emagnetic
+:north%7Emagnetic rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#cardinal_direction> ;
+			svu:hasValue "north" ;
+			svu:isNoun false ;
+			skos:prefLabel "north~magnetic"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#north%7Eterrestrial
+:north%7Eterrestrial rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#cardinal_direction> ;
+			svu:hasValue "north" ;
+			svu:isNoun false ;
+			skos:prefLabel "north~terrestrial"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#north%7Evirtual
+:north%7Evirtual rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#cardinal_direction> ;
+			svu:hasValue "north" ;
+			svu:isNoun false ;
+			skos:prefLabel "north~virtual"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#south%7Emagnetic
+:south%7Emagnetic rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#cardinal_direction> ;
+			svu:hasValue "south" ;
+			svu:isNoun false ;
+			skos:prefLabel "south~magnetic"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#south%7Eterrestrial
+:south%7Eterrestrial rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#cardinal_direction> ;
+			svu:hasValue "south" ;
+			svu:isNoun false ;
+			skos:prefLabel "south~terrestrial"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#land-presence
+:land-presence rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#presence> ;
+			svu:isNoun false ;
+			skos:prefLabel "land-presence"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#sea-presence
+:sea-presence rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#presence> ;
+			svu:isNoun false ;
+			skos:prefLabel "sea-presence"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#potential-temperature
+:potential-temperature rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#temperature> ;
+			svu:hasUnits "O" ;
+			svu:isNoun false ;
+			skos:prefLabel "potential-temperature"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#manufactured-in-2008
+:manufactured-in-2008 rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#manufacture_year> ;
+			svu:hasValue "2008" ;
+			svu:hasUnits "T" ;
+			svu:hasAsignedUnits "year" ;
+			svu:isNoun false ;
+			skos:prefLabel "manufactured-in-2008"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#400-to-600nm
+:400-to-600nm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#wavelength> ;
+			svu:hasValue "400-to-600" ;
+			svu:hasUnits "L" ;
+			svu:hasAsignedUnits "nm" ;
+			svu:isNoun false ;
+			skos:prefLabel "400-to-600nm"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#780-to-900nm
+:780-to-900nm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#wavelength> ;
+			svu:hasValue "780-to-900" ;
+			svu:hasUnits "L" ;
+			svu:hasAsignedUnits "nm" ;
+			svu:isNoun false ;
+			skos:prefLabel "780-to-900nm"@en .
+
+###  http://www.geoscienceontology.org/svl/attribute#254nm
+:254nm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasProperty <property#wavelength> ;
+			svu:hasValue "254" ;
+			svu:hasUnits "L" ;
+			svu:hasAsignedUnits "nm" ;
+			svu:isNoun false ;
+			skos:prefLabel "254nm"@en .

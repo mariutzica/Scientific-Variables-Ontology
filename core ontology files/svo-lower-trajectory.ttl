@@ -17,7 +17,7 @@
 #    Trajectory   
 # 
 #################################################################
-##Last generated on: 2018-09-20 20:57
+##Last generated on: 2018-10-05 10:00
 
 ###Trajectory
 
@@ -26,6 +26,7 @@
 :ecliptic rdf:type owl:NamedIndividual ,
 			svu:Trajectory ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Ecliptic" ;
+			svu:isTypeOf :path ;
 			skos:prefLabel "ecliptic"@en .
 
 ###  http://www.geoscienceontology.org/svl/trajectory#path
@@ -37,24 +38,47 @@
 :orbit rdf:type owl:NamedIndividual ,
 			svu:Trajectory ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Orbit" ;
+			svu:isTypeOf :path ;
 			skos:prefLabel "orbit"@en .
 
 ###  http://www.geoscienceontology.org/svl/trajectory#trajectory
 :trajectory rdf:type owl:NamedIndividual ,
 			svu:Trajectory ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Trajectory" ;
+			svu:isTypeOf :path ;
 			skos:prefLabel "trajectory"@en .
 
 ###  http://www.geoscienceontology.org/svl/trajectory#transect
 :transect rdf:type owl:NamedIndividual ,
 			svu:Trajectory ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Transect" ;
+			svu:isTypeOf :path ;
 			skos:prefLabel "transect"@en .
 
 ###  http://www.geoscienceontology.org/svl/trajectory#optical-path
 :optical-path rdf:type owl:NamedIndividual ,
 			svu:Trajectory ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Optical_path" ;
-			svu:isDerivedFrom :path ;
+			svu:isTypeOf :path ;
 			svu:hasAttribute <attribute#optical> ;
 			skos:prefLabel "optical-path"@en .
+
+###  http://www.geoscienceontology.org/svl/trajectory#trajectory_origin
+:trajectory_origin rdf:type owl:NamedIndividual ,
+			svu:Trajectory ;
+			skos:prefLabel "trajectory_origin"@en .
+
+###  http://www.geoscienceontology.org/svl/trajectory#trajectory_target
+:trajectory_target rdf:type owl:NamedIndividual ,
+			svu:Trajectory ;
+			skos:prefLabel "trajectory_target"@en .
+
+###  http://www.geoscienceontology.org/svl/trajectory#orbit_aphelion
+:orbit_aphelion rdf:type owl:NamedIndividual ,
+			svu:Trajectory ;
+			skos:prefLabel "orbit_aphelion"@en .
+
+###  http://www.geoscienceontology.org/svl/trajectory#orbit_perihelion
+:orbit_perihelion rdf:type owl:NamedIndividual ,
+			svu:Trajectory ;
+			skos:prefLabel "orbit_perihelion"@en .

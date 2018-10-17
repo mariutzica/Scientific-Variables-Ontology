@@ -17,70 +17,1134 @@
 #    Context   
 # 
 #################################################################
-##Last generated on: 2018-09-20 20:57
+##Last generated on: 2018-10-05 10:00
 
 ###Context
 
 
-###  http://www.geoscienceontology.org/svl/context#air_in
-:air_in rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/context#%28air_flowing%29%40context%7Ein
+:%28air_flowing%29%40context%7Ein rdf:type owl:NamedIndividual ,
 			svu:Context ;
-			svu:hasRelationship <relationship#in> ;
-			svu:hasObject <matter#air> ;
-			skos:prefLabel "air"@en .
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <phenomenon#air_flowing> ;
+			skos:prefLabel "(air_flowing)@context~in"@en .
 
-###  http://www.geoscienceontology.org/svl/matter#water_molecule_part
-:water_molecule_part rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/phenomenon#%28atmosphere_air_column%29%40context%7Ein
+:%28atmosphere_air_column%29%40context%7Ein rdf:type owl:NamedIndividual ,
 			svu:Context ;
-			svu:hasRelationship <relationship#part_of> ;
-			svu:hasObject <body#water_molecule> ;
-			skos:prefLabel "water_molecule"@en .
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#atmosphere_air_column> ;
+			skos:prefLabel "(atmosphere_air_column)@context~in"@en .
 
-###  http://www.geoscienceontology.org/svl/body#water_in
-:water_in rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/body#%28atmosphere_bottom%29%40context%7Ein
+:%28atmosphere_bottom%29%40context%7Ein rdf:type owl:NamedIndividual ,
 			svu:Context ;
-			svu:hasRelationship <relationship#in> ;
-			svu:hasObject <matter#water> ;
-			skos:prefLabel "water"@en .
-
-###  http://www.geoscienceontology.org/svl/matter#atmosphere_in
-:atmosphere_in rdf:type owl:NamedIndividual ,
-			svu:Context ;
-			svu:hasRelationship <relationship#in> ;
-			svu:hasObject <phenomenon#atmosphere> ;
-			skos:prefLabel "atmosphere"@en .
-
-###  http://www.geoscienceontology.org/svl/phenomenon#atmosphere_air_column_in
-:atmosphere_air_column_in rdf:type owl:NamedIndividual ,
-			svu:Context ;
-			svu:hasRelationship <relationship#in> ;
-			svu:hasObject <abstraction#atmosphere_air_column> ;
-			skos:prefLabel "atmosphere_air_column"@en .
-
-###  http://www.geoscienceontology.org/svl/abstraction#atmosphere_air_in
-:atmosphere_air_in rdf:type owl:NamedIndividual ,
-			svu:Context ;
-			svu:hasRelationship <relationship#in> ;
-			svu:hasObject <body#atmosphere_air> ;
-			skos:prefLabel "atmosphere_air"@en .
-
-###  http://www.geoscienceontology.org/svl/body#atmosphere_bottom_in
-:atmosphere_bottom_in rdf:type owl:NamedIndividual ,
-			svu:Context ;
-			svu:hasRelationship <relationship#in> ;
+			svu:hasContextRelationship <relationship#in> ;
 			svu:hasObject <body#atmosphere_bottom> ;
-			skos:prefLabel "atmosphere_bottom"@en .
+			skos:prefLabel "(atmosphere_bottom)@context~in"@en .
 
-###  http://www.geoscienceontology.org/svl/body#atmosphere_bottom_air_in
-:atmosphere_bottom_air_in rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/body#%28atmosphere_datum%7Evertical%7Etidal%7Emsl%29%40context%7Ein
+:%28atmosphere_datum%7Evertical%7Etidal%7Emsl%29%40context%7Ein rdf:type owl:NamedIndividual ,
 			svu:Context ;
-			svu:hasRelationship <relationship#in> ;
-			svu:hasObject <body#atmosphere_bottom_air> ;
-			skos:prefLabel "atmosphere_bottom_air"@en .
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#atmosphere_datum%7Evertical%7Etidal%7Emsl> ;
+			skos:prefLabel "(atmosphere_datum~vertical~tidal~msl)@context~in"@en .
 
-###  http://www.geoscienceontology.org/svl/body#atmosphere_datum%7Evertical%7Etidal%7Emsl_in
-:atmosphere_datum%7Evertical%7Etidal%7Emsl_in rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/body#%28atmosphere_top%29%40context%7Ein
+:%28atmosphere_top%29%40context%7Ein rdf:type owl:NamedIndividual ,
 			svu:Context ;
-			svu:hasRelationship <relationship#in> ;
-			svu:hasObject <abstraction#atmosphere_datum%7Evertical%7Etidal%7Emsl> ;
-			skos:prefLabel "atmosphere_datum~vertical~tidal~msl"@en .
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#atmosphere_top> ;
+			skos:prefLabel "(atmosphere_top)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28atmosphere_top%29%40context%7Esink
+:%28atmosphere_top%29%40context%7Esink rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#sink> ;
+			svu:hasObject <body#atmosphere_top> ;
+			skos:prefLabel "(atmosphere_top)@context~sink"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28atmosphere_top%29%40context%7Esource
+:%28atmosphere_top%29%40context%7Esource rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#source> ;
+			svu:hasObject <body#atmosphere_top> ;
+			skos:prefLabel "(atmosphere_top)@context~source"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28atmosphere_top_surface%29%40context%7Esink
+:%28atmosphere_top_surface%29%40context%7Esink rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#sink> ;
+			svu:hasObject <body#atmosphere_top_surface> ;
+			skos:prefLabel "(atmosphere_top_surface)@context~sink"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28basin%7Edrainage_bankfull%29%40context%7Epart
+:%28basin%7Edrainage_bankfull%29%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#basin%7Edrainage_bankfull> ;
+			skos:prefLabel "(basin~drainage_bankfull)@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28benzene_molecule%29%40context%7Epart
+:%28benzene_molecule%29%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#benzene_molecule> ;
+			skos:prefLabel "(benzene_molecule)@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28carbon_isotope%29%40context%7Epart
+:%28carbon_isotope%29%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#carbon_isotope> ;
+			skos:prefLabel "(carbon_isotope)@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28cesium_atom%29%40context%7Epart
+:%28cesium_atom%29%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#cesium_atom> ;
+			skos:prefLabel "(cesium_atom)@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28channel%40context%7Ein_%28water_surface%29%29%40context%7Eabove
+:%28channel%40context%7Ein_%28water_surface%29%29%40context%7Eabove rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#above> ;
+			svu:hasObject <phenomenon#channel%40context%7Ein_%28water_surface%29> ;
+			skos:prefLabel "(channel@context~in_(water_surface))@context~above"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#%28channel%40context%7Epart_bank%29%40context%7Eon
+:%28channel%40context%7Epart_bank%29%40context%7Eon rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#on> ;
+			svu:hasObject <phenomenon#channel%40context%7Epart_bank> ;
+			skos:prefLabel "(channel@context~part_bank)@context~on"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#%28channel%40context%7Epart_entrance%29%40context%7Eat
+:%28channel%40context%7Epart_entrance%29%40context%7Eat rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#at> ;
+			svu:hasObject <phenomenon#channel%40context%7Epart_entrance> ;
+			skos:prefLabel "(channel@context~part_entrance)@context~at"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#%28channel%40context%7Epart_exit%29%40context%7Eat
+:%28channel%40context%7Epart_exit%29%40context%7Eat rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#at> ;
+			svu:hasObject <phenomenon#channel%40context%7Epart_exit> ;
+			skos:prefLabel "(channel@context~part_exit)@context~at"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#%28channel_bottom%29%40context%7Eat
+:%28channel_bottom%29%40context%7Eat rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#at> ;
+			svu:hasObject <form#channel_bottom> ;
+			skos:prefLabel "(channel_bottom)@context~at"@en .
+
+###  http://www.geoscienceontology.org/svl/form#%28channel_bottom%29%40context%7Eon
+:%28channel_bottom%29%40context%7Eon rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#on> ;
+			svu:hasObject <form#channel_bottom> ;
+			skos:prefLabel "(channel_bottom)@context~on"@en .
+
+###  http://www.geoscienceontology.org/svl/form#%28channel%7Emain%40context%7Epart_entrance%29%40context%7Ein
+:%28channel%7Emain%40context%7Epart_entrance%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <phenomenon#channel%7Emain%40context%7Epart_entrance> ;
+			skos:prefLabel "(channel~main@context~part_entrance)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#%28delta_beds%7Ebottomset%29%40context%7Eon
+:%28delta_beds%7Ebottomset%29%40context%7Eon rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#on> ;
+			svu:hasObject <body#delta_beds%7Ebottomset> ;
+			skos:prefLabel "(delta_beds~bottomset)@context~on"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28delta_beds%7Eforeset%29%40context%7Eon
+:%28delta_beds%7Eforeset%29%40context%7Eon rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#on> ;
+			svu:hasObject <body#delta_beds%7Eforeset> ;
+			skos:prefLabel "(delta_beds~foreset)@context~on"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28delta_beds%7Etopset%29%40context%7Eon
+:%28delta_beds%7Etopset%29%40context%7Eon rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#on> ;
+			svu:hasObject <body#delta_beds%7Etopset> ;
+			skos:prefLabel "(delta_beds~topset)@context~on"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28delta_beds%7Etopset%7Elower%29%40context%7Eon
+:%28delta_beds%7Etopset%7Elower%29%40context%7Eon rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#on> ;
+			svu:hasObject <body#delta_beds%7Etopset%7Elower> ;
+			skos:prefLabel "(delta_beds~topset~lower)@context~on"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28delta_beds%7Etopset%7Eupper%29%40context%7Eon
+:%28delta_beds%7Etopset%7Eupper%29%40context%7Eon rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#on> ;
+			svu:hasObject <body#delta_beds%7Etopset%7Eupper> ;
+			skos:prefLabel "(delta_beds~topset~upper)@context~on"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28delta_front%29%40context%7Ein
+:%28delta_front%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#delta_front> ;
+			skos:prefLabel "(delta_front)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28dihydrogen_molecule%29%40context%7Epart
+:%28dihydrogen_molecule%29%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#dihydrogen_molecule> ;
+			skos:prefLabel "(dihydrogen_molecule)@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28dinitrogen_molecule%29%40context%7Epart
+:%28dinitrogen_molecule%29%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#dinitrogen_molecule> ;
+			skos:prefLabel "(dinitrogen_molecule)@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28dioxygen_molecule%29%40context%7Epart
+:%28dioxygen_molecule%29%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#dioxygen_molecule> ;
+			skos:prefLabel "(dioxygen_molecule)@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28distributary%40context%7Epart_outlet%29%40context%7Ein
+:%28distributary%40context%7Epart_outlet%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <phenomenon#distributary%40context%7Epart_outlet> ;
+			skos:prefLabel "(distributary@context~part_outlet)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#%28earth_crust%29%40context%7Ein
+:%28earth_crust%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#earth_crust> ;
+			skos:prefLabel "(earth_crust)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28earth_interior%29%40context%7Ein
+:%28earth_interior%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#earth_interior> ;
+			skos:prefLabel "(earth_interior)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28earth_mantle%29%40context%7Ein
+:%28earth_mantle%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#earth_mantle> ;
+			skos:prefLabel "(earth_mantle)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28earth_surface%29%40context%7Eat
+:%28earth_surface%29%40context%7Eat rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#at> ;
+			svu:hasObject <body#earth_surface> ;
+			skos:prefLabel "(earth_surface)@context~at"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28earth_surface%29%40context%7Eon
+:%28earth_surface%29%40context%7Eon rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#on> ;
+			svu:hasObject <body#earth_surface> ;
+			skos:prefLabel "(earth_surface)@context~on"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28earth_surface%29%40context%7Esink
+:%28earth_surface%29%40context%7Esink rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#sink> ;
+			svu:hasObject <body#earth_surface> ;
+			skos:prefLabel "(earth_surface)@context~sink"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28ethane_molecule%29%40context%7Epart
+:%28ethane_molecule%29%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#ethane_molecule> ;
+			skos:prefLabel "(ethane_molecule)@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28glacier%40context%7Ein_ice%29%40context%7Esource
+:%28glacier%40context%7Ein_ice%29%40context%7Esource rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#source> ;
+			svu:hasObject <phenomenon#glacier%40context%7Ein_ice> ;
+			skos:prefLabel "(glacier@context~in_ice)@context~source"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#%28glacier_bottom%29%40context%7Ein
+:%28glacier_bottom%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#glacier_bottom> ;
+			skos:prefLabel "(glacier_bottom)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28glacier_top%29%40context%7Ein
+:%28glacier_top%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#glacier_top> ;
+			skos:prefLabel "(glacier_top)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28glacier_top_surface%29%40context%7Esink
+:%28glacier_top_surface%29%40context%7Esink rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#sink> ;
+			svu:hasObject <body#glacier_top_surface> ;
+			skos:prefLabel "(glacier_top_surface)@context~sink"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28glacier_top_surface%29%40context%7Esource
+:%28glacier_top_surface%29%40context%7Esource rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#source> ;
+			svu:hasObject <body#glacier_top_surface> ;
+			skos:prefLabel "(glacier_top_surface)@context~source"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28grid_cell%29%40context%7Ein
+:%28grid_cell%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#grid_cell> ;
+			skos:prefLabel "(grid_cell)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#%28grid_cell_centroid%29%40context%7Ein
+:%28grid_cell_centroid%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#grid_cell_centroid> ;
+			skos:prefLabel "(grid_cell_centroid)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#%28grid_cell_edge_center%29%40context%7Ein
+:%28grid_cell_edge_center%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#grid_cell_edge_center> ;
+			skos:prefLabel "(grid_cell_edge_center)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#%28grid_cell_face_centroid%29%40context%7Ein
+:%28grid_cell_face_centroid%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#grid_cell_face_centroid> ;
+			skos:prefLabel "(grid_cell_face_centroid)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#%28grid_cell%7Edual%29%40context%7Ein
+:%28grid_cell%7Edual%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#grid_cell%7Edual> ;
+			skos:prefLabel "(grid_cell~dual)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#%28grid_cell%7Edual_centroid%29%40context%7Ein
+:%28grid_cell%7Edual_centroid%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#grid_cell%7Edual_centroid> ;
+			skos:prefLabel "(grid_cell~dual_centroid)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#%28grid_cell%7Edual_edge_center%29%40context%7Ein
+:%28grid_cell%7Edual_edge_center%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#grid_cell%7Edual_edge_center> ;
+			skos:prefLabel "(grid_cell~dual_edge_center)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#%28grid_cell%7Edual_face_centroid%29%40context%7Ein
+:%28grid_cell%7Edual_face_centroid%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#grid_cell%7Edual_face_centroid> ;
+			skos:prefLabel "(grid_cell~dual_face_centroid)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#%28grid_cell%7Eprimary%29%40context%7Ein
+:%28grid_cell%7Eprimary%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#grid_cell%7Eprimary> ;
+			skos:prefLabel "(grid_cell~primary)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#%28grid_cell%7Eprimary_centroid%29%40context%7Ein
+:%28grid_cell%7Eprimary_centroid%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#grid_cell%7Eprimary_centroid> ;
+			skos:prefLabel "(grid_cell~primary_centroid)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#%28grid_cell%7Eprimary_edge_center%29%40context%7Ein
+:%28grid_cell%7Eprimary_edge_center%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#grid_cell%7Eprimary_edge_center> ;
+			skos:prefLabel "(grid_cell~primary_edge_center)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#%28grid_cell%7Eprimary_face_centroid%29%40context%7Ein
+:%28grid_cell%7Eprimary_face_centroid%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#grid_cell%7Eprimary_face_centroid> ;
+			skos:prefLabel "(grid_cell~primary_face_centroid)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#%28grid_edge%7Ewest%29%40context%7Ein
+:%28grid_edge%7Ewest%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#grid_edge%7Ewest> ;
+			skos:prefLabel "(grid_edge~west)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#%28grid_node%29%40context%7Ein
+:%28grid_node%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#grid_node> ;
+			skos:prefLabel "(grid_node)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#%28grid_node%7Edual%29%40context%7Ein
+:%28grid_node%7Edual%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#grid_node%7Edual> ;
+			skos:prefLabel "(grid_node~dual)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#%28grid_node%7Eprimary%29%40context%7Ein
+:%28grid_node%7Eprimary%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#grid_node%7Eprimary> ;
+			skos:prefLabel "(grid_node~primary)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#%28iron_atom%29%40context%7Epart
+:%28iron_atom%29%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#iron_atom> ;
+			skos:prefLabel "(iron_atom)@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28land_surface%29%40context%7Eabove
+:%28land_surface%29%40context%7Eabove rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#above> ;
+			svu:hasObject <body#land_surface> ;
+			skos:prefLabel "(land_surface)@context~above"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28land_surface%29%40context%7Eat
+:%28land_surface%29%40context%7Eat rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#at> ;
+			svu:hasObject <body#land_surface> ;
+			skos:prefLabel "(land_surface)@context~at"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28land_surface%29%40context%7Eexchange
+:%28land_surface%29%40context%7Eexchange rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#exchange> ;
+			svu:hasObject <body#land_surface> ;
+			skos:prefLabel "(land_surface)@context~exchange"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28land_surface%29%40context%7Ein
+:%28land_surface%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#land_surface> ;
+			skos:prefLabel "(land_surface)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28land_surface%29%40context%7Eon
+:%28land_surface%29%40context%7Eon rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#on> ;
+			svu:hasObject <body#land_surface> ;
+			skos:prefLabel "(land_surface)@context~on"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28land_surface%29%40context%7Eoptional
+:%28land_surface%29%40context%7Eoptional rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#optional> ;
+			svu:hasObject <body#land_surface> ;
+			skos:prefLabel "(land_surface)@context~optional"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28sea_surface%29%40context%7Eoptional
+:%28sea_surface%29%40context%7Eoptional rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#optional> ;
+			svu:hasObject <body#sea_surface> ;
+			skos:prefLabel "(sea_surface)@context~optional"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28land_surface%29%40context%7Esink
+:%28land_surface%29%40context%7Esink rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#sink> ;
+			svu:hasObject <body#land_surface> ;
+			skos:prefLabel "(land_surface)@context~sink"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28land_surface%29%40context%7Esource
+:%28land_surface%29%40context%7Esource rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#source> ;
+			svu:hasObject <body#land_surface> ;
+			skos:prefLabel "(land_surface)@context~source"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28material_mineral-phase%29%40context%7Ein
+:%28material_mineral-phase%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <matter#material_mineral-phase> ;
+			skos:prefLabel "(material_mineral-phase)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#%28ozone_molecule%29%40context%7Epart
+:%28ozone_molecule%29%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#ozone_molecule> ;
+			skos:prefLabel "(ozone_molecule)@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28projectile_impaction%29%40context%7Esource
+:%28projectile_impaction%29%40context%7Esource rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#source> ;
+			svu:hasObject <phenomenon#projectile_impaction> ;
+			skos:prefLabel "(projectile_impaction)@context~source"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#%28projectile_trajectory_origin%29%40context%7Eat
+:%28projectile_trajectory_origin%29%40context%7Eat rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#at> ;
+			svu:hasObject <phenomenon#projectile_trajectory_origin> ;
+			skos:prefLabel "(projectile_trajectory_origin)@context~at"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#%28projectile_trajectory_target%29%40context%7Eat
+:%28projectile_trajectory_target%29%40context%7Eat rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#at> ;
+			svu:hasObject <phenomenon#projectile_trajectory_target> ;
+			skos:prefLabel "(projectile_trajectory_target)@context~at"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#%28sea%40context%7Eadjacent_shoreline%29%40context%7Esink
+:%28sea%40context%7Eadjacent_shoreline%29%40context%7Esink rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#sink> ;
+			svu:hasObject <phenomenon#sea%40context%7Eadjacent_shoreline> ;
+			skos:prefLabel "(sea@context~adjacent_shoreline)@context~sink"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#%28sea%40context%7Eat_%28ice_bottom%29%29%40context%7Ebelow
+:%28sea%40context%7Eat_%28ice_bottom%29%29%40context%7Ebelow rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#below> ;
+			svu:hasObject <phenomenon#sea%40context%7Eat_%28ice_bottom%29> ;
+			skos:prefLabel "(sea@context~at_(ice_bottom))@context~below"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#%28sea%40context%7Eat_%28ice_surface%29%29%40context%7Eabove
+:%28sea%40context%7Eat_%28ice_surface%29%29%40context%7Eabove rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#above> ;
+			svu:hasObject <phenomenon#sea%40context%7Eat_%28ice_surface%29> ;
+			skos:prefLabel "(sea@context~at_(ice_surface))@context~above"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#%28sea%40context%7Eat_ice%29%40context%7Esource
+:%28sea%40context%7Eat_ice%29%40context%7Esource rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#source> ;
+			svu:hasObject <phenomenon#sea%40context%7Eat_ice> ;
+			skos:prefLabel "(sea@context~at_ice)@context~source"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#%28sea_bed%29%40context%7Eat
+:%28sea_bed%29%40context%7Eat rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#at> ;
+			svu:hasObject <body#sea_bed> ;
+			skos:prefLabel "(sea_bed)@context~at"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28sea_bottom%29%40context%7Eat
+:%28sea_bottom%29%40context%7Eat rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#at> ;
+			svu:hasObject <body#sea_bottom> ;
+			skos:prefLabel "(sea_bottom)@context~at"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28sea_bottom%29%40context%7Eon
+:%28sea_bottom%29%40context%7Eon rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#on> ;
+			svu:hasObject <body#sea_bottom> ;
+			skos:prefLabel "(sea_bottom)@context~on"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28sea_bottom_surface%29%40context%7Eat
+:%28sea_bottom_surface%29%40context%7Eat rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#at> ;
+			svu:hasObject <body#sea_bottom_surface> ;
+			skos:prefLabel "(sea_bottom_surface)@context~at"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28sea_surface%29%40context%7Eabove
+:%28sea_surface%29%40context%7Eabove rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#above> ;
+			svu:hasObject <body#sea_surface> ;
+			skos:prefLabel "(sea_surface)@context~above"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28sea_surface%29%40context%7Eat
+:%28sea_surface%29%40context%7Eat rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#at> ;
+			svu:hasObject <body#sea_surface> ;
+			skos:prefLabel "(sea_surface)@context~at"@en .
+
+###  http://www.geoscienceontology.org/svl/body#storm%40context%7Esource
+:storm%40context%7Esource rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#source> ;
+			svu:hasObject <phenomenon#storm> ;
+			skos:prefLabel "storm@context~source"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#%28sea_surface%29%40context%7Ein
+:%28sea_surface%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#sea_surface> ;
+			skos:prefLabel "(sea_surface)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28sea_surface%29%40context%7Esink
+:%28sea_surface%29%40context%7Esink rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#sink> ;
+			svu:hasObject <body#sea_surface> ;
+			skos:prefLabel "(sea_surface)@context~sink"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28sea_surface%29%40context%7Esource
+:%28sea_surface%29%40context%7Esource rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#source> ;
+			svu:hasObject <body#sea_surface> ;
+			skos:prefLabel "(sea_surface)@context~source"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28snowpack_top%29%40context%7Eabove
+:%28snowpack_top%29%40context%7Eabove rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#above> ;
+			svu:hasObject <body#snowpack_top> ;
+			skos:prefLabel "(snowpack_top)@context~above"@en .
+
+###  http://www.geoscienceontology.org/svl/body#%28water%40medium_diatoms%29%40context%7Ein
+:%28water%40medium_diatoms%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <phenomenon#water%40medium_diatoms> ;
+			skos:prefLabel "(water@medium_diatoms)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#%28water_flowing%29%40context%7Ein
+:%28water_flowing%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <phenomenon#water_flowing> ;
+			skos:prefLabel "(water_flowing)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#%28water_molecule%29%40context%7Epart
+:%28water_molecule%29%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#water_molecule> ;
+			skos:prefLabel "(water_molecule)@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#aerosol%40context%7Esource
+:aerosol%40context%7Esource rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#source> ;
+			svu:hasObject <form#aerosol> ;
+			skos:prefLabel "aerosol@context~source"@en .
+
+###  http://www.geoscienceontology.org/svl/form#air%40context%7Ein
+:air%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <matter#air> ;
+			skos:prefLabel "air@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#atmosphere%40context%7Ein
+:atmosphere%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#atmosphere> ;
+			skos:prefLabel "atmosphere@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#atmosphere%40context%7Esource
+:atmosphere%40context%7Esource rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#source> ;
+			svu:hasObject <body#atmosphere> ;
+			skos:prefLabel "atmosphere@context~source"@en .
+
+###  http://www.geoscienceontology.org/svl/body#automobile%40context%7Ein
+:automobile%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#automobile> ;
+			skos:prefLabel "automobile@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#automobile%40context%7Epart
+:automobile%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#automobile> ;
+			skos:prefLabel "automobile@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#basin%7Edrainage%40context%7Ein
+:basin%7Edrainage%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#basin%7Edrainage> ;
+			skos:prefLabel "basin~drainage@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#basin%7Edrainage%40context%7Epart
+:basin%7Edrainage%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#basin%7Edrainage> ;
+			skos:prefLabel "basin~drainage@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#bear%40context%7Epart
+:bear%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#bear> ;
+			skos:prefLabel "bear@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#bear%7Eblack%7Eamerican%40context%7Epart
+:bear%7Eblack%7Eamerican%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#bear%7Eblack%7Eamerican> ;
+			skos:prefLabel "bear~black~american@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#bedrock%40context%7Ein
+:bedrock%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#bedrock> ;
+			skos:prefLabel "bedrock@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#bluejack-oak%40context%7Epart
+:bluejack-oak%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#bluejack-oak> ;
+			skos:prefLabel "bluejack-oak@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#channel-network%40context%7Epart
+:channel-network%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <form#channel-network> ;
+			skos:prefLabel "channel-network@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel%40context%7Ein
+:channel%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <form#channel> ;
+			skos:prefLabel "channel@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel%40context%7Epart
+:channel%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <form#channel> ;
+			skos:prefLabel "channel@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/form#channel%7Emain%40context%7Epart
+:channel%7Emain%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <form#channel%7Emain> ;
+			skos:prefLabel "channel~main@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/form#clouds%40context%7Esource
+:clouds%40context%7Esource rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#source> ;
+			svu:hasObject <phenomenon#clouds> ;
+			skos:prefLabel "clouds@context~source"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#cylinder%40context%7Epart
+:cylinder%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#cylinder> ;
+			skos:prefLabel "cylinder@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#delta%40context%7Epart
+:delta%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#delta> ;
+			skos:prefLabel "delta@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#distributary-network%40context%7Ein
+:distributary-network%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#distributary-network> ;
+			skos:prefLabel "distributary-network@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#distributary%40context%7Epart
+:distributary%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#distributary> ;
+			skos:prefLabel "distributary@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#earth%40context%7Ein
+:earth%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#earth> ;
+			skos:prefLabel "earth@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#earth%40context%7Eon
+:earth%40context%7Eon rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#on> ;
+			svu:hasObject <body#earth> ;
+			skos:prefLabel "earth@context~on"@en .
+
+###  http://www.geoscienceontology.org/svl/body#earth%40context%7Esurrounding
+:earth%40context%7Esurrounding rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#surrounding> ;
+			svu:hasObject <body#earth> ;
+			skos:prefLabel "earth@context~surrounding"@en .
+
+###  http://www.geoscienceontology.org/svl/body#earthquake%40context%7Esource
+:earthquake%40context%7Esource rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#source> ;
+			svu:hasObject <phenomenon#earthquake> ;
+			skos:prefLabel "earthquake@context~source"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#engine%40context%7Ein
+:engine%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#engine> ;
+			skos:prefLabel "engine@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#engine%40context%7Epart
+:engine%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#engine> ;
+			skos:prefLabel "engine@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#glacier%40context%7Ein
+:glacier%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#glacier> ;
+			skos:prefLabel "glacier@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#grid%40context%7Ein
+:grid%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#grid> ;
+			skos:prefLabel "grid@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#human%40context%7Epart
+:human%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#human> ;
+			skos:prefLabel "human@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#impaction%40context%7Esource
+:impaction%40context%7Esource rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#source> ;
+			svu:hasObject <phenomenon#impaction> ;
+			skos:prefLabel "impaction@context~source"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#instrument%40context%7Epart
+:instrument%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#instrument> ;
+			skos:prefLabel "instrument@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#lake%40context%7Ein
+:lake%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#lake> ;
+			skos:prefLabel "lake@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#land%40context%7Eon
+:land%40context%7Eon rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#on> ;
+			svu:hasObject <body#land> ;
+			skos:prefLabel "land@context~on"@en .
+
+###  http://www.geoscienceontology.org/svl/body#land%40context%7Epart
+:land%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#land> ;
+			skos:prefLabel "land@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#land%7Eflooded%40context%7Eon
+:land%7Eflooded%40context%7Eon rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#on> ;
+			svu:hasObject <body#land%7Eflooded> ;
+			skos:prefLabel "land~flooded@context~on"@en .
+
+###  http://www.geoscienceontology.org/svl/body#mars%40context%7Eorbitting
+:mars%40context%7Eorbitting rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#orbitting> ;
+			svu:hasObject <body#mars> ;
+			skos:prefLabel "mars@context~orbitting"@en .
+
+###  http://www.geoscienceontology.org/svl/body#mars%40context%7Esurrounding
+:mars%40context%7Esurrounding rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#surrounding> ;
+			svu:hasObject <body#mars> ;
+			skos:prefLabel "mars@context~surrounding"@en .
+
+###  http://www.geoscienceontology.org/svl/body#material%40context%7Ein
+:material%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <matter#material> ;
+			skos:prefLabel "material@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#model%40context%7Ein
+:model%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#model> ;
+			skos:prefLabel "model@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#ocean%40context%7Epart
+:ocean%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#ocean> ;
+			skos:prefLabel "ocean@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#outlet%40context%7Eat
+:outlet%40context%7Eat rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#at> ;
+			svu:hasObject <body#outlet> ;
+			skos:prefLabel "outlet@context~at"@en .
+
+###  http://www.geoscienceontology.org/svl/body#outlet%40context%7Epart
+:outlet%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#outlet> ;
+			skos:prefLabel "outlet@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#outlet%7Eterminal%40context%7Eat
+:outlet%7Eterminal%40context%7Eat rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#at> ;
+			svu:hasObject <body#outlet%7Eterminal> ;
+			skos:prefLabel "outlet~terminal@context~at"@en .
+
+###  http://www.geoscienceontology.org/svl/body#physics%40context%7Ein
+:physics%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <abstraction#physics> ;
+			skos:prefLabel "physics@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/abstraction#pipe%40context%7Ein
+:pipe%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#pipe> ;
+			skos:prefLabel "pipe@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#plain%7Eupper%40context%7Eon
+:plain%7Eupper%40context%7Eon rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#on> ;
+			svu:hasObject <body#plain%7Eupper> ;
+			skos:prefLabel "plain~upper@context~on"@en .
+
+###  http://www.geoscienceontology.org/svl/body#region%7Estate%40context%7Epart
+:region%7Estate%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <form#region%7Estate> ;
+			skos:prefLabel "region~state@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/form#sea%40context%7Eadjacent
+:sea%40context%7Eadjacent rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#adjacent> ;
+			svu:hasObject <body#sea> ;
+			skos:prefLabel "sea@context~adjacent"@en .
+
+###  http://www.geoscienceontology.org/svl/body#sea%40context%7Eat
+:sea%40context%7Eat rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#at> ;
+			svu:hasObject <body#sea> ;
+			skos:prefLabel "sea@context~at"@en .
+
+###  http://www.geoscienceontology.org/svl/body#sea%40context%7Ein
+:sea%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#sea> ;
+			skos:prefLabel "sea@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#sediment%40context%7Ein
+:sediment%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <matter#sediment> ;
+			skos:prefLabel "sediment@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#shoreline%40context%7Eon
+:shoreline%40context%7Eon rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#on> ;
+			svu:hasObject <body#shoreline> ;
+			skos:prefLabel "shoreline@context~on"@en .
+
+###  http://www.geoscienceontology.org/svl/body#snowpack%40context%7Ein
+:snowpack%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#snowpack> ;
+			skos:prefLabel "snowpack@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#snowpack%40context%7Epart
+:snowpack%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#snowpack> ;
+			skos:prefLabel "snowpack@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#snowpack%40context%7Esink
+:snowpack%40context%7Esink rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#sink> ;
+			svu:hasObject <body#snowpack> ;
+			skos:prefLabel "snowpack@context~sink"@en .
+
+###  http://www.geoscienceontology.org/svl/body#snowpack%40context%7Esource
+:snowpack%40context%7Esource rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#source> ;
+			svu:hasObject <body#snowpack> ;
+			skos:prefLabel "snowpack@context~source"@en .
+
+###  http://www.geoscienceontology.org/svl/body#soil%40context%7Ein
+:soil%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <matter#soil> ;
+			skos:prefLabel "soil@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#space-shuttle%40context%7Epart
+:space-shuttle%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#space-shuttle> ;
+			skos:prefLabel "space-shuttle@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#station%40context%7Eat
+:station%40context%7Eat rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#at> ;
+			svu:hasObject <body#station> ;
+			skos:prefLabel "station@context~at"@en .
+
+###  http://www.geoscienceontology.org/svl/body#station%7Eseismic%40context%7Epart
+:station%7Eseismic%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#station%7Eseismic> ;
+			skos:prefLabel "station~seismic@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#station%7Eseismic%40context%7Esource
+:station%7Eseismic%40context%7Esource rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#source> ;
+			svu:hasObject <body#station%7Eseismic> ;
+			skos:prefLabel "station~seismic@context~source"@en .
+
+###  http://www.geoscienceontology.org/svl/body#tank%7Estorage%7Eopen-top%40context%7Ein
+:tank%7Estorage%7Eopen-top%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <body#tank%7Estorage%7Eopen-top> ;
+			skos:prefLabel "tank~storage~open-top@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/body#tank%7Estorage%7Eopen-top%40context%7Epart
+:tank%7Estorage%7Eopen-top%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#tank%7Estorage%7Eopen-top> ;
+			skos:prefLabel "tank~storage~open-top@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#titan%40context%7Esurrounding
+:titan%40context%7Esurrounding rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#surrounding> ;
+			svu:hasObject <body#titan> ;
+			skos:prefLabel "titan@context~surrounding"@en .
+
+###  http://www.geoscienceontology.org/svl/body#toyota-corolla%7E2008%40context%7Epart
+:toyota-corolla%7E2008%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#toyota-corolla%7E2008> ;
+			skos:prefLabel "toyota-corolla~2008@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#universe%40context%7Ein
+:universe%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <phenomenon#universe> ;
+			skos:prefLabel "universe@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#vacuum%40context%7Ein
+:vacuum%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <phenomenon#vacuum> ;
+			skos:prefLabel "vacuum@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/phenomenon#vegetation%40context%7Epart
+:vegetation%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasObject <body#vegetation> ;
+			skos:prefLabel "vegetation@context~part"@en .
+
+###  http://www.geoscienceontology.org/svl/body#water%40context%7Ein
+:water%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasObject <matter#water> ;
+			skos:prefLabel "water@context~in"@en .
+
+###  http://www.geoscienceontology.org/svl/matter#weir%40context%7Esource
+:weir%40context%7Esource rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#source> ;
+			svu:hasObject <body#weir> ;
+			skos:prefLabel "weir@context~source"@en .
