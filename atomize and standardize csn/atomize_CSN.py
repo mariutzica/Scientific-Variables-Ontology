@@ -55,10 +55,10 @@ csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'matter'
 csn.loc[ cond_obj0 & cond_obj1, 'object_cat'] = 'root'
 cond_quant = csn['quantity'].str.contains('volume_viscosity')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'] = 'volume_'+\
-        csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity'].str.replace('volume_','')
+        csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'].str.replace('volume_','')
 cond_quant = csn['quantity'].str.contains('shear_viscosity')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'] = 'shear_'+\
-        csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity'].str.replace('shear_','')
+        csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'].str.replace('shear_','')
 cond_quant = csn['quantity'].str.contains('volume-specific')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant,'quantity_label'] = \
                                     'isochoric_volume-specific_heat_capacity'
@@ -527,7 +527,7 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4, \
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
         'quantity_label'] = \
         csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
-        'quantity'].str.replace('total_','')
+        'quantity_label'].str.replace('total_','')
 cond_quant = csn['quantity'].str.contains('log-law')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
         'evaluation_method'] = 'log-law'
@@ -2564,10 +2564,10 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
         'quantity_label'] = 'fugacity'
 cond_quant = csn['quantity'].str.contains('volume_viscosity')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3& cond_quant, 'quantity_label'] = 'volume_'+\
-        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3& cond_quant, 'quantity'].str.replace('volume_','')
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3& cond_quant, 'quantity_label'].str.replace('volume_','')
 cond_quant = csn['quantity'].str.contains('shear_viscosity')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3& cond_quant, 'quantity_label'] = 'shear_'+\
-        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3& cond_quant, 'quantity'].str.replace('shear_','')
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3& cond_quant, 'quantity_label'].str.replace('shear_','')
 cond_quant = csn['quantity'].str.contains('sh-wave')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
         'object_id'] = '(earth_crust)@context~in_(material@role~medium_wave~seismic~sh@role~main)'
@@ -2953,10 +2953,10 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
                 'object_id'].str.replace('material','(material')+'_isothermal-process)'
 cond_quant = csn['quantity'].str.contains('volume_viscosity')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3& cond_quant, 'quantity_label'] = 'volume_'+\
-        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3& cond_quant, 'quantity'].str.replace('volume_','')
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3& cond_quant, 'quantity_label'].str.replace('volume_','')
 cond_quant = csn['quantity'].str.contains('shear_viscosity')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3& cond_quant, 'quantity_label'] = 'shear_'+\
-        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3& cond_quant, 'quantity'].str.replace('shear_','')
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3& cond_quant, 'quantity_label'].str.replace('shear_','')
 cond_quant = csn['quantity'].str.contains('power-law')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
         'quantity_label'] = \
@@ -3462,10 +3462,10 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'].str.replace('ice','(ice')+'_melting)'
 cond_quant = csn['quantity'].str.contains('volume_viscosity')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'quantity_label'] = 'volume_'+\
-        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'quantity'].str.replace('volume_','')
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'quantity_label'].str.replace('volume_','')
 cond_quant = csn['quantity'].str.contains('shear_viscosity')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'quantity_label'] = 'shear_'+\
-        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'quantity'].str.replace('shear_','')
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'quantity_label'].str.replace('shear_','')
 cond_quant = csn['quantity'].str.contains('mass-specific_isobaric')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'quantity_label'] = \
@@ -5007,10 +5007,10 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
                 'quantity_label'].str.replace('melting_point_','melting-point_')
 cond_quant = csn['quantity'].str.contains('volume_viscosity')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'quantity_label'] = 'volume_'+\
-        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'quantity'].str.replace('volume_','')
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'quantity_label'].str.replace('volume_','')
 cond_quant = csn['quantity'].str.contains('shear_viscosity')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'quantity_label'] = 'shear_'+\
-        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'quantity'].str.replace('shear_','')
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'quantity_label'].str.replace('shear_','')
 cond_quant = csn['quantity'].str.contains('mass-specific_isobaric')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'quantity_label'] = 'isobaric_mass-specific_heat_capacity'
@@ -5631,7 +5631,7 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'].str.rstrip(')')+'_flowing)'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-        'quntity_label'] = 'mean_speed'
+        'quantity_label'] = 'mean_speed'
 cond_quant = csn['quantity'].str.contains('angular_wavenumber')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'quantity_label'] = 'wavenumber'
@@ -6295,10 +6295,10 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'quantity_label'] = 'freezing-point_temperature'
 cond_quant = csn['quantity'].str.contains('volume_viscosity')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'] = 'volume_'+\
-        csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity'].str.replace('volume_','')
+        csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'].str.replace('volume_','')
 cond_quant = csn['quantity'].str.contains('shear_viscosity')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'] = 'shear_'+\
-        csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity'].str.replace('shear_','')
+        csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'].str.replace('shear_','')
 cond_quant = csn['quantity'].str.contains('mass-specific_latent_fusion')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'] = \
         'latent_fusion_mass-specific_heat'
@@ -6416,11 +6416,11 @@ csn.loc[ cond_obj0 & cond_obj1,'object_id']='air@context~in_water~liquid~20C'
 csn.loc[ cond_obj0 & cond_obj1,'object_cat']=''
 cond_quant = csn['quantity'].str.contains('volume_viscosity')
 csn.loc[ cond_obj0 & cond_quant, 'quantity_label'] = 'volume_'+\
-        csn.loc[ cond_obj0 & cond_quant, 'quantity']\
+        csn.loc[ cond_obj0 & cond_quant, 'quantity_label']\
         .str.replace('volume_','')
 cond_quant = csn['quantity'].str.contains('shear_viscosity')
 csn.loc[ cond_obj0 & cond_quant, 'quantity_label'] = 'shear_'+\
-        csn.loc[ cond_obj0 & cond_quant, 'quantity'].str.replace('shear_','')
+        csn.loc[ cond_obj0 & cond_quant, 'quantity_label'].str.replace('shear_','')
 csn.loc[ cond_obj0, ['object0','object1']] = ''
 
 #water~vapor

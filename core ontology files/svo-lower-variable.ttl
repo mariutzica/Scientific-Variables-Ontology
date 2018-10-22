@@ -17,7 +17,7 @@
 #    Variable   
 # 
 #################################################################
-##Last generated on: 2018-10-17 14:07
+##Last generated on: 2018-10-22 00:25
 
 ###CSN Variables
 
@@ -1625,26 +1625,26 @@
 			svu:hasObject <phenomenon#%28atmosphere_bottom%29%40context%7Ein_%28air_flowing%29> ;
 			skos:prefLabel "atmosphere_bottom_air_flow__pressure"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#atmosphere_bottom_air_flow__x_component_of_x_component_of_velocity
-:atmosphere_bottom_air_flow__x_component_of_x_component_of_velocity rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_bottom_air_flow__x_component_of_velocity
+:atmosphere_bottom_air_flow__x_component_of_velocity rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasProperty <property#x_component_of_x_component_of_velocity> ;
+			svu:hasProperty <property#x_component_of_velocity> ;
 			svu:hasObject <phenomenon#%28atmosphere_bottom%29%40context%7Ein_%28air_flowing%29> ;
-			skos:prefLabel "atmosphere_bottom_air_flow__x_component_of_x_component_of_velocity"@en .
+			skos:prefLabel "atmosphere_bottom_air_flow__x_component_of_velocity"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#atmosphere_bottom_air_flow__y_component_of_y_component_of_velocity
-:atmosphere_bottom_air_flow__y_component_of_y_component_of_velocity rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_bottom_air_flow__y_component_of_velocity
+:atmosphere_bottom_air_flow__y_component_of_velocity rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasProperty <property#y_component_of_y_component_of_velocity> ;
+			svu:hasProperty <property#y_component_of_velocity> ;
 			svu:hasObject <phenomenon#%28atmosphere_bottom%29%40context%7Ein_%28air_flowing%29> ;
-			skos:prefLabel "atmosphere_bottom_air_flow__y_component_of_y_component_of_velocity"@en .
+			skos:prefLabel "atmosphere_bottom_air_flow__y_component_of_velocity"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#atmosphere_bottom_air_flow__z_component_of_z_component_of_velocity
-:atmosphere_bottom_air_flow__z_component_of_z_component_of_velocity rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#atmosphere_bottom_air_flow__z_component_of_velocity
+:atmosphere_bottom_air_flow__z_component_of_velocity rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasProperty <property#z_component_of_z_component_of_velocity> ;
+			svu:hasProperty <property#z_component_of_velocity> ;
 			svu:hasObject <phenomenon#%28atmosphere_bottom%29%40context%7Ein_%28air_flowing%29> ;
-			skos:prefLabel "atmosphere_bottom_air_flow__z_component_of_z_component_of_velocity"@en .
+			skos:prefLabel "atmosphere_bottom_air_flow__z_component_of_velocity"@en .
 
 ###  http://www.geoscienceontology.org/svl/variable#atmosphere_bottom_air_flow_buildings__log-law_roughness_length
 :atmosphere_bottom_air_flow_buildings__log-law_roughness_length rdf:type owl:NamedIndividual ,
@@ -17949,12 +17949,12 @@
 			svu:hasObject <phenomenon#sea%40context%7Ein_%28water_current%7Erip%29> ;
 			skos:prefLabel "sea_water_current~rip__length"@en .
 
-###  http://www.geoscienceontology.org/svl/variable#sea_water_current%7Erip__mean_flow_speed
-:sea_water_current%7Erip__mean_flow_speed rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/variable#sea_water_current%7Erip__mean_speed
+:sea_water_current%7Erip__mean_speed rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasProperty <property#mean_flow_speed> ;
+			svu:hasProperty <property#mean_speed> ;
 			svu:hasObject <phenomenon#sea%40context%7Ein_%28water_current%7Erip_flowing%29> ;
-			skos:prefLabel "sea_water_current~rip__mean_flow_speed"@en .
+			skos:prefLabel "sea_water_current~rip__mean_speed"@en .
 
 ###  http://www.geoscienceontology.org/svl/variable#sea_water_current%7Erip__thickness
 :sea_water_current%7Erip__thickness rdf:type owl:NamedIndividual ,

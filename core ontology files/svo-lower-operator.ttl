@@ -17,7 +17,7 @@
 #    Operator   
 # 
 #################################################################
-##Last generated on: 2018-10-17 14:07
+##Last generated on: 2018-10-22 00:25
 
 ###Operator
 
@@ -959,195 +959,6 @@
 ###(Compound)Operator
 
 
-###  http://www.geoscienceontology.org/svl/operator#elevation_angle_of_gradient
-:elevation_angle_of_gradient rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :gradient ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerUnits 0.0 ;
-			svu:hasHeadOperator :elevation_angle ;
-			skos:prefLabel "elevation_angle_of_gradient"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#azimuth_angle_of_z_integral
-:azimuth_angle_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :z_integral ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerUnits 0.0 ;
-			svu:hasHeadOperator :azimuth_angle ;
-			skos:prefLabel "azimuth_angle_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#z_integral_of_square_of_x_component
-:z_integral_of_square_of_x_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :square_of_x_component ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerUnits 2.0 ;
-			svu:hasHeadOperator :z_integral ;
-			skos:prefLabel "z_integral_of_square_of_x_component"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_east_component
-:time_derivative_of_east_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :east_component ;
-			svu:hasMultiplierUnits "T^-1" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :time_derivative ;
-			skos:prefLabel "time_derivative_of_east_component"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_north_component
-:time_derivative_of_north_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :north_component ;
-			svu:hasMultiplierUnits "T^-1" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :time_derivative ;
-			skos:prefLabel "time_derivative_of_north_component"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#z_integral_of_square_of_y_component
-:z_integral_of_square_of_y_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :square_of_y_component ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerUnits 2.0 ;
-			svu:hasHeadOperator :z_integral ;
-			skos:prefLabel "z_integral_of_square_of_y_component"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_z_component
-:time_derivative_of_z_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :z_component ;
-			svu:hasMultiplierUnits "T^-1" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :time_derivative ;
-			skos:prefLabel "time_derivative_of_z_component"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#x_derivative_of_y_component_of_z_integral
-:x_derivative_of_y_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :y_component_of_z_integral ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :x_derivative ;
-			skos:prefLabel "x_derivative_of_y_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#z_integral_of_x_y_component
-:z_integral_of_x_y_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :x_y_component ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :z_integral ;
-			skos:prefLabel "z_integral_of_x_y_component"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#x_derivative_of_x_component_of_z_integral
-:x_derivative_of_x_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :x_component_of_z_integral ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :x_derivative ;
-			skos:prefLabel "x_derivative_of_x_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#azimuth_angle_of_gradient
-:azimuth_angle_of_gradient rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :gradient ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerUnits 0.0 ;
-			svu:hasHeadOperator :azimuth_angle ;
-			skos:prefLabel "azimuth_angle_of_gradient"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#y_derivative_of_x_component_of_z_integral
-:y_derivative_of_x_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :x_component_of_z_integral ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :y_derivative ;
-			skos:prefLabel "y_derivative_of_x_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#east_derivative_of_north_component_of_z_integral
-:east_derivative_of_north_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :north_component_of_z_integral ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :east_derivative ;
-			skos:prefLabel "east_derivative_of_north_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#north_derivative_of_north_component_of_z_integral
-:north_derivative_of_north_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :north_component_of_z_integral ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :north_derivative ;
-			skos:prefLabel "north_derivative_of_north_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#z_integral_of_u_component
-:z_integral_of_u_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :u_component ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :z_integral ;
-			skos:prefLabel "z_integral_of_u_component"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#magnitude_of_z_integral
-:magnitude_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :z_integral ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :magnitude ;
-			skos:prefLabel "magnitude_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#time_average_of_z_integral_of_square_of_x_component
-:time_average_of_z_integral_of_square_of_x_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :z_integral_of_square_of_x_component ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerUnits 2.0 ;
-			svu:hasHeadOperator :time_average ;
-			skos:prefLabel "time_average_of_z_integral_of_square_of_x_component"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#y_derivative_of_y_component_of_z_integral
-:y_derivative_of_y_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :y_component_of_z_integral ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :y_derivative ;
-			skos:prefLabel "y_derivative_of_y_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#z_integral_of_v_component
-:z_integral_of_v_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :v_component ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :z_integral ;
-			skos:prefLabel "z_integral_of_v_component"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#square_of_x_component
-:square_of_x_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :x_component ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerUnits 2.0 ;
-			svu:hasHeadOperator :square ;
-			skos:prefLabel "square_of_x_component"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#time_average_of_square
-:time_average_of_square rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :square ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerUnits 2.0 ;
-			svu:hasHeadOperator :time_average ;
-			skos:prefLabel "time_average_of_square"@en .
-
 ###  http://www.geoscienceontology.org/svl/operator#azimuth_angle_of_left_normal
 :azimuth_angle_of_left_normal rdf:type owl:NamedIndividual ,
 			svu:Operator ;
@@ -1157,68 +968,14 @@
 			svu:hasHeadOperator :azimuth_angle ;
 			skos:prefLabel "azimuth_angle_of_left_normal"@en .
 
-###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_y_component_of_z_integral
-:time_derivative_of_y_component_of_z_integral rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_x_component_of_z_integral
+:time_derivative_of_x_component_of_z_integral rdf:type owl:NamedIndividual ,
 			svu:Operator ;
-			svu:hasRootOperator :y_component_of_z_integral ;
+			svu:hasRootOperator :x_component_of_z_integral ;
 			svu:hasMultiplierUnits "L T^-1" ;
 			svu:hasPowerUnits 1.0 ;
 			svu:hasHeadOperator :time_derivative ;
-			skos:prefLabel "time_derivative_of_y_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_north_component_of_z_integral
-:time_derivative_of_north_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :north_component_of_z_integral ;
-			svu:hasMultiplierUnits "L T^-1" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :time_derivative ;
-			skos:prefLabel "time_derivative_of_north_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#magnitude_of_gradient
-:magnitude_of_gradient rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :gradient ;
-			svu:hasMultiplierUnits "L^-1" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :magnitude ;
-			skos:prefLabel "magnitude_of_gradient"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#square_of_y_component
-:square_of_y_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :y_component ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerUnits 2.0 ;
-			svu:hasHeadOperator :square ;
-			skos:prefLabel "square_of_y_component"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#east_component_of_z_integral
-:east_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :z_integral ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :east_component ;
-			skos:prefLabel "east_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_x_component
-:time_derivative_of_x_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :x_component ;
-			svu:hasMultiplierUnits "T^-1" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :time_derivative ;
-			skos:prefLabel "time_derivative_of_x_component"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#north_derivative_of_east_component_of_z_integral
-:north_derivative_of_east_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :east_component_of_z_integral ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :north_derivative ;
-			skos:prefLabel "north_derivative_of_east_component_of_z_integral"@en .
+			skos:prefLabel "time_derivative_of_x_component_of_z_integral"@en .
 
 ###  http://www.geoscienceontology.org/svl/operator#domain_min_of_increment
 :domain_min_of_increment rdf:type owl:NamedIndividual ,
@@ -1229,6 +986,51 @@
 			svu:hasHeadOperator :domain_min ;
 			skos:prefLabel "domain_min_of_increment"@en .
 
+###  http://www.geoscienceontology.org/svl/operator#north_derivative_of_north_component_of_z_integral
+:north_derivative_of_north_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :north_component_of_z_integral ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :north_derivative ;
+			skos:prefLabel "north_derivative_of_north_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#azimuth_angle_of_z_integral
+:azimuth_angle_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :z_integral ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerUnits 0.0 ;
+			svu:hasHeadOperator :azimuth_angle ;
+			skos:prefLabel "azimuth_angle_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_x_component
+:time_derivative_of_x_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :x_component ;
+			svu:hasMultiplierUnits "T^-1" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :time_derivative ;
+			skos:prefLabel "time_derivative_of_x_component"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#elevation_angle_of_gradient
+:elevation_angle_of_gradient rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :gradient ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerUnits 0.0 ;
+			svu:hasHeadOperator :elevation_angle ;
+			skos:prefLabel "elevation_angle_of_gradient"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#east_component_of_z_integral
+:east_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :z_integral ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :east_component ;
+			skos:prefLabel "east_component_of_z_integral"@en .
+
 ###  http://www.geoscienceontology.org/svl/operator#domain_max_of_increment
 :domain_max_of_increment rdf:type owl:NamedIndividual ,
 			svu:Operator ;
@@ -1238,41 +1040,14 @@
 			svu:hasHeadOperator :domain_max ;
 			skos:prefLabel "domain_max_of_increment"@en .
 
-###  http://www.geoscienceontology.org/svl/operator#time_average_of_z_integral_of_square_of_y_component
-:time_average_of_z_integral_of_square_of_y_component rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/operator#z_integral_of_x_y_component
+:z_integral_of_x_y_component rdf:type owl:NamedIndividual ,
 			svu:Operator ;
-			svu:hasRootOperator :z_integral_of_square_of_y_component ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerUnits 2.0 ;
-			svu:hasHeadOperator :time_average ;
-			skos:prefLabel "time_average_of_z_integral_of_square_of_y_component"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_down_component
-:time_derivative_of_down_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :down_component ;
-			svu:hasMultiplierUnits "T^-1" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :time_derivative ;
-			skos:prefLabel "time_derivative_of_down_component"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#x_component_of_z_integral
-:x_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :z_integral ;
+			svu:hasRootOperator :x_y_component ;
 			svu:hasMultiplierUnits "L" ;
 			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :x_component ;
-			skos:prefLabel "x_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svl/operator#north_component_of_z_integral
-:north_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasRootOperator :z_integral ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :north_component ;
-			skos:prefLabel "north_component_of_z_integral"@en .
+			svu:hasHeadOperator :z_integral ;
+			skos:prefLabel "z_integral_of_x_y_component"@en .
 
 ###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_east_component_of_z_integral
 :time_derivative_of_east_component_of_z_integral rdf:type owl:NamedIndividual ,
@@ -1283,32 +1058,86 @@
 			svu:hasHeadOperator :time_derivative ;
 			skos:prefLabel "time_derivative_of_east_component_of_z_integral"@en .
 
-###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_y_component
-:time_derivative_of_y_component rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/operator#time_average_of_z_integral_of_square_of_x_component
+:time_average_of_z_integral_of_square_of_x_component rdf:type owl:NamedIndividual ,
 			svu:Operator ;
-			svu:hasRootOperator :y_component ;
+			svu:hasRootOperator :z_integral_of_square_of_x_component ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerUnits 2.0 ;
+			svu:hasHeadOperator :time_average ;
+			skos:prefLabel "time_average_of_z_integral_of_square_of_x_component"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#magnitude_of_z_integral
+:magnitude_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :z_integral ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :magnitude ;
+			skos:prefLabel "magnitude_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#time_average_of_square
+:time_average_of_square rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :square ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerUnits 2.0 ;
+			svu:hasHeadOperator :time_average ;
+			skos:prefLabel "time_average_of_square"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#time_average_of_z_integral_of_square_of_y_component
+:time_average_of_z_integral_of_square_of_y_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :z_integral_of_square_of_y_component ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerUnits 2.0 ;
+			svu:hasHeadOperator :time_average ;
+			skos:prefLabel "time_average_of_z_integral_of_square_of_y_component"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_east_component
+:time_derivative_of_east_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :east_component ;
 			svu:hasMultiplierUnits "T^-1" ;
 			svu:hasPowerUnits 1.0 ;
 			svu:hasHeadOperator :time_derivative ;
-			skos:prefLabel "time_derivative_of_y_component"@en .
+			skos:prefLabel "time_derivative_of_east_component"@en .
 
-###  http://www.geoscienceontology.org/svl/operator#z_integral_of_y_y_component
-:z_integral_of_y_y_component rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/operator#z_integral_of_square_of_x_component
+:z_integral_of_square_of_x_component rdf:type owl:NamedIndividual ,
 			svu:Operator ;
-			svu:hasRootOperator :y_y_component ;
+			svu:hasRootOperator :square_of_x_component ;
 			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerUnits 1.0 ;
+			svu:hasPowerUnits 2.0 ;
 			svu:hasHeadOperator :z_integral ;
-			skos:prefLabel "z_integral_of_y_y_component"@en .
+			skos:prefLabel "z_integral_of_square_of_x_component"@en .
 
-###  http://www.geoscienceontology.org/svl/operator#east_derivative_of_east_component_of_z_integral
-:east_derivative_of_east_component_of_z_integral rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/operator#x_derivative_of_x_component_of_z_integral
+:x_derivative_of_x_component_of_z_integral rdf:type owl:NamedIndividual ,
 			svu:Operator ;
-			svu:hasRootOperator :east_component_of_z_integral ;
+			svu:hasRootOperator :x_component_of_z_integral ;
 			svu:hasMultiplierUnits "none" ;
 			svu:hasPowerUnits 1.0 ;
-			svu:hasHeadOperator :east_derivative ;
-			skos:prefLabel "east_derivative_of_east_component_of_z_integral"@en .
+			svu:hasHeadOperator :x_derivative ;
+			skos:prefLabel "x_derivative_of_x_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_north_component
+:time_derivative_of_north_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :north_component ;
+			svu:hasMultiplierUnits "T^-1" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :time_derivative ;
+			skos:prefLabel "time_derivative_of_north_component"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_y_component_of_z_integral
+:time_derivative_of_y_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :y_component_of_z_integral ;
+			svu:hasMultiplierUnits "L T^-1" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :time_derivative ;
+			skos:prefLabel "time_derivative_of_y_component_of_z_integral"@en .
 
 ###  http://www.geoscienceontology.org/svl/operator#z_integral_of_x_x_component
 :z_integral_of_x_x_component rdf:type owl:NamedIndividual ,
@@ -1319,6 +1148,69 @@
 			svu:hasHeadOperator :z_integral ;
 			skos:prefLabel "z_integral_of_x_x_component"@en .
 
+###  http://www.geoscienceontology.org/svl/operator#east_derivative_of_north_component_of_z_integral
+:east_derivative_of_north_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :north_component_of_z_integral ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :east_derivative ;
+			skos:prefLabel "east_derivative_of_north_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#z_integral_of_y_y_component
+:z_integral_of_y_y_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :y_y_component ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :z_integral ;
+			skos:prefLabel "z_integral_of_y_y_component"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_y_component
+:time_derivative_of_y_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :y_component ;
+			svu:hasMultiplierUnits "T^-1" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :time_derivative ;
+			skos:prefLabel "time_derivative_of_y_component"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#y_derivative_of_x_component_of_z_integral
+:y_derivative_of_x_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :x_component_of_z_integral ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :y_derivative ;
+			skos:prefLabel "y_derivative_of_x_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#square_of_y_component
+:square_of_y_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :y_component ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerUnits 2.0 ;
+			svu:hasHeadOperator :square ;
+			skos:prefLabel "square_of_y_component"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#z_integral_of_u_component
+:z_integral_of_u_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :u_component ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :z_integral ;
+			skos:prefLabel "z_integral_of_u_component"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_z_component
+:time_derivative_of_z_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :z_component ;
+			svu:hasMultiplierUnits "T^-1" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :time_derivative ;
+			skos:prefLabel "time_derivative_of_z_component"@en .
+
 ###  http://www.geoscienceontology.org/svl/operator#y_component_of_z_integral
 :y_component_of_z_integral rdf:type owl:NamedIndividual ,
 			svu:Operator ;
@@ -1328,11 +1220,119 @@
 			svu:hasHeadOperator :y_component ;
 			skos:prefLabel "y_component_of_z_integral"@en .
 
-###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_x_component_of_z_integral
-:time_derivative_of_x_component_of_z_integral rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svl/operator#north_derivative_of_east_component_of_z_integral
+:north_derivative_of_east_component_of_z_integral rdf:type owl:NamedIndividual ,
 			svu:Operator ;
-			svu:hasRootOperator :x_component_of_z_integral ;
+			svu:hasRootOperator :east_component_of_z_integral ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :north_derivative ;
+			skos:prefLabel "north_derivative_of_east_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#azimuth_angle_of_gradient
+:azimuth_angle_of_gradient rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :gradient ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerUnits 0.0 ;
+			svu:hasHeadOperator :azimuth_angle ;
+			skos:prefLabel "azimuth_angle_of_gradient"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#north_component_of_z_integral
+:north_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :z_integral ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :north_component ;
+			skos:prefLabel "north_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#x_component_of_z_integral
+:x_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :z_integral ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :x_component ;
+			skos:prefLabel "x_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#y_derivative_of_y_component_of_z_integral
+:y_derivative_of_y_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :y_component_of_z_integral ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :y_derivative ;
+			skos:prefLabel "y_derivative_of_y_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#magnitude_of_gradient
+:magnitude_of_gradient rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :gradient ;
+			svu:hasMultiplierUnits "L^-1" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :magnitude ;
+			skos:prefLabel "magnitude_of_gradient"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#square_of_x_component
+:square_of_x_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :x_component ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerUnits 2.0 ;
+			svu:hasHeadOperator :square ;
+			skos:prefLabel "square_of_x_component"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#z_integral_of_square_of_y_component
+:z_integral_of_square_of_y_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :square_of_y_component ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerUnits 2.0 ;
+			svu:hasHeadOperator :z_integral ;
+			skos:prefLabel "z_integral_of_square_of_y_component"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#east_derivative_of_east_component_of_z_integral
+:east_derivative_of_east_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :east_component_of_z_integral ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :east_derivative ;
+			skos:prefLabel "east_derivative_of_east_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_down_component
+:time_derivative_of_down_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :down_component ;
+			svu:hasMultiplierUnits "T^-1" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :time_derivative ;
+			skos:prefLabel "time_derivative_of_down_component"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#time_derivative_of_north_component_of_z_integral
+:time_derivative_of_north_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :north_component_of_z_integral ;
 			svu:hasMultiplierUnits "L T^-1" ;
 			svu:hasPowerUnits 1.0 ;
 			svu:hasHeadOperator :time_derivative ;
-			skos:prefLabel "time_derivative_of_x_component_of_z_integral"@en .
+			skos:prefLabel "time_derivative_of_north_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#x_derivative_of_y_component_of_z_integral
+:x_derivative_of_y_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :y_component_of_z_integral ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :x_derivative ;
+			skos:prefLabel "x_derivative_of_y_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svl/operator#z_integral_of_v_component
+:z_integral_of_v_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasRootOperator :v_component ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerUnits 1.0 ;
+			svu:hasHeadOperator :z_integral ;
+			skos:prefLabel "z_integral_of_v_component"@en .
