@@ -35,7 +35,6 @@ animate_body_file  = 'animate_body.csv'
 math_abstraction_file  = 'abstraction_mathematical.csv'
 phys_abstraction_file  = 'abstraction_physical.csv'
 
-animate_body_part_file  = 'animate_body_part.csv'
 part_file  = 'part.csv'
 role_file  = 'role.csv'
 process_file  = 'process.csv'
@@ -121,12 +120,14 @@ def generate_phenomena(oid, phen):
                 generate_phenomena(oid[index_start+1:index_end],phen)                        
             index_start += 1
 
+# decompose object_id to extract all contained complex phenomena
 all_phen = []                       
 for name in object_id['object_id'].tolist():
     phen = []
     generate_phenomena(name, phen)
     all_phen.extend(phen)
-    
+
+# initialize columns for complex_phenomena (unique list)    
 complex_phenomena = pd.DataFrame({'phenomenon_id':np.unique(all_phen)})
 for i in range(1,5):
     complex_phenomena['participant'+str(i)]=''
@@ -134,6 +135,7 @@ for i in range(1,5):
     complex_phenomena['participant'+str(i)+'cattype']=''
     complex_phenomena['participant'+str(i)+'class']=''
 
+# parse all complex phenomena
 for i in complex_phenomena.index:
     oid = complex_phenomena.loc[i,'phenomenon_id']
     index_start = 0

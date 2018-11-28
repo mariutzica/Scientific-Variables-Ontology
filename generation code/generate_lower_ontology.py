@@ -15,6 +15,7 @@ Last Edited on Fri August 24 2018
 
 #utils
 import utils as utils
+import rdflib
 
 ##################################
 #   Variable Initialization      #
@@ -152,24 +153,25 @@ csn_vocabulary = \
 #  OUTPUT FILE SETUP #
 ######################
 
-property_ttl = open( ext_output + 'svo-lower-property.ttl', 'w' )
-operator_ttl = open( ext_output + 'svo-lower-operator.ttl', 'w' )
-process_ttl = open( ext_output + 'svo-lower-process.ttl', 'w' )
-phenomenon_ttl = open( ext_output + 'svo-lower-phenomenon.ttl', 'w' )
-attribute_ttl = open( ext_output + 'svo-lower-attribute.ttl', 'w' )
-matter_ttl = open( ext_output + 'svo-lower-matter.ttl', 'w' )
-form_ttl = open( ext_output + 'svo-lower-form.ttl', 'w' )
-body_ttl = open( ext_output + 'svo-lower-body.ttl', 'w' )
-abstraction_ttl = open( ext_output + 'svo-lower-abstraction.ttl', 'w' )
-part_ttl = open( ext_output + 'svo-lower-part.ttl', 'w' )
-role_ttl = open( ext_output + 'svo-lower-role.ttl', 'w' )
-trajectory_ttl = open( ext_output + 'svo-lower-trajectory.ttl', 'w' )
-trajectory_direction_ttl = open( ext_output + 'svo-lower-trajectory-direction.ttl', 'w' )
-relationship_ttl = open( ext_output + 'svo-lower-relationship.ttl', 'w' )
-context_ttl = open( ext_output + 'svo-lower-context.ttl', 'w' )
-participant_ttl = open( ext_output + 'svo-lower-participant.ttl', 'w' )
-reference_ttl = open( ext_output + 'svo-lower-reference.ttl', 'w' )
-variable_ttl = open( ext_output + 'svo-lower-variable.ttl', 'w' )
+property_ttl = open( ext_output + 'property/svo-lower-property.ttl', 'w' )
+operator_ttl = open( ext_output + 'operator/svo-lower-operator.ttl', 'w' )
+process_ttl = open( ext_output + 'process/svo-lower-process.ttl', 'w' )
+phenomenon_ttl = open( ext_output + 'phenomenon/svo-lower-phenomenon.ttl', 'w' )
+attribute_ttl = open( ext_output + 'attribute/svo-lower-attribute.ttl', 'w' )
+matter_ttl = open( ext_output + 'matter/svo-lower-matter.ttl', 'w' )
+form_ttl = open( ext_output + 'form/svo-lower-form.ttl', 'w' )
+body_ttl = open( ext_output + 'body/svo-lower-body.ttl', 'w' )
+abstraction_ttl = open( ext_output + 'abstraction/svo-lower-abstraction.ttl', 'w' )
+part_ttl = open( ext_output + 'part/svo-lower-part.ttl', 'w' )
+role_ttl = open( ext_output + 'role/svo-lower-role.ttl', 'w' )
+rolephen_ttl = open( ext_output + 'rolephenomenon/svo-lower-rolephen.ttl', 'w' )
+trajectory_ttl = open( ext_output + 'trajectory/svo-lower-trajectory.ttl', 'w' )
+trajectory_direction_ttl = open( ext_output + 'trajectorydirection/svo-lower-trajectory-direction.ttl', 'w' )
+relationship_ttl = open( ext_output + 'relationship/svo-lower-relationship.ttl', 'w' )
+context_ttl = open( ext_output + 'context/svo-lower-context.ttl', 'w' )
+participant_ttl = open( ext_output + 'participant/svo-lower-participant.ttl', 'w' )
+reference_ttl = open( ext_output + 'reference/svo-lower-reference.ttl', 'w' )
+variable_ttl = open( ext_output + 'variable/svo-lower-variable.ttl', 'w' )
 
 utils.open_write_file( property_ttl, 'Property' )
 utils.open_write_file( operator_ttl, 'Operator' )
@@ -182,6 +184,7 @@ utils.open_write_file( body_ttl, 'Body' )
 utils.open_write_file( abstraction_ttl, 'Abstraction' )
 utils.open_write_file( part_ttl, 'Part' )
 utils.open_write_file( role_ttl, 'Role' )
+utils.open_write_file( rolephen_ttl, 'RolePhenomenon' )
 utils.open_write_file( trajectory_ttl, 'Trajectory' )
 utils.open_write_file( trajectory_direction_ttl, 'TrajectoryDirection' )
 utils.open_write_file( relationship_ttl, 'Relationship' )
@@ -195,6 +198,7 @@ utils.open_write_file( variable_ttl, 'Variable' )
 ################################
 
 utils.preprocess_quantity( quantitative_property_vocabulary )
+utils.preprocess_quantity( operator_quantity_vocabulary )
 compound_operator_vocabulary = utils.preprocess_operator( operator_vocabulary, \
                                operator_quantity_vocabulary )
 
@@ -320,8 +324,8 @@ utils.create_bb_file( part_vocabulary, part_ttl, \
 
 # create Role file
 label = '\n\n###Role\n\n'
-utils.create_bb_file( role_vocabulary, role_ttl, \
-                      'PhenomenonRole', 'role', 'role', label = label )
+utils.create_bb_file( role_vocabulary, rolephen_ttl, \
+                      'RolePhenomenon', 'role', 'rolephenomenon', label = label )
 label = '\n\n###ParticipantRole\n\n'
 utils.create_bb_file( participant_role_vocabulary, role_ttl, \
                       'ParticipantRole', 'participant_role', 'role', label = label )
@@ -377,6 +381,7 @@ form_ttl.close()
 body_ttl.close()
 abstraction_ttl.close()
 role_ttl.close()
+rolephen_ttl.close()
 trajectory_ttl.close()
 trajectory_direction_ttl.close()
 relationship_ttl.close()
@@ -384,3 +389,33 @@ context_ttl.close()
 participant_ttl.close()
 reference_ttl.close()
 variable_ttl.close()
+
+######################
+#    File Conversion #
+######################
+
+def convert_graph(input_file, format_in='n3', format_out='xml'):
+    g=rdflib.Graph()
+    g.parse(input_file, format=format_in)
+    g.serialize(destination=input_file.rsplit('.',1)[0]+'.rdf', format='xml')
+
+convert_graph(ext_output+'property/svo-lower-property.ttl')
+convert_graph(ext_output+'operator/svo-lower-operator.ttl')
+convert_graph(ext_output+'process/svo-lower-process.ttl')
+convert_graph(ext_output+'phenomenon/svo-lower-phenomenon.ttl')
+convert_graph(ext_output+'attribute/svo-lower-attribute.ttl')
+convert_graph(ext_output+'matter/svo-lower-matter.ttl')
+convert_graph(ext_output+'form/svo-lower-form.ttl')
+convert_graph(ext_output+'body/svo-lower-body.ttl')
+convert_graph(ext_output+'abstraction/svo-lower-abstraction.ttl')
+convert_graph(ext_output+'role/svo-lower-role.ttl')
+convert_graph(ext_output+'rolephenomenon/svo-lower-rolephen.ttl')
+convert_graph(ext_output+'trajectory/svo-lower-trajectory.ttl')
+convert_graph(ext_output+'trajectorydirection/svo-lower-trajectory-direction.ttl')
+convert_graph(ext_output+'relationship/svo-lower-relationship.ttl')
+convert_graph(ext_output+'context/svo-lower-context.ttl')
+convert_graph(ext_output+'part/svo-lower-part.ttl')
+convert_graph(ext_output+'participant/svo-lower-participant.ttl')
+convert_graph(ext_output+'reference/svo-lower-reference.ttl')
+convert_graph(ext_output+'variable/svo-lower-variable.ttl')
+convert_graph(ext_output+'svo-upper.ttl')

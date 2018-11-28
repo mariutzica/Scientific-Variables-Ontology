@@ -4,13 +4,13 @@ attribute_id,attribute_label,property_id,value,unit,canonical_unit,attribute,syn
 0.005-to-0.008-mm,0.005-to-0.008-mm,diameter,0.005-to-0.008,mm,L,,,
 0.008-to-0.014-mm,0.008-to-0.014-mm,diameter,0.008-to-0.014,mm,L,,,
 0.014-to-0.032-mm,0.014-to-0.032-mm,diameter,0.014-to-0.032,mm,L,,,
-0.01M,0.01M,mole_concentration,0.01,M,L^-3,,,
+0.01M,0.01M,molar_concentration,0.01,M,L^-3,,,
 0.032-to-0.063-mm,0.032-to-0.063-mm,diameter,0.032-to-0.063,mm,L,,,
 0.063-to-0.125-mm,0.063-to-0.125-mm,diameter,0.063-to-0.125,mm,L,,,
 0.125-to-0.25-mm,0.125-to-0.25-mm,diameter,0.125-to-0.25,mm,L,,,
 0.25-to-0.50-mm,0.25-to-0.50-mm,diameter,0.25-to-0.50,mm,L,,,
 0.5-to-8.0-mm,0.5-to-8.0-mm,diameter,0.5-to-8.0,mm,L,,,
-greater-than-0.0004-mm,greater-than-0.0004-mm,diameter,greater-than-0.0004-mm,,L,,,
+greater-than-0.0004-mm,greater-than-0.0004-mm,diameter,greater-than-0.0004-mm,mm,L,,,
 greater-than-0.50-mm,greater-than-0.50-mm,diameter,greater-than-0.50-mm,mm,L,,,
 greater-than-11-um,greater-than-11-um,diameter,greater-than-11-um,um,L,,,
 greater-than-35-um,greater-than-35-um,diameter,greater-than-35-um,um,L,,,
@@ -125,17 +125,17 @@ pm2p5,pm2p5,diameter,less-than-2p5,um,L,,,
 2x-critical-level,2x-critical-level,level,2x-critical,,,,,
 boiling-point,boiling-point,temperature,boiling-point,,O,,,https://en.wikipedia.org/wiki/Boiling_point
 bubble-point,bubble-point,temperature,bubble-point,,O,,,https://en.wikipedia.org/wiki/Bubble_point
-critical-point,critical-point,temperature,critical-state,,,,,https://en.wikipedia.org/wiki/Critical_point_(thermodynamics)
+critical-point,critical-point,temperature,critical-state,,O,,,https://en.wikipedia.org/wiki/Critical_point_(thermodynamics)
 dew-point,dew-point,temperature,dew-point,,O,,,https://en.wikipedia.org/wiki/Dew_point
 freezing-point,freezing-point,temperature,freezing-point,,O,,,https://en.wikipedia.org/wiki/Melting_point
 frost-point,frost-point,temperature,frost-point,,O,,,https://en.wikipedia.org/wiki/Dew_point#Frost_point
 high-level,high-level,level,high,,,,,
 highest-tenth,highest-tenth,,highest-tenth,,,,,
 low-level,low-level,level,low,,,,,
-mean-sea-level,mean-sea-level,level,mean-sea,,,,,
-melting-point,melting-point,temperature,melting-point,,,,,https://en.wikipedia.org/wiki/Melting_point
+mean-sea-level,mean-sea-level,height,mean-sea,,L,,,
+melting-point,melting-point,temperature,melting-point,,O,,,https://en.wikipedia.org/wiki/Melting_point
 stp,stp,"temperature, pressure",standard,,,,standard temperature and pressure,https://en.wikipedia.org/wiki/Standard_conditions_for_temperature_and_pressure
-wilting-point,wilting-point,temperature,wilting-point,,,,,https://en.wikipedia.org/wiki/Permanent_wilting_point
+wilting-point,wilting-point,temperature,wilting-point,,O,,,https://en.wikipedia.org/wiki/Permanent_wilting_point
 north,north,cardinal_direction,north,,,,,https://en.wikipedia.org/wiki/North
 south,south,cardinal_direction,south,,,,,https://en.wikipedia.org/wiki/South
 east,east,cardinal_direction,east,,,,,https://en.wikipedia.org/wiki/East
@@ -153,3 +153,8 @@ manufactured-in-2008,manufactured-in-2008,manufacture_year,2008,year,T,,,
 400-to-600nm,400-to-600nm,wavelength,400-to-600,nm,L,,,
 780-to-900nm,780-to-900nm,wavelength,780-to-900,nm,L,,,
 254nm,254nm,wavelength,254,nm,L,,,
+10m,10m,length,10,m,L,,,
+1m,1m,length,1,m,L,,,
+1m,1m,length,1,m,L,,,
+clockwise,clockwise,orientation,clockwise,,,,,
+25ft,25ft,length,25,ft,L,,,

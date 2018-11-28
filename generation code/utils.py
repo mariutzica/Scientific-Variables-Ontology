@@ -26,20 +26,20 @@ import html as h
 ##################################
 
 # header -- top of each file
-header = ( '@prefix : <http://www.geoscienceontology.org/svl/{}#> .\n'
-           '@prefix svu: <http://www.geoscienceontology.org/svu#> .\n'
+header = ( '@prefix : <http://www.geoscienceontology.org/svo/svl/{}#> .\n'
+           '@prefix svu: <http://www.geoscienceontology.org/svo/svu#> .\n'
            '@prefix owl: <http://www.w3.org/2002/07/owl#> .\n'
            '@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n'
            '@prefix xml: <http://www.w3.org/XML/1998/namespace> .\n'
            '@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n'
            '@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n'
            '@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n'
-           '@base <http://www.geoscienceontology.org/svl/> .\n'
+           '@base <http://www.geoscienceontology.org/svo/svl/> .\n'
            '\n'
            '<http://www.geoscienceontology.org/svl/{}> rdf:type owl:Ontology ;\n'
            '\t\t\t\trdfs:comment " Scientific Variables Lower Ontology, {} '
-           'BETA VERSION." .\n'
-           '#\t\t\t\towl:imports <http://www.geoscienceontology.org/svu> .\n'
+           'BETA VERSION 1.0." .\n'
+           '#\t\t\t\towl:imports <http://www.geoscienceontology.org/svo/svu> .\n'
            '\n\n'
            '#################################################################\n'
            '#    {}   \n'
@@ -47,7 +47,7 @@ header = ( '@prefix : <http://www.geoscienceontology.org/svl/{}#> .\n'
            '#################################################################\n' )
 
 # other ttl components
-prefix        = '###  http://www.geoscienceontology.org/svl/{}#{}\n'
+prefix        = '###  http://www.geoscienceontology.org/svo/svl/{}#{}\n'
 declaration_class   = ':{} rdf:type owl:Class {}\n'
 declaration_subclass = '\t\t\trdfs:subClassOf {} {}\n' 
 declaration_instance   = ( ':{} rdf:type owl:NamedIndividual ,\n'
@@ -88,7 +88,8 @@ def preprocess_quantity( quantity ):
     # Set non-values to 0 in units columns, reset units for ratios
     col = [ 'L', 'M', 'O', 'T', 'I', 'N', 'radian', 'number', 'currency' ]
     quantity[ col ] = quantity[ col ].replace( '', 0 )
-    quantity.loc[ quantity[ 'unitless_ratio' ] == 'yes', col ] = 0
+    if 'unitless_ratio' in quantity.columns.values:
+        quantity.loc[ quantity[ 'unitless_ratio' ] == 'yes', col ] = 0
 
 # Format operator information for futher processing
 def preprocess_operator( operator, quantity ):    
@@ -114,11 +115,12 @@ def preprocess_operator( operator, quantity ):
     
     for i in compound_operators.index:
         op = compound_operators.loc[i,'operator_id']
-        factor, L, T, O = calc_operator_units(op,operator)
+        factor, L, T, O, rad = calc_operator_units(op,operator)
         compound_operators.loc[i,'f_units'] = factor
         compound_operators.loc[i,'L']      = L
         compound_operators.loc[i,'O']      = O
         compound_operators.loc[i,'T']      = T
+        compound_operators.loc[i,'radian'] = rad
     create_unit_strings(compound_operators,label='units')
     determine_head_and_root(compound_operators)
     return compound_operators
@@ -136,6 +138,7 @@ def calc_operator_units( operator, metadata ):
     L = 0
     T = 0
     O = 0
+    rad = 0
     for op in ops[::-1]:
         if op == '':
             continue
@@ -145,21 +148,24 @@ def calc_operator_units( operator, metadata ):
         T *= fact
         O *= fact
         units = metadata.loc[metadata['operator_label']==op,'units'].iloc[0]
-        if units=='L':
+        if 'L^' in units:
+            temp = int(units.split('L^')[1].split(' ')[0])
+            L += temp
+        elif 'L' in units:
             L += 1
-        elif 'L^-1' in units:
-            L += -1
-        elif 'L^-2' in units:
-            L += -2
-        elif units=='T':
+        if 'T^' in units:
+            temp = int(units.split('T^')[1].split(' ')[0])
+            T += temp
+        elif 'T' in units:
             T += 1
-        elif 'T^-1' in units:
-            T += -1
-        elif units=='O':
+        if 'O^' in units:
+            temp = int(units.split('O^')[1].split(' ')[0])
+            O += temp
+        elif 'O' in units:
             O += 1
-        elif units=='O^-1':
-            O += -1
-    return factor, L, T, O   
+        if 'rad' in units:
+            rad = 1
+    return factor, L, T, O, rad   
 
 # calculate unit exponents of a quantity with an operator applied
 def calc_full_quantity_units( quantity ):
@@ -176,9 +182,9 @@ def assign_units( quantity, operator_quantity, operator ):
     dim = [ 'L', 'M', 'O', 'T', 'I', 'N']
     for i in quantity.index:
         if quantity.loc[i,'root_quantity'] != '':
-            quantity.loc[i,dim[0]] = quantity.loc[ \
+            quantity.loc[i,dim] = quantity.loc[ \
                         (quantity['quantity_id']==quantity.loc[i,'root_quantity']), \
-                        dim[0]].iloc[0]
+                        dim].iloc[0]
 
     for i in dim:
         operator_quantity[i]=0
@@ -189,12 +195,13 @@ def assign_units( quantity, operator_quantity, operator ):
                         ( quantity['quantity_id'] == \
                           operator_quantity.loc[i,'quantity_taxonomic'] ), dim ]\
                          .iloc[0]
-            factor, L, T, O = calc_operator_units( operator_quantity.loc[i,'operator'], \
+            factor, L, T, O, rad = calc_operator_units( operator_quantity.loc[i,'operator'], \
                                                    operator )
             operator_quantity.loc[ i, 'op factor' ] = factor
             operator_quantity.loc[ i, 'op L' ]      = L
             operator_quantity.loc[ i, 'op O' ]      = O
             operator_quantity.loc[ i, 'op T' ]      = T
+            operator_quantity.loc[ i, 'op rad' ]    = rad
             operator_quantity.loc[ i, dim ] = calc_full_quantity_units( \
                                               operator_quantity.loc[[i]].iloc[0] )
                         
@@ -219,6 +226,9 @@ def create_unit_strings(quantities,label='units_string'):
                     .map('{:,.2g}'.format)+' '
     quantities.loc[ quantities['N'] != 0, label ] += \
                     'N^' + quantities.loc[quantities['N']!=0,'N']\
+                    .map('{:,.2g}'.format)+' '
+    quantities.loc[ quantities['radian'] != 0, label ] += \
+                    'rad^' + quantities.loc[quantities['radian']!=0,'radian']\
                     .map('{:,.2g}'.format)+' '
     quantities[label] = quantities[label]\
                                 .str.replace('\^1 ',' ').str.rstrip(' ')\
@@ -253,7 +263,7 @@ def open_write_file(fileptr,rep):
 def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                     wikifilename='wikipedia_page', part = False, \
                     process_vocab = None ):
-    #Print out comment lable for section, if provided
+    #Print out comment label for section, if provided
     if label:
         ttl_file.write( label )
         
@@ -283,6 +293,18 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
         ttl_file.write( declaration_instance.format( \
                         element_esc, 'svu', classname, ';' ) )
         
+        ######################################################################
+        ## Alternative class declarations
+        # spatial, temporal, etc relationship class        
+        if 'relationship_type' in vocab.columns.values:
+            types = vocab.loc[ index, 'relationship_type']
+            if types != '':
+                for t in types.split(', '):
+                    ttl_file.write( declaration_classname.format( \
+                        t.capitalize()+'Relationship', ';' ) )
+        
+
+###########################################################            
         # if it is a part, then declare it a Part class
         if part:
             ttl_file.write( declaration_classname.format( \
@@ -297,53 +319,92 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
             elif cat == 'quantification':
                 ttl_file.write( declaration_classname.format( \
                         'PropertyQuantification', ';' ) )
-                
-        # spatial, temporal, etc relationship class        
-        if 'relationship_type' in vocab.columns.values:
-            types = vocab.loc[ index, 'relationship_type']
-            if types != '':
-                for t in types.split(', '):
-                    ttl_file.write( declaration_classname.format( \
-                        t.capitalize()+'Relationship', ';' ) )
-                    
-        # print wikipedia page, if there is one
-        if wikifilename in vocab.columns.values:
-            attr = vocab.loc[ index, wikifilename]
-            if attr != '':
-                ttl_file.write( attribute.format( 'hasAssociatedWikipediaPage', \
-                            '\"' + attr + '\"', ';'))
-        
-        #print synonyms if present
-        if 'synonym' in vocab.columns.values:
-            synonyms = vocab.loc[ index, 'synonym' ]
-            if synonyms != '':
-                synonyms = synonyms.split(', ')
-                for syn in synonyms:
-                    ttl_file.write( synonym.format(h.unescape(syn)))
-                    
-        # link to singular form, if present
-        if 'plural_of' in vocab.columns.values:
-            attr = vocab.loc[ index, 'plural_of']
-            if attr != '':
-                ttl_file.write( plurality.format( urllib.quote(attr)))
-                
-        # print what element is derived from, if present
-        if collabel + '_taxonomic' in vocab.columns.values and \
-            vocab.loc[ index, collabel + '_taxonomic' ] != '' :
-            for derivation in vocab.loc[ index, collabel + '_taxonomic' ].split(', '):
-                ttl_file.write( attribute.format( 'isTypeOf', \
+                                                            
+        if (collabel == 'context') or (collabel == 'reference') or (collabel == 'participant'):
+            rel = vocab.loc[ index, 'participantrel' ]
+            rel_pref = 'relationship'
+            if collabel == 'context':
+                rel_label = 'hasContextRelationship'
+            elif collabel == 'reference':
+                rel_label = 'hasReferenceRelationship'
+            elif collabel == 'participant':
+                rel_label = 'hasParticipantRole'
+                rel_pref = 'role'
+            else:
+                print('How did I get here?? ' + collabel)
+            ttl_file.write( attribute.format( rel_label, \
+                '<'+rel_pref+'#' + urllib.quote( rel )+'>', ';' ) )
+            phen = vocab.loc[ index, 'participant' ]
+            pref_opt = vocab.loc[ index, 'participantclass' ].split(', ')
+            if 'phenomenon' in pref_opt:
+                pref = 'phenomenon'
+            elif 'body' in pref_opt:
+                pref = 'body'
+            elif 'matter' in pref_opt:
+                pref = 'matter'
+            elif 'form' in pref_opt:
+                pref = 'form'
+            elif 'abstraction' in pref_opt or 'abstraction_part' in pref_opt:
+                pref = 'abstraction'
+            elif 'role' in pref_opt:
+                pref = 'rolephenomenon'
+            elif pref_opt == ['']:
+                pref = 'phenomenon'
+            else:
+                print('Warning, class not found: '+phen, pref_opt)
+            count = 0;
+            if 'phenomenon' in pref_opt:
+                count+=1
+            if 'body' in pref_opt:
+                count += 1
+            if 'matter' in pref_opt:
+                count += 1
+            if count > 1:
+                print('Warning, multiple classed found: '+phen)
+            ttl_file.write( attribute.format( 'hasObject', \
+                '<'+pref+'#' + urllib.quote( phen )+'>', ';' ) )
+        if collabel == 'participant':
+            if 'phenomenon' in vocab.columns.values and \
+                vocab.loc[ index, 'phenomenon' ] != '' :
+                phen = vocab.loc[ index, 'phenomenon' ]
+                pref = vocab.loc[ index, 'phenomenon_pref' ]
+                ttl_file.write( attribute.format( 'hasPhenomenon', \
+                        '<'+pref+'#' + urllib.quote( phen )+'>', ';' ) )
+            if 'role' in vocab.columns.values and \
+                vocab.loc[ index, 'role' ] != '' :
+                role = vocab.loc[ index, 'role' ]
+                ttl_file.write( attribute.format( 'hasParticipantRole', \
+                        '<role#' + urllib.quote( role )+'>', ';' ) )
+
+        ######################################################################
+        ###Class specific printing
+        # OPERATOR information written
+        if collabel == 'operator':
+            if ('operator_taxonomic' in vocab.columns.values and \
+                (vocab.loc[ index, 'operator_taxonomic' ] == '')) or \
+                'root_operator_id' in vocab.columns.values:
+                units = vocab.loc[ index, 'units' ]
+                if units != '':
+                    ttl_file.write( attribute.format( 'hasMultiplierUnits', \
+                            '\"' + units + '\"', ';' ) )
+                else:
+                    ttl_file.write( attribute.format( 'hasMultiplierUnits', \
+                            '\"none\"', ';' ) )
+                units = vocab.loc[ index, 'f_units' ]
+                ttl_file.write( attribute.format( 'hasPowerFactor', \
+                            str(units), ';' ) )
+            if 'head_operator_id' in vocab.columns.values:
+                hop = vocab.loc[ index, 'head_operator_id' ]
+                ttl_file.write( attribute.format( 'hasHeadOperator', ':' + hop, ';' ))
+            if 'root_operator_id' in vocab.columns.values and \
+                vocab.loc[ index, 'root_operator_id' ] != '' :
+                for derivation in vocab.loc[ index, 'root_operator_id' ].split(', '):
+                    ttl_file.write( attribute.format( 'modifiesOperator', \
                             ':' + urllib.quote( derivation ), ';' ) )
-                
-        # compound operatory properties
-        if 'root_operator_id' in vocab.columns.values and \
-            vocab.loc[ index, 'root_operator_id' ] != '' :
-            for derivation in vocab.loc[ index, 'root_operator_id' ].split(', '):
-                ttl_file.write( attribute.format( 'hasRootOperator', \
-                            ':' + urllib.quote( derivation ), ';' ) )
-                
-        # for quantities, ... print
-        if collabel == 'quantity':
-            
+
+
+        # QUANTITY information written
+        if collabel == 'quantity':            
             #property from which it is derived
             if vocab.loc[ index, 'property_taxonomic' ] != '' :
                 if vocab.loc[ index, 'quantity_taxonomic' ] == '' :
@@ -353,8 +414,7 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 else:
                     print('WARNING: ' + element + ' has both property and ' + \
                           'quantity derivation. Only quantity derivation ' + \
-                          'written to file.' )
-            
+                          'written to file.' )            
             # property type, property role, property quantification, units
             if vocab.loc[ index, 'property_type' ] != '' :
                 ptype = vocab.loc[ index, 'property_type' ]
@@ -369,11 +429,12 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 ttl_file.write( attribute.format( 'hasPropertyQuantification', \
                             ':' + urllib.quote( pquant ), ';' ) )
             if vocab.loc[ index, 'quantity_taxonomic' ] == '' :
-                units = vocab.loc[ index, 'units_string' ]
+                units = vocab.loc[ index, 'units_string' ]\
+                        .replace('rad','').replace('unitless','')\
+                        .rstrip(' ')
                 ttl_file.write( attribute.format( 'hasUnits', \
                             '\"' + (units if units!='' else 'none') + \
-                            '\"', ';' ) )
-            
+                                    '\"', ';' ) )
             #find relevant processes and write to file
             if 'process_quantity' in vocab.columns.values:
                 pquant = vocab.loc[ index, 'process_quantity' ]
@@ -421,25 +482,7 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                     ttl_file.write( attribute.format( 'quantifiesProcess', \
                         '<process#' + urllib.quote( process_id ) + '>', \
                         ';' ) )
-                    
-        # operator information written
-        if collabel == 'operator':
-            if ('operator_taxonomic' in vocab.columns.values and \
-                (vocab.loc[ index, 'operator_taxonomic' ] == '')) or \
-                'root_operator_id' in vocab.columns.values:
-                units = vocab.loc[ index, 'units' ]
-                if units != '':
-                    ttl_file.write( attribute.format( 'hasMultiplierUnits', \
-                            '\"' + units + '\"', ';' ) )
-                else:
-                    ttl_file.write( attribute.format( 'hasMultiplierUnits', \
-                            '\"none\"', ';' ) )
-                units = vocab.loc[ index, 'f_units' ]
-                ttl_file.write( attribute.format( 'hasPowerUnits', \
-                            str(units), ';' ) )
-            if 'head_operator_id' in vocab.columns.values:
-                hop = vocab.loc[ index, 'head_operator_id' ]
-                ttl_file.write( attribute.format( 'hasHeadOperator', ':' + hop, ';' ))
+
         if collabel == 'operator_quantity':
             if vocab.loc[ index, 'operator' ] != '' :
                 derivation = vocab.loc[ index, 'quantity_taxonomic' ]
@@ -452,13 +495,24 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 op = vocab.loc[ index, 'operator' ]
                 ttl_file.write( attribute.format( 'hasOperator', \
                             '<operator#' + urllib.quote( op )+'>', ';' ) )
+            if vocab.loc[ index, 'two_quantity_operator' ] != '' :
+                derivation = vocab.loc[ index, 'quantity1_taxonomic' ]
+                ttl_file.write( attribute.format( 'isDerivedFrom', \
+                            ':' + urllib.quote( derivation ), ';' ) )
+                derivation = vocab.loc[ index, 'quantity2_taxonomic' ]
+                ttl_file.write( attribute.format( 'isDerivedFrom', \
+                            ':' + urllib.quote( derivation ), ';' ) )
+                op = vocab.loc[ index, 'two_quantity_operator' ]
+                ttl_file.write( attribute.format( 'hasOperator', \
+                            '<operator#' + urllib.quote( op )+'>', ';' ) )
                             
-        #attribute relationships                    
+        #ATTRIBUTE relationships                    
         if collabel == 'attribute':
             if vocab.loc[ index, 'property_id' ] != '' :
-                prop = vocab.loc[ index, 'property_id' ]
-                ttl_file.write( attribute.format( 'hasProperty', \
-                            '<property#' + urllib.quote( prop )+'>', ';' ) )
+                prop = vocab.loc[ index, 'property_id' ].split(', ')
+                for p in prop:
+                    ttl_file.write( attribute.format( 'correspondsToProperty', \
+                            '<property#' + urllib.quote( p )+'>', ';' ) )
             if vocab.loc[ index, 'value' ] != '' :
                 value = vocab.loc[ index, 'value' ]
                 ttl_file.write( attribute.format( 'hasValue', \
@@ -471,8 +525,13 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
             if 'unit' in vocab.columns.values and \
                 vocab.loc[ index, 'unit' ] != '' :
                 unit = vocab.loc[ index, 'unit' ]
-                ttl_file.write( attribute.format( 'hasAsignedUnits', \
+                ttl_file.write( attribute.format( 'hasAssignedUnits', \
                             '\"' + unit + '\"', ';' ) )
+            if 'matter_id' in vocab.columns.values and \
+                vocab.loc[ index, 'matter_id' ] != '' :
+                unit = vocab.loc[ index, 'matter_id' ]
+                ttl_file.write( attribute.format( 'hasAssociatedMatter', \
+                            '<matter#' + unit + '>', ';' ) )
             if 'noun' in vocab.columns.values and \
                 ( vocab.loc[ index, 'noun' ] == 'noun' ):
                 ttl_file.write( attribute.format( 'isNoun', \
@@ -480,48 +539,110 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
             else:
                 ttl_file.write( attribute.format( 'isNoun', \
                             'false', ';' ) )
-                
-        #matter relationships
+
+
+        #PART relationships
+        if collabel == 'part':
+            if vocab.loc[ index, 'process' ] != '' :
+                proc = vocab.loc[ index, 'process' ]
+                ttl_file.write( attribute.format( 'isDefinedBy', \
+                            '<process#' + urllib.quote( proc )+'>', ';' ) )
+        
+        #MATTER relationships
         if collabel == 'matter':
             if vocab.loc[ index, 'expressed-as' ] != '' :
                 mtype = vocab.loc[ index, 'expressed-as' ]
                 ttl_file.write( attribute.format( 'isExpressedAs', \
                             ':' + urllib.quote( mtype ), ';' ) )
-                
-        # phenomenon
-        if collabel == 'phenomenon':
-            if 'associated_process' in vocab.columns.values and\
-                vocab.loc[ index, 'associated_process' ] != '' :
-                process = vocab.loc[ index, 'associated_process' ].split(', ')
-                for p in process:
-                    ttl_file.write( attribute.format( 'hasAssociatedProcess', \
-                            '<process#' + urllib.quote( p )+'>', ';' ) )
+
+        #BODY and FORM and PHENOMENON and ABSTRACTION relationships
+        if collabel in ['body','form','phenomenon','abstraction']:
+            if 'part' in vocab.columns.values:
+                if vocab.loc[ index, 'part' ] != '' :
+                    attr = vocab.loc[ index, 'part' ].split(', ')
+                    for a in attr:
+                        ttl_file.write( attribute.format( 'hasPart', \
+                            '<part#' + urllib.quote( a )+'>', ';' ) )
+
+        #BODY and FORM and PHENOMENON relationships
+        if collabel in ['body','form','phenomenon']:
+            if 'form' in vocab.columns.values:
+                if vocab.loc[ index, 'form' ] != '' :
+                    attr = vocab.loc[ index, 'form' ].split(', ')
+                    for a in attr:
+                        ttl_file.write( attribute.format( 'hasForm', \
+                            '<form#' + urllib.quote( a )+'>', ';' ) )
+        
+        #BODY and PHENOMENON RELATIONSHIPS
+        if collabel in ['body','phenomenon']:
+            if 'body' in vocab.columns.values:
+                if vocab.loc[ index, 'body' ] != '' :
+                    attr = vocab.loc[ index, 'body' ].split(', ')
+                    for a in attr:
+                        ttl_file.write( attribute.format( 'hasBody', \
+                            '<body#' + urllib.quote( a ) + '>', ';' ) )
+            if 'matter' in vocab.columns.values:
+                if vocab.loc[ index, 'matter' ] != '' :
+                    attr = vocab.loc[ index, 'matter' ].split(', ')
+                    for a in attr:
+                        ttl_file.write( attribute.format( 'hasMatter', \
+                            '<matter#' + urllib.quote( a )+'>', ';' ) )
+
+        #ABSTRACTION RELATIONSHIP
+        if collabel == 'abstraction':
+            if 'abstraction_applied' in vocab.columns.values and \
+                vocab.loc[ index, 'abstraction_applied' ] != '' :
+                abst = vocab.loc[ index, 'abstraction_applied' ]
+                ttl_file.write( attribute.format( 'isAbstractedBy', \
+                        ':' + urllib.quote( abst ), ';' ) )
+            if 'abstraction' in vocab.columns.values and \
+                vocab.loc[ index, 'abstraction' ] != '' :
+                abst = vocab.loc[ index, 'abstraction' ]
+                ttl_file.write( attribute.format( 'hasAbstraction', \
+                        ':' + urllib.quote( abst ), ';' ) )
             if 'process' in vocab.columns.values and \
                 vocab.loc[ index, 'process' ] != '' :
                 process = vocab.loc[ index, 'process' ].split(', ')
                 for p in process:
-                    ttl_file.write( attribute.format( 'hasProcess', \
+                    ttl_file.write( attribute.format( 'undergoesProcess', \
                         '<process#' + urllib.quote( p )+'>', ';' ) )
-            if 'body' in vocab.columns.values and \
-                vocab.loc[ index, 'body' ] != '' :
-                body = vocab.loc[ index, 'body' ]
-                ttl_file.write( attribute.format( 'hasBody', \
-                        '<body#' + urllib.quote( body )+'>', ';' ) )
-            if 'matter' in vocab.columns.values and \
-                vocab.loc[ index, 'matter' ] != '' :
-                matter = vocab.loc[ index, 'matter' ]
-                ttl_file.write( attribute.format( 'hasMatter', \
-                        '<matter#' + urllib.quote( matter )+'>', ';' ) )
-            if 'part' in vocab.columns.values and \
-                vocab.loc[ index, 'part' ] != '' :
-                part = vocab.loc[ index, 'part' ]
-                ttl_file.write( attribute.format( 'hasPart', \
-                        ':' + urllib.quote( part ), ';' ) )
+
+        # PHENOMENON relationships            
+        if collabel == 'phenomenon':
+            if 'process' in vocab.columns.values and \
+                vocab.loc[ index, 'process' ] != '' :
+                process = vocab.loc[ index, 'process' ].split(', ')
+                for p in process:
+                    ttl_file.write( attribute.format( 'describesProcess', \
+                        '<process#' + urllib.quote( p )+'>', ';' ) )
+            if 'role' in vocab.columns.values:
+                if vocab.loc[ index, 'role' ] != '' :
+                    attr = vocab.loc[ index, 'role' ].split(', ')
+                    for a in attr:
+                        ttl_file.write( attribute.format( 'hasRole', \
+                            '<rolephenomenon#' + urllib.quote( a )+'>', ';' ) )
             if 'phenomenon' in vocab.columns.values and \
                 vocab.loc[ index, 'phenomenon' ] != '' :
                 phen = vocab.loc[ index, 'phenomenon' ]
                 ttl_file.write( attribute.format( 'hasPhenomenon', \
                         ':' + urllib.quote( phen ), ';' ) )
+            if 'abstraction' in vocab.columns.values and \
+                vocab.loc[ index, 'abstraction' ] != '' :
+                abstr = vocab.loc[ index, 'abstraction' ]
+                ttl_file.write( attribute.format( 'isAbstractedBy', \
+                        '<abstraction#' + urllib.quote( abstr )+'>', ';' ) )
+            if 'trajectory' in vocab.columns.values and \
+                vocab.loc[ index, 'trajectory' ] != '' :
+                trajectory = vocab.loc[ index, 'trajectory' ]
+                ttl_file.write( attribute.format( 'hasTrajectory', \
+                        '<trajectory#' + urllib.quote( trajectory )+'>', ';' ) )
+            if 'trajectory_direction' in vocab.columns.values and \
+                vocab.loc[ index, 'trajectory_direction' ] != '' :
+                direction = vocab.loc[ index, 'trajectory_direction' ]
+                for d in direction.split(', '):
+                    ttl_file.write( attribute.format( 'hasTrajectoryDirection', \
+                        '<trajectorydirection#' + urllib.quote( d )+'>', ';' ) )
+
             if 'participant1' in vocab.columns.values:
                 for i in range(1,5):
                     participant = 'participant'+str(i)
@@ -549,8 +670,10 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                                 pref = 'matter'
                             elif 'form' in pref_opt:
                                 pref = 'form'
-                            elif 'abstraction' in pref_opt:
+                            elif 'abstraction' in pref_opt  or 'abstraction_part' in pref_opt:
                                 pref = 'abstraction'
+                            elif 'role' in pref_opt:
+                                pref = 'rolephenomenon'
                             elif pref_opt == ['']:
                                 pref = 'phenomenon'
                             else:
@@ -588,10 +711,12 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                                     pref = 'matter'
                                 elif 'form' in pref_opt:
                                     pref = 'form'
-                                elif 'abstraction' in pref_opt:
+                                elif 'abstraction' in pref_opt  or 'abstraction_part' in pref_opt:
                                     pref = 'abstraction'
                                 elif pref_opt == ['']:
                                     pref = 'phenomenon'
+                                elif 'role' in pref_opt:
+                                    pref = 'rolephenomenon'
                                 else:
                                     pref = 'phenomenon'
                                     print('Warning, class not found: '+phen, pref_opt)
@@ -607,10 +732,12 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                                     pref = 'matter'
                                 elif 'form' in pref_opt:
                                     pref = 'form'
-                                elif 'abstraction' in pref_opt:
+                                elif 'abstraction' in pref_opt  or 'abstraction_part' in pref_opt:
                                     pref = 'abstraction'
                                 elif pref_opt == ['']:
                                     pref = 'phenomenon'
+                                elif 'role' in pref_opt:
+                                    pref = 'rolephenomenon'
                                 elif 'attribute' in pref_opt:
                                     pref = 'attribute'
                                     rel = 'hasAttribute'
@@ -631,8 +758,10 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                                     pref = 'matter'
                                 elif 'form' in pref_opt:
                                     pref = 'form'
-                                elif 'abstraction' in pref_opt:
+                                elif 'abstraction' in pref_opt  or 'abstraction_part' in pref_opt:
                                     pref = 'abstraction'
+                                elif 'role' in pref_opt:
+                                    pref = 'rolephenomenon'
                                 elif pref_opt == ['']:
                                     pref = 'phenomenon'
                                 else:
@@ -650,7 +779,9 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                                     pref = 'matter'
                                 elif 'form' in pref_opt:
                                     pref = 'form'
-                                elif 'abstraction' in pref_opt:
+                                elif 'role' in pref_opt:
+                                    pref = 'rolephenomenon'
+                                elif 'abstraction' in pref_opt  or 'abstraction_part' in pref_opt:
                                     pref = 'abstraction'
                                 elif pref_opt == ['']:
                                     pref = 'phenomenon'
@@ -666,150 +797,49 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                                 ttl_file.write( attribute.format( rel, \
                                     '<' + pref + '#' + urllib.quote( phen ) + '>', ';' ) )
 
-            if 'trajectory' in vocab.columns.values and \
-                vocab.loc[ index, 'trajectory' ] != '' :
-                trajectory = vocab.loc[ index, 'trajectory' ]
-                ttl_file.write( attribute.format( 'hasTrajectory', \
-                        '<trajectory#' + urllib.quote( trajectory )+'>', ';' ) )
-            if 'trajectory_direction' in vocab.columns.values and \
-                vocab.loc[ index, 'trajectory_direction' ] != '' :
-                direction = vocab.loc[ index, 'trajectory_direction' ]
-                for d in direction.split(', '):
-                    ttl_file.write( attribute.format( 'hasTrajectoryDirection', \
-                        '<trajectorydirection#' + urllib.quote( d )+'>', ';' ) )
-        if (collabel == 'context') or (collabel == 'reference') or (collabel == 'participant'):
-            rel = vocab.loc[ index, 'participantrel' ]
-            rel_pref = 'relationship'
-            if collabel == 'context':
-                rel_label = 'hasContextRelationship'
-            elif collabel == 'reference':
-                rel_label = 'hasReferenceRelationship'
-            elif collabel == 'participant':
-                rel_label = 'hasParticipantRole'
-                rel_pref = 'role'
-            else:
-                print('How did I get here?? ' + collabel)
-            ttl_file.write( attribute.format( rel_label, \
-                '<'+rel_pref+'#' + urllib.quote( rel )+'>', ';' ) )
-            phen = vocab.loc[ index, 'participant' ]
-            pref_opt = vocab.loc[ index, 'participantclass' ].split(', ')
-            if 'phenomenon' in pref_opt:
-                pref = 'phenomenon'
-            elif 'body' in pref_opt:
-                pref = 'body'
-            elif 'matter' in pref_opt:
-                pref = 'matter'
-            elif 'form' in pref_opt:
-                pref = 'form'
-            elif 'abstraction' in pref_opt:
-                pref = 'abstraction'
-            elif pref_opt == ['']:
-                pref = 'phenomenon'
-            else:
-                print('Warning, class not found: '+phen, pref_opt)
-            count = 0;
-            if 'phenomenon' in pref_opt:
-                count+=1
-            if 'body' in pref_opt:
-                count += 1
-            if 'matter' in pref_opt:
-                count += 1
-            if count > 1:
-                print('Warning, multiple classed found: '+phen)
-            ttl_file.write( attribute.format( 'hasObject', \
-                '<'+pref+'#' + urllib.quote( phen )+'>', ';' ) )
-        if collabel in ['abstraction']:
-            if 'abstraction_applied' in vocab.columns.values and \
-                vocab.loc[ index, 'abstraction_applied' ] != '' :
-                abst = vocab.loc[ index, 'abstraction_applied' ]
-                ttl_file.write( attribute.format( 'abstracts', \
-                        ':' + urllib.quote( abst ), ';' ) )
-            if 'abstraction' in vocab.columns.values and \
-                vocab.loc[ index, 'abstraction' ] != '' :
-                abst = vocab.loc[ index, 'abstraction' ]
-                ttl_file.write( attribute.format( 'hasAbstraction', \
-                        ':' + urllib.quote( abst ), ';' ) )
-        if collabel == 'abstraction':
-            if 'body' in vocab.columns.values and \
-                vocab.loc[ index, 'body' ] != '' :
-                body = vocab.loc[ index, 'body' ]
-                ttl_file.write( attribute.format( 'abstracts', \
-                        '<body#' + urllib.quote( body )+'>', ';' ) )
-            if 'process' in vocab.columns.values and \
-                vocab.loc[ index, 'process' ] != '' :
-                process = vocab.loc[ index, 'process' ].split(', ')
-                for p in process:
-                    ttl_file.write( attribute.format( 'undergoesProcess', \
-                        '<process#' + urllib.quote( p )+'>', ';' ) )
-            if 'associated_process' in vocab.columns.values and \
-                vocab.loc[ index, 'associated_process' ] != '' :
-                process = vocab.loc[ index, 'associated_process' ].split(', ')
-                for p in process:
-                    ttl_file.write( attribute.format( 'hasAssociatedProcess', \
-                        '<process#' + urllib.quote( p )+'>', ';' ) )
-        if collabel == 'participant':
-            if 'phenomenon' in vocab.columns.values and \
-                vocab.loc[ index, 'phenomenon' ] != '' :
-                phen = vocab.loc[ index, 'phenomenon' ]
-                pref = vocab.loc[ index, 'phenomenon_pref' ]
-                ttl_file.write( attribute.format( 'hasPhenomenon', \
-                        '<'+pref+'#' + urllib.quote( phen )+'>', ';' ) )
-            if 'role' in vocab.columns.values and \
-                vocab.loc[ index, 'role' ] != '' :
-                role = vocab.loc[ index, 'role' ]
-                ttl_file.write( attribute.format( 'hasParticipantRole', \
-                        '<role#' + urllib.quote( role )+'>', ';' ) )
-        if collabel in ['trajectory','matter','body','abstraction','phenomenon','process'] and \
-            'attribute' in vocab.columns.values:
-            if vocab.loc[ index, 'attribute' ] != '' :
-                attr = vocab.loc[ index, 'attribute' ].split(', ')
+        ######################################################################
+        ###Elements that are universal across files
+        # print wikipedia page, if there is one
+        if wikifilename in vocab.columns.values:
+            attr = vocab.loc[ index, wikifilename]
+            if attr != '':
+                ttl_file.write( attribute.format( 'hasAssociatedWikipediaPage', \
+                            '\"' + attr + '\"', ';'))
+        
+        #print synonyms if present
+        if 'synonym' in vocab.columns.values:
+            synonyms = vocab.loc[ index, 'synonym' ]
+            if synonyms != '':
+                synonyms = synonyms.split(', ')
+                for syn in synonyms:
+                    ttl_file.write( synonym.format(h.unescape(syn)))
+                    
+        # link to singular form, if present
+        if 'plural_of' in vocab.columns.values:
+            attr = vocab.loc[ index, 'plural_of']
+            if attr != '':
+                ttl_file.write( plurality.format( urllib.quote(attr)))
+                
+        # print what element is derived from, if present
+        if collabel + '_taxonomic' in vocab.columns.values and \
+            vocab.loc[ index, collabel + '_taxonomic' ] != '' :
+            for derivation in vocab.loc[ index, collabel + '_taxonomic' ].split(', '):
+                ttl_file.write( attribute.format( 'isTypeOf', \
+                            ':' + urllib.quote( derivation ), ';' ) )
+        
+        if 'attribute' in vocab.columns.values:
+            attr = vocab.loc[ index, 'attribute' ]
+            if attr != '':
+                attr = attr.split(', ')
+                rel = 'hasAttribute'
+                if 'condition' in vocab.columns.values:
+                    cond = vocab.loc[ index, 'condition' ]
+                    if cond != '':
+                        rel = 'hasConditionalAttribute'
                 for a in attr:
-                    ttl_file.write( attribute.format( 'hasAttribute', \
+                    ttl_file.write( attribute.format( rel, \
                             '<attribute#' + urllib.quote( a )+'>', ';' ) )
-        if collabel in ['body','phenomenon'] and \
-            'role' in vocab.columns.values:
-            if vocab.loc[ index, 'role' ] != '' :
-                attr = vocab.loc[ index, 'role' ].split(', ')
-                for a in attr:
-                    ttl_file.write( attribute.format( 'hasRole', \
-                            '<role#' + urllib.quote( a )+'>', ';' ) )
-        if collabel in ['body','phenomenon'] and \
-            'form' in vocab.columns.values:
-            if vocab.loc[ index, 'form' ] != '' :
-                attr = vocab.loc[ index, 'form' ].split(', ')
-                for a in attr:
-                    ttl_file.write( attribute.format( 'hasForm', \
-                            '<form#' + urllib.quote( a )+'>', ';' ) )
-        if collabel in ['body'] and \
-            'part' in vocab.columns.values:
-            if vocab.loc[ index, 'part' ] != '' :
-                attr = vocab.loc[ index, 'part' ].split(', ')
-                for a in attr:
-                    ttl_file.write( attribute.format( 'hasPart', \
-                            '<part#' + urllib.quote( a )+'>', ';' ) )
-        if collabel in ['body'] and \
-            'body_part' in vocab.columns.values:
-            if vocab.loc[ index, 'body_part' ] != '' :
-                attr = vocab.loc[ index, 'body_part' ].split(', ')
-                for a in attr:
-                    ttl_file.write( attribute.format( 'hasPart', \
-                            ':' + urllib.quote( a ), ';' ) )
-        if collabel in ['body'] and \
-            'body' in vocab.columns.values:
-            if vocab.loc[ index, 'body' ] != '' :
-                attr = vocab.loc[ index, 'body' ].split(', ')
-                for a in attr:
-                    ttl_file.write( attribute.format( 'hasBody', \
-                            ':' + urllib.quote( a ), ';' ) )
-        if collabel in ['body'] and \
-            'matter' in vocab.columns.values:
-            if vocab.loc[ index, 'matter' ] != '' :
-                attr = vocab.loc[ index, 'matter' ].split(', ')
-                for a in attr:
-                    ttl_file.write( attribute.format( 'hasMatter', \
-                            '<matter#' + urllib.quote( a )+'>', ';' ) )
-        if collabel + '_label' in vocab.columns.values:
-            element = vocab.loc[ index, collabel + '_label' ]
+
         if 'process_verb' in vocab.columns.values:
             attr = vocab.loc[ index, 'process_verb']
             if attr!= '':
@@ -833,14 +863,19 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
             if attr!= '':
                 ttl_file.write( comment.format(  \
                     '\"' + h.unescape(attr) + '\"', ';'))
+
+        if collabel + '_label' in vocab.columns.values:
+            element = vocab.loc[ index, collabel + '_label' ]
         ttl_file.write( preflabel.format( element ) )
+
+        ######################################################################
 
 # create variable file 
 def create_variable_entries( vocab, ttl_file, label=None ):
     if label:
         ttl_file.write( label )
     for index in vocab.index:
-        element = vocab.loc[ index, 'variable_label' ]
+        element = vocab.loc[ index, 'variable_id' ]
         element_esc = urllib.quote(element)
         ttl_file.write( '\n' + prefix.format( 'variable', element_esc ) )
         ttl_file.write( declaration_instance.format( \
@@ -851,15 +886,16 @@ def create_variable_entries( vocab, ttl_file, label=None ):
                             '<property#' + urllib.quote(quantity) + '>', ';'))
         obj = vocab.loc[ index, 'object_id']
         pref = vocab.loc[ index, 'object_pref']
-        cat = vocab.loc[ index, 'object_cat']
+#        cat = vocab.loc[ index, 'object_cat']
         if obj != '':
-            if (cat=='root') and (pref != 'abstraction'):
-                ttl_file.write( attribute.format( 'hasRootObject', \
+#            if (cat=='root') and (pref != 'abstraction'):
+#                ttl_file.write( attribute.format( 'hasRootObject', \
+#                            '<'+pref+'#' + urllib.quote(obj) + '>', ';'))
+#            elif pref == 'abstraction':
+#                ttl_file.write( attribute.format( 'hasAbstractedObject', \
+#                            '<'+pref+'#' + urllib.quote(obj) + '>', ';'))
+#            else:
+            ttl_file.write( attribute.format( 'hasObject', \
                             '<'+pref+'#' + urllib.quote(obj) + '>', ';'))
-            elif pref == 'abstraction':
-                ttl_file.write( attribute.format( 'hasAbstractedObject', \
-                            '<'+pref+'#' + urllib.quote(obj) + '>', ';'))
-            else:
-                ttl_file.write( attribute.format( 'hasObject', \
-                            '<'+pref+'#' + urllib.quote(obj) + '>', ';'))
+        element = vocab.loc[ index, 'variable_label' ]
         ttl_file.write( preflabel.format( element ) )
