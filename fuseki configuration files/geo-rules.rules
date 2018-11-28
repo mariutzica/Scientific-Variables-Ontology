@@ -1,0 +1,29 @@
+@prefix : <http://www.geoscienceontology.org/geo-upper#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svu: <http://www.geoscienceontology.org/svu#> .
+
+[ruleClassSubclass: (?a rdfs:subClassOf ?b), (?b rdfs:subClassOf ?c) -> (?a rdfs:subClassOf ?c) ]
+[rulePropertySubproperty: (?i ?a ?b), (?a rdfs:subPropertyOf ?c) -> (?i ?c ?b) ]
+[ruleObjectInherit: (?a svu:hasObject ?b), (?b svu:hasObject ?c) -> (?a svu:hasObject ?c) ]
+[ruleParticipantObjectInherit: (?a svu:hasParticipantObject ?b), (?b svu:hasObject ?c) -> (?a svu:hasObject ?c) ]
+[unitsDerivation: (?a svu:isTypeOf ?b), (?b svu:hasUnits ?c) -> (?a svu:hasUnits ?c) ]
+[ruleDerivation: (?a svu:isDerivedFrom ?b), (?b svu:quantifiesProcess ?c) -> (?a svu:quantifiesProcess ?c) ]
+[ruleTypeDerivation: (?a svu:isTypeOf ?b), (?b svu:quantifiesProcess ?c) -> (?a svu:quantifiesProcess ?c) ]
+#[ruleAppliedAbstraction2: (?a geo-upper:directlyAbstracts ?b),
+# (?b geo-upper:appliesAbstraction ?c) -> (?a geo-upper:directlyAbstracts ?c) ]
+#[ruleAppliedAbstraction: (?a geo-upper:abstracts ?b),
+# (?b geo-upper:abstracts ?c) -> (?a geo-upper:indirectlyAbstracts ?c) ]
+#[ruleAppliedPart2: (?a geo-upper:directlyTakesPartOf ?b),
+# (?b geo-upper:appliesPart ?c) -> (?a geo-upper:directlyTakesPartOf ?c) ]
+#[ruleAppliedPart: (?a geo-upper:takesPartOf ?b),
+# (?b geo-upper:takesPartOf ?c) -> (?a geo-upper:indirectlyTakesPartOf ?c) ]
+#[ruleAppliedAbstraction: (?a geo-upper:directlyAbstracts ?b),
+# (?b geo-upper:directlyAbstracts ?c) -> (?a geo-upper:indirectlyAbstracts ?c) ]
+#[ruleAppliedAbstraction3: (?a geo-upper:directlyAbstracts ?b),
+# (?b geo-upper:indirectlyAbstracts ?c) -> (?a geo-upper:indirectlyAbstracts ?c) ]
+#[ruleAppliedAbstraction4: (?a geo-upper:indirectlyAbstracts ?b),
+# (?b geo-upper:indirectlyAbstracts ?c) -> (?a geo-upper:indirectlyAbstracts ?c) ]
