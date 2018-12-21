@@ -8,7 +8,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @base <http://www.geoscienceontology.org/svo/svl/> .
 
-<http://www.geoscienceontology.org/svl/relationship> rdf:type owl:Ontology ;
+<http://www.geoscienceontology.org/svo/svl/relationship> rdf:type owl:Ontology ;
 				rdfs:comment " Scientific Variables Lower Ontology, Relationship BETA VERSION 1.0." .
 #				owl:imports <http://www.geoscienceontology.org/svo/svu> .
 
@@ -17,10 +17,34 @@
 #    Relationship   
 # 
 #################################################################
-##Last generated on: 2018-11-27 19:26
+##Last generated on: 2018-12-20 21:07
 
 ###Relationship
 
+
+###  http://www.geoscienceontology.org/svo/svl/relationship#10m-above
+:10m-above rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			rdf:type svu:SpatialRelationship ;
+			svu:isTypeOf :above ;
+			svu:hasAttribute <attribute#10m> ;
+			skos:prefLabel "10m-above"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/relationship#1m-above
+:1m-above rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			rdf:type svu:SpatialRelationship ;
+			svu:isTypeOf :above ;
+			svu:hasAttribute <attribute#1m> ;
+			skos:prefLabel "1m-above"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/relationship#1m-below
+:1m-below rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			rdf:type svu:SpatialRelationship ;
+			svu:isTypeOf :below ;
+			svu:hasAttribute <attribute#1m> ;
+			skos:prefLabel "1m-below"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/relationship#above
 :above rdf:type owl:NamedIndividual ,
@@ -35,6 +59,12 @@
 			rdf:type svu:SpatialRelationship ;
 			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/across#Preposition" ;
 			skos:prefLabel "across"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/relationship#adjacent
+:adjacent rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			rdf:type svu:SpatialRelationship ;
+			skos:prefLabel "adjacent"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/relationship#at
 :at rdf:type owl:NamedIndividual ,
@@ -57,12 +87,32 @@
 			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/below#Preposition" ;
 			skos:prefLabel "below"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/relationship#clockwise-from
+:clockwise-from rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			rdf:type svu:SpatialRelationship ;
+			svu:isTypeOf :from ;
+			svu:hasAttribute <attribute#clockwise> ;
+			skos:prefLabel "clockwise-from"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/relationship#exchange
+:exchange rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			rdf:type svu:SpatialRelationship ;
+			skos:prefLabel "exchange"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/relationship#from
 :from rdf:type owl:NamedIndividual ,
 			svu:Relationship ;
 			rdf:type svu:SpatialRelationship ;
 			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/from#Preposition" ;
 			skos:prefLabel "from"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/relationship#in
+:in rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			rdf:type svu:SpatialRelationship ;
+			skos:prefLabel "in"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/relationship#intra
 :intra rdf:type owl:NamedIndividual ,
@@ -95,12 +145,29 @@
 			rdf:type svu:SpatialRelationship ;
 			skos:prefLabel "onto"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/relationship#optional
+:optional rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			skos:prefLabel "optional"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/relationship#orbiting
 :orbiting rdf:type owl:NamedIndividual ,
 			svu:Relationship ;
 			rdf:type svu:SpatiotemporalRelationship ;
 			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/orbit#Verb" ;
 			skos:prefLabel "orbiting"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/relationship#orbitting
+:orbitting rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			rdf:type svu:SpatiotemporalRelationship ;
+			skos:prefLabel "orbitting"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/relationship#part
+:part rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			rdf:type svu:SpatialRelationship ;
+			skos:prefLabel "part"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/relationship#passing-through
 :passing-through rdf:type owl:NamedIndividual ,
@@ -113,6 +180,18 @@
 			svu:Relationship ;
 			rdf:type svu:TemporalRelationship ;
 			skos:prefLabel "since"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/relationship#sink
+:sink rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			rdf:type svu:SpatialRelationship ;
+			skos:prefLabel "sink"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/relationship#source
+:source rdf:type owl:NamedIndividual ,
+			svu:Relationship ;
+			rdf:type svu:SpatialRelationship ;
+			skos:prefLabel "source"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/relationship#surrounding
 :surrounding rdf:type owl:NamedIndividual ,
@@ -128,50 +207,11 @@
 			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/to#Preposition" ;
 			skos:prefLabel "to"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/relationship#wrt
-:wrt rdf:type owl:NamedIndividual ,
-			svu:Relationship ;
-			rdf:type svu:SpatialRelationship ;
-			skos:altLabel "with-respect-to"@en ;
-			skos:prefLabel "wrt"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/relationship#within
 :within rdf:type owl:NamedIndividual ,
 			svu:Relationship ;
 			rdf:type svu:SpatialRelationship ;
 			skos:prefLabel "within"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/relationship#10m-above
-:10m-above rdf:type owl:NamedIndividual ,
-			svu:Relationship ;
-			rdf:type svu:SpatialRelationship ;
-			svu:isTypeOf :above ;
-			svu:hasAttribute <attribute#10m> ;
-			skos:prefLabel "10m-above"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/relationship#1m-above
-:1m-above rdf:type owl:NamedIndividual ,
-			svu:Relationship ;
-			rdf:type svu:SpatialRelationship ;
-			svu:isTypeOf :above ;
-			svu:hasAttribute <attribute#1m> ;
-			skos:prefLabel "1m-above"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/relationship#1m-below
-:1m-below rdf:type owl:NamedIndividual ,
-			svu:Relationship ;
-			rdf:type svu:SpatialRelationship ;
-			svu:isTypeOf :below ;
-			svu:hasAttribute <attribute#1m> ;
-			skos:prefLabel "1m-below"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/relationship#clockwise-from
-:clockwise-from rdf:type owl:NamedIndividual ,
-			svu:Relationship ;
-			rdf:type svu:SpatialRelationship ;
-			svu:isTypeOf :from ;
-			svu:hasAttribute <attribute#clockwise> ;
-			skos:prefLabel "clockwise-from"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/relationship#within-25-ft
 :within-25-ft rdf:type owl:NamedIndividual ,
@@ -181,49 +221,9 @@
 			svu:hasAttribute <attribute#25ft> ;
 			skos:prefLabel "within-25-ft"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/relationship#in
-:in rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/relationship#wrt
+:wrt rdf:type owl:NamedIndividual ,
 			svu:Relationship ;
 			rdf:type svu:SpatialRelationship ;
-			skos:prefLabel "in"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/relationship#sink
-:sink rdf:type owl:NamedIndividual ,
-			svu:Relationship ;
-			rdf:type svu:SpatialRelationship ;
-			skos:prefLabel "sink"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/relationship#source
-:source rdf:type owl:NamedIndividual ,
-			svu:Relationship ;
-			rdf:type svu:SpatialRelationship ;
-			skos:prefLabel "source"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/relationship#part
-:part rdf:type owl:NamedIndividual ,
-			svu:Relationship ;
-			rdf:type svu:SpatialRelationship ;
-			skos:prefLabel "part"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/relationship#exchange
-:exchange rdf:type owl:NamedIndividual ,
-			svu:Relationship ;
-			rdf:type svu:SpatialRelationship ;
-			skos:prefLabel "exchange"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/relationship#optional
-:optional rdf:type owl:NamedIndividual ,
-			svu:Relationship ;
-			skos:prefLabel "optional"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/relationship#orbitting
-:orbitting rdf:type owl:NamedIndividual ,
-			svu:Relationship ;
-			rdf:type svu:SpatiotemporalRelationship ;
-			skos:prefLabel "orbitting"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/relationship#adjacent
-:adjacent rdf:type owl:NamedIndividual ,
-			svu:Relationship ;
-			rdf:type svu:SpatialRelationship ;
-			skos:prefLabel "adjacent"@en .
+			skos:altLabel "with-respect-to"@en ;
+			skos:prefLabel "wrt"@en .

@@ -8,7 +8,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @base <http://www.geoscienceontology.org/svo/svl/> .
 
-<http://www.geoscienceontology.org/svl/process> rdf:type owl:Ontology ;
+<http://www.geoscienceontology.org/svo/svl/process> rdf:type owl:Ontology ;
 				rdfs:comment " Scientific Variables Lower Ontology, Process BETA VERSION 1.0." .
 #				owl:imports <http://www.geoscienceontology.org/svo/svu> .
 
@@ -17,7 +17,7 @@
 #    Process   
 # 
 #################################################################
-##Last generated on: 2018-11-27 19:26
+##Last generated on: 2018-12-20 21:07
 
 ###Process
 
@@ -83,14 +83,6 @@
 			svu:hasNominalization "abstraction" ;
 			skos:prefLabel "abstraction"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#acceptance
-:acceptance rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "accept" ;
-			svu:hasPresentParticiple "accepting" ;
-			svu:hasNominalization "acceptance" ;
-			skos:prefLabel "acceptance"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#acceleration
 :acceleration rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -104,8 +96,16 @@
 :acceleration%7E0-to-60mph rdf:type owl:NamedIndividual ,
 			svu:Process ;
 			svu:isTypeOf :acceleration ;
-			svu:hasAttribute <attribute#0-to-60mph> ;
+			svu:hasAttribute <attribute#0-to-60-mph> ;
 			skos:prefLabel "acceleration~0-to-60mph"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#acceptance
+:acceptance rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "accept" ;
+			svu:hasPresentParticiple "accepting" ;
+			svu:hasNominalization "acceptance" ;
+			skos:prefLabel "acceptance"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#acclimatization
 :acclimatization rdf:type owl:NamedIndividual ,
@@ -142,6 +142,14 @@
 			svu:hasPresentParticiple "accumulating" ;
 			svu:hasNominalization "accumulation" ;
 			skos:prefLabel "accumulation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#acidification
+:acidification rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "acidify" ;
+			svu:hasPresentParticiple "acifying" ;
+			svu:hasNominalization "acidification" ;
+			skos:prefLabel "acidification"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#acquisition
 :acquisition rdf:type owl:NamedIndividual ,
@@ -203,6 +211,13 @@
 			svu:hasNominalization "adhesion" ;
 			skos:prefLabel "adhesion"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#adiabatic-process
+:adiabatic-process rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :processing ;
+			svu:hasAttribute <attribute#adiabatic> ;
+			skos:prefLabel "adiabatic-process"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#adjustment
 :adjustment rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -249,6 +264,14 @@
 			svu:hasNominalization "advection" ;
 			skos:prefLabel "advection"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#aeration
+:aeration rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "aerate" ;
+			svu:hasPresentParticiple "aerating" ;
+			svu:hasNominalization "aeration" ;
+			skos:prefLabel "aeration"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#aerologation
 :aerologation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -256,6 +279,25 @@
 			svu:hasPresentParticiple "aerologating" ;
 			svu:hasNominalization "aerologation" ;
 			skos:prefLabel "aerologation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#aggradation
+:aggradation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Aggradation" ;
+			skos:altLabel "alluviate"@en ;
+			svu:hasPresentTense "aggrade" ;
+			svu:hasPresentParticiple "aggradating" ;
+			svu:hasNominalization "aggradation" ;
+			skos:prefLabel "aggradation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#aggregation
+:aggregation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Aggregation" ;
+			svu:hasPresentTense "aggregate" ;
+			svu:hasPresentParticiple "aggregating" ;
+			svu:hasNominalization "aggregation" ;
+			skos:prefLabel "aggregation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#aging
 :aging rdf:type owl:NamedIndividual ,
@@ -266,15 +308,6 @@
 			svu:hasPresentParticiple "aging" ;
 			svu:hasNominalization "aging" ;
 			skos:prefLabel "aging"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#aggregation
-:aggregation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Aggregation" ;
-			svu:hasPresentTense "aggregate" ;
-			svu:hasPresentParticiple "aggregating" ;
-			svu:hasNominalization "aggregation" ;
-			skos:prefLabel "aggregation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#aliasing
 :aliasing rdf:type owl:NamedIndividual ,
@@ -292,6 +325,15 @@
 			svu:hasPresentParticiple "aligning" ;
 			svu:hasNominalization "alignment" ;
 			skos:prefLabel "alignment"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#alkylation
+:alkylation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Alkylation" ;
+			svu:hasPresentTense "alkylate" ;
+			svu:hasPresentParticiple "alkylating" ;
+			svu:hasNominalization "alkylation" ;
+			skos:prefLabel "alkylation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#alleviation
 :alleviation rdf:type owl:NamedIndividual ,
@@ -328,6 +370,15 @@
 			svu:hasNominalization "allotment" ;
 			skos:prefLabel "allotment"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#alluviation
+:alluviation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Aggradation" ;
+			svu:hasPresentTense "alluviate" ;
+			svu:hasPresentParticiple "alluviating" ;
+			svu:hasNominalization "alluviation" ;
+			skos:prefLabel "alluviation"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#alteration
 :alteration rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -344,6 +395,15 @@
 			svu:hasPresentParticiple "alternating" ;
 			svu:hasNominalization "alternation" ;
 			skos:prefLabel "alternation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#ammonification
+:ammonification rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Nitrogen_cycle#Ammonification" ;
+			svu:hasPresentTense "ammonify" ;
+			svu:hasPresentParticiple "ammonifying" ;
+			svu:hasNominalization "ammonification" ;
+			skos:prefLabel "ammonification"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#amortization
 :amortization rdf:type owl:NamedIndividual ,
@@ -435,6 +495,23 @@
 			svu:Process ;
 			svu:hasNominalization "appulse" ;
 			skos:prefLabel "appulse"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#aridification
+:aridification rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Aridification" ;
+			svu:hasPresentTense "aridify" ;
+			svu:hasPresentParticiple "aridifying" ;
+			svu:hasNominalization "aridification" ;
+			skos:prefLabel "aridification"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#armament
+:armament rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "armor" ;
+			svu:hasPresentParticiple "armoring" ;
+			svu:hasNominalization "armament" ;
+			skos:prefLabel "armament"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#arrest
 :arrest rdf:type owl:NamedIndividual ,
@@ -612,6 +689,12 @@
 			svu:hasNominalization "autografting" ;
 			skos:prefLabel "autografting"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#avalanche
+:avalanche rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "avalanche" ;
+			skos:prefLabel "avalanche"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#averaging
 :averaging rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -664,11 +747,29 @@
 			svu:hasNominalization "backfiring" ;
 			skos:prefLabel "backfire"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#backflow
+:backflow rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :flowing ;
+			svu:hasPresentTense "flow-back" ;
+			svu:hasPresentParticiple "flowing-back" ;
+			svu:hasNominalization "backflow" ;
+			skos:prefLabel "backflow"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#backlash
 :backlash rdf:type owl:NamedIndividual ,
 			svu:Process ;
 			svu:hasPresentTense "backlash" ;
 			svu:hasPresentParticiple "backlashing" ;
+			svu:hasNominalization "backlash" ;
+			skos:prefLabel "backlash"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#backlash
+:backlash rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :lashing ;
+			svu:hasPresentTense "lash-back" ;
+			svu:hasPresentParticiple "lashing-back" ;
 			svu:hasNominalization "backlash" ;
 			skos:prefLabel "backlash"@en .
 
@@ -690,14 +791,6 @@
 			svu:hasNominalization "backspin" ;
 			skos:prefLabel "backspin"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#blancing
-:blancing rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "balance" ;
-			svu:hasPresentParticiple "balancing" ;
-			svu:hasNominalization "balancing" ;
-			skos:prefLabel "balancing"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#bale
 :bale rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -712,6 +805,21 @@
 			svu:hasPresentParticiple "ballasting" ;
 			svu:hasNominalization "ballasting" ;
 			skos:prefLabel "ballasting"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#baseflow
+:baseflow rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :flowing ;
+			svu:hasNominalization "baseflow" ;
+			skos:prefLabel "baseflow"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#basification
+:basification rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "basificate" ;
+			svu:hasPresentParticiple "basificating" ;
+			svu:hasNominalization "basification" ;
+			skos:prefLabel "basification"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#beaming
 :beaming rdf:type owl:NamedIndividual ,
@@ -760,6 +868,14 @@
 			svu:hasNominalization "bifurcation" ;
 			skos:prefLabel "bifurcation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#binding
+:binding rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "bind" ;
+			svu:hasPresentParticiple "binding" ;
+			svu:hasNominalization "binding" ;
+			skos:prefLabel "binding"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#binning
 :binning rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -768,14 +884,6 @@
 			svu:hasPresentParticiple "binning" ;
 			svu:hasNominalization "binning" ;
 			skos:prefLabel "binning"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#binding
-:binding rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "bind" ;
-			svu:hasPresentParticiple "binding" ;
-			svu:hasNominalization "binding" ;
-			skos:prefLabel "binding"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#bioaccumulation
 :bioaccumulation rdf:type owl:NamedIndividual ,
@@ -803,6 +911,15 @@
 			svu:hasPresentParticiple "biodegrading" ;
 			svu:hasNominalization "biodegradation" ;
 			skos:prefLabel "biodegradation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#bioluminescence
+:bioluminescence rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Bioluminescence" ;
+			svu:hasPresentTense "bioluminesce" ;
+			svu:hasPresentParticiple "bioluminescing" ;
+			svu:hasNominalization "bioluminescence" ;
+			skos:prefLabel "bioluminescence"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#biomagnification
 :biomagnification rdf:type owl:NamedIndividual ,
@@ -850,6 +967,14 @@
 			svu:hasNominalization "birth" ;
 			skos:prefLabel "birth"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#blancing
+:blancing rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "balance" ;
+			svu:hasPresentParticiple "balancing" ;
+			svu:hasNominalization "balancing" ;
+			skos:prefLabel "balancing"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#blasting
 :blasting rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -866,6 +991,25 @@
 			svu:hasPresentParticiple "bleaching" ;
 			svu:hasNominalization "bleaching" ;
 			skos:prefLabel "bleaching"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#bleeding
+:bleeding rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Bleeding" ;
+			skos:altLabel "hemorrhaging"@en ;
+			skos:altLabel "haemorrhaging"@en ;
+			svu:hasPresentTense "bleed" ;
+			svu:hasPresentParticiple "bleeding" ;
+			svu:hasNominalization "bleeding" ;
+			skos:prefLabel "bleeding"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#blister
+:blister rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Blister" ;
+			svu:hasPresentTense "blister" ;
+			svu:hasPresentParticiple "blistering" ;
+			skos:prefLabel "blister"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#blockage
 :blockage rdf:type owl:NamedIndividual ,
@@ -998,14 +1142,6 @@
 			svu:hasNominalization "breaching" ;
 			skos:prefLabel "breaching"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#breaking
-:breaking rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "break" ;
-			svu:hasPresentParticiple "breaking" ;
-			svu:hasNominalization "breaking" ;
-			skos:prefLabel "breaking"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#breakdown
 :breakdown rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -1014,6 +1150,14 @@
 			svu:hasPresentParticiple "breaking-down" ;
 			svu:hasNominalization "breakdown" ;
 			skos:prefLabel "breakdown"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#breaking
+:breaking rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "break" ;
+			svu:hasPresentParticiple "breaking" ;
+			svu:hasNominalization "breaking" ;
+			skos:prefLabel "breaking"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#breakout
 :breakout rdf:type owl:NamedIndividual ,
@@ -1051,6 +1195,26 @@
 			svu:hasNominalization "breakup" ;
 			skos:prefLabel "breakup"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#breastfeeding
+:breastfeeding rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Breastfeeding" ;
+			skos:altLabel "nursing"@en ;
+			svu:hasPresentTense "breastfeed" ;
+			svu:hasPresentParticiple "breastfeeding" ;
+			svu:hasNominalization "breastfeeding" ;
+			skos:prefLabel "breastfeeding"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#breath
+:breath rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			skos:altLabel "respiration"@en ;
+			skos:altLabel "ventilation"@en ;
+			svu:hasPresentTense "breathe" ;
+			svu:hasPresentParticiple "breathing" ;
+			svu:hasNominalization "breath" ;
+			skos:prefLabel "breath"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#breeding
 :breeding rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -1074,6 +1238,24 @@
 			svu:hasPresentParticiple "bridging" ;
 			svu:hasNominalization "bridging" ;
 			skos:prefLabel "bridging"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#broadcast
+:broadcast rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Broadcasting" ;
+			svu:hasPresentTense "broadcast" ;
+			svu:hasPresentParticiple "broadcasting" ;
+			svu:hasNominalization "broadcast" ;
+			skos:prefLabel "broadcast"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#bromination
+:bromination rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Halogenation#Bromination" ;
+			svu:hasPresentTense "brominate" ;
+			svu:hasPresentParticiple "brominating" ;
+			svu:hasNominalization "bromination" ;
+			skos:prefLabel "bromination"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#brumate
 :brumate rdf:type owl:NamedIndividual ,
@@ -1160,6 +1342,17 @@
 			svu:hasPresentParticiple "buoying" ;
 			skos:prefLabel "buoy"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#burial
+:burial rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Burial" ;
+			skos:altLabel "interment"@en ;
+			svu:hasPresentTense "bury" ;
+			svu:hasPresentParticiple "burying" ;
+			svu:hasNominalization "burial" ;
+			svu:hasNominalization "burying" ;
+			skos:prefLabel "burial"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#burrowing
 :burrowing rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -1176,24 +1369,6 @@
 			svu:hasNominalization "bursting" ;
 			skos:prefLabel "bursting"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#downburst
-:downburst rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :bursting ;
-			svu:hasPresentTense "burst-down" ;
-			svu:hasPresentParticiple "bursting-down" ;
-			svu:hasNominalization "downburst" ;
-			skos:prefLabel "downburst"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#outburst
-:outburst rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :bursting ;
-			svu:hasPresentTense "burst-out" ;
-			svu:hasPresentParticiple "bursting-out" ;
-			svu:hasNominalization "outburst" ;
-			skos:prefLabel "outburst"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#bypass
 :bypass rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -1208,6 +1383,15 @@
 			svu:hasPresentTense "cache" ;
 			svu:hasPresentParticiple "caching" ;
 			skos:prefLabel "cache"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#calcification
+:calcification rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Calcification" ;
+			svu:hasPresentTense "calcify" ;
+			svu:hasPresentParticiple "calcifying" ;
+			svu:hasNominalization "calcification" ;
+			skos:prefLabel "calcification"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#calibration
 :calibration rdf:type owl:NamedIndividual ,
@@ -1243,6 +1427,14 @@
 			svu:hasNominalization "canalization" ;
 			skos:prefLabel "canalization"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#cancellation
+:cancellation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "cencel" ;
+			svu:hasPresentParticiple "cancelling" ;
+			svu:hasNominalization "cancellation" ;
+			skos:prefLabel "cancellation"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#cannul
 :cannul rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -1273,6 +1465,14 @@
 			svu:hasPresentParticiple "carbonating" ;
 			svu:hasNominalization "carbonation" ;
 			skos:prefLabel "carbonate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#carpool
+:carpool rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "carpool" ;
+			svu:hasPresentParticiple "carpooling" ;
+			svu:hasNominalization "carpool" ;
+			skos:prefLabel "carpool"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#carrying
 :carrying rdf:type owl:NamedIndividual ,
@@ -1339,14 +1539,6 @@
 			svu:hasNominalization "cavitation" ;
 			skos:prefLabel "cavitation"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#cessation
-:cessation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "cease" ;
-			svu:hasPresentParticiple "ceasing" ;
-			svu:hasNominalization "cessation" ;
-			skos:prefLabel "cessation"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#cementation
 :cementation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -1354,14 +1546,6 @@
 			svu:hasPresentParticiple "cementing" ;
 			svu:hasNominalization "cementation" ;
 			skos:prefLabel "cementation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#cancellation
-:cancellation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "cencel" ;
-			svu:hasPresentParticiple "cancelling" ;
-			svu:hasNominalization "cancellation" ;
-			skos:prefLabel "cancellation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#centering
 :centering rdf:type owl:NamedIndividual ,
@@ -1386,6 +1570,14 @@
 			svu:hasPresentParticiple "centrifuging" ;
 			svu:hasNominalization "centrifugation" ;
 			skos:prefLabel "centrifugation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#cessation
+:cessation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "cease" ;
+			svu:hasPresentParticiple "ceasing" ;
+			svu:hasNominalization "cessation" ;
+			skos:prefLabel "cessation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#chafing
 :chafing rdf:type owl:NamedIndividual ,
@@ -1473,6 +1665,15 @@
 			svu:hasPresentParticiple "chiseling" ;
 			skos:prefLabel "chisel"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#chlorination
+:chlorination rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Halogenation#Chlorination" ;
+			svu:hasPresentTense "chlorinate" ;
+			svu:hasPresentParticiple "chlorinating" ;
+			svu:hasNominalization "chlorination" ;
+			skos:prefLabel "chlorination"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#choking
 :choking rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -1536,6 +1737,12 @@
 			svu:hasPresentParticiple "clearing" ;
 			svu:hasNominalization "clearance" ;
 			skos:prefLabel "clearance"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#clearcutting
+:clearcutting rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "clearcutting" ;
+			skos:prefLabel "clearcutting"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#cleaving
 :cleaving rdf:type owl:NamedIndividual ,
@@ -1670,14 +1877,6 @@
 			svu:hasNominalization "collection" ;
 			skos:prefLabel "collection"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#collision
-:collision rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "collide" ;
-			svu:hasPresentParticiple "colliding" ;
-			svu:hasNominalization "collision" ;
-			skos:prefLabel "collision"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#collimation
 :collimation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -1685,6 +1884,14 @@
 			svu:hasPresentParticiple "collimating" ;
 			svu:hasNominalization "collimation" ;
 			skos:prefLabel "collimation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#collision
+:collision rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "collide" ;
+			svu:hasPresentParticiple "colliding" ;
+			svu:hasNominalization "collision" ;
+			skos:prefLabel "collision"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#colonization
 :colonization rdf:type owl:NamedIndividual ,
@@ -1719,14 +1926,6 @@
 			svu:hasNominalization "comminution" ;
 			skos:prefLabel "comminution"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#compaction
-:compaction rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "compact" ;
-			svu:hasPresentParticiple "compacting" ;
-			svu:hasNominalization "compaction" ;
-			skos:prefLabel "compaction"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#compactification
 :compactification rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -1734,6 +1933,14 @@
 			svu:hasPresentParticiple "compactifying" ;
 			svu:hasNominalization "compactification" ;
 			skos:prefLabel "compactification"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#compaction
+:compaction rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "compact" ;
+			svu:hasPresentParticiple "compacting" ;
+			svu:hasNominalization "compaction" ;
+			skos:prefLabel "compaction"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#compensation
 :compensation rdf:type owl:NamedIndividual ,
@@ -2253,6 +2460,13 @@
 			svu:hasNominalization "crimping" ;
 			skos:prefLabel "crimping"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#crossbreed
+:crossbreed rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "crossbreed" ;
+			svu:hasPresentParticiple "crossbreeding" ;
+			skos:prefLabel "crossbreed"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#crossing
 :crossing rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -2260,6 +2474,13 @@
 			svu:hasPresentParticiple "crossing" ;
 			svu:hasNominalization "crossing" ;
 			skos:prefLabel "crossing"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#crosslink
+:crosslink rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "crosslink" ;
+			svu:hasPresentParticiple "crosslinking" ;
+			skos:prefLabel "crosslink"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#crossover
 :crossover rdf:type owl:NamedIndividual ,
@@ -2269,20 +2490,6 @@
 			svu:hasPresentParticiple "crossing-over" ;
 			svu:hasNominalization "crossover" ;
 			skos:prefLabel "crossover"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#crossbreed
-:crossbreed rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "crossbreed" ;
-			svu:hasPresentParticiple "crossbreeding" ;
-			skos:prefLabel "crossbreed"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#crosslink
-:crosslink rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "crosslink" ;
-			svu:hasPresentParticiple "crosslinking" ;
-			skos:prefLabel "crosslink"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#crush
 :crush rdf:type owl:NamedIndividual ,
@@ -2340,6 +2547,15 @@
 			svu:hasNominalization "curation" ;
 			skos:prefLabel "curation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#curettage
+:curettage rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Curettage" ;
+			svu:hasPresentTense "curette" ;
+			svu:hasPresentParticiple "curetting" ;
+			svu:hasNominalization "curettage" ;
+			skos:prefLabel "curettage"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#curing
 :curing rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -2349,14 +2565,24 @@
 			svu:hasNominalization "curing" ;
 			skos:prefLabel "curing"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#curettage
-:curettage rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/process#current
+:current rdf:type owl:NamedIndividual ,
 			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Curettage" ;
-			svu:hasPresentTense "curette" ;
-			svu:hasPresentParticiple "curetting" ;
-			svu:hasNominalization "curettage" ;
-			skos:prefLabel "curettage"@en .
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Current_(fluid)" ;
+			svu:hasNominalization "current" ;
+			skos:prefLabel "current"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#current%7Elongshore
+:current%7Elongshore rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :current ;
+			skos:prefLabel "current~longshore"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#current%7Erip
+:current%7Erip rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :current ;
+			skos:prefLabel "current~rip"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#curtailment
 :curtailment rdf:type owl:NamedIndividual ,
@@ -2380,14 +2606,6 @@
 			svu:hasPresentParticiple "cushioning" ;
 			skos:prefLabel "cushion"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#cutting
-:cutting rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "cut" ;
-			svu:hasPresentParticiple "cutting" ;
-			svu:hasNominalization "cutting" ;
-			skos:prefLabel "cutting"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#cutoff
 :cutoff rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -2397,6 +2615,14 @@
 			svu:hasNominalization "cutoff" ;
 			skos:prefLabel "cutoff"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#cutting
+:cutting rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "cut" ;
+			svu:hasPresentParticiple "cutting" ;
+			svu:hasNominalization "cutting" ;
+			skos:prefLabel "cutting"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#cycling
 :cycling rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -2404,14 +2630,6 @@
 			svu:hasPresentParticiple "cycling" ;
 			svu:hasNominalization "cycling" ;
 			skos:prefLabel "cycling"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#damming
-:damming rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "dam" ;
-			svu:hasPresentParticiple "damming" ;
-			svu:hasNominalization "damming" ;
-			skos:prefLabel "damming"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#damaging
 :damaging rdf:type owl:NamedIndividual ,
@@ -2421,13 +2639,13 @@
 			svu:hasNominalization "damaging" ;
 			skos:prefLabel "damaging"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#damping
-:damping rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/process#damming
+:damming rdf:type owl:NamedIndividual ,
 			svu:Process ;
-			svu:hasPresentTense "damp" ;
-			svu:hasPresentParticiple "damping" ;
-			svu:hasNominalization "damping" ;
-			skos:prefLabel "damping"@en .
+			svu:hasPresentTense "dam" ;
+			svu:hasPresentParticiple "damming" ;
+			svu:hasNominalization "damming" ;
+			skos:prefLabel "damming"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#dampening
 :dampening rdf:type owl:NamedIndividual ,
@@ -2436,6 +2654,14 @@
 			svu:hasPresentParticiple "dampening" ;
 			svu:hasNominalization "dampening" ;
 			skos:prefLabel "dampening"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#damping
+:damping rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "damp" ;
+			svu:hasPresentParticiple "damping" ;
+			svu:hasNominalization "damping" ;
+			skos:prefLabel "damping"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#darkening
 :darkening rdf:type owl:NamedIndividual ,
@@ -2461,6 +2687,15 @@
 			svu:hasNominalization "deactivation" ;
 			skos:prefLabel "deactivation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#dealkalization
+:dealkalization rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Dealkalization" ;
+			svu:hasPresentTense "dalkalize" ;
+			svu:hasPresentParticiple "dealkalizing" ;
+			svu:hasNominalization "dealkalization" ;
+			skos:prefLabel "dealkalization"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#deburr
 :deburr rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -2484,15 +2719,6 @@
 			svu:hasNominalization "decaying" ;
 			skos:prefLabel "decaying"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#deception
-:deception rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "deceive" ;
-			svu:hasPresentParticiple "deceiving" ;
-			svu:hasNominalization "deceiving" ;
-			svu:hasNominalization "deception" ;
-			skos:prefLabel "deception"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#deceleration
 :deceleration rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -2509,13 +2735,14 @@
 			svu:hasNominalization "decentralization" ;
 			skos:prefLabel "decentralization"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#decision
-:decision rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/process#deception
+:deception rdf:type owl:NamedIndividual ,
 			svu:Process ;
-			svu:hasPresentTense "decide" ;
-			svu:hasPresentParticiple "deciding" ;
-			svu:hasNominalization "decision" ;
-			skos:prefLabel "decision"@en .
+			svu:hasPresentTense "deceive" ;
+			svu:hasPresentParticiple "deceiving" ;
+			svu:hasNominalization "deceiving" ;
+			svu:hasNominalization "deception" ;
+			skos:prefLabel "deception"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#decimation
 :decimation rdf:type owl:NamedIndividual ,
@@ -2524,6 +2751,14 @@
 			svu:hasPresentParticiple "decimating" ;
 			svu:hasNominalization "decimation" ;
 			skos:prefLabel "decimation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#decision
+:decision rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "decide" ;
+			svu:hasPresentParticiple "deciding" ;
+			svu:hasNominalization "decision" ;
+			skos:prefLabel "decision"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#declination
 :declination rdf:type owl:NamedIndividual ,
@@ -2556,6 +2791,15 @@
 			svu:hasPresentParticiple "decompressing" ;
 			svu:hasNominalization "decompression" ;
 			skos:prefLabel "decompression"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#defenestration
+:defenestration rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Defenestration" ;
+			svu:hasPresentTense "defenestrate" ;
+			svu:hasPresentParticiple "defenestrating" ;
+			svu:hasNominalization "defenestration" ;
+			skos:prefLabel "defenestration"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#defense
 :defense rdf:type owl:NamedIndividual ,
@@ -2596,6 +2840,23 @@
 			svu:hasNominalization "deflection" ;
 			skos:prefLabel "deflection"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#defoliation
+:defoliation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "defoliate" ;
+			svu:hasPresentParticiple "defoliating" ;
+			svu:hasNominalization "defoliation" ;
+			skos:prefLabel "defoliation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#deforestation
+:deforestation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Deforestation" ;
+			svu:hasPresentTense "deforest" ;
+			svu:hasPresentParticiple "deforesting" ;
+			svu:hasNominalization "deforestation" ;
+			skos:prefLabel "deforestation"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#deformation
 :deformation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -2604,6 +2865,24 @@
 			svu:hasNominalization "deformation" ;
 			skos:prefLabel "deformation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#defribillation
+:defribillation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Defibrillation" ;
+			svu:hasPresentTense "defribillate" ;
+			svu:hasPresentParticiple "defribillating" ;
+			svu:hasNominalization "defribillation" ;
+			skos:prefLabel "defribillation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#deglaciation
+:deglaciation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Deglaciation" ;
+			svu:hasPresentTense "deglaciate" ;
+			svu:hasPresentParticiple "deglaciating" ;
+			svu:hasNominalization "deglaciation" ;
+			skos:prefLabel "deglaciation"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#degradation
 :degradation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -2611,6 +2890,38 @@
 			svu:hasPresentParticiple "degrading" ;
 			svu:hasNominalization "degradation" ;
 			skos:prefLabel "degradation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#dehalogenation
+:dehalogenation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "dehalogenate" ;
+			svu:hasPresentParticiple "dehalogenating" ;
+			svu:hasNominalization "dehalogenation" ;
+			skos:prefLabel "dehalogenation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#dehydration
+:dehydration rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "dehydrate" ;
+			svu:hasPresentParticiple "dehydrating" ;
+			svu:hasNominalization "dehydration" ;
+			skos:prefLabel "dehydration"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#deionization
+:deionization rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "deionize" ;
+			svu:hasPresentParticiple "deionizing" ;
+			svu:hasNominalization "deionization" ;
+			skos:prefLabel "deionization"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#delamination
+:delamination rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "delaminate" ;
+			svu:hasPresentParticiple "delaminating" ;
+			svu:hasNominalization "delamination" ;
+			skos:prefLabel "delamination"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#delay
 :delay rdf:type owl:NamedIndividual ,
@@ -2677,6 +2988,14 @@
 			svu:hasNominalization "denaturation" ;
 			skos:prefLabel "denaturation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#denitrification
+:denitrification rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "denitrify" ;
+			svu:hasPresentParticiple "denitrifying" ;
+			svu:hasNominalization "denitrification" ;
+			skos:prefLabel "denitrification"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#denoising
 :denoising rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -2716,6 +3035,14 @@
 			svu:hasPresentParticiple "depending" ;
 			svu:hasNominalization "dependance" ;
 			skos:prefLabel "dependance"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#dephosphorylation
+:dephosphorylation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "dephosphorylate" ;
+			svu:hasPresentParticiple "dephosphorylating" ;
+			svu:hasNominalization "dephosphorylation" ;
+			skos:prefLabel "dephosphorylation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#depletion
 :depletion rdf:type owl:NamedIndividual ,
@@ -2758,6 +3085,14 @@
 			svu:hasNominalization "deprivation" ;
 			skos:prefLabel "deprivation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#deprotonation
+:deprotonation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "deprotonate" ;
+			svu:hasPresentParticiple "deprotonating" ;
+			svu:hasNominalization "deprotonation" ;
+			skos:prefLabel "deprotonation"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#derailment
 :derailment rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -2773,6 +3108,14 @@
 			svu:hasPresentParticiple "dereferencing" ;
 			skos:prefLabel "dereference"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#desalination
+:desalination rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "desalinate" ;
+			svu:hasPresentParticiple "desalinating" ;
+			svu:hasNominalization "desalination" ;
+			skos:prefLabel "desalination"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#descent
 :descent rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -2782,6 +3125,14 @@
 			svu:hasNominalization "descending" ;
 			skos:prefLabel "descent"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#desertification
+:desertification rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "desertify" ;
+			svu:hasPresentParticiple "desertifying" ;
+			svu:hasNominalization "desertification" ;
+			skos:prefLabel "desertification"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#desorption
 :desorption rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -2789,6 +3140,14 @@
 			svu:hasPresentParticiple "desorbing" ;
 			svu:hasNominalization "desorption" ;
 			skos:prefLabel "desorption"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#dessication
+:dessication rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "dessicate" ;
+			svu:hasPresentParticiple "dessicating" ;
+			svu:hasNominalization "dessication" ;
+			skos:prefLabel "dessication"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#destruction
 :destruction rdf:type owl:NamedIndividual ,
@@ -2816,14 +3175,6 @@
 			svu:hasNominalization "detachment" ;
 			skos:prefLabel "detachment"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#detention
-:detention rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "detain" ;
-			svu:hasPresentParticiple "detaining" ;
-			svu:hasNominalization "detention" ;
-			skos:prefLabel "detention"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#detection
 :detection rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -2833,13 +3184,13 @@
 			svu:hasNominalization "detection" ;
 			skos:prefLabel "detection"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#deterrment
-:deterrment rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/process#detention
+:detention rdf:type owl:NamedIndividual ,
 			svu:Process ;
-			svu:hasPresentTense "deter" ;
-			svu:hasPresentParticiple "deterring" ;
-			svu:hasNominalization "deterrment" ;
-			skos:prefLabel "deterrment"@en .
+			svu:hasPresentTense "detain" ;
+			svu:hasPresentParticiple "detaining" ;
+			svu:hasNominalization "detention" ;
+			skos:prefLabel "detention"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#deterioration
 :deterioration rdf:type owl:NamedIndividual ,
@@ -2848,6 +3199,14 @@
 			svu:hasPresentParticiple "deteriorating" ;
 			svu:hasNominalization "deterioration" ;
 			skos:prefLabel "deterioration"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#deterrment
+:deterrment rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "deter" ;
+			svu:hasPresentParticiple "deterring" ;
+			svu:hasNominalization "deterrment" ;
+			skos:prefLabel "deterrment"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#detonation
 :detonation rdf:type owl:NamedIndividual ,
@@ -2889,6 +3248,14 @@
 			svu:hasNominalization "deviation" ;
 			skos:prefLabel "deviation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#dewatering
+:dewatering rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "dewater" ;
+			svu:hasPresentParticiple "dewatering" ;
+			svu:hasNominalization "dewatering" ;
+			skos:prefLabel "dewatering"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#differentiation
 :differentiation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -2913,6 +3280,14 @@
 			svu:hasPresentParticiple "diffusing" ;
 			svu:hasNominalization "diffusion" ;
 			skos:prefLabel "diffusion"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#digestion
+:digestion rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "digest" ;
+			svu:hasPresentParticiple "digesting" ;
+			svu:hasNominalization "digestion" ;
+			skos:prefLabel "digestion"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#digging
 :digging rdf:type owl:NamedIndividual ,
@@ -3062,6 +3437,13 @@
 			svu:hasNominalization "dispersal" ;
 			skos:prefLabel "dispersal"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#displaced-convection
+:displaced-convection rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :convection ;
+			svu:hasAttribute <attribute#displaced> ;
+			skos:prefLabel "displaced-convection"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#displacement
 :displacement rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -3164,14 +3546,6 @@
 			svu:hasNominalization "disturbance" ;
 			skos:prefLabel "disturbance"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#diving
-:diving rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "dive" ;
-			svu:hasPresentParticiple "diving" ;
-			svu:hasNominalization "diving" ;
-			skos:prefLabel "diving"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#divergence
 :divergence rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -3188,6 +3562,14 @@
 			svu:hasNominalization "diversion" ;
 			skos:prefLabel "diversion"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#diving
+:diving rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "dive" ;
+			svu:hasPresentParticiple "diving" ;
+			svu:hasNominalization "diving" ;
+			skos:prefLabel "diving"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#division
 :division rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -3195,6 +3577,14 @@
 			svu:hasPresentParticiple "dividing" ;
 			svu:hasNominalization "division" ;
 			skos:prefLabel "division"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#docking
+:docking rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "dock" ;
+			svu:hasPresentParticiple "docking" ;
+			svu:hasNominalization "docking" ;
+			skos:prefLabel "docking"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#dodging
 :dodging rdf:type owl:NamedIndividual ,
@@ -3220,6 +3610,14 @@
 			svu:hasNominalization "domination" ;
 			skos:prefLabel "domination"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#donation
+:donation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "donate" ;
+			svu:hasPresentParticiple "donating" ;
+			svu:hasNominalization "donation" ;
+			skos:prefLabel "donation"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#dosing
 :dosing rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -3235,6 +3633,70 @@
 			svu:hasPresentParticiple "doubling" ;
 			svu:hasNominalization "doubling" ;
 			skos:prefLabel "doubling"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#downburst
+:downburst rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :bursting ;
+			svu:hasPresentTense "burst-down" ;
+			svu:hasPresentParticiple "bursting-down" ;
+			svu:hasNominalization "downburst" ;
+			skos:prefLabel "downburst"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#downburst
+:downburst rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :bursting ;
+			svu:hasPresentTense "burst-down" ;
+			svu:hasPresentParticiple "bursting-down" ;
+			svu:hasNominalization "downburst" ;
+			skos:prefLabel "downburst"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#downcutting
+:downcutting rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "downcutting" ;
+			skos:prefLabel "downcutting"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#downdraft
+:downdraft rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "downdraft" ;
+			skos:prefLabel "downdraft"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#downforce
+:downforce rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :forcing ;
+			svu:hasPresentTense "force-down" ;
+			svu:hasPresentParticiple "forcing-down" ;
+			svu:hasNominalization "downforce" ;
+			skos:prefLabel "downforce"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#downscale
+:downscale rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :scaling ;
+			svu:hasPresentTense "scale-down" ;
+			svu:hasPresentParticiple "scaling-down" ;
+			svu:hasNominalization "downscale" ;
+			skos:prefLabel "downscale"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#downturn
+:downturn rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :turning ;
+			svu:hasPresentTense "turn-down" ;
+			svu:hasPresentParticiple "turning-down" ;
+			svu:hasNominalization "downturn" ;
+			skos:prefLabel "downturn"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#downwelling
+:downwelling rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Downwelling" ;
+			svu:hasNominalization "downwelling" ;
+			skos:prefLabel "downwelling"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#drafting
 :drafting rdf:type owl:NamedIndividual ,
@@ -3261,14 +3723,6 @@
 			svu:hasNominalization "draining" ;
 			skos:prefLabel "draining"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#drawing
-:drawing rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "draw" ;
-			svu:hasPresentParticiple "drawing" ;
-			svu:hasNominalization "drawing" ;
-			skos:prefLabel "drawing"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#drawdown
 :drawdown rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -3277,6 +3731,14 @@
 			svu:hasPresentParticiple "drawing-down" ;
 			svu:hasNominalization "drawdown" ;
 			skos:prefLabel "drawdown"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#drawing
+:drawing rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "draw" ;
+			svu:hasPresentParticiple "drawing" ;
+			svu:hasNominalization "drawing" ;
+			skos:prefLabel "drawing"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#dredging
 :dredging rdf:type owl:NamedIndividual ,
@@ -3319,6 +3781,23 @@
 			svu:hasPresentParticiple "driving" ;
 			svu:hasNominalization "driving" ;
 			skos:prefLabel "driving"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#drowning
+:drowning rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Drowning" ;
+			svu:hasPresentTense "drown" ;
+			svu:hasPresentParticiple "drowning" ;
+			svu:hasNominalization "drowning" ;
+			skos:prefLabel "drowning"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#drying
+:drying rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "dry" ;
+			svu:hasPresentParticiple "drying" ;
+			svu:hasNominalization "drying" ;
+			skos:prefLabel "drying"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#duct
 :duct rdf:type owl:NamedIndividual ,
@@ -3375,6 +3854,13 @@
 			svu:hasNominalization "eclipsing" ;
 			skos:prefLabel "eclipsing"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#eddy
+:eddy rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Eddy_(fluid_dynamics)" ;
+			svu:hasNominalization "eddy" ;
+			skos:prefLabel "eddy"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#eddying
 :eddying rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -3391,6 +3877,38 @@
 			svu:hasNominalization "ejection" ;
 			skos:prefLabel "ejection"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#electrification
+:electrification rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "electrify" ;
+			svu:hasPresentParticiple "elecrifying" ;
+			svu:hasNominalization "electrification" ;
+			skos:prefLabel "electrification"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#electrocution
+:electrocution rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "electrocute" ;
+			svu:hasPresentParticiple "electrocuting" ;
+			svu:hasNominalization "electrocution" ;
+			skos:prefLabel "electrocution"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#electrodeposition
+:electrodeposition rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "electrodeposit" ;
+			svu:hasPresentParticiple "electrodepositing" ;
+			svu:hasNominalization "electrodeposition" ;
+			skos:prefLabel "electrodeposition"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#electroplating
+:electroplating rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "electroplate" ;
+			svu:hasPresentParticiple "electroplating" ;
+			svu:hasNominalization "electroplating" ;
+			skos:prefLabel "electroplating"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#electrorefining
 :electrorefining rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -3398,6 +3916,12 @@
 			svu:hasPresentParticiple "electrorefining" ;
 			svu:hasNominalization "electrorefining" ;
 			skos:prefLabel "electrorefining"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#electrowinning
+:electrowinning rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "electrowinning" ;
+			skos:prefLabel "electrowinning"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#elimination
 :elimination rdf:type owl:NamedIndividual ,
@@ -3575,6 +4099,14 @@
 			svu:hasNominalization "enrichment" ;
 			skos:prefLabel "enrichment"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#enrobing
+:enrobing rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "enrobe" ;
+			svu:hasPresentParticiple "enrobing" ;
+			svu:hasNominalization "enrobing" ;
+			skos:prefLabel "enrobing"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#entaglement
 :entaglement rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -3583,14 +4115,6 @@
 			svu:hasNominalization "entaglement" ;
 			skos:prefLabel "entaglement"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#entrance
-:entrance rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "enter" ;
-			svu:hasPresentParticiple "entering" ;
-			svu:hasNominalization "entrance" ;
-			skos:prefLabel "entrance"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#entrainment
 :entrainment rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -3598,6 +4122,14 @@
 			svu:hasPresentParticiple "entraining" ;
 			svu:hasNominalization "entrainment" ;
 			skos:prefLabel "entrainment"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#entrance
+:entrance rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "enter" ;
+			svu:hasPresentParticiple "entering" ;
+			svu:hasNominalization "entrance" ;
+			skos:prefLabel "entrance"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#equalization
 :equalization rdf:type owl:NamedIndividual ,
@@ -3663,6 +4195,14 @@
 			svu:hasNominalization "establishment" ;
 			skos:prefLabel "establishment"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#esterification
+:esterification rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "esterify" ;
+			svu:hasPresentParticiple "esterificating" ;
+			svu:hasNominalization "esterification" ;
+			skos:prefLabel "esterification"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#estimation
 :estimation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -3695,6 +4235,22 @@
 			svu:hasNominalization "ethylation" ;
 			skos:prefLabel "ethylation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#ethylation
+:ethylation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "ethylate" ;
+			svu:hasPresentParticiple "ethylating" ;
+			svu:hasNominalization "ethylation" ;
+			skos:prefLabel "ethylation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#eutrophication
+:eutrophication rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "eutrophicate" ;
+			svu:hasPresentParticiple "eutrophicating" ;
+			svu:hasNominalization "eutrophication" ;
+			skos:prefLabel "eutrophication"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#evacuation
 :evacuation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -3702,14 +4258,6 @@
 			svu:hasPresentParticiple "evacuating" ;
 			svu:hasNominalization "evacuation" ;
 			skos:prefLabel "evacuation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#evasion
-:evasion rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "evade" ;
-			svu:hasPresentParticiple "evading" ;
-			svu:hasNominalization "evasion" ;
-			skos:prefLabel "evasion"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#evaluation
 :evaluation rdf:type owl:NamedIndividual ,
@@ -3727,6 +4275,23 @@
 			svu:hasPresentParticiple "evaporating" ;
 			svu:hasNominalization "evaporation" ;
 			skos:prefLabel "evaporation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#evapotranspiration
+:evapotranspiration rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Evapotranspiration" ;
+			svu:hasPresentTense "evapotranspire" ;
+			svu:hasPresentParticiple "evapotranspiring" ;
+			svu:hasNominalization "evapotranspiration" ;
+			skos:prefLabel "evapotranspiration"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#evasion
+:evasion rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "evade" ;
+			svu:hasPresentParticiple "evading" ;
+			svu:hasNominalization "evasion" ;
+			skos:prefLabel "evasion"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#eviction
 :eviction rdf:type owl:NamedIndividual ,
@@ -3833,6 +4398,14 @@
 			svu:hasNominalization "exfoliation" ;
 			skos:prefLabel "exfoliation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#exhalation
+:exhalation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "exhale" ;
+			svu:hasPresentParticiple "exhaling" ;
+			svu:hasNominalization "exhalation" ;
+			skos:prefLabel "exhalation"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#exhaustion
 :exhaustion rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -3856,6 +4429,12 @@
 			svu:hasPresentParticiple "existing" ;
 			svu:hasNominalization "existence" ;
 			skos:prefLabel "existence"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#exodus
+:exodus rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "exodus" ;
+			skos:prefLabel "exodus"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#expansion
 :expansion rdf:type owl:NamedIndividual ,
@@ -3881,14 +4460,6 @@
 			svu:hasNominalization "expiration" ;
 			skos:prefLabel "expiration"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#explosion
-:explosion rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "explode" ;
-			svu:hasPresentParticiple "exploding" ;
-			svu:hasNominalization "explosion" ;
-			skos:prefLabel "explosion"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#exploitation
 :exploitation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -3896,6 +4467,14 @@
 			svu:hasPresentParticiple "exploiting" ;
 			svu:hasNominalization "exploitation" ;
 			skos:prefLabel "exploitation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#explosion
+:explosion rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "explode" ;
+			svu:hasPresentParticiple "exploding" ;
+			svu:hasNominalization "explosion" ;
+			skos:prefLabel "explosion"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#exportation
 :exportation rdf:type owl:NamedIndividual ,
@@ -3920,6 +4499,15 @@
 			svu:hasPresentParticiple "expressing" ;
 			svu:hasNominalization "expression" ;
 			skos:prefLabel "expression"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#exsanguination
+:exsanguination rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Exsanguination" ;
+			svu:hasPresentTense "exsanguinate" ;
+			svu:hasPresentParticiple "exsanguinating" ;
+			svu:hasNominalization "exsanguination" ;
+			skos:prefLabel "exsanguination"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#extension
 :extension rdf:type owl:NamedIndividual ,
@@ -4056,6 +4644,14 @@
 			svu:hasPresentParticiple "fastening" ;
 			skos:prefLabel "fasten"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#fasting
+:fasting rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "fast" ;
+			svu:hasPresentParticiple "fasting" ;
+			svu:hasNominalization "fasting" ;
+			skos:prefLabel "fasting"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#faulting
 :faulting rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -4063,6 +4659,20 @@
 			svu:hasPresentParticiple "faulting" ;
 			svu:hasNominalization "faulting" ;
 			skos:prefLabel "faulting"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#fecundation
+:fecundation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "fecundation" ;
+			skos:prefLabel "fecundation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#feedback
+:feedback rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "feed-back" ;
+			svu:hasPresentParticiple "feeding-back" ;
+			svu:hasNominalization "feedback" ;
+			skos:prefLabel "feedback"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#feeding
 :feeding rdf:type owl:NamedIndividual ,
@@ -4072,13 +4682,36 @@
 			svu:hasNominalization "feeding" ;
 			skos:prefLabel "feeding"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#feedback
-:feedback rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/process#fermentation
+:fermentation rdf:type owl:NamedIndividual ,
 			svu:Process ;
-			svu:hasPresentTense "feed-back" ;
-			svu:hasPresentParticiple "feeding-back" ;
-			svu:hasNominalization "feedback" ;
-			skos:prefLabel "feedback"@en .
+			svu:hasPresentTense "ferment" ;
+			svu:hasPresentParticiple "fermenting" ;
+			svu:hasNominalization "fermentation" ;
+			skos:prefLabel "fermentation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#fertigate
+:fertigate rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "fertigate" ;
+			svu:hasPresentParticiple "fertigating" ;
+			skos:prefLabel "fertigate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#fertilization
+:fertilization rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "fertilize" ;
+			svu:hasPresentParticiple "fertilizing" ;
+			svu:hasNominalization "fertilization" ;
+			skos:prefLabel "fertilization"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#fibrillation
+:fibrillation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "fibrillate" ;
+			svu:hasPresentParticiple "fibrillating" ;
+			svu:hasNominalization "fibrillation" ;
+			skos:prefLabel "fibrillation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#filling
 :filling rdf:type owl:NamedIndividual ,
@@ -4216,6 +4849,15 @@
 			svu:hasNominalization "flicker" ;
 			skos:prefLabel "flicker"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#flight
+:flight rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "fly" ;
+			svu:hasPresentParticiple "flying" ;
+			svu:hasNominalization "flying" ;
+			svu:hasNominalization "flight" ;
+			skos:prefLabel "flight"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#flipping
 :flipping rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -4274,31 +4916,6 @@
 			svu:hasNominalization "outflowing" ;
 			skos:prefLabel "flowing~outgoing"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#baseflow
-:baseflow rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :flowing ;
-			svu:hasNominalization "baseflow" ;
-			skos:prefLabel "baseflow"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#backflow
-:backflow rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :flowing ;
-			svu:hasPresentTense "flow-back" ;
-			svu:hasPresentParticiple "flowing-back" ;
-			svu:hasNominalization "backflow" ;
-			skos:prefLabel "backflow"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#inflow
-:inflow rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :flowing ;
-			svu:hasPresentTense "flow-in" ;
-			svu:hasPresentParticiple "flowing-in" ;
-			svu:hasNominalization "inflow" ;
-			skos:prefLabel "inflow"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#flowthrough
 :flowthrough rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -4316,6 +4933,30 @@
 			svu:hasNominalization "fluctuation" ;
 			skos:prefLabel "fluctuation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#fluctuation
+:fluctuation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "fuctuate" ;
+			svu:hasPresentParticiple "fluctuating" ;
+			svu:hasNominalization "fluctuation" ;
+			skos:prefLabel "fluctuation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#fluorescence
+:fluorescence rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "fluoresce" ;
+			svu:hasPresentParticiple "fluorescing" ;
+			svu:hasNominalization "fluorescence" ;
+			skos:prefLabel "fluorescence"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#fluorination
+:fluorination rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "fluorinate" ;
+			svu:hasPresentParticiple "fluorinating" ;
+			svu:hasNominalization "fluorination" ;
+			skos:prefLabel "fluorination"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#flushing
 :flushing rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -4331,15 +4972,6 @@
 			svu:hasPresentParticiple "fluttering" ;
 			svu:hasNominalization "fluttering" ;
 			skos:prefLabel "fluttering"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#flight
-:flight rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "fly" ;
-			svu:hasPresentParticiple "flying" ;
-			svu:hasNominalization "flying" ;
-			svu:hasNominalization "flight" ;
-			skos:prefLabel "flight"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#focusing
 :focusing rdf:type owl:NamedIndividual ,
@@ -4480,13 +5112,12 @@
 			svu:hasNominalization "freshening" ;
 			skos:prefLabel "freshening"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#fluctuation
-:fluctuation rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/process#friction
+:friction rdf:type owl:NamedIndividual ,
 			svu:Process ;
-			svu:hasPresentTense "fuctuate" ;
-			svu:hasPresentParticiple "fluctuating" ;
-			svu:hasNominalization "fluctuation" ;
-			skos:prefLabel "fluctuation"@en .
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Friction" ;
+			svu:hasNominalization "friction" ;
+			skos:prefLabel "friction"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#fumigation
 :fumigation rdf:type owl:NamedIndividual ,
@@ -4521,14 +5152,6 @@
 			svu:hasNominalization "galling" ;
 			skos:prefLabel "galling"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#gating
-:gating rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "gate" ;
-			svu:hasPresentParticiple "gating" ;
-			svu:hasNominalization "gating" ;
-			skos:prefLabel "gating"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#gathering
 :gathering rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -4536,6 +5159,14 @@
 			svu:hasPresentParticiple "gathering" ;
 			svu:hasNominalization "gathering" ;
 			skos:prefLabel "gathering"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#gating
+:gating rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "gate" ;
+			svu:hasPresentParticiple "gating" ;
+			svu:hasNominalization "gating" ;
+			skos:prefLabel "gating"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#gelation
 :gelation rdf:type owl:NamedIndividual ,
@@ -4554,6 +5185,12 @@
 			svu:hasNominalization "generation" ;
 			skos:prefLabel "generation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#genesis
+:genesis rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "genesis" ;
+			skos:prefLabel "genesis"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#germination
 :germination rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -4561,6 +5198,14 @@
 			svu:hasPresentParticiple "germinating" ;
 			svu:hasNominalization "germination" ;
 			skos:prefLabel "germination"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#glaciation
+:glaciation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "glaciate" ;
+			svu:hasPresentParticiple "glaciating" ;
+			svu:hasNominalization "glaciation" ;
+			skos:prefLabel "glaciation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#glancing
 :glancing rdf:type owl:NamedIndividual ,
@@ -4714,6 +5359,14 @@
 			svu:hasNominalization "hadronization" ;
 			skos:prefLabel "hadronization"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#halogenation
+:halogenation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "halogenate" ;
+			svu:hasPresentParticiple "halogenating" ;
+			svu:hasNominalization "halogenation" ;
+			skos:prefLabel "halogenation"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#hardening
 :hardening rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -4721,6 +5374,15 @@
 			svu:hasPresentParticiple "hardening" ;
 			svu:hasNominalization "hardening" ;
 			skos:prefLabel "hardening"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#harvest
+:harvest rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Harvest" ;
+			svu:hasPresentTense "harvest" ;
+			svu:hasPresentParticiple "harvesting" ;
+			svu:hasNominalization "harvest" ;
+			skos:prefLabel "harvest"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#harvesting
 :harvesting rdf:type owl:NamedIndividual ,
@@ -4738,6 +5400,14 @@
 			svu:hasPresentParticiple "hearing" ;
 			svu:hasNominalization "hearing" ;
 			skos:prefLabel "hearing"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#heating
+:heating rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "heat" ;
+			svu:hasPresentParticiple "heating" ;
+			svu:hasNominalization "heating" ;
+			skos:prefLabel "heating"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#heave
 :heave rdf:type owl:NamedIndividual ,
@@ -4815,6 +5485,14 @@
 			svu:hasNominalization "hovering" ;
 			skos:prefLabel "hovering"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#humidification
+:humidification rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "humidify" ;
+			svu:hasPresentParticiple "humidifying" ;
+			svu:hasNominalization "humidification" ;
+			skos:prefLabel "humidification"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#hunting
 :hunting rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -4830,6 +5508,36 @@
 			svu:hasPresentParticiple "hybridizing" ;
 			svu:hasNominalization "hybridization" ;
 			skos:prefLabel "hybridization"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#hydration
+:hydration rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "hydrate" ;
+			svu:hasPresentParticiple "hydrating" ;
+			svu:hasNominalization "hydration" ;
+			skos:prefLabel "hydration"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#hydrogenation
+:hydrogenation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "hydrogenate" ;
+			svu:hasPresentParticiple "hydrogenating" ;
+			svu:hasNominalization "hydrogenation" ;
+			skos:prefLabel "hydrogenation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#hydrolysis
+:hydrolysis rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "hydrolyze" ;
+			svu:hasPresentParticiple "hydrolyzing" ;
+			svu:hasNominalization "hydrolysis" ;
+			skos:prefLabel "hydrolysis"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#hydropeaking
+:hydropeaking rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "hydropeaking" ;
+			skos:prefLabel "hydropeaking"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#hydroplane
 :hydroplane rdf:type owl:NamedIndividual ,
@@ -4878,6 +5586,14 @@
 			svu:hasNominalization "igniton" ;
 			skos:prefLabel "igniton"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#illumination
+:illumination rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "illuminate" ;
+			svu:hasPresentParticiple "illuminating" ;
+			svu:hasNominalization "illumination" ;
+			skos:prefLabel "illumination"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#illuviation
 :illuviation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -4902,6 +5618,14 @@
 			svu:hasNominalization "imersion" ;
 			skos:prefLabel "imersion"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#immigration
+:immigration rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "immigrate" ;
+			svu:hasPresentParticiple "immigrating" ;
+			svu:hasNominalization "immigration" ;
+			skos:prefLabel "immigration"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#immobilization
 :immobilization rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -4909,6 +5633,14 @@
 			svu:hasPresentParticiple "immobilizing" ;
 			svu:hasNominalization "immobilization" ;
 			skos:prefLabel "immobilization"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#immunization
+:immunization rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "immunize" ;
+			svu:hasPresentParticiple "immunizing" ;
+			svu:hasNominalization "immunization" ;
+			skos:prefLabel "immunization"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#impaction
 :impaction rdf:type owl:NamedIndividual ,
@@ -4999,6 +5731,20 @@
 			svu:hasNominalization "improvement" ;
 			skos:prefLabel "improvement"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#incarceration
+:incarceration rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "incarcerate" ;
+			svu:hasPresentParticiple "incarcerating" ;
+			svu:hasNominalization "incarceration" ;
+			skos:prefLabel "incarceration"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#inception
+:inception rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "inception" ;
+			skos:prefLabel "inception"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#incineration
 :incineration rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -5046,6 +5792,12 @@
 			svu:hasPresentParticiple "incubating" ;
 			svu:hasNominalization "incubation" ;
 			skos:prefLabel "incubation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#incursion
+:incursion rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "incursion" ;
+			skos:prefLabel "incursion"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#indentation
 :indentation rdf:type owl:NamedIndividual ,
@@ -5143,6 +5895,24 @@
 			svu:hasNominalization "infliction" ;
 			skos:prefLabel "infliction"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#inflow
+:inflow rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :flowing ;
+			svu:hasPresentTense "flow-in" ;
+			svu:hasPresentParticiple "flowing-in" ;
+			svu:hasNominalization "inflow" ;
+			skos:prefLabel "inflow"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#inflow
+:inflow rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :flowing ;
+			svu:hasPresentTense "flow-in" ;
+			svu:hasPresentParticiple "flowing-in" ;
+			svu:hasNominalization "inflow" ;
+			skos:prefLabel "inflow"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#influence
 :influence rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -5166,6 +5936,14 @@
 			svu:hasPresentParticiple "ingesting" ;
 			svu:hasNominalization "ingestion" ;
 			skos:prefLabel "ingestion"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#inhalation
+:inhalation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "inhale" ;
+			svu:hasPresentParticiple "inhaling" ;
+			svu:hasNominalization "inhalation" ;
+			skos:prefLabel "inhalation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#inheritance
 :inheritance rdf:type owl:NamedIndividual ,
@@ -5214,6 +5992,14 @@
 			svu:hasNominalization "innervation" ;
 			skos:prefLabel "innervation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#innoculation
+:innoculation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "inoculate" ;
+			svu:hasPresentParticiple "inoculating" ;
+			svu:hasNominalization "innoculation" ;
+			skos:prefLabel "innoculation"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#innovation
 :innovation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -5222,13 +6008,13 @@
 			svu:hasNominalization "innovation" ;
 			skos:prefLabel "innovation"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#innoculation
-:innoculation rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/process#innundation
+:innundation rdf:type owl:NamedIndividual ,
 			svu:Process ;
-			svu:hasPresentTense "inoculate" ;
-			svu:hasPresentParticiple "inoculating" ;
-			svu:hasNominalization "innoculation" ;
-			skos:prefLabel "innoculation"@en .
+			svu:hasPresentTense "inundate" ;
+			svu:hasPresentParticiple "inundating" ;
+			svu:hasNominalization "innundation" ;
+			skos:prefLabel "innundation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#insertion
 :insertion rdf:type owl:NamedIndividual ,
@@ -5278,6 +6064,24 @@
 			svu:hasPresentParticiple "insulating" ;
 			svu:hasNominalization "insulation" ;
 			skos:prefLabel "insulation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#intake
+:intake rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :taking ;
+			svu:hasPresentTense "take-in" ;
+			svu:hasPresentParticiple "taking-in" ;
+			svu:hasNominalization "taking-in" ;
+			skos:prefLabel "intake"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#intake
+:intake rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :taking ;
+			svu:hasPresentTense "intake" ;
+			svu:hasPresentParticiple "taking-in" ;
+			svu:hasNominalization "intake" ;
+			skos:prefLabel "intake"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#integration
 :integration rdf:type owl:NamedIndividual ,
@@ -5430,14 +6234,6 @@
 			svu:hasNominalization "intrusion" ;
 			skos:prefLabel "intrusion"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#innundation
-:innundation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "inundate" ;
-			svu:hasPresentParticiple "inundating" ;
-			svu:hasNominalization "innundation" ;
-			skos:prefLabel "innundation"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#invasion
 :invasion rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -5461,6 +6257,14 @@
 			svu:hasPresentParticiple "invoking" ;
 			svu:hasNominalization "invocation" ;
 			skos:prefLabel "invocation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#iodination
+:iodination rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "iodize" ;
+			svu:hasPresentParticiple "iodizing" ;
+			svu:hasNominalization "iodination" ;
+			skos:prefLabel "iodination"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#iodization
 :iodization rdf:type owl:NamedIndividual ,
@@ -5502,6 +6306,27 @@
 			svu:hasNominalization "irritation" ;
 			skos:prefLabel "irritation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#isentropic-process
+:isentropic-process rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :processing ;
+			svu:hasAttribute <attribute#isentropic> ;
+			skos:prefLabel "isentropic-process"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#isobaric-process
+:isobaric-process rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :processing ;
+			svu:hasAttribute <attribute#isobaric> ;
+			skos:prefLabel "isobaric-process"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#isochoric-process
+:isochoric-process rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :processing ;
+			svu:hasAttribute <attribute#isochoric> ;
+			skos:prefLabel "isochoric-process"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#isolation
 :isolation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -5509,6 +6334,13 @@
 			svu:hasPresentParticiple "isolating" ;
 			svu:hasNominalization "isolation" ;
 			skos:prefLabel "isolation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#isothermal-process
+:isothermal-process rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :processing ;
+			svu:hasAttribute <attribute#isothermal> ;
+			skos:prefLabel "isothermal-process"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#iteration
 :iteration rdf:type owl:NamedIndividual ,
@@ -5651,15 +6483,6 @@
 			svu:hasNominalization "lashing" ;
 			skos:prefLabel "lashing"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#backlash
-:backlash rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :lashing ;
-			svu:hasPresentTense "lash-back" ;
-			svu:hasPresentParticiple "lashing-back" ;
-			svu:hasNominalization "backlash" ;
-			skos:prefLabel "backlash"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#latching
 :latching rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -5700,6 +6523,13 @@
 			svu:hasPresentParticiple "leading" ;
 			svu:hasNominalization "leading" ;
 			skos:prefLabel "leading"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#leading-displaced-convection
+:leading-displaced-convection rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :displaced-convection ;
+			svu:hasAttribute <attribute#leading> ;
+			skos:prefLabel "leading-displaced-convection"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#leaking
 :leaking rdf:type owl:NamedIndividual ,
@@ -5762,6 +6592,11 @@
 			svu:hasPresentParticiple "laying" ;
 			skos:prefLabel "lie"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#lifetime-travel
+:lifetime-travel rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			skos:prefLabel "lifetime-travel"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#lift
 :lift rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -5779,15 +6614,6 @@
 			svu:hasPresentParticiple "lifting-off" ;
 			svu:hasNominalization "liftoff" ;
 			skos:prefLabel "liftoff"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#uplift
-:uplift rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :lift ;
-			svu:hasPresentTense "lift-up" ;
-			svu:hasPresentParticiple "lifting-up" ;
-			svu:hasNominalization "uplift" ;
-			skos:prefLabel "uplift"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#limitation
 :limitation rdf:type owl:NamedIndividual ,
@@ -5916,6 +6742,14 @@
 			svu:hasPresentParticiple "lubricating" ;
 			svu:hasNominalization "lubrication" ;
 			skos:prefLabel "lubrication"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#luminescence
+:luminescence rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "luminesce" ;
+			svu:hasPresentParticiple "luminescing" ;
+			svu:hasNominalization "luminescence" ;
+			skos:prefLabel "luminescence"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#maceration
 :maceration rdf:type owl:NamedIndividual ,
@@ -6131,6 +6965,22 @@
 			svu:hasNominalization "merging" ;
 			skos:prefLabel "merging"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#metabolism
+:metabolism rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "metabolize" ;
+			svu:hasPresentParticiple "metabolizing" ;
+			svu:hasNominalization "metabolism" ;
+			skos:prefLabel "metabolism"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#metabolism
+:metabolism rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "metabolize" ;
+			svu:hasPresentParticiple "metabolizing" ;
+			svu:hasNominalization "metabolism" ;
+			skos:prefLabel "metabolism"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#metageneration
 :metageneration rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -6146,6 +6996,14 @@
 			svu:hasPresentParticiple "metamorphosing" ;
 			svu:hasNominalization "metamorphosis" ;
 			skos:prefLabel "metamorphosis"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#methylation
+:methylation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "methylate" ;
+			svu:hasPresentParticiple "methylating" ;
+			svu:hasNominalization "methylation" ;
+			skos:prefLabel "methylation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#migration
 :migration rdf:type owl:NamedIndividual ,
@@ -6163,13 +7021,13 @@
 			svu:hasNominalization "milling" ;
 			skos:prefLabel "milling"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#mining
-:mining rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/process#mineralization
+:mineralization rdf:type owl:NamedIndividual ,
 			svu:Process ;
-			svu:hasPresentTense "mine" ;
-			svu:hasPresentParticiple "mining" ;
-			svu:hasNominalization "mining" ;
-			skos:prefLabel "mining"@en .
+			svu:hasPresentTense "mineralize" ;
+			svu:hasPresentParticiple "mineralizing" ;
+			svu:hasNominalization "mineralization" ;
+			skos:prefLabel "mineralization"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#minimization
 :minimization rdf:type owl:NamedIndividual ,
@@ -6178,6 +7036,14 @@
 			svu:hasPresentParticiple "minimizing" ;
 			svu:hasNominalization "minimization" ;
 			skos:prefLabel "minimization"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#mining
+:mining rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "mine" ;
+			svu:hasPresentParticiple "mining" ;
+			svu:hasNominalization "mining" ;
+			skos:prefLabel "mining"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#miss
 :miss rdf:type owl:NamedIndividual ,
@@ -6309,6 +7175,14 @@
 			svu:hasNominalization "navigation" ;
 			skos:prefLabel "navigation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#nesting
+:nesting rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "nest" ;
+			svu:hasPresentParticiple "nesting" ;
+			svu:hasNominalization "nesting" ;
+			skos:prefLabel "nesting"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#neurovitrification
 :neurovitrification rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -6324,6 +7198,14 @@
 			svu:hasPresentParticiple "neutralizing" ;
 			svu:hasNominalization "neutralization" ;
 			skos:prefLabel "neutralization"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#nitrification
+:nitrification rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "nitrify" ;
+			svu:hasPresentParticiple "nitrifying" ;
+			svu:hasNominalization "nitrification" ;
+			skos:prefLabel "nitrification"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#nourishment
 :nourishment rdf:type owl:NamedIndividual ,
@@ -6428,6 +7310,20 @@
 			svu:hasNominalization "offending" ;
 			skos:prefLabel "offending"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#omission
+:omission rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "omit" ;
+			svu:hasPresentParticiple "omitting" ;
+			svu:hasNominalization "omission" ;
+			skos:prefLabel "omission"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#onset
+:onset rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "onset" ;
+			skos:prefLabel "onset"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#ooze
 :ooze rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -6467,6 +7363,14 @@
 			svu:hasNominalization "optimization" ;
 			skos:prefLabel "optimization"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#orbitting
+:orbitting rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "orbit" ;
+			svu:hasPresentParticiple "orbitting" ;
+			svu:hasNominalization "orbitting" ;
+			skos:prefLabel "orbitting"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#orientation
 :orientation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -6499,13 +7403,38 @@
 			svu:hasNominalization "osmosis" ;
 			skos:prefLabel "osmosis"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#outing
-:outing rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/process#outage
+:outage rdf:type owl:NamedIndividual ,
 			svu:Process ;
-			svu:hasPresentTense "out" ;
-			svu:hasPresentParticiple "outing" ;
-			svu:hasNominalization "outing" ;
-			skos:prefLabel "outing"@en .
+			svu:hasNominalization "outage" ;
+			skos:prefLabel "outage"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#outbreak
+:outbreak rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :breaking ;
+			svu:hasPresentTense "break-out" ;
+			svu:hasPresentParticiple "breaking-out" ;
+			svu:hasNominalization "outbreak" ;
+			skos:prefLabel "outbreak"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#outburst
+:outburst rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :bursting ;
+			svu:hasPresentTense "burst-out" ;
+			svu:hasPresentParticiple "bursting-out" ;
+			svu:hasNominalization "outburst" ;
+			skos:prefLabel "outburst"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#outburst
+:outburst rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :bursting ;
+			svu:hasPresentTense "burst-out" ;
+			svu:hasPresentParticiple "bursting-out" ;
+			svu:hasNominalization "outburst" ;
+			skos:prefLabel "outburst"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#outcropping
 :outcropping rdf:type owl:NamedIndividual ,
@@ -6538,6 +7467,14 @@
 			svu:hasPresentParticiple "outgassing" ;
 			svu:hasNominalization "outgassing" ;
 			skos:prefLabel "outgassing"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#outing
+:outing rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "out" ;
+			svu:hasPresentParticiple "outing" ;
+			svu:hasNominalization "outing" ;
+			skos:prefLabel "outing"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#overexertion
 :overexertion rdf:type owl:NamedIndividual ,
@@ -6587,6 +7524,39 @@
 			svu:hasNominalization "overturning" ;
 			skos:prefLabel "overturning"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#ovulation
+:ovulation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "ovulate" ;
+			svu:hasPresentParticiple "ovulating" ;
+			svu:hasNominalization "ovulation" ;
+			skos:prefLabel "ovulation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#oxidation
+:oxidation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "oxidize" ;
+			svu:hasPresentParticiple "oxidizing" ;
+			svu:hasNominalization "oxidization" ;
+			svu:hasNominalization "oxidation" ;
+			skos:prefLabel "oxidation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#oxychlorination
+:oxychlorination rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "oxychlorinate" ;
+			svu:hasPresentParticiple "oxychlorinating" ;
+			svu:hasNominalization "oxychlorination" ;
+			skos:prefLabel "oxychlorination"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#oxygenation
+:oxygenation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "oxygenate" ;
+			svu:hasPresentParticiple "oxygenating" ;
+			svu:hasNominalization "oxygenation" ;
+			skos:prefLabel "oxygenation"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#packing
 :packing rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -6619,6 +7589,14 @@
 			svu:hasPresentParticiple "panning" ;
 			svu:hasNominalization "panning" ;
 			skos:prefLabel "panning"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#parachuting
+:parachuting rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "parachute" ;
+			svu:hasPresentParticiple "parachuting" ;
+			svu:hasNominalization "parachuting" ;
+			skos:prefLabel "parachuting"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#paralyze
 :paralyze rdf:type owl:NamedIndividual ,
@@ -6788,12 +7766,28 @@
 			svu:hasNominalization "permutation" ;
 			skos:prefLabel "permutation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#peroxidation
+:peroxidation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "peroxidate" ;
+			svu:hasPresentParticiple "peroxidating" ;
+			svu:hasNominalization "peroxidation" ;
+			skos:prefLabel "peroxidation"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#persist
 :persist rdf:type owl:NamedIndividual ,
 			svu:Process ;
 			svu:hasPresentTense "persist" ;
 			svu:hasPresentParticiple "persisting" ;
 			skos:prefLabel "persist"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#perspiration
+:perspiration rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "perspire" ;
+			svu:hasPresentParticiple "perspiring" ;
+			svu:hasNominalization "perspiration" ;
+			skos:prefLabel "perspiration"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#perturbation
 :perturbation rdf:type owl:NamedIndividual ,
@@ -6811,6 +7805,54 @@
 			svu:hasNominalization "petrification" ;
 			skos:prefLabel "petrification"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#phosphorescence
+:phosphorescence rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "phosphoresce" ;
+			svu:hasPresentParticiple "phosphorescing" ;
+			svu:hasNominalization "phosphorescence" ;
+			skos:prefLabel "phosphorescence"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#phosphorylation
+:phosphorylation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "phosphorylate" ;
+			svu:hasPresentParticiple "phosphorylating" ;
+			svu:hasNominalization "phosphorylation" ;
+			skos:prefLabel "phosphorylation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#photolysis
+:photolysis rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "photolyse" ;
+			svu:hasPresentParticiple "photolysing" ;
+			svu:hasNominalization "photolysis" ;
+			skos:prefLabel "photolysis"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#photophosphorylation
+:photophosphorylation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "photophosphorylate" ;
+			svu:hasPresentParticiple "photophosphorylizing" ;
+			svu:hasNominalization "photophosphorylation" ;
+			skos:prefLabel "photophosphorylation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#photorespiration
+:photorespiration rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "photorespire" ;
+			svu:hasPresentParticiple "photorespiring" ;
+			svu:hasNominalization "photorespiration" ;
+			skos:prefLabel "photorespiration"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#photosynthesis
+:photosynthesis rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "photosynthesize" ;
+			svu:hasPresentParticiple "photosynthesizing" ;
+			svu:hasNominalization "photosynthesis" ;
+			skos:prefLabel "photosynthesis"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#picking
 :picking rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -6826,14 +7868,6 @@
 			svu:hasPresentParticiple "piercing" ;
 			svu:hasNominalization "piercing" ;
 			skos:prefLabel "piercing"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#pinning
-:pinning rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "pin" ;
-			svu:hasPresentParticiple "pinning" ;
-			svu:hasNominalization "pinning" ;
-			skos:prefLabel "pinning"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#pinching
 :pinching rdf:type owl:NamedIndividual ,
@@ -6851,6 +7885,14 @@
 			svu:hasNominalization "pinging" ;
 			skos:prefLabel "pinging"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#pinning
+:pinning rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "pin" ;
+			svu:hasPresentParticiple "pinning" ;
+			svu:hasNominalization "pinning" ;
+			skos:prefLabel "pinning"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#piping
 :piping rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -6859,14 +7901,6 @@
 			svu:hasNominalization "piping" ;
 			skos:prefLabel "piping"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#pitting
-:pitting rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "pit" ;
-			svu:hasPresentParticiple "pitting" ;
-			svu:hasNominalization "pitting" ;
-			skos:prefLabel "pitting"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#pitching
 :pitching rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -6874,6 +7908,14 @@
 			svu:hasPresentParticiple "pitching" ;
 			svu:hasNominalization "pitching" ;
 			skos:prefLabel "pitching"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#pitting
+:pitting rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "pit" ;
+			svu:hasPresentParticiple "pitting" ;
+			svu:hasNominalization "pitting" ;
+			skos:prefLabel "pitting"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#pivoting
 :pivoting rdf:type owl:NamedIndividual ,
@@ -6892,14 +7934,6 @@
 			svu:hasNominalization "placement" ;
 			skos:prefLabel "placement"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#planning
-:planning rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "plan" ;
-			svu:hasPresentParticiple "planning" ;
-			svu:hasNominalization "planning" ;
-			skos:prefLabel "planning"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#planing
 :planing rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -6907,6 +7941,14 @@
 			svu:hasPresentParticiple "planing" ;
 			svu:hasNominalization "planing" ;
 			skos:prefLabel "planing"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#planning
+:planning rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "plan" ;
+			svu:hasPresentParticiple "planning" ;
+			svu:hasNominalization "planning" ;
+			skos:prefLabel "planning"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#planting
 :planting rdf:type owl:NamedIndividual ,
@@ -6923,6 +7965,14 @@
 			svu:hasPresentParticiple "plastering" ;
 			svu:hasNominalization "plastering" ;
 			skos:prefLabel "plastering"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#plowing
+:plowing rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "plow" ;
+			svu:hasPresentParticiple "plowing" ;
+			svu:hasNominalization "plowing" ;
+			skos:prefLabel "plowing"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#plucking
 :plucking rdf:type owl:NamedIndividual ,
@@ -6955,6 +8005,14 @@
 			svu:hasPresentParticiple "pointing" ;
 			svu:hasNominalization "pointing" ;
 			skos:prefLabel "pointing"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#poisoning
+:poisoning rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "poison" ;
+			svu:hasPresentParticiple "poisoning" ;
+			svu:hasNominalization "poisoning" ;
+			skos:prefLabel "poisoning"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#polarization
 :polarization rdf:type owl:NamedIndividual ,
@@ -7157,6 +8215,12 @@
 			svu:hasNominalization "probation" ;
 			skos:prefLabel "probation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#processes
+:processes rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isPluralityOf :processing ;
+			skos:prefLabel "processes"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#processing
 :processing rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -7164,47 +8228,6 @@
 			svu:hasPresentParticiple "processing" ;
 			svu:hasNominalization "processing" ;
 			skos:prefLabel "processing"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#isobaric-process
-:isobaric-process rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :processing ;
-			svu:hasAttribute <attribute#isobaric> ;
-			skos:prefLabel "isobaric-process"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#isochoric-process
-:isochoric-process rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :processing ;
-			svu:hasAttribute <attribute#isochoric> ;
-			skos:prefLabel "isochoric-process"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#adiabatic-process
-:adiabatic-process rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :processing ;
-			svu:hasAttribute <attribute#adiabatic> ;
-			skos:prefLabel "adiabatic-process"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#isentropic-process
-:isentropic-process rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :processing ;
-			svu:hasAttribute <attribute#isentropic> ;
-			skos:prefLabel "isentropic-process"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#isothermal-process
-:isothermal-process rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :processing ;
-			svu:hasAttribute <attribute#isothermal> ;
-			skos:prefLabel "isothermal-process"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#processes
-:processes rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isPluralityOf :processing ;
-			skos:prefLabel "processes"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#procuring
 :procuring rdf:type owl:NamedIndividual ,
@@ -7221,6 +8244,12 @@
 			svu:hasPresentParticiple "producing" ;
 			svu:hasNominalization "production" ;
 			skos:prefLabel "production"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#progradation
+:progradation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "progradation" ;
+			skos:prefLabel "progradation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#programming
 :programming rdf:type owl:NamedIndividual ,
@@ -7285,6 +8314,14 @@
 			svu:hasPresentParticiple "protecting" ;
 			svu:hasNominalization "protection" ;
 			skos:prefLabel "protection"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#protonation
+:protonation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "protonate" ;
+			svu:hasPresentParticiple "protonating" ;
+			svu:hasNominalization "protonation" ;
+			skos:prefLabel "protonation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#provocation
 :provocation rdf:type owl:NamedIndividual ,
@@ -7366,6 +8403,14 @@
 			svu:hasNominalization "putrification" ;
 			svu:hasNominalization "putrefaction" ;
 			skos:prefLabel "putrefaction"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#pyritization
+:pyritization rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "pyritize" ;
+			svu:hasPresentParticiple "pyritizing" ;
+			svu:hasNominalization "pyritization" ;
+			skos:prefLabel "pyritization"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#quaking
 :quaking rdf:type owl:NamedIndividual ,
@@ -7454,6 +8499,14 @@
 			svu:hasNominalization "rancidification" ;
 			skos:prefLabel "rancidification"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#rancidification
+:rancidification rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "rancidify" ;
+			svu:hasPresentParticiple "rancidifying" ;
+			svu:hasNominalization "rancidification" ;
+			skos:prefLabel "rancidification"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#ranging
 :ranging rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -7527,6 +8580,14 @@
 			svu:hasPresentParticiple "readjusting" ;
 			svu:hasNominalization "readjustement" ;
 			skos:prefLabel "readjustement"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#reaeration
+:reaeration rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "reaerate" ;
+			svu:hasPresentParticiple "reaerating" ;
+			svu:hasNominalization "reaeration" ;
+			skos:prefLabel "reaeration"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#reaping
 :reaping rdf:type owl:NamedIndividual ,
@@ -7964,6 +9025,14 @@
 			svu:hasNominalization "remediation" ;
 			skos:prefLabel "remediation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#remineralization
+:remineralization rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "remineralize" ;
+			svu:hasPresentParticiple "remineralizing" ;
+			svu:hasNominalization "remineralization" ;
+			skos:prefLabel "remineralization"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#remittance
 :remittance rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -8146,6 +9215,14 @@
 			svu:hasNominalization "resonation" ;
 			skos:prefLabel "resonation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#respiration
+:respiration rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "respire" ;
+			svu:hasPresentParticiple "respiring" ;
+			svu:hasNominalization "respiration" ;
+			skos:prefLabel "respiration"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#response
 :response rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -8203,6 +9280,14 @@
 			svu:hasNominalization "resuscitation" ;
 			skos:prefLabel "resuscitation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#resuscitation
+:resuscitation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "resuscitate" ;
+			svu:hasPresentParticiple "resuscitating" ;
+			svu:hasNominalization "resuscitation" ;
+			skos:prefLabel "resuscitation"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#resuspension
 :resuspension rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -8212,14 +9297,6 @@
 			svu:hasNominalization "resuspension" ;
 			skos:prefLabel "resuspension"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#retention
-:retention rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "retain" ;
-			svu:hasPresentParticiple "retaining" ;
-			svu:hasNominalization "retention" ;
-			skos:prefLabel "retention"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#retardation
 :retardation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -8227,6 +9304,14 @@
 			svu:hasPresentParticiple "retarding" ;
 			svu:hasNominalization "retardation" ;
 			skos:prefLabel "retardation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#retention
+:retention rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "retain" ;
+			svu:hasPresentParticiple "retaining" ;
+			svu:hasNominalization "retention" ;
+			skos:prefLabel "retention"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#retooling
 :retooling rdf:type owl:NamedIndividual ,
@@ -8295,6 +9380,15 @@
 			svu:hasNominalization "reuse" ;
 			skos:prefLabel "reuse"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#revegetation
+:revegetation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :vegetation ;
+			svu:hasPresentTense "revegetate" ;
+			svu:hasPresentParticiple "revegetation" ;
+			svu:hasNominalization "revegetation" ;
+			skos:prefLabel "revegetation"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#reverberation
 :reverberation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -8346,14 +9440,6 @@
 			svu:hasNominalization "ricocheting" ;
 			skos:prefLabel "ricocheting"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#riding
-:riding rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "ride" ;
-			svu:hasPresentParticiple "riding" ;
-			svu:hasNominalization "riding" ;
-			skos:prefLabel "riding"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#ridging
 :ridging rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -8361,6 +9447,14 @@
 			svu:hasPresentParticiple "ridging" ;
 			svu:hasNominalization "ridging" ;
 			skos:prefLabel "ridging"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#riding
+:riding rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "ride" ;
+			svu:hasPresentParticiple "riding" ;
+			svu:hasNominalization "riding" ;
+			skos:prefLabel "riding"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#rifting
 :rifting rdf:type owl:NamedIndividual ,
@@ -8395,14 +9489,6 @@
 			svu:hasNominalization "rinsing" ;
 			skos:prefLabel "rinsing"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#ripping
-:ripping rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "rip" ;
-			svu:hasPresentParticiple "ripping" ;
-			svu:hasNominalization "ripping" ;
-			skos:prefLabel "ripping"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#ripening
 :ripening rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -8410,6 +9496,14 @@
 			svu:hasPresentParticiple "ripening" ;
 			svu:hasNominalization "ripening" ;
 			skos:prefLabel "ripening"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#ripping
+:ripping rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "rip" ;
+			svu:hasPresentParticiple "ripping" ;
+			svu:hasNominalization "ripping" ;
+			skos:prefLabel "ripping"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#rising
 :rising rdf:type owl:NamedIndividual ,
@@ -8496,6 +9590,16 @@
 			svu:hasNominalization "running" ;
 			skos:prefLabel "running"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#running-up
+:running-up rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :running ;
+			svu:hasPresentTense "run-up" ;
+			svu:hasPresentParticiple "running-up" ;
+			svu:hasNominalization "running-up" ;
+			svu:hasNominalization "run-up" ;
+			skos:prefLabel "running-up"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#runoff
 :runoff rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -8508,16 +9612,6 @@
 			svu:hasNominalization "runoff" ;
 			skos:prefLabel "runoff"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#running-up
-:running-up rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :running ;
-			svu:hasPresentTense "run-up" ;
-			svu:hasPresentParticiple "running-up" ;
-			svu:hasNominalization "running-up" ;
-			svu:hasNominalization "run-up" ;
-			skos:prefLabel "running-up"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#rupture
 :rupture rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -8525,6 +9619,14 @@
 			svu:hasPresentParticiple "rupturing" ;
 			svu:hasNominalization "rupture" ;
 			skos:prefLabel "rupture"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#saccharification
+:saccharification rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "saccharify" ;
+			svu:hasPresentParticiple "saccharafying" ;
+			svu:hasNominalization "saccharification" ;
+			skos:prefLabel "saccharification"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#sailing
 :sailing rdf:type owl:NamedIndividual ,
@@ -8745,6 +9847,14 @@
 			svu:hasPresentParticiple "securing" ;
 			svu:hasNominalization "securing" ;
 			skos:prefLabel "securing"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#sedimentation
+:sedimentation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "sediment" ;
+			svu:hasPresentParticiple "sedimenting" ;
+			svu:hasNominalization "sedimentation" ;
+			skos:prefLabel "sedimentation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#seeding
 :seeding rdf:type owl:NamedIndividual ,
@@ -9039,6 +10149,14 @@
 			svu:hasNominalization "silencing" ;
 			skos:prefLabel "silencing"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#silicification
+:silicification rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "silicificate" ;
+			svu:hasPresentParticiple "silicificating" ;
+			svu:hasNominalization "silicification" ;
+			skos:prefLabel "silicificate"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#silting
 :silting rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -9129,6 +10247,19 @@
 			svu:hasNominalization "sliding" ;
 			skos:prefLabel "sliding"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#slip-rake
+:slip-rake rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :slipping ;
+			svu:hasNominalization "slip-rake" ;
+			skos:prefLabel "slip-rake"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#slip%7Eseismic
+:slip%7Eseismic rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :slipping ;
+			skos:prefLabel "slip~seismic"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#slipping
 :slipping rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -9210,6 +10341,12 @@
 			svu:hasNominalization "sonication" ;
 			skos:prefLabel "sonication"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#sorption
+:sorption rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "sorption" ;
+			skos:prefLabel "sorption"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#sorting
 :sorting rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -9259,14 +10396,6 @@
 			svu:hasNominalization "spanning" ;
 			skos:prefLabel "spanning"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#sparing
-:sparing rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "spare" ;
-			svu:hasPresentParticiple "sparing" ;
-			svu:hasNominalization "sparing" ;
-			skos:prefLabel "sparing"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#sparge
 :sparge rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -9275,6 +10404,14 @@
 			svu:hasPresentParticiple "sparging" ;
 			svu:hasNominalization "sparge" ;
 			skos:prefLabel "sparge"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#sparing
+:sparing rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "spare" ;
+			svu:hasPresentParticiple "sparing" ;
+			svu:hasNominalization "sparing" ;
+			skos:prefLabel "sparing"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#spawning
 :spawning rdf:type owl:NamedIndividual ,
@@ -9309,6 +10446,16 @@
 			svu:hasNominalization "spilling-over" ;
 			skos:prefLabel "spilling-over"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#spin-up
+:spin-up rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :spinning ;
+			svu:hasPresentTense "spin-up" ;
+			svu:hasPresentParticiple "spinning-up" ;
+			svu:hasNominalization "spinning-up" ;
+			svu:hasNominalization "spin-up" ;
+			skos:prefLabel "spin-up"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#spinning
 :spinning rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -9326,16 +10473,6 @@
 			svu:hasNominalization "spinning-back" ;
 			skos:prefLabel "spinning-back"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#spin-up
-:spin-up rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :spinning ;
-			svu:hasPresentTense "spin-up" ;
-			svu:hasPresentParticiple "spinning-up" ;
-			svu:hasNominalization "spinning-up" ;
-			svu:hasNominalization "spin-up" ;
-			skos:prefLabel "spin-up"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#splaying
 :splaying rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -9344,14 +10481,6 @@
 			svu:hasNominalization "splaying" ;
 			skos:prefLabel "splaying"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#splinting
-:splinting rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "splint" ;
-			svu:hasPresentParticiple "splinting" ;
-			svu:hasNominalization "splinting" ;
-			skos:prefLabel "splinting"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#splintering
 :splintering rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -9359,6 +10488,14 @@
 			svu:hasPresentParticiple "splintering" ;
 			svu:hasNominalization "splintering" ;
 			skos:prefLabel "splintering"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#splinting
+:splinting rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "splint" ;
+			svu:hasPresentParticiple "splinting" ;
+			svu:hasNominalization "splinting" ;
+			skos:prefLabel "splinting"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#splitting
 :splitting rdf:type owl:NamedIndividual ,
@@ -9416,14 +10553,6 @@
 			svu:hasNominalization "stacking" ;
 			skos:prefLabel "stacking"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#staging
-:staging rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "stage" ;
-			svu:hasPresentParticiple "staging" ;
-			svu:hasNominalization "staging" ;
-			skos:prefLabel "staging"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#staggering
 :staggering rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -9431,6 +10560,14 @@
 			svu:hasPresentParticiple "staggering" ;
 			svu:hasNominalization "staggering" ;
 			skos:prefLabel "staggering"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#staging
+:staging rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "stage" ;
+			svu:hasPresentParticiple "staging" ;
+			svu:hasNominalization "staging" ;
+			skos:prefLabel "staging"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#stagnation
 :stagnation rdf:type owl:NamedIndividual ,
@@ -9857,6 +10994,13 @@
 			svu:hasNominalization "suspension" ;
 			skos:prefLabel "suspension"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#suture
+:suture rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "suture" ;
+			svu:hasPresentParticiple "suturing" ;
+			skos:prefLabel "suture"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#swabbing
 :swabbing rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -9903,6 +11047,14 @@
 			svu:hasPresentParticiple "swimming" ;
 			skos:prefLabel "swim"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#swimming
+:swimming rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "swim" ;
+			svu:hasPresentParticiple "swimming" ;
+			svu:hasNominalization "swimming" ;
+			skos:prefLabel "swimming"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#switching
 :switching rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -9910,6 +11062,14 @@
 			svu:hasPresentParticiple "switching" ;
 			svu:hasNominalization "switching" ;
 			skos:prefLabel "switching"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#synchronization
+:synchronization rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "synchronize" ;
+			svu:hasPresentParticiple "synchronizing" ;
+			svu:hasNominalization "synchronization" ;
+			skos:prefLabel "synchronization"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#synchronization
 :synchronization rdf:type owl:NamedIndividual ,
@@ -9927,6 +11087,20 @@
 			svu:hasNominalization "synthesization" ;
 			svu:hasNominalization "synthesis" ;
 			skos:prefLabel "synthesis"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#synthesis
+:synthesis rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "synthesize" ;
+			svu:hasPresentParticiple "synthesizing" ;
+			svu:hasNominalization "synthesis" ;
+			skos:prefLabel "synthesis"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#syzygy
+:syzygy rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasNominalization "syzygy" ;
+			skos:prefLabel "syzygy"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#tabulation
 :tabulation rdf:type owl:NamedIndividual ,
@@ -9952,22 +11126,11 @@
 			svu:hasNominalization "tagging" ;
 			skos:prefLabel "tagging"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#taking
-:taking rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/process#tailspin
+:tailspin rdf:type owl:NamedIndividual ,
 			svu:Process ;
-			svu:hasPresentTense "take" ;
-			svu:hasPresentParticiple "taking" ;
-			svu:hasNominalization "taking" ;
-			skos:prefLabel "taking"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#intake
-:intake rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :taking ;
-			svu:hasPresentTense "take-in" ;
-			svu:hasPresentParticiple "taking-in" ;
-			svu:hasNominalization "taking-in" ;
-			skos:prefLabel "intake"@en .
+			svu:hasNominalization "tailspin" ;
+			skos:prefLabel "tailspin"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#takeoff
 :takeoff rdf:type owl:NamedIndividual ,
@@ -9989,25 +11152,13 @@
 			svu:hasNominalization "takeover" ;
 			skos:prefLabel "takeover"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#uptake
-:uptake rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/process#taking
+:taking rdf:type owl:NamedIndividual ,
 			svu:Process ;
-			svu:isTypeOf :taking ;
-			svu:hasPresentTense "take-up" ;
-			svu:hasPresentParticiple "taking-up" ;
-			svu:hasNominalization "taking-up" ;
-			svu:hasNominalization "takeup" ;
-			svu:hasNominalization "take-up" ;
-			svu:hasNominalization "uptake" ;
-			skos:prefLabel "uptake"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#tamping
-:tamping rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "tamp" ;
-			svu:hasPresentParticiple "tamping" ;
-			svu:hasNominalization "tamping" ;
-			skos:prefLabel "tamping"@en .
+			svu:hasPresentTense "take" ;
+			svu:hasPresentParticiple "taking" ;
+			svu:hasNominalization "taking" ;
+			skos:prefLabel "taking"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#tampering
 :tampering rdf:type owl:NamedIndividual ,
@@ -10017,13 +11168,13 @@
 			svu:hasNominalization "tampering" ;
 			skos:prefLabel "tampering"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#tapping
-:tapping rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/process#tamping
+:tamping rdf:type owl:NamedIndividual ,
 			svu:Process ;
-			svu:hasPresentTense "tap" ;
-			svu:hasPresentParticiple "tapping" ;
-			svu:hasNominalization "tapping" ;
-			skos:prefLabel "tapping"@en .
+			svu:hasPresentTense "tamp" ;
+			svu:hasPresentParticiple "tamping" ;
+			svu:hasNominalization "tamping" ;
+			skos:prefLabel "tamping"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#taper
 :taper rdf:type owl:NamedIndividual ,
@@ -10032,6 +11183,14 @@
 			svu:hasPresentParticiple "tapering" ;
 			skos:prefLabel "taper"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#tapping
+:tapping rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "tap" ;
+			svu:hasPresentParticiple "tapping" ;
+			svu:hasNominalization "tapping" ;
+			skos:prefLabel "tapping"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#targeting
 :targeting rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -10039,14 +11198,6 @@
 			svu:hasPresentParticiple "targeting" ;
 			svu:hasNominalization "targeting" ;
 			skos:prefLabel "targeting"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#tearing
-:tearing rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "tear" ;
-			svu:hasPresentParticiple "tearing" ;
-			svu:hasNominalization "tearing" ;
-			skos:prefLabel "tearing"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#teardown
 :teardown rdf:type owl:NamedIndividual ,
@@ -10057,6 +11208,14 @@
 			svu:hasNominalization "tearing-down" ;
 			svu:hasNominalization "teardown" ;
 			skos:prefLabel "teardown"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#tearing
+:tearing rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "tear" ;
+			svu:hasPresentParticiple "tearing" ;
+			svu:hasNominalization "tearing" ;
+			skos:prefLabel "tearing"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#teleconnection
 :teleconnection rdf:type owl:NamedIndividual ,
@@ -10403,6 +11562,15 @@
 			svu:hasNominalization "transmutation" ;
 			skos:prefLabel "transmutation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#transpiration
+:transpiration rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Transpiration" ;
+			svu:hasPresentTense "transpire" ;
+			svu:hasPresentParticiple "transpiring" ;
+			svu:hasNominalization "transpiration" ;
+			skos:prefLabel "transpiration"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#transplantation
 :transplantation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -10447,11 +11615,6 @@
 			svu:hasNominalization "travel" ;
 			svu:hasNominalization "traveling" ;
 			skos:prefLabel "travel"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#lifetime-travel
-:lifetime-travel rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			skos:prefLabel "lifetime-travel"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#traversal
 :traversal rdf:type owl:NamedIndividual ,
@@ -10517,6 +11680,13 @@
 			svu:hasNominalization "trituration" ;
 			skos:prefLabel "trituration"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#trophobiosis
+:trophobiosis rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Trophobiosis" ;
+			svu:hasNominalization "trophobiosis" ;
+			skos:prefLabel "trophobiosis"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#trying
 :trying rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -10541,14 +11711,6 @@
 			svu:hasNominalization "tunneling" ;
 			skos:prefLabel "tunneling"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#turning
-:turning rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "turn" ;
-			svu:hasPresentParticiple "turning" ;
-			svu:hasNominalization "turning" ;
-			skos:prefLabel "turning"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#turndown
 :turndown rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -10557,6 +11719,14 @@
 			svu:hasPresentParticiple "turning-down" ;
 			svu:hasNominalization "turndown" ;
 			skos:prefLabel "turndown"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#turning
+:turning rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "turn" ;
+			svu:hasPresentParticiple "turning" ;
+			svu:hasNominalization "turning" ;
+			skos:prefLabel "turning"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#turnout
 :turnout rdf:type owl:NamedIndividual ,
@@ -10667,12 +11837,33 @@
 ###  http://www.geoscienceontology.org/svo/svl/process#uplift
 :uplift rdf:type owl:NamedIndividual ,
 			svu:Process ;
+			svu:isTypeOf :lift ;
+			svu:hasPresentTense "lift-up" ;
+			svu:hasPresentParticiple "lifting-up" ;
+			svu:hasNominalization "uplift" ;
+			skos:prefLabel "uplift"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#uplift
+:uplift rdf:type owl:NamedIndividual ,
+			svu:Process ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Uplift" ;
 			svu:hasPresentTense "uplift" ;
 			svu:hasPresentParticiple "lift-up" ;
 			svu:hasNominalization "lifting-up" ;
 			svu:hasNominalization "uplift" ;
 			skos:prefLabel "uplift"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#uptake
+:uptake rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:isTypeOf :taking ;
+			svu:hasPresentTense "take-up" ;
+			svu:hasPresentParticiple "taking-up" ;
+			svu:hasNominalization "taking-up" ;
+			svu:hasNominalization "takeup" ;
+			svu:hasNominalization "take-up" ;
+			svu:hasNominalization "uptake" ;
+			skos:prefLabel "uptake"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#upwelling
 :upwelling rdf:type owl:NamedIndividual ,
@@ -10681,6 +11872,14 @@
 			svu:hasPresentParticiple "upwelling" ;
 			svu:hasNominalization "upwelling" ;
 			skos:prefLabel "upwelling"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#urbanization
+:urbanization rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "urbanize" ;
+			svu:hasPresentParticiple "urbanizing" ;
+			svu:hasNominalization "urbanization" ;
+			skos:prefLabel "urbanization"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#usage
 :usage rdf:type owl:NamedIndividual ,
@@ -10698,6 +11897,14 @@
 			svu:hasNominalization "utilization" ;
 			skos:prefLabel "utilization"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/process#vaccination
+:vaccination rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "vaccinate" ;
+			svu:hasPresentParticiple "vaccinating" ;
+			svu:hasNominalization "vaccination" ;
+			skos:prefLabel "vaccination"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/process#validation
 :validation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -10714,14 +11921,6 @@
 			svu:hasNominalization "vaporization" ;
 			skos:prefLabel "vaporization"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/process#variolation
-:variolation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "variolate" ;
-			svu:hasPresentParticiple "variolating" ;
-			svu:hasNominalization "variolation" ;
-			skos:prefLabel "variolation"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/process#variation
 :variation rdf:type owl:NamedIndividual ,
 			svu:Process ;
@@ -10729,6 +11928,14 @@
 			svu:hasPresentParticiple "varying" ;
 			svu:hasNominalization "variation" ;
 			skos:prefLabel "variation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#variolation
+:variolation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "variolate" ;
+			svu:hasPresentParticiple "variolating" ;
+			svu:hasNominalization "variolation" ;
+			skos:prefLabel "variolation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#vegetation
 :vegetation rdf:type owl:NamedIndividual ,
@@ -11068,1182 +12275,3 @@
 			svu:hasPresentParticiple "zoning" ;
 			svu:hasNominalization "zoning" ;
 			skos:prefLabel "zoning"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#current
-:current rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Current_(fluid)" ;
-			svu:hasNominalization "current" ;
-			skos:prefLabel "current"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#current%7Erip
-:current%7Erip rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :current ;
-			skos:prefLabel "current~rip"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#current%7Elongshore
-:current%7Elongshore rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :current ;
-			skos:prefLabel "current~longshore"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#acidification
-:acidification rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "acidify" ;
-			svu:hasPresentParticiple "acifying" ;
-			svu:hasNominalization "acidification" ;
-			skos:prefLabel "acidification"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#aeration
-:aeration rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "aerate" ;
-			svu:hasPresentParticiple "aerating" ;
-			svu:hasNominalization "aeration" ;
-			skos:prefLabel "aeration"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#aggradation
-:aggradation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Aggradation" ;
-			skos:altLabel "alluviate"@en ;
-			svu:hasPresentTense "aggrade" ;
-			svu:hasPresentParticiple "aggradating" ;
-			svu:hasNominalization "aggradation" ;
-			skos:prefLabel "aggradation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#alkylation
-:alkylation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Alkylation" ;
-			svu:hasPresentTense "alkylate" ;
-			svu:hasPresentParticiple "alkylating" ;
-			svu:hasNominalization "alkylation" ;
-			skos:prefLabel "alkylation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#alluviation
-:alluviation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Aggradation" ;
-			svu:hasPresentTense "alluviate" ;
-			svu:hasPresentParticiple "alluviating" ;
-			svu:hasNominalization "alluviation" ;
-			skos:prefLabel "alluviation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#ammonification
-:ammonification rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Nitrogen_cycle#Ammonification" ;
-			svu:hasPresentTense "ammonify" ;
-			svu:hasPresentParticiple "ammonifying" ;
-			svu:hasNominalization "ammonification" ;
-			skos:prefLabel "ammonification"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#aridification
-:aridification rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Aridification" ;
-			svu:hasPresentTense "aridify" ;
-			svu:hasPresentParticiple "aridifying" ;
-			svu:hasNominalization "aridification" ;
-			skos:prefLabel "aridification"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#armament
-:armament rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "armor" ;
-			svu:hasPresentParticiple "armoring" ;
-			svu:hasNominalization "armament" ;
-			skos:prefLabel "armament"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#basification
-:basification rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "basificate" ;
-			svu:hasPresentParticiple "basificating" ;
-			svu:hasNominalization "basification" ;
-			skos:prefLabel "basification"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#bioluminescence
-:bioluminescence rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Bioluminescence" ;
-			svu:hasPresentTense "bioluminesce" ;
-			svu:hasPresentParticiple "bioluminescing" ;
-			svu:hasNominalization "bioluminescence" ;
-			skos:prefLabel "bioluminescence"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#bleeding
-:bleeding rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Bleeding" ;
-			skos:altLabel "hemorrhaging"@en ;
-			skos:altLabel "haemorrhaging"@en ;
-			svu:hasPresentTense "bleed" ;
-			svu:hasPresentParticiple "bleeding" ;
-			svu:hasNominalization "bleeding" ;
-			skos:prefLabel "bleeding"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#blister
-:blister rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Blister" ;
-			svu:hasPresentTense "blister" ;
-			svu:hasPresentParticiple "blistering" ;
-			skos:prefLabel "blister"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#breastfeeding
-:breastfeeding rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Breastfeeding" ;
-			skos:altLabel "nursing"@en ;
-			svu:hasPresentTense "breastfeed" ;
-			svu:hasPresentParticiple "breastfeeding" ;
-			svu:hasNominalization "breastfeeding" ;
-			skos:prefLabel "breastfeeding"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#breath
-:breath rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			skos:altLabel "respiration"@en ;
-			skos:altLabel "ventilation"@en ;
-			svu:hasPresentTense "breathe" ;
-			svu:hasPresentParticiple "breathing" ;
-			svu:hasNominalization "breath" ;
-			skos:prefLabel "breath"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#broadcast
-:broadcast rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Broadcasting" ;
-			svu:hasPresentTense "broadcast" ;
-			svu:hasPresentParticiple "broadcasting" ;
-			svu:hasNominalization "broadcast" ;
-			skos:prefLabel "broadcast"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#bromination
-:bromination rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Halogenation#Bromination" ;
-			svu:hasPresentTense "brominate" ;
-			svu:hasPresentParticiple "brominating" ;
-			svu:hasNominalization "bromination" ;
-			skos:prefLabel "bromination"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#burial
-:burial rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Burial" ;
-			skos:altLabel "interment"@en ;
-			svu:hasPresentTense "bury" ;
-			svu:hasPresentParticiple "burying" ;
-			svu:hasNominalization "burial" ;
-			svu:hasNominalization "burying" ;
-			skos:prefLabel "burial"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#calcification
-:calcification rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Calcification" ;
-			svu:hasPresentTense "calcify" ;
-			svu:hasPresentParticiple "calcifying" ;
-			svu:hasNominalization "calcification" ;
-			skos:prefLabel "calcification"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#carpool
-:carpool rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "carpool" ;
-			svu:hasPresentParticiple "carpooling" ;
-			svu:hasNominalization "carpool" ;
-			skos:prefLabel "carpool"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#chlorination
-:chlorination rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Halogenation#Chlorination" ;
-			svu:hasPresentTense "chlorinate" ;
-			svu:hasPresentParticiple "chlorinating" ;
-			svu:hasNominalization "chlorination" ;
-			skos:prefLabel "chlorination"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#clearcutting
-:clearcutting rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasNominalization "clearcutting" ;
-			skos:prefLabel "clearcutting"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#dealkalization
-:dealkalization rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Dealkalization" ;
-			svu:hasPresentTense "dalkalize" ;
-			svu:hasPresentParticiple "dealkalizing" ;
-			svu:hasNominalization "dealkalization" ;
-			skos:prefLabel "dealkalization"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#defenestration
-:defenestration rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Defenestration" ;
-			svu:hasPresentTense "defenestrate" ;
-			svu:hasPresentParticiple "defenestrating" ;
-			svu:hasNominalization "defenestration" ;
-			skos:prefLabel "defenestration"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#defoliation
-:defoliation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "defoliate" ;
-			svu:hasPresentParticiple "defoliating" ;
-			svu:hasNominalization "defoliation" ;
-			skos:prefLabel "defoliation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#deforestation
-:deforestation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Deforestation" ;
-			svu:hasPresentTense "deforest" ;
-			svu:hasPresentParticiple "deforesting" ;
-			svu:hasNominalization "deforestation" ;
-			skos:prefLabel "deforestation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#defribillation
-:defribillation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Defibrillation" ;
-			svu:hasPresentTense "defribillate" ;
-			svu:hasPresentParticiple "defribillating" ;
-			svu:hasNominalization "defribillation" ;
-			skos:prefLabel "defribillation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#deglaciation
-:deglaciation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Deglaciation" ;
-			svu:hasPresentTense "deglaciate" ;
-			svu:hasPresentParticiple "deglaciating" ;
-			svu:hasNominalization "deglaciation" ;
-			skos:prefLabel "deglaciation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#dehalogenation
-:dehalogenation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "dehalogenate" ;
-			svu:hasPresentParticiple "dehalogenating" ;
-			svu:hasNominalization "dehalogenation" ;
-			skos:prefLabel "dehalogenation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#dehydration
-:dehydration rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "dehydrate" ;
-			svu:hasPresentParticiple "dehydrating" ;
-			svu:hasNominalization "dehydration" ;
-			skos:prefLabel "dehydration"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#deionization
-:deionization rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "deionize" ;
-			svu:hasPresentParticiple "deionizing" ;
-			svu:hasNominalization "deionization" ;
-			skos:prefLabel "deionization"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#delamination
-:delamination rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "delaminate" ;
-			svu:hasPresentParticiple "delaminating" ;
-			svu:hasNominalization "delamination" ;
-			skos:prefLabel "delamination"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#denitrification
-:denitrification rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "denitrify" ;
-			svu:hasPresentParticiple "denitrifying" ;
-			svu:hasNominalization "denitrification" ;
-			skos:prefLabel "denitrification"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#dephosphorylation
-:dephosphorylation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "dephosphorylate" ;
-			svu:hasPresentParticiple "dephosphorylating" ;
-			svu:hasNominalization "dephosphorylation" ;
-			skos:prefLabel "dephosphorylation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#deprotonation
-:deprotonation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "deprotonate" ;
-			svu:hasPresentParticiple "deprotonating" ;
-			svu:hasNominalization "deprotonation" ;
-			skos:prefLabel "deprotonation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#desalination
-:desalination rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "desalinate" ;
-			svu:hasPresentParticiple "desalinating" ;
-			svu:hasNominalization "desalination" ;
-			skos:prefLabel "desalination"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#desertification
-:desertification rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "desertify" ;
-			svu:hasPresentParticiple "desertifying" ;
-			svu:hasNominalization "desertification" ;
-			skos:prefLabel "desertification"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#dessication
-:dessication rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "dessicate" ;
-			svu:hasPresentParticiple "dessicating" ;
-			svu:hasNominalization "dessication" ;
-			skos:prefLabel "dessication"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#dewatering
-:dewatering rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "dewater" ;
-			svu:hasPresentParticiple "dewatering" ;
-			svu:hasNominalization "dewatering" ;
-			skos:prefLabel "dewatering"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#digestion
-:digestion rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "digest" ;
-			svu:hasPresentParticiple "digesting" ;
-			svu:hasNominalization "digestion" ;
-			skos:prefLabel "digestion"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#docking
-:docking rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "dock" ;
-			svu:hasPresentParticiple "docking" ;
-			svu:hasNominalization "docking" ;
-			skos:prefLabel "docking"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#donation
-:donation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "donate" ;
-			svu:hasPresentParticiple "donating" ;
-			svu:hasNominalization "donation" ;
-			skos:prefLabel "donation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#downcutting
-:downcutting rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasNominalization "downcutting" ;
-			skos:prefLabel "downcutting"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#downwelling
-:downwelling rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Downwelling" ;
-			svu:hasNominalization "downwelling" ;
-			skos:prefLabel "downwelling"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#drowning
-:drowning rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Drowning" ;
-			svu:hasPresentTense "drown" ;
-			svu:hasPresentParticiple "drowning" ;
-			svu:hasNominalization "drowning" ;
-			skos:prefLabel "drowning"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#drying
-:drying rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "dry" ;
-			svu:hasPresentParticiple "drying" ;
-			svu:hasNominalization "drying" ;
-			skos:prefLabel "drying"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#electrification
-:electrification rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "electrify" ;
-			svu:hasPresentParticiple "elecrifying" ;
-			svu:hasNominalization "electrification" ;
-			skos:prefLabel "electrification"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#electrocution
-:electrocution rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "electrocute" ;
-			svu:hasPresentParticiple "electrocuting" ;
-			svu:hasNominalization "electrocution" ;
-			skos:prefLabel "electrocution"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#electrodeposition
-:electrodeposition rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "electrodeposit" ;
-			svu:hasPresentParticiple "electrodepositing" ;
-			svu:hasNominalization "electrodeposition" ;
-			skos:prefLabel "electrodeposition"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#electroplating
-:electroplating rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "electroplate" ;
-			svu:hasPresentParticiple "electroplating" ;
-			svu:hasNominalization "electroplating" ;
-			skos:prefLabel "electroplating"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#electrowinning
-:electrowinning rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "electrowinning" ;
-			skos:prefLabel "electrowinning"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#enrobing
-:enrobing rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "enrobe" ;
-			svu:hasPresentParticiple "enrobing" ;
-			svu:hasNominalization "enrobing" ;
-			skos:prefLabel "enrobing"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#esterification
-:esterification rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "esterify" ;
-			svu:hasPresentParticiple "esterificating" ;
-			svu:hasNominalization "esterification" ;
-			skos:prefLabel "esterification"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#ethylation
-:ethylation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "ethylate" ;
-			svu:hasPresentParticiple "ethylating" ;
-			svu:hasNominalization "ethylation" ;
-			skos:prefLabel "ethylation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#eutrophication
-:eutrophication rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "eutrophicate" ;
-			svu:hasPresentParticiple "eutrophicating" ;
-			svu:hasNominalization "eutrophication" ;
-			skos:prefLabel "eutrophication"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#evapotranspiration
-:evapotranspiration rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Evapotranspiration" ;
-			svu:hasPresentTense "evapotranspire" ;
-			svu:hasPresentParticiple "evapotranspiring" ;
-			svu:hasNominalization "evapotranspiration" ;
-			skos:prefLabel "evapotranspiration"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#exhalation
-:exhalation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "exhale" ;
-			svu:hasPresentParticiple "exhaling" ;
-			svu:hasNominalization "exhalation" ;
-			skos:prefLabel "exhalation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#exsanguination
-:exsanguination rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Exsanguination" ;
-			svu:hasPresentTense "exsanguinate" ;
-			svu:hasPresentParticiple "exsanguinating" ;
-			svu:hasNominalization "exsanguination" ;
-			skos:prefLabel "exsanguination"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#fasting
-:fasting rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "fast" ;
-			svu:hasPresentParticiple "fasting" ;
-			svu:hasNominalization "fasting" ;
-			skos:prefLabel "fasting"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#fermentation
-:fermentation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "ferment" ;
-			svu:hasPresentParticiple "fermenting" ;
-			svu:hasNominalization "fermentation" ;
-			skos:prefLabel "fermentation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#fertigate
-:fertigate rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "fertigate" ;
-			svu:hasPresentParticiple "fertigating" ;
-			skos:prefLabel "fertigate"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#fertilization
-:fertilization rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "fertilize" ;
-			svu:hasPresentParticiple "fertilizing" ;
-			svu:hasNominalization "fertilization" ;
-			skos:prefLabel "fertilization"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#fibrillation
-:fibrillation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "fibrillate" ;
-			svu:hasPresentParticiple "fibrillating" ;
-			svu:hasNominalization "fibrillation" ;
-			skos:prefLabel "fibrillation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#fluorescence
-:fluorescence rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "fluoresce" ;
-			svu:hasPresentParticiple "fluorescing" ;
-			svu:hasNominalization "fluorescence" ;
-			skos:prefLabel "fluorescence"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#fluorination
-:fluorination rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "fluorinate" ;
-			svu:hasPresentParticiple "fluorinating" ;
-			svu:hasNominalization "fluorination" ;
-			skos:prefLabel "fluorination"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#glaciation
-:glaciation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "glaciate" ;
-			svu:hasPresentParticiple "glaciating" ;
-			svu:hasNominalization "glaciation" ;
-			skos:prefLabel "glaciation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#halogenation
-:halogenation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "halogenate" ;
-			svu:hasPresentParticiple "halogenating" ;
-			svu:hasNominalization "halogenation" ;
-			skos:prefLabel "halogenation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#heating
-:heating rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "heat" ;
-			svu:hasPresentParticiple "heating" ;
-			svu:hasNominalization "heating" ;
-			skos:prefLabel "heating"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#humidification
-:humidification rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "humidify" ;
-			svu:hasPresentParticiple "humidifying" ;
-			svu:hasNominalization "humidification" ;
-			skos:prefLabel "humidification"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#hydration
-:hydration rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "hydrate" ;
-			svu:hasPresentParticiple "hydrating" ;
-			svu:hasNominalization "hydration" ;
-			skos:prefLabel "hydration"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#hydrogenation
-:hydrogenation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "hydrogenate" ;
-			svu:hasPresentParticiple "hydrogenating" ;
-			svu:hasNominalization "hydrogenation" ;
-			skos:prefLabel "hydrogenation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#hydrolysis
-:hydrolysis rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "hydrolyze" ;
-			svu:hasPresentParticiple "hydrolyzing" ;
-			svu:hasNominalization "hydrolysis" ;
-			skos:prefLabel "hydrolysis"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#hydropeaking
-:hydropeaking rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasNominalization "hydropeaking" ;
-			skos:prefLabel "hydropeaking"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#illumination
-:illumination rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "illuminate" ;
-			svu:hasPresentParticiple "illuminating" ;
-			svu:hasNominalization "illumination" ;
-			skos:prefLabel "illumination"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#immigration
-:immigration rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "immigrate" ;
-			svu:hasPresentParticiple "immigrating" ;
-			svu:hasNominalization "immigration" ;
-			skos:prefLabel "immigration"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#immunization
-:immunization rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "immunize" ;
-			svu:hasPresentParticiple "immunizing" ;
-			svu:hasNominalization "immunization" ;
-			skos:prefLabel "immunization"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#incarceration
-:incarceration rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "incarcerate" ;
-			svu:hasPresentParticiple "incarcerating" ;
-			svu:hasNominalization "incarceration" ;
-			skos:prefLabel "incarceration"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#inhalation
-:inhalation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "inhale" ;
-			svu:hasPresentParticiple "inhaling" ;
-			svu:hasNominalization "inhalation" ;
-			skos:prefLabel "inhalation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#iodination
-:iodination rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "iodize" ;
-			svu:hasPresentParticiple "iodizing" ;
-			svu:hasNominalization "iodination" ;
-			skos:prefLabel "iodination"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#luminescence
-:luminescence rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "luminesce" ;
-			svu:hasPresentParticiple "luminescing" ;
-			svu:hasNominalization "luminescence" ;
-			skos:prefLabel "luminescence"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#metabolism
-:metabolism rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "metabolize" ;
-			svu:hasPresentParticiple "metabolizing" ;
-			svu:hasNominalization "metabolism" ;
-			skos:prefLabel "metabolism"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#methylation
-:methylation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "methylate" ;
-			svu:hasPresentParticiple "methylating" ;
-			svu:hasNominalization "methylation" ;
-			skos:prefLabel "methylation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#mineralization
-:mineralization rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "mineralize" ;
-			svu:hasPresentParticiple "mineralizing" ;
-			svu:hasNominalization "mineralization" ;
-			skos:prefLabel "mineralization"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#nesting
-:nesting rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "nest" ;
-			svu:hasPresentParticiple "nesting" ;
-			svu:hasNominalization "nesting" ;
-			skos:prefLabel "nesting"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#nitrification
-:nitrification rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "nitrify" ;
-			svu:hasPresentParticiple "nitrifying" ;
-			svu:hasNominalization "nitrification" ;
-			skos:prefLabel "nitrification"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#ovulation
-:ovulation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "ovulate" ;
-			svu:hasPresentParticiple "ovulating" ;
-			svu:hasNominalization "ovulation" ;
-			skos:prefLabel "ovulation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#oxidation
-:oxidation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "oxidize" ;
-			svu:hasPresentParticiple "oxidizing" ;
-			svu:hasNominalization "oxidization" ;
-			svu:hasNominalization "oxidation" ;
-			skos:prefLabel "oxidation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#oxychlorination
-:oxychlorination rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "oxychlorinate" ;
-			svu:hasPresentParticiple "oxychlorinating" ;
-			svu:hasNominalization "oxychlorination" ;
-			skos:prefLabel "oxychlorination"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#oxygenation
-:oxygenation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "oxygenate" ;
-			svu:hasPresentParticiple "oxygenating" ;
-			svu:hasNominalization "oxygenation" ;
-			skos:prefLabel "oxygenation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#parachuting
-:parachuting rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "parachute" ;
-			svu:hasPresentParticiple "parachuting" ;
-			svu:hasNominalization "parachuting" ;
-			skos:prefLabel "parachuting"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#peroxidation
-:peroxidation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "peroxidate" ;
-			svu:hasPresentParticiple "peroxidating" ;
-			svu:hasNominalization "peroxidation" ;
-			skos:prefLabel "peroxidation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#perspiration
-:perspiration rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "perspire" ;
-			svu:hasPresentParticiple "perspiring" ;
-			svu:hasNominalization "perspiration" ;
-			skos:prefLabel "perspiration"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#phosphorescence
-:phosphorescence rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "phosphoresce" ;
-			svu:hasPresentParticiple "phosphorescing" ;
-			svu:hasNominalization "phosphorescence" ;
-			skos:prefLabel "phosphorescence"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#phosphorylation
-:phosphorylation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "phosphorylate" ;
-			svu:hasPresentParticiple "phosphorylating" ;
-			svu:hasNominalization "phosphorylation" ;
-			skos:prefLabel "phosphorylation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#photolysis
-:photolysis rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "photolyse" ;
-			svu:hasPresentParticiple "photolysing" ;
-			svu:hasNominalization "photolysis" ;
-			skos:prefLabel "photolysis"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#photophosphorylation
-:photophosphorylation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "photophosphorylate" ;
-			svu:hasPresentParticiple "photophosphorylizing" ;
-			svu:hasNominalization "photophosphorylation" ;
-			skos:prefLabel "photophosphorylation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#photorespiration
-:photorespiration rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "photorespire" ;
-			svu:hasPresentParticiple "photorespiring" ;
-			svu:hasNominalization "photorespiration" ;
-			skos:prefLabel "photorespiration"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#photosynthesis
-:photosynthesis rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "photosynthesize" ;
-			svu:hasPresentParticiple "photosynthesizing" ;
-			svu:hasNominalization "photosynthesis" ;
-			skos:prefLabel "photosynthesis"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#plowing
-:plowing rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "plow" ;
-			svu:hasPresentParticiple "plowing" ;
-			svu:hasNominalization "plowing" ;
-			skos:prefLabel "plowing"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#poisoning
-:poisoning rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "poison" ;
-			svu:hasPresentParticiple "poisoning" ;
-			svu:hasNominalization "poisoning" ;
-			skos:prefLabel "poisoning"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#protonation
-:protonation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "protonate" ;
-			svu:hasPresentParticiple "protonating" ;
-			svu:hasNominalization "protonation" ;
-			skos:prefLabel "protonation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#pyritization
-:pyritization rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "pyritize" ;
-			svu:hasPresentParticiple "pyritizing" ;
-			svu:hasNominalization "pyritization" ;
-			skos:prefLabel "pyritization"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#rancidification
-:rancidification rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "rancidify" ;
-			svu:hasPresentParticiple "rancidifying" ;
-			svu:hasNominalization "rancidification" ;
-			skos:prefLabel "rancidification"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#reaeration
-:reaeration rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "reaerate" ;
-			svu:hasPresentParticiple "reaerating" ;
-			svu:hasNominalization "reaeration" ;
-			skos:prefLabel "reaeration"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#remineralization
-:remineralization rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "remineralize" ;
-			svu:hasPresentParticiple "remineralizing" ;
-			svu:hasNominalization "remineralization" ;
-			skos:prefLabel "remineralization"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#respiration
-:respiration rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "respire" ;
-			svu:hasPresentParticiple "respiring" ;
-			svu:hasNominalization "respiration" ;
-			skos:prefLabel "respiration"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#resuscitation
-:resuscitation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "resuscitate" ;
-			svu:hasPresentParticiple "resuscitating" ;
-			svu:hasNominalization "resuscitation" ;
-			skos:prefLabel "resuscitation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#revegetation
-:revegetation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :vegetation ;
-			svu:hasPresentTense "revegetate" ;
-			svu:hasPresentParticiple "revegetation" ;
-			svu:hasNominalization "revegetation" ;
-			skos:prefLabel "revegetation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#saccharification
-:saccharification rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "saccharify" ;
-			svu:hasPresentParticiple "saccharafying" ;
-			svu:hasNominalization "saccharification" ;
-			skos:prefLabel "saccharification"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#sedimentation
-:sedimentation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "sediment" ;
-			svu:hasPresentParticiple "sedimenting" ;
-			svu:hasNominalization "sedimentation" ;
-			skos:prefLabel "sedimentation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#suture
-:suture rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "suture" ;
-			svu:hasPresentParticiple "suturing" ;
-			skos:prefLabel "suture"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#swimming
-:swimming rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "swim" ;
-			svu:hasPresentParticiple "swimming" ;
-			svu:hasNominalization "swimming" ;
-			skos:prefLabel "swimming"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#transpiration
-:transpiration rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Transpiration" ;
-			svu:hasPresentTense "transpire" ;
-			svu:hasPresentParticiple "transpiring" ;
-			svu:hasNominalization "transpiration" ;
-			skos:prefLabel "transpiration"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#trophobiosis
-:trophobiosis rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Trophobiosis" ;
-			svu:hasNominalization "trophobiosis" ;
-			skos:prefLabel "trophobiosis"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#urbanization
-:urbanization rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "urbanize" ;
-			svu:hasPresentParticiple "urbanizing" ;
-			svu:hasNominalization "urbanization" ;
-			skos:prefLabel "urbanization"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#vaccination
-:vaccination rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "vaccinate" ;
-			svu:hasPresentParticiple "vaccinating" ;
-			svu:hasNominalization "vaccination" ;
-			skos:prefLabel "vaccination"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#downforce
-:downforce rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :forcing ;
-			svu:hasPresentTense "force-down" ;
-			svu:hasPresentParticiple "forcing-down" ;
-			svu:hasNominalization "downforce" ;
-			skos:prefLabel "downforce"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#downscale
-:downscale rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :scaling ;
-			svu:hasPresentTense "scale-down" ;
-			svu:hasPresentParticiple "scaling-down" ;
-			svu:hasNominalization "downscale" ;
-			skos:prefLabel "downscale"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#downturn
-:downturn rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :turning ;
-			svu:hasPresentTense "turn-down" ;
-			svu:hasPresentParticiple "turning-down" ;
-			svu:hasNominalization "downturn" ;
-			skos:prefLabel "downturn"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#outbreak
-:outbreak rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :breaking ;
-			svu:hasPresentTense "break-out" ;
-			svu:hasPresentParticiple "breaking-out" ;
-			svu:hasNominalization "outbreak" ;
-			skos:prefLabel "outbreak"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#outburst
-:outburst rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :bursting ;
-			svu:hasPresentTense "burst-out" ;
-			svu:hasPresentParticiple "bursting-out" ;
-			svu:hasNominalization "outburst" ;
-			skos:prefLabel "outburst"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#silicification
-:silicification rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "silicificate" ;
-			svu:hasPresentParticiple "silicificating" ;
-			svu:hasNominalization "silicification" ;
-			skos:prefLabel "silicificate"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#harvest
-:harvest rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Harvest" ;
-			svu:hasPresentTense "harvest" ;
-			svu:hasPresentParticiple "harvesting" ;
-			svu:hasNominalization "harvest" ;
-			skos:prefLabel "harvest"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#downburst
-:downburst rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :bursting ;
-			svu:hasPresentTense "burst-down" ;
-			svu:hasPresentParticiple "bursting-down" ;
-			svu:hasNominalization "downburst" ;
-			skos:prefLabel "downburst"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#downdraft
-:downdraft rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasNominalization "downdraft" ;
-			skos:prefLabel "downdraft"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#eddy
-:eddy rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Eddy_(fluid_dynamics)" ;
-			svu:hasNominalization "eddy" ;
-			skos:prefLabel "eddy"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#exodus
-:exodus rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasNominalization "exodus" ;
-			skos:prefLabel "exodus"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#fecundation
-:fecundation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasNominalization "fecundation" ;
-			skos:prefLabel "fecundation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#friction
-:friction rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Friction" ;
-			svu:hasNominalization "friction" ;
-			skos:prefLabel "friction"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#genesis
-:genesis rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasNominalization "genesis" ;
-			skos:prefLabel "genesis"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#inception
-:inception rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasNominalization "inception" ;
-			skos:prefLabel "inception"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#incursion
-:incursion rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasNominalization "incursion" ;
-			skos:prefLabel "incursion"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#inflow
-:inflow rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :flowing ;
-			svu:hasPresentTense "flow-in" ;
-			svu:hasPresentParticiple "flowing-in" ;
-			svu:hasNominalization "inflow" ;
-			skos:prefLabel "inflow"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#intake
-:intake rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :taking ;
-			svu:hasPresentTense "intake" ;
-			svu:hasPresentParticiple "taking-in" ;
-			svu:hasNominalization "intake" ;
-			skos:prefLabel "intake"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#metabolism
-:metabolism rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "metabolize" ;
-			svu:hasPresentParticiple "metabolizing" ;
-			svu:hasNominalization "metabolism" ;
-			skos:prefLabel "metabolism"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#omission
-:omission rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "omit" ;
-			svu:hasPresentParticiple "omitting" ;
-			svu:hasNominalization "omission" ;
-			skos:prefLabel "omission"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#onset
-:onset rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasNominalization "onset" ;
-			skos:prefLabel "onset"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#outage
-:outage rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasNominalization "outage" ;
-			skos:prefLabel "outage"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#sorption
-:sorption rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasNominalization "sorption" ;
-			skos:prefLabel "sorption"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#synchronization
-:synchronization rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "synchronize" ;
-			svu:hasPresentParticiple "synchronizing" ;
-			svu:hasNominalization "synchronization" ;
-			skos:prefLabel "synchronization"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#synthesis
-:synthesis rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasPresentTense "synthesize" ;
-			svu:hasPresentParticiple "synthesizing" ;
-			svu:hasNominalization "synthesis" ;
-			skos:prefLabel "synthesis"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#syzygy
-:syzygy rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasNominalization "syzygy" ;
-			skos:prefLabel "syzygy"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#tailspin
-:tailspin rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasNominalization "tailspin" ;
-			skos:prefLabel "tailspin"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#slip%7Eseismic
-:slip%7Eseismic rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :slipping ;
-			skos:prefLabel "slip~seismic"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#slip-rake
-:slip-rake rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:isTypeOf :slipping ;
-			svu:hasNominalization "slip-rake" ;
-			skos:prefLabel "slip-rake"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/process#progradation
-:progradation rdf:type owl:NamedIndividual ,
-			svu:Process ;
-			svu:hasNominalization "progradation" ;
-			skos:prefLabel "progradation"@en .

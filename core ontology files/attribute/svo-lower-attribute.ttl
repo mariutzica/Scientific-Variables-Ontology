@@ -8,7 +8,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @base <http://www.geoscienceontology.org/svo/svl/> .
 
-<http://www.geoscienceontology.org/svl/attribute> rdf:type owl:Ontology ;
+<http://www.geoscienceontology.org/svo/svl/attribute> rdf:type owl:Ontology ;
 				rdfs:comment " Scientific Variables Lower Ontology, Attribute BETA VERSION 1.0." .
 #				owl:imports <http://www.geoscienceontology.org/svo/svu> .
 
@@ -17,7 +17,7 @@
 #    Attribute   
 # 
 #################################################################
-##Last generated on: 2018-11-27 19:26
+##Last generated on: 2018-12-20 21:07
 
 ###(Qualitative)Attribute
 
@@ -66,6 +66,12 @@
 			svu:Attribute ;
 			svu:isNoun false ;
 			skos:prefLabel "agricultural"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#air-dried
+:air-dried rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "air-dried"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#airy
 :airy rdf:type owl:NamedIndividual ,
@@ -184,6 +190,12 @@
 			svu:isNoun false ;
 			skos:prefLabel "available"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#background
+:background rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "background"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#backscattered
 :backscattered rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -273,6 +285,18 @@
 			svu:isNoun false ;
 			skos:prefLabel "bioluminescent"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#black-sky
+:black-sky rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "black-sky"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#blue-sky
+:blue-sky rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "blue-sky"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#bottomset
 :bottomset rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -337,6 +361,12 @@
 			svu:Attribute ;
 			svu:isNoun false ;
 			skos:prefLabel "central"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#central-dense-overcast
+:central-dense-overcast rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "central-dense-overcast"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#characteristic
 :characteristic rdf:type owl:NamedIndividual ,
@@ -467,6 +497,12 @@
 			svu:isNoun false ;
 			skos:prefLabel "culturable"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#daily
+:daily rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "daily"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#dead
 :dead rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -509,18 +545,24 @@
 			svu:isNoun false ;
 			skos:prefLabel "direct"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#directional
+:directional rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "directional"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#displaced
+:displaced rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "displaced"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#dissolved
 :dissolved rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
 			svu:isNoun false ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Dissolution_(chemistry)" ;
 			skos:prefLabel "dissolved"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#daily
-:daily rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:isNoun false ;
-			skos:prefLabel "daily"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#diurnal
 :diurnal rdf:type owl:NamedIndividual ,
@@ -827,6 +869,12 @@
 			svu:isNoun false ;
 			skos:prefLabel "gravitational"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#grazing
+:grazing rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "grazing"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#hail
 :hail rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -1012,6 +1060,12 @@
 			svu:isNoun false ;
 			skos:prefLabel "instantaneous"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#interior
+:interior rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "interior"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#internal
 :internal rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -1083,6 +1137,12 @@
 			svu:correspondsToProperty <property#orientation> ;
 			svu:isNoun false ;
 			skos:prefLabel "lateral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#leading
+:leading rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "leading"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#left
 :left rdf:type owl:NamedIndividual ,
@@ -1501,11 +1561,23 @@
 			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/partial" ;
 			skos:prefLabel "partial"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#particulate
+:particulate rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "particulate"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#peak
 :peak rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
 			svu:isNoun false ;
 			skos:prefLabel "peak"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#permafrost
+:permafrost rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "permafrost"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#photosynthetic
 :photosynthetic rdf:type owl:NamedIndividual ,
@@ -1520,6 +1592,12 @@
 			svu:isNoun false ;
 			skos:prefLabel "photosynthetically-active"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#physical
+:physical rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "physical"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#polar
 :polar rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -1531,6 +1609,12 @@
 			svu:Attribute ;
 			svu:isNoun false ;
 			skos:prefLabel "polychlorinated"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#polyunsaturated
+:polyunsaturated rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "polyunsaturated"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#potential
 :potential rdf:type owl:NamedIndividual ,
@@ -1562,17 +1646,17 @@
 			svu:isNoun false ;
 			skos:prefLabel "public"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#radiative
-:radiative rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:isNoun false ;
-			skos:prefLabel "radiative"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/attribute#radiated
 :radiated rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
 			svu:isNoun false ;
 			skos:prefLabel "radiated"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#radiative
+:radiative rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "radiative"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#radioactive
 :radioactive rdf:type owl:NamedIndividual ,
@@ -1618,8 +1702,8 @@
 			svu:isNoun false ;
 			skos:prefLabel "reflected"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#relativisitic
-:relativisitic rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/attribute#relativistic
+:relativistic rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
 			svu:isNoun false ;
 			skos:prefLabel "relativistic"@en .
@@ -1886,11 +1970,23 @@
 			svu:isNoun false ;
 			skos:prefLabel "tidal"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#top
+:top rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "top"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#topset
 :topset rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
 			svu:isNoun false ;
 			skos:prefLabel "topset"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#total
+:total rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "total"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#transmitted
 :transmitted rdf:type owl:NamedIndividual ,
@@ -1948,6 +2044,13 @@
 			svu:Attribute ;
 			svu:isNoun false ;
 			skos:prefLabel "unique"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#unsaturated
+:unsaturated rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#saturation> ;
+			svu:isNoun false ;
+			skos:prefLabel "unsaturated"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#up
 :up rdf:type owl:NamedIndividual ,
@@ -2057,6 +2160,12 @@
 			svu:isNoun false ;
 			skos:prefLabel "waxed"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#weighted
+:weighted rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "weighted"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#wet
 :wet rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -2112,15 +2221,15 @@
 ###(Quantitative)Attribute
 
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#20C
-:20C rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/attribute#0-to-60-mph
+:0-to-60-mph rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
-			svu:correspondsToProperty <property#temperature> ;
-			svu:hasValue "20" ;
-			svu:hasUnits "O" ;
-			svu:hasAssignedUnits "C" ;
+			svu:correspondsToProperty <property#velocity> ;
+			svu:hasValue "0-to-60" ;
+			svu:hasUnits "L T^-1" ;
+			svu:hasAssignedUnits "mph" ;
 			svu:isNoun false ;
-			skos:prefLabel "20C"@en .
+			skos:prefLabel "0-to-60-mph"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#0.005-to-0.002-mm
 :0.005-to-0.002-mm rdf:type owl:NamedIndividual ,
@@ -2222,6 +2331,185 @@
 			svu:isNoun false ;
 			skos:prefLabel "0.5-to-8.0-mm"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#10m
+:10m rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#length> ;
+			svu:hasValue "10" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "m" ;
+			svu:isNoun false ;
+			skos:prefLabel "10m"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#1m
+:1m rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#length> ;
+			svu:hasValue "1" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "m" ;
+			svu:isNoun false ;
+			skos:prefLabel "1m"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#1m
+:1m rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#length> ;
+			svu:hasValue "1" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "m" ;
+			svu:isNoun false ;
+			skos:prefLabel "1m"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#20C
+:20C rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#temperature> ;
+			svu:hasValue "20" ;
+			svu:hasUnits "O" ;
+			svu:hasAssignedUnits "C" ;
+			svu:isNoun false ;
+			skos:prefLabel "20C"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#254nm
+:254nm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#wavelength> ;
+			svu:hasValue "254" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "nm" ;
+			svu:isNoun false ;
+			skos:prefLabel "254nm"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#25ft
+:25ft rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#length> ;
+			svu:hasValue "25" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "ft" ;
+			svu:isNoun false ;
+			skos:prefLabel "25ft"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#2x-critical-level
+:2x-critical-level rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#level> ;
+			svu:hasValue "2x-critical" ;
+			svu:isNoun false ;
+			skos:prefLabel "2x-critical-level"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#400-to-600nm
+:400-to-600nm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#wavelength> ;
+			svu:hasValue "400-to-600" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "nm" ;
+			svu:isNoun false ;
+			skos:prefLabel "400-to-600nm"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#780-to-900nm
+:780-to-900nm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#wavelength> ;
+			svu:hasValue "780-to-900" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "nm" ;
+			svu:isNoun false ;
+			skos:prefLabel "780-to-900nm"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#boiling-point
+:boiling-point rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#temperature> ;
+			svu:hasValue "boiling-point" ;
+			svu:hasUnits "O" ;
+			svu:isNoun false ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Boiling_point" ;
+			skos:prefLabel "boiling-point"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#bubble-point
+:bubble-point rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#temperature> ;
+			svu:hasValue "bubble-point" ;
+			svu:hasUnits "O" ;
+			svu:isNoun false ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Bubble_point" ;
+			skos:prefLabel "bubble-point"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#clockwise
+:clockwise rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#orientation> ;
+			svu:hasValue "clockwise" ;
+			svu:isNoun false ;
+			skos:prefLabel "clockwise"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#cloud-presence
+:cloud-presence rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#presence> ;
+			svu:isNoun false ;
+			skos:prefLabel "cloud"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#critical-point
+:critical-point rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#temperature> ;
+			svu:hasValue "critical-state" ;
+			svu:hasUnits "O" ;
+			svu:isNoun false ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Critical_point_(thermodynamics)" ;
+			skos:prefLabel "critical-point"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#dew-point
+:dew-point rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#temperature> ;
+			svu:hasValue "dew-point" ;
+			svu:hasUnits "O" ;
+			svu:isNoun false ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Dew_point" ;
+			skos:prefLabel "dew-point"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#east
+:east rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#cardinal_direction> ;
+			svu:hasValue "east" ;
+			svu:isNoun false ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/East" ;
+			skos:prefLabel "east"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#eye-presence
+:eye-presence rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#presence> ;
+			svu:isNoun false ;
+			skos:prefLabel "eye"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#freezing-point
+:freezing-point rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#temperature> ;
+			svu:hasValue "freezing-point" ;
+			svu:hasUnits "O" ;
+			svu:isNoun false ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Melting_point" ;
+			skos:prefLabel "freezing-point"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#frost-point
+:frost-point rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#temperature> ;
+			svu:hasValue "frost-point" ;
+			svu:hasUnits "O" ;
+			svu:isNoun false ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Dew_point#Frost_point" ;
+			skos:prefLabel "frost-point"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#greater-than-0.0004-mm
 :greater-than-0.0004-mm rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -2282,6 +2570,28 @@
 			svu:isNoun false ;
 			skos:prefLabel "greater-than-8.0-mm"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#high-level
+:high-level rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#level> ;
+			svu:hasValue "high" ;
+			svu:isNoun false ;
+			skos:prefLabel "high-level"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#highest-tenth
+:highest-tenth rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:hasValue "highest-tenth" ;
+			svu:isNoun false ;
+			skos:prefLabel "highest-tenth"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#land-presence
+:land-presence rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#presence> ;
+			svu:isNoun false ;
+			skos:prefLabel "land"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.00025-mm
 :less-than-0.00025-mm rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -2322,16 +2632,6 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-0.00075-mm"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.0015-mm
-:less-than-0.0015-mm rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-0.0015" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "mm" ;
-			svu:isNoun false ;
-			skos:prefLabel "less-than-0.0015-mm"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.001-mm
 :less-than-0.001-mm rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -2341,6 +2641,16 @@
 			svu:hasAssignedUnits "mm" ;
 			svu:isNoun false ;
 			skos:prefLabel "less-than-0.001-mm"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.0015-mm
+:less-than-0.0015-mm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#diameter> ;
+			svu:hasValue "less-than-0.0015" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "mm" ;
+			svu:isNoun false ;
+			skos:prefLabel "less-than-0.0015-mm"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.002-mm
 :less-than-0.002-mm rdf:type owl:NamedIndividual ,
@@ -2412,6 +2722,16 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-0.016-mm"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.02-mm
+:less-than-0.02-mm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#diameter> ;
+			svu:hasValue "less-than-0.02" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "mm" ;
+			svu:isNoun false ;
+			skos:prefLabel "less-than-0.02-mm"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.024-mm
 :less-than-0.024-mm rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -2431,16 +2751,6 @@
 			svu:hasAssignedUnits "mm" ;
 			svu:isNoun false ;
 			skos:prefLabel "less-than-0.025-mm"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.02-mm
-:less-than-0.02-mm rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-0.02" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "mm" ;
-			svu:isNoun false ;
-			skos:prefLabel "less-than-0.02-mm"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.031-mm
 :less-than-0.031-mm rdf:type owl:NamedIndividual ,
@@ -2512,16 +2822,6 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-0.053-mm"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.0625-mm
-:less-than-0.0625-mm rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-0.0625" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "mm" ;
-			svu:isNoun false ;
-			skos:prefLabel "less-than-0.0625-mm"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.062-mm
 :less-than-0.062-mm rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -2531,6 +2831,16 @@
 			svu:hasAssignedUnits "mm" ;
 			svu:isNoun false ;
 			skos:prefLabel "less-than-0.062-mm"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.0625-mm
+:less-than-0.0625-mm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#diameter> ;
+			svu:hasValue "less-than-0.0625" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "mm" ;
+			svu:isNoun false ;
+			skos:prefLabel "less-than-0.0625-mm"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.063-mm
 :less-than-0.063-mm rdf:type owl:NamedIndividual ,
@@ -2572,6 +2882,16 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-0.09-mm"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.1-um
+:less-than-0.1-um rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#diameter> ;
+			svu:hasValue "less-than-0.1" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "um" ;
+			svu:isNoun false ;
+			skos:prefLabel "less-than-0.1-um"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.106-mm
 :less-than-0.106-mm rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -2612,15 +2932,15 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-0.18-mm"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.1-um
-:less-than-0.1-um rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.2-um
+:less-than-0.2-um rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
 			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-0.1" ;
+			svu:hasValue "less-than-0.2" ;
 			svu:hasUnits "L" ;
 			svu:hasAssignedUnits "um" ;
 			svu:isNoun false ;
-			skos:prefLabel "less-than-0.1-um"@en .
+			skos:prefLabel "less-than-0.2-um"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.212-mm
 :less-than-0.212-mm rdf:type owl:NamedIndividual ,
@@ -2642,15 +2962,15 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-0.25-mm"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.2-um
-:less-than-0.2-um rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.3-mm
+:less-than-0.3-mm rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
 			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-0.2" ;
+			svu:hasValue "less-than-0.3" ;
 			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "um" ;
+			svu:hasAssignedUnits "mm" ;
 			svu:isNoun false ;
-			skos:prefLabel "less-than-0.2-um"@en .
+			skos:prefLabel "less-than-0.3-mm"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.30-um
 :less-than-0.30-um rdf:type owl:NamedIndividual ,
@@ -2662,16 +2982,6 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-0.30-um"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.355-mm
-:less-than-0.355-mm rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-0.355" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "mm" ;
-			svu:isNoun false ;
-			skos:prefLabel "less-than-0.355-mm"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.35-mm
 :less-than-0.35-mm rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -2682,15 +2992,15 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-0.35-mm"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.3-mm
-:less-than-0.3-mm rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.355-mm
+:less-than-0.355-mm rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
 			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-0.3" ;
+			svu:hasValue "less-than-0.355" ;
 			svu:hasUnits "L" ;
 			svu:hasAssignedUnits "mm" ;
 			svu:isNoun false ;
-			skos:prefLabel "less-than-0.3-mm"@en .
+			skos:prefLabel "less-than-0.355-mm"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.425-mm
 :less-than-0.425-mm rdf:type owl:NamedIndividual ,
@@ -2722,16 +3032,6 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-0.6-mm"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.71-mm
-:less-than-0.71-mm rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-0.71" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "mm" ;
-			svu:isNoun false ;
-			skos:prefLabel "less-than-0.71-mm"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.7-um
 :less-than-0.7-um rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -2742,6 +3042,16 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-0.7-um"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.71-mm
+:less-than-0.71-mm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#diameter> ;
+			svu:hasValue "less-than-0.71" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "mm" ;
+			svu:isNoun false ;
+			skos:prefLabel "less-than-0.71-mm"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-0.85-mm
 :less-than-0.85-mm rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -2751,6 +3061,16 @@
 			svu:hasAssignedUnits "mm" ;
 			svu:isNoun false ;
 			skos:prefLabel "less-than-0.85-mm"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-1-mm
+:less-than-1-mm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#diameter> ;
+			svu:hasValue "less-than-1" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "mm" ;
+			svu:isNoun false ;
+			skos:prefLabel "less-than-1-mm"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-1.18-mm
 :less-than-1.18-mm rdf:type owl:NamedIndividual ,
@@ -2822,16 +3142,6 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-106-mm"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-11.2-mm
-:less-than-11.2-mm rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-11.2" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "mm" ;
-			svu:isNoun false ;
-			skos:prefLabel "less-than-11.2-mm"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-11-um
 :less-than-11-um rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -2841,6 +3151,16 @@
 			svu:hasAssignedUnits "um" ;
 			svu:isNoun false ;
 			skos:prefLabel "less-than-11-um"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-11.2-mm
+:less-than-11.2-mm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#diameter> ;
+			svu:hasValue "less-than-11.2" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "mm" ;
+			svu:isNoun false ;
+			skos:prefLabel "less-than-11.2-mm"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-12.5-mm
 :less-than-12.5-mm rdf:type owl:NamedIndividual ,
@@ -2932,16 +3252,6 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-180-mm"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-192-mm
-:less-than-192-mm rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-192" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "mm" ;
-			svu:isNoun false ;
-			skos:prefLabel "less-than-192-mm"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-19-mm
 :less-than-19-mm rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -2952,15 +3262,25 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-19-mm"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-1-mm
-:less-than-1-mm rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-192-mm
+:less-than-192-mm rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
 			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-1" ;
+			svu:hasValue "less-than-192" ;
 			svu:hasUnits "L" ;
 			svu:hasAssignedUnits "mm" ;
 			svu:isNoun false ;
-			skos:prefLabel "less-than-1-mm"@en .
+			skos:prefLabel "less-than-192-mm"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-2-mm
+:less-than-2-mm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#diameter> ;
+			svu:hasValue "less-than-2" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "mm" ;
+			svu:isNoun false ;
+			skos:prefLabel "less-than-2-mm"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-2.36-mm
 :less-than-2.36-mm rdf:type owl:NamedIndividual ,
@@ -2982,16 +3302,6 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-2.38-mm"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-2.83-mm
-:less-than-2.83-mm rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-2.83" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "mm" ;
-			svu:isNoun false ;
-			skos:prefLabel "less-than-2.83-mm"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-2.8-mm
 :less-than-2.8-mm rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -3001,6 +3311,16 @@
 			svu:hasAssignedUnits "mm" ;
 			svu:isNoun false ;
 			skos:prefLabel "less-than-2.8-mm"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-2.83-mm
+:less-than-2.83-mm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#diameter> ;
+			svu:hasValue "less-than-2.83" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "mm" ;
+			svu:isNoun false ;
+			skos:prefLabel "less-than-2.83-mm"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-2048-mm
 :less-than-2048-mm rdf:type owl:NamedIndividual ,
@@ -3022,16 +3342,6 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-22.4-mm"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-256-mm
-:less-than-256-mm rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-256" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "mm" ;
-			svu:isNoun false ;
-			skos:prefLabel "less-than-256-mm"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-25-mm
 :less-than-25-mm rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -3042,6 +3352,16 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-25-mm"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-256-mm
+:less-than-256-mm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#diameter> ;
+			svu:hasValue "less-than-256" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "mm" ;
+			svu:isNoun false ;
+			skos:prefLabel "less-than-256-mm"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-26.5-mm
 :less-than-26.5-mm rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -3051,16 +3371,6 @@
 			svu:hasAssignedUnits "mm" ;
 			svu:isNoun false ;
 			skos:prefLabel "less-than-26.5-mm"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-2-mm
-:less-than-2-mm rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-2" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "mm" ;
-			svu:isNoun false ;
-			skos:prefLabel "less-than-2-mm"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-3.35-mm
 :less-than-3.35-mm rdf:type owl:NamedIndividual ,
@@ -3122,6 +3432,16 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-384-mm"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-4-mm
+:less-than-4-mm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#diameter> ;
+			svu:hasValue "less-than-4" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "mm" ;
+			svu:isNoun false ;
+			skos:prefLabel "less-than-4-mm"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-4.75-mm
 :less-than-4.75-mm rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -3141,16 +3461,6 @@
 			svu:hasAssignedUnits "mm" ;
 			svu:isNoun false ;
 			skos:prefLabel "less-than-45-mm"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-4-mm
-:less-than-4-mm rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-4" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "mm" ;
-			svu:isNoun false ;
-			skos:prefLabel "less-than-4-mm"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#less-than-5.6-mm
 :less-than-5.6-mm rdf:type owl:NamedIndividual ,
@@ -3302,129 +3612,6 @@
 			svu:isNoun false ;
 			skos:prefLabel "less-than-96-mm"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#pm1
-:pm1 rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-1" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "um" ;
-			svu:isNoun false ;
-			skos:prefLabel "pm1"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#pm10
-:pm10 rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-10" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "um" ;
-			svu:isNoun false ;
-			skos:prefLabel "pm10"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#pm2p5
-:pm2p5 rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#diameter> ;
-			svu:hasValue "less-than-2p5" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "um" ;
-			svu:isNoun false ;
-			skos:prefLabel "pm2p5"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#0-to-60-mph
-:0-to-60-mph rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#velocity> ;
-			svu:hasValue "0-to-60" ;
-			svu:hasUnits "L T^-1" ;
-			svu:hasAssignedUnits "mph" ;
-			svu:isNoun false ;
-			skos:prefLabel "0-to-60-mph"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#2x-critical-level
-:2x-critical-level rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#level> ;
-			svu:hasValue "2x-critical" ;
-			svu:isNoun false ;
-			skos:prefLabel "2x-critical-level"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#boiling-point
-:boiling-point rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#temperature> ;
-			svu:hasValue "boiling-point" ;
-			svu:hasUnits "O" ;
-			svu:isNoun false ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Boiling_point" ;
-			skos:prefLabel "boiling-point"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#bubble-point
-:bubble-point rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#temperature> ;
-			svu:hasValue "bubble-point" ;
-			svu:hasUnits "O" ;
-			svu:isNoun false ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Bubble_point" ;
-			skos:prefLabel "bubble-point"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#critical-point
-:critical-point rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#temperature> ;
-			svu:hasValue "critical-state" ;
-			svu:hasUnits "O" ;
-			svu:isNoun false ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Critical_point_(thermodynamics)" ;
-			skos:prefLabel "critical-point"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#dew-point
-:dew-point rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#temperature> ;
-			svu:hasValue "dew-point" ;
-			svu:hasUnits "O" ;
-			svu:isNoun false ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Dew_point" ;
-			skos:prefLabel "dew-point"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#freezing-point
-:freezing-point rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#temperature> ;
-			svu:hasValue "freezing-point" ;
-			svu:hasUnits "O" ;
-			svu:isNoun false ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Melting_point" ;
-			skos:prefLabel "freezing-point"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#frost-point
-:frost-point rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#temperature> ;
-			svu:hasValue "frost-point" ;
-			svu:hasUnits "O" ;
-			svu:isNoun false ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Dew_point#Frost_point" ;
-			skos:prefLabel "frost-point"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#high-level
-:high-level rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#level> ;
-			svu:hasValue "high" ;
-			svu:isNoun false ;
-			skos:prefLabel "high-level"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#highest-tenth
-:highest-tenth rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:hasValue "highest-tenth" ;
-			svu:isNoun false ;
-			skos:prefLabel "highest-tenth"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/attribute#low-level
 :low-level rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -3433,6 +3620,16 @@
 			svu:isNoun false ;
 			skos:prefLabel "low-level"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#manufactured-in-2008
+:manufactured-in-2008 rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#manufacture_year> ;
+			svu:hasValue "2008" ;
+			svu:hasUnits "T" ;
+			svu:hasAssignedUnits "year" ;
+			svu:isNoun false ;
+			skos:prefLabel "manufactured-in-2008"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#mean-sea-level
 :mean-sea-level rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -3440,6 +3637,8 @@
 			svu:hasValue "mean-sea" ;
 			svu:hasUnits "L" ;
 			svu:isNoun false ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sea_level" ;
+			skos:altLabel "msl"@en ;
 			skos:prefLabel "mean-sea-level"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#melting-point
@@ -3452,27 +3651,6 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Melting_point" ;
 			skos:prefLabel "melting-point"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#stp
-:stp rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#temperature> ;
-			svu:correspondsToProperty <property#pressure> ;
-			svu:hasValue "standard" ;
-			svu:isNoun false ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Standard_conditions_for_temperature_and_pressure" ;
-			skos:altLabel "standard temperature and pressure"@en ;
-			skos:prefLabel "stp"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#wilting-point
-:wilting-point rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#temperature> ;
-			svu:hasValue "wilting-point" ;
-			svu:hasUnits "O" ;
-			svu:isNoun false ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Permanent_wilting_point" ;
-			skos:prefLabel "wilting-point"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/attribute#north
 :north rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -3481,33 +3659,6 @@
 			svu:isNoun false ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/North" ;
 			skos:prefLabel "north"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#south
-:south rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#cardinal_direction> ;
-			svu:hasValue "south" ;
-			svu:isNoun false ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/South" ;
-			skos:prefLabel "south"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#east
-:east rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#cardinal_direction> ;
-			svu:hasValue "east" ;
-			svu:isNoun false ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/East" ;
-			skos:prefLabel "east"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#west
-:west rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#cardinal_direction> ;
-			svu:hasValue "west" ;
-			svu:isNoun false ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/West" ;
-			skos:prefLabel "west"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#north%7Egeodetic
 :north%7Egeodetic rdf:type owl:NamedIndividual ,
@@ -3546,6 +3697,60 @@
 			svu:hasAttribute <attribute#virtual> ;
 			skos:prefLabel "north~virtual"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#pm1
+:pm1 rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#diameter> ;
+			svu:hasValue "less-than-1" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "um" ;
+			svu:isNoun false ;
+			skos:prefLabel "pm1"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#pm10
+:pm10 rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#diameter> ;
+			svu:hasValue "less-than-10" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "um" ;
+			svu:isNoun false ;
+			skos:prefLabel "pm10"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#pm2p5
+:pm2p5 rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#diameter> ;
+			svu:hasValue "less-than-2p5" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "um" ;
+			svu:isNoun false ;
+			skos:prefLabel "pm2p5"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#potential-temperature
+:potential-temperature rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#temperature> ;
+			svu:hasUnits "O" ;
+			svu:isNoun false ;
+			skos:prefLabel "potential-temperature"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#sea-presence
+:sea-presence rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#presence> ;
+			svu:isNoun false ;
+			skos:prefLabel "sea"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#south
+:south rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#cardinal_direction> ;
+			svu:hasValue "south" ;
+			svu:isNoun false ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/South" ;
+			skos:prefLabel "south"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#south%7Emagnetic
 :south%7Emagnetic rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -3564,112 +3769,32 @@
 			svu:hasAttribute <attribute#terrestrial> ;
 			skos:prefLabel "south~terrestrial"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#land-presence
-:land-presence rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#presence> ;
-			svu:isNoun false ;
-			skos:prefLabel "land-presence"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#sea-presence
-:sea-presence rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#presence> ;
-			svu:isNoun false ;
-			skos:prefLabel "sea-presence"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#potential-temperature
-:potential-temperature rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/attribute#stp
+:stp rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
 			svu:correspondsToProperty <property#temperature> ;
+			svu:correspondsToProperty <property#pressure> ;
+			svu:hasValue "standard" ;
+			svu:isNoun false ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Standard_conditions_for_temperature_and_pressure" ;
+			skos:altLabel "standard temperature and pressure"@en ;
+			skos:prefLabel "stp"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#west
+:west rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#cardinal_direction> ;
+			svu:hasValue "west" ;
+			svu:isNoun false ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/West" ;
+			skos:prefLabel "west"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#wilting-point
+:wilting-point rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#temperature> ;
+			svu:hasValue "wilting-point" ;
 			svu:hasUnits "O" ;
 			svu:isNoun false ;
-			skos:prefLabel "potential-temperature"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#manufactured-in-2008
-:manufactured-in-2008 rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#manufacture_year> ;
-			svu:hasValue "2008" ;
-			svu:hasUnits "T" ;
-			svu:hasAssignedUnits "year" ;
-			svu:isNoun false ;
-			skos:prefLabel "manufactured-in-2008"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#400-to-600nm
-:400-to-600nm rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#wavelength> ;
-			svu:hasValue "400-to-600" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "nm" ;
-			svu:isNoun false ;
-			skos:prefLabel "400-to-600nm"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#780-to-900nm
-:780-to-900nm rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#wavelength> ;
-			svu:hasValue "780-to-900" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "nm" ;
-			svu:isNoun false ;
-			skos:prefLabel "780-to-900nm"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#254nm
-:254nm rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#wavelength> ;
-			svu:hasValue "254" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "nm" ;
-			svu:isNoun false ;
-			skos:prefLabel "254nm"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#10m
-:10m rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#length> ;
-			svu:hasValue "10" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "m" ;
-			svu:isNoun false ;
-			skos:prefLabel "10m"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#1m
-:1m rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#length> ;
-			svu:hasValue "1" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "m" ;
-			svu:isNoun false ;
-			skos:prefLabel "1m"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#1m
-:1m rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#length> ;
-			svu:hasValue "1" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "m" ;
-			svu:isNoun false ;
-			skos:prefLabel "1m"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#clockwise
-:clockwise rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#orientation> ;
-			svu:hasValue "clockwise" ;
-			svu:isNoun false ;
-			skos:prefLabel "clockwise"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#25ft
-:25ft rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#length> ;
-			svu:hasValue "25" ;
-			svu:hasUnits "L" ;
-			svu:hasAssignedUnits "ft" ;
-			svu:isNoun false ;
-			skos:prefLabel "25ft"@en .
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Permanent_wilting_point" ;
+			skos:prefLabel "wilting-point"@en .

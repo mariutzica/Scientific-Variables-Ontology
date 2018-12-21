@@ -120,6 +120,7 @@ csn.loc[ cond_obj0, 'object_id'] = 'airplane'
 csn.loc[ cond_obj0, 'object_pref'] = 'body'
 csn.loc[ cond_obj0, 'object_cat'] = 'root'
 csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'airplane_wingspan'
+csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'phenomenon'
 csn.loc[ cond_obj0 & cond_obj1, 'object_label'] = 'airplane_wingspan'
 csn.loc[ cond_obj0, ['object0','object1']] = ''
 
@@ -327,10 +328,6 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
         'quantity_label'] = \
         csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
         'quantity_label'].str.replace('total_','')
-csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
-        'quantity_id'] = \
-        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
-        'quantity_label'].str.replace('of_velocity','of_linear_velocity')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
         ['object0','object1','object2']] = ''
 
@@ -923,6 +920,8 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_cat'] = ''
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_pref'] = 'phenomenon'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'quantity_label'] = 'number_capacity'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'quantity_id'] = 'number_capacity'
 cond_quant = csn['quantity'].str.contains('seating_capacity')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_pref'] = 'phenomenon'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
@@ -938,12 +937,14 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_pref'] = 'phenomenon'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = 'automobile_turning'
 cond_quant = csn['quantity'].str.contains('wheelbase')
-csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_pref'] = 'abstraction'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']='automobile_wheelbase'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_label']='automobile_wheelbase'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref']='phenomenon'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'] = 'length'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_id'] = 'length'
 cond_quant = csn['quantity'].str.contains('travel')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_pref'] = 'phenomenon'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
@@ -1782,7 +1783,6 @@ cond_obj0 = csn['object0'] == 'channel'
 cond_obj1 = csn['object1'] == 'exit'
 cond_obj2 = csn['object2'] == 'center'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'channel@context~part_(exit_center)'
-csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_pref'] = 'abstraction'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_cat'] = 'root'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         ['object0','object1','object2']] = ''
@@ -1995,6 +1995,7 @@ cond_obj0 = csn['object0'] == 'channel'
 cond_obj1 = csn['object1'] == 'x-section'
 cond_obj2 = csn['object2'] == 'parabola'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'channel_x-section_parabola'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'quantity_id'] = 'unspecified_coefficient'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         ['object0','object1','object2']] = ''
 
@@ -2535,7 +2536,6 @@ cond_obj0 = csn['object0'] == 'earth'
 cond_obj2 = csn['object2'] == 'boundary'
 csn.loc[ cond_obj0 & cond_obj2, 'object_id'] = 'earth_'+\
     'boundary~' + csn.loc[ cond_obj0 & cond_obj2, 'object1']
-csn.loc[ cond_obj0 & cond_obj2, 'object_pref'] = 'body'
 csn.loc[ cond_obj0 & cond_obj2, ['object0','object1','object2']] = ''
 
 #earth_core~...
@@ -3276,9 +3276,6 @@ cond_quant = csn['quantity'].str.contains('set_')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'object_id'] = \
         '(earth_surface_viewpoint)@reference~at_('+\
         csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, 'object3']+'_setting)'
-csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = \
-        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id']\
-        .str.replace('mercury','body~mercury')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         ['object0','object1','object2','object3']] = ''
 
@@ -4621,7 +4618,7 @@ csn.loc[ cond_obj0 & cond_obj1, ['object0','object1','object2','object3']] = ''
 
 #mercury_axis
 cond_obj0 = csn['object0'] == 'mercury'
-csn.loc[ cond_obj0, 'object_id'] = 'body~mercury_axis_precession'
+csn.loc[ cond_obj0, 'object_id'] = 'mercury_axis_precession'
 csn.loc[ cond_obj0, ['object0','object1']] = ''
 
 #oscillator
@@ -4664,18 +4661,26 @@ cond_quant = csn['quantity'].str.contains('vacuum_electrical')
 csn.loc[ cond_obj0 & cond_quant, 'object_id'] = 'physics@context~in_(vacuum@context~in_radiation~electromagnetic)'
 csn.loc[ cond_obj0 & cond_quant, \
         'quantity_label'] = 'electrical_impedance_constant'
+csn.loc[ cond_obj0 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('vacuum_light')
 csn.loc[ cond_obj0 & cond_quant, 'object_id'] = 'physics@context~in_(vacuum@context~in_radiation~electromagnetic)'
 csn.loc[ cond_obj0 & cond_quant, \
         'quantity_label'] = 'speed_constant'
+csn.loc[ cond_obj0 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('vacuum_magnetic')
 csn.loc[ cond_obj0 & cond_quant, 'object_id'] = 'physics@context~in_vacuum'
 csn.loc[ cond_obj0 & cond_quant, \
         'quantity_label'] = 'magnetic_permeability_constant'
+csn.loc[ cond_obj0 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('vacuum_permittivity')
 csn.loc[ cond_obj0 & cond_quant, 'object_id'] = 'physics@context~in_vacuum'
 csn.loc[ cond_obj0 & cond_quant, \
         'quantity_label'] = 'permittivity_constant'
+csn.loc[ cond_obj0 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 csn.loc[ cond_obj0, 'quantity_label' ] = \
         csn.loc[ cond_obj0, 'quantity_label' ]\
         .str.replace('atomic_mass','atomic-mass')\
@@ -4722,30 +4727,44 @@ cond_quant = csn['quantity'].str.contains('acceleration')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_acceleration'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('drag_')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_dragging'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('lift_')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_lift'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('firing')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_firing'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('flight')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = \
     csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_flight'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('impact')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = \
     csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_impaction'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('roll_rotation')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = \
     csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_rolling_rotation'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('_plus_')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'] = \
     'sum_of_kinetic_energy_and_potential_energy'
@@ -5774,30 +5793,40 @@ cond_quant = csn['quantity'].str.contains('blowing')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_blowing'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('mass-specific_isobaric')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'] = \
         'isobaric_mass-specific_heat_capacity'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_isobaric-process'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('mass-specific_isochoric')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'quantity_label'] = 'isochoric_mass-specific_heat_capacity'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_isochoric-process'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('volume-specific_isobaric')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'] = \
         'isobaric_volume-specific_heat_capacity'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_isobaric-process'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('volume-specific_isochoric')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'] = \
         'isochoric_volume-specific_heat_capacity'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_isochoric-process'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
 
 #snow~wet_X
@@ -5817,14 +5846,20 @@ cond_quant = csn['quantity'].str.contains('desublimation')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'@context~in_(snow_desublimation)'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity_label'].str.startswith('sublimation')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'@context~in_(snow_sublimation)'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('melt_')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'@context~in_(snow_melting)'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('isobaric')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'] = \
         csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label']\
@@ -5832,14 +5867,20 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'] = \
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_isobaric-process'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('isothermal')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_isothermal-process'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('isentropic')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_isentropic-process'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('liquid-equivalent')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'] = \
         csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label']\
@@ -5861,6 +5902,8 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'] = \
         'conduction_heat_energy_flux'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = '(snowpack_bottom)@role~medium_conduction'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 csn.loc[ cond_obj0 & cond_obj1, ['object0','object1','object2']] = ''
 
 #snowpack_core
@@ -6011,33 +6054,45 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
 cond_quant = csn['quantity'].str.contains('thaw')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = 'soil_thaw'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('freeze')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = 'soil_freezing'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('mass-specific_isochoric')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'quantity_label'] = 'isochoric_mass-specific_heat_capacity'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_isochoric-process'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('mass-specific_isobaric')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'quantity_label'] = 'isobaric_mass-specific_heat_capacity'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_isobaric-process'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('volume-specific_isochoric')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'quantity_label'] = 'isochoric_volume-specific_heat_capacity'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_isochoric-process'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('volume-specific_isobaric')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'quantity_label'] = 'isobaric_volume-specific_heat_capacity'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id']+'_isobaric-process'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_pref'] = 'phenomenon'
 csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
 
 #soil_air
@@ -6072,7 +6127,7 @@ cond_obj0 = csn['object0'] == 'soil'
 cond_obj1 = csn['object1'] == 'permafrost'
 cond_obj2 = csn['object2'] != ''
 csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'soil_permafrost'
-csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'body'
+csn.loc[ cond_obj0 & cond_obj1 & ~cond_obj2, 'object_pref'] = 'matter'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'soil_permafrost_'+\
     csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object2'] 
 csn.loc[ cond_obj0 & cond_obj1,['object0','object1','object2']] = ''
@@ -6082,7 +6137,7 @@ cond_obj0 = csn['object0'] == 'soil'
 cond_obj1 = csn['object1'].str.contains('zone')
 cond_obj2 = csn['object2'] != ''
 cond_quant = csn['quantity'].str.contains('recharge')
-csn.loc[ cond_obj0 & cond_obj1 & ~cond_quant, 'object_pref'] = 'body'
+csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'body'
 csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'soil_'+\
     csn.loc[ cond_obj0 & cond_obj1, 'object1']
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'soil_'+\
@@ -6383,14 +6438,20 @@ csn.loc[ cond_obj0 & cond_quant , 'quantity_label'] = \
         'standard_gravitational_acceleration'
 cond_obj1 = csn['object1'].str.contains('orbit')
 csn.loc[ cond_obj0 & cond_obj1,'object_id'] = 'venus_orbit'
+csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'phenomenon'
 cond_obj1 = csn['object1'].str.contains('-to-')
 csn.loc[ cond_obj0 & cond_obj1,'object_id'] = '(venus_orbit)@role~first_(venus_ecliptic)@role~second'
+csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('aphelion')
 csn.loc[ cond_obj0 & cond_quant, 'object_id'] = \
     csn.loc[ cond_obj0 & cond_quant, 'object_id']+'_aphelion'
+csn.loc[ cond_obj0 & cond_quant, 'object_label'] = \
+    csn.loc[ cond_obj0 & cond_quant, 'object_label']+'_aphelion'
 cond_quant = csn['quantity'].str.contains('perihelion')
 csn.loc[ cond_obj0 & cond_quant, 'object_id'] = \
     csn.loc[ cond_obj0 & cond_quant, 'object_id']+'_perihelion'
+csn.loc[ cond_obj0 & cond_quant, 'object_label'] = \
+    csn.loc[ cond_obj0 & cond_quant, 'object_label']+'_perihelion'
 cond_quant = csn['quantity'].str.contains('ecliptic')
 csn.loc[ cond_obj0 & cond_quant, 'object_id'] = \
     csn.loc[ cond_obj0 & cond_quant, 'object_id']+'_ecliptic'
@@ -6591,31 +6652,41 @@ cond_obj0 = csn['object0'] == ''
 csn2 = csn.loc[ ~cond_obj0 ].copy()
 csn = csn.loc[ cond_obj0 ]
 csn=csn.fillna('')
+
 csn.loc[csn['quantity_id']=='','quantity_id'] = \
-    csn.loc[csn['quantity_id']=='','quantity_label']\
+    csn.loc[csn['quantity_id']=='','quantity_label']
+
+csn.loc[csn['operator']!='','quantity_id'] = csn.loc[csn['operator']!='','operator']+'_of_'+csn.loc[csn['operator']!='','quantity_id']
+csn.loc[csn['operator']!='','quantity_label'] = csn.loc[csn['operator']!='','operator']+'_of_'+csn.loc[csn['operator']!='','quantity_label']
+
+csn['quantity_id'] = \
+    csn['quantity_id']\
     .str.replace('salinity','absolute_salinity')\
-    .str.replace('of_momentum','of_linear_momentum')\
-    .str.replace('of_viscosity','of_dynamic_viscosity')\
-    .str.replace('of_speed','of_linear_speed')\
     .str.replace('heat_diffusion_coefficient','thermal_diffusivity')\
     .str.replace('diffusion_coefficient','diffusivity')\
     .str.replace('relative_molecular_mass_ratio','molecular_mass_ratio')\
+    .str.replace('relative_atomic_mass_ratio','atomic_mass_ratio')\
     .str.replace('extensional_viscosity','extensional_kinematic_viscosity')\
     .str.replace('leq-','leq_')\
     .str.replace('relative_hydraulic_conductivity','hydraulic_conductivity_ratio')\
     .str.replace('dynamic_shear_viscosity','shear_dynamic_viscosity')\
     .str.replace('magazine-safety','magazine_safety')\
-    .str.replace('relative_magnetic_permeability','magnetic_permeability_ratio')\
-    .str.replace('relative_permittivity','permittivity_ratio')\
-    .str.replace('manning','manning-formula')\
     .str.replace('relative_hydraulic_roughness','hydraulic_roughness_ratio')\
     .str.replace('relative_saturation','saturation_ratio')\
+    .str.replace('depth-times-slope','product_of_depth_and_slope')\
+    .str.replace('precipitation_mass-per-volume_density','mass-per-volume_density')\
+    .str.replace('manning','manning-formula')\
+    .str.replace('relative_magnetic_permeability','magnetic_permeability_ratio')\
+    .str.replace('of_momentum','of_linear_momentum')\
+    .str.replace('of_viscosity','of_dynamic_viscosity')\
+    .str.replace('of_speed','of_linear_speed')\
+    .str.replace('of_velocity','of_linear_velocity')\
     .str.replace('one-hour','hourly').str.replace('one-day','daily')\
     .str.replace('one-month','monthly').str.replace('one-year','yearly')\
-    .str.replace('depth-times-slope','product_of_depth_and_slope')
+    .str.replace('relative_permittivity','permittivity_ratio')\
+    .str.replace('_\(en\)','').str.replace('network','network_name')\
+    .str.replace('surface_area','area')
 
-csn.loc[csn['operator']!='','quantity_id'] = csn.loc[csn['operator']!='','operator']+'_of_'+csn.loc[csn['operator']!='','quantity_id']
-csn.loc[csn['operator']!='','quantity_label'] = csn.loc[csn['operator']!='','operator']+'_of_'+csn.loc[csn['operator']!='','quantity_label']
 csn['variable_label'] = csn['object_label']+'__'+csn['quantity_label']
 csn['variable_id'] = csn['object_id']+'__'+csn['quantity_id']
 cols_to_print = ['full_name','variable_id','variable_label','object_cat','object_id','object_label','object_pref','quantity_id','quantity_label']

@@ -8,7 +8,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @base <http://www.geoscienceontology.org/svo/svl/> .
 
-<http://www.geoscienceontology.org/svl/body> rdf:type owl:Ontology ;
+<http://www.geoscienceontology.org/svo/svl/body> rdf:type owl:Ontology ;
 				rdfs:comment " Scientific Variables Lower Ontology, Body BETA VERSION 1.0." .
 #				owl:imports <http://www.geoscienceontology.org/svo/svu> .
 
@@ -17,16 +17,83 @@
 #    Body   
 # 
 #################################################################
-##Last generated on: 2018-11-27 19:26
+##Last generated on: 2018-12-20 21:07
 
 ###Inanimate Natural Body
 
 
-###  http://www.geoscienceontology.org/svo/svl/body#body
-:body rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#alpha-particle
+:alpha-particle rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Physical_body" ;
-			skos:prefLabel "body"@en .
+			svu:hasForm <form#particle> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Alpha_particle" ;
+			skos:prefLabel "alpha-particle"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#ammonium
+:ammonium rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#ion> ;
+			svu:hasMatter <matter#ammonium> ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Ammonium" ;
+			skos:prefLabel "ammonium"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#arsenate-ion
+:arsenate-ion rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#ion> ;
+			svu:hasMatter <matter#arsenate> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Arsenate" ;
+			skos:altLabel "AsO43-"@en ;
+			skos:prefLabel "arsenate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#arsenite-ion
+:arsenite-ion rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#ion> ;
+			svu:hasMatter <matter#arsenite> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Arsenite" ;
+			skos:prefLabel "arsenite"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#atmosphere
+:atmosphere rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Atmosphere" ;
+			skos:prefLabel "atmosphere"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#atmosphere_air
+:atmosphere_air rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasBody <body#atmosphere> ;
+			svu:hasMatter <matter#air> ;
+			skos:prefLabel "atmosphere_air"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#atmosphere_bottom
+:atmosphere_bottom rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#bottom> ;
+			svu:hasBody <body#atmosphere> ;
+			skos:prefLabel "atmosphere_bottom"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#atmosphere_bottom_air
+:atmosphere_bottom_air rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasBody <body#atmosphere_bottom> ;
+			svu:hasMatter <matter#air> ;
+			skos:prefLabel "atmosphere_bottom_air"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#atmosphere_top
+:atmosphere_top rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#top> ;
+			svu:hasBody <body#atmosphere> ;
+			skos:prefLabel "atmosphere_top"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#automobile_bottom
+:automobile_bottom rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#bottom> ;
+			svu:hasBody <body#automobile> ;
+			skos:prefLabel "automobile_bottom"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#basin
 :basin rdf:type owl:NamedIndividual ,
@@ -55,433 +122,19 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Bedrock" ;
 			skos:prefLabel "bedrock"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#distributary
-:distributary rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Distributary" ;
-			skos:prefLabel "distributary"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#distributary-network
-:distributary-network rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#network> ;
-			svu:hasBody <body#distributary> ;
-			skos:prefLabel "distributary-network"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#delta
-:delta rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/River_delta" ;
-			skos:prefLabel "delta"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#delta_front_toe
-:delta_front_toe rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#front_toe> ;
-			svu:hasBody <body#delta> ;
-			skos:prefLabel "delta_front_toe"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#delta%7Esubaerial
-:delta%7Esubaerial rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isTypeOf :delta ;
-			svu:hasAttribute <attribute#subaerial> ;
-			skos:prefLabel "delta~subaerial"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#delta%7Esubaqueous
-:delta%7Esubaqueous rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isTypeOf :delta ;
-			svu:hasAttribute <attribute#subaqueous> ;
-			skos:prefLabel "delta~subaqueous"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#delta_beds%7Ebottomset
-:delta_beds%7Ebottomset rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#beds%7Ebottomset> ;
-			svu:hasBody <body#delta> ;
-			skos:prefLabel ""@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#delta_beds%7Eforeset
-:delta_beds%7Eforeset rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#beds%7Eforeset> ;
-			svu:hasBody <body#delta> ;
-			skos:prefLabel ""@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#delta_beds%7Etopset
-:delta_beds%7Etopset rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#beds%7Etopset> ;
-			svu:hasBody <body#delta> ;
-			skos:prefLabel ""@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#delta_beds%7Etopset%7Elower
-:delta_beds%7Etopset%7Elower rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#beds%7Etopset%7Elower> ;
-			svu:hasBody <body#delta> ;
-			skos:prefLabel ""@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#delta_beds%7Etopset%7Eupper
-:delta_beds%7Etopset%7Eupper rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#beds%7Etopset%7Eupper> ;
-			svu:hasBody <body#delta> ;
-			skos:prefLabel ""@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#delta_front
-:delta_front rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#front> ;
-			svu:hasBody <body#delta> ;
-			skos:prefLabel ""@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#ground
-:ground rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Earth#Surface" ;
-			skos:prefLabel "ground"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#iceberg
-:iceberg rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Iceberg" ;
-			skos:altLabel "ice_mountain"@en ;
-			skos:prefLabel "iceberg"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#icebergs
-:icebergs rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isPluralityOf :iceberg ;
-			skos:prefLabel "icebergs"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#lake
-:lake rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Lake" ;
-			skos:prefLabel "lake"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#land_subsurface_sat-zone_top
-:land_subsurface_sat-zone_top rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#subsurface_sat-zone_top> ;
-			svu:hasBody <body#land> ;
-			skos:prefLabel "land_subsurface_sat-zone_top"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#land
-:land rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Land" ;
-			skos:prefLabel "land"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#grassland
-:grassland rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Grassland" ;
-			svu:isTypeOf :land ;
-			skos:prefLabel "grassland"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#pasture
-:pasture rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Pasture" ;
-			svu:isTypeOf :land ;
-			skos:prefLabel "pasture"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#parkland
-:parkland rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Park" ;
-			svu:isTypeOf :land ;
-			skos:prefLabel "parkland"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#land%7Evegetated
-:land%7Evegetated rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isTypeOf :land ;
-			svu:hasAttribute <attribute#vegetated> ;
-			skos:prefLabel "land~vegetated"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#ocean
-:ocean rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Ocean" ;
-			skos:prefLabel "ocean"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#plain
-:plain rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Plain" ;
-			svu:isTypeOf :land ;
-			skos:prefLabel "plain"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#plain%7Eupper
-:plain%7Eupper rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isTypeOf :plain ;
-			svu:hasAttribute <attribute#upper> ;
-			skos:prefLabel "plain~upper"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#planet
-:planet rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Planet" ;
-			skos:prefLabel "planet"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#earth
-:earth rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Earth" ;
-			svu:isTypeOf :planet ;
-			skos:prefLabel "earth"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#earth_crust
-:earth_crust rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#crust> ;
-			svu:hasBody <body#earth> ;
-			skos:prefLabel "earth_crust"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#earth_boundary%7Ecore-mantle
-:earth_boundary%7Ecore-mantle rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#boundary%7Ecore-mantle%20> ;
-			svu:hasBody <body#earth> ;
-			skos:prefLabel "earth_boundary~core-mantle"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#earth_boundary%7Ecrust-mantle
-:earth_boundary%7Ecrust-mantle rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#boundary%7Ecrust-mantle%20> ;
-			svu:hasBody <body#earth> ;
-			skos:prefLabel "earth_boundary~crust-mantle"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#earth_boundary%7Elithosphere-asthenosphere
-:earth_boundary%7Elithosphere-asthenosphere rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#boundary%7Elithosphere-asthenosphere%20> ;
-			svu:hasBody <body#earth> ;
-			skos:prefLabel "earth_boundary~lithosphere-asthenosphere"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#earth_core%7Einner
-:earth_core%7Einner rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#core%7Einner> ;
-			svu:hasBody <body#earth> ;
-			skos:prefLabel "earth_core~inner"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#earth_core%7Eouter
-:earth_core%7Eouter rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#core%7Eouter> ;
-			svu:hasBody <body#earth> ;
-			skos:prefLabel "earth_core~outer"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#jupiter
-:jupiter rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Jupiter" ;
-			svu:isTypeOf :planet ;
-			skos:prefLabel "jupiter"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#mars
-:mars rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Mars" ;
-			svu:isTypeOf :planet ;
-			skos:prefLabel "mars"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#body%7Emercury
-:body%7Emercury rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mercury_(planet)" ;
-			svu:isTypeOf :planet ;
-			skos:prefLabel "mercury"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#neptune
-:neptune rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Neptune" ;
-			svu:isTypeOf :planet ;
-			skos:prefLabel "neptune"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#saturn
-:saturn rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Saturn" ;
-			svu:isTypeOf :planet ;
-			skos:prefLabel "saturn"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#uranus
-:uranus rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Uranus" ;
-			svu:isTypeOf :planet ;
-			skos:prefLabel "uranus"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#venus
-:venus rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Venus" ;
-			svu:isTypeOf :planet ;
-			skos:prefLabel "venus"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#moon
-:moon rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Natural_satellite" ;
-			skos:altLabel "natural-satellite"@en ;
-			skos:prefLabel "moon"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#titan
-:titan rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Titan_(moon)" ;
-			svu:isTypeOf :natural-satellite ;
-			skos:prefLabel "titan"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#sea
-:sea rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Sea" ;
-			skos:prefLabel "sea"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#sea_photic-zone_bottom
-:sea_photic-zone_bottom rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#bottom> ;
-			svu:hasBody <body#sea_photic-zone> ;
-			skos:prefLabel "sea_photic-zone_bottom"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#sea_zone%7Eaphotic
-:sea_zone%7Eaphotic rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#zone%7Eaphotic> ;
-			svu:hasBody <body#sea> ;
-			skos:prefLabel "sea_zone~aphotic"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#sea_zone%7Eaphotic_top
-:sea_zone%7Eaphotic_top rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#bedrock_top
+:bedrock_top rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:hasPart <part#top> ;
-			svu:hasBody <body#sea_zone%7Eaphotic> ;
-			skos:prefLabel "sea_zone~aphotic_top"@en .
+			svu:hasBody <body#bedrock> ;
+			skos:prefLabel "bedrock_top"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#sea_zone%7Esurf
-:sea_zone%7Esurf rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#benzene_molecule
+:benzene_molecule rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasPart <part#zone%7Esurf> ;
-			svu:hasBody <body#sea> ;
-			skos:prefLabel "sea_zone~surf"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#shore
-:shore rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Shore" ;
-			skos:prefLabel "shore"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#snowpack
-:snowpack rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Snowpack" ;
-			skos:prefLabel "snowpack"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#snowpack_bottom
-:snowpack_bottom rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#bottom> ;
-			svu:hasBody <body#snowpack> ;
-			skos:prefLabel "snowpack_bottom"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#snowpack_top
-:snowpack_top rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#top> ;
-			svu:hasBody <body#snowpack> ;
-			skos:prefLabel "snowpack_top"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#snowpack_core
-:snowpack_core rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#core> ;
-			svu:hasBody <body#snowpack> ;
-			skos:prefLabel "snowpack_core"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#snowpack_crust_layer%7Efirst
-:snowpack_crust_layer%7Efirst rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#layer%7Efirst> ;
-			svu:hasBody <body#snowpack> ;
-			skos:prefLabel "snowpack_crust_layer~first"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#snowpack_crust_layer%7Esecond
-:snowpack_crust_layer%7Esecond rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#layer%7Esecond> ;
-			svu:hasBody <body#snowpack> ;
-			skos:prefLabel "snowpack_crust_layer~second"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#star
-:star rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Star" ;
-			skos:prefLabel "star"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#star%7Eneutron
-:star%7Eneutron rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Neutron_star" ;
-			svu:isTypeOf :star ;
-			skos:prefLabel "neutron-star"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#star%7Ewhite-dwarf
-:star%7Ewhite-dwarf rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/White_dwarf" ;
-			svu:isTypeOf :star ;
-			skos:prefLabel "white-dwarf"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#yellow-dwarf
-:yellow-dwarf rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/G-type_main-sequence_star" ;
-			svu:isTypeOf :star ;
-			skos:prefLabel "yellow-dwarf"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#sun
-:sun rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Sun" ;
-			svu:isTypeOf :star ;
-			skos:prefLabel "sun"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#valley
-:valley rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Valley" ;
-			skos:prefLabel "valley"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#raindrop
-:raindrop rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#droplet> ;
-			svu:hasMatter <matter#water> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Drop_(liquid)" ;
-			skos:prefLabel "raindrop"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#dust
-:dust rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Dust" ;
-			skos:prefLabel "dust"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#alpha-particle
-:alpha-particle rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#particle> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Alpha_particle" ;
-			skos:prefLabel "alpha-particle"@en .
+			svu:hasForm <form#molecule> ;
+			svu:hasMatter <matter#benzene> ;
+			skos:prefLabel "benzene_molecule"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#beta-particle
 :beta-particle rdf:type owl:NamedIndividual ,
@@ -489,31 +142,6 @@
 			svu:hasForm <form#particle> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Beta_particle" ;
 			skos:prefLabel "beta-particle"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#ammonium
-:ammonium rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#ion> ;
-			svu:hasMatter <matter#ammonium> ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Ammonium" ;
-			skos:prefLabel "ammonium"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#arsenate-ion
-:arsenate-ion rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#ion> ;
-			svu:hasMatter <matter#arsenate> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Arsenate" ;
-			skos:altLabel "AsO43-"@en ;
-			skos:prefLabel "arsenate"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#arsenite-ion
-:arsenite-ion rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#ion> ;
-			svu:hasMatter <matter#arsenite> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Arsenite" ;
-			skos:prefLabel "arsenite"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#bicarbonate-ion
 :bicarbonate-ion rdf:type owl:NamedIndividual ,
@@ -524,6 +152,12 @@
 			skos:altLabel "hydrogencarbonate"@en ;
 			skos:prefLabel "bicarbonate"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#body
+:body rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Physical_body" ;
+			skos:prefLabel "body"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#bromide-ion
 :bromide-ion rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -531,6 +165,26 @@
 			svu:hasMatter <matter#bromide> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Bromide" ;
 			skos:prefLabel "bromide"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#burgess-shale
+:burgess-shale rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Burgess_Shale" ;
+			skos:prefLabel "burgess-shale"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#burgess-shale_stratum
+:burgess-shale_stratum rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#stratum> ;
+			svu:hasBody <body#burgess-shale> ;
+			skos:prefLabel "burgess-shale_stratum"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#carbon_isotope
+:carbon_isotope rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#isotope> ;
+			svu:hasMatter <matter#carbon> ;
+			skos:prefLabel "carbon_isotope"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#carbonate
 :carbonate rdf:type owl:NamedIndividual ,
@@ -540,6 +194,13 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Carbonate" ;
 			skos:altLabel "CO3"@en ;
 			skos:prefLabel "carbonate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#cesium_atom
+:cesium_atom rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#atom> ;
+			svu:hasMatter <matter#cesium> ;
+			skos:prefLabel "cesium_atom"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#chlorate-ion
 :chlorate-ion rdf:type owl:NamedIndividual ,
@@ -573,246 +234,74 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Chromium#Chromium(VI)" ;
 			skos:prefLabel "chromium(vi)"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#fluoride-ion
-:fluoride-ion rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#delta
+:delta rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasForm <form#ion> ;
-			svu:hasMatter <matter#fluoride> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Fluoride" ;
-			skos:prefLabel "fluoride"@en .
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/River_delta" ;
+			skos:prefLabel "delta"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#hydroperoxyl-ion
-:hydroperoxyl-ion rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#delta_beds%7Ebottomset
+:delta_beds%7Ebottomset rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasForm <form#ion> ;
-			svu:hasMatter <matter#hydroperoxyl> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Hydroperoxyl" ;
-			skos:prefLabel "hydroperoxyl"@en .
+			svu:hasPart <part#beds%7Ebottomset> ;
+			svu:hasBody <body#delta> ;
+			skos:prefLabel "delta_beds~bottomset"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#hydroxyl-ion
-:hydroxyl-ion rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#delta_beds%7Eforeset
+:delta_beds%7Eforeset rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasForm <form#ion> ;
-			svu:hasMatter <matter#hydroxyl> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Hydroxyl_radical" ;
-			skos:prefLabel "hydroxyl"@en .
+			svu:hasPart <part#beds%7Eforeset> ;
+			svu:hasBody <body#delta> ;
+			skos:prefLabel "delta_beds~foreset"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#iodide-ion
-:iodide-ion rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#delta_beds%7Etopset
+:delta_beds%7Etopset rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasForm <form#ion> ;
-			svu:hasMatter <matter#iodide> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Iodide" ;
-			skos:prefLabel "iodide"@en .
+			svu:hasPart <part#beds%7Etopset> ;
+			svu:hasBody <body#delta> ;
+			skos:prefLabel "delta_beds~topset"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#iron%28ii%29
-:iron%28ii%29 rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#delta_beds%7Etopset%7Elower
+:delta_beds%7Etopset%7Elower rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasForm <form#ion> ;
-			svu:hasMatter <matter#iron> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Ferrous" ;
-			skos:altLabel "ferrous"@en ;
-			skos:prefLabel "iron(ii)"@en .
+			svu:hasPart <part#beds%7Etopset%7Elower> ;
+			svu:hasBody <body#delta> ;
+			skos:prefLabel "delta_beds~topset~lower"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#iron%28iii%29
-:iron%28iii%29 rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#delta_beds%7Etopset%7Eupper
+:delta_beds%7Etopset%7Eupper rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasForm <form#ion> ;
-			svu:hasMatter <matter#iron> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Ferric" ;
-			skos:altLabel "ferric"@en ;
-			skos:prefLabel "iron(iii)"@en .
+			svu:hasPart <part#beds%7Etopset%7Eupper> ;
+			svu:hasBody <body#delta> ;
+			skos:prefLabel "delta_beds~topset~upper"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#methyl-peroxy-ion
-:methyl-peroxy-ion rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#delta_front
+:delta_front rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasForm <form#ion> ;
-			svu:hasMatter <matter#methyl-peroxy> ;
-			skos:prefLabel "methyl-peroxy"@en .
+			svu:hasPart <part#front> ;
+			svu:hasBody <body#delta> ;
+			skos:prefLabel "delta_front"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#nitrate-ion
-:nitrate-ion rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#delta_front_toe
+:delta_front_toe rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasForm <form#ion> ;
-			svu:hasMatter <matter#nitrate> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Nitrate" ;
-			skos:prefLabel "nitrate"@en .
+			svu:hasPart <part#toe> ;
+			svu:hasBody <body#delta_front> ;
+			skos:prefLabel "delta_front_toe"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#nitrite-ion
-:nitrite-ion rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#delta%7Esubaerial
+:delta%7Esubaerial rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasForm <form#ion> ;
-			svu:hasMatter <matter#nitrite> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Nitrite" ;
-			skos:prefLabel "nitrite"@en .
+			svu:isTypeOf :delta ;
+			svu:hasAttribute <attribute#subaerial> ;
+			skos:prefLabel "delta~subaerial"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#phosphate-ion
-:phosphate-ion rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#delta%7Esubaqueous
+:delta%7Esubaqueous rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasForm <form#ion> ;
-			svu:hasMatter <matter#phosphate> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Phosphate" ;
-			skos:prefLabel "phosphate"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#sulfate-ion
-:sulfate-ion rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#ion> ;
-			svu:hasMatter <matter#sulfate> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sulfate" ;
-			skos:altLabel "sulphate"@en ;
-			skos:prefLabel "sulfate"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#sulfide-ion
-:sulfide-ion rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#ion> ;
-			svu:hasMatter <matter#sulfide> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sulfide" ;
-			skos:prefLabel "sulfide"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#sulfite-ion
-:sulfite-ion rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#ion> ;
-			svu:hasMatter <matter#sulfite> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sulfite" ;
-			skos:altLabel "SO3"@en ;
-			skos:altLabel "sulphite"@en ;
-			skos:prefLabel "sulfite"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#water_molecule
-:water_molecule rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#molecule> ;
-			svu:hasMatter <matter#water> ;
-			skos:prefLabel "water_molecule"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#hydrometeor
-:hydrometeor rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasMatter <matter#water> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Precipitation#Hydrometeor_definition" ;
-			svu:hasAttribute <attribute#hydrometeor> ;
-			skos:prefLabel "hydrometeor"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#hail
-:hail rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasMatter <matter#water> ;
-			svu:hasAttribute <attribute#hail> ;
-			skos:prefLabel "hail"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#graupel
-:graupel rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasMatter <matter#water> ;
-			svu:hasAttribute <attribute#graupel> ;
-			skos:prefLabel "graupel"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#sand_grain
-:sand_grain rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#grain> ;
-			svu:hasMatter <matter#sand> ;
-			skos:prefLabel "sand_grain"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#dust%7Eaerosol
-:dust%7Eaerosol rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isTypeOf :dust ;
-			svu:hasAttribute <attribute#aerosol> ;
-			skos:prefLabel "dust~aerosol"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#atmosphere
-:atmosphere rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Atmosphere" ;
-			skos:prefLabel "atmosphere"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#vegetation_canopy
-:vegetation_canopy rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#canopy> ;
-			svu:hasBody <body#vegetation> ;
-			skos:prefLabel "vegetation_canopy"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#vegetation
-:vegetation rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			skos:prefLabel "vegetation"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#atmosphere_bottom
-:atmosphere_bottom rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#bottom> ;
-			svu:hasBody <body#atmosphere> ;
-			skos:prefLabel "atmosphere_bottom"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#atmosphere_air
-:atmosphere_air rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasBody <body#atmosphere> ;
-			svu:hasMatter <matter#air> ;
-			skos:prefLabel "atmosphere_air"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#atmosphere_bottom_air
-:atmosphere_bottom_air rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#bottom> ;
-			svu:hasBody <body#atmosphere> ;
-			svu:hasMatter <matter#air> ;
-			skos:prefLabel "atmosphere_bottom_air"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#lithosphere
-:lithosphere rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Lithosphere" ;
-			skos:prefLabel "lithosphere"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#ionosphere
-:ionosphere rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Ionosphere" ;
-			skos:prefLabel "ionosphere"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#troposphere
-:troposphere rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Troposphere" ;
-			skos:prefLabel "troposphere"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#helium-plume
-:helium-plume rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#plume> ;
-			svu:hasMatter <matter#helium> ;
-			skos:prefLabel "helium-plume"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#burgess-shale
-:burgess-shale rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Burgess_Shale" ;
-			skos:prefLabel "burgess-shale"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#burgess-shale_stratum
-:burgess-shale_stratum rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#stratum> ;
-			svu:hasBody <body#burgess-shale> ;
-			skos:prefLabel "burgess-shale_stratum"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#atmosphere_top
-:atmosphere_top rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#top> ;
-			skos:prefLabel "atmosphere_top"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#automobile_bottom
-:automobile_bottom rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#bottom> ;
-			skos:prefLabel "automobile_bottom"@en .
+			svu:isTypeOf :delta ;
+			svu:hasAttribute <attribute#subaqueous> ;
+			skos:prefLabel "delta~subaqueous"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#dihydrogen_molecule
 :dihydrogen_molecule rdf:type owl:NamedIndividual ,
@@ -835,6 +324,74 @@
 			svu:hasMatter <matter#dioxygen> ;
 			skos:prefLabel "dioxygen_molecule"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#distributary
+:distributary rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Distributary" ;
+			skos:prefLabel "distributary"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#distributary-network
+:distributary-network rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#network> ;
+			svu:hasBody <body#distributary> ;
+			skos:prefLabel "distributary-network"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#dust
+:dust rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Dust" ;
+			skos:prefLabel "dust"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#dust%7Eaerosol
+:dust%7Eaerosol rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :dust ;
+			svu:hasAttribute <attribute#aerosol> ;
+			skos:prefLabel "dust~aerosol"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#earth
+:earth rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Earth" ;
+			svu:isTypeOf :planet ;
+			skos:prefLabel "earth"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#earth_core%7Einner
+:earth_core%7Einner rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#core%7Einner> ;
+			svu:hasBody <body#earth> ;
+			skos:prefLabel "earth_core~inner"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#earth_core%7Eouter
+:earth_core%7Eouter rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#core%7Eouter> ;
+			svu:hasBody <body#earth> ;
+			skos:prefLabel "earth_core~outer"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#earth_crust
+:earth_crust rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#crust> ;
+			svu:hasBody <body#earth> ;
+			skos:prefLabel "earth_crust"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#earth_interior
+:earth_interior rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#interior> ;
+			svu:hasBody <body#earth> ;
+			skos:prefLabel "earth_interior"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#earth_mantle
+:earth_mantle rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#mantle> ;
+			svu:hasBody <body#earth> ;
+			skos:prefLabel "earth_mantle"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#ethane_molecule
 :ethane_molecule rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -842,26 +399,13 @@
 			svu:hasMatter <matter#ethane> ;
 			skos:prefLabel "ethane_molecule"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#glacier_terminus
-:glacier_terminus rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#fluoride-ion
+:fluoride-ion rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasPart <part#terminus> ;
-			svu:hasBody <body#glacier> ;
-			skos:prefLabel "glacier_terminus"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#glacier_terminus_side%7Eleft
-:glacier_terminus_side%7Eleft rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#terminus_side%7Eleft> ;
-			svu:hasBody <body#glacier> ;
-			skos:prefLabel "glacier_terminus_side~left"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#glacier_terminus_side%7Eright
-:glacier_terminus_side%7Eright rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#terminus_side%7Eright> ;
-			svu:hasBody <body#glacier> ;
-			skos:prefLabel "glacier_terminus_side~right"@en .
+			svu:hasForm <form#ion> ;
+			svu:hasMatter <matter#fluoride> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Fluoride" ;
+			skos:prefLabel "fluoride"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#glacier_ablation-zone
 :glacier_ablation-zone rdf:type owl:NamedIndividual ,
@@ -891,12 +435,132 @@
 			svu:hasBody <body#glacier> ;
 			skos:prefLabel "glacier_bottom"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#glacier_terminus
+:glacier_terminus rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#terminus> ;
+			svu:hasBody <body#glacier> ;
+			skos:prefLabel "glacier_terminus"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#glacier_terminus_side%7Eleft
+:glacier_terminus_side%7Eleft rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#side%7Eleft> ;
+			svu:hasBody <body#glacier_terminus> ;
+			skos:prefLabel "glacier_terminus_side~left"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#glacier_terminus_side%7Eright
+:glacier_terminus_side%7Eright rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#side%7Eright> ;
+			svu:hasBody <body#glacier_terminus> ;
+			skos:prefLabel "glacier_terminus_side~right"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#glacier_top
 :glacier_top rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:hasPart <part#top> ;
 			svu:hasBody <body#glacier> ;
 			skos:prefLabel "glacier_top"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#grassland
+:grassland rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Grassland" ;
+			svu:isTypeOf :land ;
+			skos:prefLabel "grassland"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#graupel
+:graupel rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasMatter <matter#water> ;
+			svu:hasAttribute <attribute#graupel> ;
+			skos:prefLabel "graupel"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#ground
+:ground rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Earth#Surface" ;
+			skos:prefLabel "ground"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#hail
+:hail rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasMatter <matter#water> ;
+			svu:hasAttribute <attribute#hail> ;
+			skos:prefLabel "hail"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#helium-plume
+:helium-plume rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#plume> ;
+			svu:hasMatter <matter#helium> ;
+			skos:prefLabel "helium-plume"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#hydrometeor
+:hydrometeor rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasMatter <matter#water> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Precipitation#Hydrometeor_definition" ;
+			svu:hasAttribute <attribute#hydrometeor> ;
+			skos:prefLabel "hydrometeor"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#hydroperoxyl-ion
+:hydroperoxyl-ion rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#ion> ;
+			svu:hasMatter <matter#hydroperoxyl> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Hydroperoxyl" ;
+			skos:prefLabel "hydroperoxyl"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#hydroxyl-ion
+:hydroxyl-ion rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#ion> ;
+			svu:hasMatter <matter#hydroxyl> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Hydroxyl_radical" ;
+			skos:prefLabel "hydroxyl"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#ice_bottom
+:ice_bottom rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#bottom> ;
+			svu:hasMatter <matter#ice> ;
+			skos:prefLabel "ice_bottom"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#ice-layer
+:ice-layer rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#layer> ;
+			svu:hasMatter <matter#ice> ;
+			skos:prefLabel "ice-layer"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#iceberg
+:iceberg rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Iceberg" ;
+			skos:altLabel "ice_mountain"@en ;
+			skos:prefLabel "iceberg"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#icebergs
+:icebergs rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isPluralityOf :iceberg ;
+			skos:prefLabel "icebergs"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#iodide-ion
+:iodide-ion rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#ion> ;
+			svu:hasMatter <matter#iodide> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Iodide" ;
+			skos:prefLabel "iodide"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#ionosphere
+:ionosphere rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Ionosphere" ;
+			skos:prefLabel "ionosphere"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#iron_atom
 :iron_atom rdf:type owl:NamedIndividual ,
@@ -905,12 +569,63 @@
 			svu:hasMatter <matter#iron> ;
 			skos:prefLabel "iron_atom"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#ozone_molecule
-:ozone_molecule rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#iron%28ii%29
+:iron%28ii%29 rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasForm <form#molecule> ;
-			svu:hasMatter <matter#ozone> ;
-			skos:prefLabel "ozone_molecule"@en .
+			svu:hasForm <form#ion> ;
+			svu:hasMatter <matter#iron> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Ferrous" ;
+			skos:altLabel "ferrous"@en ;
+			skos:prefLabel "iron(ii)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#iron%28iii%29
+:iron%28iii%29 rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#ion> ;
+			svu:hasMatter <matter#iron> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Ferric" ;
+			skos:altLabel "ferric"@en ;
+			skos:prefLabel "iron(iii)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#jupiter
+:jupiter rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Jupiter" ;
+			svu:isTypeOf :planet ;
+			skos:prefLabel "jupiter"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#lake
+:lake rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Lake" ;
+			skos:prefLabel "lake"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#land
+:land rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Land" ;
+			skos:prefLabel "land"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#land_subsurface
+:land_subsurface rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#subsurface> ;
+			svu:hasBody <body#land> ;
+			skos:prefLabel "land_subsurface"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#land_subsurface_sat-zone
+:land_subsurface_sat-zone rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#sat-zone> ;
+			svu:hasBody <body#land_subsurface> ;
+			skos:prefLabel "land_subsurface_sat-zone"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#land_subsurface_sat-zone_top
+:land_subsurface_sat-zone_top rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#top> ;
+			svu:hasBody <body#land_subsurface_sat-zone> ;
+			skos:prefLabel "land_subsurface_sat-zone_top"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#land%7Eagricultural
 :land%7Eagricultural rdf:type owl:NamedIndividual ,
@@ -1038,6 +753,13 @@
 			svu:hasAttribute <attribute#urban> ;
 			skos:prefLabel "land~urban"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#land%7Evegetated
+:land%7Evegetated rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :land ;
+			svu:hasAttribute <attribute#vegetated> ;
+			skos:prefLabel "land~vegetated"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#land%7Evegetated_floor
 :land%7Evegetated_floor rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -1051,6 +773,105 @@
 			svu:isTypeOf :land ;
 			svu:hasAttribute <attribute#water-covered> ;
 			skos:prefLabel "land~water-covered"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#lithosphere
+:lithosphere rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Lithosphere" ;
+			skos:prefLabel "lithosphere"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#mars
+:mars rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Mars" ;
+			svu:isTypeOf :planet ;
+			skos:prefLabel "mars"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#mercury
+:mercury rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mercury_(planet)" ;
+			svu:isTypeOf :planet ;
+			skos:prefLabel "mercury"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#methyl-peroxy-ion
+:methyl-peroxy-ion rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#ion> ;
+			svu:hasMatter <matter#methyl-peroxy> ;
+			skos:prefLabel "methyl-peroxy"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#moon
+:moon rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Natural_satellite" ;
+			skos:altLabel "natural-satellite"@en ;
+			skos:prefLabel "moon"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#neptune
+:neptune rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Neptune" ;
+			svu:isTypeOf :planet ;
+			skos:prefLabel "neptune"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#nitrate-ion
+:nitrate-ion rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#ion> ;
+			svu:hasMatter <matter#nitrate> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Nitrate" ;
+			skos:prefLabel "nitrate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#nitrite-ion
+:nitrite-ion rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#ion> ;
+			svu:hasMatter <matter#nitrite> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Nitrite" ;
+			skos:prefLabel "nitrite"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#ocean
+:ocean rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Ocean" ;
+			skos:prefLabel "ocean"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#ozone_molecule
+:ozone_molecule rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#molecule> ;
+			svu:hasMatter <matter#ozone> ;
+			skos:prefLabel "ozone_molecule"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#parkland
+:parkland rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Park" ;
+			svu:isTypeOf :land ;
+			skos:prefLabel "parkland"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#pasture
+:pasture rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Pasture" ;
+			svu:isTypeOf :land ;
+			skos:prefLabel "pasture"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#phosphate-ion
+:phosphate-ion rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#ion> ;
+			svu:hasMatter <matter#phosphate> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Phosphate" ;
+			skos:prefLabel "phosphate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#plain
+:plain rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Plain" ;
+			svu:isTypeOf :land ;
+			skos:prefLabel "plain"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#plain%7Elower
 :plain%7Elower rdf:type owl:NamedIndividual ,
@@ -1066,37 +887,149 @@
 			svu:hasAttribute <attribute#subaqueous> ;
 			skos:prefLabel "plain~subaqueous"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#plain%7Eupper%7Efarmed
-:plain%7Eupper%7Efarmed rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#plain%7Eupper
+:plain%7Eupper rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:isTypeOf :plain ;
 			svu:hasAttribute <attribute#upper> ;
+			skos:prefLabel "plain~upper"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#plain%7Eupper%7Efarmed
+:plain%7Eupper%7Efarmed rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasBody <body#plain%7Eupper> ;
+			svu:isTypeOf :plain ;
 			svu:hasAttribute <attribute#farmed> ;
 			skos:prefLabel "plain~upper~farmed"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#plain%7Eupper%7Eresidential
 :plain%7Eupper%7Eresidential rdf:type owl:NamedIndividual ,
 			svu:Body ;
+			svu:hasBody <body#plain%7Eupper> ;
 			svu:isTypeOf :plain ;
-			svu:hasAttribute <attribute#upper> ;
 			svu:hasAttribute <attribute#residential> ;
 			skos:prefLabel "plain~upper~residential"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#plain%7Eupper%7Eurban
 :plain%7Eupper%7Eurban rdf:type owl:NamedIndividual ,
 			svu:Body ;
+			svu:hasBody <body#plain%7Eupper> ;
 			svu:isTypeOf :plain ;
-			svu:hasAttribute <attribute#upper> ;
 			svu:hasAttribute <attribute#urban> ;
 			skos:prefLabel "plain~upper~urban"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#plain%7Eupper%7Evegetated
 :plain%7Eupper%7Evegetated rdf:type owl:NamedIndividual ,
 			svu:Body ;
+			svu:hasBody <body#plain%7Eupper> ;
 			svu:isTypeOf :plain ;
-			svu:hasAttribute <attribute#upper> ;
 			svu:hasAttribute <attribute#vegetated> ;
 			skos:prefLabel "plain~upper~vegetated"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#planet
+:planet rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Planet" ;
+			skos:prefLabel "planet"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#raindrop
+:raindrop rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#droplet> ;
+			svu:hasMatter <matter#water> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Drop_(liquid)" ;
+			skos:prefLabel "raindrop"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#sand_grain
+:sand_grain rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#grain> ;
+			svu:hasMatter <matter#sand> ;
+			skos:prefLabel "sand_grain"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#saturn
+:saturn rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Saturn" ;
+			svu:isTypeOf :planet ;
+			skos:prefLabel "saturn"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#sea
+:sea rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Sea" ;
+			skos:prefLabel "sea"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#sea_bed
+:sea_bed rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#bed> ;
+			svu:hasBody <body#sea> ;
+			skos:prefLabel "sea_bed"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#sea_bottom
+:sea_bottom rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#bottom> ;
+			svu:hasBody <body#sea> ;
+			skos:prefLabel "sea_bottom"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#sea_floor
+:sea_floor rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#floor> ;
+			svu:hasBody <body#sea> ;
+			skos:prefLabel "sea_floor"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#sea_photic-zone
+:sea_photic-zone rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#photic-zone> ;
+			svu:hasBody <body#sea> ;
+			skos:prefLabel "sea_photic-zone"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#sea_photic-zone_bottom
+:sea_photic-zone_bottom rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#bottom> ;
+			svu:hasBody <body#sea_photic-zone> ;
+			skos:prefLabel "sea_photic-zone_bottom"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#sea_water
+:sea_water rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasBody <body#sea> ;
+			svu:hasMatter <matter#water> ;
+			svu:isTypeOf :sea ;
+			skos:prefLabel "sea_water"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#sea_zone%7Eaphotic
+:sea_zone%7Eaphotic rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#zone%7Eaphotic> ;
+			svu:hasBody <body#sea> ;
+			skos:prefLabel "sea_zone~aphotic"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#sea_zone%7Eaphotic_top
+:sea_zone%7Eaphotic_top rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#top> ;
+			svu:hasBody <body#sea_zone%7Eaphotic> ;
+			skos:prefLabel "sea_zone~aphotic_top"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#sea_zone%7Esurf
+:sea_zone%7Esurf rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#zone%7Esurf> ;
+			svu:hasBody <body#sea> ;
+			skos:prefLabel "sea_zone~surf"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#sediment_bulk
+:sediment_bulk rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#bulk> ;
+			svu:hasMatter <matter#sediment> ;
+			skos:prefLabel "sediment_bulk"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#sediment_grain
 :sediment_grain rdf:type owl:NamedIndividual ,
@@ -1104,13 +1037,6 @@
 			svu:hasForm <form#grain> ;
 			svu:hasMatter <matter#sediment> ;
 			skos:prefLabel "sediment_grain"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#sediment%7Ebedload_grain
-:sediment%7Ebedload_grain rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#grain> ;
-			svu:hasMatter <matter#sediment%7Ebedload> ;
-			skos:prefLabel "sediment~bedload_grain"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#sediment_layer
 :sediment_layer rdf:type owl:NamedIndividual ,
@@ -1126,33 +1052,87 @@
 			svu:hasMatter <matter#sediment> ;
 			skos:prefLabel "sediment_particle"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#sediment_bulk
-:sediment_bulk rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#sediment%7Ebedload_grain
+:sediment%7Ebedload_grain rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasForm <form#bulk> ;
-			svu:hasMatter <matter#sediment> ;
-			skos:prefLabel "sediment_bulk"@en .
+			svu:hasForm <form#grain> ;
+			svu:hasMatter <matter#sediment%7Ebedload> ;
+			skos:prefLabel "sediment~bedload_grain"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#soil_permafrost_bottom
-:soil_permafrost_bottom rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#shore
+:shore rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Shore" ;
+			skos:prefLabel "shore"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#snow_grains
+:snow_grains rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#grains> ;
+			svu:hasMatter <matter#snow> ;
+			skos:prefLabel "snow_grains"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#snowpack
+:snowpack rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Snowpack" ;
+			skos:prefLabel "snowpack"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#snowpack_bottom
+:snowpack_bottom rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:hasPart <part#bottom> ;
-			svu:hasMatter <matter#soil_permafrost> ;
-			skos:prefLabel "soil_permafrost_bottom"@en .
+			svu:hasBody <body#snowpack> ;
+			skos:prefLabel "snowpack_bottom"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#soil_permafrost_top
-:soil_permafrost_top rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#snowpack_core
+:snowpack_core rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#core> ;
+			svu:hasBody <body#snowpack> ;
+			skos:prefLabel "snowpack_core"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#snowpack_crust_layer%7Efirst
+:snowpack_crust_layer%7Efirst rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#layer%7Efirst> ;
+			svu:hasBody <body#snowpack> ;
+			skos:prefLabel "snowpack_crust_layer~first"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#snowpack_crust_layer%7Esecond
+:snowpack_crust_layer%7Esecond rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#layer%7Esecond> ;
+			svu:hasBody <body#snowpack> ;
+			skos:prefLabel "snowpack_crust_layer~second"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#snowpack_top
+:snowpack_top rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:hasPart <part#top> ;
-			svu:hasMatter <matter#soil_permafrost> ;
-			skos:prefLabel "soil_permafrost_top"@en .
+			svu:hasBody <body#snowpack> ;
+			skos:prefLabel "snowpack_top"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#soil_particle
-:soil_particle rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#soil_active-layer
+:soil_active-layer rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasForm <form#particle> ;
+			svu:hasPart <part#active-layer> ;
 			svu:hasMatter <matter#soil> ;
-			skos:prefLabel "soil_particle"@en .
+			skos:prefLabel "soil_active-layer"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#soil_active-layer_saturated
+:soil_active-layer_saturated rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :soil_active-layer ;
+			svu:hasAttribute <attribute#saturated> ;
+			skos:prefLabel "soil_active-layer_saturated"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#soil_bulk
+:soil_bulk rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#bulk> ;
+			svu:hasMatter <matter#soil> ;
+			skos:prefLabel "soil_bulk"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#soil_horizon%7Ea
 :soil_horizon%7Ea rdf:type owl:NamedIndividual ,
@@ -1217,60 +1197,6 @@
 			svu:hasMatter <matter#soil> ;
 			skos:prefLabel "soil_horizon~r"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#soil_regolith-layer
-:soil_regolith-layer rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#regolith-layer> ;
-			svu:hasMatter <matter#soil> ;
-			skos:prefLabel "soil_regolith-layer"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#soil_active-layer
-:soil_active-layer rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#active-layer> ;
-			svu:hasMatter <matter#soil> ;
-			skos:prefLabel "soil_active-layer"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#soil_root-zone
-:soil_root-zone rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#root-zone> ;
-			skos:prefLabel "soil_root-zone"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#soil_sat-zone
-:soil_sat-zone rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#sat-zone> ;
-			skos:prefLabel "soil_sat-zone"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#soil_layer%7Etop
-:soil_layer%7Etop rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#layer%7Etop> ;
-			svu:hasMatter <matter#soil> ;
-			skos:prefLabel "soil_layer~top"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#soil_layer%7Etop_saturated
-:soil_layer%7Etop_saturated rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isTypeOf :soil_layer%7Etop ;
-			svu:hasAttribute <attribute#saturated> ;
-			skos:prefLabel "soil_layer~top_saturated"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#soil_bulk
-:soil_bulk rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#bulk> ;
-			svu:hasMatter <matter#soil> ;
-			skos:prefLabel "soil_bulk"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#soil_active-layer_saturated
-:soil_active-layer_saturated rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isTypeOf :soil_active-layer ;
-			svu:hasAttribute <attribute#saturated> ;
-			skos:prefLabel "soil_active-layer_saturated"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/body#soil_layer
 :soil_layer rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -1288,8 +1214,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/body#soil_layer%7E0_saturated
 :soil_layer%7E0_saturated rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasPart <part#layer%7E0> ;
-			svu:hasMatter <matter#soil> ;
+			svu:isTypeOf :soil_layer%7E0 ;
 			svu:hasAttribute <attribute#saturated> ;
 			skos:prefLabel "soil_layer~0_saturated"@en .
 
@@ -1303,8 +1228,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/body#soil_layer%7E1_saturated
 :soil_layer%7E1_saturated rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasPart <part#layer%7E1> ;
-			svu:hasMatter <matter#soil> ;
+			svu:isTypeOf :soil_layer%7E1 ;
 			svu:hasAttribute <attribute#saturated> ;
 			skos:prefLabel "soil_layer~1_saturated"@en .
 
@@ -1318,10 +1242,72 @@
 ###  http://www.geoscienceontology.org/svo/svl/body#soil_layer%7E2_saturated
 :soil_layer%7E2_saturated rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasPart <part#layer%7E2> ;
-			svu:hasMatter <matter#soil> ;
+			svu:isTypeOf :soil_layer%7E2 ;
 			svu:hasAttribute <attribute#saturated> ;
 			skos:prefLabel "soil_layer~2_saturated"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#soil_layer%7Etop
+:soil_layer%7Etop rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#layer%7Etop> ;
+			svu:hasMatter <matter#soil> ;
+			skos:prefLabel "soil_layer~top"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#soil_layer%7Etop_saturated
+:soil_layer%7Etop_saturated rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :soil_layer%7Etop ;
+			svu:hasAttribute <attribute#saturated> ;
+			skos:prefLabel "soil_layer~top_saturated"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#soil_particle
+:soil_particle rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#particle> ;
+			svu:hasMatter <matter#soil> ;
+			skos:prefLabel "soil_particle"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#soil_permafrost_bottom
+:soil_permafrost_bottom rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#bottom> ;
+			svu:hasMatter <matter#soil_permafrost> ;
+			skos:prefLabel "soil_permafrost_bottom"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#soil_permafrost_top
+:soil_permafrost_top rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#top> ;
+			svu:hasMatter <matter#soil_permafrost> ;
+			skos:prefLabel "soil_permafrost_top"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#soil_regolith-layer
+:soil_regolith-layer rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#regolith-layer> ;
+			svu:hasMatter <matter#soil> ;
+			skos:prefLabel "soil_regolith-layer"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#soil_root-zone
+:soil_root-zone rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#root-zone> ;
+			svu:hasMatter <matter#soil> ;
+			skos:prefLabel "soil_root-zone"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#soil_sat-zone
+:soil_sat-zone rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#sat-zone> ;
+			svu:hasMatter <matter#soil> ;
+			skos:prefLabel "soil_sat-zone"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#soil_sat-zone_top
+:soil_sat-zone_top rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#top> ;
+			svu:hasBody <body#soil_sat-zone> ;
+			skos:prefLabel "soil_sat-zone_top"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#soil_unsat-zone
 :soil_unsat-zone rdf:type owl:NamedIndividual ,
@@ -1330,133 +1316,122 @@
 			svu:hasMatter <matter#soil> ;
 			skos:prefLabel "soil_unsat-zone"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#soil_sat-zone_top
-:soil_sat-zone_top rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#star
+:star rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasPart <part#sat-zone_top> ;
-			svu:hasMatter <matter#soil> ;
-			skos:prefLabel "soil_sat-zone_top"@en .
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Star" ;
+			skos:prefLabel "star"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#bedrock_top
-:bedrock_top rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#star%7Eneutron
+:star%7Eneutron rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasPart <part#top> ;
-			svu:hasBody <body#bedrock> ;
-			skos:prefLabel "bedrock_top"@en .
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Neutron_star" ;
+			svu:isTypeOf :star ;
+			skos:prefLabel "neutron-star"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#carbon_isotope
-:carbon_isotope rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#star%7Ewhite-dwarf
+:star%7Ewhite-dwarf rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasForm <form#isotope> ;
-			svu:hasMatter <matter#carbon> ;
-			skos:prefLabel "carbon_isotope"@en .
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/White_dwarf" ;
+			svu:isTypeOf :star ;
+			skos:prefLabel "white-dwarf"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#cesium_atom
-:cesium_atom rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#sulfate-ion
+:sulfate-ion rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasForm <form#atom> ;
-			svu:hasMatter <matter#cesium> ;
-			skos:prefLabel "cesium_atom"@en .
+			svu:hasForm <form#ion> ;
+			svu:hasMatter <matter#sulfate> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sulfate" ;
+			skos:altLabel "sulphate"@en ;
+			skos:prefLabel "sulfate"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#snow_grains
-:snow_grains rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#sulfide-ion
+:sulfide-ion rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasForm <form#grains> ;
-			svu:hasMatter <matter#snow> ;
-			skos:prefLabel "snow_grains"@en .
+			svu:hasForm <form#ion> ;
+			svu:hasMatter <matter#sulfide> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sulfide" ;
+			skos:prefLabel "sulfide"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#sea_bed
-:sea_bed rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#sulfite-ion
+:sulfite-ion rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasPart <part#bed> ;
-			svu:hasBody <body#sea> ;
-			skos:prefLabel "sea_bed"@en .
+			svu:hasForm <form#ion> ;
+			svu:hasMatter <matter#sulfite> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sulfite" ;
+			skos:altLabel "SO3"@en ;
+			skos:altLabel "sulphite"@en ;
+			skos:prefLabel "sulfite"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#sea_bottom
-:sea_bottom rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#sun
+:sun rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasPart <part#bottom> ;
-			svu:hasBody <body#sea> ;
-			skos:prefLabel "sea_bottom"@en .
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Sun" ;
+			svu:isTypeOf :star ;
+			skos:prefLabel "sun"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#sea_floor
-:sea_floor rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#titan
+:titan rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasPart <part#floor> ;
-			svu:hasBody <body#sea> ;
-			skos:prefLabel "sea_floor"@en .
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Titan_(moon)" ;
+			svu:isTypeOf :moon ;
+			skos:prefLabel "titan"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#sea_water
-:sea_water rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#troposphere
+:troposphere rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasBody <body#sea> ;
-			svu:hasMatter <matter#water> ;
-			svu:isTypeOf :sea ;
-			skos:prefLabel "sea_water"@en .
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Troposphere" ;
+			skos:prefLabel "troposphere"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#benzene_molecule
-:benzene_molecule rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#uranus
+:uranus rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Uranus" ;
+			svu:isTypeOf :planet ;
+			skos:prefLabel "uranus"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#valley
+:valley rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Valley" ;
+			skos:prefLabel "valley"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#vegetation
+:vegetation rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			skos:prefLabel "vegetation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#vegetation_canopy
+:vegetation_canopy rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#canopy> ;
+			svu:hasBody <body#vegetation> ;
+			skos:prefLabel "vegetation_canopy"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#venus
+:venus rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Venus" ;
+			svu:isTypeOf :planet ;
+			skos:prefLabel "venus"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#water_molecule
+:water_molecule rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:hasForm <form#molecule> ;
-			svu:hasMatter <matter#benzene> ;
-			skos:prefLabel "benzene_molecule"@en .
+			svu:hasMatter <matter#water> ;
+			skos:prefLabel "water_molecule"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#ice_bottom
-:ice_bottom rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#yellow-dwarf
+:yellow-dwarf rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasPart <part#bottom> ;
-			svu:hasMatter <matter#ice> ;
-			skos:prefLabel "ice_bottom"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#ice-layer
-:ice-layer rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#layer> ;
-			svu:hasMatter <matter#water%7Eice> ;
-			skos:prefLabel "ice-layer"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#earth_interior
-:earth_interior rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#interior> ;
-			svu:hasBody <body#earth> ;
-			skos:prefLabel "earth_interior"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#earth_mantle
-:earth_mantle rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#mantle> ;
-			svu:hasBody <body#earth> ;
-			skos:prefLabel "earth_mantle"@en .
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/G-type_main-sequence_star" ;
+			svu:isTypeOf :star ;
+			skos:prefLabel "yellow-dwarf"@en .
 
 
 ###Inanimate Fabricated Body
 
-
-###  http://www.geoscienceontology.org/svo/svl/body#spring%7Esteel
-:spring%7Esteel rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasMatter <matter#steel> ;
-			svu:isTypeOf :spring ;
-			skos:prefLabel "spring~steel"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#station%7Eseismic_component
-:station%7Eseismic_component rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasPart <part#component> ;
-			svu:hasBody <body#station%7Eseismic> ;
-			skos:prefLabel "station~seismic_component"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#tile
-:tile rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			skos:prefLabel "tile"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#cylinder
-:cylinder rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cylinder_(engine)" ;
-			skos:prefLabel "cylinder"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#aircraft
 :aircraft rdf:type owl:NamedIndividual ,
@@ -1470,6 +1445,14 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Airplane" ;
 			svu:isTypeOf :aircraft ;
 			skos:prefLabel "airplane"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#altimeter
+:altimeter rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Altimeter" ;
+			skos:altLabel "altitude_meter"@en ;
+			svu:isTypeOf :instrument ;
+			skos:prefLabel "altimeter"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#anvil
 :anvil rdf:type owl:NamedIndividual ,
@@ -1491,11 +1474,31 @@
 			svu:hasAttribute <attribute#electric> ;
 			skos:prefLabel "appliance~electric"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#automated-forecasting-system
+:automated-forecasting-system rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :instrument ;
+			skos:prefLabel "automated-forecasting-system"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#automobile
 :automobile rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Car" ;
 			skos:prefLabel "automobile"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#automobile_bottom
+:automobile_bottom rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#bottom> ;
+			svu:hasBody <body#automobile> ;
+			skos:prefLabel "automobile_bottom"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#automobile_front
+:automobile_front rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#front> ;
+			svu:hasBody <body#automobile> ;
+			skos:prefLabel "automobile_front"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#automobile%7Egm
 :automobile%7Egm rdf:type owl:NamedIndividual ,
@@ -1504,27 +1507,6 @@
 			svu:isTypeOf :automobile ;
 			skos:prefLabel "automobile~gm"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#gm-hummer
-:gm-hummer rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Hummer" ;
-			svu:isTypeOf :automobile%7Egm ;
-			skos:prefLabel "gm-hummer"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#porsche
-:porsche rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Porsche" ;
-			svu:isTypeOf :automobile ;
-			skos:prefLabel "porsche"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#porsche%7E911
-:porsche%7E911 rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Porsche_911" ;
-			svu:isTypeOf :porsche ;
-			skos:prefLabel "porsche~912"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/body#automobile%7Etoyota
 :automobile%7Etoyota rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -1532,26 +1514,18 @@
 			svu:isTypeOf :automobile ;
 			skos:prefLabel "automobile~toyota"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#toyota-corolla
-:toyota-corolla rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Toyota_Corolla" ;
-			svu:isTypeOf :automobile%7Etoyota ;
-			skos:prefLabel "toyota~corolla"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#toyota-corolla%7E2008
-:toyota-corolla%7E2008 rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Toyota_Corolla#Tenth_generation_.282006-2013.29" ;
-			svu:isTypeOf :toyota-corolla ;
-			svu:hasAttribute <attribute#manufactured-in-2008> ;
-			skos:prefLabel "toyota~corolla~2008"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/body#axle
 :axle rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Axle" ;
 			skos:prefLabel "axle"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#axle%7Erear
+:axle%7Erear rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :axle ;
+			svu:hasAttribute <attribute#rear> ;
+			skos:prefLabel "axle~rear"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#ball
 :ball rdf:type owl:NamedIndividual ,
@@ -1559,18 +1533,18 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Ball" ;
 			skos:prefLabel "ball"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#balloon
+:balloon rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Balloon" ;
+			skos:prefLabel "balloon"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#baseball
 :baseball rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Baseball_(ball)" ;
 			svu:isTypeOf :ball ;
 			skos:prefLabel "baseball"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#balloon
-:balloon rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Balloon" ;
-			skos:prefLabel "balloon"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#baseball-bat
 :baseball-bat rdf:type owl:NamedIndividual ,
@@ -1596,13 +1570,6 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Building" ;
 			skos:prefLabel "building"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#empire-state-building
-:empire-state-building rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Empire_State_Building" ;
-			svu:isTypeOf :building ;
-			skos:prefLabel "empire-state-building"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/body#buildings
 :buildings rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -1615,17 +1582,44 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Bumper_(car)" ;
 			skos:prefLabel "bumper"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#bumper_bottom
+:bumper_bottom rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#bottom> ;
+			svu:hasBody <body#bumper> ;
+			skos:prefLabel "bumper_bottom"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#crankshaft
 :crankshaft rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Crankshaft" ;
 			skos:prefLabel "crankshaft"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#cylinder
+:cylinder rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cylinder_(engine)" ;
+			skos:prefLabel "cylinder"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#data-acquisition-system
+:data-acquisition-system rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Data_acquisition" ;
+			svu:isTypeOf :instrument ;
+			skos:prefLabel "data-acquisition-system"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#door
 :door rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Door" ;
 			skos:prefLabel "door"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#empire-state-building
+:empire-state-building rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Empire_State_Building" ;
+			svu:isTypeOf :building ;
+			skos:prefLabel "empire-state-building"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#engine
 :engine rdf:type owl:NamedIndividual ,
@@ -1647,67 +1641,26 @@
 			svu:hasAttribute <attribute#electric> ;
 			skos:prefLabel "fence~electric"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#filter%7Eparticulate
-:filter%7Eparticulate rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#fuel-tank
+:fuel-tank rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Air_filter" ;
-			skos:altLabel "air_filter"@en ;
-			svu:isTypeOf :filter ;
-			skos:prefLabel "filter~particulate"@en .
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Fuel_tank" ;
+			skos:altLabel "petrol-tank"@en ;
+			svu:isTypeOf :tank ;
+			skos:prefLabel "fuel-tank"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#gm-hummer
+:gm-hummer rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Hummer" ;
+			svu:isTypeOf :automobile%7Egm ;
+			skos:prefLabel "gm-hummer"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#instrument
 :instrument rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Instrument" ;
 			skos:prefLabel "instrument"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#altimeter
-:altimeter rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Altimeter" ;
-			skos:altLabel "altitude_meter"@en ;
-			svu:isTypeOf :instrument ;
-			skos:prefLabel "altimeter"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#automated-forecasting-system
-:automated-forecasting-system rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isTypeOf :instrument ;
-			skos:prefLabel "automated-forecasting-system"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#data-acquisition-system
-:data-acquisition-system rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Data_acquisition" ;
-			svu:isTypeOf :instrument ;
-			skos:prefLabel "data-acquisition-system"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#radar
-:radar rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Radar" ;
-			svu:isTypeOf :instrument ;
-			skos:prefLabel "radar"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#sensor
-:sensor rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sensor" ;
-			svu:isTypeOf :instrument ;
-			skos:prefLabel "sensor"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#seismograph
-:seismograph rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isTypeOf :instrument ;
-			skos:prefLabel "seismograph"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#oscillator
-:oscillator rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Electronic_oscillator" ;
-			svu:isTypeOf :instrument ;
-			skos:prefLabel "oscillator"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#light-bulb
 :light-bulb rdf:type owl:NamedIndividual ,
@@ -1723,6 +1676,13 @@
 			svu:hasAttribute <attribute#incandescent> ;
 			skos:prefLabel "light-bulb~incandescent"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#oscillator
+:oscillator rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Electronic_oscillator" ;
+			svu:isTypeOf :instrument ;
+			skos:prefLabel "oscillator"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#pipe
 :pipe rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -1735,11 +1695,32 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Piston" ;
 			skos:prefLabel "piston"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#porsche
+:porsche rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Porsche" ;
+			svu:isTypeOf :automobile ;
+			skos:prefLabel "porsche"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#porsche%7E911
+:porsche%7E911 rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Porsche_911" ;
+			svu:isTypeOf :porsche ;
+			skos:prefLabel "porsche~912"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#pump
 :pump rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Pump" ;
 			skos:prefLabel "pump"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#radar
+:radar rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Radar" ;
+			svu:isTypeOf :instrument ;
+			skos:prefLabel "radar"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#railway
 :railway rdf:type owl:NamedIndividual ,
@@ -1770,6 +1751,19 @@
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Seat_belt" ;
 			skos:prefLabel "seat-belt"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#seismograph
+:seismograph rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :instrument ;
+			skos:prefLabel "seismograph"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#sensor
+:sensor rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sensor" ;
+			svu:isTypeOf :instrument ;
+			skos:prefLabel "sensor"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#ship
 :ship rdf:type owl:NamedIndividual ,
@@ -1802,18 +1796,18 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Spring_(device)" ;
 			skos:prefLabel "spring"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#spring%7Esteel
+:spring%7Esteel rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasMatter <matter#steel> ;
+			svu:isTypeOf :spring ;
+			skos:prefLabel "spring~steel"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#station
 :station rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Station" ;
 			skos:prefLabel "station"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#weather-station
-:weather-station rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Weather_station" ;
-			svu:isTypeOf :station ;
-			skos:prefLabel "weather-station"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#station%7Eseismic
 :station%7Eseismic rdf:type owl:NamedIndividual ,
@@ -1822,11 +1816,24 @@
 			svu:hasAttribute <attribute#seismic> ;
 			skos:prefLabel "station~seismic"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#station%7Eseismic_component
+:station%7Eseismic_component rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#component> ;
+			svu:hasBody <body#station%7Eseismic> ;
+			skos:prefLabel "station~seismic_component"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#street
 :street rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Street" ;
 			skos:prefLabel "street"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#submarine
+:submarine rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Submarine" ;
+			skos:prefLabel "submarine"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#tank
 :tank rdf:type owl:NamedIndividual ,
@@ -1844,18 +1851,36 @@
 ###  http://www.geoscienceontology.org/svo/svl/body#tank%7Estorage%7Eopen-top
 :tank%7Estorage%7Eopen-top rdf:type owl:NamedIndividual ,
 			svu:Body ;
+			svu:hasBody <body#tank%7Estorage> ;
 			svu:isTypeOf :tank ;
-			svu:hasAttribute <attribute#storage> ;
 			svu:hasAttribute <attribute#open-top> ;
 			skos:prefLabel "tank~storage~open-top"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#fuel-tank
-:fuel-tank rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#tile
+:tile rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Fuel_tank" ;
-			skos:altLabel "petrol-tank"@en ;
-			svu:isTypeOf :tank ;
-			skos:prefLabel "fuel-tank"@en .
+			skos:prefLabel "tile"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#tire
+:tire rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Tire" ;
+			skos:prefLabel "tire"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#toyota-corolla
+:toyota-corolla rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Toyota_Corolla" ;
+			svu:isTypeOf :automobile%7Etoyota ;
+			skos:prefLabel "toyota~corolla"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#toyota-corolla%7E2008
+:toyota-corolla%7E2008 rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Toyota_Corolla#Tenth_generation_.282006-2013.29" ;
+			svu:isTypeOf :toyota-corolla ;
+			svu:hasAttribute <attribute#manufactured-in-2008> ;
+			skos:prefLabel "toyota~corolla~2008"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#trap
 :trap rdf:type owl:NamedIndividual ,
@@ -1875,11 +1900,12 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Water_treatment" ;
 			skos:prefLabel "treatment-plant"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#well
-:well rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#weather-station
+:weather-station rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Water_well" ;
-			skos:prefLabel "well"@en .
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Weather_station" ;
+			svu:isTypeOf :station ;
+			skos:prefLabel "weather-station"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#weir
 :weir rdf:type owl:NamedIndividual ,
@@ -1887,108 +1913,21 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Weir" ;
 			skos:prefLabel "weir"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#well
+:well rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Water_well" ;
+			skos:prefLabel "well"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#wheel
 :wheel rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Wheel" ;
 			skos:prefLabel "wheel"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#tire
-:tire rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Tire" ;
-			skos:prefLabel "tire"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#submarine
-:submarine rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Submarine" ;
-			skos:prefLabel "submarine"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#axle%7Erear
-:axle%7Erear rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isTypeOf :axle ;
-			svu:hasAttribute <attribute#rear> ;
-			skos:prefLabel "axle~rear"@en .
-
 
 ###Animate Body
 
-
-###  http://www.geoscienceontology.org/svo/svl/body#bear%7Eblack%7Eamerican
-:bear%7Eblack%7Eamerican rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/American_black_bear" ;
-			svu:isTypeOf :bear%7Eblack ;
-			svu:hasAttribute <attribute#american> ;
-			skos:prefLabel "bear~black~american"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#rivers
-:rivers rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#channels> ;
-			svu:isPluralityOf :river ;
-			skos:prefLabel "rivers"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#river
-:river rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#channel> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/River" ;
-			skos:prefLabel "river"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#stream
-:stream rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#channel> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Stream" ;
-			skos:prefLabel "stream"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#platelet
-:platelet rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#cell> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Platelet" ;
-			skos:prefLabel "platelet"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#red-blood-cell
-:red-blood-cell rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#cell> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Red_blood_cell" ;
-			skos:prefLabel "red-blood-cell"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#white-blood-cell
-:white-blood-cell rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasForm <form#cell> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/White_blood_cell" ;
-			skos:prefLabel "white-blood-cell"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#brain
-:brain rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Brain" ;
-			skos:prefLabel "brain"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#eye
-:eye rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Eye" ;
-			skos:prefLabel "eye"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#hair
-:hair rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Hair" ;
-			skos:prefLabel "hair"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#skin
-:skin rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Skin" ;
-			skos:prefLabel "skin"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#ablabesmyia
 :ablabesmyia rdf:type owl:NamedIndividual ,
@@ -2427,18 +2366,6 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Bacteria" ;
 			skos:prefLabel "bacteria"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#diazotroph
-:diazotroph rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Diazotroph" ;
-			skos:prefLabel "diazotroph"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#diazotrophs
-:diazotrophs rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isPluralityOf :diazotroph ;
-			skos:prefLabel "diazotrophs"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/body#balanus
 :balanus rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -2481,6 +2408,14 @@
 			svu:isTypeOf :bear ;
 			skos:prefLabel "bear~black"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#bear%7Eblack%7Eamerican
+:bear%7Eblack%7Eamerican rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/American_black_bear" ;
+			svu:isTypeOf :bear%7Eblack ;
+			svu:hasAttribute <attribute#american> ;
+			skos:prefLabel "bear~black~american"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#bellura
 :bellura rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -2507,10 +2442,23 @@
 			svu:Body ;
 			skos:prefLabel "bibiocephala"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#biota
+:biota rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Biota_(ecology)" ;
+			skos:prefLabel "biota"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#bittacomorpha
 :bittacomorpha rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			skos:prefLabel "bittacomorpha"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#bluejack-oak
+:bluejack-oak rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Quercus_incana" ;
+			svu:isTypeOf :oak ;
+			skos:prefLabel "bluejack-oak"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#bodotriidae
 :bodotriidae rdf:type owl:NamedIndividual ,
@@ -2575,6 +2523,12 @@
 			svu:Body ;
 			skos:prefLabel "brachydeutera"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#brain
+:brain rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Brain" ;
+			skos:prefLabel "brain"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#branchiobdellidae
 :branchiobdellidae rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -2614,6 +2568,13 @@
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Calanoida" ;
 			skos:prefLabel "calanoida"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#calcivirus
+:calcivirus rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Caliciviridae" ;
+			svu:isTypeOf :virus ;
+			skos:prefLabel "calcivirus"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#callinectes
 :callinectes rdf:type owl:NamedIndividual ,
@@ -2687,6 +2648,12 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Candona" ;
 			skos:prefLabel "candona"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#canopy
+:canopy rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Canopy_(biology)" ;
+			skos:prefLabel "canopy"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#canthocamptus
 :canthocamptus rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -2731,6 +2698,7 @@
 :carp rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Carp" ;
+			skos:altLabel "hypophthalmichthys"@en ;
 			skos:prefLabel "carp"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#carp%7Ebighead
@@ -3282,6 +3250,18 @@
 			svu:isTypeOf :cyrnellus ;
 			skos:prefLabel "cyrnellus~fraternus"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#cyst
+:cyst rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cyst" ;
+			skos:prefLabel "cyst"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#cysts
+:cysts rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isPluralityOf :cyst ;
+			skos:prefLabel "cysts"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#dactylolabis
 :dactylolabis rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -3380,6 +3360,32 @@
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Diastylis" ;
 			skos:prefLabel "diastylis"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#diatom
+:diatom rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Diatom" ;
+			svu:isTypeOf :phytoplankton ;
+			skos:prefLabel "diatom"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#diatoms
+:diatoms rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isPluralityOf :diatom ;
+			svu:isTypeOf :phytoplankton ;
+			skos:prefLabel "diatoms"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#diazotroph
+:diazotroph rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Diazotroph" ;
+			skos:prefLabel "diazotroph"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#diazotrophs
+:diazotrophs rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isPluralityOf :diazotroph ;
+			skos:prefLabel "diazotrophs"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#dibusa
 :dibusa rdf:type owl:NamedIndividual ,
@@ -3726,6 +3732,12 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Exosphaeroma" ;
 			skos:prefLabel "exosphaeroma"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#eye
+:eye rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Eye" ;
+			skos:prefLabel "eye"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#fabria
 :fabria rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -3978,6 +3990,12 @@
 			svu:Body ;
 			skos:prefLabel "hagenella"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#hair
+:hair rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Hair" ;
+			skos:prefLabel "hair"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#halesochila
 :halesochila rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -4010,6 +4028,12 @@
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Harpacticoida" ;
 			skos:prefLabel "harpacticoida"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#head
+:head rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Head" ;
+			skos:prefLabel "head"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#hedria
 :hedria rdf:type owl:NamedIndividual ,
@@ -4393,6 +4417,18 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Lauterborniella" ;
 			skos:prefLabel "lauterborniella"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#leaf
+:leaf rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Leaf" ;
+			skos:prefLabel "leaf"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#leaves
+:leaves rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isPluralityOf :leaf ;
+			skos:prefLabel "leaves"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#lecane
 :lecane rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -4683,6 +4719,12 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mesocyclops" ;
 			skos:prefLabel "mesocyclops"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#mesozooplankton
+:mesozooplankton rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :zooplankton ;
+			skos:prefLabel "mesozooplankton"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#metacnephia
 :metacnephia rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -4715,6 +4757,12 @@
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Microtendipes" ;
 			skos:prefLabel "microtendipes"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#microzooplankton
+:microzooplankton rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :zooplankton ;
+			skos:prefLabel "microzooplankton"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#micrura
 :micrura rdf:type owl:NamedIndividual ,
@@ -4858,6 +4906,12 @@
 :nebaliacea rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			skos:prefLabel "nebaliacea"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#neck
+:neck rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Neck" ;
+			skos:prefLabel "neck"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#nectopsyche
 :nectopsyche rdf:type owl:NamedIndividual ,
@@ -5038,6 +5092,13 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Nymphuliella" ;
 			skos:prefLabel "nymphuliella"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#oak
+:oak rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Oak_tree" ;
+			svu:isTypeOf :tree ;
+			skos:prefLabel "oak"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#occidentalia
 :occidentalia rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -5115,6 +5176,18 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Onuphidae" ;
 			skos:prefLabel "onuphidae"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#oocyst
+:oocyst rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Apicomplexan_life_cycle#oocyst" ;
+			skos:prefLabel "oocyst"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#oocysts
+:oocysts rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isPluralityOf :oocyst ;
+			skos:prefLabel "oocysts"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#opheliidae
 :opheliidae rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -5144,6 +5217,18 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Rusty_crayfish" ;
 			svu:isTypeOf :orconectes ;
 			skos:prefLabel "orconectes~rusticus"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#organism
+:organism rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Organism" ;
+			skos:prefLabel "organism"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#organisms
+:organisms rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isPluralityOf :organism ;
+			skos:prefLabel "organisms"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#ormosia
 :ormosia rdf:type owl:NamedIndividual ,
@@ -5568,6 +5653,19 @@
 			svu:Body ;
 			skos:prefLabel "physocypria"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#phytoplankton
+:phytoplankton rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Phytoplankton" ;
+			svu:isTypeOf :plankton ;
+			skos:prefLabel "phytoplankton"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#picophytoplankton
+:picophytoplankton rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :phytoplankton ;
+			skos:prefLabel "picophytoplankton"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#pilargidae
 :pilargidae rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -5612,52 +5710,18 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Plankton" ;
 			skos:prefLabel "plankton"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#phytoplankton
-:phytoplankton rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#plant
+:plant rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Phytoplankton" ;
-			svu:isTypeOf :plankton ;
-			skos:prefLabel "phytoplankton"@en .
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Plant" ;
+			skos:prefLabel "plant"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#diatom
-:diatom rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#platelet
+:platelet rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Diatom" ;
-			svu:isTypeOf :phytoplankton ;
-			skos:prefLabel "diatom"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#diatoms
-:diatoms rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Diatom" ;
-			svu:isPluralityOf :diatom ;
-			svu:isTypeOf :phytoplankton ;
-			skos:prefLabel "diatoms"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#picophytoplankton
-:picophytoplankton rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isTypeOf :phytoplankton ;
-			skos:prefLabel "picophytoplankton"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#zooplankton
-:zooplankton rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Zooplankton" ;
-			svu:isTypeOf :plankton ;
-			skos:prefLabel "zooplankton"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#mesozooplankton
-:mesozooplankton rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isTypeOf :zooplankton ;
-			skos:prefLabel "mesozooplankton"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#microzooplankton
-:microzooplankton rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isTypeOf :zooplankton ;
-			skos:prefLabel "microzooplankton"@en .
+			svu:hasForm <form#cell> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Platelet" ;
+			skos:prefLabel "platelet"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#platycentropus
 :platycentropus rdf:type owl:NamedIndividual ,
@@ -6062,6 +6126,13 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Pyrausta" ;
 			skos:prefLabel "pyrausta"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#red-blood-cell
+:red-blood-cell rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#cell> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Red_blood_cell" ;
+			skos:prefLabel "red-blood-cell"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#renocera
 :renocera rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -6120,6 +6191,20 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Rhynchobdellida" ;
 			skos:prefLabel "rhynchobdellida"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#river
+:river rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#channel> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/River" ;
+			skos:prefLabel "river"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#rivers
+:rivers rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#channels> ;
+			svu:isPluralityOf :river ;
+			skos:prefLabel "rivers"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#robackia
 :robackia rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -6130,6 +6215,18 @@
 :roederiodes rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			skos:prefLabel "roederiodes"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#root
+:root rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Root" ;
+			skos:prefLabel "root"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#roots
+:roots rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isPluralityOf :root ;
+			skos:prefLabel "roots"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#rossiana
 :rossiana rdf:type owl:NamedIndividual ,
@@ -6289,6 +6386,12 @@
 			skos:altLabel "sipunculida"@en ;
 			skos:prefLabel "sipunculoidea"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#skin
+:skin rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Skin" ;
+			skos:prefLabel "skin"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#slavina
 :slavina rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -6415,11 +6518,32 @@
 			svu:Body ;
 			skos:prefLabel "stilobezzia"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#stoma
+:stoma rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Stoma" ;
+			skos:altLabel "stomate"@en ;
+			skos:prefLabel "stoma"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#stomata
+:stomata rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			skos:altLabel "stomates"@en ;
+			svu:isPluralityOf :stoma ;
+			skos:prefLabel "stomata"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#stratiomys
 :stratiomys rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Stratiomys" ;
 			skos:prefLabel "stratiomys"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#stream
+:stream rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#channel> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Stream" ;
+			skos:prefLabel "stream"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#streptococci
 :streptococci rdf:type owl:NamedIndividual ,
@@ -6720,20 +6844,6 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Tree" ;
 			skos:prefLabel "tree"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#oak
-:oak rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Oak_tree" ;
-			svu:isTypeOf :tree ;
-			skos:prefLabel "oak"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#bluejack-oak
-:bluejack-oak rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Quercus_incana" ;
-			svu:isTypeOf :oak ;
-			skos:prefLabel "bluejack-oak"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/body#triaenodes
 :triaenodes rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -6801,6 +6911,12 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Tropocyclops" ;
 			skos:prefLabel "tropocyclops"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#trunk
+:trunk rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Trunk_(botany)" ;
+			skos:prefLabel "trunk"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#tubifex
 :tubifex rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -6854,12 +6970,11 @@
 			svu:Body ;
 			skos:prefLabel "viehoperla"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/body#calcivirus
-:calcivirus rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/body#virus
+:virus rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Caliciviridae" ;
-			svu:isTypeOf :virus ;
-			skos:prefLabel "calcivirus"@en .
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Virus" ;
+			skos:prefLabel "virus"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#virus%7Echicken-pox
 :virus%7Echicken-pox rdf:type owl:NamedIndividual ,
@@ -6875,6 +6990,13 @@
 			skos:altLabel "enterovirus"@en ;
 			svu:isTypeOf :virus ;
 			skos:prefLabel "virus~enteric"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#white-blood-cell
+:white-blood-cell rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#cell> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/White_blood_cell" ;
+			skos:prefLabel "white-blood-cell"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#wiedemannia
 :wiedemannia rdf:type owl:NamedIndividual ,
@@ -6930,123 +7052,14 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Zavrelimyia" ;
 			skos:prefLabel "zavrelimyia"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#zooplankton
+:zooplankton rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Zooplankton" ;
+			svu:isTypeOf :plankton ;
+			skos:prefLabel "zooplankton"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#zumatrichia
 :zumatrichia rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			skos:prefLabel "zumatrichia"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#organism
-:organism rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Organism" ;
-			skos:prefLabel "organism"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#organisms
-:organisms rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isPluralityOf :organism ;
-			skos:prefLabel "organisms"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#plant
-:plant rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Plant" ;
-			skos:prefLabel "plant"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#virus
-:virus rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Virus" ;
-			skos:prefLabel "virus"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#biota
-:biota rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Biota_(ecology)" ;
-			skos:prefLabel "biota"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#canopy
-:canopy rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Canopy_(biology)" ;
-			skos:prefLabel "canopy"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#head
-:head rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Head" ;
-			skos:prefLabel "head"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#leaf
-:leaf rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Leaf" ;
-			skos:prefLabel "leaf"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#leaves
-:leaves rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isPluralityOf :leaf ;
-			skos:prefLabel "leaves"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#oocyst
-:oocyst rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Apicomplexan_life_cycle#oocyst" ;
-			skos:prefLabel "oocyst"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#oocysts
-:oocysts rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isPluralityOf :oocyst ;
-			skos:prefLabel "oocysts"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#root
-:root rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Root" ;
-			skos:prefLabel "root"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#roots
-:roots rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isPluralityOf :root ;
-			skos:prefLabel "roots"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#trunk
-:trunk rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Trunk_(botany)" ;
-			skos:prefLabel "trunk"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#stoma
-:stoma rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Stoma" ;
-			skos:altLabel "stomate"@en ;
-			skos:prefLabel "stoma"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#stomata
-:stomata rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			skos:altLabel "stomates"@en ;
-			svu:isPluralityOf :stoma ;
-			skos:prefLabel "stomata"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#cyst
-:cyst rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cyst" ;
-			skos:prefLabel "cyst"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#cysts
-:cysts rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:isPluralityOf :cyst ;
-			skos:prefLabel "cysts"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/body#neck
-:neck rdf:type owl:NamedIndividual ,
-			svu:Body ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Neck" ;
-			skos:prefLabel "neck"@en .

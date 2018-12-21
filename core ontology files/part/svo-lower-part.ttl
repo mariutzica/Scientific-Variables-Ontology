@@ -8,7 +8,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @base <http://www.geoscienceontology.org/svo/svl/> .
 
-<http://www.geoscienceontology.org/svl/part> rdf:type owl:Ontology ;
+<http://www.geoscienceontology.org/svo/svl/part> rdf:type owl:Ontology ;
 				rdfs:comment " Scientific Variables Lower Ontology, Part BETA VERSION 1.0." .
 #				owl:imports <http://www.geoscienceontology.org/svo/svu> .
 
@@ -17,20 +17,33 @@
 #    Part   
 # 
 #################################################################
-##Last generated on: 2018-11-27 19:26
+##Last generated on: 2018-12-20 21:07
 
 ###Part
 
 
-###  http://www.geoscienceontology.org/svo/svl/part#face
-:face rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/part#ablation-zone
+:ablation-zone rdf:type owl:NamedIndividual ,
 			svu:Part ;
-			skos:prefLabel "face"@en .
+			svu:isDefinedBy <process#ablation> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Ablation_zone" ;
+			svu:isTypeOf :zone ;
+			skos:prefLabel "ablation-zone"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/part#part%7Ebody
-:part%7Ebody rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/part#accumulation-zone
+:accumulation-zone rdf:type owl:NamedIndividual ,
 			svu:Part ;
-			skos:prefLabel "body"@en .
+			svu:isDefinedBy <process#accumulation> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Accumulation_zone" ;
+			svu:isTypeOf :zone ;
+			skos:prefLabel "accumulation-zone"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#active-layer
+:active-layer rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Active_layer" ;
+			svu:isTypeOf :layer ;
+			skos:prefLabel "active-layer"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/part#band
 :band rdf:type owl:NamedIndividual ,
@@ -93,11 +106,24 @@
 			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/bottom#Noun" ;
 			skos:prefLabel "bottom"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/part#boundary-layer
+:boundary-layer rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Boundary_layer" ;
+			svu:isTypeOf :layer ;
+			skos:prefLabel "boundary-layer"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/part#canopy
 :canopy rdf:type owl:NamedIndividual ,
 			svu:Part ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Canopy" ;
 			skos:prefLabel "canopy"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#component
+:component rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			skos:altLabel "part"@en ;
+			skos:prefLabel "component"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/part#constituent
 :constituent rdf:type owl:NamedIndividual ,
@@ -105,215 +131,6 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Part" ;
 			skos:altLabel "part"@en ;
 			skos:prefLabel "constituent"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#constituents
-:constituents rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isPluralityOf :constituent ;
-			skos:prefLabel "constituents"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#constituents%7Eall
-:constituents%7Eall rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isTypeOf :constituents ;
-			svu:hasAttribute <attribute#all> ;
-			skos:prefLabel "constituents~all"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#core
-:core rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Core" ;
-			skos:prefLabel "core"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#crust
-:crust rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Crust" ;
-			skos:prefLabel "crust"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#edge
-:edge rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Edge_(geometry)" ;
-			skos:prefLabel "edge"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#edge%7Eeast
-:edge%7Eeast rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isTypeOf :edge ;
-			svu:hasAttribute <attribute#east> ;
-			skos:prefLabel "edge~east"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#edge%7Enorth
-:edge%7Enorth rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isTypeOf :edge ;
-			svu:hasAttribute <attribute#north> ;
-			skos:prefLabel "edge~north"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#edge%7Esouth
-:edge%7Esouth rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isTypeOf :edge ;
-			svu:hasAttribute <attribute#south> ;
-			skos:prefLabel "edge~south"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#edge%7Ewest
-:edge%7Ewest rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isTypeOf :edge ;
-			svu:hasAttribute <attribute#west> ;
-			skos:prefLabel "edge~west"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#edge%7Ex
-:edge%7Ex rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isTypeOf :edge ;
-			svu:hasAttribute <attribute#x> ;
-			skos:prefLabel "edge~x"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#edge%7Ey
-:edge%7Ey rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isTypeOf :edge ;
-			svu:hasAttribute <attribute#y> ;
-			skos:prefLabel "edge~y"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#floor
-:floor rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Floor" ;
-			skos:prefLabel "floor"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#front
-:front rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/front#Noun" ;
-			skos:prefLabel "front"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#horizon
-:horizon rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			skos:prefLabel "horizon"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#interior
-:interior rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/interior#Noun" ;
-			skos:prefLabel "interior"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#layer
-:layer rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Layer" ;
-			skos:prefLabel "layer"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#layer%7Esecond
-:layer%7Esecond rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isTypeOf :layer ;
-			svu:hasAttribute <attribute#second> ;
-			skos:prefLabel "layer~second"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#layer%7Etop
-:layer%7Etop rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isTypeOf :layer ;
-			svu:hasAttribute <attribute#top> ;
-			skos:prefLabel "layer~top"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#lead
-:lead rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			skos:prefLabel "lead"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#location
-:location rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Location_(geography)" ;
-			skos:prefLabel "location"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#middle
-:middle rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			skos:prefLabel "middle"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#region
-:region rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Region" ;
-			skos:prefLabel "region"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#segment
-:segment rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Segment" ;
-			skos:prefLabel "segment"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#side
-:side rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Side_(disambiguation)" ;
-			skos:prefLabel "side"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#side%7Eleft
-:side%7Eleft rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isTypeOf :side ;
-			svu:hasAttribute <attribute#left> ;
-			skos:prefLabel "side~left"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#side%7Eright
-:side%7Eright rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isTypeOf :side ;
-			svu:hasAttribute <attribute#right> ;
-			skos:prefLabel "side~right"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#skin
-:skin rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Skin_(disambiguation)" ;
-			skos:prefLabel "skin"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#stratum
-:stratum rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Stratum" ;
-			skos:altLabel "layer"@en ;
-			skos:prefLabel "stratum"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#subskin
-:subskin rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			skos:prefLabel "subskin"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#subsurface
-:subsurface rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			skos:prefLabel "subsurface"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#terminus
-:terminus rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			skos:prefLabel "terminus"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#toe
-:toe rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			skos:prefLabel "toe"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#top
-:top rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/top#Noun" ;
-			skos:prefLabel "top"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#zone
-:zone rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Zone" ;
-			skos:prefLabel "zone"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/part#constituent%7E2mk3
 :constituent%7E2mk3 rdf:type owl:NamedIndividual ,
@@ -543,6 +360,25 @@
 			svu:isTypeOf :constituent ;
 			skos:prefLabel "constituent~t2"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/part#constituents
+:constituents rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:isPluralityOf :constituent ;
+			skos:prefLabel "constituents"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#constituents%7Eall
+:constituents%7Eall rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:isTypeOf :constituents ;
+			svu:hasAttribute <attribute#all> ;
+			skos:prefLabel "constituents~all"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#core
+:core rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Core" ;
+			skos:prefLabel "core"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/part#core%7Einner
 :core%7Einner rdf:type owl:NamedIndividual ,
 			svu:Part ;
@@ -556,6 +392,89 @@
 			svu:isTypeOf :core ;
 			svu:hasAttribute <attribute#outer> ;
 			skos:prefLabel "core~outer"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#crust
+:crust rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Crust" ;
+			skos:prefLabel "crust"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#edge
+:edge rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Edge_(geometry)" ;
+			skos:prefLabel "edge"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#edge%7Eeast
+:edge%7Eeast rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:isTypeOf :edge ;
+			svu:hasAttribute <attribute#east> ;
+			skos:prefLabel "edge~east"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#edge%7Eleading-displaced-convection
+:edge%7Eleading-displaced-convection rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:isDefinedBy <process#leading-displaced-convection> ;
+			svu:isTypeOf :edge ;
+			skos:prefLabel "edge~leading-displaced-convection"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#edge%7Enorth
+:edge%7Enorth rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:isTypeOf :edge ;
+			svu:hasAttribute <attribute#north> ;
+			skos:prefLabel "edge~north"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#edge%7Esouth
+:edge%7Esouth rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:isTypeOf :edge ;
+			svu:hasAttribute <attribute#south> ;
+			skos:prefLabel "edge~south"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#edge%7Ewest
+:edge%7Ewest rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:isTypeOf :edge ;
+			svu:hasAttribute <attribute#west> ;
+			skos:prefLabel "edge~west"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#edge%7Ex
+:edge%7Ex rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:isTypeOf :edge ;
+			svu:hasAttribute <attribute#x> ;
+			skos:prefLabel "edge~x"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#edge%7Ey
+:edge%7Ey rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:isTypeOf :edge ;
+			svu:hasAttribute <attribute#y> ;
+			skos:prefLabel "edge~y"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#face
+:face rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			skos:prefLabel "face"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#floor
+:floor rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Floor" ;
+			skos:prefLabel "floor"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#front
+:front rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/front#Noun" ;
+			skos:prefLabel "front"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#horizon
+:horizon rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			skos:prefLabel "horizon"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/part#horizon%7Ea
 :horizon%7Ea rdf:type owl:NamedIndividual ,
@@ -611,6 +530,24 @@
 			svu:isTypeOf :horizon ;
 			skos:prefLabel "horizon~r"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/part#interior
+:interior rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/interior#Noun" ;
+			skos:prefLabel "interior"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#isopycnal-layer
+:isopycnal-layer rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:isTypeOf :layer ;
+			skos:prefLabel "isopycnal-layer"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#layer
+:layer rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Layer" ;
+			skos:prefLabel "layer"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/part#layer%7E0
 :layer%7E0 rdf:type owl:NamedIndividual ,
 			svu:Part ;
@@ -636,134 +573,30 @@
 			svu:hasAttribute <attribute#first> ;
 			skos:prefLabel "layer~first"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/part#active-layer
-:active-layer rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Active_layer" ;
-			svu:isTypeOf :layer ;
-			skos:prefLabel "active-layer"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#boundary-layer
-:boundary-layer rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Boundary_layer" ;
-			svu:isTypeOf :layer ;
-			skos:prefLabel "boundary-layer"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#isopycnal-layer
-:isopycnal-layer rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/part#layer%7Esecond
+:layer%7Esecond rdf:type owl:NamedIndividual ,
 			svu:Part ;
 			svu:isTypeOf :layer ;
-			skos:prefLabel "isopycnal-layer"@en .
+			svu:hasAttribute <attribute#second> ;
+			skos:prefLabel "layer~second"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/part#mixed-layer
-:mixed-layer rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/part#layer%7Etop
+:layer%7Etop rdf:type owl:NamedIndividual ,
 			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mixed_layer" ;
 			svu:isTypeOf :layer ;
-			skos:prefLabel "mixed-layer"@en .
+			svu:hasAttribute <attribute#top> ;
+			skos:prefLabel "layer~top"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/part#plug-layer
-:plug-layer rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/part#lead
+:lead rdf:type owl:NamedIndividual ,
 			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Plug_flow" ;
-			svu:isTypeOf :layer ;
-			skos:prefLabel "plug-layer"@en .
+			skos:prefLabel "lead"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/part#regolith-layer
-:regolith-layer rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/part#location
+:location rdf:type owl:NamedIndividual ,
 			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Regolith" ;
-			svu:isTypeOf :layer ;
-			skos:prefLabel "regolith-layer"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#shear-layer
-:shear-layer rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Shear_flow" ;
-			svu:isTypeOf :layer ;
-			skos:prefLabel "shear-layer"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#region%7Ecentral-dense-overcast
-:region%7Ecentral-dense-overcast rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isTypeOf :region ;
-			svu:hasAttribute <attribute#central-dense-overcast> ;
-			skos:prefLabel "region~central-dense-overcast"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#region%7Ecloud
-:region%7Ecloud rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isTypeOf :region ;
-			svu:hasAttribute <attribute#cloud-presence> ;
-			skos:prefLabel "region~cloud"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#region%7Eeye
-:region%7Eeye rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isTypeOf :region ;
-			svu:hasAttribute <attribute#eye-presence> ;
-			skos:prefLabel "region~eye"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#ablation-zone
-:ablation-zone rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isDefinedBy <process#ablation> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Ablation_zone" ;
-			svu:isTypeOf :zone ;
-			skos:prefLabel "ablation-zone"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#accumulation-zone
-:accumulation-zone rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isDefinedBy <process#accumulation> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Accumulation_zone" ;
-			svu:isTypeOf :zone ;
-			skos:prefLabel "accumulation-zone"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#zone%7Eaphotic
-:zone%7Eaphotic rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Aphotic_zone" ;
-			svu:isTypeOf :zone ;
-			skos:prefLabel "aphotic-zone"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#photic-zone
-:photic-zone rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isTypeOf :zone ;
-			skos:prefLabel "photic-zone"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#root-zone
-:root-zone rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Rhizosphere" ;
-			svu:isTypeOf :zone ;
-			skos:prefLabel "root-zone"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#sat-zone
-:sat-zone rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Phreatic_zone" ;
-			svu:isTypeOf :zone ;
-			svu:hasAttribute <attribute#saturated> ;
-			skos:prefLabel "sat-zone"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#zone%7Esurf
-:zone%7Esurf rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:isDefinedBy <process#surf> ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Surf_zone" ;
-			svu:isTypeOf :zone ;
-			skos:prefLabel "surf-zone"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/part#unsat-zone
-:unsat-zone rdf:type owl:NamedIndividual ,
-			svu:Part ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Vadose_zone" ;
-			svu:isTypeOf :zone ;
-			svu:hasAttribute <attribute#unsaturated> ;
-			skos:prefLabel "unsat-zone"@en .
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Location_(geography)" ;
+			skos:prefLabel "location"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/part#location-1
 :location-1 rdf:type owl:NamedIndividual ,
@@ -801,25 +634,196 @@
 			svu:isTypeOf :location ;
 			skos:prefLabel "location-6"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/part#edge%7Eleading-displaced-convection
-:edge%7Eleading-displaced-convection rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/part#mantle
+:mantle rdf:type owl:NamedIndividual ,
 			svu:Part ;
-			svu:isDefinedBy <process#leading-displaced-convection> ;
-			svu:isTypeOf :edge ;
-			skos:prefLabel "edge~leading-displaced-convection"@en .
+			skos:prefLabel "mantle"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#middle
+:middle rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			skos:prefLabel "middle"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#mixed-layer
+:mixed-layer rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mixed_layer" ;
+			svu:isTypeOf :layer ;
+			skos:prefLabel "mixed-layer"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#neck
+:neck rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			skos:prefLabel "neck"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#part%7Ebody
+:part%7Ebody rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			skos:prefLabel "body"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#photic-zone
+:photic-zone rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:isTypeOf :zone ;
+			skos:prefLabel "photic-zone"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#plug-layer
+:plug-layer rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Plug_flow" ;
+			svu:isTypeOf :layer ;
+			skos:prefLabel "plug-layer"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#region
+:region rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Region" ;
+			skos:prefLabel "region"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#region%7Ecentral-dense-overcast
+:region%7Ecentral-dense-overcast rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:isTypeOf :region ;
+			svu:hasAttribute <attribute#central-dense-overcast> ;
+			skos:prefLabel "region~central-dense-overcast"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#region%7Ecloud
+:region%7Ecloud rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:isTypeOf :region ;
+			svu:hasAttribute <attribute#cloud-presence> ;
+			skos:prefLabel "region~cloud"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#region%7Eeye
+:region%7Eeye rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:isTypeOf :region ;
+			svu:hasAttribute <attribute#eye-presence> ;
+			skos:prefLabel "region~eye"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#regolith-layer
+:regolith-layer rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Regolith" ;
+			svu:isTypeOf :layer ;
+			skos:prefLabel "regolith-layer"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#root-zone
+:root-zone rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Rhizosphere" ;
+			svu:isTypeOf :zone ;
+			skos:prefLabel "root-zone"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#sat-zone
+:sat-zone rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Phreatic_zone" ;
+			svu:isTypeOf :zone ;
+			svu:hasAttribute <attribute#saturated> ;
+			skos:prefLabel "sat-zone"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#segment
+:segment rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Segment" ;
+			skos:prefLabel "segment"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/part#shaft
 :shaft rdf:type owl:NamedIndividual ,
 			svu:Part ;
 			skos:prefLabel "shaft"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/part#component
-:component rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/part#shear-layer
+:shear-layer rdf:type owl:NamedIndividual ,
 			svu:Part ;
-			skos:altLabel "part"@en ;
-			skos:prefLabel "component"@en .
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Shear_flow" ;
+			svu:isTypeOf :layer ;
+			skos:prefLabel "shear-layer"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/part#mantle
-:mantle rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/part#side
+:side rdf:type owl:NamedIndividual ,
 			svu:Part ;
-			skos:prefLabel "mantle"@en .
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Side_(disambiguation)" ;
+			skos:prefLabel "side"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#side%7Eleft
+:side%7Eleft rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:isTypeOf :side ;
+			svu:hasAttribute <attribute#left> ;
+			skos:prefLabel "side~left"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#side%7Eright
+:side%7Eright rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:isTypeOf :side ;
+			svu:hasAttribute <attribute#right> ;
+			skos:prefLabel "side~right"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#skin
+:skin rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Skin_(disambiguation)" ;
+			skos:prefLabel "skin"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#stratum
+:stratum rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Stratum" ;
+			skos:altLabel "layer"@en ;
+			skos:prefLabel "stratum"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#subskin
+:subskin rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			skos:prefLabel "subskin"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#subsurface
+:subsurface rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			skos:prefLabel "subsurface"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#terminus
+:terminus rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			skos:prefLabel "terminus"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#toe
+:toe rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			skos:prefLabel "toe"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#top
+:top rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/top#Noun" ;
+			skos:prefLabel "top"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#unsat-zone
+:unsat-zone rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Vadose_zone" ;
+			svu:isTypeOf :zone ;
+			svu:hasAttribute <attribute#unsaturated> ;
+			skos:prefLabel "unsat-zone"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#zone
+:zone rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Zone" ;
+			skos:prefLabel "zone"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#zone%7Eaphotic
+:zone%7Eaphotic rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Aphotic_zone" ;
+			svu:isTypeOf :zone ;
+			skos:prefLabel "aphotic-zone"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#zone%7Esurf
+:zone%7Esurf rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Surf_zone" ;
+			svu:isTypeOf :zone ;
+			skos:prefLabel "surf-zone"@en .
