@@ -129,7 +129,7 @@ for name in object_id['object_id'].tolist():
 
 # initialize columns for complex_phenomena (unique list)    
 complex_phenomena = pd.DataFrame({'phenomenon_id':np.unique(all_phen)})
-for i in range(1,5):
+for i in range(1,6):
     complex_phenomena['participant'+str(i)]=''
     complex_phenomena['participant'+str(i)+'cat']=''
     complex_phenomena['participant'+str(i)+'cattype']=''
@@ -138,6 +138,8 @@ for i in range(1,5):
 # parse all complex phenomena
 for i in complex_phenomena.index:
     oid = complex_phenomena.loc[i,'phenomenon_id']
+    #input("Press Enter to continue...")
+    #print(oid)
     index_start = 0
     participant = 1    
     while( index_start < len(oid)):
@@ -147,20 +149,33 @@ for i in complex_phenomena.index:
             while (index_end < len(oid)):
                 if oid[index_end] == '(':
                     counter += 1
-                if (oid[index_end] == ')') and (counter != 0):
+                elif (oid[index_end] == ')') and (counter != 0):
                     counter -= 1
                 elif (oid[index_end] == ')'):
                     break
                 index_end += 1
             complex_phenomena.loc[i,'participant'+str(participant)]= oid[index_start+1:index_end]
-            
+            #print(participant, oid[index_start+1:index_end])
             index_start = index_end + 1
+            if (index_start < len(oid)) and (oid[index_start]=='@'):
+                index_end = index_start + oid[index_start:].find('_')
+                if index_end == (index_start-1):
+                    index_end = len(oid)
+                complex_phenomena.loc[i,'participant'+str(participant)+'cat']= \
+                        oid[index_start+1:index_end].split('~')[0]
+                if '~' in oid[index_start:index_end]:
+                        complex_phenomena.loc[i,'participant'+str(participant)+'cattype']= \
+                            oid[index_start:index_end].split('~')[1]
+                index_start = index_end + 1
+            if (index_start < len(oid)) and (oid[index_start]=='_'):
+                index_start += 1
         else:
             index_end = index_start + oid[index_start:].find('_')
             if index_end == (index_start-1):
                 index_end = len(oid)
             complex_phenomena.loc[i,'participant'+str(participant)]= \
                 oid[index_start:index_end].split('@')[0]
+            #print(participant, oid[index_start:index_end].split('@')[0])
             if '@' in oid[index_start:index_end]:
                 complex_phenomena.loc[i,'participant'+str(participant)+'cat']= \
                         oid[index_start:index_end].split('@')[1].split('~')[0]
@@ -168,19 +183,10 @@ for i in complex_phenomena.index:
                     complex_phenomena.loc[i,'participant'+str(participant)+'cattype']= \
                         oid[index_start:index_end].split('@')[1].split('~')[1]
             index_start = index_end + 1
-        if (index_start < len(oid)) and (oid[index_start]=='@'):
-            index_end = index_start + oid[index_start:].find('_')
-            if index_end == (index_start-1):
-                index_end = len(oid)
-            complex_phenomena.loc[i,'participant'+str(participant)+'cat']= \
-                    oid[index_start+1:index_end].split('~')[0]
-            if '~' in oid[index_start:index_end]:
-                    complex_phenomena.loc[i,'participant'+str(participant)+'cattype']= \
-                        oid[index_start:index_end].split('~')[1]
-            index_start = index_end + 1
+#            if (index_start < len(oid)) and (oid[index_start]=='_'):
+#                print('here')
+#                index_start += 1
         participant += 1
-        if participant > 4:
-            break
 
 complex_phenomena = complex_phenomena.fillna('')
 context_phen = complex_phenomena.loc[(complex_phenomena['participant1cat']=='context') |(complex_phenomena['participant2cat']=='context') | (complex_phenomena['participant3cat']=='context')].copy()
@@ -195,7 +201,7 @@ def determine_category(phen_list):
     not_found = []
     multiple_match = []
     for i in phen_list.index:
-        for j in range(1,5):
+        for j in range(1,6):
             participant = 'participant'+str(j)
             cat = participant + 'class'
             category = ''
@@ -318,8 +324,8 @@ not_found = np.unique(not_found)
 
 def check_grouping(df):
     for i in df.index:
-        categories = df.loc[i,['participant'+str(p)+'cat' for p in range(1,5)]].tolist()
-        participants = df.loc[i,['participant'+str(p) for p in range(1,5)]].tolist()
+        categories = df.loc[i,['participant'+str(p)+'cat' for p in range(1,6)]].tolist()
+        participants = df.loc[i,['participant'+str(p) for p in range(1,6)]].tolist()
         num_categories = len([cat for cat in categories if cat!=''])
         num_participants = len([p for p in participants if p!=''])
         if num_categories != num_participants - 1:
@@ -340,7 +346,7 @@ ref_phen.to_csv(ext_vocabulary+'reference_phenomena.csv',index=False)
 def extract_part(df,cat):
     temp = pd.DataFrame(columns = ['participant','participantrel','participantclass'])
     for i in df.index:
-        for participant in range(1,5):
+        for participant in range(1,6):
             if df.loc[i,'participant'+str(participant)+'cat']==cat:
                 cols = ['participant'+str(participant),\
                         'participant'+str(participant)+'cattype',\

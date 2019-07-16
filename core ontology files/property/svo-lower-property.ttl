@@ -9,15 +9,16 @@
 @base <http://www.geoscienceontology.org/svo/svl/> .
 
 <http://www.geoscienceontology.org/svo/svl/property> rdf:type owl:Ontology ;
-				rdfs:comment " Scientific Variables Lower Ontology, Property BETA VERSION 1.0." .
-#				owl:imports <http://www.geoscienceontology.org/svo/svu> .
+				owl:versionIRI <http://www.geoscienceontology.org/svo/svl/property/1.0.0> ;
+				rdfs:comment " Scientific Variables Lower Ontology, Property BETA VERSION 1.0.0" .
+#				owl:imports <http://www.geoscienceontology.org/svo/svu/1.0.0> .
 
 
 #################################################################
 #    Property   
 # 
 #################################################################
-##Last generated on: 2018-12-20 21:07
+##Last generated on: 2019-07-15 20:31 
 
 ###Property
 
@@ -239,6 +240,17 @@
 :hydrophobicity rdf:type owl:NamedIndividual ,
 			svu:Property ;
 			skos:prefLabel "hydrophobicity"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#identification
+:identification rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "identification"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#identification_number
+:identification_number rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			svu:isTypeOf :identification ;
+			skos:prefLabel "identification_number"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#immiscibility
 :immiscibility rdf:type owl:NamedIndividual ,
@@ -680,6 +692,17 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Scale" ;
 			skos:prefLabel "scale"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#date
+:date rdf:type owl:NamedIndividual ,
+			svu:PropertyStandardization ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Calendar_date" ;
+			skos:prefLabel "date"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#stage
+:stage rdf:type owl:NamedIndividual ,
+			svu:PropertyStandardization ;
+			skos:prefLabel "stage"@en .
+
 
 ###PropertyType
 
@@ -777,6 +800,107 @@
 ###QuantitativeProperty (Quantity)
 
 
+###  http://www.geoscienceontology.org/svo/svl/property#phenological_stage
+:phenological_stage rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasPropertyQuantification :stage ;
+			svu:hasUnits "none" ;
+			skos:prefLabel "phenological_stage"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#height_flood_index
+:height_flood_index rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasPropertyQuantification :index ;
+			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#flood> ;
+			skos:prefLabel "height_flood_index"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#usdanrcs_runoff_curve_number
+:usdanrcs_runoff_curve_number rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#runoff> ;
+			skos:altLabel "scs_runoff_curve_number"@en ;
+			svu:isTypeOf :runoff_curve_number ;
+			skos:prefLabel "usdanrcs_runoff_curve_number"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#runoff_curve_number
+:runoff_curve_number rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#runoff> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Runoff_curve_number" ;
+			skos:prefLabel "runoff_curve_number"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#planting_separation_distance
+:planting_separation_distance rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :separation_distance ;
+			skos:prefLabel "planting_separation_distance"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#volume-per-area_concentration
+:volume-per-area_concentration rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :concentration ;
+			svu:hasUnits "L" ;
+			skos:prefLabel "volume-per-area_concentration"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#volume-per-area_storage_capacity
+:volume-per-area_storage_capacity rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :volume-per-area_capacity ;
+			skos:prefLabel "volume-per-area_storage_capacity"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#received_price-per-mass
+:received_price-per-mass rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :price-per-mass ;
+			skos:prefLabel "received_price-per-mass"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#price-per-mass
+:price-per-mass rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasUnits "M^-1" ;
+			skos:prefLabel "price-per-mass"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#usage-cost-per-applied-mass
+:usage-cost-per-applied-mass rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :cost-per-mass ;
+			skos:prefLabel "usage-cost-per-applied-mass"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cost-per-mass
+:cost-per-mass rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasUnits "M^-1" ;
+			skos:prefLabel "cost-per-mass"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#production_cost-per-area
+:production_cost-per-area rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#production> ;
+			svu:isTypeOf :cost-per-area ;
+			skos:prefLabel "production_cost-per-area"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cost-per-area
+:cost-per-area rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasUnits "L^-2" ;
+			skos:prefLabel "cost-per-area"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#application_reduced_cost_fraction
+:application_reduced_cost_fraction rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#application> ;
+			svu:isTypeOf :cost_fraction ;
+			svu:hasAttribute <attribute#reduced> ;
+			skos:prefLabel "application_reduced_cost_fraction"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cost_fraction
+:cost_fraction rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
+			skos:prefLabel "cost_fraction"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#0-to-60mph_acceleration_time
 :0-to-60mph_acceleration_time rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -784,6 +908,13 @@
 			svu:isTypeOf :acceleration_time ;
 			svu:hasAttribute <attribute#0-to-60-mph> ;
 			skos:prefLabel "0-to-60mph_acceleration_time"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#application_depth
+:application_depth rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#application> ;
+			svu:isTypeOf :depth ;
+			skos:prefLabel "application_depth"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#50-percent_attenuation_depth
 :50-percent_attenuation_depth rdf:type owl:NamedIndividual ,
@@ -798,6 +929,13 @@
 			svu:quantifiesProcess <process#attenuation> ;
 			svu:isTypeOf :attenuation_depth ;
 			skos:prefLabel "99-percent_attenuation_depth"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#planting_depth
+:planting_depth rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#planting> ;
+			svu:isTypeOf :depth ;
+			skos:prefLabel "planting_depth"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#abbe_number
 :abbe_number rdf:type owl:NamedIndividual ,
@@ -882,6 +1020,13 @@
 			svu:hasUnits "L^-2 M T^-1" ;
 			svu:quantifiesProcess <process#accumulation> ;
 			skos:prefLabel "accumulation_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#accumulation_volume_flux
+:accumulation_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#accumulation> ;
+			svu:isTypeOf :volume_flux ;
+			skos:prefLabel "accumulation_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#acid-neutralizing_amount-per-volume_capacity
 :acid-neutralizing_amount-per-volume_capacity rdf:type owl:NamedIndividual ,
@@ -1189,6 +1334,18 @@
 			svu:hasUnits "L^2" ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Area" ;
 			skos:prefLabel "area"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#observed_allocated_area
+:observed_allocated_area rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :area ;
+			skos:prefLabel "observed_allocated_area"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#simulated_allocated_area
+:simulated_allocated_area rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :area ;
+			skos:prefLabel "simulated_allocated_area"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#area_fraction
 :area_fraction rdf:type owl:NamedIndividual ,
@@ -1529,7 +1686,6 @@
 			svu:QuantitativeProperty ;
 			svu:hasPropertyType :dimensionless_number ;
 			svu:hasUnits "none" ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/w/index.php?title=Bodenstein_number&action=edit&redlink=1" ;
 			skos:prefLabel "bodenstein_number"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#body_force_term
@@ -1656,7 +1812,6 @@
 			svu:QuantitativeProperty ;
 			svu:hasPropertyType :dimensionless_number ;
 			svu:hasUnits "none" ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/w/index.php?title=Brownell%E2%80%93Katz_number&action=edit&redlink=1" ;
 			skos:prefLabel "brownell-katz_number"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#brunt-vaisala_frequency
@@ -1885,6 +2040,83 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Chandrasekhar_number" ;
 			skos:prefLabel "chandrasekhar_number"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#planting_date
+:planting_date rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasPropertyQuantification :date ;
+			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#planting> ;
+			skos:prefLabel "planting_date"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#sowing_date
+:sowing_date rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasPropertyQuantification :date ;
+			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#sowing> ;
+			skos:prefLabel "sowing_date"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#planting_or_sowing_date
+:planting_or_sowing_date rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasPropertyQuantification :date ;
+			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#sowing> ;
+			svu:quantifiesProcess <process#planting> ;
+			skos:prefLabel "planting_or_sowing_date"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#fertilization_date
+:fertilization_date rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasPropertyQuantification :date ;
+			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#fertilization> ;
+			skos:prefLabel "fertilization_date"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#decomposition_mass
+:decomposition_mass rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#decomposition> ;
+			svu:isTypeOf :mass ;
+			skos:prefLabel "decomposition_mass"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#addition_mass
+:addition_mass rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#addition> ;
+			svu:isTypeOf :mass ;
+			skos:prefLabel "addition_mass"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#year-start_mass
+:year-start_mass rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :mass ;
+			skos:prefLabel "year-start_mass"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#year-end_mass
+:year-end_mass rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :mass ;
+			skos:prefLabel "year-end_mass"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#final_mass
+:final_mass rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :mass ;
+			skos:prefLabel "final_mass"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#initial_mass
+:initial_mass rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :mass ;
+			skos:prefLabel "initial_mass"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#simulated_produced_mass
+:simulated_produced_mass rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :mass ;
+			skos:prefLabel "simulated_produced_mass"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#chandrasekhar-limit_mass
 :chandrasekhar-limit_mass rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -1997,6 +2229,13 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Compton_wavelength" ;
 			svu:isTypeOf :wavelength ;
 			skos:prefLabel "compton_wavelength"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#meandering_wavelength
+:meandering_wavelength rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#meandering> ;
+			svu:isTypeOf :wavelength ;
+			skos:prefLabel "meander_wavelength"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#conching_time
 :conching_time rdf:type owl:NamedIndividual ,
@@ -2300,6 +2539,13 @@
 			svu:QuantitativeProperty ;
 			svu:isTypeOf :radius ;
 			skos:prefLabel "curvature_radius"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#meandering_curvature_radius
+:meandering_curvature_radius rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#meandering> ;
+			svu:isTypeOf :curvature_radius ;
+			skos:prefLabel "meander_curvature_radius"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#cutoff_depth
 :cutoff_depth rdf:type owl:NamedIndividual ,
@@ -2719,6 +2965,18 @@
 			svu:isTypeOf :temperature ;
 			skos:prefLabel "diurnal_temperature"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#cumulative_thermal_time
+:cumulative_thermal_time rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :thermal_time ;
+			skos:prefLabel "cumulative_thermal_time"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#thermal_time
+:thermal_time rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :duration ;
+			skos:prefLabel "thermal_time"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#dive_duration
 :dive_duration rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -2810,6 +3068,13 @@
 			svu:quantifiesProcess <process#dragging> ;
 			svu:isTypeOf :force ;
 			skos:prefLabel "drag_force"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#drainage_volume_flux
+:drainage_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#draining> ;
+			svu:isTypeOf :volume_flux ;
+			skos:prefLabel "drainage_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#drainage_density
 :drainage_density rdf:type owl:NamedIndividual ,
@@ -2919,6 +3184,18 @@
 			svu:hasUnits "none" ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Eckert_number" ;
 			skos:prefLabel "eckert_number"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#yield_elasticity
+:yield_elasticity rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :economic_elasticity ;
+			skos:prefLabel "yield_elasticity"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#supply_elasticity
+:supply_elasticity rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :economic_elasticity ;
+			skos:prefLabel "supply_elasticity"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#economic_elasticity
 :economic_elasticity rdf:type owl:NamedIndividual ,
@@ -3133,7 +3410,9 @@
 :emissivity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "none" ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Emissivity" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Emissivity, https://en.wikipedia.org/wiki/Thermal_emittance" ;
+			skos:altLabel "thermal_emittance"@en ;
+			skos:altLabel "thermal_emissivity"@en ;
 			skos:prefLabel "emissivity"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#emissivity_factor
@@ -3146,6 +3425,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/property#emitted_energy_flux
 :emitted_energy_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			skos:altLabel "radiant_emittance"@en ;
 			svu:isTypeOf :energy_flux ;
 			svu:hasAttribute <attribute#emitted> ;
 			skos:prefLabel "emitted_energy_flux"@en .
@@ -3389,12 +3669,39 @@
 			svu:isTypeOf :volume_flux ;
 			skos:prefLabel "evaporation_volume_flux"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#evapotranspiration_mass_flux
+:evapotranspiration_mass_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#evapotranspiration> ;
+			svu:isTypeOf :mass_flux ;
+			skos:prefLabel "evapotranspiration_mass_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#evapotranspiration_volume_flux
+:evapotranspiration_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#evapotranspiration> ;
+			svu:isTypeOf :volume_flux ;
+			skos:prefLabel "evapotranspiration_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#reference_evapotranspiration_volume_flux
+:reference_evapotranspiration_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#evapotranspiration> ;
+			svu:isTypeOf :volume_flux ;
+			skos:prefLabel "reference_evapotranspiration_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#penman-monteith_reference_evapotranspiration_volume_flux
+:penman-monteith_reference_evapotranspiration_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#evapotranspiration> ;
+			svu:isTypeOf :volume_flux ;
+			skos:prefLabel "penman-monteith_reference_evapotranspiration_volume_flux"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#excess_temperature_coefficient
 :excess_temperature_coefficient rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasPropertyRole <role#coefficient> ;
 			svu:hasUnits "none" ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/w/index.php?title=Excess_temperature_coefficient&action=edit&redlink=1" ;
 			skos:prefLabel "excess_temperature_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#exner_function
@@ -3999,7 +4306,6 @@
 			svu:QuantitativeProperty ;
 			svu:hasPropertyRole <role#parameter> ;
 			svu:hasUnits "none" ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/w/index.php?title=Havnes_parameter&action=edit&redlink=1" ;
 			skos:prefLabel "havnes_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#head
@@ -4134,10 +4440,16 @@
 ###  http://www.geoscienceontology.org/svo/svl/property#horizontal_saturated_hydraulic_conductivity
 :horizontal_saturated_hydraulic_conductivity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
-			skos:altLabel "horizontal"@en ;
-			skos:altLabel "saturated"@en ;
 			svu:isTypeOf :hydraulic_conductivity ;
+			svu:hasAttribute <attribute#horizontal> ;
 			skos:prefLabel "horizontal_saturated_hydraulic_conductivity"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#vertical_hydraulic_conductivity
+:vertical_hydraulic_conductivity rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :hydraulic_conductivity ;
+			svu:hasAttribute <attribute#vertical> ;
+			skos:prefLabel "vertical_hydraulic_conductivity"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#horizontal_thermal_diffusivity
 :horizontal_thermal_diffusivity rdf:type owl:NamedIndividual ,
@@ -4388,17 +4700,23 @@
 			svu:hasUnits "none" ;
 			skos:prefLabel "income"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#downward_heat_energy_flux
+:downward_heat_energy_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :heat_energy_flux ;
+			skos:prefLabel "downward_heat_energy_flux"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#incoming_latent_heat_energy_flux
 :incoming_latent_heat_energy_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
-			svu:isTypeOf :energy_flux ;
+			svu:isTypeOf :latent_heat_energy_flux ;
 			svu:hasAttribute <attribute#incoming> ;
 			skos:prefLabel "incoming_latent_heat_energy_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#incoming_sensible_heat_energy_flux
 :incoming_sensible_heat_energy_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
-			svu:isTypeOf :energy_flux ;
+			svu:isTypeOf :sensible_heat_energy_flux ;
 			svu:hasAttribute <attribute#incoming> ;
 			svu:hasAttribute <attribute#sensible> ;
 			skos:prefLabel "incoming_sensible_heat_energy_flux"@en .
@@ -4416,6 +4734,12 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Indentation_hardness" ;
 			svu:isTypeOf :mechanical_hardness ;
 			skos:prefLabel "indentation_hardness"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#index
+:index rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
+			skos:prefLabel "index"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#infiltration_mass_flux
 :infiltration_mass_flux rdf:type owl:NamedIndividual ,
@@ -4597,6 +4921,14 @@
 			svu:hasAttribute <attribute#instantaneous> ;
 			skos:prefLabel "instantaneous_volume_flow_rate"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#interception_storage_factor
+:interception_storage_factor rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasPropertyRole <role#factor> ;
+			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#interception> ;
+			skos:prefLabel "interception_storage_factor"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#interception_capacity
 :interception_capacity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -4650,6 +4982,13 @@
 			svu:hasUnits "none" ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Iribarren_number" ;
 			skos:prefLabel "iribarren_number"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#irrigation_volume_flux
+:irrigation_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#irrigation> ;
+			svu:isTypeOf :volume_flux ;
+			skos:prefLabel "irrigation_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#isentropic_compressibility
 :isentropic_compressibility rdf:type owl:NamedIndividual ,
@@ -4734,7 +5073,6 @@
 			svu:QuantitativeProperty ;
 			svu:hasPropertyType :dimensionless_number ;
 			svu:hasUnits "none" ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/w/index.php?title=Jakob_number&action=edit&redlink=1" ;
 			skos:prefLabel "jakob_number"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#jerk
@@ -4841,7 +5179,6 @@
 			svu:QuantitativeProperty ;
 			svu:hasPropertyType :dimensionless_number ;
 			svu:hasUnits "none" ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/w/index.php?title=Kutateladze_number&action=edit&redlink=1" ;
 			skos:prefLabel "kutateladze_number"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#lame_first_parameter
@@ -4895,10 +5232,16 @@
 			svu:isTypeOf :heat_aerodynamic_conductance ;
 			skos:prefLabel "latent_heat_aerodynamic_conductance"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#upward_latent_heat_energy_flux
+:upward_latent_heat_energy_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :latent_heat_energy_flux ;
+			skos:prefLabel "upward_latent_heat_energy_flux"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#latent_heat_energy_flux
 :latent_heat_energy_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
-			svu:isTypeOf :energy_flux ;
+			svu:isTypeOf :heat_energy_flux ;
 			skos:prefLabel "latent_heat_energy_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#latent_heat_transfer_coefficient
@@ -4961,6 +5304,12 @@
 			svu:isTypeOf :mole-specific_heat ;
 			skos:prefLabel "latent_vaporization_mole-specific_heat"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#lateral_volume_flux
+:lateral_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :volume_flux ;
+			skos:prefLabel "lateral_volume_flux"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#latitude
 :latitude rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -4975,6 +5324,13 @@
 			svu:hasPropertyRole <role#coefficient> ;
 			svu:hasUnits "none" ;
 			skos:prefLabel "leading_coefficient"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#leakage_volume_flux
+:leakage_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#leakage> ;
+			svu:isTypeOf :volume_flux ;
+			skos:prefLabel "leakage_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#leaf-area_index
 :leaf-area_index rdf:type owl:NamedIndividual ,
@@ -5244,6 +5600,14 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Manning_formula#Manning_coefficient_of_roughness" ;
 			skos:prefLabel "manning-formula_n_parameter"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#rotation_tillage_year
+:rotation_tillage_year rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#tilling> ;
+			svu:quantifiesProcess <process#rotation> ;
+			svu:isTypeOf :year ;
+			skos:prefLabel "rotation_tillage_year"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#manufacture_year
 :manufacture_year rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -5299,6 +5663,13 @@
 			svu:isTypeOf :mass_concentration ;
 			skos:prefLabel "mass_demand_concentration"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#mass_addition_rate
+:mass_addition_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#addition> ;
+			svu:isTypeOf :mass_rate ;
+			skos:prefLabel "mass_addition_rate"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#mass_demand_rate
 :mass_demand_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -5321,6 +5692,107 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Mass_flow_rate" ;
 			svu:isTypeOf :mass_rate ;
 			skos:prefLabel "mass_flow_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass_volatilization_rate
+:mass_volatilization_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#volatilization> ;
+			svu:isTypeOf :mass_rate ;
+			skos:prefLabel "mass_volatilization_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass_leaching_rate
+:mass_leaching_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#leaching> ;
+			svu:isTypeOf :mass_rate ;
+			skos:prefLabel "mass_leaching_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass_immobilization_rate
+:mass_immobilization_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#immobilization> ;
+			svu:isTypeOf :mass_rate ;
+			skos:prefLabel "mass_immobilization_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass_nitrification_rate
+:mass_nitrification_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#nitrification> ;
+			svu:isTypeOf :mass_rate ;
+			skos:prefLabel "mass_nitrification_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass_denitrification_rate
+:mass_denitrification_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#denitrification> ;
+			svu:isTypeOf :mass_rate ;
+			skos:prefLabel "mass_denitrification_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#gross_mass_immobilization_rate
+:gross_mass_immobilization_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#immobilization> ;
+			svu:isTypeOf :mass_immobilization_rate ;
+			skos:prefLabel "gross_mass_immobilization_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass_mineralization_rate
+:mass_mineralization_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#mineralization> ;
+			svu:isTypeOf :mass_rate ;
+			skos:prefLabel "mass_mineralization_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#gross_mass_mineralization_rate
+:gross_mass_mineralization_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#mineralization> ;
+			svu:isTypeOf :mass_mineralization_rate ;
+			skos:prefLabel "gross_mass_mineralization_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#net_mass_mineralization_rate
+:net_mass_mineralization_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#mineralization> ;
+			svu:isTypeOf :mass_mineralization_rate ;
+			skos:prefLabel "net_mass_mineralization_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass_emission_rate
+:mass_emission_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#emission> ;
+			svu:isTypeOf :mass_rate ;
+			skos:prefLabel "mass_emission_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#denitrification_mass_emission_rate
+:denitrification_mass_emission_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#emission> ;
+			svu:quantifiesProcess <process#denitrification> ;
+			svu:isTypeOf :mass_emission_rate ;
+			skos:prefLabel "denitrification_mass_emission_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#nitrification_mass_emission_rate
+:nitrification_mass_emission_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#emission> ;
+			svu:quantifiesProcess <process#nitrification> ;
+			svu:isTypeOf :mass_emission_rate ;
+			skos:prefLabel "nitrification_mass_emission_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass_respiration_rate
+:mass_respiration_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#respiration> ;
+			svu:isTypeOf :mass_rate ;
+			skos:prefLabel "mass_respiration_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#decomposition_mass_respiration_rate
+:decomposition_mass_respiration_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#respiration> ;
+			svu:quantifiesProcess <process#decomposition> ;
+			svu:isTypeOf :mass_respiration_rate ;
+			skos:prefLabel "decomposition_mass_respiration_rate"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#mass_flux
 :mass_flux rdf:type owl:NamedIndividual ,
@@ -5389,6 +5861,13 @@
 			svu:isTypeOf :contributing_area ;
 			skos:prefLabel "mass-flux_contributing_area"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#count-per-area_density
+:count-per-area_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :density ;
+			svu:hasUnits "L^-2" ;
+			skos:prefLabel "count-per-area_density"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#mass-per-area_density
 :mass-per-area_density rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -5400,6 +5879,129 @@
 			skos:altLabel "superficial_density"@en ;
 			skos:altLabel "density_thickness"@en ;
 			skos:prefLabel "mass-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#gross_decomposition_mass-per-area_mineralization_density
+:gross_decomposition_mass-per-area_mineralization_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#mineralization> ;
+			svu:quantifiesProcess <process#decomposition> ;
+			svu:isTypeOf :decomposition_mass-per-area_mineralization_density ;
+			skos:prefLabel "gross_decomposition_mass-per-area_mineralization_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#decomposition_mass-per-area_mineralization_density
+:decomposition_mass-per-area_mineralization_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#mineralization> ;
+			svu:quantifiesProcess <process#decomposition> ;
+			svu:isTypeOf :mass-per-area_mineralization_density ;
+			skos:prefLabel "decomposition_mass-per-area_mineralization_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#nitrification_mass-per-area_emission_density
+:nitrification_mass-per-area_emission_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#emission> ;
+			svu:quantifiesProcess <process#nitrification> ;
+			svu:isTypeOf :mass-per-area_emission_density ;
+			skos:prefLabel "nitrification_mass-per-area_emission_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#denitrification_mass-per-area_emission_density
+:denitrification_mass-per-area_emission_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#emission> ;
+			svu:quantifiesProcess <process#denitrification> ;
+			svu:isTypeOf :mass-per-area_emission_density ;
+			skos:prefLabel "denitrification_mass-per-area_emission_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass-per-area_addition_density
+:mass-per-area_addition_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#addition> ;
+			svu:isTypeOf :mass-per-area_density ;
+			skos:prefLabel "mass-per-area_addition_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass-per-area_application_density
+:mass-per-area_application_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#application> ;
+			svu:isTypeOf :mass-per-area_density ;
+			skos:prefLabel "mass-per-area_application_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass-per-area_emission_density
+:mass-per-area_emission_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#emission> ;
+			svu:isTypeOf :mass-per-area_density ;
+			skos:prefLabel "mass-per-area_emission_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass-per-area_accumulation_density
+:mass-per-area_accumulation_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#accumulation> ;
+			svu:isTypeOf :mass-per-area_density ;
+			skos:prefLabel "mass-per-area_accumulation_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass-per-area_fixation_density
+:mass-per-area_fixation_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#fixation> ;
+			svu:isTypeOf :mass-per-area_density ;
+			skos:prefLabel "mass-per-area_fixation_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass-per-area_nitrification_density
+:mass-per-area_nitrification_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#nitrification> ;
+			svu:isTypeOf :mass-per-area_density ;
+			skos:prefLabel "mass-per-area_nitrification_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass-per-area_denitrification_density
+:mass-per-area_denitrification_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#denitrification> ;
+			svu:isTypeOf :mass-per-area_density ;
+			skos:prefLabel "mass-per-area_denitrification_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass-per-area_volatilization_density
+:mass-per-area_volatilization_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#volatilization> ;
+			svu:isTypeOf :mass-per-area_density ;
+			skos:prefLabel "mass-per-area_volatilization_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass-per-area_mineralization_density
+:mass-per-area_mineralization_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#mineralization> ;
+			svu:isTypeOf :mass-per-area_density ;
+			skos:prefLabel "mass-per-area_mineralization_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass-per-area_immobilization_density
+:mass-per-area_immobilization_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#immobilization> ;
+			svu:isTypeOf :mass-per-area_density ;
+			skos:prefLabel "mass-per-area_immobilization_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#gross_mass-per-area_immobilization_density
+:gross_mass-per-area_immobilization_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#immobilization> ;
+			svu:isTypeOf :mass-per-area_immobilization_density ;
+			skos:prefLabel "gross_mass-per-area_immobilization_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#count-per-area_planting_density
+:count-per-area_planting_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#planting> ;
+			svu:isTypeOf :count-per-area_density ;
+			skos:prefLabel "count-per-area_planting_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#simulated_applied_mass-per-area_density
+:simulated_applied_mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :mass-per-area_density ;
+			svu:hasAttribute <attribute#applied> ;
+			skos:prefLabel "simulated_applied_mass-per-area_density"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#mass-per-area_deposition_rate
 :mass-per-area_deposition_rate rdf:type owl:NamedIndividual ,
@@ -5420,6 +6022,38 @@
 			svu:quantifiesProcess <process#respiration> ;
 			svu:isTypeOf :mass-per-area_rate ;
 			skos:prefLabel "mass-per-area_respiration_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#mass-per-area_production_rate
+:mass-per-area_production_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#production> ;
+			svu:isTypeOf :mass-per-area_rate ;
+			skos:prefLabel "mass-per-area_production_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#harvest_mass-per-area_yield
+:harvest_mass-per-area_yield rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#harvest> ;
+			svu:isTypeOf :mass-per-area_yield ;
+			skos:prefLabel "harvest_mass-per-area_yield"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#observed_mass-per-area_yield
+:observed_mass-per-area_yield rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :mass-per-area_yield ;
+			skos:prefLabel "observed_mass-per-area_yield"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#observed_applied_mass
+:observed_applied_mass rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :mass ;
+			skos:prefLabel "observed_applied_mass"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#simulated_mass-per-area_yield
+:simulated_mass-per-area_yield rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :mass-per-area_yield ;
+			skos:prefLabel "simulated_mass-per-area_yield"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#mass-per-area_yield
 :mass-per-area_yield rdf:type owl:NamedIndividual ,
@@ -5476,6 +6110,12 @@
 			svu:quantifiesProcess <process#demand> ;
 			svu:isTypeOf :mass-per-volume_rate ;
 			skos:prefLabel "mass-per-volume_demand_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#bulk_mass-per-volume_density
+:bulk_mass-per-volume_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :mass-per-volume_density ;
+			skos:prefLabel "bulk_mass-per-volume_density"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#mass-per-volume_density
 :mass-per-volume_density rdf:type owl:NamedIndividual ,
@@ -5666,6 +6306,22 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mechanical_impedance" ;
 			skos:prefLabel "mechanical_impedance"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#melt_factor
+:melt_factor rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasPropertyRole <role#factor> ;
+			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#melting> ;
+			skos:prefLabel "melt_factor"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#drainage_leaching_mass_flux
+:drainage_leaching_mass_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#leaching> ;
+			svu:quantifiesProcess <process#draining> ;
+			svu:isTypeOf :mass_flux ;
+			skos:prefLabel "drainage_leaching_mass_flux"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#melt_mass_flux
 :melt_mass_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -5694,12 +6350,13 @@
 			svu:isTypeOf :energy-per-mass_density ;
 			skos:prefLabel "metabolizable_energy-per-mass_density"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/property#migration_rate
-:migration_rate rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/property#meandering_migration_rate
+:meandering_migration_rate rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "T^-1" ;
 			svu:quantifiesProcess <process#migration> ;
-			skos:prefLabel "migration_rate"@en .
+			svu:quantifiesProcess <process#meandering> ;
+			skos:prefLabel "meander_migration_rate"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#min_allowed_time_step
 :min_allowed_time_step rdf:type owl:NamedIndividual ,
@@ -6199,6 +6856,13 @@
 			svu:isTypeOf :power ;
 			skos:prefLabel "output_power"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#dry_mass_fraction
+:dry_mass_fraction rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :mass_fraction ;
+			svu:hasAttribute <attribute#dry> ;
+			skos:prefLabel "dry_mass_fraction"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#oven-dried_mass_fraction
 :oven-dried_mass_fraction rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -6252,7 +6916,6 @@
 			svu:QuantitativeProperty ;
 			svu:hasPropertyType :dimensionless_number ;
 			svu:hasUnits "none" ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/w/index.php?title=Peel_number&action=edit&redlink=1" ;
 			skos:prefLabel "peel_number"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#per-mil_ratio
@@ -6321,6 +6984,22 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Perveance" ;
 			skos:prefLabel "perveance"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#species_identification_code
+:species_identification_code rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :identification ;
+			svu:hasPropertyQuantification :code ;
+			svu:hasUnits "none" ;
+			skos:prefLabel "species_identification_code"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#line-or-genotype_identification_code
+:line-or-genotype_identification_code rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :identification ;
+			svu:hasPropertyQuantification :code ;
+			svu:hasUnits "none" ;
+			skos:prefLabel "line-or-genotype_identification_code"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#pfafstetter_code
 :pfafstetter_code rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -6379,7 +7058,6 @@
 			svu:QuantitativeProperty ;
 			svu:hasPropertyRole <role#parameter> ;
 			svu:hasUnits "none" ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/w/index.php?title=Pierce_parameter&action=edit&redlink=1" ;
 			skos:prefLabel "pierce_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#planck_constant
@@ -6465,6 +7143,12 @@
 			svu:isTypeOf :radius ;
 			svu:hasAttribute <attribute#polar> ;
 			skos:prefLabel "polar_radius"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#residual_porosity
+:residual_porosity rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :porosity ;
+			skos:prefLabel "residual_porosity"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#porosity
 :porosity rdf:type owl:NamedIndividual ,
@@ -6629,7 +7313,6 @@
 			svu:QuantitativeProperty ;
 			svu:hasPropertyType :dimensionless_number ;
 			svu:hasUnits "none" ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/w/index.php?title=Prater_number&action=edit&redlink=1" ;
 			skos:prefLabel "prater_number"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#precession_period
@@ -7073,6 +7756,14 @@
 			svu:isTypeOf :angle ;
 			skos:prefLabel "refraction_angle"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#decomposition_respiration_mass
+:decomposition_respiration_mass rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#respiration> ;
+			svu:quantifiesProcess <process#decomposition> ;
+			svu:isTypeOf :mass ;
+			skos:prefLabel "decomposition_respiration_mass"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#relative_fluorescence
 :relative_fluorescence rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -7107,12 +7798,65 @@
 			svu:isTypeOf :angle ;
 			skos:prefLabel "repose_angle"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#energy_flux_fraction
+:energy_flux_fraction rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
+			skos:prefLabel "energy_flux_fraction"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#interception_energy_flux_fraction
+:interception_energy_flux_fraction rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#interception> ;
+			svu:isTypeOf :energy_flux_fraction ;
+			skos:prefLabel "interception_energy_flux_fraction"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#residual_volume_fraction
 :residual_volume_fraction rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isTypeOf :volume_fraction ;
 			svu:hasAttribute <attribute#residual> ;
 			skos:prefLabel "residual_volume_fraction"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#stress_fraction
+:stress_fraction rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
+			skos:prefLabel "stress_fraction"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#daily_stress_fraction
+:daily_stress_fraction rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :stress_fraction ;
+			skos:prefLabel "daily_stress_fraction"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#thermal-time-to-maturity_weighted_stress_fraction
+:thermal-time-to-maturity_weighted_stress_fraction rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :stress_fraction ;
+			skos:prefLabel "thermal-time-to-maturity_weighted_stress_fraction"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#decomposition_respiration_mass_flux
+:decomposition_respiration_mass_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#respiration> ;
+			svu:quantifiesProcess <process#decomposition> ;
+			svu:isTypeOf :mass_flux ;
+			skos:prefLabel "decomposition_respiration_mass_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#addition_mass_flux
+:addition_mass_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#addition> ;
+			svu:isTypeOf :mass_flux ;
+			skos:prefLabel "addition_mass_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#decomposition_mass_flux
+:decomposition_mass_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#decomposition> ;
+			svu:isTypeOf :mass_flux ;
+			skos:prefLabel "decomposition_mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#rest_mass
 :rest_mass rdf:type owl:NamedIndividual ,
@@ -7398,6 +8142,12 @@
 			svu:hasAttribute <attribute#saturated> ;
 			skos:prefLabel "saturated_volume_fraction"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#mass_saturation_ratio
+:mass_saturation_ratio rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
+			skos:prefLabel "specific_saturation"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#saturation_ratio
 :saturation_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -7552,6 +8302,12 @@
 			svu:isTypeOf :heat_aerodynamic_conductance ;
 			skos:prefLabel "sensible_heat_aerodynamic_conductance"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#upward_sensible_heat_energy_flux
+:upward_sensible_heat_energy_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :sensible_heat_energy_flux ;
+			skos:prefLabel "upward_sensible_heat_energy_flux"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#sensible_heat_energy_flux
 :sensible_heat_energy_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -7568,13 +8324,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/property#separation_distance
 :separation_distance rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
-			svu:quantifiesProcess <process#separation> ;
-			svu:isTypeOf :distance ;
-			skos:prefLabel "separation_distance"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/property#separation_distance
-:separation_distance rdf:type owl:NamedIndividual ,
-			svu:QuantitativeProperty ;
+			skos:altLabel "spacing"@en ;
 			svu:isTypeOf :distance ;
 			skos:prefLabel "separation_distance"@en .
 
@@ -7602,10 +8352,22 @@
 ###  http://www.geoscienceontology.org/svo/svl/property#shaking_amplitude
 :shaking_amplitude rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
-			svu:isTypeOf :amplitude ;
-			svu:hasUnits "L" ;
 			svu:quantifiesProcess <process#shaking> ;
+			svu:isTypeOf :height ;
 			skos:prefLabel "shaking_amplitude"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#meandering_width
+:meandering_width rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#meandering> ;
+			svu:isTypeOf :width ;
+			skos:prefLabel "meander_amplitude"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#amplitude
+:amplitude rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :height ;
+			skos:prefLabel "amplitude"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#shape_factor
 :shape_factor rdf:type owl:NamedIndividual ,
@@ -7705,7 +8467,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasPropertyRole <role#constant> ;
 			svu:hasUnits "none" ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sierpi_ski%27s_constant" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sierpinski's_constant" ;
 			skos:prefLabel "sierpinski_constant"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#sieving_coefficient
@@ -8004,6 +8766,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/property#standard_gravitational_acceleration
 :standard_gravitational_acceleration rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:hasPropertyRole <role#constant> ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Standard_gravity" ;
 			skos:altLabel "standard_gravity"@en ;
 			svu:isTypeOf :gravitational_acceleration ;
@@ -8152,6 +8915,20 @@
 			svu:quantifiesProcess <process#stopping> ;
 			svu:isTypeOf :time ;
 			skos:prefLabel "stopping_time"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#volume-per-area_capacity
+:volume-per-area_capacity rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :capacity ;
+			svu:hasUnits "L" ;
+			skos:prefLabel "volume-per-area_capacity"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#volume-per-area_interception_storage_capacity
+:volume-per-area_interception_storage_capacity rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#interception> ;
+			svu:isTypeOf :volume-per-area_storage_capacity ;
+			skos:prefLabel "volume-per-area_interception_storage_capacity"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#storage_volume
 :storage_volume rdf:type owl:NamedIndividual ,
@@ -8501,6 +9278,12 @@
 			svu:isTypeOf :flattening_ratio ;
 			skos:prefLabel "third_flattening_ratio"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#effective_radiative_temperature
+:effective_radiative_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :temperature ;
+			skos:prefLabel "effective_radiative_temperature"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#threshold_temperature
 :threshold_temperature rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -8639,6 +9422,13 @@
 			svu:isTypeOf :energy_flux ;
 			svu:hasAttribute <attribute#transmitted> ;
 			skos:prefLabel "transmitted_energy_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#potential_transpiration_volume_flux
+:potential_transpiration_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#transpiration> ;
+			svu:isTypeOf :transpiration_volume_flux ;
+			skos:prefLabel "potential_transpiration_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#transpiration_volume_flux
 :transpiration_volume_flux rdf:type owl:NamedIndividual ,
@@ -8801,7 +9591,6 @@
 			svu:QuantitativeProperty ;
 			svu:hasPropertyType :dimensionless_number ;
 			svu:hasUnits "none" ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/w/index.php?title=Vadasz_number&action=edit&redlink=1" ;
 			skos:prefLabel "vadasz_number"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#van-genuchten_alpha_parameter
@@ -8852,7 +9641,8 @@
 ###  http://www.geoscienceontology.org/svo/svl/property#vehicle_identification_number
 :vehicle_identification_number rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
-			svu:hasPropertyType :dimensionless_number ;
+			svu:isTypeOf :identification ;
+			svu:hasPropertyQuantification :code ;
 			svu:hasUnits "none" ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Vehicle_identification_number" ;
 			skos:prefLabel "vehicle_identification_number"@en .
@@ -8880,9 +9670,9 @@
 ###  http://www.geoscienceontology.org/svo/svl/property#vertical_saturated_hydraulic_conductivity
 :vertical_saturated_hydraulic_conductivity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
-			skos:altLabel "vertical"@en ;
-			skos:altLabel "saturated"@en ;
 			svu:isTypeOf :hydraulic_conductivity ;
+			svu:hasAttribute <attribute#vertical> ;
+			svu:hasAttribute <attribute#saturated> ;
 			skos:prefLabel "vertical_saturated_hydraulic_conductivity"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#vertical_thermal_diffusivity
@@ -8916,16 +9706,16 @@
 ###  http://www.geoscienceontology.org/svo/svl/property#virtual_potential_temperature
 :virtual_potential_temperature rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
-			skos:altLabel "virtual"@en ;
-			skos:altLabel "potential"@en ;
 			svu:isTypeOf :potential_temperature ;
+			svu:hasAttribute <attribute#virtual> ;
+			svu:hasAttribute <attribute#potential> ;
 			skos:prefLabel "virtual_potential_temperature"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#virtual_temperature
 :virtual_temperature rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
-			skos:altLabel "virtual"@en ;
 			svu:isTypeOf :temperature ;
+			svu:hasAttribute <attribute#virtual> ;
 			skos:prefLabel "virtual_temperature"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#viscosity_term
@@ -9130,7 +9920,6 @@
 			svu:QuantitativeProperty ;
 			svu:hasPropertyRole <role#parameter> ;
 			svu:hasUnits "none" ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/w/index.php?title=Wallis_parameter&action=edit&redlink=1" ;
 			skos:prefLabel "wallis_parameter"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#wave_impedance
@@ -9153,7 +9942,6 @@
 			svu:QuantitativeProperty ;
 			svu:hasPropertyType :dimensionless_number ;
 			svu:hasUnits "none" ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/w/index.php?title=Weaver_flame_speed_number&action=edit&redlink=1" ;
 			skos:prefLabel "weaver_flame_speed_number"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#weber_number
@@ -9362,6 +10150,94 @@
 			svu:hasOperator <operator#antigradient> ;
 			skos:prefLabel "antigradient_of_elevation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#average_of_temperature
+:average_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#average> ;
+			skos:prefLabel "average_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#average_of_mass_leaching_rate
+:average_of_mass_leaching_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :mass_leaching_rate ;
+			svu:hasUnits "M T^-1" ;
+			svu:hasOperator <operator#average> ;
+			skos:prefLabel "average_of_mass_leaching_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#average_of_gross_mass_immobilization_rate
+:average_of_gross_mass_immobilization_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :gross_mass_immobilization_rate ;
+			svu:hasUnits "M T^-1" ;
+			svu:hasOperator <operator#average> ;
+			skos:prefLabel "average_of_gross_mass_immobilization_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#average_of_gross_mass_mineralization_rate
+:average_of_gross_mass_mineralization_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :gross_mass_mineralization_rate ;
+			svu:hasUnits "M T^-1" ;
+			svu:hasOperator <operator#average> ;
+			skos:prefLabel "average_of_gross_mass_mineralization_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#average_of_net_mass_mineralization_rate
+:average_of_net_mass_mineralization_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :net_mass_mineralization_rate ;
+			svu:hasUnits "M T^-1" ;
+			svu:hasOperator <operator#average> ;
+			skos:prefLabel "average_of_net_mass_mineralization_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#average_of_mass_emission_rate
+:average_of_mass_emission_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :mass_emission_rate ;
+			svu:hasUnits "M T^-1" ;
+			svu:hasOperator <operator#average> ;
+			skos:prefLabel "average_of_mass_emission_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#average_of_denitrification_mass_emission_rate
+:average_of_denitrification_mass_emission_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :denitrification_mass_emission_rate ;
+			svu:hasUnits "M T^-1" ;
+			svu:hasOperator <operator#average> ;
+			skos:prefLabel "average_of_denitrification_mass_emission_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#average_of_nitrification_mass_emission_rate
+:average_of_nitrification_mass_emission_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :nitrification_mass_emission_rate ;
+			svu:hasUnits "M T^-1" ;
+			svu:hasOperator <operator#average> ;
+			skos:prefLabel "average_of_nitrification_mass_emission_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#average_of_mass_volatilization_rate
+:average_of_mass_volatilization_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :mass_volatilization_rate ;
+			svu:hasUnits "M T^-1" ;
+			svu:hasOperator <operator#average> ;
+			skos:prefLabel "average_of_mass_volatilization_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#average_of_mass_denitrification_rate
+:average_of_mass_denitrification_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :mass_denitrification_rate ;
+			svu:hasUnits "M T^-1" ;
+			svu:hasOperator <operator#average> ;
+			skos:prefLabel "average_of_mass_denitrification_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#average_of_mass_nitrification_rate
+:average_of_mass_nitrification_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :mass_nitrification_rate ;
+			svu:hasUnits "M T^-1" ;
+			svu:hasOperator <operator#average> ;
+			skos:prefLabel "average_of_mass_nitrification_rate"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#azimuth_angle_of_bolus_velocity
 :azimuth_angle_of_bolus_velocity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -9522,6 +10398,14 @@
 			svu:hasOperator <operator#azimuth_angle_of_z_integral> ;
 			skos:prefLabel "azimuth_angle_of_z_integral_of_velocity"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#change_of_mass
+:change_of_mass rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :mass ;
+			svu:hasUnits "M" ;
+			svu:hasOperator <operator#change> ;
+			skos:prefLabel "change_of_mass"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#change_from_annual_min_of_mass
 :change_from_annual_min_of_mass rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -9569,6 +10453,22 @@
 			svu:hasUnits "T^-1" ;
 			svu:hasOperator <operator#curl> ;
 			skos:prefLabel "curl_of_velocity"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#daily_min_of_temperature
+:daily_min_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#daily_min> ;
+			skos:prefLabel "daily_min_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#daily_max_of_temperature
+:daily_max_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#daily_max> ;
+			skos:prefLabel "daily_max_of_temperature"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#daily_time_integral_of_precipitation_leq_volume_flux
 :daily_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
@@ -10556,6 +11456,14 @@
 			svu:hasOperator <operator#lower_limit> ;
 			skos:prefLabel "lower_limit_of_hearing_frequency"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#lower_limit_of_volume_fraction
+:lower_limit_of_volume_fraction rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :volume_fraction ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#lower_limit> ;
+			skos:prefLabel "lower_limit_of_volume_fraction"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#magnitude_of_bolus_velocity
 :magnitude_of_bolus_velocity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -10756,6 +11664,30 @@
 			svu:hasOperator <operator#max> ;
 			skos:prefLabel "max_of_output_power"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#max_of_relative_saturation
+:max_of_relative_saturation rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :saturation_ratio ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#max> ;
+			skos:prefLabel "max_of_relative_saturation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#max_of_temperature
+:max_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#max> ;
+			skos:prefLabel "max_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#max_of_saturation_ratio
+:max_of_saturation_ratio rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :saturation_ratio ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#max> ;
+			skos:prefLabel "max_of_saturation_ratio"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#mean_of_depth
 :mean_of_depth rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -10860,13 +11792,45 @@
 			svu:hasOperator <operator#min> ;
 			skos:prefLabel "min_of_orbital_speed"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#min_of_saturation_ratio
+:min_of_saturation_ratio rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :saturation_ratio ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#min> ;
+			skos:prefLabel "min_of_relative_saturation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#min_of_temperature
+:min_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#min> ;
+			skos:prefLabel "min_of_temperature"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#monthly_time_integral_of_precipitation_leq_volume_flux
 :monthly_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isDerivedFrom :precipitation_leq_volume_flux ;
 			svu:hasUnits "L" ;
-			svu:hasOperator <operator#monthly_time_integral> ;
+			svu:hasOperator <operator#one-month_time_integral> ;
 			skos:prefLabel "monthly_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#month-specific_anomaly_of_volume_fraction
+:month-specific_anomaly_of_volume_fraction rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :volume_fraction ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#month-specific_anomaly> ;
+			skos:prefLabel "month-specific_anomaly_of_volume_fraction"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#month-specific_anomaly_of_temperature
+:month-specific_anomaly_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#month-specific_anomaly> ;
+			skos:prefLabel "month-specific_anomaly_of_temperature"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#normal_component_of_stress
 :normal_component_of_stress rdf:type owl:NamedIndividual ,
@@ -11132,6 +12096,14 @@
 			svu:hasOperator <operator#peak_time> ;
 			skos:prefLabel "peak_time_of_volume_flux"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#one-year_change_of_mass
+:one-year_change_of_mass rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :mass ;
+			svu:hasUnits "M" ;
+			svu:hasOperator <operator#one-year_change> ;
+			skos:prefLabel "one-year_change_of_mass"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#power-to-weight_ratio
 :power-to-weight_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -11147,6 +12119,14 @@
 			svu:isDerivedFrom :slope ;
 			svu:hasOperator <operator#product> ;
 			skos:prefLabel "depth-times-slope"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#product_of_angular_frequency_and_time
+:product_of_angular_frequency_and_time rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :angular_frequency ;
+			svu:isDerivedFrom :time ;
+			svu:hasOperator <operator#product> ;
+			skos:prefLabel "angular-frequency-times-time"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#range_of_depth
 :range_of_depth rdf:type owl:NamedIndividual ,
@@ -11259,6 +12239,22 @@
 			svu:hasUnits "L M^-1 O^-1 T^2" ;
 			svu:hasOperator <operator#temperature_derivative> ;
 			skos:prefLabel "temperature_derivative_of_isothermal_compressibility"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#time_average_of_mass_volatilization_rate
+:time_average_of_mass_volatilization_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :mass_volatilization_rate ;
+			svu:hasUnits "M T^-1" ;
+			svu:hasOperator <operator#time_average> ;
+			skos:prefLabel "time_average_of_mass_volatilization_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#time_average_of_mass_leaching_rate
+:time_average_of_mass_leaching_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :mass_leaching_rate ;
+			svu:hasUnits "M T^-1" ;
+			svu:hasOperator <operator#time_average> ;
+			skos:prefLabel "time_average_of_mass_leaching_rate"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#time_average_of_square_of_absolute_salinity
 :time_average_of_square_of_absolute_salinity rdf:type owl:NamedIndividual ,
@@ -11484,6 +12480,14 @@
 			svu:hasOperator <operator#time_derivative_of_z_component> ;
 			skos:prefLabel "time_derivative_of_z_component_of_velocity"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#time_integral_of_accumulation_volume_flux
+:time_integral_of_accumulation_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :accumulation_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#time_integral> ;
+			skos:prefLabel "time_integral_of_accumulation_volume_flux"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#time_integral_of_infiltration_volume_flux
 :time_integral_of_infiltration_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -11507,6 +12511,62 @@
 			svu:hasUnits "L^3" ;
 			svu:hasOperator <operator#time_integral> ;
 			skos:prefLabel "time_integral_of_volume_flow_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#time_integral_of_precipitation_leq_volume_flux
+:time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#time_integral> ;
+			skos:prefLabel "time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#time_integral_of_evaporation_volume_flux
+:time_integral_of_evaporation_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :evaporation_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#time_integral> ;
+			skos:prefLabel "time_integral_of_evaporation_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#time_integral_of_transpiration_volume_flux
+:time_integral_of_transpiration_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :transpiration_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#time_integral> ;
+			skos:prefLabel "time_integral_of_transpiration_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#time_integral_of_decomposition_respiration_mass_flux
+:time_integral_of_decomposition_respiration_mass_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :decomposition_respiration_mass_flux ;
+			svu:hasUnits "L^-2 M" ;
+			svu:hasOperator <operator#time_integral> ;
+			skos:prefLabel "time_integral_of_decomposition_respiration_mass_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#time_integral_of_mass-per-area_production_rate
+:time_integral_of_mass-per-area_production_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :mass-per-area_production_rate ;
+			svu:hasUnits "L^-2 M" ;
+			svu:hasOperator <operator#time_integral> ;
+			skos:prefLabel "time_integral_of_mass-per-area_production_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#time_integral_of_drainage_leaching_mass_flux
+:time_integral_of_drainage_leaching_mass_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :drainage_leaching_mass_flux ;
+			svu:hasUnits "L^-2 M" ;
+			svu:hasOperator <operator#time_integral> ;
+			skos:prefLabel "time_integral_of_drainage_leaching_mass_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cumulative_time_integral_of_cosine_of_product_of_angular_frequency_and_time
+:cumulative_time_integral_of_cosine_of_product_of_angular_frequency_and_time rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :product_of_angular_frequency_and_time ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#cumulative_time_integral_of_cosine> ;
+			skos:prefLabel "cumulative_time_integral_of_cos_of_angular-frequency-times-time"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#time_max_of_elevation
 :time_max_of_elevation rdf:type owl:NamedIndividual ,
@@ -11675,6 +12735,14 @@
 			svu:hasUnits "L^-1 M T^-2" ;
 			svu:hasOperator <operator#up_up_component> ;
 			skos:prefLabel "up_up_component_of_viscous_stress"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#upper_limit_of_volume_fraction
+:upper_limit_of_volume_fraction rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :volume_fraction ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#upper_limit> ;
+			skos:prefLabel "upper_limit_of_volume_fraction"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#upper_limit_of_hearing_frequency
 :upper_limit_of_hearing_frequency rdf:type owl:NamedIndividual ,
@@ -12236,6 +13304,38 @@
 			svu:hasOperator <operator#yearly_time_integral> ;
 			skos:prefLabel "yearly_time_integral_of_precipitation_leq_volume_flux"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#yearly_time_integral_of_addition_mass_flux
+:yearly_time_integral_of_addition_mass_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :addition_mass_flux ;
+			svu:hasUnits "L^-2 M" ;
+			svu:hasOperator <operator#yearly_time_integral> ;
+			skos:prefLabel "yearly_time_integral_of_addition_mass_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#yearly_time_integral_of_decomposition_mass_flux
+:yearly_time_integral_of_decomposition_mass_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :decomposition_mass_flux ;
+			svu:hasUnits "L^-2 M" ;
+			svu:hasOperator <operator#yearly_time_integral> ;
+			skos:prefLabel "yearly_time_integral_of_decomposition_mass_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#yearly_average_of_temperature
+:yearly_average_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#yearly_average> ;
+			skos:prefLabel "yearly_average_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#yearly_change_of_mass
+:yearly_change_of_mass rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :mass ;
+			svu:hasUnits "M" ;
+			svu:hasOperator <operator#yearly_change> ;
+			skos:prefLabel "yearly_change_of_mass"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#z_component_of_acceleration
 :z_component_of_acceleration rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -12427,3 +13527,267 @@
 			svu:hasUnits "L^-1 M T^-2" ;
 			svu:hasOperator <operator#z_z_component> ;
 			skos:prefLabel "z_z_component_of_viscous_stress"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#first_dekad_time_integral_of_precipitation_leq_volume_flux
+:first_dekad_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#first_dekad_time_integral> ;
+			skos:prefLabel "first_dekad_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cumulative_anomaly_of_first_dekad_time_integral_of_precipitation_leq_volume_flux
+:cumulative_anomaly_of_first_dekad_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#cumulative_anomaly_of_first_dekad_time_integral> ;
+			skos:prefLabel "cumulative_anomaly_of_first_dekad_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cumulative_z-score_of_first_dekad_time_integral_of_precipitation_leq_volume_flux
+:cumulative_z-score_of_first_dekad_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#cumulative_z-score_of_first_dekad_time_integral> ;
+			skos:prefLabel "cumulative_z-score_of_first_dekad_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#second_dekad_time_integral_of_precipitation_leq_volume_flux
+:second_dekad_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#second_dekad_time_integral> ;
+			skos:prefLabel "second_dekad_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cumulative_anomaly_of_second_dekad_time_integral_of_precipitation_leq_volume_flux
+:cumulative_anomaly_of_second_dekad_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#cumulative_anomaly_of_second_dekad_time_integral> ;
+			skos:prefLabel "cumulative_anomaly_of_second_dekad_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cumulative_z-score_of_second_dekad_time_integral_of_precipitation_leq_volume_flux
+:cumulative_z-score_of_second_dekad_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#cumulative_z-score_of_second_dekad_time_integral> ;
+			skos:prefLabel "cumulative_z-score_of_second_dekad_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#third_dekad_time_integral_of_precipitation_leq_volume_flux
+:third_dekad_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#third_dekad_time_integral> ;
+			skos:prefLabel "third_dekad_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cumulative_anomaly_of_third_dekad_time_integral_of_precipitation_leq_volume_flux
+:cumulative_anomaly_of_third_dekad_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#cumulative_anomaly_of_third_dekad_time_integral> ;
+			skos:prefLabel "cumulative_anomaly_of_third_dekad_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cumulative_z-score_of_third_dekad_time_integral_of_precipitation_leq_volume_flux
+:cumulative_z-score_of_third_dekad_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#cumulative_z-score_of_third_dekad_time_integral> ;
+			skos:prefLabel "cumulative_z-score_of_third_dekad_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#one-month_time_integral_of_precipitation_leq_volume_flux
+:one-month_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#one-month_time_integral> ;
+			skos:prefLabel "one-month_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cumulative_anomaly_of_one-month_time_integral_of_precipitation_leq_volume_flux
+:cumulative_anomaly_of_one-month_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#cumulative_anomaly_of_one-month_time_integral> ;
+			skos:prefLabel "cumulative_anomaly_of_one-month_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cumulative_z-score_of_one-month_time_integral_of_precipitation_leq_volume_flux
+:cumulative_z-score_of_one-month_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#cumulative_z-score_of_one-month_time_integral> ;
+			skos:prefLabel "cumulative_z-score_of_one-month_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#forecast_of_five-day_time_integral_of_precipitation_leq_volume_flux
+:forecast_of_five-day_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#forecast_of_five-day_time_integral> ;
+			skos:prefLabel "forecast_of_five-day_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cumulative_anomaly_of_forecast_of_five-day_time_integral_of_precipitation_leq_volume_flux
+:cumulative_anomaly_of_forecast_of_five-day_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#cumulative_anomaly_of_forecast_of_five-day_time_integral> ;
+			skos:prefLabel "cumulative_anomaly_of_forecast_of_five-day_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cumulative_z-score_of_forecast_of_five-day_time_integral_of_precipitation_leq_volume_flux
+:cumulative_z-score_of_forecast_of_five-day_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#cumulative_z-score_of_forecast_of_five-day_time_integral> ;
+			skos:prefLabel "cumulative_z-score_of_forecast_of_five-day_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#forecast_of_ten-day_time_integral_of_precipitation_leq_volume_flux
+:forecast_of_ten-day_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#forecast_of_ten-day_time_integral> ;
+			skos:prefLabel "forecast_of_ten-day_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cumulative_anomaly_of_forecast_of_ten-day_time_integral_of_precipitation_leq_volume_flux
+:cumulative_anomaly_of_forecast_of_ten-day_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#cumulative_anomaly_of_forecast_of_ten-day_time_integral> ;
+			skos:prefLabel "cumulative_anomaly_of_forecast_of_ten-day_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cumulative_z-score_of_forecast_of_ten-day_time_integral_of_precipitation_leq_volume_flux
+:cumulative_z-score_of_forecast_of_ten-day_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#cumulative_z-score_of_forecast_of_ten-day_time_integral> ;
+			skos:prefLabel "cumulative_z-score_of_forecast_of_ten-day_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#forecast_of_fifteen-day_time_integral_of_precipitation_leq_volume_flux
+:forecast_of_fifteen-day_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#forecast_of_fifteen-day_time_integral> ;
+			skos:prefLabel "forecast_of_fifteen-day_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cumulative_anomaly_of_forecast_of_fifteen-day_time_integral_of_precipitation_leq_volume_flux
+:cumulative_anomaly_of_forecast_of_fifteen-day_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "L" ;
+			svu:hasOperator <operator#cumulative_anomaly_of_forecast_of_fifteen-day_time_integral> ;
+			skos:prefLabel "cumulative_anomaly_of_forecast_of_fifteen-day_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#cumulative_z-score_of_forecast_of_fifteen-day_time_integral_of_precipitation_leq_volume_flux
+:cumulative_z-score_of_forecast_of_fifteen-day_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :precipitation_leq_volume_flux ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#cumulative_z-score_of_forecast_of_fifteen-day_time_integral> ;
+			skos:prefLabel "cumulative_z-score_of_forecast_of_fifteen-day_time_integral_of_precipitation_leq_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#first_dekad_daily_mean_of_temperature
+:first_dekad_daily_mean_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#first_dekad_daily_mean> ;
+			skos:prefLabel "first_dekad_daily_mean_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#second_dekad_daily_mean_of_temperature
+:second_dekad_daily_mean_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#second_dekad_daily_mean> ;
+			skos:prefLabel "second_dekad_daily_mean_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#third_dekad_daily_mean_of_temperature
+:third_dekad_daily_mean_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#third_dekad_daily_mean> ;
+			skos:prefLabel "third_dekad_daily_mean_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#one-month_daily_mean_of_temperature
+:one-month_daily_mean_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#one-month_daily_mean> ;
+			skos:prefLabel "one-month_daily_mean_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#month-specific_anomaly_of_first_dekad_daily_mean_of_temperature
+:month-specific_anomaly_of_first_dekad_daily_mean_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#month-specific_anomaly_of_first_dekad_daily_mean> ;
+			skos:prefLabel "month-specific_anomaly_of_first_dekad_daily_mean_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#month-specific_anomaly_of_second_dekad_daily_mean_of_temperature
+:month-specific_anomaly_of_second_dekad_daily_mean_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#month-specific_anomaly_of_second_dekad_daily_mean> ;
+			skos:prefLabel "month-specific_anomaly_of_second_dekad_daily_mean_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#month-specific_anomaly_of_third_dekad_daily_mean_of_temperature
+:month-specific_anomaly_of_third_dekad_daily_mean_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#month-specific_anomaly_of_third_dekad_daily_mean> ;
+			skos:prefLabel "month-specific_anomaly_of_third_dekad_daily_mean_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#month-specific_anomaly_of_one-month_daily_mean_of_temperature
+:month-specific_anomaly_of_one-month_daily_mean_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "O" ;
+			svu:hasOperator <operator#month-specific_anomaly_of_one-month_daily_mean> ;
+			skos:prefLabel "month-specific_anomaly_of_one-month_daily_mean_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#month-specific_z-score_of_first_dekad_daily_mean_of_temperature
+:month-specific_z-score_of_first_dekad_daily_mean_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#month-specific_z-score_of_first_dekad_daily_mean> ;
+			skos:prefLabel "month-specific_z-score_of_first_dekad_daily_mean_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#month-specific_z-score_of_second_dekad_daily_mean_of_temperature
+:month-specific_z-score_of_second_dekad_daily_mean_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#month-specific_z-score_of_second_dekad_daily_mean> ;
+			skos:prefLabel "month-specific_z-score_of_second_dekad_daily_mean_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#month-specific_z-score_of_third_dekad_daily_mean_of_temperature
+:month-specific_z-score_of_third_dekad_daily_mean_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#month-specific_z-score_of_third_dekad_daily_mean> ;
+			skos:prefLabel "month-specific_z-score_of_third_dekad_daily_mean_of_temperature"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#month-specific_z-score_of_one-month_daily_mean_of_temperature
+:month-specific_z-score_of_one-month_daily_mean_of_temperature rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :temperature ;
+			svu:hasUnits "none" ;
+			svu:hasOperator <operator#month-specific_z-score_of_one-month_daily_mean> ;
+			skos:prefLabel "month-specific_z-score_of_one-month_daily_mean_of_temperature"@en .

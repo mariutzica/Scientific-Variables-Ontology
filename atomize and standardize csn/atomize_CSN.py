@@ -77,6 +77,7 @@ csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']]=''
 cond_obj0 = csn['object0'] == 'air'
 cond_obj1 = csn['object1'] == 'radiation~visible'
 csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'air@context~in_radiation~visible'
+csn.loc[ cond_obj0 & cond_obj1, 'quantity_id'] = 'linear_speed'
 csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
 
 #air_water~vapor
@@ -143,6 +144,18 @@ csn.loc[ cond_obj0, 'object_cat'] = 'root'
 csn.loc[ cond_obj0, 'quantity_label'] = 'isobaric_mass-specific_heat_capacity'
 csn.loc[ cond_obj0, 'object0']=''
 
+#ammonia/ammonium-as-nitrogen
+cond_obj0 = csn['object0'].str.contains('-as-') & ~csn['object0'].str.contains('fertilizer')
+cond_quant = csn['quantity'].str.contains('_volatilization')
+csn.loc[ cond_obj0 & cond_quant, 'object_id'] = csn.loc[ cond_obj0 & cond_quant, 'object0'] + '_volatilization'
+cond_quant = csn['quantity'].str.contains('_leaching')
+csn.loc[ cond_obj0 & cond_quant, 'object_id'] = csn.loc[ cond_obj0 & cond_quant, 'object0'] + '_leaching'
+cond_quant = csn['quantity'].str.contains('_nitrification')
+csn.loc[ cond_obj0 & cond_quant, 'object_id'] = csn.loc[ cond_obj0 & cond_quant, 'object0'] + '_nitrification'
+cond_quant = csn['quantity'].str.contains('_denitrification')
+csn.loc[ cond_obj0 & cond_quant, 'object_id'] = csn.loc[ cond_obj0 & cond_quant, 'object0'] + '_denitrification'
+csn.loc[ cond_obj0, 'object0']=''
+
 #anvil
 cond_obj0 = csn['object0'] == 'anvil'
 csn.loc[ cond_obj0, 'object_id'] = 'anvil_isobaric-process'
@@ -156,12 +169,18 @@ csn.loc[ cond_obj0, 'object_cat'] = 'root'
 csn.loc[ cond_obj0, 'object_pref'] = 'body'
 csn.loc[ cond_obj0, 'object0'] = ''
 
+#aquifer~left/right_channel~stream_reach_water
+cond_obj0 = csn['object0'].str.contains('aquifer')
+csn.loc[ cond_obj0, 'object_id'] = csn.loc[ cond_obj0, 'object0']+'@role~source_'+\
+    '(channel~stream@context~part_reach)@role~sink_(water_flowing)@role~main_baseflow'
+csn.loc[ cond_obj0, ['object0','object1','object2','object3']] = ''
+
 #atmosphere_aerosol_dust
 cond_obj0 = csn['object0'] == 'atmosphere'
 cond_obj1 = csn['object1'] == 'aerosol'
 cond_obj2 = csn['object2'] == 'dust'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
-            'object_id'] = '(atmosphere@role~main_radiation@role~in_transmission)@role~first_(atmosphere@role~medium_dust~aerosol@role~main_radiation@role~in_transmission)@role~second'
+            'object_id'] = '(atmosphere@role~main_radiation@role~in_transmission)@role~first_((atmosphere@medium_dust~aerosol)@role~main_radiation@role~in_transmission)@role~second'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
             'object_label'] = 'atmosphere_dust~aerosol'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2,\
@@ -598,24 +617,26 @@ cond_obj2 = csn['object2'] == 'air'
 cond_obj3 = csn['object3'] == 'water~vapor'
 cond_obj4 = csn['object4'] == 'flow'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
-        'object_label'] = 'atmosphere_bottom_air_flowing_water~vapor'
+        'object_label'] = 'atmosphere_bottom_air_water~vapor'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object_id'] = '(atmosphere_bottom)@context~in_(air@context~in_water~vapor)'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4, \
         'object_id'] = '(atmosphere_bottom)@context~in_((air_flowing)@context~in_water~vapor)'
 cond_quant = csn['quantity'].str.contains('_point_|saturation|conductance|pressure')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
-        'object_id'] = '(atmosphere_bottom)@context~in_((air_flowing)@medium_water~vapor)'
+        'object_id'] = '(atmosphere_bottom)@context~in_(air@medium_water~vapor)'
 cond_quant = csn['quantity'].str.contains('dew_point')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
-        'object_id'] = '(atmosphere_bottom)@context~in_((air_flowing)@medium_dew-point_water~vapor)'
+        'object_id'] = '(atmosphere_bottom)@context~in_(air@medium_dew-point_water~vapor)'
 cond_quant = csn['quantity'].str.contains('frost_point')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
-        'object_id'] = '(atmosphere_bottom)@context~in_((air_flowing)@medium_frost-point_water~vapor)'
+        'object_id'] = '(atmosphere_bottom)@context~in_(air@medium_frost-point_water~vapor)'
 cond_quant = csn['quantity'].str.contains('saturated')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
-        'object_id'] = '(atmosphere_bottom)@context~in_((air_flowing)@medium_saturated_water~vapor)'
+        'object_id'] = '(atmosphere_bottom)@context~in_(air@medium_saturated_water~vapor)'
 cond_quant = csn['quantity'].str.contains('equilibrium')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
-        'object_id'] = '(atmosphere_bottom)@context~in_((air_flowing)@medium_equilibrium_water~vapor)'
+        'object_id'] = '(atmosphere_bottom)@context~in_(air@medium_equilibrium_water~vapor)'
 cond_quant = csn['quantity'].str.contains('_point')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
         'quantity_label'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
@@ -870,6 +891,10 @@ cond_quant = csn['quantity'].str.contains('rainfall')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_id'].str.replace('water','rainfall')
+cond_quant = csn['quantity'].str.contains('daily_time_integral')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'quantity_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'quantity'].str.replace('daily','one-day')
 csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
 
 #atmosphere_water~vapor
@@ -957,6 +982,8 @@ cond_quant = csn['quantity'].str.contains('travel')
 csn.loc[ cond_obj0 & cond_obj1, 'quantity_label'] = \
         csn.loc[ cond_obj0 & cond_obj1, 'quantity_label']\
         .str.replace('total_','')
+csn.loc[ cond_obj0 & cond_obj1, 'quantity_id'] = \
+        csn.loc[ cond_obj0 & cond_obj1, 'quantity_label']
 cond_quant = csn['quantity'].str.contains('drag_coefficient')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_pref'] = 'phenomenon'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
@@ -1371,7 +1398,7 @@ cond_obj3 = csn['object3'] == 'flow'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
         'object_id'] = 'basin~drainage@context~part_(outlet@context~at_(water_flowing_friction))'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
-        'object_label'] = 'basin~drainage_outlet_water_flowing'
+        'object_label'] = 'basin~drainage_outlet_water_flow'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
         ['object0','object1','object2','object3']] = ''
 
@@ -1385,7 +1412,7 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
         csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
                             'object3'].str.replace('~total','')+'))'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
-        'object_label'] = 'basin~drainage_outlet_water_flowing_'+\
+        'object_label'] = 'basin~drainage_outlet_water_flow_'+\
         csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
                             'object3'].str.replace('~total','')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
@@ -1415,7 +1442,7 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
         'object_id'].str.replace('water_','water_flowing_')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
         'object_label'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
-        'object_label'].str.replace('water_','water_flowing_')
+        'object_label'].str.replace('water_','water_flow_')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
         ['object0','object1','object2','object3','object4']] = ''
 
@@ -1425,7 +1452,7 @@ cond_obj1 = csn['object1'] == 'outlet~terminal'
 csn.loc[ cond_obj0 & cond_obj1, \
         'object_id'] = 'basin~drainage@context~part_(outlet~terminal@context~at_(water_flowing))'
 csn.loc[ cond_obj0 & cond_obj1, \
-        'object_label'] = 'basin~drainage_outlet~terminal_water_flowing'
+        'object_label'] = 'basin~drainage_outlet~terminal_water_flow'
 csn.loc[ cond_obj0 & cond_obj1,\
         ['object0','object1','object2','object3','object4']] = ''
 
@@ -1542,6 +1569,32 @@ csn.loc[ cond_obj0, 'object_label'] = 'benzene_molecule_bond~c-c-c'
 csn.loc[ cond_obj0, 'quantity_label'] = 'angle'
 csn.loc[ cond_obj0, ['object0','object1','object2','object3','object4']] = ''
 
+#biomass_nitrogen_at-harvest__mass-per-area_accumulation_density
+cond_obj0 = csn['object0'] == 'biomass'
+cond_obj1 = csn['object1'] == 'nitrogen'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = '(biomass@context~in_(nitrogen_accumulation))_(crop_harvest)@reference~at'
+csn.loc[ cond_obj0 & cond_obj1, ['object0','object1','object2']] = ''
+
+#biomass~microbial-and-soil_pool~organic~stabilized-as-nitrogen__mass-per-area_density
+cond_obj0 = csn['object0'] == 'biomass~microbial-and-soil'
+csn.loc[ cond_obj0, 'object_id'] = 'biomass~microbial@context~in_(soil_pool~organic~stabilized)@context~in_nitrogen'
+csn.loc[ cond_obj0, ['object0','object1','object2','object3','object4']] = ''
+
+#biomass~microbial-and-soil~stabilized_carbon__decomposition_mass_respiration_rate
+cond_obj0 = csn['object0'] == 'biomass~microbial-and-soil~stabilized'
+csn.loc[ cond_obj0, 'object_id'] = '(biomass~microbial_decomposition)@role~source_(soil~stabilized_decomposition)@role~source_carbon@role~main_respiration'
+csn.loc[ cond_obj0, ['object0','object1','object2','object3','object4']] = ''
+
+#biomass~microbial-or-soil_pool~stabilized~organic_nitrogen__gross_immobilization_mass-per-area_density
+cond_obj0 = csn['object0'] == 'biomass~microbial-or-soil'
+csn.loc[ cond_obj0, 'object_id'] = 'biomass~microbial@context~in_(soil_pool~organic~stabilized)@context~in_nitrogen'
+csn.loc[ cond_obj0, ['object0','object1','object2','object3','object4']] = ''
+
+#biomass~removed_nitrogen__mass-per-area_density
+cond_obj0 = csn['object0'] == 'biomass~removed'
+csn.loc[ cond_obj0, 'object_id'] = 'biomass~removed@context~in_nitrogen'
+csn.loc[ cond_obj0, ['object0','object1','object2','object3','object4']] = ''
+
 #black-hole
 cond_obj0 = csn['object0'] == 'black-hole'
 csn.loc[ cond_obj0, 'object_id'] = 'black-hole'
@@ -1598,6 +1651,9 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         'object_id'] = '(cesium_atom)@context~part_'+\
     csn.loc[ cond_obj0, 'object2']
+cond_quant = csn['quantity']=='relative_atomic_mass'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'quantity_id'] = 'atomic_mass_ratio'
 csn.loc[ cond_obj0, ['object0','object1','object2']] = ''
 
 #channel
@@ -1614,6 +1670,18 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_cat'] = ''
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label'] = \
         csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_label']\
         .str.replace('station_','')
+#channel_meander
+cond_quant = csn['quantity'].str.contains('meander')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = 'channel_meandering'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_pref'] = 'phenomenon'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_id'] = \
+    csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity'].str.replace('meander','meandering')
+cond_quant = csn['quantity'].str.contains('meander_amplitude')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'quantity_id'] = 'meandering_width'
+cond_quant = csn['quantity'].str.contains('migration')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = 'channel_meandering_migration'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_pref'] = 'phenomenon'
+csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
 csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
 
 #channel_bank_sediment_water
@@ -1634,6 +1702,69 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         ['object0','object1','object2']] = ''
 
+#channel~river_bed_channel~stream_reach_water
+cond_obj0 = csn['object0'].str.contains('channel~')
+cond_obj1 = csn['object1'] == 'bed'
+cond_obj2 = csn['object2'].str.contains('channel~')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = '(channel~river_bed)@role~exchange_' +\
+        '(channel~stream@context~part_reach)@role~exchange_(water_flowing)@role~main_leakage'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1']] = ''
+
+#channel~river_bed_water~incoming/outgoing
+cond_obj0 = csn['object0'].str.contains('channel~')
+cond_obj1 = csn['object1'] == 'bed'
+cond_obj2 = csn['object2'].str.contains('water~incoming')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = '(channel~river_bed)@context~sink_' +\
+        '(water_flowing)'
+cond_obj2 = csn['object2'].str.contains('water~outgoing')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = '(channel~river_bed)@context~source_' +\
+        '(water_flowing)'
+cond_obj2 = csn['object2'].str.contains('water~')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1']] = ''
+
+#channel~river_bed_water
+cond_obj0 = csn['object0'].str.contains('channel~')
+cond_obj1 = csn['object1'] == 'bed'
+cond_obj2 = csn['object2'] == 'water'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = '(channel~river_bed)@medium_water'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1']] = ''
+
+#channel_bed
+cond_obj0 = csn['object0'] == 'channel'
+cond_obj1 = csn['object1'] == 'bed'
+cond_obj2 = csn['object2'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'channel_bed'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_pref'] = 'body'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1']] = ''
+
+#channel_bed_below-channel-bank
+cond_obj0 = csn['object0'] == 'channel'
+cond_obj1 = csn['object1'] == 'bed'
+cond_obj2 = csn['object2'] == 'below-channel-bank'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = '(channel_bed)_(channel@context~part_bank)@reference~below'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2']] = ''
+
+#channel_bed_water
+cond_obj0 = csn['object0'] == 'channel'
+cond_obj1 = csn['object1'] == 'bed'
+cond_obj2 = csn['object2'] == 'water'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = '(channel_bed)@medium_water'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2']] = ''
+        
 #channel_bottom_sediment
 cond_obj0 = csn['object0'] == 'channel'
 cond_obj1 = csn['object1'] == 'bottom'
@@ -1649,9 +1780,21 @@ cond_obj0 = csn['object0'] == 'channel'
 cond_obj1 = csn['object1'] == 'bottom'
 cond_obj2 = csn['object2'] == 'sediment'
 cond_obj3 = csn['object3'] == 'grain'
-csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+cond_obj4 = csn['object4'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4, \
         'object_id'] = '(channel_bottom)@context~on_(sediment_grain)'
-csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4, \
+        ['object0','object1','object2','object3']] = ''
+
+#channel_bottom_sediment_grain_water
+cond_obj0 = csn['object0'] == 'channel'
+cond_obj1 = csn['object1'] == 'bottom'
+cond_obj2 = csn['object2'] == 'sediment'
+cond_obj3 = csn['object3'] == 'grain'
+cond_obj4 = csn['object4'] == 'water'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4, \
+        'object_id'] = '((channel_bottom)@context~on_(sediment_grain))@medium_water'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4, \
         ['object0','object1','object2','object3']] = ''
 
 #channel_bottom_sediment_oxygen~dissolved
@@ -1713,6 +1856,11 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj5, \
 cond_quant = csn['quantity'].str.contains('log-law')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
         'evaluation_method'] = 'log-law'
+cond_quant = csn['quantity']=='total_pressure'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
+        'quantity_label'] = 'pressure'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
+        'quantity_id'] = 'pressure'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
         ['object0','object1','object2','object3','object4','object5']] = ''
 
@@ -1760,7 +1908,7 @@ cond_quant = csn['quantity'].str.contains('flow|flux')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'] = '(channel@context~part_entrance)@context~at_(water_flowing_x-section)'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-        'object_label'] = 'channel_entrance_water_flowing_x-section'
+        'object_label'] = 'channel_entrance_water_flow_x-section'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         ['object0','object1','object2','object3']] = ''
 
@@ -1802,24 +1950,36 @@ cond_quant = csn['quantity'].str.contains('_flow_')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4 & cond_quant, \
         'object_id'] = '(channel@context~part_exit)@context~at_(water_flowing_x-section)'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4 & cond_quant, \
-        'object_label'] = 'channel_exit_water_flowing_x-section'
+        'object_label'] = 'channel_exit_water_flow_x-section'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
         ['object0','object1','object2','object3','object4']] = ''
 
-#channel_meander
-cond_obj0 = csn['object0'] == 'channel'
-cond_obj1 = csn['object1'] == 'meander'
-cond_quant = csn['quantity'].str.contains('migration')
-csn.loc[ cond_obj0 & cond_obj1 & ~cond_quant, 'object_id'] = 'channel_meandering'
-csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = 'channel_meandering_migration'
-csn.loc[ cond_obj0 & cond_obj1 & ~cond_quant, 'object_cat'] = 'root'
-csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
 
 #channel_valley_centerline
 cond_obj0 = csn['object0'] == 'channel'
 cond_obj1 = csn['object1'] == 'valley'
 csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'channel@context~part_(valley_centerline)'
 csn.loc[ cond_obj0 & cond_obj1, ['object0','object1','object2']] = ''
+
+#channel~river_water
+cond_obj0 = csn['object0'] == 'channel~river'
+cond_obj1 = csn['object1'] == 'water'
+cond_obj2 = csn['object2'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'channel~river@medium_water'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1']]=''
+
+#channel~stream_reach_water~incoming/outgoing
+cond_obj0 = csn['object0'] == 'channel~stream'
+cond_obj1 = csn['object1'] == 'reach'
+cond_obj2 = csn['object2'].str.contains('water~incoming')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = '(channel~stream@context~part_reach)@context~sink_(water_flowing)'
+cond_obj2 = csn['object2'].str.contains('water~outgoing')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = '(channel~stream@context~part_reach)@context~source_(water_flowing)'
+cond_obj2 = csn['object2'].str.contains('water~')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1','object2']]=''
 
 #channel_water
 cond_obj0 = csn['object0'] == 'channel'
@@ -2135,6 +2295,164 @@ csn.loc[ cond_obj0, 'object_id'] = 'market-basket'
 csn.loc[ cond_obj0, 'object_pref'] = 'abstraction'
 csn.loc[ cond_obj0, 'object_label'] = 'market-basket'
 csn.loc[ cond_obj0, 'quantity_label'] = 'consumer_price_index'
+csn.loc[ cond_obj0, 'object0'] = ''
+
+#crop_fertilizer~nitrogen
+cond_obj0 = csn['object0'] == 'crop'
+cond_obj1 = csn['object1'] == 'fertilizer~nitrogen'
+cond_quant = csn['quantity'].str.contains('applied')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = \
+        'crop@context~sink_(fertilizer~nitrogen_application)'
+cond_quant = csn['quantity'].str.contains('elasticity')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = \
+        '(crop_production)@role~numerator_(fertilizer~nitrogen_utilization)@role~denominator'
+csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
+
+#crop
+cond_obj0 = csn['object0'] == 'crop'
+cond_obj1 = csn['object1'] == ''
+cond_quant = csn['quantity'].str.contains('from-planting')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = '(crop_planting)@reference~from_crop'
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object0'] = ''
+cond_obj0 = csn['object0'] == 'crop'
+cond_obj1 = csn['object1'] == ''
+cond_quant = csn['quantity'].str.contains('produced')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = 'crop_production'
+cond_quant = csn['quantity'].str.contains('planting')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = 'crop_planting'
+cond_quant = csn['quantity'].str.contains('planting_or_sowing')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = '(crop_planting)@role~main_(crop_sowing)@role~main'
+cond_quant = csn['quantity'].str.contains('transpiration')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = 'crop@role~source_water@role~main_transpiration'
+cond_quant = csn['quantity'].str.contains('planting|produced|transpiration')
+csn.loc[ cond_obj0 & cond_obj1 & ~cond_quant, 'object_id'] = 'crop'
+csn.loc[ cond_obj0 & cond_obj1 & ~cond_quant, 'object_pref'] = 'rolephenomenon'
+csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
+
+#crop~mature~dry
+cond_obj0 = csn['object0'] == 'crop~mature~dry'
+cond_obj1 = csn['object1'] == ''
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'crop~mature~dry_harvest_production'
+cond_obj1 = csn['object1'] == 'tops'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = \
+    'crop~mature~dry_tops_production'
+csn.loc[ cond_obj0, ['object0','object1']] = ''
+
+#crop_from-planting
+cond_obj0 = csn['object0'] == 'crop'
+cond_obj1 = csn['object1'] == 'from-planting'
+cond_obj2 = csn['object2'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = '(crop_planting)@reference~from_crop'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1','object2']] = ''
+
+#crop_biomass
+cond_obj0 = csn['object0'] == 'crop'
+cond_obj1 = csn['object1'] == 'biomass'
+cond_obj2 = csn['object2'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'crop_biomass'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1','object2']] = ''
+
+#crop_biomass_nitrogen
+cond_obj0 = csn['object0'] == 'crop'
+cond_obj1 = csn['object1'] == 'biomass'
+cond_obj2 = csn['object2'] == 'nitrogen'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = '(crop_biomass)@context~sink_(nitrogen_application)'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1','object2']] = ''
+
+#crop_biomass~microbial-and-soil_carbon__time_integral_of_mass-per-area_decomposition_respiration_rate
+cond_obj0 = csn['object0'] == 'crop'
+cond_obj1 = csn['object1'] == 'biomass~microbial-and-soil'
+cond_obj2 = csn['object2'] == 'carbon'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = '(crop_biomass~microbial_decomposition)@role~source_'+\
+            '(soil_decomposition)@role~source_carbon@role~main_respiration'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1','object2']] = ''
+
+#crop_canopy_radiation~solar__interception_energy_flux_fraction
+cond_obj0 = csn['object0'] == 'crop'
+cond_obj1 = csn['object1'] == 'canopy'
+cond_obj2 = csn['object2'] == 'radiation~solar'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = '(crop_canopy)@role~sink_radiation~solar@role~main_interception'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1']] = ''
+
+#crop_canopy_water
+cond_obj0 = csn['object0'] == 'crop'
+cond_obj1 = csn['object1'] == 'canopy'
+cond_obj2 = csn['object2'] == 'water'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = '(crop_canopy)@role~source_water@role~main_transpiration'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1']] = ''
+
+#crops~legume_nitrogen
+cond_obj0 = csn['object0'] == 'crops~legume'
+cond_obj1 = csn['object1'] == 'nitrogen'
+cond_obj2 = csn['object2'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'crops~legume@role~sink_nitrogen@role~main_fixation'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1']] = ''
+
+#crop_nitrogen
+cond_obj0 = csn['object0'] == 'crop'
+cond_obj1 = csn['object1'] == 'nitrogen'
+cond_obj2 = csn['object2'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'crop@role~main_nitrogen@role~exchange'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1']] = ''
+
+#crop_residue_pool_carbon
+cond_obj0 = csn['object0'] == 'crop'
+cond_obj1 = csn['object1'] == 'residue'
+cond_obj2 = csn['object2'] == 'pool'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = '(crop@context~source_(residue_pool_decomposition))@role~source_carbon@role~main_respiration'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1']] = ''
+
+#crop_residue_pool_root-and-rhizodeposit_biomass/carbon
+cond_obj0 = csn['object0'] == 'crop'
+cond_obj1 = csn['object1'] == 'residue'
+cond_obj2 = csn['object2'] == 'pool'
+cond_obj3 = csn['object3'] == 'root-and-rhizodeposit'
+cond_obj4 = csn['object4'] == 'biomass'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4, 'object_id'] = \
+    '(crop@context~source_((residue_pool)@context~part_root-and-rhizodeposit))@role~sink_biomass@role~main_addition'
+cond_obj4 = csn['object4'] == 'carbon'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4, 'object_id'] = \
+    '(crop@context~source_((residue_pool)@context~part_root-and-rhizodeposit))@context~in_(carbon_decomposition)'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4, ['object0','object1','object2','object3','object4']] = ''
+
+#crop_row__planting_spacing
+cond_obj0 = csn['object0'] == 'crop'
+cond_obj1 = csn['object1'] == 'row'
+cond_obj2 = csn['object2'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = \
+        'crop_planting_row'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1']] = ''
+
+#crop_root_nitrogen_at-harvest__mass-per-area_accumulation_density
+cond_obj0 = csn['object0'] == 'crop'
+cond_obj1 = csn['object1'] == 'root'
+cond_obj2 = csn['object2'] == 'nitrogen'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = \
+        '((crop@context~part_root)@context~in_(nitrogen_accumulation))_(crop_harvest)@reference~at'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1']] = ''
+
+#crop_water__time_integral_of_transpiration_volume_flux
+cond_obj0 = csn['object0'] == 'crop'
+cond_obj1 = csn['object1'] == 'water'
+cond_obj2 = csn['object2'] == ''
+cond_quant = csn['quantity'].str.contains('transpiration')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'object_id'] = 'crop@role~source_water@role~main_transpiration'
+cond_quant = csn['quantity'].str.contains('evapotranspiration')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'object_id'] = 'crop@role~source_water@role~main_evapotranspiration'
+cond_quant = csn['quantity'].str.contains('stress')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'object_id'] = 'crop@role~main_water@role~exchange'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1']] = ''
+
+#crop-or-weed
+cond_obj0 = csn['object0'] == 'crop-or-weed'
+csn.loc[ cond_obj0, 'object_id'] = 'crop-or-weed'
+csn.loc[ cond_obj0, 'object_pref'] = 'rolephenomenon'
+csn.loc[ cond_obj0, 'object0'] = ''
+
+#cultivar
+cond_obj0 = csn['object0'] == 'cultivar'
+csn.loc[ cond_obj0, 'object_id'] = 'cultivar'
+csn.loc[ cond_obj0, 'object_pref'] = 'body'
 csn.loc[ cond_obj0, 'object0'] = ''
 
 #delta
@@ -2470,9 +2788,9 @@ cond_obj0 = csn['object0'] == 'earth'
 cond_obj1 = csn['object1'] == ''
 cond_quant = csn['quantity'] == 'standard_gravity_constant'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant , 'quantity_label'] = \
-        'standard_gravitational_acceleration_constant'
+        'standard_gravitational_acceleration'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant , 'quantity_id'] = \
-        'standard_gravitational_acceleration_constant'
+        'standard_gravitational_acceleration'
 csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'earth'
 csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'body'
 csn.loc[ cond_obj0 & cond_obj1, 'object_cat'] = 'root'
@@ -2823,6 +3141,9 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
         csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, 'object3']\
         .replace('wave~s','wave~seismic~s').replace('wave~p','wave~seismic~p')+\
         ')@role~main_arrival)'
+cond_quant = (csn['quantity'] == 'frequency') | (csn['quantity_label'] == 'frequency')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
+        'quantity_id'] = 'angular_frequency'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
         ['object0','object1','object2','object3']] = ''
 
@@ -2871,6 +3192,9 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'] = '(earth_interior)@context~in_('+\
         csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'object2']+\
         '@role~main_arrival)'
+cond_quant = (csn['quantity'] == 'frequency') | (csn['quantity_label'] == 'frequency')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'quantity_id'] = 'angular_frequency'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         ['object0','object1','object2']] = ''
 
@@ -3307,7 +3631,7 @@ csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'body'
 csn.loc[ cond_obj0 & cond_obj1, 'object_cat'] = 'root'
 csn.loc[ cond_obj0 & cond_obj1, 'object0']=''
 
-#engine_air-to-fuel
+#engine_air-to-fuell
 cond_obj0 = csn['object0'] == 'engine'
 cond_obj1 = csn['object1'] == 'air-to-fuel'
 csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = '(engine@context~in_air)@role~numerator_(engine@context~in_fuel)@role~denominator'
@@ -3326,6 +3650,11 @@ csn.loc[ cond_obj0, 'object_pref'] = 'abstraction'
 csn.loc[ cond_obj0, 'object_cat'] = 'root'
 csn.loc[ cond_obj0, 'object0'] = ''
 
+#farmer_crop
+cond_obj0 = csn['object0'] == 'farmer'
+csn.loc[ cond_obj0, 'object_id'] = 'farmer@role~sink_crop@role~exchange'
+csn.loc[ cond_obj0, ['object0','object1']] = ''
+
 #fence~electric
 cond_obj0 = csn['object0'].str.contains('fence~electric')
 csn.loc[ cond_obj0, 'object_id'] = 'fence~electric'
@@ -3333,11 +3662,52 @@ csn.loc[ cond_obj0, 'object_pref'] = 'body'
 csn.loc[ cond_obj0, 'object_cat'] = 'root'
 csn.loc[ cond_obj0, ['object0','object1']] = ''
 
+#fertilizer~nitrogen
+cond_obj0 = csn['object0'] == 'fertilizer~nitrogen'
+cond_quant = csn['quantity'].str.contains('application')
+csn.loc[ cond_obj0 & cond_quant,'object_id']='fertilizer~nitrogen_application'
+cond_quant = csn['quantity'].str.contains('usage')
+csn.loc[ cond_obj0 & cond_quant,'object_id']=\
+    '(fertilizer~nitrogen_utilization)@role~numerator_(fertilizer~nitrogen_application)@role~denominator'
+csn.loc[ cond_obj0, ['object0','object1']] = ''
+
+#fertilizer~applied-as-nitrogen
+cond_obj0 = csn['object0'].str.startswith('fertilizer')
+csn.loc[ cond_obj0,'object_id']='fertilizer~applied-as-nitrogen'
+csn.loc[ cond_obj0,'object_pref']='rolephenomenon'
+csn.loc[ cond_obj0, ['object0','object1']] = ''
+
+#field
+cond_obj0 = csn['object0'] == 'field'
+csn.loc[ cond_obj0,'object_id']='field'
+csn.loc[ cond_obj0,'object_pref']='body'
+csn.loc[ cond_obj0, ['object0']] = ''
+
+#field_residue~remaining_nitrogen_at-harvest
+cond_obj0 = csn['object0'] == 'field'
+cond_obj01 = csn['object1'] == 'residue~remaining'
+csn.loc[ cond_obj0 & cond_obj1,'object_id']='field@context~on_(residue~remaining@context~in_nitrogen)_(crop_harvest)@reference~at'
+csn.loc[ cond_obj0, ['object0']] = ''
+
 #flood
 cond_obj0 = csn['object0'] == 'flood'
 csn.loc[ cond_obj0,'object_id']='flood'
 csn.loc[ cond_obj0, 'object_cat'] = 'root'
 csn.loc[ cond_obj0, ['object0','object1']] = ''
+
+#forage-or-residue~removed_at-harvest
+cond_obj0 = csn['object0'] == 'forage-or-residue~removed'
+cond_obj1 = csn['object1'] == 'at-harvest'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'forage-or-residue~removed_(crop_harvest)@reference~at'
+csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
+
+#forage-or-residue~removed_nitrogen(_at-harvest)
+cond_obj0 = csn['object0'] == 'forage-or-residue~removed'
+cond_obj1 = csn['object1'] == 'nitrogen'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'forage-or-residue~removed@medium_nitrogen'
+cond_obj2 = csn['object2'] == 'at-harvest'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = '(forage-or-residue~removed@medium_nitrogen)_(crop_harvest)@reference~at'
+csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
 
 #fuel-to-oxidizer
 cond_obj0 = csn['object0'] == 'fuel-to-oxidizer'
@@ -3716,6 +4086,58 @@ csn.loc[ cond_obj0, 'object_cat'] = 'root'
 csn.loc[ cond_obj0, 'object_pref'] = 'abstraction'
 csn.loc[ cond_obj0, 'object0'] = ''
 
+#grain~dry
+cond_obj0 = csn['object0'] == 'grain~dry'
+cond_obj1 = csn['object1'] == ''
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'grain~dry'
+csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'body'
+csn.loc[ cond_obj0, 'object0'] = ''
+
+#grain
+cond_obj0 = csn['object0'] == 'grain'
+cond_obj1 = csn['object1'] == 'nitrogen'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = '(grain@context~in_nitrogen)_(crop_harvest)@reference~at'
+csn.loc[ cond_obj0, 'object0'] = ''
+
+#ground~above_biomass~harvested_grain__mass_fraction
+#ground~above_crop_biomass~dry__mass-per-area_density
+#ground~above_crop_nitrogen__mass-per-area_density
+#ground~above_crop_nitrogen__mass-per-mass_concentration
+#ground~above_crop_residue~retained__mass-per-area_density
+#ground~above_crop_residue-as-carbon__decomposition_mass
+#ground~above_crop_roots-and-rhizodeposits-as-carbon
+#ground~above_crop_residue_pool_carbon
+#ground~above_residue~remaining_at-harvest__mass-per-area_density
+#ground~above_soil_residue_pool_crop_residue__mass-per-area_addition_density
+cond_obj0 = csn['object0'] == 'ground~above'
+cond_obj1 = csn['object1'] == 'biomass~harvested'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'ground@context~above_(biomass~harvested@medium_grain)'
+cond_obj1 = csn['object1'] == 'crop'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'ground@context~above_(crop_biomass~dry)'
+cond_obj2 = csn['object2'] == 'nitrogen'
+cond_quant = csn['quantity'].str.contains('density')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'object_id'] = 'ground@context~above_(crop@context~in_nitrogen)'
+cond_quant = csn['quantity'].str.contains('fraction')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'object_id'] = 'ground@context~above_(crop@medium_nitrogen)'
+cond_obj2 = csn['object2'] == 'residue~retained'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'ground@context~above_crop@context~source_residue~retained'
+cond_obj2 = csn['object2'] == 'residue-as-carbon'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'ground@context~above_(crop@context~source_(residue-as-carbon_decomposition))'
+cond_obj2 = csn['object2'] == 'roots-and-rhizodeposits-as-carbon'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'ground@context~above_(crop@context~source_(roots-and-rhizodeposits-as-carbon_decomposition))'
+cond_obj2 = csn['object2'] == 'residue'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'ground@context~above_(crop_residue_pool_decomposition)@context~source_carbon'
+cond_obj1 = csn['object1'] == 'residue~remaining'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = '(ground@context~above_residue~remaining)_(crop_harvest)@reference~at'
+cond_obj1 = csn['object1'] == 'soil'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'ground@context~above_((soil@context~in_(residue_pool))@role~sink_(crop@context~source_residue)@role~main_addition)'
+csn.loc[ cond_obj0, ['object0','object1','object2']] = ''
+
+#groundwater
+cond_obj0 = csn['object0'] == 'groundwater'
+csn.loc[ cond_obj0, 'object_id'] = '(land_surface)@context~below_ground@context~in_water'
+csn.loc[ cond_obj0, 'object0'] = ''
+
 #human
 cond_obj0 = csn['object0'] == 'human'
 cond_obj1 = csn['object1'] == ''
@@ -3868,19 +4290,80 @@ csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'lake@role~source_(water_flowing~
 cond_obj1 = csn['object1'].str.contains('water~')
 csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
 
+#land
+cond_obj0 = csn['object0'] == 'land'
+cond_obj1 = csn['object1'] == ''
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = '(crop_rotation)@reference~at_(land_tillage)'
+csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
+
+#land_crop
+cond_obj0 = csn['object0'] == 'land'
+cond_obj1 = csn['object1'] == 'crop'
+cond_quant = csn['quantity'].str.contains('yield|production')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = 'land@medium_(crop_production)'
+cond_quant = csn['quantity'].str.contains('allocated')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = '(land_allocation)@medium_crop'
+csn.loc[ cond_obj0 & cond_obj1, ['object0','object1','object2']] = ''
+
 #land_domain_boundary
 cond_obj0 = csn['object0'] == 'land'
 cond_obj1 = csn['object1'] == 'domain'
 csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'land@context~part_(domain_boundary_lowering)'
 csn.loc[ cond_obj0 & cond_obj1, ['object0','object1','object2']] = ''
 
+#land_fertilizer~nitrogen
+cond_obj0 = csn['object0'] == 'land'
+cond_obj1 = csn['object1'] == 'fertilizer~nitrogen'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'land@role~in_fertilizer~nitrogen@role~main_application'
+csn.loc[ cond_obj0 & cond_obj1, ['object0','object1','object2']] = ''
+
+#land_soil~dry_surface
+cond_obj0 = csn['object0'] == 'land'
+cond_obj1 = csn['object1'] == 'soil~dry'
+cond_obj2 = csn['object2'] == 'surface'
+cond_obj3 = csn['object3'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, 'object_id'] = 'land_soil~dry_surface'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        ['object0','object1','object2','object3','object4']] = ''
+
+#land_subsurface_water
+cond_obj0 = csn['object0'] == 'land'
+cond_obj1 = csn['object1'] == 'subsurface'
+cond_obj2 = csn['object2'] == 'water'
+cond_obj3 = csn['object3'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, 'object_id'] = '(land_subsurface)@context~source_(water_runoff)'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        ['object0','object1','object2','object3','object4']] = ''
+
+#land_subsurface_water_sat-zone_top
+cond_obj0 = csn['object0'] == 'land'
+cond_obj1 = csn['object1'] == 'subsurface'
+cond_obj2 = csn['object2'] == 'water'
+cond_obj3 = csn['object3'] == 'sat-zone'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, 'object_id'] = 'land_subsurface_sat-zone_top'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, 'object_pref'] = 'body'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, 'object_label'] = 'land_subsurface_sat-zone_top'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        ['object0','object1','object2','object3','object4']] = ''
+
+#land_subsurface_aquifer~left/right_channel~river_bed_water
+cond_obj0 = csn['object0'] == 'land'
+cond_obj1 = csn['object1'] == 'subsurface'
+cond_obj2 = csn['object2'].str.contains('aquifer')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = \
+    '(land_subsurface)@context~at_'+ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object2']+\
+    '@context~source_(channel~river_bed)@context~sink_(water_flowing)'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2','object3','object4','object5']] = ''
+
 #land_subsurface_sat-zone_top
 cond_obj0 = csn['object0'] == 'land'
 cond_obj1 = csn['object1'] == 'subsurface'
-csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'land_subsurface_sat-zone_top'
-csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'body'
-csn.loc[ cond_obj0 & cond_obj1, 'object_label'] = 'land_subsurface_sat-zone_top'
-csn.loc[ cond_obj0 & cond_obj1, \
+cond_obj2 = csn['object2'] == 'sat-zone'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'land_subsurface_sat-zone_top'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_pref'] = 'body'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_label'] = 'land_subsurface_sat-zone_top'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         ['object0','object1','object2','object3','object4']] = ''
 
 #land_surface
@@ -3933,6 +4416,18 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         ['object0','object1','object2','object3']] = ''
 
+#land_surface_air_radiation~
+cond_obj0 = csn['object0'] == 'land'
+cond_obj1 = csn['object1'] == 'surface'
+cond_obj2 = csn['object2'] == 'air'
+cond_obj3 = csn['object3'].str.contains('radiation')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object_id'] = '(land_surface)@context~at_air@context~in_'+\
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, 'object3']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        ['object0','object1','object2','object3']] = ''
+        
+
 #land_surface_air_heat
 cond_obj0 = csn['object0'] == 'land'
 cond_obj1 = csn['object1'].str.contains('surface')
@@ -3982,6 +4477,42 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         ['object0','object1','object2']] = ''
 
+#land_surface~..._soil_water
+cond_obj0 = csn['object0'] == 'land'
+cond_obj1 = csn['object1'].str.contains('surface~')
+cond_obj2 = csn['object2'] == 'soil'
+cond_obj3 = csn['object3'] == 'water'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object_id'] = '(land_surface)@context~'+ \
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object1'].str.split('~').str[1]+'_(soil@medium_water)'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        ['object0','object1','object2','object3']] = ''
+
+#land_surface~..._soil
+cond_obj0 = csn['object0'] == 'land'
+cond_obj1 = csn['object1'].str.contains('surface~')
+cond_obj2 = csn['object2'] == 'soil'
+cond_obj3 = csn['object3'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object_id'] = '(land_surface)@context~'+ \
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object1'].str.split('~').str[1]+'_soil'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        ['object0','object1','object2']] = ''
+
+#land_surface~..._air
+cond_obj0 = csn['object0'] == 'land'
+cond_obj1 = csn['object1'].str.contains('surface~')
+cond_obj2 = csn['object2'] == 'air'
+cond_obj3 = csn['object3'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object_id'] = '(land_surface)@context~'+ \
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object1'].str.split('~').str[1]+'_air'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        ['object0','object1','object2']] = ''
+
 #land_surface_radiation~...
 cond_obj0 = csn['object0'] == 'land'
 cond_obj1 = csn['object1'] == 'surface'
@@ -4017,6 +4548,13 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id']+'_'+\
         csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, 'object2']\
         .str.replace('~total','').str.replace('~net','')+'@role~main'
+cond_obj2 = csn['object2'] == 'radiation~shortwave~downward'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = '(land_surface)@context~at_radiation~shortwave~downward'
+cond_obj2 = csn['object2'] == 'radiation~solar'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = '(land_surface)@context~at_radiation~solar'
+cond_obj2 = csn['object2'].str.contains('radiation')
 cond_quant = csn['quantity'].str.contains('diffuse')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
@@ -4052,6 +4590,16 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         ['object0','object1','object2']] = ''
 
+#land_surface~horizontal_radiation~incoming~shortwave
+cond_obj0 = csn['object0'] == 'land'
+cond_obj1 = csn['object1'].str.contains('surface~')
+cond_obj2 = csn['object2'].str.contains('radiation')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = '(land_'+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object1']+')@context~sink_'+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object2']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1','object2','object3']] = ''
+
 #land_surface_soil
 cond_obj0 = csn['object0'] == 'land'
 cond_obj1 = csn['object1'] == 'surface'
@@ -4075,6 +4623,31 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         ['object0','object1','object2']] = ''
 
+#land_surface_snow
+cond_obj0 = csn['object0'] == 'land'
+cond_obj1 = csn['object1'] == 'surface'
+cond_obj2 = csn['object2'] == 'snow'
+cond_quant = csn['quantity'].str.contains('accumulation')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = '(land_surface)@context~on_(snow_accumulation)'
+cond_quant = csn['quantity'].str.contains('sublimation')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = '(land_surface)@context~on_(snow_sublimation)'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2']] = ''
+
+#land_surface_terrain~left/right_channel~stream_reach_water
+cond_obj0 = csn['object0'] == 'land'
+cond_obj1 = csn['object1'] == 'surface'
+cond_obj2 = csn['object2'].str.contains('terrain')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = '(land_surface)@context~on_'+\
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object2'] + '@context~source_(channel~stream@context~part_reach)@context~sink_'+\
+                '(water_flowing)'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2']] = ''
+
 #land_surface_water
 cond_obj0 = csn['object0'] == 'land'
 cond_obj1 = csn['object1'] == 'surface'
@@ -4091,8 +4664,10 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
         'object_id'].str.replace('water','(water')+'_runoff)'
 cond_quant = csn['quantity'].str.contains('evaporation')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
-        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
-        'object_id'].str.replace('water','(water')+'_evaporation)'
+        'object_id'] = '(land_surface)@context~source_(water_evaporation)'
+cond_quant = csn['quantity'].str.contains('evapotranspiration')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
+        'object_id'] = '(land_surface)@context~source_(water_evapotranspiration)'
 cond_quant = csn['quantity'].str.contains('baseflow')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
@@ -4181,7 +4756,12 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
 cond_quant = csn['quantity'].str.contains('interception_volume')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'] = 'land@context~on_((vegetation_canopy)@role~sink_water@role~main_interception)'
-cond_quant = csn['quantity'].str.contains('interception')
+cond_quant = csn['quantity'].str.contains('evaporation')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = 'land@context~on_((vegetation_canopy)@context~source_(water_evaporation))'
+cond_quant = csn['quantity'].str.contains('interception_storage')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = 'land@context~on_((vegetation_canopy)@role~main_water@role~in_interception)'
 cond_quant = csn['quantity'].str.contains('throughfall')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'] = 'land@context~on_((vegetation_canopy)@medium_throughfall_water)'
@@ -4621,6 +5201,14 @@ cond_obj0 = csn['object0'] == 'mercury'
 csn.loc[ cond_obj0, 'object_id'] = 'mercury_axis_precession'
 csn.loc[ cond_obj0, ['object0','object1']] = ''
 
+#nitrogen
+cond_obj0 = csn['object0'] == 'nitrogen'
+cond_quant = csn['quantity'].str.contains('mineralization')
+csn.loc[ cond_obj0 & cond_quant, 'object_id'] = 'nitrogen_mineralization'
+cond_quant = csn['quantity'].str.contains('immobilization')
+csn.loc[ cond_obj0 & cond_quant, 'object_id'] = 'nitrogen_immobilization'
+csn.loc[ cond_obj0, ['object0','object1']] = ''
+
 #oscillator
 cond_obj0 = csn['object0'] == 'oscillator'
 csn.loc[ cond_obj0, 'object_id'] = 'oscillator'
@@ -4694,6 +5282,32 @@ cond_obj0 = csn['object0'] == 'pipe'
 csn.loc[ cond_obj0, 'object_id'] = 'pipe@context~in_((water_flowing)@role~exchange_friction)'
 csn.loc[ cond_obj0, ['object0','object1','object2']] = ''
 
+#plant_at-grain-or-forage-harvest-or-death
+cond_obj0 = csn['object0'] == 'plant'
+cond_obj1 = csn['object1'] == 'at-grain-or-forage-harvest-or-death'
+csn.loc[ cond_obj0 & cond_obj1, \
+        'object_id'] = 'plant_(grain_harvest)@reference~at_(grain_death)@reference~at_(forage_harvest)@reference~at_(forage_death)@reference~at'
+csn.loc[ cond_obj0 & cond_obj1, \
+        ['object0','object1']] = ''
+
+#plant_root_at-grain-or-forage-harvest-or-death
+cond_obj0 = csn['object0'] == 'plant'
+cond_obj1 = csn['object1'] == 'root'
+cond_obj2 = csn['object2'] == 'at-grain-or-forage-harvest-or-death'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = '(plant@context~part_root)_(grain_harvest)@reference~at_(grain_death)@reference~at_(forage_harvest)@reference~at_(forage_death)@reference~at'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2']] = ''
+
+#plants~living_water
+cond_obj0 = csn['object0'] == 'plants~living'
+cond_obj1 = csn['object1'] == 'water'
+cond_obj2 = csn['object2'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'plants~living@role~source_water@role~main_evaporation'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2']] = ''
+        
 #polynomial
 cond_obj0 = csn['object0'] == 'polynomial'
 csn.loc[ cond_obj0, 'object_id'] = 'polynomial'
@@ -4868,6 +5482,11 @@ csn.loc[ cond_obj0, 'object_pref'] = 'body'
 csn.loc[ cond_obj0, 'object_cat'] = 'root'
 csn.loc[ cond_obj0, 'object0'] = ''
 
+#radiation~solar
+cond_obj0 = csn['object0'] == 'radiation~solar'
+csn.loc[ cond_obj0, 'object_id'] = 'radiation~solar'
+csn.loc[ cond_obj0, ['object0','object1']] = ''
+
 #railway_curve
 cond_obj0 = csn['object0'] == 'railway'
 csn.loc[ cond_obj0, 'object_id'] = 'railway_curve'
@@ -4896,6 +5515,12 @@ cond_obj1 = csn['object1'] == 'propellant'
 cond_quant = csn['quantity'].str.contains('ratio')
 csn.loc[ cond_obj0 & cond_obj1 & ~cond_quant, 'object_id'] = 'rocket@medium_propellant'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = 'rocket@role~numerator_propellant@role~denominator'
+csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
+
+#roots-and-rhizodeposits
+cond_obj0 = csn['object0'] == 'roots-and-rhizodeposits'
+cond_obj1 = csn['object1'] == ''
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'roots-and-rhizodeposits_production'
 csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
 
 #sea_bottom_radiation~..
@@ -5523,6 +6148,9 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
 cond_quant = csn['quantity'].str.contains('angular_wavenumber')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
         'quantity_label'] = 'wavenumber'
+cond_quant = csn['quantity'].str.contains('-times-')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
+        'quantity_id'] = 'cumulative_time_integral_of_cosine_of_product_of_angular_frequency_and_time'
 cond_quant = csn['quantity'].str.contains('refraction')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
         'object_id'] = '('+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
@@ -5744,6 +6372,10 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'sea@context~in_(wate
     csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object2']\
         .str.replace('wave~internal~gravity','wave~gravity~internal')\
         .str.replace('wave~internal','wave~gravity~internal')+')'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_label'] = \
+    csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_label']\
+        .str.replace('wave~internal~gravity','wave~gravity~internal')\
+        .str.replace('wave~internal','wave~gravity~internal')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, 'object_id'] =\
         csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, 'object_id']\
         .str.rstrip(')')+'_'+\
@@ -5757,6 +6389,9 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
 cond_quant = csn['quantity'].str.contains('angular_wavenumber')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'quantity_label'] = 'wavenumber'
+cond_quant = csn['quantity'].str.contains('frequency')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'quantity_id'] = 'angular_frequency'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         ['object0','object1','object2','object3']] = ''
 
@@ -5828,6 +6463,12 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
         'object_pref'] = 'phenomenon'
 csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
+
+#snow-or-ice
+cond_obj0 = csn['object0'] == 'snow-or-ice'
+cond_obj1 = csn['object1'] == ''
+csn.loc[ cond_obj0, 'object_id'] = 'snow-or-ice_melting'
+csn.loc[ cond_obj0, 'object0'] = ''
 
 #snow~wet_X
 cond_obj0 = csn['object0'] == 'snow~wet'
@@ -6108,29 +6749,174 @@ csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'soil_bulk'
 csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'body'
 csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
 
+#soil_carbon_pool~stabilized_carbon
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'carbon'
+cond_obj2 = csn['object2'] == 'pool~stabilized'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'soil@context~in_((carbon_pool~stabilized)@context~in_carbon)'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1','object2']] = ''
+
+#soil_carbon_pool~microbial-and-stabilized_carbon~decomposed
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'carbon'
+cond_obj2 = csn['object2'] == 'pool~microbial-and-stabilized'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = '(soil@context~in_(carbon_pool~stabilized))@role~sink_(soil@context~in_(carbon_pool~microbial))@role~sink_carbon~decomposed@role~main_addition'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1','object2']] = ''
+
+#soil_clay_particle
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'clay'
+cond_obj2 = csn['object2'] == 'particle'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'soil@medium_(clay_particle)'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1','object2']] = ''
+
+#soil_fertilizer
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'fertilizer'
+cond_quant = csn['quantity'].str.contains('fertilization')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = 'soil@role~main_fertilizer@role~in_fertilization'
+cond_quant = csn['quantity'].str.contains('application')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = 'soil@role~sink_fertilizer@role~main_application'
+csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
+
+#soil_layer
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'layer'
+cond_obj2 = csn['object2'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'soil_layer'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_pref'] = 'body'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2']] = ''
+
+#soil_layer_carbon~stabilized
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'layer'
+cond_obj2 = csn['object2'] == 'carbon~stabilized'
+cond_obj3 = csn['object3'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object_id'] = '(soil_layer)@medium_carbon~stabilized'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        ['object0','object1','object2']] = ''
+
+#soil_layer_matter~organic~stabilized_carbon
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'layer'
+cond_obj2 = csn['object2'] == 'matter~organic~stabilized'
+cond_obj3 = csn['object3'] == 'carbon'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object_id'] = '(soil_layer)@context~in_(matter~organic~stabilized@medium_carbon)'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        ['object0','object1','object2']] = ''
+        
+#soil_macropores_water
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'macropores'
+cond_obj2 = csn['object2'] == 'water'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = '(soil@context~medium_macropores)@medium_water'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2']] = ''
+
+#soil_macropores_below-land-surface
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'macropores'
+cond_obj2 = csn['object2'] == 'below-land-surface'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = '(soil@context~medium_macropores)_(land_surface)@reference~below'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        ['object0','object1','object2']] = ''
+
 #soil_macropores
 cond_obj0 = csn['object0'] == 'soil'
 cond_obj1 = csn['object1'] == 'macropores'
+cond_obj2 = csn['object2'] == ''
 cond_quant = csn['quantity'].str.contains('volume_fraction')
-csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'] = 'soil@medium_macropores'
 cond_quant = csn['quantity'].str.contains('cutoff_depth')
-csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'] = 'soil@context~in_macropores'
 cond_quant = csn['quantity'].str.contains('conductivity')
-csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'] = 'soil@medium_saturated'
-csn.loc[ cond_obj0 & cond_obj1, ['object0','object1','object2']] = ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1','object2']] = ''
+
+#soil_nitrogen
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'nitrogen'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'soil@role~main_nitrogen@role~in'
+cond_quant = csn['quantity'].str.contains('denitrification')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id']+\
+    '_denitrification'
+cond_quant = csn['quantity'].str.contains('_nitrification')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id']+\
+    '_nitrification'
+csn.loc[ cond_obj0 & cond_obj1,['object0','object1','object2']] = ''
+
+#soil_nitrous-oxide-as-nitrogen
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'nitrous-oxide-as-nitrogen'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'soil@role~source_nitrous-oxide-as-nitrogen@role~main_emission'
+cond_quant = csn['quantity'].str.contains('nitrification')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = '(soil_nitrification)@role~source_nitrous-oxide-as-nitrogen@role~main_emission'
+cond_quant = csn['quantity'].str.contains('denitrification')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = '(soil_denitrification)@role~source_nitrous-oxide-as-nitrogen@role~main_emission'
+csn.loc[ cond_obj0 & cond_obj1,['object0','object1']] = ''
 
 #soil_permafrost
 cond_obj0 = csn['object0'] == 'soil'
 cond_obj1 = csn['object1'] == 'permafrost'
 cond_obj2 = csn['object2'] != ''
-csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'soil_permafrost'
+csn.loc[ cond_obj0 & cond_obj1 & ~cond_obj2, 'object_id'] = 'soil_permafrost'
 csn.loc[ cond_obj0 & cond_obj1 & ~cond_obj2, 'object_pref'] = 'matter'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'soil_permafrost_'+\
     csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object2'] 
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_pref'] = 'body'
 csn.loc[ cond_obj0 & cond_obj1,['object0','object1','object2']] = ''
+
+#soil_pool~stabilized_carbon
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'pool~stabilized'
+cond_obj2 = csn['object2'] == 'carbon'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = '(soil_pool~stabilized)@context~in_carbon'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2,['object0','object1','object2']] = ''
+
+#soil_pool-and-pool~microbial_carbon~decomoposed__addition_mass
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'pool-and-pool~microbial'
+cond_obj2 = csn['object2'] == 'carbon~decomposed'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = '(soil_pool)@role~sink_pool~microbial@role~sink_carbon~decomposed@role~main_addition'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2,['object0','object1','object2']] = ''
+
+#soil_profile_bottom_water__drainage_volume_flux
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'profile'
+cond_obj2 = csn['object2'] == 'bottom'
+cond_obj3 = csn['object3'] == 'water'
+cond_obj4 = csn['object4'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4, 'object_id'] = '(soil_profile_bottom)@role~source_water@role~main_draining'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4,['object0','object1','object2']] = ''
+
+#soil_profile_bottom_water_ammonium/nitrate__time_integral_of_drainage_leaching_mass_flux
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'profile'
+cond_obj2 = csn['object2'] == 'bottom'
+cond_obj3 = csn['object3'] == 'water'
+cond_obj4 = csn['object4'].str.contains('ammonium|nitrate')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4, 'object_id'] = '(soil_profile_bottom)@role~source_(water_draining)@role~medium_('+\
+        csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4, 'object4']+'_leaching)@role~main'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4,['object0','object1','object2','object3','object4']] = ''
+
+#soil_profile_nitrate/ammonium-as-nitrogen
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'profile'
+cond_obj2 = csn['object2'].str.contains('-as-nitrogen')
+cond_obj3 = csn['object3'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, 'object_id'] = '(soil_profile)@context~in_'+\
+    csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, 'object2']
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3,['object0','object1','object2']] = ''
 
 #soil_*-zone
 cond_obj0 = csn['object0'] == 'soil'
@@ -6174,12 +6960,22 @@ csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'soil_particle'
 csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'body'
 csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
 
+#soil_rock
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'rock'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'soil@medium_rock'
+csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
+
 #soil_layer/horizon
 cond_obj0 = csn['object0'] == 'soil'
 cond_obj1 = csn['object1'].str.contains('layer|horizon~')
-csn.loc[ cond_obj0 & cond_obj1, 'object_pref'] = 'body'
-csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'soil_'+\
+cond_obj2 = csn['object2'] == ''
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_pref'] = 'body'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'soil_'+\
         csn.loc[ cond_obj0 & cond_obj1, 'object1']
+cond_obj2 = csn['object2'] == 'water'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = '(soil_'+\
+    csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object1']+')@medium_water'
 cond_quant = csn['quantity'].str.contains('saturated')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = 'soil_'+\
         csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object1'] + '_saturated'
@@ -6195,12 +6991,36 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = 'soil@medium_('+\
         csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object1'] + '_oven-dried)'
 csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
 
+#soil_plant_residue_water
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'plant'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = '(soil@context~on_(plant_residue))@role~source_water@role~main_evaporation'
+csn.loc[ cond_obj0 & cond_obj1, ['object0','object1','object2','object3']] = ''
+
+#soil_surface_residue~standing_carbon-to-nitrogen
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'] == 'surface'
+cond_obj2 = csn['object2'] == 'residue~standing'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = '(soil_surface)@context~on_(residue~standing@context~in_(carbon@role~numerator_nitrogen@role~denominator))'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1','object2','object3']] = ''
+
 #soil_surface_water
 cond_obj0 = csn['object0'] == 'soil'
 cond_obj1 = csn['object1'] == 'surface'
 cond_quant = csn['quantity'].str.contains('infiltration')
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-        'object_id'] = '(soil_surface)@medium_infiltration_water'
+        'object_id'] = '(soil_surface)@role~sink_water@role~main_infiltration'
+cond_quant = csn['quantity'].str.contains('irrigation')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_id'] = '(soil_surface)@role~sink_water@role~main_irrigation'
+cond_quant = csn['quantity'].str.contains('evaporation')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_id'] = '(soil_surface)@role~source_water@role~main_evaporation'
+cond_quant = csn['quantity'].str.contains('runoff')
+csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+        'object_id'] = '(soil_surface)@context~on_(water_runoff)'
+cond_quant = csn['quantity'].str.contains('evaporation|infiltration|runoff|irrigation')
 csn.loc[ cond_obj0 & cond_obj1 & ~cond_quant, \
         'object_id'] = '(soil_surface)@medium_water'
 csn.loc[ cond_obj0 & cond_obj1, ['object0','object1','object2']] = ''
@@ -6212,43 +7032,52 @@ csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'soil@medium_void'
 csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
 
 #soil_water(_flow)
-cond_obj0 = csn['object0'] == 'soil'
+cond_obj0 = csn['object0'].str.contains('soil')
 cond_obj1 = csn['object1'] == 'water'
 cond_obj2 = csn['object2'] == '' 
 cond_quant = csn['quantity']\
-        .str.contains('conductivity|fraction|infiltration|wilting-point')
+        .str.contains('conductivity|fraction|infiltration|wilting-point|concentration|capacity')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
-        'object_id'] = 'soil@medium_water'
+        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object0']+'@medium_water'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & ~cond_quant, \
         'object_id'] = 'soil@context~in_water'
+cond_quant = csn['quantity'].str.contains('interception')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = 'soil@role~main_water@role~in_interception'
 cond_obj2 = csn['object2'] == 'flow'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         'object_id'] = 'soil@context~in_(water_flowing)'
 cond_obj2 = (csn['object2'] == '') | (csn['object2'] == 'flow')
 cond_quant = csn['quantity'].str.contains('wilting')
-csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'].str.replace('medium','medium_wilting-point')
 cond_quant = csn['quantity'].str.contains('saturated')
-csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'].str.replace('medium','medium_saturated')
 cond_quant = csn['quantity'].str.contains('bubbling')
-csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'].str.replace('medium','medium_bubbling-point')
 cond_quant = csn['quantity'].str.contains('infiltration')
-csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'].str.replace('water','infiltration_water')
 cond_quant = csn['quantity'].str.contains('oven-dried')
-csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'].str.replace('medium','medium_oven-dried')
 cond_quant = csn['quantity'].str.contains('air-dried')
-csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
-        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_quant, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
         'object_id'].str.replace('medium','medium_air-dried')
+cond_quant = csn['quantity'].str.contains('beta_parameter')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'quantity_id'] = 'van-genuchten_alpha_parameter'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_quant, \
+        'quantity_label'] = 'van-genuchten_alpha_parameter'        
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         ['object0','object1','object2']] = ''
 
@@ -6261,6 +7090,14 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'soil@context~in_(wat
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         ['object0','object1','object2']] = ''
 
+#soil_*-as-*
+cond_obj0 = csn['object0'] == 'soil'
+cond_obj1 = csn['object1'].str.contains('-as-')
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'soil@medium_'+\
+        csn.loc[ cond_obj0 & cond_obj1, 'object1']
+csn.loc[ cond_obj0 & cond_obj1, \
+        ['object0','object1']] = ''
+
 #soil_water_*zone (water unnecessary)
 cond_obj0 = csn['object0'] == 'soil'
 cond_obj1 = csn['object1'] == 'water'
@@ -6268,27 +7105,51 @@ cond_obj2 = csn['object2'].str.contains('zone')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_id'] = 'soil_'+\
         csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object2']\
         .str.replace('zone~photic','photic-zone')
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, 'object_pref'] = 'body'
 cond_obj3 = csn['object3'] == 'top'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
         'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
         'object_id']+'_top'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, 'object_pref'] = 'body'
 cond_obj4 = csn['object4'] == 'surface'
-csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj4, \
-        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4, \
+        'object_id'] = csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4, \
         'object_id']+'_surface'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_obj4, \
+        'object_pref'] = 'phenomenon'
 cond_quant = csn['quantity'].str.contains('recharge')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
-        'object_id'] = '('+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object_id'] = '('+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, \
         'object_id']+')@role~main_water@role~in_recharge'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3 & cond_quant, 'object_pref'] = 'phenomenon'
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         ['object0','object1','object2','object3','object4']] = ''
 
 #soil_x-section_macropores
 cond_obj0 = csn['object0'] == 'soil'
 cond_obj2 = csn['object2'] == 'macropores'
-csn.loc[ cond_obj0 & cond_obj2, 'object_id']='(soil_'+\
-    csn.loc[ cond_obj0 & cond_obj2, 'object1']+')@medium_macropores'
+csn.loc[ cond_obj0 & cond_obj2, 'object_id']='soil@medium_(macropores_'+\
+    csn.loc[ cond_obj0 & cond_obj2, 'object1']+')'
+csn.loc[ cond_obj0 & cond_obj2, 'object_label']='soil_macropores_'+\
+    csn.loc[ cond_obj0 & cond_obj2, 'object1']
 csn.loc[ cond_obj0 & cond_obj2, ['object0','object1','object2']] = ''
+
+#soil~moist_layer
+cond_obj0 = csn['object0'] == 'soil~moist'
+csn.loc[ cond_obj0, 'object_id']='soil~moist_layer'
+csn.loc[ cond_obj0, 'object_pref']='body'
+csn.loc[ cond_obj0, 'object0'] = ''
+
+#soil~no-rock_silt
+cond_obj0 = csn['object0'] == 'soil~no-rock'
+csn.loc[ cond_obj0, 'object_id']='soil~no-rock@medium_silt'
+csn.loc[ cond_obj0, 'object0'] = ''
+
+#soil~no-rock~dry
+cond_obj0 = csn['object0'] == 'soil~no-rock~dry'
+csn.loc[ cond_obj0, 'object_id']='soil~no-rock~dry'
+csn.loc[ cond_obj0, 'object_pref']='matter'
+csn.loc[ cond_obj0, 'object0'] = ''
 
 #space-shuttle_tile
 cond_obj0 = csn['object0'] == 'space-shuttle'
@@ -6327,6 +7188,11 @@ csn.loc[ cond_obj0, 'object0'] = ''
 #submarine
 cond_obj0 = csn['object0'] == 'submarine'
 csn.loc[ cond_obj0, 'object_id'] = 'submarine_(sea_floor)@reference~above'
+csn.loc[ cond_obj0, ['object0','object1']] = ''
+
+#substrates~organic_nitrogen__gross_decomposition_mass-per-area_mineralization_density
+cond_obj0 = csn['object0'] == 'substrates~organic'
+csn.loc[ cond_obj0, 'object_id'] = '(substrates~organic_decomposition)@context~source_(nitrogen_mineralization)'
 csn.loc[ cond_obj0, ['object0','object1']] = ''
 
 #sulfuric-acid
@@ -6518,6 +7384,12 @@ csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_id'] = 'water_sublimation'
 csn.loc[ cond_obj0 & cond_obj1 & cond_quant, 'object_pref'] = 'phenomenon'
 csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
 
+#water_below-land-surface
+cond_obj0 = csn['object0'] == 'water'
+cond_obj1 = csn['object1'] == 'below-land-surface'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'water_(land_surface)@reference~below'
+csn.loc[ cond_obj0 & cond_obj1, ['object0','object1','object2']] = ''
+
 #water_channel-network_source
 cond_obj0 = csn['object0'] == 'water'
 cond_obj1 = csn['object1'] == 'channel-network'
@@ -6584,6 +7456,12 @@ csn.loc[ cond_obj0 & cond_quant, 'object_id'] = 'water@medium_'+\
         csn.loc[ cond_obj0 & cond_quant, 'object1']
 csn.loc[ cond_obj0 & cond_quant, ['object0','object1']] = ''
 
+#water~incoming-and-outgoing
+cond_obj0 = csn['object0'] == 'water~incoming-and-outgoing'
+cond_obj1 = csn['object1'] == ''
+csn.loc[ cond_obj0 & cond_obj1,'object_id']='water_flow~incoming-and-outgoing'
+csn.loc[ cond_obj0 & cond_obj1,['object0','object1']]=''
+
 #water~liquid
 cond_obj0 = csn['object0'] == 'water~liquid'
 cond_obj1 = csn['object1'] == ''
@@ -6641,6 +7519,18 @@ cond_obj0 = csn['object0'].str.contains('wave')
 csn.loc[ cond_obj0, 'object_cat'] = 'root'
 csn.loc[ cond_obj0, 'object0'] = ''
 
+#weather-station
+cond_obj0 = csn['object0'] == 'weather-station'
+csn.loc[ cond_obj0,'object_id'] = \
+        csn.loc[ cond_obj0,'object0']
+csn.loc[ cond_obj0,'object_pref'] = 'body'
+csn.loc[ cond_obj0, 'object0'] = ''
+
+#wind
+cond_obj0 = csn['object0'] == 'wind'
+csn.loc[ cond_obj0, 'object_id'] = 'wind'
+csn.loc[ cond_obj0, 'object0'] = ''
+
 #wood~dry
 cond_obj0 = csn['object0'].str.contains('wood')
 csn.loc[ cond_obj0, 'object_id'] = 'wood~dry'
@@ -6656,7 +7546,9 @@ csn=csn.fillna('')
 csn.loc[csn['quantity_id']=='','quantity_id'] = \
     csn.loc[csn['quantity_id']=='','quantity_label']
 
-csn.loc[csn['operator']!='','quantity_id'] = csn.loc[csn['operator']!='','operator']+'_of_'+csn.loc[csn['operator']!='','quantity_id']
+csn.loc[(csn['operator']!='') & ~csn['quantity_id'].str.contains('_of_'),'quantity_id'] = \
+    csn.loc[(csn['operator']!='') & ~csn['quantity_id'].str.contains('_of_'),'operator']+\
+    '_of_'+csn.loc[(csn['operator']!='') & ~csn['quantity_id'].str.contains('_of_'),'quantity_id']
 csn.loc[csn['operator']!='','quantity_label'] = csn.loc[csn['operator']!='','operator']+'_of_'+csn.loc[csn['operator']!='','quantity_label']
 
 csn['quantity_id'] = \
@@ -6673,6 +7565,7 @@ csn['quantity_id'] = \
     .str.replace('magazine-safety','magazine_safety')\
     .str.replace('relative_hydraulic_roughness','hydraulic_roughness_ratio')\
     .str.replace('relative_saturation','saturation_ratio')\
+    .str.replace('specific_saturation','mass_saturation_ratio')\
     .str.replace('depth-times-slope','product_of_depth_and_slope')\
     .str.replace('precipitation_mass-per-volume_density','mass-per-volume_density')\
     .str.replace('manning','manning-formula')\
@@ -6686,6 +7579,10 @@ csn['quantity_id'] = \
     .str.replace('relative_permittivity','permittivity_ratio')\
     .str.replace('_\(en\)','').str.replace('network','network_name')\
     .str.replace('surface_area','area')
+
+#corrections    
+csn.loc[csn['quantity_id']=='emittance','quantity_id']='emissivity'
+csn.loc[csn['quantity_id']=='speed','quantity_id']='linear_speed'
 
 csn['variable_label'] = csn['object_label']+'__'+csn['quantity_label']
 csn['variable_id'] = csn['object_id']+'__'+csn['quantity_id']

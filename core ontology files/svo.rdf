@@ -10,6 +10,7 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.geoscienceontology.org/svo">
+        <owl:imports rdf:resource="http://www.geoscienceontology.org/svo/svl/assumption"/>
         <owl:imports rdf:resource="http://www.geoscienceontology.org/svo/svl/property"/>
         <owl:imports rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction"/>
         <owl:imports rdf:resource="http://www.geoscienceontology.org/svo/svl/reference"/>
@@ -30,7 +31,7 @@
         <owl:imports rdf:resource="http://www.geoscienceontology.org/svo/svl/participant"/>
         <owl:imports rdf:resource="http://www.geoscienceontology.org/svo/svu"/>
         <owl:imports rdf:resource="http://www.geoscienceontology.org/svo/svl/matter"/>
-        <rdfs:comment>Scientific Variables Ontology -- Lower (Instance) Ontology</rdfs:comment>
+        <rdfs:comment>Scientific Variables Ontology -- Upper and Lower.</rdfs:comment>
     </owl:Ontology>
 </rdf:RDF>
 

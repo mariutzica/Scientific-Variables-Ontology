@@ -269,8 +269,11 @@ compound,amiloride,amiloride,,,"Amiloride hydrochloride, midamor",,https://en.wi
 compound,aminocarb,aminocarb,,,,,https://en.wikipedia.org/wiki/Aminocarb
 acid,aminomethylphosphonic-acid,aminomethylphosphonic-acid,,,ampa,,https://en.wikipedia.org/wiki/Aminomethylphosphonic_acid
 compound,ammonia,ammonia,,,azane,,https://en.wikipedia.org/wiki/Ammonia
+ammonia,ammonia-as-nitrogen,ammonia-as-nitrogen,nitrogen,,,,
 ,ammonium,ammonium,,,,,https://en.wikipedia.org/wiki/Ammonium
 ammonium,ammonium~aerosol~dry,ammonium~aerosol~dry,,"aerosol, dry",,,
+ammonium,ammonium-as-nitrogen,ammonium-as-nitrogen,nitrogen,,,,
+ammonium,ammonium-as-nitrogen~elemental,ammonium-as-nitrogen~elemental,nitrogen~elemental,,,,
 compound,amobarbital,amobarbital,,,,,https://en.wikipedia.org/wiki/Amobarbital
 compound,amyl-cinnamal,amyl-cinnamal,,,"Heptanal,-2-(phenylmethylene)-",,
 compound,aniline,aniline,,,,,https://en.wikipedia.org/wiki/Aniline
@@ -354,6 +357,10 @@ compound,beta-stigmastanol,beta-stigmastanol,,,,,
 compound,bicarbonate,bicarbonate,,,hydrogencarbonate,,https://en.wikipedia.org/wiki/Bicarbonate
 compound,bifenthrin,bifenthrin,,,,,https://en.wikipedia.org/wiki/Bifenthrin
 mixture,biomass,biomass,,,,,
+biomass,biomass~harvested,biomass~harvested,,harvested,,,
+biomass,biomass~microbial,biomass~microbial,,microbial,,,
+biomass~microbial,biomass~microbial-as-nitrogen,biomass~microbial-as-nitrogen,nitrogen,,,,
+biomass,biomass~removed,biomass~removed,,removed,,,
 compound,biphenyl,biphenyl,,,,,https://en.wikipedia.org/wiki/Biphenyl
 compound,bis(2-chloro-1-methylethyl)-ether,bis(2-chloro-1-methylethyl)-ether,,,,,
 compound,bis(2-chloroethoxy)methane,bis(2-chloroethoxy)methane,,,,,
@@ -425,9 +432,11 @@ compound,carbon-dioxide,carbon-dioxide,,,,,http://en.wikipedia.org/wiki/Carbon_d
 compound,carbon-disulfide,carbon-disulfide,,,,,https://en.wikipedia.org/wiki/Carbon_disulfide
 compound,carbon-monoxide,carbon-monoxide,,,,,https://en.wikipedia.org/wiki/Carbon_monoxide
 compound,carbon-tetrachloride,carbon-tetrachloride,,,,,https://en.wikipedia.org/wiki/Carbon_tetrachloride
+carbon,carbon~decomposed,carbon~decomposed,,decomposed,,,
 carbon,carbon~dissolved,carbon~dissolved,,dissolved,,,
 carbon,carbon~dissolved~inorganic,carbon~dissolved~inorganic,,inorganic,,,
 carbon,carbon~dissolved~organic,carbon~dissolved~organic,,organic,,,
+carbon,carbon~stabilized,carbon~stabilized,,stabilized,,,
 ,carbonate,carbonate,,,,,https://en.wikipedia.org/wiki/Carbonate
 rock,carbonate-rock,carbonate-rock,,,,,https://en.wikipedia.org/wiki/Carbonate_rock
 compound,carbonatite,carbonatite,,,,,https://en.wikipedia.org/wiki/Carbonatite
@@ -496,7 +505,7 @@ compound,chloroxuron,chloroxuron,,,,,https://en.wikipedia.org/wiki/Chloroxuron
 compound,chlorphenamine,chlorphenamine,,,chlorpheniramine,,https://en.wikipedia.org/wiki/Chlorphenamine
 compound,chlorpropham,chlorpropham,,,,,https://en.wikipedia.org/wiki/Chlorpropham
 compound,chlorpyrifos,chlorpyrifos,,,,,https://en.wikipedia.org/wiki/Chlorpyrifos
-compound,chlorpyrifos-methyl,chlorpyrifos-methyl,,,cps,,https://en.wikipedia.org/wiki/Chlorpyrifos-methyl
+compound,chlorpyrifos-methyl,chlorpyrifos-methyl,,,cps,,
 compound,chlorsulfuron,chlorsulfuron,,,,,
 compound,chlortetracycline,chlortetracycline,,,aureomycin,,https://en.wikipedia.org/wiki/Chlortetracycline
 mixture,chocolate,chocolate,,,,,http://en.wikipedia.org/wiki/Chocolate
@@ -879,6 +888,7 @@ material,material~melt,material~melt,,melt,,,
 ,matter,matter,,,,,https://en.wikipedia.org/wiki/Matter
 matter,matter~organic,matter~organic,,organic,,,
 matter~organic,matter~organic_oven-dried,matter~organic_oven-dried,,oven-dried,,,
+matter~organic,matter~organic~stabilized,matter~organic~stabilized,,stabilized,,,
 compound,mcpa,mcpa,,,2-methyl-4-chlorophenoxyacetic-acid,,https://en.wikipedia.org/wiki/MCPA
 compound,mcpb,mcpb,,,"2,4-mcpb, 4-(4-chloro-o-tolyloxy)butyric-acid), 4-(4-chloro-2-methylphenoxy)butanoic-acid",,https://en.wikipedia.org/wiki/MCPB
 compound,mecoprop,mecoprop,,,"mcpp, methylchlorophenoxypropionic-acid",,https://en.wikipedia.org/wiki/Mecoprop
@@ -1008,6 +1018,8 @@ element,niobium,niobium,,,columbium,,https://en.wikipedia.org/wiki/Niobium
 niobium,niobium-95,niobium-95,,,,,https://en.wikipedia.org/wiki/Isotopes_of_niobium#Niobium-95
 compound,nitrapyrin,nitrapyrin,,,,,https://en.wikipedia.org/wiki/Nitrapyrin
 compound,nitrate,nitrate,,,,,https://en.wikipedia.org/wiki/Nitrate
+nitrate,nitrate-as-nitrogen,nitrate-as-nitrogen,nitrogen,,,,
+nitrate,nitrate-as-nitrogen~elemental,nitrate-as-nitrogen~elemental,nitrogen~elemental,,,,
 compound,nitrates,nitrates,,,,nitrate,
 acid,nitric-acid,nitric-acid,,,,,https://en.wikipedia.org/wiki/Nitric_acid
 compound,nitric-acid-trihydrate,nitric-acid-trihydrate,,,,,
@@ -1019,10 +1031,12 @@ compound,nitrogen-dioxide,nitrogen-dioxide,,,,,https://en.wikipedia.org/wiki/Nit
 compound,nitrogen-monoxide,nitrogen-monoxide,,,,,https://en.wikipedia.org/wiki/Nitric_oxide
 nitrogen,nitrogen~atomic,nitrogen~atomic,,atomic,,,
 element,nitrogen~kjeldahl,nitrogen~kjeldahl,,,,,https://en.wikipedia.org/wiki/Kjeldahl_method#Total_Kjeldahl_nitrogen
+nitrogen,nitrogen~elemental,nitrogen~elemental,,elemental,,,
 compound,nitroglycerin,nitroglycerin,,,"ng, tnc, trinitroglycerin, trinitroglycerine, gtn, glyceryl-trinitrate, 1,2,3-trinitroxypropane",,https://en.wikipedia.org/wiki/Nitroglycerin
 compound,nitromethane,nitromethane,,,,,https://en.wikipedia.org/wiki/Nitromethane
 acid,nitrous-acid,nitrous-acid,,,,,https://en.wikipedia.org/wiki/Nitrous_acid
 compound,nitrous-oxide,nitrous-oxide,,,,,https://en.wikipedia.org/wiki/Nitrous_oxide
+nitrous-oxide,nitrous-oxide-as-nitrogen,nitrous-oxide-as-nitrogen,nitrogen,,,,
 compound,nmvoc,nmvoc,,,,,https://en.wikipedia.org/wiki/Non-methane_volatile_organic_compound
 nmvoc,nmvoc~anthropogenic,nmvoc~anthropogenic,,anthropogenic,,,
 nmvoc~anthropogenic,nmvoc~anthropogenic-as-carbon,nmvoc~anthropogenic-as-carbon,carbon,,,,
@@ -1446,6 +1460,7 @@ compound,simetone,simetone,,,,,
 compound,simetryn,simetryn,,,,,
 water,sleet,sleet,,sleet,,,
 water,snow,snow,,snow,,,
+water,snow-or-ice,snow-or-ice,,"snow, ice",,,
 snow,snow~new,snow~new,,new,,,
 snow,snow~suspended,snow~suspended,,suspended,,,
 snow,snow~wet,snow~wet,,wet,,,
@@ -1455,7 +1470,12 @@ compound,sodium-acifluorfen,sodium-acifluorfen,,,,,
 compound,sodium-carbonate,sodium-carbonate,,,,,https://en.wikipedia.org/wiki/Sodium_carbonate
 compound,sodium-chloride,sodium-chloride,,,,,https://en.wikipedia.org/wiki/Sodium_chloride
 mixture,soil,soil,,,,,http://en.wikipedia.org/wiki/Soil
+soil,soil~stabilized,soil~stabilized,,stabilized,,,
+soil,soil~drained,soil~drained,,drained,,,
 soil,soil_permafrost,soil_permafrost,,permafrost,,,
+soil,soil~no-rock,soil~no-rock,,no-rock,,,
+soil,soil~no-rock~dry,soil~no-rock~dry,,"no-rock, dry",,,
+soil,soil~moist,soil~moist,,moist,,,
 mixture,soot,soot,,,,,https://en.wikipedia.org/wiki/Soot
 acid,stearic-acid,stearic-acid,,,,,https://en.wikipedia.org/wiki/Stearic_acid
 substance,steel,steel,,,,,https://en.wikipedia.org/wiki/Steel

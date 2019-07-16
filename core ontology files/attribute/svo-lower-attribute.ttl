@@ -9,15 +9,16 @@
 @base <http://www.geoscienceontology.org/svo/svl/> .
 
 <http://www.geoscienceontology.org/svo/svl/attribute> rdf:type owl:Ontology ;
-				rdfs:comment " Scientific Variables Lower Ontology, Attribute BETA VERSION 1.0." .
-#				owl:imports <http://www.geoscienceontology.org/svo/svu> .
+				owl:versionIRI <http://www.geoscienceontology.org/svo/svl/attribute/1.0.0> ;
+				rdfs:comment " Scientific Variables Lower Ontology, Attribute BETA VERSION 1.0.0" .
+#				owl:imports <http://www.geoscienceontology.org/svo/svu/1.0.0> .
 
 
 #################################################################
 #    Attribute   
 # 
 #################################################################
-##Last generated on: 2018-12-20 21:07
+##Last generated on: 2019-07-15 20:31 
 
 ###(Qualitative)Attribute
 
@@ -123,6 +124,12 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Human_impact_on_the_environment" ;
 			skos:prefLabel "anthropogenic"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#applied
+:applied rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "applied"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#aqueous
 :aqueous rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -215,6 +222,12 @@
 			svu:isNoun false ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Barotropic_fluid" ;
 			skos:prefLabel "barotropic"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#base
+:base rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "base"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#base-level
 :base-level rdf:type owl:NamedIndividual ,
@@ -509,6 +522,12 @@
 			svu:isNoun false ;
 			skos:prefLabel "dead"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#decomposed
+:decomposed rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "decomposed"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#deep
 :deep rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -595,6 +614,12 @@
 			svu:Attribute ;
 			svu:isNoun false ;
 			skos:prefLabel "drainage"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#drained
+:drained rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "drained"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#dried
 :dried rdf:type owl:NamedIndividual ,
@@ -890,6 +915,12 @@
 			svu:isNoun false ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Halogenation" ;
 			skos:prefLabel "halogenated"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#harvested
+:harvested rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "harvested"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#heterotrophic
 :heterotrophic rdf:type owl:NamedIndividual ,
@@ -1260,6 +1291,13 @@
 			svu:isNoun false ;
 			skos:prefLabel "maritime"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#mature
+:mature rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#maturity> ;
+			svu:isNoun false ;
+			skos:prefLabel "mature"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#maximum
 :maximum rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -1314,6 +1352,12 @@
 			svu:correspondsToProperty <property#activity> ;
 			svu:isNoun false ;
 			skos:prefLabel "methylene-blue-active"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#microbial
+:microbial rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "microbial"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#microwave
 :microwave rdf:type owl:NamedIndividual ,
@@ -1447,6 +1491,12 @@
 			svu:Attribute ;
 			svu:isNoun false ;
 			skos:prefLabel "no-tide"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#no-rock
+:no-rock rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "no-rock"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#non-settleable
 :non-settleable rdf:type owl:NamedIndividual ,
@@ -1714,6 +1764,12 @@
 			svu:isNoun false ;
 			skos:prefLabel "remaining"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#removed
+:removed rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "removed"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#residential
 :residential rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -1727,6 +1783,12 @@
 			svu:isNoun false ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Residue_(chemistry)" ;
 			skos:prefLabel "residual"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#retained
+:retained rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "retained"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#right
 :right rdf:type owl:NamedIndividual ,
@@ -1876,11 +1938,23 @@
 			svu:isNoun false ;
 			skos:prefLabel "spherical"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#stabilized
+:stabilized rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "stabilized"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#standard
 :standard rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
 			svu:isNoun false ;
 			skos:prefLabel "standard"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#standing
+:standing rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "standing"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#static
 :static rdf:type owl:NamedIndividual ,
@@ -1917,7 +1991,6 @@
 :subaqueous rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
 			svu:isNoun false ;
-			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/subaqueous" ;
 			skos:prefLabel "subaqueous"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#sunlit
@@ -2330,6 +2403,56 @@
 			svu:hasAssignedUnits "mm" ;
 			svu:isNoun false ;
 			skos:prefLabel "0.5-to-8.0-mm"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#0-to-10cm
+:0-to-10cm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#length> ;
+			svu:hasValue "0-to-10" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "cm" ;
+			svu:isNoun false ;
+			skos:prefLabel "0-to-10cm"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#100-to-200cm
+:100-to-200cm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#length> ;
+			svu:hasValue "100-to-200" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "cm" ;
+			svu:isNoun false ;
+			skos:prefLabel "100-to-200cm"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#10-to-40cm
+:10-to-40cm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#length> ;
+			svu:hasValue "10-to-40" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "cm" ;
+			svu:isNoun false ;
+			skos:prefLabel "10-to-40cm"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#40-to-100cm
+:40-to-100cm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#length> ;
+			svu:hasValue "40-to-100" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "cm" ;
+			svu:isNoun false ;
+			skos:prefLabel "40-to-100cm"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#0-to-100cm
+:0-to-100cm rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:correspondsToProperty <property#length> ;
+			svu:hasValue "0-to-100" ;
+			svu:hasUnits "L" ;
+			svu:hasAssignedUnits "cm" ;
+			svu:isNoun false ;
+			skos:prefLabel "0-to-100cm"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#10m
 :10m rdf:type owl:NamedIndividual ,

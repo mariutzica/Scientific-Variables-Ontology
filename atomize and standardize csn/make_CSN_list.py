@@ -31,7 +31,9 @@ import numpy as np
 # List from Google Drive folder has 3015 items.
 csn = pd.DataFrame(np.unique(pd.read_csv('CSN_VarNames_v0.85b.txt',header=None)))
 csn_web = pd.read_csv('CSN_list_website_31052016.txt',header=None)
+csn_created = pd.read_csv('CSN_manually_created_01262019.txt',header=None)
+csn_created2 = pd.read_csv('CSN_manually_created_03182019.txt',header=None)
 
 # combine to get 3066 unique entries; write to new file to be semantically processed
-new_CSN_list = pd.Series(list(set(csn[0]) | set(csn_web[0])))
+new_CSN_list = pd.Series(list(set(csn[0]) | set(csn_web[0]) | set(csn_created[0]) | set(csn_created2[0])))
 new_CSN_list.to_csv('CSN_VarNames_v0.85m0.csv',index=False)

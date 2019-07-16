@@ -9,15 +9,16 @@
 @base <http://www.geoscienceontology.org/svo/svl/> .
 
 <http://www.geoscienceontology.org/svo/svl/matter> rdf:type owl:Ontology ;
-				rdfs:comment " Scientific Variables Lower Ontology, Matter BETA VERSION 1.0." .
-#				owl:imports <http://www.geoscienceontology.org/svo/svu> .
+				owl:versionIRI <http://www.geoscienceontology.org/svo/svl/matter/1.0.0> ;
+				rdfs:comment " Scientific Variables Lower Ontology, Matter BETA VERSION 1.0.0" .
+#				owl:imports <http://www.geoscienceontology.org/svo/svu/1.0.0> .
 
 
 #################################################################
 #    Matter   
 # 
 #################################################################
-##Last generated on: 2018-12-20 21:07
+##Last generated on: 2019-07-15 20:31 
 
 ###Matter
 
@@ -1919,6 +1920,13 @@
 			svu:isTypeOf :compound ;
 			skos:prefLabel "ammonia"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/matter#ammonia-as-nitrogen
+:ammonia-as-nitrogen rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isExpressedAs :nitrogen ;
+			svu:isTypeOf :ammonia ;
+			skos:prefLabel "ammonia-as-nitrogen"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/matter#ammonium
 :ammonium rdf:type owl:NamedIndividual ,
 			svu:Matter ;
@@ -1932,6 +1940,20 @@
 			svu:hasAttribute <attribute#aerosol> ;
 			svu:hasAttribute <attribute#dry> ;
 			skos:prefLabel "ammonium~aerosol~dry"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/matter#ammonium-as-nitrogen
+:ammonium-as-nitrogen rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isExpressedAs :nitrogen ;
+			svu:isTypeOf :ammonium ;
+			skos:prefLabel "ammonium-as-nitrogen"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/matter#ammonium-as-nitrogen%7Eelemental
+:ammonium-as-nitrogen%7Eelemental rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isExpressedAs :nitrogen%7Eelemental ;
+			svu:isTypeOf :ammonium ;
+			skos:prefLabel "ammonium-as-nitrogen~elemental"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/matter#amobarbital
 :amobarbital rdf:type owl:NamedIndividual ,
@@ -2507,6 +2529,34 @@
 			svu:isTypeOf :mixture ;
 			skos:prefLabel "biomass"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/matter#biomass%7Eharvested
+:biomass%7Eharvested rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isTypeOf :biomass ;
+			svu:hasAttribute <attribute#harvested> ;
+			skos:prefLabel "biomass~harvested"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/matter#biomass%7Emicrobial
+:biomass%7Emicrobial rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isTypeOf :biomass ;
+			svu:hasAttribute <attribute#microbial> ;
+			skos:prefLabel "biomass~microbial"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/matter#biomass%7Emicrobial-as-nitrogen
+:biomass%7Emicrobial-as-nitrogen rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isExpressedAs :nitrogen ;
+			svu:isTypeOf :biomass%7Emicrobial ;
+			skos:prefLabel "biomass~microbial-as-nitrogen"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/matter#biomass%7Eremoved
+:biomass%7Eremoved rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isTypeOf :biomass ;
+			svu:hasAttribute <attribute#removed> ;
+			skos:prefLabel "biomass~removed"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/matter#biphenyl
 :biphenyl rdf:type owl:NamedIndividual ,
 			svu:Matter ;
@@ -3010,6 +3060,13 @@
 			svu:isTypeOf :compound ;
 			skos:prefLabel "carbon-tetrachloride"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/matter#carbon%7Edecomposed
+:carbon%7Edecomposed rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isTypeOf :carbon ;
+			svu:hasAttribute <attribute#decomposed> ;
+			skos:prefLabel "carbon~decomposed"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/matter#carbon%7Edissolved
 :carbon%7Edissolved rdf:type owl:NamedIndividual ,
 			svu:Matter ;
@@ -3030,6 +3087,13 @@
 			svu:isTypeOf :carbon ;
 			svu:hasAttribute <attribute#organic> ;
 			skos:prefLabel "carbon~dissolved~organic"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/matter#carbon%7Estabilized
+:carbon%7Estabilized rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isTypeOf :carbon ;
+			svu:hasAttribute <attribute#stabilized> ;
+			skos:prefLabel "carbon~stabilized"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/matter#carbonate
 :carbonate rdf:type owl:NamedIndividual ,
@@ -3530,7 +3594,6 @@
 ###  http://www.geoscienceontology.org/svo/svl/matter#chlorpyrifos-methyl
 :chlorpyrifos-methyl rdf:type owl:NamedIndividual ,
 			svu:Matter ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Chlorpyrifos-methyl" ;
 			skos:altLabel "cps"@en ;
 			svu:isTypeOf :compound ;
 			skos:prefLabel "chlorpyrifos-methyl"@en .
@@ -6254,6 +6317,13 @@
 			svu:hasAttribute <attribute#oven-dried> ;
 			skos:prefLabel "matter~organic_oven-dried"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/matter#matter%7Eorganic%7Estabilized
+:matter%7Eorganic%7Estabilized rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isTypeOf :matter%7Eorganic ;
+			svu:hasAttribute <attribute#stabilized> ;
+			skos:prefLabel "matter~organic~stabilized"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/matter#mcpa
 :mcpa rdf:type owl:NamedIndividual ,
 			svu:Matter ;
@@ -7180,6 +7250,20 @@
 			svu:isTypeOf :compound ;
 			skos:prefLabel "nitrate"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/matter#nitrate-as-nitrogen
+:nitrate-as-nitrogen rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isExpressedAs :nitrogen ;
+			svu:isTypeOf :nitrate ;
+			skos:prefLabel "nitrate-as-nitrogen"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/matter#nitrate-as-nitrogen%7Eelemental
+:nitrate-as-nitrogen%7Eelemental rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isExpressedAs :nitrogen%7Eelemental ;
+			svu:isTypeOf :nitrate ;
+			skos:prefLabel "nitrate-as-nitrogen~elemental"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/matter#nitrates
 :nitrates rdf:type owl:NamedIndividual ,
 			svu:Matter ;
@@ -7256,6 +7340,13 @@
 			svu:isTypeOf :element ;
 			skos:prefLabel "nitrogen~kjeldahl"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/matter#nitrogen%7Eelemental
+:nitrogen%7Eelemental rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isTypeOf :nitrogen ;
+			svu:hasAttribute <attribute#elemental> ;
+			skos:prefLabel "nitrogen~elemental"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/matter#nitroglycerin
 :nitroglycerin rdf:type owl:NamedIndividual ,
 			svu:Matter ;
@@ -7290,6 +7381,13 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Nitrous_oxide" ;
 			svu:isTypeOf :compound ;
 			skos:prefLabel "nitrous-oxide"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/matter#nitrous-oxide-as-nitrogen
+:nitrous-oxide-as-nitrogen rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isExpressedAs :nitrogen ;
+			svu:isTypeOf :nitrous-oxide ;
+			skos:prefLabel "nitrous-oxide-as-nitrogen"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/matter#nmvoc
 :nmvoc rdf:type owl:NamedIndividual ,
@@ -10275,6 +10373,14 @@
 			svu:hasAttribute <attribute#snow> ;
 			skos:prefLabel "snow"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/matter#snow-or-ice
+:snow-or-ice rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isTypeOf :water ;
+			svu:hasAttribute <attribute#snow> ;
+			svu:hasAttribute <attribute#ice> ;
+			skos:prefLabel "snow-or-ice"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/matter#snow%7Enew
 :snow%7Enew rdf:type owl:NamedIndividual ,
 			svu:Matter ;
@@ -10337,12 +10443,48 @@
 			svu:isTypeOf :mixture ;
 			skos:prefLabel "soil"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/matter#soil%7Estabilized
+:soil%7Estabilized rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isTypeOf :soil ;
+			svu:hasAttribute <attribute#stabilized> ;
+			skos:prefLabel "soil~stabilized"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/matter#soil%7Edrained
+:soil%7Edrained rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isTypeOf :soil ;
+			svu:hasAttribute <attribute#drained> ;
+			skos:prefLabel "soil~drained"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/matter#soil_permafrost
 :soil_permafrost rdf:type owl:NamedIndividual ,
 			svu:Matter ;
 			svu:isTypeOf :soil ;
 			svu:hasAttribute <attribute#permafrost> ;
 			skos:prefLabel "soil_permafrost"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/matter#soil%7Eno-rock
+:soil%7Eno-rock rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isTypeOf :soil ;
+			svu:hasAttribute <attribute#no-rock> ;
+			skos:prefLabel "soil~no-rock"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/matter#soil%7Eno-rock%7Edry
+:soil%7Eno-rock%7Edry rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isTypeOf :soil ;
+			svu:hasAttribute <attribute#no-rock> ;
+			svu:hasAttribute <attribute#dry> ;
+			skos:prefLabel "soil~no-rock~dry"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/matter#soil%7Emoist
+:soil%7Emoist rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isTypeOf :soil ;
+			svu:hasAttribute <attribute#moist> ;
+			skos:prefLabel "soil~moist"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/matter#soot
 :soot rdf:type owl:NamedIndividual ,

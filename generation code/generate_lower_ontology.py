@@ -91,19 +91,19 @@ operator_vocabulary = \
 operator_quantity_vocabulary = \
             utils.load_data( ext_vocabulary, operator_quantity_file )
 process_vocabulary = \
-            utils.load_data( ext_vocabulary, process_file )   
+            utils.load_data( ext_vocabulary, process_file )
 phenomenon_vocabulary = \
-            utils.load_data( ext_vocabulary, phenomenon_file )  
+            utils.load_data( ext_vocabulary, phenomenon_file )
 compound_phenomenon_vocabulary = \
-            utils.load_data( ext_vocabulary, compound_phenomenon_file )  
+            utils.load_data( ext_vocabulary, compound_phenomenon_file )
 qualitative_attribute_vocabulary = \
-            utils.load_data( ext_vocabulary, qualitative_attribute_file )   
+            utils.load_data( ext_vocabulary, qualitative_attribute_file )
 quantitative_attribute_vocabulary = \
-            utils.load_data( ext_vocabulary, quantitative_attribute_file )  
+            utils.load_data( ext_vocabulary, quantitative_attribute_file )
 matter_vocabulary = \
-            utils.load_data( ext_vocabulary, matter_file ) 
+            utils.load_data( ext_vocabulary, matter_file )
 form_vocabulary = \
-            utils.load_data( ext_vocabulary, form_file ) 
+            utils.load_data( ext_vocabulary, form_file )
 math_abstraction_vocabulary = \
             utils.load_data( ext_vocabulary, math_abstraction_file )
 phys_abstraction_vocabulary = \
@@ -115,40 +115,40 @@ math_abstraction_part_vocabulary = \
 part_vocabulary = \
             utils.load_data( ext_vocabulary, part_file )
 inanimate_nat_body_vocabulary = \
-            utils.load_data( ext_vocabulary, inanimate_nat_body_file ) 
+            utils.load_data( ext_vocabulary, inanimate_nat_body_file )
 inanimate_fab_body_vocabulary = \
-            utils.load_data( ext_vocabulary, inanimate_fab_body_file ) 
+            utils.load_data( ext_vocabulary, inanimate_fab_body_file )
 animate_body_vocabulary = \
-            utils.load_data( ext_vocabulary, animate_body_file ) 
+            utils.load_data( ext_vocabulary, animate_body_file )
 role_vocabulary = \
-            utils.load_data( ext_vocabulary, role_file ) 
+            utils.load_data( ext_vocabulary, role_file )
 participant_role_vocabulary = \
-            utils.load_data( ext_vocabulary, participant_role_file ) 
+            utils.load_data( ext_vocabulary, participant_role_file )
 property_role_vocabulary = \
             utils.load_data( ext_vocabulary, property_role_file )
 trajectory_vocabulary = \
-            utils.load_data( ext_vocabulary, trajectory_file ) 
+            utils.load_data( ext_vocabulary, trajectory_file )
 trajectory_direction_vocabulary = \
-            utils.load_data( ext_vocabulary, trajectory_direction_file ) 
+            utils.load_data( ext_vocabulary, trajectory_direction_file )
 relationship_vocabulary = \
             utils.load_data( ext_vocabulary, relationship_file )
 context_vocabulary = \
             utils.load_data( ext_vocabulary, context_file )
 participant_vocabulary = \
-            utils.load_data( ext_vocabulary, participant_file ) 
+            utils.load_data( ext_vocabulary, participant_file )
 reference_vocabulary = \
-            utils.load_data( ext_vocabulary, reference_file ) 
+            utils.load_data( ext_vocabulary, reference_file )
 phenomenon_context_vocabulary = \
-            utils.load_data( ext_vocabulary, context_phen_file )  
+            utils.load_data( ext_vocabulary, context_phen_file )
 phenomenon_medium_vocabulary = \
-            utils.load_data( ext_vocabulary, medium_phen_file )  
+            utils.load_data( ext_vocabulary, medium_phen_file )
 phenomenon_reference_vocabulary = \
-            utils.load_data( ext_vocabulary, reference_phen_file )  
+            utils.load_data( ext_vocabulary, reference_phen_file )
 phenomenon_multiple_vocabulary = \
-            utils.load_data( ext_vocabulary, role_phen_file )  
+            utils.load_data( ext_vocabulary, role_phen_file )
 csn_vocabulary = \
             utils.load_data( ext_csn_variable, csn_variables_file )
-             
+
 ######################
 #  OUTPUT FILE SETUP #
 ######################
@@ -256,10 +256,10 @@ utils.create_bb_file( process_vocabulary, process_ttl, \
 # create Phenomenon file
 label = '\n\n###Phenomenon\n\n'
 utils.create_bb_file( phenomenon_vocabulary, phenomenon_ttl, \
-                      'Phenomenon', 'phenomenon', 'phenomenon', label = label )
+                      'SpatiotemporalPhenomenon', 'phenomenon', 'phenomenon', label = label )
 label = '\n\n###Compound Phenomenon\n\n'
 utils.create_bb_file( compound_phenomenon_vocabulary, phenomenon_ttl, \
-                      'Phenomenon', 'phenomenon', 'phenomenon', label = label )
+                      'SpatiotemporalPhenomenon', 'phenomenon', 'phenomenon', label = label )
 label = '\n\n###ContextPhenomenon\n\n'
 utils.create_bb_file( phenomenon_context_vocabulary, phenomenon_ttl, \
                       'ContextPhenomenon', 'phenomenon', 'phenomenon', label = label )

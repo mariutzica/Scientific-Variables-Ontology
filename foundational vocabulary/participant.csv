@@ -19,14 +19,19 @@ buildings,exchange,"body, "
 snowpack,exchange,"body, "
 terrain,exchange,"form, "
 vegetation,exchange,"body, process, "
+atmosphere@medium_dust~aerosol,main,
+radiation,in,"phenomenon, process, "
 atmosphere@role~main_radiation@role~in_transmission,first,
-atmosphere@role~medium_dust~aerosol@role~main_radiation@role~in_transmission,second,
+(atmosphere@medium_dust~aerosol)@role~main_radiation@role~in_transmission,second,
 atmosphere_air,main,"body, "
 radiation~incoming~longwave,in,"phenomenon, "
 bear@context~part_brain,numerator,
 bear@context~part_body,denominator,
 bear~black~american@context~part_brain,numerator,
 bear~black~american@context~part_body,denominator,
+biomass~microbial_decomposition,source,"phenomenon, "
+soil~stabilized_decomposition,source,"phenomenon, "
+carbon,main,"matter, "
 cesium_atom,source,"body, "
 channel@context~part_bank,denominator,
 water_flowing,numerator,"phenomenon, "
@@ -34,6 +39,20 @@ channel@context~part_entrance,sink,
 channel@context~part_exit,sink,
 channel_centerline_endpoint~upstream,first,"phenomenon, "
 channel_centerline_endpoint~downstream,second,"phenomenon, "
+channel~river_bed,exchange,"body, "
+channel~stream@context~part_reach,exchange,
+water_flowing,main,"phenomenon, "
+crop@context~source_(residue_pool_decomposition),source,
+crop_biomass~microbial_decomposition,source,"phenomenon, "
+soil_decomposition,source,"phenomenon, "
+crop_canopy,sink,"phenomenon, "
+radiation~solar,main,"phenomenon, "
+crop_canopy,source,"phenomenon, "
+water,main,"matter, "
+crop_planting,main,"phenomenon, "
+crop_sowing,main,"phenomenon, "
+crop_production,numerator,"phenomenon, "
+fertilizer~nitrogen_utilization,denominator,"phenomenon, "
 delta@context~part_(shoreline@context~on_sediment),main,
 ocean@context~part_wave,in,
 delta@context~part_plain,numerator,
@@ -52,6 +71,8 @@ station,sink,"body, "
 earthquake@context~source_wave~seismic~s,main,
 engine@context~in_air,numerator,
 engine@context~in_fuel,denominator,
+fertilizer~nitrogen_utilization,numerator,"phenomenon, "
+fertilizer~nitrogen_application,denominator,"phenomenon, "
 glacier_bottom_surface,medium,"phenomenon, "
 glacier_top_surface,medium,"phenomenon, "
 grid_cell,sink,"abstraction, "
@@ -75,7 +96,6 @@ land_surface,source,"phenomenon, "
 air,sink,"matter, "
 radiation~outgoing~longwave,main,"phenomenon, "
 land~vegetated_floor,sink,"body, "
-water,main,"matter, "
 model@context~in_(grid_axis~x),first,
 model@context~in_axis~east,second,
 sea@context~adjacent_(shoreline_axis~x),first,
@@ -96,10 +116,26 @@ snowpack_bottom,medium,"body, "
 snowpack_surface,main,"phenomenon, "
 snowpack_top,medium,"body, "
 snowpack_top_surface,main,"phenomenon, "
+soil@context~in_(carbon_pool~stabilized),sink,
+soil@context~in_(carbon_pool~microbial),sink,
+carbon~decomposed,main,"matter, "
+soil@context~in_(residue_pool),sink,
+crop@context~source_residue,main,
+soil@context~on_(plant_residue),source,
+soil_denitrification,source,"phenomenon, "
+nitrous-oxide-as-nitrogen,main,"matter, "
+soil_nitrification,source,"phenomenon, "
+soil_pool,sink,"body, "
+pool~microbial,sink,"body, "
+soil_profile_bottom,source,"phenomenon, "
+water_draining,medium,"phenomenon, "
+ammonium_leaching,main,"phenomenon, "
+nitrate_leaching,main,"phenomenon, "
 soil_sat-zone_top,main,"body, "
 water,in,"matter, "
+soil_surface,sink,"phenomenon, "
+soil_surface,source,"phenomenon, "
 tank~storage~open-top@context~part_outlet,source,
-water_flowing,main,"phenomenon, "
 titan@context~surrounding_atmosphere,source,
 methane,main,"matter, "
 vegetation_canopy,main,"body, "
@@ -122,10 +158,10 @@ air,source,"matter, "
 land,sink,"body, "
 air~dry,numerator,"matter, "
 water~vapor,denominator,"matter, "
+aquifer~left,source,"body, "
+channel~stream@context~part_reach,sink,
+aquifer~right,source,"body, "
 atmosphere,main,"body, "
-radiation,in,"phenomenon, process, "
-atmosphere,medium,"body, "
-dust~aerosol,main,"body, "
 atmosphere,sink,"body, "
 atmosphere,source,"body, "
 graupel,main,"body, attribute, "
@@ -143,17 +179,27 @@ automobile,source,"body, "
 carbon-dioxide,main,"matter, "
 baseball-bat,main,"body, "
 baseball,main,"body, "
+carbon,numerator,"matter, "
+nitrogen,denominator,"matter, "
 chlorine,main,"matter, "
 electron,in,"matter, "
 clouds,main,"phenomenon, "
 clouds,sink,"phenomenon, "
 concrete,exchange,"matter, "
 rubber,exchange,"matter, "
+crop,main,"role, "
+nitrogen,exchange,"matter, "
+water,exchange,"matter, "
+crop,source,"role, "
+crops~legume,sink,"phenomenon, "
+nitrogen,main,"matter, "
 earth,first,"body, "
 earth,source,"body, "
 body,main,"body, "
 mars,sink,"body, "
 body_travel,main,"phenomenon, "
+farmer,sink,"role, "
+crop,exchange,"role, "
 fuel,numerator,"matter, "
 oxidizer,denominator,"matter, "
 human,sink,"body, "
@@ -161,12 +207,15 @@ alcohol,main,"matter, "
 ice,medium,"matter, attribute, "
 lake,sink,"body, "
 lake,source,"body, "
+land,in,"body, "
+fertilizer~nitrogen,main,"phenomenon, "
 magnesium-chloride,first,"matter, "
 water,second,"matter, "
 material,medium,"matter, "
 wave~seismic~sh,main,"phenomenon, "
 wave~seismic~sv,main,"phenomenon, "
 pavement,exchange,"matter, "
+plants~living,source,
 processes,source,"phenomenon, process, "
 oxygen~photosynthetic,main,"matter, "
 rocket,numerator,"body, "
@@ -181,7 +230,13 @@ snowpack,main,"body, "
 snowpack,sink,"body, "
 snowpack,source,"body, "
 snow~wet,exchange,"matter, "
+soil,main,"matter, "
+fertilizer,in,"role, "
+nitrogen,in,"matter, "
 soil,medium,"matter, "
+soil,sink,"matter, "
+fertilizer,main,"role, "
+soil,source,"matter, "
 sulfuric-acid,first,"matter, "
 toyota-corolla~2008,sink,"body, "
 water,first,"matter, "

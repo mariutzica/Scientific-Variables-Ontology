@@ -196,7 +196,7 @@ csn['full_name']=csn['full_name'].str.replace('__water_solubility_in_melt',\
     '_melt_water__solubility').str.replace('__water_solubility','_water__solubility')
 
 # a meander is a kink in a channel, so an object
-csn['full_name']=csn['full_name'].str.replace('__meander','_meander_')
+#csn['full_name']=csn['full_name'].str.replace('__meander','_meander_')
 
 # void_ratio includes the object 'void', usually a volume fraction
 csn['full_name']=csn['full_name'].str.replace('__void_ratio','_void__volume_fraction')

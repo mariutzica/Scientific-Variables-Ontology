@@ -9,15 +9,16 @@
 @base <http://www.geoscienceontology.org/svo/svl/> .
 
 <http://www.geoscienceontology.org/svo/svl/body> rdf:type owl:Ontology ;
-				rdfs:comment " Scientific Variables Lower Ontology, Body BETA VERSION 1.0." .
-#				owl:imports <http://www.geoscienceontology.org/svo/svu> .
+				owl:versionIRI <http://www.geoscienceontology.org/svo/svl/body/1.0.0> ;
+				rdfs:comment " Scientific Variables Lower Ontology, Body BETA VERSION 1.0.0" .
+#				owl:imports <http://www.geoscienceontology.org/svo/svu/1.0.0> .
 
 
 #################################################################
 #    Body   
 # 
 #################################################################
-##Last generated on: 2018-12-20 21:07
+##Last generated on: 2019-07-15 20:31 
 
 ###Inanimate Natural Body
 
@@ -36,6 +37,26 @@
 			svu:hasMatter <matter#ammonium> ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Ammonium" ;
 			skos:prefLabel "ammonium"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#aquifer
+:aquifer rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Aquifer" ;
+			skos:prefLabel "aquifer"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#aquifer%7Eleft
+:aquifer%7Eleft rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :aquifer ;
+			svu:hasAttribute <attribute#left> ;
+			skos:prefLabel "aquifer~left"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#aquifer%7Eright
+:aquifer%7Eright rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :aquifer ;
+			svu:hasAttribute <attribute#right> ;
+			skos:prefLabel "aquifer~right"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#arsenate-ion
 :arsenate-ion rdf:type owl:NamedIndividual ,
@@ -179,6 +200,27 @@
 			svu:hasBody <body#burgess-shale> ;
 			skos:prefLabel "burgess-shale_stratum"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#carbon_pool
+:carbon_pool rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#pool> ;
+			svu:hasMatter <matter#carbon> ;
+			skos:prefLabel "carbon_pool"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#carbon_pool%7Estabilized
+:carbon_pool%7Estabilized rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :carbon_pool ;
+			svu:hasAttribute <attribute#stabilized> ;
+			skos:prefLabel "carbon_pool~stabilized"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#carbon_pool%7Emicrobial
+:carbon_pool%7Emicrobial rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :carbon_pool ;
+			svu:hasAttribute <attribute#microbial> ;
+			skos:prefLabel "carbon_pool~microbial"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#carbon_isotope
 :carbon_isotope rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -201,6 +243,43 @@
 			svu:hasForm <form#atom> ;
 			svu:hasMatter <matter#cesium> ;
 			skos:prefLabel "cesium_atom"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#reach
+:reach rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Reach_(geography)" ;
+			skos:prefLabel "reach"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#channel%7Estream
+:channel%7Estream rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#channel> ;
+			svu:hasMatter <matter#water> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Stream" ;
+			svu:isTypeOf :channel%7Eriver ;
+			skos:prefLabel "channel~stream"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#channel%7Eriver
+:channel%7Eriver rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#channel> ;
+			svu:hasMatter <matter#water> ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/River" ;
+			skos:prefLabel "channel~river"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#channel%7Eriver_bed
+:channel%7Eriver_bed rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#bed> ;
+			svu:hasBody <body#channel%7Eriver> ;
+			skos:prefLabel "channel~river_bed"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#channel_bed
+:channel_bed rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#bed> ;
+			svu:hasForm <form#channel> ;
+			skos:prefLabel "channel_bed"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#chlorate-ion
 :chlorate-ion rdf:type owl:NamedIndividual ,
@@ -233,6 +312,13 @@
 			svu:hasMatter <matter#chromium> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Chromium#Chromium(VI)" ;
 			skos:prefLabel "chromium(vi)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#clay_particle
+:clay_particle rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#particle> ;
+			svu:hasMatter <matter#clay> ;
+			skos:prefLabel "clay_particle"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#delta
 :delta rdf:type owl:NamedIndividual ,
@@ -399,6 +485,12 @@
 			svu:hasMatter <matter#ethane> ;
 			skos:prefLabel "ethane_molecule"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#field
+:field rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Field_(agriculture)" ;
+			skos:prefLabel "field"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#fluoride-ion
 :fluoride-ion rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -462,6 +554,19 @@
 			svu:hasPart <part#top> ;
 			svu:hasBody <body#glacier> ;
 			skos:prefLabel "glacier_top"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#grain
+:grain rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Grain" ;
+			skos:prefLabel "grain"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#grain%7Edry
+:grain%7Edry rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :grain ;
+			svu:hasAttribute <attribute#dry> ;
+			skos:prefLabel "grain~dry"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#grassland
 :grassland rdf:type owl:NamedIndividual ,
@@ -932,6 +1037,13 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Planet" ;
 			skos:prefLabel "planet"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#pool%7Emicrobial
+:pool%7Emicrobial rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#pool> ;
+			svu:hasAttribute <attribute#microbial> ;
+			skos:prefLabel "pool~microbial"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#raindrop
 :raindrop rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -939,6 +1051,36 @@
 			svu:hasMatter <matter#water> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Drop_(liquid)" ;
 			skos:prefLabel "raindrop"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#rhizodeposit
+:rhizodeposit rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			skos:prefLabel "rhizodeposit"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#root
+:root rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			skos:prefLabel "root"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#root-and-rhizodeposit
+:root-and-rhizodeposit rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasBody <body#root> ;
+			svu:hasBody <body#rhizodeposit> ;
+			skos:prefLabel "root-and-rhizodeposit"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#roots-and-rhizodeposits
+:roots-and-rhizodeposits rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isPluralityOf :root-and-rhizodeposit ;
+			skos:prefLabel "roots-and-rhizodeposits"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#roots-and-rhizodeposits-as-carbon
+:roots-and-rhizodeposits-as-carbon rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isExpressedAs :carbon ;
+			svu:isTypeOf :roots-and-rhizodeposits ;
+			skos:prefLabel "roots-and-rhizodeposits-as-carbon"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#sand_grain
 :sand_grain rdf:type owl:NamedIndividual ,
@@ -1204,6 +1346,13 @@
 			svu:hasMatter <matter#soil> ;
 			skos:prefLabel "soil_layer"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#soil_layer%7Ebase
+:soil_layer%7Ebase rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#layer%7Ebase> ;
+			svu:hasMatter <matter#soil> ;
+			skos:prefLabel "soil_layer~base"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#soil_layer%7E0
 :soil_layer%7E0 rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -1253,6 +1402,12 @@
 			svu:hasMatter <matter#soil> ;
 			skos:prefLabel "soil_layer~top"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#soil_layer%7Etop%7Einfiltration
+:soil_layer%7Etop%7Einfiltration rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :soil_layer%7Etop ;
+			skos:prefLabel "soil_layer~top~infiltration"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#soil_layer%7Etop_saturated
 :soil_layer%7Etop_saturated rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -1280,6 +1435,28 @@
 			svu:hasPart <part#top> ;
 			svu:hasMatter <matter#soil_permafrost> ;
 			skos:prefLabel "soil_permafrost_top"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#soil_pool
+:soil_pool rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasForm <form#pool> ;
+			svu:hasMatter <matter#soil> ;
+			skos:prefLabel "soil_pool"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#soil_pool%7Estabilized
+:soil_pool%7Estabilized rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :soil_pool ;
+			svu:hasAttribute <attribute#stabilized> ;
+			skos:prefLabel "soil_pool~stabilized"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#soil_pool%7Eorganic%7Estabilized
+:soil_pool%7Eorganic%7Estabilized rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :soil_pool ;
+			svu:hasAttribute <attribute#organic> ;
+			svu:hasAttribute <attribute#stabilized> ;
+			skos:prefLabel "soil_pool~organic~stabilized"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#soil_regolith-layer
 :soil_regolith-layer rdf:type owl:NamedIndividual ,
@@ -1315,6 +1492,13 @@
 			svu:hasPart <part#unsat-zone> ;
 			svu:hasMatter <matter#soil> ;
 			skos:prefLabel "soil_unsat-zone"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#soil%7Emoist_layer
+:soil%7Emoist_layer rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#layer> ;
+			svu:hasMatter <matter#soil%7Emoist> ;
+			skos:prefLabel "soil~moist_layer"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#star
 :star rdf:type owl:NamedIndividual ,
@@ -3167,6 +3351,12 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Culoptila" ;
 			skos:prefLabel "culoptila"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#cultivar
+:cultivar rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cultivar" ;
+			skos:prefLabel "cultivar"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#cumacea
 :cumacea rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -4445,6 +4635,13 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Legionella" ;
 			skos:prefLabel "legionella"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/body#legume
+:legume rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Legume" ;
+			skos:altLabel "pulse"@en ;
+			skos:prefLabel "legume"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/body#lenarchus
 :lenarchus rdf:type owl:NamedIndividual ,
 			svu:Body ;
@@ -5715,6 +5912,19 @@
 			svu:Body ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Plant" ;
 			skos:prefLabel "plant"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#plants
+:plants rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isPluralityOf :plant ;
+			skos:prefLabel "plants"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#plant%7Eliving
+:plant%7Eliving rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:isTypeOf :plants ;
+			svu:hasAttribute <attribute#living> ;
+			skos:prefLabel "plant~living"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#platelet
 :platelet rdf:type owl:NamedIndividual ,

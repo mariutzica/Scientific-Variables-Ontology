@@ -9,15 +9,16 @@
 @base <http://www.geoscienceontology.org/svo/svl/> .
 
 <http://www.geoscienceontology.org/svo/svl/abstraction> rdf:type owl:Ontology ;
-				rdfs:comment " Scientific Variables Lower Ontology, Abstraction BETA VERSION 1.0." .
-#				owl:imports <http://www.geoscienceontology.org/svo/svu> .
+				owl:versionIRI <http://www.geoscienceontology.org/svo/svl/abstraction/1.0.0> ;
+				rdfs:comment " Scientific Variables Lower Ontology, Abstraction BETA VERSION 1.0.0" .
+#				owl:imports <http://www.geoscienceontology.org/svo/svu/1.0.0> .
 
 
 #################################################################
 #    Abstraction   
 # 
 #################################################################
-##Last generated on: 2018-12-20 21:07
+##Last generated on: 2019-07-15 20:31 
 
 ###Mathematical Abstraction
 
@@ -672,6 +673,13 @@
 :profile rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			skos:prefLabel "profile"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/abstraction#profile_bottom
+:profile_bottom rdf:type owl:NamedIndividual ,
+			svu:MathematicalAbstraction ;
+			svu:hasPart <part#bottom> ;
+			svu:hasAbstraction :profile ;
+			skos:prefLabel "profile_bottom"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#ray
 :ray rdf:type owl:NamedIndividual ,
