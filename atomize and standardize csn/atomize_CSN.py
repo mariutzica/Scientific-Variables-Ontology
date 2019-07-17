@@ -1961,12 +1961,19 @@ cond_obj1 = csn['object1'] == 'valley'
 csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = 'channel@context~part_(valley_centerline)'
 csn.loc[ cond_obj0 & cond_obj1, ['object0','object1','object2']] = ''
 
-#channel~river_water
+#channel~river_water(_x-section_top)
 cond_obj0 = csn['object0'] == 'channel~river'
 cond_obj1 = csn['object1'] == 'water'
 cond_obj2 = csn['object2'] == ''
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
         'object_id'] = 'channel~river@medium_water'
+cond_obj2 = csn['object2'] == 'x-section'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, \
+        'object_id'] = 'channel~river@context~in_(water_x-section)'
+cond_obj3 = csn['object3'] == 'top'
+csn.loc[ cond_obj0 & cond_obj1 & cond_obj2 & cond_obj3, \
+        'object_id'] = 'channel~river@context~in_(water_x-section_top)'
+cond_obj2 = (csn['object2'] == '') | (csn['object2'] == 'x-section')
 csn.loc[ cond_obj0 & cond_obj1 & cond_obj2, ['object0','object1']]=''
 
 #channel~stream_reach_water~incoming/outgoing
@@ -3650,6 +3657,12 @@ csn.loc[ cond_obj0, 'object_pref'] = 'abstraction'
 csn.loc[ cond_obj0, 'object_cat'] = 'root'
 csn.loc[ cond_obj0, 'object0'] = ''
 
+#event__observation_time
+cond_obj0 = csn['object0'] == 'event'
+csn.loc[ cond_obj0, 'object_id'] = 'observer@role~observer_observation'
+csn.loc[ cond_obj0, 'object_cat'] = 'root'
+csn.loc[ cond_obj0, 'object0'] = ''
+
 #farmer_crop
 cond_obj0 = csn['object0'] == 'farmer'
 csn.loc[ cond_obj0, 'object_id'] = 'farmer@role~sink_crop@role~exchange'
@@ -4293,7 +4306,7 @@ csn.loc[ cond_obj0 & cond_obj1, ['object0','object1']] = ''
 #land
 cond_obj0 = csn['object0'] == 'land'
 cond_obj1 = csn['object1'] == ''
-csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = '(crop_rotation)@reference~at_(land_tillage)'
+csn.loc[ cond_obj0 & cond_obj1, 'object_id'] = '(crop_rotation)@reference~at_(land_tilling)'
 csn.loc[ cond_obj0 & cond_obj1, 'object0'] = ''
 
 #land_crop
@@ -7574,8 +7587,9 @@ csn['quantity_id'] = \
     .str.replace('of_viscosity','of_dynamic_viscosity')\
     .str.replace('of_speed','of_linear_speed')\
     .str.replace('of_velocity','of_linear_velocity')\
-    .str.replace('one-hour','hourly').str.replace('one-day','daily')\
-    .str.replace('one-month','monthly').str.replace('one-year','yearly')\
+    .str.replace('hourly','one-hour').str.replace('daily','one-day')\
+    .str.replace('monthly','one-month').str.replace('yearly','one-year')\
+    .str.replace('annual','one-year').str.replace('one-day_stress_fraction','daily_stress_fraction')\
     .str.replace('relative_permittivity','permittivity_ratio')\
     .str.replace('_\(en\)','').str.replace('network','network_name')\
     .str.replace('surface_area','area')

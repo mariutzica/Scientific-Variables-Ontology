@@ -581,7 +581,7 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 vocab.loc[ index, 'expressed-as' ] != '' :
                 mtype = urllib.quote( vocab.loc[ index, 'expressed-as' ] )
                 ttl_file.write( attribute.format( 'isExpressedAs', \
-                            ':' + mtype.replace('~','%7E'), ';' ) )
+                            '<matter#' + mtype.replace('~','%7E')+'>', ';' ) )
 
         #BODY and FORM and PHENOMENON and ABSTRACTION relationships
         if collabel in ['body','form','phenomenon','abstraction']:
