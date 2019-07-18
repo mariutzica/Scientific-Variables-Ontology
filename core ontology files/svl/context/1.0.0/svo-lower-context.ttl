@@ -18,7 +18,7 @@
 #    Context   
 # 
 #################################################################
-##Last generated on: 2019-07-17 09:48 
+##Last generated on: 2019-07-18 15:46 
 
 ###Context
 
@@ -191,6 +191,13 @@
 			svu:hasContextPhenomenon <phenomenon#channel%7Estream%40context%7Epart_reach> ;
 			skos:prefLabel "(channel~stream@context~part_reach)@context~source"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/context#%28crop%40context%7Ein_biomass%29%40context%7Esink
+:%28crop%40context%7Ein_biomass%29%40context%7Esink rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#sink> ;
+			svu:hasContextPhenomenon <phenomenon#crop%40context%7Ein_biomass> ;
+			skos:prefLabel "(crop@context~in_biomass)@context~sink"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/context#%28crop%40context%7Epart_root%29%40context%7Ein
 :%28crop%40context%7Epart_root%29%40context%7Ein rdf:type owl:NamedIndividual ,
 			svu:Context ;
@@ -198,12 +205,12 @@
 			svu:hasContextPhenomenon <phenomenon#crop%40context%7Epart_root> ;
 			skos:prefLabel "(crop@context~part_root)@context~in"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/context#%28crop_biomass%29%40context%7Esink
-:%28crop_biomass%29%40context%7Esink rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/context#%28crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29%29%40context%7Ein
+:%28crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29%29%40context%7Ein rdf:type owl:NamedIndividual ,
 			svu:Context ;
-			svu:hasContextRelationship <relationship#sink> ;
-			svu:hasContextPhenomenon <phenomenon#crop_biomass> ;
-			skos:prefLabel "(crop_biomass)@context~sink"@en .
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasContextPhenomenon <phenomenon#crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29> ;
+			skos:prefLabel "(crop@context~source_((residue_pool)@context~part_root-and-rhizodeposit))@context~in"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/context#%28delta_beds%7Ebottomset%29%40context%7Eon
 :%28delta_beds%7Ebottomset%29%40context%7Eon rdf:type owl:NamedIndividual ,
@@ -680,6 +687,13 @@
 			svu:hasContextRelationship <relationship#at> ;
 			svu:hasContextPhenomenon <phenomenon#projectile_trajectory_target> ;
 			skos:prefLabel "(projectile_trajectory_target)@context~at"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/context#%28residue_pool%29%40context%7Epart
+:%28residue_pool%29%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasContextPhenomenon <phenomenon#residue_pool> ;
+			skos:prefLabel "(residue_pool)@context~part"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/context#%28sea%40context%7Eadjacent_shoreline%29%40context%7Esink
 :%28sea%40context%7Eadjacent_shoreline%29%40context%7Esink rdf:type owl:NamedIndividual ,

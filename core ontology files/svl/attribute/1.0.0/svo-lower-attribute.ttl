@@ -18,7 +18,7 @@
 #    Attribute   
 # 
 #################################################################
-##Last generated on: 2019-07-17 09:48 
+##Last generated on: 2019-07-18 15:46 
 
 ###(Qualitative)Attribute
 
@@ -222,6 +222,12 @@
 			svu:isNoun false ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Barotropic_fluid" ;
 			skos:prefLabel "barotropic"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#bare
+:bare rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "bare"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#base
 :base rdf:type owl:NamedIndividual ,
@@ -3783,43 +3789,6 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/North" ;
 			skos:prefLabel "north"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/attribute#north%7Egeodetic
-:north%7Egeodetic rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#cardinal_direction> ;
-			svu:hasValue "north" ;
-			svu:isNoun false ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/True_north" ;
-			svu:hasAttribute <attribute#geodetic> ;
-			skos:prefLabel "north~geodetic"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#north%7Emagnetic
-:north%7Emagnetic rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#cardinal_direction> ;
-			svu:hasValue "north" ;
-			svu:isNoun false ;
-			svu:hasAttribute <attribute#magnetic> ;
-			skos:prefLabel "north~magnetic"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#north%7Eterrestrial
-:north%7Eterrestrial rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#cardinal_direction> ;
-			svu:hasValue "north" ;
-			svu:isNoun false ;
-			svu:hasAttribute <attribute#terrestrial> ;
-			skos:prefLabel "north~terrestrial"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#north%7Evirtual
-:north%7Evirtual rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#cardinal_direction> ;
-			svu:hasValue "north" ;
-			svu:isNoun false ;
-			svu:hasAttribute <attribute#virtual> ;
-			skos:prefLabel "north~virtual"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/attribute#pm1
 :pm1 rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -3873,24 +3842,6 @@
 			svu:isNoun false ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/South" ;
 			skos:prefLabel "south"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#south%7Emagnetic
-:south%7Emagnetic rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#cardinal_direction> ;
-			svu:hasValue "south" ;
-			svu:isNoun false ;
-			svu:hasAttribute <attribute#magnetic> ;
-			skos:prefLabel "south~magnetic"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/attribute#south%7Eterrestrial
-:south%7Eterrestrial rdf:type owl:NamedIndividual ,
-			svu:Attribute ;
-			svu:correspondsToProperty <property#cardinal_direction> ;
-			svu:hasValue "south" ;
-			svu:isNoun false ;
-			svu:hasAttribute <attribute#terrestrial> ;
-			skos:prefLabel "south~terrestrial"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#stp
 :stp rdf:type owl:NamedIndividual ,

@@ -18,7 +18,7 @@
 #    Property   
 # 
 #################################################################
-##Last generated on: 2019-07-17 09:48 
+##Last generated on: 2019-07-18 15:46 
 
 ###Property
 
@@ -1034,6 +1034,13 @@
 			svu:quantifiesProcess <process#accumulation> ;
 			svu:isTypeOf :volume_flux ;
 			skos:prefLabel "accumulation_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#accumulation_mass_flux
+:accumulation_mass_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#accumulation> ;
+			svu:isTypeOf :mass_flux ;
+			skos:prefLabel "accumulation_mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#acid-neutralizing_amount-per-volume_capacity
 :acid-neutralizing_amount-per-volume_capacity rdf:type owl:NamedIndividual ,
@@ -3662,6 +3669,29 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Euler%27s_number" ;
 			skos:prefLabel "eulers_number"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#potential_evaporation_energy_flux
+:potential_evaporation_energy_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#evaporation> ;
+			svu:isTypeOf :evaporation_energy_flux ;
+			svu:hasAttribute <attribute#potential> ;
+			skos:prefLabel "potential_evaporation_energy_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#direct_evaporation_energy_flux
+:direct_evaporation_energy_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#evaporation> ;
+			svu:isTypeOf :evaporation_energy_flux ;
+			svu:hasAttribute <attribute#direct> ;
+			skos:prefLabel "direct_evaporation_energy_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#evaporation_energy_flux
+:evaporation_energy_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#evaporation> ;
+			svu:isTypeOf :energy_flux ;
+			skos:prefLabel "evaporation_energy_flux"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#evaporation_mass_flux
 :evaporation_mass_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -5238,6 +5268,13 @@
 			svu:QuantitativeProperty ;
 			svu:isTypeOf :heat_aerodynamic_conductance ;
 			skos:prefLabel "latent_heat_aerodynamic_conductance"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#net_latent_heat_energy_flux
+:net_latent_heat_energy_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :latent_heat_energy_flux ;
+			svu:hasAttribute <attribute#net> ;
+			skos:prefLabel "net_latent_heat_energy_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#upward_latent_heat_energy_flux
 :upward_latent_heat_energy_flux rdf:type owl:NamedIndividual ,
@@ -8309,6 +8346,13 @@
 			svu:isTypeOf :heat_aerodynamic_conductance ;
 			skos:prefLabel "sensible_heat_aerodynamic_conductance"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#net_sensible_heat_energy_flux
+:net_sensible_heat_energy_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :sensible_heat_energy_flux ;
+			svu:hasAttribute <attribute#net> ;
+			skos:prefLabel "net_sensible_heat_energy_flux"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#upward_sensible_heat_energy_flux
 :upward_sensible_heat_energy_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -9429,6 +9473,13 @@
 			svu:isTypeOf :energy_flux ;
 			svu:hasAttribute <attribute#transmitted> ;
 			skos:prefLabel "transmitted_energy_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#transpiration_energy_flux
+:transpiration_energy_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#transpiration> ;
+			svu:isTypeOf :energy_flux ;
+			skos:prefLabel "transpiration_energy_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#potential_transpiration_volume_flux
 :potential_transpiration_volume_flux rdf:type owl:NamedIndividual ,
@@ -12495,6 +12546,14 @@
 			svu:hasOperator <operator#time_integral> ;
 			skos:prefLabel "time_integral_of_accumulation_volume_flux"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#time_integral_of_accumulation_mass_flux
+:time_integral_of_accumulation_mass_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :accumulation_mass_flux ;
+			svu:hasUnits "L^-2 M" ;
+			svu:hasOperator <operator#time_integral> ;
+			skos:prefLabel "time_integral_of_accumulation_mass_flux"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#time_integral_of_infiltration_volume_flux
 :time_integral_of_infiltration_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -12550,6 +12609,22 @@
 			svu:hasUnits "L^-2 M" ;
 			svu:hasOperator <operator#time_integral> ;
 			skos:prefLabel "time_integral_of_decomposition_respiration_mass_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#time_integral_of_runoff_mass_flux
+:time_integral_of_runoff_mass_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :runoff_mass_flux ;
+			svu:hasUnits "L^-2 M" ;
+			svu:hasOperator <operator#time_integral> ;
+			skos:prefLabel "time_integral_of_runoff_mass_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#time_integral_of_melt_mass_flux
+:time_integral_of_melt_mass_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :melt_mass_flux ;
+			svu:hasUnits "L^-2 M" ;
+			svu:hasOperator <operator#time_integral> ;
+			skos:prefLabel "time_integral_of_melt_mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#time_integral_of_mass-per-area_production_rate
 :time_integral_of_mass-per-area_production_rate rdf:type owl:NamedIndividual ,

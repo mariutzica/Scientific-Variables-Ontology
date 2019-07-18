@@ -18,7 +18,7 @@
 #    Trajectory   
 # 
 #################################################################
-##Last generated on: 2019-07-17 09:48 
+##Last generated on: 2019-07-18 15:46 
 
 ###Trajectory
 
@@ -56,10 +56,3 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Trajectory" ;
 			svu:isTypeOf :path ;
 			skos:prefLabel "trajectory"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/trajectory#transect
-:transect rdf:type owl:NamedIndividual ,
-			svu:Trajectory ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Transect" ;
-			svu:isTypeOf :path ;
-			skos:prefLabel "transect"@en .

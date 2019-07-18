@@ -18,7 +18,7 @@
 #    Matter   
 # 
 #################################################################
-##Last generated on: 2019-07-17 09:48 
+##Last generated on: 2019-07-18 15:46 
 
 ###Matter
 
@@ -2528,6 +2528,13 @@
 			svu:Matter ;
 			svu:isTypeOf :mixture ;
 			skos:prefLabel "biomass"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/matter#biomass%7Edry
+:biomass%7Edry rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isTypeOf :biomass ;
+			svu:hasAttribute <attribute#dry> ;
+			skos:prefLabel "biomass~dry"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/matter#biomass%7Eharvested
 :biomass%7Eharvested rdf:type owl:NamedIndividual ,
@@ -10442,6 +10449,13 @@
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Soil" ;
 			svu:isTypeOf :mixture ;
 			skos:prefLabel "soil"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/matter#soil%7Ebare
+:soil%7Ebare rdf:type owl:NamedIndividual ,
+			svu:Matter ;
+			svu:isTypeOf :soil ;
+			svu:hasAttribute <attribute#bare> ;
+			skos:prefLabel "soil~bare"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/matter#soil%7Estabilized
 :soil%7Estabilized rdf:type owl:NamedIndividual ,

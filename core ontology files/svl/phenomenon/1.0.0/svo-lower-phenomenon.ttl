@@ -18,7 +18,7 @@
 #    Phenomenon   
 # 
 #################################################################
-##Last generated on: 2019-07-17 09:48 
+##Last generated on: 2019-07-18 15:46 
 
 ###Phenomenon
 
@@ -62,7 +62,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#avalanche
 :avalanche rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#avalanche> ;
+			svu:undergoesProcess <process#avalanche> ;
 			skos:prefLabel "avalanche"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#bergeron-findeisen-process
@@ -92,7 +92,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#bond
 :bond rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#bonding> ;
+			svu:undergoesProcess <process#bonding> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Chemical_bond" ;
 			skos:prefLabel "bond"@en .
 
@@ -159,7 +159,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#cascade
 :cascade rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#cascading> ;
+			svu:undergoesProcess <process#cascading> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Waterfall" ;
 			skos:altLabel "waterfall"@en ;
 			skos:prefLabel "cascade"@en .
@@ -345,7 +345,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#drizzle
 :drizzle rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#precipitation> ;
+			svu:undergoesProcess <process#precipitation> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Drizzle" ;
 			skos:prefLabel "drizzle"@en .
 
@@ -358,7 +358,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earthquake
 :earthquake rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#quaking> ;
+			svu:undergoesProcess <process#quaking> ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Earthquake" ;
 			skos:prefLabel "earthquake"@en .
 
@@ -377,7 +377,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#espionage
 :espionage rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#spying> ;
+			svu:undergoesProcess <process#spying> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Espionage" ;
 			skos:prefLabel "espionage"@en .
 
@@ -402,28 +402,28 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#fire
 :fire rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#combustion> ;
+			svu:undergoesProcess <process#combustion> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Fire" ;
 			skos:prefLabel "fire"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#fires
 :fires rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#combustion> ;
+			svu:undergoesProcess <process#combustion> ;
 			svu:isPluralityOf :fire ;
 			skos:prefLabel "fires"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#flood
 :flood rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#flood> ;
+			svu:undergoesProcess <process#flood> ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Flood" ;
 			skos:prefLabel "flood"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#fog
 :fog rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#fogging> ;
+			svu:undergoesProcess <process#fogging> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Fog" ;
 			skos:prefLabel "fog"@en .
 
@@ -507,13 +507,14 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#icefall
 :icefall rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#precipitation> ;
+			svu:hasMatter <matter#ice> ;
+			svu:undergoesProcess <process#precipitation> ;
 			skos:prefLabel "icefall"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#impaction
 :impaction rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#impaction> ;
+			svu:undergoesProcess <process#impaction> ;
 			skos:prefLabel "impaction"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#infarction
@@ -531,7 +532,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#landslide
 :landslide rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#sliding> ;
+			svu:undergoesProcess <process#sliding> ;
 			skos:prefLabel "landslide"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#lateration
@@ -542,7 +543,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#life
 :life rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#living> ;
+			svu:undergoesProcess <process#living> ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Life" ;
 			skos:prefLabel "life"@en .
 
@@ -597,7 +598,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#paralysis
 :paralysis rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#paralyze> ;
+			svu:undergoesProcess <process#paralyze> ;
 			skos:prefLabel "paralysis"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#peristalsis
@@ -628,7 +629,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#processes
 :processes rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#processing> ;
+			svu:undergoesProcess <process#processing> ;
 			skos:prefLabel "processes"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#progradation
@@ -640,7 +641,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#radiation
 :radiation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#radiation> ;
+			svu:undergoesProcess <process#radiation> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Radiation" ;
 			skos:prefLabel "radiation"@en .
 
@@ -797,7 +798,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#stemflow
 :stemflow rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#flowing> ;
+			svu:undergoesProcess <process#flowing> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Stemflow" ;
 			skos:prefLabel "stemflow"@en .
 
@@ -874,7 +875,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#thawing-front
 :thawing-front rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#thaw> ;
+			svu:undergoesProcess <process#thaw> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Thaw_(weather)" ;
 			svu:isTypeOf :front ;
 			skos:prefLabel "thawing-front"@en .
@@ -967,14 +968,14 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#vasoconstriction
 :vasoconstriction rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#constriction> ;
+			svu:undergoesProcess <process#constriction> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Vasoconstriction" ;
 			skos:prefLabel "vasoconstriction"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#vasodilation
 :vasodilation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#dilation> ;
+			svu:undergoesProcess <process#dilation> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Vasodilation" ;
 			skos:prefLabel "vasodilation"@en .
 
@@ -1010,7 +1011,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#wave%7Ebreaking
 :wave%7Ebreaking rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#breaking> ;
+			svu:undergoesProcess <process#breaking> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Breaking_wave" ;
 			svu:isTypeOf :wave ;
 			skos:prefLabel "wave~breaking"@en .
@@ -1151,7 +1152,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#wetting-front
 :wetting-front rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#wetting> ;
+			svu:undergoesProcess <process#wetting> ;
 			svu:isTypeOf :front ;
 			skos:prefLabel "wetting-front"@en .
 
@@ -1169,140 +1170,143 @@
 :air_advection rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#air> ;
-			svu:describesProcess <process#advection> ;
+			svu:undergoesProcess <process#advection> ;
 			skos:prefLabel "air"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#air_convection
 :air_convection rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#air> ;
-			svu:describesProcess <process#convection> ;
+			svu:undergoesProcess <process#convection> ;
 			skos:prefLabel "air"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#air_diffusion
 :air_diffusion rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#air> ;
-			svu:describesProcess <process#diffusion> ;
+			svu:undergoesProcess <process#diffusion> ;
 			skos:prefLabel "air"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#air_flowing
 :air_flowing rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#air> ;
-			svu:describesProcess <process#flowing> ;
+			svu:undergoesProcess <process#flowing> ;
 			skos:prefLabel "air_flow"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#air_isentropic-process
 :air_isentropic-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#air> ;
-			svu:describesProcess <process#isentropic-process> ;
+			svu:undergoesProcess <process#isentropic-process> ;
 			skos:prefLabel "air"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#air_isobaric-process
 :air_isobaric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#air> ;
-			svu:describesProcess <process#isobaric-process> ;
+			svu:undergoesProcess <process#isobaric-process> ;
 			skos:prefLabel "air"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#air_isochoric-process
 :air_isochoric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#air> ;
-			svu:describesProcess <process#isochoric-process> ;
+			svu:undergoesProcess <process#isochoric-process> ;
 			skos:prefLabel "air"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#air_isothermal-process
 :air_isothermal-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#air> ;
-			svu:describesProcess <process#isothermal-process> ;
+			svu:undergoesProcess <process#isothermal-process> ;
 			skos:prefLabel "air"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#air_saturated_adiabatic-process
 :air_saturated_adiabatic-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#air_saturated> ;
-			svu:describesProcess <process#adiabatic-process> ;
+			svu:undergoesProcess <process#adiabatic-process> ;
 			skos:prefLabel "air"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#air%7Edry_adiabatic-process
 :air%7Edry_adiabatic-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#air%7Edry> ;
-			svu:describesProcess <process#adiabatic-process> ;
+			svu:undergoesProcess <process#adiabatic-process> ;
 			skos:prefLabel "air"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#aircraft_flight
 :aircraft_flight rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#aircraft> ;
-			svu:describesProcess <process#flight> ;
+			svu:undergoesProcess <process#flight> ;
 			skos:prefLabel "aircraft"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#airfoil_dragging
 :airfoil_dragging rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#dragging> ;
-			svu:isAbstractedBy <abstraction#airfoil> ;
+			svu:undergoesProcess <process#dragging> ;
 			skos:prefLabel "airfoil"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#airfoil_lift
 :airfoil_lift rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#lift> ;
-			svu:isAbstractedBy <abstraction#airfoil> ;
+			svu:undergoesProcess <process#lift> ;
+			skos:prefLabel "airfoil"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#airfoil_drift
+:airfoil_drift rdf:type owl:NamedIndividual ,
+			svu:SpatiotemporalPhenomenon ;
+			svu:undergoesProcess <process#drifting> ;
 			skos:prefLabel "airfoil"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#airplane_wingspan
 :airplane_wingspan rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#airplane> ;
-			svu:isAbstractedBy <abstraction#wingspan> ;
 			skos:prefLabel "airplane_wingspan"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#aluminum_isobaric-process
 :aluminum_isobaric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#aluminum> ;
-			svu:describesProcess <process#isobaric-process> ;
+			svu:undergoesProcess <process#isobaric-process> ;
 			skos:prefLabel "aluminum"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ammonia-as-nitrogen_volatilization
 :ammonia-as-nitrogen_volatilization rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ammonia-as-nitrogen> ;
-			svu:describesProcess <process#volatilization> ;
+			svu:undergoesProcess <process#volatilization> ;
 			skos:prefLabel "ammonia-as-nitrogen"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ammonium_leaching
 :ammonium_leaching rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ammonium> ;
-			svu:describesProcess <process#leaching> ;
+			svu:undergoesProcess <process#leaching> ;
 			skos:prefLabel "ammonium"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ammonium-as-nitrogen_leaching
 :ammonium-as-nitrogen_leaching rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ammonium-as-nitrogen> ;
-			svu:describesProcess <process#leaching> ;
+			svu:undergoesProcess <process#leaching> ;
 			skos:prefLabel "ammonium-as-nitrogen"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ammonium-as-nitrogen_nitrification
 :ammonium-as-nitrogen_nitrification rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ammonium-as-nitrogen> ;
-			svu:describesProcess <process#nitrification> ;
+			svu:undergoesProcess <process#nitrification> ;
 			skos:prefLabel "ammonium-as-nitrogen"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#anvil_isobaric-process
 :anvil_isobaric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#anvil> ;
-			svu:describesProcess <process#isobaric-process> ;
+			svu:undergoesProcess <process#isobaric-process> ;
 			skos:prefLabel "anvil"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#atmosphere_air_column
@@ -1310,6 +1314,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#atmosphere_air> ;
 			svu:isAbstractedBy <abstraction#column> ;
+			svu:hasAbstraction <abstraction#column> ;
 			skos:prefLabel "atmosphere_air-column"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#atmosphere_datum%7Evertical%7Etidal%7Emsl
@@ -1317,6 +1322,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#atmosphere> ;
 			svu:isAbstractedBy <abstraction#datum%7Evertical%7Etidal%7Emsl> ;
+			svu:hasAbstraction <abstraction#datum%7Evertical%7Etidal%7Emsl> ;
 			skos:prefLabel "atmosphere_datum~vertical~tidal~msl"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#atmosphere_top_surface
@@ -1324,20 +1330,21 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#atmosphere_top> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "atmosphere_top_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#automobile_acceleration
 :automobile_acceleration rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#automobile> ;
-			svu:describesProcess <process#acceleration> ;
+			svu:undergoesProcess <process#acceleration> ;
 			skos:prefLabel "automobile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#automobile_acceleration%7E0-to-60mph
 :automobile_acceleration%7E0-to-60mph rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#automobile> ;
-			svu:describesProcess <process#acceleration%7E0-to-60mph> ;
+			svu:undergoesProcess <process#acceleration%7E0-to-60mph> ;
 			skos:prefLabel "automobile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#automobile_axis%7Evertical
@@ -1345,41 +1352,42 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#automobile> ;
 			svu:isAbstractedBy <abstraction#axis%7Evertical> ;
+			svu:hasAbstraction <abstraction#axis%7Evertical> ;
 			skos:prefLabel "automobile_axis~vertical"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#automobile_bottom_approach
 :automobile_bottom_approach rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#automobile_bottom> ;
-			svu:describesProcess <process#approach> ;
+			svu:undergoesProcess <process#approach> ;
 			skos:prefLabel "automobile_bottom"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#automobile_bottom_breakover
 :automobile_bottom_breakover rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#automobile_bottom> ;
-			svu:describesProcess <process#breakover> ;
+			svu:undergoesProcess <process#breakover> ;
 			skos:prefLabel "automobile_bottom"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#automobile_bottom_departure
 :automobile_bottom_departure rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#automobile_bottom> ;
-			svu:describesProcess <process#departure> ;
+			svu:undergoesProcess <process#departure> ;
 			skos:prefLabel "automobile_bottom"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#automobile_braking
 :automobile_braking rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#automobile> ;
-			svu:describesProcess <process#braking> ;
+			svu:undergoesProcess <process#braking> ;
 			skos:prefLabel "automobile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#automobile_dragging
 :automobile_dragging rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#automobile> ;
-			svu:describesProcess <process#dragging> ;
+			svu:undergoesProcess <process#dragging> ;
 			skos:prefLabel "automobile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#automobile_front_x-section
@@ -1387,48 +1395,49 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#automobile_front> ;
 			svu:isAbstractedBy <abstraction#x-section> ;
+			svu:hasAbstraction <abstraction#x-section> ;
 			skos:prefLabel "automobile_front_x-section "@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#automobile_lifetime-travel
 :automobile_lifetime-travel rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#automobile> ;
-			svu:describesProcess <process#lifetime-travel> ;
+			svu:undergoesProcess <process#lifetime-travel> ;
 			skos:prefLabel "automobile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#automobile_lift
 :automobile_lift rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#automobile> ;
-			svu:describesProcess <process#lift> ;
+			svu:undergoesProcess <process#lift> ;
 			skos:prefLabel "automobile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#automobile_manufacture
 :automobile_manufacture rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#automobile> ;
-			svu:describesProcess <process#manufacture> ;
+			svu:undergoesProcess <process#manufacture> ;
 			skos:prefLabel "automobile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#automobile_stopping
 :automobile_stopping rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#automobile> ;
-			svu:describesProcess <process#stopping> ;
+			svu:undergoesProcess <process#stopping> ;
 			skos:prefLabel "automobile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#automobile_travel
 :automobile_travel rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#automobile> ;
-			svu:describesProcess <process#travel> ;
+			svu:undergoesProcess <process#travel> ;
 			skos:prefLabel "automobile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#automobile_turning
 :automobile_turning rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#automobile> ;
-			svu:describesProcess <process#turning> ;
+			svu:undergoesProcess <process#turning> ;
 			skos:prefLabel "automobile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#automobile_wheelbase
@@ -1436,13 +1445,14 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#automobile> ;
 			svu:isAbstractedBy <abstraction#wheelbase> ;
+			svu:hasAbstraction <abstraction#wheelbase> ;
 			skos:prefLabel "automobile_wheelbase "@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ball_falling
 :ball_falling rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#ball> ;
-			svu:describesProcess <process#falling> ;
+			svu:undergoesProcess <process#falling> ;
 			skos:prefLabel "ball"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#basin%7Edrainage_boundary
@@ -1450,6 +1460,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#basin%7Edrainage> ;
 			svu:isAbstractedBy <abstraction#boundary> ;
+			svu:hasAbstraction <abstraction#boundary> ;
 			skos:prefLabel "basin~drainage_boundary"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#basin%7Edrainage_centroid
@@ -1457,6 +1468,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#basin%7Edrainage> ;
 			svu:isAbstractedBy <abstraction#boundary> ;
+			svu:hasAbstraction <abstraction#boundary> ;
 			skos:prefLabel "basin~drainage_centroid"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#bedrock_surface
@@ -1464,6 +1476,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#bedrock> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "bedrock_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#bedrock_surface_land-mask
@@ -1471,6 +1484,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :bedrock_surface ;
 			svu:isAbstractedBy <abstraction#land-mask> ;
+			svu:hasAbstraction <abstraction#land-mask> ;
 			skos:prefLabel "bedrock_surface_land-mask"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#bedrock_surface_sea-mask
@@ -1478,33 +1492,34 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :bedrock_surface ;
 			svu:isAbstractedBy <abstraction#sea-mask> ;
+			svu:hasAbstraction <abstraction#sea-mask> ;
 			skos:prefLabel "bedrock_surface_sea-mask"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#bedrock_uplift
 :bedrock_uplift rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#bedrock> ;
-			svu:describesProcess <process#uplift> ;
+			svu:undergoesProcess <process#uplift> ;
 			skos:prefLabel "bedrock"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#biomass%7Emicrobial_decomposition
 :biomass%7Emicrobial_decomposition rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#biomass%7Emicrobial> ;
-			svu:describesProcess <process#decomposition> ;
+			svu:undergoesProcess <process#decomposition> ;
 			skos:prefLabel "biomass~microbial"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#body_travel
 :body_travel rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#body> ;
-			svu:describesProcess <process#travel> ;
+			svu:undergoesProcess <process#travel> ;
 			skos:prefLabel "body"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#bond%7Eh-o_dissociation
 :bond%7Eh-o_dissociation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#dissociation> ;
+			svu:undergoesProcess <process#dissociation> ;
 			svu:hasPhenomenon :bond%7Eh-o ;
 			skos:prefLabel "bond~h-o"@en .
 
@@ -1512,7 +1527,7 @@
 :carbon_decomposition rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#carbon> ;
-			svu:describesProcess <process#decomposition> ;
+			svu:undergoesProcess <process#decomposition> ;
 			skos:prefLabel "carbon"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel_bottom_surface
@@ -1520,6 +1535,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasForm <form#channel_bottom> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "channel_bottom_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel_centerline
@@ -1527,6 +1543,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasForm <form#channel> ;
 			svu:isAbstractedBy <abstraction#centerline> ;
+			svu:hasAbstraction <abstraction#centerline> ;
 			skos:prefLabel "channel_centerline"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel_centerline_endpoint%7Edownstream
@@ -1534,6 +1551,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :channel_centerline ;
 			svu:isAbstractedBy <abstraction#endpoint%7Edownstream> ;
+			svu:hasAbstraction <abstraction#endpoint%7Edownstream> ;
 			skos:prefLabel "channel_centerline_endpoint~downstream"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel_centerline_endpoint%7Eupstream
@@ -1541,21 +1559,22 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :channel_centerline ;
 			svu:isAbstractedBy <abstraction#endpoint%7Eupstream> ;
+			svu:hasAbstraction <abstraction#endpoint%7Eupstream> ;
 			skos:prefLabel "channel_centerline_endpoint~upstream"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel_meandering
 :channel_meandering rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasForm <form#channel> ;
-			svu:describesProcess <process#meandering> ;
+			svu:undergoesProcess <process#meandering> ;
 			skos:prefLabel "channel"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel_meandering_migration
 :channel_meandering_migration rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasForm <form#channel> ;
-			svu:describesProcess <process#meandering> ;
-			svu:describesProcess <process#migration> ;
+			svu:undergoesProcess <process#meandering> ;
+			svu:undergoesProcess <process#migration> ;
 			skos:prefLabel "channel"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel_x-section
@@ -1563,6 +1582,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasForm <form#channel> ;
 			svu:isAbstractedBy <abstraction#x-section> ;
+			svu:hasAbstraction <abstraction#x-section> ;
 			skos:prefLabel "channel_x-section"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel_x-section_parabola
@@ -1570,6 +1590,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :channel_x-section ;
 			svu:isAbstractedBy <abstraction#parabola> ;
+			svu:hasAbstraction <abstraction#parabola> ;
 			skos:prefLabel "channel_x-section_parabola"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel_x-section_top
@@ -1584,6 +1605,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :channel_x-section ;
 			svu:isAbstractedBy <abstraction#trapezoid> ;
+			svu:hasAbstraction <abstraction#trapezoid> ;
 			skos:prefLabel "channel_x-section_trapezoid"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel_x-section_trapezoid_bottom
@@ -1619,6 +1641,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasForm <form#channel-network> ;
 			svu:isAbstractedBy <abstraction#graph> ;
+			svu:hasAbstraction <abstraction#graph> ;
 			skos:prefLabel "channel-network_graph"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel%7Elongest_centerline
@@ -1626,6 +1649,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasForm <form#channel%7Elongest> ;
 			svu:isAbstractedBy <abstraction#centerline> ;
+			svu:hasAbstraction <abstraction#centerline> ;
 			skos:prefLabel "channel~longest_centerline"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel%7Ewetted_x-section
@@ -1633,41 +1657,42 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasForm <form#channel%7Ewetted> ;
 			svu:isAbstractedBy <abstraction#x-section> ;
+			svu:hasAbstraction <abstraction#x-section> ;
 			skos:prefLabel "channel~wetted_x-section"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#chocolate_conching
 :chocolate_conching rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#chocolate> ;
-			svu:describesProcess <process#conching> ;
+			svu:undergoesProcess <process#conching> ;
 			skos:prefLabel "chocolate"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#chocolate_isobaric-process
 :chocolate_isobaric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#chocolate> ;
-			svu:describesProcess <process#isobaric-process> ;
+			svu:undergoesProcess <process#isobaric-process> ;
 			skos:prefLabel "chocolate"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#chocolate_isochoric-process
 :chocolate_isochoric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#chocolate> ;
-			svu:describesProcess <process#isochoric-process> ;
+			svu:undergoesProcess <process#isochoric-process> ;
 			skos:prefLabel "chocolate"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#chocolate_tempering
 :chocolate_tempering rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#chocolate> ;
-			svu:describesProcess <process#tempering> ;
+			svu:undergoesProcess <process#tempering> ;
 			skos:prefLabel "chocolate"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#crankshaft_rotation
 :crankshaft_rotation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#crankshaft> ;
-			svu:describesProcess <process#rotation> ;
+			svu:undergoesProcess <process#rotation> ;
 			skos:prefLabel "crankshaft"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#crater_circle
@@ -1675,76 +1700,57 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasForm <form#crater> ;
 			svu:isAbstractedBy <abstraction#circle> ;
+			svu:hasAbstraction <abstraction#circle> ;
 			skos:prefLabel "crater_circle"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop_biomass
-:crop_biomass rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#biomass%7Emicrobial_decomposition
+:biomass%7Emicrobial_decomposition rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:hasMatter <matter#biomass> ;
-			svu:hasRole <rolephenomenon#crop> ;
-			skos:prefLabel "crop_biomass"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop_biomass%7Edry
-:crop_biomass%7Edry rdf:type owl:NamedIndividual ,
-			svu:SpatiotemporalPhenomenon ;
-			svu:isTypeOf :crop_biomass ;
-			svu:hasAttribute <attribute#dry> ;
-			skos:prefLabel "crop_biomass~dry"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop_biomass%7Emicrobial
-:crop_biomass%7Emicrobial rdf:type owl:NamedIndividual ,
-			svu:SpatiotemporalPhenomenon ;
-			svu:isTypeOf :crop_biomass ;
-			svu:hasAttribute <attribute#microbial> ;
-			skos:prefLabel "crop_biomass~microbial"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop_biomass%7Emicrobial_decomposition
-:crop_biomass%7Emicrobial_decomposition rdf:type owl:NamedIndividual ,
-			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#decomposition> ;
-			svu:hasPhenomenon :crop_biomass%7Emicrobial ;
-			skos:prefLabel "crop_biomass~microbial"@en .
+			svu:hasMatter <matter#biomass%7Emicrobial> ;
+			svu:undergoesProcess <process#decomposition> ;
+			skos:prefLabel "biomass~microbial_decomposition"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop_planting
 :crop_planting rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#planting> ;
+			svu:undergoesProcess <process#planting> ;
 			svu:hasRole <rolephenomenon#crop> ;
 			skos:prefLabel "crop"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop_sowing
 :crop_sowing rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#sowing> ;
+			svu:undergoesProcess <process#sowing> ;
 			svu:hasRole <rolephenomenon#crop> ;
 			skos:prefLabel "crop"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop_planting_row
 :crop_planting_row rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#planting> ;
+			svu:undergoesProcess <process#planting> ;
 			svu:hasRole <rolephenomenon#crop> ;
 			svu:isAbstractedBy <abstraction#row> ;
+			svu:hasAbstraction <abstraction#row> ;
 			skos:prefLabel "crop_row"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop_harvest
 :crop_harvest rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#harvest> ;
+			svu:undergoesProcess <process#harvest> ;
 			svu:hasRole <rolephenomenon#crop> ;
 			skos:prefLabel "crop"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop_production
 :crop_production rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#production> ;
+			svu:undergoesProcess <process#production> ;
 			svu:hasRole <rolephenomenon#crop> ;
 			skos:prefLabel "crop"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop_rotation
 :crop_rotation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#rotation> ;
+			svu:undergoesProcess <process#rotation> ;
 			svu:hasRole <rolephenomenon#crop> ;
 			skos:prefLabel "crop"@en .
 
@@ -1758,8 +1764,8 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop%7Emature%7Edry_harvest_production
 :crop%7Emature%7Edry_harvest_production rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#harvest> ;
-			svu:describesProcess <process#production> ;
+			svu:undergoesProcess <process#harvest> ;
+			svu:undergoesProcess <process#production> ;
 			svu:hasRole <rolephenomenon#crop%7Emature%7Edry> ;
 			skos:prefLabel "crop~mature~dry"@en .
 
@@ -1773,7 +1779,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop%7Emature%7Edry_tops_production
 :crop%7Emature%7Edry_tops_production rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#production> ;
+			svu:undergoesProcess <process#production> ;
 			svu:hasPhenomenon :crop%7Emature%7Edry_tops ;
 			skos:prefLabel "crop~mature~dry_tops"@en .
 
@@ -1788,49 +1794,59 @@
 :cylinder_stroking rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#cylinder> ;
-			svu:describesProcess <process#stroking> ;
+			svu:undergoesProcess <process#stroking> ;
 			skos:prefLabel "cylinder"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#debris_deposit
 :debris_deposit rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#deposition> ;
+			svu:undergoesProcess <process#deposition> ;
 			svu:hasRole <rolephenomenon#debris> ;
 			skos:prefLabel "debris"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#debris_plug-layer
-:debris_plug-layer rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#debris_flow
+:debris_flow rdf:type owl:NamedIndividual ,
+			svu:SpatiotemporalPhenomenon ;
+			svu:undergoesProcess <process#flowing> ;
+			svu:hasRole <rolephenomenon#debris> ;
+			skos:prefLabel "debris_flow"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#debris_flow_plug-layer
+:debris_flow_plug-layer rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPart <part#plug-layer> ;
 			svu:hasRole <rolephenomenon#debris> ;
-			skos:prefLabel "debris_plug-layer"@en .
+			svu:hasPhenomenon :debris_flow ;
+			skos:prefLabel "debris_flow_plug-layer"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#debris_shear-layer
-:debris_shear-layer rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#debris_flow_shear-layer
+:debris_flow_shear-layer rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPart <part#shear-layer> ;
 			svu:hasRole <rolephenomenon#debris> ;
-			skos:prefLabel "debris_shear-layer"@en .
+			svu:hasPhenomenon :debris_flow ;
+			skos:prefLabel "debris_flow_shear-layer"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#debris_top
-:debris_top rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#debris_flow_top
+:debris_flow_top rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPart <part#top> ;
 			svu:hasRole <rolephenomenon#debris> ;
-			skos:prefLabel "debris_top"@en .
+			skos:prefLabel "debris_flow_top"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#delta_apex
 :delta_apex rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#delta> ;
 			svu:isAbstractedBy <abstraction#apex> ;
+			svu:hasAbstraction <abstraction#apex> ;
 			skos:prefLabel "delta_apex"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#delta_subsidence
 :delta_subsidence rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#delta> ;
-			svu:describesProcess <process#subsidence> ;
+			svu:undergoesProcess <process#subsidence> ;
 			skos:prefLabel "delta"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#delta_x-section
@@ -1838,6 +1854,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#delta> ;
 			svu:isAbstractedBy <abstraction#x-section> ;
+			svu:hasAbstraction <abstraction#x-section> ;
 			skos:prefLabel "delta_x-section"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#domain_boundary
@@ -1845,19 +1862,20 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasForm <form#domain> ;
 			svu:isAbstractedBy <abstraction#boundary> ;
+			svu:hasAbstraction <abstraction#boundary> ;
 			skos:prefLabel "domain_boundary"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#domain_boundary_lowering
 :domain_boundary_lowering rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#lowering> ;
+			svu:undergoesProcess <process#lowering> ;
 			svu:hasPhenomenon :domain_boundary ;
 			skos:prefLabel "domain_boundary"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#driver_reaction
 :driver_reaction rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#reaction> ;
+			svu:undergoesProcess <process#reaction> ;
 			svu:hasRole <rolephenomenon#driver> ;
 			skos:prefLabel "driver"@en .
 
@@ -1866,19 +1884,20 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#earth> ;
 			svu:isAbstractedBy <abstraction#axis> ;
+			svu:hasAbstraction <abstraction#axis> ;
 			skos:prefLabel "earth_axis"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_axis_nutation
 :earth_axis_nutation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#nutation> ;
+			svu:undergoesProcess <process#nutation> ;
 			svu:hasPhenomenon :earth_axis ;
 			skos:prefLabel "earth_axis"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_axis_precession
 :earth_axis_precession rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#precession> ;
+			svu:undergoesProcess <process#precession> ;
 			svu:hasPhenomenon :earth_axis ;
 			skos:prefLabel "earth_axis"@en .
 
@@ -1887,6 +1906,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#earth> ;
 			svu:isAbstractedBy <abstraction#black-body> ;
+			svu:hasAbstraction <abstraction#black-body> ;
 			skos:prefLabel "earth_black-body"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_boundary%7Ecore-mantle
@@ -1894,6 +1914,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#earth> ;
 			svu:isAbstractedBy <abstraction#boundary%7Ecore-mantle> ;
+			svu:hasAbstraction <abstraction#boundary%7Ecore-mantle> ;
 			skos:prefLabel "earth_boundary~core-mantle"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_boundary%7Ecrust-mantle
@@ -1901,6 +1922,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#earth> ;
 			svu:isAbstractedBy <abstraction#boundary%7Ecrust-mantle> ;
+			svu:hasAbstraction <abstraction#boundary%7Ecrust-mantle> ;
 			skos:prefLabel "earth_boundary~crust-mantle"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_boundary%7Elithosphere-asthenosphere
@@ -1908,6 +1930,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#earth> ;
 			svu:isAbstractedBy <abstraction#boundary%7Elithosphere-asthenosphere> ;
+			svu:hasAbstraction <abstraction#boundary%7Elithosphere-asthenosphere> ;
 			skos:prefLabel "earth_boundary~lithosphere-asthenosphere"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_datum
@@ -1915,6 +1938,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#earth> ;
 			svu:isAbstractedBy <abstraction#datum> ;
+			svu:hasAbstraction <abstraction#datum> ;
 			skos:prefLabel "earth_datum"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_datum_ellipsoid
@@ -1922,6 +1946,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :earth_datum ;
 			svu:isAbstractedBy <abstraction#ellipsoid> ;
+			svu:hasAbstraction <abstraction#ellipsoid> ;
 			skos:prefLabel "earth_datum_ellipsoid"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_datum_ellipsoid_surface
@@ -1929,6 +1954,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :earth_datum_ellipsoid ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "earth_datum_ellipsoid_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_datum_geodesic
@@ -1936,6 +1962,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :earth_datum ;
 			svu:isAbstractedBy <abstraction#geodesic> ;
+			svu:hasAbstraction <abstraction#geodesic> ;
 			skos:prefLabel "earth_datum_geodesic"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_ellipsoid
@@ -1943,6 +1970,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#earth> ;
 			svu:isAbstractedBy <abstraction#ellipsoid> ;
+			svu:hasAbstraction <abstraction#ellipsoid> ;
 			skos:prefLabel "earth_ellipsoid"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_equator
@@ -1950,6 +1978,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#earth> ;
 			svu:isAbstractedBy <abstraction#equator> ;
+			svu:hasAbstraction <abstraction#equator> ;
 			skos:prefLabel "earth_equator"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_equator_plane
@@ -1957,6 +1986,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :earth_equator ;
 			svu:isAbstractedBy <abstraction#plane> ;
+			svu:hasAbstraction <abstraction#plane> ;
 			skos:prefLabel "earth_equator_plane"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_orbit
@@ -1971,6 +2001,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :earth_orbit ;
 			svu:isAbstractedBy <abstraction#aphelion> ;
+			svu:hasAbstraction <abstraction#aphelion> ;
 			skos:prefLabel "earth_orbit_aphelion"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_orbit_ellipse
@@ -1978,6 +2009,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :earth_orbit ;
 			svu:isAbstractedBy <abstraction#ellipse> ;
+			svu:hasAbstraction <abstraction#ellipse> ;
 			skos:prefLabel "earth_orbit_ellipse"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_orbit_ellipse_axis%7Esemi-major
@@ -1985,6 +2017,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :earth_orbit_ellipse ;
 			svu:isAbstractedBy <abstraction#axis%7Esemi-major> ;
+			svu:hasAbstraction <abstraction#axis%7Esemi-major> ;
 			skos:prefLabel "earth_orbit_ellipse_axis~semi-major"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_orbit_ellipse_axis%7Esemi-minor
@@ -1992,6 +2025,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :earth_orbit_ellipse ;
 			svu:isAbstractedBy <abstraction#axis%7Esemi-minor> ;
+			svu:hasAbstraction <abstraction#axis%7Esemi-minor> ;
 			skos:prefLabel "earth_orbit_ellipse_axis~semi-minor"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_orbit_ellipse_foci
@@ -1999,6 +2033,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :earth_orbit_ellipse ;
 			svu:isAbstractedBy <abstraction#foci> ;
+			svu:hasAbstraction <abstraction#foci> ;
 			skos:prefLabel "earth_orbit_ellipse_foci"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_orbit_perihelion
@@ -2006,6 +2041,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :earth_orbit ;
 			svu:isAbstractedBy <abstraction#perihelion> ;
+			svu:hasAbstraction <abstraction#perihelion> ;
 			skos:prefLabel "earth_orbit_perihelion"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_pole%7Enorth%7Emagnetic
@@ -2013,6 +2049,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#earth> ;
 			svu:isAbstractedBy <abstraction#pole%7Enorth%7Emagnetic> ;
+			svu:hasAbstraction <abstraction#pole%7Enorth%7Emagnetic> ;
 			skos:prefLabel "earth_pole~north~magnetic"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_pole%7Enorth%7Evirtual
@@ -2020,6 +2057,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#earth> ;
 			svu:isAbstractedBy <abstraction#pole%7Enorth%7Evirtual> ;
+			svu:hasAbstraction <abstraction#pole%7Enorth%7Evirtual> ;
 			skos:prefLabel "earth_pole~north~virtual"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_pole%7Esouth%7Emagnetic
@@ -2027,13 +2065,14 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#earth> ;
 			svu:isAbstractedBy <abstraction#pole%7Esouth%7Emagnetic> ;
+			svu:hasAbstraction <abstraction#pole%7Esouth%7Emagnetic> ;
 			skos:prefLabel "earth_pole~south~magnetic"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_rotation
 :earth_rotation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#earth> ;
-			svu:describesProcess <process#rotation> ;
+			svu:undergoesProcess <process#rotation> ;
 			skos:prefLabel "earth"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_surface
@@ -2041,6 +2080,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#earth> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "earth_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earth_surface_viewpoint
@@ -2048,6 +2088,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :earth_surface ;
 			svu:isAbstractedBy <abstraction#viewpoint> ;
+			svu:hasAbstraction <abstraction#viewpoint> ;
 			skos:prefLabel "earth_surface_viewpoint"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earthquake_epicenter
@@ -2055,6 +2096,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :earthquake ;
 			svu:isAbstractedBy <abstraction#epicenter> ;
+			svu:hasAbstraction <abstraction#epicenter> ;
 			skos:prefLabel "earthquake_epicenter"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earthquake_focus
@@ -2062,6 +2104,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :earthquake ;
 			svu:isAbstractedBy <abstraction#focus> ;
+			svu:hasAbstraction <abstraction#focus> ;
 			skos:prefLabel "earthquake_focus"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earthquake_hypocenter
@@ -2069,6 +2112,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :earthquake ;
 			svu:isAbstractedBy <abstraction#hypocenter> ;
+			svu:hasAbstraction <abstraction#hypocenter> ;
 			skos:prefLabel "earthquake_hypocenter"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#entrance_center
@@ -2076,6 +2120,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasRole <rolephenomenon#entrance> ;
 			svu:isAbstractedBy <abstraction#center> ;
+			svu:hasAbstraction <abstraction#center> ;
 			skos:prefLabel "entrance_center"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#entrance_x-section
@@ -2083,6 +2128,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasRole <rolephenomenon#entrance> ;
 			svu:isAbstractedBy <abstraction#x-section> ;
+			svu:hasAbstraction <abstraction#x-section> ;
 			skos:prefLabel "entrance_x-section"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#entrance_x-section_top
@@ -2097,6 +2143,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasRole <rolephenomenon#entrance%7Ewetted> ;
 			svu:isAbstractedBy <abstraction#x-section> ;
+			svu:hasAbstraction <abstraction#x-section> ;
 			skos:prefLabel "entrance~wetted_x-section"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#exit_center
@@ -2104,6 +2151,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasRole <rolephenomenon#exit> ;
 			svu:isAbstractedBy <abstraction#center> ;
+			svu:hasAbstraction <abstraction#center> ;
 			skos:prefLabel "exit_center"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#fault_plane
@@ -2111,12 +2159,13 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasForm <form#fault> ;
 			svu:isAbstractedBy <abstraction#plane> ;
+			svu:hasAbstraction <abstraction#plane> ;
 			skos:prefLabel "fault_plane"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#fault_plane_rupture
 :fault_plane_rupture rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#rupture> ;
+			svu:undergoesProcess <process#rupture> ;
 			svu:hasPhenomenon :fault_plane ;
 			skos:prefLabel "fault_plane"@en .
 
@@ -2130,14 +2179,14 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#fertilizer%7Enitrogen_application
 :fertilizer%7Enitrogen_application rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#application> ;
+			svu:undergoesProcess <process#application> ;
 			svu:hasPhenomenon :fertilizer%7Enitrogen ;
 			skos:prefLabel "fertilizer~nitrogen"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#fertilizer%7Enitrogen_utilization
 :fertilizer%7Enitrogen_utilization rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#utilization> ;
+			svu:undergoesProcess <process#utilization> ;
 			svu:hasPhenomenon :fertilizer%7Enitrogen ;
 			skos:prefLabel "fertilizer~nitrogen"@en .
 
@@ -2145,20 +2194,20 @@
 :freshwater_flowing rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#freshwater> ;
-			svu:describesProcess <process#flowing> ;
+			svu:undergoesProcess <process#flowing> ;
 			skos:prefLabel "freshwater"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#forage_harvest
 :forage_harvest rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#harvest> ;
+			svu:undergoesProcess <process#harvest> ;
 			svu:hasRole <rolephenomenon#forage> ;
 			skos:prefLabel "forage"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#forage_death
 :forage_death rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#death> ;
+			svu:undergoesProcess <process#death> ;
 			svu:hasRole <rolephenomenon#forage> ;
 			skos:prefLabel "forage"@en .
 
@@ -2167,13 +2216,14 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#glacier_bed> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "glacier_bed_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#glacier_bottom_sliding
 :glacier_bottom_sliding rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#glacier_bottom> ;
-			svu:describesProcess <process#sliding> ;
+			svu:undergoesProcess <process#sliding> ;
 			skos:prefLabel "glacier_bottom"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#glacier_bottom_surface
@@ -2181,6 +2231,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#glacier_bottom> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "glacier_bottom_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#glacier_equilibrium-line
@@ -2188,6 +2239,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#glacier> ;
 			svu:isAbstractedBy <abstraction#equilibrium-line> ;
+			svu:hasAbstraction <abstraction#equilibrium-line> ;
 			skos:prefLabel "glacier_equilibrium-line"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#glacier_surface
@@ -2195,27 +2247,28 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#glacier> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "glacier_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#glacier_terminus_advance
 :glacier_terminus_advance rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#glacier_terminus> ;
-			svu:describesProcess <process#advance> ;
+			svu:undergoesProcess <process#advance> ;
 			skos:prefLabel "glacier_terminus"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#glacier_terminus_calving
 :glacier_terminus_calving rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#glacier_terminus> ;
-			svu:describesProcess <process#calving> ;
+			svu:undergoesProcess <process#calving> ;
 			skos:prefLabel "glacier_terminus"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#glacier_terminus_retreat
 :glacier_terminus_retreat rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#glacier_terminus> ;
-			svu:describesProcess <process#retreat> ;
+			svu:undergoesProcess <process#retreat> ;
 			skos:prefLabel "glacier_terminus"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#glacier_top_surface
@@ -2223,125 +2276,126 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#glacier_top> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "glacier_top_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#grain_harvest
 :grain_harvest rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#grain> ;
-			svu:describesProcess <process#harvest> ;
+			svu:undergoesProcess <process#harvest> ;
 			skos:prefLabel "grain"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#grain_death
 :grain_death rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#grain> ;
-			svu:describesProcess <process#death> ;
+			svu:undergoesProcess <process#death> ;
 			skos:prefLabel "grain"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#human_hearing
 :human_hearing rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#human> ;
-			svu:describesProcess <process#hearing> ;
+			svu:undergoesProcess <process#hearing> ;
 			skos:prefLabel "human"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#human_life
 :human_life rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#human> ;
-			svu:describesProcess <process#living> ;
+			svu:undergoesProcess <process#living> ;
 			skos:prefLabel "human"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#hydrometeor_falling
 :hydrometeor_falling rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#hydrometeor> ;
-			svu:describesProcess <process#falling> ;
+			svu:undergoesProcess <process#falling> ;
 			skos:prefLabel "hydrometeor"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ice_ablation
 :ice_ablation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ice> ;
-			svu:describesProcess <process#ablation> ;
+			svu:undergoesProcess <process#ablation> ;
 			skos:prefLabel "ice"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ice_accumulation
 :ice_accumulation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ice> ;
-			svu:describesProcess <process#accumulation> ;
+			svu:undergoesProcess <process#accumulation> ;
 			skos:prefLabel "ice"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ice_desublimation
 :ice_desublimation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ice> ;
-			svu:describesProcess <process#desublimation> ;
+			svu:undergoesProcess <process#desublimation> ;
 			skos:prefLabel "ice"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ice_flowing
 :ice_flowing rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ice> ;
-			svu:describesProcess <process#flowing> ;
+			svu:undergoesProcess <process#flowing> ;
 			skos:prefLabel "ice"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ice_fusion
 :ice_fusion rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ice> ;
-			svu:describesProcess <process#fusion> ;
+			svu:undergoesProcess <process#fusion> ;
 			skos:prefLabel "ice"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ice_isentropic-process
 :ice_isentropic-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ice> ;
-			svu:describesProcess <process#isentropic-process> ;
+			svu:undergoesProcess <process#isentropic-process> ;
 			skos:prefLabel "ice"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ice_isobaric-process
 :ice_isobaric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ice> ;
-			svu:describesProcess <process#isobaric-process> ;
+			svu:undergoesProcess <process#isobaric-process> ;
 			skos:prefLabel "ice"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ice_isochoric-process
 :ice_isochoric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ice> ;
-			svu:describesProcess <process#isochoric-process> ;
+			svu:undergoesProcess <process#isochoric-process> ;
 			skos:prefLabel "ice"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ice_isothermal-process
 :ice_isothermal-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ice> ;
-			svu:describesProcess <process#isothermal-process> ;
+			svu:undergoesProcess <process#isothermal-process> ;
 			skos:prefLabel "ice"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ice_melting
 :ice_melting rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ice> ;
-			svu:describesProcess <process#melting> ;
+			svu:undergoesProcess <process#melting> ;
 			skos:prefLabel "ice"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ice_sliding
 :ice_sliding rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ice> ;
-			svu:describesProcess <process#sliding> ;
+			svu:undergoesProcess <process#sliding> ;
 			skos:prefLabel "ice"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ice_sublimation
 :ice_sublimation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ice> ;
-			svu:describesProcess <process#sublimation> ;
+			svu:undergoesProcess <process#sublimation> ;
 			skos:prefLabel "ice"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ice_surface
@@ -2349,6 +2403,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ice> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "ice_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ice_thawing-front
@@ -2362,21 +2417,21 @@
 :ice_vaporization rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#ice> ;
-			svu:describesProcess <process#vaporization> ;
+			svu:undergoesProcess <process#vaporization> ;
 			skos:prefLabel "ice"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#jupiter_rising
 :jupiter_rising rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#jupiter> ;
-			svu:describesProcess <process#rising> ;
+			svu:undergoesProcess <process#rising> ;
 			skos:prefLabel "jupiter"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#jupiter_setting
 :jupiter_setting rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#jupiter> ;
-			svu:describesProcess <process#setting> ;
+			svu:undergoesProcess <process#setting> ;
 			skos:prefLabel "jupiter"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#lake_surface
@@ -2384,13 +2439,14 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#lake> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "lake_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#land_allocation
 :land_allocation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#land> ;
-			svu:describesProcess <process#allocation> ;
+			svu:undergoesProcess <process#allocation> ;
 			skos:prefLabel "land"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#land_soil%7Edry_surface
@@ -2399,6 +2455,7 @@
 			svu:hasBody <body#land> ;
 			svu:hasMatter <matter#soil%7Edry> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "land_soil~dry_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#land_surface
@@ -2406,6 +2463,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#land> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "land_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#land_surface_base-level
@@ -2420,6 +2478,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :land_surface ;
 			svu:isAbstractedBy <abstraction#contour> ;
+			svu:hasAbstraction <abstraction#contour> ;
 			skos:prefLabel "land_surface_contour"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#land_surface_contour_segment
@@ -2434,6 +2493,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :land_surface ;
 			svu:isAbstractedBy <abstraction#plan> ;
+			svu:hasAbstraction <abstraction#plan> ;
 			skos:prefLabel "land_surface_plan"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#land_surface_polygon
@@ -2441,6 +2501,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :land_surface ;
 			svu:isAbstractedBy <abstraction#polygon> ;
+			svu:hasAbstraction <abstraction#polygon> ;
 			skos:prefLabel "land_surface_polygon"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#land_surface_profile
@@ -2448,20 +2509,30 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :land_surface ;
 			svu:isAbstractedBy <abstraction#profile> ;
+			svu:hasAbstraction <abstraction#profile> ;
 			skos:prefLabel "land_surface_profile"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#land_surface_skin
+:land_surface_skin rdf:type owl:NamedIndividual ,
+			svu:SpatiotemporalPhenomenon ;
+			svu:hasPart <part#skin> ;
+			svu:hasPhenomenon :land_surface ;
+			skos:prefLabel "land_surface_skin"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#land_surface_streamline
 :land_surface_streamline rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :land_surface ;
 			svu:isAbstractedBy <abstraction#streamline> ;
+			svu:hasAbstraction <abstraction#streamline> ;
 			skos:prefLabel "land_surface_streamline"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#land_surface_transect
 :land_surface_transect rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :land_surface ;
-			svu:hasTrajectory <trajectory#transect> ;
+			svu:isAbstractedBy <abstraction#transect> ;
+			svu:hasAbstraction <abstraction#transect> ;
 			skos:prefLabel "land_surface_transect"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#land_surface%7Ehorizontal
@@ -2469,13 +2540,14 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#land> ;
 			svu:isAbstractedBy <abstraction#surface%7Ehorizontal> ;
+			svu:hasAbstraction <abstraction#surface%7Ehorizontal> ;
 			skos:prefLabel "land_surface~horizontal"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#land_tilling
 :land_tilling rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#land> ;
-			svu:describesProcess <process#tilling> ;
+			svu:undergoesProcess <process#tilling> ;
 			skos:prefLabel "land_tilling"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#macropores_x-section%7Evertical
@@ -2483,6 +2555,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasForm <form#macropores> ;
 			svu:isAbstractedBy <abstraction#x-section%7Evertical> ;
+			svu:hasAbstraction <abstraction#x-section%7Evertical> ;
 			skos:prefLabel "macropores_x-section~vertical"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#macropores_x-section%7Ehorizontal
@@ -2490,6 +2563,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasForm <form#macropores> ;
 			svu:isAbstractedBy <abstraction#x-section%7Ehorizontal> ;
+			svu:hasAbstraction <abstraction#x-section%7Ehorizontal> ;
 			skos:prefLabel "macropores_x-section~horizontal"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#mars_axis
@@ -2497,6 +2571,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#mars> ;
 			svu:isAbstractedBy <abstraction#axis> ;
+			svu:hasAbstraction <abstraction#axis> ;
 			skos:prefLabel "mars_axis"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#mars_ellipsoid
@@ -2504,6 +2579,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#mars> ;
 			svu:isAbstractedBy <abstraction#ellipsoid> ;
+			svu:hasAbstraction <abstraction#ellipsoid> ;
 			skos:prefLabel "mars_ellipsoid"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#mars_orbit
@@ -2517,14 +2593,14 @@
 :mars_rising rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#mars> ;
-			svu:describesProcess <process#rising> ;
+			svu:undergoesProcess <process#rising> ;
 			skos:prefLabel "mars"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#mars_setting
 :mars_setting rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#mars> ;
-			svu:describesProcess <process#setting> ;
+			svu:undergoesProcess <process#setting> ;
 			skos:prefLabel "mars"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#mars_surface
@@ -2532,6 +2608,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#mars> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "mars_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#mars_surface_viewpoint
@@ -2539,34 +2616,35 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :mars_surface ;
 			svu:isAbstractedBy <abstraction#viewpoint> ;
+			svu:hasAbstraction <abstraction#viewpoint> ;
 			skos:prefLabel "mars_surface_viewpoint"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#material_flowing
 :material_flowing rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#material> ;
-			svu:describesProcess <process#flowing> ;
+			svu:undergoesProcess <process#flowing> ;
 			skos:prefLabel "material_flow"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#material_isobaric-process
 :material_isobaric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#material> ;
-			svu:describesProcess <process#isobaric-process> ;
+			svu:undergoesProcess <process#isobaric-process> ;
 			skos:prefLabel "material"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#material_isochoric-process
 :material_isochoric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#material> ;
-			svu:describesProcess <process#isochoric-process> ;
+			svu:undergoesProcess <process#isochoric-process> ;
 			skos:prefLabel "material"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#material_isothermal-process
 :material_isothermal-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#material> ;
-			svu:describesProcess <process#isothermal-process> ;
+			svu:undergoesProcess <process#isothermal-process> ;
 			skos:prefLabel "material"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#material%7Emohr-coulomb-plastic
@@ -2574,6 +2652,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#material> ;
 			svu:isAbstractedBy <abstraction#mohr-coulomb-plastic> ;
+			svu:hasAbstraction <abstraction#mohr-coulomb-plastic> ;
 			skos:prefLabel "material~mohr-coulomb-plastic"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#mercury_axis
@@ -2581,12 +2660,13 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#mercury> ;
 			svu:isAbstractedBy <abstraction#axis> ;
+			svu:hasAbstraction <abstraction#axis> ;
 			skos:prefLabel "mercury_axis"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#mercury_axis_precession
 :mercury_axis_precession rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#precession> ;
+			svu:undergoesProcess <process#precession> ;
 			svu:hasPhenomenon :mercury_axis ;
 			skos:prefLabel "mercury_axis"@en .
 
@@ -2594,97 +2674,98 @@
 :mercury_rising rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#mercury> ;
-			svu:describesProcess <process#rising> ;
+			svu:undergoesProcess <process#rising> ;
 			skos:prefLabel "mercury"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#mercury_setting
 :mercury_setting rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#mercury> ;
-			svu:describesProcess <process#setting> ;
+			svu:undergoesProcess <process#setting> ;
 			skos:prefLabel "mercury"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#moon_rising
 :moon_rising rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#moon> ;
-			svu:describesProcess <process#rising> ;
+			svu:undergoesProcess <process#rising> ;
 			skos:prefLabel "moon"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#moon_setting
 :moon_setting rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#moon> ;
-			svu:describesProcess <process#setting> ;
+			svu:undergoesProcess <process#setting> ;
 			skos:prefLabel "moon"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#neptune_rising
 :neptune_rising rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#neptune> ;
-			svu:describesProcess <process#rising> ;
+			svu:undergoesProcess <process#rising> ;
 			skos:prefLabel "neptune"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#neptune_setting
 :neptune_setting rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#neptune> ;
-			svu:describesProcess <process#setting> ;
+			svu:undergoesProcess <process#setting> ;
 			skos:prefLabel "neptune"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#nitrate_leaching
 :nitrate_leaching rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#nitrate> ;
-			svu:describesProcess <process#leaching> ;
+			svu:undergoesProcess <process#leaching> ;
 			skos:prefLabel "nitrate"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#nitrate-as-nitrogen_denitrification
 :nitrate-as-nitrogen_denitrification rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#nitrate-as-nitrogen> ;
-			svu:describesProcess <process#denitrification> ;
+			svu:undergoesProcess <process#denitrification> ;
 			skos:prefLabel "nitrate-as-nitrogen"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#nitrate-as-nitrogen_leaching
 :nitrate-as-nitrogen_leaching rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#nitrate-as-nitrogen> ;
-			svu:describesProcess <process#leaching> ;
+			svu:undergoesProcess <process#leaching> ;
 			skos:prefLabel "nitrate-as-nitrogen"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#nitrogen_accumulation
 :nitrogen_accumulation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#nitrogen> ;
-			svu:describesProcess <process#accumulation> ;
+			svu:undergoesProcess <process#accumulation> ;
 			skos:prefLabel "nitrogen"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#nitrogen_application
 :nitrogen_application rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#nitrogen> ;
-			svu:describesProcess <process#application> ;
+			svu:undergoesProcess <process#application> ;
 			skos:prefLabel "nitrogen"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#nitrogen_mineralization
 :nitrogen_mineralization rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#nitrogen> ;
-			svu:describesProcess <process#mineralization> ;
+			svu:undergoesProcess <process#mineralization> ;
 			skos:prefLabel "nitrogen"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#nitrogen_immobilization
 :nitrogen_immobilization rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#nitrogen> ;
-			svu:describesProcess <process#immobilization> ;
+			svu:undergoesProcess <process#immobilization> ;
 			skos:prefLabel "nitrogen"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#orbit_aphelion
 :orbit_aphelion rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:isAbstractedBy <abstraction#aphelion> ;
+			svu:hasAbstraction <abstraction#aphelion> ;
 			svu:hasTrajectory <trajectory#orbit> ;
 			skos:prefLabel "orbit_aphelion"@en .
 
@@ -2692,6 +2773,7 @@
 :orbit_perihelion rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:isAbstractedBy <abstraction#perihelion> ;
+			svu:hasAbstraction <abstraction#perihelion> ;
 			svu:hasTrajectory <trajectory#orbit> ;
 			skos:prefLabel "orbit_perihelion"@en .
 
@@ -2700,6 +2782,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasRole <rolephenomenon#outlet> ;
 			svu:isAbstractedBy <abstraction#center> ;
+			svu:hasAbstraction <abstraction#center> ;
 			skos:prefLabel "outlet_center"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#outlet_side%7Eleft
@@ -2728,28 +2811,29 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasRole <rolephenomenon#outlet> ;
 			svu:isAbstractedBy <abstraction#x-section> ;
+			svu:hasAbstraction <abstraction#x-section> ;
 			skos:prefLabel "outlet_x-section"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#particle_motion
 :particle_motion rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasForm <form#particle> ;
-			svu:describesProcess <process#motion> ;
+			svu:undergoesProcess <process#motion> ;
 			skos:prefLabel "particle_motion"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#particle_motion_acceleration
 :particle_motion_acceleration rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasForm <form#particle> ;
-			svu:describesProcess <process#motion> ;
-			svu:describesProcess <process#acceleration> ;
+			svu:undergoesProcess <process#motion> ;
+			svu:undergoesProcess <process#acceleration> ;
 			skos:prefLabel "particle_motion"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#piston_stroking
 :piston_stroking rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#piston> ;
-			svu:describesProcess <process#stroking> ;
+			svu:undergoesProcess <process#stroking> ;
 			skos:prefLabel "piston"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#plain_boundary
@@ -2757,6 +2841,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#plain> ;
 			svu:isAbstractedBy <abstraction#boundary> ;
+			svu:hasAbstraction <abstraction#boundary> ;
 			skos:prefLabel "plain_boundary"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#plain%7Eupper_boundary%7Eseaward
@@ -2764,6 +2849,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#plain%7Eupper> ;
 			svu:isAbstractedBy <abstraction#boundary%7Eseaward> ;
+			svu:hasAbstraction <abstraction#boundary%7Eseaward> ;
 			skos:prefLabel "plain~upper_boundary~seaward"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#plant_residue
@@ -2776,50 +2862,50 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#projectile_acceleration
 :projectile_acceleration rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#acceleration> ;
+			svu:undergoesProcess <process#acceleration> ;
 			svu:hasRole <rolephenomenon#projectile> ;
 			skos:prefLabel "projectile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#projectile_dragging
 :projectile_dragging rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#dragging> ;
+			svu:undergoesProcess <process#dragging> ;
 			svu:hasRole <rolephenomenon#projectile> ;
 			skos:prefLabel "projectile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#projectile_firing
 :projectile_firing rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#firing> ;
+			svu:undergoesProcess <process#firing> ;
 			svu:hasRole <rolephenomenon#projectile> ;
 			skos:prefLabel "projectile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#projectile_flight
 :projectile_flight rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#flight> ;
+			svu:undergoesProcess <process#flight> ;
 			svu:hasRole <rolephenomenon#projectile> ;
 			skos:prefLabel "projectile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#projectile_impaction
 :projectile_impaction rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#impaction> ;
+			svu:undergoesProcess <process#impaction> ;
 			svu:hasRole <rolephenomenon#projectile> ;
 			skos:prefLabel "projectile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#projectile_lift
 :projectile_lift rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#lift> ;
+			svu:undergoesProcess <process#lift> ;
 			svu:hasRole <rolephenomenon#projectile> ;
 			skos:prefLabel "projectile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#projectile_rolling_rotation
 :projectile_rolling_rotation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#rolling> ;
-			svu:describesProcess <process#rotation> ;
+			svu:undergoesProcess <process#rolling> ;
+			svu:undergoesProcess <process#rotation> ;
 			svu:hasRole <rolephenomenon#projectile> ;
 			skos:prefLabel "projectile"@en .
 
@@ -2835,6 +2921,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :projectile_shaft ;
 			svu:isAbstractedBy <abstraction#x-section> ;
+			svu:hasAbstraction <abstraction#x-section> ;
 			skos:prefLabel "projectile_shaft_x-section"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#projectile_trajectory
@@ -2849,6 +2936,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :projectile_trajectory ;
 			svu:isAbstractedBy <abstraction#origin> ;
+			svu:hasAbstraction <abstraction#origin> ;
 			skos:prefLabel "projectile_trajectory_origin"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#projectile_trajectory_target
@@ -2856,6 +2944,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :projectile_trajectory ;
 			svu:isAbstractedBy <abstraction#target> ;
+			svu:hasAbstraction <abstraction#target> ;
 			skos:prefLabel "projectile_trajectory_target"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#projectile_x-section
@@ -2863,6 +2952,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasRole <rolephenomenon#projectile> ;
 			svu:isAbstractedBy <abstraction#x-section> ;
+			svu:hasAbstraction <abstraction#x-section> ;
 			skos:prefLabel "projectile_x-section"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#radiation_optical-path
@@ -2984,20 +3074,21 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#railway> ;
 			svu:isAbstractedBy <abstraction#curve> ;
+			svu:hasAbstraction <abstraction#curve> ;
 			skos:prefLabel "railway_curve"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#raindrop_falling
 :raindrop_falling rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#raindrop> ;
-			svu:describesProcess <process#falling> ;
+			svu:undergoesProcess <process#falling> ;
 			skos:prefLabel "raindrop"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#rainfall
 :rainfall rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#precipitation> ;
+			svu:undergoesProcess <process#precipitation> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Rain" ;
 			skos:altLabel "rain"@en ;
 			skos:prefLabel "rainfall"@en .
@@ -3012,14 +3103,14 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#residue_pool_decomposition
 :residue_pool_decomposition rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#decomposition> ;
+			svu:undergoesProcess <process#decomposition> ;
 			svu:hasPhenomenon :residue_pool ;
 			skos:prefLabel "residue_pool"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#residue-as-carbon_decomposition
 :residue-as-carbon_decomposition rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#decomposition> ;
+			svu:undergoesProcess <process#decomposition> ;
 			svu:hasPhenomenon :residue-as-carbon ;
 			skos:prefLabel "residue-as-carbon"@en .
 
@@ -3033,7 +3124,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop_residue_pool_decomposition
 :crop_residue_pool_decomposition rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#decomposition> ;
+			svu:undergoesProcess <process#decomposition> ;
 			svu:hasPhenomenon :crop%40context%7Esource_%28residue_pool%29 ;
 			skos:prefLabel "crop_residue_pool_decomposition"@en .
 
@@ -3041,54 +3132,54 @@
 :roots-and-rhizodeposits_production rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#roots-and-rhizodeposits> ;
-			svu:describesProcess <process#production> ;
+			svu:undergoesProcess <process#production> ;
 			skos:prefLabel "roots-and-rhizodeposits"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#roots-and-rhizodeposits-as-carbon_decomposition
 :roots-and-rhizodeposits-as-carbon_decomposition rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#roots-and-rhizodeposits-as-carbon> ;
-			svu:describesProcess <process#decomposition> ;
+			svu:undergoesProcess <process#decomposition> ;
 			skos:prefLabel "roots-and-rhizodeposits-as-carbon"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#rockfall
 :rockfall rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#rock> ;
-			svu:describesProcess <process#falling> ;
+			svu:undergoesProcess <process#falling> ;
 			skos:prefLabel "rockfall"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#rupture
 :rupture rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#rupture> ;
+			svu:undergoesProcess <process#rupture> ;
 			skos:prefLabel "rupture"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#sand_grain_settling
 :sand_grain_settling rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#sand_grain> ;
-			svu:describesProcess <process#settling> ;
+			svu:undergoesProcess <process#settling> ;
 			skos:prefLabel "sand_grain"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#saturn_rising
 :saturn_rising rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#saturn> ;
-			svu:describesProcess <process#rising> ;
+			svu:undergoesProcess <process#rising> ;
 			skos:prefLabel "saturn"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#saturn_setting
 :saturn_setting rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#saturn> ;
-			svu:describesProcess <process#setting> ;
+			svu:undergoesProcess <process#setting> ;
 			skos:prefLabel "saturn"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#scuba-diver_diving
 :scuba-diver_diving rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#diving> ;
+			svu:undergoesProcess <process#diving> ;
 			svu:hasRole <rolephenomenon#scuba-diver> ;
 			skos:prefLabel "scuba-diver"@en .
 
@@ -3097,6 +3188,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#sea_bottom> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "sea_bottom_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#sea_surface
@@ -3104,96 +3196,98 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#sea> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "sea_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#sediment_deposition
 :sediment_deposition rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#sediment> ;
-			svu:describesProcess <process#deposition> ;
+			svu:undergoesProcess <process#deposition> ;
 			skos:prefLabel "sediment"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#seismograph_shaking
 :seismograph_shaking rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#seismograph> ;
-			svu:describesProcess <process#shaking> ;
+			svu:undergoesProcess <process#shaking> ;
 			skos:prefLabel "seismograph"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#shoreline_progradation
 :shoreline_progradation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#progradation> ;
+			svu:undergoesProcess <process#progradation> ;
 			svu:isAbstractedBy <abstraction#shoreline> ;
+			svu:hasAbstraction <abstraction#shoreline> ;
 			skos:prefLabel "shoreline"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#slip%7Eseismic
 :slip%7Eseismic rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#slip%7Eseismic> ;
+			svu:undergoesProcess <process#slip%7Eseismic> ;
 			skos:prefLabel "slip~seismic"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#snow_blowing
 :snow_blowing rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#snow> ;
-			svu:describesProcess <process#blowing> ;
+			svu:undergoesProcess <process#blowing> ;
 			skos:prefLabel "snow"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#snow_accumulation
 :snow_accumulation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#snow> ;
-			svu:describesProcess <process#accumulation> ;
+			svu:undergoesProcess <process#accumulation> ;
 			skos:prefLabel "snow"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#snow_desublimation
 :snow_desublimation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#snow> ;
-			svu:describesProcess <process#desublimation> ;
+			svu:undergoesProcess <process#desublimation> ;
 			skos:prefLabel "snow"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#snow_isobaric-process
 :snow_isobaric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#snow> ;
-			svu:describesProcess <process#isobaric-process> ;
+			svu:undergoesProcess <process#isobaric-process> ;
 			skos:prefLabel "snow"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#snow_isochoric-process
 :snow_isochoric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#snow> ;
-			svu:describesProcess <process#isochoric-process> ;
+			svu:undergoesProcess <process#isochoric-process> ;
 			skos:prefLabel "snow"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#snow_melting
 :snow_melting rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#snow> ;
-			svu:describesProcess <process#melting> ;
+			svu:undergoesProcess <process#melting> ;
 			skos:prefLabel "snow"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#snow-or-ice_melting
 :snow-or-ice_melting rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#snow-or-ice> ;
-			svu:describesProcess <process#melting> ;
+			svu:undergoesProcess <process#melting> ;
 			skos:prefLabel "snow-or-ice"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#snow_sublimation
 :snow_sublimation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#snow> ;
-			svu:describesProcess <process#sublimation> ;
+			svu:undergoesProcess <process#sublimation> ;
 			skos:prefLabel "snow"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#snowfall
 :snowfall rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#snow> ;
-			svu:describesProcess <process#precipitation> ;
+			svu:undergoesProcess <process#precipitation> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Snow" ;
 			skos:prefLabel "snowfall"@en .
 
@@ -3201,21 +3295,21 @@
 :snowpack_isentropic-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#snowpack> ;
-			svu:describesProcess <process#isentropic-process> ;
+			svu:undergoesProcess <process#isentropic-process> ;
 			skos:prefLabel "snowpack"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#snowpack_isobaric-process
 :snowpack_isobaric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#snowpack> ;
-			svu:describesProcess <process#isobaric-process> ;
+			svu:undergoesProcess <process#isobaric-process> ;
 			skos:prefLabel "snowpack"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#snowpack_isothermal-process
 :snowpack_isothermal-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#snowpack> ;
-			svu:describesProcess <process#isothermal-process> ;
+			svu:undergoesProcess <process#isothermal-process> ;
 			skos:prefLabel "snowpack"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#snowpack_surface
@@ -3223,6 +3317,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#snowpack> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "snowpack_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#snowpack_top_surface
@@ -3230,41 +3325,42 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#snowpack_top> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "snowpack_top_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil_decomposition
 :soil_decomposition rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#soil> ;
-			svu:describesProcess <process#decomposition> ;
+			svu:undergoesProcess <process#decomposition> ;
 			skos:prefLabel "soil"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil%7Estabilized_decomposition
 :soil%7Estabilized_decomposition rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#soil%7Estabilized> ;
-			svu:describesProcess <process#decomposition> ;
+			svu:undergoesProcess <process#decomposition> ;
 			skos:prefLabel "soil~stabilized"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil_freezing
 :soil_freezing rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#soil> ;
-			svu:describesProcess <process#freezing> ;
+			svu:undergoesProcess <process#freezing> ;
 			skos:prefLabel "soil"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil_isobaric-process
 :soil_isobaric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#soil> ;
-			svu:describesProcess <process#isobaric-process> ;
+			svu:undergoesProcess <process#isobaric-process> ;
 			skos:prefLabel "soil"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil_isochoric-process
 :soil_isochoric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#soil> ;
-			svu:describesProcess <process#isochoric-process> ;
+			svu:undergoesProcess <process#isochoric-process> ;
 			skos:prefLabel "soil"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil_sat-zone_top_surface
@@ -3272,6 +3368,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#soil_sat-zone_top> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "soil_sat-zone_top_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil_profile
@@ -3279,6 +3376,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#soil> ;
 			svu:isAbstractedBy <abstraction#profile> ;
+			svu:hasAbstraction <abstraction#profile> ;
 			skos:prefLabel "soil_profile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil_profile_bottom
@@ -3293,27 +3391,28 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#soil> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "soil_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil_thaw
 :soil_thaw rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#soil> ;
-			svu:describesProcess <process#thaw> ;
+			svu:undergoesProcess <process#thaw> ;
 			skos:prefLabel "soil"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil_nitrification
 :soil_nitrification rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#soil> ;
-			svu:describesProcess <process#nitrification> ;
+			svu:undergoesProcess <process#nitrification> ;
 			skos:prefLabel "soil"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil_denitrification
 :soil_denitrification rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#soil> ;
-			svu:describesProcess <process#denitrification> ;
+			svu:undergoesProcess <process#denitrification> ;
 			skos:prefLabel "soil"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil_x-section%7Ehorizontal
@@ -3321,6 +3420,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#soil> ;
 			svu:isAbstractedBy <abstraction#x-section%7Ehorizontal> ;
+			svu:hasAbstraction <abstraction#x-section%7Ehorizontal> ;
 			skos:prefLabel "soil_x-section~horizontal"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil_x-section%7Evertical
@@ -3328,12 +3428,13 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#soil> ;
 			svu:isAbstractedBy <abstraction#x-section%7Evertical> ;
+			svu:hasAbstraction <abstraction#x-section%7Evertical> ;
 			skos:prefLabel "soil_x-section~vertical"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#substrates%7Eorganic_decomposition
 :substrates%7Eorganic_decomposition rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#decomposition> ;
+			svu:undergoesProcess <process#decomposition> ;
 			svu:hasRole <rolephenomenon#substrates%7Eorganic> ;
 			skos:prefLabel "substrates~organic"@en .
 
@@ -3341,14 +3442,14 @@
 :sun_rising rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#sun> ;
-			svu:describesProcess <process#rising> ;
+			svu:undergoesProcess <process#rising> ;
 			skos:prefLabel "sun"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#sun_setting
 :sun_setting rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#sun> ;
-			svu:describesProcess <process#setting> ;
+			svu:undergoesProcess <process#setting> ;
 			skos:prefLabel "sun"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#tank%7Estorage%7Eopen-top_x-section%7Ehorizontal
@@ -3356,6 +3457,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#tank%7Estorage%7Eopen-top> ;
 			svu:isAbstractedBy <abstraction#x-section%7Ehorizontal> ;
+			svu:hasAbstraction <abstraction#x-section%7Ehorizontal> ;
 			skos:prefLabel "tank~storage~open-top_x-section~horizontal"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#tank%7Estorage%7Eopen-top_x-section%7Ehorizontal_circle
@@ -3363,26 +3465,28 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :tank%7Estorage%7Eopen-top_x-section%7Ehorizontal ;
 			svu:isAbstractedBy <abstraction#circle> ;
+			svu:hasAbstraction <abstraction#circle> ;
 			skos:prefLabel "tank~storage~open-top_x-section~horizontal_circle"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#tile_isochoric-process
 :tile_isochoric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#tile> ;
-			svu:describesProcess <process#isochoric-process> ;
+			svu:undergoesProcess <process#isochoric-process> ;
 			skos:prefLabel "tile"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#tire_inflation
 :tire_inflation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#tire> ;
-			svu:describesProcess <process#inflation> ;
+			svu:undergoesProcess <process#inflation> ;
 			skos:prefLabel "tire"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#trajectory_origin
 :trajectory_origin rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:isAbstractedBy <abstraction#origin> ;
+			svu:hasAbstraction <abstraction#origin> ;
 			svu:hasTrajectory <trajectory#trajectory> ;
 			skos:prefLabel "trajectory_origin"@en .
 
@@ -3390,6 +3494,7 @@
 :trajectory_target rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:isAbstractedBy <abstraction#target> ;
+			svu:hasAbstraction <abstraction#target> ;
 			svu:hasTrajectory <trajectory#trajectory> ;
 			skos:prefLabel "trajectory_target"@en .
 
@@ -3397,14 +3502,14 @@
 :uranus_rising rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#uranus> ;
-			svu:describesProcess <process#rising> ;
+			svu:undergoesProcess <process#rising> ;
 			skos:prefLabel "uranus"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#uranus_setting
 :uranus_setting rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#uranus> ;
-			svu:describesProcess <process#setting> ;
+			svu:undergoesProcess <process#setting> ;
 			skos:prefLabel "uranus"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#valley_centerline
@@ -3412,6 +3517,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasForm <form#valley> ;
 			svu:isAbstractedBy <abstraction#centerline> ;
+			svu:hasAbstraction <abstraction#centerline> ;
 			skos:prefLabel "valley_centerline"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#venus_axis
@@ -3419,6 +3525,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#venus> ;
 			svu:isAbstractedBy <abstraction#axis> ;
+			svu:hasAbstraction <abstraction#axis> ;
 			skos:prefLabel "venus_axis"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#venus_ecliptic
@@ -3426,6 +3533,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#venus> ;
 			svu:isAbstractedBy <abstraction#ecliptic> ;
+			svu:hasAbstraction <abstraction#ecliptic> ;
 			skos:prefLabel "venus_ecliptic"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#venus_orbit
@@ -3440,6 +3548,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :venus_orbit ;
 			svu:isAbstractedBy <abstraction#aphelion> ;
+			svu:hasAbstraction <abstraction#aphelion> ;
 			skos:prefLabel "venus_orbit_aphelion "@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#venus_orbit_perihelion
@@ -3447,54 +3556,55 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :venus_orbit ;
 			svu:isAbstractedBy <abstraction#perihelion> ;
+			svu:hasAbstraction <abstraction#perihelion> ;
 			skos:prefLabel "venus_orbit_perihelion "@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#venus_rising
 :venus_rising rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#venus> ;
-			svu:describesProcess <process#rising> ;
+			svu:undergoesProcess <process#rising> ;
 			skos:prefLabel "venus"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#venus_setting
 :venus_setting rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#venus> ;
-			svu:describesProcess <process#setting> ;
+			svu:undergoesProcess <process#setting> ;
 			skos:prefLabel "venus"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#virus%7Echicken-pox_incubation
 :virus%7Echicken-pox_incubation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasBody <body#virus%7Echicken-pox> ;
-			svu:describesProcess <process#incubation> ;
+			svu:undergoesProcess <process#incubation> ;
 			skos:prefLabel "virus~chicken-pox"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_baseflow
 :water_baseflow rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#baseflow> ;
+			svu:undergoesProcess <process#baseflow> ;
 			skos:prefLabel "water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_current%7Elongshore
 :water_current%7Elongshore rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#current%7Elongshore> ;
+			svu:undergoesProcess <process#current%7Elongshore> ;
 			skos:prefLabel "current~longshore"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_current%7Erip
 :water_current%7Erip rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#current%7Erip> ;
+			svu:undergoesProcess <process#current%7Erip> ;
 			skos:prefLabel "rip-current"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_current%7Erip_flowing
 :water_current%7Erip_flowing rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
-			svu:describesProcess <process#flowing> ;
+			svu:undergoesProcess <process#flowing> ;
 			svu:hasPhenomenon :water_current%7Erip ;
 			skos:prefLabel "current~rip_flow"@en .
 
@@ -3509,42 +3619,42 @@
 :water_discharging rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#discharging> ;
+			svu:undergoesProcess <process#discharging> ;
 			skos:prefLabel "water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_draining
 :water_draining rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#draining> ;
+			svu:undergoesProcess <process#draining> ;
 			skos:prefLabel "water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_eddy
 :water_eddy rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#eddy> ;
+			svu:undergoesProcess <process#eddy> ;
 			skos:prefLabel "water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_evaporation
 :water_evaporation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#evaporation> ;
+			svu:undergoesProcess <process#evaporation> ;
 			skos:prefLabel "water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_evapotranspiration
 :water_evapotranspiration rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#evapotranspiration> ;
+			svu:undergoesProcess <process#evapotranspiration> ;
 			skos:prefLabel "water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_flow%7Eincoming-and-outgoing
 :water_flow%7Eincoming-and-outgoing rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#flowing> ;
+			svu:undergoesProcess <process#flowing> ;
 			svu:hasTrajectoryDirection <trajectorydirection#incoming> ;
 			svu:hasTrajectoryDirection <trajectorydirection#outgoing> ;
 			skos:prefLabel "water~incoming-and-outgoing"@en .
@@ -3553,15 +3663,15 @@
 :water_flowing rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#flowing> ;
+			svu:undergoesProcess <process#flowing> ;
 			skos:prefLabel "water_flow"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_flowing_friction
 :water_flowing_friction rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#flowing> ;
-			svu:describesProcess <process#friction> ;
+			svu:undergoesProcess <process#flowing> ;
+			svu:undergoesProcess <process#friction> ;
 			skos:prefLabel "water_flow"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_flowing_x-section
@@ -3569,6 +3679,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :water_flowing ;
 			svu:isAbstractedBy <abstraction#x-section> ;
+			svu:hasAbstraction <abstraction#x-section> ;
 			skos:prefLabel "water_flow"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_flowing_x-section_top
@@ -3582,7 +3693,7 @@
 :water_flowing%7Eincoming rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#flowing> ;
+			svu:undergoesProcess <process#flowing> ;
 			svu:hasTrajectoryDirection <trajectorydirection#incoming> ;
 			skos:prefLabel "water_flow~incoming"@en .
 
@@ -3590,7 +3701,7 @@
 :water_flowing%7Eoutgoing rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#flowing> ;
+			svu:undergoesProcess <process#flowing> ;
 			svu:hasTrajectoryDirection <trajectorydirection#outgoing> ;
 			skos:prefLabel "water_flow~outgoing"@en .
 
@@ -3605,7 +3716,7 @@
 :water_fusion rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#fusion> ;
+			svu:undergoesProcess <process#fusion> ;
 			skos:prefLabel "water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_hydraulic-jump
@@ -3619,49 +3730,49 @@
 :water_isentropic-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#isentropic-process> ;
+			svu:undergoesProcess <process#isentropic-process> ;
 			skos:prefLabel "water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_isobaric-process
 :water_isobaric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#isobaric-process> ;
+			svu:undergoesProcess <process#isobaric-process> ;
 			skos:prefLabel "water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_isochoric-process
 :water_isochoric-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#isochoric-process> ;
+			svu:undergoesProcess <process#isochoric-process> ;
 			skos:prefLabel "water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_isothermal-process
 :water_isothermal-process rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#isothermal-process> ;
+			svu:undergoesProcess <process#isothermal-process> ;
 			skos:prefLabel "water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_ponding
 :water_ponding rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#ponding> ;
+			svu:undergoesProcess <process#ponding> ;
 			skos:prefLabel "water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_runoff
 :water_runoff rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#runoff> ;
+			svu:undergoesProcess <process#runoff> ;
 			skos:prefLabel "water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_sublimation
 :water_sublimation rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#sublimation> ;
+			svu:undergoesProcess <process#sublimation> ;
 			skos:prefLabel "water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_surface
@@ -3669,13 +3780,14 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
 			svu:isAbstractedBy <abstraction#surface> ;
+			svu:hasAbstraction <abstraction#surface> ;
 			skos:prefLabel "water_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_surging
 :water_surging rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#surging> ;
+			svu:undergoesProcess <process#surging> ;
 			skos:prefLabel "water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_tide
@@ -3697,6 +3809,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :water_tide_constituent%7E2mk3 ;
 			svu:isAbstractedBy <abstraction#amphidromic-points> ;
+			svu:hasAbstraction <abstraction#amphidromic-points> ;
 			skos:prefLabel "water_tide_constituent~2mk3_amphidromic-points"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_tide_constituent%7E2n2
@@ -3969,7 +4082,7 @@
 :water_vaporization rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
-			svu:describesProcess <process#vaporization> ;
+			svu:undergoesProcess <process#vaporization> ;
 			skos:prefLabel "water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_wave
@@ -3984,6 +4097,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :water_wave ;
 			svu:isAbstractedBy <abstraction#crest> ;
+			svu:hasAbstraction <abstraction#crest> ;
 			skos:prefLabel "water_wave_crest"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_wave_crest_x-section
@@ -3991,6 +4105,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :water_wave_crest ;
 			svu:isAbstractedBy <abstraction#x-section> ;
+			svu:hasAbstraction <abstraction#x-section> ;
 			skos:prefLabel "water_wave_crest_x-section"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_wave_crest_x-section_vertex
@@ -3998,6 +4113,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :water_wave_crest_x-section ;
 			svu:isAbstractedBy <abstraction#vertex> ;
+			svu:hasAbstraction <abstraction#vertex> ;
 			skos:prefLabel "water_wave_crest_x-section_vertex"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_wave_crestline
@@ -4005,6 +4121,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :water_wave ;
 			svu:isAbstractedBy <abstraction#crestline> ;
+			svu:hasAbstraction <abstraction#crestline> ;
 			skos:prefLabel "water_wave_crestline"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_wave_orbit
@@ -4019,6 +4136,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasPhenomenon :water_wave ;
 			svu:isAbstractedBy <abstraction#ray> ;
+			svu:hasAbstraction <abstraction#ray> ;
 			skos:prefLabel "water_wave_ray"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_wave%7Ebreaking
@@ -4047,6 +4165,7 @@
 			svu:SpatiotemporalPhenomenon ;
 			svu:hasMatter <matter#water> ;
 			svu:isAbstractedBy <abstraction#x-section> ;
+			svu:hasAbstraction <abstraction#x-section> ;
 			skos:prefLabel "water_x-section"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water_x-section_top
@@ -4648,6 +4767,13 @@
 			svu:hasObservedPhenomenon <phenomenon#water_flowing> ;
 			skos:prefLabel "(channel~stream@context~part_reach)@context~source_(water_flowing)"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28crop%40context%7Ein_biomass%29%40context%7Esink_%28nitrogen_application%29
+:%28crop%40context%7Ein_biomass%29%40context%7Esink_%28nitrogen_application%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#%28crop%40context%7Ein_biomass%29%40context%7Esink> ;
+			svu:hasObservedPhenomenon <phenomenon#nitrogen_application> ;
+			skos:prefLabel "(crop@context~in_biomass)@context~sink_(nitrogen_application)"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28crop%40context%7Epart_root%29%40context%7Ein_%28nitrogen_accumulation%29
 :%28crop%40context%7Epart_root%29%40context%7Ein_%28nitrogen_accumulation%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -4655,12 +4781,12 @@
 			svu:hasObservedPhenomenon <phenomenon#nitrogen_accumulation> ;
 			skos:prefLabel "(crop@context~part_root)@context~in_(nitrogen_accumulation)"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28crop_biomass%29%40context%7Esink_%28nitrogen_application%29
-:%28crop_biomass%29%40context%7Esink_%28nitrogen_application%29 rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29%29%40context%7Ein_%28carbon_decomposition%29
+:%28crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29%29%40context%7Ein_%28carbon_decomposition%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
-			svu:hasContext <context#%28crop_biomass%29%40context%7Esink> ;
-			svu:hasObservedPhenomenon <phenomenon#nitrogen_application> ;
-			skos:prefLabel "(crop_biomass)@context~sink_(nitrogen_application)"@en .
+			svu:hasContext <context#%28crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29%29%40context%7Ein> ;
+			svu:hasObservedPhenomenon <phenomenon#carbon_decomposition> ;
+			skos:prefLabel "(crop@context~source_((residue_pool)@context~part_root-and-rhizodeposit))@context~in_(carbon_decomposition)"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28delta_beds%7Ebottomset%29%40context%7Eon_%28sediment%40medium_clay%29
 :%28delta_beds%7Ebottomset%29%40context%7Eon_%28sediment%40medium_clay%29 rdf:type owl:NamedIndividual ,
@@ -5651,6 +5777,13 @@
 			svu:hasObservedPhenomenon <phenomenon#radiation%7Eshortwave%7Edownwelling> ;
 			skos:prefLabel "(land_surface)@context~at_air@context~in_radiation~shortwave~downwelling"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Eat_radiation%7Elongwave%7Edownward
+:%28land_surface%29%40context%7Eat_radiation%7Elongwave%7Edownward rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#%28land_surface%29%40context%7Eat> ;
+			svu:hasObservedPhenomenon <phenomenon#radiation%7Elongwave%7Edownward> ;
+			skos:prefLabel "(land_surface)@context~at_radiation~longwave~downward"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Eat_radiation%7Eshortwave%7Edownward
 :%28land_surface%29%40context%7Eat_radiation%7Eshortwave%7Edownward rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -5708,6 +5841,20 @@
 			svu:hasObservedPhenomenon <phenomenon#soil%40role%7Emedium_conduction> ;
 			skos:prefLabel "(land_surface)@context~in_(soil@role~medium_conduction)"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Ein_%28soil%7Ebare%40role%7Esource_water%40role%7Emain_evaporation%29
+:%28land_surface%29%40context%7Ein_%28soil%7Ebare%40role%7Esource_water%40role%7Emain_evaporation%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#%28land_surface%29%40context%7Ein> ;
+			svu:hasObservedPhenomenon <phenomenon#soil%7Ebare%40role%7Esource_water%40role%7Emain_evaporation> ;
+			skos:prefLabel "(land_surface)@context~in_(soil~bare@role~source_water@role~main_evaporation)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Eon_%28%28vegetation_canopy%29%40medium_water%29
+:%28land_surface%29%40context%7Eon_%28%28vegetation_canopy%29%40medium_water%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#%28land_surface%29%40context%7Eon> ;
+			svu:hasObservedPhenomenon <phenomenon#%28vegetation_canopy%29%40medium_water> ;
+			skos:prefLabel "(land_surface)@context~on_((vegetation_canopy)@medium_water)"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Eon_%28%28water_flowing%29%40role%7Emain_sink%40role%7Esink%29
 :%28land_surface%29%40context%7Eon_%28%28water_flowing%29%40role%7Emain_sink%40role%7Esink%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -5729,12 +5876,26 @@
 			svu:hasObservedPhenomenon <phenomenon#snow_accumulation> ;
 			skos:prefLabel "(land_surface)@context~on_(snow_accumulation)"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Eon_%28snow_melting%29
+:%28land_surface%29%40context%7Eon_%28snow_melting%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#%28land_surface%29%40context%7Eon> ;
+			svu:hasObservedPhenomenon <phenomenon#snow_melting> ;
+			skos:prefLabel "(land_surface)@context~on_(snow_melting)"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Eon_%28snow_sublimation%29
 :%28land_surface%29%40context%7Eon_%28snow_sublimation%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
 			svu:hasContext <context#%28land_surface%29%40context%7Eon> ;
 			svu:hasObservedPhenomenon <phenomenon#snow_sublimation> ;
 			skos:prefLabel "(land_surface)@context~on_(snow_sublimation)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Eon_%28storm%40context%7Esource_%28water_runoff%29%29
+:%28land_surface%29%40context%7Eon_%28storm%40context%7Esource_%28water_runoff%29%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#%28land_surface%29%40context%7Eon> ;
+			svu:hasObservedPhenomenon <phenomenon#storm%40context%7Esource_%28water_runoff%29> ;
+			skos:prefLabel "(land_surface)@context~on_(storm@context~source_(water_runoff))"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Eon_%28vegetation%40context%7Epart_leaf%29
 :%28land_surface%29%40context%7Eon_%28vegetation%40context%7Epart_leaf%29 rdf:type owl:NamedIndividual ,
@@ -5777,6 +5938,13 @@
 			svu:hasContext <context#%28land_surface%29%40context%7Eon> ;
 			svu:hasObservedPhenomenon <phenomenon#water_surface> ;
 			skos:prefLabel "(land_surface)@context~on_(water_surface)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Eon_snowpack
+:%28land_surface%29%40context%7Eon_snowpack rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#%28land_surface%29%40context%7Eon> ;
+			svu:hasObservedPhenomenon <body#snowpack> ;
+			skos:prefLabel "(land_surface)@context~on_snowpack"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Eon_terrain%7Eleft%40context%7Esource_%28channel%7Estream%40context%7Epart_reach%29%40context%7Esink_%28water_flowing%29
 :%28land_surface%29%40context%7Eon_terrain%7Eleft%40context%7Esource_%28channel%7Estream%40context%7Epart_reach%29%40context%7Esink_%28water_flowing%29 rdf:type owl:NamedIndividual ,
@@ -5923,6 +6091,13 @@
 			svu:hasObservedPhenomenon <phenomenon#land_surface> ;
 			skos:prefLabel "(projectile_trajectory_target)@context~at_(land_surface)"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28residue_pool%29%40context%7Epart_root-and-rhizodeposit
+:%28residue_pool%29%40context%7Epart_root-and-rhizodeposit rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#%28residue_pool%29%40context%7Epart> ;
+			svu:hasObservedPhenomenon <body#root-and-rhizodeposit> ;
+			skos:prefLabel "(residue_pool)@context~part_root-and-rhizodeposit"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28sea%40context%7Eadjacent_shoreline%29%40context%7Esink_wave%7Ebreaking
 :%28sea%40context%7Eadjacent_shoreline%29%40context%7Esink_wave%7Ebreaking rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -5986,33 +6161,36 @@
 			svu:hasObservedPhenomenon <phenomenon#freshwater_flowing> ;
 			skos:prefLabel "(sea_bed)@context~at_(freshwater_flowing)"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_plug-layer%29%29
-:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_plug-layer%29%29 rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29
+:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
 			svu:hasContext <context#%28sea_bottom%29%40context%7Eat> ;
-			svu:hasObservedPhenomenon <phenomenon#%28water_flowing%29%40context%7Ein_%28debris_plug-layer%29> ;
-			skos:prefLabel "(sea_bottom)@context~at_((water_flowing)@context~in_(debris_plug-layer))"@en .
+			svu:hasObservedPhenomenon <phenomenon#%28water_flowing%29%40context%7Ein_%28debris_flow%29> ;
+			skos:prefLabel "(sea_bottom)@context~at_((water_flowing)@context~in_(debris_flow))"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_shear-layer%29%29
-:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_shear-layer%29%29 rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29plug-layer%29%29
+:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29plug-layer%29%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
 			svu:hasContext <context#%28sea_bottom%29%40context%7Eat> ;
-			svu:hasObservedPhenomenon <phenomenon#%28water_flowing%29%40context%7Ein_%28debris_shear-layer%29> ;
-			skos:prefLabel "(sea_bottom)@context~at_((water_flowing)@context~in_(debris_shear-layer))"@en .
+			svu:hasObservedPhenomenon <phenomenon#%28water_flowing%29%40context%7Ein_%28debris_flow%29> ;
+			svu:hasObservedPhenomenon <phenomenon#plug-layer%29%29> ;
+			skos:prefLabel "(sea_bottom)@context~at_((water_flowing)@context~in_(debris_flow))plug-layer))"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_top%29%29
-:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_top%29%29 rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29shear-layer%29%29
+:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29shear-layer%29%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
 			svu:hasContext <context#%28sea_bottom%29%40context%7Eat> ;
-			svu:hasObservedPhenomenon <phenomenon#%28water_flowing%29%40context%7Ein_%28debris_top%29> ;
-			skos:prefLabel "(sea_bottom)@context~at_((water_flowing)@context~in_(debris_top))"@en .
+			svu:hasObservedPhenomenon <phenomenon#%28water_flowing%29%40context%7Ein_%28debris_flow%29> ;
+			svu:hasObservedPhenomenon <phenomenon#shear-layer%29%29> ;
+			skos:prefLabel "(sea_bottom)@context~at_((water_flowing)@context~in_(debris_flow))shear-layer))"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29
-:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29 rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29top%29%29
+:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29top%29%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
 			svu:hasContext <context#%28sea_bottom%29%40context%7Eat> ;
-			svu:hasObservedPhenomenon <phenomenon#%28water_flowing%29%40context%7Ein_debris> ;
-			skos:prefLabel "(sea_bottom)@context~at_((water_flowing)@context~in_debris)"@en .
+			svu:hasObservedPhenomenon <phenomenon#%28water_flowing%29%40context%7Ein_%28debris_flow%29> ;
+			svu:hasObservedPhenomenon <phenomenon#top%29%29> ;
+			skos:prefLabel "(sea_bottom)@context~at_((water_flowing)@context~in_(debris_flow))top))"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28sea_bottom%29%40context%7Eat_%28water%40context%7Ein_%28debris_deposit%29%29
 :%28sea_bottom%29%40context%7Eat_%28water%40context%7Ein_%28debris_deposit%29%29 rdf:type owl:NamedIndividual ,
@@ -6645,33 +6823,12 @@
 			svu:hasObservedPhenomenon <matter#nitrogen> ;
 			skos:prefLabel "(water@medium_diatoms)@context~in_nitrogen"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28water_flowing%29%40context%7Ein_%28debris_plug-layer%29
-:%28water_flowing%29%40context%7Ein_%28debris_plug-layer%29 rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28water_flowing%29%40context%7Ein_%28debris_flow%29
+:%28water_flowing%29%40context%7Ein_%28debris_flow%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
 			svu:hasContext <context#%28water_flowing%29%40context%7Ein> ;
-			svu:hasObservedPhenomenon <phenomenon#debris_plug-layer> ;
-			skos:prefLabel "(water_flowing)@context~in_(debris_plug-layer)"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28water_flowing%29%40context%7Ein_%28debris_shear-layer%29
-:%28water_flowing%29%40context%7Ein_%28debris_shear-layer%29 rdf:type owl:NamedIndividual ,
-			svu:ContextPhenomenon ;
-			svu:hasContext <context#%28water_flowing%29%40context%7Ein> ;
-			svu:hasObservedPhenomenon <phenomenon#debris_shear-layer> ;
-			skos:prefLabel "(water_flowing)@context~in_(debris_shear-layer)"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28water_flowing%29%40context%7Ein_%28debris_top%29
-:%28water_flowing%29%40context%7Ein_%28debris_top%29 rdf:type owl:NamedIndividual ,
-			svu:ContextPhenomenon ;
-			svu:hasContext <context#%28water_flowing%29%40context%7Ein> ;
-			svu:hasObservedPhenomenon <phenomenon#debris_top> ;
-			skos:prefLabel "(water_flowing)@context~in_(debris_top)"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28water_flowing%29%40context%7Ein_debris
-:%28water_flowing%29%40context%7Ein_debris rdf:type owl:NamedIndividual ,
-			svu:ContextPhenomenon ;
-			svu:hasContext <context#%28water_flowing%29%40context%7Ein> ;
-			svu:hasObservedPhenomenon <rolephenomenon#debris> ;
-			skos:prefLabel "(water_flowing)@context~in_debris"@en .
+			svu:hasObservedPhenomenon <phenomenon#debris_flow> ;
+			skos:prefLabel "(water_flowing)@context~in_(debris_flow)"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28water_molecule%29%40context%7Epart_%28bond%7Eh-o_dissociation%29
 :%28water_molecule%29%40context%7Epart_%28bond%7Eh-o_dissociation%29 rdf:type owl:NamedIndividual ,
@@ -7857,6 +8014,27 @@
 			svu:hasObservedPhenomenon <phenomenon#radiation%7Eoutgoing%7Elongwave%7Eupward> ;
 			skos:prefLabel "clouds@context~source_radiation~outgoing~longwave~upward"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop%40context%7Ein_%28biomass%7Emicrobial_decomposition%29
+:crop%40context%7Ein_%28biomass%7Emicrobial_decomposition%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#crop%40context%7Ein> ;
+			svu:hasObservedPhenomenon <phenomenon#biomass%7Emicrobial_decomposition> ;
+			skos:prefLabel "crop@context~in_(biomass~microbial_decomposition)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop%40context%7Ein_biomass
+:crop%40context%7Ein_biomass rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#crop%40context%7Ein> ;
+			svu:hasObservedPhenomenon <matter#biomass> ;
+			skos:prefLabel "crop@context~in_biomass"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop%40context%7Ein_biomass%7Edry
+:crop%40context%7Ein_biomass%7Edry rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#crop%40context%7Ein> ;
+			svu:hasObservedPhenomenon <matter#biomass%7Edry> ;
+			skos:prefLabel "crop@context~in_biomass~dry"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop%40context%7Ein_nitrogen
 :crop%40context%7Ein_nitrogen rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -7877,6 +8055,13 @@
 			svu:hasContext <context#crop%40context%7Esink> ;
 			svu:hasObservedPhenomenon <phenomenon#fertilizer%7Enitrogen_application> ;
 			skos:prefLabel "crop@context~sink_(fertilizer~nitrogen_application)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29
+:crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#crop%40context%7Esource> ;
+			svu:hasObservedPhenomenon <phenomenon#%28residue_pool%29%40context%7Epart_root-and-rhizodeposit> ;
+			skos:prefLabel "crop@context~source_((residue_pool)@context~part_root-and-rhizodeposit)"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#crop%40context%7Esource_%28residue-as-carbon_decomposition%29
 :crop%40context%7Esource_%28residue-as-carbon_decomposition%29 rdf:type owl:NamedIndividual ,
@@ -8494,6 +8679,13 @@
 			svu:hasObservedPhenomenon <phenomenon#biomass%7Eharvested%40medium_grain> ;
 			skos:prefLabel "ground@context~above_(biomass~harvested@medium_grain)"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Eabove_%28crop%40context%7Ein_biomass%7Edry%29
+:ground%40context%7Eabove_%28crop%40context%7Ein_biomass%7Edry%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#ground%40context%7Eabove> ;
+			svu:hasObservedPhenomenon <phenomenon#crop%40context%7Ein_biomass%7Edry> ;
+			skos:prefLabel "ground@context~above_(crop@context~in_biomass~dry)"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Eabove_%28crop%40context%7Ein_nitrogen%29
 :ground%40context%7Eabove_%28crop%40context%7Ein_nitrogen%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -8521,13 +8713,6 @@
 			svu:hasContext <context#ground%40context%7Eabove> ;
 			svu:hasObservedPhenomenon <phenomenon#crop%40medium_nitrogen> ;
 			skos:prefLabel "ground@context~above_(crop@medium_nitrogen)"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Eabove_%28crop_biomass%7Edry%29
-:ground%40context%7Eabove_%28crop_biomass%7Edry%29 rdf:type owl:NamedIndividual ,
-			svu:ContextPhenomenon ;
-			svu:hasContext <context#ground%40context%7Eabove> ;
-			svu:hasObservedPhenomenon <phenomenon#crop_biomass%7Edry> ;
-			skos:prefLabel "ground@context~above_(crop_biomass~dry)"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Eabove_%28crop_residue_pool_decomposition%29%40context%7Esource_carbon
 :ground%40context%7Eabove_%28crop_residue_pool_decomposition%29%40context%7Esource_carbon rdf:type owl:NamedIndividual ,
@@ -8642,6 +8827,13 @@
 			svu:hasContext <context#land%40context%7Eon> ;
 			svu:hasObservedPhenomenon <phenomenon#%28vegetation_canopy%29%40role%7Esource_water%40role%7Emain_transpiration> ;
 			skos:prefLabel "land@context~on_((vegetation_canopy)@role~source_water@role~main_transpiration)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#land%40context%7Eon_%28vegetation%40role%7Esource_water%40role%7Emain_transpiration%29
+:land%40context%7Eon_%28vegetation%40role%7Esource_water%40role%7Emain_transpiration%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#land%40context%7Eon> ;
+			svu:hasObservedPhenomenon <phenomenon#vegetation%40role%7Esource_water%40role%7Emain_transpiration> ;
+			skos:prefLabel "land@context~on_(vegetation@role~source_water@role~main_transpiration)"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#land%40context%7Epart_%28domain_boundary_lowering%29
 :land%40context%7Epart_%28domain_boundary_lowering%29 rdf:type owl:NamedIndividual ,
@@ -9952,6 +10144,13 @@
 			svu:hasObservedPhenomenon <abstraction#data-stream> ;
 			skos:prefLabel "station~seismic@context~source_data-stream"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#storm%40context%7Esource_%28water_runoff%29
+:storm%40context%7Esource_%28water_runoff%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#storm%40context%7Esource> ;
+			svu:hasObservedPhenomenon <phenomenon#water_runoff> ;
+			skos:prefLabel "storm@context~source_(water_runoff)"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#tank%7Estorage%7Eopen-top%40context%7Ein_water
 :tank%7Estorage%7Eopen-top%40context%7Ein_water rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -10262,6 +10461,13 @@
 			svu:hasObservedMediumPhenomenon <body#soil_layer%7E2> ;
 			skos:prefLabel "(soil_layer~2)@medium"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28soil_root-zone%29%40medium_water
+:%28soil_root-zone%29%40medium_water rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasObservedMediumPhenomenon <body#soil_root-zone> ;
+			svu:hasObservedPhenomenon <matter#water> ;
+			skos:prefLabel "(soil_root-zone)@medium_water"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28soil_surface%29%40medium_water
 :%28soil_surface%29%40medium_water rdf:type owl:NamedIndividual ,
 			svu:MediumPhenomenon ;
@@ -10276,6 +10482,13 @@
 			svu:hasObservedProcess <process#throughfall> ;
 			svu:hasObservedPhenomenon <matter#water> ;
 			skos:prefLabel "(vegetation_canopy)@medium_throughfall_water"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28vegetation_canopy%29%40medium_water
+:%28vegetation_canopy%29%40medium_water rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasObservedMediumPhenomenon <body#vegetation_canopy> ;
+			svu:hasObservedPhenomenon <matter#water> ;
+			skos:prefLabel "(vegetation_canopy)@medium_water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28water_flowing%29%40medium_%28sediment_grain%29
 :%28water_flowing%29%40medium_%28sediment_grain%29 rdf:type owl:NamedIndividual ,
@@ -11965,6 +12178,23 @@
 			svu:hasObservedProcess <process#leakage> ;
 			skos:prefLabel "(channel~river_bed)@role~exchange_(channel~stream@context~part_reach)@role~exchange_(water_flowing)@role~main_leakage"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28crop%40context%7Ein_%28biomass%7Emicrobial_decomposition%29%29%40role%7Esource_%28soil_decomposition%29%40role%7Esource_carbon%40role%7Emain_respiration
+:%28crop%40context%7Ein_%28biomass%7Emicrobial_decomposition%29%29%40role%7Esource_%28soil_decomposition%29%40role%7Esource_carbon%40role%7Emain_respiration rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasObservedParticipant <participant#%28crop%40context%7Ein_%28biomass%7Emicrobial_decomposition%29%29%40role%7Esource> ;
+			svu:hasObservedParticipant <participant#%28soil_decomposition%29%40role%7Esource> ;
+			svu:hasObservedParticipant <participant#carbon%40role%7Emain> ;
+			svu:hasObservedProcess <process#respiration> ;
+			skos:prefLabel "(crop@context~in_(biomass~microbial_decomposition))@role~source_(soil_decomposition)@role~source_carbon@role~main_respiration"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29%29%40role%7Esink_biomass%40role%7Emain_addition
+:%28crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29%29%40role%7Esink_biomass%40role%7Emain_addition rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasObservedParticipant <participant#%28crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29%29%40role%7Esink> ;
+			svu:hasObservedParticipant <participant#biomass%40role%7Emain> ;
+			svu:hasObservedProcess <process#addition> ;
+			skos:prefLabel "(crop@context~source_((residue_pool)@context~part_root-and-rhizodeposit))@role~sink_biomass@role~main_addition"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28crop%40context%7Esource_%28residue_pool_decomposition%29%29%40role%7Esource_carbon%40role%7Emain_respiration
 :%28crop%40context%7Esource_%28residue_pool_decomposition%29%29%40role%7Esource_carbon%40role%7Emain_respiration rdf:type owl:NamedIndividual ,
 			svu:CompoundPhenomenon ;
@@ -11972,15 +12202,6 @@
 			svu:hasObservedParticipant <participant#carbon%40role%7Emain> ;
 			svu:hasObservedProcess <process#respiration> ;
 			skos:prefLabel "(crop@context~source_(residue_pool_decomposition))@role~source_carbon@role~main_respiration"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28crop_biomass%7Emicrobial_decomposition%29%40role%7Esource_%28soil_decomposition%29%40role%7Esource_carbon%40role%7Emain_respiration
-:%28crop_biomass%7Emicrobial_decomposition%29%40role%7Esource_%28soil_decomposition%29%40role%7Esource_carbon%40role%7Emain_respiration rdf:type owl:NamedIndividual ,
-			svu:CompoundPhenomenon ;
-			svu:hasObservedParticipant <participant#%28crop_biomass%7Emicrobial_decomposition%29%40role%7Esource> ;
-			svu:hasObservedParticipant <participant#%28soil_decomposition%29%40role%7Esource> ;
-			svu:hasObservedParticipant <participant#carbon%40role%7Emain> ;
-			svu:hasObservedProcess <process#respiration> ;
-			skos:prefLabel "(crop_biomass~microbial_decomposition)@role~source_(soil_decomposition)@role~source_carbon@role~main_respiration"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28crop_canopy%29%40role%7Esink_radiation%7Esolar%40role%7Emain_interception
 :%28crop_canopy%29%40role%7Esink_radiation%7Esolar%40role%7Emain_interception rdf:type owl:NamedIndividual ,
@@ -12304,6 +12525,15 @@
 			svu:hasObservedParticipant <participant#radiation%7Eoutgoing%7Elongwave%40role%7Emain> ;
 			svu:hasObservedProcess <process#emission> ;
 			skos:prefLabel "(land_surface)@role~source_radiation~outgoing~longwave@role~main_emission"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40role%7Esource_vegetation%40role%7Esource_water%40role%7Emain_evapotranspiration
+:%28land_surface%29%40role%7Esource_vegetation%40role%7Esource_water%40role%7Emain_evapotranspiration rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasObservedParticipant <participant#%28land_surface%29%40role%7Esource> ;
+			svu:hasObservedParticipant <participant#vegetation%40role%7Esource> ;
+			svu:hasObservedParticipant <participant#water%40role%7Emain> ;
+			svu:hasObservedProcess <process#evapotranspiration> ;
+			skos:prefLabel "(land_surface)@role~source_vegetation@role~source_water@role~main_evapotranspiration"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land%7Evegetated_floor%29%40role%7Esink_water%40role%7Emain_interception
 :%28land%7Evegetated_floor%29%40role%7Esink_water%40role%7Emain_interception rdf:type owl:NamedIndividual ,
@@ -13601,6 +13831,14 @@
 			svu:hasObservedProcess <process#emission> ;
 			skos:prefLabel "soil@role~source_nitrous-oxide-as-nitrogen@role~main_emission"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil%7Ebare%40role%7Esource_water%40role%7Emain_evaporation
+:soil%7Ebare%40role%7Esource_water%40role%7Emain_evaporation rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasObservedParticipant <participant#soil%7Ebare%40role%7Esource> ;
+			svu:hasObservedParticipant <participant#water%40role%7Emain> ;
+			svu:hasObservedProcess <process#evaporation> ;
+			skos:prefLabel "soil~bare@role~source_water@role~main_evaporation"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#sulfuric-acid%40role%7Efirst_water%40role%7Esecond
 :sulfuric-acid%40role%7Efirst_water%40role%7Esecond rdf:type owl:NamedIndividual ,
 			svu:CompoundPhenomenon ;
@@ -13615,6 +13853,14 @@
 			svu:hasObservedParticipant <participant#fuel%40role%7Emain> ;
 			svu:hasObservedProcess <process#consumption> ;
 			skos:prefLabel "toyota-corolla~2008@role~sink_fuel@role~main_consumption"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#vegetation%40role%7Esource_water%40role%7Emain_transpiration
+:vegetation%40role%7Esource_water%40role%7Emain_transpiration rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasObservedParticipant <participant#vegetation%40role%7Esource> ;
+			svu:hasObservedParticipant <participant#water%40role%7Emain> ;
+			svu:hasObservedProcess <process#transpiration> ;
+			skos:prefLabel "vegetation@role~source_water@role~main_transpiration"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water%40role%7Efirst_%28channel_bottom_surface%29%40role%7Esecond
 :water%40role%7Efirst_%28channel_bottom_surface%29%40role%7Esecond rdf:type owl:NamedIndividual ,

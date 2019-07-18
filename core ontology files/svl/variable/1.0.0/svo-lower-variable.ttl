@@ -18,7 +18,7 @@
 #    Variable   
 # 
 #################################################################
-##Last generated on: 2019-07-17 09:48 
+##Last generated on: 2019-07-18 15:46 
 
 ###CSN Variables
 
@@ -2593,6 +2593,13 @@
 			svu:hasRecordedProperty <property#mass-per-volume_density> ;
 			svu:hasRecordedPhenomenon <phenomenon#atmosphere%40context%7Esource_snowfall> ;
 			skos:prefLabel "atmosphere_water__snowfall_mass-per-volume_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#atmosphere%40role%7Esource_snowfall%40role%7Emain_precipitation__precipitation_mass_flux
+:atmosphere%40role%7Esource_snowfall%40role%7Emain_precipitation__precipitation_mass_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#precipitation_mass_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#atmosphere%40role%7Esource_snowfall%40role%7Emain_precipitation> ;
+			skos:prefLabel "atmosphere_water__snowfall_mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#atmosphere%40role%7Esource_water%40role%7Emain_precipitation__third_dekad_time_integral_of_precipitation_leq_volume_flux
 :atmosphere%40role%7Esource_water%40role%7Emain_precipitation__third_dekad_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
@@ -5695,25 +5702,25 @@
 			svu:hasRecordedPhenomenon <rolephenomenon#crop-or-weed> ;
 			skos:prefLabel "crop-or-weed__species_identification_code"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#crop_biomass__mass-per-area_density
-:crop_biomass__mass-per-area_density rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#crop%40context%7Ein_biomass__mass-per-area_density
+:crop%40context%7Ein_biomass__mass-per-area_density rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#mass-per-area_density> ;
-			svu:hasRecordedPhenomenon <phenomenon#crop_biomass> ;
+			svu:hasRecordedPhenomenon <phenomenon#crop%40context%7Ein_biomass> ;
 			skos:prefLabel "crop_biomass__mass-per-area_density"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28crop_biomass%29%40context%7Esink_%28nitrogen_application%29__mass-per-area_application_density
-:%28crop_biomass%29%40context%7Esink_%28nitrogen_application%29__mass-per-area_application_density rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28crop%40context%7Ein_biomass%29%40context%7Esink_%28nitrogen_application%29__mass-per-area_application_density
+:%28crop%40context%7Ein_biomass%29%40context%7Esink_%28nitrogen_application%29__mass-per-area_application_density rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#mass-per-area_application_density> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28crop_biomass%29%40context%7Esink_%28nitrogen_application%29> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28crop%40context%7Ein_biomass%29%40context%7Esink_%28nitrogen_application%29> ;
 			skos:prefLabel "crop_biomass_nitrogen__mass-per-area_application_density"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28crop_biomass%7Emicrobial_decomposition%29%40role%7Esource_%28soil_decomposition%29%40role%7Esource_carbon%40role%7Emain_respiration__decomposition_respiration_mass
-:%28crop_biomass%7Emicrobial_decomposition%29%40role%7Esource_%28soil_decomposition%29%40role%7Esource_carbon%40role%7Emain_respiration__decomposition_respiration_mass rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28crop%40context%7Ein_%28biomass%7Emicrobial_decomposition%29%29%40role%7Esource_%28soil_decomposition%29%40role%7Esource_carbon%40role%7Emain_respiration__decomposition_respiration_mass
+:%28crop%40context%7Ein_%28biomass%7Emicrobial_decomposition%29%29%40role%7Esource_%28soil_decomposition%29%40role%7Esource_carbon%40role%7Emain_respiration__decomposition_respiration_mass rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#decomposition_respiration_mass> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28crop_biomass%7Emicrobial_decomposition%29%40role%7Esource_%28soil_decomposition%29%40role%7Esource_carbon%40role%7Emain_respiration> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28crop%40context%7Ein_%28biomass%7Emicrobial_decomposition%29%29%40role%7Esource_%28soil_decomposition%29%40role%7Esource_carbon%40role%7Emain_respiration> ;
 			skos:prefLabel "crop_biomass~microbial-and-soil_carbon__decomposition_respiration_mass"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28crop_canopy%29%40role%7Esink_radiation%7Esolar%40role%7Emain_interception__interception_energy_flux_fraction
@@ -5772,18 +5779,18 @@
 			svu:hasRecordedPhenomenon <phenomenon#%28crop%40context%7Esource_%28residue_pool_decomposition%29%29%40role%7Esource_carbon%40role%7Emain_respiration> ;
 			skos:prefLabel "crop_residue_pool_carbon__time_integral_of_decomposition_respiration_mass_flux"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28crop%40context%7Esource_%28residue_pool_decomposition%29%29%40role%7Esource_carbon%40role%7Emain_respiration__one-year_time_integral_of_addition_mass_flux
-:%28crop%40context%7Esource_%28residue_pool_decomposition%29%29%40role%7Esource_carbon%40role%7Emain_respiration__one-year_time_integral_of_addition_mass_flux rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29%29%40role%7Esink_biomass%40role%7Emain_addition__one-year_time_integral_of_addition_mass_flux
+:%28crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29%29%40role%7Esink_biomass%40role%7Emain_addition__one-year_time_integral_of_addition_mass_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#one-year_time_integral_of_addition_mass_flux> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28crop%40context%7Esource_%28residue_pool_decomposition%29%29%40role%7Esource_carbon%40role%7Emain_respiration> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29%29%40role%7Esink_biomass%40role%7Emain_addition> ;
 			skos:prefLabel "crop_residue_pool_root-and-rhizodeposit_biomass__yearly_time_integral_of_addition_mass_flux"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28crop%40context%7Esource_%28residue_pool_decomposition%29%29%40role%7Esource_carbon%40role%7Emain_respiration__one-year_time_integral_of_decomposition_mass_flux
-:%28crop%40context%7Esource_%28residue_pool_decomposition%29%29%40role%7Esource_carbon%40role%7Emain_respiration__one-year_time_integral_of_decomposition_mass_flux rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29%29%40context%7Ein_%28carbon_decomposition%29__one-year_time_integral_of_decomposition_mass_flux
+:%28crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29%29%40context%7Ein_%28carbon_decomposition%29__one-year_time_integral_of_decomposition_mass_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#one-year_time_integral_of_decomposition_mass_flux> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28crop%40context%7Esource_%28residue_pool_decomposition%29%29%40role%7Esource_carbon%40role%7Emain_respiration> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29%29%40context%7Ein_%28carbon_decomposition%29> ;
 			skos:prefLabel "crop_residue_pool_root-and-rhizodeposit_carbon__yearly_time_integral_of_decomposition_mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28%28crop%40context%7Epart_root%29%40context%7Ein_%28nitrogen_accumulation%29%29_%28crop_harvest%29%40reference%7Eat__mass-per-area_accumulation_density
@@ -11116,11 +11123,11 @@
 			svu:hasRecordedPhenomenon <phenomenon#ground%40context%7Eabove_%28biomass%7Eharvested%40medium_grain%29> ;
 			skos:prefLabel "ground~above_biomass~harvested_grain__mass_fraction"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Eabove_%28crop_biomass%7Edry%29__mass-per-area_density
-:ground%40context%7Eabove_%28crop_biomass%7Edry%29__mass-per-area_density rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Eabove_%28crop%40context%7Ein_biomass%7Edry%29__mass-per-area_density
+:ground%40context%7Eabove_%28crop%40context%7Ein_biomass%7Edry%29__mass-per-area_density rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#mass-per-area_density> ;
-			svu:hasRecordedPhenomenon <phenomenon#ground%40context%7Eabove_%28crop_biomass%7Edry%29> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40context%7Eabove_%28crop%40context%7Ein_biomass%7Edry%29> ;
 			skos:prefLabel "ground~above_crop_biomass~dry__mass-per-area_density"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Eabove_%28crop%40context%7Ein_nitrogen%29__mass-per-area_density
@@ -11928,19 +11935,19 @@
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40role%7Esource_air%40role%7Esink> ;
 			skos:prefLabel "land_surface_air__incoming_sensible_heat_energy_flux"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40role%7Eexchange_air%40role%7Eexchange__latent_heat_energy_flux
-:%28land_surface%29%40role%7Eexchange_air%40role%7Eexchange__latent_heat_energy_flux rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40role%7Eexchange_air%40role%7Eexchange__net_latent_heat_energy_flux
+:%28land_surface%29%40role%7Eexchange_air%40role%7Eexchange__net_latent_heat_energy_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasRecordedProperty <property#latent_heat_energy_flux> ;
+			svu:hasRecordedProperty <property#net_latent_heat_energy_flux> ;
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40role%7Eexchange_air%40role%7Eexchange> ;
-			skos:prefLabel "land_surface_air__latent_heat_energy_flux"@en .
+			skos:prefLabel "land_surface_air__net_latent_heat_energy_flux"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40role%7Eexchange_air%40role%7Eexchange__sensible_heat_energy_flux
-:%28land_surface%29%40role%7Eexchange_air%40role%7Eexchange__sensible_heat_energy_flux rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40role%7Eexchange_air%40role%7Eexchange__net_sensible_heat_energy_flux
+:%28land_surface%29%40role%7Eexchange_air%40role%7Eexchange__net_sensible_heat_energy_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasRecordedProperty <property#sensible_heat_energy_flux> ;
+			svu:hasRecordedProperty <property#net_sensible_heat_energy_flux> ;
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40role%7Eexchange_air%40role%7Eexchange> ;
-			skos:prefLabel "land_surface_air__sensible_heat_energy_flux"@en .
+			skos:prefLabel "land_surface_air__net_sensible_heat_energy_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eat_air%40context%7Ein_radiation%7Elongwave%7Edownward__energy_flux
 :%28land_surface%29%40context%7Eat_air%40context%7Ein_radiation%7Elongwave%7Edownward__energy_flux rdf:type owl:NamedIndividual ,
@@ -12145,6 +12152,13 @@
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40role%7Esink_radiation%7Eincoming%40role%7Emain_reflection> ;
 			skos:prefLabel "land_surface_radiation~incoming~total__reflected_energy_flux"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eat_radiation%7Elongwave%7Edownward__energy_flux
+:%28land_surface%29%40context%7Eat_radiation%7Elongwave%7Edownward__energy_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#energy_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Eat_radiation%7Elongwave%7Edownward> ;
+			skos:prefLabel "land_surface_radiation~longwave~downward__energy_flux"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eexchange_radiation%7Elongwave__energy_flux
 :%28land_surface%29%40context%7Eexchange_radiation%7Elongwave__energy_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -12201,12 +12215,26 @@
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Eat_radiation%7Esolar> ;
 			skos:prefLabel "land_surface_radiation~solar__energy_flux"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#land_surface_skin__average_of_temperature
+:land_surface_skin__average_of_temperature rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#average_of_temperature> ;
+			svu:hasRecordedPhenomenon <phenomenon#land_surface_skin> ;
+			skos:prefLabel "land_surface_skin__average_of_temperature"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eon_%28snow_sublimation%29__sublimation_volume_flux
 :%28land_surface%29%40context%7Eon_%28snow_sublimation%29__sublimation_volume_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#sublimation_volume_flux> ;
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Eon_%28snow_sublimation%29> ;
 			skos:prefLabel "land_surface_snow__sublimation_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eon_%28snow_accumulation%29__time_integral_of_accumulation_mass_flux
+:%28land_surface%29%40context%7Eon_%28snow_accumulation%29__time_integral_of_accumulation_mass_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#time_integral_of_accumulation_mass_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Eon_%28snow_accumulation%29> ;
+			skos:prefLabel "land_surface_snow__time_integral_of_accumulation_mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eon_%28snow_accumulation%29__time_integral_of_accumulation_volume_flux
 :%28land_surface%29%40context%7Eon_%28snow_accumulation%29__time_integral_of_accumulation_volume_flux rdf:type owl:NamedIndividual ,
@@ -12215,6 +12243,20 @@
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Eon_%28snow_accumulation%29> ;
 			skos:prefLabel "land_surface_snow__time_integral_of_accumulation_volume_flux"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eon_%28snow_melting%29__time_integral_of_melt_mass_flux
+:%28land_surface%29%40context%7Eon_%28snow_melting%29__time_integral_of_melt_mass_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#time_integral_of_melt_mass_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Eon_%28snow_melting%29> ;
+			skos:prefLabel "land_surface_snow__time_integral_of_melt_mass_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eon_snowpack__depth
+:%28land_surface%29%40context%7Eon_snowpack__depth rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#depth> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Eon_snowpack> ;
+			skos:prefLabel "land_surface_snowpack__depth"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Ein_%28soil%40role%7Emedium_conduction%29__conduction_heat_energy_flux
 :%28land_surface%29%40context%7Ein_%28soil%40role%7Emedium_conduction%29__conduction_heat_energy_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -12228,6 +12270,20 @@
 			svu:hasRecordedProperty <property#conduction_heat_energy_flux> ;
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Ein_%28soil%40role%7Emedium_conduction%29> ;
 			skos:prefLabel "land_surface_soil__conduction_heat_energy_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Ein_%28soil%7Ebare%40role%7Esource_water%40role%7Emain_evaporation%29__direct_evaporation_energy_flux
+:%28land_surface%29%40context%7Ein_%28soil%7Ebare%40role%7Esource_water%40role%7Emain_evaporation%29__direct_evaporation_energy_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#direct_evaporation_energy_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Ein_%28soil%7Ebare%40role%7Esource_water%40role%7Emain_evaporation%29> ;
+			skos:prefLabel "land_surface_soil~bare_water__direct_evaporation_energy_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eon_%28storm%40context%7Esource_%28water_runoff%29%29__time_integral_of_runoff_mass_flux
+:%28land_surface%29%40context%7Eon_%28storm%40context%7Esource_%28water_runoff%29%29__time_integral_of_runoff_mass_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#time_integral_of_runoff_mass_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Eon_%28storm%40context%7Esource_%28water_runoff%29%29> ;
+			skos:prefLabel "land_surface_storm_water__time_integral_of_runoff_mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eon_terrain%7Eleft%40context%7Esource_%28channel%7Estream%40context%7Epart_reach%29%40context%7Esink_%28water_flowing%29__volume_flux
 :%28land_surface%29%40context%7Eon_terrain%7Eleft%40context%7Esource_%28channel%7Estream%40context%7Epart_reach%29%40context%7Esink_%28water_flowing%29__volume_flux rdf:type owl:NamedIndividual ,
@@ -12249,6 +12305,20 @@
 			svu:hasRecordedProperty <property#contributing_area> ;
 			svu:hasRecordedPhenomenon <phenomenon#land_surface_transect> ;
 			skos:prefLabel "land_surface_transect__contributing_area"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eon_%28%28vegetation_canopy%29%40medium_water%29__mass-per-area_density
+:%28land_surface%29%40context%7Eon_%28%28vegetation_canopy%29%40medium_water%29__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#mass-per-area_density> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Eon_%28%28vegetation_canopy%29%40medium_water%29> ;
+			skos:prefLabel "land_surface_vegetation_canopy_water__mass-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40role%7Esource_vegetation%40role%7Esource_water%40role%7Emain_evapotranspiration__evapotranspiration_mass_flux
+:%28land_surface%29%40role%7Esource_vegetation%40role%7Esource_water%40role%7Emain_evapotranspiration__evapotranspiration_mass_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#evapotranspiration_mass_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40role%7Esource_vegetation%40role%7Esource_water%40role%7Emain_evapotranspiration> ;
+			skos:prefLabel "land_surface_vegetation_water__evapotranspiration_mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eon_%28water_baseflow%29__baseflow_mass_flux
 :%28land_surface%29%40context%7Eon_%28water_baseflow%29__baseflow_mass_flux rdf:type owl:NamedIndividual ,
@@ -12354,6 +12424,13 @@
 			svu:hasRecordedProperty <property#north_derivative_of_pressure_head> ;
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Eon_water> ;
 			skos:prefLabel "land_surface_water__north_derivative_of_pressure_head"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Esource_%28water_evaporation%29__potential_evaporation_energy_flux
+:%28land_surface%29%40context%7Esource_%28water_evaporation%29__potential_evaporation_energy_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#potential_evaporation_energy_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Esource_%28water_evaporation%29> ;
+			skos:prefLabel "land_surface_water__potential_evaporation_energy_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Esource_%28water_evaporation%29__potential_evaporation_volume_flux
 :%28land_surface%29%40context%7Esource_%28water_evaporation%29__potential_evaporation_volume_flux rdf:type owl:NamedIndividual ,
@@ -12761,6 +12838,13 @@
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7E0-to-10cm-below_soil> ;
 			skos:prefLabel "land_surface~0-to-10cm-below_soil__temperature"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7E0-to-10cm-below_%28soil%40medium_water%29__mass-per-area_density
+:%28land_surface%29%40context%7E0-to-10cm-below_%28soil%40medium_water%29__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#mass-per-area_density> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7E0-to-10cm-below_%28soil%40medium_water%29> ;
+			skos:prefLabel "land_surface~0-to-10cm-below_soil_water__mass-per-area_density"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7E0-to-10cm-below_%28soil%40medium_water%29__month-specific_anomaly_of_volume_fraction
 :%28land_surface%29%40context%7E0-to-10cm-below_%28soil%40medium_water%29__month-specific_anomaly_of_volume_fraction rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -12782,6 +12866,13 @@
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7E10-to-40cm-below_soil> ;
 			skos:prefLabel "land_surface~10-to-40cm-below_soil__temperature"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7E10-to-40cm-below_%28soil%40medium_water%29__mass-per-area_density
+:%28land_surface%29%40context%7E10-to-40cm-below_%28soil%40medium_water%29__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#mass-per-area_density> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7E10-to-40cm-below_%28soil%40medium_water%29> ;
+			skos:prefLabel "land_surface~10-to-40cm-below_soil_water__mass-per-area_density"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7E10-to-40cm-below_%28soil%40medium_water%29__volume_fraction
 :%28land_surface%29%40context%7E10-to-40cm-below_%28soil%40medium_water%29__volume_fraction rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -12795,6 +12886,13 @@
 			svu:hasRecordedProperty <property#temperature> ;
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7E100-to-200cm-below_soil> ;
 			skos:prefLabel "land_surface~100-to-200cm-below_soil__temperature"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7E100-to-200cm-below_%28soil%40medium_water%29__mass-per-area_density
+:%28land_surface%29%40context%7E100-to-200cm-below_%28soil%40medium_water%29__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#mass-per-area_density> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7E100-to-200cm-below_%28soil%40medium_water%29> ;
+			skos:prefLabel "land_surface~100-to-200cm-below_soil_water__mass-per-area_density"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7E100-to-200cm-below_%28soil%40medium_water%29__volume_fraction
 :%28land_surface%29%40context%7E100-to-200cm-below_%28soil%40medium_water%29__volume_fraction rdf:type owl:NamedIndividual ,
@@ -12852,6 +12950,13 @@
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7E40-to-100cm-below_soil> ;
 			skos:prefLabel "land_surface~40-to-100cm-below_soil__temperature"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7E40-to-100cm-below_%28soil%40medium_water%29__mass-per-area_density
+:%28land_surface%29%40context%7E40-to-100cm-below_%28soil%40medium_water%29__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#mass-per-area_density> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7E40-to-100cm-below_%28soil%40medium_water%29> ;
+			skos:prefLabel "land_surface~40-to-100cm-below_soil_water__mass-per-area_density"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7E40-to-100cm-below_%28soil%40medium_water%29__volume_fraction
 :%28land_surface%29%40context%7E40-to-100cm-below_%28soil%40medium_water%29__volume_fraction rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -12901,6 +13006,13 @@
 			svu:hasRecordedPhenomenon <phenomenon#land%40medium_%28vegetation_canopy%29> ;
 			skos:prefLabel "land_vegetation_canopy__area_fraction"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#land%40context%7Eon_%28%28vegetation_canopy%29%40context%7Esource_%28water_evaporation%29%29__evaporation_energy_flux
+:land%40context%7Eon_%28%28vegetation_canopy%29%40context%7Esource_%28water_evaporation%29%29__evaporation_energy_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#evaporation_energy_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#land%40context%7Eon_%28%28vegetation_canopy%29%40context%7Esource_%28water_evaporation%29%29> ;
+			skos:prefLabel "land_vegetation_canopy_water__evaporation_energy_flux"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#land%40context%7Eon_%28%28vegetation_canopy%29%40context%7Esource_%28water_evaporation%29%29__evaporation_volume_flux
 :land%40context%7Eon_%28%28vegetation_canopy%29%40context%7Esource_%28water_evaporation%29%29__evaporation_volume_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -12949,6 +13061,13 @@
 			svu:hasRecordedProperty <property#interception_volume_flux> ;
 			svu:hasRecordedPhenomenon <phenomenon#%28land%7Evegetated_floor%29%40role%7Esink_water%40role%7Emain_interception> ;
 			skos:prefLabel "land_vegetation_floor_water__interception_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#land%40context%7Eon_%28vegetation%40role%7Esource_water%40role%7Emain_transpiration%29__transpiration_energy_flux
+:land%40context%7Eon_%28vegetation%40role%7Esource_water%40role%7Emain_transpiration%29__transpiration_energy_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#transpiration_energy_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#land%40context%7Eon_%28vegetation%40role%7Esource_water%40role%7Emain_transpiration%29> ;
+			skos:prefLabel "land_vegetation_water__transpiration_energy_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#light-bulb%7Eincandescent__radiant_intensity
 :light-bulb%7Eincandescent__radiant_intensity rdf:type owl:NamedIndividual ,
@@ -16590,74 +16709,74 @@
 			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28water%40context%7Ein_%28debris_deposit%29%29> ;
 			skos:prefLabel "sea_bottom_water_debris_deposit__initial_length"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29__shear_dynamic_viscosity
-:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29__shear_dynamic_viscosity rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29__shear_dynamic_viscosity
+:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29__shear_dynamic_viscosity rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#shear_dynamic_viscosity> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29> ;
 			skos:prefLabel "sea_bottom_water_debris_flow__dynamic_shear_viscosity"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29__herschel-bulkley_coefficient
-:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29__herschel-bulkley_coefficient rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29__herschel-bulkley_coefficient
+:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29__herschel-bulkley_coefficient rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#herschel-bulkley_coefficient> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29> ;
 			skos:prefLabel "sea_bottom_water_debris_flow__herschel-bulkley_coefficient"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29__herschel-bulkley_exponent
-:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29__herschel-bulkley_exponent rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29__herschel-bulkley_exponent
+:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29__herschel-bulkley_exponent rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#herschel-bulkley_exponent> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29> ;
 			skos:prefLabel "sea_bottom_water_debris_flow__herschel-bulkley_exponent"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29__mass-per-volume_density
-:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29__mass-per-volume_density rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29__mass-per-volume_density
+:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29__mass-per-volume_density rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#mass-per-volume_density> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29> ;
 			skos:prefLabel "sea_bottom_water_debris_flow__mass-per-volume_density"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29__thickness
-:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29__thickness rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29__thickness
+:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29__thickness rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#thickness> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29> ;
 			skos:prefLabel "sea_bottom_water_debris_flow__thickness"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29__yield_stress
-:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29__yield_stress rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29__yield_stress
+:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29__yield_stress rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#yield_stress> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_debris%29> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29> ;
 			skos:prefLabel "sea_bottom_water_debris_flow__yield_stress"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_plug-layer%29%29__thickness
-:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_plug-layer%29%29__thickness rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29plug-layer%29%29__thickness
+:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29plug-layer%29%29__thickness rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#thickness> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_plug-layer%29%29> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29plug-layer%29%29> ;
 			skos:prefLabel "sea_bottom_water_debris_flow_plug-layer__thickness"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_shear-layer%29%29__flow_speed
-:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_shear-layer%29%29__flow_speed rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29shear-layer%29%29__flow_speed
+:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29shear-layer%29%29__flow_speed rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#flow_speed> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_shear-layer%29%29> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29shear-layer%29%29> ;
 			skos:prefLabel "sea_bottom_water_debris_flow_shear-layer__flow_speed"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_shear-layer%29%29__thickness
-:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_shear-layer%29%29__thickness rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29shear-layer%29%29__thickness
+:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29shear-layer%29%29__thickness rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#thickness> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_shear-layer%29%29> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29shear-layer%29%29> ;
 			skos:prefLabel "sea_bottom_water_debris_flow_shear-layer__thickness"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_top%29%29__linear_speed
-:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_top%29%29__linear_speed rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29top%29%29__linear_speed
+:%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29top%29%29__linear_speed rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#linear_speed> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_top%29%29> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28sea_bottom%29%40context%7Eat_%28%28water_flowing%29%40context%7Ein_%28debris_flow%29%29top%29%29> ;
 			skos:prefLabel "sea_bottom_water_debris_flow_top__speed"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28sea_bottom%29%40context%7Eat_%28water%40role%7Emedium%29__heat_energy_flux
@@ -21735,6 +21854,13 @@
 			svu:hasRecordedProperty <property#thickness> ;
 			svu:hasRecordedPhenomenon <body#soil_root-zone> ;
 			skos:prefLabel "soil_root-zone__thickness"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28soil_root-zone%29%40medium_water__mass-per-area_density
+:%28soil_root-zone%29%40medium_water__mass-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#mass-per-area_density> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28soil_root-zone%29%40medium_water> ;
+			skos:prefLabel "soil_root-zone_water__mass-per-area_density"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#soil%40medium_sand__mass_fraction
 :soil%40medium_sand__mass_fraction rdf:type owl:NamedIndividual ,

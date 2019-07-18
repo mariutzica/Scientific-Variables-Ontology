@@ -18,7 +18,7 @@
 #    RolePhenomenon   
 # 
 #################################################################
-##Last generated on: 2019-07-17 09:48 
+##Last generated on: 2019-07-18 15:46 
 
 ###Role
 
@@ -60,6 +60,12 @@
 			svu:hasAttribute <attribute#mature> ;
 			svu:hasAttribute <attribute#dry> ;
 			skos:prefLabel "crop~mature~dry"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/rolephenomenon#crops
+:crops rdf:type owl:NamedIndividual ,
+			svu:RolePhenomenon ;
+			svu:isPluralityOf :crop ;
+			skos:prefLabel "crops"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/rolephenomenon#debris
 :debris rdf:type owl:NamedIndividual ,

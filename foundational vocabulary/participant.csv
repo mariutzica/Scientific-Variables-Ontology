@@ -42,9 +42,11 @@ channel_centerline_endpoint~downstream,second,"phenomenon, "
 channel~river_bed,exchange,"body, "
 channel~stream@context~part_reach,exchange,
 water_flowing,main,"phenomenon, "
-crop@context~source_(residue_pool_decomposition),source,
-crop_biomass~microbial_decomposition,source,"phenomenon, "
+crop@context~in_(biomass~microbial_decomposition),source,
 soil_decomposition,source,"phenomenon, "
+crop@context~source_((residue_pool)@context~part_root-and-rhizodeposit),sink,
+biomass,main,"matter, "
+crop@context~source_(residue_pool_decomposition),source,
 crop_canopy,sink,"phenomenon, "
 radiation~solar,main,"phenomenon, "
 crop_canopy,source,"phenomenon, "
@@ -95,6 +97,7 @@ radiation~incoming~shortwave,main,"phenomenon, "
 land_surface,source,"phenomenon, "
 air,sink,"matter, "
 radiation~outgoing~longwave,main,"phenomenon, "
+vegetation,source,"body, process, "
 land~vegetated_floor,sink,"body, "
 model@context~in_(grid_axis~x),first,
 model@context~in_axis~east,second,
@@ -238,6 +241,7 @@ soil,medium,"matter, "
 soil,sink,"matter, "
 fertilizer,main,"role, "
 soil,source,"matter, "
+soil~bare,source,"matter, "
 sulfuric-acid,first,"matter, "
 toyota-corolla~2008,sink,"body, "
 water,first,"matter, "

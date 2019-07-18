@@ -364,7 +364,7 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
             elif pref_opt == ['']:
                 pref_temp = 'phenomenon'
             else:
-                print('Warning, class not found: '+phen, pref_opt)
+                print('1 Warning, class not found: '+phen, pref_opt)
             count = 0;
             if 'phenomenon' in pref_opt:
                 count+=1
@@ -637,7 +637,7 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 process = vocab.loc[ index, 'process' ].split(', ')
                 for p in process:
                     p_temp = urllib.quote( p )
-                    ttl_file.write( attribute.format( 'undergoesProcess', \
+                    ttl_file.write( attribute.format( 'describesProcess', \
                         '<process#' + p_temp.replace('~','%7E')+'>', ';' ) )
 
         # PHENOMENON relationships
@@ -647,7 +647,7 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 process = vocab.loc[ index, 'process' ].split(', ')
                 for p in process:
                     p_temp = urllib.quote( p )
-                    ttl_file.write( attribute.format( 'describesProcess', \
+                    ttl_file.write( attribute.format( 'undergoesProcess', \
                         '<process#' + p_temp.replace('~','%7E')+'>', ';' ) )
             if 'role' in vocab.columns.values:
                 if vocab.loc[ index, 'role' ] != '' :
@@ -665,6 +665,11 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                 vocab.loc[ index, 'abstraction' ] != '' :
                 abstr = urllib.quote( vocab.loc[ index, 'abstraction' ] )
                 ttl_file.write( attribute.format( 'isAbstractedBy', \
+                        '<abstraction#' + abstr.replace('~','%7E')+'>', ';' ) )
+            if 'hasabstraction' in vocab.columns.values and \
+                vocab.loc[ index, 'abstraction' ] != '' :
+                abstr = urllib.quote( vocab.loc[ index, 'abstraction' ] )
+                ttl_file.write( attribute.format( 'hasAbstraction', \
                         '<abstraction#' + abstr.replace('~','%7E')+'>', ';' ) )
             if 'trajectory' in vocab.columns.values and \
                 vocab.loc[ index, 'trajectory' ] != '' :
@@ -715,7 +720,7 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                                 pref_temp = 'phenomenon'
                             else:
                                 pref_temp = 'phenomenon'
-                                print('Warning, class not found: '+phen, pref_opt)
+                                print('2 Warning, class not found: '+phen, pref_opt)
                             medium = urllib.quote( medium )
                             ttl_file.write( attribute.format( 'hasObservedMediumPhenomenon', \
                                 '<'+pref_temp+'#' + medium.replace('~','%7E') + '>', ';' ) )
@@ -761,7 +766,8 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                                     pref_temp = 'rolephenomenon'
                                 else:
                                     pref_temp = 'phenomenon'
-                                    print('Warning, class not found: '+phen, pref_opt)
+                                    print(element)
+                                    print('3 Warning, class not found: '+phen, pref_opt)
                                 phen = urllib.quote( phen )
                                 ttl_file.write( attribute.format( 'hasObservedPhenomenon', \
                                     '<' + pref_temp + '#' + phen.replace('~','%7E') + '>', ';' ) )
@@ -789,7 +795,7 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                                     rel = 'hasObservedProcess'
                                 else:
                                     pref_temp = 'phenomenon'
-                                    print('Warning, class not found: '+phen, pref_opt)
+                                    print('4 Warning, class not found: '+phen, pref_opt)
                                 phen = urllib.quote( phen )
                                 ttl_file.write( attribute.format( rel, \
                                     '<' + pref_temp + '#' + phen.replace('~','%7E') + '>', ';' ) )
@@ -810,7 +816,7 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                                     pref_temp = 'phenomenon'
                                 else:
                                     pref_temp = 'phenomenon'
-                                    print('Warning, class not found: '+phen, pref_opt)
+                                    print('5 Warning, class not found: '+phen, pref_opt)
                                 phen = urllib.quote( phen )
                                 ttl_file.write( attribute.format( 'hasObservedPhenomenon', \
                                     '<' + pref_temp + '#' + phen.replace('~','%7E')+ '>', ';' ) )
@@ -838,7 +844,7 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                                     rel = 'hasAttribute'
                                 else:
                                     pref_temp = 'phenomenon'
-                                    print('Warning, class not found: '+phen, pref_opt)
+                                    print('6 Warning, class not found: '+phen, pref_opt)
                                 phen = urllib.quote( phen )
                                 ttl_file.write( attribute.format( rel, \
                                     '<' + pref_temp + '#' + phen.replace('~','%7E') + '>', ';' ) )

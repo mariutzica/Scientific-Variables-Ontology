@@ -23,8 +23,9 @@ channel~river_bed,sink,"body, "
 channel~river_bed,source,"body, "
 channel~stream@context~part_reach,sink,
 channel~stream@context~part_reach,source,
+crop@context~in_biomass,sink,
 crop@context~part_root,in,
-crop_biomass,sink,"phenomenon, "
+crop@context~source_((residue_pool)@context~part_root-and-rhizodeposit),in,
 delta_beds~bottomset,on,"body, "
 delta_beds~foreset,on,"body, "
 delta_beds~topset,on,"body, "
@@ -93,6 +94,7 @@ ozone_molecule,part,"body, "
 projectile_impaction,source,"phenomenon, "
 projectile_trajectory_origin,at,"phenomenon, "
 projectile_trajectory_target,at,"phenomenon, "
+residue_pool,part,"phenomenon, "
 sea@context~adjacent_shoreline,sink,
 sea@context~at_(ice_bottom),below,
 sea@context~at_(ice_surface),above,

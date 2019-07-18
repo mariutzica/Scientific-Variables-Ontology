@@ -18,7 +18,7 @@
 #    Participant   
 # 
 #################################################################
-##Last generated on: 2019-07-17 09:48 
+##Last generated on: 2019-07-18 15:46 
 
 ###Participant
 
@@ -324,19 +324,12 @@
 			svu:hasParticipantPhenomenon <phenomenon#water_flowing> ;
 			skos:prefLabel "(water_flowing)@role~main"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/participant#%28crop%40context%7Esource_%28residue_pool_decomposition%29%29%40role%7Esource
-:%28crop%40context%7Esource_%28residue_pool_decomposition%29%29%40role%7Esource rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/participant#%28crop%40context%7Ein_%28biomass%7Emicrobial_decomposition%29%29%40role%7Esource
+:%28crop%40context%7Ein_%28biomass%7Emicrobial_decomposition%29%29%40role%7Esource rdf:type owl:NamedIndividual ,
 			svu:Participant ;
 			svu:hasParticipantRole <role#source> ;
-			svu:hasParticipantPhenomenon <phenomenon#crop%40context%7Esource_%28residue_pool_decomposition%29> ;
-			skos:prefLabel "(crop@context~source_(residue_pool_decomposition))@role~source"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/participant#%28crop_biomass%7Emicrobial_decomposition%29%40role%7Esource
-:%28crop_biomass%7Emicrobial_decomposition%29%40role%7Esource rdf:type owl:NamedIndividual ,
-			svu:Participant ;
-			svu:hasParticipantRole <role#source> ;
-			svu:hasParticipantPhenomenon <phenomenon#crop_biomass%7Emicrobial_decomposition> ;
-			skos:prefLabel "(crop_biomass~microbial_decomposition)@role~source"@en .
+			svu:hasParticipantPhenomenon <phenomenon#crop%40context%7Ein_%28biomass%7Emicrobial_decomposition%29> ;
+			skos:prefLabel "(crop@context~in_(biomass~microbial_decomposition))@role~source"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/participant#%28soil_decomposition%29%40role%7Esource
 :%28soil_decomposition%29%40role%7Esource rdf:type owl:NamedIndividual ,
@@ -344,6 +337,27 @@
 			svu:hasParticipantRole <role#source> ;
 			svu:hasParticipantPhenomenon <phenomenon#soil_decomposition> ;
 			skos:prefLabel "(soil_decomposition)@role~source"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/participant#%28crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29%29%40role%7Esink
+:%28crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29%29%40role%7Esink rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasParticipantRole <role#sink> ;
+			svu:hasParticipantPhenomenon <phenomenon#crop%40context%7Esource_%28%28residue_pool%29%40context%7Epart_root-and-rhizodeposit%29> ;
+			skos:prefLabel "(crop@context~source_((residue_pool)@context~part_root-and-rhizodeposit))@role~sink"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/participant#biomass%40role%7Emain
+:biomass%40role%7Emain rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasParticipantRole <role#main> ;
+			svu:hasParticipantPhenomenon <matter#biomass> ;
+			skos:prefLabel "biomass@role~main"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/participant#%28crop%40context%7Esource_%28residue_pool_decomposition%29%29%40role%7Esource
+:%28crop%40context%7Esource_%28residue_pool_decomposition%29%29%40role%7Esource rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasParticipantRole <role#source> ;
+			svu:hasParticipantPhenomenon <phenomenon#crop%40context%7Esource_%28residue_pool_decomposition%29> ;
+			skos:prefLabel "(crop@context~source_(residue_pool_decomposition))@role~source"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/participant#%28crop_canopy%29%40role%7Esink
 :%28crop_canopy%29%40role%7Esink rdf:type owl:NamedIndividual ,
@@ -694,6 +708,13 @@
 			svu:hasParticipantRole <role#main> ;
 			svu:hasParticipantPhenomenon <phenomenon#radiation%7Eoutgoing%7Elongwave> ;
 			skos:prefLabel "radiation~outgoing~longwave@role~main"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/participant#vegetation%40role%7Esource
+:vegetation%40role%7Esource rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasParticipantRole <role#source> ;
+			svu:hasParticipantPhenomenon <body#vegetation> ;
+			skos:prefLabel "vegetation@role~source"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/participant#%28land%7Evegetated_floor%29%40role%7Esink
 :%28land%7Evegetated_floor%29%40role%7Esink rdf:type owl:NamedIndividual ,
@@ -1695,6 +1716,13 @@
 			svu:hasParticipantRole <role#source> ;
 			svu:hasParticipantPhenomenon <matter#soil> ;
 			skos:prefLabel "soil@role~source"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/participant#soil%7Ebare%40role%7Esource
+:soil%7Ebare%40role%7Esource rdf:type owl:NamedIndividual ,
+			svu:Participant ;
+			svu:hasParticipantRole <role#source> ;
+			svu:hasParticipantPhenomenon <matter#soil%7Ebare> ;
+			skos:prefLabel "soil~bare@role~source"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/participant#sulfuric-acid%40role%7Efirst
 :sulfuric-acid%40role%7Efirst rdf:type owl:NamedIndividual ,

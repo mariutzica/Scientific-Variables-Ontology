@@ -18,7 +18,7 @@
 #    Abstraction   
 # 
 #################################################################
-##Last generated on: 2019-07-17 09:48 
+##Last generated on: 2019-07-18 15:46 
 
 ###Mathematical Abstraction
 
@@ -117,27 +117,6 @@
 :datum rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			skos:prefLabel "datum"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/abstraction#datum_ellipsoid
-:datum_ellipsoid rdf:type owl:NamedIndividual ,
-			svu:MathematicalAbstraction ;
-			svu:isAbstractedBy :ellipsoid ;
-			svu:hasAbstraction :datum ;
-			skos:prefLabel "datum_ellipsoid"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/abstraction#datum_ellipsoid_surface
-:datum_ellipsoid_surface rdf:type owl:NamedIndividual ,
-			svu:MathematicalAbstraction ;
-			svu:isAbstractedBy :surface ;
-			svu:hasAbstraction :datum_ellipsoid ;
-			skos:prefLabel "datum_ellipsoid_surface"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/abstraction#datum_geodesic
-:datum_geodesic rdf:type owl:NamedIndividual ,
-			svu:MathematicalAbstraction ;
-			svu:isAbstractedBy :geodesic ;
-			svu:hasAbstraction :datum ;
-			skos:prefLabel "datum_geodesic"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#ellipse
 :ellipse rdf:type owl:NamedIndividual ,
@@ -674,13 +653,6 @@
 			svu:MathematicalAbstraction ;
 			skos:prefLabel "profile"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/abstraction#profile_bottom
-:profile_bottom rdf:type owl:NamedIndividual ,
-			svu:MathematicalAbstraction ;
-			svu:hasPart <part#bottom> ;
-			svu:hasAbstraction :profile ;
-			skos:prefLabel "profile_bottom"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#ray
 :ray rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
@@ -759,20 +731,6 @@
 ###Physical Abstraction
 
 
-###  http://www.geoscienceontology.org/svo/svl/abstraction#airfoil_drift
-:airfoil_drift rdf:type owl:NamedIndividual ,
-			svu:PhysicalAbstraction ;
-			svu:undergoesProcess <process#drifting> ;
-			svu:isTypeOf :airfoil ;
-			skos:prefLabel "airfoil"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/abstraction#airfoil_lift
-:airfoil_lift rdf:type owl:NamedIndividual ,
-			svu:PhysicalAbstraction ;
-			svu:undergoesProcess <process#lift> ;
-			svu:isTypeOf :airfoil ;
-			skos:prefLabel "airfoil"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#axis%7Eeast
 :axis%7Eeast rdf:type owl:NamedIndividual ,
 			svu:PhysicalAbstraction ;
@@ -796,8 +754,8 @@
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#equation%7Econvection-diffusion
 :equation%7Econvection-diffusion rdf:type owl:NamedIndividual ,
 			svu:PhysicalAbstraction ;
-			svu:undergoesProcess <process#convection> ;
-			svu:undergoesProcess <process#diffusion> ;
+			svu:describesProcess <process#convection> ;
+			svu:describesProcess <process#diffusion> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Convection-diffusion_equation" ;
 			svu:isTypeOf :equation ;
 			skos:prefLabel "equation~convection-diffusion"@en .
@@ -867,6 +825,12 @@
 			svu:PhysicalAbstraction ;
 			svu:isTypeOf :line ;
 			skos:prefLabel "streamline"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/abstraction#transect
+:transect rdf:type owl:NamedIndividual ,
+			svu:PhysicalAbstraction ;
+			svu:isTypeOf :line ;
+			skos:prefLabel "transect"@en .
 
 
 ###Physical Abstraction Part
@@ -987,14 +951,6 @@
 			svu:isTypeOf :line ;
 			skos:prefLabel "equator"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/abstraction#equator_plane
-:equator_plane rdf:type owl:NamedIndividual ,
-			svu:PhysicalAbstraction ;
-			rdf:type svu:Part ;
-			svu:isAbstractedBy :plane ;
-			svu:hasAbstraction :equator ;
-			skos:prefLabel "equator_plane"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#equilibrium-line
 :equilibrium-line rdf:type owl:NamedIndividual ,
 			svu:PhysicalAbstraction ;
@@ -1081,7 +1037,8 @@
 			svu:PhysicalAbstraction ;
 			rdf:type svu:Part ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/North_Magnetic_Pole" ;
-			svu:isTypeOf :pole%7Enorth ;
+			svu:isTypeOf :pole ;
+			svu:hasAttribute <attribute#north> ;
 			svu:hasAttribute <attribute#magnetic> ;
 			skos:prefLabel "pole~north~magnetic"@en .
 
@@ -1090,7 +1047,8 @@
 			svu:PhysicalAbstraction ;
 			rdf:type svu:Part ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/North_Pole" ;
-			svu:isTypeOf :pole%7Enorth ;
+			svu:isTypeOf :pole ;
+			svu:hasAttribute <attribute#north> ;
 			svu:hasAttribute <attribute#terrestrial> ;
 			skos:prefLabel "pole~north~terrestrial"@en .
 
@@ -1098,7 +1056,8 @@
 :pole%7Enorth%7Evirtual rdf:type owl:NamedIndividual ,
 			svu:PhysicalAbstraction ;
 			rdf:type svu:Part ;
-			svu:isTypeOf :pole%7Enorth ;
+			svu:isTypeOf :pole ;
+			svu:hasAttribute <attribute#north> ;
 			svu:hasAttribute <attribute#virtual> ;
 			skos:prefLabel "pole~north~virtual"@en .
 
@@ -1116,7 +1075,8 @@
 			svu:PhysicalAbstraction ;
 			rdf:type svu:Part ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/South_Magnetic_Pole" ;
-			svu:isTypeOf :pole%7Esouth ;
+			svu:isTypeOf :pole ;
+			svu:hasAttribute <attribute#south> ;
 			svu:hasAttribute <attribute#magnetic> ;
 			skos:prefLabel "pole~south~magnetic"@en .
 
@@ -1125,7 +1085,8 @@
 			svu:PhysicalAbstraction ;
 			rdf:type svu:Part ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/South_Pole" ;
-			svu:isTypeOf :pole%7Esouth ;
+			svu:isTypeOf :pole ;
+			svu:hasAttribute <attribute#south> ;
 			svu:hasAttribute <attribute#terrestrial> ;
 			skos:prefLabel "pole~south~terrestrial"@en .
 
@@ -1282,22 +1243,6 @@
 			rdf:type svu:Part ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Crest_and_trough" ;
 			skos:prefLabel "crest"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/abstraction#crest_x-section
-:crest_x-section rdf:type owl:NamedIndividual ,
-			svu:MathematicalAbstraction ;
-			rdf:type svu:Part ;
-			svu:isAbstractedBy :x-section ;
-			svu:hasAbstraction :crest ;
-			skos:prefLabel "crest_x-section"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/abstraction#crest_x-section_vertex
-:crest_x-section_vertex rdf:type owl:NamedIndividual ,
-			svu:MathematicalAbstraction ;
-			rdf:type svu:Part ;
-			svu:isAbstractedBy :vertex ;
-			svu:hasAbstraction :crest_x-section ;
-			skos:prefLabel "crest_x-section_vertex"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#crestline
 :crestline rdf:type owl:NamedIndividual ,
@@ -1470,14 +1415,6 @@
 			svu:hasAttribute <attribute#horizontal> ;
 			skos:prefLabel "surface~horizontal"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/abstraction#surface_viewpoint
-:surface_viewpoint rdf:type owl:NamedIndividual ,
-			svu:MathematicalAbstraction ;
-			rdf:type svu:Part ;
-			svu:isAbstractedBy :viewpoint ;
-			svu:hasAbstraction :surface ;
-			skos:prefLabel "surface_viewpoint"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#trough
 :trough rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
@@ -1501,70 +1438,6 @@
 			skos:altLabel "cross-section"@en ;
 			skos:prefLabel "x-section"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/abstraction#x-section_parabola
-:x-section_parabola rdf:type owl:NamedIndividual ,
-			svu:MathematicalAbstraction ;
-			rdf:type svu:Part ;
-			svu:isAbstractedBy :parabola ;
-			svu:hasAbstraction :x-section ;
-			skos:prefLabel "x-section_parabola"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/abstraction#x-section_top
-:x-section_top rdf:type owl:NamedIndividual ,
-			svu:MathematicalAbstraction ;
-			rdf:type svu:Part ;
-			svu:hasPart <part#top> ;
-			svu:hasAbstraction :x-section ;
-			skos:prefLabel "x-section_top"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/abstraction#x-section_trapezoid
-:x-section_trapezoid rdf:type owl:NamedIndividual ,
-			svu:MathematicalAbstraction ;
-			rdf:type svu:Part ;
-			svu:isAbstractedBy :trapezoid ;
-			svu:hasAbstraction :x-section ;
-			skos:prefLabel "x-section_trapezoid"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/abstraction#x-section_trapezoid_bottom
-:x-section_trapezoid_bottom rdf:type owl:NamedIndividual ,
-			svu:MathematicalAbstraction ;
-			rdf:type svu:Part ;
-			svu:hasPart <part#bottom> ;
-			svu:hasAbstraction :x-section_trapezoid ;
-			skos:prefLabel "x-section_trapezoid_bottom"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/abstraction#x-section_trapezoid_side
-:x-section_trapezoid_side rdf:type owl:NamedIndividual ,
-			svu:MathematicalAbstraction ;
-			rdf:type svu:Part ;
-			svu:hasPart <part#side> ;
-			svu:hasAbstraction :x-section_trapezoid ;
-			skos:prefLabel "x-section_trapezoid_side"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/abstraction#x-section_trapezoid_side%7Eleft
-:x-section_trapezoid_side%7Eleft rdf:type owl:NamedIndividual ,
-			svu:MathematicalAbstraction ;
-			rdf:type svu:Part ;
-			svu:hasPart <part#side%7Eleft> ;
-			svu:hasAbstraction :x-section_trapezoid ;
-			skos:prefLabel "x-section_trapezoid_side~left"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/abstraction#x-section_trapezoid_side%7Eright
-:x-section_trapezoid_side%7Eright rdf:type owl:NamedIndividual ,
-			svu:MathematicalAbstraction ;
-			rdf:type svu:Part ;
-			svu:hasPart <part#side%7Eright> ;
-			svu:hasAbstraction :x-section_trapezoid ;
-			skos:prefLabel "x-section_trapezoid_side~right"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/abstraction#x-section_trapezoid_top
-:x-section_trapezoid_top rdf:type owl:NamedIndividual ,
-			svu:MathematicalAbstraction ;
-			rdf:type svu:Part ;
-			svu:hasPart <part#top> ;
-			svu:hasAbstraction :x-section_trapezoid ;
-			skos:prefLabel "x-section_trapezoid_top"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#x-section%7Ehorizontal
 :x-section%7Ehorizontal rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
@@ -1572,14 +1445,6 @@
 			svu:isTypeOf :x-section ;
 			svu:hasAttribute <attribute#horizontal> ;
 			skos:prefLabel "x-section~horizontal"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/abstraction#x-section%7Ehorizontal_circle
-:x-section%7Ehorizontal_circle rdf:type owl:NamedIndividual ,
-			svu:MathematicalAbstraction ;
-			rdf:type svu:Part ;
-			svu:isAbstractedBy :circle ;
-			svu:hasAbstraction :x-section%7Ehorizontal ;
-			skos:prefLabel "x-section~horizontal_circle"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#x-section%7Evertical
 :x-section%7Evertical rdf:type owl:NamedIndividual ,

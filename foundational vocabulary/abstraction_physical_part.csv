@@ -13,7 +13,6 @@ endpoint,endpoint~downstream,endpoint~downstream,,,downstream,,
 endpoint,endpoint~upstream,endpoint~upstream,,,upstream,,
 point,epicenter,epicenter,,,,,http://en.wikipedia.org/wiki/Epicenter
 line,equator,equator,,,,,http://en.wikipedia.org/wiki/Equator
-,equator_plane,equator_plane,equator,plane,,,
 line,equilibrium-line,equilibrium-line,,,equilibrium,,
 point,geocenter,geocenter,,,,,
 line,geodesic,geodesic,,,,,http://en.wikipedia.org/wiki/Geodesic
@@ -24,12 +23,12 @@ isosurface,isosurface~potential-temperature,isosurface~potential-temperature,,,p
 mask,land-mask,land-mask,,,land-presence,,
 point,pole,pole,,,,,https://en.wikipedia.org/wiki/Poles_of_astronomical_bodies
 pole,pole~north,pole~north,,,north,,https://en.wikipedia.org/wiki/North_Pole_(disambiguation)
-pole~north,pole~north~magnetic,pole~north~magnetic,,,magnetic,,https://en.wikipedia.org/wiki/North_Magnetic_Pole
-pole~north,pole~north~terrestrial,pole~north~terrestrial,,,terrestrial,,https://en.wikipedia.org/wiki/North_Pole
-pole~north,pole~north~virtual,pole~north~virtual,,,virtual,,
+pole,pole~north~magnetic,pole~north~magnetic,,,"north, magnetic",,https://en.wikipedia.org/wiki/North_Magnetic_Pole
+pole,pole~north~terrestrial,pole~north~terrestrial,,,"north, terrestrial",,https://en.wikipedia.org/wiki/North_Pole
+pole,pole~north~virtual,pole~north~virtual,,,"north, virtual",,
 pole,pole~south,pole~south,,,south,,https://en.wikipedia.org/wiki/South_Pole_(disambiguation)
-pole~south,pole~south~magnetic,pole~south~magnetic,,,magnetic,,https://en.wikipedia.org/wiki/South_Magnetic_Pole
-pole~south,pole~south~terrestrial,pole~south~terrestrial,,,terrestrial,,https://en.wikipedia.org/wiki/South_Pole
+pole,pole~south~magnetic,pole~south~magnetic,,,"south, magnetic",,https://en.wikipedia.org/wiki/South_Magnetic_Pole
+pole,pole~south~terrestrial,pole~south~terrestrial,,,"south, terrestrial",,https://en.wikipedia.org/wiki/South_Pole
 mask,sea-mask,sea-mask,,,sea-presence,,
 line,shoreline,shoreline,,,,,
 ,shoreline_axis~x,shoreline_axis~x,shoreline,axis~x,,,
