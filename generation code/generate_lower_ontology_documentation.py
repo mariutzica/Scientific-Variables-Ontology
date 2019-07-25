@@ -15,6 +15,50 @@ import datetime
 import pytz
 import urllib
 
+def get_label_from_id(oid):
+    label = urllib.parse.unquote(oid.split('#')[1])
+    label = label.replace('%7E','~')
+    return label
+
+def get_rel_value(item, prop, cols, pref = 'http://www.geoscienceontology.org/svo/svu#'):
+    rel_value = ''
+    if pref+prop in cols:
+        rel_value = item[pref+prop]
+    return rel_value
+        
+def add_context(vals, txt):
+    cont = ''
+    if vals != '' and vals != 'none':
+        if ', ' in vals and '#' in vals:
+            cont += '<p>' + txt + ':</p>\n<div><ul>'
+            for a in vals.split(', '):
+                a_label = get_label_from_id(a)
+                cont += """<li><a href="{}">{}</a></li>""".format(a,a_label)
+            cont += "</ul></div>"
+        elif '#' in vals:
+            v_label = get_label_from_id(vals)
+            cont += '<p>' + txt + \
+                ' <a href={}>{}</a>'.format(vals,v_label) + '</p>'
+        else:
+            cont += '<p>' + txt + ' ' + vals + '.</p>'
+    return cont
+
+def get_wikipedia_content(link):
+    wiki_context = ''
+    if link != '' and not '#' in link:
+        pagename = link.split('/')[-1]
+        if 'index.php' in pagename:
+            pagename = pagename.split('title=')[1].split('&')[0]
+        query_url = "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&titles={}&exintro=&exsentences=2&explaintext=&redirects=&format=json".format(pagename)
+        r = requests.get(url = query_url)
+        temp = r.json()
+        for _,val in temp['query']['pages'].items():
+            try:
+                wiki_context = val['extract']
+            except:
+                print('Wikipedia page {} not valid.'.format(link))
+    return wiki_context
+
 def print_index_html(cl,items,desc,date):
     svu_pref = "http://www.geoscienceontology.org/svo/svu#"
     head = \
@@ -58,6 +102,7 @@ def print_index_html(cl,items,desc,date):
     text_body = ''
     cols = items.columns.values
     for _,item in items.iterrows():
+
         #Phenomena that are declared in other namespaces, not Phenomenon
         if 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type' in cols and cl == 'Phenomenon':
             phen_class = item['http://www.w3.org/1999/02/22-rdf-syntax-ns#type']
@@ -72,122 +117,149 @@ def print_index_html(cl,items,desc,date):
 
         address = item['entity']
         label = item['http://www.w3.org/2004/02/skos/core#prefLabel']
-        #print(label)
-        altlabel = ''
-        if 'http://www.w3.org/2004/02/skos/core#altLabel' in cols:
-            altlabel = item['http://www.w3.org/2004/02/skos/core#altLabel']
-        wikipedia = ''
-        if svu_pref+'hasAssociatedWikipediaPage' in cols:
-            wikipedia = item[svu_pref+'hasAssociatedWikipediaPage']
-        nominalization = ''
-        if svu_pref+'hasNominalization' in cols:
-            nominalization = item[svu_pref+'hasNominalization']
-        present_tense = ''
-        if svu_pref+'hasPresentTense' in cols:
-            present_tense = item[svu_pref+'hasPresentTense']
-        present_participle = ''
-        if svu_pref+'hasPresentParticiple' in cols:
-            present_participle = item[svu_pref+'hasPresentParticiple']
-        isnoun = ''
-        if svu_pref+'isNoun' in cols:
-            isnoun = item[svu_pref+'isNoun']
 
-        trajectory = ''
-        if svu_pref+'hasTrajectory' in cols:
-            trajectory = item[svu_pref+'hasTrajectory']
-        trajectorydir = ''
-        if svu_pref+'hasTrajectoryDirection' in cols:
-            trajectorydir = item[svu_pref+'hasTrajectoryDirection']        
-        phenrole = ''
-        if svu_pref+'hasRole' in cols:
-            phenrole = item[svu_pref+'hasRole']
-        phenomenon = ''
-        if svu_pref+'hasPhenomenon' in cols:
-            phenomenon = item[svu_pref+'hasPhenomenon']
-        hasprocess = ''
-        if svu_pref+'hasProcess' in cols:
-            hasprocess = item[svu_pref+'hasProcess']
-        part = ''
-        if svu_pref+'hasPart' in cols:
-            part = item[svu_pref+'hasPart']
-        body = ''
-        if svu_pref+'hasBody' in cols:
-            body = item[svu_pref+'hasBody']
-        matter = ''
-        if svu_pref+'hasMatter' in cols:
-            matter = item[svu_pref+'hasMatter']
-        process = ''
-        if svu_pref+'undergoesProcess' in cols:
-            process = item[svu_pref+'undergoesProcess']
-        desc_process = ''
-        if svu_pref+'describesProcess' in cols:
-            desc_process = item[svu_pref+'describesProcess']
-        expras = ''
-        if svu_pref+'isExpressedAs' in cols:
-            expras = item[svu_pref+'isExpressedAs']
-        form = ''
-        if svu_pref+'hasForm' in cols:
-            form = item[svu_pref+'hasForm']
-        attributes = ''
-        if svu_pref + 'hasAttribute' in cols:
-            attributes = item[svu_pref+'hasAttribute']
-        plurality = ''
-        if svu_pref + 'isPluralityOf' in cols:
-            plurality = item[svu_pref+'isPluralityOf']
-        typeof = ''
-        if svu_pref+'isTypeOf' in cols:
-            typeof = item[svu_pref+'isTypeOf']
-        corr_prop = ''
-        if svu_pref+'correspondsToProperty' in cols:
-            corr_prop = item[svu_pref+'correspondsToProperty']
-        value = ''
-        if svu_pref+'hasValue' in cols:
-            value = item[svu_pref+'hasValue']
-        assocmatr = ''
-        if svu_pref+'hasAssociatedMatter' in cols:
-            assocmatr = item[svu_pref+'hasAssociatedMatter']
-        assunits = ''
-        if svu_pref+'hasAssignedUnits' in cols:
-            assunits = item[svu_pref+'hasAssignedUnits']
-        units = ''
-        if svu_pref+'hasUnits' in cols:
-            units = item[svu_pref+'hasUnits']  
-        context = ''
-        if svu_pref+'hasContext' in cols:
-            context = item[svu_pref+'hasContext']
-        reference = ''
-        if svu_pref+'hasReference' in cols:
-            reference = item[svu_pref+'hasReference']
-        contextrel = ''
-        if svu_pref+'hasContextRelationship' in cols:
-            contextrel = item[svu_pref+'hasContextRelationship']
-        refrel = ''
-        if svu_pref+'hasReferenceRelationship' in cols:
-            refrel = item[svu_pref+'hasReferenceRelationship']
-        partrole = ''
-        if svu_pref+'hasParticipantRole' in cols:
-            partrole = item[svu_pref+'hasParticipantRole']
-        participant = ''
-        if svu_pref+'hasParticipantObject' in cols:
-            participant = item[svu_pref+'hasParticipantObject']
-        medium = ''
-        if svu_pref+'hasMediumObject' in cols:
-            medium = item[svu_pref+'hasMediumObject']
-        contextobj = ''
-        if svu_pref+'hasObject' in cols:
-            contextobj = item[svu_pref+'hasObject']
-        headop = ''
-        if svu_pref+'hasHeadOperator' in cols:
-            headop = item[svu_pref+'hasHeadOperator']
-        modop = ''
-        if svu_pref+'modifiesOperator' in cols:
-            modop = item[svu_pref+'modifiesOperator']
-        multunits = ''
-        if svu_pref+'hasMultiplierUnits' in cols:
-            multunits = item[svu_pref+'hasMultiplierUnits'] 
-        powfunits = ''
-        if svu_pref+'hasPowerFactor' in cols:
-            powfunits = item[svu_pref+'hasPowerFactor'] 
+
+        # print universal properties for all entities
+        altlabel  = get_rel_value(item, 'altLabel', cols, \
+                                 pref = 'http://www.w3.org/2004/02/skos/core#')
+        wikipedia = get_rel_value(item, 'hasAssociatedWikipediaPage', cols )
+
+        wiki_content = get_wikipedia_content(wikipedia)
+        wiki_context = ''
+        if wiki_content != '':
+            wiki_context = "<p>This instance has a related <a href='{}' target='_blank'>"+\
+                        "Wikipedia page</a>. Short extract:<br/>" +\
+                        "<em>{}</em>".format(wikipedia,''.join(wiki_content))
+        altlabel_cont = add_context(altlabel, "Alternative labels for this instance are")
+
+        # print core phenomenon components
+        body          = get_rel_value(item, 'hasBody', cols )
+        matter        = get_rel_value(item, 'hasMatter', cols )
+        form          = get_rel_value(item, 'hasForm', cols )
+        part          = get_rel_value(item, 'hasPart', cols )
+        trajectory    = get_rel_value(item, 'hasTrajectory', cols )
+        trajectorydir = get_rel_value(item, 'hasTrajectoryDirection', cols )
+        phenrole      = get_rel_value(item, 'hasRole', cols )
+        phenomenon    = get_rel_value(item, 'hasPhenomenon', cols )
+        hasprocess    = get_rel_value(item, 'hasProcess', cols )
+        process       = get_rel_value(item, 'undergoesProcess', cols )
+        desc_process  = get_rel_value(item, 'describesProcess', cols )
+        abstraction   = get_rel_value(item, 'hasAbstraction', cols )
+        abstractionof = get_rel_value(item, 'isAbstractionOf', cols )
+        containsabstraction   = \
+                        get_rel_value(item, 'containsAbstraction', cols )
+        containsabstractionof = \
+                        get_rel_value(item, 'containsAbstractionOf', cols )
+        abstractedby  = get_rel_value(item, 'isAbstractedBy', cols ) 
+        expras        = get_rel_value(item, 'isExpressedAs', cols )
+        attributes    = get_rel_value(item, 'hasAttribute', cols )
+        plurality     = get_rel_value(item, 'isPluralityOf', cols )
+        typeof        = get_rel_value(item, 'isTypeOf', cols )
+        pluraltypeof  = get_rel_value(item, 'isPluralityTypeOf', cols )
+
+        typeof_cont = add_context(typeof, "This instance is a narrower concept derived from")
+        typeof_cont += add_context(pluraltypeof, "This instance is the plural narrower concept derived from")
+        plurality_cont = add_context(plurality, "This instance is a plurality of")                        
+        attr_cont = add_context(attributes, "This instance has the attribute")
+        process_cont = ''
+        process_cont += add_context(process, "This instance describes something undergoing the process")
+        process_cont += add_context(desc_process, "This instance describes the process")
+
+        parts_cont = ''
+        parts_cont += add_context(phenomenon, "This instance has the phenomenon component")
+        parts_cont += add_context(matter, "This instance has the matter component")
+        parts_cont += add_context(form, "This instance has the form component")
+        parts_cont += add_context(body, "This instance has the body component")
+        parts_cont += add_context(abstraction, "This instance has the abstraction component")
+        parts_cont += add_context(part, "This instance has the part component")
+        parts_cont += add_context(trajectory, "This instance has the trajectory component")
+        parts_cont += add_context(trajectorydir, "This instance has the trajectory direction component")
+        parts_cont += add_context(phenrole, "This instance has the role component")
+        expras_cont = add_context(expras, "The property of this substance is expressed with respect to the substance")            
+        abstr_cont = add_context(abstractedby, "This instance is abstracted by")
+        abstr_cont += add_context(abstractionof, "This instance is an abstraction of")
+        abstr_cont += add_context(containsabstractionof, "This instance contains an abstraction of")
+
+        # print process properties
+        nominalization     = get_rel_value(item, 'hasNominalization', cols )
+        present_tense      = get_rel_value(item, 'hasPresentTense', cols )
+        present_participle = get_rel_value(item, 'hasPresentParticiple', cols )
+        isnoun             = get_rel_value(item, 'isNoun', cols )
+
+        pos_cont = add_context(nominalization, "This process has the nominalization language cue")
+        pos_cont += add_context(present_tense, "This process has the present tense language cue")
+        pos_cont += add_context(present_participle, "This process has the present participle language cue")
+        isnoun_cont = ''
+        if isnoun == 'true':
+            isnoun_cont = """\n<p>This attribute is expressed as a noun.</p>"""
+        elif isnoun == 'false':
+            isnoun_cont = """\n<p>This attribute is expressed as an adjective.</p>"""
+        
+        # print attribute, operator and property specific properties
+        corr_prop     = get_rel_value(item, 'correspondsToProperty', cols )
+        value         = get_rel_value(item, 'hasValue', cols )
+        assocmatr     = get_rel_value(item, 'hasAssociatedMatter', cols )
+        assunits      = get_rel_value(item, 'hasAssignedUnits', cols )
+        units         = get_rel_value(item, 'hasUnits', cols )
+        headop        = get_rel_value(item, 'hasheadOperator', cols )
+        modop         = get_rel_value(item, 'modifiesOperator', cols )
+        indmodop      = get_rel_value(item, 'indirectlyModifiesOperator', cols )
+        multunits     = get_rel_value(item, 'hasMultiplierUnits', cols )
+        powfunits     = get_rel_value(item, 'hasPowerFactor', cols )
+        quantprocess  = get_rel_value(item, 'quantifiesProcess', cols )
+        processdef    = get_rel_value(item, 'isDefinedBy', cols )
+        propertytype  = get_rel_value(item, 'hasPropertyType', cols )
+        propertyrole  = get_rel_value(item, 'hasPropertyRole', cols )
+        propertyquant = get_rel_value(item, 'hasPropertyQuantification', cols )
+        apploperator  = get_rel_value(item, 'hasAppliedOperator', cols )
+        containsapploperator = \
+                        get_rel_value(item, 'containsAppliedOperator', cols )
+        derivation    = get_rel_value(item, 'isDerivedFrom', cols )
+        hasproperty   = get_rel_value(item, 'hasProperty', cols )
+
+        value_cont     = add_context(value, "This attribute corresponds to property value")        
+        assunits_cont  = add_context(assunits, "This attribute has the assigned units")
+        corrprop_cont  = add_context(corr_prop, "This attribute pertains to the property")
+        assocmatr_cont = add_context(assocmatr, \
+                         "This attribute inherently refers to a state of the matter instance")
+        
+        op_cont = add_context(headop, "This compound operator has the head operator")
+        op_cont += add_context(modop, "This compound operator modifies the operator")
+        op_cont += add_context(indmodop, "This instance indirectly modifies the operator")
+        units_cont = add_context(units, "This instance has the dimensional units string")
+        process_cont += add_context(quantprocess, "This instance quantifies the process")
+        process_cont += add_context(processdef, "This instance is defined by the process")
+        unitsmod_cont = add_context(powfunits, "This operator modifies the units of the "+\
+                                    "property it is applied to by raising the units to " +\
+                                    "the power of")                    
+        unitsmod_cont += add_context(multunits, "This operator modifies the units of "+\
+                                     "the property it is applied to by multiplying " +\
+                                     "those units by the units")
+        
+                    
+        proptype_cont = add_context(propertytype, "This instance has the property type")
+        proprole_cont = add_context(propertyrole, "This instance has the property role")
+        propquant_cont = add_context(propertyquant, "This instance has the property quantification")
+        derivation_cont = add_context(derivation, "This instance is derived from")
+        operator_cont = add_context(apploperator, "This instance has the applied operator")
+        operator_cont += add_context(containsapploperator, "This instance contains the applied operator")
+
+        hasprop_cont = add_context(hasproperty, "This instance describes the property")
+
+        # print assumption content
+        assumpt = get_rel_value(item, 'type', cols, pref = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#' )
+
+        assumpt_cont = ''
+        if assumpt != '' and cl == 'Assumption':
+            for a in assumpt.split(', '):
+                if 'geoscienceontology' in a:
+                    assumpt_label = get_label_from_id(a)
+                    if assumpt_label != 'Assumption':
+                        assumpt_cont += "\n<p>This assumption falls in the broader category "+\
+                                        "<a href='#{}'>{}</a>.</p>"\
+                                        .format(assumpt, assumpt_label)
+
+        # print role and relationship content
         role = ''
         if 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type' in cols and cl == 'Role':
             role = item['http://www.w3.org/1999/02/22-rdf-syntax-ns#type']
@@ -197,6 +269,7 @@ def print_index_html(cl,items,desc,date):
             else:
                 role = 'Participant'
                 role_href = 'http://www.geoscienceontology.org/svo/svu#Participant'
+        
         relationship = ''
         if 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type' in cols and cl == 'Relationship':
             relationship_temp = item['http://www.w3.org/1999/02/22-rdf-syntax-ns#type']
@@ -206,326 +279,8 @@ def print_index_html(cl,items,desc,date):
                 relationship += ', spatiotemporal'
             if 'Temporal' in relationship_temp:
                 relationship += ', temporal'
-            relationship = relationship.lstrip(', ')
-        assumpt = ''
-        if 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type' in cols and cl == 'Assumption':
-            assumpt = item['http://www.w3.org/1999/02/22-rdf-syntax-ns#type']
-        abstraction = ''
-        if svu_pref+'hasAbstraction' in cols:
-            abstraction = item[svu_pref+'hasAbstraction']  
-        abstractedby = ''
-        if svu_pref+'isAbstractedBy' in cols:
-            abstractedby = item[svu_pref+'isAbstractedBy']  
-        quantprocess = ''
-        if svu_pref+'quantifiesProcess' in cols:
-            quantprocess = item[svu_pref+'quantifiesProcess']  
-        processdef = ''
-        if svu_pref+'isDefinedBy' in cols:
-            processdef = item[svu_pref+'isDefinedBy']  
-        propertytype = ''
-        if svu_pref+'hasPropertyType' in cols:
-            propertytype = item[svu_pref+'hasPropertyType']  
-        propertyrole = ''
-        if svu_pref+'hasPropertyRole' in cols:
-            propertyrole = item[svu_pref+'hasPropertyRole']  
-        propertyquant = ''
-        if svu_pref+'hasPropertyQuantification' in cols:
-            propertyquant = item[svu_pref+'hasPropertyQuantification']  
-        operator = ''
-        if svu_pref+'hasOperator' in cols:
-            operator = item[svu_pref+'hasOperator']  
-        derivation = ''
-        if svu_pref+'isDerivedFrom' in cols:
-            derivation = item[svu_pref+'isDerivedFrom'] 
-        condattr = ''
-        if svu_pref+'hasConditionalAttribute' in cols:
-            condattr = item[svu_pref+'hasConditionalAttribute']  
-        hasproperty = ''
-        if svu_pref+'hasProperty' in cols:
-            hasproperty = item[svu_pref+'hasProperty']  
+            relationship = relationship.lstrip(', ')                        
 
-        
-        containscontext = ''
-        if svu_pref+'containsContext' in cols:
-            containscontext = item[svu_pref+'containsContext']  
-        containscontextobj = ''
-        if svu_pref+'containsContextObject' in cols:
-            containscontextobj = item[svu_pref+'containsContextObject']  
-        containsmedobj = ''
-        if svu_pref+'containsMediumObject' in cols:
-            containsmedobj = item[svu_pref+'containsMediumObject']  
-
-        wiki_context = ''
-        if wikipedia!='' and not '#' in wikipedia:
-            pagename = wikipedia.split('/')[-1]
-            if 'index.php' in pagename:
-                pagename = pagename.split('title=')[1].split('&')[0]
-            query_url = "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&titles={}&exintro=&exsentences=2&explaintext=&redirects=&format=json".format(pagename)
-            r = requests.get(url = query_url)
-            temp = r.json()
-            for _,val in temp['query']['pages'].items():
-                try:
-                    wiki_context = val['extract']
-                except:
-                    print('Wikipedia page {} not valid.'.format(wikipedia))
-        if wiki_context!='':
-            wiki_cont = """\n
-            This instance has a related <a href="{}" target="_blank">Wikipedia page</a>. Short extract:<br/> 
-            <em>{}</em>
-            """.format(wikipedia,''.join(wiki_context))
-        else:
-            wiki_cont = ''
-
-        
-        typeof_cont = ''
-        if typeof != '':
-            for typ in typeof.split(', '):
-                typeof_pref = typ.split('#')[0].split('/')[-1]
-                typeof_id = typ.split('#')[1]
-                if typeof_pref == cl.lower():
-                    try:
-                        typeof_label = items.loc[items['entity']==typeof_id,'http://www.w3.org/2004/02/skos/core#prefLabel'].iloc[0]            
-                        typeof_cont = """\n
-                            This instance is a narrower concept derived from <a href="#{}">{}</a>.
-                            """.format(typeof_id,typeof_label)
-                    except:
-                        print('typeof {} inheritance not found.'.format(typeof_id))
-                else:
-                    typ_url = typ.split('/')[-1].replace('#','#')
-                    typeof_cont = """\n
-                        This instance is a narrower concept derived from <a href="http://www.geoscienceontology.org/svo/svl/{}">{}</a>.
-                        """.format(typ_url,typeof_id)
-
-        process_cont = ''
-        if process != '':
-            for p in process.split(', '):
-                process_label = p.split('#')[1]
-                process_cont += """\n
-                    This instance describes something undergoing the process <a href="{}">{}</a>.
-                """.format(p,process_label)
-        if desc_process != '':
-            for p in desc_process.split(', '):
-                process_label = p.split('#')[1]
-                process_cont += """\n
-                    This instance describes the process <a href="{}">{}</a>.
-                """.format(p,process_label)
-        if quantprocess != '':
-            for p in quantprocess.split(', '):
-                process_label = p.split('#')[1]
-                process_cont += """\n
-                    This instance quantifies the process <a href="{}">{}</a>.
-                """.format(p,process_label)
-        if processdef != '':
-            for p in processdef.split(', '):
-                process_label = p.split('#')[1]
-                process_cont += """\n
-                    This instance is defined by the process <a href="{}">{}</a>.
-                """.format(p,process_label)
-        if hasprocess != '':
-            for p in hasprocess.split(', '):
-                process_label = p.split('#')[1]
-                process_cont += """\n
-                    This instance describes the process <a href="{}">{}</a>.
-                """.format(p,process_label)
-                
-        plurality_cont = ''
-        if plurality != '':
-            plurality_id = plurality.split('#')[1]
-            plurality_label = items.loc[items['entity']==plurality_id,'http://www.w3.org/2004/02/skos/core#prefLabel'].iloc[0]            
-            plurality_cont = """\n
-            This instance is a plurality of <a href="#{}">{}</a>.
-            """.format(plurality_id,plurality_label)
-
-        value_cont = ''
-        if value != '':
-            value_cont = """\n
-            Attribute corresponds to property value {}.
-            """.format(value)
-        
-        assunits_cont = ''
-        if assunits != '':
-            assunits_cont = """\n
-            Attribute has the assigned units {}.
-            """.format(assunits)
-            
-        pos_cont = ''
-        if present_tense != '' or present_participle != '' or nominalization != '':
-            pos_cont = """\n
-            This instance has the following language cues:<div><ul>
-            """
-            if present_tense != '':
-                pos_cont += """<li>present tense: {}</li>""".format(present_tense)
-            if present_participle != '':
-                pos_cont += """<li>present participle: {}</li>""".format(present_participle)
-            if nominalization != '':
-                pos_cont += """<li>nominalization: {}</li>""".format(nominalization)
-            pos_cont += '</ul></div>'
-            
-        expras_cont = ''
-        if expras != '':
-            expras_id = expras.split('#')[1]
-            try:
-                expras_label = items.loc[items['entity']==expras_id,'http://www.w3.org/2004/02/skos/core#prefLabel'].iloc[0]
-                expras_cont = """\n
-                    The property of this substance is expressed with respect to the substance <a href="#{}">{}</a>.
-                    """.format(expras_id,expras_label)
-            except:
-                expras_label = expras_id
-                expras_cont = """\n
-                The property of this substance is expressed with repspect to the substance <a href="http://www.geoscienceontology.org/matter#{}">{}</a>.
-                """.format(expras_id,expras_label)
-            
-
-        altlabel_cont = ''
-        if altlabel != '':
-            altlabel_cont = """\n
-            Alternative labels for this instance are: {}.
-            """.format(altlabel)
-
-        partrole_cont = ''
-        if partrole != '':
-            partrole_label = partrole.split('#')[1]
-            partrole_cont = """\n
-            The role for this participant is <a href="http://www.geoscienceontology.org/svo/svl/role#{}">{}</a>.
-            """.format(partrole_label, partrole_label)
-
-        corrprop_cont = ''
-        if corr_prop != '':
-            corr_prop_label = corr_prop.split('#')[1]                               
-            corrprop_cont = """\n
-            This attribute pertains to the property: <a href="http://www.geoscienceontology.org/svo/svl/property#{}">{}</a>.
-            """.format(corr_prop_label, corr_prop_label)
-        
-        assocmatr_cont = ''
-        if assocmatr != '':
-            assocmatr_label = assocmatr.split('#')[1]                               
-            assocmatr_cont = """\n
-            This attribute inherently refers to a state of the matter instance: <a href="http://www.geoscienceontology.org/svo/svl/matter#{}">{}</a>.
-            """.format(assocmatr_label, assocmatr_label)
-        
-        op_cont = ''
-        if headop != '':
-            headop_label = headop.split('#')[1] 
-            modop_label = modop.split('#')[1]
-            op_cont = """\n
-            This compound operator has the head operator <a href="http://www.geoscienceontology.org/svo/svl/operator#{}">{}</a>
-            and modifies the operator <a href="http://www.geoscienceontology.org/svo/svl/operator#{}">{}</a>.
-            """.format(headop_label, headop_label, modop_label, modop_label)
-            
-        isnoun_cont = ''
-        if isnoun != '':
-            if isnoun == 'true':
-                isnoun_cont = """\n
-                This attribute is expressed as a noun.
-                """
-            else:
-                isnoun_cont = """\n
-                This attribute is expressed as an adjective.
-                """
-            
-        attr_cont = ''
-        if attributes != '':
-            attr_cont = """\n
-            This instance has the following attributes:<div><ul>
-            """
-            for attr in attributes.split(', '):
-                attr_label = attr.split('#')[1]
-                attr_cont += """<li><a href="{}">{}</a></li>""".format(attr,attr_label)
-            attr_cont += '</ul></div>'
-
-        units_cont = ''
-        if units != '':
-            for unit in units.split(', '):
-                if unit != assunits:
-                    units_cont = """\n
-                    This instance has the dimensional units string {}.
-                    """.format(unit)
-        
-        unitsmod_cont = ''
-        if powfunits != '' and powfunits != 'none':
-            unitsmod_cont = """\n
-                    This operator modifies the units of the property it is applied to by
-                    raising the units to the power of {}.
-                    """.format(powfunits)
-                    
-        if multunits != '' and multunits != 'none':
-            unitsmod_cont = """\n
-                    This operator modifies the units of the property it is applied to by
-                    multiplying those units by the units {}.
-                    """.format(multunits)
-        
-        context_cont = ''
-        if context != '':
-            context_label = urllib.parse.unquote(context.split('#')[1])
-            context_label = context_label.replace('%7E','~')                                                               
-            context_cont = """\n
-                    This instance has the context <a href="{}">{}</a>.
-                    """.format(context,context_label)
-
-        reference_cont = ''
-        if reference != '':
-            reference_label = urllib.parse.unquote(reference.split('#')[1])
-            reference_label = reference_label.replace('%7E','~')
-            reference_cont = """\n
-                    This instance has the reference <a href="{}">{}</a>.
-                    """.format(reference,reference_label)
-
-        contains_cont = ''
-        if containscontext != '':
-            for c in containscontext.split(', '):
-                context_label = urllib.parse.unquote(c.split('#')[1])
-                context_label = context_label.replace('%7E','~')
-                contains_cont += """\n
-                    <p>This instance contains the context <a href="{}">{}</a>.</p>
-                    """.format(c,context_label)
-        if containscontextobj != '':
-            for c in containscontextobj.split(', '):
-                context_label = urllib.parse.unquote(c.split('#')[1])
-                context_label = context_label.replace('%7E','~')
-                contains_cont += """\n
-                    <p>This instance contains context with respect to the object <a href="{}">{}</a>.</p>
-                    """.format(c,context_label)
-        if containsmedobj != '':
-            for c in containsmedobj.split(', '):
-                context_label = urllib.parse.unquote(c.split('#')[1])
-                context_label = context_label.replace('%7E','~')
-                contains_cont += """\n
-                    <p>This instance contains context with respect to the medium <a href="{}">{}</a>.</p>
-                    """.format(c,context_label)
-                    
-        contextrel_cont = ''
-        if contextrel != '':
-            rel_label = contextrel.split('#')[1]
-            contextrel_cont = """\n
-                    This instance represents the context relationship <a href="{}">{}</a>.
-                    """.format(contextrel,rel_label)
-        
-        refrel_cont = ''
-        if refrel != '':
-            rel_label = refrel.split('#')[1]
-            refrel_cont = """\n
-                    This instance represents the reference relationship <a href="{}">{}</a>.
-                    """.format(refrel,rel_label)
-                    
-        contextobj_cont = ''
-        if contextobj != '' and cl != 'Phenomenon':
-            obj_id = max(contextobj.split(', '), key=len)
-            obj_label = urllib.parse.unquote(obj_id.split('#')[1])
-            obj_label = obj_label.replace('%7E','~')
-            contextobj_cont = """\n
-                    This instance represents the object <a href="{}">{}</a>.
-                    """.format(obj_id,obj_label)
-        elif contextobj != '':
-            contextobj_cont = """\n
-                    This instance refers to the following objects: <div><ul>
-                    """
-            for c in contextobj.split(', '):
-                obj_label = urllib.parse.unquote(c.split('#')[1])
-                obj_label = obj_label.replace('%7E','~')
-                contextobj_cont += """\n
-                    <li><a href="{}">{}</a></li>
-                    """.format(c,obj_label)
-            contextobj_cont += '</ul></div>\n'
         role_cont = ''
         if role != '':
             role_cont = """\n
@@ -538,135 +293,215 @@ def print_index_html(cl,items,desc,date):
             This relationship is applied to describe the following types of relationships: {}.
             """.format(relationship)
 
-        participant_cont = ''
-        if participant != '':
-            participant_cont = """\n
-            This phenomenon describes the following participants: <div><ul>
-            """
-            for p in participant.split(', '):
-                p_label = urllib.parse.unquote(p.split('#')[1])
-                p_label = p_label.replace('%7E','~')
-                participant_cont += \
-                """<li><a href="{}">{}</a></li>""".format(p,p_label)
-            participant_cont += "</ul></div>"
+        # print specialty phenomenon properties
+        has_context = ''
+
+        for rellink in ['Medium','Reference','Context','Participant']:
+            hasx           = get_rel_value(item, 'has{}'.format(rellink), cols)
+            hasphenomenon  = get_rel_value(item, 'has{}Phenomenon'\
+                                               .format(rellink), cols)
+            hasbody        = get_rel_value(item, 'has{}Body'\
+                                               .format(rellink), cols)
+            hasmatter      = get_rel_value(item, 'has{}Matter'\
+                                                .format(rellink), cols)
+            hasform        = get_rel_value(item, 'has{}Form'\
+                                                .format(rellink), cols)
+            haspart        = get_rel_value(item, 'has{}Part'\
+                                                .format(rellink), cols)
+            hastrajectory  = get_rel_value(item, 'has{}Trajectory'\
+                                                .format(rellink), cols)
+            hastrajdir     = get_rel_value(item, 'has{}TrajectoryDirection'\
+                                                .format(rellink), cols)
+            hasprocess     = get_rel_value(item, 'has{}Process'\
+                                                .format(rellink), cols)
+            hasrole        = get_rel_value(item, 'has{}Role'\
+                                                .format(rellink), cols)
+            hasabstraction = get_rel_value(item, 'has{}Abstraction'\
+                                                .format(rellink), cols)
+            hasattribute   = get_rel_value(item, 'has{}Attribute'\
+                                                .format(rellink), cols)
+            hasrelationship = get_rel_value(item, 'has{}Relationship'\
+                                               .format(rellink), cols)
             
-        medium_cont = ''
-        if medium != '':
-            medium_label = urllib.parse.unquote(medium.split('#')[1])
-            medium_label = medium_label.replace('%7E','~')
-            medium_cont = """\n
-            This phenomenon has the Medium Object:<a href="{}">{}</a>.
-            """.format(medium,medium_label)
+            has_context += add_context(hasx, \
+                        "This instance has the {}")\
+                                            .format(rellink.lower()+' ')  
+            has_context += add_context(hasphenomenon, \
+                        "This instance has the {}phenomenon")\
+                                            .format(rellink.lower()+' ')  
+            has_context += add_context(hasbody, \
+                        "This instance represents the {}body")\
+                                            .format(rellink.lower()+' ')  
+            has_context += add_context(hasmatter, \
+                        "This instance represents the {}matter")\
+                                            .format(rellink.lower()+' ')  
+            has_context += add_context(hasform, \
+                        "This instance represents the {}form")\
+                                            .format(rellink.lower()+' ')  
+            has_context += add_context(haspart, \
+                        "This instance represents the {}part")\
+                                            .format(rellink.lower()+' ')  
+            has_context += add_context(hasprocess, \
+                        "This instance represents the {}process")\
+                                            .format(rellink.lower()+' ')  
+            has_context += add_context(hastrajectory, \
+                        "This instance represents the {}trajectory")\
+                                            .format(rellink.lower()+' ')  
+            has_context += add_context(hastrajdir, \
+                        "This instance represents the {}trajectory direction")\
+                                            .format(rellink.lower()+' ')  
+            has_context += add_context(hasrole, \
+                        "This instance represents the {}role")\
+                                            .format(rellink.lower()+' ')  
+            has_context += add_context(hasabstraction, \
+                        "This instance represents the {}abstraction")\
+                                            .format(rellink.lower()+' ')  
+            has_context += add_context(hasattribute, \
+                        "This instance represents the {}attribute")\
+                                            .format(rellink.lower()+' ')  
+            has_context += add_context(hasrelationship, \
+                        "This instance represents the {}relationship")\
+                                            .format(rellink.lower()+' ')  
 
-        proptype_cont = ''
-        if propertytype != '':
-            pt_label = urllib.parse.unquote(propertytype.split('#')[1])
-            pt_label = pt_label.replace('%7E','~')
-            proptype_cont = """\n
-            This instance has the property type:<a href="{}">{}</a>.
-            """.format(propertytype,pt_label)
+                    
+        # print all contains relationships
+        contains_context = ''
 
-        proprole_cont = ''
-        if propertyrole != '':
-            pr_label = urllib.parse.unquote(propertyrole.split('#')[1])
-            pr_label = pr_label.replace('%7E','~')
-            proprole_cont = """\n
-            This instance has the property role:<a href="{}">{}</a>.
-            """.format(propertyrole,pr_label)
+        for rellink in ['','Medium','Reference','Context','Participant']:
+            containsphenomenon  = get_rel_value(item, 'contains{}Phenomenon'\
+                                               .format(rellink), cols)
+            containsbody        = get_rel_value(item, 'contains{}Body'\
+                                               .format(rellink), cols)
+            containsmatter      = get_rel_value(item, 'contains{}Matter'\
+                                                .format(rellink), cols)
+            containsform        = get_rel_value(item, 'contains{}Form'\
+                                                .format(rellink), cols)
+            containspart        = get_rel_value(item, 'contains{}Part'\
+                                                .format(rellink), cols)
+            containstrajectory  = get_rel_value(item, 'contains{}Trajectory'\
+                                                .format(rellink), cols)
+            containstrajdir     = get_rel_value(item, 'contains{}TrajectoryDirection'\
+                                                .format(rellink), cols)
+            containsprocess     = get_rel_value(item, 'contains{}Process'\
+                                                .format(rellink), cols)
+            containsrole        = get_rel_value(item, 'contains{}Role'\
+                                                .format(rellink), cols)
+            containsabstraction = get_rel_value(item, 'contains{}Abstraction'\
+                                                .format(rellink), cols)
+            containsattribute   = get_rel_value(item, 'contains{}Attribute'\
+                                                .format(rellink), cols)
 
-        propquant_cont = ''
-        if propertyquant != '':
-            pq_label = urllib.parse.unquote(propertyquant.split('#')[1])
-            pq_label = pq_label.replace('%7E','~')
-            propquant_cont = """\n
-            This instance has the property quantification:<a href="{}">{}</a>.
-            """.format(propertyquant,pq_label)
+        
+            contains_context += add_context(containsphenomenon, \
+                        "This variable contains the {}phenomenon")\
+                                            .format(rellink.lower()+' ')  
+            contains_context += add_context(containsbody, \
+                        "This variable contains the {}body")\
+                                            .format(rellink.lower()+' ')  
+            contains_context += add_context(containsmatter, \
+                        "This variable contains the {}matter")\
+                                            .format(rellink.lower()+' ')  
+            contains_context += add_context(containsform, \
+                        "This variable contains the {}form")\
+                                            .format(rellink.lower()+' ')  
+            contains_context += add_context(containspart, \
+                        "This variable contains the {}part")\
+                                            .format(rellink.lower()+' ')  
+            contains_context += add_context(containstrajectory, \
+                        "This variable contains the {}trajectory")\
+                                            .format(rellink.lower()+' ')  
+            contains_context += add_context(containstrajdir, \
+                        "This variable contains the {}trajectory direction")\
+                                            .format(rellink.lower()+' ')  
+            contains_context += add_context(containsprocess, \
+                        "This variable contains the {}process")\
+                                            .format(rellink.lower()+' ')  
+            contains_context += add_context(containsrole, \
+                        "This variable contains the {}role")\
+                                            .format(rellink.lower()+' ')  
+            contains_context += add_context(containsabstraction, \
+                        "This variable contains the {}abstraction")\
+                                            .format(rellink.lower()+' ')  
+            contains_context += add_context(containsattribute, \
+                        "This variable contains the {}attribute")\
+                                            .format(rellink.lower()+' ')  
 
-        derivation_cont = ''
-        if derivation != '':
-            d_label = urllib.parse.unquote(derivation.split('#')[1])
-            d_label = d_label.replace('%7E','~')
-            derivation_cont = """\n
-            This instance has is derived from:<a href="{}">{}</a>.
-            """.format(derivation,d_label)
+        # print all recorded relationships (Variable class)
+        recorded_context = ''
 
-        operator_cont = ''
-        if operator != '':
-            o_label = urllib.parse.unquote(operator.split('#')[1])
-            o_label = o_label.replace('%7E','~')
-            operator_cont = """\n
-            This instance has the applied operator:<a href="{}">{}</a>.
-            """.format(operator,o_label)
+        for rellink in ['','Medium','Reference','Context','Participant']:
+            recordedphenomenon  = get_rel_value(item, 'hasRecorded{}Phenomenon'\
+                                                .format(rellink), cols)
+            recordedbody        = get_rel_value(item, 'hasRecorded{}Body'\
+                                                .format(rellink), cols)
+            recordedmatter      = get_rel_value(item, 'hasRecorded{}Matter'\
+                                                .format(rellink), cols)
+            recordedform        = get_rel_value(item, 'hasRecorded{}Form'\
+                                                .format(rellink), cols)
+            recordedpart        = get_rel_value(item, 'hasRecorded{}Part'\
+                                                .format(rellink), cols)
+            recordedtrajectory  = get_rel_value(item, 'hasRecorded{}Trajectory'\
+                                                .format(rellink), cols)
+            recordedtrajdir     = get_rel_value(item, 'hasRecorded{}TrajectoryDirection'\
+                                                .format(rellink), cols)
+            recordedprocess     = get_rel_value(item, 'hasRecorded{}Process'\
+                                                .format(rellink), cols)
+            recordedrole        = get_rel_value(item, 'hasRecorded{}Role'\
+                                                .format(rellink), cols)
+            recordedabstraction = get_rel_value(item, 'hasRecorded{}Abstraction'\
+                                                .format(rellink), cols)
+            recordedattribute   = get_rel_value(item, 'hasRecorded{}Attribute'\
+                                                .format(rellink), cols)
 
-        hasprop_cont = ''
-        if hasproperty != '':
-            p_label = urllib.parse.unquote(hasproperty.split('#')[1])
-            p_label = p_label.replace('%7E','~')
-            hasprop_cont = """\n
-            This instance describes the property: <a href="{}">{}</a>.
-            """.format(hasproperty,p_label)
+        
+            recorded_context += add_context(recordedphenomenon, \
+                        "This variable has the recorded {}phenomenon")\
+                                            .format(rellink.lower()+' ')  
+            recorded_context += add_context(recordedbody, \
+                        "This variable has the recorded {}body")\
+                                            .format(rellink.lower()+' ')  
+            recorded_context += add_context(recordedmatter, \
+                        "This variable has the recorded {}matter")\
+                                            .format(rellink.lower()+' ')  
+            recorded_context += add_context(recordedform, \
+                        "This variable has the recorded {}form")\
+                                            .format(rellink.lower()+' ')  
+            recorded_context += add_context(recordedpart, \
+                        "This variable has the recorded {}part")\
+                                            .format(rellink.lower()+' ')  
+            recorded_context += add_context(recordedtrajectory, \
+                        "This variable has the recorded {}trajectory")\
+                                            .format(rellink.lower()+' ')  
+            recorded_context += add_context(recordedtrajdir, \
+                        "This variable has the recorded {}trajectory direction")\
+                                            .format(rellink.lower()+' ')  
+            recorded_context += add_context(recordedprocess, \
+                        "This variable has the recorded {}process")\
+                                            .format(rellink.lower()+' ')  
+            recorded_context += add_context(recordedrole, \
+                        "This variable has the recorded {}role")\
+                                            .format(rellink.lower()+' ')  
+            recorded_context += add_context(recordedabstraction, \
+                        "This variable has the recorded {}abstraction")\
+                                            .format(rellink.lower()+' ')  
+            recorded_context += add_context(recordedattribute, \
+                        "This variable has the recorded {}attribute")\
+                                            .format(rellink.lower()+' ')  
+                
 
-#        condattr_cont = ''
-#        if condattr != '':
-#            ca_label = urllib.parse.unquote(condattr.split('#')[1])
-#            ca_label = ca_label.replace('%7E','~')
-#            condattr_cont = """\n
-#            This instance is dependent on the conditional attribute:<a href="{}">{}</a>.
-#            """.format(condattr,ca_label)
+        recordedunits        = get_rel_value(item, 'hasRecordedUnits', cols)
+        recordedproperty     = get_rel_value(item, 'hasRecordedProperty', cols)
+        recordedmodproperty  = get_rel_value(item, 'hasRecordedModifiedProperty', cols)
+        recordedapploperator = get_rel_value(item, 'hasRecordedAppliedOperator', cols)
 
-        abstr_cont = ''
-        if abstractedby != '':
-            abstractedby_label = abstractedby.split('#')[1]
-            if abstraction != '':
-                abstraction_label = abstraction.split('#')[1]
-                abstr_cont = """\n
-                    This abstraction represents <a href="#{}">{}</a> as abstracted by <a href="#{}">{}</a>.
-                    """.format(abstraction_label, abstraction_label, abstractedby_label, abstractedby_label)
-            else:
-                abstr_cont = """\n
-                    This phenomenon is abstracted by <a href="{}">{}</a>.
-                    """.format(abstractedby, abstractedby_label)
-        assumpt_cont = ''
-        if assumpt != '':
-            for a in assumpt.split(', '):
-                if 'geoscienceontology' in a:
-                    assumpt_label = a.split('#')[1]
-                    if assumpt_label != 'Assumption':
-                        assumpt_cont += """\n
-                            <p>This assumption falls in the broader category <a href="#{}">{}</a>.</p>
-                            """.format(assumpt_label, assumpt_label)
-            
-        parts_cont = ''
-        if matter != '' or body != '' or part != '' or form != '' or trajectory != '' or trajectorydir != '' or phenrole != '' or phenomenon != '':
-            parts_cont = """This instance has the following components:<div><ul>"""
-        if phenomenon != '':
-            phen_label = phenomenon.split('#')[1]
-            parts_cont += """<li>phenomenon: <a href="{}">{}</a></li>""".format(phenomenon,phen_label)
-        if matter != '':
-            matter_label = matter.split('#')[1]
-            parts_cont += """<li>matter (substance): <a href="{}">{}</a></li>""".format(matter,matter_label)
-        if form != '':
-            form_label = form.split('#')[1]                                    
-            parts_cont += """<li>form: <a href="{}">{}</a></li>""".format(form,form_label)
-        if body != '':
-            body_label = body.split('#')[1]
-            body_url = body.split('/')[-1].replace('#','#')
-            parts_cont += """<li>body: <a href="http://www.geoscienceontology.org/svo/svl/{}">{}</a></li>""".format(body_url,body_label)
-        if part != '':
-            part_label = part.split('#')[1]
-            part_url = part.split('/')[-1].replace('#','#')
-            parts_cont += """<li>part: <a href="http://www.geoscienceontology.org/svo/svl/{}">{}</a></li>""".format(part_url,part_label)
-        if trajectory != '':
-            traj_label = trajectory.split('#')[1]
-            parts_cont += """<li>trajectory (path): <a href="{}">{}</a></li>""".format(trajectory,traj_label)
-        if trajectorydir != '':
-            traj_label = trajectorydir.split('#')[1]
-            parts_cont += """<li>trajectory direction: <a href="{}">{}</a></li>""".format(trajectorydir,traj_label)
-        if phenrole != '':
-            role_label = phenrole.split('#')[1]
-            parts_cont += """<li>role: <a href="{}">{}</a></li>""".format(phenrole,role_label)
-        if parts_cont != '':
-            parts_cont += '</ul></div>'
+        recorded_context += add_context(recordedunits, \
+                        "This variable has the recorded units")
+        recorded_context += add_context(recordedproperty, \
+                        "This variable has the recorded property")
+        recorded_context += add_context(recordedmodproperty, \
+                        "This variable has the recorded modified property")
+        recorded_context += add_context(recordedapploperator, \
+                        "This variable has the recorded applied operator")
     
         text_body += """
                     <h4 id='{}'>{}</h4>""".format(address,label)
@@ -681,7 +516,7 @@ def print_index_html(cl,items,desc,date):
         text_body += printp(altlabel_cont)
         text_body += printp(abstr_cont)
         text_body += printp(plurality_cont)
-        text_body += printp(wiki_cont)
+        text_body += printp(wiki_context)
         text_body += printp(typeof_cont)
         text_body += printp(expras_cont)
         text_body += printp(parts_cont)
@@ -697,26 +532,17 @@ def print_index_html(cl,items,desc,date):
         text_body += printp(role_cont)
         text_body += printp(rel_cont)
         text_body += printp(assumpt_cont)
-        text_body += printp(contains_cont)
-        text_body += printp(reference_cont)
-        text_body += printp(participant_cont)
-        text_body += printp(medium_cont)
+        text_body += printp(contains_context)
         text_body += printp(proptype_cont)
         text_body += printp(proprole_cont)
         text_body += printp(propquant_cont)
         text_body += printp(derivation_cont)
         text_body += printp(operator_cont)
         text_body += printp(hasprop_cont)
-#        text_body += printp(condattr_cont)
-        if cl!='Phenomenon' and cl!='Property' and cl!='Variable':
-            text_body += printp(contextrel_cont)
-            text_body += printp(refrel_cont)
-            text_body += printp(partrole_cont)
-            text_body += printp(op_cont)
-            text_body += printp(unitsmod_cont)
-        if cl!='Property':
-            text_body += printp(context_cont)
-            text_body += printp(contextobj_cont)
+        text_body += printp(op_cont)
+        text_body += printp(has_context)
+        text_body += printp(unitsmod_cont)
+        text_body += printp(recorded_context)
     text = head + text_body + foot
     return text
                 
@@ -866,24 +692,24 @@ desc_variable = """This is the documentation for the Variable Ontology. All inst
                 listed here. To reference the original list of CSDMS Standard Names, please visit the 
                 <a href="https://csdms.colorado.edu/wiki/CSN_Searchable_List" target="_blank">CSN website</a>."""
 
-ext = '../core ontology files/'
-#test = write_to_file(ext+'body/','Body',desc_body)
-#test = write_to_file(ext+'form/','Form',desc_form)
-#test = write_to_file(ext+'matter/','Matter',desc_matter)
-#test = write_to_file(ext+'process/','Process',desc_process)
-#test = write_to_file(ext+'part/','Part',desc_part)
-#test = write_to_file(ext+'attribute/','Attribute',desc_attribute)
-#test = write_to_file(ext+'trajectory/','Trajectory',desc_trajectory)
-#test = write_to_file(ext+'trajectorydirection/','TrajectoryDirection',desc_trajectorydir)
-#test = write_to_file(ext+'role/','Role',desc_role)
-#test = write_to_file(ext+'rolephenomenon/','RolePhenomenon',desc_rolephen)
-#test = write_to_file(ext+'relationship/','Relationship',desc_relationship)
-#test = write_to_file(ext+'abstraction/','Abstraction',desc_abstraction)
-#test = write_to_file(ext+'assumption/','Assumption',desc_assumption)
-#test = write_to_file(ext+'context/','Context',desc_context)
-test = write_to_file(ext+'reference/','Reference',desc_reference)
-#test = write_to_file(ext+'operator/','Operator',desc_operator)
-#test = write_to_file(ext+'participant/','Participant',desc_participant)
-#test = write_to_file(ext+'phenomenon/','Phenomenon',desc_phenomenon)
-#test = write_to_file(ext+'property/','Property',desc_property)
-#test = write_to_file(ext+'variable/','Variable',desc_variable)
+ext = '../core ontology files/svl/'
+test = write_to_file(ext+'body/1.0.0/','Body',desc_body)
+test = write_to_file(ext+'form/1.0.0/','Form',desc_form)
+test = write_to_file(ext+'matter/1.0.0/','Matter',desc_matter)
+test = write_to_file(ext+'process/1.0.0/','Process',desc_process)
+test = write_to_file(ext+'part/1.0.0/','Part',desc_part)
+test = write_to_file(ext+'attribute/1.0.0/','Attribute',desc_attribute)
+test = write_to_file(ext+'trajectory/1.0.0/','Trajectory',desc_trajectory)
+test = write_to_file(ext+'trajectorydirection/1.0.0/','TrajectoryDirection',desc_trajectorydir)
+test = write_to_file(ext+'role/1.0.0/','Role',desc_role)
+test = write_to_file(ext+'rolephenomenon/1.0.0/','RolePhenomenon',desc_rolephen)
+test = write_to_file(ext+'relationship/1.0.0/','Relationship',desc_relationship)
+test = write_to_file(ext+'abstraction/1.0.0/','Abstraction',desc_abstraction)
+test = write_to_file(ext+'assumption/1.0.0/','Assumption',desc_assumption)
+test = write_to_file(ext+'context/1.0.0/','Context',desc_context)
+test = write_to_file(ext+'reference/1.0.0/','Reference',desc_reference)
+test = write_to_file(ext+'operator/1.0.0/','Operator',desc_operator)
+test = write_to_file(ext+'participant/1.0.0/','Participant',desc_participant)
+test = write_to_file(ext+'phenomenon/1.0.0/','Phenomenon',desc_phenomenon)
+test = write_to_file(ext+'property/1.0.0/','Property',desc_property)
+test = write_to_file(ext+'variable/1.0.0/','Variable',desc_variable)

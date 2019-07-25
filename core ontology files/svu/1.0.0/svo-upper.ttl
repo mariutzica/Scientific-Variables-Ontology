@@ -83,6 +83,10 @@
 :describesProcess rdf:type owl:ObjectProperty .
 
 
+###  http://www.geoscienceontology.org/svo/svu#hasAbstraction
+:hasAbstraction rdf:type owl:ObjectProperty .
+
+
 ###  http://www.geoscienceontology.org/svo/svu#hasAppliedAbstraction
 :hasAppliedAbstraction rdf:type owl:ObjectProperty .
 
@@ -127,7 +131,7 @@
 
 ###  http://www.geoscienceontology.org/svo/svu#hasHeadOperator
 :hasHeadOperator rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf :hasOperator ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
                  rdfs:label "has head operator" .
 
 
@@ -141,6 +145,10 @@
 
 ###  http://www.geoscienceontology.org/svo/svu#hasObservedContext
 :hasObservedContext rdf:type owl:ObjectProperty .
+
+
+###  http://www.geoscienceontology.org/svo/svu#hasObservedMediumPhenomenon
+:hasObservedMediumPhenomenon rdf:type owl:ObjectProperty .
 
 
 ###  http://www.geoscienceontology.org/svo/svu#hasObservedParticipant
@@ -169,6 +177,10 @@
 
 ###  http://www.geoscienceontology.org/svo/svu#hasParticipantRole
 :hasParticipantRole rdf:type owl:ObjectProperty .
+
+
+###  http://www.geoscienceontology.org/svo/svu#hasPhenomenon
+:hasPhenomenon rdf:type owl:ObjectProperty .
 
 
 ###  http://www.geoscienceontology.org/svo/svu#hasPropertyQuantification
@@ -206,6 +218,10 @@
 
 ###  http://www.geoscienceontology.org/svo/svu#hasReferenceRelationship
 :hasReferenceRelationship rdf:type owl:ObjectProperty .
+
+
+###  http://www.geoscienceontology.org/svo/svu#hasRole
+:hasRole rdf:type owl:ObjectProperty .
 
 
 ###  http://www.geoscienceontology.org/svo/svu#hasTrajectory
@@ -273,10 +289,9 @@
                     rdfs:label "has multiplier units" .
 
 
-###  http://www.geoscienceontology.org/svo/svu#hasPowerUnits
-:hasPowerUnits rdf:type owl:DatatypeProperty ;
-               rdfs:subPropertyOf owl:topDataProperty ;
-               rdfs:label "has power units" .
+###  http://www.geoscienceontology.org/svo/svu#hasPowerFactor
+:hasPowerFactor rdf:type owl:DatatypeProperty ;
+                rdfs:label "has power factor" .
 
 
 ###  http://www.geoscienceontology.org/svo/svu#hasUnits

@@ -18,7 +18,7 @@
 #    Operator   
 # 
 #################################################################
-##Last generated on: 2019-07-18 15:46 
+##Last generated on: 2019-07-24 22:22 
 
 ###Operator
 
@@ -1220,131 +1220,14 @@
 ###(Compound)Operator
 
 
-###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_anomaly_of_forecast_of_ten-day_time_integral
-:cumulative_anomaly_of_forecast_of_ten-day_time_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "T" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :cumulative_anomaly ;
-			svu:modifiesOperator :forecast_of_ten-day_time_integral ;
-			skos:prefLabel "cumulative_anomaly_of_forecast_of_ten-day_time_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_x_component
-:time_derivative_of_x_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "T^-1" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :time_derivative ;
-			svu:modifiesOperator :x_component ;
-			skos:prefLabel "time_derivative_of_x_component"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#z_integral_of_u_component
-:z_integral_of_u_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :z_integral ;
-			svu:modifiesOperator :u_component ;
-			skos:prefLabel "z_integral_of_u_component"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#azimuth_angle_of_gradient
-:azimuth_angle_of_gradient rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "rad" ;
-			svu:hasPowerFactor 0.0 ;
-			svu:hasHeadOperator :azimuth_angle ;
-			svu:modifiesOperator :gradient ;
-			skos:prefLabel "azimuth_angle_of_gradient"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#east_derivative_of_north_component_of_z_integral
-:east_derivative_of_north_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :east_derivative ;
-			svu:modifiesOperator :north_component_of_z_integral ;
-			skos:prefLabel "east_derivative_of_north_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#month-specific_z-score_of_one-month_one-day_mean
-:month-specific_z-score_of_one-month_one-day_mean rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_z-score_of_one-month_time_integral
+:cumulative_z-score_of_one-month_time_integral rdf:type owl:NamedIndividual ,
 			svu:Operator ;
 			svu:hasMultiplierUnits "none" ;
 			svu:hasPowerFactor 0.0 ;
-			svu:hasHeadOperator :month-specific_z-score ;
-			svu:modifiesOperator :one-month_one-day_mean ;
-			skos:prefLabel "month-specific_z-score_of_one-month_one-day_mean"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#z_integral_of_square_of_y_component
-:z_integral_of_square_of_y_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerFactor 2.0 ;
-			svu:hasHeadOperator :z_integral ;
-			svu:modifiesOperator :square_of_y_component ;
-			skos:prefLabel "z_integral_of_square_of_y_component"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#z_integral_of_x_y_component
-:z_integral_of_x_y_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :z_integral ;
-			svu:modifiesOperator :x_y_component ;
-			skos:prefLabel "z_integral_of_x_y_component"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#x_derivative_of_y_component_of_z_integral
-:x_derivative_of_y_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :x_derivative ;
-			svu:modifiesOperator :y_component_of_z_integral ;
-			skos:prefLabel "x_derivative_of_y_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#magnitude_of_gradient
-:magnitude_of_gradient rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "L^-1" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :magnitude ;
-			svu:modifiesOperator :gradient ;
-			skos:prefLabel "magnitude_of_gradient"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#z_integral_of_x_x_component
-:z_integral_of_x_x_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :z_integral ;
-			svu:modifiesOperator :x_x_component ;
-			skos:prefLabel "z_integral_of_x_x_component"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_anomaly_of_forecast_of_five-day_time_integral
-:cumulative_anomaly_of_forecast_of_five-day_time_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "T" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :cumulative_anomaly ;
-			svu:modifiesOperator :forecast_of_five-day_time_integral ;
-			skos:prefLabel "cumulative_anomaly_of_forecast_of_five-day_time_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_north_component
-:time_derivative_of_north_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "T^-1" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :time_derivative ;
-			svu:modifiesOperator :north_component ;
-			skos:prefLabel "time_derivative_of_north_component"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#forecast_of_ten-day_time_integral
-:forecast_of_ten-day_time_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "T" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :forecast ;
-			svu:modifiesOperator :ten-day_time_integral ;
-			skos:prefLabel "forecast_of_ten-day_time_integral"@en .
+			svu:hasHeadOperator :cumulative_z-score ;
+			svu:modifiesOperator :one-month_time_integral ;
+			skos:prefLabel "cumulative_z-score_of_one-month_time_integral"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/operator#month-specific_anomaly_of_one-month_one-day_mean
 :month-specific_anomaly_of_one-month_one-day_mean rdf:type owl:NamedIndividual ,
@@ -1355,231 +1238,6 @@
 			svu:modifiesOperator :one-month_one-day_mean ;
 			skos:prefLabel "month-specific_anomaly_of_one-month_one-day_mean"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/operator#month-specific_anomaly_of_second_dekad_one-day_mean
-:month-specific_anomaly_of_second_dekad_one-day_mean rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :month-specific_anomaly ;
-			svu:modifiesOperator :second_dekad_one-day_mean ;
-			skos:prefLabel "month-specific_anomaly_of_second_dekad_one-day_mean"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#time_average_of_square
-:time_average_of_square rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 2.0 ;
-			svu:hasHeadOperator :time_average ;
-			svu:modifiesOperator :square ;
-			skos:prefLabel "time_average_of_square"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_z-score_of_one-month_time_integral
-:cumulative_z-score_of_one-month_time_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 0.0 ;
-			svu:hasHeadOperator :cumulative_z-score ;
-			svu:modifiesOperator :one-month_time_integral ;
-			skos:prefLabel "cumulative_z-score_of_one-month_time_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_anomaly_of_first_dekad_time_integral
-:cumulative_anomaly_of_first_dekad_time_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "T" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :cumulative_anomaly ;
-			svu:modifiesOperator :first_dekad_time_integral ;
-			skos:prefLabel "cumulative_anomaly_of_first_dekad_time_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_east_component_of_z_integral
-:time_derivative_of_east_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "L T^-1" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :time_derivative ;
-			svu:modifiesOperator :east_component_of_z_integral ;
-			skos:prefLabel "time_derivative_of_east_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_x_component_of_z_integral
-:time_derivative_of_x_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "L T^-1" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :time_derivative ;
-			svu:modifiesOperator :x_component_of_z_integral ;
-			skos:prefLabel "time_derivative_of_x_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#y_component_of_z_integral
-:y_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :y_component ;
-			svu:modifiesOperator :z_integral ;
-			skos:prefLabel "y_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#x_component_of_z_integral
-:x_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :x_component ;
-			svu:modifiesOperator :z_integral ;
-			skos:prefLabel "x_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#y_derivative_of_x_component_of_z_integral
-:y_derivative_of_x_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :y_derivative ;
-			svu:modifiesOperator :x_component_of_z_integral ;
-			skos:prefLabel "y_derivative_of_x_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#east_component_of_z_integral
-:east_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :east_component ;
-			svu:modifiesOperator :z_integral ;
-			skos:prefLabel "east_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#month-specific_anomaly_of_first_dekad_one-day_mean
-:month-specific_anomaly_of_first_dekad_one-day_mean rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :month-specific_anomaly ;
-			svu:modifiesOperator :first_dekad_one-day_mean ;
-			skos:prefLabel "month-specific_anomaly_of_first_dekad_one-day_mean"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_y_component_of_z_integral
-:time_derivative_of_y_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "L T^-1" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :time_derivative ;
-			svu:modifiesOperator :y_component_of_z_integral ;
-			skos:prefLabel "time_derivative_of_y_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#z_integral_of_y_y_component
-:z_integral_of_y_y_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :z_integral ;
-			svu:modifiesOperator :y_y_component ;
-			skos:prefLabel "z_integral_of_y_y_component"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#north_derivative_of_east_component_of_z_integral
-:north_derivative_of_east_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :north_derivative ;
-			svu:modifiesOperator :east_component_of_z_integral ;
-			skos:prefLabel "north_derivative_of_east_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_anomaly_of_forecast_of_fifteen-day_time_integral
-:cumulative_anomaly_of_forecast_of_fifteen-day_time_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "T" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :cumulative_anomaly ;
-			svu:modifiesOperator :forecast_of_fifteen-day_time_integral ;
-			skos:prefLabel "cumulative_anomaly_of_forecast_of_fifteen-day_time_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_north_component_of_z_integral
-:time_derivative_of_north_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "L T^-1" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :time_derivative ;
-			svu:modifiesOperator :north_component_of_z_integral ;
-			skos:prefLabel "time_derivative_of_north_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_anomaly_of_one-month_time_integral
-:cumulative_anomaly_of_one-month_time_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "T" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :cumulative_anomaly ;
-			svu:modifiesOperator :one-month_time_integral ;
-			skos:prefLabel "cumulative_anomaly_of_one-month_time_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#azimuth_angle_of_z_integral
-:azimuth_angle_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "rad" ;
-			svu:hasPowerFactor 0.0 ;
-			svu:hasHeadOperator :azimuth_angle ;
-			svu:modifiesOperator :z_integral ;
-			skos:prefLabel "azimuth_angle_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_time_integral_of_cosine
-:cumulative_time_integral_of_cosine rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "T rad" ;
-			svu:hasPowerFactor 0.0 ;
-			svu:hasHeadOperator :cumulative_time_integral ;
-			svu:modifiesOperator :cosine ;
-			skos:prefLabel "cumulative_time_integral_of_cosine"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#z_integral_of_v_component
-:z_integral_of_v_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :z_integral ;
-			svu:modifiesOperator :v_component ;
-			skos:prefLabel "z_integral_of_v_component"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_z-score_of_forecast_of_fifteen-day_time_integral
-:cumulative_z-score_of_forecast_of_fifteen-day_time_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 0.0 ;
-			svu:hasHeadOperator :cumulative_z-score ;
-			svu:modifiesOperator :forecast_of_fifteen-day_time_integral ;
-			skos:prefLabel "cumulative_z-score_of_forecast_of_fifteen-day_time_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#east_derivative_of_east_component_of_z_integral
-:east_derivative_of_east_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :east_derivative ;
-			svu:modifiesOperator :east_component_of_z_integral ;
-			skos:prefLabel "east_derivative_of_east_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#domain_max_of_increment
-:domain_max_of_increment rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :domain_max ;
-			svu:modifiesOperator :increment ;
-			skos:prefLabel "domain_max_of_increment"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#domain_min_of_increment
-:domain_min_of_increment rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :domain_min ;
-			svu:modifiesOperator :increment ;
-			skos:prefLabel "domain_min_of_increment"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_z-score_of_second_dekad_time_integral
-:cumulative_z-score_of_second_dekad_time_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 0.0 ;
-			svu:hasHeadOperator :cumulative_z-score ;
-			svu:modifiesOperator :second_dekad_time_integral ;
-			skos:prefLabel "cumulative_z-score_of_second_dekad_time_integral"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/operator#time_average_of_z_integral_of_square_of_y_component
 :time_average_of_z_integral_of_square_of_y_component rdf:type owl:NamedIndividual ,
 			svu:Operator ;
@@ -1588,123 +1246,6 @@
 			svu:hasHeadOperator :time_average ;
 			svu:modifiesOperator :z_integral_of_square_of_y_component ;
 			skos:prefLabel "time_average_of_z_integral_of_square_of_y_component"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_east_component
-:time_derivative_of_east_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "T^-1" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :time_derivative ;
-			svu:modifiesOperator :east_component ;
-			skos:prefLabel "time_derivative_of_east_component"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#x_derivative_of_x_component_of_z_integral
-:x_derivative_of_x_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :x_derivative ;
-			svu:modifiesOperator :x_component_of_z_integral ;
-			skos:prefLabel "x_derivative_of_x_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_anomaly_of_third_dekad_time_integral
-:cumulative_anomaly_of_third_dekad_time_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "T" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :cumulative_anomaly ;
-			svu:modifiesOperator :third_dekad_time_integral ;
-			skos:prefLabel "cumulative_anomaly_of_third_dekad_time_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#y_derivative_of_y_component_of_z_integral
-:y_derivative_of_y_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :y_derivative ;
-			svu:modifiesOperator :y_component_of_z_integral ;
-			skos:prefLabel "y_derivative_of_y_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#month-specific_z-score_of_first_dekad_one-day_mean
-:month-specific_z-score_of_first_dekad_one-day_mean rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 0.0 ;
-			svu:hasHeadOperator :month-specific_z-score ;
-			svu:modifiesOperator :first_dekad_one-day_mean ;
-			skos:prefLabel "month-specific_z-score_of_first_dekad_one-day_mean"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#azimuth_angle_of_left_normal
-:azimuth_angle_of_left_normal rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "rad" ;
-			svu:hasPowerFactor 0.0 ;
-			svu:hasHeadOperator :azimuth_angle ;
-			svu:modifiesOperator :left_normal ;
-			skos:prefLabel "azimuth_angle_of_left_normal"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#forecast_of_five-day_time_integral
-:forecast_of_five-day_time_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "T" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :forecast ;
-			svu:modifiesOperator :five-day_time_integral ;
-			skos:prefLabel "forecast_of_five-day_time_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#month-specific_z-score_of_third_dekad_one-day_mean
-:month-specific_z-score_of_third_dekad_one-day_mean rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 0.0 ;
-			svu:hasHeadOperator :month-specific_z-score ;
-			svu:modifiesOperator :third_dekad_one-day_mean ;
-			skos:prefLabel "month-specific_z-score_of_third_dekad_one-day_mean"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#elevation_angle_of_gradient
-:elevation_angle_of_gradient rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "rad" ;
-			svu:hasPowerFactor 0.0 ;
-			svu:hasHeadOperator :elevation_angle ;
-			svu:modifiesOperator :gradient ;
-			skos:prefLabel "elevation_angle_of_gradient"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#forecast_of_fifteen-day_time_integral
-:forecast_of_fifteen-day_time_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "T" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :forecast ;
-			svu:modifiesOperator :fifteen-day_time_integral ;
-			skos:prefLabel "forecast_of_fifteen-day_time_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#square_of_x_component
-:square_of_x_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 2.0 ;
-			svu:hasHeadOperator :square ;
-			svu:modifiesOperator :x_component ;
-			skos:prefLabel "square_of_x_component"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#north_derivative_of_north_component_of_z_integral
-:north_derivative_of_north_component_of_z_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :north_derivative ;
-			svu:modifiesOperator :north_component_of_z_integral ;
-			skos:prefLabel "north_derivative_of_north_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#time_average_of_z_integral_of_square_of_x_component
-:time_average_of_z_integral_of_square_of_x_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerFactor 2.0 ;
-			svu:hasHeadOperator :time_average ;
-			svu:modifiesOperator :z_integral_of_square_of_x_component ;
-			skos:prefLabel "time_average_of_z_integral_of_square_of_x_component"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_anomaly_of_second_dekad_time_integral
 :cumulative_anomaly_of_second_dekad_time_integral rdf:type owl:NamedIndividual ,
@@ -1715,86 +1256,59 @@
 			svu:modifiesOperator :second_dekad_time_integral ;
 			skos:prefLabel "cumulative_anomaly_of_second_dekad_time_integral"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_z-score_of_third_dekad_time_integral
-:cumulative_z-score_of_third_dekad_time_integral rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/operator#forecast_of_five-day_time_integral
+:forecast_of_five-day_time_integral rdf:type owl:NamedIndividual ,
 			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 0.0 ;
-			svu:hasHeadOperator :cumulative_z-score ;
-			svu:modifiesOperator :third_dekad_time_integral ;
-			skos:prefLabel "cumulative_z-score_of_third_dekad_time_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#month-specific_anomaly_of_third_dekad_one-day_mean
-:month-specific_anomaly_of_third_dekad_one-day_mean rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
+			svu:hasMultiplierUnits "T" ;
 			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :month-specific_anomaly ;
-			svu:modifiesOperator :third_dekad_one-day_mean ;
-			skos:prefLabel "month-specific_anomaly_of_third_dekad_one-day_mean"@en .
+			svu:hasHeadOperator :forecast ;
+			svu:modifiesOperator :five-day_time_integral ;
+			skos:prefLabel "forecast_of_five-day_time_integral"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/operator#north_component_of_z_integral
-:north_component_of_z_integral rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/operator#z_integral_of_u_component
+:z_integral_of_u_component rdf:type owl:NamedIndividual ,
 			svu:Operator ;
 			svu:hasMultiplierUnits "L" ;
 			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :north_component ;
-			svu:modifiesOperator :z_integral ;
-			skos:prefLabel "north_component_of_z_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_y_component
-:time_derivative_of_y_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "T^-1" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :time_derivative ;
-			svu:modifiesOperator :y_component ;
-			skos:prefLabel "time_derivative_of_y_component"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_z_component
-:time_derivative_of_z_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "T^-1" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :time_derivative ;
-			svu:modifiesOperator :z_component ;
-			skos:prefLabel "time_derivative_of_z_component"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#square_of_y_component
-:square_of_y_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 2.0 ;
-			svu:hasHeadOperator :square ;
-			svu:modifiesOperator :y_component ;
-			skos:prefLabel "square_of_y_component"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#z_integral_of_square_of_x_component
-:z_integral_of_square_of_x_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "L" ;
-			svu:hasPowerFactor 2.0 ;
 			svu:hasHeadOperator :z_integral ;
-			svu:modifiesOperator :square_of_x_component ;
-			skos:prefLabel "z_integral_of_square_of_x_component"@en .
+			svu:modifiesOperator :u_component ;
+			skos:prefLabel "z_integral_of_u_component"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_z-score_of_first_dekad_time_integral
-:cumulative_z-score_of_first_dekad_time_integral rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "none" ;
-			svu:hasPowerFactor 0.0 ;
-			svu:hasHeadOperator :cumulative_z-score ;
-			svu:modifiesOperator :first_dekad_time_integral ;
-			skos:prefLabel "cumulative_z-score_of_first_dekad_time_integral"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/operator#month-specific_z-score_of_second_dekad_one-day_mean
-:month-specific_z-score_of_second_dekad_one-day_mean rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/operator#month-specific_z-score_of_first_dekad_one-day_mean
+:month-specific_z-score_of_first_dekad_one-day_mean rdf:type owl:NamedIndividual ,
 			svu:Operator ;
 			svu:hasMultiplierUnits "none" ;
 			svu:hasPowerFactor 0.0 ;
 			svu:hasHeadOperator :month-specific_z-score ;
-			svu:modifiesOperator :second_dekad_one-day_mean ;
-			skos:prefLabel "month-specific_z-score_of_second_dekad_one-day_mean"@en .
+			svu:modifiesOperator :first_dekad_one-day_mean ;
+			skos:prefLabel "month-specific_z-score_of_first_dekad_one-day_mean"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#domain_max_of_increment
+:domain_max_of_increment rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :domain_max ;
+			svu:modifiesOperator :increment ;
+			skos:prefLabel "domain_max_of_increment"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#north_derivative_of_north_component_of_z_integral
+:north_derivative_of_north_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :north_derivative ;
+			svu:modifiesOperator :north_component_of_z_integral ;
+			skos:prefLabel "north_derivative_of_north_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#elevation_angle_of_gradient
+:elevation_angle_of_gradient rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "rad" ;
+			svu:hasPowerFactor 0.0 ;
+			svu:hasHeadOperator :elevation_angle ;
+			svu:modifiesOperator :gradient ;
+			skos:prefLabel "elevation_angle_of_gradient"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/operator#magnitude_of_z_integral
 :magnitude_of_z_integral rdf:type owl:NamedIndividual ,
@@ -1805,15 +1319,6 @@
 			svu:modifiesOperator :z_integral ;
 			skos:prefLabel "magnitude_of_z_integral"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_down_component
-:time_derivative_of_down_component rdf:type owl:NamedIndividual ,
-			svu:Operator ;
-			svu:hasMultiplierUnits "T^-1" ;
-			svu:hasPowerFactor 1.0 ;
-			svu:hasHeadOperator :time_derivative ;
-			svu:modifiesOperator :down_component ;
-			skos:prefLabel "time_derivative_of_down_component"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_z-score_of_forecast_of_five-day_time_integral
 :cumulative_z-score_of_forecast_of_five-day_time_integral rdf:type owl:NamedIndividual ,
 			svu:Operator ;
@@ -1823,6 +1328,204 @@
 			svu:modifiesOperator :forecast_of_five-day_time_integral ;
 			skos:prefLabel "cumulative_z-score_of_forecast_of_five-day_time_integral"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/operator#x_derivative_of_x_component_of_z_integral
+:x_derivative_of_x_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :x_derivative ;
+			svu:modifiesOperator :x_component_of_z_integral ;
+			skos:prefLabel "x_derivative_of_x_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#month-specific_z-score_of_second_dekad_one-day_mean
+:month-specific_z-score_of_second_dekad_one-day_mean rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 0.0 ;
+			svu:hasHeadOperator :month-specific_z-score ;
+			svu:modifiesOperator :second_dekad_one-day_mean ;
+			skos:prefLabel "month-specific_z-score_of_second_dekad_one-day_mean"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#z_integral_of_square_of_y_component
+:z_integral_of_square_of_y_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerFactor 2.0 ;
+			svu:hasHeadOperator :z_integral ;
+			svu:modifiesOperator :square_of_y_component ;
+			skos:prefLabel "z_integral_of_square_of_y_component"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#domain_min_of_increment
+:domain_min_of_increment rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :domain_min ;
+			svu:modifiesOperator :increment ;
+			skos:prefLabel "domain_min_of_increment"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#z_integral_of_v_component
+:z_integral_of_v_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :z_integral ;
+			svu:modifiesOperator :v_component ;
+			skos:prefLabel "z_integral_of_v_component"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_z-score_of_third_dekad_time_integral
+:cumulative_z-score_of_third_dekad_time_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 0.0 ;
+			svu:hasHeadOperator :cumulative_z-score ;
+			svu:modifiesOperator :third_dekad_time_integral ;
+			skos:prefLabel "cumulative_z-score_of_third_dekad_time_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#east_derivative_of_north_component_of_z_integral
+:east_derivative_of_north_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :east_derivative ;
+			svu:modifiesOperator :north_component_of_z_integral ;
+			skos:prefLabel "east_derivative_of_north_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_east_component_of_z_integral
+:time_derivative_of_east_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "L T^-1" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :time_derivative ;
+			svu:modifiesOperator :east_component_of_z_integral ;
+			skos:prefLabel "time_derivative_of_east_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#month-specific_anomaly_of_third_dekad_one-day_mean
+:month-specific_anomaly_of_third_dekad_one-day_mean rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :month-specific_anomaly ;
+			svu:modifiesOperator :third_dekad_one-day_mean ;
+			skos:prefLabel "month-specific_anomaly_of_third_dekad_one-day_mean"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_north_component_of_z_integral
+:time_derivative_of_north_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "L T^-1" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :time_derivative ;
+			svu:modifiesOperator :north_component_of_z_integral ;
+			skos:prefLabel "time_derivative_of_north_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_x_component
+:time_derivative_of_x_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "T^-1" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :time_derivative ;
+			svu:modifiesOperator :x_component ;
+			skos:prefLabel "time_derivative_of_x_component"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#forecast_of_ten-day_time_integral
+:forecast_of_ten-day_time_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "T" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :forecast ;
+			svu:modifiesOperator :ten-day_time_integral ;
+			skos:prefLabel "forecast_of_ten-day_time_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#z_integral_of_y_y_component
+:z_integral_of_y_y_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :z_integral ;
+			svu:modifiesOperator :y_y_component ;
+			skos:prefLabel "z_integral_of_y_y_component"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_anomaly_of_forecast_of_fifteen-day_time_integral
+:cumulative_anomaly_of_forecast_of_fifteen-day_time_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "T" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :cumulative_anomaly ;
+			svu:modifiesOperator :forecast_of_fifteen-day_time_integral ;
+			skos:prefLabel "cumulative_anomaly_of_forecast_of_fifteen-day_time_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_anomaly_of_third_dekad_time_integral
+:cumulative_anomaly_of_third_dekad_time_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "T" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :cumulative_anomaly ;
+			svu:modifiesOperator :third_dekad_time_integral ;
+			skos:prefLabel "cumulative_anomaly_of_third_dekad_time_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#magnitude_of_gradient
+:magnitude_of_gradient rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "L^-1" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :magnitude ;
+			svu:modifiesOperator :gradient ;
+			skos:prefLabel "magnitude_of_gradient"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_z-score_of_first_dekad_time_integral
+:cumulative_z-score_of_first_dekad_time_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 0.0 ;
+			svu:hasHeadOperator :cumulative_z-score ;
+			svu:modifiesOperator :first_dekad_time_integral ;
+			skos:prefLabel "cumulative_z-score_of_first_dekad_time_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#azimuth_angle_of_z_integral
+:azimuth_angle_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "rad" ;
+			svu:hasPowerFactor 0.0 ;
+			svu:hasHeadOperator :azimuth_angle ;
+			svu:modifiesOperator :z_integral ;
+			skos:prefLabel "azimuth_angle_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_y_component_of_z_integral
+:time_derivative_of_y_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "L T^-1" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :time_derivative ;
+			svu:modifiesOperator :y_component_of_z_integral ;
+			skos:prefLabel "time_derivative_of_y_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#y_derivative_of_y_component_of_z_integral
+:y_derivative_of_y_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :y_derivative ;
+			svu:modifiesOperator :y_component_of_z_integral ;
+			skos:prefLabel "y_derivative_of_y_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_x_component_of_z_integral
+:time_derivative_of_x_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "L T^-1" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :time_derivative ;
+			svu:modifiesOperator :x_component_of_z_integral ;
+			skos:prefLabel "time_derivative_of_x_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_east_component
+:time_derivative_of_east_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "T^-1" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :time_derivative ;
+			svu:modifiesOperator :east_component ;
+			skos:prefLabel "time_derivative_of_east_component"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_z-score_of_forecast_of_ten-day_time_integral
 :cumulative_z-score_of_forecast_of_ten-day_time_integral rdf:type owl:NamedIndividual ,
 			svu:Operator ;
@@ -1831,3 +1534,300 @@
 			svu:hasHeadOperator :cumulative_z-score ;
 			svu:modifiesOperator :forecast_of_ten-day_time_integral ;
 			skos:prefLabel "cumulative_z-score_of_forecast_of_ten-day_time_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_anomaly_of_forecast_of_five-day_time_integral
+:cumulative_anomaly_of_forecast_of_five-day_time_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "T" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :cumulative_anomaly ;
+			svu:modifiesOperator :forecast_of_five-day_time_integral ;
+			skos:prefLabel "cumulative_anomaly_of_forecast_of_five-day_time_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#forecast_of_fifteen-day_time_integral
+:forecast_of_fifteen-day_time_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "T" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :forecast ;
+			svu:modifiesOperator :fifteen-day_time_integral ;
+			skos:prefLabel "forecast_of_fifteen-day_time_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#month-specific_z-score_of_third_dekad_one-day_mean
+:month-specific_z-score_of_third_dekad_one-day_mean rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 0.0 ;
+			svu:hasHeadOperator :month-specific_z-score ;
+			svu:modifiesOperator :third_dekad_one-day_mean ;
+			skos:prefLabel "month-specific_z-score_of_third_dekad_one-day_mean"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#azimuth_angle_of_left_normal
+:azimuth_angle_of_left_normal rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "rad" ;
+			svu:hasPowerFactor 0.0 ;
+			svu:hasHeadOperator :azimuth_angle ;
+			svu:modifiesOperator :left_normal ;
+			skos:prefLabel "azimuth_angle_of_left_normal"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#azimuth_angle_of_gradient
+:azimuth_angle_of_gradient rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "rad" ;
+			svu:hasPowerFactor 0.0 ;
+			svu:hasHeadOperator :azimuth_angle ;
+			svu:modifiesOperator :gradient ;
+			skos:prefLabel "azimuth_angle_of_gradient"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_time_integral_of_cosine
+:cumulative_time_integral_of_cosine rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "T rad" ;
+			svu:hasPowerFactor 0.0 ;
+			svu:hasHeadOperator :cumulative_time_integral ;
+			svu:modifiesOperator :cosine ;
+			skos:prefLabel "cumulative_time_integral_of_cosine"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_z-score_of_second_dekad_time_integral
+:cumulative_z-score_of_second_dekad_time_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 0.0 ;
+			svu:hasHeadOperator :cumulative_z-score ;
+			svu:modifiesOperator :second_dekad_time_integral ;
+			skos:prefLabel "cumulative_z-score_of_second_dekad_time_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_y_component
+:time_derivative_of_y_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "T^-1" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :time_derivative ;
+			svu:modifiesOperator :y_component ;
+			skos:prefLabel "time_derivative_of_y_component"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#z_integral_of_square_of_x_component
+:z_integral_of_square_of_x_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerFactor 2.0 ;
+			svu:hasHeadOperator :z_integral ;
+			svu:modifiesOperator :square_of_x_component ;
+			skos:prefLabel "z_integral_of_square_of_x_component"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#y_component_of_z_integral
+:y_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :y_component ;
+			svu:modifiesOperator :z_integral ;
+			skos:prefLabel "y_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#time_average_of_z_integral_of_square_of_x_component
+:time_average_of_z_integral_of_square_of_x_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerFactor 2.0 ;
+			svu:hasHeadOperator :time_average ;
+			svu:modifiesOperator :z_integral_of_square_of_x_component ;
+			skos:prefLabel "time_average_of_z_integral_of_square_of_x_component"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_down_component
+:time_derivative_of_down_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "T^-1" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :time_derivative ;
+			svu:modifiesOperator :down_component ;
+			skos:prefLabel "time_derivative_of_down_component"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_anomaly_of_first_dekad_time_integral
+:cumulative_anomaly_of_first_dekad_time_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "T" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :cumulative_anomaly ;
+			svu:modifiesOperator :first_dekad_time_integral ;
+			skos:prefLabel "cumulative_anomaly_of_first_dekad_time_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_anomaly_of_forecast_of_ten-day_time_integral
+:cumulative_anomaly_of_forecast_of_ten-day_time_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "T" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :cumulative_anomaly ;
+			svu:modifiesOperator :forecast_of_ten-day_time_integral ;
+			skos:prefLabel "cumulative_anomaly_of_forecast_of_ten-day_time_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#y_derivative_of_x_component_of_z_integral
+:y_derivative_of_x_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :y_derivative ;
+			svu:modifiesOperator :x_component_of_z_integral ;
+			skos:prefLabel "y_derivative_of_x_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#month-specific_z-score_of_one-month_one-day_mean
+:month-specific_z-score_of_one-month_one-day_mean rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 0.0 ;
+			svu:hasHeadOperator :month-specific_z-score ;
+			svu:modifiesOperator :one-month_one-day_mean ;
+			skos:prefLabel "month-specific_z-score_of_one-month_one-day_mean"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_z_component
+:time_derivative_of_z_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "T^-1" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :time_derivative ;
+			svu:modifiesOperator :z_component ;
+			skos:prefLabel "time_derivative_of_z_component"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#east_component_of_z_integral
+:east_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :east_component ;
+			svu:modifiesOperator :z_integral ;
+			skos:prefLabel "east_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#x_component_of_z_integral
+:x_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :x_component ;
+			svu:modifiesOperator :z_integral ;
+			skos:prefLabel "x_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#east_derivative_of_east_component_of_z_integral
+:east_derivative_of_east_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :east_derivative ;
+			svu:modifiesOperator :east_component_of_z_integral ;
+			skos:prefLabel "east_derivative_of_east_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#z_integral_of_x_x_component
+:z_integral_of_x_x_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :z_integral ;
+			svu:modifiesOperator :x_x_component ;
+			skos:prefLabel "z_integral_of_x_x_component"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_z-score_of_forecast_of_fifteen-day_time_integral
+:cumulative_z-score_of_forecast_of_fifteen-day_time_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 0.0 ;
+			svu:hasHeadOperator :cumulative_z-score ;
+			svu:modifiesOperator :forecast_of_fifteen-day_time_integral ;
+			skos:prefLabel "cumulative_z-score_of_forecast_of_fifteen-day_time_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#square_of_y_component
+:square_of_y_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 2.0 ;
+			svu:hasHeadOperator :square ;
+			svu:modifiesOperator :y_component ;
+			skos:prefLabel "square_of_y_component"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#time_average_of_square
+:time_average_of_square rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 2.0 ;
+			svu:hasHeadOperator :time_average ;
+			svu:modifiesOperator :square ;
+			skos:prefLabel "time_average_of_square"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#north_derivative_of_east_component_of_z_integral
+:north_derivative_of_east_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :north_derivative ;
+			svu:modifiesOperator :east_component_of_z_integral ;
+			skos:prefLabel "north_derivative_of_east_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#x_derivative_of_y_component_of_z_integral
+:x_derivative_of_y_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :x_derivative ;
+			svu:modifiesOperator :y_component_of_z_integral ;
+			skos:prefLabel "x_derivative_of_y_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#north_component_of_z_integral
+:north_component_of_z_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :north_component ;
+			svu:modifiesOperator :z_integral ;
+			skos:prefLabel "north_component_of_z_integral"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#month-specific_anomaly_of_second_dekad_one-day_mean
+:month-specific_anomaly_of_second_dekad_one-day_mean rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :month-specific_anomaly ;
+			svu:modifiesOperator :second_dekad_one-day_mean ;
+			skos:prefLabel "month-specific_anomaly_of_second_dekad_one-day_mean"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#time_derivative_of_north_component
+:time_derivative_of_north_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "T^-1" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :time_derivative ;
+			svu:modifiesOperator :north_component ;
+			skos:prefLabel "time_derivative_of_north_component"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#z_integral_of_x_y_component
+:z_integral_of_x_y_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "L" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :z_integral ;
+			svu:modifiesOperator :x_y_component ;
+			skos:prefLabel "z_integral_of_x_y_component"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#month-specific_anomaly_of_first_dekad_one-day_mean
+:month-specific_anomaly_of_first_dekad_one-day_mean rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :month-specific_anomaly ;
+			svu:modifiesOperator :first_dekad_one-day_mean ;
+			skos:prefLabel "month-specific_anomaly_of_first_dekad_one-day_mean"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#square_of_x_component
+:square_of_x_component rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "none" ;
+			svu:hasPowerFactor 2.0 ;
+			svu:hasHeadOperator :square ;
+			svu:modifiesOperator :x_component ;
+			skos:prefLabel "square_of_x_component"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/operator#cumulative_anomaly_of_one-month_time_integral
+:cumulative_anomaly_of_one-month_time_integral rdf:type owl:NamedIndividual ,
+			svu:Operator ;
+			svu:hasMultiplierUnits "T" ;
+			svu:hasPowerFactor 1.0 ;
+			svu:hasHeadOperator :cumulative_anomaly ;
+			svu:modifiesOperator :one-month_time_integral ;
+			skos:prefLabel "cumulative_anomaly_of_one-month_time_integral"@en .

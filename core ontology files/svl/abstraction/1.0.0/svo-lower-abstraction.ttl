@@ -18,7 +18,7 @@
 #    Abstraction   
 # 
 #################################################################
-##Last generated on: 2019-07-18 15:46 
+##Last generated on: 2019-07-24 22:22 
 
 ###Mathematical Abstraction
 
@@ -35,7 +35,7 @@
 :airfoil_curve%7Eenclosing rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :curve%7Eenclosing ;
-			svu:hasAbstraction :airfoil ;
+			svu:isAbstractionOf :airfoil ;
 			skos:prefLabel "airfoil_curve~enclosing"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#axis
@@ -187,7 +187,7 @@
 :grid_axis%7Ex rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :axis%7Ex ;
-			svu:hasAbstraction :grid ;
+			svu:isAbstractionOf :grid ;
 			skos:prefLabel "grid_axis~x"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_bottom
@@ -201,28 +201,28 @@
 :grid_cell rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :cell ;
-			svu:hasAbstraction :grid ;
+			svu:isAbstractionOf :grid ;
 			skos:prefLabel "grid_cell"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_center
 :grid_cell_center rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :center ;
-			svu:hasAbstraction :grid_cell ;
+			svu:isAbstractionOf :grid_cell ;
 			skos:prefLabel "grid_cell_center"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_centroid
 :grid_cell_centroid rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :centroid ;
-			svu:hasAbstraction :grid_cell ;
+			svu:isAbstractionOf :grid_cell ;
 			skos:prefLabel "grid_cell_centroid"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_column
 :grid_cell_column rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :column ;
-			svu:hasAbstraction :grid_cell ;
+			svu:isAbstractionOf :grid_cell ;
 			skos:prefLabel "grid_cell_column"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_edge
@@ -236,7 +236,7 @@
 :grid_cell_edge_center rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :center ;
-			svu:hasAbstraction :grid_cell_edge ;
+			svu:isAbstractionOf :grid_cell_edge ;
 			skos:prefLabel "grid_cell_edge_center"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_edge%7Eeast
@@ -292,49 +292,49 @@
 :grid_cell_face_centroid rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :centroid ;
-			svu:hasAbstraction :grid_cell_face ;
+			svu:isAbstractionOf :grid_cell_face ;
 			skos:prefLabel "grid_cell_face_centroid"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_row
 :grid_cell_row rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :row ;
-			svu:hasAbstraction :grid_cell ;
+			svu:isAbstractionOf :grid_cell ;
 			skos:prefLabel "grid_cell_row"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_row-major-offset
 :grid_cell_row-major-offset rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :row-major-offset ;
-			svu:hasAbstraction :grid_cell ;
+			svu:isAbstractionOf :grid_cell ;
 			skos:prefLabel "grid_cell_row-major-offset"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_surface
 :grid_cell_surface rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :surface ;
-			svu:hasAbstraction :grid_cell ;
+			svu:isAbstractionOf :grid_cell ;
 			skos:prefLabel "grid_cell_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual
 :grid_cell%7Edual rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :cell%7Edual ;
-			svu:hasAbstraction :grid ;
+			svu:isAbstractionOf :grid ;
 			skos:prefLabel "grid_cell~dual"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual_centroid
 :grid_cell%7Edual_centroid rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :centroid ;
-			svu:hasAbstraction :grid_cell%7Edual ;
+			svu:isAbstractionOf :grid_cell%7Edual ;
 			skos:prefLabel "grid_cell~dual_centroid"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual_column
 :grid_cell%7Edual_column rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :column ;
-			svu:hasAbstraction :grid_cell%7Edual ;
+			svu:isAbstractionOf :grid_cell%7Edual ;
 			skos:prefLabel "grid_cell~dual_column"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual_edge
@@ -348,7 +348,7 @@
 :grid_cell%7Edual_edge_center rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :center ;
-			svu:hasAbstraction :grid_cell%7Edual_edge ;
+			svu:isAbstractionOf :grid_cell%7Edual_edge ;
 			skos:prefLabel "grid_cell~dual_edge_center"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual_face
@@ -362,42 +362,42 @@
 :grid_cell%7Edual_face_centroid rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :centroid ;
-			svu:hasAbstraction :grid_cell%7Edual_face ;
+			svu:isAbstractionOf :grid_cell%7Edual_face ;
 			skos:prefLabel "grid_cell~dual_face_centroid"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual_row
 :grid_cell%7Edual_row rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :row ;
-			svu:hasAbstraction :grid_cell%7Edual ;
+			svu:isAbstractionOf :grid_cell%7Edual ;
 			skos:prefLabel "grid_cell~dual_row"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual_surface
 :grid_cell%7Edual_surface rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :surface ;
-			svu:hasAbstraction :grid_cell%7Edual ;
+			svu:isAbstractionOf :grid_cell%7Edual ;
 			skos:prefLabel "grid_cell~dual_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary
 :grid_cell%7Eprimary rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :cell%7Eprimary ;
-			svu:hasAbstraction :grid ;
+			svu:isAbstractionOf :grid ;
 			skos:prefLabel "grid_cell~primary"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary_centroid
 :grid_cell%7Eprimary_centroid rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :centroid ;
-			svu:hasAbstraction :grid_cell%7Eprimary ;
+			svu:isAbstractionOf :grid_cell%7Eprimary ;
 			skos:prefLabel "grid_cell~primary_centroid"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary_column
 :grid_cell%7Eprimary_column rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :column ;
-			svu:hasAbstraction :grid_cell%7Eprimary ;
+			svu:isAbstractionOf :grid_cell%7Eprimary ;
 			skos:prefLabel "grid_cell~primary_column"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary_edge
@@ -411,7 +411,7 @@
 :grid_cell%7Eprimary_edge_center rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :center ;
-			svu:hasAbstraction :grid_cell%7Eprimary_edge ;
+			svu:isAbstractionOf :grid_cell%7Eprimary_edge ;
 			skos:prefLabel "grid_cell~primary_edge_center"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary_face
@@ -425,28 +425,28 @@
 :grid_cell%7Eprimary_face_centroid rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :centroid ;
-			svu:hasAbstraction :grid_cell%7Eprimary_face ;
+			svu:isAbstractionOf :grid_cell%7Eprimary_face ;
 			skos:prefLabel "grid_cell~primary_face_centroid"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary_row
 :grid_cell%7Eprimary_row rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :row ;
-			svu:hasAbstraction :grid_cell%7Eprimary ;
+			svu:isAbstractionOf :grid_cell%7Eprimary ;
 			skos:prefLabel "grid_cell~primary_row"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary_surface
 :grid_cell%7Eprimary_surface rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :surface ;
-			svu:hasAbstraction :grid_cell%7Eprimary ;
+			svu:isAbstractionOf :grid_cell%7Eprimary ;
 			skos:prefLabel "grid_cell~primary_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_column
 :grid_column rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :column ;
-			svu:hasAbstraction :grid ;
+			svu:isAbstractionOf :grid ;
 			skos:prefLabel "grid_column"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_edge%7Eeast
@@ -481,77 +481,77 @@
 :grid_node rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :node ;
-			svu:hasAbstraction :grid ;
+			svu:isAbstractionOf :grid ;
 			skos:prefLabel "grid_node"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_node%7Edual
 :grid_node%7Edual rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :node%7Edual ;
-			svu:hasAbstraction :grid ;
+			svu:isAbstractionOf :grid ;
 			skos:prefLabel "grid_node~dual"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_node%7Edual%7Ex
 :grid_node%7Edual%7Ex rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :node%7Edual%7Ex ;
-			svu:hasAbstraction :grid ;
+			svu:isAbstractionOf :grid ;
 			skos:prefLabel "grid_node~dual~x"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_node%7Edual%7Ey
 :grid_node%7Edual%7Ey rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :node%7Edual%7Ey ;
-			svu:hasAbstraction :grid ;
+			svu:isAbstractionOf :grid ;
 			skos:prefLabel "grid_node~dual~y"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_node%7Edual%7Ez
 :grid_node%7Edual%7Ez rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :node%7Edual%7Ez ;
-			svu:hasAbstraction :grid ;
+			svu:isAbstractionOf :grid ;
 			skos:prefLabel "grid_node~dual~z"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_node%7Eprimary
 :grid_node%7Eprimary rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :node%7Eprimary ;
-			svu:hasAbstraction :grid ;
+			svu:isAbstractionOf :grid ;
 			skos:prefLabel "grid_node~primary"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_node%7Eprimary%7Ex
 :grid_node%7Eprimary%7Ex rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :node%7Eprimary%7Ex ;
-			svu:hasAbstraction :grid ;
+			svu:isAbstractionOf :grid ;
 			skos:prefLabel "grid_node~primary~x"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_node%7Eprimary%7Ey
 :grid_node%7Eprimary%7Ey rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :node%7Eprimary%7Ey ;
-			svu:hasAbstraction :grid ;
+			svu:isAbstractionOf :grid ;
 			skos:prefLabel "grid_node~primary~y"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_node%7Eprimary%7Ez
 :grid_node%7Eprimary%7Ez rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :node%7Eprimary%7Ez ;
-			svu:hasAbstraction :grid ;
+			svu:isAbstractionOf :grid ;
 			skos:prefLabel "grid_node~primary~z"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_row
 :grid_row rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :row ;
-			svu:hasAbstraction :grid ;
+			svu:isAbstractionOf :grid ;
 			skos:prefLabel "grid_row"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_shell
 :grid_shell rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :shell ;
-			svu:hasAbstraction :grid ;
+			svu:isAbstractionOf :grid ;
 			skos:prefLabel "grid_shell"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#grid_top
@@ -695,7 +695,7 @@
 :sphere_surface rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			svu:isAbstractedBy :surface ;
-			svu:hasAbstraction :sphere ;
+			svu:isAbstractionOf :sphere ;
 			skos:prefLabel "sphere_surface"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#square
@@ -1110,7 +1110,7 @@
 			svu:PhysicalAbstraction ;
 			rdf:type svu:Part ;
 			svu:isAbstractedBy :axis%7Ex ;
-			svu:hasAbstraction :shoreline ;
+			svu:isAbstractionOf :shoreline ;
 			skos:prefLabel "shoreline_axis~x"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/abstraction#target
@@ -1411,7 +1411,6 @@
 :surface%7Ehorizontal rdf:type owl:NamedIndividual ,
 			svu:MathematicalAbstraction ;
 			rdf:type svu:Part ;
-			svu:hasAbstraction :surface ;
 			svu:hasAttribute <attribute#horizontal> ;
 			skos:prefLabel "surface~horizontal"@en .
 

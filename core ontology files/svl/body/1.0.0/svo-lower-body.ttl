@@ -18,7 +18,7 @@
 #    Body   
 # 
 #################################################################
-##Last generated on: 2019-07-18 15:46 
+##Last generated on: 2019-07-24 22:22 
 
 ###Inanimate Natural Body
 
@@ -1002,32 +1002,32 @@
 ###  http://www.geoscienceontology.org/svo/svl/body#plain%7Eupper%7Efarmed
 :plain%7Eupper%7Efarmed rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasBody <body#plain%7Eupper> ;
 			svu:isTypeOf :plain ;
+			svu:hasAttribute <attribute#upper> ;
 			svu:hasAttribute <attribute#farmed> ;
 			skos:prefLabel "plain~upper~farmed"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#plain%7Eupper%7Eresidential
 :plain%7Eupper%7Eresidential rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasBody <body#plain%7Eupper> ;
 			svu:isTypeOf :plain ;
+			svu:hasAttribute <attribute#upper> ;
 			svu:hasAttribute <attribute#residential> ;
 			skos:prefLabel "plain~upper~residential"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#plain%7Eupper%7Eurban
 :plain%7Eupper%7Eurban rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasBody <body#plain%7Eupper> ;
 			svu:isTypeOf :plain ;
+			svu:hasAttribute <attribute#upper> ;
 			svu:hasAttribute <attribute#urban> ;
 			skos:prefLabel "plain~upper~urban"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#plain%7Eupper%7Evegetated
 :plain%7Eupper%7Evegetated rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasBody <body#plain%7Eupper> ;
 			svu:isTypeOf :plain ;
+			svu:hasAttribute <attribute#upper> ;
 			svu:hasAttribute <attribute#vegetated> ;
 			skos:prefLabel "plain~upper~vegetated"@en .
 
@@ -2035,8 +2035,9 @@
 ###  http://www.geoscienceontology.org/svo/svl/body#tank%7Estorage%7Eopen-top
 :tank%7Estorage%7Eopen-top rdf:type owl:NamedIndividual ,
 			svu:Body ;
-			svu:hasBody <body#tank%7Estorage> ;
+			svu:hasBody <body#tank> ;
 			svu:isTypeOf :tank ;
+			svu:hasAttribute <attribute#storage> ;
 			svu:hasAttribute <attribute#open-top> ;
 			skos:prefLabel "tank~storage~open-top"@en .
 
@@ -3562,7 +3563,6 @@
 :diatoms rdf:type owl:NamedIndividual ,
 			svu:Body ;
 			svu:isPluralityOf :diatom ;
-			svu:isTypeOf :phytoplankton ;
 			skos:prefLabel "diatoms"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#diazotroph
