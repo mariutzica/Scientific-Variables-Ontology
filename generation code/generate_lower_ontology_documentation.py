@@ -127,9 +127,9 @@ def print_index_html(cl,items,desc,date):
         wiki_content = get_wikipedia_content(wikipedia)
         wiki_context = ''
         if wiki_content != '':
-            wiki_context = "<p>This instance has a related <a href='{}' target='_blank'>"+\
-                        "Wikipedia page</a>. Short extract:<br/>" +\
-                        "<em>{}</em>".format(wikipedia,''.join(wiki_content))
+            wiki_context = """<p>This instance has a related <a href='{}' target='_blank'>
+                        Wikipedia page</a>. Short extract:<br/>
+                        <em>{}</em>""".format(wikipedia,''.join(wiki_content))
         altlabel_cont = add_context(altlabel, "Alternative labels for this instance are")
 
         # print core phenomenon components
@@ -201,7 +201,7 @@ def print_index_html(cl,items,desc,date):
         assocmatr     = get_rel_value(item, 'hasAssociatedMatter', cols )
         assunits      = get_rel_value(item, 'hasAssignedUnits', cols )
         units         = get_rel_value(item, 'hasUnits', cols )
-        headop        = get_rel_value(item, 'hasheadOperator', cols )
+        headop        = get_rel_value(item, 'hasHeadOperator', cols )
         modop         = get_rel_value(item, 'modifiesOperator', cols )
         indmodop      = get_rel_value(item, 'indirectlyModifiesOperator', cols )
         multunits     = get_rel_value(item, 'hasMultiplierUnits', cols )
