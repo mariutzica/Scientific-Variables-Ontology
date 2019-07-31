@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="/svo/css/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+<img src="/svo/images/svo_temp_logo.png">
+<h1 id="headline">Scientific Variables Ontology (SVO)</h1>
+</div>
+<div id='menu'>
+<ul>
+<li><a href="" class="active"><span>SVO Doc</span></a></li>
+<li><a href="/svo/svu" class="inactive"><span>SVU Doc<span></a></li>
+<li><a href="/svo/svl" class="inactive"><span>SVL Doc</span></a></li>
+<li><a href="/" class="inactive"><span>Main Site</span></a></li>
+</ul>
+</div>
+<p>
+  The Scientific Variables Ontology (SVO) is a blueprint outlining all of the required and optional components of creating a machine-interpretable scientific variable concept. SVO comprises an <a href="/svo/svu">upper ontology (SVU)</a> that contains a set of modular conceptual categories and defines required and optional relationships between them, as well as a <a href="/svo/svl">lower ontology (SVL)</a> that contains instances within each category. SVL can be manually or automatically populated with concepts from a wide range of fields to create custom variables.
+</p>
+
+<p id="modular_comp">
+  SVO is highly modular. It comprises a manageable number of concept classes that can then be assembled in a mix-and-match fashion to create custom variable concepts. SVO is build on the idea that any observation involves identifying a <code>Phenomenon</code> of interest for observation and a <code>Property</code> whereby some characteristic of the <code>Phenomenon</code> is identified and its value is assessed, whether qualitatively or quantitatively, subjectively or objectively, for the purpose of sharing information about the observed <code>Phenomenon</code> with others. A <code>Phenomenon</code> can be conceptually represented in terms of the physical aspects that are intrinsic to it, namely its substance or essence (that of which it is made up, <code>Matter</code>) and/or its spatial extent, its form or shape, the manner in which it takes up space (<code>Form</code>). These ideas define the modular unit from which all other phenomena, are recursively defined. The different granular levels at which spatial phenomena can be defined are illustrated below.
+</p>
+
+<img class="vertical-full-width" src="images/ontology-core-module.png" alt="Basic Spatial Ontology Module">
+
+<p>
+  It is important to note that, although we require some components to be defined for some categories (e.g., <code>Body</code> consists of both <code>Matter</code> and <code>Form</code>), these components need not be explicitly declared and may be represented by blank nodes, which we will denote with the notation <code>_:?</code>. Additionally, any observed spatial phenomenon may also be represented with an <code>Abstraction</code>. Note that this use of the term abstraction should not be confused with the general term of abstraction meaning the human mind's interpretation of what it observes; this general idea of abstraction is already encompassed in the term <code>Phenomenon</code>, which is defined as the [human] mind's interpretation of the physical world, which may be thought of as being made up of noumena, or things as they are in and of themselves. Rather, <code>Abstraction</code> here is used to refer explicitly to mathematical models that approximate observed phenomena for the purpose of quantifying their characterics.
+</p>
+
+<p>
+  In addition to spatial phenomena, it is also important to be able to create spatiotemporal phenomena as well. The simplest spatiotemporal phenomena are spatial phenomena that also involve a <code>Process</code>. To build more complex spatiotemporal phenomena, we can take the simple modular building units and combine them as shown in the following diagram, by introducing the <code>Participant</code> class that assigns a <code>Role</code> to any <code>Participant</code>.
+</p>
+
+<img class="vertical-full-width" src="images/ontology-spatiotemporal-module.png" alt="General spatiotemporal ontology module">
+
+<p>
+  By using a similar design pattern, we can also define spatial context for phenomena (e.g., such as 'below the surface of the water' or 'before the hurricane') by combining the modular <code>Phenomenon</code> unit with a <code>Relationship</code> (e.g., below or before). SVO also provides a mechanism similar to the context mechanism for identifying a <code>Reference</code> for expressing a measurement reference for a <code>Property</code> (e.g., height above sea surface).
+</p>
+
+<p id="var_example">
+  Lastly, once a <code>Phenomenon</code> has been identified, it can be paired with a <code>Property</code> in order to completely identify a <code>Variable</code>. An example of how a complex variable could be built up from the modular units is shown in the diagram below. In this diagram, the ovals represent instances of the <code>Phenomenon</code> class, while the rectangle represents an instance of the <code>Property</code> class.
+</p>
+
+<img class="vertical-full-width" src="images/ontology-variable-example.png" alt="Diagrammed example of composing a variable concept">
+
+<p id="api">
+  SVO is designed to balance a linguistic model of the world with a scientific model. By creating atomistic classes and customizable modules, SVO attempts to provide a principled template for filling in information about a variable from freeform text. This is because SVO is designed expressly to be not just an ontology but also a set of tools for manual or automated ontology generation. These translation tools use rules-based natural language processing techniques along with previously recorded linked data/knowledge graph information stored in public repositories to create variable concepts from  unstructured text descriptions of variables. Thus, one of the primary goals of SVO is to make significant progress towards automated ontology generation of scientific variables following ideas laid out in an upper ontology of higher level concepts. A simplified diagram of the text-to-SVO mapping system is shown below.
+</p>
+
+<img class="vertical-full-width" src="images/variable-interpreter.png" alt="Diagram of the text to SVO variable interpreter">
+
+<p id="standard_name">
+  SVO originated in the idea of creating standard names for model integration. Standard names are by necessity reliant on a controlled vocabulary to ensure that any given term or set of terms has a one-to-one mapping to a specific meaning. An ontology, on the other hand, is concept-based and thus terminology agnostic. In order to allow seamless mapping from ontology to standard name, each granular concept in the ontology is labeled with a <code>skos:prefLabel</code> that, in combination with a set of rules for assembling a standard name, can be used to automatically generate standard names. Due to its customizable nature, it is not necessary to be restricted to one set of rules or one vocabulary for generating standard names. Rather, it is possible to introduce a custom serializer along with custom preferred labels for different domains, and thus generate standard names following different rules, as necessitated by a given application.
+</p>
+
+<img class="horizontal-full-width" src="images/ontology-to-standard-name-mapping.png" alt="Workflow for mapping ontological concept to a standard name">
+
+<p>
+<footer>
+  <a title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://www.copyrighted.com/website/RbKPMeXwqZnxOikK"><img alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="25" srcset="https://static.copyrighted.com/badges/125x25/01_1_2x.png 2x" src="https://static.copyrighted.com/badges/125x25/01_1.png" /></a><script src="https://static.copyrighted.com/badges/helper.js"></script> <br/> &copy; 2019. No portion of this website may be duplicated without express permission from content creator. If you would like to use the content for educational purposes, please <a href="../contact.html">contact us</a>.
+</footer>
+</p>
+</body>
+</html>
