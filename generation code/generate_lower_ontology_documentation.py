@@ -59,8 +59,7 @@ def get_wikipedia_content(link):
                 print('Wikipedia page {} not valid.'.format(link))
     return wiki_context
 
-def print_index_html(cl,items,desc,date):
-    svu_pref = "http://www.geoscienceontology.org/svo/svu#"
+def print_index_html(cl,text_body,desc,date):
     head = \
     """<!DOCTYPE html>
     <html>
@@ -99,6 +98,11 @@ def print_index_html(cl,items,desc,date):
     </body>
     </html>"""
             
+    text = head + text_body + foot
+    return text
+    
+def print_class_individuals(cl,items):
+    svu_pref = "http://www.geoscienceontology.org/svo/svu#"
     text_body = ''
     cols = items.columns.values
     for _,item in items.iterrows():
@@ -218,7 +222,7 @@ def print_index_html(cl,items,desc,date):
         hasproperty   = get_rel_value(item, 'hasProperty', cols )
 
         value_cont     = add_context(value, "This attribute corresponds to property value")        
-        assunits_cont  = add_context(assunits, "This attribute has the assigned units")
+        assunits_cont  = add_context(assunits, "This attribute has the assigned dimensions")
         corrprop_cont  = add_context(corr_prop, "This attribute pertains to the property")
         assocmatr_cont = add_context(assocmatr, \
                          "This attribute inherently refers to a state of the matter instance")
@@ -226,15 +230,15 @@ def print_index_html(cl,items,desc,date):
         op_cont = add_context(headop, "This compound operator has the head operator")
         op_cont += add_context(modop, "This compound operator modifies the operator")
         op_cont += add_context(indmodop, "This instance indirectly modifies the operator")
-        units_cont = add_context(units, "This instance has the dimensional units string")
+        units_cont = add_context(units, "This instance has the dimensions")
         process_cont += add_context(quantprocess, "This instance quantifies the process")
         process_cont += add_context(processdef, "This instance is defined by the process")
-        unitsmod_cont = add_context(powfunits, "This operator modifies the units of the "+\
-                                    "property it is applied to by raising the units to " +\
+        unitsmod_cont = add_context(powfunits, "This operator modifies the dimensions of the "+\
+                                    "property it is applied to by raising the dimensions to " +\
                                     "the power of")                    
-        unitsmod_cont += add_context(multunits, "This operator modifies the units of "+\
+        unitsmod_cont += add_context(multunits, "This operator modifies the dimensions of "+\
                                      "the property it is applied to by multiplying " +\
-                                     "those units by the units")
+                                     "those dimensions by the dimensions")
         
                     
         proptype_cont = add_context(propertytype, "This instance has the property type")
@@ -495,7 +499,7 @@ def print_index_html(cl,items,desc,date):
         recordedapploperator = get_rel_value(item, 'hasRecordedAppliedOperator', cols)
 
         recorded_context += add_context(recordedunits, \
-                        "This variable has the recorded units")
+                        "This variable has the recorded dimensions")
         recorded_context += add_context(recordedproperty, \
                         "This variable has the recorded property")
         recorded_context += add_context(recordedmodproperty, \
@@ -543,7 +547,397 @@ def print_index_html(cl,items,desc,date):
         text_body += printp(has_context)
         text_body += printp(unitsmod_cont)
         text_body += printp(recorded_context)
-    text = head + text_body + foot
+    
+    return text_body
+
+def get_rel_value_2(items, prop, pref = 'http://www.geoscienceontology.org/svo/svu#'):
+    rel_value = ''
+    if pref+prop in items['rel'].tolist():
+        rel_value = ', '.join(items.loc[items['rel']==(pref+prop),'value'].tolist())
+    return rel_value
+
+### USE THIS FUNCTION TO PRINT DOCUMENTATION FOR A VARIABLE BY LABEL
+def print_variable_doc(label):
+    text_body = ''
+    address, info = search_var_by_label(label)
+    label = get_rel_value_2(info, 'prefLabel', \
+                                 pref = 'http://www.w3.org/2004/02/skos/core#')
+    
+    # print universal properties for all entities
+    altlabel  = get_rel_value_2(info, 'altLabel', \
+                                 pref = 'http://www.w3.org/2004/02/skos/core#')
+    wikipedia = get_rel_value_2(info, 'hasAssociatedWikipediaPage' )
+
+    wiki_content = get_wikipedia_content(wikipedia)
+    wiki_context = ''
+    if wiki_content != '':
+        wiki_context = """<p>This instance has a related <a href='{}' target='_blank'>
+                        Wikipedia page</a>. Short extract:<br/>
+                        <em>{}</em>""".format(wikipedia,''.join(wiki_content))
+    altlabel_cont = add_context(altlabel, "Alternative labels for this instance are")
+
+    # print core phenomenon components
+    body          = get_rel_value_2(info, 'hasBody' )
+    matter        = get_rel_value_2(info, 'hasMatter' )
+    form          = get_rel_value_2(info, 'hasForm' )
+    part          = get_rel_value_2(info, 'hasPart' )
+    trajectory    = get_rel_value_2(info, 'hasTrajectory' )
+    trajectorydir = get_rel_value_2(info, 'hasTrajectoryDirection' )
+    phenrole      = get_rel_value_2(info, 'hasRole' )
+    phenomenon    = get_rel_value_2(info, 'hasPhenomenon' )
+    hasprocess    = get_rel_value_2(info, 'hasProcess' )
+    process       = get_rel_value_2(info, 'undergoesProcess' )
+    desc_process  = get_rel_value_2(info, 'describesProcess' )
+    abstraction   = get_rel_value_2(info, 'hasAbstraction' )
+    abstractionof = get_rel_value_2(info, 'isAbstractionOf' )
+    containsabstraction   = \
+                        get_rel_value_2(info, 'containsAbstraction' )
+    containsabstractionof = \
+                        get_rel_value_2(info, 'containsAbstractionOf' )
+    abstractedby  = get_rel_value_2(info, 'isAbstractedBy' ) 
+    expras        = get_rel_value_2(info, 'isExpressedAs' )
+    attributes    = get_rel_value_2(info, 'hasAttribute' )
+    plurality     = get_rel_value_2(info, 'isPluralityOf' )
+    typeof        = get_rel_value_2(info, 'isTypeOf' )
+    pluraltypeof  = get_rel_value_2(info, 'isPluralityTypeOf' )
+
+    typeof_cont = add_context(typeof, "This instance is a narrower concept derived from")
+    typeof_cont += add_context(pluraltypeof, "This instance is the plural narrower concept derived from")
+    plurality_cont = add_context(plurality, "This instance is a plurality of")                        
+    attr_cont = add_context(attributes, "This instance has the attribute")
+    process_cont = ''
+    process_cont += add_context(process, "This instance describes something undergoing the process")
+    process_cont += add_context(desc_process, "This instance describes the process")
+
+    parts_cont = ''
+    parts_cont += add_context(phenomenon, "This instance has the phenomenon component")
+    parts_cont += add_context(matter, "This instance has the matter component")
+    parts_cont += add_context(form, "This instance has the form component")
+    parts_cont += add_context(body, "This instance has the body component")
+    parts_cont += add_context(abstraction, "This instance has the abstraction component")
+    parts_cont += add_context(part, "This instance has the part component")
+    parts_cont += add_context(trajectory, "This instance has the trajectory component")
+    parts_cont += add_context(trajectorydir, "This instance has the trajectory direction component")
+    parts_cont += add_context(phenrole, "This instance has the role component")
+    expras_cont = add_context(expras, "The property of this substance is expressed with respect to the substance")            
+    abstr_cont = add_context(abstractedby, "This instance is abstracted by")
+    abstr_cont += add_context(abstractionof, "This instance is an abstraction of")
+    abstr_cont += add_context(containsabstractionof, "This instance contains an abstraction of")
+
+    # print process properties
+    nominalization     = get_rel_value_2(info, 'hasNominalization' )
+    present_tense      = get_rel_value_2(info, 'hasPresentTense' )
+    present_participle = get_rel_value_2(info, 'hasPresentParticiple' )
+    isnoun             = get_rel_value_2(info, 'isNoun' )
+
+    pos_cont = add_context(nominalization, "This process has the nominalization language cue")
+    pos_cont += add_context(present_tense, "This process has the present tense language cue")
+    pos_cont += add_context(present_participle, "This process has the present participle language cue")
+    isnoun_cont = ''
+    if isnoun == 'true':
+        isnoun_cont = """\n<p>This attribute is expressed as a noun.</p>"""
+    elif isnoun == 'false':
+        isnoun_cont = """\n<p>This attribute is expressed as an adjective.</p>"""
+        
+    # print attribute, operator and property specific properties
+    corr_prop     = get_rel_value_2(info, 'correspondsToProperty' )
+    value         = get_rel_value_2(info, 'hasValue' )
+    assocmatr     = get_rel_value_2(info, 'hasAssociatedMatter' )
+    assunits      = get_rel_value_2(info, 'hasAssignedUnits' )
+    units         = get_rel_value_2(info, 'hasUnits' )
+    headop        = get_rel_value_2(info, 'hasHeadOperator' )
+    modop         = get_rel_value_2(info, 'modifiesOperator' )
+    indmodop      = get_rel_value_2(info, 'indirectlyModifiesOperator' )
+    multunits     = get_rel_value_2(info, 'hasMultiplierUnits' )
+    powfunits     = get_rel_value_2(info, 'hasPowerFactor' )
+    quantprocess  = get_rel_value_2(info, 'quantifiesProcess' )
+    processdef    = get_rel_value_2(info, 'isDefinedBy' )
+    propertytype  = get_rel_value_2(info, 'hasPropertyType' )
+    propertyrole  = get_rel_value_2(info, 'hasPropertyRole' )
+    propertyquant = get_rel_value_2(info, 'hasPropertyQuantification' )
+    apploperator  = get_rel_value_2(info, 'hasAppliedOperator' )
+    containsapploperator = \
+                    get_rel_value_2(info, 'containsAppliedOperator' )
+    derivation    = get_rel_value_2(info, 'isDerivedFrom' )
+    hasproperty   = get_rel_value_2(info, 'hasProperty' )
+
+    value_cont     = add_context(value, "This attribute corresponds to property value")        
+    assunits_cont  = add_context(assunits, "This attribute has the assigned dimensions")
+    corrprop_cont  = add_context(corr_prop, "This attribute pertains to the property")
+    assocmatr_cont = add_context(assocmatr, \
+                         "This attribute inherently refers to a state of the matter instance")
+        
+    op_cont = add_context(headop, "This compound operator has the head operator")
+    op_cont += add_context(modop, "This compound operator modifies the operator")
+    op_cont += add_context(indmodop, "This instance indirectly modifies the operator")
+    units_cont = add_context(units, "This instance has the dimensions")
+    process_cont += add_context(quantprocess, "This instance quantifies the process")
+    process_cont += add_context(processdef, "This instance is defined by the process")
+    unitsmod_cont = add_context(powfunits, "This operator modifies the dimensions of the "+\
+                                    "property it is applied to by raising the dimensions to " +\
+                                    "the power of")                    
+    unitsmod_cont += add_context(multunits, "This operator modifies the dimensions of "+\
+                                     "the property it is applied to by multiplying " +\
+                                     "those dimensions by the dimensions")
+        
+                    
+    proptype_cont = add_context(propertytype, "This instance has the property type")
+    proprole_cont = add_context(propertyrole, "This instance has the property role")
+    propquant_cont = add_context(propertyquant, "This instance has the property quantification")
+    derivation_cont = add_context(derivation, "This instance is derived from")
+    operator_cont = add_context(apploperator, "This instance has the applied operator")
+    operator_cont += add_context(containsapploperator, "This instance contains the applied operator")
+
+    hasprop_cont = add_context(hasproperty, "This instance describes the property")
+
+    # print specialty phenomenon properties
+    has_context = ''
+
+    for rellink in ['Medium','Reference','Context','Participant']:
+        hasx           = get_rel_value_2(info, 'has{}'.format(rellink))
+        hasphenomenon  = get_rel_value_2(info, 'has{}Phenomenon'\
+                                               .format(rellink))
+        hasbody        = get_rel_value_2(info, 'has{}Body'\
+                                               .format(rellink))
+        hasmatter      = get_rel_value_2(info, 'has{}Matter'\
+                                                .format(rellink))
+        hasform        = get_rel_value_2(info, 'has{}Form'\
+                                                .format(rellink))
+        haspart        = get_rel_value_2(info, 'has{}Part'\
+                                                .format(rellink))
+        hastrajectory  = get_rel_value_2(info, 'has{}Trajectory'\
+                                                .format(rellink))
+        hastrajdir     = get_rel_value_2(info, 'has{}TrajectoryDirection'\
+                                                .format(rellink))
+        hasprocess     = get_rel_value_2(info, 'has{}Process'\
+                                                .format(rellink))
+        hasrole        = get_rel_value_2(info, 'has{}Role'\
+                                                .format(rellink))
+        hasabstraction = get_rel_value_2(info, 'has{}Abstraction'\
+                                                .format(rellink))
+        hasattribute   = get_rel_value_2(info, 'has{}Attribute'\
+                                                .format(rellink))
+        hasrelationship = get_rel_value_2(info, 'has{}Relationship'\
+                                               .format(rellink))
+            
+        has_context += add_context(hasx, \
+                        "This instance has the {}")\
+                                            .format(rellink.lower()+' ')  
+        has_context += add_context(hasphenomenon, \
+                        "This instance has the {}phenomenon")\
+                                            .format(rellink.lower()+' ')  
+        has_context += add_context(hasbody, \
+                        "This instance represents the {}body")\
+                                            .format(rellink.lower()+' ')  
+        has_context += add_context(hasmatter, \
+                        "This instance represents the {}matter")\
+                                            .format(rellink.lower()+' ')  
+        has_context += add_context(hasform, \
+                        "This instance represents the {}form")\
+                                            .format(rellink.lower()+' ')  
+        has_context += add_context(haspart, \
+                        "This instance represents the {}part")\
+                                            .format(rellink.lower()+' ')  
+        has_context += add_context(hasprocess, \
+                        "This instance represents the {}process")\
+                                            .format(rellink.lower()+' ')  
+        has_context += add_context(hastrajectory, \
+                        "This instance represents the {}trajectory")\
+                                            .format(rellink.lower()+' ')  
+        has_context += add_context(hastrajdir, \
+                        "This instance represents the {}trajectory direction")\
+                                            .format(rellink.lower()+' ')  
+        has_context += add_context(hasrole, \
+                        "This instance represents the {}role")\
+                                            .format(rellink.lower()+' ')  
+        has_context += add_context(hasabstraction, \
+                        "This instance represents the {}abstraction")\
+                                            .format(rellink.lower()+' ')  
+        has_context += add_context(hasattribute, \
+                        "This instance represents the {}attribute")\
+                                            .format(rellink.lower()+' ')  
+        has_context += add_context(hasrelationship, \
+                        "This instance represents the {}relationship")\
+                                            .format(rellink.lower()+' ')  
+
+                    
+    # print all contains relationships
+    contains_context = ''
+
+    for rellink in ['','Medium','Reference','Context','Participant']:
+        containsphenomenon  = get_rel_value_2(info, 'contains{}Phenomenon'\
+                                               .format(rellink))
+        containsbody        = get_rel_value_2(info, 'contains{}Body'\
+                                               .format(rellink))
+        containsmatter      = get_rel_value_2(info, 'contains{}Matter'\
+                                                .format(rellink))
+        containsform        = get_rel_value_2(info, 'contains{}Form'\
+                                                .format(rellink))
+        containspart        = get_rel_value_2(info, 'contains{}Part'\
+                                                .format(rellink))
+        containstrajectory  = get_rel_value_2(info, 'contains{}Trajectory'\
+                                                .format(rellink))
+        containstrajdir     = get_rel_value_2(info, 'contains{}TrajectoryDirection'\
+                                                .format(rellink))
+        containsprocess     = get_rel_value_2(info, 'contains{}Process'\
+                                                .format(rellink))
+        containsrole        = get_rel_value_2(info, 'contains{}Role'\
+                                                .format(rellink))
+        containsabstraction = get_rel_value_2(info, 'contains{}Abstraction'\
+                                                .format(rellink))
+        containsattribute   = get_rel_value_2(info, 'contains{}Attribute'\
+                                                .format(rellink))
+
+        
+        contains_context += add_context(containsphenomenon, \
+                        "This variable contains the {}phenomenon")\
+                                            .format(rellink.lower()+' ')  
+        contains_context += add_context(containsbody, \
+                        "This variable contains the {}body")\
+                                            .format(rellink.lower()+' ')  
+        contains_context += add_context(containsmatter, \
+                        "This variable contains the {}matter")\
+                                            .format(rellink.lower()+' ')  
+        contains_context += add_context(containsform, \
+                        "This variable contains the {}form")\
+                                            .format(rellink.lower()+' ')  
+        contains_context += add_context(containspart, \
+                        "This variable contains the {}part")\
+                                            .format(rellink.lower()+' ')  
+        contains_context += add_context(containstrajectory, \
+                        "This variable contains the {}trajectory")\
+                                            .format(rellink.lower()+' ')  
+        contains_context += add_context(containstrajdir, \
+                        "This variable contains the {}trajectory direction")\
+                                            .format(rellink.lower()+' ')  
+        contains_context += add_context(containsprocess, \
+                        "This variable contains the {}process")\
+                                            .format(rellink.lower()+' ')  
+        contains_context += add_context(containsrole, \
+                        "This variable contains the {}role")\
+                                            .format(rellink.lower()+' ')  
+        contains_context += add_context(containsabstraction, \
+                        "This variable contains the {}abstraction")\
+                                            .format(rellink.lower()+' ')  
+        contains_context += add_context(containsattribute, \
+                        "This variable contains the {}attribute")\
+                                            .format(rellink.lower()+' ')  
+
+    # print all recorded relationships (Variable class)
+    recorded_context = ''
+
+    for rellink in ['','Medium','Reference','Context','Participant']:
+        recordedphenomenon  = get_rel_value_2(info, 'hasRecorded{}Phenomenon'\
+                                                .format(rellink))
+        recordedbody        = get_rel_value_2(info, 'hasRecorded{}Body'\
+                                                .format(rellink))
+        recordedmatter      = get_rel_value_2(info, 'hasRecorded{}Matter'\
+                                                .format(rellink))
+        recordedform        = get_rel_value_2(info, 'hasRecorded{}Form'\
+                                                .format(rellink))
+        recordedpart        = get_rel_value_2(info, 'hasRecorded{}Part'\
+                                                .format(rellink))
+        recordedtrajectory  = get_rel_value_2(info, 'hasRecorded{}Trajectory'\
+                                                .format(rellink))
+        recordedtrajdir     = get_rel_value_2(info, 'hasRecorded{}TrajectoryDirection'\
+                                                .format(rellink))
+        recordedprocess     = get_rel_value_2(info, 'hasRecorded{}Process'\
+                                                .format(rellink))
+        recordedrole        = get_rel_value_2(info, 'hasRecorded{}Role'\
+                                                .format(rellink))
+        recordedabstraction = get_rel_value_2(info, 'hasRecorded{}Abstraction'\
+                                                .format(rellink))
+        recordedattribute   = get_rel_value_2(info, 'hasRecorded{}Attribute'\
+                                                .format(rellink))
+
+        
+        recorded_context += add_context(recordedphenomenon, \
+                        "This variable has the recorded {}phenomenon")\
+                                            .format(rellink.lower()+' ')  
+        recorded_context += add_context(recordedbody, \
+                        "This variable has the recorded {}body")\
+                                        .format(rellink.lower()+' ')  
+        recorded_context += add_context(recordedmatter, \
+                        "This variable has the recorded {}matter")\
+                                            .format(rellink.lower()+' ')  
+        recorded_context += add_context(recordedform, \
+                        "This variable has the recorded {}form")\
+                                            .format(rellink.lower()+' ')  
+        recorded_context += add_context(recordedpart, \
+                        "This variable has the recorded {}part")\
+                                            .format(rellink.lower()+' ')  
+        recorded_context += add_context(recordedtrajectory, \
+                        "This variable has the recorded {}trajectory")\
+                                            .format(rellink.lower()+' ')  
+        recorded_context += add_context(recordedtrajdir, \
+                        "This variable has the recorded {}trajectory direction")\
+                                            .format(rellink.lower()+' ')  
+        recorded_context += add_context(recordedprocess, \
+                        "This variable has the recorded {}process")\
+                                            .format(rellink.lower()+' ')  
+        recorded_context += add_context(recordedrole, \
+                        "This variable has the recorded {}role")\
+                                            .format(rellink.lower()+' ')  
+        recorded_context += add_context(recordedabstraction, \
+                        "This variable has the recorded {}abstraction")\
+                                            .format(rellink.lower()+' ')  
+        recorded_context += add_context(recordedattribute, \
+                        "This variable has the recorded {}attribute")\
+                                            .format(rellink.lower()+' ')  
+                
+
+    recordedunits        = get_rel_value_2(info, 'hasRecordedUnits')
+    recordedproperty     = get_rel_value_2(info, 'hasRecordedProperty')
+    recordedmodproperty  = get_rel_value_2(info, 'hasRecordedModifiedProperty')
+    recordedapploperator = get_rel_value_2(info, 'hasRecordedAppliedOperator')
+
+    recorded_context += add_context(recordedunits, \
+                        "This variable has the recorded units")
+    recorded_context += add_context(recordedproperty, \
+                        "This variable has the recorded property")
+    recorded_context += add_context(recordedmodproperty, \
+                        "This variable has the recorded modified property")
+    recorded_context += add_context(recordedapploperator, \
+                        "This variable has the recorded applied operator")
+    
+    text_body += """
+                    <h4 id='{}'>{}</h4>""".format(address,label)
+    def printp(cont):
+        if cont != '':
+            return """<p>
+                        {}
+                        </p>
+                        """.format(cont)
+        return ''
+        
+    text_body += printp(altlabel_cont)
+    text_body += printp(abstr_cont)
+    text_body += printp(plurality_cont)
+    text_body += printp(wiki_context)
+    text_body += printp(typeof_cont)
+    text_body += printp(expras_cont)
+    text_body += printp(parts_cont)
+    text_body += printp(corrprop_cont)
+    text_body += printp(attr_cont)
+    text_body += printp(pos_cont)
+    text_body += printp(isnoun_cont)
+    text_body += printp(process_cont)
+    text_body += printp(value_cont)
+    text_body += printp(assocmatr_cont)
+    text_body += printp(assunits_cont)
+    text_body += printp(units_cont)
+    text_body += printp(contains_context)
+    text_body += printp(proptype_cont)
+    text_body += printp(proprole_cont)
+    text_body += printp(propquant_cont)
+    text_body += printp(derivation_cont)
+    text_body += printp(operator_cont)
+    text_body += printp(hasprop_cont)
+    text_body += printp(op_cont)
+    text_body += printp(has_context)
+    text_body += printp(unitsmod_cont)
+    text_body += printp(recorded_context)
+    text = text_body
     return text
                 
 # look up term in ontology, return its class if exact match found
@@ -552,7 +946,7 @@ def search_class(cl):
                    'http://www.w3.org/2000/01/rdf-schema#comment',
                    'http://www.w3.org/2000/01/rdf-schema#label']
                    #'http://www.w3.org/1999/02/22-rdf-syntax-ns#type']
-    sparql = SPARQLWrapper("http://sparql.geoscienceontology.org")
+    sparql = SPARQLWrapper("http://35.194.43.13:3030/ds/query")
     if cl == 'Assumption':
         sparql.setQuery("""
                     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -580,7 +974,7 @@ def search_class(cl):
                             ?entity ?rel ?value .
                             }}
                     ORDER BY ?entity
-                    """.format(cl,cl))
+                    """.format(cl))
     sparql.setReturnFormat(sqjson)
     results = sparql.query().convert()
 
@@ -605,13 +999,60 @@ def search_class(cl):
     return data.sort_values(by=['entity'])
 #    return results
 
+# look up term in ontology, return its class if exact match found
+def search_var_by_label(label):
+    rel_discard = ['http://www.geoscienceontology.org/svo/svu#subLabel',
+                   'http://www.w3.org/2000/01/rdf-schema#comment',
+                   'http://www.w3.org/2000/01/rdf-schema#label']
+                   #'http://www.w3.org/1999/02/22-rdf-syntax-ns#type']
+    sparql = SPARQLWrapper("http://35.194.43.13:3030/ds/query")
+    sparql.setQuery("""
+                    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                    PREFIX svu: <http://www.geoscienceontology.org/svo/svu#>
+
+                    SELECT ?entity ?rel ?value
+                    WHERE {{
+                            ?entity a svu:Variable .
+                            ?entity rdfs:label ?label .
+                            ?entity ?rel ?value .
+                            BIND (STR(?label) as ?name) .
+                            FILTER REGEX(?name, "^{}$")
+                            }}
+                    ORDER BY ?entity
+                    """.format(label))
+    sparql.setReturnFormat(sqjson)
+    results = sparql.query().convert()
+
+    data = pd.DataFrame(columns=['rel','value'])
+    for result in results["results"]["bindings"]:
+        entity = result["entity"]["value"]
+        rel = result["rel"]["value"]
+        value = result["value"]["value"]
+        if rel in rel_discard:
+            continue
+        index = len(data)
+        data.loc[index,'rel'] = rel
+        data.loc[index,'value'] = value        
+
+    return entity, data
+
 def write_to_file(ext,cl,desc):
     now = datetime.datetime.now(pytz.timezone("America/New_York"))
-    test = search_class(cl)
-    text = print_index_html(cl,test,desc,now)
+    if cl != 'Property':
+        test = search_class(cl)
+        text = print_index_html(cl,test,desc,now)
+    else:
+        properties = search_class(cl)
+        standardization = search_class('PropertyStandardization')
+        proptype = search_class('PropertyType')
+        text = print_class_individuals(cl,properties)
+        text += print_class_individuals('PropertyStandardization',standardization)
+        text += print_class_individuals('PropertyType',proptype)
+        text = print_index_html(cl,text,desc,now)
     with open(ext+'index.html', 'w') as file:  # Use file to refer to the file object
         file.write(text)
-    return test
+    return text
 
 desc_abstraction = """This is the documentation for the Abstraction Ontology. All instances of the Abstraction class are 
                 listed here. An abstraction is a mental mathematical model that is applied to observed phenomena
@@ -693,23 +1134,23 @@ desc_variable = """This is the documentation for the Variable Ontology. All inst
                 <a href="https://csdms.colorado.edu/wiki/CSN_Searchable_List" target="_blank">CSN website</a>."""
 
 ext = '../core ontology files/svl/'
-test = write_to_file(ext+'body/1.0.0/','Body',desc_body)
-test = write_to_file(ext+'form/1.0.0/','Form',desc_form)
-test = write_to_file(ext+'matter/1.0.0/','Matter',desc_matter)
-test = write_to_file(ext+'process/1.0.0/','Process',desc_process)
-test = write_to_file(ext+'part/1.0.0/','Part',desc_part)
-test = write_to_file(ext+'attribute/1.0.0/','Attribute',desc_attribute)
-test = write_to_file(ext+'trajectory/1.0.0/','Trajectory',desc_trajectory)
-test = write_to_file(ext+'trajectorydirection/1.0.0/','TrajectoryDirection',desc_trajectorydir)
-test = write_to_file(ext+'role/1.0.0/','Role',desc_role)
-test = write_to_file(ext+'rolephenomenon/1.0.0/','RolePhenomenon',desc_rolephen)
-test = write_to_file(ext+'relationship/1.0.0/','Relationship',desc_relationship)
-test = write_to_file(ext+'abstraction/1.0.0/','Abstraction',desc_abstraction)
-test = write_to_file(ext+'assumption/1.0.0/','Assumption',desc_assumption)
-test = write_to_file(ext+'context/1.0.0/','Context',desc_context)
-test = write_to_file(ext+'reference/1.0.0/','Reference',desc_reference)
-test = write_to_file(ext+'operator/1.0.0/','Operator',desc_operator)
-test = write_to_file(ext+'participant/1.0.0/','Participant',desc_participant)
-test = write_to_file(ext+'phenomenon/1.0.0/','Phenomenon',desc_phenomenon)
+#test = write_to_file(ext+'body/1.0.0/','Body',desc_body)
+#test = write_to_file(ext+'form/1.0.0/','Form',desc_form)
+#test = write_to_file(ext+'matter/1.0.0/','Matter',desc_matter)
+#test = write_to_file(ext+'process/1.0.0/','Process',desc_process)
+#test = write_to_file(ext+'part/1.0.0/','Part',desc_part)
+#test = write_to_file(ext+'attribute/1.0.0/','Attribute',desc_attribute)
+#test = write_to_file(ext+'trajectory/1.0.0/','Trajectory',desc_trajectory)
+#test = write_to_file(ext+'trajectorydirection/1.0.0/','TrajectoryDirection',desc_trajectorydir)
+#test = write_to_file(ext+'role/1.0.0/','Role',desc_role)
+#test = write_to_file(ext+'rolephenomenon/1.0.0/','RolePhenomenon',desc_rolephen)
+#test = write_to_file(ext+'relationship/1.0.0/','Relationship',desc_relationship)
+#test = write_to_file(ext+'abstraction/1.0.0/','Abstraction',desc_abstraction)
+#test = write_to_file(ext+'assumption/1.0.0/','Assumption',desc_assumption)
+#test = write_to_file(ext+'context/1.0.0/','Context',desc_context)
+#test = write_to_file(ext+'reference/1.0.0/','Reference',desc_reference)
+#test = write_to_file(ext+'operator/1.0.0/','Operator',desc_operator)
+#test = write_to_file(ext+'participant/1.0.0/','Participant',desc_participant)
+#test = write_to_file(ext+'phenomenon/1.0.0/','Phenomenon',desc_phenomenon)
 test = write_to_file(ext+'property/1.0.0/','Property',desc_property)
-test = write_to_file(ext+'variable/1.0.0/','Variable',desc_variable)
+#test = write_to_file(ext+'variable/1.0.0/','Variable',desc_variable)

@@ -1,0 +1,11 @@
+current svo iri,provided svo iri
+((atmosphere@role~source_water@role~main_precipitation)@role~main_evapotranspiration)_(soil@role~source_water@role~main_evapotranspiration)__thornthwaite_potential_evapotranspiration_volume,((atmosphere@role~source_(water@role~main_precipitation))@role~main_evapotranspiration)_((soil@role~source_water)@role~main_evapotranspiration)__thornthwaite_potential_evapotranspiration_volume
+ground@medium_water~intercepted__volume-per-area_storage_capacity,ground@medium_water~intercepted__volume-per-area_storage_density
+(land_surface)@context~on_snow~intercepted__volume-per-area_storage_capacity,(land_surface)@context~on_snow~intercepted__volume-per-area_storage_density
+(soil_surface)@medium_water__volume-per-area_storage_capacity,(land_surface)@context~in_(soil@medium_water)__volume-per-area_storage_density
+(soil_unsat-zone)@medium__volume-per-area_storage_capacity,(soil_zone~vadose)@medium_water__volume-per-area_storage_density
+(land_surface)@context~below_(ground@context~in_water)__head,ground@context~in_water__head
+(soil_surface)@role~source_water@role~main_evaporation__evaporation_volume_flux,(land_surface)@context~at_(soil@role~source_water@role~main_evaporation)__evaporation_volume_flux
+atmosphere@role~source_water@role~main_precipitation__precipitation_leq_volume_flux,atmosphere@role~source_water@role~main_precipitation__leq_precipitation_volume_flux
+(soil_surface)@role~sink_water@role~main_infiltration__infiltration_volume_flux,(land_surface)@role~sink_water@role~main_infiltration__infiltration_volume_flux
+channel~river@medium_water__stage_height,channel~river__stage_height

@@ -18,7 +18,7 @@
 #    Process   
 # 
 #################################################################
-##Last generated on: 2019-07-24 22:22 
+##Last generated on: 2019-10-16 13:09 
 
 ###Process
 
@@ -8145,6 +8145,14 @@
 			svu:hasPresentParticiple "predating" ;
 			svu:hasNominalization "predation" ;
 			skos:prefLabel "predation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/process#preconsolidation
+:preconsolidation rdf:type owl:NamedIndividual ,
+			svu:Process ;
+			svu:hasPresentTense "preconsolidate" ;
+			svu:hasPresentParticiple "preconsolidating" ;
+			svu:hasNominalization "preconsolidation" ;
+			skos:prefLabel "preconsolidation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/process#prediction
 :prediction rdf:type owl:NamedIndividual ,

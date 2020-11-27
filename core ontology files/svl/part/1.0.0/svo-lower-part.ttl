@@ -18,7 +18,7 @@
 #    Part   
 # 
 #################################################################
-##Last generated on: 2019-07-24 22:22 
+##Last generated on: 2019-10-16 13:09 
 
 ###Part
 
@@ -818,9 +818,17 @@
 :unsat-zone rdf:type owl:NamedIndividual ,
 			svu:Part ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Vadose_zone" ;
+			svu:isPluralityOf :vadose%20zone ;
 			svu:isTypeOf :zone ;
 			svu:hasAttribute <attribute#unsaturated> ;
 			skos:prefLabel "unsat-zone"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/part#zone%7Evadose
+:zone%7Evadose rdf:type owl:NamedIndividual ,
+			svu:Part ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Vadose_zone" ;
+			svu:isTypeOf :zone ;
+			skos:prefLabel "zone~vadose"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/part#zone
 :zone rdf:type owl:NamedIndividual ,

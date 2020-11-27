@@ -61,6 +61,8 @@ plurality       = '\t\t\tsvu:isPluralityOf :{} ;\n'
 preflabel     = '\t\t\tskos:prefLabel "{}"@en .\n'
 comment       = '\t\t\trdfs:comment {} {}\n'
 
+owl_sameas   = ':{} owl:sameAs :{} .\n'
+
 error_message = ( 'Ooops, the file {} was not found in its expected '
                   'location, {}.\nExiting ...' )
 
@@ -764,6 +766,12 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
                                     pref_temp = 'matter'
                                 elif 'form' in pref_opt:
                                     pref_temp = 'form'
+                                elif 'attribute' in pref_opt:
+                                    pref_temp = 'attribute'
+                                    rel = 'hasAttribute'
+                                elif 'process' in pref_opt:
+                                    pref_temp = 'process'
+                                    rel = 'undergoesProcess'
                                 elif 'abstraction' in pref_opt  or 'abstraction_part' in pref_opt:
                                     pref_temp = 'abstraction'
                                 elif pref_opt == ['']:
@@ -932,7 +940,7 @@ def create_bb_file( vocab, ttl_file, classname, collabel, pref, label=None, \
         ######################################################################
 
 # create variable file
-def create_variable_entries( vocab, ttl_file, label=None ):
+def create_variable_entries( vocab, ttl_file, label=None, iri_mapping=None ):
     
     if label:
         ttl_file.write( label )
@@ -960,9 +968,18 @@ def create_variable_entries( vocab, ttl_file, label=None ):
         pref_label_len = min([len(i) for i in labels])
         altl = ''
         prefl = ''
+        pref_found = False
         for l in labels:
-            if len(l) == pref_label_len:
+            if len(l) == pref_label_len and not pref_found:
                 prefl += preflabel.format( l )
+                pref_found = True
             else:
                 altl += synonym.format( l )
         ttl_file.write(altl+prefl)
+    if isinstance(iri_mapping, pd.DataFrame):
+        for i in iri_mapping.index:
+            current_esc = urllib.quote( iri_mapping.loc[i,'current svo iri'] )
+            provided_esc = urllib.quote( iri_mapping.loc[i,'provided svo iri'] )
+            ttl_file.write(owl_sameas.format(provided_esc.replace('~','%7E'), \
+                                             current_esc.replace('~','%7E') ))
+            

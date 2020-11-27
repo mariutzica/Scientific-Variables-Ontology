@@ -18,7 +18,7 @@
 #    Property   
 # 
 #################################################################
-##Last generated on: 2019-07-24 22:22 
+##Last generated on: 2019-10-16 13:09 
 
 ###Property
 
@@ -565,6 +565,11 @@
 			svu:Property ;
 			skos:prefLabel "speed"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#stage
+:stage rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "stage"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#stability
 :stability rdf:type owl:NamedIndividual ,
 			svu:Property ;
@@ -574,6 +579,11 @@
 :state rdf:type owl:NamedIndividual ,
 			svu:Property ;
 			skos:prefLabel "state"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#storage
+:storage rdf:type owl:NamedIndividual ,
+			svu:Property ;
+			skos:prefLabel "storage"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#susceptibility
 :susceptibility rdf:type owl:NamedIndividual ,
@@ -799,6 +809,90 @@
 
 ###QuantitativeProperty (Quantity)
 
+
+###  http://www.geoscienceontology.org/svo/svl/property#seasonal_production_index
+:seasonal_production_index rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :yield ;
+			svu:hasPropertyQuantification :index ;
+			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#production> ;
+			skos:prefLabel "seasonal_production_index"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#flow_duration_index
+:flow_duration_index rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasPropertyQuantification :index ;
+			svu:quantifiesProcess <process#flowing> ;
+			svu:isTypeOf :duration ;
+			skos:prefLabel "flow_duration_index"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#geospatial_flood_depth_exceedance_index
+:geospatial_flood_depth_exceedance_index rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasPropertyQuantification :index ;
+			svu:hasUnits "none" ;
+			skos:prefLabel "geospatial_flood_depth_exceedance_index"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#stress_period_duration
+:stress_period_duration rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :duration ;
+			skos:prefLabel "stress_period_duration"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#stress_period_time_step_count
+:stress_period_time_step_count rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :count ;
+			skos:prefLabel "stress_period_time_step_count"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#successive_time_step_multiplication_factor
+:successive_time_step_multiplication_factor rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasPropertyRole <role#factor> ;
+			svu:hasUnits "none" ;
+			skos:prefLabel "successive_time_step_multiplier"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#horizontal_anisotropy_factor
+:horizontal_anisotropy_factor rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :anisotropy_factor ;
+			svu:hasAttribute <attribute#horizontal> ;
+			skos:prefLabel "horizontal_anisotropy_factor"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#anisotropy_factor
+:anisotropy_factor rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :anisotropy ;
+			svu:hasPropertyRole <role#factor> ;
+			svu:hasUnits "none" ;
+			skos:prefLabel "anisotropy_factor"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#standardized_precipitation_wetness_index
+:standardized_precipitation_wetness_index rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :wetness ;
+			svu:hasPropertyQuantification :index ;
+			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#precipitation> ;
+			skos:prefLabel "standardized_precipitation_wetness_index"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#standardized_precipitation_evapotranspiration_drought_intensity_index
+:standardized_precipitation_evapotranspiration_drought_intensity_index rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :intensity ;
+			svu:hasPropertyQuantification :index ;
+			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#evapotranspiration> ;
+			svu:quantifiesProcess <process#precipitation> ;
+			skos:prefLabel "standardized_precipitation_evapotranspiration_drought_intensity_index"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#thornthwaite_potential_evapotranspiration_volume
+:thornthwaite_potential_evapotranspiration_volume rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#evapotranspiration> ;
+			svu:isTypeOf :volume ;
+			skos:prefLabel "thornthwaite_potential_evapotranspiration_volume"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#phenological_stage
 :phenological_stage rdf:type owl:NamedIndividual ,
@@ -1435,6 +1529,7 @@
 :atomic_mass_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isTypeOf :mass_ratio ;
+			svu:hasAttribute <attribute#relative> ;
 			skos:prefLabel "relative_atomic_mass"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#atomic_weight
@@ -1853,6 +1948,18 @@
 			svu:isTypeOf :pressure_head ;
 			svu:hasAttribute <attribute#bubbling> ;
 			skos:prefLabel "bubbling_pressure_head"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#interfacial_hydraulic_conductance
+:interfacial_hydraulic_conductance rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :hydraulic_conductance ;
+			skos:prefLabel "interfacial_hydraulic_conductance"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#hydraulic_conductance
+:hydraulic_conductance rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasUnits "L^2 T^-1" ;
+			skos:prefLabel "hydraulic_conductance"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#bulk_aerodynamic_conductance
 :bulk_aerodynamic_conductance rdf:type owl:NamedIndividual ,
@@ -2478,6 +2585,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/property#coverage_severity_code
 :coverage_severity_code rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:isTypeOf :severity ;
 			svu:hasPropertyQuantification :code ;
 			svu:hasUnits "none" ;
 			skos:prefLabel "coverage_severity_code"@en .
@@ -2732,6 +2840,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasUnits "none" ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Relative_density" ;
+			svu:hasAttribute <attribute#relative> ;
 			skos:prefLabel "relative_density"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#departure_angle
@@ -3006,6 +3115,18 @@
 			svu:hasUnits "none" ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Diversity_index" ;
 			skos:prefLabel "diversity_index"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#upstream_volume_flow_rate
+:upstream_volume_flow_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :volume_flow_rate ;
+			skos:prefLabel "upstream_volume_flow_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#downstream_volume_flow_rate
+:downstream_volume_flow_rate rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :volume_flow_rate ;
+			skos:prefLabel "downstream_volume_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#downstream_hydraulic_geometry_depth-vs-discharge_coefficient
 :downstream_hydraulic_geometry_depth-vs-discharge_coefficient rdf:type owl:NamedIndividual ,
@@ -3450,6 +3571,20 @@
 			svu:isTypeOf :time ;
 			skos:prefLabel "end_time"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#planting_start_time
+:planting_start_time rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#planting> ;
+			svu:isTypeOf :start_time ;
+			skos:prefLabel "planting_start_time"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#planting_end_time
+:planting_end_time rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#planting> ;
+			svu:isTypeOf :end_time ;
+			skos:prefLabel "planting_end_time"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#energy
 :energy rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -3621,6 +3756,12 @@
 			svu:isTypeOf :temperature ;
 			skos:prefLabel "equivalent_temperature"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#equivalent_thickness
+:equivalent_thickness rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :thickness ;
+			skos:prefLabel "equivalent_thickness"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#ericksen_number
 :ericksen_number rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -3720,6 +3861,13 @@
 			svu:isTypeOf :volume_flux ;
 			skos:prefLabel "evapotranspiration_volume_flux"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#potential_evapotranspiration_volume_flux
+:potential_evapotranspiration_volume_flux rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#evapotranspiration> ;
+			svu:isTypeOf :evapotranspiration_volume_flux ;
+			skos:prefLabel "potential_evapotranspiration_volume_flux"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#reference_evapotranspiration_volume_flux
 :reference_evapotranspiration_volume_flux rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -3781,6 +3929,12 @@
 			svu:hasUnits "L^2" ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Extent" ;
 			skos:prefLabel "extent"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#areal_extent
+:areal_extent rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :extent ;
+			skos:prefLabel "areal_extent"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#fall_speed
 :fall_speed rdf:type owl:NamedIndividual ,
@@ -4488,6 +4642,12 @@
 			svu:hasAttribute <attribute#vertical> ;
 			skos:prefLabel "vertical_hydraulic_conductivity"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#horizontal_hydraulic_conductivity
+:horizontal_hydraulic_conductivity rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :hydraulic_conductivity ;
+			skos:prefLabel "horizontal_hydraulic_conductivity"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#horizontal_thermal_diffusivity
 :horizontal_thermal_diffusivity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -4539,6 +4699,7 @@
 :hydraulic_conductivity_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "none" ;
+			svu:hasAttribute <attribute#relative> ;
 			skos:prefLabel "relative_hydraulic_conductivity"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#hydraulic_geometry_depth-vs-discharge_coefficient
@@ -4620,6 +4781,7 @@
 :hydraulic_roughness_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "none" ;
+			svu:hasAttribute <attribute#relative> ;
 			skos:prefLabel "relative_hydraulic_roughness"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#hydrogenation_enthalpy
@@ -5579,6 +5741,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasUnits "none" ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Permeability_(electromagnetism)#Relative_permeability_and_magnetic_susceptibility" ;
+			svu:hasAttribute <attribute#relative> ;
 			skos:prefLabel "relative_magnetic_permeability"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#magnetic_reynolds_number
@@ -6087,10 +6250,16 @@
 			svu:isTypeOf :mass-per-area_yield ;
 			skos:prefLabel "observed_mass-per-area_yield"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#applied_mass
+:applied_mass rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :mass ;
+			skos:prefLabel "applied_mass"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#observed_applied_mass
 :observed_applied_mass rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
-			svu:isTypeOf :mass ;
+			svu:isTypeOf :applied_mass ;
 			skos:prefLabel "observed_applied_mass"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#simulated_mass-per-area_yield
@@ -6518,6 +6687,19 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mass_flux#Molar_fluxes" ;
 			skos:prefLabel "mole_flux"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#planting_count-per-area_density_fraction
+:planting_count-per-area_density_fraction rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
+			svu:quantifiesProcess <process#planting> ;
+			skos:prefLabel "planting_count-per-area_density_fraction"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#count-per-area_density_fraction
+:count-per-area_density_fraction rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasUnits "none" ;
+			skos:prefLabel "count-per-area_density_fraction"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#mole_fraction
 :mole_fraction rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -6559,6 +6741,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Molecular_mass" ;
 			svu:isTypeOf :mass_ratio ;
+			svu:hasAttribute <attribute#relative> ;
 			skos:prefLabel "relative_molecular_mass"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#moles
@@ -6829,6 +7012,7 @@
 ###  http://www.geoscienceontology.org/svo/svl/property#odor_severity_code
 :odor_severity_code rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
+			svu:isTypeOf :severity ;
 			svu:hasPropertyQuantification :code ;
 			svu:hasUnits "none" ;
 			skos:prefLabel "odor_severity_code"@en .
@@ -6921,6 +7105,32 @@
 			svu:hasAttribute <attribute#oven-dried> ;
 			skos:prefLabel "oven-dried_pressure_head"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#initial_preconsolidation_head
+:initial_preconsolidation_head rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#preconsolidation> ;
+			svu:isTypeOf :preconsolidation_head ;
+			skos:prefLabel "initial_preconsolidation_head"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#preconsolidation_head
+:preconsolidation_head rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#preconsolidation> ;
+			svu:isTypeOf :head ;
+			skos:prefLabel "preconsolidation_head"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#initial_head
+:initial_head rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :head ;
+			skos:prefLabel "initial_head"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#constant_head
+:constant_head rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :head ;
+			skos:prefLabel "constant_head"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#oxidation-reduction_potential
 :oxidation-reduction_potential rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -6937,6 +7147,44 @@
 			svu:isTypeOf :pressure ;
 			svu:hasAttribute <attribute#partial> ;
 			skos:prefLabel "partial_pressure"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#storage_coefficient
+:storage_coefficient rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :storage ;
+			svu:hasPropertyRole <role#coefficient> ;
+			svu:hasUnits "none" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Specific_storage#Storativity" ;
+			skos:altLabel "storativity"@en ;
+			skos:prefLabel "storage_coefficient"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#primary_storage_coefficient
+:primary_storage_coefficient rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :storage_coefficient ;
+			svu:hasAttribute <attribute#primary> ;
+			skos:prefLabel "primary_storage_coefficient"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#secondary_storage_coefficient
+:secondary_storage_coefficient rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :storage_coefficient ;
+			svu:hasAttribute <attribute#secondary> ;
+			skos:prefLabel "secondary_storage_coefficient"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#elastic_skeletal_storage_coefficient
+:elastic_skeletal_storage_coefficient rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :storage_coefficient ;
+			svu:hasAttribute <attribute#elastic> ;
+			skos:prefLabel "elastic_skeletal_storage_coefficient"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#inelastic_skeletal_storage_coefficient
+:inelastic_skeletal_storage_coefficient rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :storage_coefficient ;
+			svu:hasAttribute <attribute#inelastic> ;
+			skos:prefLabel "inelastic_skeletal_storage_coefficient"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#partition_coefficient
 :partition_coefficient rdf:type owl:NamedIndividual ,
@@ -7019,6 +7267,7 @@
 			svu:hasUnits "dimensionless" ;
 			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Relative_permittivity" ;
 			skos:altLabel "dielectric_constant"@en ;
+			svu:hasAttribute <attribute#relative> ;
 			skos:prefLabel "relative_permittivity"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#perveance
@@ -7027,6 +7276,22 @@
 			svu:hasUnits "none" ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Perveance" ;
 			skos:prefLabel "perveance"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#khandelwal_identification_code
+:khandelwal_identification_code rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :identification ;
+			svu:hasPropertyQuantification :code ;
+			svu:hasUnits "none" ;
+			skos:prefLabel "khandelwal_identification_code"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#hydrobasins_identification_code
+:hydrobasins_identification_code rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :identification ;
+			svu:hasPropertyQuantification :code ;
+			svu:hasUnits "none" ;
+			skos:prefLabel "hydrobasins_identification_code"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#species_identification_code
 :species_identification_code rdf:type owl:NamedIndividual ,
@@ -7815,12 +8080,14 @@
 			svu:hasUnits "none" ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Relative_fluorescence_units" ;
 			skos:altLabel "rfu"@en ;
+			svu:hasAttribute <attribute#relative> ;
 			skos:prefLabel "relative_fluorescence"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#relative_smoothness_ratio
 :relative_smoothness_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:hasUnits "none" ;
+			svu:hasAttribute <attribute#relative> ;
 			skos:prefLabel "relative_smoothness_ratio"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#relativistic_mass
@@ -8197,6 +8464,7 @@
 			svu:QuantitativeProperty ;
 			svu:hasUnits "none" ;
 			skos:altLabel "percent_of_saturation"@en ;
+			svu:hasAttribute <attribute#relative> ;
 			skos:prefLabel "relative_saturation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#savings
@@ -8852,12 +9120,32 @@
 			svu:isTypeOf :time ;
 			skos:prefLabel "start_time"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#simulation_start_time
+:simulation_start_time rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#simulation> ;
+			svu:isTypeOf :start_time ;
+			skos:prefLabel "simulation_start_time"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#simulation_end_time
+:simulation_end_time rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#simulation> ;
+			svu:isTypeOf :end_time ;
+			skos:prefLabel "simulation_end_time"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#static_displacement
 :static_displacement rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
 			svu:isTypeOf :displacement ;
 			svu:hasAttribute <attribute#static> ;
 			skos:prefLabel "static_displacement"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#vertical_displacement
+:vertical_displacement rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :displacement ;
+			skos:prefLabel "vertical_displacement"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#static_energy
 :static_energy rdf:type owl:NamedIndividual ,
@@ -8967,6 +9255,26 @@
 			svu:isTypeOf :time ;
 			skos:prefLabel "stopping_time"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#initial_compaction_volume-per-area_density
+:initial_compaction_volume-per-area_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#compaction> ;
+			svu:isTypeOf :compaction_volume-per-area_density ;
+			skos:prefLabel "initial_compaction_volume-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#compaction_volume-per-area_density
+:compaction_volume-per-area_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#compaction> ;
+			svu:isTypeOf :volume-per-area_density ;
+			skos:prefLabel "compaction_volume-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#volume-per-area_density
+:volume-per-area_density rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasUnits "L" ;
+			skos:prefLabel "volume-per-area_density"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#volume-per-area_capacity
 :volume-per-area_capacity rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -8988,6 +9296,12 @@
 			svu:isTypeOf :volume ;
 			svu:hasAttribute <attribute#storage> ;
 			skos:prefLabel "storage_volume"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#instantaneous_storage_volume
+:instantaneous_storage_volume rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :storage_volume ;
+			skos:prefLabel "instantaneous_storage_volume"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#strain
 :strain rdf:type owl:NamedIndividual ,
@@ -9045,6 +9359,13 @@
 			svu:isTypeOf :length ;
 			skos:prefLabel "stroke_length"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/property#compaction_length
+:compaction_length rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#compaction> ;
+			svu:isTypeOf :length ;
+			skos:prefLabel "compaction_length"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/property#stroke_ratio
 :stroke_ratio rdf:type owl:NamedIndividual ,
 			svu:QuantitativeProperty ;
@@ -9097,6 +9418,13 @@
 			svu:quantifiesProcess <process#subsidence> ;
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Subsidence" ;
 			skos:prefLabel "subsidence_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#subsidence_length
+:subsidence_length rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:quantifiesProcess <process#subsidence> ;
+			svu:isTypeOf :length ;
+			skos:prefLabel "subsidence_length"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#subtended_angle
 :subtended_angle rdf:type owl:NamedIndividual ,
@@ -9459,6 +9787,19 @@
 			svu:isTypeOf :stopping_time ;
 			svu:hasAttribute <attribute#total> ;
 			skos:prefLabel "total_stopping_time"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#horizontal_transmissivity
+:horizontal_transmissivity rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isTypeOf :transmissivity ;
+			skos:prefLabel "horizontal_transmissivity"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#transmissivity
+:transmissivity rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:hasUnits "L^2 T^-1" ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Hydraulic_conductivity#Transmissivity" ;
+			skos:prefLabel "transmissivity"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#transmittance
 :transmittance rdf:type owl:NamedIndividual ,
@@ -12225,6 +12566,14 @@
 			svu:isDerivedFrom :transmittance ;
 			svu:hasAppliedOperator <operator#reduction> ;
 			skos:prefLabel "reduction_of_transmittance"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/property#reduction_of_elevation
+:reduction_of_elevation rdf:type owl:NamedIndividual ,
+			svu:QuantitativeProperty ;
+			svu:isDerivedFrom :elevation ;
+			svu:isDerivedFrom :elevation ;
+			svu:hasAppliedOperator <operator#reduction> ;
+			skos:prefLabel "reduction_of_elevation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/property#second_invariant_of_deviatoric_plastic_strain
 :second_invariant_of_deviatoric_plastic_strain rdf:type owl:NamedIndividual ,

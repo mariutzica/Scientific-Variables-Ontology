@@ -18,7 +18,7 @@
 #    Attribute   
 # 
 #################################################################
-##Last generated on: 2019-07-24 22:22 
+##Last generated on: 2019-10-16 13:09 
 
 ###(Qualitative)Attribute
 
@@ -633,6 +633,13 @@
 			svu:isNoun false ;
 			skos:prefLabel "dried"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/attribute#drought
+:drought rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun true ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Drought" ;
+			skos:prefLabel "drought"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/attribute#dry
 :dry rdf:type owl:NamedIndividual ,
 			svu:Attribute ;
@@ -744,6 +751,13 @@
 			svu:Attribute ;
 			svu:isNoun false ;
 			skos:prefLabel "floating"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#flood
+:flood rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun true ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Flood" ;
+			skos:prefLabel "flood"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#flooded
 :flooded rdf:type owl:NamedIndividual ,
@@ -1096,6 +1110,12 @@
 			svu:Attribute ;
 			svu:isNoun false ;
 			skos:prefLabel "instantaneous"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#intercepted
+:intercepted rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "intercepted"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#interior
 :interior rdf:type owl:NamedIndividual ,
@@ -1757,6 +1777,12 @@
 			svu:Attribute ;
 			svu:isNoun false ;
 			skos:prefLabel "reflected"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/attribute#relative
+:relative rdf:type owl:NamedIndividual ,
+			svu:Attribute ;
+			svu:isNoun false ;
+			skos:prefLabel "relative"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/attribute#relativistic
 :relativistic rdf:type owl:NamedIndividual ,

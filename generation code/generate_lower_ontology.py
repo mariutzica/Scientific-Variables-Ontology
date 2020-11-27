@@ -74,6 +74,7 @@ participant_file = 'participant.csv'
 reference_file = 'reference.csv'
 
 csn_variables_file  = 'CSDMS_standard_names.csv'
+iri_mapping_file = 'duplicate_iris.csv'
 
 ################################
 #   INITIAL DATA LOAD          #
@@ -148,7 +149,12 @@ phenomenon_multiple_vocabulary = \
             utils.load_data( ext_vocabulary, role_phen_file )
 csn_vocabulary = \
             utils.load_data( ext_csn_variable, csn_variables_file )
+iri_mapping = \
+            utils.load_data( ext_csn_variable, iri_mapping_file )
 
+# debugging
+#csn_vocabulary = csn_vocabulary.loc[(csn_vocabulary['full_name'].str[0:3]>'at') &\
+#                                    (csn_vocabulary['full_name'].str[0:3]<'au')]
 ######################
 #  OUTPUT FILE SETUP #
 ######################
@@ -365,7 +371,8 @@ utils.create_bb_file( reference_vocabulary, reference_ttl, \
 
 # create Variable file
 label = '\n\n###CSN Variables\n\n'
-utils.create_variable_entries( csn_vocabulary, variable_ttl, label = label )
+utils.create_variable_entries( csn_vocabulary, variable_ttl, label = label,
+                              iri_mapping = iri_mapping)
 
 ######################
 #    File Cleanup    #

@@ -18,10 +18,17 @@
 #    Context   
 # 
 #################################################################
-##Last generated on: 2019-07-24 22:22 
+##Last generated on: 2019-10-16 13:09 
 
 ###Context
 
+
+###  http://www.geoscienceontology.org/svo/svl/context#%28%28interbed_system%7Edelay%29%40role%7Emain_preconsolidation%29%40context%7Ein
+:%28%28interbed_system%7Edelay%29%40role%7Emain_preconsolidation%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasContextPhenomenon <phenomenon#%28interbed_system%7Edelay%29%40role%7Emain_preconsolidation> ;
+			skos:prefLabel "((interbed_system~delay)@role~main_preconsolidation)@context~in"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/context#%28air_flowing%29%40context%7Ein
 :%28air_flowing%29%40context%7Ein rdf:type owl:NamedIndividual ,
@@ -366,6 +373,13 @@
 			svu:hasContextPhenomenon <phenomenon#glacier_top_surface> ;
 			skos:prefLabel "(glacier_top_surface)@context~source"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/context#%28grid%40context%7Epart_%28cell_boundary%29%29%40context%7Eat
+:%28grid%40context%7Epart_%28cell_boundary%29%29%40context%7Eat rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#at> ;
+			svu:hasContextPhenomenon <phenomenon#grid%40context%7Epart_%28cell_boundary%29> ;
+			skos:prefLabel "(grid@context~part_(cell_boundary))@context~at"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/context#%28grid_cell%29%40context%7Ein
 :%28grid_cell%29%40context%7Ein rdf:type owl:NamedIndividual ,
 			svu:Context ;
@@ -457,6 +471,13 @@
 			svu:hasContextPhenomenon <abstraction#grid_edge%7Ewest> ;
 			skos:prefLabel "(grid_edge~west)@context~in"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/context#%28grid_layer%29%40context%7Ein
+:%28grid_layer%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasContextPhenomenon <phenomenon#grid_layer> ;
+			skos:prefLabel "(grid_layer)@context~in"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/context#%28grid_node%29%40context%7Ein
 :%28grid_node%29%40context%7Ein rdf:type owl:NamedIndividual ,
 			svu:Context ;
@@ -477,6 +498,13 @@
 			svu:hasContextRelationship <relationship#in> ;
 			svu:hasContextPhenomenon <abstraction#grid_node%7Eprimary> ;
 			skos:prefLabel "(grid_node~primary)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/context#%28interbed_system%7Edelay%29%40context%7Ein
+:%28interbed_system%7Edelay%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasContextPhenomenon <phenomenon#interbed_system%7Edelay> ;
+			skos:prefLabel "(interbed_system~delay)@context~in"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/context#%28iron_atom%29%40context%7Epart
 :%28iron_atom%29%40context%7Epart rdf:type owl:NamedIndividual ,
@@ -505,6 +533,13 @@
 			svu:hasContextRelationship <relationship#source> ;
 			svu:hasContextPhenomenon <body#aquifer%7Eright> ;
 			skos:prefLabel "aquifer~right@context~source"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/context#%28land_subsurface%29%40context%7Ein
+:%28land_subsurface%29%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasContextPhenomenon <body#land_subsurface> ;
+			skos:prefLabel "(land_subsurface)@context~in"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/context#%28land_subsurface%29%40context%7Esource
 :%28land_subsurface%29%40context%7Esource rdf:type owl:NamedIndividual ,
@@ -575,13 +610,6 @@
 			svu:hasContextRelationship <relationship#below> ;
 			svu:hasContextPhenomenon <phenomenon#land_surface> ;
 			skos:prefLabel "(land_surface)@context~below"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/context#ground%40context%7Ein
-:ground%40context%7Ein rdf:type owl:NamedIndividual ,
-			svu:Context ;
-			svu:hasContextRelationship <relationship#in> ;
-			svu:hasContextPhenomenon <body#ground> ;
-			skos:prefLabel "ground@context~in"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/context#%28land_surface%29%40context%7Eexchange
 :%28land_surface%29%40context%7Eexchange rdf:type owl:NamedIndividual ,
@@ -1003,6 +1031,13 @@
 			svu:hasContextPhenomenon <body#channel%7Eriver> ;
 			skos:prefLabel "channel~river@context~in"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/context#channel%7Estream%40context%7Ein
+:channel%7Estream%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasContextPhenomenon <body#channel%7Estream> ;
+			skos:prefLabel "channel~stream@context~in"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/context#channel%7Estream%40context%7Epart
 :channel%7Estream%40context%7Epart rdf:type owl:NamedIndividual ,
 			svu:Context ;
@@ -1136,6 +1171,13 @@
 			svu:hasContextPhenomenon <abstraction#grid> ;
 			skos:prefLabel "grid@context~in"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/context#grid%40context%7Epart
+:grid%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasContextPhenomenon <abstraction#grid> ;
+			skos:prefLabel "grid@context~part"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/context#ground%40context%7Eabove
 :ground%40context%7Eabove rdf:type owl:NamedIndividual ,
 			svu:Context ;
@@ -1149,6 +1191,20 @@
 			svu:hasContextRelationship <relationship#source> ;
 			svu:hasContextPhenomenon <phenomenon#crop_residue_pool_decomposition> ;
 			skos:prefLabel "(crop_residue_pool_decomposition)@context~source"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/context#ground%40context%7Ein
+:ground%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasContextPhenomenon <body#ground> ;
+			skos:prefLabel "ground@context~in"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/context#ground%40context%7Epart
+:ground%40context%7Epart rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#part> ;
+			svu:hasContextPhenomenon <body#ground> ;
+			skos:prefLabel "ground@context~part"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/context#human%40context%7Epart
 :human%40context%7Epart rdf:type owl:NamedIndividual ,
@@ -1170,6 +1226,27 @@
 			svu:hasContextRelationship <relationship#part> ;
 			svu:hasContextPhenomenon <body#instrument> ;
 			skos:prefLabel "instrument@context~part"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/context#interbed%40context%7Ein
+:interbed%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasContextPhenomenon <phenomenon#interbed> ;
+			skos:prefLabel "interbed@context~in"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/context#interbed%7Edelay%40context%7Ein
+:interbed%7Edelay%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasContextPhenomenon <phenomenon#interbed%7Edelay> ;
+			skos:prefLabel "interbed~delay@context~in"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/context#interbed%7Eno-delay%40context%7Ein
+:interbed%7Eno-delay%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasContextPhenomenon <phenomenon#interbed%7Eno-delay> ;
+			skos:prefLabel "interbed~no-delay@context~in"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/context#lake%40context%7Ein
 :lake%40context%7Ein rdf:type owl:NamedIndividual ,
@@ -1282,6 +1359,13 @@
 			svu:hasContextRelationship <relationship#part> ;
 			svu:hasContextPhenomenon <body#plant> ;
 			skos:prefLabel "plant@context~part"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/context#region%40context%7Eat
+:region%40context%7Eat rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#at> ;
+			svu:hasContextPhenomenon <form#region> ;
+			skos:prefLabel "region@context~at"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/context#region%7Estate%40context%7Epart
 :region%7Estate%40context%7Epart rdf:type owl:NamedIndividual ,
@@ -1464,6 +1548,13 @@
 			svu:hasContextRelationship <relationship#in> ;
 			svu:hasContextPhenomenon <matter#water> ;
 			skos:prefLabel "water@context~in"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/context#watershed%40context%7Ein
+:watershed%40context%7Ein rdf:type owl:NamedIndividual ,
+			svu:Context ;
+			svu:hasContextRelationship <relationship#in> ;
+			svu:hasContextPhenomenon <phenomenon#watershed> ;
+			skos:prefLabel "watershed@context~in"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/context#weir%40context%7Esource
 :weir%40context%7Esource rdf:type owl:NamedIndividual ,

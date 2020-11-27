@@ -18,7 +18,7 @@
 #    Variable   
 # 
 #################################################################
-##Last generated on: 2019-07-24 22:22 
+##Last generated on: 2019-10-16 13:09 
 
 ###CSN Variables
 
@@ -2235,6 +2235,13 @@
 			svu:hasRecordedPhenomenon <phenomenon#atmosphere%40role%7Esource_snow%40role%7Emain_precipitation> ;
 			skos:prefLabel "atmosphere_snow__precipitation_volume_flux"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#%28%28atmosphere%40role%7Esource_water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration%29_%28soil%40role%7Esource_water%40role%7Emain_evapotranspiration%29__thornthwaite_potential_evapotranspiration_volume
+:%28%28atmosphere%40role%7Esource_water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration%29_%28soil%40role%7Esource_water%40role%7Emain_evapotranspiration%29__thornthwaite_potential_evapotranspiration_volume rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#thornthwaite_potential_evapotranspiration_volume> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28%28atmosphere%40role%7Esource_water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration%29_%28soil%40role%7Esource_water%40role%7Emain_evapotranspiration%29> ;
+			skos:prefLabel "atmosphere_soil_water__thornthwaite_potential_evapotranspiration_volume"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28atmosphere_top%29%40context%7Ein_air__temperature
 :%28atmosphere_top%29%40context%7Ein_air__temperature rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -2488,6 +2495,14 @@
 			svu:hasRecordedPhenomenon <phenomenon#atmosphere%40context%7Esource_icefall> ;
 			skos:prefLabel "atmosphere_water__icefall_mass-per-volume_density"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#atmosphere%40role%7Esource_water%40role%7Emain_precipitation__precipitation_leq_volume_flux
+:atmosphere%40role%7Esource_water%40role%7Emain_precipitation__precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#precipitation_leq_volume_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#atmosphere%40role%7Esource_water%40role%7Emain_precipitation> ;
+			skos:altLabel "atmosphere_water__precipitation_leq_volume_flux"@en ;
+			skos:prefLabel "atmosphere_water__leq_precipitation_volume_flux"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#atmosphere%40context%7Esource_water__mass-per-volume_density
 :atmosphere%40context%7Esource_water__mass-per-volume_density rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -2543,14 +2558,16 @@
 			svu:Variable ;
 			svu:hasRecordedProperty <property#precipitation_leq_volume_flux> ;
 			svu:hasRecordedPhenomenon <phenomenon#atmosphere%40role%7Esource_water%40role%7Emain_precipitation> ;
-			skos:prefLabel "atmosphere_water__precipitation_leq_volume_flux"@en .
+			skos:altLabel "atmosphere_water__precipitation_leq_volume_flux"@en ;
+			skos:prefLabel "atmosphere_water__leq_precipitation_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#atmosphere%40role%7Esource_water%40role%7Emain_precipitation__precipitation_leq_volume_flux
 :atmosphere%40role%7Esource_water%40role%7Emain_precipitation__precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#precipitation_leq_volume_flux> ;
 			svu:hasRecordedPhenomenon <phenomenon#atmosphere%40role%7Esource_water%40role%7Emain_precipitation> ;
-			skos:prefLabel "atmosphere_water__precipitation_leq_volume_flux"@en .
+			skos:altLabel "atmosphere_water__precipitation_leq_volume_flux"@en ;
+			skos:prefLabel "atmosphere_water__leq_precipitation_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#atmosphere%40role%7Esource_water%40role%7Emain_precipitation__precipitation_mass_flux
 :atmosphere%40role%7Esource_water%40role%7Emain_precipitation__precipitation_mass_flux rdf:type owl:NamedIndividual ,
@@ -2558,6 +2575,13 @@
 			svu:hasRecordedProperty <property#precipitation_mass_flux> ;
 			svu:hasRecordedPhenomenon <phenomenon#atmosphere%40role%7Esource_water%40role%7Emain_precipitation> ;
 			skos:prefLabel "atmosphere_water__precipitation_mass_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#atmosphere%40role%7Esource_water%40role%7Emain_precipitation__precipitation_volume_flux
+:atmosphere%40role%7Esource_water%40role%7Emain_precipitation__precipitation_volume_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#precipitation_volume_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#atmosphere%40role%7Esource_water%40role%7Emain_precipitation> ;
+			skos:prefLabel "atmosphere_water__precipitation_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#atmosphere%40role%7Esource_rainfall%40role%7Emain_precipitation__precipitation_mass_flux
 :atmosphere%40role%7Esource_rainfall%40role%7Emain_precipitation__precipitation_mass_flux rdf:type owl:NamedIndividual ,
@@ -2600,6 +2624,13 @@
 			svu:hasRecordedProperty <property#precipitation_mass_flux> ;
 			svu:hasRecordedPhenomenon <phenomenon#atmosphere%40role%7Esource_snowfall%40role%7Emain_precipitation> ;
 			skos:prefLabel "atmosphere_water__snowfall_mass_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#atmosphere%40role%7Esource_water%40role%7Emain_precipitation__standardized_precipitation_wetness_index
+:atmosphere%40role%7Esource_water%40role%7Emain_precipitation__standardized_precipitation_wetness_index rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#standardized_precipitation_wetness_index> ;
+			svu:hasRecordedPhenomenon <phenomenon#atmosphere%40role%7Esource_water%40role%7Emain_precipitation> ;
+			skos:prefLabel "atmosphere_water__standardized_precipitation_wetness_index"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#atmosphere%40role%7Esource_water%40role%7Emain_precipitation__third_dekad_time_integral_of_precipitation_leq_volume_flux
 :atmosphere%40role%7Esource_water%40role%7Emain_precipitation__third_dekad_time_integral_of_precipitation_leq_volume_flux rdf:type owl:NamedIndividual ,
@@ -3259,6 +3290,13 @@
 			svu:hasRecordedPhenomenon <phenomenon#basin%7Edrainage_boundary> ;
 			skos:prefLabel "basin~drainage_boundary__diameter"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#basin%7Edrainage_boundary__hydrobasins_identification_code
+:basin%7Edrainage_boundary__hydrobasins_identification_code rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#hydrobasins_identification_code> ;
+			svu:hasRecordedPhenomenon <phenomenon#basin%7Edrainage_boundary> ;
+			skos:prefLabel "basin~drainage_boundary__hydrobasins_identification_code"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#basin%7Edrainage_boundary__normalized_area-diameter_shape_factor
 :basin%7Edrainage_boundary__normalized_area-diameter_shape_factor rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -3734,6 +3772,13 @@
 			svu:hasRecordedProperty <property#count> ;
 			svu:hasRecordedPhenomenon <phenomenon#basin%7Edrainage%40context%7Ein_weather-station> ;
 			skos:prefLabel "basin~drainage_weather-station__count"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#basin%7Edrainage%40context%7Ein_%28%28channel%7Eriver_centerline%29_point%29__khandelwal_identification_code
+:basin%7Edrainage%40context%7Ein_%28%28channel%7Eriver_centerline%29_point%29__khandelwal_identification_code rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#khandelwal_identification_code> ;
+			svu:hasRecordedPhenomenon <phenomenon#basin%7Edrainage%40context%7Ein_%28%28channel%7Eriver_centerline%29_point%29> ;
+			skos:prefLabel "basin~drainage_channel~river_centerline_point__khandelwal_identification_code"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#battery__voltage
 :battery__voltage rdf:type owl:NamedIndividual ,
@@ -5310,6 +5355,14 @@
 			svu:hasRecordedPhenomenon <phenomenon#channel_x-section_trapezoid_side%7Eright> ;
 			skos:prefLabel "channel_x-section_trapezoid_side~right__flare_angle"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#channel%7Eriver%40medium_water__stage_height
+:channel%7Eriver%40medium_water__stage_height rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#stage_height> ;
+			svu:hasRecordedPhenomenon <phenomenon#channel%7Eriver%40medium_water> ;
+			skos:altLabel "channel~river_water__stage_height"@en ;
+			skos:prefLabel "channel~river__stage_height"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28channel%7Eriver_bed%29%40role%7Eexchange_%28channel%7Estream%40context%7Epart_reach%29%40role%7Eexchange_%28water_flowing%29%40role%7Emain_leakage__leakage_volume_flux
 :%28channel%7Eriver_bed%29%40role%7Eexchange_%28channel%7Estream%40context%7Epart_reach%29%40role%7Eexchange_%28water_flowing%29%40role%7Emain_leakage__leakage_volume_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -5338,12 +5391,41 @@
 			svu:hasRecordedPhenomenon <phenomenon#%28channel%7Eriver_bed%29%40context%7Esource_%28water_flowing%29> ;
 			skos:prefLabel "channel~river_bed_water~outgoing__lateral_volume_flux"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#channel%7Eriver%40role%7Esource_%28land_subsurface%29%40role%7Esink_water%40role%7Emain_flowing__volume_flow_rate
+:channel%7Eriver%40role%7Esource_%28land_subsurface%29%40role%7Esink_water%40role%7Emain_flowing__volume_flow_rate rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#volume_flow_rate> ;
+			svu:hasRecordedPhenomenon <phenomenon#channel%7Eriver%40role%7Esource_%28land_subsurface%29%40role%7Esink_water%40role%7Emain_flowing> ;
+			skos:prefLabel "channel~river_land_subsurface_water__volume_flow_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#channel%7Eriver%40role%7Esource_%28land_surface%29%40role%7Esink_water%40role%7Emain_flowing__volume_flow_rate
+:channel%7Eriver%40role%7Esource_%28land_surface%29%40role%7Esink_water%40role%7Emain_flowing__volume_flow_rate rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#volume_flow_rate> ;
+			svu:hasRecordedPhenomenon <phenomenon#channel%7Eriver%40role%7Esource_%28land_surface%29%40role%7Esink_water%40role%7Emain_flowing> ;
+			skos:prefLabel "channel~river_land_surface_water__volume_flow_rate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#channel%7Eriver%40medium_water__downstream_volume_flow_rate
+:channel%7Eriver%40medium_water__downstream_volume_flow_rate rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#downstream_volume_flow_rate> ;
+			svu:hasRecordedPhenomenon <phenomenon#channel%7Eriver%40medium_water> ;
+			skos:prefLabel "channel~river_water__downstream_volume_flow_rate"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#channel%7Eriver%40medium_water__stage_height
 :channel%7Eriver%40medium_water__stage_height rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#stage_height> ;
 			svu:hasRecordedPhenomenon <phenomenon#channel%7Eriver%40medium_water> ;
-			skos:prefLabel "channel~river_water__stage_height"@en .
+			skos:altLabel "channel~river_water__stage_height"@en ;
+			skos:prefLabel "channel~river__stage_height"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#channel%7Eriver%40medium_water__upstream_volume_flow_rate
+:channel%7Eriver%40medium_water__upstream_volume_flow_rate rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#upstream_volume_flow_rate> ;
+			svu:hasRecordedPhenomenon <phenomenon#channel%7Eriver%40medium_water> ;
+			skos:prefLabel "channel~river_water__upstream_volume_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#channel%7Eriver%40context%7Ein_%28water_x-section%29__height
 :channel%7Eriver%40context%7Ein_%28water_x-section%29__height rdf:type owl:NamedIndividual ,
@@ -5386,6 +5468,13 @@
 			svu:hasRecordedProperty <property#lateral_volume_flux> ;
 			svu:hasRecordedPhenomenon <phenomenon#%28channel%7Estream%40context%7Epart_reach%29%40context%7Esource_%28water_flowing%29> ;
 			skos:prefLabel "channel~stream_reach_water~outgoing__lateral_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#channel%7Estream%40context%7Ein_%28water%40role%7Emain_flowing%29__flow_duration_index
+:channel%7Estream%40context%7Ein_%28water%40role%7Emain_flowing%29__flow_duration_index rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#flow_duration_index> ;
+			svu:hasRecordedPhenomenon <phenomenon#channel%7Estream%40context%7Ein_%28water%40role%7Emain_flowing%29> ;
+			skos:prefLabel "channel~stream_water__flow_duration_index"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#chlorine%40role%7Emain_electron%40role%7Ein__electron_affinity
 :chlorine%40role%7Emain_electron%40role%7Ein__electron_affinity rdf:type owl:NamedIndividual ,
@@ -5660,12 +5749,26 @@
 			svu:hasRecordedPhenomenon <rolephenomenon#crop> ;
 			skos:prefLabel "crop__phenological_stage"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#crop_planting__planting_count-per-area_density_fraction
+:crop_planting__planting_count-per-area_density_fraction rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#planting_count-per-area_density_fraction> ;
+			svu:hasRecordedPhenomenon <phenomenon#crop_planting> ;
+			skos:prefLabel "crop__planting_count-per-area_density_fraction"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#crop_planting__planting_depth
 :crop_planting__planting_depth rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#planting_depth> ;
 			svu:hasRecordedPhenomenon <phenomenon#crop_planting> ;
 			skos:prefLabel "crop__planting_depth"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#crop_planting__planting_end_time
+:crop_planting__planting_end_time rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#planting_end_time> ;
+			svu:hasRecordedPhenomenon <phenomenon#crop_planting> ;
+			skos:prefLabel "crop__planting_end_time"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28crop_planting%29%40role%7Emain_%28crop_sowing%29%40role%7Emain__planting_or_sowing_date
 :%28crop_planting%29%40role%7Emain_%28crop_sowing%29%40role%7Emain__planting_or_sowing_date rdf:type owl:NamedIndividual ,
@@ -5674,12 +5777,26 @@
 			svu:hasRecordedPhenomenon <phenomenon#%28crop_planting%29%40role%7Emain_%28crop_sowing%29%40role%7Emain> ;
 			skos:prefLabel "crop__planting_or_sowing_date"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#crop_planting__planting_start_time
+:crop_planting__planting_start_time rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#planting_start_time> ;
+			svu:hasRecordedPhenomenon <phenomenon#crop_planting> ;
+			skos:prefLabel "crop__planting_start_time"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#crop%40role%7Esource_water%40role%7Emain_transpiration__potential_transpiration_volume_flux
 :crop%40role%7Esource_water%40role%7Emain_transpiration__potential_transpiration_volume_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#potential_transpiration_volume_flux> ;
 			svu:hasRecordedPhenomenon <phenomenon#crop%40role%7Esource_water%40role%7Emain_transpiration> ;
 			skos:prefLabel "crop__potential_transpiration_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#crop_production__seasonal_production_index
+:crop_production__seasonal_production_index rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#seasonal_production_index> ;
+			svu:hasRecordedPhenomenon <phenomenon#crop_production> ;
+			skos:prefLabel "crop__seasonal_production_index"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#crop_production__simulated_produced_mass
 :crop_production__simulated_produced_mass rdf:type owl:NamedIndividual ,
@@ -11109,12 +11226,201 @@
 			svu:hasRecordedPhenomenon <abstraction#graph%7Etree%7Erooted> ;
 			skos:prefLabel "graph~tree~rooted__diameter"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Ebelow_ground%40context%7Ein_water__head
-:%28land_surface%29%40context%7Ebelow_ground%40context%7Ein_water__head rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40role%7Emain_preconsolidation__preconsolidation_head
+:ground%40role%7Emain_preconsolidation__preconsolidation_head rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#preconsolidation_head> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40role%7Emain_preconsolidation> ;
+			skos:prefLabel "ground__preconsolidation_head"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40role%7Emain_subsidence__subsidence_length
+:ground%40role%7Emain_subsidence__subsidence_length rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#subsidence_length> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40role%7Emain_subsidence> ;
+			skos:prefLabel "ground__subsidence_length"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Epart_%28interbed_system%29__areal_extent
+:ground%40context%7Epart_%28interbed_system%29__areal_extent rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#areal_extent> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40context%7Epart_%28interbed_system%29> ;
+			skos:prefLabel "ground_interbed_system__areal_extent"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Epart_%28interbed_system%7Edelay%29__equivalent_thickness
+:ground%40context%7Epart_%28interbed_system%7Edelay%29__equivalent_thickness rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#equivalent_thickness> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40context%7Epart_%28interbed_system%7Edelay%29> ;
+			skos:prefLabel "ground_interbed_system~delay__equivalent_thickness"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Epart_%28%28interbed_system%7Edelay%29%40role%7Emain_compaction%29__initial_compaction_volume-per-area_density
+:ground%40context%7Epart_%28%28interbed_system%7Edelay%29%40role%7Emain_compaction%29__initial_compaction_volume-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#initial_compaction_volume-per-area_density> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40context%7Epart_%28%28interbed_system%7Edelay%29%40role%7Emain_compaction%29> ;
+			skos:prefLabel "ground_interbed_system~delay__initial_compaction_volume-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Epart_%28%28interbed_system%7Edelay%29%40context%7Ein_water%29__initial_head
+:ground%40context%7Epart_%28%28interbed_system%7Edelay%29%40context%7Ein_water%29__initial_head rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#initial_head> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40context%7Epart_%28%28interbed_system%7Edelay%29%40context%7Ein_water%29> ;
+			skos:prefLabel "ground_interbed_system~delay_water__initial_head"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Epart_%28%28%28interbed_system%7Edelay%29%40role%7Emain_preconsolidation%29%40context%7Ein_water%29__initial_preconsolidation_head
+:ground%40context%7Epart_%28%28%28interbed_system%7Edelay%29%40role%7Emain_preconsolidation%29%40context%7Ein_water%29__initial_preconsolidation_head rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#initial_preconsolidation_head> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40context%7Epart_%28%28%28interbed_system%7Edelay%29%40role%7Emain_preconsolidation%29%40context%7Ein_water%29> ;
+			skos:prefLabel "ground_interbed_system~delay_water__initial_preconsolidation_head"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Epart_%28interbed_system%7Eno-delay%29__elastic_skeletal_storage_coefficient
+:ground%40context%7Epart_%28interbed_system%7Eno-delay%29__elastic_skeletal_storage_coefficient rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#elastic_skeletal_storage_coefficient> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40context%7Epart_%28interbed_system%7Eno-delay%29> ;
+			skos:prefLabel "ground_interbed_system~no-delay__elastic_skeletal_storage_coefficient"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Epart_%28interbed_system%7Eno-delay%29__inelastic_skeletal_storage_coefficient
+:ground%40context%7Epart_%28interbed_system%7Eno-delay%29__inelastic_skeletal_storage_coefficient rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#inelastic_skeletal_storage_coefficient> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40context%7Epart_%28interbed_system%7Eno-delay%29> ;
+			skos:prefLabel "ground_interbed_system~no-delay__inelastic_skeletal_storage_coefficient"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Epart_%28%28interbed_system%7Eno-delay%29%40role%7Emain_compaction%29__initial_compaction_volume-per-area_density
+:ground%40context%7Epart_%28%28interbed_system%7Eno-delay%29%40role%7Emain_compaction%29__initial_compaction_volume-per-area_density rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#initial_compaction_volume-per-area_density> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40context%7Epart_%28%28interbed_system%7Eno-delay%29%40role%7Emain_compaction%29> ;
+			skos:prefLabel "ground_interbed_system~no-delay__initial_compaction_volume-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Epart_%28interbed%40context%7Ein_water%29__instantaneous_storage_volume
+:ground%40context%7Epart_%28interbed%40context%7Ein_water%29__instantaneous_storage_volume rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#instantaneous_storage_volume> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40context%7Epart_%28interbed%40context%7Ein_water%29> ;
+			skos:prefLabel "ground_interbed_water__instantaneous_storage_volume"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Epart_%28interbed%7Edelay%40role%7Emain_compaction%29__compaction_length
+:ground%40context%7Epart_%28interbed%7Edelay%40role%7Emain_compaction%29__compaction_length rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#compaction_length> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40context%7Epart_%28interbed%7Edelay%40role%7Emain_compaction%29> ;
+			skos:prefLabel "ground_interbed~delay__compaction_length"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Epart_%28interbed%7Edelay%40context%7Ein_water%29__critical_head
+:ground%40context%7Epart_%28interbed%7Edelay%40context%7Ein_water%29__critical_head rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#critical_head> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40context%7Epart_%28interbed%7Edelay%40context%7Ein_water%29> ;
+			skos:prefLabel "ground_interbed~delay_water__critical_head"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Epart_%28interbed%7Eno-delay%40role%7Emain_compaction%29__compaction_length
+:ground%40context%7Epart_%28interbed%7Eno-delay%40role%7Emain_compaction%29__compaction_length rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#compaction_length> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40context%7Epart_%28interbed%7Eno-delay%40role%7Emain_compaction%29> ;
+			skos:prefLabel "ground_interbed~no-delay__compaction_length"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Epart_%28interbed%7Eno-delay%40context%7Ein_water%29__critical_head
+:ground%40context%7Epart_%28interbed%7Eno-delay%40context%7Ein_water%29__critical_head rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#critical_head> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40context%7Epart_%28interbed%7Eno-delay%40context%7Ein_water%29> ;
+			skos:prefLabel "ground_interbed~no-delay_water__critical_head"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40medium_water%7Eintercepted__volume-per-area_storage_capacity
+:ground%40medium_water%7Eintercepted__volume-per-area_storage_capacity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#volume-per-area_storage_capacity> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40medium_water%7Eintercepted> ;
+			skos:prefLabel "ground_water~intercepted__volume-per-area_storage_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29__constant_head
+:%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29__constant_head rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#constant_head> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29> ;
+			skos:prefLabel "groundwater__constant_head"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29__head
+:%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29__head rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#head> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Ebelow_ground%40context%7Ein_water> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29> ;
 			skos:prefLabel "groundwater__head"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40medium_water__horizontal_anisotropy_factor
+:ground%40medium_water__horizontal_anisotropy_factor rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#horizontal_anisotropy_factor> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40medium_water> ;
+			skos:prefLabel "groundwater__horizontal_anisotropy_factor"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40medium_water__horizontal_hydraulic_conductivity
+:ground%40medium_water__horizontal_hydraulic_conductivity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#horizontal_hydraulic_conductivity> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40medium_water> ;
+			skos:prefLabel "groundwater__horizontal_hydraulic_conductivity"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40medium_water__horizontal_transmissivity
+:ground%40medium_water__horizontal_transmissivity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#horizontal_transmissivity> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40medium_water> ;
+			skos:prefLabel "groundwater__horizontal_transmissivity"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29__initial_head
+:%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29__initial_head rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#initial_head> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29> ;
+			skos:prefLabel "groundwater__initial_head"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40medium_water__primary_storage_coefficient
+:ground%40medium_water__primary_storage_coefficient rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#primary_storage_coefficient> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40medium_water> ;
+			skos:prefLabel "groundwater__primary_storage_coefficient"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28ground%40medium_water%29%40role%7Emain_water%40role%7Ein_recharge__recharge_volume_flux
+:%28ground%40medium_water%29%40role%7Emain_water%40role%7Ein_recharge__recharge_volume_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#recharge_volume_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28ground%40medium_water%29%40role%7Emain_water%40role%7Ein_recharge> ;
+			skos:prefLabel "groundwater__recharge_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40medium_water__secondary_storage_coefficient
+:ground%40medium_water__secondary_storage_coefficient rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#secondary_storage_coefficient> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40medium_water> ;
+			skos:prefLabel "groundwater__secondary_storage_coefficient"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40medium_water__vertical_hydraulic_conductivity
+:ground%40medium_water__vertical_hydraulic_conductivity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#vertical_hydraulic_conductivity> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40medium_water> ;
+			skos:prefLabel "groundwater__vertical_hydraulic_conductivity"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Ein_%28water_surface%29__reduction_of_elevation
+:ground%40context%7Ein_%28water_surface%29__reduction_of_elevation rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#reduction_of_elevation> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40context%7Ein_%28water_surface%29> ;
+			skos:prefLabel "groundwater_surface__reduction_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#ground%40role%7Esource_well%40role%7Esink_water%40role%7Emain_recharge__recharge_volume_flux
+:ground%40role%7Esource_well%40role%7Esink_water%40role%7Emain_recharge__recharge_volume_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#recharge_volume_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#ground%40role%7Esource_well%40role%7Esink_water%40role%7Emain_recharge> ;
+			skos:prefLabel "groundwater_well__recharge_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#ground%40context%7Eabove_%28biomass%7Eharvested%40medium_grain%29__mass_fraction
 :ground%40context%7Eabove_%28biomass%7Eharvested%40medium_grain%29__mass_fraction rdf:type owl:NamedIndividual ,
@@ -11438,12 +11744,26 @@
 			svu:hasRecordedPhenomenon <phenomenon#land%40context%7Epart_%28domain_boundary_lowering%29> ;
 			skos:prefLabel "land_domain_boundary__elevation_lowering_rate"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#land%40role%7Esink_fertilizer%40role%7Emain_application__applied_mass
+:land%40role%7Esink_fertilizer%40role%7Emain_application__applied_mass rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#applied_mass> ;
+			svu:hasRecordedPhenomenon <phenomenon#land%40role%7Esink_fertilizer%40role%7Emain_application> ;
+			skos:prefLabel "land_fertilizer__applied_mass"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#land%40role%7Ein_fertilizer%7Enitrogen%40role%7Emain_application__simulated_applied_mass-per-area_density
 :land%40role%7Ein_fertilizer%7Enitrogen%40role%7Emain_application__simulated_applied_mass-per-area_density rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#simulated_applied_mass-per-area_density> ;
 			svu:hasRecordedPhenomenon <phenomenon#land%40role%7Ein_fertilizer%7Enitrogen%40role%7Emain_application> ;
 			skos:prefLabel "land_fertilizer~nitrogen__simulated_applied_mass-per-area_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#land%40context%7Epart_%28region%40context%7Eat_%28%28water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration%29%29_drought__standardized_precipitation_evapotranspiration_drought_intensity_index
+:land%40context%7Epart_%28region%40context%7Eat_%28%28water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration%29%29_drought__standardized_precipitation_evapotranspiration_drought_intensity_index rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#standardized_precipitation_evapotranspiration_drought_intensity_index> ;
+			svu:hasRecordedPhenomenon <phenomenon#land%40context%7Epart_%28region%40context%7Eat_%28%28water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration%29%29_drought> ;
+			skos:prefLabel "land_region_water__standardized_precipitation_evapotranspiration_drought_intensity_index"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#land_soil%7Edry_surface__albedo
 :land_soil%7Edry_surface__albedo rdf:type owl:NamedIndividual ,
@@ -11486,6 +11806,13 @@
 			svu:hasRecordedProperty <property#runoff_mass_flux> ;
 			svu:hasRecordedPhenomenon <phenomenon#%28land_subsurface%29%40context%7Esource_%28water_runoff%29> ;
 			skos:prefLabel "land_subsurface_water__runoff_mass_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_subsurface%29%40context%7Ein_%28water%40role%7Emain_flowing%29__volume_flow_rate
+:%28land_subsurface%29%40context%7Ein_%28water%40role%7Emain_flowing%29__volume_flow_rate rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#volume_flow_rate> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_subsurface%29%40context%7Ein_%28water%40role%7Emain_flowing%29> ;
+			skos:prefLabel "land_subsurface_water__volume_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#land_subsurface_sat-zone_top__depth
 :land_subsurface_sat-zone_top__depth rdf:type owl:NamedIndividual ,
@@ -12257,19 +12584,41 @@
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Eon_snowpack> ;
 			skos:prefLabel "land_surface_snowpack__depth"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Ein_%28soil%40role%7Emedium_conduction%29__conduction_heat_energy_flux
-:%28land_surface%29%40context%7Ein_%28soil%40role%7Emedium_conduction%29__conduction_heat_energy_flux rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eon_snow%7Eintercepted__volume-per-area_storage_capacity
+:%28land_surface%29%40context%7Eon_snow%7Eintercepted__volume-per-area_storage_capacity rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasRecordedProperty <property#conduction_heat_energy_flux> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Ein_%28soil%40role%7Emedium_conduction%29> ;
-			skos:prefLabel "land_surface_soil__conduction_heat_energy_flux"@en .
+			svu:hasRecordedProperty <property#volume-per-area_storage_capacity> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Eon_snow%7Eintercepted> ;
+			skos:prefLabel "land_surface_snow~intercepted__volume-per-area_storage_density"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Ein_%28soil%40role%7Emedium_conduction%29__conduction_heat_energy_flux
-:%28land_surface%29%40context%7Ein_%28soil%40role%7Emedium_conduction%29__conduction_heat_energy_flux rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Ein_%28soil%40medium_water%29__energy_flux
+:%28land_surface%29%40context%7Ein_%28soil%40medium_water%29__energy_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
-			svu:hasRecordedProperty <property#conduction_heat_energy_flux> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Ein_%28soil%40role%7Emedium_conduction%29> ;
-			skos:prefLabel "land_surface_soil__conduction_heat_energy_flux"@en .
+			svu:hasRecordedProperty <property#energy_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Ein_%28soil%40medium_water%29> ;
+			skos:prefLabel "land_surface_soil_heat~conduction__energy_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28soil_surface%29%40role%7Esource_water%40role%7Emain_evaporation__evaporation_volume_flux
+:%28soil_surface%29%40role%7Esource_water%40role%7Emain_evaporation__evaporation_volume_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#evaporation_volume_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28soil_surface%29%40role%7Esource_water%40role%7Emain_evaporation> ;
+			skos:altLabel "land_surface_soil_water__evaporation_volume_flux"@en ;
+			skos:prefLabel "soil_surface_water__evaporation_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28soil_surface%29%40medium_water__volume-per-area_storage_capacity
+:%28soil_surface%29%40medium_water__volume-per-area_storage_capacity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#volume-per-area_storage_capacity> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28soil_surface%29%40medium_water> ;
+			skos:prefLabel "land_surface_soil_water__volume-per-area_storage_density"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Ein_%28soil%40medium_water%29__volume_fraction
+:%28land_surface%29%40context%7Ein_%28soil%40medium_water%29__volume_fraction rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#volume_fraction> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Ein_%28soil%40medium_water%29> ;
+			skos:prefLabel "land_surface_soil_water__volume_fraction"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Ein_%28soil%7Ebare%40role%7Esource_water%40role%7Emain_evaporation%29__direct_evaporation_energy_flux
 :%28land_surface%29%40context%7Ein_%28soil%7Ebare%40role%7Esource_water%40role%7Emain_evaporation%29__direct_evaporation_energy_flux rdf:type owl:NamedIndividual ,
@@ -12390,11 +12739,11 @@
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Esource_%28water_evaporation%29> ;
 			skos:prefLabel "land_surface_water__evaporation_volume_flux"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Esource_%28water_evapotranspiration%29__evapotranspiration_mass_flux
-:%28land_surface%29%40context%7Esource_%28water_evapotranspiration%29__evapotranspiration_mass_flux rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40role%7Esource_water%40role%7Emain_evapotranspiration__evapotranspiration_mass_flux
+:%28land_surface%29%40role%7Esource_water%40role%7Emain_evapotranspiration__evapotranspiration_mass_flux rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#evapotranspiration_mass_flux> ;
-			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Esource_%28water_evapotranspiration%29> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40role%7Esource_water%40role%7Emain_evapotranspiration> ;
 			skos:prefLabel "land_surface_water__evapotranspiration_mass_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40medium_infiltration_%28water_ponding%29__infiltration_ponding_depth
@@ -12410,6 +12759,14 @@
 			svu:hasRecordedProperty <property#infiltration_ponding_time> ;
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40medium_infiltration_%28water_ponding%29> ;
 			skos:prefLabel "land_surface_water__infiltration_ponding_time"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28soil_surface%29%40role%7Esink_water%40role%7Emain_infiltration__infiltration_volume_flux
+:%28soil_surface%29%40role%7Esink_water%40role%7Emain_infiltration__infiltration_volume_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#infiltration_volume_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28soil_surface%29%40role%7Esink_water%40role%7Emain_infiltration> ;
+			skos:altLabel "soil_surface_water__infiltration_volume_flux"@en ;
+			skos:prefLabel "land_surface_water__infiltration_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eon_water__north_derivative_of_depth
 :%28land_surface%29%40context%7Eon_water__north_derivative_of_depth rdf:type owl:NamedIndividual ,
@@ -12438,6 +12795,13 @@
 			svu:hasRecordedProperty <property#potential_evaporation_volume_flux> ;
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Esource_%28water_evaporation%29> ;
 			skos:prefLabel "land_surface_water__potential_evaporation_volume_flux"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40role%7Esource_water%40role%7Emain_evapotranspiration__potential_evapotranspiration_volume_flux
+:%28land_surface%29%40role%7Esource_water%40role%7Emain_evapotranspiration__potential_evapotranspiration_volume_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#potential_evapotranspiration_volume_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40role%7Esource_water%40role%7Emain_evapotranspiration> ;
+			skos:prefLabel "land_surface_water__potential_evapotranspiration_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eon_water__priestley-taylor_alpha_coefficient
 :%28land_surface%29%40context%7Eon_water__priestley-taylor_alpha_coefficient rdf:type owl:NamedIndividual ,
@@ -12474,12 +12838,26 @@
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Eon_water> ;
 			skos:prefLabel "land_surface_water__time_derivative_of_pressure_head"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40role%7Esource_water%40role%7Emain_transpiration__transpiration_volume_flux
+:%28land_surface%29%40role%7Esource_water%40role%7Emain_transpiration__transpiration_volume_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#transpiration_volume_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40role%7Esource_water%40role%7Emain_transpiration> ;
+			skos:prefLabel "land_surface_water__transpiration_volume_flux"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eon_%28water_runoff%29__usdanrcs_runoff_curve_number
 :%28land_surface%29%40context%7Eon_%28water_runoff%29__usdanrcs_runoff_curve_number rdf:type owl:NamedIndividual ,
 			svu:Variable ;
 			svu:hasRecordedProperty <property#usdanrcs_runoff_curve_number> ;
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Eon_%28water_runoff%29> ;
 			skos:prefLabel "land_surface_water__usdanrcs_runoff_curve_number"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eon_water__volume_flow_rate
+:%28land_surface%29%40context%7Eon_water__volume_flow_rate rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#volume_flow_rate> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Eon_water> ;
+			skos:prefLabel "land_surface_water__volume_flow_rate"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eon_water__x_derivative_of_depth
 :%28land_surface%29%40context%7Eon_water__x_derivative_of_depth rdf:type owl:NamedIndividual ,
@@ -12795,6 +13173,13 @@
 			svu:hasRecordedProperty <property#y_derivative_of_elevation> ;
 			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40context%7Eon_%28water_surface%29> ;
 			skos:prefLabel "land_surface_water_surface__y_derivative_of_elevation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40role%7Esource_water%7Eintercepted%40role%7Emain_evaporation__evaporation_volume_flux
+:%28land_surface%29%40role%7Esource_water%7Eintercepted%40role%7Emain_evaporation__evaporation_volume_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#evaporation_volume_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#%28land_surface%29%40role%7Esource_water%7Eintercepted%40role%7Emain_evaporation> ;
+			skos:prefLabel "land_surface_water~intercepted__evaporation_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28land_surface%29%40context%7Eabove_wind__reference_height_speed
 :%28land_surface%29%40context%7Eabove_wind__reference_height_speed rdf:type owl:NamedIndividual ,
@@ -13349,6 +13734,20 @@
 			svu:hasRecordedPhenomenon <abstraction#model> ;
 			skos:prefLabel "model__run_time"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#model%40role%7Emain_simulation__simulation_end_time
+:model%40role%7Emain_simulation__simulation_end_time rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#simulation_end_time> ;
+			svu:hasRecordedPhenomenon <phenomenon#model%40role%7Emain_simulation> ;
+			skos:prefLabel "model__simulation_end_time"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#model%40role%7Emain_simulation__simulation_start_time
+:model%40role%7Emain_simulation__simulation_start_time rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#simulation_start_time> ;
+			svu:hasRecordedPhenomenon <phenomenon#model%40role%7Emain_simulation> ;
+			skos:prefLabel "model__simulation_start_time"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#model__spin-up_time
 :model__spin-up_time rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -13369,6 +13768,34 @@
 			svu:hasRecordedProperty <property#stop_time> ;
 			svu:hasRecordedPhenomenon <abstraction#model> ;
 			skos:prefLabel "model__stop_time"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#model%40context%7Ein_water__stress_period_count
+:model%40context%7Ein_water__stress_period_count rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#stress_period_count> ;
+			svu:hasRecordedPhenomenon <phenomenon#model%40context%7Ein_water> ;
+			skos:prefLabel "model__stress_period_count"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#model%40context%7Ein_water__stress_period_duration
+:model%40context%7Ein_water__stress_period_duration rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#stress_period_duration> ;
+			svu:hasRecordedPhenomenon <phenomenon#model%40context%7Ein_water> ;
+			skos:prefLabel "model__stress_period_duration"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#model%40context%7Ein_water__stress_period_time_step_count
+:model%40context%7Ein_water__stress_period_time_step_count rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#stress_period_time_step_count> ;
+			svu:hasRecordedPhenomenon <phenomenon#model%40context%7Ein_water> ;
+			skos:prefLabel "model__stress_period_time_step_count"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#model__successive_time_step_multiplier
+:model__successive_time_step_multiplier rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#successive_time_step_multiplier> ;
+			svu:hasRecordedPhenomenon <abstraction#model> ;
+			skos:prefLabel "model__successive_time_step_multiplier"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#model__time
 :model__time rdf:type owl:NamedIndividual ,
@@ -13594,6 +14021,13 @@
 			svu:hasRecordedPhenomenon <phenomenon#model%40context%7Ein_%28grid_cell%29> ;
 			skos:prefLabel "model_grid_cell__volume"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#model%40context%7Ein_%28%28grid%40context%7Epart_%28cell_boundary%29%29%40context%7Eat_%28ground%40medium_water%29%29__interfacial_hydraulic_conductance
+:model%40context%7Ein_%28%28grid%40context%7Epart_%28cell_boundary%29%29%40context%7Eat_%28ground%40medium_water%29%29__interfacial_hydraulic_conductance rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#interfacial_hydraulic_conductance> ;
+			svu:hasRecordedPhenomenon <phenomenon#model%40context%7Ein_%28%28grid%40context%7Epart_%28cell_boundary%29%29%40context%7Eat_%28ground%40medium_water%29%29> ;
+			skos:prefLabel "model_grid_cell_boundary_groundwater__interfacial_hydraulic_conductance"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#model%40context%7Ein_%28grid_cell_center%29__geodetic_latitude
 :model%40context%7Ein_%28grid_cell_center%29__geodetic_latitude rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -13789,6 +14223,20 @@
 			svu:hasRecordedProperty <property#z_coordinate> ;
 			svu:hasRecordedPhenomenon <phenomenon#model%40context%7Ein_%28grid_cell_edge_center%29> ;
 			skos:prefLabel "model_grid_cell_edge_center__z_coordinate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#model%40context%7Ein_%28grid_cell_edge%7Ealong-column%29__length
+:model%40context%7Ein_%28grid_cell_edge%7Ealong-column%29__length rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#length> ;
+			svu:hasRecordedPhenomenon <phenomenon#model%40context%7Ein_%28grid_cell_edge%7Ealong-column%29> ;
+			skos:prefLabel "model_grid_cell_edge~along-column__length"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#model%40context%7Ein_%28grid_cell_edge%7Ealong-row%29__length
+:model%40context%7Ein_%28grid_cell_edge%7Ealong-row%29__length rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#length> ;
+			svu:hasRecordedPhenomenon <phenomenon#model%40context%7Ein_%28grid_cell_edge%7Ealong-row%29> ;
+			skos:prefLabel "model_grid_cell_edge~along-row__length"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#model%40context%7Ein_%28grid_cell_edge%7Eeast%29__latitude
 :model%40context%7Ein_%28grid_cell_edge%7Eeast%29__latitude rdf:type owl:NamedIndividual ,
@@ -14350,6 +14798,13 @@
 			svu:hasRecordedPhenomenon <phenomenon#model%40context%7Ein_%28grid_cell%7Edual_face_centroid%29> ;
 			skos:prefLabel "model_grid_cell~dual_face_centroid__z_coordinate"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#model%40context%7Ein_%28%28grid%40context%7Epart_cell%29%40role%7Esink_%28grid%40context%7Ein_%28ground%40context%7Ein_water%29%29%40role%7Emain_flowing%29__volume_flux
+:model%40context%7Ein_%28%28grid%40context%7Epart_cell%29%40role%7Esink_%28grid%40context%7Ein_%28ground%40context%7Ein_water%29%29%40role%7Emain_flowing%29__volume_flux rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#volume_flux> ;
+			svu:hasRecordedPhenomenon <phenomenon#model%40context%7Ein_%28%28grid%40context%7Epart_cell%29%40role%7Esink_%28grid%40context%7Ein_%28ground%40context%7Ein_water%29%29%40role%7Emain_flowing%29> ;
+			skos:prefLabel "model_grid_cell~from-row-below_groundwater__volume_flux"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#model%40context%7Ein_%28grid_cell%7Eprimary%29__area
 :model%40context%7Ein_%28grid_cell%7Eprimary%29__area rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -14763,6 +15218,34 @@
 			svu:hasRecordedPhenomenon <phenomenon#model%40context%7Ein_%28%28grid_edge%7Ewest%29%40context%7Ein_%28sea%40context%7Ein_water%29%29> ;
 			skos:prefLabel "model_grid_edge~west_sea_water__elevation"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#model%40context%7Ein_%28grid_layer%29__count
+:model%40context%7Ein_%28grid_layer%29__count rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#count> ;
+			svu:hasRecordedPhenomenon <phenomenon#model%40context%7Ein_%28grid_layer%29> ;
+			skos:prefLabel "model_grid_layer__count"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#model%40context%7Ein_%28grid_layer_bottom%29__elevation
+:model%40context%7Ein_%28grid_layer_bottom%29__elevation rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#elevation> ;
+			svu:hasRecordedPhenomenon <phenomenon#model%40context%7Ein_%28grid_layer_bottom%29> ;
+			skos:prefLabel "model_grid_layer_bottom__elevation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#model%40context%7Ein_%28%28grid_layer%29%40context%7Ein_%28%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29%29%29__vertical_displacement
+:model%40context%7Ein_%28%28grid_layer%29%40context%7Ein_%28%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29%29%29__vertical_displacement rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#vertical_displacement> ;
+			svu:hasRecordedPhenomenon <phenomenon#model%40context%7Ein_%28%28grid_layer%29%40context%7Ein_%28%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29%29%29> ;
+			skos:prefLabel "model_grid_layer_groundwater__vertical_displacement"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#model%40context%7Ein_%28grid_layer%7Etopmost_top%29__elevation
+:model%40context%7Ein_%28grid_layer%7Etopmost_top%29__elevation rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#elevation> ;
+			svu:hasRecordedPhenomenon <phenomenon#model%40context%7Ein_%28grid_layer%7Etopmost_top%29> ;
+			skos:prefLabel "model_grid_layer~topmost_top__elevation"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#model%40context%7Ein_%28grid_node%29__depth
 :model%40context%7Ein_%28grid_node%29__depth rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -15049,6 +15532,13 @@
 			svu:hasRecordedProperty <property#longitude> ;
 			svu:hasRecordedPhenomenon <phenomenon#model%40context%7Ein_%28grid%40context%7Ein_%28earth_pole%7Enorth%7Evirtual%29%29> ;
 			skos:prefLabel "model_grid_virtual-north-pole__longitude"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/variable#model%40context%7Ein_%28%28grid_layer%29%40context%7Ein_%28ground%40role%7Emain_compaction%29%29__compaction_length__compaction_length
+:model%40context%7Ein_%28%28grid_layer%29%40context%7Ein_%28ground%40role%7Emain_compaction%29%29__compaction_length__compaction_length rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#compaction_length> ;
+			svu:hasRecordedPhenomenon <phenomenon#model%40context%7Ein_%28%28grid_layer%29%40context%7Ein_%28ground%40role%7Emain_compaction%29%29__compaction_length> ;
+			skos:prefLabel "model_layer_ground__compaction_length"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#model%40context%7Ein_%28soil_layer%29__count
 :model%40context%7Ein_%28soil_layer%29__count rdf:type owl:NamedIndividual ,
@@ -21931,6 +22421,7 @@
 			svu:Variable ;
 			svu:hasRecordedProperty <property#evaporation_volume_flux> ;
 			svu:hasRecordedPhenomenon <phenomenon#%28soil_surface%29%40role%7Esource_water%40role%7Emain_evaporation> ;
+			skos:altLabel "land_surface_soil_water__evaporation_volume_flux"@en ;
 			skos:prefLabel "soil_surface_water__evaporation_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28soil_surface%29%40role%7Esink_water%40role%7Emain_infiltration__infiltration_mass_flux
@@ -21945,7 +22436,8 @@
 			svu:Variable ;
 			svu:hasRecordedProperty <property#infiltration_volume_flux> ;
 			svu:hasRecordedPhenomenon <phenomenon#%28soil_surface%29%40role%7Esink_water%40role%7Emain_infiltration> ;
-			skos:prefLabel "soil_surface_water__infiltration_volume_flux"@en .
+			skos:altLabel "soil_surface_water__infiltration_volume_flux"@en ;
+			skos:prefLabel "land_surface_water__infiltration_volume_flux"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/variable#%28soil_surface%29%40role%7Esink_water%40role%7Emain_irrigation__irrigation_volume_flux
 :%28soil_surface%29%40role%7Esink_water%40role%7Emain_irrigation__irrigation_volume_flux rdf:type owl:NamedIndividual ,
@@ -22522,6 +23014,13 @@
 			svu:hasRecordedPhenomenon <phenomenon#soil%40medium_%28macropores_x-section%7Evertical%29> ;
 			skos:prefLabel "soil_macropores_x-section~vertical__area_fraction"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#%28soil_unsat-zone%29%40medium_water__volume-per-area_storage_capacity
+:%28soil_unsat-zone%29%40medium_water__volume-per-area_storage_capacity rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#volume-per-area_storage_capacity> ;
+			svu:hasRecordedPhenomenon <body#%28soil_unsat-zone%29%40medium_water> ;
+			skos:prefLabel "soil_zone~vadose_water__volume-per-area_storage_density"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#soil%7Edrained%40medium_water__upper_limit_of_volume_fraction
 :soil%7Edrained%40medium_water__upper_limit_of_volume_fraction rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -22998,6 +23497,13 @@
 			svu:hasRecordedPhenomenon <phenomenon#water%40context%7Ein_%28scuba-diver_diving%29> ;
 			skos:prefLabel "water_scuba-diver__dive_duration"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/variable#watershed%40context%7Ein_%28water%40role%7Emain_flowing%29_flood__geospatial_flood_depth_exceedance_index
+:watershed%40context%7Ein_%28water%40role%7Emain_flowing%29_flood__geospatial_flood_depth_exceedance_index rdf:type owl:NamedIndividual ,
+			svu:Variable ;
+			svu:hasRecordedProperty <property#geospatial_flood_depth_exceedance_index> ;
+			svu:hasRecordedPhenomenon <phenomenon#watershed%40context%7Ein_%28water%40role%7Emain_flowing%29_flood> ;
+			skos:prefLabel "watershed_water_flow__geospatial_flood_depth_exceedance_index"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/variable#water_flow%7Eincoming-and-outgoing__volume_flow_rate
 :water_flow%7Eincoming-and-outgoing__volume_flow_rate rdf:type owl:NamedIndividual ,
 			svu:Variable ;
@@ -23256,3 +23762,16 @@
 			svu:hasRecordedProperty <property#thermal_energy-per-volume_density> ;
 			svu:hasRecordedPhenomenon <matter#wood%7Edry> ;
 			skos:prefLabel "wood~dry__thermal_energy-per-volume_density"@en .
+:%28%28atmosphere%40role%7Esource_%28water%40role%7Emain_precipitation%29%29%40role%7Emain_evapotranspiration%29_%28%28soil%40role%7Esource_water%29%40role%7Emain_evapotranspiration%29__thornthwaite_potential_evapotranspiration_volume owl:sameAs :%28%28atmosphere%40role%7Esource_water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration%29_%28soil%40role%7Esource_water%40role%7Emain_evapotranspiration%29__thornthwaite_potential_evapotranspiration_volume .
+:ground%40medium_water%7Eintercepted__volume-per-area_storage_density owl:sameAs :ground%40medium_water%7Eintercepted__volume-per-area_storage_capacity .
+:%28land_surface%29%40context%7Eon_snow%7Eintercepted__volume-per-area_storage_density owl:sameAs :%28land_surface%29%40context%7Eon_snow%7Eintercepted__volume-per-area_storage_capacity .
+:%28land_surface%29%40context%7Ein_%28soil%40medium_water%29__volume-per-area_storage_density owl:sameAs :%28soil_surface%29%40medium_water__volume-per-area_storage_capacity .
+:%28soil_zone%7Evadose%29%40medium_water__volume-per-area_storage_density owl:sameAs :%28soil_unsat-zone%29%40medium_water__volume-per-area_storage_capacity .
+:ground%40context%7Ein_water__head owl:sameAs :%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29__head .
+:%28land_surface%29%40context%7Eat_%28soil%40role%7Esource_water%40role%7Emain_evaporation%29__evaporation_volume_flux owl:sameAs :%28soil_surface%29%40role%7Esource_water%40role%7Emain_evaporation__evaporation_volume_flux .
+:atmosphere%40role%7Esource_water%40role%7Emain_precipitation__leq_precipitation_volume_flux owl:sameAs :atmosphere%40role%7Esource_water%40role%7Emain_precipitation__precipitation_leq_volume_flux .
+:%28land_surface%29%40role%7Esink_water%40role%7Emain_infiltration__infiltration_volume_flux owl:sameAs :%28soil_surface%29%40role%7Esink_water%40role%7Emain_infiltration__infiltration_volume_flux .
+:channel%7Eriver__stage_height owl:sameAs :channel%7Eriver%40medium_water__stage_height .
+:land%40context%7Epart_%28region%40context%7Eat_%28water%40role%7Emain_precipitation_evapotranspiration%29%29__standardized_precipitation_evapotranspiration_drought_intensity_index owl:sameAs :land%40context%7Epart_%28region%40context%7Eat_%28%28water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration%29%29_drought__standardized_precipitation_evapotranspiration_drought_intensity_index .
+:%28land_surface%29%40context%7Ebelow_ground%40context%7Ein_water__head owl:sameAs :%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29__head .
+:%28land_surface%29%40context%7Esource_%28water_evapotranspiration%29__evapotranspiration_mass_flux owl:sameAs :%28land_surface%29%40role%7Esource_water%40role%7Emain_evapotranspiration__evapotranspiration_mass_flux .

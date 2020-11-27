@@ -18,7 +18,7 @@
 #    Body   
 # 
 #################################################################
-##Last generated on: 2019-07-24 22:22 
+##Last generated on: 2019-10-16 13:09 
 
 ###Inanimate Natural Body
 
@@ -1492,6 +1492,13 @@
 			svu:hasPart <part#unsat-zone> ;
 			svu:hasMatter <matter#soil> ;
 			skos:prefLabel "soil_unsat-zone"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/body#soil_zone%7Evadose
+:soil_zone%7Evadose rdf:type owl:NamedIndividual ,
+			svu:Body ;
+			svu:hasPart <part#zone%7Evadose> ;
+			svu:hasMatter <matter#soil> ;
+			skos:prefLabel "soil_zone~vadose"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/body#soil%7Emoist_layer
 :soil%7Emoist_layer rdf:type owl:NamedIndividual ,

@@ -18,7 +18,7 @@
 #    Phenomenon   
 # 
 #################################################################
-##Last generated on: 2019-07-24 22:22 
+##Last generated on: 2019-10-16 13:09 
 
 ###Phenomenon
 
@@ -349,12 +349,6 @@
 			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Drizzle" ;
 			skos:prefLabel "drizzle"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#drought
-:drought rdf:type owl:NamedIndividual ,
-			svu:SpatiotemporalPhenomenon ;
-			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Drought" ;
-			skos:prefLabel "drought"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#earthquake
 :earthquake rdf:type owl:NamedIndividual ,
 			svu:SpatiotemporalPhenomenon ;
@@ -412,13 +406,6 @@
 			svu:undergoesProcess <process#combustion> ;
 			svu:isPluralityOf :fire ;
 			skos:prefLabel "fires"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#flood
-:flood rdf:type owl:NamedIndividual ,
-			svu:SpatiotemporalPhenomenon ;
-			svu:undergoesProcess <process#flood> ;
-			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Flood" ;
-			skos:prefLabel "flood"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#fog
 :fog rdf:type owl:NamedIndividual ,
@@ -4077,6 +4064,13 @@
 ###ContextPhenomenon
 
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28%28interbed_system%7Edelay%29%40role%7Emain_preconsolidation%29%40context%7Ein_water
+:%28%28interbed_system%7Edelay%29%40role%7Emain_preconsolidation%29%40context%7Ein_water rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#%28%28interbed_system%7Edelay%29%40role%7Emain_preconsolidation%29%40context%7Ein> ;
+			svu:hasPhenomenon <matter#water> ;
+			skos:prefLabel "((interbed_system~delay)@role~main_preconsolidation)@context~in_water"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28air_flowing%29%40context%7Ein_water%7Evapor
 :%28air_flowing%29%40context%7Ein_water%7Evapor rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -5386,6 +5380,13 @@
 			svu:hasPhenomenon <phenomenon#radiation%7Eoutgoing%7Elongwave> ;
 			skos:prefLabel "(glacier_top_surface)@context~source_radiation~outgoing~longwave"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28grid%40context%7Epart_%28cell_boundary%29%29%40context%7Eat_%28ground%40medium_water%29
+:%28grid%40context%7Epart_%28cell_boundary%29%29%40context%7Eat_%28ground%40medium_water%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#%28grid%40context%7Epart_%28cell_boundary%29%29%40context%7Eat> ;
+			svu:hasPhenomenon <phenomenon#ground%40medium_water> ;
+			skos:prefLabel "(grid@context~part_(cell_boundary))@context~at_(ground@medium_water)"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28grid_cell%29%40context%7Ein_%28water_flowing%29
 :%28grid_cell%29%40context%7Ein_%28water_flowing%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -5475,6 +5476,20 @@
 			svu:hasPhenomenon <phenomenon#sea%40context%7Ein_water> ;
 			skos:prefLabel "(grid_edge~west)@context~in_(sea@context~in_water)"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28grid_layer%29%40context%7Ein_%28%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29%29
+:%28grid_layer%29%40context%7Ein_%28%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#%28grid_layer%29%40context%7Ein> ;
+			svu:hasPhenomenon <phenomenon#%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29> ;
+			skos:prefLabel "(grid_layer)@context~in_((land_surface)@context~below_(ground@context~in_water))"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28grid_layer%29%40context%7Ein_%28ground%40role%7Emain_compaction%29
+:%28grid_layer%29%40context%7Ein_%28ground%40role%7Emain_compaction%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#%28grid_layer%29%40context%7Ein> ;
+			svu:hasPhenomenon <phenomenon#ground%40role%7Emain_compaction> ;
+			skos:prefLabel "(grid_layer)@context~in_(ground@role~main_compaction)"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28grid_node%29%40context%7Ein
 :%28grid_node%29%40context%7Ein rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -5492,6 +5507,13 @@
 			svu:ContextPhenomenon ;
 			svu:hasContext <context#%28grid_node%7Eprimary%29%40context%7Ein> ;
 			skos:prefLabel "(grid_node~primary)@context~in"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28interbed_system%7Edelay%29%40context%7Ein_water
+:%28interbed_system%7Edelay%29%40context%7Ein_water rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#%28interbed_system%7Edelay%29%40context%7Ein> ;
+			svu:hasPhenomenon <matter#water> ;
+			skos:prefLabel "(interbed_system~delay)@context~in_water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28iron_atom%29%40context%7Epart_neutron
 :%28iron_atom%29%40context%7Epart_neutron rdf:type owl:NamedIndividual ,
@@ -5524,6 +5546,13 @@
 			svu:hasContext <context#%28channel%7Eriver_bed%29%40context%7Esink> ;
 			svu:hasPhenomenon <phenomenon#water_flowing> ;
 			skos:prefLabel "(land_subsurface)@context~at_aquifer~right@context~source_(channel~river_bed)@context~sink_(water_flowing)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_subsurface%29%40context%7Ein_%28water%40role%7Emain_flowing%29
+:%28land_subsurface%29%40context%7Ein_%28water%40role%7Emain_flowing%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#%28land_subsurface%29%40context%7Ein> ;
+			svu:hasPhenomenon <phenomenon#water%40role%7Emain_flowing> ;
+			skos:prefLabel "(land_subsurface)@context~in_(water@role~main_flowing)"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_subsurface%29%40context%7Esource_%28water_runoff%29
 :%28land_subsurface%29%40context%7Esource_%28water_runoff%29 rdf:type owl:NamedIndividual ,
@@ -5689,13 +5718,12 @@
 			svu:hasPhenomenon <phenomenon#sunshine> ;
 			skos:prefLabel "(land_surface)@context~at_sunshine"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Ebelow_ground%40context%7Ein_water
-:%28land_surface%29%40context%7Ebelow_ground%40context%7Ein_water rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29
+:%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
 			svu:hasContext <context#%28land_surface%29%40context%7Ebelow> ;
-			svu:hasContext <context#ground%40context%7Ein> ;
-			svu:hasPhenomenon <matter#water> ;
-			skos:prefLabel "(land_surface)@context~below_ground@context~in_water"@en .
+			svu:hasPhenomenon <phenomenon#ground%40context%7Ein_water> ;
+			skos:prefLabel "(land_surface)@context~below_(ground@context~in_water)"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Eexchange_radiation
 :%28land_surface%29%40context%7Eexchange_radiation rdf:type owl:NamedIndividual ,
@@ -5718,12 +5746,12 @@
 			svu:hasPhenomenon <phenomenon#radiation%7Eshortwave> ;
 			skos:prefLabel "(land_surface)@context~exchange_radiation~shortwave"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Ein_%28soil%40role%7Emedium_conduction%29
-:%28land_surface%29%40context%7Ein_%28soil%40role%7Emedium_conduction%29 rdf:type owl:NamedIndividual ,
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Ein_%28soil%40medium_water%29
+:%28land_surface%29%40context%7Ein_%28soil%40medium_water%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
 			svu:hasContext <context#%28land_surface%29%40context%7Ein> ;
-			svu:hasPhenomenon <phenomenon#soil%40role%7Emedium_conduction> ;
-			skos:prefLabel "(land_surface)@context~in_(soil@role~medium_conduction)"@en .
+			svu:hasPhenomenon <phenomenon#soil%40medium_water> ;
+			skos:prefLabel "(land_surface)@context~in_(soil@medium_water)"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Ein_%28soil%7Ebare%40role%7Esource_water%40role%7Emain_evaporation%29
 :%28land_surface%29%40context%7Ein_%28soil%7Ebare%40role%7Esource_water%40role%7Emain_evaporation%29 rdf:type owl:NamedIndividual ,
@@ -5830,6 +5858,13 @@
 			svu:hasPhenomenon <body#snowpack> ;
 			skos:prefLabel "(land_surface)@context~on_snowpack"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Eon_snow%7Eintercepted
+:%28land_surface%29%40context%7Eon_snow%7Eintercepted rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#%28land_surface%29%40context%7Eon> ;
+			svu:hasPhenomenon <phenomenon#snow%7Eintercepted> ;
+			skos:prefLabel "(land_surface)@context~on_snow~intercepted"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Eon_terrain%7Eleft%40context%7Esource_%28channel%7Estream%40context%7Epart_reach%29%40context%7Esink_%28water_flowing%29
 :%28land_surface%29%40context%7Eon_terrain%7Eleft%40context%7Esource_%28channel%7Estream%40context%7Epart_reach%29%40context%7Esink_%28water_flowing%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -5904,13 +5939,6 @@
 			svu:hasContext <context#%28land_surface%29%40context%7Esource> ;
 			svu:hasPhenomenon <phenomenon#water_evaporation> ;
 			skos:prefLabel "(land_surface)@context~source_(water_evaporation)"@en .
-
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Esource_%28water_evapotranspiration%29
-:%28land_surface%29%40context%7Esource_%28water_evapotranspiration%29 rdf:type owl:NamedIndividual ,
-			svu:ContextPhenomenon ;
-			svu:hasContext <context#%28land_surface%29%40context%7Esource> ;
-			svu:hasPhenomenon <phenomenon#water_evapotranspiration> ;
-			skos:prefLabel "(land_surface)@context~source_(water_evapotranspiration)"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40context%7Esource_radiation%7Eoutgoing%7Elongwave
 :%28land_surface%29%40context%7Esource_radiation%7Eoutgoing%7Elongwave rdf:type owl:NamedIndividual ,
@@ -7330,6 +7358,13 @@
 			svu:hasPhenomenon <body#wheel> ;
 			skos:prefLabel "automobile@context~part_wheel"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#basin%7Edrainage%40context%7Ein_%28%28channel%7Eriver_centerline%29_point%29
+:basin%7Edrainage%40context%7Ein_%28%28channel%7Eriver_centerline%29_point%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#basin%7Edrainage%40context%7Ein> ;
+			svu:hasPhenomenon <phenomenon#%28channel%7Eriver_centerline%29_point> ;
+			skos:prefLabel "basin~drainage@context~in_((channel~river_centerline)_point)"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#basin%7Edrainage%40context%7Ein_rain-gauge
 :basin%7Edrainage%40context%7Ein_rain-gauge rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -7818,7 +7853,7 @@
 :channel%40context%7Epart_entrance rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
 			svu:hasContext <context#channel%40context%7Epart> ;
-			svu:hasPhenomenon <rolephenomenon#entrance> ;
+			svu:hasPhenomenon <process#entrance> ;
 			skos:prefLabel "channel@context~part_entrance"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel%40context%7Epart_exit
@@ -7860,7 +7895,7 @@
 :channel%7Emain%40context%7Epart_entrance rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
 			svu:hasContext <context#channel%7Emain%40context%7Epart> ;
-			svu:hasPhenomenon <rolephenomenon#entrance> ;
+			svu:hasPhenomenon <process#entrance> ;
 			skos:prefLabel "channel~main@context~part_entrance"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel%7Eriver%40context%7Ein_%28water_x-section%29
@@ -7876,6 +7911,13 @@
 			svu:hasContext <context#channel%7Eriver%40context%7Ein> ;
 			svu:hasPhenomenon <phenomenon#water_x-section_top> ;
 			skos:prefLabel "channel~river@context~in_(water_x-section_top)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel%7Estream%40context%7Ein_%28water%40role%7Emain_flowing%29
+:channel%7Estream%40context%7Ein_%28water%40role%7Emain_flowing%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#channel%7Estream%40context%7Ein> ;
+			svu:hasPhenomenon <phenomenon#water%40role%7Emain_flowing> ;
+			skos:prefLabel "channel~stream@context~in_(water@role~main_flowing)"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel%7Estream%40context%7Epart_reach
 :channel%7Estream%40context%7Epart_reach rdf:type owl:NamedIndividual ,
@@ -8549,6 +8591,27 @@
 			svu:hasPhenomenon <phenomenon#earth_pole%7Enorth%7Evirtual> ;
 			skos:prefLabel "grid@context~in_(earth_pole~north~virtual)"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#grid%40context%7Ein_%28ground%40context%7Ein_water%29
+:grid%40context%7Ein_%28ground%40context%7Ein_water%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#grid%40context%7Ein> ;
+			svu:hasPhenomenon <phenomenon#ground%40context%7Ein_water> ;
+			skos:prefLabel "grid@context~in_(ground@context~in_water)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#grid%40context%7Epart_%28cell_boundary%29
+:grid%40context%7Epart_%28cell_boundary%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#grid%40context%7Epart> ;
+			svu:hasPhenomenon <phenomenon#cell_boundary> ;
+			skos:prefLabel "grid@context~part_(cell_boundary)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#grid%40context%7Epart_cell
+:grid%40context%7Epart_cell rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#grid%40context%7Epart> ;
+			svu:hasPhenomenon <form#cell> ;
+			skos:prefLabel "grid@context~part_cell"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Eabove_%28%28soil%40context%7Ein_%28residue_pool%29%29%40role%7Esink_%28crop%40context%7Esource_residue%29%40role%7Emain_addition%29
 :ground%40context%7Eabove_%28%28soil%40context%7Ein_%28residue_pool%29%29%40role%7Esink_%28crop%40context%7Esource_residue%29%40role%7Emain_addition%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -8621,6 +8684,104 @@
 			svu:hasPhenomenon <rolephenomenon#residue%7Eremaining> ;
 			skos:prefLabel "ground@context~above_residue~remaining"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Ein_%28water_surface%29
+:ground%40context%7Ein_%28water_surface%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#ground%40context%7Ein> ;
+			svu:hasPhenomenon <phenomenon#water_surface> ;
+			skos:prefLabel "ground@context~in_(water_surface)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Ein_water
+:ground%40context%7Ein_water rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#ground%40context%7Ein> ;
+			svu:hasPhenomenon <matter#water> ;
+			skos:prefLabel "ground@context~in_water"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Epart_%28%28%28interbed_system%7Edelay%29%40role%7Emain_preconsolidation%29%40context%7Ein_water%29
+:ground%40context%7Epart_%28%28%28interbed_system%7Edelay%29%40role%7Emain_preconsolidation%29%40context%7Ein_water%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#ground%40context%7Epart> ;
+			svu:hasPhenomenon <phenomenon#%28%28interbed_system%7Edelay%29%40role%7Emain_preconsolidation%29%40context%7Ein_water> ;
+			skos:prefLabel "ground@context~part_(((interbed_system~delay)@role~main_preconsolidation)@context~in_water)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Epart_%28%28interbed_system%7Edelay%29%40context%7Ein_water%29
+:ground%40context%7Epart_%28%28interbed_system%7Edelay%29%40context%7Ein_water%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#ground%40context%7Epart> ;
+			svu:hasPhenomenon <phenomenon#%28interbed_system%7Edelay%29%40context%7Ein_water> ;
+			skos:prefLabel "ground@context~part_((interbed_system~delay)@context~in_water)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Epart_%28%28interbed_system%7Edelay%29%40role%7Emain_compaction%29
+:ground%40context%7Epart_%28%28interbed_system%7Edelay%29%40role%7Emain_compaction%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#ground%40context%7Epart> ;
+			svu:hasPhenomenon <phenomenon#%28interbed_system%7Edelay%29%40role%7Emain_compaction> ;
+			skos:prefLabel "ground@context~part_((interbed_system~delay)@role~main_compaction)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Epart_%28%28interbed_system%7Eno-delay%29%40role%7Emain_compaction%29
+:ground%40context%7Epart_%28%28interbed_system%7Eno-delay%29%40role%7Emain_compaction%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#ground%40context%7Epart> ;
+			svu:hasPhenomenon <phenomenon#%28interbed_system%7Eno-delay%29%40role%7Emain_compaction> ;
+			skos:prefLabel "ground@context~part_((interbed_system~no-delay)@role~main_compaction)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Epart_%28interbed%40context%7Ein_water%29
+:ground%40context%7Epart_%28interbed%40context%7Ein_water%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#ground%40context%7Epart> ;
+			svu:hasPhenomenon <phenomenon#interbed%40context%7Ein_water> ;
+			skos:prefLabel "ground@context~part_(interbed@context~in_water)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Epart_%28interbed_system%29
+:ground%40context%7Epart_%28interbed_system%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#ground%40context%7Epart> ;
+			svu:hasPhenomenon <phenomenon#interbed_system> ;
+			skos:prefLabel "ground@context~part_(interbed_system)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Epart_%28interbed_system%7Edelay%29
+:ground%40context%7Epart_%28interbed_system%7Edelay%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#ground%40context%7Epart> ;
+			svu:hasPhenomenon <phenomenon#interbed_system%7Edelay> ;
+			skos:prefLabel "ground@context~part_(interbed_system~delay)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Epart_%28interbed_system%7Eno-delay%29
+:ground%40context%7Epart_%28interbed_system%7Eno-delay%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#ground%40context%7Epart> ;
+			svu:hasPhenomenon <phenomenon#interbed_system%7Eno-delay> ;
+			skos:prefLabel "ground@context~part_(interbed_system~no-delay)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Epart_%28interbed%7Edelay%40context%7Ein_water%29
+:ground%40context%7Epart_%28interbed%7Edelay%40context%7Ein_water%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#ground%40context%7Epart> ;
+			svu:hasPhenomenon <phenomenon#interbed%7Edelay%40context%7Ein_water> ;
+			skos:prefLabel "ground@context~part_(interbed~delay@context~in_water)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Epart_%28interbed%7Edelay%40role%7Emain_compaction%29
+:ground%40context%7Epart_%28interbed%7Edelay%40role%7Emain_compaction%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#ground%40context%7Epart> ;
+			svu:hasPhenomenon <phenomenon#interbed%7Edelay%40role%7Emain_compaction> ;
+			skos:prefLabel "ground@context~part_(interbed~delay@role~main_compaction)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Epart_%28interbed%7Eno-delay%40context%7Ein_water%29
+:ground%40context%7Epart_%28interbed%7Eno-delay%40context%7Ein_water%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#ground%40context%7Epart> ;
+			svu:hasPhenomenon <phenomenon#interbed%7Eno-delay%40context%7Ein_water> ;
+			skos:prefLabel "ground@context~part_(interbed~no-delay@context~in_water)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40context%7Epart_%28interbed%7Eno-delay%40role%7Emain_compaction%29
+:ground%40context%7Epart_%28interbed%7Eno-delay%40role%7Emain_compaction%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#ground%40context%7Epart> ;
+			svu:hasPhenomenon <phenomenon#interbed%7Eno-delay%40role%7Emain_compaction> ;
+			skos:prefLabel "ground@context~part_(interbed~no-delay@role~main_compaction)"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#human%40context%7Epart_%28blood%40medium_platelet%29
 :human%40context%7Epart_%28blood%40medium_platelet%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -8669,6 +8830,27 @@
 			svu:hasContext <context#instrument%40context%7Epart> ;
 			svu:hasPhenomenon <abstraction#response-filter> ;
 			skos:prefLabel "instrument@context~part_response-filter"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#interbed%40context%7Ein_water
+:interbed%40context%7Ein_water rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#interbed%40context%7Ein> ;
+			svu:hasPhenomenon <matter#water> ;
+			skos:prefLabel "interbed@context~in_water"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#interbed%7Edelay%40context%7Ein_water
+:interbed%7Edelay%40context%7Ein_water rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#interbed%7Edelay%40context%7Ein> ;
+			svu:hasPhenomenon <matter#water> ;
+			skos:prefLabel "interbed~delay@context~in_water"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#interbed%7Eno-delay%40context%7Ein_water
+:interbed%7Eno-delay%40context%7Ein_water rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#interbed%7Eno-delay%40context%7Ein> ;
+			svu:hasPhenomenon <matter#water> ;
+			skos:prefLabel "interbed~no-delay@context~in_water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#lake%40context%7Ein_%28fish_sample%29
 :lake%40context%7Ein_%28fish_sample%29 rdf:type owl:NamedIndividual ,
@@ -8726,6 +8908,14 @@
 			svu:hasPhenomenon <phenomenon#domain_boundary_lowering> ;
 			skos:prefLabel "land@context~part_(domain_boundary_lowering)"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#land%40context%7Epart_%28region%40context%7Eat_%28%28water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration%29%29_drought
+:land%40context%7Epart_%28region%40context%7Eat_%28%28water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration%29%29_drought rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#land%40context%7Epart> ;
+			svu:hasPhenomenon <phenomenon#region%40context%7Eat_%28%28water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration%29> ;
+			svu:hasPhenomenon <attribute#drought> ;
+			skos:prefLabel "land@context~part_(region@context~at_((water@role~main_precipitation)@role~main_evapotranspiration))_drought"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#land%7Eflooded%40context%7Eon_water
 :land%7Eflooded%40context%7Eon_water rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -8753,6 +8943,20 @@
 			svu:hasContext <context#material%40context%7Ein> ;
 			svu:hasPhenomenon <matter#oxygen> ;
 			skos:prefLabel "material@context~in_oxygen"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#model%40context%7Ein_%28%28grid%40context%7Epart_%28cell_boundary%29%29%40context%7Eat_%28ground%40medium_water%29%29
+:model%40context%7Ein_%28%28grid%40context%7Epart_%28cell_boundary%29%29%40context%7Eat_%28ground%40medium_water%29%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#model%40context%7Ein> ;
+			svu:hasPhenomenon <phenomenon#%28grid%40context%7Epart_%28cell_boundary%29%29%40context%7Eat_%28ground%40medium_water%29> ;
+			skos:prefLabel "model@context~in_((grid@context~part_(cell_boundary))@context~at_(ground@medium_water))"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#model%40context%7Ein_%28%28grid%40context%7Epart_cell%29%40role%7Esink_%28grid%40context%7Ein_%28ground%40context%7Ein_water%29%29%40role%7Emain_flowing%29
+:model%40context%7Ein_%28%28grid%40context%7Epart_cell%29%40role%7Esink_%28grid%40context%7Ein_%28ground%40context%7Ein_water%29%29%40role%7Emain_flowing%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#model%40context%7Ein> ;
+			svu:hasPhenomenon <phenomenon#%28grid%40context%7Epart_cell%29%40role%7Esink_%28grid%40context%7Ein_%28ground%40context%7Ein_water%29%29%40role%7Emain_flowing> ;
+			skos:prefLabel "model@context~in_((grid@context~part_cell)@role~sink_(grid@context~in_(ground@context~in_water))@role~main_flowing)"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#model%40context%7Ein_%28%28grid_cell%29%40context%7Ein_%28water_flowing%29%29
 :model%40context%7Ein_%28%28grid_cell%29%40context%7Ein_%28water_flowing%29%29 rdf:type owl:NamedIndividual ,
@@ -8865,6 +9069,22 @@
 			svu:hasContext <context#model%40context%7Ein> ;
 			svu:hasPhenomenon <phenomenon#%28grid_edge%7Ewest%29%40context%7Ein_%28sea%40context%7Ein_water%29> ;
 			skos:prefLabel "model@context~in_((grid_edge~west)@context~in_(sea@context~in_water))"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#model%40context%7Ein_%28%28grid_layer%29%40context%7Ein_%28%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29%29%29
+:model%40context%7Ein_%28%28grid_layer%29%40context%7Ein_%28%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29%29%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#model%40context%7Ein> ;
+			svu:hasPhenomenon <phenomenon#%28grid_layer%29%40context%7Ein_%28%28land_surface%29%40context%7Ebelow_%28ground%40context%7Ein_water%29%29> ;
+			skos:prefLabel "model@context~in_((grid_layer)@context~in_((land_surface)@context~below_(ground@context~in_water)))"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#model%40context%7Ein_%28%28grid_layer%29%40context%7Ein_%28ground%40role%7Emain_compaction%29%29__compaction_length
+:model%40context%7Ein_%28%28grid_layer%29%40context%7Ein_%28ground%40role%7Emain_compaction%29%29__compaction_length rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#model%40context%7Ein> ;
+			svu:hasPhenomenon <phenomenon#%28grid_layer%29%40context%7Ein_%28ground%40role%7Emain_compaction%29> ;
+			svu:hasPhenomenon <process#compaction> ;
+			svu:hasPhenomenon <phenomenon#length> ;
+			skos:prefLabel "model@context~in_((grid_layer)@context~in_(ground@role~main_compaction))__compaction_length"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#model%40context%7Ein_%28%28grid_node%29%40context%7Ein%29
 :model%40context%7Ein_%28%28grid_node%29%40context%7Ein%29 rdf:type owl:NamedIndividual ,
@@ -8991,6 +9211,20 @@
 			svu:hasContext <context#model%40context%7Ein> ;
 			svu:hasPhenomenon <abstraction#grid_cell_edge_center> ;
 			skos:prefLabel "model@context~in_(grid_cell_edge_center)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#model%40context%7Ein_%28grid_cell_edge%7Ealong-column%29
+:model%40context%7Ein_%28grid_cell_edge%7Ealong-column%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#model%40context%7Ein> ;
+			svu:hasPhenomenon <phenomenon#grid_cell_edge%7Ealong-column> ;
+			skos:prefLabel "model@context~in_(grid_cell_edge~along-column)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#model%40context%7Ein_%28grid_cell_edge%7Ealong-row%29
+:model%40context%7Ein_%28grid_cell_edge%7Ealong-row%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#model%40context%7Ein> ;
+			svu:hasPhenomenon <phenomenon#grid_cell_edge%7Ealong-row> ;
+			skos:prefLabel "model@context~in_(grid_cell_edge~along-row)"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#model%40context%7Ein_%28grid_cell_edge%7Eeast%29
 :model%40context%7Ein_%28grid_cell_edge%7Eeast%29 rdf:type owl:NamedIndividual ,
@@ -9230,6 +9464,27 @@
 			svu:hasPhenomenon <abstraction#grid_edge%7Ewest> ;
 			skos:prefLabel "model@context~in_(grid_edge~west)"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#model%40context%7Ein_%28grid_layer%29
+:model%40context%7Ein_%28grid_layer%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#model%40context%7Ein> ;
+			svu:hasPhenomenon <phenomenon#grid_layer> ;
+			skos:prefLabel "model@context~in_(grid_layer)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#model%40context%7Ein_%28grid_layer_bottom%29
+:model%40context%7Ein_%28grid_layer_bottom%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#model%40context%7Ein> ;
+			svu:hasPhenomenon <phenomenon#grid_layer_bottom> ;
+			skos:prefLabel "model@context~in_(grid_layer_bottom)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#model%40context%7Ein_%28grid_layer%7Etopmost_top%29
+:model%40context%7Ein_%28grid_layer%7Etopmost_top%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#model%40context%7Ein> ;
+			svu:hasPhenomenon <phenomenon#grid_layer%7Etopmost_top> ;
+			skos:prefLabel "model@context~in_(grid_layer~topmost_top)"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#model%40context%7Ein_%28grid_node%29
 :model%40context%7Ein_%28grid_node%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -9363,6 +9618,13 @@
 			svu:hasPhenomenon <abstraction#axis%7Eeast> ;
 			skos:prefLabel "model@context~in_axis~east"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#model%40context%7Ein_water
+:model%40context%7Ein_water rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#model%40context%7Ein> ;
+			svu:hasPhenomenon <matter#water> ;
+			skos:prefLabel "model@context~in_water"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ocean%40context%7Epart_wave
 :ocean%40context%7Epart_wave rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -9488,6 +9750,13 @@
 			svu:hasContext <context#plant%40context%7Epart> ;
 			svu:hasPhenomenon <body#root> ;
 			skos:prefLabel "plant@context~part_root"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#region%40context%7Eat_%28%28water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration%29
+:region%40context%7Eat_%28%28water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration%29 rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#region%40context%7Eat> ;
+			svu:hasPhenomenon <phenomenon#%28water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration> ;
+			skos:prefLabel "region@context~at_((water@role~main_precipitation)@role~main_evapotranspiration)"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#region%7Estate%40context%7Epart_%28land%7Eflooded%40context%7Eon_water%29
 :region%7Estate%40context%7Epart_%28land%7Eflooded%40context%7Eon_water%29 rdf:type owl:NamedIndividual ,
@@ -10182,6 +10451,14 @@
 			svu:hasPhenomenon <matter#sediment%7Esuspended> ;
 			skos:prefLabel "water@context~in_sediment~suspended"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#watershed%40context%7Ein_%28water%40role%7Emain_flowing%29_flood
+:watershed%40context%7Ein_%28water%40role%7Emain_flowing%29_flood rdf:type owl:NamedIndividual ,
+			svu:ContextPhenomenon ;
+			svu:hasContext <context#watershed%40context%7Ein> ;
+			svu:hasPhenomenon <phenomenon#water%40role%7Emain_flowing> ;
+			svu:hasPhenomenon <attribute#flood> ;
+			skos:prefLabel "watershed@context~in_(water@role~main_flowing)_flood"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#weir%40context%7Esource_%28water_discharging%29
 :weir%40context%7Esource_%28water_discharging%29 rdf:type owl:NamedIndividual ,
 			svu:ContextPhenomenon ;
@@ -10358,6 +10635,13 @@
 			svu:hasMediumPhenomenon <phenomenon#soil_surface> ;
 			svu:hasPhenomenon <matter#water> ;
 			skos:prefLabel "(soil_surface)@medium_water"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28soil_unsat-zone%29%40medium_water
+:%28soil_unsat-zone%29%40medium_water rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasMediumPhenomenon <body#soil_unsat-zone> ;
+			svu:hasPhenomenon <matter#water> ;
+			skos:prefLabel "(soil_unsat-zone)@medium_water"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28vegetation_canopy%29%40medium_throughfall_water
 :%28vegetation_canopy%29%40medium_throughfall_water rdf:type owl:NamedIndividual ,
@@ -10791,6 +11075,20 @@
 			svu:hasMediumPhenomenon <body#glacier> ;
 			svu:hasPhenomenon <body#glacier_accumulation-zone> ;
 			skos:prefLabel "glacier@medium_(glacier_accumulation-zone)"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40medium_water
+:ground%40medium_water rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasMediumPhenomenon <body#ground> ;
+			svu:hasPhenomenon <matter#water> ;
+			skos:prefLabel "ground@medium_water"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40medium_water%7Eintercepted
+:ground%40medium_water%7Eintercepted rdf:type owl:NamedIndividual ,
+			svu:MediumPhenomenon ;
+			svu:hasMediumPhenomenon <body#ground> ;
+			svu:hasPhenomenon <phenomenon#water%7Eintercepted> ;
+			skos:prefLabel "ground@medium_water~intercepted"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#ice%40medium
 :ice%40medium rdf:type owl:NamedIndividual ,
@@ -11972,6 +12270,13 @@
 			svu:hasParticipant <participant#%28%28atmosphere%40medium_dust%7Eaerosol%29%40role%7Emain_radiation%40role%7Ein_transmission%29%40role%7Esecond> ;
 			skos:prefLabel "(atmosphere@role~main_radiation@role~in_transmission)@role~first_((atmosphere@medium_dust~aerosol)@role~main_radiation@role~in_transmission)@role~second"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28atmosphere%40role%7Esource_water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration
+:%28atmosphere%40role%7Esource_water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#%28atmosphere%40role%7Esource_water%40role%7Emain_precipitation%29%40role%7Emain> ;
+			svu:undergoesProcess <process#evapotranspiration> ;
+			skos:prefLabel "(atmosphere@role~source_water@role~main_precipitation)@role~main_evapotranspiration"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28atmosphere_air%29%40role%7Emain_radiation%7Eincoming%7Elongwave%40role%7Ein_absorption
 :%28atmosphere_air%29%40role%7Emain_radiation%7Eincoming%7Elongwave%40role%7Ein_absorption rdf:type owl:NamedIndividual ,
 			svu:CompoundPhenomenon ;
@@ -12240,6 +12545,14 @@
 			svu:hasParticipant <participant#%28glacier_top_surface%29%40role%7Emedium> ;
 			skos:prefLabel "(glacier_top_surface)@role~medium"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28grid%40context%7Epart_cell%29%40role%7Esink_%28grid%40context%7Ein_%28ground%40context%7Ein_water%29%29%40role%7Emain_flowing
+:%28grid%40context%7Epart_cell%29%40role%7Esink_%28grid%40context%7Ein_%28ground%40context%7Ein_water%29%29%40role%7Emain_flowing rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#%28grid%40context%7Epart_cell%29%40role%7Esink> ;
+			svu:hasParticipant <participant#%28grid%40context%7Ein_%28ground%40context%7Ein_water%29%29%40role%7Emain> ;
+			svu:undergoesProcess <process#flowing> ;
+			skos:prefLabel "(grid@context~part_cell)@role~sink_(grid@context~in_(ground@context~in_water))@role~main_flowing"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28grid_cell%29%40role%7Esink_%28water_flowing%7Eincoming%29%40role%7Emain
 :%28grid_cell%29%40role%7Esink_%28water_flowing%7Eincoming%29%40role%7Emain rdf:type owl:NamedIndividual ,
 			svu:CompoundPhenomenon ;
@@ -12254,6 +12567,14 @@
 			svu:hasParticipant <participant#%28water_flowing%7Eoutgoing%29%40role%7Emain> ;
 			skos:prefLabel "(grid_cell)@role~source_(water_flowing~outgoing)@role~main"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28ground%40medium_water%29%40role%7Emain_water%40role%7Ein_recharge
+:%28ground%40medium_water%29%40role%7Emain_water%40role%7Ein_recharge rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#%28ground%40medium_water%29%40role%7Emain> ;
+			svu:hasParticipant <participant#water%40role%7Ein> ;
+			svu:undergoesProcess <process#recharge> ;
+			skos:prefLabel "(ground@medium_water)@role~main_water@role~in_recharge"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28human%40context%7Epart_eye%29%40role%7Emain_photon%40role%7Ein_detection
 :%28human%40context%7Epart_eye%29%40role%7Emain_photon%40role%7Ein_detection rdf:type owl:NamedIndividual ,
 			svu:CompoundPhenomenon ;
@@ -12261,6 +12582,27 @@
 			svu:hasParticipant <participant#photon%40role%7Ein> ;
 			svu:undergoesProcess <process#detection> ;
 			skos:prefLabel "(human@context~part_eye)@role~main_photon@role~in_detection"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28interbed_system%7Edelay%29%40role%7Emain_compaction
+:%28interbed_system%7Edelay%29%40role%7Emain_compaction rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#%28interbed_system%7Edelay%29%40role%7Emain> ;
+			svu:undergoesProcess <process#compaction> ;
+			skos:prefLabel "(interbed_system~delay)@role~main_compaction"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28interbed_system%7Edelay%29%40role%7Emain_preconsolidation
+:%28interbed_system%7Edelay%29%40role%7Emain_preconsolidation rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#%28interbed_system%7Edelay%29%40role%7Emain> ;
+			svu:undergoesProcess <process#preconsolidation> ;
+			skos:prefLabel "(interbed_system~delay)@role~main_preconsolidation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28interbed_system%7Eno-delay%29%40role%7Emain_compaction
+:%28interbed_system%7Eno-delay%29%40role%7Emain_compaction rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#%28interbed_system%7Eno-delay%29%40role%7Emain> ;
+			svu:undergoesProcess <process#compaction> ;
+			skos:prefLabel "(interbed_system~no-delay)@role~main_compaction"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40role%7Eexchange_air%40role%7Eexchange
 :%28land_surface%29%40role%7Eexchange_air%40role%7Eexchange rdf:type owl:NamedIndividual ,
@@ -12418,6 +12760,30 @@
 			svu:hasParticipant <participant#water%40role%7Emain> ;
 			svu:undergoesProcess <process#evapotranspiration> ;
 			skos:prefLabel "(land_surface)@role~source_vegetation@role~source_water@role~main_evapotranspiration"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40role%7Esource_water%40role%7Emain_evapotranspiration
+:%28land_surface%29%40role%7Esource_water%40role%7Emain_evapotranspiration rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#%28land_surface%29%40role%7Esource> ;
+			svu:hasParticipant <participant#water%40role%7Emain> ;
+			svu:undergoesProcess <process#evapotranspiration> ;
+			skos:prefLabel "(land_surface)@role~source_water@role~main_evapotranspiration"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40role%7Esource_water%40role%7Emain_transpiration
+:%28land_surface%29%40role%7Esource_water%40role%7Emain_transpiration rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#%28land_surface%29%40role%7Esource> ;
+			svu:hasParticipant <participant#water%40role%7Emain> ;
+			svu:undergoesProcess <process#transpiration> ;
+			skos:prefLabel "(land_surface)@role~source_water@role~main_transpiration"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land_surface%29%40role%7Esource_water%7Eintercepted%40role%7Emain_evaporation
+:%28land_surface%29%40role%7Esource_water%7Eintercepted%40role%7Emain_evaporation rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#%28land_surface%29%40role%7Esource> ;
+			svu:hasParticipant <participant#water%7Eintercepted%40role%7Emain> ;
+			svu:undergoesProcess <process#evaporation> ;
+			skos:prefLabel "(land_surface)@role~source_water~intercepted@role~main_evaporation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28land%7Evegetated_floor%29%40role%7Esink_water%40role%7Emain_interception
 :%28land%7Evegetated_floor%29%40role%7Esink_water%40role%7Emain_interception rdf:type owl:NamedIndividual ,
@@ -12938,6 +13304,13 @@
 			svu:hasParticipant <participant#%28venus_ecliptic%29%40role%7Esecond> ;
 			skos:prefLabel "(venus_orbit)@role~first_(venus_ecliptic)@role~second"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration
+:%28water%40role%7Emain_precipitation%29%40role%7Emain_evapotranspiration rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#%28water%40role%7Emain_precipitation%29%40role%7Emain> ;
+			svu:undergoesProcess <process#evapotranspiration> ;
+			skos:prefLabel "(water@role~main_precipitation)@role~main_evapotranspiration"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#%28water_flowing%29%40role%7Eexchange_friction
 :%28water_flowing%29%40role%7Eexchange_friction rdf:type owl:NamedIndividual ,
 			svu:CompoundPhenomenon ;
@@ -13254,6 +13627,24 @@
 			svu:hasParticipant <participant#nitrogen%40role%7Edenominator> ;
 			skos:prefLabel "carbon@role~numerator_nitrogen@role~denominator"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel%7Eriver%40role%7Esource_%28land_subsurface%29%40role%7Esink_water%40role%7Emain_flowing
+:channel%7Eriver%40role%7Esource_%28land_subsurface%29%40role%7Esink_water%40role%7Emain_flowing rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#channel%7Eriver%40role%7Esource> ;
+			svu:hasParticipant <participant#%28land_subsurface%29%40role%7Esink> ;
+			svu:hasParticipant <participant#water%40role%7Emain> ;
+			svu:undergoesProcess <process#flowing> ;
+			skos:prefLabel "channel~river@role~source_(land_subsurface)@role~sink_water@role~main_flowing"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#channel%7Eriver%40role%7Esource_%28land_surface%29%40role%7Esink_water%40role%7Emain_flowing
+:channel%7Eriver%40role%7Esource_%28land_surface%29%40role%7Esink_water%40role%7Emain_flowing rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#channel%7Eriver%40role%7Esource> ;
+			svu:hasParticipant <participant#%28land_surface%29%40role%7Esink> ;
+			svu:hasParticipant <participant#water%40role%7Emain> ;
+			svu:undergoesProcess <process#flowing> ;
+			skos:prefLabel "channel~river@role~source_(land_surface)@role~sink_water@role~main_flowing"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#chlorine%40role%7Emain_electron%40role%7Ein
 :chlorine%40role%7Emain_electron%40role%7Ein rdf:type owl:NamedIndividual ,
 			svu:CompoundPhenomenon ;
@@ -13400,6 +13791,36 @@
 			svu:hasParticipant <participant#oxidizer%40role%7Edenominator> ;
 			skos:prefLabel "fuel@role~numerator_oxidizer@role~denominator"@en .
 
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40role%7Emain_compaction
+:ground%40role%7Emain_compaction rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#ground%40role%7Emain> ;
+			svu:undergoesProcess <process#compaction> ;
+			skos:prefLabel "ground@role~main_compaction"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40role%7Emain_preconsolidation
+:ground%40role%7Emain_preconsolidation rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#ground%40role%7Emain> ;
+			svu:undergoesProcess <process#preconsolidation> ;
+			skos:prefLabel "ground@role~main_preconsolidation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40role%7Emain_subsidence
+:ground%40role%7Emain_subsidence rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#ground%40role%7Emain> ;
+			svu:undergoesProcess <process#subsidence> ;
+			skos:prefLabel "ground@role~main_subsidence"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#ground%40role%7Esource_well%40role%7Esink_water%40role%7Emain_recharge
+:ground%40role%7Esource_well%40role%7Esink_water%40role%7Emain_recharge rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#ground%40role%7Esource> ;
+			svu:hasParticipant <participant#well%40role%7Esink> ;
+			svu:hasParticipant <participant#water%40role%7Emain> ;
+			svu:undergoesProcess <process#recharge> ;
+			skos:prefLabel "ground@role~source_well@role~sink_water@role~main_recharge"@en .
+
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#human%40role%7Esink_alcohol%40role%7Emain_consumption
 :human%40role%7Esink_alcohol%40role%7Emain_consumption rdf:type owl:NamedIndividual ,
 			svu:CompoundPhenomenon ;
@@ -13413,6 +13834,20 @@
 			svu:CompoundPhenomenon ;
 			svu:hasParticipant <participant#ice%40role%7Emedium> ;
 			skos:prefLabel "ice@role~medium"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#interbed%7Edelay%40role%7Emain_compaction
+:interbed%7Edelay%40role%7Emain_compaction rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#interbed%7Edelay%40role%7Emain> ;
+			svu:undergoesProcess <process#compaction> ;
+			skos:prefLabel "interbed~delay@role~main_compaction"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#interbed%7Eno-delay%40role%7Emain_compaction
+:interbed%7Eno-delay%40role%7Emain_compaction rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#interbed%7Eno-delay%40role%7Emain> ;
+			svu:undergoesProcess <process#compaction> ;
+			skos:prefLabel "interbed~no-delay@role~main_compaction"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#lake%40role%7Esink_%28water_flowing%7Eincoming%29%40role%7Emain
 :lake%40role%7Esink_%28water_flowing%7Eincoming%29%40role%7Emain rdf:type owl:NamedIndividual ,
@@ -13435,6 +13870,14 @@
 			svu:hasParticipant <participant#fertilizer%7Enitrogen%40role%7Emain> ;
 			svu:undergoesProcess <process#application> ;
 			skos:prefLabel "land@role~in_fertilizer~nitrogen@role~main_application"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#land%40role%7Esink_fertilizer%40role%7Emain_application
+:land%40role%7Esink_fertilizer%40role%7Emain_application rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#land%40role%7Esink> ;
+			svu:hasParticipant <participant#fertilizer%40role%7Emain> ;
+			svu:undergoesProcess <process#application> ;
+			skos:prefLabel "land@role~sink_fertilizer@role~main_application"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#magnesium-chloride%40role%7Efirst_water%40role%7Esecond
 :magnesium-chloride%40role%7Efirst_water%40role%7Esecond rdf:type owl:NamedIndividual ,
@@ -13470,6 +13913,13 @@
 			svu:hasParticipant <participant#material%40role%7Emedium> ;
 			svu:hasParticipant <participant#wave%7Eseismic%7Esv%40role%7Emain> ;
 			skos:prefLabel "material@role~medium_wave~seismic~sv@role~main"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#model%40role%7Emain_simulation
+:model%40role%7Emain_simulation rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#model%40role%7Emain> ;
+			svu:undergoesProcess <process#simulation> ;
+			skos:prefLabel "model@role~main_simulation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#observer%40role%7Eobserver_observation
 :observer%40role%7Eobserver_observation rdf:type owl:NamedIndividual ,
@@ -13692,13 +14142,6 @@
 			svu:undergoesProcess <process#interception> ;
 			skos:prefLabel "soil@role~main_water@role~in_interception"@en .
 
-###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil%40role%7Emedium_conduction
-:soil%40role%7Emedium_conduction rdf:type owl:NamedIndividual ,
-			svu:CompoundPhenomenon ;
-			svu:hasParticipant <participant#soil%40role%7Emedium> ;
-			svu:undergoesProcess <process#conduction> ;
-			skos:prefLabel "soil@role~medium_conduction"@en .
-
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil%40role%7Esink_fertilizer%40role%7Emain_application
 :soil%40role%7Esink_fertilizer%40role%7Emain_application rdf:type owl:NamedIndividual ,
 			svu:CompoundPhenomenon ;
@@ -13714,6 +14157,14 @@
 			svu:hasParticipant <participant#nitrous-oxide-as-nitrogen%40role%7Emain> ;
 			svu:undergoesProcess <process#emission> ;
 			skos:prefLabel "soil@role~source_nitrous-oxide-as-nitrogen@role~main_emission"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil%40role%7Esource_water%40role%7Emain_evapotranspiration
+:soil%40role%7Esource_water%40role%7Emain_evapotranspiration rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#soil%40role%7Esource> ;
+			svu:hasParticipant <participant#water%40role%7Emain> ;
+			svu:undergoesProcess <process#evapotranspiration> ;
+			skos:prefLabel "soil@role~source_water@role~main_evapotranspiration"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#soil%7Ebare%40role%7Esource_water%40role%7Emain_evaporation
 :soil%7Ebare%40role%7Esource_water%40role%7Emain_evaporation rdf:type owl:NamedIndividual ,
@@ -13759,6 +14210,20 @@
 			svu:hasParticipant <participant#water%40role%7Emain> ;
 			svu:hasParticipant <participant#electron%40role%7Ein> ;
 			skos:prefLabel "water@role~main_electron@role~in"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#water%40role%7Emain_flowing
+:water%40role%7Emain_flowing rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#water%40role%7Emain> ;
+			svu:undergoesProcess <process#flowing> ;
+			skos:prefLabel "water@role~main_flowing"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/phenomenon#water%40role%7Emain_precipitation
+:water%40role%7Emain_precipitation rdf:type owl:NamedIndividual ,
+			svu:CompoundPhenomenon ;
+			svu:hasParticipant <participant#water%40role%7Emain> ;
+			svu:undergoesProcess <process#precipitation> ;
+			skos:prefLabel "water@role~main_precipitation"@en .
 
 ###  http://www.geoscienceontology.org/svo/svl/phenomenon#water%40role%7Emain_reaeration
 :water%40role%7Emain_reaeration rdf:type owl:NamedIndividual ,
