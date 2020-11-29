@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:svu="http://www.geoscienceontology.org/svo/svu#"
+>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#edge%7Ey">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">edge~y</skos:prefLabel>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#y"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#layer%7Efirst">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#first"/>
+    <skos:prefLabel xml:lang="en">layer~first</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#layer"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Ej1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <skos:prefLabel xml:lang="en">constituent~j1</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#zone%7Esurf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">surf-zone</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#zone"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Surf_zone</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#ablation-zone">
+    <skos:prefLabel xml:lang="en">ablation-zone</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Ablation_zone</svu:hasAssociatedWikipediaPage>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#zone"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isDefinedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/process#ablation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#layer%7Etop">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">layer~top</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#layer"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#top"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#subskin">
+    <skos:prefLabel xml:lang="en">subskin</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#side">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Side_(disambiguation)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">side</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#core%7Eouter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">core~outer</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#core"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#outer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#plug-layer">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#layer"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Plug_flow</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">plug-layer</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7E2q1">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <skos:prefLabel xml:lang="en">constituent~2q1</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#base">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wiktionary.org/wiki/base#Noun</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">base</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#edge">
+    <skos:prefLabel xml:lang="en">edge</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Edge_(geometry)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#accumulation-zone">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#zone"/>
+    <skos:prefLabel xml:lang="en">accumulation-zone</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Accumulation_zone</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isDefinedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/process#accumulation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#face">
+    <skos:prefLabel xml:lang="en">face</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#core">
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Core</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">core</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Em3">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">constituent~m3</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituents">
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">constituents</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#horizon%7Eb">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#horizon"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">horizon~b</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#sat-zone">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">sat-zone</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Phreatic_zone</svu:hasAssociatedWikipediaPage>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#zone"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#saturated"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Part</svu:hasAssociatedWikipediaPage>
+    <skos:altLabel xml:lang="en">part</skos:altLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">constituent</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Eo1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">constituent~o1</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Emu2">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">constituent~mu2</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#location">
+    <skos:prefLabel xml:lang="en">location</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Location_(geography)</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Ek2">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <skos:prefLabel xml:lang="en">constituent~k2</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#horizon%7Ep">
+    <skos:prefLabel xml:lang="en">horizon~p</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#horizon"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Eoo2">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">constituent~oo2</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#neck">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">neck</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#unsat-zone">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Vadose_zone</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#unsaturated"/>
+    <skos:prefLabel xml:lang="en">unsat-zone</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#zone"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#vadose%20zone"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#zone%7Eaphotic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">aphotic-zone</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#zone"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Aphotic_zone</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#layer%7Esecond">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#layer"/>
+    <skos:prefLabel xml:lang="en">layer~second</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#second"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#edge%7Enorth">
+    <skos:prefLabel xml:lang="en">edge~north</skos:prefLabel>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#north"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#shear-layer">
+    <skos:prefLabel xml:lang="en">shear-layer</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Shear_flow</svu:hasAssociatedWikipediaPage>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#layer"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#layer">
+    <skos:prefLabel xml:lang="en">layer</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Layer</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#edge%7Ex">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#x"/>
+    <skos:prefLabel xml:lang="en">edge~x</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Es6">
+    <skos:prefLabel xml:lang="en">constituent~s6</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Enu2">
+    <skos:prefLabel xml:lang="en">constituent~nu2</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Em8">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <skos:prefLabel xml:lang="en">constituent~m8</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7E2n2">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">constituent~2n2</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#beds">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#bed"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">beds</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#zone%7Evadose">
+    <skos:prefLabel xml:lang="en">zone~vadose</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Vadose_zone</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#zone"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#beds%7Etopset%7Elower">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#lower"/>
+    <skos:prefLabel xml:lang="en">beds~topset~lower</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#beds%7Etopset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#mixed-layer">
+    <skos:prefLabel xml:lang="en">mixed-layer</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#layer"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Mixed_layer</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#side%7Eright">
+    <skos:prefLabel xml:lang="en">side~right</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#side"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#right"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#skin">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">skin</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Skin_(disambiguation)</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#isopycnal-layer">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#layer"/>
+    <skos:prefLabel xml:lang="en">isopycnal-layer</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#segment">
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Segment</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">segment</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#beds%7Etopset%7Eupper">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#upper"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#beds%7Etopset"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">beds~topset~upper</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#core%7Einner">
+    <skos:prefLabel xml:lang="en">core~inner</skos:prefLabel>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#inner"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#core"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#region">
+    <skos:prefLabel xml:lang="en">region</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Region</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#regolith-layer">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Regolith</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">regolith-layer</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#layer"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Em2">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">constituent~m2</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#boundary-layer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">boundary-layer</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Boundary_layer</svu:hasAssociatedWikipediaPage>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#layer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#horizon">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">horizon</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#location-6">
+    <skos:prefLabel xml:lang="en">location-6</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#location"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#layer%7E0">
+    <skos:prefLabel xml:lang="en">layer~0</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#layer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Erho">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">constituent~rho</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Emsf">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">constituent~msf</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Emn4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">constituent~mn4</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#horizon%7Ea">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#horizon"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">horizon~a</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#horizon%7Ed">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#horizon"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">horizon~d</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#beds%7Ebottomset">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#bottomset"/>
+    <skos:prefLabel xml:lang="en">beds~bottomset</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7E2sm2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <skos:prefLabel xml:lang="en">constituent~2sm2</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#horizon%7Er">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">horizon~r</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#horizon"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#mantle">
+    <skos:prefLabel xml:lang="en">mantle</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Esa">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <skos:prefLabel xml:lang="en">constituent~sa</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#edge%7Eleading-displaced-convection">
+    <svu:isDefinedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/process#leading-displaced-convection"/>
+    <skos:prefLabel xml:lang="en">edge~leading-displaced-convection</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#layer%7E2">
+    <skos:prefLabel xml:lang="en">layer~2</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#layer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#root-zone">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#zone"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Rhizosphere</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">root-zone</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Emm">
+    <skos:prefLabel xml:lang="en">constituent~mm</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#canopy">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Canopy</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">canopy</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#location-1">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#location"/>
+    <skos:prefLabel xml:lang="en">location-1</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Essa">
+    <skos:prefLabel xml:lang="en">constituent~ssa</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#horizon%7Ee">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#horizon"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">horizon~e</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#edge%7Esouth">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge"/>
+    <skos:prefLabel xml:lang="en">edge~south</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#south"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Em6">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <skos:prefLabel xml:lang="en">constituent~m6</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#edge%7Eeast">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge"/>
+    <skos:prefLabel xml:lang="en">edge~east</skos:prefLabel>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#east"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Emf">
+    <skos:prefLabel xml:lang="en">constituent~mf</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#stratum">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">stratum</skos:prefLabel>
+    <skos:altLabel xml:lang="en">layer</skos:altLabel>
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Stratum</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#edge%7Ewest">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">edge~west</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#west"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#horizon%7Ec">
+    <skos:prefLabel xml:lang="en">horizon~c</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#horizon"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7En2">
+    <skos:prefLabel xml:lang="en">constituent~n2</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#beds%7Etopset">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#topset"/>
+    <skos:prefLabel xml:lang="en">beds~topset</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#lead">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">lead</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#layer%7E1">
+    <skos:prefLabel xml:lang="en">layer~1</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#layer"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Emk3">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">constituent~mk3</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Elam2">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <skos:prefLabel xml:lang="en">constituent~lam2</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#layer%7Ebase">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#base"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#layer"/>
+    <skos:prefLabel xml:lang="en">layer~base</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#band">
+    <skos:prefLabel xml:lang="en">band</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#toe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">toe</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Eoo1">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <skos:prefLabel xml:lang="en">constituent~oo1</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#tops">
+    <skos:prefLabel xml:lang="en">tops</skos:prefLabel>
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#top"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#photic-zone">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#zone"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">photic-zone</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Es4">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <skos:prefLabel xml:lang="en">constituent~s4</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#zone">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">zone</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Zone</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#bottom">
+    <skos:prefLabel xml:lang="en">bottom</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wiktionary.org/wiki/bottom#Noun</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Es2">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">constituent~s2</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment> Scientific Variables Lower Ontology, Part BETA VERSION 1.0.0</rdfs:comment>
+    <owl:versionIRI rdf:resource="http://www.geoscienceontology.org/svo/svl/part/1.0.0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#floor">
+    <skos:prefLabel xml:lang="en">floor</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Floor</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#front">
+    <skos:prefLabel xml:lang="en">front</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wiktionary.org/wiki/front#Noun</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#horizon%7Eo">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">horizon~o</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#horizon"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Et2">
+    <skos:prefLabel xml:lang="en">constituent~t2</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#top">
+    <skos:prefLabel xml:lang="en">top</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wiktionary.org/wiki/top#Noun</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Er2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <skos:prefLabel xml:lang="en">constituent~r2</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#region%7Ecentral-dense-overcast">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#region"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#central-dense-overcast"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">region~central-dense-overcast</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Eq1">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">constituent~q1</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Ems4">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <skos:prefLabel xml:lang="en">constituent~ms4</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#beds%7Eforeset">
+    <skos:prefLabel xml:lang="en">beds~foreset</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#foreset"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituents%7Eall">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">constituents~all</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituents"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#all"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#middle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">middle</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#side%7Eleft">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#left"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">side~left</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#side"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#region%7Eeye">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">region~eye</skos:prefLabel>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#eye-presence"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#region"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#component">
+    <skos:altLabel xml:lang="en">part</skos:altLabel>
+    <skos:prefLabel xml:lang="en">component</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#crust">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Crust</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">crust</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Ek1">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">constituent~k1</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#location-3">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#location"/>
+    <skos:prefLabel xml:lang="en">location-3</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Es1">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">constituent~s1</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#terminus">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">terminus</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Em1">
+    <skos:prefLabel xml:lang="en">constituent~m1</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#shaft">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">shaft</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#region%7Ecloud">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#region"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#cloud-presence"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">region~cloud</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#interior">
+    <svu:hasAssociatedWikipediaPage>https://en.wiktionary.org/wiki/interior#Noun</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">interior</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#active-layer">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Active_layer</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">active-layer</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#layer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#location-5">
+    <skos:prefLabel xml:lang="en">location-5</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#location"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#subsurface">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">subsurface</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7E2mk3">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <skos:prefLabel xml:lang="en">constituent~2mk3</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#part%7Ebody">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">body</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7El2">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <skos:prefLabel xml:lang="en">constituent~l2</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#bed">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Bed_(disambiguation)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">bed</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Ep1">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <skos:prefLabel xml:lang="en">constituent~p1</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#location-4">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#location"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">location-4</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#horizon%7El">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#horizon"/>
+    <skos:prefLabel xml:lang="en">horizon~l</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#constituent%7Em4">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#constituent"/>
+    <skos:prefLabel xml:lang="en">constituent~m4</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/part#location-2">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/part#location"/>
+    <skos:prefLabel xml:lang="en">location-2</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+</rdf:RDF>

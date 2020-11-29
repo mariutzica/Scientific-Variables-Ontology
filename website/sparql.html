@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="Maria Stoica" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="css/qonsole.css" rel="stylesheet" />
+    <link href="css/codemirror.css" rel="stylesheet" />
+    <link href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <script src="js/lib/jquery-1.10.1.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="js/lib/sprintf-0.7-beta1.js"></script>
+    <script src="js/lib/underscore.js"></script>
+
+    <script src="js/lib/codemirror.js"></script>
+    <script src="js/lib/foldcode.js"></script>
+    <script src="js/lib/foldgutter.js"></script>
+    <script src="js/lib/brace-fold.js"></script>
+    <script src="js/lib/xml-fold.js"></script>
+    <script src="js/lib/comment-fold.js"></script>
+    <script src="js/lib/javascript.js"></script>
+    <script src="js/lib/xml.js"></script>
+    <script src="js/lib/sparql.js"></script>
+    <script src="js/app/qonsole2.js"></script>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+
+
+    <script type="text/javascript">
+      // configuration
+      var config = {
+        endpoints: {
+          "default": "http://35.194.43.13:3030/ds/query",
+        },
+        prefixes: {
+          "rdf":      "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+          "rdfs":     "http://www.w3.org/2000/01/rdf-schema#",
+          "owl":      "http://www.w3.org/2002/07/owl#",
+          "svu":      "http://www.geoscienceontology.org/svo/svu#",
+          "skos":     "http://www.w3.org/2004/02/skos/core#"
+        },
+        queries: [
+        { "name": "Search everywhere",
+          "query":  "select ?x ?name ?prefLabel ?wikip ?classname\nwhere {\n" +
+                    "    ?x rdfs:label ?xname .\n" +
+                    "    ?x a ?cl .\n" +
+                    "    ?cl rdfs:label ?classname .\n" +
+                    "    optional {?x skos:prefLabel ?label.\n" +
+                    "              BIND(STR(?label) as ?prefLabel)} .\n" +
+                    "    optional {?x svu:hasAssociatedWikipediaPage ?wikip}.\n" +
+                    "    BIND (STR(?xname) as ?name)}\n" +
+                    "ORDER BY ?x ?name ?prefLabel ?wikip",
+          "prefixes": ["rdfs","owl","svu","skos"]
+        },
+        { "name": "Property",
+          "query":  "select ?property ?name ?prefLabel ?units ?wikip\nwhere {\n" +
+                    "    ?property a svu:Property.\n" +
+                    "    ?property rdfs:label ?xname .\n" +
+                    "    optional {?property svu:hasUnits ?u.\n" +
+                    "               BIND(STR(?u) as ?units) } .\n" +
+                    "    optional {?property skos:prefLabel ?label.\n" +
+                    "              BIND(STR(?label) as ?prefLabel)} .\n" +
+                    "    optional {?property svu:hasAssociatedWikipediaPage ?wikip}.\n" +
+                    "    BIND (STR(?xname) as ?name)}\n" +
+                    "ORDER BY ?name",
+          "prefixes": ["rdfs", "owl","svu","skos"]
+        },
+        { "name": "Phenomena",
+          "query":  "select ?phenomenon ?name ?prefLabel ?wikip\nwhere {\n" +
+                    "    ?phenomenon a svu:Phenomenon.\n" +
+                    "    ?phenomenon rdfs:label ?xname .\n" +
+                    "    optional {?phenomenon skos:prefLabel ?label.\n" +
+                    "              BIND(STR(?label) as ?prefLabel)} .\n" +
+                    "    optional {?phenomenon svu:hasAssociatedWikipediaPage ?wikip}.\n" +
+                    "    BIND (STR(?xname) as ?name)}\n" +
+                    "ORDER BY ?name",
+          "prefixes": ["rdfs", "owl","svu","skos"]
+        },
+        { "name": "Variable",
+          "query":  "select ?variable ?name ?prefLabel ?wikip\nwhere {\n" +
+                    "    ?variable a svu:Variable.\n" +
+                    "    ?variable rdfs:label ?xname .\n" +
+                    "    optional {?variable skos:prefLabel ?label.\n" +
+                    "              BIND(STR(?label) as ?prefLabel)} .\n" +
+                    "    optional {?variable svu:hasAssociatedWikipediaPage ?wikip}.\n" +
+                    "    BIND (STR(?xname) as ?name)}\n" +
+                    "ORDER BY ?name",
+          "prefixes": ["rdfs", "owl","svu","skos"]
+        },
+        {  "name": "Process",
+           "query":   "select ?process ?name ?prefLabel ?wikip\nwhere {\n" +
+                      "    ?process a svu:Process.\n" +
+                      "    ?process rdfs:label ?xname .\n" +
+                      "    optional {?process skos:prefLabel ?label.\n" +
+                      "              BIND(STR(?label) as ?prefLabel)} .\n" +
+                      "    optional {?process svu:hasAssociatedWikipediaPage ?wikip}.\n" +
+                      "    BIND (STR(?xname) as ?name)}\n" +
+                      "ORDER BY ?name",
+           "prefixes": ["rdfs", "owl", "svu","skos"]
+          },
+          {  "name": "Assumptions",
+             "query": "select ?assumpt ?name\nwhere {\n" +
+                      "   ?assumpt a svu:Assumption.\n" +
+                      "   ?assumpt rdfs:label ?xname .\n" +
+                      "   optional {?assumpt svu:hasAssociatedWikipediaPage ?wikip}.\n" +
+                      "   BIND(STR(?xname) as ?name)}\n" +
+                      "ORDER BY ?name",
+             "prefixes": ["rdfs", "owl", "svu", "skos"]
+          },
+       ]
+      };
+
+      $(function(){qonsole.init( config );});
+
+    </script>
+
+  </head>
+
+  <body>
+    <div id="header">
+    <img src="img/svo_temp_logo.png">
+    <h1 id="headline">Scientific Variables Ontology</h1>
+    </div>
+    <div id='menu'>
+      <ul>
+        <li><a href='index.html' class='inactive'><span>Home</span></a>
+        </li>
+        <li><a href='documentation/index.html' class='inactive'><span>Documentation</span></a>
+        </li>
+        <li><a href='search.html' class='active'><span>Search</span></a>
+        </li>
+        <li><a href='contact.html' class='inactive'><span>Contact</span></a>
+        </li>
+      </ul>
+    </div>
+
+    <p> Edit the query as desired to obtain custom SPARQL query results. Alternately, return to the <a href="search.html">simple search interface</a>.</p>
+
+    <p> Hint: to filter results by a specific search term, use the filter function --</p>
+    <p><code>FILTER(REGEX(?xname, '(?=.*(^|~|_|-)MSL($|~|_|-))','i')) .</code></p>
+
+    <p> Questions? Comments? Suggestions? Please <a href="contact.html">contact us!</a></p>
+
+    <p> <font color="red"><strong>ATTENTION USERS:</strong> On Friday November 27 2020 the Geoscience Ontology SPARQL service has been disabled
+    until further notice. We appologize for any inconvenience.</font></p>
+
+    <!-- <div class="container qonsole">
+      <div class="col-md-12 well">
+        <h2 class="">Example queries</h2>
+        <ul class="list-inline examples">
+        </ul>
+      </div>
+
+      <div class="col-md-12 well vertical">
+        <h2 class="">Prefixes</h2>
+        <ul class="list-inline prefixes">
+          <li class="keep">
+            <a data-toggle="modal" href="#prefixEditor" class="button" title="Add a SPARQL prefix">
+              <i class="icon-plus-sign"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-12 well">
+        <div class="query-edit">
+          <div id="query-edit-cm" class=""></div>
+        </div>
+        <div class="query-chrome">
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label for="sparqlEndpoint"></label>
+              <div class="dropdown ">
+                <a data-toggle="dropdown" class="btn btn-custom2" href="#">
+                  Select endpoint <i class="icon-collapse"></i>
+                </a>
+                <ul class="dropdown-menu endpoints" role="menu" aria-labelledby="dropdownMenu1">
+                </ul>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="sparqlEndpoint">SPARQL endpoint</label>
+              <input type="text" class="form-control" id="sparqlEndpoint" />
+            </div>
+            <div class="form-group">
+              <label for="displayFormat">Results</label>
+              <div class="dropdown ">
+                <a data-toggle="dropdown" class="btn btn-custom2 display-format" href="#" data-value="tsv">
+                  <span>table</span> <i class="icon-collapse"></i>
+                </a>
+                <ul class="dropdown-menu formats  " role="menu" aria-labelledby="dropdownMenu2">
+                  <li role='presentation' class="" ><a data-value="tsv" role='menuitem' tabindex='-1' href='#'>table</a></li>
+                  <li role='presentation' class="" ><a data-value="text"role='menuitem' tabindex='-1' href='#'>plain text</a></li>
+                  <li role='presentation' class="" ><a data-value="json"role='menuitem' tabindex='-1' href='#'>JSON</a></li>
+                  <li role='presentation' class="" ><a data-value="xml"role='menuitem' tabindex='-1' href='#'>XML</a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div class="form-group">
+              <label>&nbsp;</label>
+              <input type="search" id="sparqlOpenSearch" class="form-control sparql-input hidden" placeholder="Search..." /> <span></span>
+              <a href="#" class="btn btn-success run-query form-control">perform query</a>
+            </div>
+
+          </form>
+        </div>
+      </div> -->
+
+      <!-- results -->
+      <!--
+      <div id="results-block" class="row sparql sparql-results">
+        <div class="col-md-12">
+          <div class="well">
+            <div class="row">
+              <div class="col-md-12">
+                <span class="loadingSpinner hidden">
+                  <img src="img/wait30.gif" alt="waiting for server action to complete" />
+                </span>
+                <span class="timeTaken hidden"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12" id="results">
+                <h2 class="col-md-12">Query results</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	-->
+      <div class="row clearfix"></div>
+
+      <footer>
+        <p class="text-center">&copy; <a href="http://www.epimorphics.com">Epimorphics Ltd</a> 2012&ndash;2013.
+          Freely re-usable under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache Open Source license</a>.</p>
+      </footer>
+    </div><!-- .container-->
+
+    <!-- modal dialogue -->
+    <div class="modal fade" id="prefixEditor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Add a SPARQL prefix</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <label for="inputPrefix" class="col-lg-2 control-label">Prefix</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="inputPrefix" placeholder="Prefix" autofocus>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-10">
+                  <button class="btn btn-sm btn-primary" id="lookupPrefix">Lookup <span></span> on prefix.cc</button>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputURI" class="col-lg-2 control-label">URI</label>
+                <div class="col-lg-10">
+                  <input type="text" class="form-control" id="inputURI" placeholder="URI">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">cancel</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" id="addPrefix">add prefix</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+  </body>
+</html>

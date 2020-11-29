@@ -1,0 +1,150 @@
+@prefix : <http://www.geoscienceontology.org/svo/svl/role#> .
+@prefix svu: <http://www.geoscienceontology.org/svo/svu#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://www.geoscienceontology.org/svo/svl/> .
+
+<http://www.geoscienceontology.org/svo/svl/role> rdf:type owl:Ontology ;
+				owl:versionIRI <http://www.geoscienceontology.org/svo/svl/role/1.0.0> ;
+				rdfs:comment " Scientific Variables Lower Ontology, Role BETA VERSION 1.0.0" .
+#				owl:imports <http://www.geoscienceontology.org/svo/svu/1.0.0> .
+
+
+#################################################################
+#    Role   
+# 
+#################################################################
+##Last generated on: 2019-10-16 13:09 
+
+###ParticipantRole
+
+
+###  http://www.geoscienceontology.org/svo/svl/role#sink
+:sink rdf:type owl:NamedIndividual ,
+			svu:ParticipantRole ;
+			skos:prefLabel "sink"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#source
+:source rdf:type owl:NamedIndividual ,
+			svu:ParticipantRole ;
+			skos:prefLabel "source"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#main
+:main rdf:type owl:NamedIndividual ,
+			svu:ParticipantRole ;
+			skos:prefLabel "main"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#out
+:out rdf:type owl:NamedIndividual ,
+			svu:ParticipantRole ;
+			skos:prefLabel "out"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#in
+:in rdf:type owl:NamedIndividual ,
+			svu:ParticipantRole ;
+			skos:prefLabel "in"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#numerator
+:numerator rdf:type owl:NamedIndividual ,
+			svu:ParticipantRole ;
+			skos:prefLabel "numerator"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#denominator
+:denominator rdf:type owl:NamedIndividual ,
+			svu:ParticipantRole ;
+			skos:prefLabel "denominator"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#first
+:first rdf:type owl:NamedIndividual ,
+			svu:ParticipantRole ;
+			skos:prefLabel "first"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#second
+:second rdf:type owl:NamedIndividual ,
+			svu:ParticipantRole ;
+			skos:prefLabel "second"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#medium
+:medium rdf:type owl:NamedIndividual ,
+			svu:ParticipantRole ;
+			skos:prefLabel "medium"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#exchange
+:exchange rdf:type owl:NamedIndividual ,
+			svu:ParticipantRole ;
+			skos:prefLabel "exchange"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#observer
+:observer rdf:type owl:NamedIndividual ,
+			svu:ParticipantRole ;
+			skos:prefLabel "observer"@en .
+
+
+###PropertyRole
+
+
+###  http://www.geoscienceontology.org/svo/svl/role#coefficient
+:coefficient rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Coefficient" ;
+			svu:isTypeOf :term ;
+			skos:prefLabel "coefficient"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#constant
+:constant rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Mathematical_constant" ;
+			rdfs:comment "A constant is the opposite of a variable. A constant cannot be a parameter, but it can be a coefficient or an exponent. A physical constant is, in its widest scope, a property of the known universe. A mathematical constant is abstract and may be a property of the known mathematical universe used to describe the known physical universe. See https://www.scientificamerican.com/article/is-the-universe-made-of-math-excerpt/" ;
+			skos:prefLabel "constant"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#degree
+:degree rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:isTypeOf :dimension ;
+			skos:prefLabel "degree"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#dimension
+:dimension rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Dimension" ;
+			rdfs:comment "Terms in this category describe the cardinality or rank of a mathematical or physical space. Think: degrees of freedom, order of a polynomial, dimension of a vector space. Examples: the Hausdorff dimension corresponds to the property surface roughness" ;
+			skos:prefLabel "dimension"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#exponent
+:exponent rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Exponent" ;
+			svu:isTypeOf :term ;
+			skos:prefLabel "exponent"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#factor
+:factor rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Factor" ;
+			svu:isTypeOf :coefficient ;
+			skos:prefLabel "factor"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#order
+:order rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Order_(mathematics)" ;
+			svu:isTypeOf :dimension ;
+			skos:prefLabel "order"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#parameter
+:parameter rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Parameter" ;
+			rdfs:comment "dictionary definition: a quantity whose value is selected for the particular circumstances and in relation to which other variable quantities may be expressed. A parameter plays a specific role within a particular application. A parameter can be a coefficient or an exponent." ;
+			skos:prefLabel "parameter"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/role#term
+:term rdf:type owl:NamedIndividual ,
+			svu:PropertyRole ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Term_(logic)" ;
+			rdfs:comment "Coefficient and exponent have different roles in an equation or expression. Term is more generic and usually describes a component that is part of a summation/subtraction (see addend, summand), although its usage could be broader." ;
+			skos:prefLabel "term"@en .

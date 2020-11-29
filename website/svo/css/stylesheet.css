@@ -1,0 +1,200 @@
+
+#svllist {
+  display: block;
+  width: 80%;
+  text-align: justify;
+  padding-left: 100px;
+  padding-right: 100px;
+  max-width: 1000px;
+  min-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Set font from Google Fonts */
+img.horizontal-full-width {
+  width:80%;
+  max-width: 1200px;
+  display: block;
+  min-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.vertical-full-width {
+  width:80%;
+  max-width: 800px;
+  display: block;
+  min-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  display: block;
+  text-align: justify;
+  padding-left: 100px;
+  padding-right: 100px;
+/*  max-width: 700px;*/
+}
+
+
+h2 {
+  display: block;
+  padding-left: 70px;
+  padding-right: 100px;
+}
+
+h3 {
+  display: block;
+  padding-left: 80px;
+  padding-right: 100px;
+}
+
+h4 {
+  display: block;
+  font-style: italic;
+  padding-left: 90px;
+  padding-right: 100px;
+}
+
+h5 {
+  display: block;
+  text-decoration: underline;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 175%;
+  box-sizing: content-box;
+}
+
+
+/* Set up layout and design for the menu. */
+#menu {
+  padding: 20px;
+  margin: inherit;
+  border: 0;
+  width: 80%;
+  margin: auto;
+  font-size:inherit;
+  font-family:inherit;
+  line-height: 40px;
+  box-sizing: inherit;
+}
+
+#menu ul {
+	list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#menu ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 40px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 23%;
+  text-align: center;
+}
+
+#menu a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  position: relative;
+}
+
+#menu a.active {
+  font-weight: bold;
+  font-size: 1.1em;
+  text-decoration: underline;
+}
+
+#menu ul li a.inactive:hover {
+  font-weight: bold;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#menu a.inactive:after {
+  background: none repeat scroll 0 0 transparent;
+  border-radius: 4px;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 20%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#menu a.inactive:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    display: block;
+    padding-left: 50px;
+}
+
+div {
+  display: block;
+  text-align: justify;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#header {
+  display: inline-block;
+  width: 100%;
+  padding-top:10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#header img {
+  float: left;
+  height: 100px;
+  padding-left: 80px;
+}
+
+#header h1 {
+  position: relative;
+  width: 80%;
+  line-height: 50px;
+}
+/* Styling for page title. */
+#headline {
+  text-align: center;
+  font-family: inherit;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 10px;
+}

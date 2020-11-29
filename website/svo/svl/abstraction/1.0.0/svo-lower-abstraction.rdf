@@ -1,0 +1,1432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:svu="http://www.geoscienceontology.org/svo/svu#"
+>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#column">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Row_and_column_spaces</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#partition"/>
+    <skos:prefLabel xml:lang="en">column</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_center">
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#center"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">grid_cell_center</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Edual">
+    <skos:prefLabel xml:lang="en">node~dual</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#node"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#dual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#polygon">
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Polygon</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#shape"/>
+    <skos:prefLabel xml:lang="en">polygon</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#axis%7Esemi-major">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#axis"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#semi-major"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Semi-major_and_semi-minor_axes</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">axis~semi-major</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#axis%7Esemi-minor">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#semi-minor"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Semi-major_and_semi-minor_axes</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">axis~semi-minor</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#axis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#axis%7Evertical">
+    <skos:prefLabel xml:lang="en">axis~vertical</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#axis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#vertical"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#parabola">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Parabola</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">parabola</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#curve"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_top">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">grid_top</skos:prefLabel>
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#top"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_column">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#column"/>
+    <skos:prefLabel xml:lang="en">grid_column</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#wingspan">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">wingspan</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Wingspan</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#line"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#axis%7Ex">
+    <skos:prefLabel xml:lang="en">axis~x</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#axis"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#x"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary_face">
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#face"/>
+    <skos:prefLabel xml:lang="en">grid_cell~primary_face</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#circle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Circle</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">circle</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#shape"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual_centroid">
+    <skos:prefLabel xml:lang="en">grid_cell~dual_centroid</skos:prefLabel>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#centroid"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#x-section%7Ehorizontal">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#horizontal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#x-section"/>
+    <skos:prefLabel xml:lang="en">x-section~horizontal</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#function">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">function</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Function_(mathematics)</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#datum%7Evertical%7Egeodetic">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#datum%7Evertical"/>
+    <skos:prefLabel xml:lang="en">datum~vertical~geodetic</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#geodetic"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#shoreline">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">shoreline</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#line"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#center">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Centre_(geometry)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">center</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_row">
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#row"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <skos:prefLabel xml:lang="en">grid_row</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#boundary%7Ecore-mantle">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#boundary"/>
+    <skos:prefLabel xml:lang="en">boundary~core-mantle</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Core%E2%80%93mantle_boundary</svu:hasAssociatedWikipediaPage>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#between-core-and-mantle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#ellipsoid">
+    <skos:prefLabel xml:lang="en">ellipsoid</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#shape"/>
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Ellipsoid</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#row">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#partition"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Row_and_column_spaces</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">row</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#face">
+    <skos:prefLabel xml:lang="en">face</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#shape"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Face_(geometry)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#wave%7Esine">
+    <skos:prefLabel xml:lang="en">wave~sine</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Sine_wave</svu:hasAssociatedWikipediaPage>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#function"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#curve"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#endpoint">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Endpoint</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">endpoint</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#graph%7Etree">
+    <skos:prefLabel xml:lang="en">graph~tree</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#graph"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Tree_(graph_theory)</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual_row">
+    <skos:prefLabel xml:lang="en">grid_cell~dual_row</skos:prefLabel>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#row"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#triangle">
+    <skos:prefLabel xml:lang="en">triangle</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Triangle</svu:hasAssociatedWikipediaPage>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#shape"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_edge%7Enorth">
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <skos:prefLabel xml:lang="en">grid_edge~north</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge%7Enorth"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#polynomial">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Polynomial</svu:hasAssociatedWikipediaPage>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#expression"/>
+    <skos:prefLabel xml:lang="en">polynomial</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_face">
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#face"/>
+    <skos:prefLabel xml:lang="en">grid_cell_face</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#plane">
+    <skos:prefLabel xml:lang="en">plane</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Plane_(geometry)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#sierpinski-gasket">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point-set"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Sierpinski_triangle</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">sierpinski-gasket</skos:prefLabel>
+    <skos:altLabel xml:lang="en">sierpinski-triangle</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_edge_center">
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#center"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_edge"/>
+    <skos:prefLabel xml:lang="en">grid_cell_edge_center</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#shape">
+    <skos:prefLabel xml:lang="en">shape</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Shape</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#expression">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Expression_(mathematics)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">expression</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_node%7Edual%7Ex">
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Edual%7Ex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <skos:prefLabel xml:lang="en">grid_node~dual~x</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#equation%7Enavier-stokes">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#equation"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Navier-Stokes_equations</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">equation~navier-stokes</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#centerline">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#line"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">centerline</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_row-major-offset">
+    <skos:prefLabel xml:lang="en">grid_cell_row-major-offset</skos:prefLabel>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#row-major-offset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_node">
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#node"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <skos:prefLabel xml:lang="en">grid_node</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#centroid">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Centroid</svu:hasAssociatedWikipediaPage>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">centroid</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#friedmann-universe">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#equations"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Friedmann_equations</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">friedmann-universe</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#equations">
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#equation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">equations</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#isosurface%7Epotential-temperature">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#potential-temperature"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">isosurface~potential-temperature</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#isosurface"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#location">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">location</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#physics">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#model"/>
+    <skos:prefLabel xml:lang="en">physics</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Physics</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_edge%7Ewest">
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge%7Ewest"/>
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">grid_edge~west</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_centroid">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#centroid"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell"/>
+    <skos:prefLabel xml:lang="en">grid_cell_centroid</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#isocline">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Contour_line</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">isocline</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#line"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#cantor-set">
+    <skos:prefLabel xml:lang="en">cantor-set</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point-set"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Cantor_set</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#geoid">
+    <skos:prefLabel xml:lang="en">geoid</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#model"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#shape"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#wheelbase">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#line"/>
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Wheelbase</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">wheelbase</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#mask">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Mask_(computing)</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">mask</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Eprimary">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">node~primary</skos:prefLabel>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#primary"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#node"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#pole%7Esouth">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#pole"/>
+    <skos:prefLabel xml:lang="en">pole~south</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/South_Pole_(disambiguation)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#south"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_surface">
+    <skos:prefLabel xml:lang="en">grid_cell_surface</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#surface"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#pole%7Enorth%7Eterrestrial">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#north"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#pole"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#terrestrial"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/North_Pole</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">pole~north~terrestrial</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary_edge_center">
+    <skos:prefLabel xml:lang="en">grid_cell~primary_edge_center</skos:prefLabel>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#center"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary_edge"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_edge%7Esouth">
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <skos:prefLabel xml:lang="en">grid_edge~south</skos:prefLabel>
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge%7Esouth"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#focus">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Focus_(geometry)</svu:hasAssociatedWikipediaPage>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+    <skos:prefLabel xml:lang="en">focus</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#boundary%7Eseaward">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#seaward"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#boundary"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">boundary~seaward</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#endpoints">
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#endpoint"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#points"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">endpoints</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Endpoint</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Edual%7Ey">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Edual"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#y"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">node~dual~y</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_node%7Edual%7Ey">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Edual%7Ey"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <skos:prefLabel xml:lang="en">grid_node~dual~y</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual_surface">
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#surface"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">grid_cell~dual_surface</skos:prefLabel>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#datum">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">datum</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#curve">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Curve</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">curve</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#pole%7Enorth%7Evirtual">
+    <skos:prefLabel xml:lang="en">pole~north~virtual</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#pole"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#north"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#virtual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#equilibrium-line">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#equilibrium"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#line"/>
+    <skos:prefLabel xml:lang="en">equilibrium-line</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Eprimary%7Ex">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">node~primary~x</skos:prefLabel>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#x"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Eprimary"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#ray">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Line_(geometry)#Ray</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">ray</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#line"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary_face_centroid">
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary_face"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#centroid"/>
+    <skos:prefLabel xml:lang="en">grid_cell~primary_face_centroid</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_node%7Edual">
+    <skos:prefLabel xml:lang="en">grid_node~dual</skos:prefLabel>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Edual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#surface">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Surface_(mathematics)</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">surface</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell">
+    <skos:prefLabel xml:lang="en">grid_cell</skos:prefLabel>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#cell"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#ecliptic">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Ecliptic</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">ecliptic</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#math">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Mathematics</svu:hasAssociatedWikipediaPage>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#model"/>
+    <skos:prefLabel xml:lang="en">math</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Edual%7Ez">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">node~dual~z</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Edual"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#z"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#pole">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">pole</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Poles_of_astronomical_bodies</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#perihelion">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+    <skos:prefLabel xml:lang="en">perihelion</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Perihelion_and_aphelion</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#cell%7Eprimary">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#primary"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#cell"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">cell~primary</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#square">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Square</svu:hasAssociatedWikipediaPage>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#shape"/>
+    <skos:prefLabel xml:lang="en">square</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#target">
+    <skos:prefLabel xml:lang="en">target</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#surface%7Ehorizontal">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#horizontal"/>
+    <skos:prefLabel xml:lang="en">surface~horizontal</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual_face_centroid">
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual_face"/>
+    <skos:prefLabel xml:lang="en">grid_cell~dual_face_centroid</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#centroid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_edge%7Ewest">
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge%7Ewest"/>
+    <skos:prefLabel xml:lang="en">grid_cell_edge~west</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_row">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">grid_cell_row</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#row"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary">
+    <skos:prefLabel xml:lang="en">grid_cell~primary</skos:prefLabel>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#cell%7Eprimary"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary_surface">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#surface"/>
+    <skos:prefLabel xml:lang="en">grid_cell~primary_surface</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#endpoint%7Edownstream">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#endpoint"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#downstream"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">endpoint~downstream</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#pole%7Enorth%7Emagnetic">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#north"/>
+    <skos:prefLabel xml:lang="en">pole~north~magnetic</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#pole"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#magnetic"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/North_Magnetic_Pole</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Eprimary%7Ez">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#z"/>
+    <skos:prefLabel xml:lang="en">node~primary~z</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Eprimary"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#x-section%7Evertical">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">x-section~vertical</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#x-section"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#vertical"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#geodesic">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Geodesic</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#line"/>
+    <skos:prefLabel xml:lang="en">geodesic</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#boundary%7Elithosphere-asthenosphere">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#between-lithosphere-and-asthenosphere"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#boundary"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Lithosphere-Asthenosphere_boundary</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">boundary~lithosphere-asthenosphere</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#ellipse">
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Ellipse</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">ellipse</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#shape"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#airfoil">
+    <skos:altLabel xml:lang="en">aerofoil</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Airfoil</svu:hasAssociatedWikipediaPage>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#shape"/>
+    <skos:prefLabel xml:lang="en">airfoil</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual_column">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">grid_cell~dual_column</skos:prefLabel>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#column"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_node%7Eprimary%7Ey">
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <skos:prefLabel xml:lang="en">grid_node~primary~y</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Eprimary%7Ey"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_column">
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell"/>
+    <skos:prefLabel xml:lang="en">grid_cell_column</skos:prefLabel>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#column"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary_row">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#row"/>
+    <skos:prefLabel xml:lang="en">grid_cell~primary_row</skos:prefLabel>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_edge%7Eeast">
+    <skos:prefLabel xml:lang="en">grid_edge~east</skos:prefLabel>
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge%7Eeast"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#pole%7Esouth%7Eterrestrial">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#terrestrial"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/South_Pole</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">pole~south~terrestrial</skos:prefLabel>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#south"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#pole"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary_centroid">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">grid_cell~primary_centroid</skos:prefLabel>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#centroid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_edge%7Eeast">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">grid_cell_edge~east</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell"/>
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge%7Eeast"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#cell%7Edual">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#dual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#cell"/>
+    <skos:prefLabel xml:lang="en">cell~dual</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#shell">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">shell</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary_column">
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#column"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary"/>
+    <skos:prefLabel xml:lang="en">grid_cell~primary_column</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#peano-curve">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#curve"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">peano-curve</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Peano_curve</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#viewpoint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Perspective_(geometry)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">viewpoint</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#land-mask">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#mask"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#land-presence"/>
+    <skos:prefLabel xml:lang="en">land-mask</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#vertex">
+    <skos:prefLabel xml:lang="en">vertex</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Vertex_(geometry)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#x-section">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Cross_section_(geometry)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:altLabel xml:lang="en">cross-section</skos:altLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">x-section</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment> Scientific Variables Lower Ontology, Abstraction BETA VERSION 1.0.0</rdfs:comment>
+    <owl:versionIRI rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction/1.0.0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#datum%7Evertical%7Etidal">
+    <skos:prefLabel xml:lang="en">datum~vertical~tidal</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#datum%7Evertical"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#tidal"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#datum%7Evertical%7Egravimetric">
+    <skos:prefLabel xml:lang="en">datum~vertical~gravimetric</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#gravimetric"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#datum%7Evertical"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#graph%7Etree%7Erooted">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#graph%7Etree"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Tree_(graph_theory)#Rooted_tree</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">graph~tree~rooted</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#profile">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">profile</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#hypocenter">
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Hypocenter</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:altLabel xml:lang="en">focus</skos:altLabel>
+    <skos:prefLabel xml:lang="en">hypocenter</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#sea-mask">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#mask"/>
+    <skos:prefLabel xml:lang="en">sea-mask</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#sea-presence"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_edge%7Esouth">
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell"/>
+    <skos:prefLabel xml:lang="en">grid_cell_edge~south</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge%7Esouth"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#market-basket">
+    <skos:prefLabel xml:lang="en">market-basket</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#model"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Market_basket</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_axis%7Ex">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#axis%7Ex"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">grid_axis~x</skos:prefLabel>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#transect">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#line"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">transect</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#crestline">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">crestline</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#line"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#epicenter">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">epicenter</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Epicenter</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual_face">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual"/>
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#face"/>
+    <skos:prefLabel xml:lang="en">grid_cell~dual_face</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#aphelion">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+    <skos:prefLabel xml:lang="en">aphelion</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Perihelion_and_aphelion</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#response-filter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">response-filter</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_edge%7Ex">
+    <skos:prefLabel xml:lang="en">grid_cell_edge~x</skos:prefLabel>
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge%7Ex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_bottom">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">grid_bottom</skos:prefLabel>
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#bottom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#mohr-coulomb-plastic">
+    <skos:prefLabel xml:lang="en">mohr-coulomb-plastic</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#model"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Mohr%E2%80%93Coulomb_theory</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#row-major-offset">
+    <skos:prefLabel xml:lang="en">row-major-offset</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Eprimary%7Ey">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#y"/>
+    <skos:prefLabel xml:lang="en">node~primary~y</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Eprimary"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#contour">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Contour_line</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">contour</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point-set"/>
+    <skos:altLabel xml:lang="en">isocline</skos:altLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#pole%7Enorth">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/North_Pole_(disambiguation)</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">pole~north</skos:prefLabel>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#north"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#pole"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_node%7Eprimary%7Ex">
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Eprimary%7Ex"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">grid_node~primary~x</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#origin">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">origin</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#sphere">
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Sphere</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">sphere</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#shape"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#image">
+    <skos:prefLabel xml:lang="en">image</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#amphidromic-points">
+    <skos:prefLabel xml:lang="en">amphidromic-points</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#points"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#amphidromic"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Amphidromic_point</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#cell">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Face_(geometry)#Cell_or_3-face</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#partition"/>
+    <skos:prefLabel xml:lang="en">cell</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#partition">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">partition</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Partition_of_an_interval</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#isosurface">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Isosurface</svu:hasAssociatedWikipediaPage>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#surface"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">isosurface</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#streamline">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#line"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">streamline</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#points">
+    <skos:prefLabel xml:lang="en">points</skos:prefLabel>
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#boundary%7Ecrust-mantle">
+    <skos:prefLabel xml:lang="en">boundary~crust-mantle</skos:prefLabel>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#between-crust-and-mantle"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#boundary"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#geocenter">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+    <skos:prefLabel xml:lang="en">geocenter</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#line">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Line</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">line</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual_edge">
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge"/>
+    <skos:prefLabel xml:lang="en">grid_cell~dual_edge</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#node">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+    <skos:prefLabel xml:lang="en">node</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#airfoil_curve%7Eenclosing">
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#curve%7Eenclosing"/>
+    <skos:prefLabel xml:lang="en">airfoil_curve~enclosing</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#airfoil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#crest">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">crest</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Crest_and_trough</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual">
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <skos:prefLabel xml:lang="en">grid_cell~dual</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#cell%7Edual"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#shoreline_axis%7Ex">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#shoreline"/>
+    <skos:prefLabel xml:lang="en">shoreline_axis~x</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#axis%7Ex"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#equation%7Epoisson">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Poisson%27s_equation</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">equation~poisson</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#equation"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual_edge_center">
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Edual_edge"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">grid_cell~dual_edge_center</skos:prefLabel>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#center"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#foci">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">foci</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#points"/>
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#focus"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#sphere_surface">
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#sphere"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#surface"/>
+    <skos:prefLabel xml:lang="en">sphere_surface</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#datum%7Evertical%7Etidal%7Emsl">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#mean-sea-level"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#datum%7Evertical%7Etidal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">datum~vertical~tidal~msl</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#point-set">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">point-set</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#equation">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Equation</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">equation</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_node%7Edual%7Ez">
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Edual%7Ez"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">grid_node~dual~z</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_face_centroid">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">grid_cell_face_centroid</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_face"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#centroid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_node%7Eprimary">
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Eprimary"/>
+    <skos:prefLabel xml:lang="en">grid_node~primary</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_node%7Eprimary%7Ez">
+    <skos:prefLabel xml:lang="en">grid_node~primary~z</skos:prefLabel>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Eprimary%7Ez"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#boundary">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Boundary_(topology)</svu:hasAssociatedWikipediaPage>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point-set"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <skos:altLabel xml:lang="en">contour</skos:altLabel>
+    <skos:prefLabel xml:lang="en">boundary</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#equation%7Econvection-diffusion">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#equation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Convection-diffusion_equation</svu:hasAssociatedWikipediaPage>
+    <svu:describesProcess rdf:resource="http://www.geoscienceontology.org/svo/svl/process#convection"/>
+    <svu:describesProcess rdf:resource="http://www.geoscienceontology.org/svo/svl/process#diffusion"/>
+    <skos:prefLabel xml:lang="en">equation~convection-diffusion</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_edge%7Ey">
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge%7Ey"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell"/>
+    <skos:prefLabel xml:lang="en">grid_cell_edge~y</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#pole%7Esouth%7Emagnetic">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/South_Magnetic_Pole</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#magnetic"/>
+    <skos:prefLabel xml:lang="en">pole~south~magnetic</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#south"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#pole"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary_edge">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell%7Eprimary"/>
+    <skos:prefLabel xml:lang="en">grid_cell~primary_edge</skos:prefLabel>
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_edge">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">grid_cell_edge</skos:prefLabel>
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#apex">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">apex</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#point"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Apex_(geometry)</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#equation%7Eheat">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#equation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Heat_equation</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">equation~heat</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_shell">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isAbstractedBy rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#shell"/>
+    <svu:isAbstractionOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid"/>
+    <skos:prefLabel xml:lang="en">grid_shell</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell_edge%7Enorth">
+    <skos:prefLabel xml:lang="en">grid_cell_edge~north</skos:prefLabel>
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#edge%7Enorth"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAbstraction rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#grid_cell"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#grid">
+    <skos:prefLabel xml:lang="en">grid</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Lattice_graph</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#graph"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#graph">
+    <skos:prefLabel xml:lang="en">graph</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#axis%7Eeast">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#east"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#axis"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">axis~east</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#black-body">
+    <skos:prefLabel xml:lang="en">black-body</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Black_body</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#model"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#axis">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#line"/>
+    <skos:prefLabel xml:lang="en">axis</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#trapezoid">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Trapezoid</svu:hasAssociatedWikipediaPage>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#shape"/>
+    <skos:prefLabel xml:lang="en">trapezoid</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#endpoint%7Eupstream">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#upstream"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">endpoint~upstream</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#endpoint"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#trough">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Crest_and_trough</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">trough</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#curve%7Eenclosing">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#enclosing"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#curve"/>
+    <skos:prefLabel xml:lang="en">curve~enclosing</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Edual%7Ex">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#x"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <skos:prefLabel xml:lang="en">node~dual~x</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#node%7Edual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#point">
+    <skos:prefLabel xml:lang="en">point</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Point</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#plan">
+    <skos:prefLabel xml:lang="en">plan</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#equator">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <skos:prefLabel xml:lang="en">equator</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#line"/>
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Equator</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#datum%7Evertical">
+    <skos:prefLabel xml:lang="en">datum~vertical</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Part"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#datum"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#vertical"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#binary-mask">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/abstraction#mask"/>
+    <skos:prefLabel xml:lang="en">binary-mask</skos:prefLabel>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#binary"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#model">
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Model</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">model</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/abstraction#data-stream">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">data-stream</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+  </rdf:Description>
+</rdf:RDF>

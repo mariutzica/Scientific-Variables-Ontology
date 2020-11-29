@@ -1,0 +1,466 @@
+@prefix : <http://www.geoscienceontology.org/svo/svl/form#> .
+@prefix svu: <http://www.geoscienceontology.org/svo/svu#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://www.geoscienceontology.org/svo/svl/> .
+
+<http://www.geoscienceontology.org/svo/svl/form> rdf:type owl:Ontology ;
+				owl:versionIRI <http://www.geoscienceontology.org/svo/svl/form/1.0.0> ;
+				rdfs:comment " Scientific Variables Lower Ontology, Form BETA VERSION 1.0.0" .
+#				owl:imports <http://www.geoscienceontology.org/svo/svu/1.0.0> .
+
+
+#################################################################
+#    Form   
+# 
+#################################################################
+##Last generated on: 2019-10-16 13:09 
+
+###Form
+
+
+###  http://www.geoscienceontology.org/svo/svl/form#aerosol
+:aerosol rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAttribute <attribute#aerosol> ;
+			skos:prefLabel "aerosol"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#anion
+:anion rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :ion ;
+			skos:prefLabel "anion"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#atom
+:atom rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Atom" ;
+			skos:prefLabel "atom"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#bank
+:bank rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "bank"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#bank%7Eleft
+:bank%7Eleft rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :bank ;
+			svu:hasAttribute <attribute#left> ;
+			skos:prefLabel "bank~left"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#bank%7Eright
+:bank%7Eright rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :bank ;
+			svu:hasAttribute <attribute#right> ;
+			skos:prefLabel "bank~right"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#bubble
+:bubble rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Bubble_(physics)" ;
+			skos:prefLabel "bubble"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#bubbles
+:bubbles rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :bubble ;
+			skos:prefLabel "bubbles"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#bulk
+:bulk rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Bulk" ;
+			skos:prefLabel "bulk"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#cation
+:cation rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Ion#Anions_and_cations" ;
+			svu:isTypeOf :ion ;
+			skos:prefLabel "cation"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#cations
+:cations rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :cation ;
+			svu:isTypeOf :ions ;
+			skos:prefLabel "cations"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#cell
+:cell rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Cell_(biology)" ;
+			skos:prefLabel "cell"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#cells
+:cells rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :cell ;
+			skos:prefLabel "cells"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#channel
+:channel rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Channel_(geography)" ;
+			skos:altLabel "conduit"@en ;
+			skos:prefLabel "channel"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#channel_bottom
+:channel_bottom rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasPart <part#bottom> ;
+			svu:hasForm <form#channel> ;
+			skos:prefLabel "channel_bottom"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#channel-network
+:channel-network rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :channels ;
+			svu:isTypeOf :network ;
+			skos:prefLabel "channel-network"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#channel%7Elongest
+:channel%7Elongest rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :channel ;
+			svu:hasAttribute <attribute#longest> ;
+			skos:prefLabel "channel~longest"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#channel%7Emain
+:channel%7Emain rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :channel ;
+			svu:hasAttribute <attribute#main> ;
+			skos:prefLabel "channel~main"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#channel%7Ewetted
+:channel%7Ewetted rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :channel ;
+			svu:hasAttribute <attribute#wetted> ;
+			skos:prefLabel "channel~wetted"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#channels
+:channels rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :channel ;
+			skos:prefLabel "channels"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#colonies
+:colonies rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :colony ;
+			skos:prefLabel "colonies"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#colony
+:colony rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Colony_(biology)" ;
+			skos:prefLabel "colony"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#crater
+:crater rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Crater" ;
+			skos:prefLabel "crater"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#crystal
+:crystal rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Crystal" ;
+			skos:prefLabel "crystal"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#crystals
+:crystals rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :crystal ;
+			skos:prefLabel "crystals"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#domain
+:domain rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Territory" ;
+			skos:prefLabel "domain"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#dose
+:dose rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "dose"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#droplet
+:droplet rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Drop_(liquid)" ;
+			skos:prefLabel "droplet"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#droplets
+:droplets rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :droplet ;
+			skos:prefLabel "droplets"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#fault
+:fault rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Fault_(geology)" ;
+			skos:prefLabel "fault"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#floe
+:floe rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "floe"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#floes
+:floes rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :floe ;
+			skos:prefLabel "floes"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#grain
+:grain rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Grain_size" ;
+			skos:prefLabel "grain"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#grains
+:grains rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :grain ;
+			skos:prefLabel "grains"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#hole
+:hole rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wiktionary.org/wiki/hole#Noun" ;
+			skos:prefLabel "hole"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#ion
+:ion rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Ion" ;
+			skos:prefLabel "ion"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#ions
+:ions rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :ion ;
+			skos:prefLabel "ions"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#isomer
+:isomer rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Isomer" ;
+			skos:prefLabel "isomer"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#isomers
+:isomers rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :isomer ;
+			skos:prefLabel "isomers"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#isotope
+:isotope rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Isotope" ;
+			skos:prefLabel "isotope"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#isotopes
+:isotopes rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :isotope ;
+			skos:prefLabel "isotopes"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#link
+:link rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "link"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#link%7Eexterior
+:link%7Eexterior rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :link ;
+			svu:hasAttribute <attribute#exterior> ;
+			skos:prefLabel "link~exterior"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#link%7Einterior
+:link%7Einterior rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :link ;
+			svu:hasAttribute <attribute#interior> ;
+			skos:prefLabel "link~interior"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#macropores
+:macropores rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Macropores" ;
+			svu:isTypeOf :pores ;
+			skos:prefLabel "macropores"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#mat
+:mat rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "mat"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#mats
+:mats rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :mat ;
+			skos:prefLabel "mats"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#molecule
+:molecule rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "http://en.wikipedia.org/wiki/Molecule" ;
+			skos:prefLabel "molecule"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#molecules
+:molecules rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :molecule ;
+			skos:prefLabel "molecules"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#network
+:network rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "network"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#particle
+:particle rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Particle" ;
+			skos:altLabel "corpuscule"@en ;
+			skos:prefLabel "particle"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#particles
+:particles rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :particle ;
+			skos:prefLabel "particles"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#particulate
+:particulate rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Particulates" ;
+			skos:prefLabel "particulate"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#platform
+:platform rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Platform" ;
+			skos:prefLabel "platform"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#plume
+:plume rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Plume_(fluid_dynamics)" ;
+			skos:prefLabel "plume"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#pool
+:pool rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "pool"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#pore
+:pore rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Pore_space_in_soil" ;
+			skos:prefLabel "pore"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#pores
+:pores rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :pore ;
+			skos:prefLabel "pores"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#radical
+:radical rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Radical_(chemistry)" ;
+			skos:prefLabel "radical"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#region
+:region rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "region"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#region%7Estate
+:region%7Estate rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :region ;
+			skos:prefLabel "state"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#sample
+:sample rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sample_(material)" ;
+			skos:prefLabel "sample"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#samples
+:samples rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :sample ;
+			skos:prefLabel "samples"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#sheet
+:sheet rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Sheet" ;
+			skos:prefLabel "sheet"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#shelf
+:shelf rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Shelf" ;
+			skos:prefLabel "shelf"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#slick
+:slick rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "slick"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#terrain
+:terrain rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "terrain"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#terrain%7Eright
+:terrain%7Eright rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :terrain ;
+			svu:hasAttribute <attribute#right> ;
+			skos:prefLabel "terrain~right"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#terrain%7Eleft
+:terrain%7Eleft rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isTypeOf :terrain ;
+			svu:hasAttribute <attribute#left> ;
+			skos:prefLabel "terrain~left"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#unit
+:unit rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "unit"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#units
+:units rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:isPluralityOf :unit ;
+			skos:prefLabel "units"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#valley
+:valley rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			skos:prefLabel "valley"@en .
+
+###  http://www.geoscienceontology.org/svo/svl/form#void
+:void rdf:type owl:NamedIndividual ,
+			svu:Form ;
+			svu:hasAssociatedWikipediaPage "https://en.wikipedia.org/wiki/Void_(composites)" ;
+			skos:prefLabel "void"@en .

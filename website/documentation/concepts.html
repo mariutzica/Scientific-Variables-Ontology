@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="../css/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+  <div id="header">
+  <img src="../img/svo_temp_logo.png">
+  <h1 id="headline">Scientific Variables Ontology</h1>
+  </div>
+<div id='menu'>
+  <ul>
+    <li><a href='../index.html' class='inactive'><span>Home</span></a>
+    </li>
+    <li><a href='index.html' class='active'><span>Documentation</span></a>
+    </li>
+    <li><a href='../search.html' class='inactive'><span>Search</span></a>
+    </li>
+    <li><a href='../contact.html' class='inactive'><span>Contact</span></a>
+    </li>
+  </ul>
+</div>
+<div class='twopane'>
+<div class='lmenu'>
+<ul>
+  <li><a href='' class='inactive'>Overview</a></li>
+  <li><a href='concepts.html' class='active'>Core concepts</a></li>
+  <li><a href='more_details.html' class='inactive'>More details</a></li>
+  <li><a href='obtain_files.html' class='inactive'>Obtain the files</a></li>
+  <li><a href='references.html' class='inactive'>References</a><br />&nbsp;</li>
+  <li><a href='faq.html' class='inactive'>FAQ</a></li>
+<!--  <li><a href='old_documentation.html' class='inactive'>Old documentation</a></li> -->
+</ul>
+</div>
+<div class='rcontent'>
+<h3>Core Ontological Concepts</h3>
+<p>The following is a brief overview of the core concepts of the Scientific Variables Ontology. For more detailed descriptions, please see the <a href="../svo/1.0.0/index.html">specification pages</a>. More details about the
+methodology and motivation for the ontology design process will be presented in an upcoming paper. As with all ontologies, as more information is brought to light, it is possible that some of these
+concepts and their interrelationships will change slightly and that new relationships will be introduced. The core concepts presented here comprise the building blocks that were deemed necessary for
+creating a modular, mix-and-match ontology that could be used to construct variables in the natural sciences. These concepts were determined after analysis and iterative inspection of over forty
+thousand variables identified in the fields of environmental chemistry, hydrology, atmospheric science, geology, and several other fields.</p>
+
+<p>The two foundational concepts of the ontology are <code><a href="../svo/svl/phenomenon/1.0.0/index.html">Phenomenon</a></code> and <code><a href="../svo/svl/property/1.0.0/index.html">Property</a></code>. A phenomenon is something that is observed to happen or exist
+and a property is a quality or characteristic of something. A phenomenon may manifest itself or be detectable through one or more of the following elements: its substance <code>(<a href="../svo/svl/matter/1.0.0/index.html">class: Matter</a>)</code>,
+its form or shape or spatial extent <code>(<a href="../svo/svl/form/1.0.0/index.html">class: Form</a>)</code>, its member objects, actors or participants <code>(<a href="../svo/svl/body/1.0.0/index.html">class: Body</a>)</code>, which comprises of <code>Matter</code> and <code>Form)</code>,
+its function <code>(<a href="../svo/svl/rolephenomenon/1.0.0/index.html">class: RolePhenomenon</a>)</code> or the processes in which its members participate <code>(<a href="../svo/svl/process/1.0.0/index.html">class: Process</a>)</code>. When a property is attributable to a phenomenon and takes on a value,
+it is known as an attribute <code>(<a href="../svo/svl/attribute/1.0.0/index.html">class: Attribute</a>)</code>. The value of an attribute collapses the possible state-space of a phenomenon. A third core concept is the <code><a href="../svo/svl/abstraction/1.0.0/index.html">Abstraction</a></code>. An abstraction is any
+mental, human-conceived concept that is used as a model or interpretation of phenomena, and can be applied to any physical phenomenon to indicate a mathematical representation of that phenomenon.</p>
+
+<p>A phenomenon-property pair is called a variable <code>(<a href="../svo/svl/variable/1.0.0/index.html">class: Variable</a>)</code>. <!--There are some good arguments for treating isolated quantities (i.e., quantitative property values)
+as variables in modeling.
+For a detailed discussion on this idea, please see <a href="http://www-ksl.stanford.edu/knowledge-sharing/papers/engmath.html" target='_blank'>section 4.3</a> of the Ontology for Engineering Mathematics
+(Gruber and Olsen, 1994). However, for the purposes of SVO, the intent --></p>
+
+</div>
+</div>
+
+<footer>
+  <a title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://www.copyrighted.com/website/RbKPMeXwqZnxOikK"><img alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="25" srcset="https://static.copyrighted.com/badges/125x25/01_1_2x.png 2x" src="https://static.copyrighted.com/badges/125x25/01_1.png" /></a><script src="https://static.copyrighted.com/badges/helper.js"></script> <br/> &copy; 2019. No portion of this website may be duplicated without express permission from content creator. If you would like to use the content for educational purposes, please <a href="../contact.html">contact us</a>.
+</footer>
+</body>
+</html>

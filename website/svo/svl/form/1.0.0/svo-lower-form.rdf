@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+   xmlns:svu="http://www.geoscienceontology.org/svo/svu#"
+>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#bulk">
+    <skos:prefLabel xml:lang="en">bulk</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Bulk</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#molecule">
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Molecule</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">molecule</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#region%7Estate">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">state</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#region"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#particle">
+    <skos:prefLabel xml:lang="en">particle</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Particle</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:altLabel xml:lang="en">corpuscule</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#channel-network">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#channels"/>
+    <skos:prefLabel xml:lang="en">channel-network</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#network"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#atom">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Atom</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">atom</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#plume">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Plume_(fluid_dynamics)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">plume</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#channel_bottom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">channel_bottom</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:hasForm rdf:resource="http://www.geoscienceontology.org/svo/svl/form#channel"/>
+    <svu:hasPart rdf:resource="http://www.geoscienceontology.org/svo/svl/part#bottom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#network">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">network</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#bubbles">
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#bubble"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">bubbles</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#cells">
+    <skos:prefLabel xml:lang="en">cells</skos:prefLabel>
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#cell"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#crystal">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Crystal</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">crystal</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#particulate">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">particulate</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Particulates</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#sample">
+    <skos:prefLabel xml:lang="en">sample</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Sample_(material)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#terrain%7Eleft">
+    <skos:prefLabel xml:lang="en">terrain~left</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#terrain"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#left"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#void">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Void_(composites)</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">void</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#radical">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Radical_(chemistry)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">radical</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#droplets">
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#droplet"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">droplets</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#macropores">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#pores"/>
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Macropores</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">macropores</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#anion">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#ion"/>
+    <skos:prefLabel xml:lang="en">anion</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#sheet">
+    <skos:prefLabel xml:lang="en">sheet</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Sheet</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#floes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">floes</skos:prefLabel>
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#floe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#aerosol">
+    <skos:prefLabel xml:lang="en">aerosol</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#aerosol"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#link%7Einterior">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#link"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#interior"/>
+    <skos:prefLabel xml:lang="en">link~interior</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#terrain%7Eright">
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#right"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#terrain"/>
+    <skos:prefLabel xml:lang="en">terrain~right</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#isotope">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAssociatedWikipediaPage>http://en.wikipedia.org/wiki/Isotope</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">isotope</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#channel%7Ewetted">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#channel"/>
+    <skos:prefLabel xml:lang="en">channel~wetted</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#wetted"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#isomers">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">isomers</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#isomer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#units">
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#unit"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">units</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#valley">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">valley</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#cations">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#ions"/>
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#cation"/>
+    <skos:prefLabel xml:lang="en">cations</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#terrain">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">terrain</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#cation">
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#ion"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Ion#Anions_and_cations</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">cation</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#pores">
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#pore"/>
+    <skos:prefLabel xml:lang="en">pores</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#bank%7Eright">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">bank~right</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#bank"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#right"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#dose">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">dose</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#samples">
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#sample"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">samples</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#crystals">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#crystal"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">crystals</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#domain">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Territory</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">domain</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#bank%7Eleft">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">bank~left</skos:prefLabel>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#bank"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#left"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#platform">
+    <skos:prefLabel xml:lang="en">platform</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Platform</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#ion">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Ion</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">ion</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#link%7Eexterior">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#exterior"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#link"/>
+    <skos:prefLabel xml:lang="en">link~exterior</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#mats">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">mats</skos:prefLabel>
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#mat"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#slick">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">slick</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#ions">
+    <skos:prefLabel xml:lang="en">ions</skos:prefLabel>
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#ion"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#isotopes">
+    <skos:prefLabel xml:lang="en">isotopes</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#isotope"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#channel%7Elongest">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">channel~longest</skos:prefLabel>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#longest"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#channel"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#channel%7Emain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <svu:isTypeOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#channel"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">channel~main</skos:prefLabel>
+    <svu:hasAttribute rdf:resource="http://www.geoscienceontology.org/svo/svl/attribute#main"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#isomer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">isomer</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Isomer</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#crater">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Crater</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">crater</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#pore">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Pore_space_in_soil</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">pore</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#molecules">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#molecule"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">molecules</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#shelf">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Shelf</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">shelf</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#channel">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Channel_(geography)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:altLabel xml:lang="en">conduit</skos:altLabel>
+    <skos:prefLabel xml:lang="en">channel</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#fault">
+    <skos:prefLabel xml:lang="en">fault</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Fault_(geology)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#particles">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">particles</skos:prefLabel>
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#particle"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#grain">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">grain</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Grain_size</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#pool">
+    <skos:prefLabel xml:lang="en">pool</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#grains">
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#grain"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">grains</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#colony">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Colony_(biology)</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">colony</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#channels">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#channel"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">channels</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#region">
+    <skos:prefLabel xml:lang="en">region</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#colonies">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">colonies</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:isPluralityOf rdf:resource="http://www.geoscienceontology.org/svo/svl/form#colony"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#link">
+    <skos:prefLabel xml:lang="en">link</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#floe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">floe</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#bank">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">bank</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#droplet">
+    <skos:prefLabel xml:lang="en">droplet</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Drop_(liquid)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#hole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <skos:prefLabel xml:lang="en">hole</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <svu:hasAssociatedWikipediaPage>https://en.wiktionary.org/wiki/hole#Noun</svu:hasAssociatedWikipediaPage>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#mat">
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">mat</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#bubble">
+    <skos:prefLabel xml:lang="en">bubble</skos:prefLabel>
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Bubble_(physics)</svu:hasAssociatedWikipediaPage>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form">
+    <owl:versionIRI rdf:resource="http://www.geoscienceontology.org/svo/svl/form/1.0.0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment> Scientific Variables Lower Ontology, Form BETA VERSION 1.0.0</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#cell">
+    <svu:hasAssociatedWikipediaPage>https://en.wikipedia.org/wiki/Cell_(biology)</svu:hasAssociatedWikipediaPage>
+    <skos:prefLabel xml:lang="en">cell</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svl/form#unit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.geoscienceontology.org/svo/svu#Form"/>
+    <skos:prefLabel xml:lang="en">unit</skos:prefLabel>
+  </rdf:Description>
+</rdf:RDF>

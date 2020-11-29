@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:versionIRI rdf:resource="http://www.geoscienceontology.org/svo/1.0.0"/>
+    <rdfs:comment>Scientific Variables Ontology -- Lower and Upper, version 1.0.0</rdfs:comment>
+    <owl:imports rdf:resource="http://www.geoscienceontology.org/svo/svl/1.0.0"/>
+    <owl:imports rdf:resource="http://www.geoscienceontology.org/svo/svu/1.0.0"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#SpatiotemporalRelationship">
+    <rdfs:label>Spatiotemporal Relationship</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#Relationship"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Body">
+    <rdfs:comment>A Body is something that has both a well-defined form and substance.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#SpatialPhenomenon"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Body</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasQuantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#abstractsPhenomenon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#TemporalRelationship">
+    <rdfs:label>Temporal Relationship</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#Relationship"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasNominalization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <rdfs:label>has nominalized form</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasHeadOperator">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>has head operator</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasObservedPhenomenon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Attribute">
+    <rdfs:comment>An attribute consists of a property-value pair. An attribute may also be thought of as the property of a property. Attributes are used to narrow the identification of an entity by defining constant properties of that entity.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Attribute</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasAssociatedMatter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Property">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Property</rdfs:label>
+    <rdfs:comment>A property is a quality or characteristic of something. A property differs from an attribute in that it is not attached to a value. As an example, 'color' is a property of eyes, while 'brown color' is an attribute of a particular eye. A property is shorthand for a Qualitative Property. Quantitative properties are Qualitative Properties that have been quantified.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Operator">
+    <rdfs:comment>An operator is a mathematical operation that can be performed on a quantity to transform it into a new quantity.</rdfs:comment>
+    <rdfs:label>Operator</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Reference">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Reference</rdfs:label>
+    <rdfs:comment>A Reference is a modular entity for linking a Phenomenon with a reference relationship. It can then be used to profide a reference frame for a variable using ReferencePhenomenon</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#PhysicalAbstraction">
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction"/>
+    <rdfs:label>Physical Abstraction</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A Physical Abstraction is a Mathematical abstraction that is applied to a physical phenomenon. Examples include wheelbase and shoreline which are both line abstractions, one of the distance between two wheels and one delineating the contour of a shore.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Context">
+    <rdfs:label>Context</rdfs:label>
+    <rdfs:comment>Context provides a phenomenon and a context relationship. It can be attached to any phenomenon to give context.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#abstracts">
+    <rdfs:label>abstracts</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasPropertyType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.geoscienceontology.org/svo/svu#hasType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasConditionalAttribute">
+    <rdfs:label>has conditional attribute</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.geoscienceontology.org/svo/svu#hasAttribute"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasBody">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#MathematicalAbstraction">
+    <rdfs:comment>A mathematical abstraction is any mathematical entity.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Mathematical Abstraction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#Abstraction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#CompoundPhenomenon">
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#SpatiotemporalPhenomenon"/>
+    <rdfs:label>Compound Phenomenon</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A Compound Phenomenon comprises multiple participants and one or more processes/actions that those participants are involved in, where each participant has a role based on the point of view of the observer.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasOperator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasRecordedProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Process">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Process</rdfs:label>
+    <rdfs:comment>A process is something that happens, whether in one step or multiple steps. A process refers specifically to the actions of something. A process along with all of its actors/participants, their roles, etc. is a Phenomenon.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#RolePhenomenon">
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#TemporalPhenomenon"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Role Phenomenon</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#SpatialRelationship">
+    <rdfs:label>Spatial Relationship</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#Relationship"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasContextRelationship">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Part">
+    <rdfs:comment>A part has no essence without being attached to a Body, Form or some other Phenomenon or Abstract Concept. A Part must be attached to one of these before being included in a variable. Examples include top, bottom, side, core, center, apex, and subskin.</rdfs:comment>
+    <rdfs:label>Part</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#ReferencePhenomenon">
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#Phenomenon"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Reference Phenomenon</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#ParticipantRole">
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#Role"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Participant Role</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#PropertyType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A property type denotes the type of a property. Quantitative properties may have the following types: scalar, vector, tensor, and field. Standardized, but not Quantitative (e.g., mathematical operations cannot be performed on them), Properties may have the following types: Categorical, dichotomous, binary, boolean, ordinal and interval. Binary is a dichotomous variable that takes the values 0 and 1, while Boolean is a dichotomous variable that takes the values True and False. A Boolean variable is used in Boolean Algebra operations, and could be mapped to a binary variable.</rdfs:comment>
+    <rdfs:label>Property Type</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#QuantitativeProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#StandardizedProperty"/>
+    <rdfs:comment>A Quantitative Property (Quantity in shorthand) is a property that has been quantified in some way that allows meaningful mathematical manipulation of the data.</rdfs:comment>
+    <rdfs:label>Quantitative Property</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasPresentTense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <rdfs:label>has present tense</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#StandardizedPropertyType">
+    <rdfs:label>Standardized Property Type</rdfs:label>
+    <rdfs:comment>https://statistics.laerd.com/statistical-guides/types-of-variable.php, https://stats.idre.ucla.edu/other/mult-pkg/whatstat/what-is-the-difference-between-categorical-ordinal-and-interval-variables/
+
+Categorical variables (nominal) — discrete/qualitative, 2+ possible values
+Dichotomous - categorical with only 2 possible values
+Ordinal - categorical, ranked (eg. very likely, neutral, not likely)
+Interval - ordinal w/ evenly spaced intervals
+
+
+Use of dichotomous vs binary vs boolean: https://english.stackexchange.com/questions/100099/what-is-the-difference-between-dichotomous-binary-boolean-etc
+Also: flag</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#PropertyType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasAssociatedWikipediaPage">
+    <rdfs:comment>Points to a URL identifying a related Wikipedia Page. Wikipedia pages are used to retrieve narrative, documentation information about entitites in the ontology when available. Wikipedia URLs are not equivalent IRIs.</rdfs:comment>
+    <rdfs:label>has associated Wikipedia page</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasMatter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasMediumObservedPhenomenon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#isNoun">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>is noun</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Assumption">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Assumption</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Participant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Participant is the modular class for assigning a role to a phenomenon so that it can be a participant in a Compound Phenomenon</rdfs:comment>
+    <rdfs:label>Participant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasMultiplierUnits">
+    <rdfs:label>has multiplier units</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasPowerFactor">
+    <rdfs:label>has power factor</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#ContextPhenomenon">
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#SpatiotemporalPhenomenon"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A Context Phenomenon is used to attach a context to a Root Phenomenon.</rdfs:comment>
+    <rdfs:label>Context Phenomenon</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Role">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Role</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#SpatiotemporalPhenomenon">
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#Phenomenon"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#SpatialPhenomenon">
+    <rdfs:comment>SpatialPhenomena are syimilar to the term 'Object' in the CSDMS standard names. The exception is that Object in this sense does not include 'Phenomena' at large, only substances and bodies. This class refers to phenomenona that are at relative equilibrium and/or steady state.</rdfs:comment>
+    <rdfs:label>Spatial Phenomenon</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#SpatiotemporalPhenomenon"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasAbstraction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasObservedMediumPhenomenon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Matter">
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#SpatialPhenomenon"/>
+    <rdfs:comment>Matter is the substance/material/essence of which something is made.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Matter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#PropertyStandardization">
+    <rdfs:label>Property Standardization</rdfs:label>
+    <rdfs:comment>Methods used to convert a qualitative property into an anlyzable product. Standardizations are still prone to subjective assessment.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasTrajectoryDirection">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#StandardizedProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Standardized Property</rdfs:label>
+    <rdfs:comment>A standardized property has been indexed or categorized in a sandard way that allows for meaningful qualitative analysis of the resulting data.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Relationship">
+    <rdfs:comment>This is the class of spatial and temporal relationships between phenomena used to build variables.</rdfs:comment>
+    <rdfs:label>Relationship</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#describesObservedParticipant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#PropertyQuantification">
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#PropertyStandardization"/>
+    <rdfs:comment>A standardization that is objective.</rdfs:comment>
+    <rdfs:label>Property Quantification</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasRecordedPhenomenon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasObservedProcess">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Phenomenon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Phenomenon</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#isExpressedAs">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasPart">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#isDerivedFrom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>isDerivedFrom links more specific concepts to more generic concepts. It is a mechanism for linking Individuals in the ontology, bypassing explicitly defined taxonomic class hierarchies.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Abstraction">
+    <rdfs:label>Abstraction</rdfs:label>
+    <rdfs:comment>An abstraction is an abstract entity, whether a purely mathematical construct or an abstract physical concept.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#PropertyRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#Role"/>
+    <rdfs:label>Property Role</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#undergoesProcess">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#describesObservedPhenomenon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasAttribute">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#subLabel">
+    <rdfs:label>comprises concept label</rdfs:label>
+    <rdfs:comment>This relationship indicated that the concept in the sublabel is somehow represented by the subject of the relationship. This is an indicator to search more deeply into the subject concept.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#TemporalPhenomenon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#SpatiotemporalPhenomenon"/>
+    <rdfs:label>Temporal Phenomenon</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasObservedContext">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasReferencePhenomenon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#quantifiesProcess">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasPhenomenon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#describesProcess">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#MediumPhenomenon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#SpatiotemporalPhenomenon"/>
+    <rdfs:comment>a MediumPhenomenon is a Phenomenon that has two Phenomena for measurement, a root and a medium.</rdfs:comment>
+    <rdfs:label>Medium Phenomenon</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#correspondsToProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#TrajectoryDirection">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Associated with a trajectory, indicates direction of travel.</rdfs:comment>
+    <rdfs:label>Trajectory Direction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasContext">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasParticipantRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:versionIRI rdf:resource="http://www.geoscienceontology.org/svo/svu/1.0.0"/>
+    <rdfs:comment>Scientific Variables Ontology: Upper Ontology. This Upper Ontology provides a blueprint for modular generation of Qualitative and Quantitative Scientific Variables. The Upper Ontology defines the Core Classes (concepts) that are part of identifying a variable, and some design patterns for how to combine these concepts.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasValue">
+    <rdfs:label>has value</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasUnits">
+    <rdfs:label>has dimension units</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Form">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Form</rdfs:label>
+    <rdfs:comment>The Form class contains elements which describe the shape or configuration of something; it defines the spatial extent of something without defining substance or essence.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#SpatialPhenomenon"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasPropertyQuantification">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#QuantitativePropertyType">
+    <rdfs:subClassOf rdf:resource="http://www.geoscienceontology.org/svo/svu#StandardizedPropertyType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Tensor, vector, scalar — this may dependent on the dimensionality of the object. For example, the electrical conductivity in a wire will be reported as a scalar, as a wire is 1-D; however \sigma in bulk materials may be reported as a tensor.
+
+Field - is it defined on a grid? again, depends on context … (temperature may be a scalar or a scalar field, velocity may be a vector or a vector field)</rdfs:comment>
+    <rdfs:label>Quantitative Property Type</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Variable">
+    <rdfs:label>Variable</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#isPluralityOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasAssignedUnits">
+    <rdfs:label>has assigned units</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.geoscienceontology.org/svo/svu#hasUnits"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#Trajectory">
+    <rdfs:comment>Trajectory identifies the path taken by a body undergoing the process of motion in space, although it could be expanded to mean the trajectory of any process (?).</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Trajectory</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasPresentParticiple">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <rdfs:label>has present participle</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#describesObservedMediumPhenomenon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasAppliedAbstraction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasContextPhenomenon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasReferenceRelationship">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#isDefinedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#isTypeOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasParticipantPhenomenon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasAssociatedProcess">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasForm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#describesObservedReferenceForProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasTrajectory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#modifiesOperator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasReference">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#isAbstractedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasPropertyRole">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geoscienceontology.org/svo/svu#hasObservedParticipant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>
