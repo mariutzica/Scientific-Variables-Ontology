@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo"
+         xmlns="http://scientificvariablesontology.org/svo#">
+
+<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo"/>
+
+<owl:ObjectProperty rdf:about="#describes_phenomenon">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Variable"/>
+  <rdfs:range rdf:resource="#Phenomenon"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#describes_property">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Variable"/>
+  <rdfs:range rdf:resource="#Property"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_domain"/>
+
+<owl:ObjectProperty rdf:about="#has_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_matter">
+  <rdfs:domain rdf:resource="#Phenomenon"/>
+  <rdfs:range rdf:resource="#Matter"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#contains_matter">
+  <rdfs:domain rdf:resource="#Phenomenon"/>
+  <rdfs:range rdf:resource="#Matter"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#contains_primary_matter">
+  <rdfs:domain rdf:resource="#Phenomenon"/>
+  <rdfs:range rdf:resource="#Matter"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_medium_matter">
+  <rdfs:domain rdf:resource="#Phenomenon"/>
+  <rdfs:range rdf:resource="#Matter"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_process">
+  <rdfs:domain rdf:resource="#Phenomenon"/>
+  <rdfs:range rdf:resource="#Process"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#undergoes_process">
+  <rdfs:domain rdf:resource="#Phenomenon"/>
+  <rdfs:range rdf:resource="#Process"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_form">
+  <rdfs:domain rdf:resource="#Phenomenon"/>
+  <rdfs:range rdf:resource="#Form"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_abstraction">
+  <rdfs:domain rdf:resource="#Phenomenon"/>
+  <rdfs:range rdf:resource="#Abstraction"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#is_modeled_by"/>
+
+<owl:ObjectProperty rdf:about="#has_part">
+  <rdfs:domain rdf:resource="#Phenomenon"/>
+  <rdfs:range rdf:resource="#Part"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_attribute">
+  <rdfs:domain rdf:resource="#Phenomenon"/>
+  <rdfs:range rdf:resource="#Attribute"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_trajectory">
+  <rdfs:domain rdf:resource="#Phenomenon"/>
+  <rdfs:range rdf:resource="#Trajectory"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_role">
+  <rdfs:domain rdf:resource="#Phenomenon"/>
+  <rdfs:range rdf:resource="#Role"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_source_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_sink_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_location"/>
+
+<owl:ObjectProperty rdf:about="#has_location_within_model"/>
+
+<owl:ObjectProperty rdf:about="#has_location_of_origin"/>
+
+<owl:ObjectProperty rdf:about="#has_minuend_participant_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_subtrahend_participant_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_primary_participant_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_adjacent_participant_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_first_participant_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_second_participant_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_in_participant_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_medium_participant_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_source_participant_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_sink_participant_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_numerator_participant_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_denominator_participant_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_participating_primary_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_participating_medium_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_observing_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_modeled_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_modeling_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_containing_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_containing_medium_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#is_part_of_containing_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#has_perspective_participant_phenomenon"/>
+
+<owl:ObjectProperty rdf:about="#surrounds"/>
+
+<owl:ObjectProperty rdf:about="#drives"/>
+
+<owl:ObjectProperty rdf:about="#has_measurement_reference_at"/>
+
+<owl:ObjectProperty rdf:about="#has_measurement_reference_above"/>
+
+<owl:ObjectProperty rdf:about="#has_measurement_reference_since"/>
+
+<owl:ObjectProperty rdf:about="#has_measurement_reference_along"/>
+
+<owl:ObjectProperty rdf:about="#has_measurement_reference_from"/>
+
+<owl:ObjectProperty rdf:about="#has_measurement_reference_to"/>
+
+<owl:ObjectProperty rdf:about="#has_measurement_reference_below"/>
+
+<owl:ObjectProperty rdf:about="#has_measurement_reference_wrt"/>
+
+<owl:ObjectProperty rdf:about="#is_reference_for_property"/>
+
+<owl:ObjectProperty rdf:about="#has_reference_for_property"/>
+
+<owl:ObjectProperty rdf:about="#orbits"/>
+
+<owl:ObjectProperty rdf:about="#contains_phenomenon_reference_to">
+  <rdfs:domain rdf:resource="#Variable"/>
+  <rdfs:range rdf:resource="#Phenomenon"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#contains_process_reference_to">
+  <rdfs:domain rdf:resource="#Variable"/>
+  <rdfs:range rdf:resource="#Process"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#contains_matter_reference_to">
+  <rdfs:domain rdf:resource="#Variable"/>
+  <rdfs:range rdf:resource="#Matter"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#contains_property_reference_to">
+  <rdfs:domain rdf:resource="#Variable"/>
+  <rdfs:range rdf:resource="#Property"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#contains_form_reference_to">
+  <rdfs:domain rdf:resource="#Variable"/>
+  <rdfs:range rdf:resource="#Form"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#contains_abstraction_reference_to">
+  <rdfs:domain rdf:resource="#Variable"/>
+  <rdfs:range rdf:resource="#Abstraction"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#contains_model_reference_to">
+  <rdfs:domain rdf:resource="#Variable"/>
+  <rdfs:range rdf:resource="#Model"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#contains_operation_reference_to">
+  <rdfs:domain rdf:resource="#Variable"/>
+  <rdfs:range rdf:resource="#Operation"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#contains_role_reference_to">
+  <rdfs:domain rdf:resource="#Variable"/>
+  <rdfs:range rdf:resource="#Role"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#contains_part_reference_to">
+  <rdfs:domain rdf:resource="#Variable"/>
+  <rdfs:range rdf:resource="#Part"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#contains_trajectory_reference_to">
+  <rdfs:domain rdf:resource="#Variable"/>
+  <rdfs:range rdf:resource="#Trajectory"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#contains_attribute_reference_to">
+  <rdfs:domain rdf:resource="#Variable"/>
+  <rdfs:range rdf:resource="#Attribute"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#is_transformation_of">
+  <rdfs:domain rdf:resource="#Property"/>
+  <rdfs:range rdf:resource="#Property"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#is_transformed_by">
+  <rdfs:domain rdf:resource="#Property"/>
+  <rdfs:range rdf:resource="#Operation"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_phenomenon_root">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Phenomenon"/>
+  <rdfs:range rdf:resource="#Phenomenon"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_abstraction_root">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Abstraction"/>
+  <rdfs:range rdf:resource="#Abstraction"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_matter_root">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Matter"/>
+  <rdfs:range rdf:resource="#Matter"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_form_root">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Form"/>
+  <rdfs:range rdf:resource="#Form"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_part_root">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Part"/>
+  <rdfs:range rdf:resource="#Part"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_process_root">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Process"/>
+  <rdfs:range rdf:resource="#Process"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_role_root">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Role"/>
+  <rdfs:range rdf:resource="#Role"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_direction"/>
+
+<owl:AnnotationProperty rdf:about="#has_wikipedia_page"/>
+
+<owl:AnnotationProperty rdf:about="#has_wikidata_page"/>
+
+<owl:AnnotationProperty rdf:about="#has_synonym"/>
+
+<owl:AnnotationProperty rdf:about="#has_original_label"/>
+
+<owl:Class rdf:about="#Phenomenon">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Matter">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Process">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Property">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Operation">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Variable">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Abstraction">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Attribute">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Model">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Direction">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Form">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Role">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Trajectory">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Part">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#PropertyRole">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#PropertyType">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#PropertyQuantification">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Domain">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+
+</rdf:RDF>

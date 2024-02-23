@@ -1,0 +1,1063 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/operation/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/operation/">
+
+<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/operation"/>
+
+<svo:Operation rdf:about="1-sigma-csu">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-sigma-csu</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="2-sigma-csu">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-sigma-csu</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="allowed_max">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">allowed_max</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="allowed_min">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">allowed_min</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="angle">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angle</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="anomaly">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anomaly</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Anomaly_(natural_sciences)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q4769951</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the natural sciences, especially in atmospheric and Earth sciences involving applied statistics, an anomaly is a persisting deviation in a physical quantity from its expected value, e.g., the systematic difference between a measurement and a trend or a model prediction. </rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="antigradient">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">antigradient</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="area_weighted_average">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">area_weighted_average</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="arithmetic_mean">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mean</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Mean</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2796622</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">There are several kinds of mean in mathematics, especially in statistics. Each mean serves to summarize a given group of data, often to better understand the overall value (magnitude and sign) of a given data set. </rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="average">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">average</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Average</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q202785</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In ordinary language, an average is a single number taken as representative of a list of numbers, usually the sum of the numbers divided by how many numbers are in the list (the arithmetic mean). For example, the average of the numbers 2, 3, 4, 7, and 9 (summing to 25) is 5. Depending on the context, an average might be another statistic such as the median, or mode. For example, the average personal income is often given as the median—the number below which are 50% of personal incomes and above which are 50% of personal incomes—because the mean would be higher by including personal incomes from a few billionaires. For this reason, it is recommended to avoid using the word "average" when discussing measures of central tendency.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="azimuth_angle">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">azimuth_angle</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Azimuth</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q124274</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An azimuth ( (listen); from Arabic: اَلسُّمُوت, romanized: as-sumūt, lit. 'the directions') is an angular measurement in a spherical coordinate system. More specifically, it is the horizontal angle from a cardinal direction, most commonly north. </rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="change">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">change</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="change_from_one-year_min">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">change_from_one-year_min</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">component</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Euclidean_vector#Decomposition</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q44528</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, physics, and engineering, a Euclidean vector or simply a vector (sometimes called a geometric vector or spatial vector) is a geometric object that has magnitude (or length) and direction. Vectors can be added to other vectors according to vector algebra. A Euclidean vector is frequently represented by a directed line segment, or graphically as an arrow connecting an initial point A with a terminal point B, and denoted by </rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="correlation">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">correlation</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="cosine">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cos</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Trigonometric_functions#cosine</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q93344</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, the trigonometric functions (also called circular functions, angle functions or goniometric functions) are real functions which relate an angle of a right-angled triangle to ratios of two side lengths. They are widely used in all sciences that are related to geometry, such as navigation, solid mechanics, celestial mechanics, geodesy, and many others. They are among the simplest periodic functions, and as such are also widely used for studying periodic phenomena through Fourier analysis.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="counting_error">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">counting_error</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="cross-stream_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cross-stream_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="cross-stream_derivative">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cross-stream_derivative</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="cumulative_anomaly">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cumulative_anomaly</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="cumulative_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cumulative_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="cumulative_z-score">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cumulative_z-score</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="curl">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curl</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Curl_(mathematics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q206310</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In vector calculus, the curl is a vector operator that describes the infinitesimal circulation of a vector field in three-dimensional Euclidean space. The curl at a point in the field is represented by a vector whose length and direction denote the magnitude and axis of the maximum circulation. The curl of a field is formally defined as the circulation density at each point of the field.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="day-specific_anomaly">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">day-specific_anomaly</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="dekad_one-day_mean">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dekad_one-day_mean</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="depression">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">depression</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="difference">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">difference</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="direction">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">direction</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="directional_variance">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">directional_variance</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="diurnal_max">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diurnal_max</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="diurnal_mean">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diurnal_mean</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="diurnal_min">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diurnal_min</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="diurnal_range">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diurnal_range</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="diurnal_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diurnal_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="domain_max">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domain_max</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="domain_min">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domain_min</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="domain_range">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domain_range</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="domain_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domain_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="domain_time_max">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domain_time_max</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="domain_time_min">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domain_time_min</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="down_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">down_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="down_derivative">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">down_derivative</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="down_east_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">down_east_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="down_north_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">down_north_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="down_z_derivative">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">down_z_derivative</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="downstream_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">downstream_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="downstream_derivative">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">downstream_derivative</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="downward_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">downward_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="drop">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drop</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="east_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">east_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="east_derivative">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">east_derivative</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="east_down_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">east_down_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="east_east_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">east_east_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="east_north_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">east_north_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="east_up_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">east_up_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="elevation_angle">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevation_angle</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="error">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">error</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="fifteen-day_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fifteen-day_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="fifth_pentad_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fifth_pentad_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="first_dekad_one-day_mean">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">first_dekad_one-day_mean</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="first_dekad_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">first_dekad_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="first_pentad_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">first_pentad_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="five-day_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">five-day_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="forecast">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">forecast</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="fourth_pentad_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fourth_pentad_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="fraction">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fraction</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Fraction_(mathematics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q66055</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mathematical representation of a portion of a whole</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="gain">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gain</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Gain_(electronics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q854659</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In electronics, gain is a measure of the ability of a two-port circuit (often an amplifier) to increase the power or amplitude of a signal from the input to the output port by adding energy converted from some power supply to the signal. It is usually defined as the mean ratio of the signal amplitude or power at the output port to the amplitude or power at the input port. It is often expressed using the logarithmic  decibel (dB) units ("dB gain").  A gain greater than one (greater than zero dB), that is amplification, is the defining property of an active component or circuit, while a passive circuit will have a gain of less than one.The term gain alone is ambiguous, and can refer to the ratio of output to input  voltage (voltage gain), current (current gain) or electric power (power gain).  In the field of audio and general purpose amplifiers, especially operational amplifiers, the term usually refers to voltage gain,  but in radio frequency amplifiers it usually refers to power gain.  Furthermore, the term gain is also applied in systems such as sensors where the input and output have different units; in such cases the gain units must be specified, as in "5 microvolts per photon" for the responsivity of a photosensor. The "gain" of a bipolar transistor normally refers to forward current transfer ratio, either hFE ("beta", the static ratio of Ic divided by Ib at some operating point), or sometimes hfe (the small-signal current gain, the slope of the graph of Ic against Ib at a point).</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="geologic_time_average">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geologic_time_average</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Average</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q202785</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In ordinary language, an average is a single number taken as representative of a list of numbers, usually the sum of the numbers divided by how many numbers are in the list (the arithmetic mean). For example, the average of the numbers 2, 3, 4, 7, and 9 (summing to 25) is 5. Depending on the context, an average might be another statistic such as the median, or mode. For example, the average personal income is often given as the median—the number below which are 50% of personal incomes and above which are 50% of personal incomes—because the mean would be higher by including personal incomes from a few billionaires. For this reason, it is recommended to avoid using the word "average" when discussing measures of central tendency.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="globe_time_average">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">globe_time_average</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Average</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q202785</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In ordinary language, an average is a single number taken as representative of a list of numbers, usually the sum of the numbers divided by how many numbers are in the list (the arithmetic mean). For example, the average of the numbers 2, 3, 4, 7, and 9 (summing to 25) is 5. Depending on the context, an average might be another statistic such as the median, or mode. For example, the average personal income is often given as the median—the number below which are 50% of personal incomes and above which are 50% of personal incomes—because the mean would be higher by including personal incomes from a few billionaires. For this reason, it is recommended to avoid using the word "average" when discussing measures of central tendency.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="gradient">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gradient</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Gradient</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q173582</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In vector calculus, the gradient of a scalar-valued differentiable function </rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="half">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">half</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="horizontal_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horizontal_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="imcooming_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imcooming_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="incoming_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">incoming_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="increment">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">increment</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="inverse">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inverse</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Inverse_(mathematics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q224353</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikimedia disambiguation page</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="laplacian">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laplacian</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Laplace_operator</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q203484</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, the Laplace operator or Laplacian is a differential operator given by the divergence of the gradient of a scalar function on Euclidean space. It is usually denoted by the symbols </rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="lateral_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lateral_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="left_normal">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">left_normal</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="length_rate">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rate</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Rate_(mathematics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1144560</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, a rate is the ratio between two related quantities in different units. If the denominator of the ratio is expressed as a single unit of one of these quantities, and if it is assumed that this quantity can be changed systematically (i.e., is an independent variable), then the numerator of the ratio expresses the corresponding rate of change in the other (dependent) variable.  </rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="limit">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limit</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="log10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">log10</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Logarithm</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11197</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, the logarithm is the inverse function to exponentiation. That means the logarithm of a number x to the base b is the exponent to which b must be raised, to produce x. For example, since 1000 = 103, the logarithm base 10 of 1000 is 3, or log10 (1000) = 3. The logarithm of x to base b is denoted as logb (x), or without parentheses, logb x, or even without the explicit base, log x, when no confusion is possible, or when the base does not matter such as in big O notation.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="loss">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">loss</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="lower_limit">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lower_limit</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="magnitude">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnitude</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Magnitude_(mathematics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2091629</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, the magnitude or size of a mathematical object is a property which determines whether the object is larger or smaller than other objects of the same kind. More formally, an object's magnitude is the displayed result of an ordering (or ranking)—of the class of objects to which it belongs.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="max">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">max</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Maxima_and_minima</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q845060</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">largest and smallest value taken by a function in a given range</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="max_summation">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">max_sum</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="mean">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mean</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Average</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q202785</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In ordinary language, an average is a single number taken as representative of a list of numbers, usually the sum of the numbers divided by how many numbers are in the list (the arithmetic mean). For example, the average of the numbers 2, 3, 4, 7, and 9 (summing to 25) is 5. Depending on the context, an average might be another statistic such as the median, or mode. For example, the average personal income is often given as the median—the number below which are 50% of personal incomes and above which are 50% of personal incomes—because the mean would be higher by including personal incomes from a few billionaires. For this reason, it is recommended to avoid using the word "average" when discussing measures of central tendency.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="median">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">median</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Median</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q226995</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In statistics and probability theory, the median is the value separating the higher half from the lower half of a data sample, a population, or a probability distribution. For a data set, it may be thought of as "the middle" value. The basic feature of the median in describing data compared to the mean (often simply described as the "average") is that it is not skewed by a small proportion of extremely large or small values, and therefore provides a better representation of the center. Median income, for example, may be a better way to describe center of the income distribution because increases in the largest incomes alone have no effect on median. For this reason, the median is of central importance in robust statistics.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="mid-range">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mid-range</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="min">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">min</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Maxima_and_minima</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q845060</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">largest and smallest value taken by a function in a given range</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="min_summation">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">min_sum</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="month-specific_anomaly">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">month-specific_anomaly</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="month-specific_z-score">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">month-specific_z-score</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="normal_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normal_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="north_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">north_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="north_derivative">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">north_derivative</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="north_down_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">north_down_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="north_north_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">north_north_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="north_up_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">north_up_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="one-day_max">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-day_max</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="one-day_min">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-day_min</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="one-day_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-day_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="one-hour_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-hour_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="one-month_anomaly">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-month_anomaly</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="one-month_one-day_mean">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-month_one-day_mean</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="one-month_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-month_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="one-year_average">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-year_average</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="one-year_change">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-year_change</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="one-year_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-year_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="one-year_time_max">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-year_time_max</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="parity">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parity</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="peak_time">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peak_time</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="per-area_flow_rate">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flux</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Flux#Flux_as_flow_rate_per_unit_area</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q6485344</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flux describes any effect that appears to pass or travel (whether it actually moves or not) through a surface or substance. Flux is a concept in applied mathematics and vector calculus which has many applications to physics.  For transport phenomena, flux is a vector quantity, describing the magnitude and direction of the flow of a substance or property. In vector calculus flux is a scalar quantity, defined as the surface integral of the perpendicular component of a vector field over a surface.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="product">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Product_(mathematics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q901718</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, a product is the result of multiplication, or an expression that identifies objects (numbers or variables) to be multiplied, called factors. For example, 30 is the product of 6 and 5 (the result of multiplication), and</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="projection">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">projection</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Vector_projection</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2734388</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The vector projection of a vector a on (or onto) a nonzero vector b, sometimes denoted </rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="range">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">range</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Range_(mathematics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q438399</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikimedia disambiguation page</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="ratio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ratio</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Ratio</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3481047</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, a ratio () shows how many times one number contains another. For example, if there are eight oranges and six lemons in a bowl of fruit, then the ratio of oranges to lemons is eight to six (that is, 8:6, which is equivalent to the ratio 4:3). Similarly, the ratio of lemons to oranges is 6:8 (or 3:4) and the ratio of oranges to the total amount of fruit is 8:14 (or 4:7).</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="reduction">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reduction</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="second_dekad_one-day_mean">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">second_dekad_one-day_mean</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="second_dekad_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">second_dekad_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="second_invariant">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">second_invariant</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Invariants_of_tensors</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q9009080</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, in the fields of multilinear algebra and representation theory, the principal invariants of the second rank tensor </rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="second_pentad_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">second_pentad_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="second_spatial_derivative">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">second_spatial_derivative</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="south_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">south_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="south_east_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">south_east_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="south_south_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">south_south_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="spatial_derivative">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spatial_derivative</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Derivative</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q29175</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, the derivative of a function of a real variable measures the sensitivity to change of the function value (output value) with respect to a change in its argument (input value). Derivatives are a fundamental tool of calculus.  For example, the derivative of the position of a moving object with respect to time is the object's velocity: this measures how quickly the position of the object changes when time advances.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="spatial_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spatial_integral</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Integral</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q80091</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, an integral is the continuous analog of a sum, which is used to calculate areas, volumes, and their generalizations. Integration, the process of computing an integral, is one of the two fundamental operations of calculus, the other being differentiation. Integration started as a method to solve problems in mathematics and physics, such as finding the area under a curve, or determining displacement from velocity. Today integration is used in a wide variety of scientific fields.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="square">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">square</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Square_(algebra)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q111124</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, a square is the result of multiplying a number by itself. The verb "to square" is used to denote this operation. Squaring is the same as raising to the power 2, and is denoted by a superscript 2; for instance, the square of 3 may be written as 32, which is the number 9.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="standard_deviation">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">standard_deviation</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="step">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">step</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Step</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q594799</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Step(s) or STEP may refer to:</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="summation">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sum</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Summation</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q218005</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, summation is the addition of a sequence of any kind of numbers, called addends or summands; the result is their sum or total. Beside numbers, other types of values can be summed as well: functions, vectors, matrices, polynomials and, in general, elements of any type of mathematical objects on which an operation denoted "+" is defined.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="temperature_derivative">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature_derivative</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Derivative</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q29175</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, the derivative of a function of a real variable measures the sensitivity to change of the function value (output value) with respect to a change in its argument (input value). Derivatives are a fundamental tool of calculus.  For example, the derivative of the position of a moving object with respect to time is the object's velocity: this measures how quickly the position of the object changes when time advances.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="ten-day_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ten-day_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="third_dekad_one-day_mean">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">third_dekad_one-day_mean</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="third_dekad_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">third_dekad_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="third_pentad_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">third_pentad_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="three-month_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">three-month_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="time">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="time_average">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time_average</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Average</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q202785</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In ordinary language, an average is a single number taken as representative of a list of numbers, usually the sum of the numbers divided by how many numbers are in the list (the arithmetic mean). For example, the average of the numbers 2, 3, 4, 7, and 9 (summing to 25) is 5. Depending on the context, an average might be another statistic such as the median, or mode. For example, the average personal income is often given as the median—the number below which are 50% of personal incomes and above which are 50% of personal incomes—because the mean would be higher by including personal incomes from a few billionaires. For this reason, it is recommended to avoid using the word "average" when discussing measures of central tendency.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="time_derivative">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time_derivative</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Derivative</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q29175</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, the derivative of a function of a real variable measures the sensitivity to change of the function value (output value) with respect to a change in its argument (input value). Derivatives are a fundamental tool of calculus.  For example, the derivative of the position of a moving object with respect to time is the object's velocity: this measures how quickly the position of the object changes when time advances.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time_integral</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Integral</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q80091</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, an integral is the continuous analog of a sum, which is used to calculate areas, volumes, and their generalizations. Integration, the process of computing an integral, is one of the two fundamental operations of calculus, the other being differentiation. Integration started as a method to solve problems in mathematics and physics, such as finding the area under a curve, or determining displacement from velocity. Today integration is used in a wide variety of scientific fields.</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="time_integral_from_start">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time_integral_from_start</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="time_max">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time_max</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Maxima_and_minima</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q845060</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">largest and smallest value taken by a function in a given range</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="time_mean">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time_mean</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Mean</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2796622</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">There are several kinds of mean in mathematics, especially in statistics. Each mean serves to summarize a given group of data, often to better understand the overall value (magnitude and sign) of a given data set. </rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="time_median">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time_median</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="time_min">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time_min</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Maxima_and_minima</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q845060</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">largest and smallest value taken by a function in a given range</rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="time_rate">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rate</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Rate_(mathematics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1144560</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, a rate is the ratio between two related quantities in different units. If the denominator of the ratio is expressed as a single unit of one of these quantities, and if it is assumed that this quantity can be changed systematically (i.e., is an independent variable), then the numerator of the ratio expresses the corresponding rate of change in the other (dependent) variable.  </rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="rate">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rate</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="two-month_time_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">two-month_time_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="u_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">u_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="up_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">up_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="up_derivative">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">up_derivative</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="up_south_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">up_south_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="up_up_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">up_up_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="upper_limit">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upper_limit</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="upstream_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upstream_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="upward_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upward_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="v_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="variance">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">variance</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Variance</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q175199</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In probability theory and statistics, variance is the expectation of the squared deviation of a random variable from its population mean or sample mean. Variance is a measure of dispersion, meaning it is a measure of how far a set of numbers is spread out from their average value. Variance has a central role in statistics, where some ideas that use it include descriptive statistics, statistical inference, hypothesis testing, goodness of fit, and Monte Carlo sampling. Variance is an important tool in the sciences, where statistical analysis of data is common. The variance is the square of the standard deviation, the second central moment of a distribution, and the covariance of the random variable with itself, and it is often represented by </rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="vertical_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vertical_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="west_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">west_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="x_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="x_derivative">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x_derivative</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="x_x_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x_x_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="x_x_derivative">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x_x_derivative</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="x_y_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x_y_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="x_y_derivative">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x_y_derivative</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="x_z_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x_z_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="y_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">y_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="y_derivative">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">y_derivative</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="y_y_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">y_y_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="y_y_derivative">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">y_y_derivative</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="y_z_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">y_z_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="year-specific_anomaly">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">year-specific_anomaly</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="z_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="z_derivative">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z_derivative</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="z_integral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z_integral</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="z_mean">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z_mean</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Mean</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2796622</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">There are several kinds of mean in mathematics, especially in statistics. Each mean serves to summarize a given group of data, often to better understand the overall value (magnitude and sign) of a given data set. </rdfs:comment>
+</svo:Operation>
+
+<svo:Operation rdf:about="z_x_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z_x_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="z_y_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z_y_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="z_z_component">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z_z_component</rdfs:label>
+</svo:Operation>
+
+<svo:Operation rdf:about="z-score">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z-score</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Standard_score</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1050272</svo:has_wikidata_page>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">standard score</svo:has_synonym>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In statistics, the standard score is the number of standard deviations by which the value of a raw score (i.e., an observed value or data point) is above or below the mean value of what is being observed or measured. Raw scores above the mean have positive standard scores, while those below the mean have negative standard scores. </rdfs:comment>
+</svo:Operation>
+
+
+</rdf:RDF>
