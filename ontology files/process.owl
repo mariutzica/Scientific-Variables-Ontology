@@ -2837,8 +2837,8 @@
 <svo:Process rdf:about="engraving">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">engraving</rdfs:label>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">engravement</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">engraving</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">engravement</svo:has_synonym>
 </svo:Process>
 
 <svo:Process rdf:about="enrichment">
@@ -5128,9 +5128,9 @@
 <svo:Process rdf:about="paralyze">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paralyze</rdfs:label>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paralization</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paralisation</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paralysis</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paralization</svo:has_synonym>
 </svo:Process>
 
 <svo:Process rdf:about="parametrization">
@@ -5955,8 +5955,8 @@
 <svo:Process rdf:about="refreshment">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">refreshment</rdfs:label>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">refreshment</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">refreshing</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">refreshment</svo:has_synonym>
 </svo:Process>
 
 <svo:Process rdf:about="refrigeration">
@@ -6017,8 +6017,8 @@
 <svo:Process rdf:about="reinforcement">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reinforcement</rdfs:label>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reinforcing</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reinforcement</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reinforcing</svo:has_synonym>
 </svo:Process>
 
 <svo:Process rdf:about="reintroduction">
@@ -6602,8 +6602,8 @@
 <svo:Process rdf:about="seepage">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seepage</rdfs:label>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeping</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seepage</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeping</svo:has_synonym>
 </svo:Process>
 
 <svo:Process rdf:about="segregation">
@@ -8139,9 +8139,139 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zoning</rdfs:label>
 </svo:Process>
 
+<svo:Process rdf:about="radiation~longwave~downwelling">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/longwave"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/downwelling"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~longwave~downwelling</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~longwave~downward">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/longwave"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/downward"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~longwave~downward</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~shortwave~downwelling">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/shortwave"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/downwelling"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~shortwave~downwelling</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~shortwave~downward">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/shortwave"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/downward"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~shortwave~downward</rdfs:label>
+</svo:Process>
+
 <svo:Process rdf:about="usage-vs-application">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">usage-vs-application</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~visible">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/visible"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~visible</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~incoming~shortwave~absorbed">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/shortwave"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/absorbed"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~incoming~shortwave~absorbed</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~incoming~shortwave">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/shortwave"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~incoming~shortwave</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~incoming~shortwave~reflected">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/shortwave"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/reflected"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~incoming~shortwave~reflected</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~incoming~shortwave~transmitted">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/shortwave"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/transmitted"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~incoming~shortwave~transmitted</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~outgoing~longwave">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/longwave"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/outgoing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~outgoing~longwave</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~outgoing~longwave~downward">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/longwave"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/outgoing"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/downward"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~outgoing~longwave~downward</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~outgoing~longwave~upward">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/longwave"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/outgoing"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/upward"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~outgoing~longwave~upward</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~incoming~longwave">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/longwave"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~incoming~longwave</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~incoming">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~incoming</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~outgoing~shortwave">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/shortwave"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/outgoing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~outgoing~shortwave</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~outgoing">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/outgoing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~outgoing</rdfs:label>
 </svo:Process>
 
 <svo:Process rdf:about="acceleration~0-to-60mph">
@@ -8151,14 +8281,139 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acceleration~0-to-60mph</rdfs:label>
 </svo:Process>
 
+<svo:Process rdf:about="radiation~incoming~visible">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/visible"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~incoming~visible</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~incoming~longwave~absorbed">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/longwave"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/absorbed"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~incoming~longwave~absorbed</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~incoming~longwave~reflected">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/longwave"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/reflected"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~incoming~longwave~reflected</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~incoming~shortwave~backscattered">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/backscattered"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/shortwave"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~incoming~shortwave~backscattered</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~incoming~shortwave~diffuse">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/shortwave"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/diffuse"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~incoming~shortwave~diffuse</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~incoming~shortwave~direct">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/direct"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/shortwave"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~incoming~shortwave~direct</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~incoming~absorbed">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/absorbed"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~incoming~absorbed</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~incoming~reflected">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/reflected"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~incoming~reflected</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~net~longwave">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/longwave"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/net"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~net~longwave</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~net~shortwave">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/shortwave"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/net"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~net~shortwave</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~net">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/net"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~net</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~outgoing~longwave~emitted">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/longwave"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/emitted"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/outgoing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~outgoing~longwave~emitted</rdfs:label>
+</svo:Process>
+
 <svo:Process rdf:about="deposit">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deposit</rdfs:label>
 </svo:Process>
 
+<svo:Process rdf:about="radiation~incoming~longwave~transmitted">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/longwave"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/transmitted"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~incoming~longwave~transmitted</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~incoming~transmitted">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/transmitted"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~incoming~transmitted</rdfs:label>
+</svo:Process>
+
 <svo:Process rdf:about="planting-or-sowing">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planting-or-sowing</rdfs:label>
+</svo:Process>
+
+<svo:Process rdf:about="radiation~solar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_process_root rdf:resource="radiation"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/solar"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radiation~solar</rdfs:label>
 </svo:Process>
 
 <svo:Process rdf:about="harvest-or-death">

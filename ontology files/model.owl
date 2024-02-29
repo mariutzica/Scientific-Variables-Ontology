@@ -7,7 +7,9 @@
          xmlns:svo="http://scientificvariablesontology.org/svo#"
          xmlns="http://scientificvariablesontology.org/svo/model/">
 
-<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/model"/>
+<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/model">
+  <owl:imports rdf:resource="http://scientificvariablesontology.org/svo"/>
+</owl:Ontology>
 
 <svo:Model rdf:about="atterberg-liquid-limit">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>

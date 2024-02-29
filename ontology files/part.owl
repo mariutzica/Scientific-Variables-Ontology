@@ -402,11 +402,6 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">edge~y</rdfs:label>
 </svo:Part>
 
-<svo:Part rdf:about="constituents">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constituents</rdfs:label>
-</svo:Part>
-
 <svo:Part rdf:about="layer~first">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <svo:has_part_root rdf:resource="layer"/>
@@ -426,9 +421,11 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">centroid</rdfs:label>
 </svo:Part>
 
-<svo:Part rdf:about="tops">
+<svo:Part rdf:about="layer~topmost">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tops</rdfs:label>
+  <svo:has_part_root rdf:resource="layer"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/topmost"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~topmost</rdfs:label>
 </svo:Part>
 
 

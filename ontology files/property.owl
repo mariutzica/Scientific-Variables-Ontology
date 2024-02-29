@@ -285,11 +285,11 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angular_frequency</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Angular_frequency</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q834020</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orbital_frequency</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radian_frequency</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circular_frequency</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radial_frequency</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radian_frequency</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pulsatance</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orbital_frequency</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radial_frequency</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics, angular frequency "ω" (also referred to by the terms angular speed, angular rate, and pulsatance) is a scalar measure of rotation rate. It refers to the angular displacement per unit time (for example, in rotation) or the rate of change of the phase of a sinusoidal waveform (for example, in oscillations and waves), or as the rate of change of the argument of the sine function.</rdfs:comment>
 </svo:Property>
 
@@ -308,11 +308,11 @@
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Angular_speed, https://en.wikipedia.org/wiki/Angular_frequency</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q834020</svo:has_wikidata_page>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angular_frequency</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orbital_frequency</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curcular_frequency</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radian_frequency</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radial_frequency</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pulsatance</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orbital_frequency</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radial_frequency</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics, angular frequency "ω" (also referred to by the terms angular speed, angular rate, and pulsatance) is a scalar measure of rotation rate. It refers to the angular displacement per unit time (for example, in rotation) or the rate of change of the phase of a sinusoidal waveform (for example, in oscillations and waves), or as the rate of change of the argument of the sine function.</rdfs:comment>
 </svo:Property>
 
@@ -1466,10 +1466,10 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">darcy_friction_factor</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Darcy%E2%80%93Weisbach_equation#Darcy_friction_factor</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1142285</svo:has_wikidata_page>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resistance_coefficient</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flow_coefficient</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">friction_factor</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">darcy-weisbach_friction_factor</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flow_coefficient</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resistance_coefficient</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In fluid dynamics, the Darcy–Weisbach equation is an empirical equation that relates the head loss, or pressure loss, due to friction along a given length of pipe to the average velocity of the fluid flow for an incompressible fluid. The equation is named after Henry Darcy and Julius Weisbach. Currently, there is no formula more accurate or universally applicable than the Darcy-Weisbach supplemented by the Moody diagram or Colebrook equation.The Darcy–Weisbach equation contains a dimensionless friction factor, known as the Darcy friction factor. This is also variously called the Darcy–Weisbach friction factor, friction factor, resistance coefficient, or flow coefficient.</rdfs:comment>
 </svo:Property>
 
@@ -1871,8 +1871,8 @@
 <svo:Property rdf:about="effective_saturated_hydraulic_conductivity">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effective_saturated_hydraulic_conductivity</rdfs:label>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effective</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saturated</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effective</svo:has_synonym>
 </svo:Property>
 
 <svo:Property rdf:about="efficiency">
@@ -2064,8 +2064,8 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emissivity</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Emissivity, https://en.wikipedia.org/wiki/Thermal_emittance</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3369825</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal_emittance</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal_emissivity</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal_emittance</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermal emittance or thermal emissivity (</rdfs:comment>
 </svo:Property>
 
@@ -2142,8 +2142,8 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">energy-per-volume_density</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Energy_density</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q828402</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">energy_density</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">energy_content</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">energy_density</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics, energy density is the amount of energy stored in a given system or region of space per unit volume. It is sometimes confused with energy per unit mass which is properly called specific energy or gravimetric energy density.</rdfs:comment>
 </svo:Property>
 
@@ -2179,8 +2179,8 @@
 <svo:Property rdf:about="environmental_static_pressure_lapse_rate">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental_static_pressure_lapse_rate</rdfs:label>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">static</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environmental</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">static</svo:has_synonym>
 </svo:Property>
 
 <svo:Property rdf:about="environmental_temperature_lapse_rate">
@@ -2216,8 +2216,8 @@
 <svo:Property rdf:about="equivalent_potential_temperature">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equivalent_potential_temperature</rdfs:label>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equivalent</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potential</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equivalent</svo:has_synonym>
 </svo:Property>
 
 <svo:Property rdf:about="equivalent_reflectivity_factor">
@@ -2812,10 +2812,10 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat_energy_flux</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Heat_flux</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1478382</svo:has_wikidata_page>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal_flux</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat_flux</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat_flux_density</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat_flow_rate_intensity</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat_flux</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal_flux</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics and engineering, heat flux or thermal flux, sometimes also referred to as heat flux density, heat-flow density or heat flow rate intensity, is a flow of energy per unit area per unit time. Its SI units are watts per square metre (W/m2). It has both a direction and a magnitude, and so it is a vector quantity. To define the heat flux at a certain point in space, one takes the limiting case where the size of the surface becomes infinitesimally small.</rdfs:comment>
 </svo:Property>
 
@@ -2889,8 +2889,8 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horton-strahler_order</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Strahler_number</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1422857</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strahler_number</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horton-strahler_number</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strahler_number</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, the Strahler number or Horton–Strahler number of a mathematical tree is a numerical measure of its branching complexity.</rdfs:comment>
 </svo:Property>
 
@@ -3267,9 +3267,9 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">instantaneous_volume_flow_rate</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Volume_flow_rate</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1134348</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volume_velocity</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volumetric_flow_rate</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">discharge</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volumetric_flow_rate</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volume_velocity</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volume of fluid which passes per time</rdfs:comment>
 </svo:Property>
 
@@ -3364,9 +3364,9 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jerk</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Jerk_(physics)</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q497332</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surge</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jolt</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lurch</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surge</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics, jerk or jolt is the rate at which an object's acceleration changes with respect to time. It is a vector quantity (having both magnitude and direction). Jerk is most commonly denoted by the symbol j and expressed in m/s3 (SI units) or standard gravities per second (g0/s).</rdfs:comment>
 </svo:Property>
 
@@ -3764,10 +3764,10 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic-h-field</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Magnetic_field#The_H-field</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11408</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic-field_intensity</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetizing-field</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic-field</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic-field_intensity</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic-field_strength</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic-field</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A magnetic field is a vector field that describes the magnetic influence on moving electric charges, electric currents,: ch1  and magnetic materials. A moving charge in a magnetic field experiences a force perpendicular to its own velocity and to the magnetic field.: ch13 : 278  A permanent magnet's magnetic field pulls on ferromagnetic materials such as iron, and attracts or repels other magnets.   In addition, a nonuniform magnetic field exerts minuscule forces on "nonmagnetic" materials by three other magnetic effects:  paramagnetism, diamagnetism, and antiferromagnetism, although these forces are usually so small they can only be detected by laboratory equipment.  Magnetic fields surround magnetized materials, and are created by electric currents such as those used in electromagnets, and by electric fields varying in time. Since both strength and direction of a magnetic field may vary with location, it is described mathematically by a function assigning a vector to each point of space, called a vector field.</rdfs:comment>
 </svo:Property>
 
@@ -3822,9 +3822,9 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Mass</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11423</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intrinsic_mass</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rest_mass</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">invariant_mass</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rest_mass</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intrinsic_mass</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proper_mass</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass is an intrinsic property of a body. It was traditionally believed to be related to the quantity of matter in a physical body, until the discovery of the atom and particle physics. It was found that different atoms and different elementary particles, theoretically with the same amount of matter, have nonetheless different masses. Mass in modern physics has multiple definitions which are conceptually distinct, but physically equivalent. Mass can be experimentally defined as a measure of the body's inertia, meaning the resistance to acceleration (change of velocity) when a net force is applied. The object's mass also determines the strength of its gravitational attraction to other bodies.</rdfs:comment>
 </svo:Property>
@@ -3915,10 +3915,10 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass-per-area_density</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Area_density</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1907514</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superficial_density</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">areal_density</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface_density</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">density_thickness</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">areal_density</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superficial_density</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface_density</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The area density (also known as areal density, surface density, superficial density, areic density, mass thickness, column density, or density thickness) of a two-dimensional object is calculated as the mass per unit area. The SI derived unit is the kilogram per square metre (kg·m−2).</rdfs:comment>
 </svo:Property>
 
@@ -4638,8 +4638,8 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oxidation-reduction_potential</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Reduction_potential</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q186487</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orp</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">redox_potential</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orp</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Redox potential (also known as oxidation / reduction potential, ORP, pe, </rdfs:comment>
 </svo:Property>
 
@@ -6990,9 +6990,9 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volume_flow_rate</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Volume_flow_rate</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1134348</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volume_velocity</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volumetric_flow_rate</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">discharge</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volumetric_flow_rate</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volume_velocity</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volume of fluid which passes per time</rdfs:comment>
 </svo:Property>
 
@@ -7333,11 +7333,6 @@
 <svo:Property rdf:about="zenith_angle">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zenith_angle</rdfs:label>
-</svo:Property>
-
-<svo:Property rdf:about="reference-height">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reference-height</rdfs:label>
 </svo:Property>
 
 <svo:Property rdf:about="upward_component_of_sensible_heat_energy_flux">

@@ -145,11 +145,6 @@ for row in reader:
     sub_elements = get_all_elements(encoded_obj_name)
     # Loop through each level of sub elements in an encoded object name.
     for sub_element, element_list in sub_elements.items():
-        debug_print = False
-        # debug for splitting up multiple elements
-        if '-and-' in sub_element or '-or-' in sub_element:
-            #print(sub_element, element_list)
-            debug_print = True
 
         # Loop through all of the possible links and get the ones
         # present and their indexes; store in contained links dictionary
@@ -255,12 +250,7 @@ for row in reader:
                         elif link == '-contains-':
                             contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
                             containing_phen = contained_parts[link_index - 1]
-                            if '-and-' in containing_phen or '-or-' in containing_phen:
-                                containing_phen = re.split('-or-|-and-', containing_phen)
-                                contained_parts_assigned['has-containing-phenomenon'] = containing_phen[0]
-                                contained_parts_assigned['has-containing-phenomenon2'] = containing_phen[1]
-                            else:
-                                contained_parts_assigned['has-containing-phenomenon'] = containing_phen
+                            contained_parts_assigned['has-containing-phenomenon'] = containing_phen
                             indexes_added.append(link_index + 1)
                             indexes_added.append(link_index - 1)
                         elif link == '-observes-':
@@ -312,12 +302,7 @@ for row in reader:
                             contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
                             indexes_added.append(link_index + 1)
                             medium_participant = contained_parts[link_index - 1]
-                            if '-and-' in medium_participant or '-or-' in medium_participant:
-                                medium_participants = re.split('-or-|-and-', medium_participant)
-                                contained_parts_assigned['has-medium-participant-phenomenon'] = medium_participants[0]
-                                contained_parts_assigned['has-medium-participant-phenomenon2'] = medium_participants[1]
-                            else:
-                                contained_parts_assigned['has-medium-participant-phenomenon'] = medium_participant
+                            contained_parts_assigned['has-medium-participant-phenomenon'] = medium_participant
                             indexes_added.append(link_index - 1)
                         elif (link == '-as-medium-') and '-participates-in-' in contained_parts:
                             contained_parts_assigned['has-participating-medium-phenomenon'] = contained_parts[link_index - 1]
@@ -332,12 +317,7 @@ for row in reader:
                             indexes_added.append(link_index + 1)
                         elif link == '-contains-part-':
                             primary_participant = contained_parts[link_index + 1]
-                            if '-and-' in primary_participant or '-or-' in primary_participant:
-                                participants = re.split('-or-|-and-', primary_participant)
-                                contained_parts_assigned['has-primary-participant-phenomenon'] = participants[0]
-                                contained_parts_assigned['has-primary-participant-phenomenon2'] = participants[1]
-                            else:
-                                contained_parts_assigned['has-primary-participant-phenomenon'] = primary_participant
+                            contained_parts_assigned['has-primary-participant-phenomenon'] = primary_participant
                             contained_parts_assigned['is-part-of-containing-phenomenon'] = contained_parts[link_index - 1]
                             indexes_added.append(link_index + 1)
                             indexes_added.append(link_index - 1)
@@ -381,12 +361,7 @@ for row in reader:
                             rel = link.strip('-')
                             contained_parts_assigned[rel] = contained_parts[link_index + 1]
                             primary_phen = contained_parts[link_index - 1]
-                            if '-and-' in primary_phen or '-or-' in primary_phen:
-                                primary_phen = re.split('-or-|-and-', primary_phen)
-                                contained_parts_assigned['has-primary-participant-phenomenon'] = primary_phen[0]
-                                contained_parts_assigned['has-primary-participant-phenomenon2'] = primary_phen[1]
-                            else:
-                                contained_parts_assigned['has-primary-participant-phenomenon'] = primary_phen
+                            contained_parts_assigned['has-primary-participant-phenomenon'] = primary_phen
                             indexes_added.append(link_index + 1)
                             indexes_added.append(link_index - 1)
                         else: # -has-X- and -undergoes-process-
@@ -394,12 +369,7 @@ for row in reader:
                             if rel in contained_parts_assigned.keys():
                                 rel = rel + '2'
                             has_x = contained_parts[link_index + 1]
-                            if '-and-' in has_x or '-or-' in has_x:
-                                rel_pointers = re.split('-or-|-and-', has_x)
-                                contained_parts_assigned[rel] = rel_pointers[0]
-                                contained_parts_assigned[rel+'2'] = rel_pointers[1]
-                            else:
-                                contained_parts_assigned[rel] = has_x
+                            contained_parts_assigned[rel] = has_x
                             indexes_added.append(link_index + 1)
                     if link_index >= 0:
                         link_index += 1
@@ -430,12 +400,7 @@ for row in reader:
                         elif rel in contained_parts_assigned.keys():
                             print('ERROR')
                         rel_pointer = contained_parts[i]
-                        if '-and-' in rel_pointer or '-or-' in rel_pointer:
-                            rel_pointers = re.split('-or-|-and-', rel_pointer)
-                            contained_parts_assigned[rel] = rel_pointers[0]
-                            contained_parts_assigned[rel+'2'] = rel_pointers[1]
-                        else:
-                            contained_parts_assigned[rel] = rel_pointer
+                        contained_parts_assigned[rel] = rel_pointer
                         indexes_added.append(i)
                         break
             elif len(indexes_added) != len(contained_parts):
@@ -443,8 +408,7 @@ for row in reader:
 
             indexes_added.sort()
             all_elements.append(contained_parts_assigned)
-            if debug_print:
-                print(contained_parts_assigned)
+
             if printit:
                 debug.write(str(contained_parts_assigned) + '\n')
 
@@ -456,5 +420,72 @@ for sub_phenomenon in all_elements:
     for key, val in sub_phenomenon.items():
         atomized_objects.loc[index,key] = val
 
+# check for or/and phenomena
+cols_to_check = atomized_objects.columns.to_list()
+cols_to_check.remove('encoded_name')
+cols_to_check.remove('label_name')
+linked_objects = list(atomized_objects[cols_to_check].stack().unique())
+subobjects = atomized_objects['encoded_name'].tolist()
+orand_objects = [item for item in linked_objects if re.findall('-or-|-and-|-vs-',item) and item not in subobjects]
+
+script_path = os.path.dirname(__file__)
+vocab_path  = os.path.join(script_path, '../../source/quicklookup')
+phen_vocab_file = os.path.join(vocab_path, 'phenomenon.txt')
+matter_vocab_file = os.path.join(vocab_path, 'matter.txt')
+process_vocab_file = os.path.join(vocab_path, 'process.txt')
+role_vocab_file = os.path.join(vocab_path, 'role.txt')
+form_vocab_file = os.path.join(vocab_path, 'form.txt')
+with open(phen_vocab_file) as f:
+    phen_vocab = f.read().splitlines()
+with open(matter_vocab_file) as f:
+    matter_vocab = f.read().splitlines()
+with open(process_vocab_file) as f:
+    process_vocab = f.read().splitlines()
+with open(role_vocab_file) as f:
+    role_vocab = f.read().splitlines()
+with open(form_vocab_file) as f:
+    form_vocab = f.read().splitlines()
+
+# Loop through the new subobjects and add them to the dataframe
+atomized_objects['has-phenomenon2'] = ''
+atomized_objects['has-matter2'] = ''
+atomized_objects['has-role'] = ''
+atomized_objects['has-role2'] = ''
+atomized_objects['has-process'] = ''
+atomized_objects['has-process2'] = ''
+atomized_objects['has-form'] = ''
+atomized_objects['has-form2'] = ''
+
+for newobj in orand_objects:
+    # add an empty row to the dataframe and set the name and label
+    index_add = len(atomized_objects)
+    atomized_objects.loc[index_add] = ''
+    atomized_objects.loc[index_add,'encoded_name'] = newobj
+    atomized_objects.loc[index_add,'label_name'] = newobj
+
+    # split the name by and/or to get components
+    split_object = re.split('-or-|-and-|-vs-', newobj)
+    for index, sobj in enumerate(split_object):
+        sobj_stripped = sobj.strip('()')
+        category = ''
+        root_obj = sobj_stripped
+        if sobj_stripped != sobj:
+            category = 'phenomenon'
+        else:        
+            root_obj = sobj_stripped.split('~')[0]
+            if root_obj in phen_vocab:
+                category = 'phenomenon'
+            elif root_obj in matter_vocab:
+                category = 'matter'
+            elif root_obj in process_vocab:
+                category = 'process'
+            elif root_obj in role_vocab:
+                category = 'role'
+            elif root_obj in form_vocab:
+                category = 'form'
+
+        link = f'has-{category}{index+1}'.replace('1','')
+        atomized_objects.loc[index_add,link] = sobj_stripped
+            
 atomized_objects.to_csv(os.path.join(src_path,'csdms_atomized.csv'),index=False)
 debug.close()

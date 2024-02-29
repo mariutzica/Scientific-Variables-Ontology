@@ -948,21 +948,11 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">axis~vertical</rdfs:label>
 </svo:Abstraction>
 
-<svo:Abstraction rdf:about="endpoints">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endpoints</rdfs:label>
-</svo:Abstraction>
-
 <svo:Abstraction rdf:about="boundary~seaward">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <svo:has_abstraction_root rdf:resource="boundary"/>
   <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/seaward"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boundary~seaward</rdfs:label>
-</svo:Abstraction>
-
-<svo:Abstraction rdf:about="foci">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">foci</rdfs:label>
 </svo:Abstraction>
 
 <svo:Abstraction rdf:about="surface~10m-above">
@@ -972,16 +962,23 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~10m-above</rdfs:label>
 </svo:Abstraction>
 
-<svo:Abstraction rdf:about="target">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">target</rdfs:label>
-</svo:Abstraction>
-
 <svo:Abstraction rdf:about="axis~x">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <svo:has_abstraction_root rdf:resource="axis"/>
   <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/x"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">axis~x</rdfs:label>
+</svo:Abstraction>
+
+<svo:Abstraction rdf:about="axis~east">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <svo:has_abstraction_root rdf:resource="axis"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/east"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">axis~east</rdfs:label>
+</svo:Abstraction>
+
+<svo:Abstraction rdf:about="target">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">target</rdfs:label>
 </svo:Abstraction>
 
 <svo:Abstraction rdf:about="x-section~horizontal">

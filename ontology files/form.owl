@@ -360,36 +360,18 @@
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A void is a pore that remains unfilled with polymer and fibers in a composite material.  Voids are typically the result of poor manufacturing of the material and are generally deemed undesirable.  Voids can affect the mechanical properties and lifespan of the composite.  They degrade mainly the matrix-dominated properties such as interlaminar shear strength, longitudinal compressive strength, and transverse tensile strength. Voids can act as crack initiation sites as well as allow moisture to penetrate the composite and contribute to the anisotropy of the composite. For aerospace applications, a void content of approximately 1% is still acceptable, while for less sensitive applications, the allowance limit is 3-5%.  Although a small increase in void content may not seem to cause significant issues, a 1-3% increase in void content of carbon fiber reinforced composite  can reduce the mechanical properties by up to 20%   Void content in composites is represented as a ratio, also called void ratio, where the volume of voids, solid material, and bulk volume are taken into account.  Void ratio can be calculated by the formula below where e is the void ratio of the composite, Vv is the volume of the voids, and Vt is the volume of the bulk material.</rdfs:comment>
 </svo:Form>
 
-<svo:Form rdf:about="layer~topmost">
+<svo:Form rdf:about="link~exterior">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/topmost"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~topmost</rdfs:label>
+  <svo:has_form_root rdf:resource="link"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/exterior"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">link~exterior</rdfs:label>
 </svo:Form>
 
-<svo:Form rdf:about="terrain~left">
+<svo:Form rdf:about="link~interior">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_form_root rdf:resource="terrain"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/left"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terrain~left</rdfs:label>
-</svo:Form>
-
-<svo:Form rdf:about="terrain~right">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_form_root rdf:resource="terrain"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/right"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terrain~right</rdfs:label>
-</svo:Form>
-
-<svo:Form rdf:about="column">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">column</rdfs:label>
-</svo:Form>
-
-<svo:Form rdf:about="aerosol~dry">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_form_root rdf:resource="aerosol"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/dry"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aerosol~dry</rdfs:label>
+  <svo:has_form_root rdf:resource="link"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/interior"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">link~interior</rdfs:label>
 </svo:Form>
 
 <svo:Form rdf:about="channel~longest">
@@ -406,122 +388,18 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">channel~main</rdfs:label>
 </svo:Form>
 
-<svo:Form rdf:about="wave">
+<svo:Form rdf:about="macropores~saturated">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wave</rdfs:label>
-</svo:Form>
-
-<svo:Form rdf:about="layer">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer</rdfs:label>
-</svo:Form>
-
-<svo:Form rdf:about="layer~0">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_form_root rdf:resource="layer"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/0"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~0</rdfs:label>
-</svo:Form>
-
-<svo:Form rdf:about="layer~0~saturated">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_form_root rdf:resource="layer"/>
+  <svo:has_form_root rdf:resource="macropore"/>
   <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/saturated"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/0"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~0~saturated</rdfs:label>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">macropores~saturated</rdfs:label>
 </svo:Form>
 
-<svo:Form rdf:about="layer~1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_form_root rdf:resource="layer"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/1"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~1</rdfs:label>
-</svo:Form>
-
-<svo:Form rdf:about="layer~1~saturated">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_form_root rdf:resource="layer"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/saturated"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/1"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~1~saturated</rdfs:label>
-</svo:Form>
-
-<svo:Form rdf:about="layer~2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_form_root rdf:resource="layer"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/2"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~2</rdfs:label>
-</svo:Form>
-
-<svo:Form rdf:about="layer~2~saturated">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_form_root rdf:resource="layer"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/2"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/saturated"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~2~saturated</rdfs:label>
-</svo:Form>
-
-<svo:Form rdf:about="wave~incoming">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_form_root rdf:resource="wave"/>
-  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wave~incoming</rdfs:label>
-</svo:Form>
-
-<svo:Form rdf:about="layer~topmost~saturated">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_form_root rdf:resource="layer"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/saturated"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/topmost"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~topmost~saturated</rdfs:label>
-</svo:Form>
-
-<svo:Form rdf:about="pool~organic~stabilized-as-nitrogen">
+<svo:Form rdf:about="pool~microbial">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <svo:has_form_root rdf:resource="pool"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/stabilized-as-nitrogen"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/organic"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pool~organic~stabilized-as-nitrogen</rdfs:label>
-</svo:Form>
-
-<svo:Form rdf:about="pool~organic~stabilized">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_form_root rdf:resource="pool"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/organic"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/stabilized"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pool~organic~stabilized</rdfs:label>
-</svo:Form>
-
-<svo:Form rdf:about="pool~stabilized">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_form_root rdf:resource="pool"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/stabilized"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pool~stabilized</rdfs:label>
-</svo:Form>
-
-<svo:Form rdf:about="pool~microbial-and-stabilized">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_form_root rdf:resource="pool"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/microbial"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/stabilized"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pool~microbial-and-stabilized</rdfs:label>
-</svo:Form>
-
-<svo:Form rdf:about="pool-as-carbon">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pool-as-carbon</rdfs:label>
-</svo:Form>
-
-<svo:Phenomenon rdf:about="pool~microbial">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_phenomenon_root rdf:resource="pool"/>
   <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/microbial"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pool~microbial</rdfs:label>
-</svo:Phenomenon>
-
-<svo:Form rdf:about="pool-and-pool~microbial">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pool-and-pool~microbial</rdfs:label>
 </svo:Form>
 
 
