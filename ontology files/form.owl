@@ -13,394 +13,511 @@
   <owl:imports rdf:resource="http://scientificvariablesontology.org/svo/direction"/>
 </owl:Ontology>
 
-<svo:Form rdf:about="aerosol">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="aerosol">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aerosol</rdfs:label>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="anion">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="anion">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anion</rdfs:label>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="atom">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="atom">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atom</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Atom</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q9121</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An atom is a particle that consists of a nucleus of protons and neutrons surrounded by a cloud of electrons. The atom is the basic particle of the chemical elements, and the chemical elements are distinguished from each other by the number of protons that are in their atoms. For example, any atom that contains 11 protons is sodium, and any atom that contains 29 protons is copper. The number of neutrons defines the isotope of the element.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="base-layer">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="base-layer">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">base-layer</rdfs:label>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="bubble">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="bubble">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bubble</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Bubble_(physics)</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q75794</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bubble is a globule of one substance in another, usually gas in a liquid. </rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="bulk">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="bulk">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bulk</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Bulk</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q343050</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bulk can refer to:</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="cation">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="cation">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cation</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Ion#Anions_and_cations</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q36496</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ion () is an atom or molecule with a net electrical charge. The charge of an electron is considered to be negative by convention and this charge is equal and opposite to the charge of a proton, which is considered to be positive by convention. The net charge of an ion is not zero because its total number of electrons is unequal to its total number of protons.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="cell">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="cell">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Cell_(biology)</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q7868</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The cell is the basic structural and functional unit of life forms. Every cell consists of a cytoplasm enclosed within a membrane, and contains many biomolecules such as proteins, DNA and RNA, as well as many small molecules of nutrients and metabolites.  The term comes from the Latin word cellula meaning 'small room'.Cells can acquire specified function and carry out various tasks within the cell such as replication, DNA repair, protein synthesis, and motility. Cells are capable of specialization and mobility within the cell. Most cells are measured in micrometers due to their small size.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="channel">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="channel">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">channel</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Channel_(geography)</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1210950</svo:has_wikidata_page>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conduit</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physical geography, a channel is a type of landform consisting of the outline of a path of relatively shallow and narrow body of water or of other fluids (e.g., lava), most commonly the confine of a river, river delta or strait.  The word is cognate to canal, and sometimes takes this form, e.g. the Hood Canal.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="colony">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="colony">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">colony</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Colony_(biology)</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q354341</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In biology, a colony is composed of two or more conspecific individuals living in close association with, or connected to, one another. This association is usually for mutual benefit such as stronger defense or the ability to attack bigger prey.Colonies can form in various shapes and ways depending on the organism involved. For instance, the bacterial colony is a cluster of identical cells (clones). These colonies often form and grow on the surface of (or within) a solid medium, usually derived from a single parent cell.Colonies, in the context of development, may be composed of two or more unitary (or solitary) organisms or be modular organisms. Unitary organisms have determinate development (set life stages) from zygote to adult form and individuals or groups of individuals (colonies) are visually distinct. Modular organisms have indeterminate growth forms (life stages not set) through repeated iteration of genetically identical modules (or individuals), and it can be difficult to distinguish between the colony as a whole and the modules within. In the latter case, modules may have specific functions within the colony.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="core">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="core">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">core</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Core_sample</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1942237</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A core sample is a cylindrical section of (usually) a naturally-occurring substance. Most core samples are obtained by drilling with special drills into the substance, such as sediment or rock, with a hollow steel tube, called a core drill. The hole made for the core sample is called the "core hole". A variety of core samplers exist to sample different media under different conditions. More continue to be invented on a regular basis. In the coring process, the sample is pushed more or less intact into the tube. Removed from the tube in the laboratory, it is inspected and analyzed by different techniques and equipment depending on the type of data desired.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="crater">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="crater">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crater</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Crater</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3240715</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A crater is a landform consisting of a hole or depression on a planetary surface, usually caused either by an object hitting the surface, or by geological activity on the planet. A crater has classically been described as: "a bowl-shaped pit that is formed by a volcano, an explosion, or a meteorite impact". On Earth, craters are "generally the result of volcanic eruptions", while "meteorite impact craters are common on the Moon, but are rare on Earth".A 1961 New Scientist article speculating on the later-dismissed theory that the craters on the Moon might be volcanic in origin noted that "craters produced by volcanism are blessed with advantages of terrain and mineralization not found on impact craters". A crater may become a crater lake if conditions are suitable. This requires that the crater have relatively even and solid walls, and a source of water such as floodwaters, rain, snow, springs, or other groundwater.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="crystal">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="crystal">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crystal</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Crystal</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q43533</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A crystal or crystalline solid is a solid material whose constituents (such as atoms, molecules, or ions) are arranged in a highly ordered microscopic structure, forming a crystal lattice that extends in all directions. In addition, macroscopic single crystals are usually identifiable by their geometrical shape, consisting of flat faces with specific, characteristic orientations. The scientific study of crystals and crystal formation is known as crystallography. The process of crystal formation via mechanisms of crystal growth is called crystallization or solidification.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="domain">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="domain">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">domain</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Territory</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q183366</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A territory is an area of land, sea, or space, belonging or connected to a particular country, person, or animal.In international politics, a territory is either the total area from which a state may extract power resources or else an administrative division, i.e. an area that is under the jurisdiction of a sovereign state. </rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="dose">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="dose">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dose</rdfs:label>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="droplet">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="droplet">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">droplet</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Drop_(liquid)</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q185789</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A drop or droplet is a small column of liquid, bounded completely or almost completely by free surfaces. A drop may form when liquid accumulates at the lower end of a tube or other surface boundary, producing a hanging drop called a pendant drop. Drops may also be formed by the condensation of a vapor or by atomization of a larger mass of solid. Water vapor will condense into droplets depending on the temperature. The temperature at which droplets form is called the dew point.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="fault">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="fault">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fault</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Fault_(geology)</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q47089</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geology, a fault is a planar fracture or discontinuity in a volume of rock across which there has been significant displacement as a result of rock-mass movements. Large faults within Earth's crust result from the action of plate tectonic forces, with the largest forming the boundaries between the plates, such as the megathrust faults of subduction zones or transform faults. Energy release associated with rapid movement on active faults is the cause of most earthquakes. Faults may also displace slowly, by aseismic creep.A fault plane is the plane that represents the fracture surface of a fault. A fault trace or fault line is a place where the fault can be seen or mapped on the surface. A fault trace is also the line commonly plotted on geologic maps to represent a fault.A fault zone is a cluster of parallel faults. However, the term is also used for the zone of crushed rock along a single fault. Prolonged motion along closely spaced faults can blur the distinction, as the rock between the faults is converted to fault-bound lenses of rock and then progressively crushed.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="floe">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="floe">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">floe</rdfs:label>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="gas">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="gas">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gas</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Gas</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11432</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gas is one of the four fundamental states of matter. The others are solid, liquid, and plasma.A pure gas may be made up of individual atoms (e.g. a noble gas like neon), elemental molecules made from one type of atom (e.g. oxygen), or compound molecules made from a variety of atoms (e.g. carbon dioxide). A gas mixture, such as air, contains a variety of pure gases. What distinguishes a gas from liquids and solids is the vast separation of the individual gas particles. This separation usually makes a colourless gas invisible to the human observer.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="grain">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="grain">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grain</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Grain_size</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q466491</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grain size (or particle size) is the diameter of individual grains of sediment, or the lithified particles in clastic rocks.  The term may also be applied to other granular materials. This is different from the crystallite size, which refers to the size of a single crystal inside a particle or grain. A single grain can be composed of several crystals. Granular material can range from very small colloidal particles, through clay, silt, sand, gravel, and cobbles, to boulders.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="hole">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="hole">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hole</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wiktionary.org/wiki/hole#Noun</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q20204151</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hole is an opening in or through a particular medium, usually a solid body. Holes occur through natural and artificial processes, and may be useful for various purposes, or may represent a problem needing to be addressed in many fields of engineering. Depending on the material and the placement, a hole may be an indentation in a surface (such as a hole in the ground), or may pass completely through that surface (such as a hole created by a hole puncher in a piece of paper).</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="impact-crater">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="impact-crater">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">impact-crater</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Impact_crater</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q55818</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An impact crater is a circular depression in the surface of a solid astronomical object formed by the hypervelocity impact of a smaller object. In contrast to volcanic craters, which result from explosion or internal collapse, impact craters typically have raised rims and floors that are lower in elevation than the surrounding terrain. Lunar impact craters range from microscopic craters on lunar rocks returned by the Apollo program and small, simple, bowl-shaped depressions in the lunar regolith to large, complex, multi-ringed impact basins. Meteor Crater is a well-known example of a small impact crater on Earth.Impact craters are the dominant geographic features on many solid Solar System objects including the Moon, Mercury, Callisto, Ganymede and most small moons and asteroids. On other planets and moons that experience more active surface geological processes, such as Earth, Venus, Europa, Io and Titan, visible impact craters are less common because they become eroded, buried or transformed by tectonics over time. Where such processes have destroyed most of the original crater topography, the terms impact structure or astrobleme are more commonly used. In early literature, before the significance of impact cratering was widely recognised, the terms cryptoexplosion or cryptovolcanic structure were often used to describe what are now recognised as impact-related features on Earth.The cratering records of very old surfaces, such as Mercury, the Moon, and the southern highlands of Mars, record a period of intense early bombardment in the inner Solar System around 3.9 billion years ago. The rate of crater production on Earth has since been considerably lower, but it is appreciable nonetheless. Earth experiences, on average, from one to three impacts large enough to produce a 20-kilometre-diameter (12 mi) crater every million years. This indicates that there should be far more relatively young craters on the planet than have been discovered so far. The cratering rate in the inner solar system fluctuates as a consequence of collisions in the asteroid belt that create a family of fragments that are often sent cascading into the inner solar system. Formed in a collision 80 million years ago, the Baptistina family of asteroids is thought to have caused a large spike in the impact rate. The rate of impact cratering in the outer Solar System could be different from the inner Solar System.Although Earth's active surface processes quickly destroy the impact record, about 190 terrestrial impact craters have been identified. These range in diameter from a few tens of meters up to about 300 km (190 mi), and they range in age from recent times (e.g. the Sikhote-Alin craters in Russia whose creation was witnessed in 1947) to more than two billion years, though most are less than 500 million years old because geological processes tend to obliterate older craters. They are also selectively found in the stable interior regions of continents. Few undersea craters have been discovered because of the difficulty of surveying the sea floor, the rapid rate of change of the ocean bottom, and the subduction of the ocean floor into Earth's interior by processes of plate tectonics.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="ion">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="ion">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ion</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Ion</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q36496</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ion () is an atom or molecule with a net electrical charge. The charge of an electron is considered to be negative by convention and this charge is equal and opposite to the charge of a proton, which is considered to be positive by convention. The net charge of an ion is not zero because its total number of electrons is unequal to its total number of protons.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="isomer">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="isomer">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isomer</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Isomer</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q127950</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In chemistry, isomers are molecules or polyatomic ions with identical molecular formula – that is, same number of atoms of each element – but distinct arrangements of atoms in space. Isomerism is existence or possibility of isomers.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="isotope">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="isotope">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isotope</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Isotope</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q25276</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isotopes are distinct nuclear species (or nuclides, as technical term) of the same element. They have the same atomic number (number of protons in their nuclei) and position in the periodic table (and hence belong to the same chemical element), but differ in nucleon numbers (mass numbers) due to different numbers of neutrons in their nuclei. While all isotopes of a given element have almost the same chemical properties, they have different atomic masses and physical properties.The term isotope is formed from the Greek roots isos (ἴσος "equal") and topos (τόπος "place"), meaning "the same place"; thus, the meaning behind the name is that different isotopes of a single element occupy the same position on the periodic table. It was coined by Scottish doctor and writer Margaret Todd in 1913 in a suggestion to the British chemist Frederick Soddy.The number of protons within the atom's nucleus is called its atomic number and is equal to the number of electrons in the neutral (non-ionized) atom. Each atomic number identifies a specific element, but not the isotope; an atom of a given element may have a wide range in its number of neutrons. The number of nucleons (both protons and neutrons) in the nucleus is the atom's mass number, and each isotope of a given element has a different mass number.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="link">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="link">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">link</rdfs:label>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="macropore">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="macropore">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">macropore</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Macropores</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2753078</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cavities in soil larger than 75 μm</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="mat">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="mat">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mat</rdfs:label>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="melt">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="melt">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">melt</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Melt</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q6813711</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melt may refer to:</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="moisture">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="moisture">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">moisture</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Moisture</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q217651</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moisture is the presence of a liquid, especially water, often in trace amounts. Small amounts of water may be found, for example, in the air (humidity), in foods, and in some commercial products. Moisture also refers to the amount of water vapor present in the air.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="molecule">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="molecule">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecule</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Molecule</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11369</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A molecule is a group of two or more atoms held together by attractive forces known as chemical bonds; depending on context, the term may or may not include ions which satisfy this criterion. In quantum physics, organic chemistry, and biochemistry, the distinction from ions is dropped and molecule is often used when referring to polyatomic ions.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="network">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="network">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">network</rdfs:label>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="particle">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="particle">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particle</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Particle</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1621273</svo:has_wikidata_page>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">corpuscule</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the physical sciences, a particle (or corpuscule in older texts) is a small localized object which can be described by several physical or chemical properties, such as volume, density, or mass. They vary greatly in size or quantity, from subatomic particles like the electron, to microscopic particles like atoms and molecules, to macroscopic particles like powders and other granular materials. Particles can also be used to create scientific models of even larger objects depending on their density, such as humans moving in a crowd or celestial bodies in motion.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="particulate">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="particulate">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">particulate</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Particulates</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q498957</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Particulates – also known as atmospheric aerosol particles, atmospheric particulate matter, particulate matter (PM) or suspended particulate matter (SPM) – are microscopic particles of solid or liquid matter suspended in the air. The term aerosol commonly refers to the particulate/air mixture, as opposed to the particulate matter alone. Sources of particulate matter can be natural or anthropogenic. They have impacts on climate and precipitation that adversely affect human health, in ways additional to direct inhalation.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="platform">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="platform">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">platform</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Platform</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q224617</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Platform  may refer to:</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="plume">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="plume">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plume</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Plume_(fluid_dynamics)</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3817528</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In hydrodynamics, a plume or a column is a vertical body of one fluid moving through another.  Several effects control the motion of the fluid, including momentum (inertia), diffusion and buoyancy (density differences).  Pure jets and pure plumes define flows that are driven entirely by momentum and buoyancy effects, respectively.  Flows between these two limits are usually described as forced plumes or buoyant jets.  "Buoyancy is defined as being positive" when, in the absence of other forces or initial motion, the entering fluid would tend to rise.  Situations where the density of the plume fluid is greater than its surroundings (i.e. in still conditions, its natural tendency would be to sink), but the flow has sufficient initial momentum to carry it some distance vertically, are described as being negatively buoyant.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="pool">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="pool">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pool</rdfs:label>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="pore">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="pore">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pore</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Pore_space_in_soil</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q5073758</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The pore space of soil contains the liquid and gas phases of soil, i.e., everything but the solid phase that contains mainly minerals of varying sizes as well as organic compounds.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="radical">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="radical">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radical</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Radical_(chemistry)</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q185056</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In chemistry, a radical, also known as a free radical, is an atom, molecule, or ion that has at least one unpaired valence electron.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="sample">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="sample">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sample</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Sample_(material)</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q485146</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In general, a sample is a limited quantity of something which is intended to be similar to and represent a larger amount of that thing(s). The things could be countable objects such as individual items available as units for sale, or an uncountable material. Even though the word "sample" implies a smaller quantity taken from a larger amount, sometimes full biological or mineralogical specimens are called samples if they are taken for analysis, testing, or investigation like other samples. They are also considered samples in the sense that even whole specimens are "samples" of the full population of many individual organisms. The act of obtaining a sample is called "sampling" and can be performed manually by a person or by automatic process. Samples of material can be taken or provided for testing, analysis, investigation, quality control, demonstration, or trial use. Sometimes, sampling may be performed continuously.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="sheet">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="sheet">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sheet</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Sheet</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1214119</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sheet or Sheets may refer to:</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="shelf">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="shelf">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shelf</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Shelf</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1175677</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shelf (PL: shelves) may refer to:</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="slick">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="slick">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slick</rdfs:label>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="solid">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="solid">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solid</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Solid</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11438</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solid is one of the four fundamental states of matter (the others being liquid, gas, and plasma). The molecules in a solid are closely packed together and contain the least amount of kinetic energy. A solid is characterized by structural rigidity and resistance to a force applied to the surface. Unlike a liquid, a solid object does not flow to take on the shape of its container, nor does it expand to fill the entire available volume like a gas. The atoms in a solid are bound to each other, either in a regular geometric lattice (crystalline solids, which include metals and ordinary ice), or irregularly (an amorphous solid such as common window glass). Solids cannot be compressed with little pressure whereas gases can be compressed with little pressure because the molecules in a gas are loosely packed.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="system">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="system">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">system</rdfs:label>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="terrain">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="terrain">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terrain</rdfs:label>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="unit">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="unit">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit</rdfs:label>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="void">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="void">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">void</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Void_(composites)</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q19689164</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A void is a pore that remains unfilled with polymer and fibers in a composite material.  Voids are typically the result of poor manufacturing of the material and are generally deemed undesirable.  Voids can affect the mechanical properties and lifespan of the composite.  They degrade mainly the matrix-dominated properties such as interlaminar shear strength, longitudinal compressive strength, and transverse tensile strength. Voids can act as crack initiation sites as well as allow moisture to penetrate the composite and contribute to the anisotropy of the composite. For aerospace applications, a void content of approximately 1% is still acceptable, while for less sensitive applications, the allowance limit is 3-5%.  Although a small increase in void content may not seem to cause significant issues, a 1-3% increase in void content of carbon fiber reinforced composite  can reduce the mechanical properties by up to 20%   Void content in composites is represented as a ratio, also called void ratio, where the volume of voids, solid material, and bulk volume are taken into account.  Void ratio can be calculated by the formula below where e is the void ratio of the composite, Vv is the volume of the voids, and Vt is the volume of the bulk material.</rdfs:comment>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="link~exterior">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_form_root rdf:resource="link"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/exterior"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">link~exterior</rdfs:label>
-</svo:Form>
+<owl:NamedIndividual rdf:about="layer~topmost">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/topmost"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~topmost</rdfs:label>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="link~interior">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_form_root rdf:resource="link"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/interior"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">link~interior</rdfs:label>
-</svo:Form>
+<owl:NamedIndividual rdf:about="terrain~left">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <svo:has_form_root rdf:resource="terrain"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/left"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terrain~left</rdfs:label>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="channel~longest">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="terrain~right">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <svo:has_form_root rdf:resource="terrain"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/right"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terrain~right</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="column">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">column</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="aerosol~dry">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <svo:has_form_root rdf:resource="aerosol"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/dry"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aerosol~dry</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="channel~longest">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <svo:has_form_root rdf:resource="channel"/>
   <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/longest"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">channel~longest</rdfs:label>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="channel~main">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="channel~main">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <svo:has_form_root rdf:resource="channel"/>
   <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/main"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">channel~main</rdfs:label>
-</svo:Form>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="macropores~saturated">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <svo:has_form_root rdf:resource="macropore"/>
+<owl:NamedIndividual rdf:about="wave">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wave</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="layer">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="layer~0">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <svo:has_form_root rdf:resource="layer"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/0"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~0</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="layer~0~saturated">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <svo:has_form_root rdf:resource="layer"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/0"/>
   <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/saturated"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">macropores~saturated</rdfs:label>
-</svo:Form>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~0~saturated</rdfs:label>
+</owl:NamedIndividual>
 
-<svo:Form rdf:about="pool~microbial">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+<owl:NamedIndividual rdf:about="layer~1">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <svo:has_form_root rdf:resource="layer"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/1"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~1</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="layer~1~saturated">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <svo:has_form_root rdf:resource="layer"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/1"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/saturated"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~1~saturated</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="layer~2">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <svo:has_form_root rdf:resource="layer"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/2"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~2</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="layer~2~saturated">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <svo:has_form_root rdf:resource="layer"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/2"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/saturated"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~2~saturated</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="wave~incoming">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <svo:has_form_root rdf:resource="wave"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/incoming"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wave~incoming</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="layer~topmost~saturated">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <svo:has_form_root rdf:resource="layer"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/topmost"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/saturated"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~topmost~saturated</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="pool~organic~stabilized-as-nitrogen">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
   <svo:has_form_root rdf:resource="pool"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/organic"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/stabilized-as-nitrogen"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pool~organic~stabilized-as-nitrogen</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="pool~organic~stabilized">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <svo:has_form_root rdf:resource="pool"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/stabilized"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/organic"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pool~organic~stabilized</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="pool~stabilized">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <svo:has_form_root rdf:resource="pool"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/stabilized"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pool~stabilized</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="pool~microbial-and-stabilized">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <svo:has_form_root rdf:resource="pool"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/stabilized"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/microbial"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pool~microbial-and-stabilized</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="pool-as-carbon">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pool-as-carbon</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="pool~microbial">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Phenomenon"/>
+  <svo:has_phenomenon_root rdf:resource="pool"/>
   <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/microbial"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pool~microbial</rdfs:label>
-</svo:Form>
+</owl:NamedIndividual>
 
 
 </rdf:RDF>

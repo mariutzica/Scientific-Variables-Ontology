@@ -33,7 +33,7 @@ vocabulary['definition_source'] = vocabulary.get('definition_source','')
 
 # Iterate through vocabulary rows to get definitions for each term if they don't
 # already exist. Set verbose flag to True to see which defnitions, if any, are updated.
-verbose = True
+verbose = False
 for i, row in vocabulary.iterrows():
     if not row['definition']:
         definition        = ''

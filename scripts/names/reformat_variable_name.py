@@ -27,6 +27,7 @@ def split_variable(name):
 
 # Move terms around in csn for easier categorization.
 
+wordy = False
 # parse CSN
 with open(csn_filepath) as f:
     with open(csn_dst_file,'w') as dst_f:
@@ -1358,8 +1359,11 @@ with open(csn_filepath) as f:
             if quantity == 'fraction':
                 variable = variable.replace('fraction','volume_fraction')
                 [object,quantity] = split_variable(variable)      
-            
-            variable = variable.replace('water~incoming-and-outgoing','water~incoming-and-water~outgoing')\
-                            .replace('pool~microbial-and-stabilized','pool~microbial~stabilized')
+                
             # write edited variable to file
             dst_f.write(variable_original + ', ' + variable + '\n')
+
+            if wordy:
+                if variable_original != variable:
+                    print(variable_original, ',', variable)
+                    input("Press Enter to continue...")

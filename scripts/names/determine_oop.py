@@ -3139,6 +3139,7 @@ for row in reader:
                                                 ['_','-has-form-']] )
         if 'macropores~saturated' in object_name:
             object_name += '-as-medium'
+        print(object_name)
 
     if object_pattern_simple_str == 'MATTER_PART':
         (object_pattern_simple_str, object_name, phen_phen_list) = \

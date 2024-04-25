@@ -3,7 +3,7 @@
 #   Script for atomizing the reformatted variable names and checking            #
 #   whether all of the elements are present in the atomic vocabulary list.      #
 #   input:  source/svo_atomic_vocabulary.csv, source/csdms_standard_names.csv   #
-#   output: source/extra_items.txt, source/missing_items.txt                    #
+#   output: source/dump/extra_items.txt, source/dump/missing_items.txt                    #
 #                                                                               #
 #################################################################################
 

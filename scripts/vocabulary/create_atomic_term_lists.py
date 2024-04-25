@@ -52,7 +52,7 @@ if print_all_duplicates:
             print(f'{word}: {classes}')
 
 # Loop to print out label duplicates belonging to more than one class
-print_multiclass_duplicates = False
+print_multiclass_duplicates = True
 if print_multiclass_duplicates:
     for word, classes in word_classes.items():
         unique_classes = np.unique(classes)
