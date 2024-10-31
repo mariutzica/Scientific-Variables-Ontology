@@ -46,6 +46,30 @@
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extreme point in an object's orbit</rdfs:comment>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="atterberg-liquid-limit">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atterberg-liquid-limit</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Atterberg_limits#Liquid_limit</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1143620</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Atterberg limits are a basic measure of the critical water contents of a fine-grained soil: its shrinkage limit, plastic limit, and liquid limit.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="atterberg-plastic-limit">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atterberg-plastic-limit</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Atterberg_limits#Plastic_limit</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1143620</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Atterberg limits are a basic measure of the critical water contents of a fine-grained soil: its shrinkage limit, plastic limit, and liquid limit.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="atterberg-shrinkage-limit">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atterberg-shrinkage-limit</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Atterberg_limits#Shrinkage_limit</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1143620</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Atterberg limits are a basic measure of the critical water contents of a fine-grained soil: its shrinkage limit, plastic limit, and liquid limit.</rdfs:comment>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="axis">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">axis</rdfs:label>
@@ -188,6 +212,9 @@
 <owl:NamedIndividual rdf:about="data-stream">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data-stream</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Data_stream</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1172540</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In connection-oriented communication, a data stream is the transmission of a sequence of digitally encoded signals to convey information. Typically, the transmitted symbols are grouped into a series of packets.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="datum">
@@ -264,6 +291,9 @@
 <owl:NamedIndividual rdf:about="equation-of-state">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equation-of-state</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Equation_of_state</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q214967</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics and chemistry, an equation of state is a thermodynamic equation relating state variables, which describe the state of matter under a given set of physical conditions, such as pressure, volume, temperature, or internal energy. Most modern equations of state are formulated in the Helmholtz free energy. Equations of state are useful in describing the properties of pure substances and mixtures in liquids, gases, and solid states as well as the state of matter in the interior of stars. </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="equator">
@@ -327,11 +357,17 @@
 <owl:NamedIndividual rdf:about="geodetic-datum">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geodetic-datum</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Geodetic_datum</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1502887</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A geodetic datum or geodetic system (also: geodetic reference datum, geodetic reference system, or geodetic reference frame) is a global datum reference or reference frame for precisely representing the position of locations on Earth or other planetary bodies by means of geodetic coordinates. Datums are crucial to any technology or technique based on spatial location, including geodesy, navigation, surveying, geographic information systems, remote sensing, and cartography. A horizontal datum is used to measure a location across the Earth's surface, in latitude and longitude or another coordinate system; a vertical datum is used to measure the elevation or depth relative to a standard origin, such as mean sea level (MSL). Since the rise of the global positioning system (GPS), the ellipsoid and datum  WGS 84 it uses has supplanted most others in many applications. The WGS 84 is intended for global use, unlike most earlier datums.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="geoid">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geoid</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Geoid</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q185969</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The geoid ( JEE-oyd) is the shape that the ocean surface would take under the influence of the gravity of Earth, including gravitational attraction and Earth's rotation, if other influences such as winds and tides were absent. This surface is extended through the continents (such as might be approximated with very narrow hypothetical canals). According to Gauss, who first described it, it is the "mathematical figure of the Earth", a smooth but irregular surface whose shape results from the uneven distribution of mass within and on the surface of Earth. It can be known only through extensive gravitational measurements and calculations. Despite being an important concept for almost 200 years in the history of geodesy and geophysics, it has been defined to high precision only since advances in satellite geodesy in the late 20th century.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="graph">
@@ -375,6 +411,9 @@
 <owl:NamedIndividual rdf:about="image">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">image</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Image</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q478798</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An image is a visual representation. An image can be two-dimensional, such as a drawing, painting, or photograph, or three-dimensional, such as a carving or sculpture. Images may be displayed through other media, including projection on a surface, activation of electronic signals, or digital displays; they can also be reproduced through mechanical means, such as photography, printmaking or photocopying. Images can also be animated through digital or physical processes.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="instrument-response">
@@ -422,6 +461,9 @@
 <owl:NamedIndividual rdf:about="location">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">location</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Location</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2221906</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geography, location or place are used to denote a region (point, line, or area) on Earth's surface. The term location generally implies a higher degree of certainty than place, the latter often indicating an entity with an ambiguous boundary, relying more on human or social attributes of place identity and sense of place than on geometry. A populated place is called a settlement.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="magnetic-north-pole">
@@ -548,6 +590,14 @@
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flat, two-dimensional surface</rdfs:comment>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="plug-layer">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plug-layer</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Plug_flow</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q383758</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In fluid mechanics, plug flow is a simple model of the velocity profile of a fluid flowing in a pipe.  In plug flow, the velocity of the fluid is assumed to be constant across any cross-section of the pipe perpendicular to the axis of the pipe.   The plug flow model assumes there is no boundary layer adjacent to the inner wall of the pipe.</rdfs:comment>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="point">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">point</rdfs:label>
@@ -650,6 +700,9 @@
 <owl:NamedIndividual rdf:about="row-major-offset">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">row-major-offset</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Row-_and_column-major_order</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q7371746</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In computing, row-major order and column-major order are methods for storing multidimensional arrays in linear storage such as random access memory.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="sea-mask">
@@ -686,6 +739,14 @@
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A shape or figure is a graphical representation of an object or its external boundary, outline, or external surface, as opposed to other properties such as color, texture, or material type.</rdfs:comment>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="shear-layer">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shear-layer</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Shear_flow</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2250602</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In fluid dynamics, shear flow is the flow induced by a force in a fluid. In solid mechanics, shear flow is the shear stress over a distance in a thin-walled structure.</rdfs:comment>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="shell">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shell</rdfs:label>
@@ -694,6 +755,9 @@
 <owl:NamedIndividual rdf:about="shoreline">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoreline</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Coast</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q93352</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The coast, also known as the coastline, shoreline or seashore, is defined as the area where land meets the ocean, or as a line that forms the boundary between the land and the coastline. Shores are influenced by the topography of the surrounding landscape, as well as by water induced erosion, such as waves. The geological composition of rock and soil dictates the type of shore which is created. The Earth has around 620,000 kilometres (390,000 mi) of coastline. Coasts are important zones in natural ecosystems, often home to a wide range of biodiversity. On land, they harbor important ecosystems such as freshwater or estuarine wetlands, which are important for bird populations and other terrestrial animals. In wave-protected areas they harbor saltmarshes, mangroves or seagrasses, all of which can provide nursery habitat for finfish, shellfish, and other aquatic species. Rocky shores are usually found along exposed coasts and provide habitat for a wide range of sessile animals (e.g. mussels, starfish, barnacles) and various kinds of seaweeds. In physical oceanography, a shore is the wider fringe that is geologically modified by the action of the body of water past and present, while the beach is at the edge of the shore, representing the intertidal zone where there is one. Along tropical coasts with clear, nutrient-poor water, coral reefs can often be found between depths of 1–50 meters (3.3–164.0 feet).</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="sierpinski-gasket">
@@ -830,6 +894,9 @@
 <owl:NamedIndividual rdf:about="vertical-geodetic-datum">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vertical-geodetic-datum</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/National_Geodetic_Vertical_Datum_of_1929</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q7325529</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The National Geodetic Vertical Datum of 1929 is the official name since 1973 of the vertical datum established for vertical control surveying in the United States of America by the General Adjustment of 1929.  Originally known as Sea Level Datum of 1929, NGVD 29 was determined and published by the United States Coast and Geodetic Survey and used to measure the elevation of a point above and depression below mean sea level (MSL).</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="viewpoint">
@@ -897,72 +964,18 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z-primary-node</rdfs:label>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="surface~0-to-10cm-below">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
-  <svo:has_abstraction_root rdf:resource="surface"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/0-to-10cm-below"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~0-to-10cm-below</rdfs:label>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="surface~100-to-200cm-below">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
-  <svo:has_abstraction_root rdf:resource="surface"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/100-to-200cm-below"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~100-to-200cm-below</rdfs:label>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="surface~10-to-40cm-below">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
-  <svo:has_abstraction_root rdf:resource="surface"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/10-to-40cm-below"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~10-to-40cm-below</rdfs:label>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="surface~40-to-100cm-below">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
-  <svo:has_abstraction_root rdf:resource="surface"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/40-to-100cm-below"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~40-to-100cm-below</rdfs:label>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="surface~0-to-100cm-below">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
-  <svo:has_abstraction_root rdf:resource="surface"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/0-to-100cm-below"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~0-to-100cm-below</rdfs:label>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="datum~vertical~tidal~mean-sea-level">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
-  <svo:has_abstraction_root rdf:resource="datum"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/vertical"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/mean-sea-level"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/tidal"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">datum~vertical~tidal~mean-sea-level</rdfs:label>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="axis~vertical">
+<owl:NamedIndividual rdf:about="axis~x">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
   <svo:has_abstraction_root rdf:resource="axis"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/vertical"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">axis~vertical</rdfs:label>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/x"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">axis~x</rdfs:label>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="endpoints">
+<owl:NamedIndividual rdf:about="surface~2m-above">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endpoints</rdfs:label>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="boundary~seaward">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
-  <svo:has_abstraction_root rdf:resource="boundary"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/seaward"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boundary~seaward</rdfs:label>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="foci">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">foci</rdfs:label>
+  <svo:has_abstraction_root rdf:resource="surface"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/2m-above"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~2m-above</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="surface~10m-above">
@@ -972,23 +985,11 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~10m-above</rdfs:label>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="target">
+<owl:NamedIndividual rdf:about="surface~horizontal">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">target</rdfs:label>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="axis~x">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
-  <svo:has_abstraction_root rdf:resource="axis"/>
-  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/x"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">axis~x</rdfs:label>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="x-section~horizontal">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
-  <svo:has_abstraction_root rdf:resource="x-section"/>
+  <svo:has_abstraction_root rdf:resource="surface"/>
   <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/horizontal"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-section~horizontal</rdfs:label>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~horizontal</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="x-section~vertical">
@@ -998,18 +999,81 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-section~vertical</rdfs:label>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="surface~horizontal">
+<owl:NamedIndividual rdf:about="axis~vertical">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
-  <svo:has_abstraction_root rdf:resource="surface"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/horizontal"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~horizontal</rdfs:label>
+  <svo:has_abstraction_root rdf:resource="axis"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/vertical"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">axis~vertical</rdfs:label>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="surface~2m-above">
+<owl:NamedIndividual rdf:about="x-section~horizontal">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="x-section"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/horizontal"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-section~horizontal</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="surface~0-to-10cm-below">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
   <svo:has_abstraction_root rdf:resource="surface"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/2m-above"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~2m-above</rdfs:label>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/0-to-10cm-below"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~0-to-10cm-below</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="boundary~seaward">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="boundary"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/seaward"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boundary~seaward</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="surface~10-to-40cm-below">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="surface"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/10-to-40cm-below"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~10-to-40cm-below</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="surface~0-to-100cm-below">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="surface"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/0-to-100cm-below"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~0-to-100cm-below</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="surface~40-to-100cm-below">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="surface"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/40-to-100cm-below"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~40-to-100cm-below</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="surface~100-to-200cm-below">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="surface"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/100-to-200cm-below"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~100-to-200cm-below</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="axis~east">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="axis"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/east"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">axis~east</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="target">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">target</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="datum~vertical~tidal~mean-sea-level">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="datum"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/vertical"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/tidal"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/mean-sea-level"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">datum~vertical~tidal~mean-sea-level</rdfs:label>
 </owl:NamedIndividual>
 
 

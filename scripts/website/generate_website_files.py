@@ -1,77 +1,29 @@
 from owlready2 import *
-from pathlib import Path
 import requests
 import os
 import pandas as pd
 import urllib.parse
 
+template_source = 'source/website_templates'
+onto_filepath = 'ontology files'
+website_path = 'website'
 
-sitemap = \
-"""https://scientificvariablesontology.org/index.html
-https://scientificvariablesontology.org/documentation.html
-https://scientificvariablesontology.org/faq.html
-https://scientificvariablesontology.org/tutorial_create_variable_manually.html
-https://scientificvariablesontology.org/svo/index.html
-https://scientificvariablesontology.org/svo/phenomenon/index.html
-https://scientificvariablesontology.org/svo/matter/index.html
-https://scientificvariablesontology.org/svo/process/index.html
-https://scientificvariablesontology.org/svo/property/index.html
-https://scientificvariablesontology.org/svo/variable/index.html
-https://scientificvariablesontology.org/svo/role/index.html
-https://scientificvariablesontology.org/svo/direction/index.html
-https://scientificvariablesontology.org/svo/domain/index.html
-https://scientificvariablesontology.org/svo/trajectory/index.html
-https://scientificvariablesontology.org/svo/form/index.html
-https://scientificvariablesontology.org/svo/propertyrole/index.html
-https://scientificvariablesontology.org/svo/propertyquantification/index.html
-https://scientificvariablesontology.org/svo/propertytype/index.html
-https://scientificvariablesontology.org/svo/abstraction/index.html
-https://scientificvariablesontology.org/svo/attribute/index.html
-https://scientificvariablesontology.org/svo/model/index.html
-https://scientificvariablesontology.org/svo/part/index.html
-https://scientificvariablesontology.org/svo/operation/index.html
-"""
+sitemap_file = 'sitemap.txt'
+template_file = 'basic_website_template.html'
 
-template = """
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://scientificvariablesontology.org/css/stylesheet.css">
-</head>
-<body>
-  <header id="navigation">
-    <a href="https://scientificvariablesontology.org/index.html"><img id="logo" src="https://scientificvariablesontology.org/pics/svo_logo.png" alt="logo"></a>
-    <nav>
-      <ul id="menu">
-        <li class="menu-heading"><a href="https://scientificvariablesontology.org/documentation.html">Documentation</a></li>
-        <li class="menu-heading"><a href="https://scientificvariablesontology.org/tutorial_create_variable_manually.html">Tutorial</a></li>
-        <hr>
-        <li class="menu-heading"><a href="https://scientificvariablesontology.org/svo/index.html">Get Ontology</a></li>
-        <hr>
-        <li class="menu-heading"><a href="https://scientificvariablesontology.org/faq.html">FAQ</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h1>{}</h1>
-    <h2><a href='../index.html'>{}</a></h2>
-    {}
-    {}
-    {}
-    {}
-    {}
-    {}
-    {}
-    {}
-    {}
-    {}
-  </main>
-</body>
-"""
+# Load sitemap and website templates.
+sitemap_path = os.path.join(template_source, sitemap_file)
+with open(sitemap_path, 'r') as f:
+    sitemap = f.read()
 
+template_path = os.path.join(template_source, template_file)
+with open(template_path, 'r') as f:
+    template = f.read()
+
+# Set up templates for website components.
 definition_paragraph = '<p><emph>Definition:</emph> {}</p>'
 varname_paragraph = '<p><emph>Original variable name(s):</emph> {}</p>'
+synonyms_paragraph = '<p><emph>Has synonym(s):</emph> {}</p>'
 source_paragraph = '<p>Source: {}</p>'
 image_paragraph = '<p><img src="{}" alt="picture of term"></p>'
 wikipedia_paragraph = '<p><a href="{}" target="_blank">Wikipedia Page</a> (Something wrong with this association? <a href="https://github.com/mariutzica/Scientific-Variables-Ontology/issues/new?assignees=&labels=&template=report-incorrect-resource-link.md&title=%5BBUG+INCORRECT+LINK%5D" target="_blank">Let us know.</a>)</p>'
@@ -88,46 +40,31 @@ create a new term entry in Wikidata</a>
 and then <a href='https://github.com/mariutzica/Scientific-Variables-Ontology/issues/new?assignees=&labels=&template=new-documentation-for-existing-entry.md&title=%5BNEW+TERM+DOCUMENTATION+SUBMISSION%5D' target="_blank">
 let us know!</a> so we can add it to the ontology.</p>'''
 wikipedia_page_base = 'https://en.wikipedia.org/wiki/{}'
-described_phen_par = '<p>Describes Phenomenon: <a href="{}">{}</a></p>'
-described_prop_par = '<p>Describes Property: <a href="{}">{}</a></p>'
-contained_phen_par = '<p>Contains reference to Phenomenon/a:<ul>{}</ul></p>'
-contained_proc_par = '<p>Contains reference to Process(es):<ul>{}</ul></p>'
-contained_matter_par = '<p>Contains reference to Matter:<ul>{}</ul></p>'
-contained_abstractions_par = '<p>Contains reference to Abstraction(s):<ul>{}</ul></p>'
-contained_models_par = '<p>Contains reference to Model(s):<ul>{}</ul></p>'
-contained_attributes_par = '<p>Contains reference to Attribute(s):<ul>{}</ul></p>'
-contained_forms_par = '<p>Contains reference to Form(s):<ul>{}</ul></p>'
-contained_trajectories_par = '<p>Contains reference to Trajectory/ies:<ul>{}</ul></p>'
-contained_operations_par = '<p>Contains reference to Operation(s):<ul>{}</ul></p>'
-contained_parts_par = '<p>Contains reference to Part(s):<ul>{}</ul></p>'
-contained_roles_par = '<p>Contains reference to Role(s):<ul>{}</ul></p>'
-contained_property_par = '<p>Contains reference to Property:<ul>{}</ul></p>'
-phen_matter_par = '<p>Is made of Matter:<ul>{}</ul></p>'
-phen_proc_par = '<p>Involves Process:<ul>{}</ul></p>'
-contained_element = '<li><a href="{}">{}</a></li>'
+property_par = '<p>{}:<ul>{}</ul></p>'
+contained_link_element = '<li><a href="{}">{}</a></li>'
 
 wikipedia_image_query = 'http://en.wikipedia.org/w/api.php?action=query&titles={}&prop=pageimages&format=json&pithumbsize=100'
-onto = get_ontology("ontology files/svo.owl").load()
-phenomenon_individuals = get_ontology("ontology files/phenomenon.owl").load()
-matter_individuals = get_ontology("ontology files/matter.owl").load()
-process_individuals = get_ontology("ontology files/process.owl").load()
-property_individuals = get_ontology("ontology files/property.owl").load()
-operation_individuals = get_ontology("ontology files/operation.owl").load()
-propertyrole_individuals = get_ontology("ontology files/propertyrole.owl").load()
-propertytype_individuals = get_ontology("ontology files/propertytype.owl").load()
-propertyquantification_individuals = get_ontology("ontology files/propertyquantification.owl").load()
-domain_individuals = get_ontology("ontology files/domain.owl").load()
-form_individuals = get_ontology("ontology files/form.owl").load()
-abstraction_individuals = get_ontology("ontology files/abstraction.owl").load()
-model_individuals = get_ontology("ontology files/model.owl").load()
-attribute_individuals = get_ontology("ontology files/attribute.owl").load()
-direction_individuals = get_ontology("ontology files/direction.owl").load()
-trajectory_individuals = get_ontology("ontology files/trajectory.owl").load()
-role_individuals = get_ontology("ontology files/role.owl").load()
-part_individuals = get_ontology("ontology files/part.owl").load()
-variable_individuals = get_ontology("ontology files/variable.owl").load()
+onto = get_ontology(os.path.join(onto_filepath, "svo.owl")).load()
+attribute_individuals = get_ontology(os.path.join(onto_filepath, "attribute.owl")).load()
+matter_individuals = get_ontology(os.path.join(onto_filepath, "matter.owl")).load()
+process_individuals = get_ontology(os.path.join(onto_filepath, "process.owl")).load()
+direction_individuals = get_ontology(os.path.join(onto_filepath, "direction.owl")).load()
+form_individuals = get_ontology(os.path.join(onto_filepath, "form.owl")).load()
+abstraction_individuals = get_ontology(os.path.join(onto_filepath, "abstraction.owl")).load()
+trajectory_individuals = get_ontology(os.path.join(onto_filepath, "trajectory.owl")).load()
+role_individuals = get_ontology(os.path.join(onto_filepath, "role.owl")).load()
+part_individuals = get_ontology(os.path.join(onto_filepath, "part.owl")).load()
+domain_individuals = get_ontology(os.path.join(onto_filepath, "domain.owl")).load()
+operation_individuals = get_ontology(os.path.join(onto_filepath, "operation.owl")).load()
+propertyrole_individuals = get_ontology(os.path.join(onto_filepath, "propertyrole.owl")).load()
+propertytype_individuals = get_ontology(os.path.join(onto_filepath, "propertytype.owl")).load()
+propertyquantification_individuals = get_ontology(os.path.join(onto_filepath, "propertyquantification.owl")).load()
+property_individuals = get_ontology(os.path.join(onto_filepath, "property.owl")).load()
+phenomenon_individuals = get_ontology(os.path.join(onto_filepath, "phenomenon.owl")).load()
+variable_individuals = get_ontology(os.path.join(onto_filepath, "variable.owl")).load()
 
-Path('website').mkdir(parents=True, exist_ok=True)
+# Initialize path for website files.
+os.makedirs(website_path, exist_ok=True)
 
 headers = {
     'User-Agent': 'SVOTestScript/2.0 (https://scientificvariablesOntology.org; maria.stoica@colorado.edu) python-requests/2.28'
@@ -135,30 +72,38 @@ headers = {
 
 atomic_vocabulary = pd.read_csv('source/svo_atomic_vocabulary_meta.csv').fillna('')
 
-def generate_webpage(individual):
+all_properties = []
+# Generate webpage for an individual's documentation
+def generate_webpage(individual, download_picture = False):
 
-    create_option = False
+    # Set up the directory for the curent individual.
     directory = individual.iri.split('/')[-2]
     term = individual.iri.split('/')[-1]
-    term_path = 'website/' + directory + '/' + term + '/'
-    Path(term_path).mkdir(parents=True, exist_ok=True)
+    term_url = urllib.parse.unquote(term)
+    term_label = individual.label[0]
+    term_path = os.path.join('website', directory, term_url)
+    os.makedirs(term_path, exist_ok=True)
     
+    # Extract first paragraph of definition.
+    create_wikipage = False
     definition = individual.comment
     if definition:
         definition = definition_paragraph.format(definition[0])
     else:
         definition = definition_paragraph.format('Not available')
-        create_option = True
+        create_wikipage = True
     
+    # Add wikipedia page
     wikipedia_page = individual.has_wikipedia_page
     definition_source = ''
     if wikipedia_page:
         wikipedia_page = wikipedia_page[0]
-        wikipedia_page = wikipedia_paragraph.format(wikipedia_page)
+        wikipedia_page_par = wikipedia_paragraph.format(wikipedia_page)
         definition_source = source_paragraph.format('Wikipedia') #assumption is this is default
     else:
-        wikipedia_page = ''
+        wikipedia_page_par = ''
     
+    # Add wikidata page.
     wikidata_page = individual.has_wikidata_page
     if wikidata_page:
         wikidata_page = wikidata_page[0]
@@ -166,6 +111,7 @@ def generate_webpage(individual):
     else:
         wikidata_page = ''
 
+    # Add original name if different from current.
     original_name = individual.has_original_label
     if original_name:
         original_name = ', '.join(original_name)
@@ -173,8 +119,17 @@ def generate_webpage(individual):
     else:
         original_varname = ''
 
+    # Add synonyms if.
+    synonyms = individual.has_synonym
+    if synonyms:
+        synonyms = ', '.join(synonyms)
+        synonym_par = synonyms_paragraph.format(synonyms)
+    else:
+        synonym_par = ''
+
+    # Add text to create a new Wikipedia page
     create_new_entry = ''
-    if create_option:
+    if create_wikipage:
         try:
             label = individual.label[0]
         except:
@@ -183,18 +138,17 @@ def generate_webpage(individual):
         new_wikipedia_page = wikipedia_page_base.format(label)
         create_new_entry = create_entry.format(new_wikipedia_page)
 
-    #variable = row['Occurence']
-    # download and save thumbnail picture to directory
+    # Determine if a picture has already been downloaded and if not, 
+    # download it (if option enabled)
     files = os.listdir(term_path)
-    pic_file = ''
-    for f in files:
-        f_endswith = f.split('.')[-1].lower()
-        if f_endswith in ['png','jpg']:
-            pic_file = f
-            break
-            #os.remove(os.path.join(term_path,f))
-    if False and not pic_file and wikipedia_page:
-        pic_resp = requests.get(wikipedia_image_query.format(term), headers=headers)
+    pic_files = [f for f in files if f.lower().endswith(('png','jpg'))]
+    if len(pic_files) >= 1:
+        pic_file = pic_files[0]
+    else:
+        pic_file = None
+    if download_picture and not pic_file and wikipedia_page and not '#' in wikipedia_page:            
+        page_name = wikipedia_page.split('/')[-1]
+        pic_resp = requests.get(wikipedia_image_query.format(page_name), headers=headers)
         pic_link_pages = list(pic_resp.json().get('query').get('pages').keys())
         pageno = pic_link_pages[0]
         try:
@@ -202,21 +156,23 @@ def generate_webpage(individual):
             pic_data = requests.get(pic_link, headers=headers)
             #print('Status code:',pic_data.status_code)
             pic_ext = pic_link.split('.')[-1]
-            pic_file = f'{term}_picture.{pic_ext}'
+            pic_file = f'{term_url}_picture.{pic_ext}'
             with open(os.path.join(term_path,pic_file), 'wb') as handler:
                 handler.write(pic_data.content)
+            print('Picture found:', term_url)
         except:
-            print('No picture found:', term)
+            print('No picture found:', term_url)
 
     if pic_file:
         img_text = image_paragraph.format(pic_file)
     else:
         img_text = ''
 
-    # variables with this term
+    # Determine variables that include this term.
     related_variables = []
     try:
-        related_variables = atomic_vocabulary.loc[(atomic_vocabulary['entity_id']==term) & (atomic_vocabulary['entity_class']==directory),'tagged_variables'].tolist()[0]
+        related_variables = atomic_vocabulary.loc[(atomic_vocabulary['entity_label']==term_url) &\
+                         (atomic_vocabulary['entity_class']==directory),'tagged_variables'].tolist()[0]
     except:
         pass
 
@@ -227,158 +183,59 @@ def generate_webpage(individual):
         for variable in related_variables:
             r = list(default_world.sparql("""                    
                     SELECT ?x
+                    {{
                     {{ ?x svo:has_original_label "{}" .}}
-                """.format(variable)))
-            
+                    UNION
+                    {{ ?x rdfs:label "{}" .}} 
+                    }}
+                """.format(variable, variable)))
             if r:
-                variable_iri = '../..' + r[0][0].iri.split('svo')[1] + '/index.html'
+                variable_iri = urllib.parse.unquote(r[0][0].iri.split('svo')[1])
+                variable_iri = '../..' + variable_iri + '/index.html'
             else:
                 variable_iri = ''
                 print('Original label not found', variable)
             variable_list_html += variables_element.format(variable_iri, variable)
         variables_html = variables_list.format(variable_list_html)
     
+    # Add all of the variable relationships.
     variable_relationships = ''
-    described_phen = individual.describes_phenomenon
-    if described_phen:
-        href = '../..' + described_phen.iri.split('svo')[1] + '/index.html'
-        plabel = described_phen.label[0]
-        variable_relationships += described_phen_par.format(href, plabel)
-    described_prop = individual.describes_property
-    if described_prop:
-        href = '../..' + described_prop.iri.split('svo')[1] + '/index.html'
-        plabel = described_prop.label[0]
-        variable_relationships += described_prop_par.format(href, plabel)
+    for prop in individual.get_properties():
+        if prop.python_name in ['label', 'comment', 'has_wikipedia_page', 
+                                'has_wikidata_page', 'has_original_label',
+                                'has_synonym']:
+            continue
+        element_list = ''
+        ptype = prop.python_name.replace('_',' ').capitalize()
+        for value in prop[individual]:
+            if isinstance(value, str):
+                element_list += value + ', '
+            else:
+                href = urllib.parse.unquote(value.iri.split('svo')[1])
+                href = '../..' + href + '/index.html'
+                label = value.label[0]
+                element_list += contained_link_element.format(href,label)
+        element_list = element_list.rstrip(', ')     
+        variable_relationships += property_par.format(ptype, element_list)
 
-    contained_phen = individual.contains_phenomenon_reference_to
-    if contained_phen:
-        contained_phen_list = ''
-        for cp in contained_phen:
-            cplabel = cp.label[0]
-            cpiri = '../..' + cp.iri.split('svo')[1] + '/index.html'
-            contained_phen_list += contained_element.format(cpiri,cplabel)
-        variable_relationships += contained_phen_par.format(contained_phen_list)
-    contained_proc = individual.contains_process_reference_to
-    if contained_proc:
-        contained_proc_list = ''
-        for cp in contained_proc:
-            cplabel = cp.label[0]
-            cpiri = '../..' + cp.iri.split('svo')[1] + '/index.html'
-            contained_proc_list += contained_element.format(cpiri,cplabel)
-        variable_relationships += contained_proc_par.format(contained_proc_list)
-    contained_matter = individual.contains_matter_reference_to
-    if contained_matter:
-        contained_matter_list = ''
-        for cm in contained_matter:
-            cmlabel = cm.label[0]
-            cmiri = '../..' + cm.iri.split('svo')[1] + '/index.html'
-            contained_matter_list += contained_element.format(cmiri,cmlabel)
-        variable_relationships += contained_matter_par.format(contained_matter_list)
-    contained_properties = individual.contains_property_reference_to
-    if contained_properties:
-        contained_property_list = ''
-        for cp in contained_properties:
-            cplabel = cp.label[0]
-            cpiri = '../..' + cp.iri.split('svo')[1] + '/index.html'
-            contained_property_list += contained_element.format(cpiri,cplabel)
-        variable_relationships += contained_property_par.format(contained_property_list)
-
-    contained_operations = individual.contains_operation_reference_to
-    if contained_operations:
-        contained_operation_list = ''
-        for co in contained_operations:
-            colabel = co.label[0]
-            coiri = '../..' + co.iri.split('svo')[1] + '/index.html'
-            contained_operation_list += contained_element.format(coiri,colabel)
-        variable_relationships += contained_operations_par.format(contained_operation_list)
-    contained_roles = individual.contains_role_reference_to
-    if contained_roles:
-        contained_role_list = ''
-        for cr in contained_roles:
-            crlabel = cr.label[0]
-            criri = '../..' + cr.iri.split('svo')[1] + '/index.html'
-            contained_role_list += contained_element.format(criri,crlabel)
-        variable_relationships += contained_roles_par.format(contained_role_list)
-    contained_abstractions = individual.contains_abstraction_reference_to
-    if contained_abstractions:
-        contained_abstraction_list = ''
-        for ca in contained_abstractions:
-            calabel = ca.label[0]
-            cairi = '../..' + ca.iri.split('svo')[1] + '/index.html'
-            contained_abstraction_list += contained_element.format(cairi,calabel)
-        variable_relationships += contained_abstractions_par.format(contained_abstraction_list)
-    contained_models = individual.contains_model_reference_to
-    if contained_models:
-        contained_model_list = ''
-        for cm in contained_models:
-            cmlabel = cm.label[0]
-            cmiri = '../..' + cm.iri.split('svo')[1] + '/index.html'
-            contained_model_list += contained_element.format(cmiri,cmlabel)
-        variable_relationships += contained_models_par.format(contained_model_list)
-    contained_attributes = individual.contains_attribute_reference_to
-    if contained_attributes:
-        contained_attribute_list = ''
-        for ca in contained_attributes:
-            calabel = ca.label[0]
-            cairi = '../..' + ca.iri.split('svo')[1] + '/index.html'
-            contained_attribute_list += contained_element.format(cairi,calabel)
-        variable_relationships += contained_attributes_par.format(contained_attribute_list)
-    contained_trajectories = individual.contains_trajectory_reference_to
-    if contained_trajectories:
-        contained_trajectory_list = ''
-        for ct in contained_trajectories:
-            ctlabel = ct.label[0]
-            ctiri = '../..' + ct.iri.split('svo')[1] + '/index.html'
-            contained_trajectory_list += contained_element.format(ctiri,ctlabel)
-        variable_relationships += contained_trajectories_par.format(contained_trajectory_list)
-
-    contained_parts = individual.contains_part_reference_to
-    if contained_parts:
-        contained_part_list = ''
-        for cp in contained_parts:
-            cplabel = cp.label[0]
-            cpiri = '../..' + cp.iri.split('svo')[1] + '/index.html'
-            contained_part_list += contained_element.format(cpiri,cplabel)
-        variable_relationships += contained_parts_par.format(contained_part_list)
-    contained_forms = individual.contains_form_reference_to
-    if contained_forms:
-        contained_form_list = ''
-        for cf in contained_forms:
-            cflabel = cf.label[0]
-            cfiri = '../..' + cf.iri.split('svo')[1] + '/index.html'
-            contained_form_list += contained_element.format(cfiri,cflabel)
-        variable_relationships += contained_forms_par.format(contained_form_list)
-
-    phenomenon_relationships = ''
-    matter = individual.has_matter
-    if matter:
-        phen_matter_list = ''
-        for mat in matter:
-            matlabel = mat.label[0]
-            matiri = '../..' + mat.iri.split('svo')[1] + '/index.html'
-            phen_matter_list += contained_element.format(matiri,matlabel)
-        phenomenon_relationships += phen_matter_par.format(phen_matter_list)
-    process = individual.has_process
-    if process:
-        phen_proc_list = ''
-        for proc in process:
-            proclabel = proc.label[0]
-            prociri = '../..' + proc.iri.split('svo')[1] + '/index.html'
-            phen_proc_list += contained_element.format(prociri,proclabel)
-        phenomenon_relationships += phen_proc_par.format(phen_proc_list)
-
-    term_template = template.format(term, directory, img_text, definition, definition_source, variable_relationships, phenomenon_relationships, wikipedia_page, wikidata_page, original_varname, create_new_entry, variables_html)
-    with open(term_path+'index.html','w') as f:
+    # Write everything to the template string.
+    term_template = template.format(term_label, directory, img_text, synonym_par, definition, definition_source, \
+                                    wikipedia_page_par, wikidata_page, create_new_entry, \
+                                    variable_relationships, original_varname, variables_html)
+    index_file = os.path.join(term_path, 'index.html')
+    with open(index_file,'w') as f:
         f.write(term_template)
 
-    encoded_term = urllib.parse.quote(term.encode('utf8'))
-    local_url = term_path.replace('website','https://scientificvariablesontology.org/svo').replace(term, encoded_term) + 'index.html\n'
-    index_ret = contained_element.format(term+'/index.html',term)
+    # Not sure if this is correct, but construct the url and html element to return
+    # for the top-level page.
+    local_url = term_path.replace('website','https://scientificvariablesontology.org/svo') + 'index.html\n'
+    index_ret = contained_link_element.format(term_url + 'index.html', term_label)
     return local_url, index_ret
-
 
 def generate_individuals_documentation(individuals_onto, ontoclass):
     
+    index_template = os.path.join(template_source, f'{ontoclass}_index_template.html')
+    index_dest = os.path.join(website_path, ontoclass,'index.html')
     index_str = ''
     sitemap_str = ''
     num_sites = 0
@@ -389,11 +246,11 @@ def generate_individuals_documentation(individuals_onto, ontoclass):
         num_sites += 1
 
     index_site_text = f'<ul>{index_str}</ul>'
-    with open(f'website/{ontoclass}/index_template.html','r') as f:
+    with open(index_template,'r') as f:
         site_text = f.read()
 
     site_text = site_text.replace('Placeholder page',index_site_text)
-    with open(f'website/{ontoclass}/index.html','w') as f:
+    with open(index_dest,'w') as f:
         f.write(site_text)
 
     return sitemap_str, num_sites
@@ -413,7 +270,6 @@ subontologies = {phenomenon_individuals: 'phenomenon',
                  direction_individuals: 'direction', 
                  domain_individuals: 'domain', 
                  trajectory_individuals : 'trajectory',
-                 model_individuals: 'model', 
                  operation_individuals: 'operation', 
                  matter_individuals: 'matter'}
 

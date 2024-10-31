@@ -83,6 +83,25 @@ for category in all_classes:
 
 atomic_vocabulary['tagged_variables'] = ''
 
+# List of double term to override category
+override = {
+    'downwelling':'direction',
+    'grain':'form',
+    'link':'form',
+    'front':'part',
+    'wave':'form',
+    'cell':'abstraction',
+    'grazing':'attribute',
+    'neck':'part',
+    'living':'attribute',
+}
+
+special_override = {
+    '~interior':'attribute',
+    'mercury~':'matter',
+}
+verbose = False
+
 # loop through all of the variable names and replace terms with their categories
 for index, row in variable_tagging.iterrows():
     object_name = row['object_name']
@@ -93,74 +112,118 @@ for index, row in variable_tagging.iterrows():
     contained_elements = {}
 
     # If the object name has not underscore or ~, it is a phenomenon.
-    if '_' not in object_name and '~' not in object_name:
-        if 'phenomenon' in contained_elements.keys():
-            contained_elements['phenomenon'].append(object_name)
-        else:
-            contained_elements['phenomenon'] = [object_name]
-        if atomic_vocabulary.query('@object_name == entity_label and \'phenomenon\' == entity_class').empty:
-            atomic_vocabulary.loc[len(atomic_vocabulary.index)] = [object_name, 'phenomenon', np.nan, variable_name]
-        else:
-            atomic_vocabulary.loc[(atomic_vocabulary['entity_label']==object_name) & \
-                                    (atomic_vocabulary['entity_class']=='phenomenon'), 'tagged_variables'] += ', ' + variable_name
-        object_name = 'PHENOMENON'
-    else:
-        # If the term ends in at- followed by a quantity, this is a reference to a property
-        if '_at-' in object_name:
-            ending = object_name.split('_at-')[1]
-            for atomic_term in object_quantities:
-                hyphenated_term = atomic_term.replace('_','-')
-                if hyphenated_term in ending or ending.endswith('_'+hyphenated_term):
-                    if 'reference' in contained_elements.keys():
-                        contained_elements['reference'].append(atomic_term)
-                    else:
-                        contained_elements['reference'] = [atomic_term]
-                    object_name = object_name.replace(hyphenated_term,'PROPERTY')
-                    atomic_vocabulary.loc[(atomic_vocabulary['entity_label']==atomic_term) & \
+    #if '_' not in object_name and '~' not in object_name:
+    #    if 'phenomenon' in contained_elements.keys():
+    #        contained_elements['phenomenon'].append(object_name)
+    #    else:
+    #        contained_elements['phenomenon'] = [object_name]
+    #    if atomic_vocabulary.query('@object_name == entity_label and \'phenomenon\' == entity_class').empty:
+    #        atomic_vocabulary.loc[len(atomic_vocabulary.index)] = [object_name, 'phenomenon', np.nan, variable_name]
+    #    else:
+    #        atomic_vocabulary.loc[(atomic_vocabulary['entity_label']==object_name) & \
+    #                                (atomic_vocabulary['entity_class']=='phenomenon'), 'tagged_variables'] += ', ' + variable_name
+    #    object_name = 'PHENOMENON'
+    #else:
+    
+    # If the term ends in at- followed by a quantity, this is a reference to a property
+    if '_at-' in object_name:
+        ending = object_name.split('_at-')[1]
+        for atomic_term in object_quantities:
+            hyphenated_term = atomic_term.replace('_','-')
+            if hyphenated_term in ending or ending.endswith('_'+hyphenated_term):
+                if 'reference' in contained_elements.keys():
+                    contained_elements['reference'].append(atomic_term)
+                else:
+                    contained_elements['reference'] = [atomic_term]
+                object_name = object_name.replace(hyphenated_term,'PROPERTY')
+                atomic_vocabulary.loc[(atomic_vocabulary['entity_label']==atomic_term) & \
                                     (atomic_vocabulary['entity_class']=='property'), 'tagged_variables'] += ', ' + variable_name
-        
-        # Loop through object vocabulary to label all terms in object_name
-        for atomic_term in all_object_vocabulary:
-            if atomic_term in object_name:
+
+    if ('sediment' in object_name or 'sand' in object_name) and ('grain' in object_name):
+        object_name = object_name.replace('grain', 'PHENOMENON')
+        if 'phenomenon' in contained_elements.keys():
+            contained_elements['phenomenon'].append('grain')
+        else:
+            contained_elements['phenomenon'] = ['grain']
+        atomic_vocabulary.loc[(atomic_vocabulary['entity_label']=='grain') & \
+                    (atomic_vocabulary['entity_class']=='phenomenon'), 'tagged_variables'] += ', ' + variable_name
+    
+    for key, val in special_override.items():
+        if key not in object_name:
+            continue
+            
+        term = key.strip('~')
+        object_name = object_name.replace(term, val.upper())
+        if val in contained_elements.keys():
+            contained_elements[val].append(term)
+        else:
+            contained_elements[val] = [term]
+        atomic_vocabulary.loc[(atomic_vocabulary['entity_label']==term) & \
+                            (atomic_vocabulary['entity_class']==val), 'tagged_variables'] += ', ' + variable_name
+              
+    # Loop through object vocabulary to label all terms in object_name
+    for atomic_term in all_object_vocabulary:
+        if atomic_term in object_name:
+            category = None
+            col_label = None
+            if atomic_term in override.keys():
+                category = override[atomic_term]
+                col_label = 'entity_label'
+            else:
                 for key, val in atomic_vocab.items():
-                    if key in object_classes:
-                        if atomic_term in atomic_vocab[key]:
-                            if key in contained_elements.keys():
-                                contained_elements[key].append(atomic_term)
+                    if key not in object_classes:
+                        continue
+                    if atomic_term in val:
+                        if category is None:
+                            category = key
+                            col_label = 'entity_label'
+                        else:
+                            print(f'Warning, multiple category: {atomic_term}.')
+                            print(f'The default is set to {category}.')
+                if category is None:
+                    for key, val in plural_vocab.items():
+                        if key not in object_classes:
+                            continue
+                        if atomic_term in val:
+                            if category is None:
+                                category = key
+                                col_label = 'plural'
                             else:
-                                contained_elements[key] = [atomic_term]
-                            object_name = object_name.replace(atomic_term,key.upper())
-                            atomic_vocabulary.loc[(atomic_vocabulary['entity_label']==atomic_term) & \
-                                        (atomic_vocabulary['entity_class']==key), 'tagged_variables'] += ', ' + variable_name
-                        elif atomic_term in plural_vocab[key]:
-                            if key in contained_elements.keys():
-                                contained_elements[key].append(atomic_term)
-                            else:
-                                contained_elements[key] = [atomic_term]
-                            object_name = object_name.replace(atomic_term,key.upper())
-                            atomic_vocabulary.loc[(atomic_vocabulary['plural']==atomic_term) & \
-                                            (atomic_vocabulary['entity_class']==key), 'tagged_variables'] += ', ' + variable_name
+                                print(f'Error, multiple category: {atomic_term}.')
+
+            if category is None:
+                print(f'Error, no category found: {atomic_term}')
+                continue
+
+            if category in contained_elements.keys():
+                contained_elements[category].append(atomic_term)
+            else:
+                contained_elements[category] = [atomic_term]
+            object_name = object_name.replace(atomic_term,category.upper())
+            atomic_vocabulary.loc[(atomic_vocabulary[col_label]==atomic_term) & \
+                        (atomic_vocabulary['entity_class']==category), 'tagged_variables'] += ', ' + variable_name
+
         
-        # Loop through quantity vocabulary to label all terms quantity_name
-        for atomic_term in all_quantity_vocabulary:
-            if atomic_term in quantity_name:
-                for key, val in atomic_vocab.items():
-                    if key in quantity_classes:
-                        if atomic_term in atomic_vocab[key]:
-                            if key in contained_elements.keys():
-                                contained_elements[key].append(atomic_term)
-                            else:
-                                contained_elements[key] = [atomic_term]
-                            quantity_name = quantity_name.replace(atomic_term,key.upper())
-                            atomic_vocabulary.loc[(atomic_vocabulary['entity_label']==atomic_term) & \
+    # Loop through quantity vocabulary to label all terms quantity_name
+    for atomic_term in all_quantity_vocabulary:
+        if atomic_term in quantity_name:
+            for key, val in atomic_vocab.items():
+                if key in quantity_classes:
+                    if atomic_term in atomic_vocab[key]:
+                        if key in contained_elements.keys():
+                            contained_elements[key].append(atomic_term)
+                        else:
+                            contained_elements[key] = [atomic_term]
+                        quantity_name = quantity_name.replace(atomic_term,key.upper())
+                        atomic_vocabulary.loc[(atomic_vocabulary['entity_label']==atomic_term) & \
                                     (atomic_vocabulary['entity_class']==key), 'tagged_variables'] += ', ' + variable_name
-                        elif atomic_term in plural_vocab[key]:
-                            if key in contained_elements.keys():
-                                contained_elements[key].append(atomic_term)
-                            else:
-                                contained_elements[key] = [atomic_term]
-                            quantity_name = quantity_name.replace(atomic_term,key.upper())
-                            atomic_vocabulary.loc[(atomic_vocabulary['plural']==atomic_term) & \
+                    elif atomic_term in plural_vocab[key]:
+                        if key in contained_elements.keys():
+                            contained_elements[key].append(atomic_term)
+                        else:
+                            contained_elements[key] = [atomic_term]
+                        quantity_name = quantity_name.replace(atomic_term,key.upper())
+                        atomic_vocabulary.loc[(atomic_vocabulary['plural']==atomic_term) & \
                                     (atomic_vocabulary['entity_class']==key), 'tagged_variables'] += ', ' + variable_name
 
     # Add all contained terms to corresponding category columns.                    
@@ -171,6 +234,10 @@ for index, row in variable_tagging.iterrows():
             variable_tagging.at[index,val] = ''
     variable_tagging.at[index,'object_pattern'] = object_name
     variable_tagging.at[index,'quantity_pattern'] = quantity_name
+
+    if verbose:
+        print(variable_name, object_name, quantity_name)
+        input('Press enter to continue ...')
 
 # Write file with object and quantity category pattern,
 # as well as terms belonging to each category.

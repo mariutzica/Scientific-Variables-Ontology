@@ -7,7 +7,11 @@
          xmlns:svo="http://scientificvariablesontology.org/svo#"
          xmlns="http://scientificvariablesontology.org/svo/part/">
 
-<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/part"/>
+<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/part">
+  <owl:imports rdf:resource="http://scientificvariablesontology.org/svo"/>
+  <owl:imports rdf:resource="http://scientificvariablesontology.org/svo/attribute"/>
+  <owl:imports rdf:resource="http://scientificvariablesontology.org/svo/direction"/>
+</owl:Ontology>
 
 <owl:NamedIndividual rdf:about="bed">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Part"/>
@@ -255,14 +259,6 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interior</rdfs:label>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="layer">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Part"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer</rdfs:label>
-  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Layer</svo:has_wikipedia_page>
-  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q254549</svo:has_wikidata_page>
-  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Layer or layered may refer to:</rdfs:comment>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="middle">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Part"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">middle</rdfs:label>
@@ -304,15 +300,6 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin</rdfs:label>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="stratum">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Part"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stratum</rdfs:label>
-  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Stratum</svo:has_wikipedia_page>
-  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q12758989</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer</svo:has_synonym>
-  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geology and related fields, a stratum (PL: strata) is a layer of rock or sediment characterized by certain lithologic properties or attributes that distinguish it from adjacent layers from which it is separated by visible surfaces known as either bedding surfaces or bedding planes. Prior to the publication of the International Stratigraphic Guide, older publications have defined a stratum as either being either equivalent to a single bed or composed of a number of beds; as a layer greater than 1 cm in thickness and constituting a part of a bed; or a general term that includes both bed and lamina.</rdfs:comment>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="subskin">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Part"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subskin</rdfs:label>
@@ -336,28 +323,25 @@
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zone or The Zone may refer to:</rdfs:comment>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="reach">
+<owl:NamedIndividual rdf:about="edge~y">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Part"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reach</rdfs:label>
+  <svo:has_part_root rdf:resource="edge"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/y"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">edge~y</rdfs:label>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="side~left">
+<owl:NamedIndividual rdf:about="edge~x">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Part"/>
-  <svo:has_part_root rdf:resource="side"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/left"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side~left</rdfs:label>
+  <svo:has_part_root rdf:resource="edge"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/x"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">edge~x</rdfs:label>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="side~right">
+<owl:NamedIndividual rdf:about="edge~west">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Part"/>
-  <svo:has_part_root rdf:resource="side"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/right"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side~right</rdfs:label>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="entrance">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Part"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entrance</rdfs:label>
+  <svo:has_part_root rdf:resource="edge"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/west"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">edge~west</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="edge~east">
@@ -381,54 +365,23 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">edge~south</rdfs:label>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="edge~west">
+<owl:NamedIndividual rdf:about="side~left">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Part"/>
-  <svo:has_part_root rdf:resource="edge"/>
-  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/west"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">edge~west</rdfs:label>
+  <svo:has_part_root rdf:resource="side"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/left"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side~left</rdfs:label>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="edge~x">
+<owl:NamedIndividual rdf:about="side~right">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Part"/>
-  <svo:has_part_root rdf:resource="edge"/>
-  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/x"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">edge~x</rdfs:label>
+  <svo:has_part_root rdf:resource="side"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/right"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">side~right</rdfs:label>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="edge~y">
+<owl:NamedIndividual rdf:about="entrance">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Part"/>
-  <svo:has_part_root rdf:resource="edge"/>
-  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/y"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">edge~y</rdfs:label>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="constituents">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Part"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constituents</rdfs:label>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="layer~first">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Part"/>
-  <svo:has_part_root rdf:resource="layer"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/first"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~first</rdfs:label>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="layer~second">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Part"/>
-  <svo:has_part_root rdf:resource="layer"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/second"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">layer~second</rdfs:label>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="centroid">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Part"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">centroid</rdfs:label>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="tops">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Part"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tops</rdfs:label>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entrance</rdfs:label>
 </owl:NamedIndividual>
 
 

@@ -66,6 +66,8 @@
 
 <owl:ObjectProperty rdf:about="#is_modeled_by"/>
 
+<owl:ObjectProperty rdf:about="#is_expressed_as"/>
+
 <owl:ObjectProperty rdf:about="#has_part">
   <rdfs:domain rdf:resource="#Phenomenon"/>
   <rdfs:range rdf:resource="#Part"/>
@@ -88,41 +90,68 @@
 
 <owl:ObjectProperty rdf:about="#has_source_phenomenon"/>
 
-<owl:ObjectProperty rdf:about="#has_sink_phenomenon"/>
-
 <owl:ObjectProperty rdf:about="#has_location"/>
-
-<owl:ObjectProperty rdf:about="#has_location_within_model"/>
 
 <owl:ObjectProperty rdf:about="#has_location_of_origin"/>
 
-<owl:ObjectProperty rdf:about="#has_minuend_participant_phenomenon"/>
+<owl:ObjectProperty rdf:about="#has_participant_phenomenon">
+  <rdfs:domain rdf:resource="#Phenomenon"/>
+  <rdfs:range rdf:resource="#Phenomenon"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_subtrahend_participant_phenomenon"/>
+<owl:ObjectProperty rdf:about="#has_minuend_participant_phenomenon">
+  <rdfs:subPropertyOf rdf:resource="#has_participant_phenomenon"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_primary_participant_phenomenon"/>
+<owl:ObjectProperty rdf:about="#has_subtrahend_participant_phenomenon">
+  <rdfs:subPropertyOf rdf:resource="#has_participant_phenomenon"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_adjacent_participant_phenomenon"/>
+<owl:ObjectProperty rdf:about="#has_primary_participant_phenomenon">
+  <rdfs:subPropertyOf rdf:resource="#has_participant_phenomenon"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_first_participant_phenomenon"/>
+<owl:ObjectProperty rdf:about="#has_adjacent_participant_phenomenon">
+  <rdfs:subPropertyOf rdf:resource="#has_participant_phenomenon"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_second_participant_phenomenon"/>
+<owl:ObjectProperty rdf:about="#has_first_participant_phenomenon">
+  <rdfs:subPropertyOf rdf:resource="#has_participant_phenomenon"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_in_participant_phenomenon"/>
+<owl:ObjectProperty rdf:about="#has_second_participant_phenomenon">
+  <rdfs:subPropertyOf rdf:resource="#has_participant_phenomenon"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_medium_participant_phenomenon"/>
+<owl:ObjectProperty rdf:about="#has_in_participant_phenomenon">
+  <rdfs:subPropertyOf rdf:resource="#has_participant_phenomenon"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_source_participant_phenomenon"/>
+<owl:ObjectProperty rdf:about="#has_medium_participant_phenomenon">
+  <rdfs:subPropertyOf rdf:resource="#has_participant_phenomenon"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_sink_participant_phenomenon"/>
+<owl:ObjectProperty rdf:about="#has_source_participant_phenomenon">
+  <rdfs:subPropertyOf rdf:resource="#has_participant_phenomenon"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_numerator_participant_phenomenon"/>
+<owl:ObjectProperty rdf:about="#has_sink_participant_phenomenon">
+  <rdfs:subPropertyOf rdf:resource="#has_participant_phenomenon"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_denominator_participant_phenomenon"/>
+<owl:ObjectProperty rdf:about="#has_numerator_participant_phenomenon">
+  <rdfs:subPropertyOf rdf:resource="#has_participant_phenomenon"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_denominator_participant_phenomenon">
+  <rdfs:subPropertyOf rdf:resource="#has_participant_phenomenon"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_perspective_participant_phenomenon">
+  <rdfs:subPropertyOf rdf:resource="#has_participant_phenomenon"/>
+</owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#has_participating_primary_phenomenon"/>
-
-<owl:ObjectProperty rdf:about="#has_participating_medium_phenomenon"/>
 
 <owl:ObjectProperty rdf:about="#has_observing_phenomenon"/>
 
@@ -136,90 +165,116 @@
 
 <owl:ObjectProperty rdf:about="#is_part_of_containing_phenomenon"/>
 
-<owl:ObjectProperty rdf:about="#has_perspective_participant_phenomenon"/>
-
 <owl:ObjectProperty rdf:about="#surrounds"/>
 
-<owl:ObjectProperty rdf:about="#drives"/>
+<owl:ObjectProperty rdf:about="#has_measurement_reference"/>
 
-<owl:ObjectProperty rdf:about="#has_measurement_reference_at"/>
+<owl:ObjectProperty rdf:about="#has_measurement_reference_at">
+  <rdfs:subPropertyOf rdf:resource="#has_measurement_reference"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_measurement_reference_above"/>
+<owl:ObjectProperty rdf:about="#has_measurement_reference_above">
+  <rdfs:subPropertyOf rdf:resource="#has_measurement_reference"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_measurement_reference_since"/>
+<owl:ObjectProperty rdf:about="#has_measurement_reference_since">
+  <rdfs:subPropertyOf rdf:resource="#has_measurement_reference"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_measurement_reference_along"/>
+<owl:ObjectProperty rdf:about="#has_measurement_reference_along">
+  <rdfs:subPropertyOf rdf:resource="#has_measurement_reference"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_measurement_reference_from"/>
+<owl:ObjectProperty rdf:about="#has_measurement_reference_from">
+  <rdfs:subPropertyOf rdf:resource="#has_measurement_reference"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_measurement_reference_to"/>
+<owl:ObjectProperty rdf:about="#has_measurement_reference_to">
+  <rdfs:subPropertyOf rdf:resource="#has_measurement_reference"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_measurement_reference_below"/>
+<owl:ObjectProperty rdf:about="#has_measurement_reference_below">
+  <rdfs:subPropertyOf rdf:resource="#has_measurement_reference"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_measurement_reference_wrt"/>
+<owl:ObjectProperty rdf:about="#has_measurement_reference_wrt">
+  <rdfs:subPropertyOf rdf:resource="#has_measurement_reference"/>
+</owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#is_reference_for_property"/>
 
 <owl:ObjectProperty rdf:about="#has_reference_for_property"/>
 
+<owl:ObjectProperty rdf:about="#is_reference_for_variable"/>
+
+<owl:ObjectProperty rdf:about="#has_reference_for_variable"/>
+
 <owl:ObjectProperty rdf:about="#orbits"/>
 
+<owl:ObjectProperty rdf:about="#contains_reference_to"/>
+
 <owl:ObjectProperty rdf:about="#contains_phenomenon_reference_to">
+  <rdfs:subPropertyOf rdf:resource="#contains_reference_to"/>
   <rdfs:domain rdf:resource="#Variable"/>
   <rdfs:range rdf:resource="#Phenomenon"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#contains_process_reference_to">
+  <rdfs:subPropertyOf rdf:resource="#contains_reference_to"/>
   <rdfs:domain rdf:resource="#Variable"/>
   <rdfs:range rdf:resource="#Process"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#contains_matter_reference_to">
+  <rdfs:subPropertyOf rdf:resource="#contains_reference_to"/>
   <rdfs:domain rdf:resource="#Variable"/>
   <rdfs:range rdf:resource="#Matter"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#contains_property_reference_to">
+  <rdfs:subPropertyOf rdf:resource="#contains_reference_to"/>
   <rdfs:domain rdf:resource="#Variable"/>
   <rdfs:range rdf:resource="#Property"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#contains_form_reference_to">
+  <rdfs:subPropertyOf rdf:resource="#contains_reference_to"/>
   <rdfs:domain rdf:resource="#Variable"/>
   <rdfs:range rdf:resource="#Form"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#contains_abstraction_reference_to">
+  <rdfs:subPropertyOf rdf:resource="#contains_reference_to"/>
   <rdfs:domain rdf:resource="#Variable"/>
   <rdfs:range rdf:resource="#Abstraction"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#contains_model_reference_to">
-  <rdfs:domain rdf:resource="#Variable"/>
-  <rdfs:range rdf:resource="#Model"/>
-</owl:ObjectProperty>
-
 <owl:ObjectProperty rdf:about="#contains_operation_reference_to">
+  <rdfs:subPropertyOf rdf:resource="#contains_reference_to"/>
   <rdfs:domain rdf:resource="#Variable"/>
   <rdfs:range rdf:resource="#Operation"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#contains_role_reference_to">
+  <rdfs:subPropertyOf rdf:resource="#contains_reference_to"/>
   <rdfs:domain rdf:resource="#Variable"/>
   <rdfs:range rdf:resource="#Role"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#contains_part_reference_to">
+  <rdfs:subPropertyOf rdf:resource="#contains_reference_to"/>
   <rdfs:domain rdf:resource="#Variable"/>
   <rdfs:range rdf:resource="#Part"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#contains_trajectory_reference_to">
+  <rdfs:subPropertyOf rdf:resource="#contains_reference_to"/>
   <rdfs:domain rdf:resource="#Variable"/>
   <rdfs:range rdf:resource="#Trajectory"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#contains_attribute_reference_to">
+  <rdfs:subPropertyOf rdf:resource="#contains_reference_to"/>
   <rdfs:domain rdf:resource="#Variable"/>
   <rdfs:range rdf:resource="#Attribute"/>
 </owl:ObjectProperty>
@@ -318,17 +373,12 @@
 
 <owl:Class rdf:about="#Abstraction">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An abstraction is a mathematical representation of a (spatial or spatiotemporal) Phenomenon.</rdfs:comment>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An abstraction is a mathematical/simplified representation of a (spatial or spatiotemporal) Phenomenon.</rdfs:comment>
 </owl:Class>
 
 <owl:Class rdf:about="#Attribute">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An Attribute is a construct for attaching a Property and associated value(s) to a Phenomenon to specify a Phenomenon's state.</rdfs:comment>
-</owl:Class>
-
-<owl:Class rdf:about="#Model">
-  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Model is an Abstraction that accounts for the properties of a Phenomenon and is used to study the Phenomenon's characteristics.</rdfs:comment>
 </owl:Class>
 
 <owl:Class rdf:about="#Direction">

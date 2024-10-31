@@ -144,7 +144,8 @@ with open(csn_filepath) as f:
                         .replace('solar_irradiation_constant','solar_constant')\
                         .replace('curve~enclosing','enclosing-curve')\
                         .replace('delta_front_toe','delta-front-toe')\
-                        .replace('plain~lower-and-upper','plain~lower-and-plain~upper')
+                        .replace('plain~lower-and-upper','plain~lower-and-plain~upper')\
+                        .replace('aerosol_dust', 'dust~aerosol')
             
             variable = variable.replace('soil_horizon~','soil-horizon-')\
                         .replace('__atterberg_liquid_limit','_atterberg-liquid-limit_')\
@@ -930,16 +931,23 @@ with open(csn_filepath) as f:
 
             if 'nitrification' in quantity:
                 if 'denitrification' in quantity:
-                    variable = variable.replace('denitrification_','')\
-                            .replace('soil','soil_denitrification')\
-                            .replace('nitrogen','nitrogen_denitrification')\
-                            .replace('soil_denitrification_nitrogen_denitrification','soil_denitrification_nitrogen')\
-                            .replace('denitrification_emission','emission')
+                    if 'nitrous' in variable:
+                        variable = variable.replace('denitrification_','')\
+                            .replace('soil', 'soil_as-nitrogen_denitrification')
+                    else:
+                        variable = variable.replace('denitrification_','')\
+                            .replace('nitrogen', 'nitrogen_denitrification')\
+                            .replace('soil_nitrogen','soil_as-nitrogen')
                 else:
-                    variable = variable.replace('nitrification_','')\
-                            .replace('soil','soil_nitrification')\
-                            .replace('ammonium-as-nitrogen','ammonium-as-nitrogen_nitrification')
+                    if 'nitrous' in variable:
+                        variable = variable.replace('nitrification_','')\
+                            .replace('soil', 'soil_as-nitrogen_nitrification')
+                    else:
+                        variable = variable.replace('nitrification_','')\
+                            .replace('nitrogen', 'nitrogen_nitrification')\
+                            .replace('soil_nitrogen','soil_as-nitrogen')
                 [object,quantity] = split_variable(variable)
+                print(object, quantity)
                             
             if 'simulation' in quantity:
                 variable = variable.replace('simulation_','')\

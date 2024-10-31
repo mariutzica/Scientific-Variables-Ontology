@@ -7,7 +7,9 @@
          xmlns:svo="http://scientificvariablesontology.org/svo#"
          xmlns="http://scientificvariablesontology.org/svo/trajectory/">
 
-<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/trajectory"/>
+<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/trajectory">
+  <owl:imports rdf:resource="http://scientificvariablesontology.org/svo"/>
+</owl:Ontology>
 
 <owl:NamedIndividual rdf:about="optical-path">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Trajectory"/>

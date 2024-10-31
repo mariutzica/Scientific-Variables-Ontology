@@ -7,7 +7,9 @@
          xmlns:svo="http://scientificvariablesontology.org/svo#"
          xmlns="http://scientificvariablesontology.org/svo/propertyquantification/">
 
-<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/propertyquantification"/>
+<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/propertyquantification">
+  <owl:imports rdf:resource="http://scientificvariablesontology.org/svo"/>
+</owl:Ontology>
 
 <owl:NamedIndividual rdf:about="code">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyQuantification"/>

@@ -7,7 +7,9 @@
          xmlns:svo="http://scientificvariablesontology.org/svo#"
          xmlns="http://scientificvariablesontology.org/svo/propertyrole/">
 
-<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/propertyrole"/>
+<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/propertyrole">
+  <owl:imports rdf:resource="http://scientificvariablesontology.org/svo"/>
+</owl:Ontology>
 
 <owl:NamedIndividual rdf:about="coefficient">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyRole"/>

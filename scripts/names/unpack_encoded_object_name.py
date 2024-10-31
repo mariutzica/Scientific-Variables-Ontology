@@ -39,10 +39,12 @@ links = ['-contains-as-medium-','-contains-part-','-contains-',
          '-as-denominator-','-as-denominator','-as-minuend-',
          '-as-substrahend-','-as-subtrahend','-as-perspective-',
          '-as-origin-','-as-destination-','-participates-in-',
-         '-measured-below-','-measured-above-','-measured-at-',
-         '-measured-to-','-measured-from-','-measured-since-', '-measured-along-',
+         '-determined-below-','-determined-above-','-determined-at-', '-determined-at-property-',
+         '-determined-at-variable-',
+         '-determined-to-','-determined-from-','-determined-since-', '-determined-along-',
          '-going-over-','-into-','-out-of-','-wrt-',
-         '-reference-for-computing-','-referenced-with-property-']
+         '-reference-for-determination-of-property-','-reference-for-determination-of-variable-',
+         '-reference-for-determination-of-', '-has-in-', '-expressed-as-', '-and-','-or-', '-vs-']
 
 links.sort(key=len, reverse=True)
 
@@ -73,8 +75,10 @@ categories_override = \
     'grain': 'phenomenon',
 }
 
-intraobject_relations = ['-has-form-', '-has-abstraction-', '-has-matter-', '-has-part-', '-has-model-abstraction-']
+intraobject_relations = ['-has-form-', '-has-abstraction-', '-has-matter-', '-has-part-', 
+                         '-has-model-abstraction-', '-expressed-as-', '-and-', '-or-', '-vs-']
 
+all_links = intraobject_relations + links
 def get_elements(encoded_object):
 
     # loop through characters in encoded_object
@@ -127,260 +131,343 @@ for row in reader:
     old_varname,new_varname,object_name,quantity_name,encoded_obj_name = row
     
     #debug
-    #printout = False
-    #if new_varname == 'crop_biomass~microbial-and-soil_decomposition_carbon_respiration__mass':
+    #printout = True
+    printout = False
+    #if 'is-medium-matter' in encoded_obj_name:
     #    printout = True
 
     sub_elements = get_all_elements(encoded_obj_name)
-    #if printout:
-    #    print(encoded_obj_name, sub_elements)
-    for sub_element, element_list in sub_elements.items():
-        temp_full_name = sub_element
-        contained_links = {}
-        for link in links:
-            while link in temp_full_name:
-                temp_full_name = temp_full_name.replace(link,'-',1)
-                link_index = sub_element.find(link)
-                while link_index in contained_links.keys():
-                    link_index = sub_element.find(link,link_index+1)
-                contained_links[link_index] = link
-        contained_links = list(contained_links.items())
-        contained_links.sort()
-        remaining_full_name = sub_element
-        contained_parts = []
-        for link in contained_links:
-            link_name = link[1]
-            element = remaining_full_name.split(link_name,1)[0]
-            remaining_full_name = remaining_full_name.split(link_name,1)[1]
-            if 'ELEMENT' in element and len(element) > 8:
-                element_parts = element.split('ELEMENT')
-                element_parts = [element_parts[0], 'ELEMENT' + element_parts[1][0],
-                                 element_parts[1][1:]]
-                if '' in element_parts:
-                    element_parts.remove('')
-                contained_parts.extend(element_parts)
-            else:
-                contained_parts.append(element)
-            contained_parts.append(link_name)
-        if remaining_full_name != '':
-            if 'ELEMENT' in remaining_full_name and len(remaining_full_name) > 8:
-                element_parts = remaining_full_name.split('ELEMENT')
-                element_parts = [element_parts[0], 'ELEMENT' + element_parts[1][0],
-                                 element_parts[1][1:]]
-                if '' in element_parts:
-                    element_parts.remove('')
-                contained_parts.extend(element_parts)
-            else:
-                contained_parts.append(remaining_full_name)
-
-        name_elements = contained_parts[:]
-        for number in range(len(element_list)):
-            element_index = contained_parts.index(f'ELEMENT{number+1}')
-            contained_parts[element_index] = element_list[number]
-            name_elements[element_index] = '(' + element_list[number] + ')'
-
-        complete_name = ''.join(name_elements)
-        if not complete_name in completed_elements:
-            completed_elements.append(complete_name)
-            # skip outer elements around a single subobject, redundant
-            if len(contained_parts) == 1:
-                continue
-            contained_parts_assigned = {}
-            contained_parts_assigned['encoded_name'] = complete_name
-            label_name = complete_name
+    if printout:
+        print('##################################')
+        print(encoded_obj_name, sub_elements)
+    try:
+        for sub_element, element_list in sub_elements.items():
+            temp_full_name = sub_element
+            contained_links = {}
             for link in links:
-                label_name = label_name.replace(link,'_')
-            label_name = label_name.strip('_')
-            label_name = label_name.replace('(','').replace(')','')
-            contained_parts_assigned['label_name'] = label_name
+                while link in temp_full_name:
+                    temp_full_name = temp_full_name.replace(link,'-',1)
+                    link_index = sub_element.find(link)
+                    while link_index in contained_links.keys():
+                        link_index = sub_element.find(link,link_index+1)
+                    contained_links[link_index] = link
+            contained_links = list(contained_links.items())
+            contained_links.sort()
+            remaining_full_name = sub_element
+            contained_parts = []
+            for link in contained_links:
+                link_name = link[1]
+                element = remaining_full_name.split(link_name,1)[0]
+                remaining_full_name = remaining_full_name.split(link_name,1)[1]
+                if 'ELEMENT' in element and len(element) > 8:
+                    element_parts = element.split('ELEMENT')
+                    element_parts = [element_parts[0], 'ELEMENT' + element_parts[1][0],
+                                    element_parts[1][1:]]
+                    if '' in element_parts:
+                        element_parts.remove('')
+                    contained_parts.extend(element_parts)
+                else:
+                    contained_parts.append(element)
+                contained_parts.append(link_name)
+            if remaining_full_name != '':
+                if 'ELEMENT' in remaining_full_name and len(remaining_full_name) > 8:
+                    element_parts = remaining_full_name.split('ELEMENT')
+                    element_parts = [element_parts[0], 'ELEMENT' + element_parts[1][0],
+                                    element_parts[1][1:]]
+                    if '' in element_parts:
+                        element_parts.remove('')
+                    contained_parts.extend(element_parts)
+                else:
+                    contained_parts.append(remaining_full_name)
 
-            indexes_added = []
-            # parse the contained_parts list
-            for link in links:
-                link_index = 0
-                while link_index!=-1:
-                    if link in contained_parts[link_index:]:
-                        link_index = contained_parts.index(link,link_index)
-                    else:
-                        link_index = -1
-                    if link_index >= 0:
-                        indexes_added.append(link_index)
-                        if link == '-is-source-of-':
-                            contained_parts_assigned['has-source-phenomenon'] = contained_parts[link_index - 1]
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)
-                        elif link == '-out-of-':
-                            contained_parts_assigned['has-source-phenomenon'] = contained_parts[link_index + 1]
-                            indexes_added.append(link_index + 1)
-                        elif link == '-into-':
-                            contained_parts_assigned['has-sink-phenomenon'] = contained_parts[link_index + 1]
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)
-                        elif link == '-going-over-':
-                            contained_parts_assigned['has-adjacent-participant-phenomenon'] = contained_parts[link_index + 1]
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)
-                        elif link == '-contains-':
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
-                            contained_parts_assigned['has-containing-phenomenon'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)
-                        elif link == '-observes-':
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
-                            contained_parts_assigned['is-observed-by'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)
-                        elif link == '-models-':
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
-                            contained_parts_assigned['is-modeled-by'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)
-                        elif link == '-is-location-of-':
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
-                            contained_parts_assigned['has-location'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)
-                        elif link == '-is-location-of-origin-of-':
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
-                            contained_parts_assigned['has-location-of-origin'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)
-                        elif link == '-is-model-location-of-':
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
-                            contained_parts_assigned['has-model-location'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)
-                        elif link == '-is-orbiting-center-of-':
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
-                            contained_parts_assigned['orbits-around'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)
-                        elif link == '-is-surrounded-by-':
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
-                            contained_parts_assigned['surrounds'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)  
-                        elif link == '-is-domain-of-':
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
-                            contained_parts_assigned['has-domain'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)  
-                        elif link == '-is-driven-by-':
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
-                            contained_parts_assigned['drives'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)                         
-                        elif (link == '-as-medium-') and '-participates-in-' not in contained_parts:
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
-                            indexes_added.append(link_index + 1)
-                            contained_parts_assigned['has-medium-participant-phenomenon'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index - 1)
-                        elif (link == '-as-medium-') and '-participates-in-' in contained_parts:
-                            contained_parts_assigned['has-participating-medium-phenomenon'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index - 1)  
-                        elif (link == '-participates-in-') and ('-as-medium-' not in contained_parts):
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
-                            contained_parts_assigned['has-participating-primary-phenomenon'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)
-                        elif link == '-has-model-abstraction-':
-                            contained_parts_assigned['is-modeled-by'] = contained_parts[link_index + 1]
-                            indexes_added.append(link_index + 1)
-                        elif link == '-contains-part-':
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
-                            contained_parts_assigned['is-part-of-containing-phenomenon'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)
-                        elif link == '-contains-as-medium-':
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
-                            contained_parts_assigned['has-containing-medium-phenomenon'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)
-                        elif link == '-makes-up-':
-                            contained_parts_assigned['has-primary-matter'] = contained_parts[link_index - 1]
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)
-                        elif link == '-is-contained-matter-':
-                            contained_parts_assigned['contains-matter'] = contained_parts[link_index - 1]
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index + 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)
-                        elif link == '-is-medium-matter-':
-                            contained_parts_assigned['has-primary-matter'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index - 1)
-                        elif link == '-by-in-':
-                            contained_parts_assigned['has-in-participant-phenomenon'] = contained_parts[link_index + 1]
-                            indexes_added.append(link_index + 1)
-                        elif (link == '-as-main-') or (link == '-as-main'):
-                            if 'has-primary-participant-phenomenon' in contained_parts_assigned.keys():
-                                contained_parts_assigned['has-primary-participant-phenomenon2'] = contained_parts[link_index - 1]
-                            else:
-                                contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index - 1)
-                        elif link.startswith('-as-'):
-                            participant_type = link.replace('-as-','').strip('-').replace('-main','')
-                            rel = f'has-{participant_type}-participant-phenomenon'
-                            if rel in contained_parts_assigned.keys():
-                                print('Error, two sources found.')
-                                print(link, contained_parts)
-                            else:
-                                contained_parts_assigned[rel] = contained_parts[link_index - 1]
-                                indexes_added.append(link_index - 1)
-                        elif 'measured' in link or 'reference' in link:
-                            rel = link.strip('-')
-                            contained_parts_assigned[rel] = contained_parts[link_index + 1]
-                            contained_parts_assigned['has-primary-participant-phenomenon'] = contained_parts[link_index - 1]
-                            indexes_added.append(link_index + 1)
-                            indexes_added.append(link_index - 1)
-                        else: # -has-X- and -undergoes-process-
-                            rel = link.strip('-').replace('wrt','measured-wrt')
-                            if rel in contained_parts_assigned.keys():
-                                rel = rel + '2'
-                            contained_parts_assigned[rel] = contained_parts[link_index + 1]
-                            indexes_added.append(link_index + 1)
-                    if link_index >= 0:
-                        link_index += 1
-            printit = False
-            if len(indexes_added) == (len(contained_parts) - 1):
-                for i in range(len(contained_parts)):
-                    if i not in indexes_added:
-                        element = contained_parts[i]
-                        element_root = element.split('~')[0]
-                        rel = None
-                        if element_root not in categories_override.keys() and element_root in categories['process']:
-                            rel = 'undergoes-process'
-                            printit = True
-                        elif any(x in contained_parts for x in intraobject_relations) and '-undergoes-process-' not in contained_parts:
-                            if element_root in categories_override.keys():
-                                rel = 'has-' + categories_override[element]
-                            else:
-                                for cat,items in categories.items():
-                                    if element_root in items:
-                                        rel = 'has-' + cat
-                                        break
-                                if rel is None:
-                                    rel = 'has-phenomenon'
+            name_elements = contained_parts[:]
+            for number in range(len(element_list)):
+                element_index = contained_parts.index(f'ELEMENT{number+1}')
+                contained_parts[element_index] = element_list[number]
+                name_elements[element_index] = '(' + element_list[number] + ')'
+
+            complete_name = ''.join(name_elements)
+            if not complete_name in completed_elements:
+                completed_elements.append(complete_name)
+                # skip outer elements around a single subobject, redundant
+                if len(contained_parts) == 1:
+                    continue
+                contained_parts_assigned = {}
+                contained_parts_assigned['encoded_name'] = complete_name
+                label_name = complete_name
+                for link in links:
+                    label_name = label_name.replace(link,'_')
+                label_name = label_name.strip('_')
+                label_name = label_name.replace('(','').replace(')','')
+                contained_parts_assigned['label_name'] = label_name
+
+                andflag = False
+                indexes_added = []
+                # parse the contained_parts list
+                for link in links:
+                    link_index = 0
+                    while link_index!=-1:
+                        if link in contained_parts[link_index:]:
+                            link_index = contained_parts.index(link,link_index)
                         else:
-                            rel = 'has-primary-participant-phenomenon'
-                        if rel in contained_parts_assigned.keys() and 'has-phenomenon' not in contained_parts_assigned.keys():
-                            rel = 'has-phenomenon'
-                        elif rel in contained_parts_assigned.keys():
-                            print('ERROR')
-                        contained_parts_assigned[rel] = contained_parts[i]
-                        indexes_added.append(i)
-                        break
-            elif len(indexes_added) != len(contained_parts):
-                continue # debug this
+                            link_index = -1
+                        if link_index >= 0:
+                            indexes_added.append(link_index)
+                            if link.startswith('-determined-at-'):
+                                rel = 'is-' + link.strip('-')
+                                contained_parts_assigned[rel] = contained_parts[link_index + 1]
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif link == '-has-in-':
+                                contained_parts_assigned['has-in-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                indexes_added.append(link_index + 1)
+                            elif link.startswith('-reference-for-determination-of-'):
+                                rel = 'is-' + link.strip('-')
+                                contained_parts_assigned[rel] = \
+                                                    contained_parts[link_index + 1]
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif link == '-is-source-of-':
+                                contained_parts_assigned['has-source-phenomenon'] = \
+                                                    contained_parts[link_index - 1]
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif link == '-out-of-':
+                                contained_parts_assigned['has-source-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                indexes_added.append(link_index + 1)
+                            elif link == '-into-':
+                                contained_parts_assigned['has-sink-phenomenon'] = contained_parts[link_index + 1]
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif link == '-going-over-':
+                                contained_parts_assigned['has-adjacent-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif link == '-contains-':
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                contained_parts_assigned['has-containing-phenomenon'] = \
+                                                    contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif link == '-observes-':
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                contained_parts_assigned['is-observed-by'] = contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif link == '-models-':
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                contained_parts_assigned['is-modeled-by'] = contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif link == '-is-location-of-':
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                contained_parts_assigned['has-location'] = contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif link == '-is-location-of-origin-of-':
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                contained_parts_assigned['has-location-of-origin'] = contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif link == '-is-model-location-of-':
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                contained_parts_assigned['has-model-location'] = contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif link == '-is-orbiting-center-of-':
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                contained_parts_assigned['orbits-around'] = contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif link == '-is-surrounded-by-':
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                contained_parts_assigned['surrounds'] = contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)  
+                            elif link == '-is-domain-of-':
+                                contained_parts_assigned['has-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                contained_parts_assigned['has-domain'] = contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)  
+                            elif link == '-is-driven-by-':
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                contained_parts_assigned['drives'] = contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)                         
+                            elif (link == '-as-medium-') and '-participates-in-' not in contained_parts:
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                indexes_added.append(link_index + 1)
+                                contained_parts_assigned['has-medium-participant-phenomenon'] = \
+                                                    contained_parts[link_index - 1]
+                                indexes_added.append(link_index - 1)
+                            elif (link == '-as-medium-') and '-participates-in-' in contained_parts:
+                                contained_parts_assigned['has-participating-medium-phenomenon'] = \
+                                                    contained_parts[link_index - 1]
+                                indexes_added.append(link_index - 1)  
+                            elif (link == '-participates-in-') and ('-as-medium-' not in contained_parts):
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                contained_parts_assigned['has-participating-primary-phenomenon'] = \
+                                                    contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif link == '-has-model-abstraction-':
+                                contained_parts_assigned['is-modeled-by-abstraction'] = contained_parts[link_index + 1]
+                                indexes_added.append(link_index + 1)
+                            elif link == '-contains-part-':
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                contained_parts_assigned['is-part-of-containing-phenomenon'] = \
+                                                    contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif link == '-contains-as-medium-':
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                contained_parts_assigned['has-containing-medium-phenomenon'] = \
+                                                    contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif link == '-makes-up-':
+                                contained_parts_assigned['has-primary-matter'] = contained_parts[link_index - 1]
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif link == '-is-contained-matter-':
+                                contained_parts_assigned['contains-matter'] = contained_parts[link_index - 1]
+                                contained_parts_assigned['has-phenomenon'] = contained_parts[link_index + 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif link == '-is-medium-matter-':
+                                contained_parts_assigned['has-primary-matter'] = contained_parts[link_index - 1]
+                                indexes_added.append(link_index - 1)
+                            elif link == '-by-in-':
+                                contained_parts_assigned['has-in-participant-phenomenon'] = \
+                                                    contained_parts[link_index + 1]
+                                indexes_added.append(link_index + 1)
+                            elif (link == '-as-main-') or (link == '-as-main'):
+                                if 'has-primary-participant-phenomenon' in contained_parts_assigned.keys():
+                                    contained_parts_assigned['has-primary-participant-phenomenon2'] = \
+                                                    contained_parts[link_index - 1]
+                                else:
+                                    contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index - 1]
+                                indexes_added.append(link_index - 1)
+                            elif link.startswith('-as-'):
+                                participant_type = link.replace('-as-','').strip('-').replace('-main','')
+                                rel = f'has-{participant_type}-participant-phenomenon'
+                                if rel in contained_parts_assigned.keys():
+                                    print('Error, two sources found.')
+                                    print(link, contained_parts)
+                                else:
+                                    contained_parts_assigned[rel] = contained_parts[link_index - 1]
+                                    indexes_added.append(link_index - 1)
+                            elif 'determined' in link or 'reference' in link:
+                                rel = link.strip('-')
+                                contained_parts_assigned[rel] = contained_parts[link_index + 1]
+                                contained_parts_assigned['has-primary-participant-phenomenon'] = \
+                                                    contained_parts[link_index - 1]
+                                indexes_added.append(link_index + 1)
+                                indexes_added.append(link_index - 1)
+                            elif (link == '-and-') or (link == '-or-') or (link == '-vs-'):
+                                andflag = True
+                            else: # -has-X- and -undergoes-process-
+                                rel = link.strip('-').replace('wrt','determined-wrt')
+                                if rel in contained_parts_assigned.keys():
+                                    rel = rel + '2'
+                                contained_parts_assigned[rel] = contained_parts[link_index + 1]
+                                indexes_added.append(link_index + 1)
+                        if link_index >= 0:
+                            link_index += 1
+                printit = True
+                if andflag or len(indexes_added) == (len(contained_parts) - 1):
+                    for i in range(len(contained_parts)):
+                        if i not in indexes_added:
+                            element = contained_parts[i]
+                            element_root = element
 
-            indexes_added.sort()
-            all_elements.append(contained_parts_assigned)
-            if printit:
-                debug.write(str(contained_parts_assigned) + '\n')
+                            # Determine if there is a link in the element
+                            # If there is a link, then leave the element as it is (complex phenomenon)
+                            # Otherwise, find the root element by removing attributes
+                            link_found = False
+                            for l in all_links:
+                                if l in element:
+                                    link_found = True
+                                    break    
+                            if not link_found:
+                                element_root = element.split('~')[0]
 
+                            # Determine the relationship for the element
+                            # No explicit relationship was provided in the links
+                            rel = None
+                            if element_root not in categories_override.keys() and element_root in categories['process']:
+                                rel = 'undergoes-process'
+                                printit = True
+                            elif any(x in contained_parts for x in intraobject_relations) and \
+                                '-undergoes-process-' not in contained_parts:
+                                if element_root in categories_override.keys():
+                                    rel = 'has-' + categories_override[element]
+                                else:
+                                    for cat,items in categories.items():
+                                        if element_root in items:
+                                            rel = 'has-' + cat
+                                            break
+                                    if rel is None:
+                                        rel = 'has-phenomenon'
+                            else:
+                                rel = 'has-primary-participant-phenomenon'
+                            if rel in contained_parts_assigned.keys():
+                                if '-and-' in contained_parts or '-or-' in contained_parts or '-vs-' in contained_parts:
+                                    rel = rel + '2'
+                                elif 'has-phenomenon' not in contained_parts_assigned.keys():
+                                    rel = 'has-phenomenon'
+                                else:
+                                    print('ERROR')
+                            contained_parts_assigned[rel] = contained_parts[i]
+    
+                            indexes_added.append(i)
+                            continue
+                elif len(indexes_added) != len(contained_parts):
+                    print(contained_parts_assigned, contained_parts, indexes_added)
+                    print('ERROR')
+                    continue # debug this
+
+                indexes_added.sort()
+                all_elements.append(contained_parts_assigned)
+                if printit:
+                    debug.write(str(contained_parts_assigned) + '\n')
+
+                if printout:
+                    print(contained_parts_assigned)
+                    input('Press enter to continue ...')
+    except:
+        print('ERROR')
+        continue
 #print(all_elements)
 #print(len(all_elements))
 atomized_objects = pd.DataFrame()

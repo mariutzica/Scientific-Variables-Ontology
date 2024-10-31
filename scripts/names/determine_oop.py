@@ -53,6 +53,8 @@ def loop_on_pattern(pattern, pattern_replace, obj_pat_str, obj_name, pat_list, r
 
     return (obj_pat_str, obj_name, pat_list)
 
+verbose = False
+
 phen_phen_list = []
 all_object_patterns = []
 final_data = []
@@ -63,19 +65,8 @@ for row in reader:
     object_pattern_expanded = object_pattern.split('_')
     object_pattern_simple = [obj.split('~')[0] for obj in object_pattern_expanded]
     object_pattern_simple_str = '_'.join(object_pattern_simple)
-
-    if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_MATTER_ABSTRACTION_ABSTRACTION_ABSTRACTION_ABSTRACTION': 
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-abstraction-']] )
-        while 'PHENOMENON_ABSTRACTION' in object_pattern_simple_str:
-            (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-abstraction-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
-            
+    #if '-or-' in variable_name:
+    #    print(variable_name, object_pattern_simple_str)        
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_ABSTRACTION_ABSTRACTION_ABSTRACTION_ABSTRACTION':
         while 'PHENOMENON_ABSTRACTION' in object_pattern_simple_str:
             (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -85,7 +76,7 @@ for row in reader:
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_MATTER_PHENOMENON_PART_ABSTRACTION':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-makes-up-']] )
+                object_name, phen_phen_list, [['_','-is-medium-matter-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PART', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-part-']] )
@@ -111,19 +102,6 @@ for row in reader:
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
         
-    if (object_pattern_simple_str == 'PHENOMENON_PHENOMENON_at-PHENOMENON-or-ROLE_PROCESS-or-PROCESS') or \
-        (object_pattern_simple_str == 'PHENOMENON_at-PHENOMENON-or-ROLE_PROCESS-or-PROCESS'):
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON-or-ROLE_PROCESS-or-PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-undergoes-process-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_at-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
-        object_name = object_name.replace('-measured-(at-','-measured-at-(')
-        
     if object_pattern_simple_str == 'PHENOMENON_FORM_PART_PHENOMENON_FORM_PHENOMENON_MATTER_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_FORM', 'PHENOMENON', object_pattern_simple_str, \
@@ -145,11 +123,15 @@ for row in reader:
         
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_FORM_PHENOMENON_FORM_PHENOMENON_MATTER':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_ABSTRACTION_FORM', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_surface_','-has-abstraction-surface-has-form-']] )
+                loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_FORM_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_channel_','-has-form-channel-has-part-']] )
+                loop_on_pattern('PHENOMENON_FORM', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-form-']] )
+        groupings = ['(stream-has-form-channel)_reach']
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-part-']], combinations = groupings )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
@@ -157,38 +139,15 @@ for row in reader:
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-is-location-of-']] )
         
-    if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_MATTER_PROCESS_PHENOMENON_MATTER_ABSTRACTION':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-form-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-abstraction-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PROCESS_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_reworking_','-undergoes-process-reworking-by-in-']] )
-        
-    if object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_FORM_MATTER_from-ABSTRACTION-below':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_FORM', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_MATTER_from-ABSTRACTION-below', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_from','-out-of'],
-                                              ['_','-is-model-location-of-'],] )
-        
     if object_pattern_simple_str == 'ROLE_ROLE_FORM_PHENOMENON-and-PHENOMENON-as-MATTER_PROCESS':
-        object_pattern_simple_str = 'ROLE_ROLE_FORM_PHENOMENON_PROCESS'
-        object_name = object_name.replace('-as-','-expressed-as-')
+        object_pattern_simple_str = 'ROLE_ROLE_FORM_PHENOMENON-and-PHENOMENON_as-MATTER_PROCESS'
+        object_name = object_name.replace('-as-','_as-')
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON-and-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_as-MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_', '-expressed-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-undergoes-process-']] )
@@ -196,41 +155,22 @@ for row in reader:
                 loop_on_pattern('ROLE_FORM', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-form-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ROLE_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-is-source-of-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
-        
-    if object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_ABSTRACTION_from-ABSTRACTION_PART' or \
-        object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_ABSTRACTION_to-ABSTRACTION_PART':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-part-']] )
-        groupings = ['grid_shell']
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']], combinations = groupings )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_from-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_(from-','-measured-from-(']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_to-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_(to-','-measured-to-(']] )
+                loop_on_pattern('ROLE_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-is-source-of-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_MATTER_PHENOMENON_PART':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_PHENOMENON_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_tide_','-makes-up-tide-has-part-']] )
+                object_name, phen_phen_list, [['_tide_','-is-medium-matter-tide-has-part-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
+                object_name, phen_phen_list, [['_','-contains-part-']] )
         
     if object_pattern_simple_str == 'ROLE_ROLE_FORM_PHENOMENON-and-PHENOMENON_MATTER_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -240,7 +180,10 @@ for row in reader:
                 loop_on_pattern('ROLE_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-is-source-of-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PHENOMENON-and-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                loop_on_pattern('PHENOMENON-and-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-part-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
@@ -312,18 +255,35 @@ for row in reader:
                 loop_on_pattern('PHENOMENON_PHENOMENON_MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_water_','-as-sink-water-undergoes-process-'],
                                               ['_','-as-source-']])
-    
-    if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_MATTER_ABSTRACTION_ABSTRACTION':
+
+    if (object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_MATTER_FORM_ABSTRACTION_ABSTRACTION_ABSTRACTION') or \
+        (object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_MATTER_FORM') or \
+        (object_pattern_simple_str == 'PROCESS_PHENOMENON_ABSTRACTION_MATTER_FORM') or \
+        (object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_MATTER_FORM_PROCESS') or \
+        (object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_MATTER_FORM_ABSTRACTION'):
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
+                loop_on_pattern('MATTER_FORM', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-form-']])
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-undergoes-process-']])
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-abstraction-']])
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-abstraction-']])
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-abstraction-']])
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']])
-        
+                object_name, phen_phen_list, [['shoreline)_','shoreline)-is-location-of-'],
+                                                ['_','-contains-']])
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PROCESS_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-observes-']])
+
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_PHENOMENON_at-PROPERTY':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
@@ -333,8 +293,8 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-is-location-of-']])
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_at-PROPERTY', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_at-speed','-reference-for-computing-speed'],
-                                                ['_at-','-referenced-with-property-']])
+                object_name, phen_phen_list, [['_at-speed','-reference-for-determination-of-property-speed'],
+                                                ['_at-','-determined-at-property-']])
         
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_ABSTRACTION_PHENOMENON_PROCESS' or \
         object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_ABSTRACTION_PHENOMENON':
@@ -380,21 +340,6 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_ROLE_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_projectile_','-as-source-projectile-undergoes-process-']])
-            
-    if object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_FORM_PART_ABSTRACTION_MATTER':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('FORM_PART_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_edge_','-has-part-edge-has-abstraction-'],
-                                               ['_face_','-has-part-face-has-abstraction-'] ])
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-is-model-location-of-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_PHENOMENON_PHENOMENON_PROCESS':
         if 'seismic-wave' in object_name:
@@ -402,8 +347,6 @@ for row in reader:
                 loop_on_pattern('PHENOMENON_PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_seismic-station_arrival','-as-main-seismic-station-as-sink-arrival'],
                                               ['_seismic-station_travel','-as-main-seismic-station-as-sink-travel']] )
-            
-            
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-undergoes-process-']] )
@@ -472,21 +415,6 @@ for row in reader:
                 loop_on_pattern('PHENOMENON_PHENOMENON_MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_water_','-as-sink-water-undergoes-process-'],
                                                 ['_','-as-source-']])
-
-    if object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_FORM_PART_along-ABSTRACTION' or \
-        object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_FORM_PART':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('FORM_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_along-ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_PHENOMENON_PHENOMENON_MATTER' or \
         object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_PHENOMENON_PHENOMENON':
@@ -495,7 +423,7 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-contains-part-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
+                object_name, phen_phen_list, [['_','-contains-as-medium-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
@@ -541,27 +469,6 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-part-']] )
-
-    if object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_ABSTRACTION_MATTER_to-PART' or \
-        object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_ABSTRACTION_MATTER' or \
-        object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_ABSTRACTION_MATTER_PROCESS':
-        groupings = ['grid_shell','grid_node','grid_dual-node','grid_primary-node',
-                     'grid_dual-cell','grid_primary-cell']
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']], combinations = groupings )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_PROCESS', 'MATTER', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-undergoes-process-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-is-model-location-of-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_to-PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_PHENOMENON_ABSTRACTION_ROLE':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -581,8 +488,11 @@ for row in reader:
         object_pattern_simple_str == 'ROLE_TRAJECTORY_ABSTRACTION_PHENOMENON' or \
         object_pattern_simple_str == 'ROLE_TRAJECTORY_ABSTRACTION':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ROLE_TRAJECTORY_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_trajectory_','-has-trajectory-trajectory-has-abstraction-']] )
+                loop_on_pattern('ROLE_TRAJECTORY', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-trajectory-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
@@ -601,38 +511,13 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
+        if 'reference' in quantity_name:
+            (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_at-PROPERTY', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_at-','-reference-for-determination-of-property-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_at-PROPERTY', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
-        
-    if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_MATTER_ABSTRACTION_PROCESS':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-form-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-undergoes-process-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-abstraction-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
-
-    if object_pattern_simple_str == 'PROCESS_PHENOMENON_ABSTRACTION_MATTER_ABSTRACTION':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-form-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-abstraction-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PROCESS_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-observes-']] )
-        
+                object_name, phen_phen_list, [['_','-determined-at-property-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_PHENOMENON_MATTER_PROCESS':
         groupings = ['storm_water']
@@ -658,49 +543,17 @@ for row in reader:
                 object_name, phen_phen_list, [[')_(v',')-is-location-of-(v'],
                                                 ['_','-contains-']] )
         
-    if object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_FORM_ABSTRACTION_MATTER' or \
-        object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_FORM_ABSTRACTION':
+    if object_pattern_simple_str == 'PHENOMENON_FORM_ROLE_MATTER_PROCESS_ABSTRACTION':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('FORM_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-abstraction-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-is-model-location-of-']] )
-
-    if object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_ABSTRACTION_ABSTRACTION' or \
-        object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_ABSTRACTION_ABSTRACTION_MATTER':
-        groupings = ['axis~x_axis~east','grid_dual-cell','grid_primary-cell']
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_axis~east','-as-first-main-axis~east-as-second-main'],
-                                              ['_','-contains-part-']], combinations = groupings )
+                loop_on_pattern('MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-is-model-location-of-']] )
-        
-    if object_pattern_simple_str == 'PHENOMENON_FORM_ROLE_MATTER_PROCESS_ABSTRACTION':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_PROCESS_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_flowing_','-undergoes-process-flowing-has-abstraction-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('FORM_ROLE', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-part-']] )
-        groupings = ['(channel~main-has-part-entrance)_(water-undergoes-process-flowing-has-abstraction-x-section)']
+        groupings = ['(channel~main-has-part-entrance)_((water-undergoes-process-flowing)-has-abstraction-x-section)']
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']], combinations = groupings )
@@ -728,45 +581,15 @@ for row in reader:
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-is-location-of-']] )
         
-    if object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_PART_PHENOMENON_MATTER':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-is-model-location-of-']] )
-        
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_ABSTRACTION_ABSTRACTION' or \
         object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_ABSTRACTION':
         while 'PHENOMENON_ABSTRACTION' in object_pattern_simple_str:
             (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_viewpoint','-is-location-of-viewpoint'],
-                                              ['_circle','-has-model-abstraction-circle'],
                                               ['_base-level','-has-model-abstraction-base-level'],
                                               ['_axis~east','-as-first-main-axis~east-as-second-main'],
-                                              ['_','-has-abstraction-']] ) 
-        
-    if object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_FORM_PART_ABSTRACTION':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('FORM_PART_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_center','-has-abstraction-center'],
-                                              ['_','-has-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('FORM_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
+                                              ['_','-has-abstraction-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_PART_PHENOMENON_PHENOMENON_PROCESS' or \
         object_pattern_simple_str == 'PHENOMENON_PART_PHENOMENON_PHENOMENON':
@@ -782,17 +605,33 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
-        
+
+    if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_MATTER_PROCESS_PHENOMENON_MATTER_FORM':
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_FORM', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-form-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-abstraction-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PROCESS_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_reworking','-undergoes-process-reworking'],
+                                              ['_','-has-in-']] )
+
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_MATTER_PROCESS_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_water_','-as-sink-water-undergoes-process-']] )       
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-undergoes-process-']] )
+                loop_on_pattern('PHENOMENON_MATTER_PROCESS_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_water_','-as-sink-water-undergoes-process-'],
+                                              ['_','-undergoes-process-']] )       
         
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_PHENOMENON_ABSTRACTION':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -807,8 +646,11 @@ for row in reader:
     if object_pattern_simple_str == 'PHENOMENON_TRAJECTORY_ABSTRACTION_ABSTRACTION' or \
         object_pattern_simple_str == 'PHENOMENON_TRAJECTORY_ABSTRACTION':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_TRAJECTORY_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_orbit_','-has-trajectory-orbit-has-abstraction-']] )
+                loop_on_pattern('PHENOMENON_TRAJECTORY', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-trajectory-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
@@ -823,17 +665,17 @@ for row in reader:
         groupings = ['distributary_(outlet-contains-(water-has-abstraction-x-section))']
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']], combinations = groupings )
+                object_name, phen_phen_list, [['_','-contains-part-']], combinations = groupings )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
+                object_name, phen_phen_list, [['_','-contains-part-']] )
         
-    if object_pattern_simple_str == 'ABSTRACTION_PROCESS_PHENOMENON_MATTER_PROCESS':
+    if object_pattern_simple_str == 'MODEL_PROCESS_PHENOMENON_MATTER_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_nitrogen-fertilizer_','-as-sink-nitrogen-fertilizer-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                loop_on_pattern('MODEL_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
@@ -872,8 +714,11 @@ for row in reader:
     if object_pattern_simple_str == 'ROLE_TRAJECTORY_ROLE_PHENOMENON_ABSTRACTION' or \
         object_pattern_simple_str == 'ROLE_TRAJECTORY_ROLE':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ROLE_TRAJECTORY_ROLE', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_trajectory_','-has-trajectory-trajectory-has-abstraction-']] )
+                loop_on_pattern('ROLE_TRAJECTORY', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-trajectory-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_ROLE', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
@@ -881,25 +726,6 @@ for row in reader:
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-as-first-main-'],
                                               ['surface)','surface)-as-second-main']] )
-        
-    if object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_FORM_MATTER_PROCESS' or \
-        object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_FORM_MATTER' or \
-        object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_FORM':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-undergoes-process-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_FORM', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-is-model-location-of-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-is-model-location-of-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_PART_PHENOMENON_FORM_ABSTRACTION' or \
         object_pattern_simple_str == 'PHENOMENON_PART_PHENOMENON_FORM':
@@ -922,8 +748,11 @@ for row in reader:
     if object_pattern_simple_str == 'FORM_ROLE_MATTER_PROCESS_ABSTRACTION_MATTER' or \
         object_pattern_simple_str == 'FORM_ROLE_MATTER_PROCESS_ABSTRACTION':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_PROCESS_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_flowing_','-undergoes-process-flowing-has-abstraction-']] )
+                loop_on_pattern('MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-undergoes-process-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-as-medium-']] )
@@ -958,10 +787,10 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-contains-part-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_above-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
+                object_name, phen_phen_list, [['_','-determined-']] )
 
-    if object_pattern_simple_str == 'ABSTRACTION_PROCESS_PHENOMENON_ROLE_PROCESS' or \
-        object_pattern_simple_str == 'ABSTRACTION_PROCESS_PHENOMENON_ROLE' or \
+    if object_pattern_simple_str == 'MODEL_PROCESS_PHENOMENON_ROLE_PROCESS' or \
+        object_pattern_simple_str == 'MODEL_PROCESS_PHENOMENON_ROLE' or \
         object_pattern_simple_str == 'PROCESS_PHENOMENON_ROLE_PROCESS' or \
         object_pattern_simple_str == 'PROCESS_PHENOMENON_ROLE':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -971,7 +800,7 @@ for row in reader:
                 loop_on_pattern('PHENOMENON_ROLE', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-as-medium-']])
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                loop_on_pattern('MODEL_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
@@ -987,6 +816,7 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PART_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_bottom_','-has-part-bottom-has-abstraction-'],
+                                              ['_front_','-has-part-front-has-abstraction-'],
                                               ['_top_','-has-part-top-has-abstraction-'],
                                               ['_bed_','-has-part-bed-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -1004,12 +834,9 @@ for row in reader:
                 loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-undergoes-process-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_ROLE', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_sink','-into-sink'],
-                                              ['_source','-out-of-source']] )
+                loop_on_pattern('MATTER_PROCESS_ROLE', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['water_flowing_sink','sink-as-sink-water-undergoes-process-flowing'],
+                                              ['water_flowing_source','source-as-source-water-undergoes-process-flowing']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-is-location-of-']] )
@@ -1057,8 +884,11 @@ for row in reader:
         
     if object_pattern_simple_str == 'PHENOMENON_ROLE_MATTER_PROCESS_ABSTRACTION':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_PROCESS_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_flowing_','-undergoes-process-flowing-has-abstraction-']] )
+                loop_on_pattern('MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-undergoes-process-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('ROLE_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
@@ -1077,7 +907,7 @@ for row in reader:
                                               ['_nitrogen_','-as-sink-water-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_at-PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
+                object_name, phen_phen_list, [['_','-determined-']] )
         
     if object_pattern_simple_str == 'MATTER_MATTER_PHENOMENON_PART_ABSTRACTION':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -1087,9 +917,11 @@ for row in reader:
         
     if object_pattern_simple_str == 'PHENOMENON_PART_MATTER_ROLE_PROCESS_MODEL':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_ROLE_PROCESS_MODEL', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_flowing_','-undergoes-process-flowing-has-model-abstraction-'],
-                                              ['_','-as-medium-']] )
+                loop_on_pattern('MATTER_ROLE_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_debris_','-as-medium-debris-undergoes-process-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_MODEL', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-model-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PART', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-part-']] )
@@ -1111,15 +943,13 @@ for row in reader:
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_MATTER_ABSTRACTION':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_wave','-has-form-wave'],
-                                              ['_','-has-abstraction-']] )
+                object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['(sea-has-abstraction-surface)_','(sea-has-abstraction-surface)-contains-'],
-                                              ['_','-is-location-of-']] )
+                object_name, phen_phen_list, [['_','-is-location-of-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_PHENOMENON_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -1160,7 +990,7 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_land','_land-as-source'],
-                                              ['subsurface)_','subsurface)-contains-'],
+                                              ['subsurface)_','subsurface)-contains-part-'],
                                               ['_','-as-sink-'],
                                               ['canopy','canopy-as-source'],
                                               ['cloud','cloud-as-source']] )
@@ -1170,10 +1000,14 @@ for row in reader:
         groupings = ['sediment_clay', 'sediment_sand', 'sediment_silt']
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_MATTER', 'MATTER', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']], combinations = groupings)
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                object_name, phen_phen_list, [['_','-as-medium-']], combinations = groupings)
+        if 'concentration' in quantity_name:
+            (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_MATTER', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-as-medium-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('ROLE_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
@@ -1222,8 +1056,8 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_below-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
-        object_name = object_name.replace('measured-(below-','measured-below-(')
+                object_name, phen_phen_list, [['_','-determined-']] )
+        object_name = object_name.replace('determined-(below-','determined-below-(')
         
     if object_pattern_simple_str == 'MATTER_ABSTRACTION_ROLE_MATTER_MATTER':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -1244,16 +1078,16 @@ for row in reader:
         object_pattern_simple_str == 'PHENOMENON_PART_MATTER_ROLE_ROLE' or \
         object_pattern_simple_str == 'MATTER_ROLE_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_ROLE_PROCESS_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_debris_','-as-medium-debris-undergoes-process-'],
-                                              ['_','-has-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_ROLE_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_debris_','-as-medium-debris-undergoes-process-'],
-                                              ['_fertilizer_','-as-sink-fertilizer-undergoes-process-']] )
+                                              ['_fertilizer_','-as-sink-fertilizer-undergoes-process-'],
+                                              ['_scuba-diver_','-as-medium-scuba-diver-undergoes-process-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PART', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-part-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('ROLE_ROLE', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-undergoes-process-']] )
+                object_name, phen_phen_list, [['_','-has-form-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-as-medium-']] )
@@ -1262,7 +1096,7 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-has-part-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-is-location-of-']] )
+                object_name, phen_phen_list, [['_','-contains-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_PHENOMENON_PHENOMENON_PROCESS' or \
         object_pattern_simple_str == 'PHENOMENON_PHENOMENON_PROCESS':
@@ -1274,11 +1108,22 @@ for row in reader:
            (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-part-']] )
-        if 'absor' in object_name or 'trans' in object_name or 'detection' in object_name:
+        if 'eye' in object_name:
+           (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-part-']] )
+        if 'atmosphere' in object_name and 'clouds' not in object_name:
+            (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-undergoes-process-']] )
+            (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-']] )
+        elif 'absor' in object_name or 'trans' in object_name or 'detection' in object_name:
            (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['clouds_','clouds-as-sink-'],
-                                              ['eye_','eye-as-sink-'],
+                                              ['eye)_','eye)-as-sink-'],
                                               ['atmosphere_','atmosphere-as-sink-'],
                                               ['snowpack_','snowpack-as-sink-'],
                                                 ['_','-undergoes-process-']] )
@@ -1291,15 +1136,17 @@ for row in reader:
                                               ['_gravity_','-creates-gravity-as-source-'],
                                               ['_baseball_','-as-main-baseball-as-main-'],
                                               ['ground_','ground-as-medium-'],
+                                              ['groundwater_well','well-as-medium-groundwater'],
                                               ['earth_mars_','earth-as-source-mars-as-sink-'],
                                                 ['_','-undergoes-process-']] )
         groupings = ['engine_(crankshaft-undergoes-process-rotation)']
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']], combinations = groupings )
+                object_name, phen_phen_list, [['_','-contains-part-']], combinations = groupings )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['drainage-basin_','drainage-basin-contains-part-'],
+                                              ['automobile_','automobile-contains-part-'],
                                                 ['_','-contains-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_MATTER_PHENOMENON':
@@ -1308,11 +1155,11 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['water_','water-makes-up-'],
+                object_name, phen_phen_list, [['water_','water-is-medium-matter-'],
                                               ['_','-contains-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_(water','-contains-(water'],
+                object_name, phen_phen_list, [['_(water','-contains-part-(water'],
                                               ['_','-is-location-of-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_FORM_MATTER_ABSTRACTION_PART' or \
@@ -1357,25 +1204,23 @@ for row in reader:
 
     if object_pattern_simple_str == 'PHENOMENON_MATTER_PHENOMENON-as-MATTER':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_PHENOMENON-as-MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['-as-','-expressed-as-'],
-                                                ['_','-as-medium-']] )
+                loop_on_pattern('PHENOMENON-as-MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['-as-','-expressed-as-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-as-medium-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_MATTER_PHENOMENON_PHENOMENON':
-        if 'seismic-wave' in object_name:
-                (object_pattern_simple_str, object_name, phen_phen_list) = \
-                        loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                        object_name, phen_phen_list, [['_','-as-numerator-']] )
-                object_name = object_name.rstrip(')') + '-as-denominator)'
-                (object_pattern_simple_str, object_name, phen_phen_list) = \
-                        loop_on_pattern('MATTER_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                        object_name, phen_phen_list, [['_','-contains-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_rip-current_','-makes-up-rip-current-has-part-']] )
+                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-as-numerator-']] )
+        object_name = object_name.rstrip(')') + '-as-denominator)'
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
@@ -1404,17 +1249,6 @@ for row in reader:
                 loop_on_pattern('PHENOMENON_PART', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-part-']] )
         
-    if object_pattern_simple_str == 'PHENOMENON_PHENOMENON_MATTER_PHENOMENON':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-form-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
-        
     if object_pattern_simple_str == 'PHENOMENON_below-PHENOMENON_ABSTRACTION' or \
         object_pattern_simple_str == 'MATTER_below-PHENOMENON_ABSTRACTION':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -1422,11 +1256,11 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_below-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
+                object_name, phen_phen_list, [['_','-determined-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_below-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
-        object_name = object_name.replace('measured-(below-','measured-below-(')
+                object_name, phen_phen_list, [['_','-determined-']] )
+        object_name = object_name.replace('determined-(below-','determined-below-(')
         
     if object_pattern_simple_str == 'PHENOMENON_ROLE_MATTER_ABSTRACTION_PART' or \
         object_pattern_simple_str == 'PHENOMENON_ROLE_MATTER_ABSTRACTION':
@@ -1457,9 +1291,9 @@ for row in reader:
     if object_pattern_simple_str == 'PHENOMENON_PART_MATTER_PROCESS_PROCESS' or \
         object_pattern_simple_str == 'PHENOMENON_PART_MATTER_PROCESS_FORM' or \
         object_pattern_simple_str == 'PHENOMENON_PART_MATTER_PROCESS':
-        contains = False
-        if object_pattern_simple_str == 'PHENOMENON_PART_MATTER_PROCESS':
-            contains = True
+        contains = True
+        if 'land_region' in object_name:
+            contains = False
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PART', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-part-']] )
@@ -1483,9 +1317,11 @@ for row in reader:
       
     if object_pattern_simple_str == 'ROLE-as-MATTER_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ROLE-as-MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['-as-','-expressed-as-'],
-                                                ['_','-undergoes-process-']] )
+                loop_on_pattern('ROLE-as-MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['-as-','-expressed-as-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-undergoes-process-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_PHENOMENON_PART' or \
         object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_PHENOMENON_FORM':
@@ -1546,7 +1382,7 @@ for row in reader:
     if object_pattern_simple_str == 'MATTER_PHENOMENON_PART_MATTER_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_PHENOMENON_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_phreatic-zone_','-makes-up-phreatic-zone-has-part-']] )
+                object_name, phen_phen_list, [['_phreatic-zone_','-is-medium-matter-phreatic-zone-has-part-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_water_','-as-sink-water-as-in-']] )
@@ -1605,7 +1441,7 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-contains-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
+                object_name, phen_phen_list, [['_','-contains-part-']] )
 
     if object_pattern_simple_str == 'PHENOMENON_ROLE_MATTER_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -1616,7 +1452,7 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-contains-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
+                object_name, phen_phen_list, [['_','-contains-part-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_PART_MATTER_MATTER_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -1648,15 +1484,17 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['level)_','level)-contains-'],['_','-is-location-of-']] )
+                object_name, phen_phen_list, [['level)_','level)-contains-'],
+                                              ['_(soil','-contains-(soil'],
+                                              ['_','-is-location-of-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_PART_FORM_PROCESS_PROCESS' or \
         object_pattern_simple_str == 'PHENOMENON_PART_FORM_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('FORM_PROCESS_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                loop_on_pattern('FORM_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('FORM_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                loop_on_pattern('PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PART', 'PHENOMENON', object_pattern_simple_str, \
@@ -1702,29 +1540,28 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-has-property-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_at-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
-        object_name = object_name.replace('measured-(at-','measured-at-(')
+                object_name, phen_phen_list, [['_','-determined-']] )
+        object_name = object_name.replace('determined-(at-','determined-at-variable-(')
         
     if object_pattern_simple_str == 'PHENOMENON_MATTER_PHENOMENON_PROCESS':
         groupings = ['sea_ice']
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-is-location-of-origin-of-']], combinations = groupings )
-        if 'absor' in object_name or 'trans' in object_name:
-                (object_pattern_simple_str, object_name, phen_phen_list) = \
-                        loop_on_pattern('MATTER_PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                        object_name, phen_phen_list, [['_radiation~incoming~longwave_','-as-sink-radiation~incoming~longwave-undergoes-process-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                        loop_on_pattern('MATTER_PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                        object_name, phen_phen_list, [['_radiation~incoming~longwave_','-as-source-radiation~incoming~longwave-undergoes-process-']] )
+        if 'atmosphere_air_radiation' in object_name:
+            (object_pattern_simple_str, object_name, phen_phen_list) = \
+                        loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                        object_name, phen_phen_list, [['_','-contains-']] )
         if 'absor' in object_name or 'trans' in object_name:
                 (object_pattern_simple_str, object_name, phen_phen_list) = \
                         loop_on_pattern('PHENOMENON_PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                        object_name, phen_phen_list, [['_radiation','-as-sink-radiation'],
-                                                      ['_','-undergoes-process-']] )
+                        object_name, phen_phen_list, [['_radiation~incoming~longwave_','-as-sink-radiation~incoming~longwave-undergoes-process-'],
+                                                      ['_radiation~incoming~shortwave_','-as-sink-radiation~incoming~shortwave-undergoes-process-'],
+                                                      ['_radiation~incoming_','-as-sink-radiation~incoming-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                         loop_on_pattern('PHENOMENON_PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                        object_name, phen_phen_list, [['_radiation','-as-source-radiation'],
+                        object_name, phen_phen_list, [['_radiation~incoming~longwave_','-as-source-radiation~incoming~longwave-undergoes-process-'], 
+                                                        ['_radiation','-as-source-radiation'],
                                                       ['_','-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
@@ -1732,7 +1569,10 @@ for row in reader:
         
     if object_pattern_simple_str == 'PHENOMENON_MATTER_ABSTRACTION_MATTER' or \
        object_pattern_simple_str == 'PHENOMENON_MATTER_ABSTRACTION_MATTER-as-MATTER':
-        object_pattern_simple_str = object_pattern_simple_str.replace('MATTER-as-MATTER','MATTER')
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                        loop_on_pattern('MATTER-as-MATTER', 'MATTER', object_pattern_simple_str, \
+                        object_name, phen_phen_list, [
+                                              ['-as-','-expressed-as-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_column','-has-form-column'],
@@ -1745,7 +1585,6 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_air','-is-location-of-air'],
-                                              ['-as-','-expressed-as-'],
                                               ['_','-contains-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                         loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
@@ -1757,7 +1596,8 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-as-medium-']] )
+                object_name, phen_phen_list, [['_meltwater','-as-source-meltwater'],
+                                                ['_','-as-medium-']] )
         if 'sea' in object_name and 'air' in object_name:
                 (object_pattern_simple_str, object_name, phen_phen_list) = \
                         loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
@@ -1766,95 +1606,47 @@ for row in reader:
                         loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                         object_name, phen_phen_list, [['_','-contains-']] )
 
-    if object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_PART_MATTER' or \
-        object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_PART_PART' or \
-        object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_PART':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PART_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-is-model-location-of-']] )
-
     if object_pattern_simple_str == 'FORM_ABSTRACTION_ABSTRACTION_PART':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('FORM_ABSTRACTION_ABSTRACTION_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_x-section_','-has-abstraction-x-section-has-model-abstraction-'],
-                                              ['_','-has-part-']] )
-        
-    if object_pattern_simple_str == 'ABSTRACTION_PART_PHENOMENON_PROCESS':
+                loop_on_pattern('FORM_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-undergoes-process-']] )
+                loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-model-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-is-model-location-of-']] )
+                loop_on_pattern('PHENOMENON_PART', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-part-']] )
         
     if object_pattern_simple_str == 'MATTER_FORM-and-FORM_MATTER_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_FORM-and-FORM', 'PHENOMENON', object_pattern_simple_str, \
+                loop_on_pattern('FORM-and-FORM', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-form-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_carbon~decomposed_','-as-sink-carbon~decomposed-undergoes-process-']] )
+        object_name = object_name.replace('soil-has-form-(pool-and-pool~microbial)',
+                                          '(soil-has-form-pool)-and-(soil-has-form-pool~microbial)')
         
     if object_pattern_simple_str == 'PHENOMENON-and-PHENOMENON_PROCESS' or \
         object_pattern_simple_str == 'PHENOMENON_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON-and-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-undergoes-process-']] )
-        object_pattern_simple_str = 'PHENOMENON'
         
     if object_pattern_simple_str == 'ROLE_PROCESS_TRAJECTORY_ABSTRACTION':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ROLE_PROCESS_TRAJECTORY_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_trajectory_','-has-trajectory-trajectory-has-abstraction-'],
+                loop_on_pattern('ROLE_PROCESS_TRAJECTORY', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_trajectory','-has-trajectory-trajectory'],
                                               ['_','-undergoes-process-']] )
-        
-    if object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_ABSTRACTION' or \
-        object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_ABSTRACTION_PART' or \
-        object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_ABSTRACTION_PART_ABSTRACTION' or \
-        object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION_ABSTRACTION_PART_ABSTRACTION_MATTER':
-        groupings = ['grid_virtual-north-pole', 'grid_primary-node',
-                     'grid_x-primary-node', 'grid_y-primary-node',
-                     'grid_z-primary-node', 'grid_dual-node', 
-                     'grid_x-dual-node', 'grid_y-dual-node',
-                     'grid_z-dual-node', 'grid_node','grid_shell',
-                     'grid_row','grid_column', 'grid_primary-cell',
-                     'grid_dual-cell']
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PART', 'PART', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PART_ABSTRACTION', 'PART', object_pattern_simple_str, \
+                loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PART', 'PART', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']], combinations = groupings )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-is-model-location-of-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_PHENOMENON_FORM_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -1865,23 +1657,25 @@ for row in reader:
                 object_name, phen_phen_list, [['_compaction','-undergoes-process-compaction'],
                                               ['_','-as-medium-']] )
         
-        
     if object_pattern_simple_str == 'ROLE_MATTER_PROCESS_MATTER_PROCESS' or \
-        object_pattern_simple_str == 'MATTER_PROCESS_MATTER_PROCESS' or \
-        object_pattern_simple_str == 'MATTER_PROCESS_MATTER-as-MATTER_PROCESS':
-        object_pattern_simple_str = object_pattern_simple_str.replace('MATTER-as-','')
-        object_name = object_name.replace('-as-','-expressed-as-')
+        object_pattern_simple_str == 'MATTER_PROCESS_MATTER_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ROLE_MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['crop_biomass~microbial-and-soil_','((crop-contains-biomass~microbial)-and-soil)-undergoes-process-']] )
-        groupings = ['soil_nitrification','soil_denitrification','biomass~microbial-and-soil~stabilized_decomposition']
+                loop_on_pattern('ROLE_MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['crop_biomass~microbial-and-soil','(crop-has-matter-biomass~microbial)-and-soil']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-undergoes-process-']] )
+        groupings = ['biomass~microbial-and-soil~stabilized_decomposition']
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-undergoes-process-']], combinations = groupings )
+                object_name, phen_phen_list, [['biomass~microbial-and-soil~stabilized_','(biomass~microbial-and-soil~stabilized)-undergoes-process-']], combinations = groupings )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_carbon_','-as-source-carbon-undergoes-process-'],
-                                              ['_nitrous-oxide-expressed-as-nitrogen_','-as-source-nitrous-oxide-expressed-as-nitrogen-undergoes-process-']] )
+                object_name, phen_phen_list, [['_carbon_','-as-source-carbon-undergoes-process-']] )
+        object_name = object_name.replace('((crop-has-matter-biomass~microbial)-and-soil)-undergoes-process-decomposition',
+                                          '((crop-has-matter-biomass~microbial)-undergoes-process-decomposition)-and-(soil-undergoes-process-decomposition)')\
+                                .replace('(biomass~microbial-and-soil~stabilized)-undergoes-process-decomposition',
+                                         '(biomass~microbial-undergoes-process-decomposition)-and-(soil~stabilized-undergoes-process-decomposition)')
 
     if object_pattern_simple_str == 'ROLE_PHENOMENON_PHENOMENON_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -1918,11 +1712,11 @@ for row in reader:
                 loop_on_pattern('PHENOMENON_PART', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-part-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_MATTER_FORM', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_water~vapor_','-as-medium-water~vapor-has-form-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_MATTER', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-as-medium-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_FORM', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-form-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
@@ -1946,7 +1740,7 @@ for row in reader:
         object_pattern_simple_str == 'MATTER_PHENOMENON_MATTER':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['soil_','soil-makes-up-'],
+                object_name, phen_phen_list, [['soil_','soil-is-medium-matter-'],
                                                 ['_','-has-form-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
@@ -1963,7 +1757,8 @@ for row in reader:
         object_pattern_simple_str == 'PHENOMENON_FORM_MATTER':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_FORM', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-form-']] )
+                object_name, phen_phen_list, [['_link','-contains-part-link'],
+                                              ['_','-has-form-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
@@ -1971,19 +1766,24 @@ for row in reader:
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
         
-    if object_pattern_simple_str == 'PHENOMENON_ROLE_MATTER_at-PROCESS' or \
-        object_pattern_simple_str == 'PHENOMENON_ROLE_MATTER':
+    if object_pattern_simple_str == 'PHENOMENON_ROLE_MATTER_at-PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('ROLE_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_outlet','-contains-part-outlet'],
-                                              ['_biomass','-has-matter-bioomass'],
-                                                ['_','-contains-']] )
+                object_name, phen_phen_list, [['_','-contains-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-is-location-of-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_at-PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
+                object_name, phen_phen_list, [['_','-determined-']] )
+        
+    if object_pattern_simple_str == 'PHENOMENON_ROLE_MATTER':
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_ROLE', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-part-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-']] )
         
     if object_pattern_simple_str == 'above-PHENOMENON_ROLE_MATTER' or \
         object_pattern_simple_str == 'above-PHENOMENON_MATTER_PHENOMENON' or \
@@ -1992,9 +1792,16 @@ for row in reader:
         object_pattern_simple_str == 'above-PHENOMENON_ROLE_ROLE-as-MATTER_PROCESS' or \
         object_pattern_simple_str == 'above-PHENOMENON_ROLE_PHENOMENON-and-PHENOMENON-as-MATTER_PROCESS' or \
         object_pattern_simple_str == 'above-PHENOMENON_ROLE_ROLE_FORM-as-MATTER_PROCESS':
-        object_pattern_simple_str = object_pattern_simple_str.replace('-as-MATTER','')\
-                                .replace('-and-PHENOMENON','')
-        object_name = object_name.replace('-as-','-expressed-as-')
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON-and-PHENOMENON-as-MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['-as-','-expressed-as-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('ROLE-as-MATTER', 'ROLE', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['-as-','-expressed-as-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('ROLE_FORM-as-MATTER', 'ROLE', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-form-'],
+                                              ['-as-','-expressed-as-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('ROLE_FORM', 'ROLE', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-form-']] )
@@ -2007,7 +1814,8 @@ for row in reader:
         if 'density' in quantity_name:
             (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('ROLE_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
+                object_name, phen_phen_list, [['crop_biomass','crop-has-matter-biomass'],
+                                                ['_','-contains-']] )
         else:
             (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('ROLE_MATTER', 'PHENOMENON', object_pattern_simple_str, \
@@ -2026,7 +1834,7 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-is-location-of-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_at-PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
+                object_name, phen_phen_list, [['_','-determined-']] )
         if 'rhizodeposits' in object_name:
             object_name = object_name.replace('-is-source-of-','-contains-')
 
@@ -2047,7 +1855,6 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('above-PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-is-location-of-']] )
-
         
     if object_pattern_simple_str == 'MATTER_MATTER_FORM_MATTER_PROCESS' or \
         object_pattern_simple_str == 'MATTER_MATTER_FORM_MATTER':
@@ -2063,6 +1870,8 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
+        object_name = object_name.replace('carbon-has-form-pool~microbial-and-stabilized',
+                                          '(carbon-has-form-pool~microbial)-and-(carbon-has-form-pool~stabilized)')
         
     if object_pattern_simple_str == 'MATTER_ABSTRACTION_MATTER_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -2078,8 +1887,8 @@ for row in reader:
         object_pattern_simple_str == 'MATTER_PHENOMENON_PART':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_PHENOMENON_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['water_','water-makes-up-'],
-                                              ['soil_','soil-makes-up-'],
+                object_name, phen_phen_list, [['water_','water-is-medium-matter-'],
+                                              ['soil_','soil-is-medium-matter-'],
                                               ['_','-has-part-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
@@ -2137,7 +1946,9 @@ for row in reader:
         
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_PHENOMENON' or \
         object_pattern_simple_str == 'PHENOMENON-or-PHENOMENON_ABSTRACTION_PHENOMENON':
-        object_pattern_simple_str = object_pattern_simple_str.replace('PHENOMENON-or-','')
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON-or-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
@@ -2165,7 +1976,7 @@ for row in reader:
                 object_name, phen_phen_list, [['_nitrogen_','-as-sink-nitrogen-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_at-PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
+                object_name, phen_phen_list, [['_','-determined-']] )
         
     if object_pattern_simple_str == 'MATTER_MATTER_at-PROPERTY' or \
         object_pattern_simple_str == 'MATTER_MATTER_at-PHENOMENON_PROPERTY':
@@ -2175,19 +1986,29 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_MATTER', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-as-medium-']] )
+        if 'reference' in quantity_name:
+            (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_at-PROPERTY', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_at-','-reference-for-determination-of-property-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_at-PROPERTY', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_(at-','-measured-at-('],
-                                                ['_','-measured-']] )
+                object_name, phen_phen_list, [['_(at-','-determined-at-variable-('],
+                                                ['_at-','-determined-at-property-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_PHENOMENON_PHENOMENON':
         if 'clouds' in object_name:
+            groupings = ['clouds_radiation~incoming~shortwave~reflected',
+                         'clouds_radiation~incoming~shortwave~absorbed',
+                         'clouds_radiation~incoming~shortwave~transmitted',
+                         'clouds_radiation~outgoing~longwave~downward',
+                         'clouds_radiation~outgoing~longwave~upward']
+            (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_radiation~incoming','-as-sink-radiation~incoming'],
+                                              ['_','-is-source-of-']], combinations = groupings )
             (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
-            (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-is-source-of-']] )
         groupings = ['engine_crankshaft','engine_cylinder','plain~upper_vegetation','vegetation_canopy',
                      'plain_plain~subaqueous']
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -2198,8 +2019,10 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['bear_','bear-contains-part-'],
+                                              ['bear~alaskan_','bear~alaskan-contains-part-'],
                                                 ['river-delta_','river-delta-contains-part-'],
-                                                ['land_','land-is-location-of-'],
+                                                ['land_','land-as-medium-'],
+                                                ['automobile_','automobile-contains-part-'],
                                                 ['_','-contains-']] )
         if 'black-bear' in object_name:
             (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -2209,13 +2032,13 @@ for row in reader:
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_body','-as-numerator-(bear-contains-part-body)-as-denominator']] )
         
-    if object_pattern_simple_str == 'ABSTRACTION_PROCESS_ROLE_PROCESS' or \
+    if object_pattern_simple_str == 'MODEL_PROCESS_ROLE_PROCESS' or \
         object_pattern_simple_str == 'ABSTRACTION_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('ROLE_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                loop_on_pattern('MODEL_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
@@ -2259,8 +2082,11 @@ for row in reader:
         
     if object_pattern_simple_str == 'FORM_MATTER_PROCESS_ABSTRACTION':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_PROCESS_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_flowing_','-undergoes-process-flowing-has-abstraction-']] )
+                loop_on_pattern('MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-undergoes-process-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('FORM_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
@@ -2306,6 +2132,9 @@ for row in reader:
                 loop_on_pattern('MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_FORM', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-form-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('FORM_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -2314,11 +2143,14 @@ for row in reader:
         
     if object_pattern_simple_str == 'ROLE-or-ROLE_MATTER_at-PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ROLE-or-ROLE_MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                loop_on_pattern('ROLE-or-ROLE', 'ROLE', object_pattern_simple_str, \
+                object_name, phen_phen_list, [] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('ROLE_MATTER', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_at-PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
+                object_name, phen_phen_list, [['_','-determined-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -2361,13 +2193,14 @@ for row in reader:
                 object_name, phen_phen_list, [['_radiation_','-as-source-radiation-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
+                object_name, phen_phen_list, [['_','-contains-part-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_ABSTRACTION_MATTER':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
-        if 'sea' in object_name and 'water' in object_name:
+        if ('sea' in object_name and 'water' in object_name) or \
+                ('surface~' in object_name and 'soil' in object_name):
                 (object_pattern_simple_str, object_name, phen_phen_list) = \
                         loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
                         object_name, phen_phen_list, [['_','-contains-']] )
@@ -2386,8 +2219,7 @@ for row in reader:
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-is-source-of-']] )
         
-    if object_pattern_simple_str == 'PHENOMENON_MATTER_at-PROCESS' or \
-        object_pattern_simple_str == 'PHENOMENON_MATTER_at-PROCESS_PROPERTY':
+    if object_pattern_simple_str == 'PHENOMENON_MATTER_at-PROCESS_PROPERTY':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PROCESS_PROPERTY', 'PROCESS', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-property-']] )
@@ -2396,19 +2228,21 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-contains-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_at-PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_(at-','-measured-at-('],
-                                                ['_','-measured-']] )
+                object_name, phen_phen_list, [['_(at-','-reference-for-determination-of-variable-(']] )
         
     if object_pattern_simple_str == 'ROLE_PROCESS-or-PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('ROLE_PROCESS-or-PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-undergoes-process-']] )
+                object_name, phen_phen_list, [['crop_planting-or-sowing',
+                                               '(crop-undergoes-process-planting)-or-(crop-undergoes-process-sowing)']] )
         
     if object_pattern_simple_str == 'ROLE_PROCESS_TRAJECTORY_ROLE':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ROLE_PROCESS_TRAJECTORY_ROLE', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_acceleration_','-undergoes-process-acceleration-has-trajectory-'],
-                                              ['_','-has-abstraction-']] )
+                loop_on_pattern('ROLE_PROCESS_TRAJECTORY', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_acceleration_','-undergoes-process-acceleration-has-trajectory-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_ROLE', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-abstraction-']] )
         
     if object_pattern_simple_str == 'DOMAIN_PHENOMENON_PHENOMENON' or \
         object_pattern_simple_str == 'DOMAIN_PHENOMENON':
@@ -2434,14 +2268,14 @@ for row in reader:
         if 'glacier' in object_name:
                 (object_pattern_simple_str, object_name, phen_phen_list) = \
                         loop_on_pattern('PHENOMENON_above-PART', 'PHENOMENON', object_pattern_simple_str, \
-                        object_name, phen_phen_list, [['_above-','-measured-above-(glacier-has-part-']] )
+                        object_name, phen_phen_list, [['_above-','-determined-above-(glacier-has-part-']] )
                 object_name = object_name + ')'
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                         loop_on_pattern('PHENOMENON_above-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                        object_name, phen_phen_list, [['_(above-','-measured-above-(']] )
+                        object_name, phen_phen_list, [['_(above-','-determined-above-(']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                         loop_on_pattern('PHENOMENON_below-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                        object_name, phen_phen_list, [['_(below-','-measured-below-(']] )
+                        object_name, phen_phen_list, [['_(below-','-determined-below-(']] )
         
     if object_pattern_simple_str == 'FORM_ABSTRACTION_ABSTRACTION' or \
         object_pattern_simple_str == 'PHENOMENON_ABSTRACTION':
@@ -2464,15 +2298,16 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['air_radiation~incoming~shortwave','air-contains-radiation~incoming~shortwave'],
-                                              ['_longshore','-makes-up-longshore'],
-                                              ['_rip','-makes-up-rip'],
-                                              ['_tide','-makes-up-tide'],
-                                              ['_internal','-makes-up-internal'],
-                                              ['_surf','-makes-up-surf'],
+                                              ['_longshore','-is-medium-matter-longshore'],
+                                              ['_rip','-is-medium-matter-rip'],
+                                              ['_tide','-is-medium-matter-tide'],
+                                              ['_internal','-is-medium-matter-internal'],
+                                              ['_surf','-is-medium-matter-surf'],
                                                 ['_','-as-medium-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['ground~above_','ground~above-is-location-of-'],
+                                              ['_(water-is-medium-matter','-contains-part-(water-is-medium-matter'],
                                                 ['_','-contains-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_PHENOMENON_MATTER' or \
@@ -2495,17 +2330,6 @@ for row in reader:
                 object_name, phen_phen_list, [['atmosphere_','atmosphere-is-source-of-'],
                                               ['river-delta_','river-delta-contains-part-'],
                                               ['_','-contains-']] )
-        
-    if object_pattern_simple_str == 'PHENOMENON_PART_MATTER_PART':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-part-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-form-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
         
     if object_pattern_simple_str == 'FORM_MATTER_PROCESS_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -2564,8 +2388,8 @@ for row in reader:
                 object_name, phen_phen_list, [['_channel_','-has-form-channel-has-part-']])
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_water~outgoing','-as-source-water~outgoing'],
-                                              ['_water~incoming','-as-sink-water~incoming'],
+                object_name, phen_phen_list, [['_water~outgoing','-as-source-water'],
+                                              ['_water~incoming','-as-sink-water'],
                                               ['_','-as-medium-']])
         
     if object_pattern_simple_str == 'PROCESS_ROLE_MATTER_PROCESS' or \
@@ -2578,12 +2402,11 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PROCESS_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-observes-']] )
-
-        
+    
     if object_pattern_simple_str == 'ROLE_MATTER_MATTER_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('ROLE_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-is-source-of-']] )
+                object_name, phen_phen_list, [['_','-has-matter-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_nitrogen_','-as-sink-nitrogen-undergoes-process-']] )
@@ -2592,14 +2415,26 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_FORM', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-form-']] )
+        if 'infiltration' in object_name:
+                (object_pattern_simple_str, object_name, phen_phen_list) = \
+                        loop_on_pattern('PHENOMENON_MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                        object_name, phen_phen_list, [['_water_','-as-medium-water-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-undergoes-process-']] )
+                        loop_on_pattern('MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                        object_name, phen_phen_list, [['_','-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
+                object_name, phen_phen_list, [['_(water','-as-medium-(water'],
+                                                ['_','-contains-']] )
+        object_name = object_name.replace('biomass~microbial-or-soil-has-form-pool~organic~stabilized',
+                                          '(biomass~microbial-has-form-pool~organic~stabilized)-or-(soil-has-form-pool~organic~stabilized)')
         
     if object_pattern_simple_str == 'FORM_MATTER_MATTER_PROCESS':
+        if 'flowing' in object_name:
+            (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['water_','water-as-medium-'],
+                                              ['_','-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-undergoes-process-']] )
@@ -2629,32 +2464,26 @@ for row in reader:
         if 'automobile' in object_name:
             (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-above-']] )
+                object_name, phen_phen_list, [['_','-determined-above-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
-
         
     if object_pattern_simple_str == 'PHENOMENON_FORM_PHENOMENON':
+        if 'dust' not in object_name:
+            (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_FORM', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('FORM_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_dust','-as-medium-dust'],
                                                 ['_','-contains-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
-        
-    if object_pattern_simple_str == 'MATTER_PART_MATTER_PROCESS' or \
-        object_pattern_simple_str == 'MATTER_PART_MATTER':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-form-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_water_','-as-sink-water-undergoes-process-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-as-medium-']] )
+                object_name, phen_phen_list, [['_radiation~incoming~shortwave~absorbed','-as-sink-radiation~incoming~shortwave~absorbed'],
+                                              ['_radiation~incoming~shortwave~reflected','-as-source-radiation~incoming~shortwave~reflected'],
+                                              ['_radiation~incoming~shortwave~transmitted','-as-sink-radiation~incoming~shortwave~transmitted'],
+                                                ['_','-contains-']] )
         
     if object_pattern_simple_str == 'FORM_PART_below-PHENOMENON':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -2662,18 +2491,7 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-has-part-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_below-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
-        
-    if object_pattern_simple_str == 'MATTER_PART_MATTER_MATTER':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-form-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-as-medium-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
+                object_name, phen_phen_list, [['_','-determined-']] )
         
     if object_pattern_simple_str == 'MATTER_PHENOMENON_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -2683,8 +2501,9 @@ for row in reader:
         
     if object_pattern_simple_str == 'MATTER_ABSTRACTION_MATTER' or \
        object_pattern_simple_str == 'MATTER_ABSTRACTION_MATTER-as-MATTER':
-        object_pattern_simple_str = object_pattern_simple_str.replace('MATTER-as-','')
-        object_name = object_name.replace('-as-','-expressed-as-')
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER-as-MATTER', 'MATTER', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['-as-','-expressed-as-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
@@ -2713,7 +2532,8 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-undergoes-process-']] )
             (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
+                object_name, phen_phen_list, [['river-bank_', 'river-bank-is-location-of-'],
+                                                ['_','-contains-']] )
         elif 'precipitation' in object_name or 'emission' in object_name or 'evaporation' in object_name:
             (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
@@ -2727,7 +2547,12 @@ for row in reader:
                 object_name, phen_phen_list, [['_flowing','-undergoes-process-flowing'],
                                                 ['_consumption','-undergoes-process-consumption'],
                                               ['_','-as-sink-']] )
-        elif 'sea_ice' in object_name or 'lake_water~outgoing' in object_name:
+        elif 'lake_water~outgoing' in object_name:
+            (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_flowing','-undergoes-process-flowing'],
+                                              ['_','-as-source-']] )
+        elif 'sea_ice' in object_name:
             (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_flowing','-undergoes-process-flowing'],
@@ -2738,8 +2563,11 @@ for row in reader:
             
     if object_pattern_simple_str == 'ROLE_PROCESS_ABSTRACTION':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ROLE_PROCESS_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_planting_','-undergoes-process-planting-has-abstraction-']] )
+                loop_on_pattern('ROLE_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-undergoes-process-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-abstraction-']] )
 
     if object_pattern_simple_str == 'MATTER_ABSTRACTION_FORM':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -2802,18 +2630,13 @@ for row in reader:
         
     if object_pattern_simple_str == 'ROLE-or-ROLE_at-PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ROLE-or-ROLE_at-PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
-        
-    if object_pattern_simple_str == 'ABSTRACTION_MATTER_PART':
+                loop_on_pattern('ROLE-or-ROLE', 'ROLE', object_pattern_simple_str, \
+                object_name, phen_phen_list, [] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-form-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-models-']] )
+                loop_on_pattern('ROLE_at-PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-determined-']] )
         
-    if object_pattern_simple_str == 'PHENOMENON_PART_PROCESS':
+    if (object_pattern_simple_str == 'PHENOMENON_PART_PROCESS'):
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PART', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-has-part-']] )
@@ -2831,7 +2654,7 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
-        
+
     if object_pattern_simple_str == 'ABSTRACTION_ABSTRACTION':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('ABSTRACTION_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
@@ -2844,16 +2667,12 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-undergoes-process-']] )
             (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-is-driven-by-']] )
+                object_name, phen_phen_list, [['_','-as-medium-']] )
+            object_name = object_name.rstrip(')') + ')-undergoes-process-driving)'
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_ROLE_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_crop_','-as-medium-crop-undergoes-process-'],
                                               ['_fertilizer_','-as-sink-fertilizer-undergoes-process-']])
-        
-    if object_pattern_simple_str == 'MATTER_ROLE_PHENOMENON':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_ROLE_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_scuba-diver_','-as-medium-scuba-diver-participates-in-']])
         
     if object_pattern_simple_str == 'PHENOMENON_PART_from-MATTER_ABSTRACTION' or \
         object_pattern_simple_str == 'MATTER_ABSTRACTION':
@@ -2865,7 +2684,7 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-has-abstraction-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_from-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
+                object_name, phen_phen_list, [['_','-determined-']] )
         object_name = object_name.replace('-(from-','-from-(')
         
     if object_pattern_simple_str == 'PHENOMENON_MATTER_to-PHENOMENON_PART':
@@ -2877,7 +2696,7 @@ for row in reader:
                 object_name, phen_phen_list, [['_','-contains-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_to-PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
+                object_name, phen_phen_list, [['_','-determined-']] )
         object_name = object_name.replace('-(to-','-to-(')
         
     if object_pattern_simple_str == 'FORM_MATTER_PHENOMENON':
@@ -2891,16 +2710,23 @@ for row in reader:
     if object_pattern_simple_str == 'MATTER_PROCESS_MATTER' or \
         object_pattern_simple_str == 'MATTER_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_PROCESS_MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['soil_', 'soil-as-medium-'],
+                                                ['_','-expressed-as-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-undergoes-process-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-is-source-of-']] )
+        object_name = object_name.replace('water~incoming-and-outgoing-undergoes-process-flowing',
+                                          '(water~incoming-undergoes-process-flowing)-and-(water~outgoing-undergoes-process-flowing)')
         
     if object_pattern_simple_str == 'MATTER_at-PROPERTY':
+        if 'reference' in quantity_name:
+            (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_at-PROPERTY', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_at-','-reference-for-determination-of-property-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_at-PROPERTY', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
+                object_name, phen_phen_list, [['_','-determined-at-property-']] )
 
     if object_pattern_simple_str == 'ROLE_PART_ABSTRACTION':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -2914,8 +2740,9 @@ for row in reader:
         
     if object_pattern_simple_str == 'MATTER_MATTER_PROCESS' or \
         object_pattern_simple_str == 'MATTER_MATTER-as-MATTER_PROCESS':
-        object_pattern_simple_str = object_pattern_simple_str.replace('MATTER-as-','')
-        object_name = object_name.replace('-as-','-expressed-as-')
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER-as-MATTER', 'MATTER', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['-as-','-expressed-as-']] )
         if 'flowing' in object_name:
              (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
@@ -2923,7 +2750,7 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_water_','-as-sink-water-undergoes-process-'],
-                                              ['_nitrous-oxide-expressed-as-nitrogen_','-as-source-nitrous-oxide-expressed-as-nitrogen-undergoes-process-']] )
+                                              ['_(nitrous-oxide-expressed-as-nitrogen)_','-as-source-(nitrous-oxide-expressed-as-nitrogen)-undergoes-process-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-contains-']] )
@@ -2950,6 +2777,10 @@ for row in reader:
         
     if object_pattern_simple_str == 'FORM_MATTER_MATTER' or \
         object_pattern_simple_str == 'FORM_PHENOMENON':
+        if 'density' in quantity_name:
+            (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-']] )
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_MATTER', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-as-medium-']] )
@@ -2965,6 +2796,7 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_water','-as-medium-water'],
+                                              ['_carbon~stabilized', '-as-medium-carbon~stabilized'],
                                                 ['_','-contains-']] )
         
     if object_pattern_simple_str == 'MATTER_MATTER_FORM':
@@ -2974,14 +2806,6 @@ for row in reader:
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-as-medium-']] )
-        
-    if object_pattern_simple_str == 'MATTER_PART_FORM':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-form-']] )
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('PHENOMENON_FORM', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-form-']] )
         
     if object_pattern_simple_str == 'FORM_PART_MATTER' or \
         object_pattern_simple_str == 'FORM_PART':
@@ -2998,6 +2822,8 @@ for row in reader:
                                                 ['_','-contains-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_PHENOMENON':
+        if 'dust~aerosol' in object_name:
+            object_name = 'atmosphere_(dust-has-form-aerosol)'
         if 'fraction' in quantity_name or 'capacity' in quantity_name:
             (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
@@ -3026,23 +2852,23 @@ for row in reader:
                 loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['sun_earth','sun-as-main-earth-as-main'],
                                               ['sun_venus','sun-as-main-venus-as-main'],
-                                              ['earth_sun','earth-as-viewpoint-sun'],
+                                              ['earth_sun','earth-as-main-sun-as-main'],
                                                 ['_','-contains-part-']] )
-            
-    if object_pattern_simple_str == 'ATTRIBUTE_PHENOMENON':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ATTRIBUTE_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-part-']] )
+        if 'dust-has-form-aerosol' in object_name:
+            object_name = '(' + object_name + '-as-medium)'
         
     if object_pattern_simple_str == 'ROLE-or-ROLE_MATTER':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ROLE-or-ROLE_MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                loop_on_pattern('ROLE-or-ROLE', 'ROLE', object_pattern_simple_str, \
+                object_name, phen_phen_list, [] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('ROLE_MATTER', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-as-medium-']] )
         
     if object_pattern_simple_str == 'ROLE_since-PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('ROLE_since-PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-measured-']] )
+                object_name, phen_phen_list, [['_','-determined-']] )
         
     if object_pattern_simple_str == 'PHENOMENON_MATTER':
         if 'atmosphere_air' in object_name or 'material' in object_name or \
@@ -3073,7 +2899,7 @@ for row in reader:
                 loop_on_pattern('MATTER_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_ski~waxed','-as-main-ski~waxed-as-main'],
                                               ['_radiation','-as-medium-radiation'],
-                                                ['_','-makes-up-']] )
+                                                ['_','-is-medium-matter-']] )
 
     if object_pattern_simple_str == 'ROLE_TRAJECTORY':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -3117,14 +2943,19 @@ for row in reader:
         
     if object_pattern_simple_str == 'MATTER-as-MATTER_PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER-as-MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['-as-','-expressed-as-'],
-                                                ['_','-undergoes-process-']] )
+                loop_on_pattern('MATTER-as-MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['-as-','-expressed-as-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-undergoes-process-']] )
         
     if object_pattern_simple_str == 'MATTER_PROCESS-vs-PROCESS':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_PROCESS-vs-PROCESS', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-undergoes-process-']] )
+        object_name = object_name.replace('nitrogen-fertilizer-undergoes-process-usage-vs-application',
+                                          '(nitrogen-fertilizer-undergoes-process-usage)-vs-(nitrogen-fertilizer-undergoes-process-application)')
+
         
     if object_pattern_simple_str == 'MATTER_FORM':
         object_name = object_name.replace('-as-','-expressed-as-')
@@ -3139,12 +2970,8 @@ for row in reader:
                                                 ['_','-has-form-']] )
         if 'macropores~saturated' in object_name:
             object_name += '-as-medium'
-        print(object_name)
-
-    if object_pattern_simple_str == 'MATTER_PART':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('MATTER_PART', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-has-form-']] )
+        object_name = object_name.replace('biomass~microbial-and-soil-has-form-pool~organic~stabilized',
+                                          '((biomass~microbial-has-form-pool~organic~stabilized)-and-(soil-has-form-pool~organic~stabilized))')
         
     if object_pattern_simple_str == 'ROLE_PART':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -3164,8 +2991,9 @@ for row in reader:
 
     if object_pattern_simple_str == 'MATTER_MATTER' or \
         object_pattern_simple_str == 'MATTER_MATTER-as-MATTER':
-        object_pattern_simple_str = object_pattern_simple_str.replace('MATTER-as-','')
-        object_name = object_name.replace('-as-','-expressed-as-')
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER-as-MATTER', 'MATTER', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['-as-','-expressed-as-']] )
         if ('soil' in object_name and 'water' in object_name) or 'concentration' in quantity_name or \
                 'fraction' in quantity_name or 'surface_tension' in quantity_name or \
                 'solubility' in quantity_name or 'diffusivity' in quantity_name or 'temperature' in quantity_name:
@@ -3185,7 +3013,7 @@ for row in reader:
         else:
             (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('MATTER_MATTER', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-contains-']] )
+                object_name, phen_phen_list, [['_','-as-medium-']] )
             
     if object_pattern_simple_str == 'ROLE_MATTER':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
@@ -3200,25 +3028,212 @@ for row in reader:
                 loop_on_pattern('MATTER_ROLE', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_oxidizer','-as-numerator-oxidizer-as-denominator']] )
         
-    if object_pattern_simple_str == 'ABSTRACTION_PHENOMENON':
-        (object_pattern_simple_str, object_name, phen_phen_list) = \
-                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
-                object_name, phen_phen_list, [['_','-models-']] )
-        
     if object_pattern_simple_str == 'PROCESS_PHENOMENON':
         (object_pattern_simple_str, object_name, phen_phen_list) = \
                 loop_on_pattern('PROCESS_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
                 object_name, phen_phen_list, [['_','-observes-']] )
 
-    if object_pattern_simple_str == 'MATTER' or object_pattern_simple_str == 'ATTRIBUTE':
+    if object_pattern_simple_str == 'MODEL_ABSTRACTION_ABSTRACTION_PART_ABSTRACTION_MATTER' or \
+        object_pattern_simple_str == 'MODEL_ABSTRACTION_ABSTRACTION_ABSTRACTION_MATTER' or \
+        object_pattern_simple_str == 'MODEL_ABSTRACTION_ABSTRACTION_ABSTRACTION_PHENOMENON' or \
+        object_pattern_simple_str == 'MODEL_ABSTRACTION_ABSTRACTION_MATTER' or \
+        object_pattern_simple_str == 'MODEL_ABSTRACTION_ABSTRACTION_MATTER_PROCESS' or \
+        object_pattern_simple_str == 'MODEL_ABSTRACTION_ABSTRACTION_ABSTRACTION' or \
+        object_pattern_simple_str == 'MODEL_ABSTRACTION_ABSTRACTION_PART_ABSTRACTION' or \
+        (object_pattern_simple_str == 'MODEL_ABSTRACTION_PART_PHENOMENON_MATTER') or \
+        object_pattern_simple_str == 'MODEL_ABSTRACTION_ABSTRACTION_PART' or \
+        object_pattern_simple_str == 'MODEL_ABSTRACTION_ABSTRACTION' or \
+        object_pattern_simple_str == 'MODEL_ABSTRACTION_PART' or \
+        object_pattern_simple_str.startswith('MODEL_ABSTRACTION_ABSTRACTION'):
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-']] )
+        groupings = ['cell_centroid', 'dual-cell_centroid', 'primary-cell_centroid',
+                     'cell_center', 'cell_centroid']
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-undergoes-process-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('ABSTRACTION_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-abstraction-']], combinations = groupings )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('ABSTRACTION_PART', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-part-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('ABSTRACTION_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-part-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_ABSTRACTION', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_axis~east','-as-main-axis~east-as-main'],
+                                                ['_','-has-abstraction-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-part-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MODEL_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-models-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-models-']] )
+        if '_' in object_name:
+            object_pattern_simple_str = 'PHENOMENON'
+            object_name = object_name.replace('_(from-','-determined-from-(')\
+                .replace('_(to-','-determined-from-(').replace('_','-determined-')
+            object_name = '(' + object_name + ')'
+        
+    if object_pattern_simple_str.startswith('MODEL_ABSTRACTION_FORM'):
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('FORM_PART', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-part-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('ABSTRACTION_FORM', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-part-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('ABSTRACTION_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-part-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MODEL_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-models-']] )
+        
+    if (object_pattern_simple_str == 'MODEL_MATTER_FORM') or \
+        (object_pattern_simple_str == 'MODEL_PHENOMENON'):
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_FORM', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-form-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MODEL_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-models-']] )
+        
+    if object_pattern_simple_str == 'MATTER_MATTER_MODEL':
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-as-medium-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_MODEL', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-model-abstraction-']] )
+        
+    if object_pattern_simple_str.startswith('PHENOMENON_MATTER_MODEL'):
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_MODEL', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-model-abstraction-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-undergoes-process-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-']] )
+        
+    if object_pattern_simple_str == 'MODEL_PROCESS':
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MODEL_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-undergoes-process-']] )
+
+    if object_pattern_simple_str.startswith('MATTER_FORM_FORM'):
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_FORM', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-form-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_FORM', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-form-']] )
+
+    if object_pattern_simple_str == 'PHENOMENON_at-FORM-or-ROLE_PROCESS-or-PROCESS' or \
+        object_pattern_simple_str == 'PHENOMENON_PHENOMENON_at-FORM-or-ROLE_PROCESS-or-PROCESS':
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('FORM-or-ROLE_PROCESS-or-PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['grain-or-forage_harvest-or-death',
+                                               '(grain-undergoes-process-harvest)-or-(forage-undergoes-process-harvest)-or-' + \
+                                                '(grain-undergoes-process-death)-or-(forage-undergoes-process-death)']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-part-']] )
+        object_pattern_simple_str = 'PHENOMENON'
+        object_name = object_name.replace('_(at-','-determined-at-(')
+        
+    if object_pattern_simple_str == 'MATTER_FORM_MATTER_MATTER':
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_FORM', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-has-form-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-as-medium-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-']] )
+        
+    if object_pattern_simple_str == 'MODEL_FORM_PHENOMENON_PROCESS':
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-undergoes-process-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('FORM_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MODEL_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-models-']] )
+        
+    if object_pattern_simple_str == 'above-PHENOMENON_MATTER_FORM':
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_FORM', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-as-medium-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('above-PHENOMENON_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-is-location-of-']] )
+        
+    if object_pattern_simple_str == 'FORM_MATTER_at-PROCESS':
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('FORM_MATTER', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-as-medium-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_at-PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-determined-']] )
+
+    if object_pattern_simple_str == 'MATTER_as-MATTER_PROCESS':
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('as-MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-undergoes-process-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-as-medium-']] )
+    
+    if object_pattern_simple_str == 'MATTER_as-MATTER_PROCESS_MATTER-as-MATTER_PROCESS':
+        groupings = ['as-nitrogen']
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('as-MATTER', 'MATTER', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['as-', 'expressed-as-']], combinations = groupings )
+        groupings = ['(expressed-as-nitrogen)_denitrification', '(expressed-as-nitrogen)_nitrification']
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-undergoes-process-']], combinations = groupings )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER_PHENOMENON', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_','-contains-as-medium-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('MATTER-as-MATTER', 'MATTER', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['-as-','-expressed-as-']] )
+        (object_pattern_simple_str, object_name, phen_phen_list) = \
+                loop_on_pattern('PHENOMENON_MATTER_PROCESS', 'PHENOMENON', object_pattern_simple_str, \
+                object_name, phen_phen_list, [['_(nitrous-oxide-expressed-as-nitrogen)_','-as-source-(nitrous-oxide-expressed-as-nitrogen)-undergoes-process-']] )
+    
+    if object_pattern_simple_str != 'PHENOMENON':
         object_pattern_simple_str = 'PHENOMENON'
         object_name = '(' + object_name + ')'
 
+    object_name = object_name.replace('plain~lower-and-plain~upper','(plain~lower-and-plain~upper)')\
+                        .replace('pool~microbial-and-stabilized','(pool~microbial-and-pool~stabilized)')\
+                        .replace('(biomass~microbial-and-soil)~stabilized', '(biomass~microbial~stabilized-and-soil~stabilized)')
+    
     if object_pattern_simple_str not in all_object_patterns:
         all_object_patterns.append(object_pattern_simple_str)
 
-    #if object_pattern_simple_str != 'PHENOMENON':
-    #    print(object_name, object_pattern_simple_str)
+    if verbose:
+        print(variable_name, object_name, quantity_name)
+        input('Press enter to continue ...')
 
     current_data_row.append(object_name)
     final_data.append(current_data_row)

@@ -7,7 +7,10 @@
          xmlns:svo="http://scientificvariablesontology.org/svo#"
          xmlns="http://scientificvariablesontology.org/svo/role/">
 
-<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/role"/>
+<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/role">
+  <owl:imports rdf:resource="http://scientificvariablesontology.org/svo"/>
+  <owl:imports rdf:resource="http://scientificvariablesontology.org/svo/attribute"/>
+</owl:Ontology>
 
 <owl:NamedIndividual rdf:about="byproduct">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Role"/>
@@ -36,11 +39,6 @@
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Crop</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q235352</svo:has_wikidata_page>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A crop is a plant that can be grown and harvested extensively for profit or subsistence. When the plants of the same kind are cultivated at one place on a large scale, it is called a crop. Most crops are cultivated in agriculture or hydroponics. Crops may include macroscopic fungus (e.g. mushrooms) and marine macroalga (e.g. seaweed), some of which are grown in aquaculture.</rdfs:comment>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="crop-or-weed">
-  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Role"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crop-or-weed</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="cultivar">
@@ -142,10 +140,10 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">garbage</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Garbage</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q48995880</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">waste</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">refuse</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trash</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rubbish</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">waste</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trash</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Garbage, trash, rubbish, or refuse is waste material that is discarded by humans, usually due to a perceived lack of utility. The term generally does not encompass bodily waste products, purely liquid or gaseous wastes, or toxic waste products. Garbage is commonly sorted and classified into kinds of material suitable for specific kinds of disposal.</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -316,12 +314,47 @@
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A weed is a plant considered undesirable in a particular situation, growing where it is not wanted. The concept of weeds is particularly significant in agriculture, where the aim is growing crops or pastures of a single species, or a mixture of a few desired species. In such environments, other plant species are considered undesirable and therefore weeds. Besides, some weeds have undesirable characteristics making them a plant pest in most human settings.Examples of weeds are plants unwanted in human-controlled settings, such as farm land, orchards, gardens, lawns, parks, residential and industrial areas. Taxonomically though, the term "weed" has no botanical significance, because a plant that is a weed in one context, is not a weed when growing in a situation where it is wanted. In the same way, volunteer plants are regarded as weeds in a subsequent crop. Some plants that are widely regarded as weeds are intentionally grown in gardens and other cultivated settings, in which case they are sometimes called beneficial weeds. The term weed is also applied to any plant that grows or reproduces aggressively, or is invasive outside its native habitat.More broadly, the term "weed" is occasionally applied pejoratively to species outside the plant kingdom, species that can survive in diverse environments and reproduce quickly; in this sense it has even been applied to humans.Weed control is important in agriculture and horticulture. Methods include hand cultivation with hoes, powered cultivation with cultivators, smothering with mulch or soil solarization, lethal wilting with high heat, burning, or chemical attack with herbicides and cultural methods such as  crop rotation and fallowing land to reduce the weed population.</rdfs:comment>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="residue~removed">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Role"/>
+  <svo:has_role_root rdf:resource="residue"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/removed"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residue~removed</rdfs:label>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="crop~mature~dry">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Role"/>
   <svo:has_role_root rdf:resource="crop"/>
-  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/dry"/>
   <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/mature"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/dry"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crop~mature~dry</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="residue~retained">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Role"/>
+  <svo:has_role_root rdf:resource="residue"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/retained"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residue~retained</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="residue~remaining">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Role"/>
+  <svo:has_role_root rdf:resource="residue"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/remaining"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residue~remaining</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="outlet~terminal">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Role"/>
+  <svo:has_role_root rdf:resource="outlet"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/terminal"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outlet~terminal</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="residue~standing">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Role"/>
+  <svo:has_role_root rdf:resource="residue"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/standing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">residue~standing</rdfs:label>
 </owl:NamedIndividual>
 
 

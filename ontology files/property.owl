@@ -7,7 +7,10 @@
          xmlns:svo="http://scientificvariablesontology.org/svo#"
          xmlns="http://scientificvariablesontology.org/svo/property/">
 
-<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/property"/>
+<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/property">
+  <owl:imports rdf:resource="http://scientificvariablesontology.org/svo"/>
+  <owl:imports rdf:resource="http://scientificvariablesontology.org/svo/operation"/>
+</owl:Ontology>
 
 <owl:NamedIndividual rdf:about="50-percent_attenuation_depth">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
@@ -215,11 +218,17 @@
 <owl:NamedIndividual rdf:about="alkalinity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alkalinity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Alkalinity</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q432016</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alkalinity (from Arabic: القلوية, romanized: al-qaly, lit. 'ashes of the saltwort') is the capacity of water to resist acidification. It should not be confused with basicity, which is an absolute measurement on the pH scale. Alkalinity is the strength of a buffer solution composed of weak acids and their conjugate bases. It is measured by titrating the solution with an acid such as HCl until its pH changes abruptly, or it reaches a known endpoint where that happens. Alkalinity is expressed in units of concentration, such as meq/L (milliequivalents per liter), μeq/kg (microequivalents per kilogram), or mg/L CaCO3 (milligrams per liter of calcium carbonate).  Each of these measurements corresponds to an amount of acid added as a titrant.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="alkylation">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alkylation</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Alkylation</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q177604</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alkylation is a chemical reaction that entails transfer of an alkyl group. The alkyl group may be transferred as an alkyl carbocation, a free radical, a carbanion, or a carbene (or their equivalents).  Alkylating agents are reagents for effecting alkylation.  Alkyl groups can also be removed in a process known as dealkylation.  Alkylating agents are often classified according to their nucleophilic or electrophilic character. In oil refining contexts, alkylation refers to a particular alkylation of isobutane with olefins. For upgrading of petroleum, alkylation produces a premium blending stock for gasoline. In medicine, alkylation of DNA is used in chemotherapy to damage the DNA of cancer cells. Alkylation is accomplished with the class of drugs called alkylating antineoplastic agents. </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="along-shore_coordinate">
@@ -239,6 +248,9 @@
 <owl:NamedIndividual rdf:about="amount">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amount</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Quantity</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q309314</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantity or amount is a property that can exist as a multitude or magnitude, which illustrate discontinuity and continuity. Quantities can be compared in terms of "more", "less", or "equal", or by assigning a numerical value multiple of a unit of measurement. Mass, time, distance, heat, and angle are among the familiar examples of quantitative properties.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="amount_concentration">
@@ -285,11 +297,11 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angular_frequency</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Angular_frequency</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q834020</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orbital_frequency</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circular_frequency</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radial_frequency</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radian_frequency</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pulsatance</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radial_frequency</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orbital_frequency</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circular_frequency</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics, angular frequency "ω" (also referred to by the terms angular speed, angular rate, and pulsatance) is a scalar measure of rotation rate. It refers to the angular displacement per unit time (for example, in rotation) or the rate of change of the phase of a sinusoidal waveform (for example, in oscillations and waves), or as the rate of change of the argument of the sine function.</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -307,12 +319,12 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angular_speed</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Angular_speed, https://en.wikipedia.org/wiki/Angular_frequency</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q834020</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orbital_frequency</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curcular_frequency</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radial_frequency</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radian_frequency</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pulsatance</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curcular_frequency</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orbital_frequency</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">angular_frequency</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radial_frequency</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics, angular frequency "ω" (also referred to by the terms angular speed, angular rate, and pulsatance) is a scalar measure of rotation rate. It refers to the angular displacement per unit time (for example, in rotation) or the rate of change of the phase of a sinusoidal waveform (for example, in oscillations and waves), or as the rate of change of the argument of the sine function.</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -364,6 +376,9 @@
 <owl:NamedIndividual rdf:about="apparent_viscosity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">apparent_viscosity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Apparent_viscosity</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q4780934</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In fluid mechanics, apparent viscosity (sometimes denoted η) is the shear stress applied to a fluid divided by the shear rate: </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="apparent-magnitude_scale">
@@ -377,6 +392,9 @@
 <owl:NamedIndividual rdf:about="approach_angle">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">approach_angle</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Approach_and_departure_angles</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q19206609</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Approach angle is the maximum angle of a ramp onto which a vehicle can climb from a horizontal plane without interference.  It is defined as the angle between the ground and the line drawn between the front tire and the lowest-hanging part of the vehicle at the front overhang. Departure angle is its counterpart at the rear of the vehicle – the maximum ramp angle from which the car can descend without damage. Approach and departure angles are also referred to as ramp angles.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="archimedes_number">
@@ -451,11 +469,17 @@
 <owl:NamedIndividual rdf:about="aspect_ratio">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aspect_ratio</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Aspect_ratio</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3420076</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The aspect ratio of a geometric shape is the ratio of its sizes in different dimensions. For example, the aspect ratio of a rectangle is the ratio of its longer side to its shorter side—the ratio of width to height, when the rectangle is oriented as a "landscape".</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="relative_atomic_mass">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relative_atomic_mass</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Relative_atomic_mass</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q41377</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relative atomic mass (symbol: Ar; sometimes abbreviated RAM or r.a.m.), also known by the deprecated synonym atomic weight, is a dimensionless physical quantity defined as the ratio of the average mass of atoms of a chemical element in a given sample to the atomic mass constant. The atomic mass constant (symbol: mu) is defined as being 1/12 of the mass of a carbon-12 atom. Since both quantities in the ratio are masses, the resulting value is dimensionless. These definitions remain valid: 134  even after the 2019 redefinition of the SI base units.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="atomic_number">
@@ -495,8 +519,8 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attenuation_coefficient</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Attenuation_coefficient</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q902086</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">narrow_beam_attenuation_coefficient</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extinction_coefficient</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">narrow_beam_attenuation_coefficient</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The linear attenuation coefficient, attenuation coefficient, or narrow-beam attenuation coefficient characterizes how easily a volume of material can be penetrated by a beam of light, sound, particles, or other energy or matter. A coefficient value that is large represents a beam becoming 'attenuated' as it passes through a given medium, while a small value represents that the medium had little effect on loss. The SI unit of attenuation coefficient is the reciprocal metre (m−1). Extinction coefficient is another term for this quantity, often used in meteorology and climatology. Most commonly, the quantity measures the exponential decay of intensity, that is, the value of downward e-folding distance of the original intensity as the energy of the intensity passes through a unit (e.g. one meter) thickness of material, so that an attenuation coefficient of 1 m−1 means that after passing through 1 metre, the radiation will be reduced by a factor of e, and for material with a coefficient of 2 m−1, it will be reduced twice by e, or e2. Other measures may use a different factor than e, such as the decadic attenuation coefficient below. The broad-beam attenuation coefficient counts forward-scattered radiation as transmitted rather than attenuated, and is more applicable to radiation shielding.</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -629,6 +653,9 @@
 <owl:NamedIndividual rdf:about="bodenstein_number">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bodenstein_number</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Bodenstein_number</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q370662</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Bodenstein number (abbreviated Bo, named after Max Bodenstein) is a dimensionless parameter in chemical reaction engineering, which describes the ratio of the amount of substance introduced by convection to that introduced by diffusion. Hence, it characterises the backmixing in a system and allows statements whether and how much volume elements or substances within a chemical reactor mix due to the prevalent currents. It is defined as the ratio of the convection current to the dispersion current. The Bodenstein number is an element of the dispersion model of residence times and is therefore also called the dimensionless dispersion coefficient.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="body_force_term">
@@ -665,6 +692,9 @@
 <owl:NamedIndividual rdf:about="bond_albedo">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bond_albedo</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Bond_albedo</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2731139</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Bond albedo (also called spheric albedo, planetary albedo, and bolometric albedo), named after the American astronomer George Phillips Bond (1825–1865), who originally proposed it, is the fraction of power in the total electromagnetic radiation incident on an astronomical body that is scattered back out into space.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="bowen_ratio">
@@ -678,6 +708,9 @@
 <owl:NamedIndividual rdf:about="breakover_angle">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">breakover_angle</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Breakover_angle</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q239504</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Breakover angle or rampover angle is the maximum possible supplementary angle (usually expressed in degrees) that a vehicle, with at least one forward wheel and one rear wheel, can drive over without the apex of that angle touching any point of the vehicle other than the wheels. This definition is contingent upon the wheels being in continuous contact with the supporting surface(s). Breakover angle differs from ground clearance, which is the shortest distance between the ground and lowest point on the vehicle.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="brinkman_number">
@@ -721,6 +754,9 @@
 <owl:NamedIndividual rdf:about="brunt-vaisala_frequency">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">brunt-vaisala_frequency</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Brunt–Väisälä_frequency</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q994205</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In atmospheric dynamics, oceanography, asteroseismology and geophysics, the Brunt–Väisälä frequency, or buoyancy frequency, is a measure of the stability of a fluid to vertical displacements such as those caused by convection. More precisely it is the frequency at which a vertically displaced parcel will oscillate within a statically stable environment. It is named after David Brunt and Vilho Väisälä. It can be used as a measure of atmospheric stratification.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="brutsaert_emissivity_factor">
@@ -766,6 +802,9 @@
 <owl:NamedIndividual rdf:about="bulk_mass-per-volume_density">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bulk_mass-per-volume_density</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Bulk_density</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q899249</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In materials science, bulk density, also called apparent density,  is a material property defined as the mass of the many particles of the material divided by the bulk volume. Bulk volume is defined as the total volume the particles occupy, including particle's own volume, inter-particle void volume, and the particles' internal pore volume.Bulk density is useful for materials such as powders, granules, and other "divided" solids, especially used in reference to mineral components (soil, gravel), chemical substances, pharmaceutical ingredients, foodstuff, or any other masses of corpuscular or particulate matter (particles). </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="bulk_modulus">
@@ -789,6 +828,9 @@
 <owl:NamedIndividual rdf:about="bulk_richardson_number">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bulk_richardson_number</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Bulk_Richardson_number</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1004118</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Bulk Richardson Number (BRN) is an approximation of the Gradient Richardson number. The BRN is a dimensionless ratio in meteorology related to the consumption of turbulence divided by the shear production (the generation of turbulence kinetic energy caused by wind shear) of turbulence. It is used to show dynamic stability and the formation of turbulence.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="bulk_sensible_heat_aerodynamic_conductance">
@@ -809,12 +851,18 @@
 <owl:NamedIndividual rdf:about="camber_angle">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">camber_angle</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Camber_angle</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1756174</svo:has_wikidata_page>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">castor_angle</svo:has_synonym>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camber angle is one of the angles made by the wheels of a vehicle; specifically, it is the angle between the vertical axis of a wheel and the vertical axis of the vehicle when viewed from the front or rear. It is used in the creation of steering and suspension. If the top of the wheel is farther out than the bottom (that is, tilted away from the axle), it is called positive camber; if the bottom of the wheel is farther out than the top, it is called negative camber. [1]</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="camber_force">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">camber_force</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Camber_thrust</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q5025040</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camber thrust and camber force are terms used to describe the force generated perpendicular to the direction of travel of a rolling tire due to its camber angle and finite contact patch. Camber thrust is generated when a point on the outer surface of a leaned and rotating tire, that would normally follow a path that is elliptical when projected onto the ground, is forced to follow a straight path while coming in contact with the ground, due to friction. This deviation towards the direction of the lean causes a deformation in the tire tread and carcass that is transmitted to the vehicle as a force in the direction of the lean.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="capacity">
@@ -879,6 +927,9 @@
 <owl:NamedIndividual rdf:about="caster_angle">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caster_angle</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Caster_angle</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1503275</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The caster angle or castor angle is the angular displacement of the steering axis from the vertical axis of a steered wheel in a car, motorcycle, bicycle, other vehicle or a vessel, as seen from the side of the vehicle. The steering axis in a car with dual ball joint suspension is an imaginary line that runs through the center of the upper ball joint to the center of the lower ball joint, or through the center of the kingpin for vehicles having a kingpin. </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="catalan_constant">
@@ -923,6 +974,9 @@
 <owl:NamedIndividual rdf:about="chandrasekhar-limit_mass">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chandrasekhar-limit_mass</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Chandrasekhar_limit</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q51366</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Chandrasekhar limit () is the maximum mass of a stable white dwarf star. The currently accepted value of the Chandrasekhar limit is about 1.4 M☉ (2.765×1030 kg). The limit was named after Subrahmanyan Chandrasekhar. </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="characteristic_frequency">
@@ -949,6 +1003,9 @@
 <owl:NamedIndividual rdf:about="chemical_composition">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical_composition</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Chemical_composition</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1263816</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chemical composition specifies the identity, arrangement, and ratio of the chemical elements making up a compound by way of chemical and atomic bonds.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="chezy-formula_coefficient">
@@ -983,11 +1040,17 @@
 <owl:NamedIndividual rdf:about="classification">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">classification</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Classification</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q13582682</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Classification is a broad concept that comprises the process of classifying, the set of groups resulting from classifying, and the assignment of elements to pre-established groups. Classifying is a fundamental concept and a part of almost all kinds of activities. Classification itself is an interdisciplinary field of study, with contributing disciplines including philosophy, biology, knowledge organization, psychology, statistics, and mathematics.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="clearance_height">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clearance_height</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Ride_height</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q889522</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ride height or ground clearance is the amount of space between the base of an automobile tire and the lowest point of the automobile (typically the axle); or, more properly, to the shortest distance between a flat, level surface, and the lowest part of a vehicle other than those parts designed to contact the ground (such as tires, tracks, skis, etc.). Ground clearance is measured with standard vehicle equipment, and for cars, is usually given with no cargo or passengers.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="closure_depth">
@@ -1148,6 +1211,9 @@
 <owl:NamedIndividual rdf:about="convective_available_potential_energy">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">convective_available_potential_energy</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Convective_available_potential_energy</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1129355</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In meteorology, convective available potential energy (commonly abbreviated as CAPE), is the integrated amount of work that the upward (positive) buoyancy force would perform on a given mass of air (called an air parcel) if it rose vertically through the entire atmosphere. Positive CAPE will cause the air parcel to rise, while negative CAPE will cause the air parcel to sink. </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="convective_inhibition">
@@ -1170,6 +1236,9 @@
 <owl:NamedIndividual rdf:about="coordinate">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coordinate</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Coordinate_system</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11210</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geometry, a coordinate system is a system that uses one or more numbers, or coordinates, to uniquely determine the position of the points or other geometric elements on a manifold such as Euclidean space. The order of the coordinates is significant, and they are sometimes identified by their position in an ordered tuple and sometimes by a letter, as in "the x-coordinate". The coordinates are taken to be real numbers in elementary mathematics, but may be complex numbers or elements of a more abstract system such as a commutative ring. The use of a coordinate system allows problems in geometry to be translated into problems about numbers and vice versa; this is the basis of analytic geometry.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="coriolis_frequency">
@@ -1358,6 +1427,9 @@
 <owl:NamedIndividual rdf:about="cumulative_thermal_time">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cumulative_thermal_time</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Accumulated_thermal_unit</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q4672899</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An accumulated thermal unit is a unit of measurement used to describe the cumulative effect of temperature over time. 1 ATU is equal to 1 degree Celsius for 1 day. For example, in an environment at a constant temperature of 5 °C, 5 ATU would accumulate per day, with 65 ATUs accumulated after 13 days.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="current_density">
@@ -1379,6 +1451,9 @@
 <owl:NamedIndividual rdf:about="curvature_radius">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curvature_radius</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Radius_of_curvature</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1136069</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In differential geometry, the radius of curvature, R, is the reciprocal of the curvature. For a curve, it equals the radius of the circular arc which best approximates the curve at that point. For surfaces, the radius of curvature is the radius of a circle that best fits a normal section or combinations thereof.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="curve_number">
@@ -1468,8 +1543,8 @@
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1142285</svo:has_wikidata_page>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resistance_coefficient</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">friction_factor</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flow_coefficient</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">darcy-weisbach_friction_factor</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flow_coefficient</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In fluid dynamics, the Darcy–Weisbach equation is an empirical equation that relates the head loss, or pressure loss, due to friction along a given length of pipe to the average velocity of the fluid flow for an incompressible fluid. The equation is named after Henry Darcy and Julius Weisbach. Currently, there is no formula more accurate or universally applicable than the Darcy-Weisbach supplemented by the Moody diagram or Colebrook equation.The Darcy–Weisbach equation contains a dimensionless friction factor, known as the Darcy friction factor. This is also variously called the Darcy–Weisbach friction factor, friction factor, resistance coefficient, or flow coefficient.</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -1505,16 +1580,25 @@
 <owl:NamedIndividual rdf:about="debt">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">debt</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Debt</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3196867</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Debt is an obligation that requires one party, the debtor, to pay money borrowed or otherwise withheld from another party, the creditor. Debt may be owed by sovereign state or country, local government, company, or an individual. Commercial debt is generally subject to contractual terms regarding the amount and timing of repayments of principal and interest. Loans, bonds, notes, and mortgages are all types of debt. In financial accounting, debt is a type of financial transaction, as distinct from equity.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="declination_angle">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">declination_angle</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Declination</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q76287</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In astronomy, declination (abbreviated dec; symbol δ) is one of the two angles that locate a point on the celestial sphere in the equatorial coordinate system, the other being hour angle. The declination angle is measured north (positive) or south (negative) of the celestial equator, along the hour circle passing through the point in question.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="deficiency">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deficiency</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Deficiency</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2303330</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A deficiency is generally a lack of something. It may also refer to:</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="degree-day_coefficient">
@@ -1590,6 +1674,9 @@
 <owl:NamedIndividual rdf:about="detection">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">detection</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Detection</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q5720030</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In general, detection is the action of accessing information without specific cooperation from  with the sender.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="detection_number_count">
@@ -1613,11 +1700,17 @@
 <owl:NamedIndividual rdf:about="deviatoric_strain_rate">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deviatoric_strain_rate</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Strain_rate</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3181055</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mechanics and materials science, strain rate is the time derivative of strain of a material. Strain rate has dimension of inverse time and SI units of inverse second, s−1 (or its multiples).</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="deviatoric_stress">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deviatoric_stress</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Cauchy_stress_tensor</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q13409892</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In continuum mechanics, the Cauchy stress tensor (symbol </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="diameter">
@@ -1709,12 +1802,18 @@
 <owl:NamedIndividual rdf:about="distance-per-volume_efficiency">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">distance-per-volume_efficiency</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Fuel_efficiency</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q5042317</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuel efficiency (or fuel economy) is a form of thermal efficiency, meaning the ratio of effort to result of a process that converts chemical potential energy contained in a carrier (fuel) into kinetic energy or work. Overall fuel efficiency may vary per device, which in turn may vary per application, and this spectrum of variance is often illustrated as a continuous energy profile. Non-transportation applications, such as industry, benefit from increased fuel efficiency, especially fossil fuel power plants or industries dealing with combustion, such as ammonia production during the Haber process.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="diurnal_temperature">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diurnal_temperature</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Diurnal_air_temperature_variation</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q5283759</svo:has_wikidata_page>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diurnal</svo:has_synonym>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In meteorology, diurnal temperature variation is the variation between a high air temperature and a low temperature that occurs during the same day.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="diversity">
@@ -1738,6 +1837,9 @@
 <owl:NamedIndividual rdf:about="draft_depth">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">draft_depth</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Draft_(hull)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q244777</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The draft or draught of a ship is a determined depth of the vessel below the waterline, measured vertically to its hull's lowest—its propellers, or keel, or other reference point. Draft varies according to the loaded condition of the ship. A deeper draft means the ship will have greater vertical depth below the waterline. Draft is used in under keel clearance calculations, where the draft is calculated with the available dept of water (from Electronic navigational charts) to ensure the ship can navigate safely, without grounding. Navigators can determine their draught by calculation or by visual observation (of the ship's painted loadlines).</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="drag_coefficient">
@@ -1751,6 +1853,9 @@
 <owl:NamedIndividual rdf:about="drag_force">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drag_force</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Drag_(physics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q206621</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In fluid dynamics, drag, sometimes referred to as fluid resistance, is a force acting opposite to the relative motion of any object, moving with respect to a surrounding fluid. This can exist between two fluid layers, two solid surfaces, or between a fluid and solid surface. Drag forces tend to decrease fluid velocity relative to the solid object in the fluid's path.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="drainage_density">
@@ -1769,6 +1874,9 @@
 <owl:NamedIndividual rdf:about="drift_velocity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drift_velocity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Drift_velocity</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q909891</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics, drift velocity is the average velocity attained by charged particles, such as electrons, in a material due to an electric field. In general, an electron in a conductor will propagate randomly at the Fermi velocity, resulting in an average velocity of zero. Applying an electric field adds to this random motion a small net flow in one direction; this is the drift.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="dukhin_number">
@@ -1805,6 +1913,9 @@
 <owl:NamedIndividual rdf:about="dynamic_pressure">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dynamic_pressure</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Dynamic_pressure</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q949674</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In fluid dynamics, dynamic pressure (denoted by q or Q and sometimes called velocity pressure) is the quantity defined by:</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="dynamic_stress">
@@ -1815,6 +1926,9 @@
 <owl:NamedIndividual rdf:about="dynamic_viscosity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dynamic_viscosity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Viscosity#Dynamic_viscosity</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q128709</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The viscosity of a fluid is a measure of its resistance to deformation at a given rate. For liquids, it corresponds to the informal concept of "thickness": for example, syrup has a higher viscosity than water. Viscosity is defined scientifically as a force multiplied by a time divided by an area. Thus its SI units are newton-seconds per square meter, or pascal-seconds.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="e_constant">
@@ -1866,13 +1980,16 @@
 <owl:NamedIndividual rdf:about="effective_radiative_temperature">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effective_radiative_temperature</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Effective_temperature</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q854050</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The effective temperature of a body such as a star or planet is the temperature of a black body that would emit the same total amount of electromagnetic radiation.  Effective temperature is often used as an estimate of a body's surface temperature when the body's emissivity curve (as a function of wavelength) is not known.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="effective_saturated_hydraulic_conductivity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effective_saturated_hydraulic_conductivity</rdfs:label>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saturated</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">effective</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saturated</svo:has_synonym>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="efficiency">
@@ -1968,8 +2085,8 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electric-p-field</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Electric_polarization</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1050425</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polarization</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electric_polarization</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polarization</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical quantity</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -2064,8 +2181,8 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">emissivity</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Emissivity, https://en.wikipedia.org/wiki/Thermal_emittance</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3369825</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal_emittance</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal_emissivity</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal_emittance</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermal emittance or thermal emissivity (</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -2142,8 +2259,8 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">energy-per-volume_density</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Energy_density</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q828402</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">energy_content</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">energy_density</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">energy_content</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics, energy density is the amount of energy stored in a given system or region of space per unit volume. It is sometimes confused with energy per unit mass which is properly called specific energy or gravimetric energy density.</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -2216,8 +2333,11 @@
 <owl:NamedIndividual rdf:about="equivalent_potential_temperature">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equivalent_potential_temperature</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Equivalent_potential_temperature</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3055058</svo:has_wikidata_page>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equivalent</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potential</svo:has_synonym>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Equivalent potential temperature, commonly referred to as theta-e </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="equivalent_reflectivity_factor">
@@ -2228,7 +2348,10 @@
 <owl:NamedIndividual rdf:about="equivalent_temperature">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equivalent_temperature</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Equivalent_temperature</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q256135</svo:has_wikidata_page>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equivalent</svo:has_synonym>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In atmospheric science, equivalent temperature is the temperature of air in a parcel from which all the water vapor has been extracted by an adiabatic process. </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="equivalent_thickness">
@@ -2257,8 +2380,8 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">euler_gamma_constant</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Euler%E2%80%93Mascheroni_constant</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q273023</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">euler_constant</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">euler-mascheroni_constant</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">euler_constant</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mathematical constant; limiting difference between the harmonic series and the natural logarithm; equal to ca 0.577</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -2406,6 +2529,9 @@
 <owl:NamedIndividual rdf:about="fluorescence">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fluorescence</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Fluorescence</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q191807</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fluorescence is one of two kinds of emission of light by a substance that has absorbed light or other electromagnetic radiation. Fluorescence involves no change in electron spin multiplicity and generally it immediately follows absorption; phosphorescence involves spin change and is delayed.  Thus fluorescent materials generally cease to glow nearly immediately when the radiation source stops, while phosphorescent materials, which continue to emit light for some time after. </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="flux_richardson_number">
@@ -2453,11 +2579,17 @@
 <owl:NamedIndividual rdf:about="freeboard_height">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">freeboard_height</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Freeboard_(nautical)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q516809</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In sailing and boating, a vessel's freeboard</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="frequency">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">frequency</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Frequency</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11652</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frequency (symbol f), most often measured in hertz (symbol: Hz), is the number of occurrences of a repeating event per unit of time. It is also occasionally referred to as temporal frequency for clarity and to distinguish it from spatial frequency.  Ordinary frequency is related to angular frequency (symbol ω, with SI unit radian per second) by a factor of 2π.  The period (symbol T) is the interval of time between events, so the period is the reciprocal of the frequency: f = 1/T.Frequency is an important parameter used in science and engineering to specify the rate of oscillatory and vibratory phenomena, such as mechanical vibrations, audio signals (sound), radio waves, and light.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="fresnel_number">
@@ -2484,6 +2616,9 @@
 <owl:NamedIndividual rdf:about="friction_factor">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">friction_factor</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Friction_factor</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q5503426</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Friction factor may refer to:</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="friction_head">
@@ -2541,11 +2676,17 @@
 <owl:NamedIndividual rdf:about="gaussian_curvature">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gaussian_curvature</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Gaussian_curvature</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q945953</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In differential geometry, the Gaussian curvature or Gauss curvature Κ of a smooth surface in three-dimensional space at a point is the product of the principal curvatures, κ1 and κ2, at the given point:</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="gender">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gender</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Gender</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q48277</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gender includes the social, psychological, cultural and behavioral aspects of being a man, woman, or other gender identity. Depending on the context, this may include sex-based social structures (i.e. gender roles) and gender expression. Most cultures use a gender binary, in which gender is divided into two categories, and people are considered part of one or the other (boys/men and girls/women); those who are outside these groups may fall under the umbrella term non-binary. Some societies have specific genders besides "man" and "woman", such as the hijras of South Asia; these are often referred to as third genders (and fourth genders, etc.). Most scholars agree that gender is a central characteristic for social organization.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="geocentric_latitude">
@@ -2564,11 +2705,17 @@
 <owl:NamedIndividual rdf:about="geometric_albedo">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geometric_albedo</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Geometric_albedo</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2832068</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In astronomy, the geometric albedo of a celestial body is the ratio of its actual brightness as seen from the light source (i.e. at zero phase angle) to that of an idealized flat, fully reflecting, diffusively scattering (Lambertian) disk with the same cross-section. (This phase angle refers to the direction of the light paths and is not a phase angle in its normal meaning in optics or electronics.)</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="geopotential_height">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geopotential_height</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Geopotential_height</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q12432978</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geopotential height or geopotential altitude is a vertical coordinate referenced to Earth's mean sea level (assumed zero geopotential) that represents the work involved in lifting one unit of mass over one unit of length through a hypothetical space in which the acceleration of gravity is assumed constant.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="geospatial_flood_depth_exceedance_index">
@@ -2579,6 +2726,9 @@
 <owl:NamedIndividual rdf:about="gibbs_free_energy">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gibbs_free_energy</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Gibbs_free_energy</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q334631</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In thermodynamics, the Gibbs free energy (or Gibbs energy as the recommended name; symbol </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="glen-law_coefficient">
@@ -2690,6 +2840,9 @@
 <owl:NamedIndividual rdf:about="group_velocity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group_velocity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Group_velocity</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q217361</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The group velocity of a wave is the velocity with which the overall envelope shape of the wave's amplitudes—known as the modulation or envelope of the wave—propagates through space.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="group-speed-to-phase-speed_ratio">
@@ -2736,6 +2889,9 @@
 <owl:NamedIndividual rdf:about="hardness">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hardness</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Hardness</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3236003</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In materials science, hardness (antonym: softness) is a measure of the resistance to localized plastic deformation, such as an indentation (over an area) or a scratch (linear), induced mechanically either by pressing or abrasion. In general, different materials differ in their hardness; for example hard metals such as titanium and beryllium are harder than soft metals such as sodium and metallic tin, or wood and common plastics. Macroscopic hardness is generally characterized by strong intermolecular bonds, but the behavior of solid materials under force is complex; therefore, hardness can be measured in different ways, such as scratch hardness, indentation hardness, and rebound hardness. Hardness is dependent on ductility, elastic stiffness, plasticity, strain, strength, toughness, viscoelasticity, and viscosity. Common examples of hard matter are ceramics, concrete, certain metals, and superhard materials, which can be contrasted with soft matter.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="hartree_energy_constant">
@@ -2800,11 +2956,17 @@
 <owl:NamedIndividual rdf:about="heat_capacity_ratio">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat_capacity_ratio</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Heat_capacity_ratio</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q503869</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In thermal physics and thermodynamics, the heat capacity ratio, also known as the adiabatic index, the ratio of specific heats, or Laplace's coefficient, is the ratio of the heat capacity at constant pressure (CP) to heat capacity at constant volume (CV). It is sometimes also known as the isentropic expansion factor and is denoted by γ (gamma) for an ideal gas or κ (kappa), the isentropic exponent for a real gas. The symbol γ is used by aerospace and chemical engineers.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="heat_diffusivity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat_diffusivity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Thermal_diffusivity</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3381809</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In heat transfer analysis, thermal diffusivity is the thermal conductivity divided by density and specific heat capacity at constant pressure. It is a measure of the rate of heat transfer inside a material. It has units of m2/s. Thermal diffusivity is usually denoted by lowercase alpha (α), but a, h, κ (kappa), K, and D are also used.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="heat_energy_flux">
@@ -2812,10 +2974,10 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat_energy_flux</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Heat_flux</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1478382</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal_flux</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat_flux_density</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat_flow_rate_intensity</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat_flux</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal_flux</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics and engineering, heat flux or thermal flux, sometimes also referred to as heat flux density, heat-flow density or heat flow rate intensity, is a flow of energy per unit area per unit time. Its SI units are watts per square metre (W/m2). It has both a direction and a magnitude, and so it is a vector quantity. To define the heat flux at a certain point in space, one takes the limiting case where the size of the surface becomes infinitesimally small.</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -2889,8 +3051,8 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horton-strahler_order</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Strahler_number</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1422857</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horton-strahler_number</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strahler_number</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horton-strahler_number</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, the Strahler number or Horton–Strahler number of a mathematical tree is a numerical measure of its branching complexity.</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -2968,6 +3130,9 @@
 <owl:NamedIndividual rdf:about="hydraulic_head">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydraulic_head</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Hydraulic_head</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q369743</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hydraulic head or piezometric head is a specific measurement of liquid pressure above a vertical datum.It is usually measured as a liquid surface elevation, expressed in units of length, at the entrance (or bottom) of a piezometer. In an aquifer, it can be calculated from the depth to water in a piezometric well (a specialized water well), and given information of the piezometer's elevation and screen depth. Hydraulic head can similarly be measured in a column of water using a standpipe piezometer by measuring the height of the water surface in the tube relative to a common datum. The hydraulic head can be used to determine a hydraulic gradient between two or more points.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="hydraulic_radius">
@@ -2996,6 +3161,9 @@
 <owl:NamedIndividual rdf:about="hydrophilicity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydrophilicity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Hydrophile</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q192197</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A hydrophile is a molecule or other molecular entity that is attracted to water molecules and tends to be dissolved by water.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="hydrophobicity">
@@ -3021,6 +3189,9 @@
 <owl:NamedIndividual rdf:about="ideal_gas_constant">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ideal_gas_constant</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Gas_constant</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q182333</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The molar gas constant (also known as the gas constant, universal gas constant, or ideal gas constant) is denoted by the symbol R or R. It is the molar equivalent to the Boltzmann constant, expressed in units of energy per temperature increment per amount of substance, rather than energy per temperature increment per particle. The constant is also a combination of the constants from Boyle's law, Charles's law, Avogadro's law, and Gay-Lussac's law.  It is a physical constant that is featured in many fundamental equations in the physical  sciences, such as the ideal gas law, the Arrhenius equation, and the Nernst equation.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="identification">
@@ -3031,6 +3202,9 @@
 <owl:NamedIndividual rdf:about="identification_number">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identification_number</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/National_identification_number</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1140371</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A national identification number, national identity number, or national insurance number or JMBG/EMBG is used by the governments of many countries as a means of tracking their citizens, permanent residents, and temporary residents for the purposes of work, taxation, government benefits, health care, and other governmentally-related functions.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="immiscibility">
@@ -3080,6 +3254,9 @@
 <owl:NamedIndividual rdf:about="incidence_angle">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">incidence_angle</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Angle_of_incidence_(optics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1196575</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The angle of incidence, in geometric optics, is the angle between a ray incident on a surface and the line perpendicular (at 90 degree angle) to the surface at the point of incidence, called the normal. The ray can be formed by any waves, such as optical, acoustic, microwave, and X-ray. In the figure below, the line representing a ray makes an angle θ with the normal (dotted line). The angle of incidence at which light is first totally internally reflected is known as the critical angle. The angle of reflection and angle of refraction are other angles related to beams.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="incident_energy_flux">
@@ -3090,11 +3267,17 @@
 <owl:NamedIndividual rdf:about="inclination_angle">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inclination_angle</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Orbital_inclination</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q4112212</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orbital inclination measures the tilt of an object's orbit around a celestial body.  It is expressed as the angle between a reference plane and the orbital plane or axis of direction of the orbiting object.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="income">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">income</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Income</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1527264</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Income is the consumption and saving opportunity gained by an entity within a specified timeframe, which is generally expressed in monetary terms. Income is difficult to define conceptually and the definition may be different across fields. For example, a person's income in an economic sense may be different from their income as defined by law.An extremely important definition of income is Haig–Simons income, which defines income as Consumption + Change in net worth and is widely used in economics.For households and individuals in the United States, income is defined by tax law as a sum that includes any wage, salary, profit, interest payment, rent, or other form of earnings received in a calendar year. Discretionary income is often  defined as gross income minus taxes and other deductions (e.g., mandatory pension contributions), and is widely used as a basis to compare the welfare of taxpayers.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="indentation_hardness">
@@ -3134,6 +3317,9 @@
 <owl:NamedIndividual rdf:about="inflation_pressure">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inflation_pressure</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Cold_inflation_pressure</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q494390</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cold inflation pressure is the inflation pressure of tires before a car is driven and the tires (tyres) warmed up. Recommended cold inflation pressure is displayed on the owner's manual and on the placard (or sticker) attached to the vehicle door edge, pillar, glovebox door or fuel filler flap. Most passenger cars are recommended to have a tire pressure of 2.1 to 2.4 bars (210 to 240 kPa; 30 to 35 psi) when not warmed by driving. A 2001 NHTSA study found that 40% of passenger cars have at least one tire under-inflated by 0.4 bars (6 psi) or more. Drivers are encouraged to make sure their tires are adequately inflated, as under inflated tires can greatly reduce fuel economy, increase emissions, cause increased wear on the edges of the tread surface, and can lead to overheating and premature failure of the tire. Excessive pressure, on the other hand, will lead to impact-breaks, decreased braking performance, and cause increased wear on the center part of the tread surface.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="inhibition">
@@ -3267,9 +3453,9 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">instantaneous_volume_flow_rate</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Volume_flow_rate</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1134348</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volumetric_flow_rate</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">discharge</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volume_velocity</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volumetric_flow_rate</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volume of fluid which passes per time</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -3364,8 +3550,8 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jerk</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Jerk_(physics)</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q497332</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jolt</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surge</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jolt</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lurch</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics, jerk or jolt is the rate at which an object's acceleration changes with respect to time. It is a vector quantity (having both magnitude and direction). Jerk is most commonly denoted by the symbol j and expressed in m/s3 (SI units) or standard gravities per second (g0/s).</rdfs:comment>
 </owl:NamedIndividual>
@@ -3405,6 +3591,9 @@
 <owl:NamedIndividual rdf:about="kelley-blue-book_price">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kelley-blue-book_price</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Kelley_Blue_Book</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q6385722</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kelley Blue Book Co., Inc. is a vehicle valuation and automotive research company which is recognized by both consumers and the automotive industry.  Based in Irvine, California, the company is owned by the Cox Automotive subsidiary of Cox Enterprises.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="keulegan-carpenter_number">
@@ -3584,6 +3773,9 @@
 <owl:NamedIndividual rdf:about="lift_force">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lift_force</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Lift_(force)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q194433</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When a fluid flows around an object, the fluid exerts a force on the object. Lift is the component of this force that is perpendicular to the oncoming flow direction. It contrasts with the drag force, which is the component of the force parallel to the flow direction. Lift conventionally acts in an upward direction in order to counter the force of gravity, but it is defined to act perpendicular to the flow and therefore can act in any direction.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="line-or-genotype_identification_code">
@@ -3594,25 +3786,25 @@
 <owl:NamedIndividual rdf:about="momentum">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">momentum</rdfs:label>
-  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Momentum</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q41273</svo:has_wikidata_page>
-  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In Newtonian mechanics, momentum (more specifically linear momentum or translational momentum) is the product of the mass and velocity of an object. It is a vector quantity, possessing a magnitude and a direction. If m is an object's mass and v is its velocity (also a vector quantity), then the object's momentum p (from Latin pellere "push, drive") is : </rdfs:comment>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Momentum</svo:has_wikipedia_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In Newtonian mechanics, momentum (pl.: momenta or momentums; more specifically linear momentum or translational momentum) is the product of the mass and velocity of an object. It is a vector quantity, possessing a magnitude and a direction. If m is an object's mass and v is its velocity (also a vector quantity), then the object's momentum p (from Latin pellere "push, drive") is: </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="speed">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">speed</rdfs:label>
-  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Speed</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3711325</svo:has_wikidata_page>
-  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In everyday use and in kinematics, the speed (commonly referred to as v) of an object is the magnitude of the change of its position over time or the magnitude of the change of its position per unit of time; it is thus a scalar quantity. The average speed of an object in an interval of time is the distance travelled by the object divided by the duration of the interval; the instantaneous speed is the limit of the average speed as the duration of the time interval approaches zero. Speed is not the same as velocity.</rdfs:comment>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Speed</svo:has_wikipedia_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In everyday use and in kinematics, the speed (commonly referred to as v) of an object is the magnitude of the change of its position over time or the magnitude of the change of its position per unit of time; it is thus a scalar quantity. The average speed of an object in an interval of time is the distance travelled by the object divided by the duration of the interval; the instantaneous speed is the limit of the average speed as the duration of the time interval approaches zero. Speed is the magnitude of velocity (a vector), which indicates additionally the direction of motion.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="velocity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">velocity</rdfs:label>
-  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Velocity</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11465</svo:has_wikidata_page>
-  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velocity is the directional speed of an object in motion as an indication of its rate of change in position as observed from a particular frame of reference and as measured by a particular standard of time (e.g. 60 km/h northbound). Velocity is a fundamental concept in kinematics, the branch of classical mechanics that describes the motion of bodies.</rdfs:comment>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Velocity</svo:has_wikipedia_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velocity is the speed in combination with the direction of motion of an object. Velocity is a fundamental concept in kinematics, the branch of classical mechanics that describes the motion of bodies.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="velocity_ratio">
@@ -3754,8 +3946,8 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic-b-field</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Magnetic_field#The_B-field</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11408</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic-field</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic_flux_density</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic-field</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A magnetic field is a vector field that describes the magnetic influence on moving electric charges, electric currents,: ch1  and magnetic materials. A moving charge in a magnetic field experiences a force perpendicular to its own velocity and to the magnetic field.: ch13 : 278  A permanent magnet's magnetic field pulls on ferromagnetic materials such as iron, and attracts or repels other magnets.   In addition, a nonuniform magnetic field exerts minuscule forces on "nonmagnetic" materials by three other magnetic effects:  paramagnetism, diamagnetism, and antiferromagnetism, although these forces are usually so small they can only be detected by laboratory equipment.  Magnetic fields surround magnetized materials, and are created by electric currents such as those used in electromagnets, and by electric fields varying in time. Since both strength and direction of a magnetic field may vary with location, it is described mathematically by a function assigning a vector to each point of space, called a vector field.</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -3764,9 +3956,9 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic-h-field</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Magnetic_field#The_H-field</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11408</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic-field</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic-field_strength</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetizing-field</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic-field</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic-field_intensity</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A magnetic field is a vector field that describes the magnetic influence on moving electric charges, electric currents,: ch1  and magnetic materials. A moving charge in a magnetic field experiences a force perpendicular to its own velocity and to the magnetic field.: ch13 : 278  A permanent magnet's magnetic field pulls on ferromagnetic materials such as iron, and attracts or repels other magnets.   In addition, a nonuniform magnetic field exerts minuscule forces on "nonmagnetic" materials by three other magnetic effects:  paramagnetism, diamagnetism, and antiferromagnetism, although these forces are usually so small they can only be detected by laboratory equipment.  Magnetic fields surround magnetized materials, and are created by electric currents such as those used in electromagnets, and by electric fields varying in time. Since both strength and direction of a magnetic field may vary with location, it is described mathematically by a function assigning a vector to each point of space, called a vector field.</rdfs:comment>
 </owl:NamedIndividual>
@@ -3822,10 +4014,10 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Mass</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11423</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">invariant_mass</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rest_mass</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intrinsic_mass</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">invariant_mass</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proper_mass</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intrinsic_mass</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass is an intrinsic property of a body. It was traditionally believed to be related to the quantity of matter in a physical body, until the discovery of the atom and particle physics. It was found that different atoms and different elementary particles, theoretically with the same amount of matter, have nonetheless different masses. Mass in modern physics has multiple definitions which are conceptually distinct, but physically equivalent. Mass can be experimentally defined as a measure of the body's inertia, meaning the resistance to acceleration (change of velocity) when a net force is applied. The object's mass also determines the strength of its gravitational attraction to other bodies.</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -3862,6 +4054,9 @@
 <owl:NamedIndividual rdf:about="mass_fraction">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass_fraction</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Mass_fraction_(chemistry)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q899138</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In chemistry, the mass fraction of a substance within a mixture is the ratio  </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="mass_mixing_ratio">
@@ -3880,11 +4075,17 @@
 <owl:NamedIndividual rdf:about="mass_rate">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass_rate</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Mass_flow_rate</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1366187</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics and engineering, mass flow rate is the mass of a substance which passes per unit of time.  Its unit is kilogram per second in SI units, and slug per second or pound per second in US customary units.  The common symbol is m˙{\displaystyle {\dot {m}}} (ṁ, pronounced "m-dot"), although sometimes μ (Greek lowercase mu) is used.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="mass_ratio">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass_ratio</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Mass_ratio</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2406056</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In aerospace engineering, mass ratio is a measure of the efficiency of a rocket. It describes how much more massive the vehicle is with propellant than without; that is, the ratio of the rocket's wet mass (vehicle plus contents plus propellant) to its dry mass (vehicle plus contents).  A more efficient rocket design requires less propellant to achieve a given goal, and would therefore have a lower mass ratio; however, for any given efficiency a higher mass ratio typically permits the vehicle to achieve higher delta-v.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="specific_saturation">
@@ -3915,10 +4116,10 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass-per-area_density</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Area_density</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1907514</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface_density</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superficial_density</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">density_thickness</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superficial_density</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">areal_density</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface_density</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The area density (also known as areal density, surface density, superficial density, areic density, mass thickness, column density, or density thickness) of a two-dimensional object is calculated as the mass per unit area. The SI derived unit is the kilogram per square metre (kg·m−2).</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -4064,6 +4265,9 @@
 <owl:NamedIndividual rdf:about="mass-to-electric-charge_ratio">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass-to-electric-charge_ratio</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Mass-to-charge_ratio</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q874659</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The mass-to-charge ratio (m/Q) is a physical quantity relating the mass (quantity of matter) and the electric charge of a given particle, expressed in units of kilograms per coulomb (kg/C). It is most widely used in the electrodynamics of charged particles, e.g. in electron optics and ion optics.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="maturity">
@@ -4320,6 +4524,9 @@
 <owl:NamedIndividual rdf:about="mortality">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mortality</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Mortality</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q28942704</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mortality is the state of being mortal, or susceptible to death; the opposite of immortality.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="morton_number">
@@ -4504,6 +4711,9 @@
 <owl:NamedIndividual rdf:about="normalized_distance">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">normalized_distance</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Normalized_compression_distance</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q7051852</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Normalized compression distance (NCD) is a way of measuring the similarity between two objects, be it two documents, two letters, two emails, two music scores, two languages, two programs, two pictures, two systems,  two genomes, to name a few. Such a measurement should not be application dependent or arbitrary.  A reasonable definition for the similarity between two objects is how difficult it is to transform them into each other.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="normalized_hydraulic_conductivity">
@@ -4549,11 +4759,17 @@
 <owl:NamedIndividual rdf:about="obukhov_length">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obukhov_length</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Monin–Obukhov_length</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3110303</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Obukhov length is used to describe the effects of buoyancy on turbulent flows, particularly in the lower tenth of the atmospheric boundary layer.  It was first defined by Alexander Obukhov in 1946. It is also known as the Monin–Obukhov length because of its important role in the similarity theory developed by Monin and Obukhov. A simple definition of the Monin-Obukhov length is that height at which turbulence is generated more by buoyancy than by wind shear.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="odor">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">odor</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Odor</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q485537</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An odor (American English) or odour (Commonwealth English; see spelling differences) is caused by one or more volatilized chemical compounds that are generally found in low concentrations that humans and many animals can perceive via their sense of smell. An odor is also called a "smell" or a "scent", which can refer to either an unpleasant or a pleasant odor.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="odor_severity_code">
@@ -4595,6 +4811,9 @@
 <owl:NamedIndividual rdf:about="orbital_period">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">orbital_period</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Orbital_period</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q37640</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The orbital period (also revolution period) is the amount of time a given astronomical object takes to complete one orbit around another object. In astronomy, it usually applies to planets or asteroids orbiting the Sun, moons orbiting planets, exoplanets orbiting other stars, or binary stars. It may also refer to the time it takes a satellite orbiting a planet or moon to complete one orbit.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="orbital_speed">
@@ -4626,6 +4845,9 @@
 <owl:NamedIndividual rdf:about="osmotic_pressure">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osmotic_pressure</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Osmotic_pressure</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q193135</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Osmotic pressure is the minimum pressure which needs to be applied to a solution to prevent the inward flow of its pure solvent across a semipermeable membrane.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="output_power">
@@ -4646,6 +4868,9 @@
 <owl:NamedIndividual rdf:about="partial_pressure">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">partial_pressure</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Partial_pressure</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q27165</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In a mixture of gases, each constituent gas has a partial pressure which is the notional pressure of that constituent gas as  if it alone occupied the entire volume of the original mixture at the same temperature. The total pressure of an ideal gas mixture is the sum of the partial pressures of the gases in the mixture (Dalton's Law).</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="partition_coefficient">
@@ -4660,6 +4885,9 @@
 <owl:NamedIndividual rdf:about="paucity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paucity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Scarcity</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q815758</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In economics, scarcity "refers to the basic fact of life that there exists only a finite amount of human and nonhuman resources which the best technical knowledge is capable of using to produce only limited maximum amounts of each economic good." If the conditions of scarcity didn't exist and an "infinite amount of every good could be produced or human wants fully satisfied ... there would be no economic goods, i.e. goods that are relatively scarce..." Scarcity is the limited availability of a commodity, which may be in demand in the market or by the commons. Scarcity also includes an individual's lack of resources to buy commodities. The opposite of scarcity is abundance. Scarcity plays a key role in economic theory, and it is essential for a "proper definition of economics itself".</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="peclet_number">
@@ -4738,6 +4966,9 @@
 <owl:NamedIndividual rdf:about="permittivity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">permittivity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Permittivity</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q211569</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In electromagnetism, the absolute permittivity, often simply called permittivity and denoted by the Greek letter ε (epsilon), is a measure of the electric polarizability of a dielectric. A material with high permittivity polarizes more in response to an applied electric field than a material with low permittivity, thereby storing more energy in the material. In electrostatics, the permittivity plays an important role in determining the capacitance of a capacitor.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="permittivity_constant">
@@ -4795,6 +5026,9 @@
 <owl:NamedIndividual rdf:about="phase_velocity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phase_velocity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Phase_velocity</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q13824</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The phase velocity of a wave is the rate at which the wave propagates in any medium. This is the velocity at which the phase of any one frequency component of the wave travels. For such a component, any given phase of the wave (for example, the crest) will appear to travel at the phase velocity. The phase velocity is given in terms of the wavelength λ (lambda) and time period T as</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="phenological_stage">
@@ -4815,6 +5049,9 @@
 <owl:NamedIndividual rdf:about="physical_state">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical_state</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/State_of_matter</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11430</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics, a state of matter is one of the distinct forms in which matter can exist. Four states of matter are observable in everyday life: solid, liquid, gas, and plasma. Many intermediate states are known to exist, such as liquid crystal, and some states only exist under extreme conditions, such as Bose–Einstein condensates and Fermionic condensates (in extreme cold), neutron-degenerate matter (in extreme density), and quark–gluon plasma (at extremely high energy). For a list of exotic states of matter, see the article List of states of matter.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="pi_constant">
@@ -4889,6 +5126,9 @@
 <owl:NamedIndividual rdf:about="plasticity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasticity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Plasticity_(physics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q472074</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics and materials science, plasticity (also known as plastic deformation) is the ability of a solid material to undergo permanent deformation, a non-reversible change of shape in response to applied forces. For example, a solid piece of metal being bent or pounded into a new shape displays plasticity as permanent changes occur within the material itself. In engineering, the transition from elastic behavior to plastic behavior is known as yielding.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="plate_count_concentration">
@@ -4945,6 +5185,9 @@
 <owl:NamedIndividual rdf:about="potential_energy">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potential_energy</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Potential_energy</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q155640</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics, potential energy is the energy held by an object because of its position relative to other objects, stresses within itself, its electric charge, or other factors. The term potential energy was introduced by the 19th-century Scottish engineer and physicist William Rankine, although it has links to the ancient Greek philosopher Aristotle's concept of potentiality.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="potential_energy_flux">
@@ -4960,7 +5203,10 @@
 <owl:NamedIndividual rdf:about="potential_temperature">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potential_temperature</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Potential_temperature</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q760765</svo:has_wikidata_page>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potential</svo:has_synonym>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The potential temperature of a parcel of fluid at pressure </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="potential_volume_flux">
@@ -4971,6 +5217,9 @@
 <owl:NamedIndividual rdf:about="potential_vorticity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potential_vorticity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Potential_vorticity</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1418563</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In fluid mechanics, potential vorticity (PV) is a quantity which is proportional to the dot product of vorticity and stratification. This quantity, following a parcel of air or water, can only be changed by diabatic or frictional processes. It is a useful concept for understanding the generation of vorticity in cyclogenesis (the birth and development of a cyclone), especially along the polar front, and in analyzing flow in the ocean.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="power">
@@ -5035,11 +5284,17 @@
 <owl:NamedIndividual rdf:about="power-per-volume_density">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">power-per-volume_density</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Power_density</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3503313</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power density is the amount of power (time rate of energy transfer) per unit volume.It is typically measured in watts per cubic meter (W/m³) and represents how much power is distributed within a given space. In various fields such as physics, engineering, and electronics, power density is used to evaluate the efficiency and performance of devices, systems, or materials by considering how much power they can handle or generate relative to their size or volume.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="power-to-weight_ratio">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">power-to-weight_ratio</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Power-to-weight_ratio</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1642768</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power-to-weight ratio (PWR, also called specific power, or power-to-mass ratio) is a calculation commonly applied to engines and mobile power sources to enable the comparison of one unit or design to another. Power-to-weight ratio is a measurement of actual performance of any engine or power source. It is also used as a measurement of performance of a vehicle as a whole, with the engine's power output being divided by the weight (or mass) of the vehicle, to give a metric that is independent of the vehicle's size. Power-to-weight is often quoted by manufacturers at the peak value, but the actual value may vary in use and variations will affect performance.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="practical-salinity-scale_salinity">
@@ -5117,6 +5372,9 @@
 <owl:NamedIndividual rdf:about="pressure_head">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pressure_head</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Pressure_head</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1190625</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In fluid mechanics, pressure head is the height of a liquid column that corresponds to a particular pressure exerted by the liquid column on the base of its container. It may also be called static pressure head or simply static head (but not static head pressure). </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="pressure_lapse_rate">
@@ -5144,6 +5402,9 @@
 <owl:NamedIndividual rdf:about="price_index">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">price_index</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Price_index</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q631360</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A price index (plural: "price indices" or "price indexes") is a normalized average (typically a weighted average) of price relatives for a given class of goods or  services in a given region, during a given interval of time.  It is a statistic designed to help to compare how these price relatives, taken as a whole, differ between time periods or geographical locations.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="price-per-mass">
@@ -5167,6 +5428,9 @@
 <owl:NamedIndividual rdf:about="probability">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">probability</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Probability</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q9492</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probability is the branch of mathematics concerning events and numerical descriptions of how likely they are to occur.  The probability of an event is a number between 0 and 1; the larger the probability, the more likely an event is to occur. The higher the probability of an event, the more likely it is that the event will occur. A simple example is the tossing of a fair (unbiased) coin. Since the coin is fair, the two outcomes ("heads" and "tails") are both equally probable; the probability of "heads" equals the probability of "tails"; and since no other outcomes are possible, the probability of either "heads" or "tails" is 1/2 (which could also be written as 0.5 or 50%).</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="productivity">
@@ -5265,6 +5529,9 @@
 <owl:NamedIndividual rdf:about="radioactivity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">radioactivity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Radioactive_decay</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11448</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radioactive decay (also known as nuclear decay, radioactivity, radioactive disintegration, or nuclear disintegration) is the process by which an unstable atomic nucleus loses energy by radiation. A material containing unstable nuclei is considered radioactive. Three of the most common types of decay are alpha, beta, and gamma decay. The weak force is the mechanism that is responsible for beta decay, while the other two are governed by the electromagnetism and nuclear force.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="radius">
@@ -5278,6 +5545,9 @@
 <owl:NamedIndividual rdf:about="rake_angle">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rake_angle</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Rake_angle</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q7286564</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In machining, the rake angle is a parameter used in various cutting processes, describing the angle of the cutting face relative to the workpiece. There are three types of rake angles: positive, zero or neutral, and negative.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="range_distance">
@@ -5425,6 +5695,9 @@
 <owl:NamedIndividual rdf:about="repose_angle">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">repose_angle</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Angle_of_repose</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q532078</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The angle of repose, or critical angle of repose, of a granular material is the steepest angle of descent or dip  relative to the horizontal plane on which the material can be piled without slumping. At this angle, the material on the slope face is on the verge of sliding. The angle of repose can range from 0° to 90°. The morphology of the material affects the angle of repose; smooth, rounded sand grains cannot be piled as steeply as can rough, interlocking sands. The angle of repose can also be affected by additions of solvents. If a small amount of water is able to bridge the gaps between particles, electrostatic attraction of the water to mineral surfaces increases the angle of repose, and related quantities such as the soil strength.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="residual_porosity">
@@ -5464,6 +5737,9 @@
 <owl:NamedIndividual rdf:about="rest_mass">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rest_mass</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Invariant_mass</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1097654</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The invariant mass, rest mass, intrinsic mass, proper mass, or in the case of bound systems simply mass, is the portion of the total mass of an object or system of objects that is independent of the overall motion of the system. More precisely, it is a characteristic of the system's total energy and momentum that is the same in all frames of reference related by Lorentz transformations. If a center-of-momentum frame exists for the system, then the invariant mass of a system is equal to its total mass in that "rest frame". In other reference frames, where the system's momentum is nonzero, the total mass (a.k.a. relativistic mass) of the system is greater than the invariant mass, but the invariant mass remains unchanged.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="revenue">
@@ -5487,6 +5763,9 @@
 <owl:NamedIndividual rdf:about="reynolds_stress">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reynolds_stress</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Reynolds_stress</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q7319685</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In fluid dynamics, the Reynolds stress is the component of the total stress tensor in a fluid obtained from the averaging operation over the Navier–Stokes equations to account for turbulent fluctuations in fluid momentum.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="richardson_number">
@@ -5554,6 +5833,9 @@
 <owl:NamedIndividual rdf:about="roughness_length">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roughness_length</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Roughness_length</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q7370913</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roughness length (</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="rouse_number">
@@ -5593,6 +5875,9 @@
 <owl:NamedIndividual rdf:about="safety">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">safety</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Safety</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q10566551</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Safety is the state of being "safe", the condition of being protected from harm or other danger. Safety can also refer to the control of recognized hazards in order to achieve an acceptable level of risk.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="safety_rating">
@@ -5606,6 +5891,9 @@
 <owl:NamedIndividual rdf:about="salinity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">salinity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Salinity</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q179615</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salinity () is the saltiness or amount of salt dissolved in a body of water, called saline water (see also soil salinity). It is usually measured in g/L or g/kg (grams of salt per liter/kilogram of water; the latter is dimensionless and equal to ‰). </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="saturation">
@@ -5651,6 +5939,9 @@
 <owl:NamedIndividual rdf:about="schwarzchild_radius">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">schwarzchild_radius</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Schwarzschild_radius</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q72755</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Schwarzschild radius or the gravitational radius is a physical parameter in the Schwarzschild solution to Einstein's field equations that corresponds to the radius defining the event horizon of a Schwarzschild black hole. It is a characteristic radius associated with any quantity of mass. The Schwarzschild radius was named after the German astronomer Karl Schwarzschild, who calculated this exact solution for the theory of general relativity in 1916.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="scintillation_radioactivity">
@@ -5661,6 +5952,9 @@
 <owl:NamedIndividual rdf:about="scratch_hardness">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scratch_hardness</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Scratch_hardness</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q17125523</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scratch hardness refers to the hardness of a material in terms of resistance to scratches and abrasion by a harder material forcefully drawn over its surface. Scratch hardness test or scratch test refers to any of a number of methods of measuring scratch hardness. Resistance to abrasion is less affected by surface variations than indentation methods. Scratch hardness is measured with a sclerometer.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="seasonal_index">
@@ -5707,6 +6001,9 @@
 <owl:NamedIndividual rdf:about="seismic_energy">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seismic_energy</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Seismic_wave</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q186167</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A seismic wave is a mechanical wave of acoustic energy that travels through the Earth or another planetary body. It can result from an earthquake (or generally, a quake), volcanic eruption, magma movement, a large landslide and a large man-made explosion that produces low-frequency acoustic energy. Seismic waves are studied by seismologists, who record the waves using seismometers, hydrophones (in water), or accelerometers.  Seismic waves are distinguished from seismic noise (ambient vibration), which is persistent low-amplitude vibration arising from a variety of natural and anthropogenic sources.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="seismic_moment">
@@ -5720,6 +6017,9 @@
 <owl:NamedIndividual rdf:about="seismic_moment_energy">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seismic_moment_energy</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Seismic_moment</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1481983</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Seismic moment is a quantity used by seismologists to measure the size of an earthquake.  The scalar seismic moment </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="seismic_slip">
@@ -5824,11 +6124,17 @@
 <owl:NamedIndividual rdf:about="shear_stress">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shear_stress</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Shear_stress</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q657936</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shear stress (often denoted by τ (Greek: tau)) is the component of stress coplanar with a material cross section. It arises from the shear force, the component of force vector parallel to the material cross section.  Normal stress, on the other hand, arises from the force vector component perpendicular to the material cross section on which it acts.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="shear_velocity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shear_velocity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Shear_velocity</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1695787</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shear velocity, also called friction velocity, is a form by which a shear stress may be re-written in units of velocity. It is useful as a method in fluid mechanics to compare true velocities, such as the velocity of a flow in a stream, to a velocity that relates shear between layers of flow.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="sherwood_number">
@@ -5891,6 +6197,9 @@
 <owl:NamedIndividual rdf:about="significant_height">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">significant_height</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Significant_wave_height</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2674049</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physical oceanography, the significant wave height (SWH, HTSGW or Hs) </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="sinuosity">
@@ -5898,8 +6207,8 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sinuosity</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Sinuosity</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3485066</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sinuosity_index</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sinuosity_coefficient</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sinuosity_index</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sinuosity, sinuosity index, or sinuosity coefficient of a continuously differentiable curve having at least one inflection point is the ratio of the curvilinear length (along the curve) and the Euclidean distance (straight line) between the end points of the curve. This dimensionless quantity can also be rephrased as the "actual path length" divided by the "shortest path length" of a curve.</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -6131,6 +6440,9 @@
 <owl:NamedIndividual rdf:about="stage_height">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stage_height</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Water_level</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1929501</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water level, also known as gauge height or stage, is the elevation of the free surface of a sea, stream, lake or reservoir relative to a specified vertical datum.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="stage_severity_code">
@@ -6201,11 +6513,17 @@
 <owl:NamedIndividual rdf:about="static_friction_coefficient">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">static_friction_coefficient</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Friction</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q82580</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Friction is the force resisting the relative motion of solid surfaces, fluid layers, and material elements sliding against each other. </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="static_pressure">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">static_pressure</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Static_pressure</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2406217</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In fluid mechanics the term static pressure refers to a term in Bernoulli's equation written words as static pressure + dynamic pressure = total pressure. Since pressure measurements at any single point in a fluid always give the static pressure value, the 'static' is often dropped.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="static_pressure_lapse_rate">
@@ -6243,6 +6561,9 @@
 <owl:NamedIndividual rdf:about="stokes_drift_velocity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stokes_drift_velocity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Stokes_drift</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q961596</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">For a pure wave motion in fluid dynamics, the Stokes drift velocity is the average velocity when following a specific fluid parcel as it travels with the fluid flow. For instance, a particle floating at the free surface of water waves, experiences a net Stokes drift velocity in the direction of wave propagation.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="stokes_number">
@@ -6407,17 +6728,23 @@
 
 <owl:NamedIndividual rdf:about="successive_time_step_multiplication_factor">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">successive_time_step_multiplier</rdfs:label>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">successive_time_step_multiplication_factor</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="supply_elasticity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">supply_elasticity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Price_elasticity_of_supply</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2620132</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The price elasticity of supply (PES or Es) is a measure used in economics to show the responsiveness, or elasticity, of the quantity supplied of a good or service to a change in its price. Price elasticity of supply, in application, is the percentage change of the quantity supplied resulting from a 1% change in price. Alternatively, PES is the percentage change in the quantity supplied divided by the percentage change in price.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="surface_area">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface_area</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Surface_area</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1379273</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The surface area (symbol A) of a solid object is a measure of the total area that the surface of the object occupies. The mathematical definition of surface area in the presence of curved surfaces is considerably more involved than the definition of arc length of one-dimensional curves, or of the surface area for polyhedra (i.e., objects with flat polygonal faces), for which the surface area is the sum of the areas of its faces. Smooth surfaces, such as a sphere, are assigned surface area using their representation as parametric surfaces. This definition of surface area is based on methods of infinitesimal calculus and involves partial derivatives and double integration.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="surface_tension">
@@ -6444,6 +6771,9 @@
 <owl:NamedIndividual rdf:about="synodic_period">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synodic_period</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Orbital_period#Synodic_period</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q37640</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The orbital period (also revolution period) is the amount of time a given astronomical object takes to complete one orbit around another object. In astronomy, it usually applies to planets or asteroids orbiting the Sun, moons orbiting planets, exoplanets orbiting other stars, or binary stars. It may also refer to the time it takes a satellite orbiting a planet or moon to complete one orbit.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="tangent-vector">
@@ -6457,6 +6787,9 @@
 <owl:NamedIndividual rdf:about="tangential_curvature">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tangential_curvature</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Radius_of_curvature</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1136069</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In differential geometry, the radius of curvature, R, is the reciprocal of the curvature. For a curve, it equals the radius of the circular arc which best approximates the curve at that point. For surfaces, the radius of curvature is the radius of a circle that best fits a normal section or combinations thereof.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="taylor_number">
@@ -6511,11 +6844,17 @@
 <owl:NamedIndividual rdf:about="terminal_speed">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terminal_speed</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Terminal_velocity</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q614981</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terminal velocity is the maximum velocity (speed) attainable by an object as it falls through a fluid (air is the most common example). It occurs when the sum of the drag force (Fd) and the buoyancy is equal to the downward force of gravity (FG) acting on the object. Since the net force on the object is zero, the object has zero acceleration. For objects falling through regular air, the buoyant force is usually dismissed and not taken into account as its effects are negligible.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="thermal_conductance">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal_conductance</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Thermal_conductance_and_resistance</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q899628</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In heat transfer, thermal engineering, and thermodynamics, thermal conductance and thermal resistance are fundamental concepts that describe the ability of materials or systems to conduct heat and the opposition they offer to the heat current. The ability to manipulate these properties allows engineers to control temperature gradient, prevent thermal shock, and maximize the efficiency of thermal systems. Furthermore, these principles find applications in a multitude of fields, including materials science, mechanical engineering, electronics, and energy management. Knowledge of these principles is crucial in various scientific, engineering, and everyday applications, from designing efficient temperature control, thermal insulation, and thermal management in industrial processes to optimizing the performance of electronic devices.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="thermal_conductivity">
@@ -6530,6 +6869,9 @@
 <owl:NamedIndividual rdf:about="thermal_diffusivity">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal_diffusivity</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Thermal_diffusivity</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3381809</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In heat transfer analysis, thermal diffusivity is the thermal conductivity divided by density and specific heat capacity at constant pressure. It is a measure of the rate of heat transfer inside a material. It has units of m2/s. Thermal diffusivity is usually denoted by lowercase alpha (α), but a, h, κ (kappa), K, and D are also used.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="thermal_efficiency">
@@ -6543,6 +6885,9 @@
 <owl:NamedIndividual rdf:about="thermal_energy">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal_energy</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Thermal_energy</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q209233</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The term "thermal energy" is used loosely in various contexts in physics and engineering, generally related to the kinetic energy of vibrating and colliding atoms in a substance. It can refer to several different physical concepts.  These include the internal energy or enthalpy of a body of matter and radiation; heat, defined as a type of energy transfer (as is thermodynamic work); and the characteristic energy of a degree of freedom, kBT{\displaystyle k_{\mathrm {B} }T}, in a system that is described in terms of its microscopic particulate constituents (where T{\displaystyle T} denotes temperature and kB{\displaystyle k_{\mathrm {B} }} denotes the Boltzmann constant).</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="thermal_energy-per-volume_density">
@@ -6553,6 +6898,9 @@
 <owl:NamedIndividual rdf:about="thermal_inertia">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal_inertia</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Volumetric_heat_capacity#Thermal_inertia</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q900661</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The volumetric heat capacity of a material is the heat capacity of a sample of the substance divided by the volume of the sample.  It is the amount of energy that must be added, in the form of heat, to one unit of volume of the material in order to cause an increase of one unit in its temperature.  The SI unit of volumetric heat capacity is joule per kelvin per cubic meter, J⋅K−1⋅m−3.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="thermal_quality">
@@ -6576,6 +6924,9 @@
 <owl:NamedIndividual rdf:about="thermal_time">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal_time</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Thermal_time_scale</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q7783074</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In astrophysics, the thermal time scale or Kelvin–Helmholtz time scale is the approximate time it takes for a star to radiate away its total kinetic energy content at its current luminosity rate.  Along with the nuclear and free-fall (aka dynamical) time scales, it is used to estimate the length of time a particular star will remain in a certain phase of its life and its lifespan if hypothetical conditions are met.  In reality, the lifespan of a star is greater than what is estimated by the thermal time scale because as one fuel becomes scarce, another will generally take its place – hydrogen burning gives way to helium burning, which is replaced by carbon burning.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="thermal_volume_expansion_coefficient">
@@ -6662,6 +7013,9 @@
 <owl:NamedIndividual rdf:about="tolman-oppenheimer-volkoff-limit_mass">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tolman-oppenheimer-volkoff-limit_mass</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Tolman–Oppenheimer–Volkoff_limit</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1139232</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Tolman–Oppenheimer–Volkoff limit (or TOV limit) is an upper bound to the mass of cold, non-rotating neutron stars, analogous to the Chandrasekhar limit for white dwarf stars. Stars more massive than the TOV limit collapse into a black hole. The original calculation in 1939, which neglected complications such as nuclear forces between neutrons, placed this limit at approximately 0.7 solar masses (M☉). Later, more refined analyses have resulted in larger values.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="topographic_wetness_index">
@@ -6683,6 +7037,9 @@
 <owl:NamedIndividual rdf:about="torque-per-volume_density">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">torque-per-volume_density</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Torque_density</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q7826794</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Torque density is a measure of the torque-carrying capability of a mechanical component. It is the ratio of torque capability to volume and is expressed in units of torque per volume.  Torque density is a system property since it depends on the design of each element of the component being examined and their interconnection.  </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="torsion_angle">
@@ -6721,6 +7078,9 @@
 <owl:NamedIndividual rdf:about="transparency">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transparency</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Transparency_and_translucency</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q487623</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the field of optics, transparency (also called pellucidity or diaphaneity) is the physical property of allowing light to pass through the material without appreciable scattering of light. On a macroscopic scale (one in which the dimensions are much larger than the wavelengths of the photons in question), the photons can be said to follow Snell's law. Translucency (also called translucence or translucidity) allows light to pass through, but does not necessarily (again, on the macroscopic scale) follow Snell's law; the photons can be scattered at either of the two interfaces, or internally, where there is a change in index of refraction. In other words, a translucent material is made up of components with different indices of refraction. A transparent material is made up of components with a uniform index of refraction. Transparent materials appear clear, with the overall appearance of one color, or any combination leading up to a brilliant spectrum of every color. The opposite property of translucency is opacity. Other categories of visual appearance, related to the perception of regular or diffuse reflection and transmission of light, have been organized under the concept of cesia in an order system with three variables, including transparency, translucency and opacity among the involved aspects.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="transphilicity">
@@ -6851,6 +7211,9 @@
 <owl:NamedIndividual rdf:about="valence">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">valence</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Valence_electron</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q107414</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In chemistry and physics, valence electrons are electrons in the outermost shell of an atom, and that can participate in the formation of a chemical bond if the outermost shell is not closed. In a single covalent bond, a shared pair forms with both atoms in the bond each contributing one valence electron.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="van-genuchten_alpha_parameter">
@@ -6931,6 +7294,9 @@
 <owl:NamedIndividual rdf:about="virtual_temperature">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">virtual_temperature</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Virtual_temperature</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q761179</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In atmospheric thermodynamics, the virtual temperature (</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="viscosity">
@@ -6949,6 +7315,9 @@
 <owl:NamedIndividual rdf:about="viscous_stress">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">viscous_stress</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Viscous_stress_tensor</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q7935892</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The viscous stress tensor is a tensor used in continuum mechanics to model the part of the stress at a point within some material that can be attributed to the strain rate, the rate at which it is deforming around that point.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="visual_geometric_albedo">
@@ -6962,8 +7331,8 @@
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Voltage</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q25428</svo:has_wikidata_page>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electric_pressure</svo:has_synonym>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electric_potential_difference</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electric_tension</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electric_potential_difference</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Voltage, also known as electric pressure, electric tension, or (electric) potential difference, is the difference in electric potential between two points. In a static electric field, it corresponds to the work needed per unit of charge to move a test charge between the two points. In the International System of Units, the derived unit for voltage is named volt.: 166 The voltage between points can be caused by the build-up of electric charge (e.g., a capacitor), and from an electromotive force (e.g., electromagnetic induction in generator, inductors, and transformers). On a macroscopic scale, a potential difference can be caused by electrochemical processes (e.g., cells and batteries), the pressure-induced piezoelectric effect, and the thermoelectric effect.</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -6978,6 +7347,9 @@
 <owl:NamedIndividual rdf:about="volume_concentration">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volume_concentration</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Concentration#Volume_concentration</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3686031</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In chemistry, concentration is the abundance of a constituent divided by the total volume of a mixture. Several types of mathematical description can be distinguished: mass concentration, molar concentration, number concentration, and volume concentration. The concentration can refer to any kind of chemical mixture, but most frequently refers to solutes and solvents in solutions. The molar (amount) concentration has variants, such as normal concentration and osmotic concentration. Dilution is reduction of concentration, e.g. by adding solvent to a solution. The verb to concentrate means to increase concentration, the opposite of dilute.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="volume_dynamic_viscosity">
@@ -6990,9 +7362,9 @@
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volume_flow_rate</rdfs:label>
   <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Volume_flow_rate</svo:has_wikipedia_page>
   <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1134348</svo:has_wikidata_page>
-  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volumetric_flow_rate</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">discharge</svo:has_synonym>
   <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volume_velocity</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volumetric_flow_rate</svo:has_synonym>
   <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volume of fluid which passes per time</rdfs:comment>
 </owl:NamedIndividual>
 
@@ -7008,6 +7380,9 @@
 <owl:NamedIndividual rdf:about="volume_fraction">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volume_fraction</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Volume_fraction</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q909482</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In chemistry and fluid mechanics, the volume fraction φi{\displaystyle \varphi _{i}} is defined as the volume of a constituent Vi divided by the volume of all constituents of the mixture V prior to mixing:</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="volume_kinematic_viscosity">
@@ -7018,6 +7393,9 @@
 <owl:NamedIndividual rdf:about="volume_rate">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">volume_rate</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Volumetric_flow_rate</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1134348</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics and engineering, in particular fluid dynamics, the volumetric flow rate (also known as volume flow rate, or volume velocity) is the volume of fluid which passes per unit time; usually it is represented by the symbol Q (sometimes V˙{\displaystyle {\dot {V}}}). It contrasts with mass flow rate, which is the other main type of fluid flow rate. In most contexts a mention of rate of fluid flow is likely to refer to the volumetric rate. In hydrometry, the volumetric flow rate is known as discharge. </rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="volume_ratio">
@@ -7126,6 +7504,9 @@
 <owl:NamedIndividual rdf:about="wage">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wage</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Wage</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q6821213</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A wage is payment made by an employer to an employee for work done in a specific period of time. Some examples of wage payments include compensatory payments such as minimum wage, prevailing wage, and yearly bonuses, and remunerative payments such as prizes and tip payouts. Wages are part of the expenses that are involved in running a business. It is an obligation to the employee regardless of the profitability of the company.</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="wallis_parameter">
@@ -7152,6 +7533,9 @@
 <owl:NamedIndividual rdf:about="wavenumber">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wavenumber</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Wavenumber</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q192510</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the physical sciences, the wavenumber (or wave number), also known as repetency, is the spatial frequency of a wave, measured in cycles per unit distance (ordinary wavenumber) or radians per unit distance (angular wavenumber). It is analogous to temporal frequency, which is defined as the number of wave cycles per unit time (ordinary frequency) or radians per unit time (angular frequency).</rdfs:comment>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="weaver_flame_speed_number">
@@ -7333,11 +7717,49 @@
 <owl:NamedIndividual rdf:about="zenith_angle">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zenith_angle</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Zenith</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q82806</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The zenith (UK: , US: ) is an imaginary point directly "above" a particular location, on the celestial sphere. "Above" means in the vertical direction (plumb line) opposite to the gravity direction at that location (nadir). The zenith is the "highest" point on the celestial sphere.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="at-reference-depth">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">at-reference-depth</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="reference-depth">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reference-depth</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="%28capacity%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(capacity)</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="pressure-head">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pressure-head</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="%28pressure%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(pressure)</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="reference-height">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reference-height</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="at-reference-height">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">at-reference-height</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="%28compressibility%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(compressibility)</rdfs:label>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="upward_component_of_sensible_heat_energy_flux">
@@ -8379,8 +8801,8 @@
 <owl:NamedIndividual rdf:about="product_of_depth_and_slope">
   <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
   <svo:is_transformed_by rdf:resource="http://scientificvariablesontology.org/svo/operation/product"/>
-  <svo:is_transformation_of rdf:resource="depth"/>
   <svo:is_transformation_of rdf:resource="slope"/>
+  <svo:is_transformation_of rdf:resource="depth"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">product_of_depth_and_slope</rdfs:label>
 </owl:NamedIndividual>
 
