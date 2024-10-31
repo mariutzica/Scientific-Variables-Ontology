@@ -1,81 +1,53 @@
-<!DOCTYPE html>
-<html>
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href="css/stylesheet.css" rel="stylesheet">
-  <meta name="copyrighted-site-verification" content="d89c3c09e417177c" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/stylesheet.css">
 </head>
 <body>
-  <div id="header">
-  <img src="img/svo_temp_logo.png">
-  <h1 id="headline">Scientific Variables Ontology</h1>
-  </div>
-<div id='menu'>
-  <ul>
-    <li><a href='index.html' class="active"><span>Home</span></a>
-    </li>
-    <li><a href='documentation/index.html' class='inactive'><span>Documentation</span></a>
-    </li>
-    <li><a href='search.html' class='inactive'><span>Search</span></a>
-    </li>
-    <li><a href='contact.html' class='inactive'><span>Contact</span></a>
-    </li>
-  </ul>
-</div>
+  <header id="navigation">
+    <a href="../index.html"><img id="logo" src="../pics/svo_logo.png" alt="logo"></a>
+    <nav>
+      <ul id="menu">
+        <li class="menu-heading"><a href="../documentation.html">Documentation</a></li>
+        <li class="menu-heading"><a href="../tutorial_create_variable_manually.html">Tutorial</a></li>
+        <hr>
+        <li class="menu-heading"><a href="">Get Ontology</a></li>
+        <hr>
+        <li class="menu-heading"><a href="../faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Scientific Variables Ontology</h1>
+    <p>This URL is the entry point to obtaining documentation for SVO entities. You can use the embedded Google Search bar to
+        search the documentation, or you can browse by entity category.
+    </p>
+    <script async src="https://cse.google.com/cse.js?cx=36844e55c9ba44b6f">
+    </script>
+    <div class="gcse-search"></div>
 
-<p>Welcome to the Scientific Variables Ontology website! We are happy you are here. Below are a few pointers to help get you started!</p>
-
-<h3>What is the Scientific Variables Ontology?</h3>
-<p><a href="svo/1.0.0/index.html">SVO</a> is a framework that enables modular, principled expression, manipulation, and creation of scientific variable concepts. It provides:
-  <div class = 'divinline'>
+    <h2>SVO Classes</h2>
     <ul>
-      <li>An <a href="svo/svu/1.0.0/index.html">upper ontology</a> that outlines the elementary concept categories, such as Property, Phenomenon or Process that are used to build <a href="svo/1.0.0/index.html#modular_comp">modular components<a> that can then be combined in custom ways to <a href="svo/1.0.0/index.html#var_example">generate unique variable concepts</a>.</li>
-      <li>A set of machine-readable rules that define how elementary concepts can be combined to create more complex concepts.</li>
-      <li>An <em>extensible</em> <a href="svo/svl/1.0.0/index.html">lower ontology</a> that declares all of the instances of the concept category classes defined in the upper ontology.</li>
-      <li>A <a href="search.html">simple search interface</a> that allows casual users to browse the current database using exact term match of both preferred and alternate (synonym) labels stored in the ontology.</li>
-      <li>A <a href="http://sparql.geoscienceontology.org">SPARQL endpoint</a> that provides a programmatic interface for querying the ontology database, as well as a <a href="sparql.html">SPARQL web interface</a> for testing out SPARQL queries.</li>
-      <li>An <a href="http://termmatch.geoscienceontology.org">API</a> for matching freeform strings to concepts in the ontology using information from public linked data catalogs, a concept-based graph search, and the ontology blueprint. <em>Experimental, in development.</em></li>
-      <li>A GUI tool for constructing new variables using graph-based concept detection and the templates provided in the upper ontology. <em>In development.</em> The latest functionalities available that will be eventually integrated into this GUI, along with an explanatory video, can be found on <a href="https://github.com/mariutzica/SVO-search-and-create-tools">GitHub</a>.</li>
+        <li><a href="abstraction/index.html">Abstraction</a></li>
+        <li><a href="attribute/index.html">Attribute</a></li>
+        <li><a href="direction/index.html">Direction</a></li>
+        <li><a href="domain/index.html">Domain</a></li>
+        <li><a href="form/index.html">Form</a></li>
+        <li><a href="matter/index.html">Matter</a></li>
+        <li><a href="model/index.html">Model</a></li>
+        <li><a href="operation/index.html">Operation</a></li>
+        <li><a href="part/index.html">Part</a></li>
+        <li><a href="phenomenon/index.html">Phenomenon</a></li>
+        <li><a href="process/index.html">Process</a></li>
+        <li><a href="property/index.html">Property</a></li>
+        <li><a href="propertyquantification/index.html">PropertyQuantification</a></li>
+        <li><a href="propertyrole/index.html">PropertyRole</a></li>
+        <li><a href="propertytype/index.html">PropertyType</a></li>
+        <li><a href="role/index.html">Role</a></li>
+        <li><a href="trajectory/index.html">Trajectory</a></li>
+        <li><a href="variable/index.html">Variable</a></li>
     </ul>
-  </div>
-</p>
 
-<h3>What motivated the Scientific Variables Ontology (SVO)?</h3>
-
-<img class="horizontal-full-width" src="img/svo-motivation.png" alt="diagram of digital resources with variables">
-
-<p>Scientific variables are present in all kinds of digital resources. From being mentioned within unstructured web or journal articles, to being explicitly recorded in structured digital data resources and being transformed or computed by scientific models, variables are at the heart of how we communicate about scientific observations. Since variables are not identified in a standard way across resources, it is difficult to identify matched variables for the purpose of automating the creation of scientific workflows and the generation of new knowledge from available information. Although there are currently techniques for detecting (likely) similar concepts using natural language processing (NLP) techniques, these techniques can only approximate meaning, and results from such techniques may miss critical links or may create false connections between concepts. SVO aims to provide both a <a href="svo/svu/1.0.0/index.html">concept-based blueprint</a> for representing variables in a machine-readable format as well as <a href="svo/1.0.0/index.html#api">ontology-guided tools</a> (APIs) for generating new variable concepts from freeform text and matching freeform text to existing variable concepts.
-</p>
-
-<h3>Foundational Concepts of the Ontology</h3>
-<img class="horizontal-full-width" src="img/ontology_concepts_overview.png" alt="diagram of foundational components of ontology">
-<p>
-  The foundational concepts of the ontology&mdash;Phenomenon, Process, and Property&mdash;are illustrated in the image (<a href="documentation/references.html#bucket_jpg">credits</a>) above. These concepts commonly occur in a variety of available upper ontologies. The scope of SVO is to provide the rules and modular constructs necessary for the custom creation of scientific variable concepts, from an observer's perspective.
-</p>
-
-<!--
-<p>
-  For those interested in exploring more, you may read through the <a href="/documentation">documentation</a> or play around with <a href="/sparql.html">custom queries</a> in SPARQL.
-</p>
-
-<p>
-  If you have any questions or comments, please don't hesitate to <a href="/contact.html">contact us</a>.
-</p> -->
-
-<h3>Project Funding</h3>
-<p>
-  This project is supported by funding from DARPA and NSF EarthCube.
-</p>
-<div class="divinline">
-<img src="img/DARPA_Logo.jpg" style="width:150px; padding-right:20px;" alt="darpa logo">
-<img src="img/NSF_Logo.png" style="width:75px; padding-left:20px; padding-right: 20px;" alt="nsf logo">
-<img src="img/EarthCube_Logo_horizontal.png" alt="earthcube logo" style="width:220px; padding-left:20px">
-</div>
-
-<p>
-<footer>
-  <a title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://www.copyrighted.com/website/RbKPMeXwqZnxOikK"><img alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="25" srcset="https://static.copyrighted.com/badges/125x25/01_1_2x.png 2x" src="https://static.copyrighted.com/badges/125x25/01_1.png" /></a><script src="https://static.copyrighted.com/badges/helper.js"></script> <br/> &copy; 2019. No portion of this website may be duplicated without express permission from content creator. If you would like to use the content for educational purposes, please <a href="contact.html">contact us</a>.
-</footer>
-</p>
+  </main>
 </body>
-</html>

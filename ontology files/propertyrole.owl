@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/propertyrole/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/propertyrole/">
+
+<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/propertyrole">
+  <owl:imports rdf:resource="http://scientificvariablesontology.org/svo"/>
+</owl:Ontology>
+
+<owl:NamedIndividual rdf:about="coefficient">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyRole"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coefficient</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Coefficient</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q50700</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, a coefficient is a multiplicative factor in some term of a polynomial, a series, or an expression; it is usually a number, but may be any expression (including variables such as a, b and c). When the coefficients are themselves variables, they may also be called parameters.  </rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="constant">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyRole"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constant</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Mathematical_constant</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q186509</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mathematical constant is a key number whose value is fixed by an unambiguous definition, often referred to by a special symbol (e.g., an alphabet letter), or by mathematicians' names to facilitate using it across multiple mathematical problems. Constants arise in many areas of mathematics, with constants such as e and π occurring in such diverse contexts as geometry, number theory, statistics, and calculus.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="degree">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyRole"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">degree</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="dimension">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyRole"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dimension</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Dimension</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q4440864</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics and mathematics, the dimension of a mathematical space (or object) is informally defined as the minimum number of coordinates needed to specify any point within it. Thus, a line has a dimension of one (1D) because only one coordinate is needed to specify a point on it – for example, the point at 5 on a number line. A surface, such as the boundary of a cylinder or sphere, has a dimension of two (2D) because two coordinates are needed to specify a point on it – for example, both a latitude and longitude are required to locate a point on the surface of a sphere. A two-dimensional Euclidean space is a two-dimensional space on the plane. The inside of a cube, a cylinder or a sphere is three-dimensional (3D) because three coordinates are needed to locate a point within these spaces.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="exponent">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyRole"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">exponent</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Exponent</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q33456</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mathematical operation</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="factor">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyRole"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">factor</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Factor</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1393757</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Factor, a Latin word meaning "who/which acts", may refer to:</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="order">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyRole"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">order</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Order_(mathematics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1820515</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Order in mathematics may refer to:</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="parameter">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyRole"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parameter</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Parameter</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1413083</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A parameter (from Ancient Greek  παρά (pará) 'beside, subsidiary', and  μέτρον (métron) 'measure'), generally, is any characteristic that can help in defining or classifying a particular system (meaning an event, project, object, situation, etc.). That is, a parameter is an element of a system that is useful, or critical, when identifying the system, or when evaluating its performance, status, condition, etc.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="term">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyRole"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">term</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Term_(logic)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1318370</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematical logic, a term denotes a mathematical object while a formula denotes a mathematical fact. In particular, terms appear as components of a formula. This is analogous to natural language, where a noun phrase refers to an object and a whole sentence refers to a fact.</rdfs:comment>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>

@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/propertytype/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/propertytype/">
+
+<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/propertytype">
+  <owl:imports rdf:resource="http://scientificvariablesontology.org/svo"/>
+</owl:Ontology>
+
+<owl:NamedIndividual rdf:about="binary">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyType"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">binary</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Binary_number</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3913</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A binary number is a number expressed in the base-2 numeral system or binary numeral system, a method of mathematical expression which uses only two symbols: typically "0" (zero) and "1" (one).</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="boolean">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyType"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boolean</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Boolean_data_type</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q520777</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In computer science, the Boolean (sometimes shortened to Bool) is a data type that has one of two possible values (usually denoted true and false) which is intended to represent the two truth values of logic and Boolean algebra. It is named after George Boole, who first defined an algebraic system of logic in the mid 19th century. The Boolean data type is primarily associated with conditional statements, which allow different actions by changing control flow depending on whether a programmer-specified Boolean condition evaluates to true or false. It is a special case of a more general logical data type—logic does not always need to be Boolean  (see probabilistic logic).</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="categorical">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyType"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">categorical</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Categorical_variable</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2285707</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In statistics, a categorical variable (also called qualitative variable) is a variable that can take on one of a limited, and usually fixed, number of possible values, assigning each individual or other unit of observation to a particular group or nominal category on the basis of some qualitative property. In computer science and some branches of mathematics, categorical variables are referred to as enumerations or enumerated types. Commonly (though not in this article), each of the possible values of a categorical variable is referred to as a level. The probability distribution associated with a random categorical variable is called a categorical distribution.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="dichotomous">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyType"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dichotomous</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Dichotomy</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q10361123</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dichotomy  is a partition of a whole (or a set) into two parts (subsets). In other words, this couple of parts must be</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="dimensionless-number">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyType"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dimensionless-number</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Dimensionless_physical_constant</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2994934</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics, a dimensionless physical constant is a physical constant that is dimensionless, i.e. a pure number having no units attached and having a numerical value that is independent of whatever system of units may be used.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="field">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyType"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">field</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Field_(physics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q185674</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics, a field is a physical quantity, represented by a scalar, vector, or tensor, that has a value for each point in space and time. For example, on a weather map, the surface temperature is described by assigning a number to each point on the map; the temperature can be considered at a certain point in time or over some interval of time, to study the dynamics of temperature change. A surface wind map, assigning an arrow to each point on a map that describes the wind speed and direction at that point, is an example of a vector field, i.e. a 1-dimensional (rank-1) tensor field. Field theories, mathematical descriptions of how field values change in space and time, are ubiquitous in physics. For instance, the electric field is another rank-1 tensor field, while electrodynamics can be formulated in terms of two interacting vector fields at each point in spacetime, or as a single-rank 2-tensor field.In the modern framework of the quantum theory of fields, even without referring to a test particle, a field occupies space, contains energy, and its presence precludes a classical "true vacuum". This has led physicists to consider electromagnetic fields to be a physical entity, making the field concept a supporting paradigm of the edifice of modern physics. "The fact that the electromagnetic field can possess momentum and energy makes it very real ... a particle makes a field, and a field acts on another particle, and the field has such familiar properties as energy content and momentum, just as particles can have." In practice, the strength of most fields diminishes with distance, eventually becoming undetectable. For instance the strength of many relevant classical fields, such as the gravitational field in Newton's theory of gravity or the electrostatic field in classical electromagnetism, is inversely proportional to the square of the distance from the source (i.e., they follow Gauss's law).</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="function">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyType"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">function</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Function_(mathematics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11348</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, a function from a set X to a set Y assigns to each element of X exactly one element of Y. The set X is called the domain of the function and the set Y is called the codomain of the function.Functions were originally the idealization of how a varying quantity depends on another quantity. For example, the position of a planet is a function of time. Historically, the concept was elaborated with the infinitesimal calculus at the end of the 17th century, and, until the 19th century, the functions that were considered were differentiable (that is, they had a high degree of regularity). The concept of a function was formalized at the end of the 19th century in terms of set theory, and this greatly enlarged the domains of application of the concept.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="interval">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyType"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interval</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Level_of_measurement#Interval_scale</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q951437</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Level of measurement or scale of measure is a classification that describes the nature of information within the values assigned to variables. Psychologist Stanley Smith Stevens developed the best-known classification with four levels, or scales, of measurement: nominal, ordinal, interval, and ratio. This framework of distinguishing levels of measurement originated in psychology and is widely criticized by scholars in other disciplines. Other classifications include those by Mosteller and Tukey, and by Chrisman.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ordinal">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyType"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ordinal</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Ordinal_data</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q7100785</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ordinal data is a categorical, statistical data type where the variables have natural, ordered categories and the distances between the categories are not known.: 2  These data exist on an ordinal scale, one of four levels of measurement described by S. S. Stevens in 1946. The ordinal scale is distinguished from the nominal scale by having a ranking. It also differs from the interval scale and ratio scale by not having category widths that represent equal increments of the underlying attribute.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="scalar">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyType"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">scalar</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Scalar_(physics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q181175</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics, scalars (or scalar quantities) are physical quantities that are unaffected by changes to a vector space basis (i.e., a coordinate system transformation). Scalars are often accompanied by units of measurement, as in "10 cm".</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="tensor">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyType"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tensor</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Tensor</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q188524</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, a tensor is an algebraic object that describes a multilinear relationship between sets of algebraic objects related to a vector space. Tensors may map between different objects such as vectors, scalars, and even other tensors. There are many types of tensors, including scalars and vectors (which are the simplest tensors), dual vectors, multilinear maps between vector spaces, and even some operations such as the dot product. Tensors are defined independent of any basis, although they are often referred to by their components in a basis related to a particular coordinate system.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="vector">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#PropertyType"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vector</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q13471665</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics and physics, vector is a term that refers colloquially to some quantities that cannot be expressed by a single number (a scalar), or to elements of some vector spaces.</rdfs:comment>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>
