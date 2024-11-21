@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chemical a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "chemical"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q79529"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chemical_substance"^^xsd:string ;
+    rdfs:comment "A chemical substance is a unique form of matter with constant chemical composition and characteristic properties. Chemical substances may take the form of a single element or chemical compounds. If two or more chemical substances can be combined without reacting, they may form a chemical mixture. If a mixture is separated to isolate one chemical substance to a desired degree, the resulting substance is said to be chemically pure."^^xsd:string .
+

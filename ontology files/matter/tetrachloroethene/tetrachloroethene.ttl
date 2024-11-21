@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tetrachloroethene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tetrachloroethene"^^xsd:string ;
+    svo:has_synonym "perchloroethylene"^^xsd:string,
+        "tetrachloroethylene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q410772"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tetrachloroethylene"^^xsd:string ;
+    rdfs:comment "Tetrachloroethylene, also known under the systematic name tetrachloroethene, or perchloroethylene, and abbreviations such as \"perc\" (or \"PERC\"), and \"PCE\", is a chlorocarbon with the formula Cl2C=CCl2. It is a colorless liquid widely used for dry cleaning of fabrics, hence it is sometimes called \"dry-cleaning fluid\". It also has its uses as an effective automotive brake cleaner. It has a sweet odor, similar to the smell of chloroform, detectable by most people at a concentration of 1 part per million (1 ppm). Worldwide production was about 1 million metric tons (980,000 long tons; 1,100,000 short tons) in 1985."^^xsd:string .
+

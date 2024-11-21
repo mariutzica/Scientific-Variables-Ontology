@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:wiedemannia a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "wiedemannia"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q47009996"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Wiedemannia"^^xsd:string ;
+    rdfs:comment "Wiedemannia is the scientific name of two genera of organisms and may refer to:"^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:incidence_angle a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "incidence_angle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1196575"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Angle_of_incidence_(optics)"^^xsd:string ;
+    rdfs:comment "The angle of incidence, in geometric optics, is the angle between a ray incident on a surface and the line perpendicular (at 90 degree angle) to the surface at the point of incidence, called the normal. The ray can be formed by any waves, such as optical, acoustic, microwave, and X-ray. In the figure below, the line representing a ray makes an angle θ with the normal (dotted line). The angle of incidence at which light is first totally internally reflected is known as the critical angle. The angle of reflection and angle of refraction are other angles related to beams."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:incidence a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "incidence"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q217690"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Incidence_(epidemiology)"^^xsd:string ;
+    rdfs:comment "In epidemiology, incidence is a measure of the probability of occurrence of a given medical condition in a population within a specified period of time. Although sometimes loosely expressed simply as the number of new cases during some time period, it is better expressed as a proportion or a rate with a denominator."^^xsd:string .
+

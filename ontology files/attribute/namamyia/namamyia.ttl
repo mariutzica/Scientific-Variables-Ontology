@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:namamyia a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "namamyia"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q21361249"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Namamyia"^^xsd:string ;
+    rdfs:comment "Namamyia is a genus of mortarjoint casemakers in the family Odontoceridae. There is one described species in Namamyia, N. plutonis."^^xsd:string .
+

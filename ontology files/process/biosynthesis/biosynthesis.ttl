@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:biosynthesis a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "biosynthesis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q851162"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Biosynthesis"^^xsd:string ;
+    rdfs:comment "Biosynthesis is a multi-step, enzyme-catalyzed process where substrates are converted into more complex products in living organisms. In biosynthesis, simple compounds are modified, converted into other compounds, or joined to form macromolecules. This process often consists of metabolic pathways. Some of these biosynthetic pathways are located within a single cellular organelle, while others involve enzymes that are located within multiple cellular organelles. Examples of these biosynthetic pathways include the production of lipid membrane components and nucleotides. Biosynthesis is usually synonymous with anabolism."^^xsd:string .
+

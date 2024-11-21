@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:relative_atomic_mass a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "relative_atomic_mass"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q41377"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Relative_atomic_mass"^^xsd:string ;
+    rdfs:comment "Relative atomic mass (symbol: Ar; sometimes abbreviated RAM or r.a.m.), also known by the deprecated synonym atomic weight, is a dimensionless physical quantity defined as the ratio of the average mass of atoms of a chemical element in a given sample to the atomic mass constant. The atomic mass constant (symbol: mu) is defined as being 1/12 of the mass of a carbon-12 atom. Since both quantities in the ratio are masses, the resulting value is dimensionless. These definitions remain valid: 134  even after the 2019 redefinition of the SI base units."^^xsd:string .
+

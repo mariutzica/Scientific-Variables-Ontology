@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nutation_rate a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "nutation_rate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q20180599"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nutation"^^xsd:string ;
+    rdfs:comment "Nutation (from Latin  nūtātiō 'nodding, swaying') is a rocking, swaying, or nodding motion in the axis of rotation of a largely axially symmetric object, such as a gyroscope, planet, or bullet in flight, or as an intended behaviour of a mechanism. In an appropriate reference frame it can be defined as a change in the second Euler angle. If it is not caused by forces external to the body, it is called free nutation or Euler nutation. A pure nutation is a movement of a rotational axis such that the first Euler angle is constant. Therefore it can be seen that the circular red arrow in the diagram indicates the combined effects of precession and nutation, while nutation in the absence of precession would only change the tilt from vertical (second Euler angle). However, in spacecraft dynamics, precession (a change in the first Euler angle) is sometimes referred to as nutation."^^xsd:string .
+

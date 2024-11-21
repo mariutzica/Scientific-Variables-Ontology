@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:culicidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "culicidae"^^xsd:string ;
+    svo:has_synonym "mosquito"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7367"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mosquito"^^xsd:string ;
+    rdfs:comment "Mosquitoes (or mosquitos) are approximately 3,600 species of small flies comprising the family Culicidae (from the Latin culex meaning \"gnat\"). The word \"mosquito\" (formed by mosca and diminutive -ito) is Spanish for \"little fly\". Mosquitoes have a slender segmented body, one pair of wings, one pair of halteres, three pairs of long hair-like legs, and elongated mouthparts."^^xsd:string .
+

@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28nitrogen-undergoes-process-mineralization%29-has-property-%28average_of_net_mass_rate%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "nitrogen_mineralization__average_of_net_mass_rate"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/nitrogen> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/average> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/mineralization> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/net_mass_rate> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/nitrogen-undergoes-process-mineralization> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/average_of_net_mass_rate> ;
+    svo:has_original_label "nitrogen__average_of_net_mass_mineralization_rate"^^xsd:string .
+

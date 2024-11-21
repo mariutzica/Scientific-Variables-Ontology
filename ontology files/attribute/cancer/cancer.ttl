@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cancer a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "cancer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q428243"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cancer_(genus)"^^xsd:string ;
+    rdfs:comment "Cancer is a genus of marine crabs in the family Cancridae. It includes eight extant species and three extinct species, including familiar crabs of the littoral zone, such as the European edible crab (Cancer pagurus), the Jonah crab (Cancer borealis) and the red rock crab (Cancer productus). It is thought to have evolved from related genera in the Pacific Ocean in the Miocene."^^xsd:string .
+

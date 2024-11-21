@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:iribarren_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "iribarren_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q17092677"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Iribarren_number"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, the Iribarren number or Iribarren parameter – also known as the surf similarity parameter and breaker parameter – is a dimensionless parameter used to model several effects of (breaking) surface gravity waves on beaches and coastal structures. The parameter is named after the Spanish engineer Ramón Iribarren Cavanilles (1900–1967), who introduced it to describe the occurrence of wave breaking on sloping beaches.For instance, the Iribarren number is used to describe breaking wave types on beaches; or wave run-up on – and reflection by – beaches, breakwaters and dikes."^^xsd:string .
+

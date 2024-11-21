@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ash a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "ash"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q152079"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ash"^^xsd:string ;
+    rdfs:comment "Ash or ashes are the solid remnants of fires. Specifically, ash refers to all non-aqueous, non-gaseous residues that remain after something burns. In analytical chemistry, to analyse the mineral and metal content of chemical samples,  ash is the non-gaseous, non-liquid residue after complete combustion."^^xsd:string .
+

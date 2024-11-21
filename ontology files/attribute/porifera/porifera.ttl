@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:porifera a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "porifera"^^xsd:string ;
+    svo:has_synonym "sponge"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q18960"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sponge"^^xsd:string ;
+    rdfs:comment "Sponges, the members of the phylum Porifera (; meaning 'pore bearer'), are a basal animal clade as a sister of the diploblasts. They are multicellular organisms that have bodies full of pores and channels allowing water to circulate through them, consisting of jelly-like mesohyl sandwiched between two thin layers of cells."^^xsd:string .
+

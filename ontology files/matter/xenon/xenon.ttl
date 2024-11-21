@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:xenon a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "xenon"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1106"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Xenon"^^xsd:string ;
+    rdfs:comment "Xenon is a chemical element with the symbol Xe and atomic number 54. It is a dense, colorless, odorless noble gas found in Earth's atmosphere in trace amounts. Although generally unreactive, it can undergo a few chemical reactions such as the formation of xenon hexafluoroplatinate, the first noble gas compound to be synthesized.Xenon is used in flash lamps and arc lamps, and as a general anesthetic. The first excimer laser design used a xenon dimer molecule (Xe2) as the lasing medium, and the earliest laser designs used xenon flash lamps as pumps. Xenon is also used to search for hypothetical weakly interacting massive particles"^^xsd:string .
+

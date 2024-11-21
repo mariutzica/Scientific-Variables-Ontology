@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:grazing a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "grazing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3239189"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Grazing"^^xsd:string ;
+    rdfs:comment "In agriculture, grazing is a method of animal husbandry whereby domestic livestock are allowed outdoors to free range (roam around) and consume wild vegetations in order to convert the otherwise indigestible (by human gut) cellulose within grass and other forages into meat, milk, wool and other animal products, often on land that is unsuitable for arable farming."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:attenuation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "attenuation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2357982"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Attenuation"^^xsd:string ;
+    rdfs:comment "In physics, attenuation (in some contexts, extinction) is the gradual loss of flux intensity through a medium. For instance, dark glasses attenuate sunlight, lead attenuates X-rays, and water and air attenuate both light and sound at variable attenuation rates."^^xsd:string .
+

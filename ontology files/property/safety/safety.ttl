@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:safety a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "safety"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q10566551"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Safety"^^xsd:string ;
+    rdfs:comment "Safety is the state of being \"safe\", the condition of being protected from harm or other danger. Safety can also refer to the control of recognized hazards in order to achieve an acceptable level of risk."^^xsd:string .
+

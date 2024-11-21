@@ -1,0 +1,34 @@
+@prefix : <http://scientificvariablesontology.org/svo/trajectory/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/trajectory> a owl:Ontology ;
+    owl:imports <http://scientificvariablesontology.org/svo> .
+
+:optical-path a svo:Trajectory,
+        owl:NamedIndividual ;
+    rdfs:label "optical-path"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1417028"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Optical_path"^^xsd:string ;
+    rdfs:comment "Optical path (OP) is the trajectory that a light ray follows as it propagates through an optical medium."^^xsd:string .
+
+:orbit a svo:Trajectory,
+        owl:NamedIndividual ;
+    rdfs:label "orbit"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4130"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Orbit"^^xsd:string ;
+    rdfs:comment "In celestial mechanics, an orbit is the curved trajectory of an object such as the trajectory of a planet around a star, or of a natural satellite around a planet, or of an artificial satellite around an object or position in space such as a planet, moon, asteroid, or Lagrange point. Normally, orbit refers to a regularly repeating trajectory, although it may also refer to a non-repeating trajectory. To a close approximation, planets and satellites follow elliptic orbits, with the center of mass being orbited at a focal point of the ellipse, as described by Kepler's laws of planetary motion."^^xsd:string .
+
+:path a svo:Trajectory,
+        owl:NamedIndividual ;
+    rdfs:label "path"^^xsd:string .
+
+:trajectory a svo:Trajectory,
+        owl:NamedIndividual ;
+    rdfs:label "trajectory"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q193139"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Trajectory"^^xsd:string ;
+    rdfs:comment "A trajectory or flight path is the path that an object with mass in motion follows through space as a function of time. In classical mechanics, a trajectory is defined by Hamiltonian mechanics via canonical coordinates; hence, a complete trajectory is defined by position and momentum, simultaneously."^^xsd:string .
+

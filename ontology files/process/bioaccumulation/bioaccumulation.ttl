@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bioaccumulation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "bioaccumulation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q864231"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bioaccumulation"^^xsd:string ;
+    rdfs:comment "Bioaccumulation is the gradual accumulation of substances, such as pesticides or other chemicals, in an organism.  Bioaccumulation occurs when an organism absorbs a substance at a rate faster than that at which the substance is lost or eliminated by catabolism and excretion. Thus, the longer the biological half-life of a toxic substance, the greater the risk of chronic poisoning, even if environmental levels of the toxin are not very high. Bioaccumulation, for example in fish, can be predicted by models. Hypothesis for molecular size cutoff criteria for use as bioaccumulation potential indicators are not supported by data. Biotransformation can strongly modify bioaccumulation of chemicals in an organism.Toxicity induced by metals is associated with bioaccumulation and biomagnification. Storage or uptake of metals faster than the rate at which an organism metabolizes and excretes lead to the accumulation of that metal. The presence of various chemicals and harmful substances in the environment can be analyzed and assessed with a proper knowledge on bioaccumulation helping with chemical control and usage.Uptake of chemicals by an organism can take place by breathing, absorbing through skin or swallowing. When the concentration of a chemical is higher within the organism compared to its surroundings (air or water), it is referred to as bioconcentration. Biomagnification is another process related to bioaccumulation as the concentration of the chemical or metal increases as it moves up from one trophic level to another. Naturally, the process of bioaccumulation is necessary for an organism to grow and develop; however, accumulation of harmful substances can also occur."^^xsd:string .
+

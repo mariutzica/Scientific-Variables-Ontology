@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dimethoate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dimethoate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q421371"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dimethoate"^^xsd:string ;
+    rdfs:comment "Dimethoate is a widely used organophosphate insecticide and acaricide. It was patented and introduced in the 1950s by American Cyanamid. Like other organophosphates, dimethoate is an acetylcholinesterase inhibitor which disables cholinesterase, an enzyme essential for central nervous system function.  It acts both by contact and through ingestion. It is readily absorbed and distributed throughout plant tissues, and is degraded relatively rapidly."^^xsd:string .
+

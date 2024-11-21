@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ursell_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "ursell_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3631654"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ursell_number"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, the Ursell number indicates the nonlinearity of long surface gravity waves on a fluid layer. This dimensionless parameter is named after Fritz Ursell, who discussed its significance in 1953.The Ursell number is derived from the Stokes wave expansion, a perturbation series for nonlinear periodic waves, in the long-wave limit of shallow water – when the wavelength is much larger than the water depth. Then the Ursell number U is defined as:"^^xsd:string .
+

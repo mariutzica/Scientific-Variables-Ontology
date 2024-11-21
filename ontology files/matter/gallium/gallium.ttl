@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gallium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "gallium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q861"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gallium"^^xsd:string ;
+    rdfs:comment "Gallium is a chemical element with the symbol Ga and atomic number 31. Discovered by the French chemist Paul-Émile Lecoq de Boisbaudran in 1875, gallium is in group 13 of the periodic table and is similar to the other metals of the group (aluminium, indium, and thallium)."^^xsd:string .
+

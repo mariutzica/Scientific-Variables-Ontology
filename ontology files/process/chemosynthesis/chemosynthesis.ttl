@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chemosynthesis a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "chemosynthesis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q332410"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chemosynthesis"^^xsd:string ;
+    rdfs:comment "In biochemistry, chemosynthesis is the biological conversion of one or more carbon-containing molecules (usually carbon dioxide or methane) and nutrients into organic matter using the oxidation of inorganic compounds (e.g., hydrogen gas, hydrogen sulfide) or ferrous ions as a source of energy, rather than sunlight, as in photosynthesis. Chemoautotrophs, organisms that obtain carbon from carbon dioxide through chemosynthesis, are phylogenetically diverse. Groups that include conspicuous or biogeochemically important taxa include the sulfur-oxidizing Gammaproteobacteria, the Campylobacterota, the Aquificota, the methanogenic archaea, and the neutrophilic iron-oxidizing bacteria."^^xsd:string .
+

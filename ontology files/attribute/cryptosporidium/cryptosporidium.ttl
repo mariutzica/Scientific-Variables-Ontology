@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cryptosporidium a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "cryptosporidium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q133078"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cryptosporidium"^^xsd:string ;
+    rdfs:comment "Cryptosporidium, sometimes informally called crypto, is a genus of apicomplexan parasitic alveolates that can cause a respiratory and gastrointestinal illness (cryptosporidiosis) that primarily involves watery diarrhea (intestinal cryptosporidiosis), sometimes with a persistent cough (respiratory cryptosporidiosis).Treatment of gastrointestinal infection in humans involves fluid rehydration, electrolyte replacement, and management of any pain. As of January 2015, nitazoxanide is the only drug approved for the treatment of cryptosporidiosis in immunocompetent hosts.  Supplemental zinc may improve symptoms, particularly in recurrent or persistent infections or in others at risk for zinc deficiency.  Cryptosporidium oocysts are 4–6 μm in diameter and exhibit partial acid-fast staining. They must be differentiated from other partially acid-fast organisms including Cyclospora cayetanensis."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:coordinate a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "coordinate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11210"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Coordinate_system"^^xsd:string ;
+    rdfs:comment "In geometry, a coordinate system is a system that uses one or more numbers, or coordinates, to uniquely determine the position of the points or other geometric elements on a manifold such as Euclidean space. The order of the coordinates is significant, and they are sometimes identified by their position in an ordered tuple and sometimes by a letter, as in \"the x-coordinate\". The coordinates are taken to be real numbers in elementary mathematics, but may be complex numbers or elements of a more abstract system such as a commutative ring. The use of a coordinate system allows problems in geometry to be translated into problems about numbers and vice versa; this is the basis of analytic geometry."^^xsd:string .
+

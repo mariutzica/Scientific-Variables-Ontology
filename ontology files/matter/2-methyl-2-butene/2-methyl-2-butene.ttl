@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:2-methyl-2-butene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "2-methyl-2-butene"^^xsd:string ;
+    svo:has_synonym "2-butene,-2-methyl-"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2187069"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/2-Methyl-2-butene"^^xsd:string ;
+    rdfs:comment "2-Methyl-2-butene, 2m2b, 2-methylbut-2-ene, also beta-isoamylene is an alkene hydrocarbon with the molecular formula C5H10."^^xsd:string .
+

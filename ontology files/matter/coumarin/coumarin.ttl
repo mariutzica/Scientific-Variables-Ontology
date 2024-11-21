@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:coumarin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "coumarin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q111812"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Coumarin"^^xsd:string ;
+    rdfs:comment "Coumarin () or 2H-chromen-2-one is an aromatic organic chemical compound with formula C9H6O2.  Its molecule can be described as a benzene molecule with two adjacent hydrogen atoms replaced by a lactone-like chain −(CH)=(CH)−(C=O)−O−, forming a second six-membered heterocycle that shares two carbons with the benzene ring. It can be placed in the benzopyrone chemical class and considered as a lactone.Coumarin is a colorless crystalline solid with a sweet odor resembling the scent of vanilla and a bitter taste. It is found in many plants, where it may serve as a chemical defense against predators. By inhibiting synthesis of vitamin K, a related compound is used as the prescription drug warfarin – an anticoagulant – to inhibit formation of blood clots, deep vein thrombosis, and pulmonary embolism."^^xsd:string .
+

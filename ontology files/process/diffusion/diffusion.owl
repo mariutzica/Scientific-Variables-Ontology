@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/process/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/process/">
+<owl:NamedIndividual rdf:about="diffusion">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Process"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diffusion</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Diffusion</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q163214</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diffusion is the net movement of anything (for example, atoms, ions, molecules, energy) generally from a region of higher concentration to a region of lower concentration. Diffusion is driven by a gradient in Gibbs free energy or chemical potential. In the context of Quantum Physics, diffusion refers to spreading of wave packets. In simplest example, a Gaussian wave packet will spread along the spatial dimensions, as time progresses, resulting in diffusion of the wave packet energy. It is possible to diffuse "uphill" from a region of lower concentration to a region of higher concentration, like in spinodal decomposition. Diffusion is a stochastic process due to the inherent randomness of the diffusing entity and can be used to model many real-life stochastic scenarios. Therefore, diffusion and the corresponding mathematical models are used in several fields, beyond physics, such as statistics, probability theory, information theory, neural networks, finance and marketing etc.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

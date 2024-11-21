@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/process/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/process/">
+<owl:NamedIndividual rdf:about="titration">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Process"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">titration</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Titration</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q191010</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Titration (also known as titrimetry and volumetric analysis) is a common laboratory method of quantitative chemical analysis to determine the concentration of an identified analyte (a substance to be analyzed). A reagent, termed the titrant or titrator, is prepared as a standard solution of known concentration and volume. The titrant reacts with a solution of analyte (which may also be termed the titrand) to determine the analyte's concentration. The volume of titrant that reacted with the analyte is termed the titration volume.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

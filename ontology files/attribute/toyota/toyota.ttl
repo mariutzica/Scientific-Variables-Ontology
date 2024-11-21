@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:toyota a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "toyota"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q53268"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Toyota"^^xsd:string ;
+    rdfs:comment "Toyota Motor Corporation (Japanese: トヨタ自動車株式会社, Hepburn: Toyota Jidōsha kabushikigaisha, IPA: [toꜜjota], English: , commonly known as simply Toyota) is a Japanese multinational automotive manufacturer headquartered in Toyota City, Aichi, Japan. It was founded by Kiichiro Toyoda and incorporated on August 28, 1937. Toyota is the largest automobile manufacturer in the world, producing about 10 million vehicles per year."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:river-has-form-channel-has-abstraction-centerline a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "river_channel_centerline"^^xsd:string ;
+    svo:has_abstraction <http://scientificvariablesontology.org/svo/abstraction/centerline> ;
+    svo:has_form <http://scientificvariablesontology.org/svo/form/channel> ;
+    svo:has_phenomenon :river .
+

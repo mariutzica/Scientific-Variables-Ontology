@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:indigo a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "indigo"^^xsd:string ;
+    svo:has_synonym "C.I. Vat Blue 1"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q422662"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Indigo_dye"^^xsd:string ;
+    rdfs:comment "Indigo dye is an organic compound with a distinctive blue color. Indigo is a natural dye extracted from the leaves of some plants of the Indigofera genus, in particular Indigofera tinctoria; dye-bearing Indigofera plants were commonly grown and used throughout the world, in Asia in particular, as an important crop, with the production of indigo dyestuff economically important due to the historical rarity of other blue dyestuffs Most indigo dye produced today is synthetic, constituting several thousand tons each year. It is most commonly associated with the production of denim cloth and blue jeans, where its properties allow for effects such as stone washing and acid washing to be applied quickly."^^xsd:string .
+

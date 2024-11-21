@@ -11,7 +11,6 @@
 
 import os
 import pandas as pd
-import numpy as np
 
 # Read in reformatted variable names.
 script_path  = os.path.dirname(__file__)

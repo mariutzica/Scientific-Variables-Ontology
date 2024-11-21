@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydra a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "hydra"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q192290"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydra_(genus)"^^xsd:string ;
+    rdfs:comment "Hydra ( HY-drə) is a genus of small freshwater organisms of the phylum Cnidaria and class Hydrozoa. They are native to the temperate and tropical regions. The genus was named by Linnaeus in 1758 after the Hydra, which was the many-headed beast defeated by Heracles, as when the animal had a part severed, it would regenerate much like the hydra’s heads. Biologists are especially interested in Hydra because of their regenerative ability; they do not appear to die of old age, or to age at all."^^xsd:string .
+

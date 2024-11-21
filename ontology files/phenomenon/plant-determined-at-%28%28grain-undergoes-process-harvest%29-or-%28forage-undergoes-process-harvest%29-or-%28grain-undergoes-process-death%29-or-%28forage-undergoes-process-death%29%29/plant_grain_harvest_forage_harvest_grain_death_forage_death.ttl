@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:plant-determined-at-%28%28grain-undergoes-process-harvest%29-or-%28forage-undergoes-process-harvest%29-or-%28grain-undergoes-process-death%29-or-%28forage-undergoes-process-death%29%29 a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "plant_grain_harvest_forage_harvest_grain_death_forage_death"^^xsd:string ;
+    svo:has_measurement_reference_at <http://scientificvariablesontology.org/svo/phenomenon/%28grain-undergoes-process-harvest%29-or-%28forage-undergoes-process-harvest%29-or-%28grain-undergoes-process-death%29-or-%28forage-undergoes-process-death%29> ;
+    svo:has_primary_participant_phenomenon :plant .
+

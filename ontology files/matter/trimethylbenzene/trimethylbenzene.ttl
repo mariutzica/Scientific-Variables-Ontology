@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trimethylbenzene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "trimethylbenzene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2453386"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Trimethylbenzenes"^^xsd:string ;
+    rdfs:comment "The trimethylbenzenes constitute a group of substances of aromatic hydrocarbons, which structure consists of a benzene ring with three methyl groups (–CH3) as a substituent. Through their different arrangement, they form three structural isomers with the molecular formula C9H12. They also belong to the group of C3-benzenes. The best-known isomer is mesitylene."^^xsd:string .
+

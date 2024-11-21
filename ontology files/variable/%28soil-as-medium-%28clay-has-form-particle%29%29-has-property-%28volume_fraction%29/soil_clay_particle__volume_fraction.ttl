@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28soil-as-medium-%28clay-has-form-particle%29%29-has-property-%28volume_fraction%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "soil_clay_particle__volume_fraction"^^xsd:string ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/particle> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/clay>,
+        <http://scientificvariablesontology.org/svo/matter/soil> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/soil-as-medium-%28clay-has-form-particle%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/volume_fraction> .
+

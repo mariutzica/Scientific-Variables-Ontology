@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:stream a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "stream"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q47521"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Stream"^^xsd:string ;
+    rdfs:comment "A stream is a continuous body of surface water flowing within the bed and banks of a channel. Depending on its location or certain characteristics, a stream may be referred to by a variety of local or regional names. Long large streams are usually called rivers, while smaller, less voluminous and more intermittent streams are known as streamlets, brooks or creeks."^^xsd:string .
+

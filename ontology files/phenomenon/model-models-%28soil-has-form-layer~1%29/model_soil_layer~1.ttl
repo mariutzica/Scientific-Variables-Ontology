@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/model-models-%28soil-has-form-layer~1%29> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "model_soil_layer~1"^^xsd:string ;
+    svo:has_primary_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/soil-has-form-layer~1> ;
+    svo:is_modeled_by :model .
+

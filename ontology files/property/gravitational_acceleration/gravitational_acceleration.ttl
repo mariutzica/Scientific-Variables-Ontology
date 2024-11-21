@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gravitational_acceleration a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "gravitational_acceleration"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q30006"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gravitational_acceleration"^^xsd:string ;
+    rdfs:comment "In physics, gravitational acceleration is the acceleration of an object in free fall within a vacuum (and thus without experiencing drag). This is the steady gain in speed caused exclusively by the force of gravitational attraction. All bodies accelerate in vacuum at the same rate, regardless of the masses or compositions of the bodies; the measurement and analysis of these rates is known as gravimetry."^^xsd:string .
+

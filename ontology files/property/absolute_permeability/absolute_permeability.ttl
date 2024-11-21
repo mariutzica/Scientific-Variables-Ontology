@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:absolute_permeability a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "absolute_permeability"^^xsd:string ;
+    svo:has_synonym "intrinsic_permeability"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q256699"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Permeability_(earth_sciences)#Intrinsic_and_absolute_permeability"^^xsd:string ;
+    rdfs:comment "measure of the ability of a porous material to allow fluids to pass through it"^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:eye a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "eye"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7364"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Eye"^^xsd:string ;
+    rdfs:comment "Eyes are organs of the visual system. They provide living organisms with vision, the ability to receive and process visual detail, as well as enabling several photo response functions that are independent of vision. Eyes detect light and convert it into electro-chemical impulses in neurons (neurones). In higher organisms, the eye is a complex optical system which collects light from the surrounding environment, regulates its intensity through a diaphragm, focuses it through an adjustable assembly of lenses to form an image, converts this image into a set of electrical signals, and transmits these signals to the brain through complex neural pathways that connect the eye via the optic nerve to the visual cortex and other areas of the brain. Eyes with resolving power have come in ten fundamentally different forms, and 96% of animal species possess a complex optical system. Image-resolving eyes are present in molluscs, chordates and arthropods.The most simple eyes, pit eyes, are eye-spots which may be set into a pit to reduce the angle of light that enters and affects the eye-spot, to allow the organism to deduce the angle of incoming light. From more complex eyes, retinal photosensitive ganglion cells send signals along the retinohypothalamic tract to the suprachiasmatic nuclei to effect circadian adjustment and to the pretectal area to control the pupillary light reflex."^^xsd:string .
+

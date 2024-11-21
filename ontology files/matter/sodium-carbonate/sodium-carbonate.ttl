@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sodium-carbonate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "sodium-carbonate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q190227"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sodium_carbonate"^^xsd:string ;
+    rdfs:comment "Sodium carbonate (also known as washing soda, soda ash and soda crystals) is the inorganic compound with the formula Na2CO3 and its various hydrates. All forms are white, odourless, water-soluble salts that yield alkaline solutions in water. Historically, it was extracted from the ashes of plants grown in sodium-rich soils. Because the ashes of these sodium-rich plants were noticeably different from ashes of wood (once used to produce potash), sodium carbonate became known as \"soda ash\". It is produced in large quantities from sodium chloride and limestone by the Solvay process, as well as by carbonating sodium hydroxide which is made using the Chlor-alkali process."^^xsd:string .
+

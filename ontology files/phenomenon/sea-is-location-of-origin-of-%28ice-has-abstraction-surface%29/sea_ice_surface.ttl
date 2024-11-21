@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sea-is-location-of-origin-of-%28ice-has-abstraction-surface%29 a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "sea_ice_surface"^^xsd:string ;
+    svo:has_location_of_origin :sea ;
+    svo:has_primary_participant_phenomenon :ice-has-abstraction-surface .
+

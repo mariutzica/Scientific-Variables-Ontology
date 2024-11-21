@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chloropicrin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chloropicrin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q423065"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chloropicrin"^^xsd:string ;
+    rdfs:comment "Chloropicrin, also known as PS and nitrochloroform, is a chemical compound currently used as a broad-spectrum antimicrobial, fungicide, herbicide, insecticide, and nematicide. It was used as a poison gas in World War I. Its chemical structural formula is Cl3CNO2."^^xsd:string .
+

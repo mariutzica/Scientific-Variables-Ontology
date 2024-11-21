@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28soil-is-medium-matter-phreatic-zone-has-part-top%29-as-sink-water-as-in-recharge%29-has-property-%28time_integral_of_volume_flux%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "soil_phreatic-zone_top_water_recharge__time_integral_of_volume_flux"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/soil>,
+        <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/time_integral> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/top> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/phreatic-zone> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/recharge> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/volume_flux> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28soil-is-medium-matter-phreatic-zone-has-part-top%29-as-sink-water-as-in-recharge> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/time_integral_of_volume_flux> ;
+    svo:has_original_label "soil_water_sat-zone_top__time_integral_of_recharge_volume_flux"^^xsd:string .
+

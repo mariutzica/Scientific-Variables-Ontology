@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:centroid a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "centroid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q511093"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Centroid"^^xsd:string ;
+    rdfs:comment "In mathematics and physics, the centroid, also known as geometric center or center of figure, of a plane figure or solid figure is the arithmetic mean position of all the points in the surface of the figure. The same definition extends to any object in n-dimensional Euclidean space.In geometry, one often assumes uniform mass density, in which case the barycenter or center of mass coincides with the centroid. Informally, it can be understood as the point at which a cutout of the shape (with uniformly distributed mass) could be perfectly balanced on the tip of a pin.In physics, if variations in gravity are considered, then a center of gravity can be defined as the weighted mean of all points weighted by their specific weight."^^xsd:string .
+

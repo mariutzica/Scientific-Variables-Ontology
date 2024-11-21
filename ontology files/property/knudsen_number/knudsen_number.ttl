@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:knudsen_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "knudsen_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q898463"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Knudsen_number"^^xsd:string ;
+    rdfs:comment "The Knudsen number (Kn) is a dimensionless number defined as the ratio of the molecular mean free path length to a representative physical length scale. This length scale could be, for example, the radius of a body in a fluid. The number is named after Danish physicist Martin Knudsen (1871–1949)."^^xsd:string .
+

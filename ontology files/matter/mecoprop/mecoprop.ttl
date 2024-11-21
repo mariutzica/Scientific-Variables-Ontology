@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mecoprop a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "mecoprop"^^xsd:string ;
+    svo:has_synonym "mcpp"^^xsd:string,
+        "methylchlorophenoxypropionic-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q149452"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mecoprop"^^xsd:string ;
+    rdfs:comment "Mecoprop (also known as methylchlorophenoxypropionic acid and MCPP) is a common general use herbicide found in many household weed killers and \"weed-and-feed\" type lawn fertilizers. It is primarily used to control broadleaf weeds. It is often used in combination with other chemically related herbicides such as 2,4-D, dicamba, and MCPA."^^xsd:string .
+

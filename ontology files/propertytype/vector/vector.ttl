@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/propertytype/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vector a svo:PropertyType,
+        owl:NamedIndividual ;
+    rdfs:label "vector"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q13471665"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics)"^^xsd:string ;
+    rdfs:comment "In mathematics and physics, vector is a term that refers colloquially to some quantities that cannot be expressed by a single number (a scalar), or to elements of some vector spaces."^^xsd:string .
+

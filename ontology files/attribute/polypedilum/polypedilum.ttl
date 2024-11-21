@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:polypedilum a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "polypedilum"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7226728"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Polypedilum"^^xsd:string ;
+    rdfs:comment "Polypedilum is a genus of non-biting midges in the subfamily Chironominae of the bloodworm family Chironomidae. This is probably the most species-rich of all chironomid genera. Larvae of Polypedilum may also be among the most abundant invertebrates in eutrophic ponds, reaching densities of up to 1200 larvae per square meter."^^xsd:string .
+

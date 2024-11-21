@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:azobenzene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "azobenzene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q8884513"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Azobenzene"^^xsd:string ;
+    rdfs:comment "Azobenzene is a photoswitchable chemical compound composed of two phenyl rings linked by a N=N double bond. It is the simplest example of an aryl azo compound. The term 'azobenzene' or simply 'azo' is often used to refer to a wide class of similar compounds. These azo compounds are considered as derivatives of diazene (diimide), and are sometimes referred to as 'diazenes'. The diazenes absorb light strongly and are common dyes."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cryoturbation a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "cryoturbation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1569306"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cryoturbation"^^xsd:string ;
+    rdfs:comment "In gelisols (permafrost soils), cryoturbation (frost churning) refers to the mixing of materials from various horizons of the soil down to the bedrock due to freezing and thawing."^^xsd:string .
+

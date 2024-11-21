@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:carbazole a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "carbazole"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q424003"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Carbazole"^^xsd:string ;
+    rdfs:comment "Carbazole is an aromatic heterocyclic organic compound. It has a tricyclic structure, consisting of two six-membered benzene rings fused on either side of a five-membered nitrogen-containing ring. The compound's structure is based on the indole structure, but in which a second benzene ring is fused onto the five-membered ring at the 2–3 position of indole (equivalent to the 9a–4a double bond in carbazole, respectively)."^^xsd:string .
+

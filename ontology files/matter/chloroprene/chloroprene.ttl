@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chloroprene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chloroprene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q410871"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chloroprene"^^xsd:string ;
+    rdfs:comment "Chloroprene is the common name for 2-chlorobuta-1,3-diene (IUPAC name) with the chemical formula CH2=CCl−CH=CH2. Chloroprene is a colorless volatile liquid, almost exclusively used as a monomer for the production of the polymer polychloroprene, better known as neoprene, a type of synthetic rubber."^^xsd:string .
+

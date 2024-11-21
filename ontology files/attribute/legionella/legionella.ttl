@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:legionella a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "legionella"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q158013"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Legionella"^^xsd:string ;
+    rdfs:comment "Legionella is a genus of pathogenic gram-negative bacteria that includes the species L. pneumophila, causing legionellosis (all illnesses caused by Legionella) including a pneumonia-type illness called Legionnaires' disease and a mild flu-like illness called Pontiac fever.Legionella may be visualized with a silver stain or cultured in cysteine-containing media such as buffered charcoal yeast extract agar. It is common in many environments, including soil and aquatic systems, with at least 50 species and 70 serogroups identified. These bacteria, however, are not transmissible from person to person; Furthermore, most people exposed to the bacteria do not become ill. Most outbreaks are traced to poorly maintained cooling towers."^^xsd:string .
+

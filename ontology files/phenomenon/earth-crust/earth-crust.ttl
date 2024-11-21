@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:earth-crust a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "earth-crust"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q15316"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Earth's_crust"^^xsd:string ;
+    rdfs:comment "Earth's crust is Earth's thick outer shell of rock, referring to less than 1% of Earth's radius and volume. It is the top component of the lithosphere, a division of Earth's layers that includes the crust and the upper part of the mantle. The lithosphere is broken into tectonic plates whose motion allows heat to escape from the interior of the Earth into space."^^xsd:string .
+

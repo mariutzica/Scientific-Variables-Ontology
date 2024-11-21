@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:anthuridae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "anthuridae"^^xsd:string ;
+    svo:has_synonym "anthuroidea"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4774089"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Anthuroidea"^^xsd:string ;
+    rdfs:comment "Anthuroidea is a superfamily of isopod crustaceans, formerly treated as a suborder, Anthuridea. The group is characterised by \"an elongate cylindrical body form, without dorsal coxal plates, and with a uropodal exopod attached to the peduncle proximally and dorsally\". There are more than 500 described species in 57 genera, arranged across six families:"^^xsd:string .
+

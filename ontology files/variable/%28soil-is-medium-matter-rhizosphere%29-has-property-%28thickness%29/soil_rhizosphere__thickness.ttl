@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28soil-is-medium-matter-rhizosphere%29-has-property-%28thickness%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "soil_rhizosphere__thickness"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/soil> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/rhizosphere> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/soil-is-medium-matter-rhizosphere> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/thickness> ;
+    svo:has_original_label "soil_root-zone__thickness"^^xsd:string .
+

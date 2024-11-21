@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/propertyrole/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:coefficient a svo:PropertyRole,
+        owl:NamedIndividual ;
+    rdfs:label "coefficient"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q50700"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Coefficient"^^xsd:string ;
+    rdfs:comment "In mathematics, a coefficient is a multiplicative factor in some term of a polynomial, a series, or an expression; it is usually a number, but may be any expression (including variables such as a, b and c). When the coefficients are themselves variables, they may also be called parameters.  "^^xsd:string .
+

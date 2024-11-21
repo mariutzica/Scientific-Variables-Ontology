@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/deepwater-wave~incoming> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "deepwater-wave~incoming"^^xsd:string ;
+    svo:has_direction <http://scientificvariablesontology.org/svo/direction/incoming> ;
+    svo:has_phenomenon_root :deepwater-wave .
+

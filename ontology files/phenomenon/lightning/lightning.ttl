@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lightning a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "lightning"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q33741"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lightning"^^xsd:string ;
+    rdfs:comment "Lightning is a naturally occurring electrostatic discharge during which two electrically charged regions, both in the atmosphere or with one on the ground, temporarily neutralize themselves, causing the instantaneous release of an average of one gigajoule of energy. This discharge may produce a wide range of electromagnetic radiation, from heat created by the rapid movement of electrons, to brilliant flashes of visible light in the form of black-body radiation. Lightning causes thunder, a sound from the shock wave which develops as gases in the vicinity of the discharge experience a sudden increase in pressure. Lightning occurs commonly during thunderstorms as well as other types of energetic weather systems, but volcanic lightning can also occur during volcanic eruptions. Lightning is an atmospheric electrical phenomenon and contributes to the global atmospheric electrical circuit."^^xsd:string .
+

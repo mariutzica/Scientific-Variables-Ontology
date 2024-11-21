@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:conching a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "conching"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1123967"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Conching"^^xsd:string ;
+    rdfs:comment "Conching is a process used in the manufacture of chocolate whereby a surface scraping mixer and agitator, known as a conche, evenly distributes cocoa butter within chocolate and may act as a \"polisher\" of the particles. It also promotes flavor development through frictional heat, release of volatiles and acids, and oxidation. The name arises from the shape of the vessels initially used which resembled conch shells."^^xsd:string .
+

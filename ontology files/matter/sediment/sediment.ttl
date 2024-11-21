@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sediment a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "sediment"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q180184"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Sediment"^^xsd:string ;
+    rdfs:comment "Sediment is a naturally occurring material that is broken down by processes of weathering and erosion, and is subsequently transported by the action of wind, water, or ice or by the force of gravity acting on the particles. For example, sand and silt can be carried in suspension in river water and on reaching the sea bed deposited by sedimentation; if buried, they may eventually become sandstone and siltstone (sedimentary rocks) through lithification."^^xsd:string .
+

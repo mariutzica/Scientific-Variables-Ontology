@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:plastering a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "plastering"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q572879"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Plasterwork"^^xsd:string ;
+    rdfs:comment "Plasterwork is construction or ornamentation done with plaster, such as a layer of plaster on an interior or exterior wall structure, or plaster decorative moldings on ceilings or walls.  This is also sometimes called pargeting. The process of creating plasterwork, called plastering or rendering, has been used in building construction for centuries.  For the art history of three-dimensional plaster, see stucco."^^xsd:string .
+

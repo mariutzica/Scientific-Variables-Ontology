@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:motion a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "motion"^^xsd:string ;
+    svo:has_synonym "motion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q79782"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Motion"^^xsd:string ;
+    rdfs:comment "In physics, motion is the phenomenon in which an object changes its position with respect to time. Motion is mathematically described in terms of displacement, distance, velocity, acceleration, speed and frame of reference to an observer and measuring the change in position of the body relative to that frame with change in time. The branch of physics describing the motion of objects without reference to its cause is called kinematics, while the branch studying forces and their effect on motion is called dynamics."^^xsd:string .
+

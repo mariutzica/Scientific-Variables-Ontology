@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:potential_vorticity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "potential_vorticity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1418563"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Potential_vorticity"^^xsd:string ;
+    rdfs:comment "In fluid mechanics, potential vorticity (PV) is a quantity which is proportional to the dot product of vorticity and stratification. This quantity, following a parcel of air or water, can only be changed by diabatic or frictional processes. It is a useful concept for understanding the generation of vorticity in cyclogenesis (the birth and development of a cyclone), especially along the polar front, and in analyzing flow in the ocean."^^xsd:string .
+

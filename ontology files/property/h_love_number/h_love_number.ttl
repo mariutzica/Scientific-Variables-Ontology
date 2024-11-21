@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:h_love_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "h_love_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1641286"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Love_number"^^xsd:string ;
+    rdfs:comment "The Love numbers (h, k, and l) are dimensionless parameters that measure the rigidity of a planetary body and the susceptibility of its shape to change in response to a tidal potential."^^xsd:string .
+

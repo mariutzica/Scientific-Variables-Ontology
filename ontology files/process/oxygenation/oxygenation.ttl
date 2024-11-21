@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:oxygenation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "oxygenation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7115966"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Oxygenate"^^xsd:string ;
+    rdfs:comment "To oxygenate means to impregnate, combine, or supply something with oxygen, while oxygenates are hydrocarbons containing at least one oxygen atom that are used as fuel additives to promote complete combustion in fuel mixtures. Oxygenates can also be employed to reduce air pollution by reducing carbon monoxide production and soot particle size and compounds such as aromatic hydrocarbons, polyaromatic hydrocarbons, and nitrated polyaromatic hydrocarbons that are side-products caused by incomplete combustion.The most common oxygenates are either alcohols or ethers, but ketones and aldehydes are also included in this distinction. Carboxylic acids and esters can be grouped with oxygenates in the simple definition that they contain at least one oxygen atom. However, they are usually unwanted in oils, and therefore likely fuels, due to their environmental toxicity and tendency to cause catalyst poisoning and corrosion during oil production and refining."^^xsd:string .
+

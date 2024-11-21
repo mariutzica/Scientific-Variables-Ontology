@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:speed_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "speed_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2111"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Speed_of_light"^^xsd:string ;
+    rdfs:comment "The speed of light in vacuum, commonly denoted c, is a universal physical constant that is exactly equal to 299,792,458 metres per second (approximately 300,000 kilometres per second; 186,000 miles per second; 671 million miles per hour). According to the special theory of relativity, c is the upper limit for the speed at which conventional matter or energy (and thus any signal carrying information) can travel through space.All forms of electromagnetic radiation, including visible light, travel at the speed of light. For many practical purposes, light and other electromagnetic waves will appear to propagate instantaneously, but for long distances and very sensitive measurements, their finite speed has noticeable effects. Starlight viewed on Earth left the stars many years ago, allowing humans to study the history of the universe by viewing distant objects. When communicating with distant space probes, it can take minutes to hours for signals to travel from Earth to the spacecraft and vice versa. In computing, the speed of light fixes the ultimate minimum communication delay between computers, to computer memory, and within a CPU. The speed of light can be used in time of flight measurements to measure large distances to extremely high precision."^^xsd:string .
+

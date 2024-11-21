@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sphaeromatidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "sphaeromatidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2405015"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sphaeromatidae"^^xsd:string ;
+    rdfs:comment "Sphaeromatidae (marine pillbug family) is a family of isopods, often encountered on rocky shores and in shelf waters in temperate zones. The family includes almost 100 genera and 619 known marine species (and about 65 in fresh water). Within these genera, there are groups that share  distinctive morphologies; further research may reclassify these genus-groups as separate families."^^xsd:string .
+

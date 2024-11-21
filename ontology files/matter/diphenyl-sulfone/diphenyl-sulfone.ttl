@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:diphenyl-sulfone a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "diphenyl-sulfone"^^xsd:string ;
+    svo:has_synonym "Diphenylsulfone"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5279737"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Diphenyl_sulfone"^^xsd:string ;
+    rdfs:comment "Diphenyl sulfone is an organosulfur compound with the formula (C6H5)2SO2. It is a white solid that is soluble in organic solvents. It is used as a high temperature solvent.  Such high temperature solvents are useful for processing highly rigid polymers, e.g., PEEK, which only dissolve in very hot solvents."^^xsd:string .
+

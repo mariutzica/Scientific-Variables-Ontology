@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:activity_coefficient a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "activity_coefficient"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q745224"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Activity_coefficient"^^xsd:string ;
+    rdfs:comment "In thermodynamics, an activity coefficient is a factor used to account for deviation of a mixture of chemical substances from ideal behaviour. In an ideal mixture, the microscopic interactions between each pair of chemical species are the same (or macroscopically equivalent, the enthalpy change of solution and volume variation in mixing is zero) and, as a result, properties of the mixtures can be expressed directly in terms of simple concentrations or partial pressures of the substances present e.g. Raoult's law. Deviations from ideality are accommodated by modifying the concentration by an activity coefficient. Analogously, expressions involving gases can be adjusted for non-ideality by scaling partial pressures by a fugacity coefficient."^^xsd:string .
+

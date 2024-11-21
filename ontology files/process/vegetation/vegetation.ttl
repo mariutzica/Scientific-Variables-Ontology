@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vegetation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "vegetation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q187997"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vegetation"^^xsd:string ;
+    rdfs:comment "Vegetation  is an assemblage of plant species and the ground cover they provide.  It is a general term, without specific reference to particular taxa, life forms, structure, spatial extent, or any other specific botanical or geographic characteristics. It is broader than the term flora which refers to species composition. Perhaps the closest synonym is plant community, but vegetation can, and often does, refer to a wider range of spatial scales than that term does, including scales as large as the global. Primeval redwood forests, coastal mangrove stands, sphagnum bogs, desert soil crusts, roadside weed patches, wheat fields, cultivated gardens and lawns; all are encompassed by the term vegetation."^^xsd:string .
+

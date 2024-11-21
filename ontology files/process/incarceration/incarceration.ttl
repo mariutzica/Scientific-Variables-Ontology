@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:incarceration a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "incarceration"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q841236"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Imprisonment"^^xsd:string ;
+    rdfs:comment "Imprisonment or incarceration is the restraint of a person's liberty against their will. Imprisonment could be given for any cause whatsoever, whether by authority of the government, or by a person acting without such authority. In the latter case it is considered \"false imprisonment\". Imprisonment does not necessarily imply a place of confinement, with bolts and bars, but may be exercised by any use or display of force (such as placing one in handcuffs), lawfully or unlawfully, wherever displayed, even in the open street. People become prisoners, wherever they may be, by the mere word or touch of a duly authorized officer directed to that end. Usually, however, imprisonment is understood to imply actual confinement in a prison employed for the purpose according to the provisions of the law."^^xsd:string .
+

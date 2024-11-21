@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:embalming a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "embalming"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q332997"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Embalming"^^xsd:string ;
+    rdfs:comment "Embalming is the art and science of preserving human remains by treating them (in its modern form with chemicals) to forestall decomposition. This is usually done to make the deceased suitable for viewing as part of the funeral ceremony or keep them preserved for medical purposes in an anatomical laboratory. The three goals of embalming are sanitization, presentation, and preservation, with restoration being an important additional factor in some instances. Performed successfully, embalming can help preserve the body for many years. Embalming has a very long and cross-cultural history, with many cultures giving the embalming processes religious meaning."^^xsd:string .
+

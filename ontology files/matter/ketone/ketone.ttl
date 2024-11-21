@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ketone a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "ketone"^^xsd:string ;
+    svo:has_synonym "alkanone"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q170744"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ketone"^^xsd:string ;
+    rdfs:comment "In organic chemistry, a ketone  is a functional group with the structure R−C(=O)−R', where R and R' can be a variety of carbon-containing substituents. Ketones contain a carbonyl group −C(=O)− (which contains a carbon-oxygen double bond C=O). The simplest ketone is acetone (where R and R' is methyl), with the formula (CH3)2CO. Many ketones are of great importance in biology and in industry. Examples include many sugars (ketoses), many steroids (e.g., testosterone), and the solvent acetone."^^xsd:string .
+

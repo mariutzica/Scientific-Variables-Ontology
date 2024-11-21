@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:panthenol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "panthenol"^^xsd:string ;
+    svo:has_synonym "(+)-Panthenol"^^xsd:string,
+        "pantothenol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q196473"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Panthenol"^^xsd:string ;
+    rdfs:comment "Panthenol (also called pantothenol) is the alcohol analog of pantothenic acid (vitamin B5), and is thus a provitamin of B5. In organisms, it is quickly oxidized to pantothenic acid. It is a viscous transparent liquid at room temperature. Panthenol is used in pharmaceutical and cosmetic products as a moisturizer and to improve wound healing."^^xsd:string .
+

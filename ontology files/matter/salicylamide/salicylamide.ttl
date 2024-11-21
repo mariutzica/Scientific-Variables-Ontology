@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:salicylamide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "salicylamide"^^xsd:string ;
+    svo:has_synonym "o-Hydroxybenzamide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2496906"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Salicylamide"^^xsd:string ;
+    rdfs:comment "Salicylamide (o-hydroxybenzamide or amide of salicyl) is a non-prescription drug with analgesic and antipyretic properties. Its medicinal uses are similar to those of aspirin.  Salicylamide is used in combination with both aspirin and caffeine in the over-the-counter pain remedy PainAid.  It was also an ingredient in the over-the-counter pain remedy BC Powder but was removed from the formulation in 2009, and Excedrin used the ingredient from"^^xsd:string .
+

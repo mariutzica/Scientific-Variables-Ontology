@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28bedrock-has-abstraction-surface%29-has-property-%28y_derivative_of_slope%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "bedrock_surface__y_derivative_of_slope"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/surface> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/y_derivative> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/bedrock> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/slope> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/bedrock-has-abstraction-surface> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/y_derivative_of_slope> .
+

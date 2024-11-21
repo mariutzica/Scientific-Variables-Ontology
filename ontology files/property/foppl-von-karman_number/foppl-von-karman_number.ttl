@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:foppl-von-karman_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "foppl-von-karman_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5511705"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/F%C3%B6ppl%E2%80%93von_K%C3%A1rm%C3%A1n_equations"^^xsd:string ;
+    rdfs:comment "The Föppl–von Kármán equations, named after August Föppl and Theodore von Kármán, are a set of nonlinear partial differential equations describing the large deflections of thin flat plates. With applications ranging from the design of submarine hulls to the mechanical properties of cell wall, the equations are notoriously difficult to solve, and take the following form:"^^xsd:string .
+

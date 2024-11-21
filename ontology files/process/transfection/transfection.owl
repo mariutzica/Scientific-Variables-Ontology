@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/process/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/process/">
+<owl:NamedIndividual rdf:about="transfection">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Process"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transfection</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Transfection</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1429031</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transfection is the process of deliberately introducing naked or purified nucleic acids into eukaryotic cells. It may also refer to other methods and cell types, although other terms are often preferred: "transformation" is typically used to describe non-viral DNA transfer in bacteria and non-animal eukaryotic cells, including plant cells. In animal cells, transfection is the preferred term as transformation is also used to refer to progression to a cancerous state (carcinogenesis) in these cells. Transduction is often used to describe virus-mediated gene transfer into eukaryotic cells.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

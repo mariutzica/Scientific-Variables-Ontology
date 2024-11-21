@@ -1,0 +1,11 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:amyl-cinnamal a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "amyl-cinnamal"^^xsd:string ;
+    svo:has_synonym "Heptanal,-2-(phenylmethylene)-"^^xsd:string .
+

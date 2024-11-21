@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:permineralization a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "permineralization"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3136650"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Permineralization"^^xsd:string ;
+    rdfs:comment "Permineralization is a process of fossilization of bones and tissues in which mineral deposits form internal casts of organisms. Carried by water, these minerals fill the spaces within organic tissue. Because of the nature of the casts, permineralization is particularly useful in studies of the internal structures of organisms, usually of plants."^^xsd:string .
+

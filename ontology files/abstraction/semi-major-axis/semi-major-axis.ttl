@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:semi-major-axis a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "semi-major-axis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q21143897"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Semi-major_and_semi-minor_axes"^^xsd:string ;
+    rdfs:comment "In geometry, the major axis of an ellipse is its longest diameter: a line segment that runs through the center and both foci, with ends at the two most widely separated points of the perimeter. The semi-major axis (major semiaxis) is the longest semidiameter or one half of the major axis, and thus runs from the centre, through a focus, and to the perimeter. The semi-minor axis (minor semiaxis) of an ellipse or hyperbola is a line segment that is at right angles with the semi-major axis and has one end at the center of the conic section. For the special case of a circle, the lengths of the semi-axes are both equal to the radius of the circle."^^xsd:string .
+

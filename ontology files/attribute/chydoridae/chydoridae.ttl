@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chydoridae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "chydoridae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4569514"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chydoridae"^^xsd:string ;
+    rdfs:comment "Chydoridae is a family of water fleas in the order Anomopoda. There are more than 50 genera and 520 described species in Chydoridae. A lot of Chydoridae species are non-native species, many of which pose a great threat to aquatic ecosystems."^^xsd:string .
+

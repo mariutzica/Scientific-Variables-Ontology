@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sputtering a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "sputtering"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q898444"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sputtering"^^xsd:string ;
+    rdfs:comment "In physics, sputtering is a phenomenon in which microscopic particles of a solid material are ejected from its surface, after the material is itself bombarded by energetic particles of a plasma or gas. It occurs naturally in outer space, and can be an unwelcome source of wear in precision components. However, the fact that it can be made to act on extremely fine layers of material is utilised in science and industry—there, it is used to perform precise etching, carry out analytical techniques, and deposit thin film layers in the manufacture of optical coatings, semiconductor devices and nanotechnology products. It is a physical vapor deposition technique."^^xsd:string .
+

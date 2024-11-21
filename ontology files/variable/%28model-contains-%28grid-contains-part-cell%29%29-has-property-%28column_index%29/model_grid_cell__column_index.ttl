@@ -1,0 +1,13 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28model-contains-%28grid-contains-part-cell%29%29-has-property-%28column_index%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "model_grid_cell__column_index"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/cell>,
+        <http://scientificvariablesontology.org/svo/abstraction/grid> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/model-contains-%28grid-contains-part-cell%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/column_index> .
+

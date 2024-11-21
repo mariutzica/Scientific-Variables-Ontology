@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sweetening a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "sweetening"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q460453"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sweetness"^^xsd:string ;
+    rdfs:comment "Sweetness is a basic taste most commonly perceived when eating foods rich in sugars. Sweet tastes are generally regarded as pleasurable. In addition to sugars like sucrose, many other chemical compounds are sweet, including aldehydes, ketones, and sugar alcohols. Some are sweet at very low concentrations, allowing their use as non-caloric sugar substitutes. Such non-sugar sweeteners include saccharin, aspartame, sucralose and stevia. Other compounds, such as miraculin, may alter perception of sweetness itself."^^xsd:string .
+

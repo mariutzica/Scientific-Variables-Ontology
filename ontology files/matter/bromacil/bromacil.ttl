@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bromacil a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "bromacil"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2926003"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bromacil"^^xsd:string ;
+    rdfs:comment "Bromacil is an organic compound with the chemical formula C9H13BrN2O2, commercially available as a herbicide. Bromacil was first registered as a pesticide in the U.S. in 1961. It is used for brush control on non-cropland areas. It works by interfering with photosynthesis by entering the plant through the root zone and moving throughout the plant. Bromacil is one of a group of compounds called substituted uracils. These materials are broad spectrum herbicides used for nonselective weed and brush control on non-croplands, as well as for selective weed control on a limited number of crops, such as citrus fruit and pineapple. Bromacil is also found to be excellent at controlling perennial grasses."^^xsd:string .
+

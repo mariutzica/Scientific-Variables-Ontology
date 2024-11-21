@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:alpha-particle a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "alpha-particle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q103517"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Alpha_particle"^^xsd:string ;
+    rdfs:comment "Alpha particles, also called alpha rays or alpha radiation, consist of two protons and two neutrons bound together into a particle identical to a helium-4 nucleus. They are generally produced in the process of alpha decay, but may also be produced in other ways. Alpha particles are named after the first letter in the Greek alphabet, α. The symbol for the alpha particle is α or α2+. Because they are identical to helium nuclei, they are also sometimes written as He2+ or 42He2+ indicating a helium ion with a +2 charge (missing its two electrons). Once the ion gains electrons from its environment, the alpha particle becomes a normal (electrically neutral) helium atom 42He."^^xsd:string .
+

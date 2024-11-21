@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:implosion a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "implosion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q523919"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Implosion_(mechanical_process)"^^xsd:string ;
+    rdfs:comment "Implosion is a process in which objects are destroyed by collapsing (or being squeezed in) on themselves. The opposite of explosion (which expands the volume), implosion reduces the volume occupied and concentrates matter and energy. True implosion usually involves a difference between internal (lower) and external (higher) pressure, or inward and outward forces, that is so large that the structure collapses inward into itself, or into the space it occupied if it is not a completely solid object. Examples of implosion include a submarine being crushed from the outside by the hydrostatic pressure of the surrounding water and the collapse of a massive star under its own gravitational pressure. "^^xsd:string .
+

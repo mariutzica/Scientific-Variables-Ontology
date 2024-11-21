@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28earth-has-abstraction-ellipsoid%29-has-abstraction-equator%29-has-property-%28radius%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "earth_ellipsoid_equator__radius"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/ellipsoid>,
+        <http://scientificvariablesontology.org/svo/abstraction/equator> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/earth> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28earth-has-abstraction-ellipsoid%29-has-abstraction-equator> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/radius> ;
+    svo:has_original_label "earth_ellipsoid__equatorial_radius"^^xsd:string .
+

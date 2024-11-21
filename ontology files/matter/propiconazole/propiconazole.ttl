@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:propiconazole a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "propiconazole"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q414357"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Propiconazole"^^xsd:string ;
+    rdfs:comment "Propiconazole is a triazole fungicide, also known as a DMI, or demethylation inhibiting fungicide due to its binding with and inhibiting the 14-alpha demethylase enzyme from demethylating a precursor to ergosterol.  Without this demethylation step, the ergosterols are not incorporated into the growing fungal cell membranes, and cellular growth is stopped."^^xsd:string .
+

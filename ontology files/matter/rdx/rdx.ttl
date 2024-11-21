@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:rdx a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "rdx"^^xsd:string ;
+    svo:has_synonym "Cyclonite"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q190020"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/RDX"^^xsd:string ;
+    rdfs:comment "RDX (abbreviation of \"Research Department eXplosive\") or hexogen, among other names, is an organic compound with the formula (O2N2CH2)3. It is white, odorless and tasteless, widely used as an explosive. Chemically, it is classified as a nitroamine alongside HMX, which is a more energetic explosive than TNT. It was used widely in World War II and remains common in military applications."^^xsd:string .
+

@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:air-has-form-column a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "air_column"^^xsd:string ;
+    svo:has_form <http://scientificvariablesontology.org/svo/form/column> ;
+    svo:has_matter <http://scientificvariablesontology.org/svo/matter/air> .
+

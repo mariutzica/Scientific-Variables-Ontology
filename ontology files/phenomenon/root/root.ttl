@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:root a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "root"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q41500"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Root"^^xsd:string ;
+    rdfs:comment "In vascular plants, the roots are the organs of a plant that are modified to provide anchorage for the plant and take in water and nutrients into the plant body, which allows  plants to grow taller and faster. They are most often below the surface of the soil, but roots can also be aerial or aerating, that is, growing up above the ground or especially above water."^^xsd:string .
+

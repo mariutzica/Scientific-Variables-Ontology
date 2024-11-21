@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hmx a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "hmx"^^xsd:string ;
+    svo:has_synonym "octogen"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q422206"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/HMX"^^xsd:string ;
+    rdfs:comment "HMX, also called octogen, is a powerful and relatively insensitive nitroamine high explosive, chemically related to RDX. Like RDX, the compound's name is the subject of much speculation, having been variously listed as High Melting Explosive, Her Majesty's Explosive, High-velocity Military Explosive, or High-Molecular-weight RDX.The molecular structure of HMX consists of an eight-membered ring of alternating carbon and nitrogen atoms, with a nitro group attached to each nitrogen atom.  Because of its high molecular weight, it is one of the most potent chemical explosives manufactured, although a number of newer ones, including HNIW and ONC, are more powerful."^^xsd:string .
+

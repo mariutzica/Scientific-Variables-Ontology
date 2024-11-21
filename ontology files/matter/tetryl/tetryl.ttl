@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tetryl a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tetryl"^^xsd:string ;
+    svo:has_synonym "2,4,6-trinitrophenylmethylnitramine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q409753"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tetryl"^^xsd:string ;
+    rdfs:comment "2,4,6-Trinitrophenylmethylnitramine commonly referred to as tetryl (C7H5N5O8) is an explosive compound used to make detonators and explosive booster charges."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:scatterer a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "scatterer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q210028"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Scattering"^^xsd:string ;
+    rdfs:comment "Scattering is a term used in physics to describe a wide range of physical processes where moving particles or radiation of some form, such as light or sound, are forced to deviate from a straight trajectory by localized non-uniformities (including particles and radiation) in the medium through which they pass. In conventional use, this also includes deviation of reflected radiation from the angle predicted by the law of reflection. Reflections of radiation that undergo scattering are often called diffuse reflections and unscattered reflections are called specular (mirror-like) reflections. Originally, the term was confined to light scattering (going back at least as far as Isaac Newton in the 17th century). As more \"ray\"-like phenomena were discovered, the idea of scattering was extended to them, so that William Herschel could refer to the scattering of \"heat rays\" (not then recognized as electromagnetic in nature) in 1800. John Tyndall, a pioneer in light scattering research, noted the connection between light scattering and acoustic scattering in the 1870s. Near the end of the 19th century, the scattering of cathode rays (electron beams) and X-rays was observed and discussed. With the discovery of subatomic particles (e.g. Ernest Rutherford in 1911) and the development of quantum theory in the 20th century, the sense of the term became broader as it was recognized that the same mathematical frameworks used in light scattering could be applied to many other phenomena."^^xsd:string .
+

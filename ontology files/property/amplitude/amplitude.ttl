@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:amplitude a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "amplitude"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q159190"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Amplitude"^^xsd:string ;
+    rdfs:comment "The amplitude of a periodic variable is a measure of its change in a single period (such as time or spatial period). The amplitude of a non-periodic signal is its magnitude compared with a reference value. There are various definitions of amplitude (see below), which are all functions of the magnitude of the differences between the variable's extreme values. In older texts, the phase of a periodic function is sometimes called the amplitude."^^xsd:string .
+

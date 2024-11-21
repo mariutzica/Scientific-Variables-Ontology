@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:alkane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "alkane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q41581"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Alkane"^^xsd:string ;
+    rdfs:comment "In organic chemistry, an alkane, or paraffin (a historical trivial name that also has other meanings), is an acyclic saturated hydrocarbon. In other words, an alkane consists of hydrogen and carbon atoms arranged in a tree structure in which all the carbon–carbon bonds are single. Alkanes have the general chemical formula CnH2n+2. The alkanes range in complexity from the simplest case of methane (CH4), where n = 1 (sometimes called the parent molecule), to arbitrarily large and complex molecules, like pentacontane (C50H102) or 6-ethyl-2-methyl-5-(1-methylethyl) octane, an isomer of tetradecane (C14H30)."^^xsd:string .
+

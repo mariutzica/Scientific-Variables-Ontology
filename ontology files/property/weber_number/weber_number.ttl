@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:weber_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "weber_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q947531"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Weber_number"^^xsd:string ;
+    rdfs:comment "The Weber number (We) is a dimensionless number in fluid mechanics that is often useful in analysing fluid flows where there is an interface between two different fluids, especially for multiphase flows with strongly curved surfaces. It is named after Moritz Weber (1871–1951). It can be thought of as a measure of the relative importance of the fluid's inertia compared to its surface tension. The quantity is useful in analyzing thin film flows and the formation of droplets and bubbles."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlorine-dioxide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chlorine-dioxide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q422080"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chlorine_dioxide"^^xsd:string ;
+    rdfs:comment "Chlorine dioxide is a chemical compound with the formula ClO2 that exists as yellowish-green gas above 11 °C, a reddish-brown liquid between 11 °C and −59 °C, and as bright orange crystals below −59 °C. It is usually handled as an aqueous solution.  It is also commonly used as a bleach. More recent developments have extended its applications in food processing and as a disinfectant."^^xsd:string .
+

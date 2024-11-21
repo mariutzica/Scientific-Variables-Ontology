@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:alkylation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "alkylation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q177604"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Alkylation"^^xsd:string ;
+    rdfs:comment "Alkylation is a chemical reaction that entails transfer of an alkyl group. The alkyl group may be transferred as an alkyl carbocation, a free radical, a carbanion, or a carbene (or their equivalents).  Alkylating agents are reagents for effecting alkylation.  Alkyl groups can also be removed in a process known as dealkylation.  Alkylating agents are often classified according to their nucleophilic or electrophilic character. In oil refining contexts, alkylation refers to a particular alkylation of isobutane with olefins. For upgrading of petroleum, alkylation produces a premium blending stock for gasoline. In medicine, alkylation of DNA is used in chemotherapy to damage the DNA of cancer cells. Alkylation is accomplished with the class of drugs called alkylating antineoplastic agents. "^^xsd:string .
+

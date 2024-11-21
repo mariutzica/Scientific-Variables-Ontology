@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:actinium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "actinium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1121"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Actinium"^^xsd:string ;
+    rdfs:comment "Actinium is a chemical element with the symbol Ac and atomic number 89. It was first isolated by Friedrich Oskar Giesel in 1902, who gave it the name emanium; the element got its name by being wrongly identified with a substance André-Louis Debierne found in 1899 and called actinium. Actinium gave the name to the actinide series, a set of 15 elements between actinium and lawrencium in the periodic table. Together with polonium, radium, and radon, actinium was one of the first non-primordial radioactive elements to be isolated."^^xsd:string .
+

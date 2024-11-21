@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:electric_potential a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "electric_potential"^^xsd:string ;
+    svo:has_synonym "electric-field-potential"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q55451"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Electric_potential"^^xsd:string ;
+    rdfs:comment "The electric potential (also called the electric field potential, potential drop, the electrostatic potential) is defined as the amount of work energy needed to move a unit of electric charge from a reference point to the specific point in an electric field. More precisely, it is the energy per unit charge for a test charge that is so small that the disturbance of the field under consideration is negligible. Furthermore, the motion across the field is supposed to proceed with negligible acceleration, so as to avoid the test charge acquiring kinetic energy or producing radiation. By definition, the electric potential at the reference point is zero units. Typically, the reference point is earth or a point at infinity, although any point can be used. "^^xsd:string .
+

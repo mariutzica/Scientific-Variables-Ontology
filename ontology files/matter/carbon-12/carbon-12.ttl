@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:carbon-12 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "carbon-12"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1058364"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Carbon-12"^^xsd:string ;
+    rdfs:comment "Carbon-12 (12C) is the most abundant of the two stable isotopes of carbon (carbon-13 being the other), amounting to 98.93% of element carbon on Earth; its abundance is due to the triple-alpha process by which it is created in stars. Carbon-12 is of particular importance in its use as the standard from which atomic masses of all nuclides are measured, thus, its atomic mass is exactly 12 daltons by definition. Carbon-12 is composed of 6 protons, 6 neutrons, and 6 electrons."^^xsd:string .
+

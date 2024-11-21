@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:protection a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "protection"^^xsd:string ;
+    svo:has_synonym "protection"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2251595"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Protection"^^xsd:string ;
+    rdfs:comment "Protection is any measure taken to guard a thing against damage caused by outside forces. Protection can be provided to physical objects, including organisms, to systems, and to intangible things like civil and political rights. Although the mechanisms for providing protection vary widely, the basic meaning of the term remains the same. This is illustrated by an explanation found in a manual on electrical wiring:"^^xsd:string .
+

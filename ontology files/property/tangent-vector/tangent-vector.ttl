@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tangent-vector a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "tangent-vector"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q131251"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tangent"^^xsd:string ;
+    rdfs:comment "In geometry, the tangent line (or simply tangent) to a plane curve at a given point is the straight line that \"just touches\" the curve at that point. Leibniz defined it as the line through a pair of infinitely close points on the curve. More precisely, a straight line is said to be a tangent of a curve y = f(x) at a point x = c if the line passes through the point (c, f(c)) on the curve and has slope f'(c), where f' is the derivative of f. A similar definition applies to space curves and curves in n-dimensional Euclidean space."^^xsd:string .
+

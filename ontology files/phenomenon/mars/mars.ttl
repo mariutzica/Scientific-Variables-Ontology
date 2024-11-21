@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mars a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "mars"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q111"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Mars"^^xsd:string ;
+    rdfs:comment "Mars is the fourth planet from the Sun and the third largest and massive terrestrial object in the Solar System. Mars has a thin atmosphere and a crust primarily composed of elements similar to Earth's crust, as well as a core made of iron and nickel. Mars has surface features such as impact craters, valleys, dunes, and polar ice caps. Mars has two small, irregularly shaped moons, Phobos and Deimos."^^xsd:string .
+

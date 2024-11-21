@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/matter/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/matter/">
+<owl:NamedIndividual rdf:about="proton">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Matter"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proton</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Proton</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2294</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proton is a stable subatomic particle, symbol p, H+, or 1H+ with a positive electric charge of +1 e (elementary charge). Its mass is slightly less than that of a neutron and 1,836 times the mass of an electron (the proton-to-electron mass ratio). Protons and neutrons, each with masses of approximately one atomic mass unit, are jointly referred to as "nucleons" (particles present in atomic nuclei).</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:alona a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "alona"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4734358"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Alona_(crustacean)"^^xsd:string ;
+    rdfs:comment "Alona is a genus of cladocerans in the family Chydoridae. It is one of the largest genera of Cladocera, and is widely believed to be an artificial group which is in need of systematic revision; the type species is Alona quadrangularis. Around 240 names at the species level have been described in Alona; it is unclear how many of these are valid, or how they are related.Species currently assigned to the genus Alona include:"^^xsd:string .
+

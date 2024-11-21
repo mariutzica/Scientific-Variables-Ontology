@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:particle a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "particle"^^xsd:string ;
+    svo:has_synonym "corpuscule"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1621273"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Particle"^^xsd:string ;
+    rdfs:comment "In the physical sciences, a particle (or corpuscule in older texts) is a small localized object which can be described by several physical or chemical properties, such as volume, density, or mass. They vary greatly in size or quantity, from subatomic particles like the electron, to microscopic particles like atoms and molecules, to macroscopic particles like powders and other granular materials. Particles can also be used to create scientific models of even larger objects depending on their density, such as humans moving in a crowd or celestial bodies in motion."^^xsd:string .
+

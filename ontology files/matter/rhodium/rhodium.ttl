@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:rhodium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "rhodium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1087"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Rhodium"^^xsd:string ;
+    rdfs:comment "Rhodium is a chemical element with the symbol Rh and atomic number 45. It is a very rare, silvery-white, hard, corrosion-resistant transition metal. It is a noble metal and a member of the platinum group. It has only one naturally occurring isotope: 103Rh. Naturally occurring rhodium is usually found as a free metal or as an alloy with similar metals and rarely as a chemical compound in minerals such as bowieite and rhodplumsite. It is one of the rarest and most valuable precious metals."^^xsd:string .
+

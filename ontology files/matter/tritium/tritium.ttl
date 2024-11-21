@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tritium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tritium"^^xsd:string ;
+    svo:has_synonym "hydrogen-3"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q54389"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tritium"^^xsd:string ;
+    rdfs:comment "Tritium (from Ancient Greek  τρίτος (trítos) 'third') or hydrogen-3 (symbol T or 3H) is a rare and radioactive isotope of hydrogen with a half-life of about 12 years. The nucleus of tritium (t, sometimes called a triton) contains one proton and two neutrons, whereas the nucleus of the common isotope hydrogen-1 (protium) contains one proton and zero neutrons, and that of hydrogen-2 (deuterium) contains one proton and one neutron."^^xsd:string .
+

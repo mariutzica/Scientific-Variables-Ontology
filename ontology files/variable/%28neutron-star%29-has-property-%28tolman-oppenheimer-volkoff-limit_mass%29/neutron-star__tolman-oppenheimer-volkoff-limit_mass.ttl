@@ -1,0 +1,12 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28neutron-star%29-has-property-%28tolman-oppenheimer-volkoff-limit_mass%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "neutron-star__tolman-oppenheimer-volkoff-limit_mass"^^xsd:string ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/neutron-star> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/tolman-oppenheimer-volkoff-limit_mass> ;
+    svo:has_original_label "star~neutron__tolman_oppenheimer_volkoff_limit_mass"^^xsd:string .
+

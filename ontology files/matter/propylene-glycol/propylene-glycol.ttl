@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:propylene-glycol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "propylene-glycol"^^xsd:string ;
+    svo:has_synonym "propane-1,2-diol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q161495"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Propylene_glycol"^^xsd:string ;
+    rdfs:comment "Propylene glycol (IUPAC name: propane-1,2-diol) is a viscous, colorless liquid, which is nearly odorless but possesses a faintly sweet taste. Its chemical formula is CH3CH(OH)CH2OH."^^xsd:string .
+

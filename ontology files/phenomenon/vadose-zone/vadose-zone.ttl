@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vadose-zone a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "vadose-zone"^^xsd:string ;
+    svo:has_synonym "soil unsaturated zone"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1479708"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vadose_zone"^^xsd:string ;
+    rdfs:comment "The vadose zone, also termed the  unsaturated zone, is the part of Earth between the land surface and the top of the phreatic zone, the position at which the groundwater (the water in the soil's pores) is at atmospheric pressure (\"vadose\" is from the Latin word for \"shallow\"). Hence, the vadose zone extends from the top of the ground surface to the water table."^^xsd:string .
+

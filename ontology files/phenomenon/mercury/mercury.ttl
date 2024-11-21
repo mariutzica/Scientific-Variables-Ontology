@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mercury a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "mercury"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q308"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mercury_(planet)"^^xsd:string ;
+    rdfs:comment "Mercury is the first planet from the Sun and the only one in the Solar System without a considerable atmosphere. It is the smallest terrestrial planet of the Solar System and despite being also smaller than the Solar System objects Ganymede and Titan it is massive enough to have about the same surface gravity as the even larger planet Mars. Like Venus, Mercury orbits the Sun within Earth's orbit, making it appear in Earth's sky only in inferior positions, never appearing further from the Sun than 28°, resulting in it appearing only as a \"morning star\" or \"evening star\", like Venus, though not as brightly. Mercury and Earth return to the same position to each other in synodic cycles of 116 days. It is named after the Roman god Mercuriuscode: lat promoted to code: la  (Mercury), god of commerce, messenger of the gods, and mediator between gods and mortals, corresponding to the Greek god Hermes (Ἑρμῆςcode: ell promoted to code: el )."^^xsd:string .
+

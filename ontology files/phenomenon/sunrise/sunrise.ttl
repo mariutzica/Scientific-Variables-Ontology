@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sunrise a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "sunrise"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q193294"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sunrise"^^xsd:string ;
+    rdfs:comment "Sunrise (or sunup) is the moment when the upper rim of the Sun appears on the horizon in the morning. The term can also refer to the entire process of the solar disk crossing the horizon and its accompanying atmospheric effects."^^xsd:string .
+

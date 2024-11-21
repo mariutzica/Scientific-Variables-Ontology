@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paper a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "paper"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11472"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Paper"^^xsd:string ;
+    rdfs:comment "Paper is a thin sheet material produced by mechanically or chemically processing cellulose fibres derived from wood, rags, grasses or other vegetable sources in water, draining the water through fine mesh leaving the fibre evenly distributed on the surface, followed by pressing and drying. Although paper was originally made in single sheets by hand, almost all is now made on large machines—some making reels 10 metres wide, running at 2,000 metres per minute and up to 600,000 tonnes a year. It is a versatile material with many uses, including printing, painting, graphics, signage, design, packaging, decorating, writing, and cleaning. It may also be used as filter paper, wallpaper, book endpaper, conservation paper, laminated worktops, toilet tissue, or currency and security paper, or in a number of industrial and construction processes."^^xsd:string .
+

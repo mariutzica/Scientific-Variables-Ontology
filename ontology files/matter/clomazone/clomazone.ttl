@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:clomazone a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "clomazone"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2187383"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Clomazone"^^xsd:string ;
+    rdfs:comment "Clomazone is an agricultural herbicide, and has been the active ingredient of products named \"Command\" and \"Commence\". The molecule consists of a 2-chlorobenzyl group bound to a N-O heterocycle called isoxazolidinone. It is a white solid."^^xsd:string .
+

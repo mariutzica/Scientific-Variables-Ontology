@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:photophosphorylation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "photophosphorylation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2017980"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Photophosphorylation"^^xsd:string ;
+    rdfs:comment "In the process of photosynthesis, the phosphorylation of ADP to form ATP using the energy of sunlight is called photophosphorylation. Cyclic photophosphorylation occurs in both aerobic and anaerobic conditions, driven by the main primary source of energy available to living organisms, which is sunlight. All organisms produce a phosphate compound, ATP, which is the universal energy currency of life. In photophosphorylation, light energy is used to pump protons across a biological membrane, mediated by flow of electrons through an electron transport chain. This stores energy in a proton gradient. As the protons flow back through an enzyme called ATP synthase, ATP is generated from ADP and inorganic phosphate. ATP is essential in the Calvin cycle to assist in the synthesis of carbohydrates from carbon dioxide and NADPH."^^xsd:string .
+

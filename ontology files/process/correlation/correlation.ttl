@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:correlation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "correlation"^^xsd:string ;
+    svo:has_synonym "correlation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q186290"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Correlation"^^xsd:string ;
+    rdfs:comment "In statistics, correlation  or dependence  is any statistical relationship, whether causal or not, between two random variables or bivariate data. Although in the broadest sense, \"correlation\" may indicate any type of association, in statistics it usually refers to the degree to which a pair of variables are linearly related.  "^^xsd:string .
+

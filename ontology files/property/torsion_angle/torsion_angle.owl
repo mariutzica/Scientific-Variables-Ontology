@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/property/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/property/">
+<owl:NamedIndividual rdf:about="torsion_angle">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">torsion_angle</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Dihedral_angle</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q911907</svo:has_wikidata_page>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dihedral_angle</svo:has_synonym>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A dihedral angle is the angle between two intersecting planes or half-planes. In chemistry, it is the clockwise angle between half-planes through two sets of three atoms, having two atoms in common. In solid geometry, it is defined as the union of a line and two half-planes that have this line as a common edge.  In higher dimensions, a dihedral angle represents the angle between two hyperplanes.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

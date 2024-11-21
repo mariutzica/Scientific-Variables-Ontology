@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:abstraction a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "abstraction"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q673661"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Abstraction"^^xsd:string ;
+    rdfs:comment "Abstraction in its main sense is a conceptual process wherein general rules and concepts are derived from the usage and classification of specific examples, literal (\"real\" or \"concrete\") signifiers, first principles, or other methods."^^xsd:string .
+

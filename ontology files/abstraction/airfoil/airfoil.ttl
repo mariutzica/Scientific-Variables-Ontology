@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:airfoil a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "airfoil"^^xsd:string ;
+    svo:has_synonym "aerofoil"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4698744"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Airfoil"^^xsd:string ;
+    rdfs:comment "An airfoil (American English) or aerofoil (British English) is the cross-sectional shape of an object whose motion through a gas is capable of generating significant lift, such as a wing, a sail, or the blades of propeller, rotor, or turbine.  Foils of similar function designed with water as the working fluid are called hydrofoils.  "^^xsd:string .
+

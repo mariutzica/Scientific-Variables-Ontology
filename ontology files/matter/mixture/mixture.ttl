@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mixture a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "mixture"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q169336"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mixture"^^xsd:string ;
+    rdfs:comment "In chemistry, a mixture is a material made up of two or more different chemical substances which are not chemically bonded. A mixture is the physical combination of two or more substances in which the identities are retained and are mixed in the form of solutions, suspensions and colloids.Mixtures are one product of mechanically blending or mixing chemical substances such as elements and compounds, without chemical bonding or other chemical change, so that each ingredient substance retains its own chemical properties and makeup. Despite the fact that there are no chemical changes to its constituents, the physical properties of a mixture, such as its melting point, may differ from those of the components. Some mixtures can be separated into their components by using physical (mechanical or thermal) means. Azeotropes are one kind of mixture that usually poses considerable difficulties regarding the separation processes required to obtain their constituents (physical or chemical processes or, even a blend of them)."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:rocket a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "rocket"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q41291"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Rocket"^^xsd:string ;
+    rdfs:comment "A rocket (from Italian: rocchetto, lit. 'bobbin/spool') is a vehicle that uses jet propulsion to accelerate without using the surrounding air. A rocket engine produces thrust by reaction to exhaust expelled at high speed. Rocket engines work entirely from propellant carried within the vehicle; therefore a rocket can fly in the vacuum of space. Rockets work more efficiently in a vacuum and incur a loss of thrust due to the opposing pressure of the atmosphere."^^xsd:string .
+

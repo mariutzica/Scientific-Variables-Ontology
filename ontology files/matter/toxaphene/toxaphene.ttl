@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:toxaphene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "toxaphene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q417157"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Toxaphene"^^xsd:string ;
+    rdfs:comment "Toxaphene was an insecticide used primarily for cotton in the southern United States during the late 1960s and the 1970s. Toxaphene is a mixture of over 670 different chemicals and is produced by reacting chlorine gas with camphene. It can be most commonly found as a yellow to amber waxy solid.Toxaphene was banned in the United States in 1990 and was banned globally by the 2001 Stockholm Convention on Persistent Organic Pollutants. It is a very persistent chemical that can remain in the environment for 1–14 years without degrading, particularly in the soil.Testing performed on animals, mostly rats and mice, has demonstrated that toxaphene is harmful to animals. Exposure to toxaphene has proven to stimulate the central nervous system, as well as induce morphological changes in the thyroid, liver, and kidneys.Toxaphene has been shown to cause adverse health effects in humans. The main sources of exposure are through food, drinking water, breathing contaminated air, and direct contact with contaminated soil. Exposure to high levels of toxaphene can cause damage to the lungs, nervous system, liver, kidneys, and in extreme cases, may even cause death. It is thought to be a potential carcinogen in humans, though this has not yet been proven."^^xsd:string .
+

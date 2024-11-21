@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28model-contains-%28grid-contains-part-virtual-north-pole%29%29-has-property-%28azimuth_angle%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "model_grid_virtual-north-pole__azimuth_angle"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/grid>,
+        <http://scientificvariablesontology.org/svo/abstraction/virtual-north-pole> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/azimuth_angle> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/model-contains-%28grid-contains-part-virtual-north-pole%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/azimuth_angle> .
+

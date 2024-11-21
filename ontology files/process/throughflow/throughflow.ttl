@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:throughflow a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "throughflow"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7798496"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Throughflow"^^xsd:string ;
+    rdfs:comment "In hydrology, throughflow, a subtype of interflow (percolation), is the lateral unsaturated flow of water in the soil zone, typically through a highly permeable geologic unit overlying a less permeable one. Water thus returns to the surface, as return flow, before or on entering a stream or groundwater. Once water infiltrates into the soil, it is still affected by gravity and infiltrates to the water table or if permeability varies laterally travels downslope. Throughflow usually occurs during peak hydrologic events (such as high precipitation). Flow rates are dependent on the hydraulic conductivity of the geologic medium."^^xsd:string .
+

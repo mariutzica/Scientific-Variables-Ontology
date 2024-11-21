@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chisel a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "chisel"^^xsd:string ;
+    svo:has_synonym "chiseling"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q474188"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chisel"^^xsd:string ;
+    rdfs:comment "A chisel is a wedged hand tool with a characteristically shaped cutting edge on the end of its blade, for carving or cutting a hard material (e.g. wood, stone, or metal). The tool can be used by hand, struck with a mallet, or applied with mechanical power. The handle and blade of some types of chisel are made of metal or wood with a sharp edge in it (such that wood chisels have lent part of their name to a particular grind)."^^xsd:string .
+

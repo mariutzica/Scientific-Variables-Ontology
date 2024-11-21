@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:citral a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "citral"^^xsd:string ;
+    svo:has_synonym "3,7-dimethy-2,6-octadienal"^^xsd:string,
+        "lemonal"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q60176530"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Citral"^^xsd:string ;
+    rdfs:comment "Citral is an acyclic monoterpene aldehyde, and being a monoterpene, it is made of two isoprene units. Citral is a collective term which covers two geometric isomers that have their own separate names; the E-isomer is named geranial (trans-citral) or citral A. The Z-isomer is named neral (cis-citral) or citral B. These stereoisomers occur as a mixture, not necessarily racemic; e.g. in essential oil of Australian ginger, the neral to geranial ratio is 0.61."^^xsd:string .
+

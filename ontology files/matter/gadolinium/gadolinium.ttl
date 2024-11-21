@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gadolinium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "gadolinium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1832"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gadolinium"^^xsd:string ;
+    rdfs:comment "Gadolinium is a chemical element with the symbol Gd and atomic number 64. Gadolinium is a silvery-white metal when oxidation is removed. It is only slightly malleable and is a ductile rare-earth element. Gadolinium reacts with atmospheric oxygen or moisture slowly to form a black coating. Gadolinium below its Curie point of 20 °C (68 °F) is ferromagnetic, with an attraction to a magnetic field higher than that of nickel. Above this temperature it is the most paramagnetic element. It is found in nature only in an oxidized form. When separated, it usually has impurities of the other rare-earths because of their similar chemical properties."^^xsd:string .
+

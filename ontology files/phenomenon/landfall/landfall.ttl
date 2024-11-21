@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:landfall a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "landfall"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2551132"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Landfall"^^xsd:string ;
+    rdfs:comment "Landfall is the event of a storm moving over land after being over water. More broadly, and in relation to human travel, it refers to 'the first land that is reached or seen at the end of a journey across the sea or through the air, or the fact of arriving there."^^xsd:string .
+

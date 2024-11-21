@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28sea-contains-%28water-as-medium-potassium-chloride%29%29-has-property-%28solubility%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/sea-contains-%28water-as-medium-potassium-chloride%29"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/solubility"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/sea"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/water"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/potassium-chloride"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sea_water_potassium-chloride__solubility</rdfs:label>
+</owl:NamedIndividual>
+</rdf:RDF>

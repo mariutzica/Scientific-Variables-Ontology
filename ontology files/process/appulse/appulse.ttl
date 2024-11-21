@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:appulse a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "appulse"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3503510"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Appulse"^^xsd:string ;
+    rdfs:comment "Appulse is the least apparent distance between one celestial object and another, as seen from a third body during a given period. Appulse is seen in the apparent motion typical of two planets together in the sky, or of the Moon to a star or planet while the Moon orbits Earth, as seen from Earth.  An appulse is an apparent phenomenon caused by perspective only; the two objects involved are not near in physical space."^^xsd:string .
+

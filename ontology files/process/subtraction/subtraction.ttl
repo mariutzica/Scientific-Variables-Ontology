@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:subtraction a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "subtraction"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q40754"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Subtraction"^^xsd:string ;
+    rdfs:comment "Subtraction (which is signified by the minus sign −) is one of the four arithmetic operations along with addition, multiplication and division. Subtraction is an operation that represents removal of objects from a collection. For example, in the adjacent picture, there are 5 − 2 peaches—meaning 5 peaches with 2 taken away, resulting in a total of 3 peaches. Therefore, the difference of 5 and 2 is 3; that is, 5 − 2 = 3. While primarily associated with natural numbers in arithmetic, subtraction can also represent removing or decreasing physical and abstract quantities using different kinds of objects including negative numbers, fractions, irrational numbers, vectors, decimals, functions, and matrices."^^xsd:string .
+

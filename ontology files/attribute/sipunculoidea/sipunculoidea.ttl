@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sipunculoidea a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "sipunculoidea"^^xsd:string ;
+    svo:has_synonym "sipuncula"^^xsd:string,
+        "sipunculida"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q205712"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sipuncula"^^xsd:string ;
+    rdfs:comment "The Sipuncula or Sipunculida (common names sipunculid worms or peanut worms) is a class containing about 162 species of unsegmented marine annelid worms. The name Sipuncula is from the genus name Sipunculus, and comes from the Latin siphunculus meaning a \"small tube\".Sipuncula was once considered a phylum, but was demoted to a class of Annelida, based on recent molecular work.Sipunculans vary in size but most species are under 10 cm (4 in) in length. The body is divided into an unsegmented, bulbous trunk and a narrower, anterior section, called the \"introvert\", which can be retracted into the trunk. The mouth is at the tip of the introvert and is surrounded in most groups by a ring of short tentacles. With no hard parts, the body is flexible and mobile. Although found in a range of habitats throughout the world's oceans, the majority of species live in shallow water habitats, burrowing under the surface of sandy and muddy substrates. Others live under stones, in rock crevices or in other concealed locations."^^xsd:string .
+

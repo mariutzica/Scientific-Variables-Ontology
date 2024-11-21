@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dimethoxymethane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dimethoxymethane"^^xsd:string ;
+    svo:has_synonym "methylal"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q411496"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dimethoxymethane"^^xsd:string ;
+    rdfs:comment "Dimethoxymethane, also called methylal, is a colorless flammable liquid with a low boiling point, low viscosity and excellent dissolving power. It has a chloroform-like odor and a pungent taste.  It is the dimethyl acetal of formaldehyde. Dimethoxymethane is soluble in three parts water and miscible with most common organic solvents."^^xsd:string .
+

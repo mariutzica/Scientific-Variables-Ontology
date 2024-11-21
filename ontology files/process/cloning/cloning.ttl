@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cloning a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "cloning"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q120877"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cloning"^^xsd:string ;
+    rdfs:comment "Cloning is the process of producing individual organisms with identical genomes, either by natural or artificial means. In nature, some organisms produce clones through asexual reproduction; this reproduction of an organism by itself without a mate is known as parthenogenesis. In the field of biotechnology, cloning is the process of creating cloned organisms of cells and of DNA fragments."^^xsd:string .
+

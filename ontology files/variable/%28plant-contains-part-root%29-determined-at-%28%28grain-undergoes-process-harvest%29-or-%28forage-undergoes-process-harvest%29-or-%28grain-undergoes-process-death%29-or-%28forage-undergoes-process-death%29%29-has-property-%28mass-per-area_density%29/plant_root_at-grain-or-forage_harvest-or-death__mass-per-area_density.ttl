@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28plant-contains-part-root%29-determined-at-%28%28grain-undergoes-process-harvest%29-or-%28forage-undergoes-process-harvest%29-or-%28grain-undergoes-process-death%29-or-%28forage-undergoes-process-death%29%29-has-property-%28mass-per-area_density%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "plant_root_at-grain-or-forage_harvest-or-death__mass-per-area_density"^^xsd:string ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/grain> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/plant>,
+        <http://scientificvariablesontology.org/svo/phenomenon/root> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/death>,
+        <http://scientificvariablesontology.org/svo/process/harvest> ;
+    svo:contains_role_reference_to <http://scientificvariablesontology.org/svo/role/forage> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/plant-contains-part-root%29-determined-at-%28%28grain-undergoes-process-harvest%29-or-%28forage-undergoes-process-harvest%29-or-%28grain-undergoes-process-death%29-or-%28forage-undergoes-process-death%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mass-per-area_density> ;
+    svo:has_original_label "plant_root_at-grain-or-forage-harvest-or-death__mass-per-area_density"^^xsd:string .
+

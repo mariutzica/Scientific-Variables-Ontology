@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:culicoides a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "culicoides"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2324817"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Culicoides"^^xsd:string ;
+    rdfs:comment "Culicoides is a genus of biting midges in the family Ceratopogonidae. There are over 1000 species in the genus, which is divided into many subgenera. Several species are known to be vectors of various diseases and parasites which can affect animals. Like Leptoconops, the genus has a long fossil record, with earliest known fossils being from Burmese amber, around 99 million years old."^^xsd:string .
+

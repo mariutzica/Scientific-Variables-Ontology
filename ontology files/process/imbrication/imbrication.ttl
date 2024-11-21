@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:imbrication a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "imbrication"^^xsd:string ;
+    svo:has_synonym "imbrication"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6003631"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Imbrication"^^xsd:string ;
+    rdfs:comment "Imbrication is the arrangement of planar bodies such that they stack in a consistent fashion - rather like a toppled run of dominoes."^^xsd:string .
+

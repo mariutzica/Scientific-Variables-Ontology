@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tert-butylbenzene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tert-butylbenzene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1022652"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/C4-Benzenes"^^xsd:string ;
+    rdfs:comment "The C4-benzenes are a class of organic aromatic compounds which contain a benzene ring and four other carbon atoms. There are three tetramethylbenzenes, six dimethylethylbenzenes, three diethylbenzenes, three isopropylmethylbenzenes, three n-propylmethylbenzenes and four butylbenzenes. The saturated compounds have formula C10H14 and molecular weight 134.22 g/mol. C4-benzenes are found in petroleum. Petrol (gasoline) can contain 5-8% C4-benzenes."^^xsd:string .
+

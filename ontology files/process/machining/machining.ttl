@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:machining a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "machining"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q192047"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Machining"^^xsd:string ;
+    rdfs:comment "Machining is a manufacturing process where a desired shape or part is created using the controlled removal of material, most often metal, from a larger piece of raw material by cutting. Machining is a form of subtractive manufacturing, which utilizes machine tools, in contrast to additive manufacturing (e.g. 3D printing), which uses controlled addition of material."^^xsd:string .
+

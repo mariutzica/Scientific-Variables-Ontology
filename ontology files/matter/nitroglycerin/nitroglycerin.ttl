@@ -1,0 +1,20 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nitroglycerin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "nitroglycerin"^^xsd:string ;
+    svo:has_synonym "1,2,3-trinitroxypropane"^^xsd:string,
+        "glyceryl-trinitrate"^^xsd:string,
+        "gtn"^^xsd:string,
+        "ng"^^xsd:string,
+        "tnc"^^xsd:string,
+        "trinitroglycerin"^^xsd:string,
+        "trinitroglycerine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q162867"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nitroglycerin"^^xsd:string ;
+    rdfs:comment "Nitroglycerin (NG), (alternative spelling of nitroglycerine) also known as trinitroglycerin (TNG), nitro, glyceryl trinitrate (GTN), or 1,2,3-trinitroxypropane, is a dense, colorless, oily, explosive liquid most commonly produced by nitrating glycerol with white fuming nitric acid under conditions appropriate to the formation of the nitric acid ester. Chemically, the substance is an organic nitrate compound rather than a nitro compound, but the traditional name is retained. Invented in 1847 by Ascanio Sobrero, nitroglycerin has been used ever since as an active ingredient in the manufacture of explosives, namely dynamite, and as such it is employed in the construction, demolition, and mining industries. Since the 1880s, it has been used by militaries as an active ingredient and gelatinizer for nitrocellulose in some solid propellants such as cordite and ballistite. It is a major component in double-based smokeless propellants used by reloaders. Combined with nitrocellulose, hundreds of powder combinations are used by rifle, pistol, and shotgun reloaders."^^xsd:string .
+

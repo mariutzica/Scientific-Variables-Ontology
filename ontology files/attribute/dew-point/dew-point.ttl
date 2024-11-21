@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dew-point a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "dew-point"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q178828"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dew_point"^^xsd:string ;
+    rdfs:comment "The dew point is the temperature to which air must be cooled to become saturated with water vapor, assuming constant air pressure and water content. When cooled below the dew point, moisture capacity is reduced and airborne water vapor will condense to form liquid water known as dew. When this occurs via contact with a colder surface, dew will form on that surface.The dew point is affected by humidity. When there is more moisture in the air, the dew point is higher.When the temperature is below the freezing point of water, the dew point is called the frost point, as frost is formed via deposition rather than condensation."^^xsd:string .
+

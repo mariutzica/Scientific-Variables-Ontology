@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28model-undergoes-process-running%29-has-property-%28duration%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/model-undergoes-process-running"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/duration"/>
+  <svo:contains_process_reference_to rdf:resource="http://scientificvariablesontology.org/svo/process/running"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">model_running__duration</rdfs:label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">model__run_time</svo:has_original_label>
+</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thermal_volume_expansion_coefficient a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "thermal_volume_expansion_coefficient"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6583695"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Thermal_expansion#General_thermal_expansion_coefficient"^^xsd:string ;
+    rdfs:comment "Thermal expansion is the tendency of matter to change its shape, area, volume, and density in response to a change in temperature, usually not including phase transitions.Temperature is a monotonic function of the average molecular kinetic energy of a substance. When a substance is heated, molecules begin to vibrate and move more, usually creating more distance between themselves. Substances which contract with increasing temperature are unusual, and only occur within limited temperature ranges (see examples below). The relative expansion (also called strain) divided by the change in temperature is called the material's coefficient of linear thermal expansion and generally varies with temperature. As energy in particles increases, they start moving faster and faster, weakening the intermolecular forces between them and therefore expanding the substance."^^xsd:string .
+

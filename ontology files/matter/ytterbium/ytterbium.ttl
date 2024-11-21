@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ytterbium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "ytterbium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1855"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ytterbium"^^xsd:string ;
+    rdfs:comment "Ytterbium is a chemical element with the symbol Yb and atomic number 70. It is a metal, the fourteenth and penultimate element in the lanthanide series, which is the basis of the relative stability of its +2 oxidation state. Like the other lanthanides, its most common oxidation state is +3, as in its oxide, halides, and other compounds. In aqueous solution, like compounds of other late lanthanides, soluble ytterbium compounds form complexes with nine water molecules. Because of its closed-shell electron configuration, its density and melting and boiling points differ significantly from those of most other lanthanides."^^xsd:string .
+

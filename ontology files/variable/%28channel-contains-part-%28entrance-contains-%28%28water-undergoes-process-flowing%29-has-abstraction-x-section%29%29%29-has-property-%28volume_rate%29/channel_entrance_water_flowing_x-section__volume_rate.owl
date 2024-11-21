@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28channel-contains-part-%28entrance-contains-%28%28water-undergoes-process-flowing%29-has-abstraction-x-section%29%29%29-has-property-%28volume_rate%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/channel-contains-part-%28entrance-contains-%28%28water-undergoes-process-flowing%29-has-abstraction-x-section%29%29"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/volume_rate"/>
+  <svo:contains_process_reference_to rdf:resource="http://scientificvariablesontology.org/svo/process/flowing"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/water"/>
+  <svo:contains_form_reference_to rdf:resource="http://scientificvariablesontology.org/svo/form/channel"/>
+  <svo:contains_abstraction_reference_to rdf:resource="http://scientificvariablesontology.org/svo/abstraction/x-section"/>
+  <svo:contains_role_reference_to rdf:resource="http://scientificvariablesontology.org/svo/role/entrance"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">channel_entrance_water_flowing_x-section__volume_rate</rdfs:label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">channel_entrance_water_x-section__volume_flow_rate</svo:has_original_label>
+</owl:NamedIndividual>
+</rdf:RDF>

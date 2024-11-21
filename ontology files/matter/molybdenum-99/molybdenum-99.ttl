@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:molybdenum-99 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "molybdenum-99"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q469900"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isotopes_of_molybdenum#Molybdenum-99"^^xsd:string ;
+    rdfs:comment "Molybdenum (42Mo) has 33 known isotopes, ranging in atomic mass from 83 to 115, as well as four metastable nuclear isomers. Seven isotopes occur naturally, with atomic masses of 92, 94, 95, 96, 97, 98, and 100. All unstable isotopes of molybdenum decay into isotopes of zirconium, niobium, technetium, and ruthenium.Molybdenum-100 is the only naturally occurring isotope that is not stable. Molybdenum-100 has a half-life of approximately 1×1019 y and undergoes double beta decay into ruthenium-100. Molybdenum-98 is the most common isotope, comprising 24.14% of all molybdenum on Earth. Molybdenum isotopes with mass numbers 111 and up all have half-lives of approximately .15 s."^^xsd:string .
+

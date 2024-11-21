@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fluoranthene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "fluoranthene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q423462"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fluoranthene"^^xsd:string ;
+    rdfs:comment "Fluoranthene is a polycyclic aromatic hydrocarbon (PAH).  The molecule can be viewed as the fusion of naphthalene and benzene unit connected by a five-membered ring. Although samples are often pale yellow, the compound is colorless.  It is soluble in nonpolar organic solvents.  It is a member of the class of PAHs known as non-alternant PAHs because it has rings other than those with six carbon atoms. It is a structural isomer of the alternant PAH pyrene. It is not as thermodynamically stable as pyrene.  Its name is derived from its fluorescence under UV light."^^xsd:string .
+

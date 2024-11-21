@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:virtual_temperature a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "virtual_temperature"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q761179"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Virtual_temperature"^^xsd:string ;
+    rdfs:comment "In atmospheric thermodynamics, the virtual temperature ("^^xsd:string .
+

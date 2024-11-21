@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fugacity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "fugacity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q898412"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Fugacity"^^xsd:string ;
+    rdfs:comment "In chemical thermodynamics, the fugacity of a real gas is an effective partial pressure which replaces the mechanical partial pressure in an accurate computation of the chemical equilibrium constant. It is equal to the pressure of an ideal gas which has the same temperature and molar Gibbs free energy as the real gas.Fugacities are determined experimentally or estimated from various models such as a Van der Waals gas that are closer to reality than an ideal gas.  The real gas pressure and fugacity are related through the dimensionless fugacity coefficient φ."^^xsd:string .
+

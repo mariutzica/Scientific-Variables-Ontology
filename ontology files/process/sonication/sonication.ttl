@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sonication a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "sonication"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3964828"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sonication"^^xsd:string ;
+    rdfs:comment "Sonication is the act of applying sound energy to agitate particles in a sample, for various purposes such as the extraction of multiple compounds from plants, microalgae and seaweeds. Ultrasonic frequencies (> 20 kHz) are usually used, leading to the process also being known as ultrasonication or ultra-sonication."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:normal-vector a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "normal-vector"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q273176"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Normal_(geometry)"^^xsd:string ;
+    rdfs:comment "In geometry, a normal is an object such as a line, ray, or vector that is perpendicular to a given object. For example, the normal line to a plane curve at a given point is the (infinite) line perpendicular to the tangent line to the curve at the point."^^xsd:string .
+

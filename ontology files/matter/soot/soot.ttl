@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:soot a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "soot"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q13174856"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Soot"^^xsd:string ;
+    rdfs:comment "Soot ( suut) is a mass of impure carbon particles resulting from the incomplete combustion of hydrocarbons. It is more properly restricted to the product of the gas-phase combustion process but is commonly extended to include the residual pyrolysed fuel particles such as coal, cenospheres, charred wood, and petroleum coke that may become airborne during pyrolysis and that are more properly identified as cokes or char."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tolman-oppenheimer-volkoff-limit_mass a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "tolman-oppenheimer-volkoff-limit_mass"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1139232"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tolman–Oppenheimer–Volkoff_limit"^^xsd:string ;
+    rdfs:comment "The Tolman–Oppenheimer–Volkoff limit (or TOV limit) is an upper bound to the mass of cold, non-rotating neutron stars, analogous to the Chandrasekhar limit for white dwarf stars. Stars more massive than the TOV limit collapse into a black hole. The original calculation in 1939, which neglected complications such as nuclear forces between neutrons, placed this limit at approximately 0.7 solar masses (M☉). Later, more refined analyses have resulted in larger values."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydraulic_conductivity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "hydraulic_conductivity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2783041"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Hydraulic_conductivity"^^xsd:string ;
+    rdfs:comment "In science and  engineering, hydraulic conductivity (K, in SI units of meters per second), is a property of porous materials, soils and rocks, that describes the ease with which a fluid (usually water) can move through the pore space, or fractures network. It depends on the intrinsic permeability (k, unit: m2) of the material, the degree of saturation, and on the density and viscosity of the fluid. Saturated hydraulic conductivity, Ksat, describes water movement through saturated media."^^xsd:string .
+

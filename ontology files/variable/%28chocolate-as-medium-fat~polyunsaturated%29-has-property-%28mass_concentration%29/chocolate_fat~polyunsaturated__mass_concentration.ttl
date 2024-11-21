@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28chocolate-as-medium-fat~polyunsaturated%29-has-property-%28mass_concentration%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "chocolate_fat~polyunsaturated__mass_concentration"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/polyunsaturated> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/chocolate>,
+        <http://scientificvariablesontology.org/svo/matter/fat> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/chocolate-as-medium-fat~polyunsaturated> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mass_concentration> .
+

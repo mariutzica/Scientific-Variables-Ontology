@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:filter a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "filter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q244772"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Filtration"^^xsd:string ;
+    rdfs:comment "Filtration is a physical separation process that separates solid matter and fluid from a mixture using a filter medium that has a complex structure through which only the fluid can pass. Solid particles that cannot pass through the filter medium are described as oversize and the fluid that passes through is called the filtrate. Oversize particles may form a filter cake on top of the filter and may also block the filter lattice, preventing the fluid phase from crossing the filter, known as blinding. The size of the largest particles that can successfully pass through a filter is called the effective pore size of that filter. The separation of solid and fluid is imperfect; solids will be contaminated with some fluid and filtrate will contain fine particles (depending on the pore size, filter thickness and biological activity). Filtration occurs both in nature and in engineered systems; there are biological, geological, and industrial forms.Filtration is also used to describe biological and physical systems that not only separate solids from a fluid stream, but also remove chemical species and biological organisms by entrainment, phagocytosis, adsorption and absorption. Examples include slow sand filters and trickling filters. It is also used as a general term for microphagy in which organisms use a variety of means to filter small food particles from their environment. Examples range from the microscopic Vorticella up to the Basking shark, one of the largest fishes, and the baleen whales, all of which are described as  Filter feeders."^^xsd:string .
+

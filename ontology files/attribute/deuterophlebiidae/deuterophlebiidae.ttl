@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:deuterophlebiidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "deuterophlebiidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q820060"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Deuterophlebia"^^xsd:string ;
+    rdfs:comment "The fly genus Deuterophlebia is the sole member of the small monogeneric family Deuterophlebiidae or mountain midges. Adults have broad, fan-shaped wings, and males have extremely long antennae which they employ when contesting territories over running water, waiting for females to hatch. Larvae occur in swiftly flowing streams and are easily recognized by their forked antennae and the prolegs on the abdomen."^^xsd:string .
+

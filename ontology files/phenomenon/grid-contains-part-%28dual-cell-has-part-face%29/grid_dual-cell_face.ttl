@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:grid-contains-part-%28dual-cell-has-part-face%29 a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "grid_dual-cell_face"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :dual-cell-has-part-face ;
+    svo:is_part_of_containing_phenomenon :grid .
+

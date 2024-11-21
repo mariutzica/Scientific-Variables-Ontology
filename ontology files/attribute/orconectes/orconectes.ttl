@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:orconectes a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "orconectes"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1311791"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Orconectes"^^xsd:string ;
+    rdfs:comment "Orconectes is a genus of cave dwelling freshwater crayfish, endemic to suitable habitats in the eastern United States. Surface dwelling species, formerly categorised here, were moved to Faxonius in 2017.Due to their subterranean habitat, they are usually depigmented, often blind, and are long-lived. Ages of 176 years have been claimed for O. australis, though this was reduced to ≤22 years in a 2012 study."^^xsd:string .
+

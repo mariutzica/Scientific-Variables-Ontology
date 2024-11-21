@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lithosphere-asthenosphere-boundary a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "lithosphere-asthenosphere-boundary"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q23581588"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lithosphere-Asthenosphere_boundary"^^xsd:string ;
+    rdfs:comment "level representing a mechanical difference between layers in Earth’s inner structure"^^xsd:string .
+

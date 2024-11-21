@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:seismic_moment_energy a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "seismic_moment_energy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1481983"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Seismic_moment"^^xsd:string ;
+    rdfs:comment "Seismic moment is a quantity used by seismologists to measure the size of an earthquake.  The scalar seismic moment "^^xsd:string .
+

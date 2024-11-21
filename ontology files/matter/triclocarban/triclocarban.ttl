@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:triclocarban a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "triclocarban"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q416579"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Triclocarban"^^xsd:string ;
+    rdfs:comment "Triclocarban (sometimes abbreviated as TCC) is an antibacterial chemical once common in, but now phased out of, personal care products like soaps and lotions. It was originally developed for the medical field. Although the mode of action is unknown, TCC can be effective in fighting infections by targeting the growth of bacteria such as Staphylococcus aureus. Additional research seeks to understand its potential for causing antibacterial resistance and its effects on organismal and environmental health."^^xsd:string .
+

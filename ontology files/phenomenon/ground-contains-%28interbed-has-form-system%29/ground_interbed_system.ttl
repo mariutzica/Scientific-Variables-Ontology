@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ground-contains-%28interbed-has-form-system%29 a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "ground_interbed_system"^^xsd:string ;
+    svo:has_containing_phenomenon :ground ;
+    svo:has_primary_participant_phenomenon :interbed-has-form-system .
+

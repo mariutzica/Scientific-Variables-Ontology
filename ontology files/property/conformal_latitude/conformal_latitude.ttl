@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:conformal_latitude a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "conformal_latitude"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q34027"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Latitude#Conformal_latitude"^^xsd:string ;
+    rdfs:comment "In geography, latitude is a coordinate that specifies the north–south position of a point on the surface of the Earth or another celestial body. Latitude is given as an angle that ranges from –90° at the south pole to 90° at the north pole, with 0° at the Equator. Lines of constant latitude, or parallels, run east–west as circles parallel to the equator. Latitude and longitude are used together as a coordinate pair to specify a location on the surface of the Earth."^^xsd:string .
+

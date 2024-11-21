@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bond-c-h a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "bond-c-h"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2747164"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Carbon%E2%80%93hydrogen_bond"^^xsd:string ;
+    rdfs:comment "In chemistry, the carbon-hydrogen bond (C−H bond) is a chemical bond between carbon and hydrogen atoms that can be found in many organic compounds. This bond is a covalent, single bond, meaning that carbon shares its outer valence electrons with up to four hydrogens.  This completes both of their outer shells, making them stable.Carbon–hydrogen bonds have a bond length of about 1.09 Å (1.09 × 10−10 m) and a bond energy of about 413 kJ/mol (see table below).  Using Pauling's scale—C (2.55) and H (2.2)—the electronegativity difference between these two atoms is 0.35. Because of this small difference in electronegativities, the C−H bond is generally regarded as being non-polar. In structural formulas of molecules, the hydrogen atoms are often omitted. Compound classes consisting solely of C−H bonds and C−C bonds are alkanes, alkenes, alkynes, and aromatic hydrocarbons. Collectively they are known as hydrocarbons."^^xsd:string .
+

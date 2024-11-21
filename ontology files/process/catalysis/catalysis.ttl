@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:catalysis a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "catalysis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q82264"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Catalysis"^^xsd:string ;
+    rdfs:comment "Catalysis () is the increase in rate of a chemical reaction due to an added substance known as a catalyst (). Catalysts are not consumed by the reaction and remain unchanged after it. If the reaction is rapid and the catalyst recycles quickly, very small amounts of catalyst often suffice; mixing, surface area, and temperature are important factors in reaction rate. Catalysts generally react with one or more reactants to form intermediates that subsequently give the final reaction product, in the process of regenerating the catalyst."^^xsd:string .
+

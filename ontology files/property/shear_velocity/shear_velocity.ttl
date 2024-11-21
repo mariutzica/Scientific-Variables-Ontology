@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:shear_velocity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "shear_velocity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1695787"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Shear_velocity"^^xsd:string ;
+    rdfs:comment "Shear velocity, also called friction velocity, is a form by which a shear stress may be re-written in units of velocity. It is useful as a method in fluid mechanics to compare true velocities, such as the velocity of a flow in a stream, to a velocity that relates shear between layers of flow."^^xsd:string .
+

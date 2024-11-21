@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:austenitizing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "austenitization"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q487286"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Austenite#Austenitization"^^xsd:string ;
+    rdfs:comment "Austenite, also known as gamma-phase iron (γ-Fe), is a metallic, non-magnetic allotrope of iron or a solid solution of iron with an alloying element. In plain-carbon steel, austenite exists above the critical eutectoid temperature of 1000 K (727 °C); other alloys of steel have different eutectoid temperatures. The austenite allotrope is named after Sir William Chandler Roberts-Austen (1843–1902); it exists at room temperature in some stainless steels due to the presence of nickel stabilizing the austenite at lower temperatures."^^xsd:string .
+

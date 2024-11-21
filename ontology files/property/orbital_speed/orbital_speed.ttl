@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:orbital_speed a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "orbital_speed"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q200924"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Orbital_speed"^^xsd:string ;
+    rdfs:comment "In gravitationally bound systems, the orbital speed of an astronomical body or object (e.g. planet, moon, artificial satellite, spacecraft, or star) is the speed at which it orbits around either the barycenter or, if one body is much more massive than the other bodies of the system combined, its speed relative to the center of mass of the most massive body."^^xsd:string .
+

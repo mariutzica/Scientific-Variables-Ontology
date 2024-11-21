@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:aerosol a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "aerosol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q104541"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Aerosol"^^xsd:string ;
+    rdfs:comment "An aerosol is a suspension of fine solid particles or liquid droplets in air or another gas. Aerosols can be generated from natural or human causes. The term aerosol commonly refers to the mixture of particulates in air, and not to the particulate matter alone. Examples of natural aerosols are fog, mist or dust. Examples of human caused aerosols include particulate air pollutants, mist from the discharge at hydroelectric dams, irrigation mist, perfume from atomizers, smoke, dust, sprayed pesticides, and medical treatments for respiratory illnesses."^^xsd:string .
+

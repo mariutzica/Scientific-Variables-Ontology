@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lewis_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "lewis_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q901840"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lewis_number"^^xsd:string ;
+    rdfs:comment "In fluid dynamics and thermodynamics, the Lewis number (denoted Le) is a dimensionless number defined as the ratio of thermal diffusivity to mass diffusivity. It is used to characterize fluid flows where there is simultaneous heat and mass transfer. The Lewis number puts the thickness of the thermal boundary layer in relation to the concentration boundary layer. The Lewis number is defined as"^^xsd:string .
+

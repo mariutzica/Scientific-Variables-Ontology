@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/channel~main-has-part-entrance> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "channel~main_entrance"^^xsd:string ;
+    svo:has_form <http://scientificvariablesontology.org/svo/form/channel~main> ;
+    svo:has_part <http://scientificvariablesontology.org/svo/part/entrance> .
+

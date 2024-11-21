@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28sea-has-abstraction-surface%29-contains-part-%28water-is-medium-matter-tide-has-part-constituent-s6%29> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "sea_surface_water_tide_constituent-s6"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :water-is-medium-matter-tide-has-part-constituent-s6 ;
+    svo:is_part_of_containing_phenomenon :sea-has-abstraction-surface .
+

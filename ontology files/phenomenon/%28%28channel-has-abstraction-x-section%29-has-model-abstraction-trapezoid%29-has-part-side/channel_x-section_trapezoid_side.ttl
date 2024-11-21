@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28%28channel-has-abstraction-x-section%29-has-model-abstraction-trapezoid%29-has-part-side> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "channel_x-section_trapezoid_side"^^xsd:string ;
+    svo:has_part <http://scientificvariablesontology.org/svo/part/side> ;
+    svo:has_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28channel-has-abstraction-x-section%29-has-model-abstraction-trapezoid> .
+

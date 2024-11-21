@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:canalization a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "canalization"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1187134"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/River_engineering#Canalization_of_rivers"^^xsd:string ;
+    rdfs:comment "River engineering is a discipline of civil engineering which studies human intervention in the course, characteristics, or flow of a river with the intention of producing some defined benefit. People have intervened in the natural course and behaviour of rivers since before recorded history—to manage the water resources, to protect against flooding, or to make passage along or across rivers easier. Since the Yuan Dynasty and Ancient Roman times, rivers have been used as a source of hydropower. From the late 20th century, the practice of river engineering has responded to environmental concerns broader than immediate human benefit. Some river engineering projects have focused exclusively on the restoration or protection of natural characteristics and habitats."^^xsd:string .
+

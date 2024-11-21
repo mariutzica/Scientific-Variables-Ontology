@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nourishment a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "nourishment"^^xsd:string ;
+    svo:has_synonym "nourishment"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2138622"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nutrition"^^xsd:string ;
+    rdfs:comment "Nutrition is the biochemical and physiological process by which an organism uses food to support its life. It provides organisms with nutrients, which can be metabolized to create energy and chemical structures. Failure to obtain sufficient nutrients causes malnutrition. Nutritional science is the study of nutrition, though it typically emphasizes human nutrition."^^xsd:string .
+

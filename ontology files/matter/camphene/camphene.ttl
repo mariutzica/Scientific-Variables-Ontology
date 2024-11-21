@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:camphene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "camphene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q416775"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Camphene"^^xsd:string ;
+    rdfs:comment "Camphene is a bicyclic organic compound.  It is one of the most pervasive monoterpenes. As for other terpenes, it is insoluble in water, flammable, colorless, and has a pungent smell.  It is a minor constituent of many essential oils such as turpentine, cypress oil, camphor oil, citronella oil, neroli, ginger oil, valerian, and mango.  It is produced industrially by isomerization of the more common alpha-pinene using a solid acid catalyst such as titanium dioxide.Camphene is used in the preparation of fragrances and as a food additive for flavoring.  These include isobornyl acetate."^^xsd:string .
+

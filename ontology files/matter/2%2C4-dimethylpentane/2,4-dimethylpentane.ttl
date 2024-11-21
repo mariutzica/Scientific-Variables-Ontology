@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:2%2C4-dimethylpentane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "2,4-dimethylpentane"^^xsd:string ;
+    svo:has_synonym "pentane,-2,4-dimethyl-"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2813787"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/2,4-Dimethylpentane"^^xsd:string ;
+    rdfs:comment "2,4-Dimethylpentane is an  alkane with the chemical formula [(H3C)2CH]2CH2. This colorless hydrocarbon is produced in large quantities in oil refineries.  It results from the alkylation of isobutane by propylene.  Often referred to as \"alkylate\", it is blended with other gasoline components to give a high octane fuel.  Unlike n-heptane, 2,4-dimethylpentane is a desirable fuel because its branched structure allows combustion without knocking."^^xsd:string .
+

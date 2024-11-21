@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/property/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/property/">
+<owl:NamedIndividual rdf:about="pressure_lapse_rate">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pressure_lapse_rate</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Vertical_pressure_variation</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q7922848</svo:has_wikidata_page>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vertical_pressure_variation</svo:has_synonym>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vertical pressure variation is the variation in pressure as a function of elevation. Depending on the fluid in question and the context being referred to, it may also vary significantly in dimensions perpendicular to elevation as well, and these variations have relevance in the context of pressure gradient force and its effects. However, the vertical variation is especially significant, as it results from the pull of gravity on the fluid; namely, for the same given fluid, a decrease in elevation within it corresponds to a taller column of fluid weighing down on that point.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

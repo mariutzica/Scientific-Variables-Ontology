@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:msrp_price a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "msrp_price"^^xsd:string ;
+    svo:has_synonym "list_price"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1144077"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/List_price"^^xsd:string ;
+    rdfs:comment "The list price, also known as the manufacturer's suggested retail price (MSRP), or the recommended retail price (RRP), or the suggested retail price (SRP) of a product is the price at which its manufacturer notionally recommends that a retailer sell the product.Suggested pricing methods may conflict with competition theory, as they allow prices to be set higher than would be established by supply and demand. Resale price maintenance—fixing prices—goes further than suggesting prices, and is illegal in many countries.Retailers may charge less than the suggested retail price, depending upon the actual wholesale cost of each item, usually purchased in bulk from the manufacturer, or in smaller quantities through a distributor. The suggested price is sometimes unrealistically high, so the seller can appear to be offering a discount.List price often cannot be compared directly internationally as products may differ in detail, sometimes due to different regulations, and list prices may or may not include taxes."^^xsd:string .
+

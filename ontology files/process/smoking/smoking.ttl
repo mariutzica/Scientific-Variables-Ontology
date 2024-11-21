@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:smoking a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "smoking"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q662860"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Smoking"^^xsd:string ;
+    rdfs:comment "Smoking is a practice in which a substance is combusted and the resulting smoke is typically inhaled to be tasted and absorbed into the bloodstream of a person. Most commonly, the substance used is the dried leaves of the tobacco plant, which have been rolled with a small rectangle of paper into an elongated cylinder called a cigarette. Other forms of smoking include the use of a smoking pipe or a bong."^^xsd:string .
+

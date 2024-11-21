@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:s-seismic-wave a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "s-seismic-wave"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2053186"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/S-wave"^^xsd:string ;
+    rdfs:comment "transverse seismic wave"^^xsd:string .
+

@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28atmosphere-contains-%28air-as-medium-water~vapor%29%29-has-property-%28min_of_relative_saturation%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "atmosphere_air_water~vapor__min_of_relative_saturation"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/vapor> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/air>,
+        <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/min> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/atmosphere> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/relative_saturation> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/atmosphere-contains-%28air-as-medium-water~vapor%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/min_of_relative_saturation> .
+

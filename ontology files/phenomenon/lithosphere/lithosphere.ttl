@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lithosphere a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "lithosphere"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q83296"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Lithosphere"^^xsd:string ;
+    rdfs:comment "A lithosphere (from Ancient Greek  λίθος (líthos) 'rocky', and  σφαίρα (sphaíra) 'sphere') is the rigid, outermost rocky shell of a terrestrial planet or natural satellite. On Earth, it is composed of the crust and the portion of the upper mantle that behaves elastically on time scales of up to thousands of years or more. The crust and upper mantle are distinguished on the basis of chemistry and mineralogy."^^xsd:string .
+

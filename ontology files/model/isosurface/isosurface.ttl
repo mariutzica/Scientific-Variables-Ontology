@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:isosurface a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "isosurface"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1311829"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isosurface"^^xsd:string ;
+    rdfs:comment "An isosurface is a three-dimensional analog of an isoline.  It is a surface that represents points of a constant value (e.g. pressure, temperature, velocity, density) within a volume of space; in other words, it is a level set of a continuous function whose domain is 3-space."^^xsd:string .
+

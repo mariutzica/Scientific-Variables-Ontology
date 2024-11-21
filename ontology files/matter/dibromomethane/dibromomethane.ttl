@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dibromomethane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dibromomethane"^^xsd:string ;
+    svo:has_synonym "methylene-bromide"^^xsd:string,
+        "methylene-dibromide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q421736"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dibromomethane"^^xsd:string ;
+    rdfs:comment "Dibromomethane or methylene bromide, or methylene dibromide is a halomethane with the formula CH2Br2. It is slightly soluble in water but very soluble in organic solvents.  It is a colorless liquid."^^xsd:string .
+

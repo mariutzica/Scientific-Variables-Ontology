@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:speciation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "speciation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q39350"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Speciation"^^xsd:string ;
+    rdfs:comment "Speciation is the evolutionary process by which populations evolve to become distinct species. The biologist Orator F. Cook coined the term in 1906 for cladogenesis, the splitting of lineages, as opposed to anagenesis, phyletic evolution within lineages. Charles Darwin was the first to describe the role of natural selection in speciation in his 1859 book On the Origin of Species. He also identified sexual selection as a likely mechanism, but found it problematic."^^xsd:string .
+

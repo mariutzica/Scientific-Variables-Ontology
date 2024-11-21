@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:allograft a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "allograft"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1773075"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Allotransplantation"^^xsd:string ;
+    rdfs:comment "Allotransplant (allo- meaning \"other\" in Greek) is the transplantation of cells, tissues, or organs to a recipient from a genetically non-identical donor of the same species. The transplant is called an allograft, allogeneic transplant, or homograft. Most human tissue and organ transplants are allografts."^^xsd:string .
+

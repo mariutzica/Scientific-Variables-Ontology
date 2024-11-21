@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pentachlorophenol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "pentachlorophenol"^^xsd:string ;
+    svo:has_synonym "pcp"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q423922"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pentachlorophenol"^^xsd:string ;
+    rdfs:comment "Pentachlorophenol (PCP) is an organochlorine compound used as a pesticide and a disinfectant.  First produced in the 1930s, it is marketed under many trade names. It can be found as pure PCP, or as the sodium salt of PCP, the latter of which dissolves easily in water. It can be biodegraded by some bacteria, including Sphingobium chlorophenolicum."^^xsd:string .
+

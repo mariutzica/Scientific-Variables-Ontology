@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:throughfall a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "throughfall"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1789861"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Throughfall"^^xsd:string ;
+    rdfs:comment "In hydrology, throughfall is the process which describes how wet leaves shed excess water onto the ground surface. These drops have greater erosive power because they are heavier than rain drops. Furthermore, where there is a high canopy, falling drops may reach terminal velocity, about 8 metres (26 ft), thus maximizing the drop's erosive potential.Rates of throughfall are higher in areas of forest where the leaves are broad-leaved. This is because the flat leaves allow water to collect. Drip-tips also facilitate throughfall. Rates of throughfall are lower in coniferous forests as conifers can only hold individual droplets of water on their needles."^^xsd:string .
+

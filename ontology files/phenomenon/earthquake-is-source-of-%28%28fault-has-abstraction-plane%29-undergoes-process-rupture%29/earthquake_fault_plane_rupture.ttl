@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:earthquake-is-source-of-%28%28fault-has-abstraction-plane%29-undergoes-process-rupture%29 a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "earthquake_fault_plane_rupture"^^xsd:string ;
+    svo:has_primary_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28fault-has-abstraction-plane%29-undergoes-process-rupture> ;
+    svo:has_source_phenomenon :earthquake .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:calamoceratidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "calamoceratidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1941689"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Calamoceratidae"^^xsd:string ;
+    rdfs:comment "Calamoceratidae is a family of caddisflies in the order Trichoptera. There are about 9 genera and at least 120 described species in  the family Calamoceratidae."^^xsd:string .
+

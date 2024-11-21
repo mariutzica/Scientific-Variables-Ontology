@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:denitrification a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "denitrification"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q742637"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Denitrification"^^xsd:string ;
+    rdfs:comment "Denitrification is a microbially facilitated process where nitrate (NO3−) is reduced and ultimately produces molecular nitrogen (N2) through a series of intermediate gaseous nitrogen oxide products. Facultative anaerobic bacteria perform denitrification as a type of respiration that reduces oxidized forms of nitrogen in response to the oxidation of an electron donor such as organic matter. The preferred nitrogen electron acceptors in order of most to least thermodynamically favorable include nitrate (NO3−), nitrite (NO2−), nitric oxide (NO), nitrous oxide (N2O) finally resulting in the production of dinitrogen (N2) completing the nitrogen cycle. Denitrifying microbes require a very low oxygen concentration of less than 10%, as well as organic C for energy. Since denitrification can remove NO3−, reducing its leaching to groundwater, it can be strategically used to treat sewage or animal residues of high nitrogen content. Denitrification can leak N2O, which is an ozone-depleting substance and a greenhouse gas that can have a considerable influence on global warming."^^xsd:string .
+

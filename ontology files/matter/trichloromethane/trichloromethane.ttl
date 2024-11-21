@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trichloromethane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "trichloromethane"^^xsd:string ;
+    svo:has_synonym "chloroform"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q172275"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chloroform"^^xsd:string ;
+    rdfs:comment "Chloroform, or trichloromethane (often abbreviated as TCM), is an organic compound with the formula CHCl3 and a common organic solvent. It is a very volatile, colorless, strong-smelling, dense liquid produced on a large scale as a precursor to PTFE and refrigerants and is a trihalomethane that serves as a powerful anesthetic, euphoriant, anxiolytic, and sedative when inhaled or ingested. Chloroform was used as an anaesthetic between 19th century and the first half of the 20th century. Chloroform is miscible with many solvents but it is only very slightly soluble in water (only 8 g/L at 20 °C)."^^xsd:string .
+

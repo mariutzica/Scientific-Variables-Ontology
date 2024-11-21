@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:arsenite a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "arsenite"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q10859825"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Arsenite"^^xsd:string ;
+    rdfs:comment "In chemistry, an arsenite is a chemical compound containing an arsenic oxyanion where arsenic has oxidation state +3. Note that in fields that commonly deal with groundwater chemistry, arsenite is used generically to identify soluble AsIII anions. IUPAC have recommended that arsenite compounds are to be named as arsenate(III), for example ortho-arsenite is called trioxidoarsenate(III)."^^xsd:string .
+

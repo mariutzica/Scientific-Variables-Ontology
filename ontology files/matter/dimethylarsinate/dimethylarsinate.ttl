@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dimethylarsinate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dimethylarsinate"^^xsd:string ;
+    svo:has_synonym "Cacodylic acid"^^xsd:string,
+        "dimethylarsinic"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q420680"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cacodylic_acid"^^xsd:string ;
+    rdfs:comment "Cacodylic acid is an organoarsenic compound with the formula (CH3)2AsO2H. With the formula R2As(O)OH, it is the simplest of the arsinic acids. It is a colorless solid that is soluble in water."^^xsd:string .
+

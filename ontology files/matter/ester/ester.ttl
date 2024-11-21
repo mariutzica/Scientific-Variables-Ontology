@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ester a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "ester"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q101487"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ester"^^xsd:string ;
+    rdfs:comment "In chemistry, an ester is a compound derived from an acid (organic or inorganic) in which the hydrogen atom (H) of at least one acidic hydroxyl group (−OH) of that acid is replaced by an organyl group (−R). Analogues derived from oxygen replaced by other chalcogens belong to the ester category as well (i.e. esters of acidic −SH, −SeH, −TeH, −PoH and −LvH groups). According to some authors, organyl derivatives of acidic hydrogen of other acids are esters as well (e.g. amides), but not according to the IUPAC.Glycerides are fatty acid esters of glycerol; they are important in biology, being one of the main classes of lipids and comprising the bulk of animal fats and vegetable oils. Lactones are cyclic carboxylic esters; naturally occurring lactones are mainly 5- and 6-membered ring lactones. Lactones contribute to the aroma of fruits, butter, cheese, vegetables like celery and other foods."^^xsd:string .
+

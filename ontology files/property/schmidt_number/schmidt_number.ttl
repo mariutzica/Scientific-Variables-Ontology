@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:schmidt_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "schmidt_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q581997"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Schmidt_number"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, the Schmidt number (denoted Sc) of a fluid is a dimensionless number defined as the ratio of momentum diffusivity (kinematic viscosity) and mass diffusivity, and it is used to characterize fluid flows in which there are simultaneous momentum and mass diffusion convection processes. It was named after German engineer Ernst Heinrich Wilhelm Schmidt (1892–1975)."^^xsd:string .
+

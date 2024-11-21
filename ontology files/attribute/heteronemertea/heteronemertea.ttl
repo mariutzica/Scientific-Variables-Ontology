@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:heteronemertea a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "heteronemertea"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1943543"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Heteronemertea"^^xsd:string ;
+    rdfs:comment "Heteronemertea is a monophyletic order of about 500 species of nemertean worm. It contains genera such as Lineus and Cerebratulus, and includes the largest and most muscular nemerteans."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:income a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "income"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1527264"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Income"^^xsd:string ;
+    rdfs:comment "Income is the consumption and saving opportunity gained by an entity within a specified timeframe, which is generally expressed in monetary terms. Income is difficult to define conceptually and the definition may be different across fields. For example, a person's income in an economic sense may be different from their income as defined by law.An extremely important definition of income is Haig–Simons income, which defines income as Consumption + Change in net worth and is widely used in economics.For households and individuals in the United States, income is defined by tax law as a sum that includes any wage, salary, profit, interest payment, rent, or other form of earnings received in a calendar year. Discretionary income is often  defined as gross income minus taxes and other deductions (e.g., mandatory pension contributions), and is widely used as a basis to compare the welfare of taxpayers."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mesocyclops a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "mesocyclops"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q144998"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mesocyclops"^^xsd:string ;
+    rdfs:comment "Mesocyclops  is a genus of copepod crustaceans in the family Cyclopidae. Because the various species of Mesocyclops are known to prey on mosquito larvae, it is used as a nontoxic and inexpensive form of biological mosquito control."^^xsd:string .
+

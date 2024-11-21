@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cnoidal-wave a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "cnoidal-wave"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5137392"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cnoidal_wave"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, a cnoidal wave is a nonlinear and exact periodic wave solution of the Korteweg–de Vries equation. These solutions are in terms of the Jacobi elliptic function cn, which is why they are coined cnoidal waves. They are used to describe surface gravity waves of fairly long wavelength, as compared to the water depth."^^xsd:string .
+

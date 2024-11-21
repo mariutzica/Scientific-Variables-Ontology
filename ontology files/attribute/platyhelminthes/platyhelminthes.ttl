@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:platyhelminthes a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "platyhelminthes"^^xsd:string ;
+    svo:has_synonym "flatworm"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q124900"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Flatworm"^^xsd:string ;
+    rdfs:comment "The flatworms, flat worms, Platyhelminthes, or platyhelminths (from the Greek πλατύ, platy, meaning \"flat\" and ἕλμινς (root: ἑλμινθ-), helminth-, meaning \"worm\") are a phylum of relatively simple bilaterian, unsegmented, soft-bodied invertebrates. Unlike other bilaterians, they are acoelomates (having no body cavity), and have no specialized circulatory and respiratory organs, which restricts them to having flattened shapes that allow oxygen and nutrients to pass through their bodies by diffusion. The digestive cavity has only one opening for both ingestion (intake of nutrients) and egestion (removal of undigested wastes); as a result, the food cannot be processed continuously."^^xsd:string .
+

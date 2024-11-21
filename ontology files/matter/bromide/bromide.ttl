@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bromide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "bromide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q422423"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bromide"^^xsd:string ;
+    rdfs:comment "A bromide ion is the negatively charged form (Br−) of the element bromine, a member of the halogens group on the periodic table. Most bromides are colorless. Bromides have many practical roles, being found in anticonvulsants, flame-retardant materials, and cell stains.  Although uncommon, chronic toxicity from bromide can result in bromism, a syndrome with multiple neurological symptoms. Bromide toxicity can also cause a type of skin eruption, see potassium bromide. The bromide ion has an ionic radius of 196 pm."^^xsd:string .
+

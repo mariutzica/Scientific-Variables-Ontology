@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:jaywalk a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "jaywalk"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1814666"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Jaywalking"^^xsd:string ;
+    rdfs:comment "Jaywalking is the act of pedestrians walking in or crossing a roadway if that act contravenes traffic regulations. The term originated in the United States as a derivation of the phrase jay-drivers (the word jay meaning 'a greenhorn, or rube'), people who drove horse-drawn carriages and automobiles on the wrong side of the road, before taking its current meaning. Jaywalking was coined as the automobile arrived in the street in the context of the conflict between pedestrian and automobiles (also then known as horseless carriages), more specifically the nascent automobile industry."^^xsd:string .
+

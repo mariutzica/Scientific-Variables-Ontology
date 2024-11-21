@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:eucorethra a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "eucorethra"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7396821"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Eucorethra"^^xsd:string ;
+    rdfs:comment "Eucorethra is a monotypic genus of phantom midges (flies in the family Chaoboridae).  The sole species is Eucorethra underwoodi Underwood, 1903."^^xsd:string .
+

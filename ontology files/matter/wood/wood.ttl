@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:wood a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "wood"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q287"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Wood"^^xsd:string ;
+    rdfs:comment "Wood is a structural tissue found in the stems and roots of trees and other woody plants. It is an organic material – a natural composite of cellulose fibers that are strong in tension and embedded in a matrix of lignin that resists compression. Wood is sometimes defined as only the secondary xylem in the stems of trees, or it is defined more broadly to include the same type of tissue elsewhere such as in the roots of trees or shrubs. In a living tree it performs a support function, enabling woody plants to grow large or to stand up by themselves. It also conveys water and nutrients between the leaves, other growing tissues, and the roots. Wood may also refer to other plant materials with comparable properties, and to material engineered from wood, or woodchips or fiber."^^xsd:string .
+

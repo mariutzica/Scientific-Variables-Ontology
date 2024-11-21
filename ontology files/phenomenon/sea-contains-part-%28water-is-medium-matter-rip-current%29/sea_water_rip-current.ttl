@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sea-contains-part-%28water-is-medium-matter-rip-current%29 a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "sea_water_rip-current"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :water-is-medium-matter-rip-current ;
+    svo:is_part_of_containing_phenomenon :sea .
+

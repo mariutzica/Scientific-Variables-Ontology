@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28earth-has-part-interior%29-contains-%28earthquake-is-source-of-%28%28fault-has-abstraction-plane%29-contains-asperity%29%29%29-has-property-%28contact_area%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "earth_interior_earthquake_fault_plane_asperity__contact_area"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/plane> ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/fault> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/interior> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/asperity>,
+        <http://scientificvariablesontology.org/svo/phenomenon/earth>,
+        <http://scientificvariablesontology.org/svo/phenomenon/earthquake> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28earth-has-part-interior%29-contains-%28earthquake-is-source-of-%28%28fault-has-abstraction-plane%29-contains-asperity%29%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/contact_area> .
+

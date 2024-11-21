@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:metolachlor a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "metolachlor"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q409598"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Metolachlor"^^xsd:string ;
+    rdfs:comment "Metolachlor  is an organic compound that is widely used as an herbicide.  It is a derivative of aniline and is a member of the chloroacetanilide family of herbicides.  It is highly effective toward grasses."^^xsd:string .
+

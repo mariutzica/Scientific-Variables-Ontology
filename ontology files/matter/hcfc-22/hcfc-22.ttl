@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hcfc-22 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "hcfc-22"^^xsd:string ;
+    svo:has_synonym "chlorodifluoromethane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q422994"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chlorodifluoromethane"^^xsd:string ;
+    rdfs:comment "Chlorodifluoromethane or difluoromonochloromethane is a hydrochlorofluorocarbon (HCFC).  This colorless gas is better known as HCFC-22, or R-22, or CHClF2.  It was commonly used as a propellant and refrigerant.  These applications were phased out under the Montreal Protocol in developed countries in 2020 due to the compound's ozone depletion potential (ODP) and high global warming potential (GWP), and in developing countries this process will be completed by 2030. R-22 is a versatile intermediate in industrial organofluorine chemistry, e.g. as a precursor to tetrafluoroethylene."^^xsd:string .
+

@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:2-nitrotoluene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "2-nitrotoluene"^^xsd:string ;
+    svo:has_synonym "o-nitrotoluene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2533785"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/2-Nitrotoluene"^^xsd:string ;
+    rdfs:comment "2-Nitrotoluene or ortho-nitrotoluene is an organic compound with the formula CH3C6H4NO2.  It is pale yellow liquid that crystallizes in two forms, called α (−9.27 °C) and β (−3.17 °C).  It is mainly a precursor to o-toluidine, which is an intermediate in the production of various dyes."^^xsd:string .
+

@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trade-off a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "trade-off"^^xsd:string ;
+    svo:has_synonym "tradeoff"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q638123"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Trade-off"^^xsd:string ;
+    rdfs:comment "A trade-off (or tradeoff) is a situational decision that involves diminishing or losing on quality, quantity, or property of a set or design in return for gains in other aspects. In simple terms, a tradeoff is where one thing increases, and another must decrease. Tradeoffs stem from limitations of many origins, including simple physics – for instance, only a certain volume of objects can fit into a given space, so a full container must remove some items in order to accept any more, and vessels can carry a few large items or multiple small items. Tradeoffs also commonly refer to different configurations of a single item, such as the tuning of strings on a guitar to enable different notes to be played, as well as an allocation of time and attention towards different tasks."^^xsd:string .
+

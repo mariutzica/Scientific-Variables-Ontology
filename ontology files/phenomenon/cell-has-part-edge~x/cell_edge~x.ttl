@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/cell-has-part-edge~x> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "cell_edge~x"^^xsd:string ;
+    svo:has_abstraction <http://scientificvariablesontology.org/svo/abstraction/cell> ;
+    svo:has_part <http://scientificvariablesontology.org/svo/part/edge~x> .
+

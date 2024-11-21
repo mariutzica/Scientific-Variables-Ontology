@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:usgs_hydrologic_unit_code a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "usgs_hydrologic_unit_code"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5955124"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydrological_code#United_States"^^xsd:string ;
+    rdfs:comment "A hydrological code or hydrologic unit code is a sequence of numbers or letters (a geocode) that identify a hydrological unit or feature, such as a river, river reach, lake, or area like a drainage basin (also called watershed in North America) or catchment."^^xsd:string .
+

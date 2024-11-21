@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:isobaric a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "isobaric"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q137649"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isobaric_process"^^xsd:string ;
+    rdfs:comment "In thermodynamics, an isobaric process is a type of thermodynamic process in which the pressure of the system stays constant: ΔP = 0. The heat transferred to the system does work, but also changes the internal energy (U) of the system.  This article uses the physics sign convention for work, where positive work is work done by the system.  Using this convention, by the first law of thermodynamics,"^^xsd:string .
+

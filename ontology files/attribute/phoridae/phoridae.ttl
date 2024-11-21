@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:phoridae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "phoridae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2548224"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Phoridae"^^xsd:string ;
+    rdfs:comment "The Phoridae are a family of small, hump-backed flies resembling fruit flies. Phorid flies can often be identified by their escape habit of running rapidly across a surface rather than taking to the wing. This behaviour is a source of one of their alternate names, scuttle fly. Another vernacular name, coffin fly, refers to Conicera tibialis.  About 4,000 species are known in 230 genera. The most well-known species is cosmopolitan Megaselia scalaris. At 0.4 mm in length, the world's smallest fly is the phorid Euryplatea nanaknihali."^^xsd:string .
+

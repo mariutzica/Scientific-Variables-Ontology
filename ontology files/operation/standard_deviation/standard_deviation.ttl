@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/operation/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:standard_deviation a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "standard_deviation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q159375"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Standard_deviation"^^xsd:string ;
+    rdfs:comment "In statistics, the standard deviation is a measure of the amount of variation of a random variable expected about its mean. A low standard deviation indicates that the values tend to be close to the mean (also called the expected value) of the set, while a high standard deviation indicates that the values are spread out over a wider range. The standard deviation is commonly used in the determination of what constitutes an outlier and what does not."^^xsd:string .
+

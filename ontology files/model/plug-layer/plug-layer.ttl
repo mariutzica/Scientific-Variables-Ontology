@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:plug-layer a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "plug-layer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q383758"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Plug_flow"^^xsd:string ;
+    rdfs:comment "In fluid mechanics, plug flow is a simple model of the velocity profile of a fluid flowing in a pipe.  In plug flow, the velocity of the fluid is assumed to be constant across any cross-section of the pipe perpendicular to the axis of the pipe.   The plug flow model assumes there is no boundary layer adjacent to the inner wall of the pipe."^^xsd:string .
+

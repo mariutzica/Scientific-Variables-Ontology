@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:daphnidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "daphnidae"^^xsd:string ;
+    svo:has_synonym "daphniidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4020658"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Daphniidae"^^xsd:string ;
+    rdfs:comment "Daphniidae is a family of water fleas in the order Anomopoda."^^xsd:string .
+

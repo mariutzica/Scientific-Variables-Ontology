@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:aggradation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "aggradation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q557791"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Aggradation"^^xsd:string ;
+    rdfs:comment "Aggradation (or alluviation) is the term used in geology for the increase in land elevation, typically in a river system, due to the deposition of sediment. Aggradation occurs in areas in which the supply of sediment is greater than the amount of material that the system is able to transport. The mass balance between sediment being transported and sediment in the bed is described by the Exner equation."^^xsd:string .
+

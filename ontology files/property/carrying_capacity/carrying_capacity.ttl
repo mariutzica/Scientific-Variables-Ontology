@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:carrying_capacity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "carrying_capacity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q866283"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Carrying_capacity"^^xsd:string ;
+    rdfs:comment "The carrying capacity of an environment is the maximum population size of a biological species that can be sustained by that specific environment, given the food, habitat, water, and other resources available. The carrying capacity is defined as the environment's maximal load, which in population ecology corresponds to the population equilibrium, when the number of deaths in a population equals the number of births (as well as immigration and emigration). The effect of carrying capacity on population dynamics is modelled with a logistic function. Carrying capacity is applied to the maximum population an environment can support in ecology, agriculture and fisheries. The term carrying capacity has been applied to a few different processes in the past before finally being applied to population limits in the 1950s. The notion of carrying capacity for humans is covered by the notion of sustainable population."^^xsd:string .
+

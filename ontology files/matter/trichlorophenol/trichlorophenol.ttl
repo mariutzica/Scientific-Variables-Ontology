@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trichlorophenol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "trichlorophenol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q412869"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Trichlorophenol"^^xsd:string ;
+    rdfs:comment "A trichlorophenol is any organochloride of phenol that contains three covalently bonded chlorine atoms. Trichlorophenols are produced by electrophilic halogenation of phenol with chlorine. Different isomers of trichlorophenol exist according to which ring positions on the phenol contain chlorine atoms. 2,4,6-Trichlorophenol, for example, has two chlorine atoms in the ortho positions and one chlorine atom in the para position."^^xsd:string .
+

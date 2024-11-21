@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:polygon a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "polygon"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q37555"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Polygon"^^xsd:string ;
+    rdfs:comment "In geometry, a polygon () is a plane figure made up of line segments connected to form a closed polygonal chain."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:apex a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "apex"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2858200"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Apex_(geometry)"^^xsd:string ;
+    rdfs:comment "In geometry, an apex (plural apices) is the vertex which is in some sense the \"highest\" of the figure to which it belongs. The term is typically used to refer to the vertex opposite from some \"base\". The word is derived from the Latin for 'summit, peak, tip, top, extreme end'."^^xsd:string .
+

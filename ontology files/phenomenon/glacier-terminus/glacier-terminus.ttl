@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:glacier-terminus a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "glacier-terminus"^^xsd:string ;
+    svo:has_synonym "glacier snout"^^xsd:string,
+        "glacier toe"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q556920"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Glacier_terminus"^^xsd:string ;
+    rdfs:comment "A glacier terminus, toe, or snout, is the end of a glacier at any given point in time. Although glaciers seem motionless to the observer, in reality glaciers are in endless motion and the glacier terminus is always either advancing or retreating. The location of the terminus is often directly related to glacier mass balance, which is based on the amount of snowfall which occurs in the accumulation zone of a glacier, as compared to the amount that is melted in the ablation zone. The position of a glacier terminus is also impacted by localized or regional temperature change over time."^^xsd:string .
+

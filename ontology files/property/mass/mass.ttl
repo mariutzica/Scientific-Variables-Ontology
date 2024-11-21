@@ -1,0 +1,17 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mass a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "mass"^^xsd:string ;
+    svo:has_synonym "intrinsic_mass"^^xsd:string,
+        "invariant_mass"^^xsd:string,
+        "proper_mass"^^xsd:string,
+        "rest_mass"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11423"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Mass"^^xsd:string ;
+    rdfs:comment "Mass is an intrinsic property of a body. It was traditionally believed to be related to the quantity of matter in a physical body, until the discovery of the atom and particle physics. It was found that different atoms and different elementary particles, theoretically with the same amount of matter, have nonetheless different masses. Mass in modern physics has multiple definitions which are conceptually distinct, but physically equivalent. Mass can be experimentally defined as a measure of the body's inertia, meaning the resistance to acceleration (change of velocity) when a net force is applied. The object's mass also determines the strength of its gravitational attraction to other bodies."^^xsd:string .
+

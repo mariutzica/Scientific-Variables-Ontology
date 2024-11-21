@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:universal_gravitation_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "universal_gravitation_constant"^^xsd:string ;
+    svo:has_synonym "newtons_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q18373"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gravitational_constant"^^xsd:string ;
+    rdfs:comment "The gravitational constant (also known as the universal gravitational constant, the Newtonian constant of gravitation, or the Cavendish gravitational constant), denoted by the capital letter G, is an empirical physical constant involved in the calculation of gravitational effects in Sir Isaac Newton's law of universal gravitation and in Albert Einstein's theory of general relativity."^^xsd:string .
+

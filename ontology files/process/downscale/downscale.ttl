@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:downscale a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "downscale"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q682831"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Downscaling"^^xsd:string ;
+    rdfs:comment "Downscaling is any procedure to infer high-resolution information from low-resolution variables. This technique is based on dynamical or statistical approaches commonly used in several disciplines, especially meteorology, climatology and remote sensing. The term downscaling usually refers to an increase in spatial resolution, but it is often also used for temporal resolution. This is not to be confused with image downscaling which is a process of reducing an image from a higher resolution to a lower resolution."^^xsd:string .
+

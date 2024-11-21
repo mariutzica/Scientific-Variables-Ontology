@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:calcite a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "calcite"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q171917"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Calcite"^^xsd:string ;
+    rdfs:comment "Calcite is a carbonate mineral and the most stable polymorph of calcium carbonate (CaCO3). It is a very common mineral, particularly as a component of limestone. Calcite defines hardness 3 on the Mohs scale of mineral hardness, based on scratch hardness comparison. Large calcite crystals are used in optical equipment, and limestone composed mostly of calcite has numerous uses."^^xsd:string .
+

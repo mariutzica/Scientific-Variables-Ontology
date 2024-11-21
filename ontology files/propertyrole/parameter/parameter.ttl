@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/propertyrole/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:parameter a svo:PropertyRole,
+        owl:NamedIndividual ;
+    rdfs:label "parameter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1413083"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Parameter"^^xsd:string ;
+    rdfs:comment "A parameter (from Ancient Greek  παρά (pará) 'beside, subsidiary', and  μέτρον (métron) 'measure'), generally, is any characteristic that can help in defining or classifying a particular system (meaning an event, project, object, situation, etc.). That is, a parameter is an element of a system that is useful, or critical, when identifying the system, or when evaluating its performance, status, condition, etc."^^xsd:string .
+

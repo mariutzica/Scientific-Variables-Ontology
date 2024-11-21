@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:stemflow a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "stemflow"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2329516"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Stemflow"^^xsd:string ;
+    rdfs:comment "In hydrology, stemflow is the flow of intercepted water down the trunk or stem of a plant. Stemflow, along with throughfall, is responsible for the transferral of precipitation and nutrients from the canopy to the soil. In tropical rainforests, where this kind of flow can be substantial, erosion gullies can form at the base of the trunk. However, in more temperate climates stemflow levels are low and have little erosional power."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sherwood_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "sherwood_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q901815"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sherwood_number"^^xsd:string ;
+    rdfs:comment "The Sherwood number (Sh) (also called the mass transfer Nusselt number) is a dimensionless number used in mass-transfer operation. It represents the ratio of the convective mass transfer to the rate of diffusive mass transport, and is named in honor of Thomas Kilgore Sherwood."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vegetated a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "vegetated"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q187997"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wiktionary.org/wiki/vegetated"^^xsd:string ;
+    rdfs:comment "total of plant formations and plant communities"^^xsd:string .
+

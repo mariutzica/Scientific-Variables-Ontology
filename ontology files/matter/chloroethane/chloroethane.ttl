@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chloroethane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chloroethane"^^xsd:string ;
+    svo:has_synonym "monochloroethane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q409133"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chloroethane"^^xsd:string ;
+    rdfs:comment "Chloroethane, commonly known as ethyl chloride, is a chemical compound with chemical formula CH3CH2Cl, once widely used in producing tetraethyllead, a gasoline additive. It is a colorless, flammable gas or refrigerated liquid with a faintly sweet odor.Ethyl chloride was first synthesised by Valentine by reacting ethanol and hydrochloric acid in 1440. Glauber made it in 1648 by reacting ethanol and zinc chloride."^^xsd:string .
+

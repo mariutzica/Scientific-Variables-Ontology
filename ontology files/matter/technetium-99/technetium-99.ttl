@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:technetium-99 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "technetium-99"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1961418"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Technetium-99"^^xsd:string ;
+    rdfs:comment "Technetium-99 (99Tc) is an isotope of technetium which decays with a half-life of 211,000 years to stable ruthenium-99, emitting beta particles, but no gamma rays. It is the most significant long-lived fission product of uranium fission, producing the largest fraction of the total long-lived radiation emissions of nuclear waste. Technetium-99 has a fission product yield of 6.0507% for thermal neutron fission of uranium-235."^^xsd:string .
+

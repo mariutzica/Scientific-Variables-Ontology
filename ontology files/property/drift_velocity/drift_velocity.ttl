@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:drift_velocity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "drift_velocity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q909891"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Drift_velocity"^^xsd:string ;
+    rdfs:comment "In physics, drift velocity is the average velocity attained by charged particles, such as electrons, in a material due to an electric field. In general, an electron in a conductor will propagate randomly at the Fermi velocity, resulting in an average velocity of zero. Applying an electric field adds to this random motion a small net flow in one direction; this is the drift."^^xsd:string .
+

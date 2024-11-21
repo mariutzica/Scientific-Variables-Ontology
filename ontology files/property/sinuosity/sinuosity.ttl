@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sinuosity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "sinuosity"^^xsd:string ;
+    svo:has_synonym "sinuosity_coefficient"^^xsd:string,
+        "sinuosity_index"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3485066"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Sinuosity"^^xsd:string ;
+    rdfs:comment "Sinuosity, sinuosity index, or sinuosity coefficient of a continuously differentiable curve having at least one inflection point is the ratio of the curvilinear length (along the curve) and the Euclidean distance (straight line) between the end points of the curve. This dimensionless quantity can also be rephrased as the \"actual path length\" divided by the \"shortest path length\" of a curve."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:poisson-equation a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "poisson-equation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q827688"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Poisson%27s_equation"^^xsd:string ;
+    rdfs:comment "Poisson's equation is an elliptic partial differential equation of broad utility in theoretical physics. For example, the solution to Poisson's equation is the potential field caused by a given electric charge or mass density distribution; with the potential field known, one can then calculate electrostatic or gravitational (force) field. It is a generalization of Laplace's equation, which is also frequently seen in physics.  The equation is named after French mathematician and physicist Siméon Denis Poisson."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:daphnia a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "daphnia"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q269354"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Daphnia"^^xsd:string ;
+    rdfs:comment "Daphnia is a genus of small planktonic crustaceans,  0.2–6.0 mm (0.01–0.24 in) in length. Daphnia are members of the order Anomopoda, and are one of the several small aquatic crustaceans commonly called water fleas because their saltatory swimming style resembles the movements of fleas. Daphnia spp. live in various aquatic environments ranging from acidic swamps to freshwater lakes and ponds."^^xsd:string .
+

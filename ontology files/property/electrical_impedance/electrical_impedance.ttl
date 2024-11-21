@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:electrical_impedance a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "electrical_impedance"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q179043"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Electrical_impedance"^^xsd:string ;
+    rdfs:comment "In electrical engineering, impedance is the opposition to alternating current presented by the combined effect of resistance and reactance in a circuit.Quantitatively, the impedance of a two-terminal circuit element is the ratio of the complex representation of the sinusoidal voltage between its terminals, to the complex representation of the current flowing through it. In general, it depends upon the frequency of the sinusoidal voltage. "^^xsd:string .
+

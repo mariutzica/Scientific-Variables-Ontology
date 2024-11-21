@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ozone a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "ozone"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q36933"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Ozone"^^xsd:string ;
+    rdfs:comment "Ozone () (or trioxygen) is an inorganic molecule with the chemical formula O3. It is a pale blue gas with a distinctively pungent smell. It is an allotrope of oxygen that is much less stable than the diatomic allotrope O2, breaking down in the lower atmosphere to O2 (dioxygen). Ozone is formed from dioxygen by the action of ultraviolet (UV) light and electrical discharges within the Earth's atmosphere. It is present in very low concentrations throughout the latter, with its highest concentration high in the ozone layer of the stratosphere, which absorbs most of the Sun's ultraviolet (UV) radiation."^^xsd:string .
+

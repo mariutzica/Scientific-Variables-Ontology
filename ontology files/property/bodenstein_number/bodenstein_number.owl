@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/property/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/property/">
+<owl:NamedIndividual rdf:about="bodenstein_number">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bodenstein_number</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Bodenstein_number</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q370662</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Bodenstein number (abbreviated Bo, named after Max Bodenstein) is a dimensionless parameter in chemical reaction engineering, which describes the ratio of the amount of substance introduced by convection to that introduced by diffusion. Hence, it characterises the backmixing in a system and allows statements whether and how much volume elements or substances within a chemical reactor mix due to the prevalent currents. It is defined as the ratio of the convection current to the dispersion current. The Bodenstein number is an element of the dispersion model of residence times and is therefore also called the dimensionless dispersion coefficient.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

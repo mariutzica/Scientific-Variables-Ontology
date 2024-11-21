@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ridging a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "ridging"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2262727"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hilling"^^xsd:string ;
+    rdfs:comment "Hilling, earthing up or ridging is the technique in agriculture and horticulture of piling soil up around the base of a plant. It can be done by hand (usually using a hoe), or with powered machinery, typically a tractor attachment."^^xsd:string .
+

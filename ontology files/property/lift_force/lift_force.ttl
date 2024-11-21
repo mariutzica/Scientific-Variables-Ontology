@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lift_force a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "lift_force"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q194433"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lift_(force)"^^xsd:string ;
+    rdfs:comment "When a fluid flows around an object, the fluid exerts a force on the object. Lift is the component of this force that is perpendicular to the oncoming flow direction. It contrasts with the drag force, which is the component of the force parallel to the flow direction. Lift conventionally acts in an upward direction in order to counter the force of gravity, but it is defined to act perpendicular to the flow and therefore can act in any direction."^^xsd:string .
+

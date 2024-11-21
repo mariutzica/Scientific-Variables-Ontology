@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:heterotrophic a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "heterotrophic"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q159344"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Heterotroph"^^xsd:string ;
+    rdfs:comment "A heterotroph (; from Ancient Greek  ἕτερος (héteros) 'other', and  τροφή (trophḗ) 'nutrition') is an organism that cannot produce its own food,  instead taking nutrition from other sources of organic carbon, mainly plant or animal matter. In the food chain, heterotrophs are primary, secondary and tertiary consumers, but not producers. Living organisms that are heterotrophic include all animals and fungi, some bacteria and protists, and many parasitic plants. The term heterotroph arose in microbiology in 1946 as part of a classification of microorganisms based on their type of nutrition. The term is now used in many fields, such as ecology in describing the food chain."^^xsd:string .
+

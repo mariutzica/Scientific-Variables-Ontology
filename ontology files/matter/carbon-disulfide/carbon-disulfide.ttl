@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:carbon-disulfide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "carbon-disulfide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q243354"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Carbon_disulfide"^^xsd:string ;
+    rdfs:comment "Carbon disulfide (also spelled as carbon disulphide) is an inorganic compound with the chemical formula CS2 and structure S=C=S. It is a colorless liquid, which is used as a building block in organic synthesis. It has a pleasant, ether- or chloroform-like odor, but commercial samples are usually yellowish and are typically contaminated with foul-smelling impurities."^^xsd:string .
+

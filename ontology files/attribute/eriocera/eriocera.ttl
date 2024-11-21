@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:eriocera a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "eriocera"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5389301"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Eriocera"^^xsd:string ;
+    rdfs:comment "Eriocera is a monotypic moth genus of the family Erebidae. Its only species is Eriocera mitrula. The type locality is unknown but suggested to be in the Americas. Both the genus and the species were first described by Achille Guenée in 1852."^^xsd:string .
+

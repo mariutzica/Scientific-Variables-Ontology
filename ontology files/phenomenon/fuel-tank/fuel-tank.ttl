@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fuel-tank a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "fuel-tank"^^xsd:string ;
+    svo:has_synonym "petrol-tank"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1411232"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fuel_tank"^^xsd:string ;
+    rdfs:comment "A fuel tank (also called a petrol tank or gas tank) is a safe container for flammable fluids, often gasoline or diesel fuel.  Though any storage tank for fuel may be so called, the term is typically applied to part of an engine system in which the fuel is stored and propelled (fuel pump) or released (pressurized gas) into an engine. Fuel tanks range in size and complexity from the small plastic tank of a butane lighter to the multi-chambered cryogenic Space Shuttle external tank."^^xsd:string .
+

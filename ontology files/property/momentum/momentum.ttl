@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:momentum a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "momentum"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q41273"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Momentum"^^xsd:string ;
+    rdfs:comment "In Newtonian mechanics, momentum (pl.: momenta or momentums; more specifically linear momentum or translational momentum) is the product of the mass and velocity of an object. It is a vector quantity, possessing a magnitude and a direction. If m is an object's mass and v is its velocity (also a vector quantity), then the object's momentum p (from Latin pellere \"push, drive\") is: "^^xsd:string .
+

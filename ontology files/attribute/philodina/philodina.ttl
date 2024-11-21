@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:philodina a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "philodina"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4178299"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Philodina"^^xsd:string ;
+    rdfs:comment "Philodina is a genus of rotifers belonging to the family Philodinidae."^^xsd:string .
+

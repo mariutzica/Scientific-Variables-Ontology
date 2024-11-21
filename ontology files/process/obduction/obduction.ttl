@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:obduction a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "obduction"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q772239"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Obduction"^^xsd:string ;
+    rdfs:comment "Obduction is a geological process whereby denser oceanic crust (and even upper mantle) is scraped off a descending ocean plate at a convergent plate boundary and thrust on top of an adjacent plate. When oceanic and continental plates converge, normally the denser oceanic crust sinks under the continental crust in the process of subduction. Obduction, which is less common, normally occurs in plate collisions at orogenic belts (some of the material from the subducting oceanic plate is emplaced onto the continental plate) or back-arc basins (regions where the edge of a continent is pulled away from the rest of the continent due to the stress of plate collision)."^^xsd:string .
+

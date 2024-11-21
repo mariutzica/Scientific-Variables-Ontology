@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:burgess-shale a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "burgess-shale"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q852085"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Burgess_Shale"^^xsd:string ;
+    rdfs:comment "The Burgess Shale is a fossil-bearing deposit exposed in the Canadian Rockies of British Columbia, Canada. It is famous for the exceptional preservation of the soft parts of its fossils. At 508 million years old (middle Cambrian), it is one of the earliest fossil beds containing soft-part imprints."^^xsd:string .
+

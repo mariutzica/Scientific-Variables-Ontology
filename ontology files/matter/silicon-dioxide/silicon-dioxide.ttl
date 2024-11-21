@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:silicon-dioxide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "silicon-dioxide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q116269"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Silicon_dioxide"^^xsd:string ;
+    rdfs:comment "Silicon dioxide, also known as silica, is an oxide of silicon with the chemical formula SiO2, most commonly found in nature as quartz. In many parts of the world, silica is the major constituent of sand. Silica is one of the most complex and most abundant families of materials, existing as a compound of several minerals and as a synthetic product. Notable examples include fused quartz, fumed silica, silica gel, opal and aerogels. It is used in structural materials, microelectronics (as an electrical insulator), and as components in the food and pharmaceutical industries."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/domain/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:forestry a svo:Domain,
+        owl:NamedIndividual ;
+    rdfs:label "forestry"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q38112"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Forestry"^^xsd:string ;
+    rdfs:comment "Forestry is the science and craft of creating, managing, planting, using, conserving and repairing forests and woodlands for associated resources for human and environmental benefits. Forestry is practiced in plantations and natural stands. The science of forestry has elements that belong to the biological, physical, social, political and managerial sciences. Forest management play essential role of creation and modification of habitats and affect ecosystem services provisioning.Modern forestry generally embraces a broad range of concerns, in what is known as multiple-use management, including: the provision of timber, fuel wood, wildlife habitat, natural water quality management, recreation, landscape and community protection, employment, aesthetically appealing landscapes, biodiversity management, watershed management, erosion control, and preserving forests as \"sinks\" for atmospheric carbon dioxide."^^xsd:string .
+

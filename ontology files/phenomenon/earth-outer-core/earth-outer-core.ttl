@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:earth-outer-core a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "earth-outer-core"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q857867"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Earth's_outer_core"^^xsd:string ;
+    rdfs:comment "Earth's outer core is a fluid layer about 2,260 km (1,400 mi) thick, composed of mostly iron and nickel that lies above Earth's solid inner core and below its mantle. The outer core begins approximately 2,889 km (1,795 mi) beneath Earth's surface at the core-mantle boundary and ends 5,150 km (3,200 mi) beneath Earth's surface at the inner core boundary."^^xsd:string .
+

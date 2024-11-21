@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:organic a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "organic"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q174211"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Organic_compound"^^xsd:string ;
+    rdfs:comment "In chemistry, many authors consider an organic compound to be any chemical compound that contains carbon-hydrogen or carbon-carbon bonds, although the definition of \"organic\" versus \"inorganic\" varies from author to author, and is a topic of debate. For example, methane (CH4) is considered organic, but whether halides of carbon without hydrogen (e.g. carbon tetrachloride CCl4) are organic or inorganic varies from author to author."^^xsd:string .
+

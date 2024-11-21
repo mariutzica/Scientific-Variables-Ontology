@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:power-blackout a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "power-blackout"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q828827"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Power_outage"^^xsd:string ;
+    rdfs:comment "A power outage (also called a powercut, a power out,  a power failure, a power blackout, a power loss, or a blackout) is the loss of the electrical power network supply to an end user."^^xsd:string .
+

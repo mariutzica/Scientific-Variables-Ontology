@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28drainage-basin-contains-part-channel-network%29-has-property-%28length-per-area_density%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/drainage-basin-contains-part-channel-network"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/length-per-area_density"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/channel-network"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/drainage-basin"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drainage-basin_channel-network__length-per-area_density</rdfs:label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basin_channel-network__total-length-to-area_ratio</svo:has_original_label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basin_channels__total-length-per-area_density</svo:has_original_label>
+</owl:NamedIndividual>
+</rdf:RDF>

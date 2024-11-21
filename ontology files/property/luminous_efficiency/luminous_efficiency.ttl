@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:luminous_efficiency a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "luminous_efficiency"^^xsd:string ;
+    svo:has_synonym "luminous_efficacy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1504173"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Luminous_efficacy"^^xsd:string ;
+    rdfs:comment "Luminous efficacy is a measure of how well a light source produces visible light. It is the ratio of luminous flux to power, measured in lumens per watt in the International System of Units (SI). Depending on context, the power can be either the radiant flux of the source's output, or it can be the total power (electric power, chemical energy, or others) consumed by the source."^^xsd:string .
+

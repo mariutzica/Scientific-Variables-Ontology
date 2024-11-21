@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cosmic a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "cosmic"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11547"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cosmic_ray"^^xsd:string ;
+    rdfs:comment "Cosmic rays or astroparticles are high-energy particles or clusters of particles (primarily represented by protons or atomic nuclei) that move through space at nearly the speed of light. They originate from the Sun, from outside of the Solar System in our own galaxy, and from distant galaxies. Upon impact with Earth's atmosphere, cosmic rays produce showers of secondary particles, some of which reach the surface, although the bulk are deflected off into space by the magnetosphere or the heliosphere."^^xsd:string .
+

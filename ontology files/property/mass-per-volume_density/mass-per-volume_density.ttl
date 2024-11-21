@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mass-per-volume_density a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "mass-per-volume_density"^^xsd:string ;
+    svo:has_synonym "volumetric_mass_density"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q29539"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Density"^^xsd:string ;
+    rdfs:comment "Density (volumetric mass density or specific mass) is the substance's mass per unit of volume. The symbol most often used for density is ρ (the lower case Greek letter rho), although the Latin letter D can also be used. Mathematically, density is defined as mass divided by volume:"^^xsd:string .
+

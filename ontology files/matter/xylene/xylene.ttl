@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:xylene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "xylene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q208366"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Xylene"^^xsd:string ;
+    rdfs:comment "In organic chemistry, xylene or xylol (from Greek  ξύλον (xylon) 'wood'; IUPAC name: dimethylbenzene) are any of three organic compounds with the formula (CH3)2C6H4. They are derived from the substitution of two hydrogen atoms with methyl groups in a benzene ring; which hydrogens are substituted determines which of three structural isomers results. It is a colorless, flammable, slightly greasy liquid of great industrial value.The mixture is referred to as both xylene and, more precisely, xylenes. Mixed xylenes refers to a mixture of the xylenes plus ethylbenzene. The four compounds have identical empirical formulas C8H10. Typically the four compounds are produced together by various catalytic reforming and pyrolysis methods."^^xsd:string .
+

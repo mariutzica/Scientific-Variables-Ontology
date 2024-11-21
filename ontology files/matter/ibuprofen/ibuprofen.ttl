@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ibuprofen a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "ibuprofen"^^xsd:string ;
+    svo:has_synonym "Benzeneacetic acid,-.alpha.-methyl-4-(2-methylpropyl)-"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q186969"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ibuprofen"^^xsd:string ;
+    rdfs:comment "Ibuprofen is a nonsteroidal anti-inflammatory drug (NSAID) that is used to relieve pain, fever, and inflammation. This includes painful menstrual periods, migraines, and rheumatoid arthritis. It may also be used to close a patent ductus arteriosus in a premature baby. It can be used by mouth or intravenously. It typically begins working within an hour.Common side effects include heartburn and a rash. Compared to other NSAIDs, it may have other side effects such as gastrointestinal bleeding. It increases the risk of heart failure, kidney failure, and liver failure. At low doses, it does not appear to increase the risk of heart attack; however, at higher doses it may. Ibuprofen can also worsen asthma. While its safety in early pregnancy is unclear, it appears to be harmful in later pregnancy, so is not recommended. Like other NSAIDs, it works by inhibiting the production of prostaglandins by decreasing the activity of the enzyme cyclooxygenase (COX). Ibuprofen is a weaker anti-inflammatory agent than other NSAIDs.Ibuprofen was discovered in 1961 by Stewart Adams and John Nicholson while working at Boots UK Limited and initially marketed as Brufen. It is available under a number of trade names, including Nurofen, Advil, and Motrin. Ibuprofen was first marketed in 1969 in the United Kingdom and in 1974 in the United States. It is on the World Health Organization's List of Essential Medicines. It is available as a generic medication. In 2020, it was the 38th-most commonly prescribed medication in the United States, with more than 16 million prescriptions."^^xsd:string .
+

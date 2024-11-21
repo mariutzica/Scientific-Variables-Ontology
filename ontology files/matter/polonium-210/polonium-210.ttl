@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:polonium-210 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "polonium-210"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1828459"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isotopes_of_polonium#Polonium-210"^^xsd:string ;
+    rdfs:comment "Polonium (84Po) has 42 isotopes, all of which are radioactive, with between 186 and 227 nucleons. 210Po with a half-life of 138.376 days has the longest half-life of naturally occurring polonium. 209Po, with a half-life of 125.2 years, has the longest half-life of all isotopes of polonium. 209Po and 208Po (half-life 2.9 years) can be made through proton bombardment of bismuth in a cyclotron."^^xsd:string .
+

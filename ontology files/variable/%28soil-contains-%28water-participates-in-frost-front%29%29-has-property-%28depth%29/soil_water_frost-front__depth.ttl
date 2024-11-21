@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28soil-contains-%28water-participates-in-frost-front%29%29-has-property-%28depth%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "soil_water_frost-front__depth"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/soil>,
+        <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/frost-front> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/soil-contains-%28water-participates-in-frost-front%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/depth> .
+

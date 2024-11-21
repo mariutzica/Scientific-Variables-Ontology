@@ -1,0 +1,18 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:n-dodecane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "n-dodecane"^^xsd:string ;
+    svo:has_synonym "Dodecane"^^xsd:string,
+        "adakane-12"^^xsd:string,
+        "bihexyl"^^xsd:string,
+        "dihexyl"^^xsd:string,
+        "duodecane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q150744"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dodecane"^^xsd:string ;
+    rdfs:comment "Dodecane (also known as dihexyl, bihexyl, adakane 12, or duodecane) is an oily liquid n-alkane hydrocarbon with the chemical formula C12H26 (which has 355 isomers)."^^xsd:string .
+

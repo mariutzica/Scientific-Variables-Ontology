@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:magnetic_reynolds_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "magnetic_reynolds_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1852720"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Magnetic_Reynolds_number"^^xsd:string ;
+    rdfs:comment "In magnetohydrodynamics, the magnetic Reynolds number (Rm) is a dimensionless quantity that estimates the relative effects of advection or induction of a magnetic field by the motion of a conducting medium to the magnetic diffusion. It is the magnetic analogue of the Reynolds number in fluid mechanics and is typically defined by:"^^xsd:string .
+

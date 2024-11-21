@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:euphausiacea a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "euphausiacea"^^xsd:string ;
+    svo:has_synonym "krill"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q29498"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Krill"^^xsd:string ;
+    rdfs:comment "Krill are small crustaceans of the order Euphausiacea, and are found in all the world's oceans. The name \"krill\" comes from the Norwegian word krill, meaning \"small fry of fish\", which is also often attributed to species of fish."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:rolling_resistance_coefficient a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "rolling_resistance_coefficient"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q914921"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Rolling_resistance#Rolling_resistance_coefficient_examples"^^xsd:string ;
+    rdfs:comment "Rolling resistance, sometimes called rolling friction or rolling drag, is the force resisting the motion when a body (such as a ball, tire, or wheel) rolls on a surface. It is mainly caused by non-elastic effects; that is, not all the energy needed for deformation (or movement) of the wheel, roadbed, etc., is recovered when the pressure is removed. Two forms of this are hysteresis losses (see below), and permanent (plastic) deformation of the object or the surface (e.g. soil). Note that the slippage between the wheel and the surface also results in energy dissipation. Although some researchers have included this term in rolling resistance, some suggest that this dissipation term should be treated separately from rolling resistance because it is due to the applied torque to the wheel and the resultant slip between the wheel and ground, which is called slip loss or slip resistance. In addition, only the so-called slip resistance involves friction, therefore the name \"rolling friction\" is to an extent a misnomer."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:turbellaria a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "turbellaria"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q212798"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Turbellaria"^^xsd:string ;
+    rdfs:comment "The Turbellaria are one of the traditional sub-divisions of the phylum Platyhelminthes (flatworms), and include all the sub-groups that are not exclusively parasitic. There are about 4,500 species, which range from 1 mm (0.039 in) to large freshwater forms more than 500 mm (20 in) long or terrestrial species like Bipalium kewense which can reach 600 mm (24 in) in length. All the larger forms are flat with ribbon-like or leaf-like shapes, since their lack of respiratory and circulatory systems means that they have to rely on diffusion for internal transport of metabolites. However, many of the smaller forms are round in cross section. Most are predators, and all live in water or in moist terrestrial environments. Most forms reproduce sexually and with few exceptions all are simultaneous hermaphrodites."^^xsd:string .
+

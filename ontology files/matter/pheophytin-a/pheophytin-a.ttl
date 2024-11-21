@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pheophytin-a a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "pheophytin-a"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q115237"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pheophytin"^^xsd:string ;
+    rdfs:comment "Pheophytin  or phaeophytin is a chemical compound that serves as the first electron carrier intermediate in the electron transfer pathway of Photosystem II (PS II) in plants, and the type II photosynthetic reaction center (RC P870) found in purple bacteria. In both PS II and RC P870, light drives electrons from the reaction center through pheophytin, which then passes the electrons to a quinone (QA) in RC P870 and RC P680. The overall mechanisms, roles, and purposes of the pheophytin molecules in the two transport chains are analogous to each other."^^xsd:string .
+

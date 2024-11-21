@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:aqueous a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "aqueous"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q906356"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Aqueous_solution"^^xsd:string ;
+    rdfs:comment "An aqueous solution is a solution in which the solvent is water. It is mostly shown in chemical equations by appending (aq) to the relevant chemical formula. For example, a solution of table salt, or sodium chloride (NaCl), in water would be represented as Na+(aq) + Cl−(aq). The word aqueous (which comes from aqua) means pertaining to, related to, similar to, or dissolved in, water. As water is an excellent solvent and is also naturally abundant, it is a ubiquitous solvent in chemistry. Since water is frequently used as the solvent in experiments, the word solution refers to an aqueous solution, unless the solvent is specified.A non-aqueous solution is a solution in which the solvent is a liquid, but is not water. (See also Solvent and Inorganic nonaqueous solvent.)"^^xsd:string .
+

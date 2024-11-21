@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28land-has-abstraction-surface%29-is-location-of-air%29-has-property-%28incoming_component_of_sensible_heat_energy_flux%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "land_surface_air__incoming_component_of_sensible_heat_energy_flux"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/surface> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/air> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/incoming_component> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/land> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/sensible_heat_energy_flux> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28land-has-abstraction-surface%29-is-location-of-air> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/incoming_component_of_sensible_heat_energy_flux> ;
+    svo:has_original_label "land_surface_air_heat~incoming~sensible__energy_flux"^^xsd:string .
+

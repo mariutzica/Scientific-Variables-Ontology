@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:neptunium-239 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "neptunium-239"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2393673"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isotopes_of_neptunium#Neptunium-239"^^xsd:string ;
+    rdfs:comment "Neptunium (93Np) is usually considered an artificial element, although trace quantities are found in nature, so a standard atomic weight cannot be given. Like all trace or artificial elements, it has no stable isotopes. The first isotope to be synthesized and identified was 239Np in 1940, produced by bombarding 238U with neutrons to produce 239U, which then underwent beta decay to 239Np."^^xsd:string .
+

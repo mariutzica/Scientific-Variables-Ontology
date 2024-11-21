@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:philopotamidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "philopotamidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1316239"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Philopotamidae"^^xsd:string ;
+    rdfs:comment "Philopotamidae is a family of insects in the order Trichoptera, the caddisflies. They are known commonly as the finger-net caddisflies.The aquatic larvae of these caddisflies spin mesh nets of silk in flowing water to catch food. A larva can spin over a kilometer of extremely thin silk to create its intricate net.Subfamilies and genera include:"^^xsd:string .
+

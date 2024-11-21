@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cirratulidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "cirratulidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3553827"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cirratulidae"^^xsd:string ;
+    rdfs:comment "Cirratulidae is a family of marine polychaete worms. Members of the family are found worldwide, mostly living in mud or rock crevices. Most are deposit feeders, but some graze on algae or are suspension feeders."^^xsd:string .
+

@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lovastatin-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "lovastatin-acid"^^xsd:string ;
+    svo:has_synonym "Lovastatin"^^xsd:string,
+        "mevacor"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q417740"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lovastatin"^^xsd:string ;
+    rdfs:comment "Lovastatin, sold under the brand name Mevacor among others, is a statin medication, to treat high blood cholesterol and reduce the risk of cardiovascular disease. Its use is recommended together with lifestyle changes. It is taken by mouth.Common side effects include diarrhea, constipation, headache, muscles pains, rash, and trouble sleeping. Serious side effects may include liver problems, muscle breakdown, and kidney failure. Use during pregnancy may harm the baby and use during breastfeeding is not recommended. It works by decreasing the liver's ability to produce cholesterol by blocking the enzyme HMG-CoA reductase.Lovastatin was patented in 1979 and approved for medical use in 1987. It is on the World Health Organization's List of Essential Medicines. It is available as a generic medication. In 2020, it was the 99th most commonly prescribed medication in the United States, with more than 7 million prescriptions."^^xsd:string .
+

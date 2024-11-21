@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:programming a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "programming"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q80006"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Computer_programming"^^xsd:string ;
+    rdfs:comment "Computer programming or coding is the composition of sequences of instructions, called programs, that computers can follow to perform tasks. It involves designing and implementing algorithms, step-by-step specifications of procedures, by writing code in one or more programming languages. Programmers typically use high-level programming languages that are more easily intelligible to humans than machine code, which is directly executed by the central processing unit. Proficient programming usually requires expertise in several different subjects, including knowledge of the application domain, details of programming languages and generic code libraries, specialized algorithms, and formal logic."^^xsd:string .
+

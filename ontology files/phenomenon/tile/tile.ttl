@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tile a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "tile"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q468402"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tile"^^xsd:string ;
+    rdfs:comment "Tiles are usually thin, square or rectangular coverings manufactured from hard-wearing material such as ceramic, stone, metal, baked clay, or even glass. They are generally fixed in place in an array to cover roofs, floors, walls, edges, or other objects such as tabletops.  Alternatively, tile can sometimes refer to similar units made from lightweight materials such as perlite, wood, and mineral wool, typically used for wall and ceiling applications. In another sense, a tile is a construction tile or similar object, such as rectangular counters used in playing games (see tile-based game). The word is derived from the French word tuile, which is, in turn, from the Latin word tegula, meaning a roof tile composed of fired clay."^^xsd:string .
+

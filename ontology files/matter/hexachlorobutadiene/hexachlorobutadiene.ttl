@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hexachlorobutadiene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "hexachlorobutadiene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q416393"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hexachlorobutadiene"^^xsd:string ;
+    rdfs:comment "Hexachlorobutadiene, (often abbreviated as \"HCBD\") Cl2C=C(Cl)C(Cl)=CCl2, is a colorless liquid at room temperature that has an odor similar to that of turpentine.  It is a chlorinated aliphatic diene with niche applications but is most commonly used as a solvent for other chlorine-containing compounds."^^xsd:string .
+

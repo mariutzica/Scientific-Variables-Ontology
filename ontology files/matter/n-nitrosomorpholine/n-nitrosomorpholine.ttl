@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:n-nitrosomorpholine a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "n-nitrosomorpholine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q22138414"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/N-Nitrosomorpholine"^^xsd:string ;
+    rdfs:comment "N-Nitrosomorpholine (NNM, NMOR) is an organic compound which is known to be a carcinogen and mutagen."^^xsd:string .
+

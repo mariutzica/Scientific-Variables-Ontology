@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:earth-mantle a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "earth-mantle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q101949"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Earth's_mantle"^^xsd:string ;
+    rdfs:comment "Earth's mantle is a layer of silicate rock between the crust and the outer core. It has a mass of 4.01 × 1024 kg and thus makes up 67% of the mass of Earth. It has a thickness of 2,900 kilometers (1,800 mi) making up about 84% of Earth's volume. It is predominantly solid but, on geologic time scales, it behaves as a viscous fluid, sometimes described as having the consistency of caramel. Partial melting of the mantle at mid-ocean ridges produces oceanic crust, and partial melting of the mantle at subduction zones produces continental crust."^^xsd:string .
+

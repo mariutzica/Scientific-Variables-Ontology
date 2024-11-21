@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:solar_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "solar_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q335272"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Solar_constant"^^xsd:string ;
+    rdfs:comment "The solar constant (GSC) measures the amount of energy received by a given area one astronomical unit away from the Sun. More specifically, it is a flux density measuring mean solar electromagnetic radiation (total solar irradiance) per unit area. It is measured on a surface perpendicular to the rays, one astronomical unit (au) from the Sun (roughly the distance from the Sun to the Earth)."^^xsd:string .
+

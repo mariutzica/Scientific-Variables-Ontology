@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nitrous-oxide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "nitrous-oxide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q905750"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nitrous_oxide"^^xsd:string ;
+    rdfs:comment "Nitrous oxide (dinitrogen oxide or dinitrogen monoxide), commonly known as laughing gas, nitrous, or nos, is a chemical compound, an oxide of nitrogen with the formula N2O. At room temperature, it is a colourless non-flammable gas, and has a slightly sweet scent and taste. At elevated temperatures, nitrous oxide is a powerful oxidiser similar to molecular oxygen."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fasting a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "fasting"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q44602"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fasting"^^xsd:string ;
+    rdfs:comment "Fasting is the abstention from eating and sometimes drinking. From a purely physiological context, \"fasting\" may refer to the metabolic status of a person who has not eaten overnight (see \"Breakfast\"), or to the metabolic state achieved after complete digestion and absorption of a meal. Metabolic changes in the fasting state begin after absorption of a meal (typically 3–5 hours after eating)."^^xsd:string .
+

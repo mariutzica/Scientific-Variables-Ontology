@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:malaoxon a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "malaoxon"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3270235"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Malaoxon"^^xsd:string ;
+    rdfs:comment "Malaoxon (Liromat, Malation oxon, Malthon oxon) is a chemical compound with the formula C10H19O7PS. More specifically, it is a phosphorothioate. It is a breakdown product of, and more toxic than, malathion."^^xsd:string .
+

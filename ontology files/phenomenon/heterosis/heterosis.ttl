@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:heterosis a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "heterosis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q339051"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Heterosis"^^xsd:string ;
+    rdfs:comment "Heterosis, hybrid vigor, or outbreeding enhancement is the improved or increased function of any biological quality in a hybrid offspring. An offspring is heterotic if its traits are enhanced as a result of mixing the genetic contributions of its parents. The heterotic offspring often has traits that are more than the simple addition of the parents' traits, and can be explained by Mendelian or non-Mendelian inheritance. Typical heterotic/hybrid traits of interest in agriculture are higher yield, quicker maturity, stability, drought tolerance etc. "^^xsd:string .
+

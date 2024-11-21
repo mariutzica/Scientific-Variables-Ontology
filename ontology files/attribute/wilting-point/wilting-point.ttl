@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:wilting-point a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "wilting-point"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q742350"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Permanent_wilting_point"^^xsd:string ;
+    rdfs:comment "Permanent wilting point (PWP) or wilting point (WP) is defined as the minimum amount of water in the soil that the plant requires not to wilt. If the soil water content decreases to this or any lower point a plant wilts and can no longer recover its turgidity when placed in a saturated atmosphere for 12 hours. The physical definition of the wilting point, symbolically expressed as θpwp or θwp, is said by convention as the water content at −1,500 kPa (−15 bar) of suction pressure, or negative hydraulic head."^^xsd:string .
+

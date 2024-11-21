@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/property/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/property/">
+<owl:NamedIndividual rdf:about="amplitude">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amplitude</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Amplitude</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q159190</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The amplitude of a periodic variable is a measure of its change in a single period (such as time or spatial period). The amplitude of a non-periodic signal is its magnitude compared with a reference value. There are various definitions of amplitude (see below), which are all functions of the magnitude of the differences between the variable's extreme values. In older texts, the phase of a periodic function is sometimes called the amplitude.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

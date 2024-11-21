@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:element a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "element"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11344"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chemical_element"^^xsd:string ;
+    rdfs:comment "A chemical element is a chemical substance that cannot be broken down into other substances. The basic particle that constitutes a chemical element is the atom, and chemical elements are distinguished from each other by the number of protons in the nuclei of their atoms. This is in contrast to chemical compounds and mixtures."^^xsd:string .
+

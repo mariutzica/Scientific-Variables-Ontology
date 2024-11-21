@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:twin-prime_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "twin-prime_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q110863"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Twin_prime#First_Hardy.E2.80.93Littlewood_conjecture"^^xsd:string ;
+    rdfs:comment "A twin prime is a prime number that is either 2 less or 2 more than another prime number—for example, either member of the twin prime pair (41, 43). In other words, a twin prime is a prime that has a prime gap of two. Sometimes the term twin prime is used for a pair of twin primes; an alternative name for this is prime twin or prime pair."^^xsd:string .
+

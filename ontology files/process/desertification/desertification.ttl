@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:desertification a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "desertification"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q183481"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Desertification"^^xsd:string ;
+    rdfs:comment "Desertification is a type of gradual land degradation of fertile land into arid desert due to a combination of natural processes and human activities. This spread of arid areas is caused by a variety of factors, such as overexploitation of soil as a result of human activity and the effects of climate change. Geographic areas most affected are located in Africa (Sahel region), Asia (Gobi Desert and Mongolia) and parts of South America. Drylands occupy approximately 40–41% of Earth's land area and are home to more than 2 billion people. Effects of desertification include sand and dust storms, food insecurity, and poverty. "^^xsd:string .
+

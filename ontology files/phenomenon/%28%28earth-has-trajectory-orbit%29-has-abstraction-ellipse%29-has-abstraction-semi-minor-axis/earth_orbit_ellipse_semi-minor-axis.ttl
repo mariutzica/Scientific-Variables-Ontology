@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28%28earth-has-trajectory-orbit%29-has-abstraction-ellipse%29-has-abstraction-semi-minor-axis> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "earth_orbit_ellipse_semi-minor-axis"^^xsd:string ;
+    svo:has_abstraction <http://scientificvariablesontology.org/svo/abstraction/semi-minor-axis> ;
+    svo:has_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28earth-has-trajectory-orbit%29-has-abstraction-ellipse> .
+

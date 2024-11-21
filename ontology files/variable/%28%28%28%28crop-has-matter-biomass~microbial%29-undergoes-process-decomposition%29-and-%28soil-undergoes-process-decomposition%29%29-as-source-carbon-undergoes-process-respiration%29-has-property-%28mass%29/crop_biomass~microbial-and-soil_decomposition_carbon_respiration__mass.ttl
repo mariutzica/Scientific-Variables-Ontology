@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28%28%28crop-has-matter-biomass~microbial%29-undergoes-process-decomposition%29-and-%28soil-undergoes-process-decomposition%29%29-as-source-carbon-undergoes-process-respiration%29-has-property-%28mass%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "crop_biomass~microbial-and-soil_decomposition_carbon_respiration__mass"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/microbial> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/biomass>,
+        <http://scientificvariablesontology.org/svo/matter/carbon>,
+        <http://scientificvariablesontology.org/svo/matter/soil> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/decomposition>,
+        <http://scientificvariablesontology.org/svo/process/respiration> ;
+    svo:contains_role_reference_to <http://scientificvariablesontology.org/svo/role/crop> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28%28%28crop-has-matter-biomass~microbial%29-undergoes-process-decomposition%29-and-%28soil-undergoes-process-decomposition%29%29-as-source-carbon-undergoes-process-respiration> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mass> ;
+    svo:has_original_label "crop_biomass~microbial-and-soil_carbon__decomposition_respiration_mass"^^xsd:string .
+

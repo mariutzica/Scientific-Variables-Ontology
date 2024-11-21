@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lumbriculidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "lumbriculidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3737642"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lumbriculidae"^^xsd:string ;
+    rdfs:comment "The Lumbriculidae are a family of microdrile oligochaetes common in freshwater environments, including streams, lakes, marshes, wells and groundwater. They should not be confused with the earthworm family Lumbricidae. Many species and genera are highly endemic, mainly in Siberia and the western parts of North America. Lumbriculidae are the only family in the order Lumbriculida.The family contains:"^^xsd:string .
+

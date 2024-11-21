@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:malathion a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "malathion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q423005"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Malathion"^^xsd:string ;
+    rdfs:comment "Malathion is an organophosphate insecticide which acts as an acetylcholinesterase inhibitor. In the USSR, it was known as carbophos, in New Zealand and Australia as maldison and in South Africa as mercaptothion."^^xsd:string .
+

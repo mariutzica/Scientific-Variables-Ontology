@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dicamba a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dicamba"^^xsd:string ;
+    svo:has_synonym "3,6-dichloro-2-methoxybenzoic-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q424684"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dicamba"^^xsd:string ;
+    rdfs:comment "Dicamba (3,6-dichloro-2-methoxybenzoic acid) is a broad-spectrum herbicide first registered in 1967.  Brand names for formulations of this herbicide include Dianat, Banvel, Diablo, Oracle and Vanquish.  This chemical compound is a chlorinated derivative of o-anisic acid.Around 2016, dicamba's use came under significant scrutiny due to its tendency to spread from treated fields into neighboring fields, causing damage."^^xsd:string .
+

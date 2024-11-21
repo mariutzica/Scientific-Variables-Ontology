@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28land-has-abstraction-surface%29-is-location-of-radiation~net~shortwave%29-has-property-%28energy_flux%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "land_surface_radiation~net~shortwave__energy_flux"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/surface> ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/net>,
+        <http://scientificvariablesontology.org/svo/attribute/shortwave> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/land>,
+        <http://scientificvariablesontology.org/svo/phenomenon/radiation> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28land-has-abstraction-surface%29-is-location-of-radiation~net~shortwave> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/energy_flux> .
+

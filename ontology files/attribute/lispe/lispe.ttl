@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lispe a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "lispe"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6559096"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lispe"^^xsd:string ;
+    rdfs:comment "Lispe is a genus of true flies, belonging to the family Muscidae.The adult are predators of small insects. Larvae are also predators, living in damp sand and mud."^^xsd:string .
+

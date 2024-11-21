@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pteromicra a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "pteromicra"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q14660058"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pteromicra"^^xsd:string ;
+    rdfs:comment "Pteromicra is a genus of flies in the family Sciomyzidae, the marsh flies or snail-killing flies."^^xsd:string .
+

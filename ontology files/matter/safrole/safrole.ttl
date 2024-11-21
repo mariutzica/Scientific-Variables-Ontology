@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:safrole a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "safrole"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q412424"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Safrole"^^xsd:string ;
+    rdfs:comment "Safrole is an organic compound with the formula CH2O2C6H3CH2CH=CH2.  It is a colorless oily liquid, although impure samples can appear yellow.  A member of the phenylpropanoid family of natural products, it is found in sassafras plants, among others.  Small amounts are found in a wide variety of plants, where it functions as a natural antifeedant. Ocotea pretiosa, which grows in Brazil, and Sassafras albidum, which grows in eastern North America, are the main natural sources of safrole. It has a characteristic \"sweet-shop\" aroma."^^xsd:string .
+

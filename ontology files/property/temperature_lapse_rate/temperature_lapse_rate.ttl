@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:temperature_lapse_rate a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "temperature_lapse_rate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q66900467"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lapse_rate"^^xsd:string ;
+    rdfs:comment "The lapse rate is the rate at which an atmospheric variable, normally temperature in Earth's atmosphere, falls with altitude. Lapse rate arises from the word lapse, in the sense of a gradual fall.  In dry air, the adiabatic lapse rate is 9.8 °C/km (5.4 °F per 1,000 ft). At Saturated Air Lapse Rate (SALR), where value is 1.1 °C/1000ft - 2.8 °C/1000ft as obtained from ICAO."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paucity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "paucity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q815758"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Scarcity"^^xsd:string ;
+    rdfs:comment "In economics, scarcity \"refers to the basic fact of life that there exists only a finite amount of human and nonhuman resources which the best technical knowledge is capable of using to produce only limited maximum amounts of each economic good.\" If the conditions of scarcity didn't exist and an \"infinite amount of every good could be produced or human wants fully satisfied ... there would be no economic goods, i.e. goods that are relatively scarce...\" Scarcity is the limited availability of a commodity, which may be in demand in the market or by the commons. Scarcity also includes an individual's lack of resources to buy commodities. The opposite of scarcity is abundance. Scarcity plays a key role in economic theory, and it is essential for a \"proper definition of economics itself\"."^^xsd:string .
+

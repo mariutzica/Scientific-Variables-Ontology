@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:magnetization a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "magnetization"^^xsd:string ;
+    svo:has_synonym "magnetization"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q856711"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Magnetization"^^xsd:string ;
+    rdfs:comment "In classical electromagnetism, magnetization is the vector field that expresses the density of permanent or induced magnetic dipole moments in a magnetic material. Accordingly, physicists and engineers usually define magnetization as the quantity of magnetic moment per unit volume."^^xsd:string .
+

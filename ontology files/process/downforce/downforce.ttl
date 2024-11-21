@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:downforce a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "downforce"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q568491"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Downforce"^^xsd:string ;
+    rdfs:comment "Downforce is a downwards lift force created by the aerodynamic features of a vehicle. If the vehicle is a car, the purpose of downforce is to allow the car to travel faster by increasing the vertical force on the tires, thus creating more grip. If the vehicle is a fixed-wing aircraft, the purpose of the downforce on the horizontal stabilizer is to maintain longitudinal stability and allow the pilot to control the aircraft in pitch."^^xsd:string .
+

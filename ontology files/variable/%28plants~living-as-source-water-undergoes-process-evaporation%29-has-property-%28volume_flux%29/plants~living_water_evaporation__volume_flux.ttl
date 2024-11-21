@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28plants~living-as-source-water-undergoes-process-evaporation%29-has-property-%28volume_flux%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "plants~living_water_evaporation__volume_flux"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/living> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/plant> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/evaporation> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/plants~living-as-source-water-undergoes-process-evaporation> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/volume_flux> ;
+    svo:has_original_label "plants~living_water__evaporation_volume_flux"^^xsd:string .
+

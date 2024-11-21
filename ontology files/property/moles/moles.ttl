@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:moles a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "moles"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q41509"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mole_(unit)"^^xsd:string ;
+    rdfs:comment "The mole (symbol mol) is the unit of amount of substance in the International System of Units (SI). The quantity amount of substance is a measure of how many elementary entities of a given substance are in an object or sample. "^^xsd:string .
+

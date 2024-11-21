@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28snowpack-undergoes-process-isobaric-process%29-has-property-%28z_mean_of_mass-specific_heat_capacity%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "snowpack_isobaric-process__z_mean_of_mass-specific_heat_capacity"^^xsd:string ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/z_mean> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/snowpack> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/isobaric-process> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/mass-specific_heat_capacity> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/snowpack-undergoes-process-isobaric-process> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/z_mean_of_mass-specific_heat_capacity> ;
+    svo:has_original_label "snowpack__z_mean_of_mass-specific_isobaric_heat_capacity"^^xsd:string .
+

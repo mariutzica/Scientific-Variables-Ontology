@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28channel-contains-water%29-as-main-%28channel-has-part-bottom-has-abstraction-surface%29-as-main> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "channel_water_channel_bottom_surface"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :channel-contains-water,
+        :channel-has-part-bottom-has-abstraction-surface .
+

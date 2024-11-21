@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bedload a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "bedload"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q889515"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bed_load"^^xsd:string ;
+    rdfs:comment "The term bed load or bedload describes particles in a flowing fluid (usually water) that are transported along the stream bed. Bed load is complementary to suspended load and wash load."^^xsd:string .
+

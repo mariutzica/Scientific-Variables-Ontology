@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hypocenter a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "hypocenter"^^xsd:string ;
+    svo:has_synonym "focus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q107410"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Hypocenter"^^xsd:string ;
+    rdfs:comment "In seismology, a hypocenter or hypocentre (from Ancient Greek  ὑπόκεντρον (hupόkentron) 'below the center') is the point of origin of an earthquake. A synonym is the focus of an earthquake."^^xsd:string .
+

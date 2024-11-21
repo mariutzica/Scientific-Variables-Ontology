@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cosmic-background-radiation a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "cosmic-background-radiation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q12902765"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cosmic_background_radiation"^^xsd:string ;
+    rdfs:comment "Cosmic background radiation is electromagnetic radiation that fills all space. The origin of this radiation depends on the region of the spectrum that is observed. One component is the cosmic microwave background. This component is redshifted photons that have freely streamed from an epoch when the Universe became transparent for the first time to radiation. Its discovery and detailed observations of its properties are considered one of the major confirmations of the Big Bang. The discovery (by chance in 1965) of the cosmic background radiation suggests that the early universe was dominated by a radiation field, a field of extremely high temperature and pressure.The Sunyaev–Zel'dovich effect shows the phenomena of radiant cosmic background radiation interacting with \"electron\" clouds distorting the spectrum of the radiation."^^xsd:string .
+

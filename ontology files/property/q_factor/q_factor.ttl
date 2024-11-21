@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:q_factor a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "q_factor"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q830521"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Q_factor"^^xsd:string ;
+    rdfs:comment "In physics and engineering, the quality factor or Q factor is a dimensionless parameter that describes how underdamped an oscillator or resonator is.  It is defined as the ratio of the initial energy stored in the resonator to the energy lost in one radian of the cycle of oscillation. Q factor is alternatively defined as the ratio of a resonator's centre frequency to its bandwidth when subject to an oscillating driving force.  These two definitions give numerically similar, but not identical, results. Higher Q indicates a lower rate of energy loss and the oscillations die out more slowly. A pendulum suspended from a high-quality bearing, oscillating in air, has a high Q, while a pendulum immersed in oil has a low one. Resonators with high quality factors have low damping, so that they ring or vibrate longer."^^xsd:string .
+

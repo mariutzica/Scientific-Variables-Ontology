@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:platelet a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "platelet"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q101026"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Platelet"^^xsd:string ;
+    rdfs:comment "Platelets or thrombocytes (from Greek θρόμβος, \"clot\" and κύτος, \"cell\") are a component of blood whose function (along with the coagulation factors) is to react to bleeding from blood vessel injury by clumping, thereby initiating a blood clot. Platelets have no cell nucleus; they are fragments of cytoplasm that are derived from the megakaryocytes of the bone marrow or lung, which then enter the circulation. Platelets are found only in mammals, whereas in other vertebrates (e.g. birds, amphibians), thrombocytes circulate as intact mononuclear cells.: 3"^^xsd:string .
+

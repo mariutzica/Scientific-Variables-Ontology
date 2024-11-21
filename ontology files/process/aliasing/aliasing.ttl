@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:aliasing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "aliasing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q868732"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Aliasing"^^xsd:string ;
+    rdfs:comment "In signal processing and related disciplines, aliasing is an effect that causes different signals to become indistinguishable (or aliases of one another) when sampled. It also often refers to the distortion or artifact that results when a signal reconstructed from samples is different from the original continuous signal."^^xsd:string .
+

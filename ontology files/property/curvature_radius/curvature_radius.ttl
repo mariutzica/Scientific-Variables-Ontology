@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:curvature_radius a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "curvature_radius"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1136069"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Radius_of_curvature"^^xsd:string ;
+    rdfs:comment "In differential geometry, the radius of curvature, R, is the reciprocal of the curvature. For a curve, it equals the radius of the circular arc which best approximates the curve at that point. For surfaces, the radius of curvature is the radius of a circle that best fits a normal section or combinations thereof."^^xsd:string .
+

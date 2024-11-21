@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:phase_velocity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "phase_velocity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q13824"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Phase_velocity"^^xsd:string ;
+    rdfs:comment "The phase velocity of a wave is the rate at which the wave propagates in any medium. This is the velocity at which the phase of any one frequency component of the wave travels. For such a component, any given phase of the wave (for example, the crest) will appear to travel at the phase velocity. The phase velocity is given in terms of the wavelength λ (lambda) and time period T as"^^xsd:string .
+

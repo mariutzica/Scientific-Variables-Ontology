@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28snowpack-contains-%28snow-undergoes-process-desublimation%29%29-has-property-%28mass_flux%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "snowpack_snow_desublimation__mass_flux"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/snow> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/snowpack> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/desublimation> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/snowpack-contains-%28snow-undergoes-process-desublimation%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mass_flux> ;
+    svo:has_original_label "snowpack__desublimation_mass_flux"^^xsd:string .
+

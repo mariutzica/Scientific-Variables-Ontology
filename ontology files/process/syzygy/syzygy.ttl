@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:syzygy a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "syzygy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q13567909"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Syzygy_(astronomy)"^^xsd:string ;
+    rdfs:comment "In astronomy, a syzygy ( SIZ-ə-jee; from Ancient Greek  συζυγία (suzugía) 'union, yoke') is a roughly straight-line configuration of three or more celestial bodies in a gravitational system."^^xsd:string .
+

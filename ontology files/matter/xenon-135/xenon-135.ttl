@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:xenon-135 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "xenon-135"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6501182"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Xenon-135"^^xsd:string ;
+    rdfs:comment "Xenon-135 (135Xe) is an unstable isotope of xenon with a half-life of about 9.2 hours. 135Xe is a fission product of uranium and it is the most powerful known neutron-absorbing nuclear poison (2 million barns; up to 3 million barns under reactor conditions), with a significant effect on nuclear reactor operation. The ultimate yield of xenon-135 from fission is 6.3%, though most of this is from fission-produced tellurium-135 and iodine-135."^^xsd:string .
+

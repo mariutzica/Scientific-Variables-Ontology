@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ovulation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "ovulation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q187082"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ovulation"^^xsd:string ;
+    rdfs:comment "Ovulation is the release of eggs from the ovaries. In women, this event occurs when the ovarian follicles rupture and release the secondary oocyte ovarian cells. After ovulation, during the luteal phase, the egg will be available to be fertilized by sperm. In addition, the uterine lining (endometrium) is thickened to be able to receive a fertilized egg. If no conception occurs, the uterine lining as well as the egg will be shed during menstruation."^^xsd:string .
+

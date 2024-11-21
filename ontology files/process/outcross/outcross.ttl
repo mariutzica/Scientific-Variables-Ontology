@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:outcross a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "outcross"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q779009"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Outcrossing"^^xsd:string ;
+    rdfs:comment "Out-crossing or out-breeding is the technique of crossing between different breeds. This is the practice of introducing distantly related genetic material into a breeding line, thereby increasing genetic diversity.  "^^xsd:string .
+

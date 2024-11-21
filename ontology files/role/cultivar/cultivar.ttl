@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cultivar a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "cultivar"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4886"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cultivar"^^xsd:string ;
+    rdfs:comment "A cultivar is a kind of cultivated plant that people have selected for desired traits and when propagated retain those traits. Methods used to propagate cultivars include: division, root and stem cuttings, offsets, grafting, tissue culture, or carefully controlled seed production. Most cultivars arise from purposeful human manipulation, but some originate from wild plants that have distinctive characteristics. Cultivar names are chosen according to rules of the International Code of Nomenclature for Cultivated Plants (ICNCP), and not all cultivated plants qualify as cultivars. Horticulturists generally believe the word cultivar was coined as a term meaning \"cultivated variety\"."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydroxide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "hydroxide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q425597"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydroxide"^^xsd:string ;
+    rdfs:comment "Hydroxide is a diatomic anion with chemical formula OH−. It consists of an oxygen and hydrogen atom held together by a single covalent bond, and carries a negative electric charge. It is an important but usually minor constituent of water. It functions as a base, a ligand, a nucleophile, and a catalyst. The hydroxide ion forms salts, some of which dissociate in aqueous solution, liberating solvated hydroxide ions. Sodium hydroxide is a multi-million-ton per annum commodity chemical."^^xsd:string .
+

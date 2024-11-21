@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:stratum a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "stratum"^^xsd:string ;
+    svo:has_synonym "layer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q12758989"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Stratum"^^xsd:string ;
+    rdfs:comment "In geology and related fields, a stratum (PL: strata) is a layer of rock or sediment characterized by certain lithologic properties or attributes that distinguish it from adjacent layers from which it is separated by visible surfaces known as either bedding surfaces or bedding planes. Prior to the publication of the International Stratigraphic Guide, older publications have defined a stratum as either being either equivalent to a single bed or composed of a number of beds; as a layer greater than 1 cm in thickness and constituting a part of a bed; or a general term that includes both bed and lamina."^^xsd:string .
+

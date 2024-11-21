@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydroptilidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "hydroptilidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q253573"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydroptilidae"^^xsd:string ;
+    rdfs:comment "The Hydroptilidae are a large family of caddisflies (Trichoptera) with a worldwide distribution. They are commonly known as microcaddisflies or purse-case caddisflies, in reference to two characteristic traits of this family: Hydroptilidae are much smaller than other caddisflies, rarely exceeding 5 mm (0.20 in) in length. Their larvae do not build a protective case until the final instar of their growth. At that time however, they build a typically Purse-shaped case, either portable or stuck to the substrate, in which the larva finishes growth and pupates."^^xsd:string .
+

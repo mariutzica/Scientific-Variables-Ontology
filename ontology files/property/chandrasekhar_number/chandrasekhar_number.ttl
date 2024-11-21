@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chandrasekhar_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "chandrasekhar_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4516333"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chandrasekhar_number"^^xsd:string ;
+    rdfs:comment "The Chandrasekhar number is a dimensionless quantity used in magnetic convection to represent ratio of the Lorentz force to the viscosity. It is named after the Indian astrophysicist Subrahmanyan Chandrasekhar."^^xsd:string .
+

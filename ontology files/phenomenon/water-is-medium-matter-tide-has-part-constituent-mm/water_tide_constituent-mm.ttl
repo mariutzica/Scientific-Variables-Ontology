@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:water-is-medium-matter-tide-has-part-constituent-mm a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "water_tide_constituent-mm"^^xsd:string ;
+    svo:contains_primary_matter <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:has_part <http://scientificvariablesontology.org/svo/part/constituent-mm> ;
+    svo:has_phenomenon :tide .
+

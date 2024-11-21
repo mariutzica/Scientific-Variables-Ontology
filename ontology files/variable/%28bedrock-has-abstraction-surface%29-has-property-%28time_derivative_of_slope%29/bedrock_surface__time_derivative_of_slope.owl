@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28bedrock-has-abstraction-surface%29-has-property-%28time_derivative_of_slope%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/bedrock-has-abstraction-surface"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/time_derivative_of_slope"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/bedrock"/>
+  <svo:contains_abstraction_reference_to rdf:resource="http://scientificvariablesontology.org/svo/abstraction/surface"/>
+  <svo:contains_operation_reference_to rdf:resource="http://scientificvariablesontology.org/svo/operation/time_derivative"/>
+  <svo:contains_property_reference_to rdf:resource="http://scientificvariablesontology.org/svo/property/slope"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bedrock_surface__time_derivative_of_slope</rdfs:label>
+</owl:NamedIndividual>
+</rdf:RDF>

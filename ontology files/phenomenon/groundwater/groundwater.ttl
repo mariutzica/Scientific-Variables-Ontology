@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:groundwater a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "groundwater"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q161598"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Groundwater"^^xsd:string ;
+    rdfs:comment "Groundwater is the water present beneath Earth's surface in rock and soil pore spaces and in the fractures of rock formations. About 30 percent of all readily available freshwater in the world is groundwater. A unit of rock or an unconsolidated deposit is called an aquifer when it can yield a usable quantity of water. The depth at which soil pore spaces or fractures and voids in rock become completely saturated with water is called the water table. Groundwater is recharged from the surface; it may discharge from the surface naturally at springs and seeps, and can form oases or wetlands. Groundwater is also often withdrawn for agricultural, municipal, and industrial use by constructing and operating extraction wells. The study of the distribution and movement of groundwater is hydrogeology, also called groundwater hydrology."^^xsd:string .
+

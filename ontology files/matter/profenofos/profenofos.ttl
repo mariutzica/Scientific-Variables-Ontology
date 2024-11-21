@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:profenofos a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "profenofos"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2111894"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Profenofos"^^xsd:string ;
+    rdfs:comment "Profenofos is an organophosphate insecticide. It is a liquid with a pale yellow to amber color and a garlic-like odor. It was first registered in the United States in 1982.: 1  As of 2015, it was not approved in the European Union."^^xsd:string .
+

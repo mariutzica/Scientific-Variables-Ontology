@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:manufacture a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "manufacture"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q187939"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Manufacturing"^^xsd:string ;
+    rdfs:comment "Manufacturing is the creation or production of goods with the help of equipment, labor, machines, tools, and chemical or biological processing or formulation. It is the essence of the secondary sector of the economy. The term may refer to a range of human activity, from handicraft to high-tech, but it is most commonly applied to industrial design, in which raw materials from the primary sector are transformed into finished goods on a large scale. Such goods may be sold to other manufacturers for the production of other more complex products (such as aircraft, household appliances, furniture, sports equipment or automobiles), or distributed via the tertiary industry to end users and consumers (usually through wholesalers, who in turn sell to retailers, who then sell them to individual customers)."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:methiocarb a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "methiocarb"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q425378"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Methiocarb"^^xsd:string ;
+    rdfs:comment "Methiocarb is a carbamate pesticide (an acetylecholinesterase inhibitor) which is used as an insecticide, bird repellent, acaricide and molluscicide since the 1960s. Methiocarb has contact and stomach action on mites and neurotoxic effects on molluscs. Seeds treated with methiocarb also affect birds. Other names for methiocarb are mesurol and mercaptodimethur."^^xsd:string .
+

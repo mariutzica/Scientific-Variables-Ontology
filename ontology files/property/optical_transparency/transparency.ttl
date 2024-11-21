@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:optical_transparency a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "transparency"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q487623"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Transparency_and_translucency"^^xsd:string ;
+    rdfs:comment "In the field of optics, transparency (also called pellucidity or diaphaneity) is the physical property of allowing light to pass through the material without appreciable scattering of light. On a macroscopic scale (one in which the dimensions are much larger than the wavelengths of the photons in question), the photons can be said to follow Snell's law. Translucency (also called translucence or translucidity) allows light to pass through, but does not necessarily (again, on the macroscopic scale) follow Snell's law; the photons can be scattered at either of the two interfaces, or internally, where there is a change in index of refraction. In other words, a translucent material is made up of components with different indices of refraction. A transparent material is made up of components with a uniform index of refraction. Transparent materials appear clear, with the overall appearance of one color, or any combination leading up to a brilliant spectrum of every color. The opposite property of translucency is opacity."^^xsd:string .
+

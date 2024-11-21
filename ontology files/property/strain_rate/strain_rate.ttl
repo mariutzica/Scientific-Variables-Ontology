@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:strain_rate a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "strain_rate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3181055"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Strain_rate"^^xsd:string ;
+    rdfs:comment "In materials science, strain rate is the change in strain (deformation) of a material with respect to time."^^xsd:string .
+

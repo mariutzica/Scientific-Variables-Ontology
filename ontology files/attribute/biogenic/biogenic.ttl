@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:biogenic a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "biogenic"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q289472"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Biogenic_substance"^^xsd:string ;
+    rdfs:comment "A biogenic substance is a product made by or of life forms. While the term originally was specific to metabolite compounds that had toxic effects on other organisms, it has developed to encompass any constituents, secretions, and metabolites of plants or animals. In context of molecular biology, biogenic substances are referred to as biomolecules. They are generally isolated and measured through the use of chromatography and mass spectrometry techniques. Additionally, the transformation and exchange of biogenic substances can by modelled in the environment, particularly their transport in waterways."^^xsd:string .
+

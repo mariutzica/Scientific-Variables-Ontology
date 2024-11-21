@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydraulic_roughness a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "hydraulic_roughness"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5954459"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydraulic_roughness"^^xsd:string ;
+    rdfs:comment "Hydraulic roughness is the measure of the amount of frictional resistance water experiences when passing over land and channel  features."^^xsd:string .
+

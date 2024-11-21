@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sun-is-orbiting-center-of-mars a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "sun_mars"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :mars ;
+    svo:orbits :sun .
+

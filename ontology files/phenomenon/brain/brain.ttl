@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:brain a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "brain"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1073"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Brain"^^xsd:string ;
+    rdfs:comment "A brain is an organ that serves as the center of the nervous system in all vertebrate and most invertebrate animals. It is located in the head, usually close to the sensory organs for senses such as vision. It is the most complex organ in a vertebrate's body. In a human, the cerebral cortex contains approximately 14–16 billion neurons, and the estimated number of neurons in the cerebellum is 55–70 billion. Each neuron is connected by synapses to several thousand other neurons. These neurons typically communicate with one another by means of long fibers called axons, which carry trains of signal pulses called action potentials to distant parts of the brain or body targeting specific recipient cells."^^xsd:string .
+

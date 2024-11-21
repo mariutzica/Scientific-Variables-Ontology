@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:stimulation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "stimulation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4114622"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Stimulation"^^xsd:string ;
+    rdfs:comment "Stimulation is the encouragement of development or the cause of activity in general. For example, \"The press provides stimulation of political discourse.\" An interesting or fun activity can be described as \"stimulating\", regardless of its physical effects on senses. Stimulate means to act as a stimulus to; stimulus means something that rouses the recipient to activity; stimuli is the plural of stimulus."^^xsd:string .
+

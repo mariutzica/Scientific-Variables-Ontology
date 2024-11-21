@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:alprazolam a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "alprazolam"^^xsd:string ;
+    svo:has_synonym "xanax"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q319877"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Alprazolam"^^xsd:string ;
+    rdfs:comment "Alprazolam, sold under the brand name Xanax, among others, is a fast-acting, potent tranquilizer of medium duration in the triazolobenzodiazepine (TBZD) class, which are benzodiazepines (BZDs) fused with a triazole ring. It is most commonly used in management of anxiety disorders, specifically panic disorder or generalized anxiety disorder (GAD). Other uses include the treatment of chemotherapy-induced nausea, together with other treatments. GAD improvement occurs generally within a week. Alprazolam is generally taken by mouth.Common side effects include sleepiness, depression, headaches, feeling tired, dry mouth, and memory problems. Some of the sedation and tiredness may improve within a few days. Withdrawal or rebound symptoms may occur if use is suddenly decreased; gradually decreasing the dose over weeks or months may be required. Alprazolam increases all-cause mortality. Alprazolam, like other benzodiazepines, acts through the GABAA receptor.Alprazolam was invented by Jackson Hester at the Upjohn Company"^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:wormaldia a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "wormaldia"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q10720549"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Wormaldia"^^xsd:string ;
+    rdfs:comment "Wormaldia is a genus of fingernet caddisflies in the family Philopotamidae. There are more than 140 described species in Wormaldia. Fossil species have been described from the Late Cretaceous Burmese amber of Myanmar."^^xsd:string .
+

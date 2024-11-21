@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28channel-undergoes-process-meandering%29-undergoes-process-migration> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "channel_meandering_migration"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :channel-undergoes-process-meandering ;
+    svo:undergoes_process <http://scientificvariablesontology.org/svo/process/migration> .
+

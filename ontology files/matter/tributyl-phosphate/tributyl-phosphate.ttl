@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tributyl-phosphate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tributyl-phosphate"^^xsd:string ;
+    svo:has_synonym "tbp"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q613394"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tributyl_phosphate"^^xsd:string ;
+    rdfs:comment "Tributyl phosphate, known commonly as TBP, is an organophosphorus compound with the chemical formula (CH3CH2CH2CH2O)3PO.  This colourless, odorless liquid finds some applications as an extractant and a plasticizer.  It is an ester of phosphoric acid with n-butanol."^^xsd:string .
+

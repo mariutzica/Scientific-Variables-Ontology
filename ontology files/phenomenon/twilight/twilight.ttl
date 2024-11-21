@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:twilight a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "twilight"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q164160"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Twilight"^^xsd:string ;
+    rdfs:comment "Twilight is light produced by sunlight scattering in the upper atmosphere, when the Sun is below the horizon, which illuminates the lower atmosphere and the Earth's surface. The word twilight can also refer to the periods of time when this illumination occurs.The lower the Sun is beneath the horizon, the dimmer the twilight (other factors such as atmospheric conditions being equal). When the Sun reaches 18° below the horizon, the twilight's brightness is nearly zero, and evening twilight becomes nighttime. When the Sun again reaches 18° below the horizon, nighttime becomes morning twilight. Owing to its distinctive quality, primarily the absence of shadows and the appearance of objects silhouetted against the lit sky, twilight has long been popular with photographers and painters, who often refer to it as the blue hour, after the French expression l'heure bleue."^^xsd:string .
+

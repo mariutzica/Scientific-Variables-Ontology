@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:shale a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "shale"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q751300"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Shale"^^xsd:string ;
+    rdfs:comment "Shale is a fine-grained, clastic sedimentary rock formed from mud that is a mix of flakes of clay minerals (hydrous aluminium phyllosilicates, e.g. kaolin, Al2Si2O5(OH)4) and tiny fragments (silt-sized particles) of other minerals, especially quartz and calcite.  Shale is characterized by its tendency to split into thin layers (laminae) less than one centimeter in thickness. This property is called fissility. Shale is the most common sedimentary rock.The term shale is sometimes applied more broadly, as essentially a synonym for mudrock, rather than in the more narrow sense of clay-rich fissile mudrock."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:rock a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "rock"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q8063"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Rock_(geology)"^^xsd:string ;
+    rdfs:comment "In geology, rock (or stone) is any naturally occurring solid mass or aggregate of minerals or mineraloid matter. It is categorized by the minerals included, its chemical composition, and the way in which it is formed. Rocks form the Earth's outer solid layer, the crust, and most of its interior, except for the liquid outer core and pockets of magma in the asthenosphere. The study of rocks involves multiple subdisciplines of geology, including petrology and mineralogy. It may be limited to rocks found on Earth, or it may include planetary geology that studies the rocks of other celestial objects."^^xsd:string .
+

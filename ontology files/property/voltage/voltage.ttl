@@ -1,0 +1,16 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:voltage a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "voltage"^^xsd:string ;
+    svo:has_synonym "electric_potential_difference"^^xsd:string,
+        "electric_pressure"^^xsd:string,
+        "electric_tension"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q25428"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Voltage"^^xsd:string ;
+    rdfs:comment "Voltage, also known as electric pressure, electric tension, or (electric) potential difference, is the difference in electric potential between two points. In a static electric field, it corresponds to the work needed per unit of charge to move a test charge between the two points. In the International System of Units, the derived unit for voltage is named volt.: 166 The voltage between points can be caused by the build-up of electric charge (e.g., a capacitor), and from an electromotive force (e.g., electromagnetic induction in generator, inductors, and transformers). On a macroscopic scale, a potential difference can be caused by electrochemical processes (e.g., cells and batteries), the pressure-induced piezoelectric effect, and the thermoelectric effect."^^xsd:string .
+

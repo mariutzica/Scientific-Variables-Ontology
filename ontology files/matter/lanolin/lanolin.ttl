@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lanolin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "lanolin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q911098"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lanolin"^^xsd:string ;
+    rdfs:comment "Lanolin (from Latin lāna 'wool', and oleum 'oil'), also called wool yolk, wool wax, or wool grease, is a wax secreted by the sebaceous glands of wool-bearing animals. Lanolin used by humans comes from domestic sheep breeds that are raised specifically for their wool. Historically, many pharmacopoeias have referred to lanolin as wool fat (adeps lanae); however, as lanolin lacks glycerides (glycerol esters), it is not a true fat. Lanolin primarily consists of sterol esters instead. Lanolin's waterproofing property aids sheep in shedding water from their coats. Certain breeds of sheep produce large amounts of lanolin."^^xsd:string .
+

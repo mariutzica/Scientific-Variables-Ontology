@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:biomagnification a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "biomagnification"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2304799"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Biomagnification"^^xsd:string ;
+    rdfs:comment "Biomagnification, also known as bioamplification or biological magnification, is the increase in concentration of a substance, e.g a pesticide, in the tissues of organisms at successively higher levels in a food chain. This increase can occur as a result of:"^^xsd:string .
+

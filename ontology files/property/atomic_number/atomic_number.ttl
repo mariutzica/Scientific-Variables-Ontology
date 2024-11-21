@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:atomic_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "atomic_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q23809"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Atomic_number"^^xsd:string ;
+    rdfs:comment "The atomic number or nuclear charge number (symbol Z) of a chemical element is the charge number of an atomic nucleus. For ordinary nuclei, this is equal to the proton number (np) or the number of protons found in the nucleus of every atom of that element. The atomic number can be used to uniquely identify ordinary chemical elements. In an ordinary uncharged atom, the atomic number is also equal to the number of electrons."^^xsd:string .
+

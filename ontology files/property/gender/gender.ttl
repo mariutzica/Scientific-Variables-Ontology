@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gender a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "gender"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q48277"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gender"^^xsd:string ;
+    rdfs:comment "Gender includes the social, psychological, cultural and behavioral aspects of being a man, woman, or other gender identity. Depending on the context, this may include sex-based social structures (i.e. gender roles) and gender expression. Most cultures use a gender binary, in which gender is divided into two categories, and people are considered part of one or the other (boys/men and girls/women); those who are outside these groups may fall under the umbrella term non-binary. Some societies have specific genders besides \"man\" and \"woman\", such as the hijras of South Asia; these are often referred to as third genders (and fourth genders, etc.). Most scholars agree that gender is a central characteristic for social organization."^^xsd:string .
+

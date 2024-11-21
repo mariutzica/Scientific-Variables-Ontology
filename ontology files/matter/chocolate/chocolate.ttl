@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chocolate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chocolate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q195"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Chocolate"^^xsd:string ;
+    rdfs:comment "Chocolate is a food made from roasted and ground cacao seed kernels that is available as a liquid, solid, or paste, either on its own or as a flavoring agent in other foods. Cacao has been consumed in some form since at least the Olmec civilization (19th-11th century BCE), and the majority of Mesoamerican people ─ including the Maya and Aztecs ─ made chocolate beverages.The seeds of the cacao tree have an intense bitter taste and must be fermented to develop the flavor. After fermentation, the seeds are dried, cleaned, and roasted. The shell is removed to produce cocoa nibs, which are then ground to cocoa mass, unadulterated chocolate in rough form. Once the cocoa mass is liquefied by heating, it is called chocolate liquor. The liquor may also be cooled and processed into its two components: cocoa solids and cocoa butter. Baking chocolate, also called bitter chocolate, contains cocoa solids and cocoa butter in varying proportions, without any added sugar. Powdered baking cocoa, which contains more fiber than cocoa butter, can be processed with alkali to produce dutch cocoa. Much of the chocolate consumed today is in the form of sweet chocolate, a combination of cocoa solids, cocoa butter or added vegetable oils, and sugar. Milk chocolate is sweet chocolate that additionally contains milk powder or condensed milk. White chocolate contains cocoa butter, sugar, and milk, but no cocoa solids."^^xsd:string .
+

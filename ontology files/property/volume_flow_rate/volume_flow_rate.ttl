@@ -1,0 +1,16 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:volume_flow_rate a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "volume_flow_rate"^^xsd:string ;
+    svo:has_synonym "discharge"^^xsd:string,
+        "volume_velocity"^^xsd:string,
+        "volumetric_flow_rate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1134348"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Volume_flow_rate"^^xsd:string ;
+    rdfs:comment "volume of fluid which passes per time"^^xsd:string .
+

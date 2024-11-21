@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28soil-contains-%28%28carbon-has-form-pool~stabilized%29-contains-carbon%29%29-has-property-%28year-start_mass%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "soil_carbon_pool~stabilized_carbon__year-start_mass"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/stabilized> ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/pool> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/carbon>,
+        <http://scientificvariablesontology.org/svo/matter/soil> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/soil-contains-%28%28carbon-has-form-pool~stabilized%29-contains-carbon%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/year-start_mass> .
+

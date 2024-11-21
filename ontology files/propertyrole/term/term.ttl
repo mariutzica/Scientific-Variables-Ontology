@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/propertyrole/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:term a svo:PropertyRole,
+        owl:NamedIndividual ;
+    rdfs:label "term"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1318370"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Term_(logic)"^^xsd:string ;
+    rdfs:comment "In mathematical logic, a term denotes a mathematical object while a formula denotes a mathematical fact. In particular, terms appear as components of a formula. This is analogous to natural language, where a noun phrase refers to an object and a whole sentence refers to a fact."^^xsd:string .
+

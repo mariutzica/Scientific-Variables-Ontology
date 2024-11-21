@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:drainage-basin a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "drainage-basin"^^xsd:string ;
+    svo:has_synonym "watershed"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q166620"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Drainage_basin"^^xsd:string ;
+    rdfs:comment "A drainage basin is an area of land where all flowing surface water converges to a single point, such as a river mouth, or flows into another body of water, such as a lake or ocean. A basin is separated from adjacent basins by a perimeter, the drainage divide, made up of a succession of elevated features, such as ridges and hills. A basin may consist of smaller basins that merge at river confluences, forming a hierarchical pattern.Other terms for a drainage basin are catchment area, catchment basin, drainage area, river basin, water basin, and impluvium. In North America, they are commonly called a watershed, though in other English-speaking places, \"watershed\" is used only in its original sense, that of a drainage divide."^^xsd:string .
+

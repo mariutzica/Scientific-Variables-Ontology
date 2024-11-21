@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlorine-36 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chlorine-36"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2324121"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chlorine-36"^^xsd:string ;
+    rdfs:comment "Chlorine-36 (36Cl) is an isotope of chlorine. Chlorine has two stable isotopes and one naturally occurring radioactive isotope, the cosmogenic isotope 36Cl.  Its half-life is 301,300 ± 1,500 years. 36Cl decays primarily (98%) by beta-minus decay to 36Ar, and the balance to 36S.Trace amounts of radioactive 36Cl exist in the environment, in a ratio of about (7–10) × 10−13 to 1 with stable chlorine isotopes.  This corresponds to a concentration of approximately 1 Bq/(kg Cl)."^^xsd:string .
+

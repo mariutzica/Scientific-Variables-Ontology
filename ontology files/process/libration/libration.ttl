@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:libration a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "libration"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q218673"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Libration"^^xsd:string ;
+    rdfs:comment "In lunar astronomy, libration is the cyclic variation in the apparent position of the Moon perceived by Earth-bound observers and caused by changes between the orbital and rotational planes of the moon. It causes an observer to see slightly different hemispheres of the surface at different times. It is similar in both cause and effect to the changes in the Moon's apparent size due to changes in distance. It is caused by three mechanisms detailed below, two of which cause a relatively tiny physical libration via tidal forces exerted by the Earth. Such true librations are known as well for other moons with locked rotation."^^xsd:string .
+

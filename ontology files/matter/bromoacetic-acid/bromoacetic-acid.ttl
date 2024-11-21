@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bromoacetic-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "bromoacetic-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q421323"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bromoacetic_acid"^^xsd:string ;
+    rdfs:comment "Bromoacetic acid is the chemical compound with the formula CH2BrCO2H.  This colorless solid is a relatively strong alkylating agent.  Bromoacetic acid and its esters are widely used building blocks in organic synthesis, for example, in pharmaceutical chemistry."^^xsd:string .
+

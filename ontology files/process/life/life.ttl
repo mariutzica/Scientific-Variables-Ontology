@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:life a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "life"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Life"^^xsd:string ;
+    rdfs:comment "Life is a quality that distinguishes matter that has biological processes, such as signaling and self-sustaining processes, from matter that does not, and is defined by the capacity for growth, reaction to stimuli, metabolism, energy transformation, and reproduction. Various forms of life exist, such as plants, animals, fungi, protists, archaea, and bacteria. Biology is the science that studies life."^^xsd:string .
+

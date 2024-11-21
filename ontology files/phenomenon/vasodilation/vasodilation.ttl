@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vasodilation a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "vasodilation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q14859627"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vasodilation"^^xsd:string ;
+    rdfs:comment "Vasodilation, also known as vasorelaxation, is the widening of blood vessels.  It results from relaxation of smooth muscle cells within the vessel walls, in particular in the large veins, large arteries, and smaller arterioles. The process is the opposite of vasoconstriction, which is the narrowing of blood vessels."^^xsd:string .
+

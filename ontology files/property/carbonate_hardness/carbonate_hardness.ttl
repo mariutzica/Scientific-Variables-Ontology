@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:carbonate_hardness a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "carbonate_hardness"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4354760"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Carbonate_hardness"^^xsd:string ;
+    rdfs:comment "Carbonate hardness, is a measure of the water hardness caused by the presence of carbonate (CO2−3) and bicarbonate (HCO−3) anions. Carbonate hardness is usually expressed either in degrees KH (dKH) (from the German \"Karbonathärte\"), or in parts per million calcium carbonate ( ppm CaCO3 or grams CaCO3 per litre|mg/L).  One dKH is equal to 17.848 mg/L (ppm) CaCO3, e.g. one dKH corresponds to the carbonate and bicarbonate ions found in a solution of approximately 17.848 milligrams of calcium carbonate(CaCO3) per litre of water (17.848 ppm). Both measurements (mg/L or KH) are usually expressed as mg/L CaCO3 – meaning the concentration of carbonate expressed as if calcium carbonate were the sole source of carbonate ions."^^xsd:string .
+

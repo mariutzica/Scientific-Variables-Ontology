@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:existence a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "existence"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q468777"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Existence"^^xsd:string ;
+    rdfs:comment "Existence is the state of having being or reality in contrast to nonexistence and nonbeing. Existence is often contrasted with essence: the essence of an entity are its essential features or qualities, which can be understood even if one does not know whether the entity exists."^^xsd:string .
+

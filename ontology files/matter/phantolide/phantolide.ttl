@@ -1,0 +1,16 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:phantolide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "phantolide"^^xsd:string ;
+    svo:has_synonym "Ethanone,-1-(2,3-dihydro-1,1,2,3,3,6-hexamethyl-1H-inden-5-yl)-"^^xsd:string,
+        "synthetic-musk"^^xsd:string,
+        "white-musk"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3328283"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Synthetic_musk"^^xsd:string ;
+    rdfs:comment "Synthetic musks are a class of synthetic aroma compounds to emulate the scent of deer musk and other animal musks (castoreum and civet). Synthetic musks have a clean, smooth and sweet scent lacking the fecal notes of animal musks. They are used as flavorings and fixatives in cosmetics, detergents, perfumes and foods, supplying the base note of many perfume formulas. Most musk fragrance used in perfumery today is synthetic."^^xsd:string .
+

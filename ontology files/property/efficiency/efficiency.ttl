@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:efficiency a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "efficiency"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1034411"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Efficiency"^^xsd:string ;
+    rdfs:comment "Efficiency is the often measurable ability to avoid wasting materials, energy, efforts, money, and time while performing a task. In a more general sense, it is the ability to do things well, successfully, and without waste.In more mathematical or scientific terms, it signifies the level of performance that uses the least amount of inputs to achieve the highest amount of output. It often specifically comprises the capability of a specific application of effort to produce a specific outcome with a minimum amount or quantity of waste, expense, or unnecessary effort. Efficiency refers to very different inputs and outputs in different fields and industries. In 2019, the European Commission said: \"Resource efficiency means using the Earth's limited resources in a sustainable manner while minimising impacts on the environment. It allows us to create more with less and to deliver greater value with less input.\"Writer Deborah Stone notes that efficiency is \"not a goal in itself. It is not something we want for its own sake, but rather because it helps us attain more of the things we value.\""^^xsd:string .
+

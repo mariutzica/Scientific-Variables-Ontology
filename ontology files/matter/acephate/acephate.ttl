@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:acephate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "acephate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2231923"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Acephate"^^xsd:string ;
+    rdfs:comment "Acephate is an organophosphate foliar and soil insecticide of moderate persistence with residual systemic activity of about 10–15 days at the recommended use rate. It is used primarily for control of aphids, including resistant species, in vegetables (e.g. potatoes, carrots, greenhouse tomatoes, and lettuce) and in horticulture (e.g. on roses and greenhouse ornamentals). It also controls leaf miners, caterpillars, sawflies, thrips, and spider mites in the previously stated crops as well as turf, and forestry. By direct application to mounds, it is effective in destroying imported fire ants."^^xsd:string .
+

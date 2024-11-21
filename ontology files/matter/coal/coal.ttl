@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:coal a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "coal"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q24489"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Coal"^^xsd:string ;
+    rdfs:comment "Coal is a combustible black or brownish-black sedimentary rock, formed as rock strata called coal seams. Coal is mostly carbon with variable amounts of other elements, chiefly hydrogen, sulfur, oxygen, and nitrogen."^^xsd:string .
+

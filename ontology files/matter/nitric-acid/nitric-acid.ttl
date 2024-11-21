@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nitric-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "nitric-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q83320"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nitric_acid"^^xsd:string ;
+    rdfs:comment "Nitric acid is the inorganic compound with the formula HNO3. It is a highly corrosive mineral acid. The compound is colorless, but older samples tend to be yellow cast due to decomposition into oxides of nitrogen. Most commercially available nitric acid has a concentration of 68% in water. When the solution contains more than 86% HNO3, it is referred to as fuming nitric acid. Depending on the amount of nitrogen dioxide present, fuming nitric acid is further characterized as red fuming nitric acid at concentrations above 86%, or white fuming nitric acid at concentrations above 95%."^^xsd:string .
+

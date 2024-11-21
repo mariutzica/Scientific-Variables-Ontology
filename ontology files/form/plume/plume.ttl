@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:plume a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "plume"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3817528"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Plume_(fluid_dynamics)"^^xsd:string ;
+    rdfs:comment "In hydrodynamics, a plume or a column is a vertical body of one fluid moving through another.  Several effects control the motion of the fluid, including momentum (inertia), diffusion and buoyancy (density differences).  Pure jets and pure plumes define flows that are driven entirely by momentum and buoyancy effects, respectively.  Flows between these two limits are usually described as forced plumes or buoyant jets.  \"Buoyancy is defined as being positive\" when, in the absence of other forces or initial motion, the entering fluid would tend to rise.  Situations where the density of the plume fluid is greater than its surroundings (i.e. in still conditions, its natural tendency would be to sink), but the flow has sufficient initial momentum to carry it some distance vertically, are described as being negatively buoyant."^^xsd:string .
+

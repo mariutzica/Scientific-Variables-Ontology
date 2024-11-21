@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:waste a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "waste"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q45701"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Waste"^^xsd:string ;
+    rdfs:comment "Waste (or wastes) are unwanted or unusable materials. Waste is any substance discarded after primary use, or is worthless, defective and of no use. A by-product, by contrast is a joint product of relatively minor economic value. A waste product may become a by-product, joint product or resource through an invention that raises a waste product's value above zero. "^^xsd:string .
+

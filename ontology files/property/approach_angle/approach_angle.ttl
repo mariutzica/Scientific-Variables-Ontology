@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:approach_angle a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "approach_angle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q19206609"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Approach_and_departure_angles"^^xsd:string ;
+    rdfs:comment "Approach angle is the maximum angle of a ramp onto which a vehicle can climb from a horizontal plane without interference.  It is defined as the angle between the ground and the line drawn between the front tire and the lowest-hanging part of the vehicle at the front overhang. Departure angle is its counterpart at the rear of the vehicle – the maximum ramp angle from which the car can descend without damage. Approach and departure angles are also referred to as ramp angles."^^xsd:string .
+

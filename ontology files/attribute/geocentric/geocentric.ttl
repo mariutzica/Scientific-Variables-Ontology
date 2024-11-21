@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:geocentric a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "geocentric"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q165800"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Geocentric_model"^^xsd:string ;
+    rdfs:comment "In astronomy, the geocentric model (also known as geocentrism, often exemplified specifically by the Ptolemaic system) is a superseded description of the Universe with Earth at the center. Under most geocentric models, the Sun, Moon, stars, and planets all orbit Earth. The geocentric model was the predominant description of the cosmos in many European ancient civilizations, such as those of Aristotle in Classical Greece and Ptolemy in Roman Egypt, as well as during the Islamic Golden Age."^^xsd:string .
+

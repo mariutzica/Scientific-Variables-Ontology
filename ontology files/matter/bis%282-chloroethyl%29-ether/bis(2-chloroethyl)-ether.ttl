@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bis%282-chloroethyl%29-ether a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "bis(2-chloroethyl)-ether"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2509768"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bis(chloroethyl)_ether"^^xsd:string ;
+    rdfs:comment "Bis(chloroethyl) ether is an organic compound with the formula O(CH2CH2Cl)2. It is an ether with two 2-chloroethyl substituents.  It is a colorless liquid with the odor of a chlorinated solvent."^^xsd:string .
+

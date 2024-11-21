@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:toluene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "toluene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q15779"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Toluene"^^xsd:string ;
+    rdfs:comment "Toluene (), also known as toluol (), is a substituted aromatic hydrocarbon. It is a colorless, water-insoluble liquid with the smell associated with paint thinners. It is a mono-substituted benzene derivative, consisting of a methyl group (CH3) attached to a phenyl group. As such, its systematic IUPAC name is methylbenzene. Toluene is predominantly used as an industrial feedstock and a solvent."^^xsd:string .
+

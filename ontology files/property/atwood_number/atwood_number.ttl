@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:atwood_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "atwood_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2373823"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Atwood_number"^^xsd:string ;
+    rdfs:comment "The Atwood number (A) is a dimensionless number in fluid dynamics used in the study of hydrodynamic instabilities in density stratified flows. "^^xsd:string .
+

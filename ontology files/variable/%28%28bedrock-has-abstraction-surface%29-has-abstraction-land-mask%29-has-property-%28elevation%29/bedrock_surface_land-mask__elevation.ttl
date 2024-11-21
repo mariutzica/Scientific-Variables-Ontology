@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28bedrock-has-abstraction-surface%29-has-abstraction-land-mask%29-has-property-%28elevation%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "bedrock_surface_land-mask__elevation"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/land-mask>,
+        <http://scientificvariablesontology.org/svo/abstraction/surface> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/bedrock> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28bedrock-has-abstraction-surface%29-has-abstraction-land-mask> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/elevation> .
+

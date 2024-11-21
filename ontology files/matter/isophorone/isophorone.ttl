@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:isophorone a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "isophorone"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q415519"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isophorone"^^xsd:string ;
+    rdfs:comment "Isophorone is an α,β-unsaturated cyclic ketone.  It is a colorless liquid with a characteristic peppermint-like odor, although commercial samples can appear yellowish. Used as a solvent and as a precursor to polymers, it is produced on a large scale industrially."^^xsd:string .
+

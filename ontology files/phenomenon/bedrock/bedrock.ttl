@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bedrock a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "bedrock"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q570309"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bedrock"^^xsd:string ;
+    rdfs:comment "In geology, bedrock is solid rock that lies under loose material (regolith) within the crust of Earth or another terrestrial planet."^^xsd:string .
+

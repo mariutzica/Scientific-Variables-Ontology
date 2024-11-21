@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:isobutyl-alcohol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "isobutyl-alcohol"^^xsd:string ;
+    svo:has_synonym "2-methylpropan-1-ol"^^xsd:string,
+        "Isobutanol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q151797"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isobutanol"^^xsd:string ;
+    rdfs:comment "Isobutanol (IUPAC nomenclature: 2-methylpropan-1-ol) is an organic compound with the formula (CH3)2CHCH2OH (sometimes represented as i-BuOH). This colorless, flammable liquid with a characteristic smell is mainly used as a solvent either directly or as its esters. Its isomers are 1-butanol, 2-butanol, and tert-butanol, all of which are important industrially."^^xsd:string .
+

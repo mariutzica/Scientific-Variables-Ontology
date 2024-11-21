@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:oligochaeta a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "oligochaeta"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q193006"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Oligochaeta"^^xsd:string ;
+    rdfs:comment "Oligochaeta () is a subclass of animals in the phylum Annelida, which is made up of many types of aquatic and terrestrial worms, including all of the various earthworms.  Specifically, oligochaetes comprise the terrestrial megadrile earthworms (some of which are semiaquatic or fully aquatic), and freshwater or semiterrestrial microdrile forms, including the tubificids, pot worms and ice worms (Enchytraeidae), blackworms (Lumbriculidae) and several interstitial marine worms."^^xsd:string .
+

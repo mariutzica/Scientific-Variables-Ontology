@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:specific_absorbance a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "specific_absorbance"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7574978"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Specific_ultraviolet_absorbance"^^xsd:string ;
+    rdfs:comment "Specific ultraviolet absorbance (SUVA) is the absorbance of ultraviolet light in a water sample at a specified wavelength that is normalized for dissolved organic carbon (DOC) concentration. Specific UV absorbance (SUVA) wavelengths have analytical uses to measure the aromatic character of dissolved organic matter by detecting density of electron conjugation which is associated with aromatic bonds."^^xsd:string .
+

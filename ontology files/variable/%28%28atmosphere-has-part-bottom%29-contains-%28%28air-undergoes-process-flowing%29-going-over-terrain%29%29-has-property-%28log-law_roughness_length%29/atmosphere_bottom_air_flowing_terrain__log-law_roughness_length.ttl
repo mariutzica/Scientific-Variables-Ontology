@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28atmosphere-has-part-bottom%29-contains-%28%28air-undergoes-process-flowing%29-going-over-terrain%29%29-has-property-%28log-law_roughness_length%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "atmosphere_bottom_air_flowing_terrain__log-law_roughness_length"^^xsd:string ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/terrain> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/air> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/bottom> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/atmosphere> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/flowing> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28atmosphere-has-part-bottom%29-contains-%28%28air-undergoes-process-flowing%29-going-over-terrain%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/log-law_roughness_length> ;
+    svo:has_original_label "atmosphere_bottom_air_flow_terrain__log_law_roughness_length"^^xsd:string .
+

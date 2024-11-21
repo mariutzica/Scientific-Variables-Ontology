@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:stage_height a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "stage_height"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1929501"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Water_level"^^xsd:string ;
+    rdfs:comment "Water level, also known as gauge height or stage, is the elevation of the free surface of a sea, stream, lake or reservoir relative to a specified vertical datum."^^xsd:string .
+

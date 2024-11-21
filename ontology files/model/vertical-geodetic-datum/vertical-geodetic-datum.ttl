@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vertical-geodetic-datum a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "vertical-geodetic-datum"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7325529"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/National_Geodetic_Vertical_Datum_of_1929"^^xsd:string ;
+    rdfs:comment "The National Geodetic Vertical Datum of 1929 is the official name since 1973 of the vertical datum established for vertical control surveying in the United States of America by the General Adjustment of 1929.  Originally known as Sea Level Datum of 1929, NGVD 29 was determined and published by the United States Coast and Geodetic Survey and used to measure the elevation of a point above and depression below mean sea level (MSL)."^^xsd:string .
+

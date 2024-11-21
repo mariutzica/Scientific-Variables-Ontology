@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:skeletonization a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "skeletonization"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1984140"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Skeletonization"^^xsd:string ;
+    rdfs:comment "Skeletonization is the state of a dead organism after undergoing decomposition. Skeletonization refers to the final stage of decomposition, during which the last vestiges of the soft tissues of a corpse or carcass have decayed or dried to the point that the skeleton is exposed. By the end of the skeletonization process, all soft tissue will have been eliminated, leaving only disarticulated bones."^^xsd:string .
+

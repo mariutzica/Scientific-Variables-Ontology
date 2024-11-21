@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydrogen-oxide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "hydrogen-oxide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6478447"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Properties_of_water"^^xsd:string ;
+    rdfs:comment "Water (H2O) is a polar inorganic compound that is at room temperature a tasteless and odorless liquid, which is nearly colorless apart from an inherent hint of blue. It is by far the most studied chemical compound and is described as the \"universal solvent\" and the \"solvent of life\". It is the most abundant substance on the surface of Earth and the only common substance to exist as a solid, liquid, and gas on Earth's surface. It is also the third most abundant molecule in the universe (behind molecular hydrogen and carbon monoxide).Water molecules form hydrogen bonds with each other and are strongly polar. This polarity allows it to dissociate ions in salts and bond to other polar substances such as alcohols and acids, thus dissolving them. Its hydrogen bonding causes its many unique properties, such as having a solid form less dense than its liquid form, a relatively high boiling point of 100 °C for its molar mass, and a high heat capacity."^^xsd:string .
+

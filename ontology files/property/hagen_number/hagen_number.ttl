@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hagen_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "hagen_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1568363"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hagen_number"^^xsd:string ;
+    rdfs:comment "The Hagen number (Hg) is a dimensionless number used in forced flow calculations. It is the forced flow equivalent of the Grashof number and was named after the German hydraulic engineer G. H. L. Hagen."^^xsd:string .
+

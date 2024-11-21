@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:freezing-point a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "freezing-point"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q15318"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Melting_point"^^xsd:string ;
+    rdfs:comment "The melting point (or, rarely, liquefaction point) of a substance is the temperature at which it changes state from solid to liquid. At the melting point the solid and liquid phase exist in equilibrium. The melting point of a substance depends on pressure and is usually specified at a standard pressure such as 1 atmosphere or 100 kPa."^^xsd:string .
+

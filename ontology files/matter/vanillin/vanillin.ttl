@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vanillin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "vanillin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q33495"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vanillin"^^xsd:string ;
+    rdfs:comment "Vanillin is an organic compound with the molecular formula C8H8O3.  It is a phenolic aldehyde.  Its functional groups include aldehyde, hydroxyl, and ether.  It is the primary component of the extract of the vanilla bean.  Synthetic vanillin is now used more often than natural vanilla extract as a flavoring in foods, beverages, and pharmaceuticals."^^xsd:string .
+

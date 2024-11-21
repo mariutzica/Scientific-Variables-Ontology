@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:astacidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "astacidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q943248"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Astacidae"^^xsd:string ;
+    rdfs:comment "Astacidae is a family of freshwater crayfish native to Europe and western North America. The family is made up of four extant (living) genera: The genera Astacus (which includes the European crayfish), Pontastacus (which includes the Turkish crayfish), and Austropotamobius are all found throughout Europe and parts of western Asia, while Pacifastacus is found on the Pacific coast of the United States and British Columbia and includes the signal crayfish and the Shasta crayfish."^^xsd:string .
+

@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:o%2Cp%27-ddd a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "o,p'-ddd"^^xsd:string ;
+    svo:has_synonym "lysodren"^^xsd:string,
+        "mitotane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q417465"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mitotane"^^xsd:string ;
+    rdfs:comment "Mitotane, sold under the brand name Lysodren, is a steroidogenesis inhibitor and cytostatic antineoplastic medication which is used in the treatment of adrenocortical carcinoma and Cushing's syndrome. It is a derivative of the early insecticide DDT and an isomer of p,p'-DDD (4,4'-dichlorodiphenyldichloroethane) and is also known as 2,4'-(dichlorodiphenyl)-2,2-dichloroethane (o,p'-DDD)."^^xsd:string .
+

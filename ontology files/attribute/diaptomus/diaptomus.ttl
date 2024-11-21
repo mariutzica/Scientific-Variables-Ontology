@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:diaptomus a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "diaptomus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q16382148"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Diaptomus"^^xsd:string ;
+    rdfs:comment "Diaptomus is a genus of copepods with a single eye spot. It is superficially similar in size and appearance to Cyclops. However it has characteristically very long first antennae that exceed the body length. In addition, the females carry the eggs in a single sac rather than the twin sacs seen in Cyclops. It is a copepod of larger freshwater ponds, lakes and still waters."^^xsd:string .
+

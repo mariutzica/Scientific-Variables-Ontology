@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:oxyethira a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "oxyethira"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q10613871"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Oxyethira"^^xsd:string ;
+    rdfs:comment "Oxyethira is a genus of microcaddisflies in the family Hydroptilidae. There are more than 210 described species in Oxyethira."^^xsd:string .
+

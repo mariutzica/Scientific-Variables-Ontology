@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:american-black-bear a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "american-black-bear"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q122783"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/American_black_bear"^^xsd:string ;
+    rdfs:comment "The American black bear (Ursus americanus), also known as the black bear or sometimes baribal, is a species of medium-sized bear endemic to North America. It is the continent's smallest and most widely distributed bear species. The American black bear is an omnivore, with its diet varying greatly depending on season and location. It typically lives in largely forested areas, but will leave forests in search of food, and is sometimes attracted to human communities due to the immediate availability of food."^^xsd:string .
+

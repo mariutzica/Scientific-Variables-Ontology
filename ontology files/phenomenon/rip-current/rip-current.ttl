@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:rip-current a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "rip-current"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q898375"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Rip_current"^^xsd:string ;
+    rdfs:comment "A rip current, often simply called a rip (or misleadingly a rip tide), is a specific kind of water current that can occur near beaches with breaking waves. A rip is a strong, localized, and narrow current of water which moves directly away from the shore, cutting through the lines of breaking waves like a river running out to sea. The current in a rip is strongest and fastest next to the surface of the water.Rip currents can be hazardous to people in the water. Swimmers who are caught in a rip current and who do not understand what is happening, or who may not have the necessary water skills, may panic, or they may exhaust themselves by trying to swim directly against the flow of water. Because of these factors, rip currents are the leading cause of rescues by lifeguards at beaches, and in the United States, they are the cause of an average of 46 deaths by drowning per year."^^xsd:string .
+

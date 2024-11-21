@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:exosphaeroma a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "exosphaeroma"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q10493122"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Exosphaeroma"^^xsd:string ;
+    rdfs:comment "Exosphaeroma is a genus of marine isopod of the family Sphaeromatidae. This genus is found in shallow ocean waters worldwide. It is notable for being one of the few genera of sphaeromatid to be found in the southern reaches of the Southern Ocean. The greatest diversity of Exosphaeroma occurs in the Southern Hemisphere."^^xsd:string .
+

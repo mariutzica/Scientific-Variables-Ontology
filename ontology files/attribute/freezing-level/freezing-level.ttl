@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:freezing-level a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "freezing-level"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q958282"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Freezing_level"^^xsd:string ;
+    rdfs:comment "The freezing level, or 0 °C (zero-degree) isotherm, represents the altitude in which the temperature is at 0 °C (the freezing point of water) in a free atmosphere (i.e. allowing reflection of the sun by snow, icing conditions, etc.). Any given measure is valid for only a short period of time, often less than a day as variations in wind, sunlight, air masses and other factors may change the level. The 700 hPa pressure level (or about 3000 m above sea level) is generally assumed as a rough estimate of the freezing level."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:selenium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "selenium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q876"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Selenium"^^xsd:string ;
+    rdfs:comment "Selenium is a chemical element with the symbol Se and atomic number 34. It is a nonmetal (more rarely considered a metalloid) with properties that are intermediate between the elements above and below in the periodic table, sulfur and tellurium, and also has similarities to arsenic. It seldom occurs in its elemental state or as pure ore compounds in the Earth's crust. Selenium – from Greek selḗnē (σελήνη 'Moon') – was discovered in 1817 by Jöns Jacob Berzelius, who noted the similarity of the new element to the previously discovered tellurium (named for the Earth)."^^xsd:string .
+

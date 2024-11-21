@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fission a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "fission"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11429"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nuclear_fission"^^xsd:string ;
+    rdfs:comment "Nuclear fission is a reaction in which the nucleus of an atom splits into two or more smaller nuclei. The fission process often produces  gamma photons, and releases a very large amount of energy even by the energetic standards of radioactive decay."^^xsd:string .
+

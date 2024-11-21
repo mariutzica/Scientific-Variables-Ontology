@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mass-to-electric-charge_ratio a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "mass-to-electric-charge_ratio"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q874659"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mass-to-charge_ratio"^^xsd:string ;
+    rdfs:comment "The mass-to-charge ratio (m/Q) is a physical quantity relating the mass (quantity of matter) and the electric charge of a given particle, expressed in units of kilograms per coulomb (kg/C). It is most widely used in the electrodynamics of charged particles, e.g. in electron optics and ion optics."^^xsd:string .
+

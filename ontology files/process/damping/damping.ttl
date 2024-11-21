@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:damping a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "damping"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1127660"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Damping"^^xsd:string ;
+    rdfs:comment "In physical systems, damping is the loss of energy of an oscillating system by dissipation. Damping is an influence within or upon an oscillatory system that has the effect of reducing or preventing its oscillation. Examples of damping include viscous damping in a fluid (see viscous drag), surface friction, radiation, resistance in electronic oscillators, and absorption and scattering of light in optical oscillators. Damping not based on energy loss can be important in other oscillating systems such as those that occur in biological systems and bikes (ex. Suspension (mechanics)). Damping is not to be confused with friction, which is a type of dissipative force acting on a system. Friction can cause or be a factor of damping."^^xsd:string .
+

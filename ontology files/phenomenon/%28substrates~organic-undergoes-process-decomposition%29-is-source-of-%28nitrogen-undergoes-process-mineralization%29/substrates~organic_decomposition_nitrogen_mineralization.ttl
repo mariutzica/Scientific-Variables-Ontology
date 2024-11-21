@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28substrates~organic-undergoes-process-decomposition%29-is-source-of-%28nitrogen-undergoes-process-mineralization%29> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "substrates~organic_decomposition_nitrogen_mineralization"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :nitrogen-undergoes-process-mineralization ;
+    svo:has_source_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/substrates~organic-undergoes-process-decomposition> .
+

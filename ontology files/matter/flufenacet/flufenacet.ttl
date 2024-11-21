@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:flufenacet a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "flufenacet"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1430589"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Flufenacet"^^xsd:string ;
+    rdfs:comment "Flufenacet is an oxyacetanilide herbicide applied before crops have emerged.In the model plant Arabidopsis thaliana it causes similar symptoms to the fiddlehead mutant."^^xsd:string .
+

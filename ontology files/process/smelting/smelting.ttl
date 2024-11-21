@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:smelting a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "smelting"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2748405"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Smelting"^^xsd:string ;
+    rdfs:comment "Smelting is a process of applying heat and a chemical reducing agent to an ore to extract a desired base metal product. It is a form of extractive metallurgy that is used to obtain many metals such as iron, copper, silver, tin, lead and zinc. Smelting uses heat and a chemical reducing agent to decompose the ore, driving off other elements as gases or slag and leaving the metal behind. The reducing agent is commonly a fossil fuel source of carbon, such as carbon monoxide from incomplete combustion of coke—or, in earlier times, of charcoal. The oxygen in the ore binds to carbon at high temperatures as the chemical potential energy of the bonds in carbon dioxide (CO2) is lower than that of the bonds in the ore."^^xsd:string .
+

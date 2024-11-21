@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28projectile-undergoes-process-firing%29-has-property-%28speed%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "projectile_firing__speed"^^xsd:string ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/firing> ;
+    svo:contains_role_reference_to <http://scientificvariablesontology.org/svo/role/projectile> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/projectile-undergoes-process-firing> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/speed> ;
+    svo:has_original_label "projectile__firing_speed"^^xsd:string .
+

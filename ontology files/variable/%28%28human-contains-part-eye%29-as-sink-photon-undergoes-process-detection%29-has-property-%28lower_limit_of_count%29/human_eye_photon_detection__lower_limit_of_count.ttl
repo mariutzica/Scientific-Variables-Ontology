@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28human-contains-part-eye%29-as-sink-photon-undergoes-process-detection%29-has-property-%28lower_limit_of_count%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "human_eye_photon_detection__lower_limit_of_count"^^xsd:string ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/lower_limit> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/eye>,
+        <http://scientificvariablesontology.org/svo/phenomenon/human>,
+        <http://scientificvariablesontology.org/svo/phenomenon/photon> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/detection> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/count> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28human-contains-part-eye%29-as-sink-photon-undergoes-process-detection> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/lower_limit_of_count> ;
+    svo:has_original_label "human_eye_photon__lower_limit_of_detection_number"^^xsd:string .
+

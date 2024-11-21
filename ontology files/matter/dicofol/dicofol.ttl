@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dicofol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dicofol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q418183"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dicofol"^^xsd:string ;
+    rdfs:comment "Dicofol is an organochlorine pesticide that is chemically related to DDT. Dicofol is a miticide that is very effective against spider mite. Its production and use is banned internationally under the Stockholm Convention.One of the intermediates used in its production is DDT. This has caused criticism by many environmentalists; however, the World Health Organization classifies dicofol as a Level II, \"moderately hazardous\" pesticide. It is known to be harmful to aquatic animals, and can cause eggshell thinning in various species of birds."^^xsd:string .
+

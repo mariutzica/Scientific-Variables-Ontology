@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dixidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "dixidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2296738"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dixidae"^^xsd:string ;
+    rdfs:comment "The Dixidae (meniscus midges) are a family of aquatic nematoceran flies (Diptera). The larvae live in unpolluted, standing fresh waters, just beneath the surface film, usually amongst marginal aquatic vegetation. They are found in all continents except Antarctica."^^xsd:string .
+

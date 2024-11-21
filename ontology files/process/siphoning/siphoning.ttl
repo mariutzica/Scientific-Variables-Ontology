@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:siphoning a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "siphoning"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q426656"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Siphon"^^xsd:string ;
+    rdfs:comment "A siphon (from Ancient Greek  σίφων (síphōn) 'pipe, tube'; also spelled syphon) is any of a wide variety of devices that involve the flow of liquids through tubes. In a narrower sense, the word refers particularly to a tube in an inverted \"U\" shape, which causes a liquid to flow upward, above the surface of a reservoir, with no pump, but powered by the fall of the liquid as it flows down the tube under the pull of gravity, then discharging at a level lower than the surface of the reservoir from which it came."^^xsd:string .
+

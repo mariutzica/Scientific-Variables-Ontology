@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sequencing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "sequencing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1764062"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sequencing"^^xsd:string ;
+    rdfs:comment "In genetics and biochemistry, sequencing means to determine the primary structure (sometimes incorrectly called the primary sequence) of an unbranched biopolymer.  Sequencing results in a symbolic linear depiction known as a sequence which succinctly summarizes much of the atomic-level structure of the sequenced molecule."^^xsd:string .
+

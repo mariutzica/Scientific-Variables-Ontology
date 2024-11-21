@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thorium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "thorium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1115"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Thorium"^^xsd:string ;
+    rdfs:comment "Thorium is a weakly radioactive metallic chemical element with the symbol Th and atomic number 90. Thorium is silvery and tarnishes black when it is exposed to air, forming thorium dioxide; it is moderately soft and malleable and has a high melting point. Thorium is an electropositive actinide whose chemistry is dominated by the +4 oxidation state; it is quite reactive and can ignite in air when finely divided."^^xsd:string .
+

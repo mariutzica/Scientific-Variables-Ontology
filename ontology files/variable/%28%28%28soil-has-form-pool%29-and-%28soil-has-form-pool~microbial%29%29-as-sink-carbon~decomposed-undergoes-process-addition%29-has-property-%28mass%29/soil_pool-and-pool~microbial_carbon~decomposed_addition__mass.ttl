@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28%28soil-has-form-pool%29-and-%28soil-has-form-pool~microbial%29%29-as-sink-carbon~decomposed-undergoes-process-addition%29-has-property-%28mass%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "soil_pool-and-pool~microbial_carbon~decomposed_addition__mass"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/decomposed>,
+        <http://scientificvariablesontology.org/svo/attribute/microbial> ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/pool> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/carbon>,
+        <http://scientificvariablesontology.org/svo/matter/soil> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/addition> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28%28soil-has-form-pool%29-and-%28soil-has-form-pool~microbial%29%29-as-sink-carbon~decomposed-undergoes-process-addition> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mass> ;
+    svo:has_original_label "soil_pool-and-pool~microbial_carbon~decomposed__addition_mass"^^xsd:string .
+

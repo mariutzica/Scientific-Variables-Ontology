@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28%28model-contains-%28grid-contains-part-%28%28dual-cell-has-part-edge%29-has-abstraction-center%29%29%29-models-water%29-has-property-%28x_component_of_velocity%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/%28model-contains-%28grid-contains-part-%28%28dual-cell-has-part-edge%29-has-abstraction-center%29%29%29-models-water"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/x_component_of_velocity"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/water"/>
+  <svo:contains_abstraction_reference_to rdf:resource="http://scientificvariablesontology.org/svo/abstraction/dual-cell"/>
+  <svo:contains_abstraction_reference_to rdf:resource="http://scientificvariablesontology.org/svo/abstraction/grid"/>
+  <svo:contains_abstraction_reference_to rdf:resource="http://scientificvariablesontology.org/svo/abstraction/center"/>
+  <svo:contains_part_reference_to rdf:resource="http://scientificvariablesontology.org/svo/part/edge"/>
+  <svo:contains_operation_reference_to rdf:resource="http://scientificvariablesontology.org/svo/operation/x_component"/>
+  <svo:contains_property_reference_to rdf:resource="http://scientificvariablesontology.org/svo/property/velocity"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">model_grid_dual-cell_edge_center_water__x_component_of_velocity</rdfs:label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">model_grid_cell~dual_edge_center__x_component_of_velocity</svo:has_original_label>
+</owl:NamedIndividual>
+</rdf:RDF>

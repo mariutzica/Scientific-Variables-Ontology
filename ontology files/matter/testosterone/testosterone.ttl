@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:testosterone a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "testosterone"^^xsd:string ;
+    svo:has_synonym "androst-4-en-3-one,-17-hydroxy-,-(17.beta.)-"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1318776"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Testosterone"^^xsd:string ;
+    rdfs:comment "Testosterone is the primary sex hormone and anabolic steroid in males. In humans, testosterone plays a key role in the development of male reproductive tissues such as testes and prostate, as well as promoting secondary sexual characteristics such as increased muscle and bone mass, and the growth of body hair, and  psychological characteristics in males such as increased aggression, sex drive, the inclination to impress partners and other courting behaviors. In addition, testosterone in both sexes is involved in health and well-being, where it has a significant effect on overall mood, cognition, social and sexual behaviour, metabolism and energy output, the cardiovascular system, and in the prevention of osteoporosis. Insufficient levels of testosterone in men may lead to abnormalities including frailty, accumulation of adipose fat tissue within the body, anxiety and depression, sexual performance issues, and bone loss."^^xsd:string .
+

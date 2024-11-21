@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28%28glacier-has-part-top%29-contains-ice%29-as-main-wind-as-in-scour> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "glacier_top_ice_wind_scour"^^xsd:string ;
+    svo:has_in_participant_phenomenon :wind ;
+    svo:has_primary_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28glacier-has-part-top%29-contains-ice> ;
+    svo:undergoes_process <http://scientificvariablesontology.org/svo/process/scour> .
+

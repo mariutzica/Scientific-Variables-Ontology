@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/process/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/process/">
+<owl:NamedIndividual rdf:about="defribillation">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Process"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">defribillation</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Defibrillation</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q954202</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defibrillation is a treatment for life-threatening cardiac arrhythmias, specifically ventricular fibrillation (V-Fib) and non-perfusing ventricular tachycardia (V-Tach). A defibrillator delivers a dose of electric current (often called a counter-shock) to the heart. Although not fully understood, this process depolarizes a large amount of the heart muscle, ending the arrhythmia. Subsequently, the body's natural pacemaker in the sinoatrial node of the heart is able to re-establish normal sinus rhythm. A heart which is in asystole (flatline) cannot be restarted by a defibrillator, but would be treated by cardiopulmonary resuscitation (CPR).</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

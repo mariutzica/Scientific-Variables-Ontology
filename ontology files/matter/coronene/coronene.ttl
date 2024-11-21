@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:coronene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "coronene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q420614"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Coronene"^^xsd:string ;
+    rdfs:comment "Coronene (also known as superbenzene and cyclobenzene) is a polycyclic aromatic hydrocarbon (PAH) comprising seven peri-fused benzene rings. Its chemical formula is C24H12. It is a yellow material that dissolves in common solvents including benzene, toluene, and dichloromethane. Its solutions emit blue light fluorescence under UV light. It has been used as a solvent probe, similar to pyrene."^^xsd:string .
+

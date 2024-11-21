@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:microwave a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "microwave"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q127995"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Microwave"^^xsd:string ;
+    rdfs:comment "Microwave is a form of electromagnetic radiation with wavelengths shorter than other radio waves (as originally discovered) but longer than infrared waves. Its wavelength ranges from about one meter to one millimeter, corresponding to frequencies between 300 MHz and 300 GHz, broadly construed. A more common definition in radio-frequency engineering is the range between 1 and 100 GHz (wavelengths between 30 cm and 3 mm), or between 1 and 3000 GHz (30 cm and 0.1 mm)."^^xsd:string .
+

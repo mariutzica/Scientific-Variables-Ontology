@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:reynolds_stress a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "reynolds_stress"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7319685"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Reynolds_stress"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, the Reynolds stress is the component of the total stress tensor in a fluid obtained from the averaging operation over the Navier–Stokes equations to account for turbulent fluctuations in fluid momentum."^^xsd:string .
+

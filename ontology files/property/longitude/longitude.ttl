@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:longitude a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "longitude"^^xsd:string ;
+    svo:has_synonym "east_coordinate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q36477"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Longitude"^^xsd:string ;
+    rdfs:comment "Longitude (, AU and UK also ) is a geographic coordinate that specifies the east–west position of a point on the surface of the Earth, or another celestial body. It is an angular measurement, usually expressed in degrees and denoted by the Greek letter lambda (λ). Meridians are imaginary semicircular lines running from pole to pole that connect points with the same longitude. The prime meridian defines 0° longitude; by convention the International Reference Meridian for the Earth passes near the Royal Observatory in Greenwich, south-east London on the island of Great Britain. Positive longitudes are east of the prime meridian, and negative ones are west."^^xsd:string .
+

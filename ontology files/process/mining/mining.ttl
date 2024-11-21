@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mining a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "mining"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q44497"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mining"^^xsd:string ;
+    rdfs:comment "Mining is the extraction of valuable geological materials and minerals from the surface of the Earth. Mining is required to obtain most materials that cannot be grown through agricultural processes, or feasibly created artificially in a laboratory or factory. Ores recovered by mining include metals, coal, oil shale, gemstones, limestone, chalk, dimension stone, rock salt, potash, gravel, and clay. The ore must be a rock or mineral that contains valuable constituent, can be extracted or mined and sold for profit. Mining in a wider sense includes extraction of any non-renewable resource such as petroleum, natural gas, or even water."^^xsd:string .
+

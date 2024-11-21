@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:predation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "predation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q170430"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Predation"^^xsd:string ;
+    rdfs:comment "Predation is a biological interaction where one organism, the predator, kills and eats another organism, its prey. It is one of a family of common feeding behaviours that includes parasitism and micropredation (which usually do not kill the host) and parasitoidism (which always does, eventually). It is distinct from scavenging on dead prey, though many predators also scavenge; it overlaps with herbivory, as seed predators and destructive frugivores are predators."^^xsd:string .
+

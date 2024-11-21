@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:clearance_height a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "clearance_height"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q889522"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ride_height"^^xsd:string ;
+    rdfs:comment "Ride height or ground clearance is the amount of space between the base of an automobile tire and the lowest point of the automobile (typically the axle); or, more properly, to the shortest distance between a flat, level surface, and the lowest part of a vehicle other than those parts designed to contact the ground (such as tires, tracks, skis, etc.). Ground clearance is measured with standard vehicle equipment, and for cars, is usually given with no cargo or passengers."^^xsd:string .
+

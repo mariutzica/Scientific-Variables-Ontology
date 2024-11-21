@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:immiscible a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "immiscible"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q906367"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Miscibility"^^xsd:string ;
+    rdfs:comment "Miscibility () is the property of two substances to mix in all proportions (that is, to fully dissolve in each other at any concentration), forming a homogeneous mixture (a solution). The term is most often applied to liquids but also applies to solids and gases. An example in liquids is the miscibility of water and ethanol as they mix in all proportions.By contrast, substances are said to be immiscible if there are certain proportions in which the mixture does not form a solution. For one example, oil is not soluble in water, so these two solvents are immiscible. As another example, butanone (methyl ethyl ketone) is significantly soluble in water, but these two solvents are also immiscible because in some proportions the mixture will separate into two phases."^^xsd:string .
+

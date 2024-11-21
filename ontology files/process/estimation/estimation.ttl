@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:estimation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "estimation"^^xsd:string ;
+    svo:has_synonym "estimation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q791801"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Estimation"^^xsd:string ;
+    rdfs:comment "Estimation (or estimating) is the process of finding an estimate or approximation, which is a value that is usable for some purpose even if input data may be incomplete, uncertain, or unstable. The value is nonetheless usable because it is derived from the best information available. Typically, estimation involves \"using the value of a statistic derived from a sample to estimate the value of a corresponding population parameter\". The sample provides information that can be projected, through various formal or informal processes, to determine a range most likely to describe the missing information. An estimate that turns out to be incorrect will be an overestimate if the estimate exceeds the actual result and an underestimate if the estimate falls short of the actual result."^^xsd:string .
+

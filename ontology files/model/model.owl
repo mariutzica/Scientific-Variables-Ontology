@@ -1,0 +1,1080 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/abstraction/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/abstraction/">
+
+<owl:Ontology rdf:about="http://scientificvariablesontology.org/svo/abstraction">
+  <owl:imports rdf:resource="http://scientificvariablesontology.org/svo"/>
+  <owl:imports rdf:resource="http://scientificvariablesontology.org/svo/attribute"/>
+  <owl:imports rdf:resource="http://scientificvariablesontology.org/svo/direction"/>
+</owl:Ontology>
+
+<owl:NamedIndividual rdf:about="airfoil">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">airfoil</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Airfoil</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q4698744</svo:has_wikidata_page>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aerofoil</svo:has_synonym>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An airfoil (American English) or aerofoil (British English) is the cross-sectional shape of an object whose motion through a gas is capable of generating significant lift, such as a wing, a sail, or the blades of propeller, rotor, or turbine.  Foils of similar function designed with water as the working fluid are called hydrofoils.  </rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="amphidromic-points">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amphidromic-points</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Amphidromic_point</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q474837</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An amphidromic point, also called a tidal node, is a geographical location which has zero tidal amplitude for one harmonic constituent of the tide. The tidal range (the peak-to-peak amplitude, or the height difference between high tide and low tide) for that harmonic constituent increases with distance from this point, though not uniformly. As such, the concept of amphidromic points is crucial to understanding tidal behaviour. The term derives from the Greek words amphi ("around") and dromos ("running"), referring to the rotary tides which circulate around amphidromic points.Amphidromic points occur because interference within oceanic basins, seas and bays, combined with the Coriolis effect, creates a wave pattern — called an amphidromic system — which rotates around the amphidromic point. At the amphidromic points of the dominant tidal constituent, there is almost no vertical change in sea level from tidal action; that is, there is little or no difference between high tide and low tide at these locations. There can still be tidal currents since the water levels on either side of the amphidromic point are not the same. A separate amphidromic system is created by each periodic tidal component.In most locations the "principal lunar semi-diurnal", known as M2, is the largest tidal constituent. Cotidal lines connect points which reach high tide at the same time and low tide at the same time. In Figure 1, the low tide lags or leads by 1 hr 2 min from its neighboring lines. Where the lines meet are amphidromes, and the tide rotates around them; for example, along the Chilean coast, and from southern Mexico to Peru, the tide propagates southward, while from Baja California to Alaska the tide propagates northward.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="apex">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">apex</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Apex_(geometry)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2858200</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geometry, an apex (plural apices) is the vertex which is in some sense the "highest" of the figure to which it belongs. The term is typically used to refer to the vertex opposite from some "base". The word is derived from the Latin for 'summit, peak, tip, top, extreme end'.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="aphelion">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aphelion</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Perihelion_and_aphelion</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q83481</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extreme point in an object's orbit</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="atterberg-liquid-limit">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atterberg-liquid-limit</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Atterberg_limits#Liquid_limit</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1143620</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Atterberg limits are a basic measure of the critical water contents of a fine-grained soil: its shrinkage limit, plastic limit, and liquid limit.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="atterberg-plastic-limit">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atterberg-plastic-limit</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Atterberg_limits#Plastic_limit</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1143620</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Atterberg limits are a basic measure of the critical water contents of a fine-grained soil: its shrinkage limit, plastic limit, and liquid limit.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="atterberg-shrinkage-limit">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atterberg-shrinkage-limit</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Atterberg_limits#Shrinkage_limit</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1143620</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Atterberg limits are a basic measure of the critical water contents of a fine-grained soil: its shrinkage limit, plastic limit, and liquid limit.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="axis">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">axis</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="base-level">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">base-level</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Base_level</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q423794</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geology and geomorphology a base level is the lower limit for an erosion process. The modern term was introduced by John Wesley Powell in 1875. The term was subsequently appropriated by William Morris Davis who used it in his cycle of erosion theory. The "ultimate base level" is the plane that results from projection of the sea level under landmasses. It is to this base level that topography tends to approach due to erosion, eventually forming a peneplain close to the end of a cycle of erosion.There are also lesser structural base levels where erosion is delayed by resistant rocks. Examples of this include karst regions underlain by insoluble rock. Base levels may be local when large landmasses are far from the sea or disconnected from it, as in the case of endorheic basins. An example of this is the Messinian salinity crisis, in which the Mediterranean Sea dried up making the base level drop more than 1000 m below sea level.The height of a base level also influences the position of deltas and river terraces. Together with river discharge and sediment flux the position of the base level influences the gradient, width and bed conditions in rivers. A relative drop in base level can trigger re-adjustments in river profiles including knickpoint migration and abandonment of terraces leaving them "hanging". Base level fall is also known to result in progradation of deltas and river sediment at lakes or sea. If the base level falls below the continental shelf, rivers may form a plain of braided rivers until headward erosion penetrates enough inland from the shelfbreak.When base levels are stable or rising rivers may aggrade. Rising base levels may also drown the lower courses of rivers creating rias. This happened in the Nile during the Zanclean flood when its lower course became, in a relatively short time, a large estuary extending up to 900 km inland from the Mediterranean coast.Base level change may be related to the following factors:</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="binary-mask">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">binary-mask</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="black-body">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">black-body</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Black_body</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q161424</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A black body or blackbody is an idealized physical body that absorbs all incident electromagnetic radiation, regardless of frequency or angle of incidence. The radiation emitted by a black body in thermal equilibrium with its environment is called black-body radiation. The name "black body" is given because it absorbs all colors of light. In contrast, a white body is one with a "rough surface that reflects all incident rays completely and uniformly in all directions."A black body in thermal equilibrium (that is, at a constant temperature) emits electromagnetic black-body radiation. The radiation is emitted according to Planck's law, meaning that it has a spectrum that is determined by the temperature alone (see figure at right), not by the body's shape or composition.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="boundary">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boundary</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Boundary_(topology)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q875399</svo:has_wikidata_page>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contour</svo:has_synonym>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In topology and mathematics in general, the boundary of a subset S of a topological space X is the set of points in the closure of S not belonging to the interior of S. An element of the boundary of S is called a boundary point of S. The term boundary operation refers to finding or taking the boundary of a set.  Notations used for boundary of a set S include </rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="cantor-set">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cantor-set</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Cantor_set</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q273188</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, the Cantor set is a set of points lying on a single line segment that has a number of unintuitive properties.  It was discovered in 1874 by Henry John Stephen Smith and introduced by German mathematician Georg Cantor in 1883.Through consideration of this set, Cantor and others helped lay the foundations of modern point-set topology. The most common construction is the Cantor ternary set, built by removing the middle third of a line segment and then repeating the process with the remaining shorter segments. Cantor mentioned the ternary construction only in passing, as an example of a more general idea, that of a perfect set that is nowhere dense.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="cell">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Face_(geometry)#Cell_or_3-face</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3064117</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In solid geometry, a face is a flat surface (a planar region) that forms part of the boundary of a solid object; a three-dimensional solid bounded exclusively by faces is a polyhedron.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="center">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">center</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Centre_(geometry)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q23595</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geometry, a centre (British English) or center (American English); (from Ancient Greek  κέντρον (kéntron) 'pointy object') of an object is a point in some sense in the middle of the object. According to the specific definition of center taken into consideration, an object might have no center. If geometry is regarded as the study of isometry groups, then a center is a fixed point of all the isometries that move the object onto itself.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="centerline">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">centerline</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="centroid">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">centroid</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Centroid</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q511093</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics and physics, the centroid, also known as geometric center or center of figure, of a plane figure or solid figure is the arithmetic mean position of all the points in the surface of the figure. The same definition extends to any object in n-dimensional Euclidean space.In geometry, one often assumes uniform mass density, in which case the barycenter or center of mass coincides with the centroid. Informally, it can be understood as the point at which a cutout of the shape (with uniformly distributed mass) could be perfectly balanced on the tip of a pin.In physics, if variations in gravity are considered, then a center of gravity can be defined as the weighted mean of all points weighted by their specific weight.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="circle">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circle</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Circle</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q17278</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A circle is a shape consisting of all points in a plane that are at a given distance from a given point, the centre. Equivalently, it is the curve traced out by a point that moves in a plane so that its distance from a given point is constant. The distance between any point of the circle and the centre is called the radius. Usually, the radius is required to be a positive number. A circle with </rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="column">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">column</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Row_and_column_spaces</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2088159</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In linear algebra, the column space (also called the range or image) of a matrix A is the span (set of all possible linear combinations) of its column vectors. The column space of a matrix is the image or range of the corresponding matrix transformation.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="contour">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contour</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Contour_line</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q6653802</svo:has_wikidata_page>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isocline</svo:has_synonym>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A contour line (also isoline, isopleth, or isarithm) of a function of two variables is a curve along which the function has a constant value, so that the curve joins points of equal value. It is a plane section of the three-dimensional graph of the function </rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="convection-diffusion-equation">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">convection-diffusion-equation</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Convection-diffusion_equation</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q343279</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">combination of the diffusion and convection (advection) equations</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="core-mantle-boundary">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">core-mantle-boundary</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Core%E2%80%93mantle_boundary</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1330051</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The core–mantle boundary (CMB) of Earth lies between the planet's silicate mantle and its liquid iron-nickel outer core. This boundary is located at approximately 2,891 km (1,796 miles) depth beneath Earth's surface. The boundary is observed via the discontinuity in seismic wave velocities at that depth due to the differences between the acoustic impedances of the solid mantle and the molten outer core. P-wave velocities are much slower in the outer core than in the deep mantle while S-waves do not exist at all in the liquid portion of the core.  Recent evidence suggests a distinct boundary layer directly above the CMB possibly made of a novel phase of the basic perovskite mineralogy of the deep mantle named post-perovskite. Seismic tomography studies have shown significant irregularities within the boundary zone and appear to be dominated by the African and Pacific Large Low-Shear-Velocity Provinces (LLSVP).The uppermost section of the outer core is thought to be about 500–1,800 K hotter than the overlying mantle, creating a thermal boundary layer. The boundary is thought to harbor topography, much like Earth's surface, that is supported by solid-state convection within the overlying mantle.  Variations in the thermal properties of the core-mantle boundary may affect how the outer core's iron-rich fluids flow, which are ultimately responsible for Earth's magnetic field.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="crest">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crest</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Crest_and_trough</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q864673</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A crest point on a wave is the maximum value of upward displacement within a cycle. A crest is a point on a surface wave where the displacement of the medium is at a maximum. A trough is the opposite of a crest, so the minimum or lowest point in a cycle.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="crestline">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crestline</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="crust-mantle-boundary">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crust-mantle-boundary</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="curve">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curve</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Curve</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q161973</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, a curve (also called a curved line in older texts) is an object similar to a line, but that does not have to be straight.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="data-stream">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">data-stream</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Data_stream</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1172540</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In connection-oriented communication, a data stream is the transmission of a sequence of digitally encoded signals to convey information. Typically, the transmitted symbols are grouped into a series of packets.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="datum">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">datum</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Datum_reference</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1047519</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A datum reference or just datum (plural: datums) is some important part of an object—such as a point, line, plane, hole, set of holes, or pair of surfaces—that serves as a reference in defining the geometry of the object and (often) in measuring aspects of the actual geometry to assess how closely they match with the nominal value, which may be an ideal, standard, average, or desired value. For example, on a car's wheel, the lug nut holes define a bolt circle that is a datum from which the location of the rim can be defined and measured. This matters because the hub and rim need to be concentric to within close limits (or else the wheel will not roll smoothly). The concept of datums is used in many fields, including carpentry, metalworking, needlework, geometric dimensioning and tolerancing (GD&amp;T), aviation, surveying, geodesy (geodetic datums), and others. </rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="dual-cell">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dual-cell</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="dual-node">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dual-node</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ecliptic">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ecliptic</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Ecliptic</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q79852</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ecliptic or ecliptic plane is the orbital plane of Earth around the Sun. From the perspective of an observer on Earth, the Sun's movement around the celestial sphere over the course of a year traces out a path along the ecliptic against the background of stars. The ecliptic is an important reference plane and is the basis of the ecliptic coordinate system.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ellipse">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ellipse</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Ellipse</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q40112</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, an ellipse is a plane curve surrounding two focal points, such that for all points on the curve, the sum of the two distances to the focal points is a constant. It generalizes a circle, which is the special type of ellipse in which the two focal points are the same. The elongation of an ellipse is measured by its eccentricity </rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ellipsoid">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ellipsoid</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Ellipsoid</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q190046</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ellipsoid is a surface that may be obtained from a sphere by deforming it by means of directional scalings, or more generally, of an affine transformation.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="enclosing-curve">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">enclosing-curve</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="endpoint">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endpoint</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Endpoint</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q5376582</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An endpoint, end-point or end point may refer to:</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="epicenter">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epicenter</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Epicenter</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q106032</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The epicenter, epicentre () or epicentrum in seismology is the point on the Earth's surface directly above a hypocenter or focus, the point where an earthquake or an underground explosion originates. </rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="equation">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equation</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Equation</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11345</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, an equation is a formula that expresses the equality of two expressions, by connecting them with the equals sign =. The word equation and its cognates in other languages may have subtly different meanings; for example, in French an équation is defined as containing one or more variables, while in English, any well-formed formula consisting of two expressions related with an equals sign is an equation.Solving an equation containing variables consists of determining which values of the variables make the equality true. The variables for which the equation has to be solved are also called unknowns, and the values of the unknowns that satisfy the equality are called solutions of the equation. There are two kinds of equations: identities and conditional equations. An identity is true for all values of the variables. A conditional equation is only true for particular values of the variables.An equation is written as two expressions, connected by an equals sign ("="). The expressions on the two sides of the equals sign are called the "left-hand side" and "right-hand side" of the equation. Very often the right-hand side of an equation is assumed to be zero. This does not reduce the generality, as this can be realized by subtracting the right-hand side from both sides.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="equation-of-state">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equation-of-state</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Equation_of_state</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q214967</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics and chemistry, an equation of state is a thermodynamic equation relating state variables, which describe the state of matter under a given set of physical conditions, such as pressure, volume, temperature, or internal energy. Most modern equations of state are formulated in the Helmholtz free energy. Equations of state are useful in describing the properties of pure substances and mixtures in liquids, gases, and solid states as well as the state of matter in the interior of stars. </rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="equator">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equator</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Equator</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q23538</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The equator is a circle of latitude that divides a spheroid, such as Earth, into the northern and southern hemispheres. On Earth, it is an imaginary line located at 0 degrees latitude, about 40,075 km (24,901 mi) in circumference, halfway between the North and South poles. The term can also be used for any other celestial body that is roughly spherical.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="equilibrium-line">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equilibrium-line</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="expression">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">expression</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Expression_(mathematics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q6498784</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, an expression or mathematical expression is a finite combination of symbols that is well-formed according to rules that depend on the context.  Mathematical symbols can designate numbers (constants), variables, operations, functions, brackets, punctuation, and grouping to help determine order of operations and other aspects of logical syntax.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="focus">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">focus</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Focus_(geometry)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3568</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geometry, focuses or foci (), singular focus, are special points with reference to which any of a variety of curves is constructed. For example, one or two foci can be used in defining conic sections, the four types of which are the circle, ellipse, parabola, and hyperbola. In addition, two foci are used to define the Cassini oval and the Cartesian oval, and more than two foci are used in defining an n-ellipse.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="friedmann-universe">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">friedmann-universe</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Friedmann_equations</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q467736</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Friedmann equations are a set of equations in physical cosmology that govern the expansion of space in homogeneous and isotropic models of the universe within the context of general relativity. They were first derived by Alexander Friedmann in 1922 from Einstein's field equations of gravitation for the Friedmann–Lemaître–Robertson–Walker metric and a perfect fluid with a given mass density ρ and pressure p. The equations for negative spatial curvature were given by Friedmann in 1924.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="function">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">function</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Function_(mathematics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11348</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, a function from a set X to a set Y assigns to each element of X exactly one element of Y. The set X is called the domain of the function and the set Y is called the codomain of the function.Functions were originally the idealization of how a varying quantity depends on another quantity. For example, the position of a planet is a function of time. Historically, the concept was elaborated with the infinitesimal calculus at the end of the 17th century, and, until the 19th century, the functions that were considered were differentiable (that is, they had a high degree of regularity). The concept of a function was formalized at the end of the 19th century in terms of set theory, and this greatly enlarged the domains of application of the concept.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="geocenter">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geocenter</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="geodesic">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geodesic</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Geodesic</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q213488</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geometry, a geodesic () is a curve representing in some sense the shortest path (arc) between two points in a surface, or more generally in a Riemannian manifold. The term also has meaning in any  differentiable manifold with a connection. It is a generalization of the notion of a "straight line".</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="geodetic-datum">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geodetic-datum</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Geodetic_datum</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1502887</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A geodetic datum or geodetic system (also: geodetic reference datum, geodetic reference system, or geodetic reference frame) is a global datum reference or reference frame for precisely representing the position of locations on Earth or other planetary bodies by means of geodetic coordinates. Datums are crucial to any technology or technique based on spatial location, including geodesy, navigation, surveying, geographic information systems, remote sensing, and cartography. A horizontal datum is used to measure a location across the Earth's surface, in latitude and longitude or another coordinate system; a vertical datum is used to measure the elevation or depth relative to a standard origin, such as mean sea level (MSL). Since the rise of the global positioning system (GPS), the ellipsoid and datum  WGS 84 it uses has supplanted most others in many applications. The WGS 84 is intended for global use, unlike most earlier datums.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="geoid">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geoid</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Geoid</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q185969</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The geoid ( JEE-oyd) is the shape that the ocean surface would take under the influence of the gravity of Earth, including gravitational attraction and Earth's rotation, if other influences such as winds and tides were absent. This surface is extended through the continents (such as might be approximated with very narrow hypothetical canals). According to Gauss, who first described it, it is the "mathematical figure of the Earth", a smooth but irregular surface whose shape results from the uneven distribution of mass within and on the surface of Earth. It can be known only through extensive gravitational measurements and calculations. Despite being an important concept for almost 200 years in the history of geodesy and geophysics, it has been defined to high precision only since advances in satellite geodesy in the late 20th century.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="graph">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">graph</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q141488</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In discrete mathematics, and more specifically in graph theory, a graph is a structure amounting to a set of objects in which some pairs of the objects are in some sense "related". The objects correspond to mathematical abstractions called vertices (also called nodes or points) and each of the related pairs of vertices is called an edge (also called link or line). Typically, a graph is depicted in diagrammatic form as a set of dots or circles for the vertices, joined by lines or curves for the edges. Graphs are one of the objects of study in discrete mathematics.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="gravimetric-vertical-datum">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vertical-gravimetric-datum</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="grid">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grid</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Lattice_graph</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q6497118</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In graph theory, a lattice graph, mesh graph, or grid graph is a graph whose drawing, embedded in some Euclidean space </rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="heat-equation">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat-equation</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Heat_equation</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q6510488</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics and physics, the heat equation is a certain partial differential equation. Solutions of the heat equation are sometimes known as caloric functions. The theory of the heat equation was first developed by Joseph Fourier in 1822 for the purpose of modeling how a quantity such as heat diffuses through a given region.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="hypocenter">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypocenter</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Hypocenter</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q107410</svo:has_wikidata_page>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">focus</svo:has_synonym>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In seismology, a hypocenter or hypocentre (from Ancient Greek  ὑπόκεντρον (hupόkentron) 'below the center') is the point of origin of an earthquake. A synonym is the focus of an earthquake.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="image">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">image</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Image</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q478798</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An image is a visual representation. An image can be two-dimensional, such as a drawing, painting, or photograph, or three-dimensional, such as a carving or sculpture. Images may be displayed through other media, including projection on a surface, activation of electronic signals, or digital displays; they can also be reproduced through mechanical means, such as photography, printmaking or photocopying. Images can also be animated through digital or physical processes.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="instrument-response">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">instrument-response</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="isocline">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isocline</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Contour_line</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q6653802</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A contour line (also isoline, isopleth, or isarithm) of a function of two variables is a curve along which the function has a constant value, so that the curve joins points of equal value. It is a plane section of the three-dimensional graph of the function </rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="isosurface">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isosurface</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Isosurface</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1311829</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An isosurface is a three-dimensional analog of an isoline.  It is a surface that represents points of a constant value (e.g. pressure, temperature, velocity, density) within a volume of space; in other words, it is a level set of a continuous function whose domain is 3-space.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="land-mask">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">land-mask</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="line">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">line</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Line</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q15878761</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Line most often refers to:</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="lithosphere-asthenosphere-boundary">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lithosphere-asthenosphere-boundary</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Lithosphere-Asthenosphere_boundary</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q23581588</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">level representing a mechanical difference between layers in Earth’s inner structure</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="location">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">location</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Location</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2221906</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geography, location or place are used to denote a region (point, line, or area) on Earth's surface. The term location generally implies a higher degree of certainty than place, the latter often indicating an entity with an ambiguous boundary, relying more on human or social attributes of place identity and sense of place than on geometry. A populated place is called a settlement.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="magnetic-north-pole">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic-north-pole</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/North_Magnetic_Pole</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q842763</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">point in the Arctic at which Earth's magnetic field points vertically downwards, at 86°N 175°E in the Arctic Ocean as of 2019</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="magnetic-south-pole">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnetic-south-pole</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/South_Magnetic_Pole</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1043682</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wandering point on the Earth where the geomagnetic field lines are directed vertically upwards, at 64°S 137°E as of 2015 in the Southern Ocean</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="market-basket">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">market-basket</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Market_basket</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1758955</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A market basket or commodity bundle is a fixed list of items, in given proportions.  Its most common use is to track the progress of inflation in an economy or specific market. That is, to measure the changes in the value of money over time.  A market basket is also used with the theory of purchasing price parity to measure the value of money in different places.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="mask">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mask</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Mask_(computing)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q591605</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In computer science, a mask or bitmask is data that is used for bitwise operations, particularly in a bit field. Using a mask, multiple bits in a byte, nibble, word, etc. can be set either on or off, or inverted from on to off (or vice versa) in a single bitwise operation.  An additional use of masking involves predication in vector processing, where the bitmask is used to select which element operations in the vector are to be executed (mask bit is enabled) and which are not (mask bit is clear).</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="model">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">model</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Model</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1979154</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A model is an informative representation of an object, person or system. The term originally denoted the plans of a building in late 16th-century English, and derived via French and Italian ultimately from Latin modulus, a measure.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="mohr-coulomb-plastic">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mohr-coulomb-plastic</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Mohr%E2%80%93Coulomb_theory</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3417792</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mohr–Coulomb theory is a mathematical model (see yield surface) describing the response of brittle materials such as concrete, or rubble piles, to shear stress as well as normal stress. Most of the classical engineering materials follow this rule in at least a portion of their shear failure envelope. Generally the theory applies to materials for which the compressive strength far exceeds the tensile strength.In geotechnical engineering it is used to define  shear strength of soils and rocks at different effective stresses.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="msl-tidal-vertical-datum">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">msl-tidal-vertical-datum</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="navier-stokes-equation">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">navier-stokes-equation</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Navier-Stokes_equations</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q201321</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nonlinear partial differential equation describing the motion of viscous fluids</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="node">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">node</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="north-pole">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">north-pole</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/North_Pole_(disambiguation)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q416910</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The North Pole (also known as the "Geographic North Pole" or "Terrestrial North Pole") is the point in the Northern Hemisphere where the Earth's axis of rotation meets its surface.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="origin">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">origin</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="parabola">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parabola</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Parabola</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q48297</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, a parabola is a plane curve which is mirror-symmetrical and is approximately U-shaped. It fits several superficially different mathematical descriptions, which can all be proved to define exactly the same curves.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="partition">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">partition</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Partition_of_an_interval</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2344169</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, a partition of an interval [a, b] on the real line is a finite sequence x0, x1, x2, …, xn of real numbers such that</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="peano-curve">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peano-curve</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Peano_curve</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1725409</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geometry, the Peano curve is the first example of a space-filling curve to be discovered, by Giuseppe Peano in 1890. Peano's curve is a surjective, continuous function from the unit interval onto the unit square, however it is not injective. Peano was motivated by an earlier result of Georg Cantor that these two sets have the same cardinality. Because of this example, some authors use the phrase "Peano curve" to refer more generally to any space-filling curve.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="perihelion">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">perihelion</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Perihelion_and_aphelion</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q83481</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extreme point in an object's orbit</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="plan">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plan</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="plane">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plane</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Plane_(geometry)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q17285</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flat, two-dimensional surface</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="plug-layer">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plug-layer</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Plug_flow</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q383758</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In fluid mechanics, plug flow is a simple model of the velocity profile of a fluid flowing in a pipe.  In plug flow, the velocity of the fluid is assumed to be constant across any cross-section of the pipe perpendicular to the axis of the pipe.   The plug flow model assumes there is no boundary layer adjacent to the inner wall of the pipe.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="point">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">point</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Point</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q20380977</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Point or points may refer to:</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="point-pair">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">point-pair</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="point-set">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">point-set</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="poisson-equation">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">poisson-equation</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Poisson%27s_equation</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q827688</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poisson's equation is an elliptic partial differential equation of broad utility in theoretical physics. For example, the solution to Poisson's equation is the potential field caused by a given electric charge or mass density distribution; with the potential field known, one can then calculate electrostatic or gravitational (force) field. It is a generalization of Laplace's equation, which is also frequently seen in physics.  The equation is named after French mathematician and physicist Siméon Denis Poisson.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="pole">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pole</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Poles_of_astronomical_bodies</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q7209314</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The poles of astronomical bodies are determined based on their axis of rotation in relation to the celestial poles of the celestial sphere. Astronomical bodies include stars, planets, dwarf planets and small Solar System bodies such as comets and minor planets (e.g., asteroids), as well as natural satellites and minor-planet moons.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="polygon">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polygon</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Polygon</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q37555</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geometry, a polygon () is a plane figure made up of line segments connected to form a closed polygonal chain.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="polynomial">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polynomial</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Polynomial</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q43260</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, a polynomial is an expression consisting of indeterminates (also called variables) and coefficients, that involves only the operations of addition, subtraction, multiplication, and positive-integer powers of variables. An example of a polynomial of a single indeterminate x is x2 − 4x + 7. An example with three indeterminates is x3 + 2xyz2 − yz + 1.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="potential-temperature-isosurface">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">potential-temperature-isosurface</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="primary-cell">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary-cell</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="primary-node">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary-node</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="profile">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">profile</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="ray">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ray</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Line_(geometry)#Ray</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q37105</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geometry, a line is an infinitely long object with no width, depth, or curvature. Thus, lines are one-dimensional objects, though they may exist embedded in two, three, or higher dimension spaces. The word line may also refer to a line segment in everyday life, which has two points to denote its ends (endpoints). A line can be referred to by two points that lie on it (e.g. </rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="response-filter">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">response-filter</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="rooted-tree-graph">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rooted-tree-graph</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Tree_(graph_theory)#Rooted_tree</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q272735</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In graph theory, a tree is an undirected graph in which any two vertices are connected by exactly one path, or equivalently a connected acyclic undirected graph. A forest is an undirected graph in which any two vertices are connected by at most one path, or equivalently an acyclic undirected graph, or equivalently a disjoint union of trees.A polytree (or directed tree or oriented tree or singly connected network) is a directed acyclic graph (DAG) whose underlying undirected graph is a tree. A polyforest (or directed forest or oriented forest) is a directed acyclic graph whose underlying undirected graph is a forest.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="row">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">row</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Row_and_column_spaces</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2088159</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In linear algebra, the column space (also called the range or image) of a matrix A is the span (set of all possible linear combinations) of its column vectors. The column space of a matrix is the image or range of the corresponding matrix transformation.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="row-major-offset">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">row-major-offset</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Row-_and_column-major_order</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q7371746</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In computing, row-major order and column-major order are methods for storing multidimensional arrays in linear storage such as random access memory.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="sea-mask">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sea-mask</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="seaward-boundary">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seaward-boundary</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="semi-major-axis">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semi-major-axis</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Semi-major_and_semi-minor_axes</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q21143897</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geometry, the major axis of an ellipse is its longest diameter: a line segment that runs through the center and both foci, with ends at the two most widely separated points of the perimeter. The semi-major axis (major semiaxis) is the longest semidiameter or one half of the major axis, and thus runs from the centre, through a focus, and to the perimeter. The semi-minor axis (minor semiaxis) of an ellipse or hyperbola is a line segment that is at right angles with the semi-major axis and has one end at the center of the conic section. For the special case of a circle, the lengths of the semi-axes are both equal to the radius of the circle.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="semi-minor-axis">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">semi-minor-axis</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Semi-major_and_semi-minor_axes</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q21143897</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geometry, the major axis of an ellipse is its longest diameter: a line segment that runs through the center and both foci, with ends at the two most widely separated points of the perimeter. The semi-major axis (major semiaxis) is the longest semidiameter or one half of the major axis, and thus runs from the centre, through a focus, and to the perimeter. The semi-minor axis (minor semiaxis) of an ellipse or hyperbola is a line segment that is at right angles with the semi-major axis and has one end at the center of the conic section. For the special case of a circle, the lengths of the semi-axes are both equal to the radius of the circle.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="shape">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shape</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Shape</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q207961</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A shape or figure is a graphical representation of an object or its external boundary, outline, or external surface, as opposed to other properties such as color, texture, or material type.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="shear-layer">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shear-layer</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Shear_flow</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2250602</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In fluid dynamics, shear flow is the flow induced by a force in a fluid. In solid mechanics, shear flow is the shear stress over a distance in a thin-walled structure.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="shell">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shell</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="shoreline">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoreline</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Coast</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q93352</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The coast, also known as the coastline, shoreline or seashore, is defined as the area where land meets the ocean, or as a line that forms the boundary between the land and the coastline. Shores are influenced by the topography of the surrounding landscape, as well as by water induced erosion, such as waves. The geological composition of rock and soil dictates the type of shore which is created. The Earth has around 620,000 kilometres (390,000 mi) of coastline. Coasts are important zones in natural ecosystems, often home to a wide range of biodiversity. On land, they harbor important ecosystems such as freshwater or estuarine wetlands, which are important for bird populations and other terrestrial animals. In wave-protected areas they harbor saltmarshes, mangroves or seagrasses, all of which can provide nursery habitat for finfish, shellfish, and other aquatic species. Rocky shores are usually found along exposed coasts and provide habitat for a wide range of sessile animals (e.g. mussels, starfish, barnacles) and various kinds of seaweeds. In physical oceanography, a shore is the wider fringe that is geologically modified by the action of the body of water past and present, while the beach is at the edge of the shore, representing the intertidal zone where there is one. Along tropical coasts with clear, nutrient-poor water, coral reefs can often be found between depths of 1–50 meters (3.3–164.0 feet).</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="sierpinski-gasket">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sierpinski-gasket</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Sierpinski_triangle</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q663365</svo:has_wikidata_page>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sierpinski-triangle</svo:has_synonym>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fractal composed of triangles</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="sine-wave">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sine-wave</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Sine_wave</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q207527</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sine wave, sinusoidal wave, or just sinusoid is a mathematical curve defined in terms of the sine trigonometric function, of which it is the graph. It is a type of continuous wave and also a smooth periodic function. It occurs often in mathematics, as well as in physics, engineering, signal processing and many other fields. </rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="south-pole">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">south-pole</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/South_Pole_(disambiguation)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q22679325</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">South Pole or Southpole may refer to:</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="sphere">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sphere</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Sphere</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q12507</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sphere (from Ancient Greek  σφαῖρα (sphaîra) 'globe, ball') is a geometrical object that is a three-dimensional analogue to a two-dimensional circle. A sphere is the set of points that are all at the same distance r from a given point in three-dimensional space. That given point is the centre of the sphere, and r is the sphere's radius. The earliest known mentions of spheres appear in the work of the ancient Greek mathematicians.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="square">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">square</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Square</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q164</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In Euclidean geometry, a square is a regular quadrilateral, which means that it has four equal sides and four equal angles (90-degree angles, π/2 radian angles, or right angles). It can also be defined as a rectangle with two equal-length adjacent sides. It is the only regular polygon whose internal angle, central angle, and external angle are all equal (90°), and whose diagonals are all equal in length. A square with vertices ABCD would be denoted</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="streamline">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">streamline</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Streamlines,_streaklines,_and_pathlines</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q112835448</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Streamlines, streaklines and pathlines are field lines in a fluid flow.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="surface">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Surface_(mathematics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3505239</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, a surface is a mathematical model of the common concept of a surface. It is a generalization of a plane, but, unlike a plane, it may be curved; this is analogous to a curve generalizing a straight line. </rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="terrestrial-north-pole">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terrestrial-north-pole</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/North_Pole</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q934</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The North Pole, also known as the Geographic North Pole or Terrestrial North Pole, is the point in the Northern Hemisphere where the Earth's axis of rotation meets its surface. It is called the True North Pole to distinguish from the Magnetic North Pole.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="terrestrial-south-pole">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terrestrial-south-pole</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/South_Pole</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q933</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The South Pole, also known as the Geographic South Pole, Terrestrial South Pole or 90th Parallel South, is the southernmost point on Earth and lies antipodally on the opposite side of Earth from the North Pole, at a distance of 12,430 miles (20,004 km) in all directions. It is one of the two points where Earth's axis of rotation intersects its surface.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="tidal-vertical-datum">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tidal-vertical-datum</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="transect">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transect</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Transect</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1447141</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A transect is a path along which one counts and records occurrences of the objects of study (e.g. plants).There are several types of transect. Some are more effective than others.It requires an observer to move along a fixed path and to count occurrences along the path and, at the same time (in some procedures), obtain the distance of the object from the path. This results in an estimate of the area covered and an estimate of the way in which detectability increases from probability 0 (far from the path) towards 1 (near the path). Using the raw count and this probability function, one can arrive at an estimate of the actual density of objects.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="trapezoid">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trapezoid</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Trapezoid</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q46303</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geometry, a trapezoid () in American and Canadian English, or trapezium () in British and other forms of English, is a quadrilateral that has at least one pair of parallel sides.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="tree-graph">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tree-graph</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Tree_(graph_theory)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q272735</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In graph theory, a tree is an undirected graph in which any two vertices are connected by exactly one path, or equivalently a connected acyclic undirected graph. A forest is an undirected graph in which any two vertices are connected by at most one path, or equivalently an acyclic undirected graph, or equivalently a disjoint union of trees.A polytree (or directed tree or oriented tree or singly connected network) is a directed acyclic graph (DAG) whose underlying undirected graph is a tree. A polyforest (or directed forest or oriented forest) is a directed acyclic graph whose underlying undirected graph is a forest.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="triangle">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">triangle</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Triangle</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q19821</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A triangle is a polygon with three edges and three vertices. It is one of the basic shapes in geometry. A triangle with vertices A, B, and C is denoted </rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="trough">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trough</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Crest_and_trough</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q864673</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A crest point on a wave is the maximum value of upward displacement within a cycle. A crest is a point on a surface wave where the displacement of the medium is at a maximum. A trough is the opposite of a crest, so the minimum or lowest point in a cycle.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="vertex">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vertex</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Vertex_(geometry)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q26401</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geometry, a vertex (in plural form: vertices or vertexes) is a point where two or more curves, lines, or edges meet. As a consequence of this definition, the point where two lines meet to form an angle and the corners of polygons and polyhedra are vertices.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="vertical-axis">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vertical-axis</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="vertical-geodetic-datum">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vertical-geodetic-datum</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/National_Geodetic_Vertical_Datum_of_1929</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q7325529</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The National Geodetic Vertical Datum of 1929 is the official name since 1973 of the vertical datum established for vertical control surveying in the United States of America by the General Adjustment of 1929.  Originally known as Sea Level Datum of 1929, NGVD 29 was determined and published by the United States Coast and Geodetic Survey and used to measure the elevation of a point above and depression below mean sea level (MSL).</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="viewpoint">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">viewpoint</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Perspective_(geometry)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2252759</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two figures in a plane are perspective from a point O, called the center of perspectivity if the lines joining corresponding points of the figures all meet at O. Dually, the figures are said to be perspective from a line if the points of intersection of corresponding lines all lie on one line. The proper setting for this concept is in projective geometry where there will be no special cases due to parallel lines since all lines meet. Although stated here for figures in a plane, the concept is easily extended to higher dimensions.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="virtual-north-pole">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">virtual-north-pole</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="wave">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wave</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Wave</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q37172</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics, mathematics, and related fields, a wave is a propagating dynamic disturbance (change from equilibrium) of one or more quantities. Waves can be periodic, in which case those quantities oscillate repeatedly about an equilibrium (resting) value at some frequency. When the entire waveform moves in one direction, it is said to be a traveling wave; by contrast, a pair of superimposed periodic waves traveling in opposite directions makes a standing wave. In a standing wave, the amplitude of vibration has nulls at some positions where the wave amplitude appears smaller or even zero. Waves are often described by a wave equation (standing wave field of two opposite waves) or a one-way wave equation for single wave propagation in a defined direction. </rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="x-axis">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-axis</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="x-dual-node">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-dual-node</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="x-primary-node">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-primary-node</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="x-section">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-section</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Cross_section_(geometry)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q845080</svo:has_wikidata_page>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cross-section</svo:has_synonym>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geometry and science, a cross section is the non-empty intersection of a solid body in three-dimensional space with a plane, or the analog in higher-dimensional spaces. Cutting an object into slices creates many parallel cross-sections. The boundary of a cross-section in three-dimensional space that is parallel to two of the axes, that is, parallel to the plane determined by these axes, is sometimes referred to as a contour line; for example, if a plane cuts through mountains of a raised-relief map parallel to the ground, the result is a contour line in two-dimensional space showing points on the surface of the mountains of equal elevation.</rdfs:comment>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="y-dual-node">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">y-dual-node</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="y-primary-node">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">y-primary-node</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="z-dual-node">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z-dual-node</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="z-primary-node">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z-primary-node</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="axis~x">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="axis"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/x"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">axis~x</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="surface~2m-above">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="surface"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/2m-above"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~2m-above</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="surface~10m-above">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="surface"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/10m-above"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~10m-above</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="surface~horizontal">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="surface"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/horizontal"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~horizontal</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="x-section~vertical">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="x-section"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/vertical"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-section~vertical</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="axis~vertical">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="axis"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/vertical"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">axis~vertical</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="x-section~horizontal">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="x-section"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/horizontal"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-section~horizontal</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="boundary~seaward">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="boundary"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/seaward"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boundary~seaward</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="surface~0-to-10cm-below">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="surface"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/0-to-10cm-below"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~0-to-10cm-below</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="surface~0-to-100cm-below">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="surface"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/0-to-100cm-below"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~0-to-100cm-below</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="surface~10-to-40cm-below">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="surface"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/10-to-40cm-below"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~10-to-40cm-below</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="surface~40-to-100cm-below">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="surface"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/40-to-100cm-below"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~40-to-100cm-below</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="surface~100-to-200cm-below">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="surface"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/100-to-200cm-below"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface~100-to-200cm-below</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="axis~east">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="axis"/>
+  <svo:has_direction rdf:resource="http://scientificvariablesontology.org/svo/direction/east"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">axis~east</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="target">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">target</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="datum~vertical~tidal~mean-sea-level">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <svo:has_abstraction_root rdf:resource="datum"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/vertical"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/tidal"/>
+  <svo:has_attribute rdf:resource="http://scientificvariablesontology.org/svo/attribute/mean-sea-level"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">datum~vertical~tidal~mean-sea-level</rdfs:label>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>

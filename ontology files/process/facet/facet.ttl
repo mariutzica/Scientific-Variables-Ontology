@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:facet a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "facet"^^xsd:string ;
+    svo:has_synonym "faceting"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3268495"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Facet"^^xsd:string ;
+    rdfs:comment "Facets () are flat faces on geometric shapes. The organization of naturally occurring facets was key to early developments in crystallography, since they reflect the underlying symmetry of the crystal structure.  Gemstones commonly have facets cut into them in order to improve their appearance by allowing them to reflect light."^^xsd:string .
+

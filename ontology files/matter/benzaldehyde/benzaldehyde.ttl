@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:benzaldehyde a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "benzaldehyde"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q372524"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Benzaldehyde"^^xsd:string ;
+    rdfs:comment "Benzaldehyde (C6H5CHO) is an organic compound consisting of a benzene ring with a formyl substituent. It is the simplest aromatic aldehyde and one of the most industrially useful."^^xsd:string .
+

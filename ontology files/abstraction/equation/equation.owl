@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/abstraction/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/abstraction/">
+<owl:NamedIndividual rdf:about="equation">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equation</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Equation</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q11345</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, an equation is a formula that expresses the equality of two expressions, by connecting them with the equals sign =. The word equation and its cognates in other languages may have subtly different meanings; for example, in French an équation is defined as containing one or more variables, while in English, any well-formed formula consisting of two expressions related with an equals sign is an equation.Solving an equation containing variables consists of determining which values of the variables make the equality true. The variables for which the equation has to be solved are also called unknowns, and the values of the unknowns that satisfy the equality are called solutions of the equation. There are two kinds of equations: identities and conditional equations. An identity is true for all values of the variables. A conditional equation is only true for particular values of the variables.An equation is written as two expressions, connected by an equals sign ("="). The expressions on the two sides of the equals sign are called the "left-hand side" and "right-hand side" of the equation. Very often the right-hand side of an equation is assumed to be zero. This does not reduce the generality, as this can be realized by subtracting the right-hand side from both sides.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

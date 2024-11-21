@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:progradation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "progradation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3922753"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Progradation"^^xsd:string ;
+    rdfs:comment "In sedimentary geology and geomorphology, the term progradation refers to the growth of a river delta farther out into the sea over time. This occurs when the volume of incoming sediment is greater than the volume of the delta that is lost through subsidence, sea-level rise, or erosion."^^xsd:string .
+

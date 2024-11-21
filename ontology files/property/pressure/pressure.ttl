@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pressure a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "pressure"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q39552"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pressure"^^xsd:string ;
+    rdfs:comment "Pressure (symbol: p or P) is the force applied perpendicular to the surface of an object per unit area over which that force is distributed.: 445  Gauge pressure (also spelled gage pressure) is the pressure relative to the ambient pressure."^^xsd:string .
+

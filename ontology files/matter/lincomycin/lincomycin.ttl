@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lincomycin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "lincomycin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q423428"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lincomycin"^^xsd:string ;
+    rdfs:comment "Lincomycin is a lincosamide antibiotic that comes from the actinomycete Streptomyces lincolnensis. A related compound, clindamycin, is derived from lincomycin by using thionyl chloride to replace the 7-hydroxy group with a chlorine atom with inversion of chirality. It was released for medical use in September 1964."^^xsd:string .
+

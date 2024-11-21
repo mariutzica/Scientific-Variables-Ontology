@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:carbon-13 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "carbon-13"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1770822"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Carbon-13"^^xsd:string ;
+    rdfs:comment "Carbon-13 (13C) is a natural, stable isotope of carbon with a nucleus containing six protons and seven neutrons. As one of the environmental isotopes, it makes up about 1.1% of all natural carbon on Earth."^^xsd:string .
+

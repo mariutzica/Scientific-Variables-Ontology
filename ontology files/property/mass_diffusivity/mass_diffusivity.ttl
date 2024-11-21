@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mass_diffusivity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "mass_diffusivity"^^xsd:string ;
+    svo:has_synonym "diffusion_coefficient"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q604008"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mass_diffusivity"^^xsd:string ;
+    rdfs:comment "Diffusivity, mass diffusivity or diffusion coefficient is usually written as the proportionality constant between the molar flux due to molecular diffusion and the negative value of the gradient in the concentration of the species. More accurately, the diffusion coefficient times the local concentration is the proportionality constant between the negative value of the mole fraction gradient and the molar flux. This distinction is especially significant in gaseous systems with strong temperature gradients. Diffusivity derives its definition from Fick's law and plays a role in numerous other equations of physical chemistry."^^xsd:string .
+

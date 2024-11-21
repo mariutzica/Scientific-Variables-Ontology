@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vaporization_enthalpy a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "vaporization_enthalpy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q483538"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Enthalpy_of_vaporization"^^xsd:string ;
+    rdfs:comment "In thermodynamics, the enthalpy of vaporization (symbol ∆Hvap), also known as the (latent) heat of vaporization or heat of evaporation, is the amount of energy (enthalpy) that must be added to a liquid substance to transform a quantity of that substance into a gas. The enthalpy of vaporization is a function of the pressure at which the transformation (vaporization or evaporation) takes place."^^xsd:string .
+

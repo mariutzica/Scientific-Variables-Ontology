@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pore a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "pore"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5073758"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pore_space_in_soil"^^xsd:string ;
+    rdfs:comment "The pore space of soil contains the liquid and gas phases of soil, i.e., everything but the solid phase that contains mainly minerals of varying sizes as well as organic compounds."^^xsd:string .
+

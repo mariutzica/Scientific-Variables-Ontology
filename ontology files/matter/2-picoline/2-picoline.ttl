@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:2-picoline a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "2-picoline"^^xsd:string ;
+    svo:has_synonym "2-methylpyridine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2216745"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/2-Methylpyridine"^^xsd:string ;
+    rdfs:comment "2-Methylpyridine, or 2-picoline, is the compound described with formula C6H7N. 2-Picoline is a colorless liquid that has an unpleasant odor similar to pyridine. It is mainly used to make vinylpyridine and the agrichemical nitrapyrin."^^xsd:string .
+

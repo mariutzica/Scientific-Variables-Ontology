@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:methyl-bromide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "methyl-bromide"^^xsd:string ;
+    svo:has_synonym "bromomethane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q421758"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bromomethane"^^xsd:string ;
+    rdfs:comment "Bromomethane, commonly known as methyl bromide, is an organobromine compound with formula CH3Br. This colorless, odorless, nonflammable gas is produced both industrially and biologically. It has a tetrahedral shape and it is a recognized ozone-depleting chemical. It was used extensively as a pesticide until being phased out by most countries in the early 2000s."^^xsd:string .
+

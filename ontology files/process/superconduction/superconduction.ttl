@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:superconduction a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "superconduction"^^xsd:string ;
+    svo:has_synonym "superconduction"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q124131"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Superconductivity"^^xsd:string ;
+    rdfs:comment "Superconductivity is a set of physical properties observed in certain materials where electrical resistance vanishes and magnetic fields are expelled from the material. Any material exhibiting these properties is a superconductor. Unlike an ordinary metallic conductor, whose resistance decreases gradually as its temperature is lowered, even down to near absolute zero, a superconductor has a characteristic critical temperature below which the resistance drops abruptly to zero. An electric current through a loop of superconducting wire can persist indefinitely with no power source."^^xsd:string .
+

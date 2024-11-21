@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:leptoceridae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "leptoceridae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1931253"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Leptoceridae"^^xsd:string ;
+    rdfs:comment "The family Leptoceridae are a family of caddisflies often called \"long-horned caddisflies\". Leptoceridae is the second largest family of caddisflies with more than 1500 species in around 45 genera. The main identifying feature of most Leptoceridae is that their antennae are longer than those of other caddisflies. There is one genus with short antennae (Ceraclea), but it is easily identified by the pair of dark curved lines on the mesonotum."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:enchytraeidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "enchytraeidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q656146"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Enchytraeidae"^^xsd:string ;
+    rdfs:comment "Enchytraeidae is a family of microdrile oligochaetes. They resemble small earthworms and include both terrestrial species known as potworms that live in highly organic terrestrial environments, as well as some that are marine. The peculiar genus Mesenchytraeus is known as \"ice worms\", as they spend the majority of their lives within glaciers, only rising to the surface at certain points in the summer. Enchytraeidae also includes the Grindal Worm (Enchytraeus buchholzi), which is commercially bred as aquarium fish food."^^xsd:string .
+

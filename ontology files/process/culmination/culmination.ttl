@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:culmination a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "culmination"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q611114"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Culmination"^^xsd:string ;
+    rdfs:comment "In observational astronomy, culmination is the passage of a celestial object (such as the Sun, the Moon, a planet, a star, constellation or a deep-sky object) across the observer's local meridian.  These events were also known as meridian transits, used in timekeeping and navigation, and measured precisely using a transit telescope."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:drying a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "drying"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q278061"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Drying"^^xsd:string ;
+    rdfs:comment "Drying is a mass transfer process consisting of the removal of water or another solvent by evaporation from a solid, semi-solid or liquid. This process is often used as a final production step before selling or packaging products. To be considered \"dried\", the final product must be solid, in the form of a continuous sheet (e.g., paper), long pieces (e.g., wood), particles (e.g., cereal grains or corn flakes) or powder (e.g., sand, salt, washing powder, milk powder). A source of heat and an agent to remove the vapor produced by the process are often involved. In bioproducts like food, grains, and pharmaceuticals like vaccines, the solvent to be removed is almost invariably water. Desiccation may be synonymous with drying or considered an extreme form of drying."^^xsd:string .
+

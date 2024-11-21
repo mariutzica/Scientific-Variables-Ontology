@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:autolysis a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "autolysis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q787099"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Autolysis_(biology)"^^xsd:string ;
+    rdfs:comment "In biology, autolysis, more commonly known as self-digestion, refers to the destruction of a cell through the action of its own enzymes. It may also refer to the digestion of an enzyme by another molecule of the same enzyme."^^xsd:string .
+

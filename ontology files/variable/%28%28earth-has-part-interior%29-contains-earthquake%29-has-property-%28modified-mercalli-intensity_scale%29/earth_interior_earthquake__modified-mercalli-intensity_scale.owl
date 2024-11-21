@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28%28earth-has-part-interior%29-contains-earthquake%29-has-property-%28modified-mercalli-intensity_scale%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/%28earth-has-part-interior%29-contains-earthquake"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/modified-mercalli-intensity_scale"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/earth"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/earthquake"/>
+  <svo:contains_part_reference_to rdf:resource="http://scientificvariablesontology.org/svo/part/interior"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">earth_interior_earthquake__modified-mercalli-intensity_scale</rdfs:label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">earth_interior_earthquake__modified_mercali_intensity</svo:has_original_label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">earth_interior_earthquake__modified_mercalli_intensity</svo:has_original_label>
+</owl:NamedIndividual>
+</rdf:RDF>

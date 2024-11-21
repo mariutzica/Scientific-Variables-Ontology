@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28%28earth-has-abstraction-equator%29-has-abstraction-plane%29-wrt-sun%29-has-property-%28declination_angle%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "earth_equator_plane_sun__declination_angle"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/equator>,
+        <http://scientificvariablesontology.org/svo/abstraction/plane> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/earth>,
+        <http://scientificvariablesontology.org/svo/phenomenon/sun> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28%28earth-has-abstraction-equator%29-has-abstraction-plane%29-wrt-sun> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/declination_angle> ;
+    svo:has_original_label "earth_equator_plane-to-sun__declination_angle"^^xsd:string .
+

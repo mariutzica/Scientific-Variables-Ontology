@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:body a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "body"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q223557"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Physical_body"^^xsd:string ;
+    rdfs:comment "singular aggregation of substance(s) such as matter or radiation, with overall properties such as mass, position or momentum"^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:anthozoa a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "anthozoa"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q28524"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Anthozoa"^^xsd:string ;
+    rdfs:comment "Anthozoa is a class of marine invertebrates which includes the sea anemones, stony corals and soft corals. Adult anthozoans are almost all attached to the seabed, while their larvae can disperse as part of the plankton. The basic unit of the adult is the polyp; this consists of a cylindrical column topped by a disc with a central mouth surrounded by tentacles. Sea anemones are mostly solitary, but the majority of corals are colonial, being formed by the budding of new polyps from an original, founding individual. Colonies are strengthened by calcium carbonate and other materials and take various massive, plate-like, bushy or leafy forms."^^xsd:string .
+

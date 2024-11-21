@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlorine-35 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chlorine-35"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q467791"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isotopes_of_chlorine#Chlorine-35"^^xsd:string ;
+    rdfs:comment "Chlorine (17Cl) has 25 isotopes, ranging from 28Cl to 52Cl, and two isomers, 34mCl and 38mCl. There are two stable isotopes, 35Cl (75.77%) and 37Cl (24.23%), giving chlorine a standard atomic weight of 35.45. The longest-lived radioactive isotope is 36Cl, which has a half-life of 301,000 years. All other isotopes have half-lives under 1 hour, many less than one second. The shortest-lived are proton-unbound 29Cl and 30Cl, with half-lives less than 10 picoseconds and 30 nanoseconds, respectively; the half-life of 28Cl is unknown."^^xsd:string .
+

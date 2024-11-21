@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28river-delta-contains-part-plain~subaqueous%29-has-property-%28mean_of_slope%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "river-delta_plain~subaqueous__mean_of_slope"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/subaqueous> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/mean> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/plain>,
+        <http://scientificvariablesontology.org/svo/phenomenon/river-delta> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/slope> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/river-delta-contains-part-plain~subaqueous> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mean_of_slope> ;
+    svo:has_original_label "delta_plain~subaqueous__mean_of_slope"^^xsd:string .
+

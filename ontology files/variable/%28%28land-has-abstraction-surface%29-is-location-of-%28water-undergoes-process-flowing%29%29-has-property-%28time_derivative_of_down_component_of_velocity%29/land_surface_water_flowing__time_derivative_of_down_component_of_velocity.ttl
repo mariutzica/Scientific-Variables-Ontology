@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28land-has-abstraction-surface%29-is-location-of-%28water-undergoes-process-flowing%29%29-has-property-%28time_derivative_of_down_component_of_velocity%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "land_surface_water_flowing__time_derivative_of_down_component_of_velocity"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/surface> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/down_component>,
+        <http://scientificvariablesontology.org/svo/operation/time_derivative> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/land> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/flowing> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/velocity> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28land-has-abstraction-surface%29-is-location-of-%28water-undergoes-process-flowing%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/time_derivative_of_down_component_of_velocity> ;
+    svo:has_original_label "land_surface_water_flow__time_derivative_of_down_component_of_velocity"^^xsd:string .
+

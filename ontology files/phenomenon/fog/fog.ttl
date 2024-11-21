@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fog a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "fog"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q37477"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fog"^^xsd:string ;
+    rdfs:comment "Fog is a visible aerosol consisting of tiny water droplets or ice crystals suspended in the air at or near the Earth's surface. Fog can be considered a type of low-lying cloud usually resembling stratus, and is heavily influenced by nearby bodies of water, topography, and wind conditions. In turn, fog affects many human activities, such as shipping, travel, and warfare."^^xsd:string .
+

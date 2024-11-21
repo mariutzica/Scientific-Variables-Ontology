@@ -1,0 +1,69 @@
+@prefix : <http://scientificvariablesontology.org/svo/propertyrole/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/propertyrole> a owl:Ontology ;
+    owl:imports <http://scientificvariablesontology.org/svo> .
+
+:coefficient a svo:PropertyRole,
+        owl:NamedIndividual ;
+    rdfs:label "coefficient"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q50700"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Coefficient"^^xsd:string ;
+    rdfs:comment "In mathematics, a coefficient is a multiplicative factor in some term of a polynomial, a series, or an expression; it is usually a number, but may be any expression (including variables such as a, b and c). When the coefficients are themselves variables, they may also be called parameters.  "^^xsd:string .
+
+:constant a svo:PropertyRole,
+        owl:NamedIndividual ;
+    rdfs:label "constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q186509"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mathematical_constant"^^xsd:string ;
+    rdfs:comment "A mathematical constant is a key number whose value is fixed by an unambiguous definition, often referred to by a special symbol (e.g., an alphabet letter), or by mathematicians' names to facilitate using it across multiple mathematical problems. Constants arise in many areas of mathematics, with constants such as e and π occurring in such diverse contexts as geometry, number theory, statistics, and calculus."^^xsd:string .
+
+:degree a svo:PropertyRole,
+        owl:NamedIndividual ;
+    rdfs:label "degree"^^xsd:string .
+
+:dimension a svo:PropertyRole,
+        owl:NamedIndividual ;
+    rdfs:label "dimension"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4440864"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dimension"^^xsd:string ;
+    rdfs:comment "In physics and mathematics, the dimension of a mathematical space (or object) is informally defined as the minimum number of coordinates needed to specify any point within it. Thus, a line has a dimension of one (1D) because only one coordinate is needed to specify a point on it – for example, the point at 5 on a number line. A surface, such as the boundary of a cylinder or sphere, has a dimension of two (2D) because two coordinates are needed to specify a point on it – for example, both a latitude and longitude are required to locate a point on the surface of a sphere. A two-dimensional Euclidean space is a two-dimensional space on the plane. The inside of a cube, a cylinder or a sphere is three-dimensional (3D) because three coordinates are needed to locate a point within these spaces."^^xsd:string .
+
+:exponent a svo:PropertyRole,
+        owl:NamedIndividual ;
+    rdfs:label "exponent"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q33456"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Exponent"^^xsd:string ;
+    rdfs:comment "mathematical operation"^^xsd:string .
+
+:factor a svo:PropertyRole,
+        owl:NamedIndividual ;
+    rdfs:label "factor"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1393757"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Factor"^^xsd:string ;
+    rdfs:comment "Factor, a Latin word meaning \"who/which acts\", may refer to:"^^xsd:string .
+
+:order a svo:PropertyRole,
+        owl:NamedIndividual ;
+    rdfs:label "order"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1820515"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Order_(mathematics)"^^xsd:string ;
+    rdfs:comment "Order in mathematics may refer to:"^^xsd:string .
+
+:parameter a svo:PropertyRole,
+        owl:NamedIndividual ;
+    rdfs:label "parameter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1413083"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Parameter"^^xsd:string ;
+    rdfs:comment "A parameter (from Ancient Greek  παρά (pará) 'beside, subsidiary', and  μέτρον (métron) 'measure'), generally, is any characteristic that can help in defining or classifying a particular system (meaning an event, project, object, situation, etc.). That is, a parameter is an element of a system that is useful, or critical, when identifying the system, or when evaluating its performance, status, condition, etc."^^xsd:string .
+
+:term a svo:PropertyRole,
+        owl:NamedIndividual ;
+    rdfs:label "term"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1318370"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Term_(logic)"^^xsd:string ;
+    rdfs:comment "In mathematical logic, a term denotes a mathematical object while a formula denotes a mathematical fact. In particular, terms appear as components of a formula. This is analogous to natural language, where a noun phrase refers to an object and a whole sentence refers to a fact."^^xsd:string .
+

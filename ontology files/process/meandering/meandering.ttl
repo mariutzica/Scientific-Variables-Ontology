@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:meandering a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "meandering"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q180537"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Meander"^^xsd:string ;
+    rdfs:comment "A meander is one of a series of regular sinuous curves in the channel of a river or other watercourse. It is produced as a watercourse erodes the sediments of an outer, concave bank (cut bank or river cliff) and deposits sediments on an inner, convex bank which is typically a point bar. The result of this coupled erosion and sedimentation is the formation of a sinuous course as the channel migrates back and forth across the axis of a floodplain.The zone within which a meandering stream periodically shifts its channel is known as a meander belt. It typically ranges from 15 to 18 times the width of the channel. Over time, meanders migrate downstream, sometimes in such a short time as to create civil engineering challenges for local municipalities attempting to maintain stable roads and bridges.The degree of meandering of the channel of a river, stream, or other watercourse is measured by its sinuosity. The sinuosity of a watercourse is the ratio of the length of the channel to the straight line down-valley distance. Streams or rivers with a single channel and sinuosities of 1.5 or more are defined as meandering streams or rivers."^^xsd:string .
+

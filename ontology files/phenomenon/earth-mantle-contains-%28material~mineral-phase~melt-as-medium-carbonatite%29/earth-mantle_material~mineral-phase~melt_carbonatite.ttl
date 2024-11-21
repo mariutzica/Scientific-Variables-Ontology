@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/earth-mantle-contains-%28material~mineral-phase~melt-as-medium-carbonatite%29> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "earth-mantle_material~mineral-phase~melt_carbonatite"^^xsd:string ;
+    svo:has_containing_phenomenon :earth-mantle ;
+    svo:has_primary_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/material~mineral-phase~melt-as-medium-carbonatite> .
+

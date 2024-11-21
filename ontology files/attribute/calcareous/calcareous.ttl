@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:calcareous a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "calcareous"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q17005941"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Calcareous"^^xsd:string ;
+    rdfs:comment "Calcareous () is an adjective meaning \"mostly or partly composed of calcium carbonate\", in other words, containing lime or being chalky. The term is  used in a wide variety of scientific disciplines."^^xsd:string .
+

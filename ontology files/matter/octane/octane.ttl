@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:octane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "octane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q150681"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Octane"^^xsd:string ;
+    rdfs:comment "Octane is a hydrocarbon and an alkane with the chemical formula C8H18, and the condensed structural formula CH3(CH2)6CH3. Octane has many structural isomers that differ by the amount and location of branching in the carbon chain. One of these isomers, 2,2,4-trimethylpentane (commonly called iso-octane) is used as one of the standard values in the octane rating scale."^^xsd:string .
+

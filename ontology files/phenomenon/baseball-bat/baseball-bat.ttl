@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:baseball-bat a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "baseball-bat"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q809910"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Baseball_bat"^^xsd:string ;
+    rdfs:comment "A baseball bat is a smooth wooden or metal club used in the sport of baseball to hit the ball after it is thrown by the pitcher. By regulation it may be no more than 2.75 inches (7.0 cm) in diameter at the thickest part and no more than 42 inches (1.067 m) in length. Although historically bats approaching 3 pounds (1.4 kg) were swung, today bats of 33 ounces (0.94 kg) are common, topping out at 34 ounces (0.96 kg) to 36 ounces (1.0 kg)."^^xsd:string .
+

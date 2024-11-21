@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:heat_transfer_coefficient a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "heat_transfer_coefficient"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q634340"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Heat_transfer_coefficient"^^xsd:string ;
+    rdfs:comment "In thermodynamics, the  heat transfer coefficient or film coefficient, or film effectiveness, is the proportionality constant between the heat flux and the thermodynamic driving force for the flow of heat (i.e., the temperature difference, ΔT ). It is used in calculating the heat transfer, typically by convection or phase transition between a fluid and a solid. The heat transfer coefficient has SI units in watts per square meter per kelvin (W/m2/K)."^^xsd:string .
+

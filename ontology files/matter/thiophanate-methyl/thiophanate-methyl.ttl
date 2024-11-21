@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thiophanate-methyl a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "thiophanate-methyl"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q126625"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Thiophanate-methyl"^^xsd:string ;
+    rdfs:comment "Thiophanate-methyl is an organic compound with the formula C6H4(NHC(S)NH(CO)OCH3)2. The compound is a colorless or white solid, although commercial samples are generally tan-colored.  It is prepared from o-phenylenediamine."^^xsd:string .
+

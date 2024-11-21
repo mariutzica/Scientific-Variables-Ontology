@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:intersection a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "intersection"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q17141489"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Intersection"^^xsd:string ;
+    rdfs:comment "In mathematics, the intersection of two or more objects is another object consisting of everything that is contained in all of the objects simultaneously. For example, in Euclidean geometry, when two lines in a plane are not parallel, their intersection is the point at which they meet. More generally, in set theory, the intersection of sets is defined to be the set of elements which belong to all of them. Unlike the Euclidean definition, this does not presume that the objects under consideration lie in a common space."^^xsd:string .
+

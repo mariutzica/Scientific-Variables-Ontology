@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:streamfunction a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "streamfunction"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2029236"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Stream_function"^^xsd:string ;
+    rdfs:comment "The stream function is defined for incompressible (divergence-free) flows in two dimensions – as well as in three dimensions with axisymmetry. The flow velocity components can be expressed as the derivatives of the scalar stream function. The stream function can be used to plot streamlines, which represent the trajectories of particles in a steady flow. The two-dimensional Lagrange stream function was introduced by Joseph Louis Lagrange in 1781. The Stokes stream function is for axisymmetrical three-dimensional flow, and is named after George Gabriel Stokes.Considering the particular case of fluid dynamics, the difference between the stream function values at any two points gives the volumetric flow rate (or volumetric flux) through a line connecting the two points."^^xsd:string .
+

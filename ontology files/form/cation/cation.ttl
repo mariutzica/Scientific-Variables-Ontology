@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cation a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "cation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q36496"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ion#Anions_and_cations"^^xsd:string ;
+    rdfs:comment "An ion () is an atom or molecule with a net electrical charge. The charge of an electron is considered to be negative by convention and this charge is equal and opposite to the charge of a proton, which is considered to be positive by convention. The net charge of an ion is not zero because its total number of electrons is unequal to its total number of protons."^^xsd:string .
+

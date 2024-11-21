@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:central-dense-overcast-region a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "central-dense-overcast-region"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5062094"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Central_dense_overcast"^^xsd:string ;
+    rdfs:comment "The central dense overcast, or CDO, of a tropical cyclone or strong subtropical cyclone is the large central area of thunderstorms surrounding its circulation center, caused by the formation of its eyewall. It can be round, angular, oval, or irregular in shape. This feature shows up in tropical cyclones of tropical storm or hurricane strength. How far the center is embedded within the CDO, and the temperature difference between the cloud tops within the CDO and the cyclone's eye, can help determine a tropical cyclone's intensity with the Dvorak technique. Locating the center within the CDO can be a problem with strong tropical storms and minimal hurricanes as its location can be obscured by the CDO's high cloud canopy. This center location problem can be resolved through the use of microwave satellite imagery."^^xsd:string .
+

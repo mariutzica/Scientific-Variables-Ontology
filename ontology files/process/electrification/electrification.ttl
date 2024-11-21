@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:electrification a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "electrification"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1076056"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Electrification"^^xsd:string ;
+    rdfs:comment "Electrification is the process of powering by electricity and, in many contexts, the introduction of such power by changing over from an earlier power source."^^xsd:string .
+

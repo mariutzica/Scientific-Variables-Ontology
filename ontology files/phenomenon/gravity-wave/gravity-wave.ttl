@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gravity-wave a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "gravity-wave"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q599451"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gravity_wave"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, gravity waves are waves generated in a fluid medium or at the interface between two media when the force of gravity or buoyancy tries to restore equilibrium. An example of such an interface is that between the atmosphere and the ocean, which gives rise to wind waves."^^xsd:string .
+

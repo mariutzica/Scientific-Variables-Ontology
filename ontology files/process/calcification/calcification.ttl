@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:calcification a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "calcification"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q933382"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Calcification"^^xsd:string ;
+    rdfs:comment "Calcification is the accumulation of calcium salts in a body tissue. It normally occurs in the formation of bone, but calcium can be deposited abnormally in soft tissue, causing it to harden. Calcifications may be classified on whether there is mineral balance or not, and the location of the calcification. Calcification may also refer to the processes of normal mineral deposition in biological systems, such as the formation of stromatolites or mollusc shells (see Biomineralization)."^^xsd:string .
+

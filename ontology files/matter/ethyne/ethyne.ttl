@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ethyne a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "ethyne"^^xsd:string ;
+    svo:has_synonym "acetylene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q133145"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Acetylene"^^xsd:string ;
+    rdfs:comment "Acetylene (systematic name: ethyne) is the chemical compound with the formula C2H2 and structure H−C≡C−H. It is a hydrocarbon and the simplest alkyne. This colorless gas is widely used as a fuel and a chemical building block. It is unstable in its pure form and thus is usually handled as a solution. Pure acetylene is odorless, but commercial grades usually have a marked odor due to impurities such as divinyl sulfide and phosphine.As an alkyne, acetylene is unsaturated because its two carbon atoms are bonded together in a triple bond. The carbon–carbon triple bond places all four atoms in the same straight line, with CCH bond angles of 180°."^^xsd:string .
+

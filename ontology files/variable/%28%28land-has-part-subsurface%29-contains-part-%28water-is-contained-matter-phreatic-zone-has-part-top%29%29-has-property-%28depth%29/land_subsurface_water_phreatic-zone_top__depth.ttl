@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28land-has-part-subsurface%29-contains-part-%28water-is-contained-matter-phreatic-zone-has-part-top%29%29-has-property-%28depth%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "land_subsurface_water_phreatic-zone_top__depth"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/subsurface>,
+        <http://scientificvariablesontology.org/svo/part/top> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/land>,
+        <http://scientificvariablesontology.org/svo/phenomenon/phreatic-zone> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28land-has-part-subsurface%29-contains-part-%28water-is-contained-matter-phreatic-zone-has-part-top%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/depth> ;
+    svo:has_original_label "land_subsurface_water_sat-zone_top__depth"^^xsd:string .
+

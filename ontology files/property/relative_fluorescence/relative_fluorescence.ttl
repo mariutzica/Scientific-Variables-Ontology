@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:relative_fluorescence a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "relative_fluorescence"^^xsd:string ;
+    svo:has_synonym "rfu"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7310791"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Relative_fluorescence_units"^^xsd:string ;
+    rdfs:comment "The terms \"relative fluorescence units\" (RFU) and \"RFU peak\" refer to measurements in electrophoresis methods, such as for DNA analysis. A \"relative fluorescence unit\" is a unit of measurement used in analysis which employs fluorescence detection. Fluorescence is detected using a charged coupled device (CCD) array, when the labeled fragments, which are separated within a capillary by using electrophoresis, are energized by laser light and travel across the detection window. A computer program measures the results, determining the quantity or size of the fragments, at each data point, from the level of fluorescence intensity. Samples which contain higher quantities of amplified DNA will have higher corresponding RFU values.An \"RFU peak\" is a relative maximum point along a graph of the analyzed data. The data can be normalized to DNA input or additional normalizing genes. The RFU heights can range from 0 to several thousands."^^xsd:string .
+

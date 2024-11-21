@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/attribute/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/attribute/">
+<owl:NamedIndividual rdf:about="freezing-level">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Attribute"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">freezing-level</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Freezing_level</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q958282</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The freezing level, or 0 °C (zero-degree) isotherm, represents the altitude in which the temperature is at 0 °C (the freezing point of water) in a free atmosphere (i.e. allowing reflection of the sun by snow, icing conditions, etc.). Any given measure is valid for only a short period of time, often less than a day as variations in wind, sunlight, air masses and other factors may change the level. The 700 hPa pressure level (or about 3000 m above sea level) is generally assumed as a rough estimate of the freezing level.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

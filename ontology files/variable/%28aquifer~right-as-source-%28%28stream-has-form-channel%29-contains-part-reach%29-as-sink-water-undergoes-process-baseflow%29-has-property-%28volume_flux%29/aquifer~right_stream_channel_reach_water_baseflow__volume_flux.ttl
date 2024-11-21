@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28aquifer~right-as-source-%28%28stream-has-form-channel%29-contains-part-reach%29-as-sink-water-undergoes-process-baseflow%29-has-property-%28volume_flux%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "aquifer~right_stream_channel_reach_water_baseflow__volume_flux"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/right> ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/channel> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/aquifer>,
+        <http://scientificvariablesontology.org/svo/phenomenon/reach>,
+        <http://scientificvariablesontology.org/svo/phenomenon/stream> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/baseflow> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/aquifer~right-as-source-%28%28stream-has-form-channel%29-contains-part-reach%29-as-sink-water-undergoes-process-baseflow> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/volume_flux> ;
+    svo:has_original_label "aquifer~right_channel~stream_reach_water__baseflow_volume_flux"^^xsd:string .
+

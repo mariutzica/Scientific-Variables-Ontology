@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:manning-formula_n_parameter a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "manning-formula_n_parameter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1428692"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Manning_formula#Manning_coefficient_of_roughness"^^xsd:string ;
+    rdfs:comment "The Manning formula or Manning's equation is an empirical formula estimating the average velocity of a liquid flowing in a conduit that does not completely enclose the liquid, i.e., open channel flow. However, this equation is also used for calculation of flow variables in case of flow in partially full conduits, as they also possess a free surface like that of open channel flow. All flow in so-called open channels is driven by gravity. "^^xsd:string .
+

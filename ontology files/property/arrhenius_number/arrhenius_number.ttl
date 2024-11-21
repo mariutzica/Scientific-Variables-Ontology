@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:arrhenius_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "arrhenius_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q507505"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Arrhenius_equation"^^xsd:string ;
+    rdfs:comment "In physical chemistry, the Arrhenius equation is a formula for the temperature dependence of reaction rates. The equation was proposed by Svante Arrhenius in 1889, based on the work of Dutch chemist Jacobus Henricus van 't Hoff who had noted in 1884 that the van 't Hoff equation for the temperature dependence of equilibrium constants suggests such a formula for the rates of both forward and reverse reactions. This equation has a vast and important application in determining the rate of chemical reactions and for calculation of energy of activation. Arrhenius provided a physical justification and interpretation for the formula. Currently, it is best seen as an empirical relationship.: 188  It can be used to model the temperature variation of diffusion coefficients, population of crystal vacancies, creep rates, and many other thermally-induced processes/reactions. The Eyring equation, developed in 1935, also expresses the relationship between rate and energy."^^xsd:string .
+

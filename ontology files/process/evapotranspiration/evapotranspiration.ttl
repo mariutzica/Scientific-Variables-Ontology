@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:evapotranspiration a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "evapotranspiration"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q828158"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Evapotranspiration"^^xsd:string ;
+    rdfs:comment "Evapotranspiration (ET) is the combined processes by which water moves from the earth’s surface into the atmosphere. It covers both water evaporation (movement of water to the air directly from soil, canopies, and water bodies) and transpiration (movement of water from the soil, through roots and bodies of vegetation, on leaves and then into the air). Evapotranspiration is an important part of the local water cycle and climate, and measurement of it plays a key role in agricultural irrigation and water resource management."^^xsd:string .
+

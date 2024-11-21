@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:economic_elasticity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "economic_elasticity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q223639"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Elasticity_(economics)"^^xsd:string ;
+    rdfs:comment "In economics, elasticity measures the responsiveness of one economic variable to a change in another. If the price elasticity of the demand of something is -2, a 10% increase in price causes the quantity demanded to fall by 20%. Elasticity in economics provides an understanding of changes in the behavior of the buyers and sellers with price changes. There are two types of elasticity for demand and supply, one is inelastic demand and supply and other one is elastic demand and supply."^^xsd:string .
+

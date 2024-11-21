@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lecithin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "lecithin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q241595"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Lecithin"^^xsd:string ;
+    rdfs:comment "Lecithin ( LESS-ith-in; from the Ancient Greek λέκιθος lékithos \"yolk\") is a generic term to designate any group of yellow-brownish fatty substances occurring in animal and plant tissues which are amphiphilic – they attract both water and fatty substances (and so are both hydrophilic and lipophilic), and are used for smoothing food textures, emulsifying, homogenizing liquid mixtures, and repelling sticking materials.Lecithins are mixtures of glycerophospholipids including phosphatidylcholine, phosphatidylethanolamine, phosphatidylinositol, phosphatidylserine, and phosphatidic acid.Lecithin was first isolated in 1845 by the French chemist and pharmacist Théodore Gobley. In 1850, he named the phosphatidylcholine lécithine. Gobley originally isolated lecithin from egg yolk and established the complete chemical formula of phosphatidylcholine in 1874; in between, he demonstrated the presence of lecithin in a variety of biological materials, including venous blood, human lungs, bile, roe, and brains of humans, sheep and chicken."^^xsd:string .
+

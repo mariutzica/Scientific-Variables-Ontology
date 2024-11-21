@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chrysene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chrysene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q415465"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chrysene"^^xsd:string ;
+    rdfs:comment "Chrysene is a polycyclic aromatic hydrocarbon (PAH) with the molecular formula C18H12 that consists of four fused benzene rings.  It is a natural constituent of coal tar, from which it was first isolated and characterized.  It is also found in creosote at levels of 0.5–6 mg/kg.The name \"chrysene\" originates from Greek Χρύσoς (chrysos), meaning \"gold\", and is due to the golden-yellow color of the crystals of the hydrocarbon, thought to be the proper color of the compound at the time of its isolation and characterization. However, high purity chrysene is colorless, the yellow hue being due to the traces of its yellow-orange isomer tetracene, which cannot be separated easily."^^xsd:string .
+

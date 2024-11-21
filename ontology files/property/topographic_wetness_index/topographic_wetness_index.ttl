@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:topographic_wetness_index a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "topographic_wetness_index"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q18353408"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Topographic_wetness_index"^^xsd:string ;
+    rdfs:comment "The topographic wetness index (TWI), also known as the compound topographic index (CTI), is a steady state wetness index. It is commonly used to quantify topographic control on hydrological processes.  The index is a function of both the slope and the upstream contributing area per unit width orthogonal to the flow direction. The index was designed for hillslope catenas. Accumulation numbers in flat areas will be very large, so TWI will not be a relevant variable. The index is highly correlated with several soil attributes such as horizon depth, silt percentage, organic matter content, and phosphorus. Methods of computing this index differ primarily in the way the upslope contributing area is calculated."^^xsd:string .
+

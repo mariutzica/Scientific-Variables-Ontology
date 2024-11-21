@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:breakover a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "breakover"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q239504"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Breakover_angle"^^xsd:string ;
+    rdfs:comment "Breakover angle or rampover angle is the maximum possible supplementary angle (usually expressed in degrees) that a vehicle, with at least one forward wheel and one rear wheel, can drive over without the apex of that angle touching any point of the vehicle other than the wheels. This definition is contingent upon the wheels being in continuous contact with the supporting surface(s). Breakover angle differs from ground clearance, which is the shortest distance between the ground and lowest point on the vehicle."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:arenicolidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "arenicolidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2860840"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Arenicolidae"^^xsd:string ;
+    rdfs:comment "Arenicolidae is a family of marine polychaete worms. They are commonly known as lugworms and the little coils of sand they produce are commonly seen on the beach. Arenicolids are found worldwide, mostly living in burrows in sandy substrates. Most are detritivores but some graze on algae."^^xsd:string .
+

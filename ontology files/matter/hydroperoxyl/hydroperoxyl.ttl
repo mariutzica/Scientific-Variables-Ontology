@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydroperoxyl a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "hydroperoxyl"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1088474"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydroperoxyl"^^xsd:string ;
+    rdfs:comment "The hydroperoxyl radical, also known as the hydrogen superoxide, is the protonated form of superoxide with the chemical formula  HO2, also written HOO•.  This species plays an important role in the atmosphere and as a reactive oxygen species in cell biology."^^xsd:string .
+

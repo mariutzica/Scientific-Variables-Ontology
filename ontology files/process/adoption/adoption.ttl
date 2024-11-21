@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:adoption a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "adoption"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q180472"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Adoption"^^xsd:string ;
+    rdfs:comment "Adoption is a process whereby a person assumes the parenting of another, usually a child, from that person's biological or legal parent or parents. Legal adoptions permanently transfer all rights and responsibilities, along with filiation, from the biological parents to the adoptive parents."^^xsd:string .
+

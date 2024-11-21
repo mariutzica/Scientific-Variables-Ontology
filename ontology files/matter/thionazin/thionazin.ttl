@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thionazin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "thionazin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7784679"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Thionazin"^^xsd:string ;
+    rdfs:comment "Thionazin is a chemical compound used in nematicides."^^xsd:string .
+

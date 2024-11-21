@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:competition a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "competition"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q476300"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Competition"^^xsd:string ;
+    rdfs:comment "Competition is a rivalry where two or more parties strive for a common goal which cannot be shared: where one's gain is the other's loss (an example of which is a zero-sum game). Competition can arise between entities such as organisms, individuals, economic and social groups, etc. The rivalry can be over attainment of any exclusive goal, including recognition."^^xsd:string .
+

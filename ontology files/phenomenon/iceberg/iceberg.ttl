@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:iceberg a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "iceberg"^^xsd:string ;
+    svo:has_synonym "ice mountain"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q47568"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Iceberg"^^xsd:string ;
+    rdfs:comment "An iceberg is a piece of freshwater ice more than 15 m long that has broken off a glacier or an ice shelf and is floating freely in open (salt) water. Smaller chunks of floating glacially-derived ice are called \"growlers\" or \"bergy bits\". The sinking of the Titanic in 1912 led to the formation of the International Ice Patrol in 1914. Much of an iceberg is below the surface, which led to the expression \"tip of the iceberg\" to illustrate a small part of a larger unseen issue. Icebergs are considered a serious maritime hazard."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dessication a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "dessication"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q903071"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Desiccation"^^xsd:string ;
+    rdfs:comment "Desiccation is the state of extreme dryness, or the process of extreme drying.  A desiccant is a hygroscopic (attracts and holds water) substance that induces or sustains such a state in its local vicinity in a moderately sealed container. The word desiccation comes from Latin  de- 'thoroughly', and  siccare 'to dry'."^^xsd:string .
+

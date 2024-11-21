@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:capillary_length a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "capillary_length"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3259177"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Capillary_length"^^xsd:string ;
+    rdfs:comment "The capillary length or capillary constant, is a length scaling factor that relates gravity and surface tension. It is a fundamental physical property that governs the behavior of menisci, and is found when body forces (gravity) and surface forces (Laplace pressure) are in equilibrium."^^xsd:string .
+

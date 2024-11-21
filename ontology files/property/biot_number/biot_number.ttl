@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:biot_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "biot_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q864844"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Biot_number"^^xsd:string ;
+    rdfs:comment "The Biot number (Bi) is a dimensionless quantity used in heat transfer calculations, named for the eighteenth-century French physicist Jean-Baptiste Biot (1774–1862). The Biot number is the ratio of the thermal resistance for conduction inside a body to the resistance for convection at the surface of the body. This ratio indicates whether the temperature inside a body varies significantly in space when the body is heated or cooled over time by a heat flux at its surface."^^xsd:string .
+

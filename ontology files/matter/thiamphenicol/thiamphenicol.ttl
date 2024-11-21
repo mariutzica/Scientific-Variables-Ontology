@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thiamphenicol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "thiamphenicol"^^xsd:string ;
+    svo:has_synonym "dextrosulphenidol"^^xsd:string,
+        "thiophenicol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q425015"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Thiamphenicol"^^xsd:string ;
+    rdfs:comment "Thiamphenicol (also known as thiophenicol and dextrosulphenidol) is an antibiotic. It is the methyl-sulfonyl analogue of chloramphenicol and has a similar spectrum of activity, but is 2.5 to 5 times as potent.  Like chloramphenicol, it is insoluble in water, but highly soluble in lipids.  It is used in many countries as a veterinary antibiotic, but is available in China, Morocco and Italy for use in humans.  Its main advantage over chloramphenicol is that it has never been associated with aplastic anaemia.Thiamphenicol is also widely used in Brazil, particularly for the treatment of sexually transmitted infections and pelvic inflammatory disease.Unlike chloramphenicol, thiamphenicol is not readily metabolized in cattle, poultry, sheep, or humans, but is predominantly excreted unchanged. In pigs and rats the drug is excreted both as parent drug and as thiamphenicol glucuronate (FAO, 1997)."^^xsd:string .
+

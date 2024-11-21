@@ -1,0 +1,10 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:0-to-100cm a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "0-to-100cm"^^xsd:string .
+

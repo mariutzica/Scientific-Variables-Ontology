@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bowen_ratio a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "bowen_ratio"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q895404"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Bowen_ratio"^^xsd:string ;
+    rdfs:comment "The Bowen ratio is used to describe the type of heat transfer for a surface that has moisture.  Heat transfer can either occur as sensible heat (differences in temperature without evapotranspiration) or latent heat (the energy required during a change of state, without a change in temperature).  The Bowen ratio is generally used to calculate heat lost (or gained) in a substance; it is the ratio of energy fluxes from one state to another by sensible heat and latent heating respectively."^^xsd:string .
+

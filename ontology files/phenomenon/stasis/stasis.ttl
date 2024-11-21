@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:stasis a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "stasis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1756677"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Stability_theory"^^xsd:string ;
+    rdfs:comment "In mathematics, stability theory addresses the stability of solutions of differential equations and of trajectories of dynamical systems under small perturbations of initial conditions.  The heat equation, for example, is a stable partial differential equation because small perturbations of initial data lead to small variations in temperature at a later time as a result of the maximum principle. In partial differential equations one may measure the distances between functions using Lp norms or the sup norm, while in differential geometry one may measure the distance between spaces using the Gromov–Hausdorff distance."^^xsd:string .
+

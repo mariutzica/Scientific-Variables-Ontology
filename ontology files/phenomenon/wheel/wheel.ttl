@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:wheel a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "wheel"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q446"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Wheel"^^xsd:string ;
+    rdfs:comment "A wheel is a circular component that is intended to rotate on an axle bearing. The wheel is one of the key components of the wheel and axle which is one of the six simple machines. Wheels, in conjunction with axles, allow heavy objects to be moved easily facilitating movement or transportation while supporting a load, or performing labor in machines. Wheels are also used for other purposes, such as a ship's wheel, steering wheel, potter's wheel, and flywheel."^^xsd:string .
+

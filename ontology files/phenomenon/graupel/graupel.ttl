@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:graupel a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "graupel"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q213202"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Graupel"^^xsd:string ;
+    rdfs:comment "Graupel (; German: [ˈɡʁaʊpl̩] ), also called soft hail or snow pellets, is precipitation that forms when supercooled water droplets in air are collected and freeze on falling snowflakes, forming 2–5 mm (0.08–0.20 in) balls of crisp, opaque rime."^^xsd:string .
+

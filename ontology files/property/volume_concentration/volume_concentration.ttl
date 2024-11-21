@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:volume_concentration a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "volume_concentration"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3686031"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Concentration#Volume_concentration"^^xsd:string ;
+    rdfs:comment "In chemistry, concentration is the abundance of a constituent divided by the total volume of a mixture. Several types of mathematical description can be distinguished: mass concentration, molar concentration, number concentration, and volume concentration. The concentration can refer to any kind of chemical mixture, but most frequently refers to solutes and solvents in solutions. The molar (amount) concentration has variants, such as normal concentration and osmotic concentration. Dilution is reduction of concentration, e.g. by adding solvent to a solution. The verb to concentrate means to increase concentration, the opposite of dilute."^^xsd:string .
+

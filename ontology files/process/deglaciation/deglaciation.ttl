@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:deglaciation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "deglaciation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3707848"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Deglaciation"^^xsd:string ;
+    rdfs:comment "Deglaciation is the transition from full glacial conditions during ice ages, to warm interglacials, characterized by global warming and sea level rise due to change in continental ice volume. Thus, it refers to the retreat of a glacier, an ice sheet or frozen surface layer, and the resulting exposure of the Earth's surface. The decline of the cryosphere due to ablation can occur on any scale from global to localized to a particular glacier. After the Last Glacial Maximum (ca. 21,000 years ago), the last deglaciation begun, which lasted until the early Holocene. Around much of Earth, deglaciation during the last 100 years has been accelerating as a result of climate change, partly brought on by anthropogenic changes to greenhouse gases.The previous deglaciation took place from approximately 22 ka until 11.5 ka. This occurred when there was an annual mean atmospheric temperature on the earth that increased by roughly 5 °C, which was also accompanied by regional high-latitude warming that exceeded 10 °C. This was also followed by noteworthy deep-sea and tropical-sea warming, of about 1–2 °C (deep-sea) and 2–4 °C (tropical sea). Not only did this warming occur, but the global hydrological budget also experienced noticeable changes and regional precipitation patterns changed. As a result of all of this, the world's main ice sheets, including the ones located in Eurasia, North America and parts of the Antarctic melted. As a consequence, sea levels rose roughly 120 metres. These processes did not occur steadily, and they also did not occur at the same time."^^xsd:string .
+

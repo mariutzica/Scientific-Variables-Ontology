@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:time_average_of_square_of_salinity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "time_average_of_square_of_salinity"^^xsd:string ;
+    svo:is_transformation_of :square_of_salinity ;
+    svo:is_transformed_by <http://scientificvariablesontology.org/svo/operation/time_average> .
+

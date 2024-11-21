@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:glossiphoniidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "glossiphoniidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4471004"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Glossiphoniidae"^^xsd:string ;
+    rdfs:comment "Glossiphoniidae are a family of freshwater proboscis-bearing leeches. These leeches are generally flattened, and have a poorly defined anterior sucker. Most suck the blood of freshwater vertebrates like amphibians, crocodilians and aquatic turtles, but some feed on invertebrates like oligochaetes and freshwater snails instead. Although they prefer other hosts, blood-feeding species will opportunistically feed from humans. "^^xsd:string .
+

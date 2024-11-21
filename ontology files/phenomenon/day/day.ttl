@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:day a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "day"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q573"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Day"^^xsd:string ;
+    rdfs:comment "A day is the time period of a full rotation of the Earth with respect to the Sun.  On average, this is 24 hours, 1440 minutes, or 86,400 seconds. In everyday life, the word \"day\" often refers to a solar day, which is the length between two solar noons or times the Sun reaches the highest point. The word \"day\" may also refer to daytime, a time period when the location receives direct and indirect sunlight. On Earth, as a location passes through its day, it experiences morning, noon, afternoon, evening, and night. The effect of a day is vital to many life processes, which is called the circadian rhythm."^^xsd:string .
+

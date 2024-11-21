@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hexachlorobenzene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "hexachlorobenzene"^^xsd:string ;
+    svo:has_synonym "perchlorobenzene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q409682"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hexachlorobenzene"^^xsd:string ;
+    rdfs:comment "Hexachlorobenzene, or perchlorobenzene, is an organochloride with the molecular formula C6Cl6. It is a fungicide formerly used as a seed treatment, especially on wheat to control the fungal disease bunt. It has been banned globally under the Stockholm Convention on Persistent Organic Pollutants."^^xsd:string .
+

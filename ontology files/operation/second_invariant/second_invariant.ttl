@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/operation/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:second_invariant a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "second_invariant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q9009080"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Invariants_of_tensors"^^xsd:string ;
+    rdfs:comment "In mathematics, in the fields of multilinear algebra and representation theory, the principal invariants of the second rank tensor "^^xsd:string .
+

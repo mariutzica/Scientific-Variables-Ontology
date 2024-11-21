@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydrogen-cyanide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "hydrogen-cyanide"^^xsd:string ;
+    svo:has_synonym "hcn"^^xsd:string,
+        "prussic-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q26075"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydrogen_cyanide"^^xsd:string ;
+    rdfs:comment "Hydrogen cyanide, sometimes called prussic acid, is a chemical compound with the formula HCN and structure H−C≡N. It is a colorless, extremely poisonous, and flammable liquid that boils slightly above room temperature, at 25.6 °C (78.1 °F). HCN is produced on an industrial scale and is a highly valued precursor to many chemical compounds ranging from polymers to pharmaceuticals. Large-scale applications are for the production of potassium cyanide and adiponitrile, used in mining and plastics, respectively. It is more toxic than solid cyanide compounds due to its volatile nature."^^xsd:string .
+

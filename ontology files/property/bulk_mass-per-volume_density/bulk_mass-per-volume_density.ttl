@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bulk_mass-per-volume_density a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "bulk_mass-per-volume_density"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q899249"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bulk_density"^^xsd:string ;
+    rdfs:comment "In materials science, bulk density, also called apparent density,  is a material property defined as the mass of the many particles of the material divided by the bulk volume. Bulk volume is defined as the total volume the particles occupy, including particle's own volume, inter-particle void volume, and the particles' internal pore volume.Bulk density is useful for materials such as powders, granules, and other \"divided\" solids, especially used in reference to mineral components (soil, gravel), chemical substances, pharmaceutical ingredients, foodstuff, or any other masses of corpuscular or particulate matter (particles). "^^xsd:string .
+

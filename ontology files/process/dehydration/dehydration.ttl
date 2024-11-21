@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dehydration a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "dehydration"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q194290"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dehydration"^^xsd:string ;
+    rdfs:comment "In physiology, dehydration is a lack of total body water, with an accompanying disruption of metabolic processes. It occurs when free water loss exceeds free water intake, usually due to exercise, disease, or high environmental temperature. Mild dehydration can also be caused by immersion diuresis, which may increase risk of decompression sickness in divers."^^xsd:string .
+

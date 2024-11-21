@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:calcium-carbonate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "calcium-carbonate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q23767"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Calcium_carbonate"^^xsd:string ;
+    rdfs:comment "Calcium carbonate is a chemical compound with the chemical formula CaCO3. It is a common substance found in rocks as the minerals calcite and aragonite (most notably as limestone, which is a type of sedimentary rock consisting mainly of calcite) and is the main component of eggshells, gastropod shells, shellfish skeletons and pearls. Things containing much calcium carbonate or resembling it are described as calcareous. Calcium carbonate is the active ingredient in agricultural lime and is created when calcium ions in hard water react with carbonate ions to create limescale. It has medical use as a calcium supplement or as an antacid, but excessive consumption can be hazardous and cause hypercalcemia and digestive issues."^^xsd:string .
+

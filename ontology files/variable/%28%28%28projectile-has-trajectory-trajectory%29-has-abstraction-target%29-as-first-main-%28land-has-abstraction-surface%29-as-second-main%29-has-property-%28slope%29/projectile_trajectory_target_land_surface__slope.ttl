@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28%28projectile-has-trajectory-trajectory%29-has-abstraction-target%29-as-first-main-%28land-has-abstraction-surface%29-as-second-main%29-has-property-%28slope%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "projectile_trajectory_target_land_surface__slope"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/surface> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/land> ;
+    svo:contains_role_reference_to <http://scientificvariablesontology.org/svo/role/projectile>,
+        <http://scientificvariablesontology.org/svo/role/target> ;
+    svo:contains_trajectory_reference_to <http://scientificvariablesontology.org/svo/trajectory/trajectory> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28%28projectile-has-trajectory-trajectory%29-has-abstraction-target%29-as-first-main-%28land-has-abstraction-surface%29-as-second-main> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/slope> ;
+    svo:has_original_label "projectile_target_land_surface__slope"^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:clunio a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "clunio"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5136628"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Clunio"^^xsd:string ;
+    rdfs:comment "Clunio is a genus of non-biting midges in the subfamily Orthocladiinae of the bloodworm family (Chironomidae). All species in the genus are marine. They are found in the intertidal zone of many coasts worldwide. The species Clunio marinus is a long-standing model system in Chronobiology and its genome has been sequenced. Clunio species can be dispersed widely by hitch-hiking on sea-turtles, feeding on algae growing on their carapace."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:building a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "building"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q41176"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Building"^^xsd:string ;
+    rdfs:comment "A building or edifice is an enclosed structure with a roof and walls, usually standing permanently in one place, such as a house or factory. Buildings come in a variety of sizes, shapes, and functions, and have been adapted throughout history for numerous factors, from building materials available, to weather conditions, land prices, ground conditions, specific uses, prestige, and aesthetic reasons. To better understand the concept, see Nonbuilding structure for contrast."^^xsd:string .
+

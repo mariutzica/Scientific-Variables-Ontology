@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ethylene-glycol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "ethylene-glycol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q194207"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ethylene_glycol"^^xsd:string ;
+    rdfs:comment "Ethylene glycol (IUPAC name: ethane-1,2-diol) is an organic compound (a vicinal diol) with the formula (CH2OH)2. It is mainly used for two purposes, as a raw material in the manufacture of polyester fibers and for antifreeze formulations. It is an odorless, colorless, flammable, viscous liquid. Ethylene glycol has a sweet taste, but it is toxic in high concentrations."^^xsd:string .
+

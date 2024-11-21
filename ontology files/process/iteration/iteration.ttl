@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:iteration a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "iteration"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q651022"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Iteration"^^xsd:string ;
+    rdfs:comment "Iteration is the repetition of a process in order to generate a (possibly unbounded) sequence of outcomes. Each repetition of the process is a single iteration, and the outcome of each iteration is then the starting point of the next iteration. "^^xsd:string .
+

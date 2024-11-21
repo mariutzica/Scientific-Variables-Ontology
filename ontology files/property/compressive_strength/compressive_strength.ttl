@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:compressive_strength a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "compressive_strength"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q186191"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Compressive_strength"^^xsd:string ;
+    rdfs:comment "In mechanics, compressive strength (or compression strength) is the capacity of a material or structure to withstand loads tending to reduce size (as opposed to tensile strength which withstands loads tending to elongate). In other words, compressive strength resists compression (being pushed together), whereas tensile strength resists tension (being pulled apart). In the study of strength of materials, tensile strength, compressive strength, and shear strength can be analyzed independently."^^xsd:string .
+

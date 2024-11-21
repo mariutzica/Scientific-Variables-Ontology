@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:oscillation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "oscillation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q170475"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Oscillation"^^xsd:string ;
+    rdfs:comment "Oscillation is the repetitive or periodic variation, typically in time, of some measure about a central value (often a point of equilibrium) or between two or more different states. Familiar examples of oscillation include a swinging pendulum and alternating current. Oscillations can be used in physics to approximate complex interactions, such as those between atoms."^^xsd:string .
+

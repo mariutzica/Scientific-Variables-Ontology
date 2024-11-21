@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:osmotic_pressure a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "osmotic_pressure"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q193135"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Osmotic_pressure"^^xsd:string ;
+    rdfs:comment "Osmotic pressure is the minimum pressure which needs to be applied to a solution to prevent the inward flow of its pure solvent across a semipermeable membrane."^^xsd:string .
+

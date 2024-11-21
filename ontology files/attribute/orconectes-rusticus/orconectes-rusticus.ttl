@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:orconectes-rusticus a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "orconectes-rusticus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q59712751"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Rusty_crayfish"^^xsd:string ;
+    rdfs:comment "The rusty crayfish (Faxonius rusticus) is a large, aggressive species of freshwater crayfish which is native to the United States, in the Ohio River Basin in parts of Ohio, Kentucky, and Indiana. Its range is rapidly expanding across much of eastern North America, displacing native crayfishes in the process. The rusty crayfish was first captured in Illinois in 1973, and has been collected at over 20 locations in the northern portion of the state. In 2005, F. rusticus was found for the first time west of the Continental Divide, in the John Day River, Oregon, which runs into the Columbia River."^^xsd:string .
+

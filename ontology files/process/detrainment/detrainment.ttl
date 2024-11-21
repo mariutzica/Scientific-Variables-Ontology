@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:detrainment a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "detrainment"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5265805"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Detrainment_device"^^xsd:string ;
+    rdfs:comment "A detrainment device is equipment on a rail vehicle that provides an evacuation route for the passengers.  It usually consists of a set of steps or a ramp, located at a doorway, allowing passengers to leave the vehicle in an emergency, vehicle breakdown or accident."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:perchlorate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "perchlorate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q407189"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Perchlorate"^^xsd:string ;
+    rdfs:comment "A perchlorate is a chemical compound containing the perchlorate ion, ClO4-, the conjugate base of perchloric acid (ionic perchlorate). As counterions, there can be metal cations, quaternary ammonium cations or other ions, for example, nitronium cation (NO2+)."^^xsd:string .
+

@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:arthropoda a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "arthropoda"^^xsd:string ;
+    svo:has_synonym "arthropod"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1360"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Arthropod"^^xsd:string ;
+    rdfs:comment "Arthropods (, from Ancient Greek  ἄρθρον (arthron) 'joint', and  πούς (pous) 'foot' (gen. ποδός)) are invertebrate animals with an exoskeleton, a segmented body, and paired jointed appendages. Arthropods form the phylum Arthropoda. They are distinguished by their jointed limbs and cuticle made of chitin, often mineralised with calcium carbonate. The arthropod body plan consists of segments, each with a pair of appendages. Arthropods are bilaterally symmetrical and their body possesses an external skeleton. In order to keep growing, they must go through stages of moulting, a process by which they shed their exoskeleton to reveal a new one. Some species have wings. They are an extremely diverse group, with up to 10 million species."^^xsd:string .
+

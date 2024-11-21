@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:polymerization a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "polymerization"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q181898"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Polymerization"^^xsd:string ;
+    rdfs:comment "In polymer chemistry, polymerization (American English), or polymerisation (British English), is a process of reacting monomer molecules together in a chemical reaction to form  polymer chains or three-dimensional networks. There are many forms of polymerization and different systems exist to categorize them."^^xsd:string .
+

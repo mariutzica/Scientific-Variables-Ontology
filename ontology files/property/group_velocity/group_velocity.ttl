@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:group_velocity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "group_velocity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q217361"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Group_velocity"^^xsd:string ;
+    rdfs:comment "The group velocity of a wave is the velocity with which the overall envelope shape of the wave's amplitudes—known as the modulation or envelope of the wave—propagates through space."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:isopoda a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "isopoda"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q206338"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isopoda"^^xsd:string ;
+    rdfs:comment "Isopoda is an order of crustaceans that includes woodlice and their relatives. Isopods live in the sea, in fresh water, or on land. All have rigid, segmented exoskeletons, two pairs of antennae, seven pairs of jointed limbs on the thorax, and five pairs of branching appendages on the abdomen that are used in respiration. Females brood their young in a pouch under their thorax. "^^xsd:string .
+

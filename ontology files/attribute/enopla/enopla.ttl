@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:enopla a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "enopla"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q275879"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Enopla"^^xsd:string ;
+    rdfs:comment "Enopla is one of the classes of the worm phylum Nemertea, characterized by the presence of a peculiar armature of spines or plates in the proboscis."^^xsd:string .
+

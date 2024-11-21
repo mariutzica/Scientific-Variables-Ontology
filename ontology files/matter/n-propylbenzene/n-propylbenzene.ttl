@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:n-propylbenzene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "n-propylbenzene"^^xsd:string ;
+    svo:has_synonym "phenylpropane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q288806"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/N-Propylbenzene"^^xsd:string ;
+    rdfs:comment "n-Propylbenzene is an aromatic hydrocarbon with the formula C6H5CH2CH2CH3.  The molecule consists of a propyl group attached to a phenyl ring.  It is a colorless liquid. A more common structural isomer of this compound is cumene."^^xsd:string .
+

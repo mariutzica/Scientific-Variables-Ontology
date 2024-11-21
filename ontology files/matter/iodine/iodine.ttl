@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:iodine a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "iodine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1103"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Iodine"^^xsd:string ;
+    rdfs:comment "Iodine is a chemical element with the symbol I and atomic number 53. The heaviest of the stable halogens, it exists as a semi-lustrous, non-metallic solid at standard conditions that melts to form a deep violet liquid at 114 °C (237 °F), and boils to a violet gas at 184 °C (363 °F). The element was discovered by the French chemist Bernard Courtois in 1811 and was named two years later by Joseph Louis Gay-Lussac, after the Ancient Greek Ιώδης 'violet-coloured'."^^xsd:string .
+

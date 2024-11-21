@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:above-ground-is-location-of-%28%28soil-is-source-of-%28residue-has-form-pool%29%29-as-sink-%28crop-is-source-of-residue%29-undergoes-process-addition%29 a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "above-ground_soil_residue_pool_crop_residue_addition"^^xsd:string ;
+    svo:has_location :above-ground ;
+    svo:has_primary_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28soil-is-source-of-%28residue-has-form-pool%29%29-as-sink-%28crop-is-source-of-residue%29-undergoes-process-addition> .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:petrification a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "petrification"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2572797"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Petrifaction"^^xsd:string ;
+    rdfs:comment "In geology, petrifaction or petrification (from Ancient Greek  πέτρα (pétra) 'rock, stone') is the process by which organic material becomes a fossil through the replacement of the original material and the filling of the original pore spaces with minerals. Petrified wood typifies this process, but all organisms, from bacteria to vertebrates, can become petrified (although harder, more durable matter such as bone, beaks, and shells survive the process better than softer remains such as muscle tissue, feathers, or skin). Petrifaction takes place through a combination of two similar processes: permineralization and replacement.  These processes create replicas of the original specimen that are similar down to the microscopic level."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:metastable a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "metastable"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q849516"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Metastability"^^xsd:string ;
+    rdfs:comment "In chemistry and physics, metastability denotes an intermediate energetic state within a dynamical system other than the system's state of least energy."^^xsd:string .
+

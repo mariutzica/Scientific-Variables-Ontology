@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:abbe_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "abbe_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q306259"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Abbe_number"^^xsd:string ;
+    rdfs:comment "In optics and lens design, the Abbe number, also known as the V-number or constringence of a transparent material, is an approximate measure of the material's dispersion (change of refractive index versus wavelength), with high values of V indicating low dispersion. It is named after Ernst Abbe (1840–1905), the German physicist who defined it. The term V-number should not be confused with the normalized frequency in fibers."^^xsd:string .
+

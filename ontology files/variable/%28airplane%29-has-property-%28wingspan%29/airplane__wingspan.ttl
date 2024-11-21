@@ -1,0 +1,12 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28airplane%29-has-property-%28wingspan%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "airplane__wingspan"^^xsd:string ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/airplane> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/wingspan> ;
+    svo:has_original_label "airplane_wing__span"^^xsd:string .
+

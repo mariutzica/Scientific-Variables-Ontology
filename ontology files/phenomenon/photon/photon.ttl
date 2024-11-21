@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:photon a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "photon"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3198"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Photon"^^xsd:string ;
+    rdfs:comment "A photon (from Ancient Greek  φῶς, φωτός (phôs, phōtós) 'light') is an elementary particle that is a quantum of the electromagnetic field, including electromagnetic radiation such as light and radio waves, and the force carrier for the electromagnetic force. Photons are massless, so they always move at the speed of light in vacuum, 299792458 m/s (or about 186,282 mi/s). The photon belongs to the class of boson particles."^^xsd:string .
+

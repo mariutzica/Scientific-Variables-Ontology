@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:radiolocation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "radiolocation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2622218"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Radiolocation"^^xsd:string ;
+    rdfs:comment "Radiolocation, also known as radiolocating or radiopositioning, is the process of finding the location of something through the use of radio waves. It generally refers to passive uses, particularly radar—as well as detecting buried cables, water mains, and other public utilities. It is similar to radionavigation, but radiolocation usually refers to passively seeking a distant object rather than actively finding one's own position; both are types of radiodetermination. Radiolocation is also used in real-time locating systems (RTLS) for tracking valuable assets."^^xsd:string .
+

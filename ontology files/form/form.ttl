@@ -1,0 +1,479 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/form> a owl:Ontology ;
+    owl:imports <http://scientificvariablesontology.org/svo>,
+        <http://scientificvariablesontology.org/svo/attribute>,
+        <http://scientificvariablesontology.org/svo/direction> .
+
+<http://scientificvariablesontology.org/svo/form/aerosol~dry> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "aerosol~dry"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/dry> ;
+    svo:has_form_root :aerosol .
+
+:anion a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "anion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q36496"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ion"^^xsd:string ;
+    rdfs:comment "An ion () is an atom or molecule with a net electrical charge. The charge of an electron is considered to be negative by convention and this charge is equal and opposite to the charge of a proton, which is considered to be positive by convention. The net charge of an ion is not zero because its total number of electrons is unequal to its total number of protons."^^xsd:string .
+
+:atom a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "atom"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q9121"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Atom"^^xsd:string ;
+    rdfs:comment "An atom is a particle that consists of a nucleus of protons and neutrons surrounded by a cloud of electrons. The atom is the basic particle of the chemical elements, and the chemical elements are distinguished from each other by the number of protons that are in their atoms. For example, any atom that contains 11 protons is sodium, and any atom that contains 29 protons is copper. The number of neutrons defines the isotope of the element."^^xsd:string .
+
+:base-layer a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "base-layer"^^xsd:string .
+
+:bubble a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "bubble"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q75794"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bubble_(physics)"^^xsd:string ;
+    rdfs:comment "A bubble is a globule of one substance in another, usually gas in a liquid. "^^xsd:string .
+
+:bulk a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "bulk"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q343050"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bulk"^^xsd:string ;
+    rdfs:comment "Bulk can refer to:"^^xsd:string .
+
+:cation a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "cation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q36496"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ion#Anions_and_cations"^^xsd:string ;
+    rdfs:comment "An ion () is an atom or molecule with a net electrical charge. The charge of an electron is considered to be negative by convention and this charge is equal and opposite to the charge of a proton, which is considered to be positive by convention. The net charge of an ion is not zero because its total number of electrons is unequal to its total number of protons."^^xsd:string .
+
+:cell a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "cell"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7868"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cell_(biology)"^^xsd:string ;
+    rdfs:comment "The cell is the basic structural and functional unit of life forms. Every cell consists of a cytoplasm enclosed within a membrane, and contains many biomolecules such as proteins, DNA and RNA, as well as many small molecules of nutrients and metabolites.  The term comes from the Latin word cellula meaning 'small room'.Cells can acquire specified function and carry out various tasks within the cell such as replication, DNA repair, protein synthesis, and motility. Cells are capable of specialization and mobility within the cell. Most cells are measured in micrometers due to their small size."^^xsd:string .
+
+<http://scientificvariablesontology.org/svo/form/channel~longest> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "channel~longest"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/longest> ;
+    svo:has_form_root :channel .
+
+<http://scientificvariablesontology.org/svo/form/channel~main> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "channel~main"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/main> ;
+    svo:has_form_root :channel .
+
+:colony a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "colony"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q354341"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Colony_(biology)"^^xsd:string ;
+    rdfs:comment "In biology, a colony is composed of two or more conspecific individuals living in close association with, or connected to, one another. This association is usually for mutual benefit such as stronger defense or the ability to attack bigger prey.Colonies can form in various shapes and ways depending on the organism involved. For instance, the bacterial colony is a cluster of identical cells (clones). These colonies often form and grow on the surface of (or within) a solid medium, usually derived from a single parent cell.Colonies, in the context of development, may be composed of two or more unitary (or solitary) organisms or be modular organisms. Unitary organisms have determinate development (set life stages) from zygote to adult form and individuals or groups of individuals (colonies) are visually distinct. Modular organisms have indeterminate growth forms (life stages not set) through repeated iteration of genetically identical modules (or individuals), and it can be difficult to distinguish between the colony as a whole and the modules within. In the latter case, modules may have specific functions within the colony."^^xsd:string .
+
+:column a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "column"^^xsd:string .
+
+:core a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "core"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1942237"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Core_sample"^^xsd:string ;
+    rdfs:comment "A core sample is a cylindrical section of (usually) a naturally-occurring substance. Most core samples are obtained by drilling with special drills into the substance, such as sediment or rock, with a hollow steel tube, called a core drill. The hole made for the core sample is called the \"core hole\". A variety of core samplers exist to sample different media under different conditions. More continue to be invented on a regular basis. In the coring process, the sample is pushed more or less intact into the tube. Removed from the tube in the laboratory, it is inspected and analyzed by different techniques and equipment depending on the type of data desired."^^xsd:string .
+
+:crater a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "crater"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3240715"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Crater"^^xsd:string ;
+    rdfs:comment "A crater is a landform consisting of a hole or depression on a planetary surface, usually caused either by an object hitting the surface, or by geological activity on the planet. A crater has classically been described as: \"a bowl-shaped pit that is formed by a volcano, an explosion, or a meteorite impact\". On Earth, craters are \"generally the result of volcanic eruptions\", while \"meteorite impact craters are common on the Moon, but are rare on Earth\".A 1961 New Scientist article speculating on the later-dismissed theory that the craters on the Moon might be volcanic in origin noted that \"craters produced by volcanism are blessed with advantages of terrain and mineralization not found on impact craters\". A crater may become a crater lake if conditions are suitable. This requires that the crater have relatively even and solid walls, and a source of water such as floodwaters, rain, snow, springs, or other groundwater."^^xsd:string .
+
+:crystal a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "crystal"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q43533"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Crystal"^^xsd:string ;
+    rdfs:comment "A crystal or crystalline solid is a solid material whose constituents (such as atoms, molecules, or ions) are arranged in a highly ordered microscopic structure, forming a crystal lattice that extends in all directions. In addition, macroscopic single crystals are usually identifiable by their geometrical shape, consisting of flat faces with specific, characteristic orientations. The scientific study of crystals and crystal formation is known as crystallography. The process of crystal formation via mechanisms of crystal growth is called crystallization or solidification."^^xsd:string .
+
+:deposit a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "deposit"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1987070"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Deposition_(geology)"^^xsd:string ;
+    rdfs:comment "Deposition is the geological process in which sediments, soil and rocks are added to a landform or landmass. Wind, ice, water, and gravity transport previously weathered surface material, which, at the loss of enough kinetic energy in the fluid, is deposited, building up layers of sediment."^^xsd:string .
+
+:domain a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "domain"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q183366"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Territory"^^xsd:string ;
+    rdfs:comment "A territory is an area of land, sea, or space, belonging or connected to a particular country, person, or animal.In international politics, a territory is either the total area from which a state may extract power resources or else an administrative division, i.e. an area that is under the jurisdiction of a sovereign state. "^^xsd:string .
+
+:dose a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "dose"^^xsd:string .
+
+:droplet a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "droplet"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q185789"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Drop_(liquid)"^^xsd:string ;
+    rdfs:comment "A drop or droplet is a small column of liquid, bounded completely or almost completely by free surfaces. A drop may form when liquid accumulates at the lower end of a tube or other surface boundary, producing a hanging drop called a pendant drop. Drops may also be formed by the condensation of a vapor or by atomization of a larger mass of solid. Water vapor will condense into droplets depending on the temperature. The temperature at which droplets form is called the dew point."^^xsd:string .
+
+:fault a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "fault"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q47089"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fault_(geology)"^^xsd:string ;
+    rdfs:comment "In geology, a fault is a planar fracture or discontinuity in a volume of rock across which there has been significant displacement as a result of rock-mass movements. Large faults within Earth's crust result from the action of plate tectonic forces, with the largest forming the boundaries between the plates, such as the megathrust faults of subduction zones or transform faults. Energy release associated with rapid movement on active faults is the cause of most earthquakes. Faults may also displace slowly, by aseismic creep.A fault plane is the plane that represents the fracture surface of a fault. A fault trace or fault line is a place where the fault can be seen or mapped on the surface. A fault trace is also the line commonly plotted on geologic maps to represent a fault.A fault zone is a cluster of parallel faults. However, the term is also used for the zone of crushed rock along a single fault. Prolonged motion along closely spaced faults can blur the distinction, as the rock between the faults is converted to fault-bound lenses of rock and then progressively crushed."^^xsd:string .
+
+:floe a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "floe"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q368930"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ice_floe"^^xsd:string ;
+    rdfs:comment "An ice floe () is a large pack of floating ice often defined as a flat piece at least 20 m across at its widest point, and up to more than 10 km across. Drift ice is a floating field of sea ice composed of several ice floes. They may cause ice jams on freshwater rivers, and in the open ocean may damage the hulls of ships."^^xsd:string .
+
+:gas a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "gas"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11432"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gas"^^xsd:string ;
+    rdfs:comment "Gas is one of the four fundamental states of matter. The others are solid, liquid, and plasma.A pure gas may be made up of individual atoms (e.g. a noble gas like neon), elemental molecules made from one type of atom (e.g. oxygen), or compound molecules made from a variety of atoms (e.g. carbon dioxide). A gas mixture, such as air, contains a variety of pure gases. What distinguishes a gas from liquids and solids is the vast separation of the individual gas particles. This separation usually makes a colourless gas invisible to the human observer."^^xsd:string .
+
+:grain a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "grain"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q466491"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Grain_size"^^xsd:string ;
+    rdfs:comment "Grain size (or particle size) is the diameter of individual grains of sediment, or the lithified particles in clastic rocks.  The term may also be applied to other granular materials. This is different from the crystallite size, which refers to the size of a single crystal inside a particle or grain. A single grain can be composed of several crystals. Granular material can range from very small colloidal particles, through clay, silt, sand, gravel, and cobbles, to boulders."^^xsd:string .
+
+:hole a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "hole"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q20204151"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wiktionary.org/wiki/hole#Noun"^^xsd:string ;
+    rdfs:comment "A hole is an opening in or through a particular medium, usually a solid body. Holes occur through natural and artificial processes, and may be useful for various purposes, or may represent a problem needing to be addressed in many fields of engineering. Depending on the material and the placement, a hole may be an indentation in a surface (such as a hole in the ground), or may pass completely through that surface (such as a hole created by a hole puncher in a piece of paper)."^^xsd:string .
+
+:impact-crater a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "impact-crater"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q55818"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Impact_crater"^^xsd:string ;
+    rdfs:comment "An impact crater is a circular depression in the surface of a solid astronomical object formed by the hypervelocity impact of a smaller object. In contrast to volcanic craters, which result from explosion or internal collapse, impact craters typically have raised rims and floors that are lower in elevation than the surrounding terrain. Lunar impact craters range from microscopic craters on lunar rocks returned by the Apollo program and small, simple, bowl-shaped depressions in the lunar regolith to large, complex, multi-ringed impact basins. Meteor Crater is a well-known example of a small impact crater on Earth.Impact craters are the dominant geographic features on many solid Solar System objects including the Moon, Mercury, Callisto, Ganymede and most small moons and asteroids. On other planets and moons that experience more active surface geological processes, such as Earth, Venus, Europa, Io and Titan, visible impact craters are less common because they become eroded, buried or transformed by tectonics over time. Where such processes have destroyed most of the original crater topography, the terms impact structure or astrobleme are more commonly used. In early literature, before the significance of impact cratering was widely recognised, the terms cryptoexplosion or cryptovolcanic structure were often used to describe what are now recognised as impact-related features on Earth.The cratering records of very old surfaces, such as Mercury, the Moon, and the southern highlands of Mars, record a period of intense early bombardment in the inner Solar System around 3.9 billion years ago. The rate of crater production on Earth has since been considerably lower, but it is appreciable nonetheless. Earth experiences, on average, from one to three impacts large enough to produce a 20-kilometre-diameter (12 mi) crater every million years. This indicates that there should be far more relatively young craters on the planet than have been discovered so far. The cratering rate in the inner solar system fluctuates as a consequence of collisions in the asteroid belt that create a family of fragments that are often sent cascading into the inner solar system. Formed in a collision 80 million years ago, the Baptistina family of asteroids is thought to have caused a large spike in the impact rate. The rate of impact cratering in the outer Solar System could be different from the inner Solar System.Although Earth's active surface processes quickly destroy the impact record, about 190 terrestrial impact craters have been identified. These range in diameter from a few tens of meters up to about 300 km (190 mi), and they range in age from recent times (e.g. the Sikhote-Alin craters in Russia whose creation was witnessed in 1947) to more than two billion years, though most are less than 500 million years old because geological processes tend to obliterate older craters. They are also selectively found in the stable interior regions of continents. Few undersea craters have been discovered because of the difficulty of surveying the sea floor, the rapid rate of change of the ocean bottom, and the subduction of the ocean floor into Earth's interior by processes of plate tectonics."^^xsd:string .
+
+:ion a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "ion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q36496"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ion"^^xsd:string ;
+    rdfs:comment "An ion () is an atom or molecule with a net electrical charge. The charge of an electron is considered to be negative by convention and this charge is equal and opposite to the charge of a proton, which is considered to be positive by convention. The net charge of an ion is not zero because its total number of electrons is unequal to its total number of protons."^^xsd:string .
+
+:isomer a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "isomer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q127950"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isomer"^^xsd:string ;
+    rdfs:comment "In chemistry, isomers are molecules or polyatomic ions with identical molecular formula – that is, same number of atoms of each element – but distinct arrangements of atoms in space. Isomerism is existence or possibility of isomers."^^xsd:string .
+
+:isotope a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "isotope"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q25276"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Isotope"^^xsd:string ;
+    rdfs:comment "Isotopes are distinct nuclear species (or nuclides, as technical term) of the same element. They have the same atomic number (number of protons in their nuclei) and position in the periodic table (and hence belong to the same chemical element), but differ in nucleon numbers (mass numbers) due to different numbers of neutrons in their nuclei. While all isotopes of a given element have almost the same chemical properties, they have different atomic masses and physical properties.The term isotope is formed from the Greek roots isos (ἴσος \"equal\") and topos (τόπος \"place\"), meaning \"the same place\"; thus, the meaning behind the name is that different isotopes of a single element occupy the same position on the periodic table. It was coined by Scottish doctor and writer Margaret Todd in 1913 in a suggestion to the British chemist Frederick Soddy.The number of protons within the atom's nucleus is called its atomic number and is equal to the number of electrons in the neutral (non-ionized) atom. Each atomic number identifies a specific element, but not the isotope; an atom of a given element may have a wide range in its number of neutrons. The number of nucleons (both protons and neutrons) in the nucleus is the atom's mass number, and each isotope of a given element has a different mass number."^^xsd:string .
+
+<http://scientificvariablesontology.org/svo/form/layer~0> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "layer~0"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/0> ;
+    svo:has_form_root :layer .
+
+<http://scientificvariablesontology.org/svo/form/layer~0~saturated> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "layer~0~saturated"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/0>,
+        <http://scientificvariablesontology.org/svo/attribute/saturated> ;
+    svo:has_form_root :layer .
+
+<http://scientificvariablesontology.org/svo/form/layer~1> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "layer~1"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/1> ;
+    svo:has_form_root :layer .
+
+<http://scientificvariablesontology.org/svo/form/layer~1~saturated> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "layer~1~saturated"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/1>,
+        <http://scientificvariablesontology.org/svo/attribute/saturated> ;
+    svo:has_form_root :layer .
+
+<http://scientificvariablesontology.org/svo/form/layer~2> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "layer~2"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/2> ;
+    svo:has_form_root :layer .
+
+<http://scientificvariablesontology.org/svo/form/layer~2~saturated> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "layer~2~saturated"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/2>,
+        <http://scientificvariablesontology.org/svo/attribute/saturated> ;
+    svo:has_form_root :layer .
+
+<http://scientificvariablesontology.org/svo/form/layer~first> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "layer~first"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/first> ;
+    svo:has_form_root :layer .
+
+<http://scientificvariablesontology.org/svo/form/layer~second> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "layer~second"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/second> ;
+    svo:has_form_root :layer .
+
+<http://scientificvariablesontology.org/svo/form/layer~topmost> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "layer~topmost"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/topmost> ;
+    svo:has_form_root :layer .
+
+<http://scientificvariablesontology.org/svo/form/layer~topmost~saturated> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "layer~topmost~saturated"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/saturated>,
+        <http://scientificvariablesontology.org/svo/attribute/topmost> ;
+    svo:has_form_root :layer .
+
+<http://scientificvariablesontology.org/svo/form/link~exterior> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "link~exterior"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/exterior> ;
+    svo:has_form_root :link .
+
+<http://scientificvariablesontology.org/svo/form/link~interior> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "link~interior"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/interior> ;
+    svo:has_form_root :link .
+
+:macropore a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "macropore"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2753078"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Macropores"^^xsd:string ;
+    rdfs:comment "cavities in soil larger than 75 μm"^^xsd:string .
+
+:mat a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "mat"^^xsd:string .
+
+:moisture a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "moisture"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q217651"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Moisture"^^xsd:string ;
+    rdfs:comment "Moisture is the presence of a liquid, especially water, often in trace amounts. Small amounts of water may be found, for example, in the air (humidity), in foods, and in some commercial products. Moisture also refers to the amount of water vapor present in the air."^^xsd:string .
+
+:molecule a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "molecule"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11369"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Molecule"^^xsd:string ;
+    rdfs:comment "A molecule is a group of two or more atoms held together by attractive forces known as chemical bonds; depending on context, the term may or may not include ions which satisfy this criterion. In quantum physics, organic chemistry, and biochemistry, the distinction from ions is dropped and molecule is often used when referring to polyatomic ions."^^xsd:string .
+
+:network a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "network"^^xsd:string .
+
+:particle a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "particle"^^xsd:string ;
+    svo:has_synonym "corpuscule"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1621273"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Particle"^^xsd:string ;
+    rdfs:comment "In the physical sciences, a particle (or corpuscule in older texts) is a small localized object which can be described by several physical or chemical properties, such as volume, density, or mass. They vary greatly in size or quantity, from subatomic particles like the electron, to microscopic particles like atoms and molecules, to macroscopic particles like powders and other granular materials. Particles can also be used to create scientific models of even larger objects depending on their density, such as humans moving in a crowd or celestial bodies in motion."^^xsd:string .
+
+:particulate a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "particulate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q498957"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Particulates"^^xsd:string ;
+    rdfs:comment "Particulates – also known as atmospheric aerosol particles, atmospheric particulate matter, particulate matter (PM) or suspended particulate matter (SPM) – are microscopic particles of solid or liquid matter suspended in the air. The term aerosol commonly refers to the particulate/air mixture, as opposed to the particulate matter alone. Sources of particulate matter can be natural or anthropogenic. They have impacts on climate and precipitation that adversely affect human health, in ways additional to direct inhalation."^^xsd:string .
+
+:platform a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "platform"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q224617"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Platform"^^xsd:string ;
+    rdfs:comment "Platform  may refer to:"^^xsd:string .
+
+:plume a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "plume"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3817528"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Plume_(fluid_dynamics)"^^xsd:string ;
+    rdfs:comment "In hydrodynamics, a plume or a column is a vertical body of one fluid moving through another.  Several effects control the motion of the fluid, including momentum (inertia), diffusion and buoyancy (density differences).  Pure jets and pure plumes define flows that are driven entirely by momentum and buoyancy effects, respectively.  Flows between these two limits are usually described as forced plumes or buoyant jets.  \"Buoyancy is defined as being positive\" when, in the absence of other forces or initial motion, the entering fluid would tend to rise.  Situations where the density of the plume fluid is greater than its surroundings (i.e. in still conditions, its natural tendency would be to sink), but the flow has sufficient initial momentum to carry it some distance vertically, are described as being negatively buoyant."^^xsd:string .
+
+<http://scientificvariablesontology.org/svo/form/pool~microbial> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "pool~microbial"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/microbial> ;
+    svo:has_form_root :pool .
+
+<http://scientificvariablesontology.org/svo/form/pool~organic~stabilized> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "pool~organic~stabilized"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/organic>,
+        <http://scientificvariablesontology.org/svo/attribute/stabilized> ;
+    svo:has_form_root :pool .
+
+<http://scientificvariablesontology.org/svo/form/pool~stabilized> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "pool~stabilized"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/stabilized> ;
+    svo:has_form_root :pool .
+
+:pore a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "pore"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5073758"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pore_space_in_soil"^^xsd:string ;
+    rdfs:comment "The pore space of soil contains the liquid and gas phases of soil, i.e., everything but the solid phase that contains mainly minerals of varying sizes as well as organic compounds."^^xsd:string .
+
+:radical a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "radical"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q185056"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Radical_(chemistry)"^^xsd:string ;
+    rdfs:comment "In chemistry, a radical, also known as a free radical, is an atom, molecule, or ion that has at least one unpaired valence electron."^^xsd:string .
+
+:sample a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "sample"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q485146"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sample_(material)"^^xsd:string ;
+    rdfs:comment "In general, a sample is a limited quantity of something which is intended to be similar to and represent a larger amount of that thing(s). The things could be countable objects such as individual items available as units for sale, or an uncountable material. Even though the word \"sample\" implies a smaller quantity taken from a larger amount, sometimes full biological or mineralogical specimens are called samples if they are taken for analysis, testing, or investigation like other samples. They are also considered samples in the sense that even whole specimens are \"samples\" of the full population of many individual organisms. The act of obtaining a sample is called \"sampling\" and can be performed manually by a person or by automatic process. Samples of material can be taken or provided for testing, analysis, investigation, quality control, demonstration, or trial use. Sometimes, sampling may be performed continuously."^^xsd:string .
+
+:sheet a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "sheet"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1214119"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sheet"^^xsd:string ;
+    rdfs:comment "Sheet or Sheets may refer to:"^^xsd:string .
+
+:shelf a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "shelf"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1175677"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Shelf"^^xsd:string ;
+    rdfs:comment "Shelf (PL: shelves) may refer to:"^^xsd:string .
+
+:slick a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "slick"^^xsd:string .
+
+:solid a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "solid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11438"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Solid"^^xsd:string ;
+    rdfs:comment "Solid is one of the four fundamental states of matter (the others being liquid, gas, and plasma). The molecules in a solid are closely packed together and contain the least amount of kinetic energy. A solid is characterized by structural rigidity and resistance to a force applied to the surface. Unlike a liquid, a solid object does not flow to take on the shape of its container, nor does it expand to fill the entire available volume like a gas. The atoms in a solid are bound to each other, either in a regular geometric lattice (crystalline solids, which include metals and ordinary ice), or irregularly (an amorphous solid such as common window glass). Solids cannot be compressed with little pressure whereas gases can be compressed with little pressure because the molecules in a gas are loosely packed."^^xsd:string .
+
+:stratum a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "stratum"^^xsd:string ;
+    svo:has_synonym "layer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q12758989"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Stratum"^^xsd:string ;
+    rdfs:comment "In geology and related fields, a stratum (PL: strata) is a layer of rock or sediment characterized by certain lithologic properties or attributes that distinguish it from adjacent layers from which it is separated by visible surfaces known as either bedding surfaces or bedding planes. Prior to the publication of the International Stratigraphic Guide, older publications have defined a stratum as either being either equivalent to a single bed or composed of a number of beds; as a layer greater than 1 cm in thickness and constituting a part of a bed; or a general term that includes both bed and lamina."^^xsd:string .
+
+:system a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "system"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q58778"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/System"^^xsd:string ;
+    rdfs:comment "A system is a group of interacting or interrelated elements that act according to a set of rules to form a unified whole. A system, surrounded and influenced by its environment, is described by its boundaries, structure and purpose and is expressed in its functioning. Systems are the subjects of study of systems theory and other systems sciences."^^xsd:string .
+
+<http://scientificvariablesontology.org/svo/form/terrain~left> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "terrain~left"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/left> ;
+    svo:has_form_root :terrain .
+
+<http://scientificvariablesontology.org/svo/form/terrain~right> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "terrain~right"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/right> ;
+    svo:has_form_root :terrain .
+
+:unit a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "unit"^^xsd:string .
+
+:void a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "void"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q19689164"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Void_(composites)"^^xsd:string ;
+    rdfs:comment "A void is a pore that remains unfilled with polymer and fibers in a composite material.  Voids are typically the result of poor manufacturing of the material and are generally deemed undesirable.  Voids can affect the mechanical properties and lifespan of the composite.  They degrade mainly the matrix-dominated properties such as interlaminar shear strength, longitudinal compressive strength, and transverse tensile strength. Voids can act as crack initiation sites as well as allow moisture to penetrate the composite and contribute to the anisotropy of the composite. For aerospace applications, a void content of approximately 1% is still acceptable, while for less sensitive applications, the allowance limit is 3-5%.  Although a small increase in void content may not seem to cause significant issues, a 1-3% increase in void content of carbon fiber reinforced composite  can reduce the mechanical properties by up to 20%   Void content in composites is represented as a ratio, also called void ratio, where the volume of voids, solid material, and bulk volume are taken into account.  Void ratio can be calculated by the formula below where e is the void ratio of the composite, Vv is the volume of the voids, and Vt is the volume of the bulk material."^^xsd:string .
+
+<http://scientificvariablesontology.org/svo/form/wave~incoming> a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "wave~incoming"^^xsd:string ;
+    svo:has_direction <http://scientificvariablesontology.org/svo/direction/incoming> ;
+    svo:has_form_root :wave .
+
+:aerosol a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "aerosol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q104541"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Aerosol"^^xsd:string ;
+    rdfs:comment "An aerosol is a suspension of fine solid particles or liquid droplets in air or another gas. Aerosols can be generated from natural or human causes. The term aerosol commonly refers to the mixture of particulates in air, and not to the particulate matter alone. Examples of natural aerosols are fog, mist or dust. Examples of human caused aerosols include particulate air pollutants, mist from the discharge at hydroelectric dams, irrigation mist, perfume from atomizers, smoke, dust, sprayed pesticides, and medical treatments for respiratory illnesses."^^xsd:string .
+
+:wave a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "wave"^^xsd:string .
+
+:channel a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "channel"^^xsd:string ;
+    svo:has_synonym "conduit"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1210950"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Channel_(geography)"^^xsd:string ;
+    rdfs:comment "In physical geography, a channel is a type of landform consisting of the outline of a path of relatively shallow and narrow body of water or of other fluids (e.g., lava), most commonly the confine of a river, river delta or strait.  The word is cognate to canal, and sometimes takes this form, e.g. the Hood Canal."^^xsd:string .
+
+:link a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "link"^^xsd:string .
+
+:terrain a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "terrain"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q186131"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Terrain"^^xsd:string ;
+    rdfs:comment "Terrain or relief (also topographical relief) involves the vertical and horizontal dimensions of land surface. The term bathymetry is used to describe underwater relief, while hypsometry studies terrain relative to sea level. The Latin word terra (the root of terrain) means \"earth.\""^^xsd:string .
+
+:pool a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "pool"^^xsd:string .
+
+:layer a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "layer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q254549"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Layer"^^xsd:string ;
+    rdfs:comment "Layer or layered may refer to:"^^xsd:string .
+

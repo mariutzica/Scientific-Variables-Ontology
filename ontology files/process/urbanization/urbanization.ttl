@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:urbanization a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "urbanization"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q161078"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Urbanization"^^xsd:string ;
+    rdfs:comment "Urbanization (or urbanisation in British English) is the population shift from rural to urban areas, the corresponding decrease in the proportion of people living in rural areas, and the ways in which societies adapt to this change. It can also mean population growth in urban areas instead of rural ones. It is predominantly the process by which towns and cities are formed and become larger as more people begin living and working in central areas."^^xsd:string .
+

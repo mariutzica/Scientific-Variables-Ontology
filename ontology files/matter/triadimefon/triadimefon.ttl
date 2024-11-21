@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:triadimefon a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "triadimefon"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2452254"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Triadimefon"^^xsd:string ;
+    rdfs:comment "Triadimefon is a fungicide used in agriculture to control various fungal diseases.  As a seed treatment, it is used on barley, corn, cotton, oats, rye, sorghum, and wheat.  In fruit it is used on pineapple and banana.  Non-food uses include pine seedlings, Christmas trees, turf, ornamental plants, and landscaping."^^xsd:string .
+

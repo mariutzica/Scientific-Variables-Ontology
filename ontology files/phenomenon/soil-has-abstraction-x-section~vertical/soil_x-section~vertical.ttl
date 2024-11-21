@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/soil-has-abstraction-x-section~vertical> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "soil_x-section~vertical"^^xsd:string ;
+    svo:has_abstraction <http://scientificvariablesontology.org/svo/abstraction/x-section~vertical> ;
+    svo:has_matter <http://scientificvariablesontology.org/svo/matter/soil> .
+

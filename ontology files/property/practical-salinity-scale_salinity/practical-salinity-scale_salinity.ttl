@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:practical-salinity-scale_salinity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "practical-salinity-scale_salinity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q179615"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Salinity#Definitions"^^xsd:string ;
+    rdfs:comment "Salinity () is the saltiness or amount of salt dissolved in a body of water, called saline water (see also soil salinity). It is usually measured in g/L or g/kg (grams of salt per liter/kilogram of water; the latter is dimensionless and equal to ‰). "^^xsd:string .
+

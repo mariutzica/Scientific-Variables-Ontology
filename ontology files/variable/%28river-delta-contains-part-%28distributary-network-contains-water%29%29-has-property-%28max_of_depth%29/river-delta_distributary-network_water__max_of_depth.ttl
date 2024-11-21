@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28river-delta-contains-part-%28distributary-network-contains-water%29%29-has-property-%28max_of_depth%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "river-delta_distributary-network_water__max_of_depth"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/max> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/distributary-network>,
+        <http://scientificvariablesontology.org/svo/phenomenon/river-delta> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/depth> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/river-delta-contains-part-%28distributary-network-contains-water%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/max_of_depth> ;
+    svo:has_original_label "delta_distributary-network_water__max_of_depth"^^xsd:string .
+

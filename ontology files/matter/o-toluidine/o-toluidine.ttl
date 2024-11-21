@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:o-toluidine a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "o-toluidine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q312373"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Toluidine"^^xsd:string ;
+    rdfs:comment "There are three isomers of toluidine, which are organic compounds. These isomers are o-toluidine, m-toluidine, and p-toluidine, with the prefixed letter abbreviating, respectively, ortho; meta; and para. All three are aryl amines whose chemical structures are similar to aniline except that a methyl group is substituted onto the benzene ring. The difference between these three isomers is the position where the methyl group (–CH3) is bonded to the ring relative to the amino functional group (–NH2); see illustration of the chemical structures below."^^xsd:string .
+

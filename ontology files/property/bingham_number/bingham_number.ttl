@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bingham_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "bingham_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q10862968"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Herschel%E2%80%93Bulkley_fluid#Channel_flow"^^xsd:string ;
+    rdfs:comment "The Herschel–Bulkley fluid is a generalized model of a non-Newtonian fluid, in which the strain experienced by the fluid is related to the stress  in a complicated, non-linear way.  Three parameters characterize this relationship: the consistency k, the flow index n, and the yield shear stress "^^xsd:string .
+

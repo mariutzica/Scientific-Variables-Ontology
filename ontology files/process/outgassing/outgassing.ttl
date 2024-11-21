@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:outgassing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "outgassing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q778653"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Outgassing"^^xsd:string ;
+    rdfs:comment "Outgassing (sometimes called offgassing, particularly when in reference to indoor air quality) is the release of a gas that was dissolved, trapped, frozen, or absorbed in some material. Outgassing can include sublimation and evaporation (which are phase transitions of a substance into a gas), as well as desorption, seepage from cracks or internal volumes, and gaseous products of slow chemical reactions. Boiling is generally thought of as a separate phenomenon from outgassing because it consists of a phase transition of a liquid into a vapor of the same substance."^^xsd:string .
+

@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:methyl-methacrylate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "methyl-methacrylate"^^xsd:string ;
+    svo:has_synonym "mma"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q382897"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Methyl_methacrylate"^^xsd:string ;
+    rdfs:comment "Methyl methacrylate (MMA) is an organic compound with the formula CH2=C(CH3)COOCH3.  This colorless liquid, the methyl ester of methacrylic acid (MAA), is a monomer produced on a large scale for the production of poly(methyl methacrylate) (PMMA)."^^xsd:string .
+

@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlorphenamine a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chlorphenamine"^^xsd:string ;
+    svo:has_synonym "chlorpheniramine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q420133"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chlorphenamine"^^xsd:string ;
+    rdfs:comment "Chlorphenamine (CP, CPM), also known as chlorpheniramine, is an antihistamine used to treat the symptoms of allergic conditions such as allergic rhinitis (hay fever). It is taken by mouth. The medication takes effect within two hours and lasts for about 4-6 hours.Common side effects include sleepiness, restlessness, and weakness. Other side effects may include dry mouth and wheeziness. It is a first-generation antihistamine and works by blocking the H1 receptor.Chlorpheniramine was patented in 1948 and came into medical use in 1949. It is available as a generic medication and over the counter."^^xsd:string .
+

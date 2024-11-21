@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:innoculation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "innoculation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1664296"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Inoculation"^^xsd:string ;
+    rdfs:comment "Inoculation is the act of implanting a pathogen or other microbe or virus into a person or other organism. It is a method of artificially inducing immunity against various infectious diseases. The term \"inoculation\" is also used more generally to refer to intentionally depositing microbes into any growth medium, as into a Petri dish used to culture the microbe, or into food ingredients for making cultured foods such as yoghurt and fermented beverages such as beer and wine. This article is primarily about the use of inoculation for producing immunity against infection. Inoculation has been used to eradicate smallpox and to markedly reduce other infectious diseases such as polio. Although the terms \"inoculation\", \"vaccination\", and \"immunization\" are often used interchangeably, there are important differences. Inoculation is the act of implanting a pathogen or microbe into a person or other recipient; vaccination is the act of implanting or giving someone a vaccine specifically; and immunization is the development of disease resistance that results from the immune system's response to a vaccine or natural infection."^^xsd:string .
+

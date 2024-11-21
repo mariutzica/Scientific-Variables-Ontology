@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:treethrow a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "treethrow"^^xsd:string ;
+    svo:has_synonym "tree hole"^^xsd:string,
+        "tree throw"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7837643"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tree_throw"^^xsd:string ;
+    rdfs:comment "A tree throw or tree hole is a bowl-shaped cavity or depression created in the subsoil by a tree."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sorbent-trap a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "sorbent-trap"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4057995"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sorbent_tube"^^xsd:string ;
+    rdfs:comment "Sorbent tubes are the most widely used collection media for sampling hazardous gases and vapors in air, mostly as it relates to Industrial hygiene.  They were developed by the US National Institute for Occupational Safety and Health (NIOSH) for air quality testing of workers. Sorbent Tubes are available from CARO Analytical Services, SKC Inc., 7Solutions BV, Uniphos Ltd., SKC Ltd, Zefon International, Sigma-Aldrich/Supelco and Markes International. SKC Inc. manufactured the first commercially available sorbent tubes. XAD2 Tubes."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:photosynthesis a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "photosynthesis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11982"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Photosynthesis"^^xsd:string ;
+    rdfs:comment "Photosynthesis ( FOH-tə-SINTH-ə-sis) is a system of biological processes by which photosynthetic organisms, such as most plants, algae, and cyanobacteria, convert light energy, typically from sunlight, into the chemical energy necessary to fuel their activities. Photosynthetic organisms use intracellular organic compounds to store the chemical energy they produce in photosynthesis within organic compounds like sugars, glycogen, cellulose and starches. Photosynthesis is usually used to refer to oxygenic photosynthesis, a process that produces oxygen. To use this stored chemical energy, the organisms' cells metabolize the organic compounds through another process called cellular respiration. Photosynthesis plays a critical role in producing and maintaining the oxygen content of the Earth's atmosphere, and it supplies most of the biological energy necessary for complex life on Earth."^^xsd:string .
+

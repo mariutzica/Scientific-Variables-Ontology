@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:halon-1301 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "halon-1301"^^xsd:string ;
+    svo:has_synonym "bromotrifluoromethane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q413018"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bromotrifluoromethane"^^xsd:string ;
+    rdfs:comment "Bromotrifluoromethane, commonly known as Halon 1301, R13B1, Halon 13B1 or BTM, is an organic halide with the chemical formula CBrF3. It is used for gaseous fire suppression as a far less toxic alternative to bromochloromethane."^^xsd:string .
+

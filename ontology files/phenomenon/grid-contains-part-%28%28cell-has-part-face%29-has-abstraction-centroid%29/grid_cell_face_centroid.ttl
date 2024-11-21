@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:grid-contains-part-%28%28cell-has-part-face%29-has-abstraction-centroid%29 a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "grid_cell_face_centroid"^^xsd:string ;
+    svo:has_primary_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28cell-has-part-face%29-has-abstraction-centroid> ;
+    svo:is_part_of_containing_phenomenon :grid .
+

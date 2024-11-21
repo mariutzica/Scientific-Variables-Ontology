@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/matter/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/matter/">
+<owl:NamedIndividual rdf:about="salt">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Matter"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">salt</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Salt_(chemistry)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q12370</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In chemistry, a salt is a chemical compound consisting of an ionic assembly of positively charged cations and negatively charged anions, which results in a compound with no net electric charge. A common example is table salt, with positively charged sodium ions and negatively charged chloride ions.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlorophyll a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chlorophyll"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q43177"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Chlorophyll"^^xsd:string ;
+    rdfs:comment "Chlorophyll (also chlorophyl) is any of several related green pigments found in cyanobacteria and in the chloroplasts of algae and plants. Its name is derived from the Greek words χλωρός, khloros (\"pale green\") and φύλλον, phyllon (\"leaf\"). Chlorophyll allow plants to absorb energy from light."^^xsd:string .
+

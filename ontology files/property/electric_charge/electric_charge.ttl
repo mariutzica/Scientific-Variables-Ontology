@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:electric_charge a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "electric_charge"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1111"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Electric_charge"^^xsd:string ;
+    rdfs:comment "Electric charge is the physical property of matter that causes matter to experience a force when placed in an electromagnetic field. Electric charge can be positive or negative (commonly carried by protons and electrons respectively, by convention). Like charges repel each other and unlike charges attract each other. An object with an absence of net charge is referred to as neutral. Early knowledge of how charged substances interact is now called classical electrodynamics, and is still accurate for problems that do not require consideration of quantum effects."^^xsd:string .
+

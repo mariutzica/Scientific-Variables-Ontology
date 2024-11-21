@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:power-per-volume_density a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "power-per-volume_density"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3503313"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Power_density"^^xsd:string ;
+    rdfs:comment "Power density is the amount of power (time rate of energy transfer) per unit volume.It is typically measured in watts per cubic meter (W/m³) and represents how much power is distributed within a given space. In various fields such as physics, engineering, and electronics, power density is used to evaluate the efficiency and performance of devices, systems, or materials by considering how much power they can handle or generate relative to their size or volume."^^xsd:string .
+

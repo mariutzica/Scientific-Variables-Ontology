@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28model-models-%28soil-has-form-layer~1%29%29-has-property-%28porosity%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "model_soil_layer~1__porosity"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/1> ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/layer> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/soil> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/model-models-%28soil-has-form-layer~1%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/porosity> .
+

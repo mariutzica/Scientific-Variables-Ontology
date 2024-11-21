@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:diazinon a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "diazinon"^^xsd:string ;
+    svo:has_synonym "dimpylate"^^xsd:string,
+        "o,o-diethyl-o-[4-methyl-6-(propan-2-yl]pyrimidin-2-yl]-phosphorothioate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q411202"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Diazinon"^^xsd:string ;
+    rdfs:comment "Diazinon (IUPAC name: O,O-Diethyl O-[4-methyl-6-(propan-2-yl)pyrimidin-2-yl] phosphorothioate, INN - Dimpylate), a colorless to dark brown liquid, is a thiophosphoric acid ester developed in 1952 by Ciba-Geigy, a Swiss chemical company (later Novartis and then Syngenta). It is a nonsystemic organophosphate insecticide formerly used to control cockroaches, silverfish, ants, and fleas in residential, non-food buildings. Diazinon was heavily used during the 1970s and early 1980s for general-purpose gardening use and indoor pest control. A bait form was used to control scavenger wasps in the western U.S. Diazinon is used in flea collars for domestic pets in Australia and New Zealand. Residential uses of diazinon were outlawed in the U.S. in 2004 because of human health risks but it is still approved for agricultural uses. An emergency antidote is atropine."^^xsd:string .
+

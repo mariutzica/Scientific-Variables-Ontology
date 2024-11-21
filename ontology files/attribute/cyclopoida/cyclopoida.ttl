@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cyclopoida a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "cyclopoida"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q899782"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cyclopoida"^^xsd:string ;
+    rdfs:comment "The Cyclopoida are an order of small crustaceans from the subclass Copepoda. Like many other copepods, members of Cyclopoida are small, planktonic animals living both in the sea and in freshwater habitats. They are capable of rapid movement. Their larval development is metamorphic, and the embryos are carried in paired or single sacs attached to first abdominal somite."^^xsd:string .
+

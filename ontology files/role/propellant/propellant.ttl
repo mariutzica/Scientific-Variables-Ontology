@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:propellant a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "propellant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1364934"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Propellant"^^xsd:string ;
+    rdfs:comment "A propellant (or propellent) is a mass that is expelled or expanded in such a way as to create a thrust or another motive force in accordance with Newton's third law of motion, and \"propel\" a vehicle, projectile, or fluid payload. In vehicles, the engine that expels the propellant is called a reaction engine. Although technically a propellant is the reaction mass used to create thrust, the term \"propellant\" is often used to describe a substance which is contains both the reaction mass and the fuel that holds the energy used to accelerate the reaction mass. For example, the term \"propellant\" is often used in chemical rocket design to describe a combined fuel/propellant, although the propellants should not be confused with the fuel that is used by an engine to produce the energy that expels the propellant. Even though the byproducts of substances used as fuel are also often used as a reaction mass to create the thrust, such as with a chemical rocket engine, propellant and fuel are two distinct concepts."^^xsd:string .
+

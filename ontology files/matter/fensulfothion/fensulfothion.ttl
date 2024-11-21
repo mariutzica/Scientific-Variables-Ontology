@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fensulfothion a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "fensulfothion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5443592"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fensulfothion"^^xsd:string ;
+    rdfs:comment "Fensulfothion is an insecticide and nematicide.  It is highly toxic and listed as an extremely hazardous substance. It is widely used on corn, onions, rutabagas, pineapple, bananas, sugar cane, sugar beets, pea nuts, etc."^^xsd:string .
+

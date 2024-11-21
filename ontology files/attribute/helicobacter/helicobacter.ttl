@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:helicobacter a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "helicobacter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q134684"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Helicobacter"^^xsd:string ;
+    rdfs:comment "Helicobacter is a genus of Gram-negative bacteria possessing a characteristic helical shape. They were initially considered to be members of the genus Campylobacter, but in 1989, Goodwin et al. published sufficient reasons to justify the new genus name  Helicobacter. The genus Helicobacter contains about 35 species.Some species have been found living in the lining of the upper gastrointestinal tract, as well as the liver of mammals and some birds. The most widely known species of the genus is H. pylori, which infects up to 50% of the human population.   It also serves as the type species of the genus.  Some strains of this bacterium are pathogenic to humans, as they are strongly associated with peptic ulcers, chronic gastritis, duodenitis, and stomach cancer."^^xsd:string .
+

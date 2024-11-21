@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:espionage a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "espionage"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q165950"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Espionage"^^xsd:string ;
+    rdfs:comment "Espionage, spying, or intelligence gathering is the act of obtaining secret or confidential information (intelligence). A person who commits espionage is called an espionage agent or spy. Any individual or spy ring (a cooperating group of spies), in the service of a government, company, criminal organization, or independent operation, can commit espionage. The practice is clandestine, as it is by definition unwelcome. In some circumstances, it may be a legal tool of law enforcement and in others, it may be illegal and punishable by law."^^xsd:string .
+

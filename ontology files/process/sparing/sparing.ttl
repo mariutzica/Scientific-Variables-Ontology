@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sparing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "sparing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q60790103"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Macular_sparing"^^xsd:string ;
+    rdfs:comment "Macular sparing is visual field loss that preserves vision in the center of the visual field, otherwise known as the macula. It appears in people with damage to one hemisphere of their visual cortex, and occurs simultaneously with bilateral homonymous hemianopia or homonymous quadrantanopia. The exact mechanism behind this phenomenon is still uncertain. The opposing effect, where vision in half of the center of the visual field is lost, is known as macular splitting."^^xsd:string .
+

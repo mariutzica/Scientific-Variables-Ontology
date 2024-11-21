@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:retrofitting a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "retrofitting"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q24662"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Retrofitting"^^xsd:string ;
+    rdfs:comment "Retrofitting is the addition of new technology or features to older systems. Retrofits can happen for a number of reasons, for example with big capital expenditures like naval vessels, military equipment or manufacturing plants, businesses or governments may retrofit in order to reduce the need to replace a system entirely. Other retrofits may be due to changing codes or requirements, such as seismic retrofit which are designed strengthening older buildings in order to make them earthquake resistant."^^xsd:string .
+

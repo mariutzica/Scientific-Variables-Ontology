@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:diphenylamine a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "diphenylamine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q412265"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Diphenylamine"^^xsd:string ;
+    rdfs:comment "Diphenylamine is an organic compound with the formula (C6H5)2NH. The compound is a derivative of aniline, consisting of an amine bound to two phenyl groups. The compound is a colorless solid, but commercial samples are often yellow due to oxidized impurities. Diphenylamine dissolves well in many common organic solvents, and is moderately soluble in water. It is used mainly for its antioxidant properties. Diphenylamine is widely used as an industrial antioxidant, dye mordant and reagent and is also employed in agriculture as a fungicide and antihelmintic."^^xsd:string .
+

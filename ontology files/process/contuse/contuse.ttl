@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:contuse a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "contuse"^^xsd:string ;
+    svo:has_synonym "contusion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q574491"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bruise"^^xsd:string ;
+    rdfs:comment "A bruise, also known as a contusion, is a type of hematoma of tissue, the most common cause being capillaries damaged by trauma, causing localized bleeding that extravasates into the surrounding interstitial tissues. Most bruises occur close enough to the epidermis such that the bleeding causes a visible discoloration. The bruise then remains visible until the blood is either absorbed by tissues or cleared by immune system action. Bruises which do not blanch under pressure can involve capillaries at the level of skin, subcutaneous tissue, muscle, or bone. "^^xsd:string .
+

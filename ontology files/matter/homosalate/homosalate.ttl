@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:homosalate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "homosalate"^^xsd:string ;
+    svo:has_synonym "3,3,5-Trimethylcyclohexyl salicylate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2260189"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Homosalate"^^xsd:string ;
+    rdfs:comment "Homosalate is an organic compound used in some sunscreens. It is made by the Fischer–Speier esterification of salicylic acid and 3,3,5-trimethylcyclohexanol, the latter being a hydrogenated derivative of isophorone. Contained in 45% of U.S. sunscreens, it is used as a chemical UV filter. The salicylic acid portion of the molecule absorbs ultraviolet rays with a wavelength from 295 nm to 315 nm, protecting the skin from sun damage. The hydrophobic trimethyl cyclohexyl group provides greasiness that prevents it from dissolving in water."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:wingspan a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "wingspan"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q245097"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Wingspan"^^xsd:string ;
+    rdfs:comment "The wingspan (or just span) of a bird or an airplane is the distance from one wingtip to the opposite wingtip. For example, the Boeing 777–200 has a wingspan of 60.93 metres (199 ft 11 in), and a wandering albatross (Diomedea exulans) caught in 1965 had a wingspan of 3.63 metres (11 ft 11 in), the official record for a living bird."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:stokes_drift_velocity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "stokes_drift_velocity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q961596"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Stokes_drift"^^xsd:string ;
+    rdfs:comment "For a pure wave motion in fluid dynamics, the Stokes drift velocity is the average velocity when following a specific fluid parcel as it travels with the fluid flow. For instance, a particle floating at the free surface of water waves, experiences a net Stokes drift velocity in the direction of wave propagation."^^xsd:string .
+

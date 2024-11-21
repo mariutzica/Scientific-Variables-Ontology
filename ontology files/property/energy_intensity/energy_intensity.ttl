@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:energy_intensity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "energy_intensity"^^xsd:string ;
+    svo:has_synonym "radiant_exposure"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1418023"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Radiant_exposure"^^xsd:string ;
+    rdfs:comment "In radiometry, radiant exposure or fluence is the radiant energy received by a surface per unit area, or equivalently the irradiance of a surface, integrated over time of irradiation, and spectral exposure is the radiant exposure per unit frequency or wavelength, depending on whether the spectrum is taken as a function of frequency or of wavelength. The SI unit of radiant exposure is the joule per square metre (J/m2), while that of spectral exposure in frequency is the joule per square metre per hertz (J⋅m−2⋅Hz−1) and that of spectral exposure in wavelength is the joule per square metre per metre (J/m3)—commonly the joule per square metre per nanometre (J⋅m−2⋅nm−1)."^^xsd:string .
+

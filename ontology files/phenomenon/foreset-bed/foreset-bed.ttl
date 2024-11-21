@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:foreset-bed a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "foreset-bed"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5468750"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Foreset_bed"^^xsd:string ;
+    rdfs:comment "A foreset bed is one of the main parts of a river delta. It is the inclined part of a delta that is found at the end of the stream channel as the delta sediment is deposited along the arcuate delta front. As the sediments are deposited on a sloping surface the resulting bedding is not horizontal, but dips in the direction of current flow toward deeper water. A cross-section of a delta shows the cross bedding in the direction of stream flow into the still water."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydropsychidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "hydropsychidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1949522"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydropsychidae"^^xsd:string ;
+    rdfs:comment "The Hydropsychidae are a family-level taxon consisting of net-spinning caddisflies.  Hydropsychids are common among much of the world's streams, and a few species occupy the shorelines of freshwater lakes.  Larvae of the hydropsychids construct nets at the open ends of their dwellings which are responsible for their \"net-spinning caddisfly\" common name."^^xsd:string .
+

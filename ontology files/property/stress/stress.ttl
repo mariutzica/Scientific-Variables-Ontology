@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:stress a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "stress"^^xsd:string ;
+    svo:has_synonym "mechanical_stress"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q206175"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Stress_(mechanics)"^^xsd:string ;
+    rdfs:comment "In continuum mechanics, stress is a physical quantity that describes forces present during deformation. An object being pulled apart, such as a stretched elastic band, is subject to tensile stress and may undergo elongation. An object being pushed together, such as a crumpled sponge, is subject to compressive stress and may undergo shortening. The greater the force and the smaller the cross-sectional area of the body on which it acts, the greater the stress. Stress has units of force per area, such as newtons per square meter (N/m2) or pascal (Pa)."^^xsd:string .
+

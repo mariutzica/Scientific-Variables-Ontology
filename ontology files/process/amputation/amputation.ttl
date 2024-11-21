@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:amputation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "amputation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q477415"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Amputation"^^xsd:string ;
+    rdfs:comment "Amputation is the removal of a limb by trauma, medical illness, or surgery. As a surgical measure, it is used to control pain or a disease process in the affected limb, such as malignancy or gangrene. In some cases, it is carried out on individuals as a preventive surgery for such problems. A special case is that of congenital amputation, a congenital disorder, where fetal limbs have been cut off by constrictive bands. In some countries, amputation is currently used to punish people who commit crimes. Amputation has also been used as a tactic in war and acts of terrorism; it may also occur as a war injury. In some cultures and religions, minor amputations or mutilations are considered a ritual accomplishment. When done by a person, the person executing the amputation is an amputator. The oldest evidence of this practice comes from a skeleton found buried in Liang Tebo cave, East Kalimantan, Indonesian Borneo dating back to at least 31,000 years ago, where it was done when the amputee was a young child.In the US, the majority of new amputations occur due to complications of the vascular system (the blood vessels), especially from diabetes. Between 1988 and 1996, there were an average of 133,735 hospital discharges for amputation per year in the US. In 2005, just in the US, there were 1.6 million amputees.  In 2013, the US had 2.1 million amputees.  Approximately 185,000 amputations occur in the United States each year.  In 2009, hospital costs associated with amputation totaled more than $8.3 billion. There will be an estimated 3.6 million people in the US living with limb loss by 2050."^^xsd:string .
+

@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28land-contains-part-%28%28domain-has-abstraction-boundary%29-undergoes-process-lowering%29%29-has-property-%28elevation_rate%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "land_domain_boundary_lowering__elevation_rate"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/boundary> ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/domain> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/land> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/lowering> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/land-contains-part-%28%28domain-has-abstraction-boundary%29-undergoes-process-lowering%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/elevation_rate> ;
+    svo:has_original_label "land_domain_boundary__elevation_lowering_rate"^^xsd:string .
+

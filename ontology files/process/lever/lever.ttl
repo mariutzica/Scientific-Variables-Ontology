@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lever a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "lever"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q40164"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lever"^^xsd:string ;
+    rdfs:comment "A lever is a simple machine consisting of a beam or rigid rod pivoted at a fixed hinge, or fulcrum. A lever is a rigid body capable of rotating on a point on itself. On the basis of the locations of fulcrum, load and effort, the lever is divided into three types. It is one of the six simple machines identified by Renaissance scientists. A lever amplifies an input force to provide a greater output force, which is said to provide leverage, which is mechanical advantage gained in the system, equal to the ratio of the output force to the input force. As such, the lever is a mechanical advantage device, trading off force against movement."^^xsd:string .
+

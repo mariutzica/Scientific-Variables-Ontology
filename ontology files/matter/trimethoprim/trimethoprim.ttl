@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trimethoprim a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "trimethoprim"^^xsd:string ;
+    svo:has_synonym "2,4-pyrimidinediamine,-5-[(3,4,5-trimethoxyphenyl)methyl]-"^^xsd:string,
+        "tmp"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q422665"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Trimethoprim"^^xsd:string ;
+    rdfs:comment "Trimethoprim (TMP) is an antibiotic used mainly in the treatment of bladder infections. Other uses include for middle ear infections and travelers' diarrhea. With sulfamethoxazole or dapsone it may be used for Pneumocystis pneumonia in people with HIV/AIDS. It is taken by mouth.Common side effects include nausea, changes in taste, and rash. Rarely it may result in blood problems such as not enough platelets or white blood cells. Trimethoprim may cause sun sensitivity. There is evidence of potential harm during pregnancy in some animals but not humans. It works by blocking folate metabolism via dihydrofolate reductase in some bacteria which results in their death.Trimethoprim was first used in 1962. It is on the World Health Organization's List of Essential Medicines. It is available as a generic medication."^^xsd:string .
+

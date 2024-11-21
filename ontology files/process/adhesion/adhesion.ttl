@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:adhesion a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "adhesion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q188666"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Adhesion"^^xsd:string ;
+    rdfs:comment "Adhesion is the tendency of dissimilar particles or surfaces to cling to one another (cohesion refers to the tendency of similar or identical particles/surfaces to cling to one another)."^^xsd:string .
+

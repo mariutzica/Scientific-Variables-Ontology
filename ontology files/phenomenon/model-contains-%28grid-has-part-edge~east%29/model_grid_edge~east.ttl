@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/model-contains-%28grid-has-part-edge~east%29> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "model_grid_edge~east"^^xsd:string ;
+    svo:has_containing_phenomenon :model ;
+    svo:has_primary_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/grid-has-part-edge~east> .
+

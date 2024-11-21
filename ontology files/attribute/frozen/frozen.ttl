@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:frozen a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "frozen"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q108000"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Freezing"^^xsd:string ;
+    rdfs:comment "Freezing is a phase transition where a liquid turns into a solid when its temperature is lowered below its freezing point. In accordance with the internationally established definition, freezing means the solidification phase change of a liquid or the liquid content of a substance, usually due to cooling.For most substances, the melting and freezing points are the same temperature; however, certain substances possess differing solid-liquid transition temperatures. For example, agar displays a hysteresis in its melting point and freezing point. It melts at 85 °C (185 °F) and solidifies from 32 °C to 40 °C (89.6 °F to 104 °F)."^^xsd:string .
+

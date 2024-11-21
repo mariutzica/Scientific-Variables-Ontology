@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mach_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "mach_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q160669"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mach_number"^^xsd:string ;
+    rdfs:comment "Mach number (M or Ma) (; German: [max]) is a dimensionless quantity in fluid dynamics representing the ratio of flow velocity past a boundary to the local speed of sound."^^xsd:string .
+

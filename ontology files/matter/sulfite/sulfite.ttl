@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sulfite a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "sulfite"^^xsd:string ;
+    svo:has_synonym "SO3"^^xsd:string,
+        "sulphite"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q76014098"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sulfite"^^xsd:string ;
+    rdfs:comment "Sulfites or sulphites are compounds that contain the sulfite ion (or the sulfate(IV) ion, from its correct systematic name), SO2−3. The sulfite ion is the conjugate base of bisulfite. Although its acid (sulfurous acid) is elusive, its salts are widely used."^^xsd:string .
+

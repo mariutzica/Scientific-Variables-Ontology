@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:antibiosis a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "antibiosis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q770530"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Antibiosis"^^xsd:string ;
+    rdfs:comment "Antibiosis is a biological interaction between two or more organisms that is detrimental to at least one of them; it can also be an antagonistic association between an organism and the metabolic substances produced by another. Examples of antibiosis include the relationship between antibiotics and bacteria or animals and disease-causing pathogens. The study of antibiosis and its role in antibiotics has led to the expansion of knowledge in the field of microbiology. Molecular processes such cell wall synthesis and recycling, for example, have become better understood through the study of how antibiotics affect beta-lactam development through the antibiosis relationship and interaction of the particular drugs with the bacteria subjected to the compound.Antibiosis is typically studied in host plant populations and extends to the insects which feed upon them."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:human-as-main-acoustic-wave-as-in-hearing a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "human_acoustic-wave_hearing"^^xsd:string ;
+    svo:has_in_participant_phenomenon :acoustic-wave ;
+    svo:has_primary_participant_phenomenon :human ;
+    svo:undergoes_process <http://scientificvariablesontology.org/svo/process/hearing> .
+

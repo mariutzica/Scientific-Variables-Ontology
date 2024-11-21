@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thermal_quality a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "thermal_quality"^^xsd:string ;
+    svo:has_synonym "energy_quality"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5377202"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Energy_quality"^^xsd:string ;
+    rdfs:comment "Energy quality is a measure of the ease with which a form of energy can be converted to useful work or to another form of energy: i.e. its content of thermodynamic free energy. A high quality form of energy has a high content of thermodynamic free energy, and therefore a high proportion of it can be converted to work; whereas with low quality forms of energy, only a small proportion can be converted to work, and the remainder is dissipated as heat. The concept of energy quality is also used in ecology, where it is used to track the flow of energy between different trophic levels in a food chain and in thermoeconomics, where it is used as a measure of economic output per unit of energy. Methods of evaluating energy quality often involve developing a ranking of energy qualities in hierarchical order."^^xsd:string .
+

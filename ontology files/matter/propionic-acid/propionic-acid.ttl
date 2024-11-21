@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:propionic-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "propionic-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q422956"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Propionic_acid"^^xsd:string ;
+    rdfs:comment "Propionic acid (, from the Greek words πρῶτος : prōtos, meaning \"first\", and πίων : píōn, meaning \"fat\"; also known as propanoic acid) is a naturally occurring carboxylic acid with chemical formula CH3CH2CO2H. It is a liquid with a pungent and unpleasant smell somewhat resembling body odor. The anion CH3CH2CO−2 as well as the salts and esters of propionic acid are known as propionates or propanoates."^^xsd:string .
+

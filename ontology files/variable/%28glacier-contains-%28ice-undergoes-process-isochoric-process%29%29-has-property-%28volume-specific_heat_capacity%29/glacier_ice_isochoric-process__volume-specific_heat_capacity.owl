@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28glacier-contains-%28ice-undergoes-process-isochoric-process%29%29-has-property-%28volume-specific_heat_capacity%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/glacier-contains-%28ice-undergoes-process-isochoric-process%29"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/volume-specific_heat_capacity"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/glacier"/>
+  <svo:contains_process_reference_to rdf:resource="http://scientificvariablesontology.org/svo/process/isochoric-process"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/ice"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glacier_ice_isochoric-process__volume-specific_heat_capacity</rdfs:label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glacier_ice__volume-specific_isochoric_heat_capacity</svo:has_original_label>
+</owl:NamedIndividual>
+</rdf:RDF>

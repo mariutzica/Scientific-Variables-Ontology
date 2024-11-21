@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:intake a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "intake"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2473660"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Intake"^^xsd:string ;
+    rdfs:comment "An intake (also inlet) is an opening, structure or system through which a fluid is admitted to a space or machine as a consequence of a pressure differential between the outside and the inside. The pressure difference may be generated on the inside by a mechanism, or on the outside by ram pressure or hydrostatic pressure. Flow rate through the intake depends on pressure difference, fluid properties, and intake geometry."^^xsd:string .
+

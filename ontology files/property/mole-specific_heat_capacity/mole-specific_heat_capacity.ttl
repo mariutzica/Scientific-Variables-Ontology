@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mole-specific_heat_capacity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "mole-specific_heat_capacity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q179388"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Heat_capacity#Specific_heat_capacity"^^xsd:string ;
+    rdfs:comment "Heat capacity or thermal capacity is a physical property of matter, defined as the amount of heat to be supplied to an object to produce a unit change in its temperature.    The SI unit of heat capacity is joule per kelvin (J/K)."^^xsd:string .
+

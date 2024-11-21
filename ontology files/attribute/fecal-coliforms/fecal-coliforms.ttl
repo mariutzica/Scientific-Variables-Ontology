@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fecal-coliforms a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "fecal-coliforms"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q918223"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fecal_coliform"^^xsd:string ;
+    rdfs:comment "A fecal coliform (British: faecal coliform) is a facultatively anaerobic, rod-shaped, gram-negative, non-sporulating bacterium.  Coliform bacteria generally originate in the intestines of warm-blooded animals. Fecal coliforms are capable of growth in the presence of bile salts or similar surface agents, are oxidase negative, and produce acid and gas from lactose within 48 hours at 44 ± 0.5°C.  The term \"thermotolerant coliform\" is more correct and is gaining acceptance over \"fecal coliform\".Coliform bacteria include genera that originate in feces (e.g. Escherichia) as well as genera not of fecal origin (e.g. Enterobacter, Klebsiella, Citrobacter).  The assay is intended to be an indicator of fecal contamination; more specifically of E. coli which is an indicator microorganism for other pathogens that may be present in feces. Presence of fecal coliforms in water may not be directly harmful, and does not necessarily indicate the presence of feces."^^xsd:string .
+

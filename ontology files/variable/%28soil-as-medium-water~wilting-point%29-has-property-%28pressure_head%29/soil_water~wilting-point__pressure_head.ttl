@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28soil-as-medium-water~wilting-point%29-has-property-%28pressure_head%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "soil_water~wilting-point__pressure_head"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/wilting-point> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/soil>,
+        <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/soil-as-medium-water~wilting-point> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/pressure_head> ;
+    svo:has_original_label "soil_water__wilting-point_pressure_head"^^xsd:string .
+

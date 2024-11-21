@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dry a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "dry"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2745207"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Anhydrous"^^xsd:string ;
+    rdfs:comment "A substance is anhydrous if it contains no water. Many processes in chemistry can be impeded by the presence of water; therefore, it is important that water-free reagents and techniques are used. In practice, however, it is very difficult to achieve perfect dryness; anhydrous compounds gradually absorb water from the atmosphere so they must be stored carefully."^^xsd:string .
+

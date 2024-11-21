@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tabulation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "tabulation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q496946"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Table_(information)"^^xsd:string ;
+    rdfs:comment "A table is an arrangement of information or data, typically in rows and columns, or possibly in a more complex structure. Tables are widely used in communication, research, and data analysis. Tables appear in print media, handwritten notes, computer software, architectural ornamentation, traffic signs, and many other places. The precise conventions and terminology for describing tables vary depending on the context. Further, tables differ significantly in variety, structure, flexibility, notation, representation and use. Information or data conveyed in table form is said to be in tabular format (adjective). In books and technical articles, tables are typically presented apart from the main text in numbered and captioned floating blocks."^^xsd:string .
+

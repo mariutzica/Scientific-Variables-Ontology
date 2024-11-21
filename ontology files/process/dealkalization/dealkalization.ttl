@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dealkalization a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "dealkalization"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5245922"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dealkalization"^^xsd:string ;
+    rdfs:comment "Dealkalization is a process of surface modification applicable to glasses containing alkali ions, wherein a thin surface layer is created that has a lower concentration of alkali ions than is present in the underlying, bulk glass.  This change in surface composition commonly alters the observed properties of the surface, most notably enhancing corrosion resistance.  "^^xsd:string .
+

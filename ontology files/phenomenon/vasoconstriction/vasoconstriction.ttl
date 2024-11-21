@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vasoconstriction a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "vasoconstriction"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1067506"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vasoconstriction"^^xsd:string ;
+    rdfs:comment "Vasoconstriction is the narrowing of the blood vessels resulting from contraction of the muscular wall of the vessels, in particular the large arteries and small arterioles. The process is the opposite of vasodilation, the widening of blood vessels. The process is particularly important in controlling hemorrhage and reducing acute blood loss. When blood vessels constrict, the flow of blood is restricted or decreased, thus retaining body heat or increasing vascular resistance.  This makes the skin turn paler because less blood reaches the surface, reducing the radiation of heat. On a larger level, vasoconstriction is one mechanism by which the body regulates and maintains mean arterial pressure."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:polynoidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "polynoidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q221318"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Polynoidae"^^xsd:string ;
+    rdfs:comment "Polynoidae is a family of marine Polychaete worms known as \"scale worms\" due to the scale-like elytra on the dorsal surface. Almost 900 species are currently recognised belonging to 9 subfamilies and 167 genera. They are active hunters, but generally dwell in protected environments such as under stones. The group is widely distributed from shallow intertidal waters to hadal trenches. They are the most diverse group of polychaetes in terms of genus number and second most diverse in terms of species number which is almost 8% of all segmented worm species."^^xsd:string .
+

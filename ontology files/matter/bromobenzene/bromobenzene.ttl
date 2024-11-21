@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bromobenzene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "bromobenzene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q410597"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bromobenzene"^^xsd:string ;
+    rdfs:comment "Bromobenzene is an aryl halide, C6H5Br. It is a colourless liquid although older samples can appear yellow. It is a reagent in organic synthesis."^^xsd:string .
+

@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28drainage-basin-contains-part-%28outlet-contains-%28%28water-undergoes-process-flowing%29-has-abstraction-x-section%29%29%29-has-property-%28time_max_of_volume_rate%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "drainage-basin_outlet_water_flowing_x-section__time_max_of_volume_rate"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/x-section> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/time_max> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/drainage-basin> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/flowing> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/volume_rate> ;
+    svo:contains_role_reference_to <http://scientificvariablesontology.org/svo/role/outlet> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/drainage-basin-contains-part-%28outlet-contains-%28%28water-undergoes-process-flowing%29-has-abstraction-x-section%29%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/time_max_of_volume_rate> ;
+    svo:has_original_label "basin_outlet_water_x-section__time_max_of_volume_flow_rate"^^xsd:string .
+

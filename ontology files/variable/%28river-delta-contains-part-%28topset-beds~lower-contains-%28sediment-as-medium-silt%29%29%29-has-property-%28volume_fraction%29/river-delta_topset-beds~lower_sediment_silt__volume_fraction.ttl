@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28river-delta-contains-part-%28topset-beds~lower-contains-%28sediment-as-medium-silt%29%29%29-has-property-%28volume_fraction%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "river-delta_topset-beds~lower_sediment_silt__volume_fraction"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/lower> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/sediment>,
+        <http://scientificvariablesontology.org/svo/matter/silt> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/river-delta>,
+        <http://scientificvariablesontology.org/svo/phenomenon/topset-bed> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/river-delta-contains-part-%28topset-beds~lower-contains-%28sediment-as-medium-silt%29%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/volume_fraction> ;
+    svo:has_original_label "delta_beds~topset~lower_sediment_silt__volume_fraction"^^xsd:string .
+

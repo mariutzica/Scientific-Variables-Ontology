@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:formazin_nephelometric_turbidity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "formazin_nephelometric_turbidity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q898574"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Turbidity#Measurement"^^xsd:string ;
+    rdfs:comment "Turbidity is the cloudiness or haziness of a fluid caused by large numbers of individual particles that are generally invisible to the naked eye, similar to smoke in air. The measurement of turbidity is a key test of both water clarity and water quality."^^xsd:string .
+

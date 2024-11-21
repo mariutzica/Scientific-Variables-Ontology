@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:khinchin_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "khinchin_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2718188"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Khinchin%27s_constant"^^xsd:string ;
+    rdfs:comment "In number theory, Aleksandr Yakovlevich Khinchin proved that for almost all real numbers x, coefficients ai of the continued fraction expansion of x have a finite geometric mean that is independent of the value of x and is known as Khinchin's constant."^^xsd:string .
+

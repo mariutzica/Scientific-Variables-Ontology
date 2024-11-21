@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hcfc-141b a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "hcfc-141b"^^xsd:string ;
+    svo:has_synonym "1,1-duchloro-1-fluoroethane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q385448"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/1,1-Dichloro-1-fluoroethane"^^xsd:string ;
+    rdfs:comment "1,1-Dichloro-1-fluoroethane is a haloalkane with the formula C2H3Cl2F. It is one of the three  isomers of dichlorofluoroethane.  It belongs to the hydrochlorofluorocarbon (HCFC) family of man-made compounds that contribute significantly to both ozone depletion and global warming when released into the environment."^^xsd:string .
+

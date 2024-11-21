@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:regolith-layer a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "regolith-layer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q106551"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Regolith"^^xsd:string ;
+    rdfs:comment "Regolith () is a blanket of unconsolidated, loose, heterogeneous superficial deposits covering solid rock. It includes dust, broken rocks, and other related materials and is present on Earth, the Moon, Mars, some asteroids, and other terrestrial planets and moons."^^xsd:string .
+

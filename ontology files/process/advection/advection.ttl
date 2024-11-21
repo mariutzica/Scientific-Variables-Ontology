@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:advection a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "advection"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q379788"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Advection"^^xsd:string ;
+    rdfs:comment "In the field of physics, engineering, and earth sciences, advection is the transport of a substance or quantity by bulk motion of a fluid. The properties of that substance are carried with it. Generally the majority of the advected substance is also a fluid. The properties that are carried with the advected substance are conserved properties such as energy. An example of advection is the transport of pollutants or silt in a river by bulk water flow downstream. Another commonly advected quantity is energy or enthalpy. Here the fluid may be any material that contains thermal energy, such as  water or air. In general, any substance or conserved, extensive quantity can be advected by a fluid that can hold or contain the quantity or substance."^^xsd:string .
+

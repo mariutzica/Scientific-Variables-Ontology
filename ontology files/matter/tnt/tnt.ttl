@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tnt a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tnt"^^xsd:string ;
+    svo:has_synonym "trinitrotoluene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q170167"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/TNT"^^xsd:string ;
+    rdfs:comment "Trinitrotoluene (), more commonly known as TNT, more specifically 2,4,6-trinitrotoluene, and by its preferred IUPAC name 2-methyl-1,3,5-trinitrobenzene, is a chemical compound with the formula C6H2(NO2)3CH3.  TNT is occasionally used as a reagent in chemical synthesis, but it is best known as an explosive material with convenient handling properties.  The explosive yield of TNT is considered to be the standard comparative convention of bombs and asteroid impacts. In chemistry, TNT is used to generate charge transfer salts."^^xsd:string .
+

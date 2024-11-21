@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28%28earth-has-part-interior%29-contains-%28earthquake-has-abstraction-hypocenter%29%29-as-main-seismic-station-as-main%29-has-property-%28distance%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "earth_interior_earthquake_hypocenter_seismic-station__distance"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/hypocenter> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/interior> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/earth>,
+        <http://scientificvariablesontology.org/svo/phenomenon/earthquake>,
+        <http://scientificvariablesontology.org/svo/phenomenon/seismic-station> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28%28earth-has-part-interior%29-contains-%28earthquake-has-abstraction-hypocenter%29%29-as-main-seismic-station-as-main> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/distance> ;
+    svo:has_original_label "earth_interior_earthquake_hypocenter-to-station__distance"^^xsd:string .
+

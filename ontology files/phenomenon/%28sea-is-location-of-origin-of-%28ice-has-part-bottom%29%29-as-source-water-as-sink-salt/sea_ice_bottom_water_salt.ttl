@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28sea-is-location-of-origin-of-%28ice-has-part-bottom%29%29-as-source-water-as-sink-salt> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "sea_ice_bottom_water_salt"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :salt ;
+    svo:has_sink_participant_phenomenon :water ;
+    svo:has_source_participant_phenomenon :sea-is-location-of-origin-of-%28ice-has-part-bottom%29 .
+

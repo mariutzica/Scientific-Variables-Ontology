@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fanning_friction_factor a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "fanning_friction_factor"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2004420"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Fanning_friction_factor"^^xsd:string ;
+    rdfs:comment "The Fanning friction factor, named after John Thomas Fanning, is a dimensionless number used as a local parameter in continuum mechanics calculations.  It is defined as the ratio between the local shear stress and the local flow kinetic energy density:"^^xsd:string .
+

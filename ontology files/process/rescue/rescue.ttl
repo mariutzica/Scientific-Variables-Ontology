@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:rescue a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "rescue"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1341429"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Rescue"^^xsd:string ;
+    rdfs:comment "Rescue comprises responsive operations that usually involve the saving of life, removal from danger, liberation from restraint, or the urgent treatment of injuries after an incident. It may be facilitated by a range of tools and equipment necessary to deal with the specific circumstances."^^xsd:string .
+

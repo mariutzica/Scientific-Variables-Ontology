@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ethyl-methanesulfonate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "ethyl-methanesulfonate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q416643"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ethyl_methanesulfonate"^^xsd:string ;
+    rdfs:comment "Ethyl methanesulfonate (EMS) is a mutagenic, teratogenic, and carcinogenic organic compound with formula C3H8SO3.  It produces random mutations in genetic material by nucleotide substitution; particularly through G:C to A:T transitions induced by guanine alkylation. EMS typically produces only point mutations. Due to its potency and well understood mutational spectrum, EMS is the most commonly used chemical mutagen in experimental genetics. Mutations induced by EMS exposure can then be studied in genetic screens or other assays."^^xsd:string .
+

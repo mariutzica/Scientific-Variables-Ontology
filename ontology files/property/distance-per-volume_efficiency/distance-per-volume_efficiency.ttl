@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:distance-per-volume_efficiency a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "distance-per-volume_efficiency"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5042317"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fuel_efficiency"^^xsd:string ;
+    rdfs:comment "Fuel efficiency (or fuel economy) is a form of thermal efficiency, meaning the ratio of effort to result of a process that converts chemical potential energy contained in a carrier (fuel) into kinetic energy or work. Overall fuel efficiency may vary per device, which in turn may vary per application, and this spectrum of variance is often illustrated as a continuous energy profile. Non-transportation applications, such as industry, benefit from increased fuel efficiency, especially fossil fuel power plants or industries dealing with combustion, such as ammonia production during the Haber process."^^xsd:string .
+

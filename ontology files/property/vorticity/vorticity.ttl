@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vorticity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "vorticity"^^xsd:string ;
+    svo:has_synonym "angular_vorticity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1143513"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Vorticity"^^xsd:string ;
+    rdfs:comment "In continuum mechanics, vorticity is a pseudovector field that describes the local spinning motion of a continuum near some point (the tendency of something to rotate), as would be seen by an observer located at that point and traveling along with the flow. It is an important quantity in the dynamical theory of fluids and provides a convenient framework for understanding a variety of complex flow phenomena, such as the formation and motion of vortex rings.Mathematically, the vorticity "^^xsd:string .
+

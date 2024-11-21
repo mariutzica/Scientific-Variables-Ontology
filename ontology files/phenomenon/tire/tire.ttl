@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tire a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "tire"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q169545"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Tire"^^xsd:string ;
+    rdfs:comment "A tire (North American English) or tyre (Commonwealth English except Canada) is a ring-shaped component that surrounds a wheel's rim to transfer a vehicle's load from the axle through the wheel to the ground and to provide traction on the surface over which the wheel travels. Most tires, such as those for automobiles and bicycles, are pneumatically inflated structures, which also provide a flexible cushion that absorbs shock as the tire rolls over rough features on the surface. Tires provide a footprint, called a contact patch, that is designed to match the weight of the vehicle with the bearing strength of the surface that it rolls over by providing a bearing pressure that will not deform the surface excessively."^^xsd:string .
+

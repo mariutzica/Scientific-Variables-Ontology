@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:foam a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "foam"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q215414"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Foam"^^xsd:string ;
+    rdfs:comment "Foams are materials formed by trapping pockets of gas in a liquid or solid.A bath sponge and the head on a glass of beer are examples of foams. In most foams, the volume of gas is large, with thin films of liquid or solid separating the regions of gas. Soap foams are also known as suds."^^xsd:string .
+

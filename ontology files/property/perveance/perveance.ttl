@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:perveance a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "perveance"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7171240"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Perveance"^^xsd:string ;
+    rdfs:comment "Perveance is a notion used in the description of charged particle beams. The value of perveance indicates how significant the space charge effect is on the beam's motion. The term is used primarily for electron beams, in which motion is often dominated by the space charge."^^xsd:string .
+

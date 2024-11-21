@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:2-chloronaphthalene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "2-chloronaphthalene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q18923298"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/2-Chloronaphthalene"^^xsd:string ;
+    rdfs:comment "2-Chloronaphthalene is an organochlorine chemical compound, a chlorinated derivative of naphthalene. Its chemical formula is C10H7Cl. The compound is an isomer for 1-chloronaphthalene."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sedimentation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "sedimentation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q635485"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sedimentation"^^xsd:string ;
+    rdfs:comment "Sedimentation is the deposition of sediments. It takes place when particles in suspension settle out of the fluid in which they are entrained and come to rest against a barrier. This is due to their motion through the fluid in response to the forces acting on them: these forces can be due to gravity, centrifugal acceleration, or electromagnetism. Settling is the falling of suspended particles through the liquid, whereas sedimentation is the final result of the settling process."^^xsd:string .
+

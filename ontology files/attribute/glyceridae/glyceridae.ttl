@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:glyceridae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "glyceridae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1940098"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Glyceridae"^^xsd:string ;
+    rdfs:comment "Glyceridae is a family of polychaete worms. They are commonly referred to as beak-thrower worms or bloodworms. They are bright red, segmented, aquatic worms. The proboscis worm Glycera is sometimes called bloodworm. The Glyceridae are epi- and infaunal polychaetes that prey upon small invertebrates. They are errant burrowers that build galleries of interconnected tubes to aid in catching their prey."^^xsd:string .
+

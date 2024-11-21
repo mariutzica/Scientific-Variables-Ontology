@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:colony-forming a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "colony-forming"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q954757"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Colony-forming_unit"^^xsd:string ;
+    rdfs:comment "In microbiology, colony-forming unit (CFU, cfu or Cfu) is a unit which estimates the number of microbial cells (bacteria, fungi, viruses etc.) in a sample that are viable, able to multiply via binary fission under the controlled conditions. Counting with colony-forming units requires culturing the microbes and counts only viable cells, in contrast with microscopic examination which counts all cells, living or dead. The visual appearance of a colony in a cell culture requires significant growth, and when counting colonies, it is uncertain if the colony arose from one cell or a group of cells. Expressing results as colony-forming units reflects this uncertainty."^^xsd:string .
+

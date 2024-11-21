@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cloud a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "cloud"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q8074"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cloud"^^xsd:string ;
+    rdfs:comment "In meteorology, a cloud is an aerosol consisting of a visible mass of miniature liquid droplets, frozen crystals, or other particles suspended in the atmosphere of a planetary body or similar space. Water or various other chemicals may compose the droplets and crystals. On Earth, clouds are formed as a result of saturation of the air when it is cooled to its dew point, or when it gains sufficient moisture (usually in the form of water vapor) from an adjacent source to raise the dew point to the ambient temperature."^^xsd:string .
+

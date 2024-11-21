@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:arrest a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "arrest"^^xsd:string ;
+    svo:has_synonym "arrest"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1403016"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Arrest"^^xsd:string ;
+    rdfs:comment "An arrest is the act of apprehending and taking a person into custody (legal protection or control), usually because the person has been suspected of or observed committing a crime. After being taken into custody, the person can be questioned further and/or charged. An arrest is a procedure in a criminal justice system, sometimes it is also done after a court warrant for the arrest."^^xsd:string .
+

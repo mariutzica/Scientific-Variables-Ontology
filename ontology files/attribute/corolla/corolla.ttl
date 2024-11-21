@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:corolla a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "corolla"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q243543"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Toyota_Corolla"^^xsd:string ;
+    rdfs:comment "The Toyota Corolla (Japanese: トヨタ・カローラ, Hepburn: Toyota Karōra) is a series of compact cars (formerly subcompact) manufactured and marketed globally by the Japanese automaker Toyota Motor Corporation. Introduced in 1966, the Corolla was the best-selling car worldwide by 1974 and has been one of the best-selling cars in the world since then. In 1997, the Corolla became the best-selling nameplate in the world, surpassing the Volkswagen Beetle. Toyota reached the milestone of 50 million Corollas sold over twelve generations in 2021. "^^xsd:string .
+

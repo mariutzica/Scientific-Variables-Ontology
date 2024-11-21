@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:strontium-89 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "strontium-89"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2404445"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Strontium-89"^^xsd:string ;
+    rdfs:comment "Strontium-89 (89Sr) is a radioactive isotope of strontium produced by nuclear fission, with a half-life of 50.57 days. It undergoes β− decay into yttrium-89. Strontium-89 has an application in medicine."^^xsd:string .
+

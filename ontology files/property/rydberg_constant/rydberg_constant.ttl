@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:rydberg_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "rydberg_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q658065"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Rydberg_constant"^^xsd:string ;
+    rdfs:comment "In spectroscopy, the Rydberg constant, symbol "^^xsd:string .
+

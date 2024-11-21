@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:oligotricha a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "oligotricha"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q130575"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Oligotrich"^^xsd:string ;
+    rdfs:comment "The oligotrichs are a group of ciliates, included among the spirotrichs.  They have prominent oral cilia, which are arranged as a collar and lapel, in contrast to the choreotrichs where they form a complete circle.  The body cilia are reduced to a girdle and ventral cilia.  In Halteria and its relatives, they form bristles or cirri; however these forms may be closer relatives of the stichotrichs than of other oligotrichs. These organisms are very common in plankton communities, especially in marine systems.  Usually found in concentrations of about 1 per ml, they are the most important herbivores in the sea, the first link in the food chain."^^xsd:string .
+

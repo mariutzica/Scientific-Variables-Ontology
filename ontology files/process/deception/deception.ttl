@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:deception a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "deception"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q170028"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Deception"^^xsd:string ;
+    rdfs:comment "Deception is an act or statement that misleads, hides the truth, or promotes a belief, concept, or idea that is not true. This occurs when a deceiver uses information against a person to make them believe an idea is true. Deception can be used with both verbal and nonverbal messages. The person creating the deception knows it to be false while the receiver of the message has a tendency to believe it (although it's not always the case). It is often done for personal gain or advantage. Deception can involve dissimulation, propaganda and sleight of hand as well as distraction, camouflage or concealment. There is also self-deception, as in bad faith. It can also be called, with varying subjective implications, beguilement, deceit, bluff, mystification, ruse, or subterfuge."^^xsd:string .
+

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/property/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/property/">
+<owl:NamedIndividual rdf:about="hausdorff_dimension">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hausdorff_dimension</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Hausdorff_dimension</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q565186</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, Hausdorff dimension is a measure of roughness, or more specifically, fractal dimension, that was first introduced in 1918 by mathematician Felix Hausdorff. For instance, the Hausdorff dimension of a single point is zero, of a line segment is 1, of a square is 2, and of a cube is 3. That is, for sets of points that define a smooth shape or a shape that has a small number of corners—the shapes of traditional geometry and science—the Hausdorff dimension is an integer agreeing with the usual sense of dimension, also known as the topological dimension. However, formulas have also been developed that allow calculation of the dimension of other less simple objects, where, solely on the basis of their properties of scaling and self-similarity, one is led to the conclusion that particular objects—including fractals—have non-integer Hausdorff dimensions. Because of the significant technical advances made by Abram Samoilovitch Besicovitch allowing computation of dimensions for highly irregular or "rough" sets, this dimension is also commonly referred to as the Hausdorff–Besicovitch dimension.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

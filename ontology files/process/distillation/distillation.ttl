@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:distillation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "distillation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q101017"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Distillation"^^xsd:string ;
+    rdfs:comment "Distillation, also classical distillation, is the process of separating the component substances of a liquid mixture of two or more chemically discrete substances; the separation process is realized by way of the selective boiling of the mixture and the condensation of the vapors in a still."^^xsd:string .
+

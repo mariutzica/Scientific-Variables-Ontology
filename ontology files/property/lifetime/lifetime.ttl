@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lifetime a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "lifetime"^^xsd:string ;
+    svo:has_synonym "lifespan"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5447288"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Product_lifetime"^^xsd:string ;
+    rdfs:comment "Product lifetime or product lifespan is the time interval from when a product is sold to when it is discarded.Product lifetime is slightly different from service life because the latter consider only the effective time the product is used. It is also different from product economic life which refers to the point where maintaining a product is more expensive than replacing it; from product technical life which refers to the maximum period during which a product has the physical capacity to function; and from the functional life which is the time a product should last regardless of external intervention to increase its lifespan.Product lifetime represent an important area of enquiry with regards to product design, the circular economy and sustainable development. This is because products, with the materials involved in their design, production, distribution, use and disposal (across their life cycle), embody carbon due to the energy involved in these processes. Therefore, if product lifetimes can be extended, the use of energy, embodied in carbon, can be reduced and progress can be made towards reducing greenhouse gas emissions: Bocken et al. term this \"Slowing resource loops\" (309, their emphasis). In addition, excessive waste generation has been attributed to short-lived goods and a throwaway society.In recent years, there has been a growth in academic and policy discussions around product lifetimes. For example, discussion of product lifetimes are an integral part of the European Commission's action plan for the circular economy. In academia, the PLATE (Product Lifetimes and the Environment) Consortium hosts regular conferences and seminars around the topic of product lifetimes and the environment (see: http://www.plateconference.org/). In the business world, the Canadian Kijiji platform's Secondhand Economy Index examines how consumers extend product lifetime through secondhand marketplaces, swapping, donating and renting/leasing/lending/pooling (see: https://www.kijiji.ca/kijijicentral/second-hand-economy/)."^^xsd:string .
+

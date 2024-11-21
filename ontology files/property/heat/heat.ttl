@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:heat a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "heat"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q44432"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Heat"^^xsd:string ;
+    rdfs:comment "In thermodynamics, heat is defined as the form of energy crossing the boundary of a thermodynamic system by virtue of a temperature difference across the boundary. A thermodynamic system does not contain heat. Nevertheless, the term is also often used to refer to the thermal energy contained in a system as a component of its internal energy and that is reflected in the temperature of the system. For both uses of the term, heat is a form of energy."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:travel a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "travel"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q61509"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wiktionary.org/wiki/travel#Verb"^^xsd:string ;
+    rdfs:comment "Travel is the movement of people between distant geographical locations. Travel can be done by foot, bicycle, automobile, train, boat, bus, airplane, ship or other means, with or without luggage, and can be one way or round trip. Travel can also include relatively short stays between successive movements, as in the case of tourism."^^xsd:string .
+

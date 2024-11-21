@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dukhin_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "dukhin_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q29260"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dukhin_number"^^xsd:string ;
+    rdfs:comment "The Dukhin number (Du) is a dimensionless quantity that characterizes the contribution of the surface conductivity to various electrokinetic and electroacoustic effects, as well as to electrical conductivity and permittivity of fluid heterogeneous systems. The number was named after Stanislav and Andrei Dukhin."^^xsd:string .
+

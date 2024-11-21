@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28iron-has-form-atom%29-contains-proton> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "iron_atom_proton"^^xsd:string ;
+    svo:has_containing_phenomenon :iron-has-form-atom ;
+    svo:has_primary_participant_phenomenon :proton .
+

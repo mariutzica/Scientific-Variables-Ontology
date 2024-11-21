@@ -1,0 +1,16 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mcpb a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "mcpb"^^xsd:string ;
+    svo:has_synonym "2,4-mcpb"^^xsd:string,
+        "4-(4-chloro-2-methylphenoxy)butanoic-acid"^^xsd:string,
+        "4-(4-chloro-o-tolyloxy)butyric-acid)"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q424951"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/MCPB"^^xsd:string ;
+    rdfs:comment "MCPB, 2,4-MCPB, 4-(4-chloro-o-tolyloxy)butyric acid (IUPAC), or 4-(4-chloro-2-methylphenoxy)butanoic acid (CAS) is a phenoxybutyric herbicide.  In the United States it is registered for use on pea crops before flowering, for post-emergence control of broadleaf annual and perennial weeds including Canadian thistle, buttercup, mustard, purslane, ragweed, common lambsquarters, pigweed, smartweed, sowthistle, and morning glory.  It has low to moderate acute toxicity, with kidney and liver effects as the main hazard concerns.  It is not volatile, persistent, or likely to bioconcentrate."^^xsd:string .
+

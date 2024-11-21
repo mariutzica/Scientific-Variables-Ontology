@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:heave a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "heave"^^xsd:string ;
+    svo:has_synonym "heaving"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q814663"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Heaving_to"^^xsd:string ;
+    rdfs:comment "In sailing, heaving to (to heave to and to be hove to) is a way of slowing a sailing vessel's forward progress, as well as fixing the helm and sail positions so that the vessel does not have to be steered.  It is commonly used for a \"break\"; this may be to wait for the tide before proceeding, or to wait out a strong or contrary wind. For a solo or shorthanded sailor it can provide time to go below deck, to attend to issues elsewhere on the boat or to take a meal break. Heaving to can make reefing a lot easier, especially in traditional vessels with several sails.: 113  It is also used as a storm tactic."^^xsd:string .
+

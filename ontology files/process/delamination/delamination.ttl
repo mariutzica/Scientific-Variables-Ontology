@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:delamination a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "delamination"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1183858"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Delamination"^^xsd:string ;
+    rdfs:comment "Delamination is a mode of failure where a material fractures into layers. A variety of materials, including laminate composites and concrete, can fail by delamination. Processing can create layers in materials, such as steel formed by rolling and plastics and metals from 3D printing which can fail from layer separation. Also, surface coatings, such as paints and films, can delaminate from the coated substrate."^^xsd:string .
+

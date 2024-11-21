@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:phenanthrene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "phenanthrene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q422037"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Phenanthrene"^^xsd:string ;
+    rdfs:comment "Phenanthrene is a polycyclic aromatic hydrocarbon (PAH) with formula C14H10, consisting of three fused benzene rings. It is a colorless, crystal-like solid, but can also appear yellow. Phenanthrene is used to make dyes, plastics and pesticides, explosives and drugs. It has also been used to make bile acids, cholesterol and steroids.Phenanthrene occurs naturally and also is a man-made chemical. Commonly, humans are exposed to phenanthrene through inhalation of cigarette smoke but there are many routes of exposure. Animal studies have shown that phenanthrene is a potential carcinogen. However, according to IARC, it is not identified as a probable, possible or confirmed human carcinogen.Phenanthrene's three fused rings are angled as in the phenacenes, rather than straight as in the acenes. The compound with a phenanthrene skeleton and nitrogens at the 4 and 5 positions is known as phenanthroline."^^xsd:string .
+

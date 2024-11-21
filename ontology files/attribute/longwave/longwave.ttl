@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:longwave a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "longwave"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1082861"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Longwave"^^xsd:string ;
+    rdfs:comment "In radio, longwave,  long wave or long-wave, and commonly abbreviated LW, refers to parts of the radio spectrum with wavelengths longer than what was originally called the medium-wave broadcasting band. The term is historic, dating from the early 20th century, when the radio spectrum was considered to consist of longwave (LW), medium-wave (MW), and short-wave (SW) radio bands. Most modern radio systems and devices use wavelengths which would then have been considered 'ultra-short'."^^xsd:string .
+

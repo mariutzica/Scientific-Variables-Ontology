@@ -1,0 +1,20 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28%28biomass~microbial-has-form-pool~organic~stabilized%29-or-%28soil-has-form-pool~organic~stabilized%29%29-contains-%28nitrogen-undergoes-process-immobilization%29%29-has-property-%28gross_mass-per-area_density%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "biomass~microbial-or-soil_pool~organic~stabilized_nitrogen_immobilization__gross_mass-per-area_density"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/microbial>,
+        <http://scientificvariablesontology.org/svo/attribute/organic>,
+        <http://scientificvariablesontology.org/svo/attribute/stabilized> ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/pool> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/biomass>,
+        <http://scientificvariablesontology.org/svo/matter/nitrogen>,
+        <http://scientificvariablesontology.org/svo/matter/soil> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/immobilization> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28%28biomass~microbial-has-form-pool~organic~stabilized%29-or-%28soil-has-form-pool~organic~stabilized%29%29-contains-%28nitrogen-undergoes-process-immobilization%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/gross_mass-per-area_density> ;
+    svo:has_original_label "biomass~microbial-or-soil_pool~organic~stabilized_nitrogen__gross_mass-per-area_immobilization_density"^^xsd:string .
+

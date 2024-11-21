@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/matter/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/matter/">
+<owl:NamedIndividual rdf:about="composite-material">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Matter"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">composite-material</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Composite_material</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q181790</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A composite material (also called a composition material or shortened to composite, which is the common name) is a material which is produced from two or more constituent materials. These constituent materials have notably dissimilar chemical or physical properties and are merged to create a material with properties unlike the individual elements. Within the finished structure, the individual elements remain separate and distinct, distinguishing composites from mixtures and solid solutions.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

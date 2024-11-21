@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:core a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "core"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1942237"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Core_sample"^^xsd:string ;
+    rdfs:comment "A core sample is a cylindrical section of (usually) a naturally-occurring substance. Most core samples are obtained by drilling with special drills into the substance, such as sediment or rock, with a hollow steel tube, called a core drill. The hole made for the core sample is called the \"core hole\". A variety of core samplers exist to sample different media under different conditions. More continue to be invented on a regular basis. In the coring process, the sample is pushed more or less intact into the tube. Removed from the tube in the laboratory, it is inspected and analyzed by different techniques and equipment depending on the type of data desired."^^xsd:string .
+

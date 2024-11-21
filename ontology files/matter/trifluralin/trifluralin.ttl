@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trifluralin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "trifluralin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q418247"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Trifluralin"^^xsd:string ;
+    rdfs:comment "Trifluralin is a commonly used pre-emergence herbicide.  With about 14 million pounds (6,400 t) used in the United States in 2001, it is one of the most widely used herbicides.  Trifluralin is generally applied to the soil to provide control of a variety of annual grass and broadleaf weed species.  It inhibits root development by interrupting mitosis, and thus can control weeds as they germinate."^^xsd:string .
+

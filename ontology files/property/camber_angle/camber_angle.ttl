@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:camber_angle a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "camber_angle"^^xsd:string ;
+    svo:has_synonym "castor_angle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1756174"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Camber_angle"^^xsd:string ;
+    rdfs:comment "Camber angle is one of the angles made by the wheels of a vehicle; specifically, it is the angle between the vertical axis of a wheel and the vertical axis of the vehicle when viewed from the front or rear. It is used in the creation of steering and suspension. If the top of the wheel is farther out than the bottom (that is, tilted away from the axle), it is called positive camber; if the bottom of the wheel is farther out than the top, it is called negative camber. [1]"^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thermal_energy a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "thermal_energy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q209233"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Thermal_energy"^^xsd:string ;
+    rdfs:comment "The term \"thermal energy\" is used loosely in various contexts in physics and engineering, generally related to the kinetic energy of vibrating and colliding atoms in a substance. It can refer to several different physical concepts.  These include the internal energy or enthalpy of a body of matter and radiation; heat, defined as a type of energy transfer (as is thermodynamic work); and the characteristic energy of a degree of freedom, kBT{\\displaystyle k_{\\mathrm {B} }T}, in a system that is described in terms of its microscopic particulate constituents (where T{\\displaystyle T} denotes temperature and kB{\\displaystyle k_{\\mathrm {B} }} denotes the Boltzmann constant)."^^xsd:string .
+

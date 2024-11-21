@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:protonation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "protonation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q899488"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Protonation"^^xsd:string ;
+    rdfs:comment "In chemistry, protonation (or hydronation) is the adding of a proton (or hydron, or hydrogen cation), usually denoted by H+, to an atom, molecule, or ion, forming a conjugate acid. (The complementary process, when a proton is removed from a Brønsted–Lowry acid, is deprotonation.) Some examples include"^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:amphipoda a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "amphipoda"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q193418"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Amphipoda"^^xsd:string ;
+    rdfs:comment "Amphipoda is an order of malacostracan crustaceans with no carapace and generally with laterally compressed bodies. Amphipods range in size from 1 to 340 millimetres (0.039 to 13 in) and are mostly detritivores or scavengers. There are more than 9,900 amphipod species so far described. They are mostly marine animals, but are found in almost all aquatic environments. Some 1,900 species live in fresh water, and the order also includes the terrestrial sandhoppers such as Talitrus saltator."^^xsd:string .
+

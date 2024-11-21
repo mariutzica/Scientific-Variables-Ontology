@@ -1,0 +1,16 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:1%2C1-dichloroethene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "1,1-dichloroethene"^^xsd:string ;
+    svo:has_synonym "1,1-dce"^^xsd:string,
+        "1,1-dichloroethylene"^^xsd:string,
+        "vinylidene chloride"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q161284"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/1,1-Dichloroethene"^^xsd:string ;
+    rdfs:comment "1,1-Dichloroethene, commonly called 1,1-dichloroethylene or vinylidene chloride or 1,1-DCE, is an organochloride with the molecular formula C2H2Cl2.  It is a colorless liquid with a sharp odor. Like most chlorocarbons, it is poorly soluble in water, but soluble in organic solvents. 1,1-DCE was the precursor to the original clingwrap, Saran, for food, but this application has been phased out."^^xsd:string .
+

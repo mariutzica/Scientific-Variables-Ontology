@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:filamentation a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "filamentation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5448273"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Filamentation"^^xsd:string ;
+    rdfs:comment "Filamentation is the anomalous growth of certain bacteria, such as Escherichia coli, in which cells continue to elongate but do not divide (no septa formation). The cells that result from elongation without division have multiple chromosomal copies.In the absence of antibiotics or other stressors, filamentation occurs at a low frequency in bacterial populations (4–8% short filaments and 0–5% long filaments in 1- to 8-hour cultures). The increased cell length can protect bacteria from protozoan predation and neutrophil phagocytosis by making ingestion of cells more difficult.  Filamentation is also thought to protect bacteria from antibiotics, and is associated with other aspects of bacterial virulence such as biofilm formation.The number and length of filaments within a bacterial population increases when the bacteria are exposed to different physical, chemical and biological agents (e.g. UV light, DNA synthesis-inhibiting antibiotics, bacteriophages).  This is termed conditional filamentation.  Some of the key genes involved in filamentation in E. coli include sulA and minCD."^^xsd:string .
+

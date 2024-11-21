@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/water~liquid-as-medium-carbon~dissolved~organic> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "water~liquid_carbon~dissolved~organic"^^xsd:string ;
+    svo:has_medium_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/water~liquid> ;
+    svo:has_primary_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/carbon~dissolved~organic> .
+

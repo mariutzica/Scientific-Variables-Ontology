@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:jumping a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "jumping"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1151752"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Jumping"^^xsd:string ;
+    rdfs:comment "Jumping or leaping is a form of locomotion or movement in which an organism or non-living (e.g., robotic) mechanical system propels itself through the air along a ballistic trajectory. Jumping can be distinguished from running, galloping and other gaits where the entire body is temporarily airborne, by the relatively long duration of the aerial phase and high angle of initial launch."^^xsd:string .
+

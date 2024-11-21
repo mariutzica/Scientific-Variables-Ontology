@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:beryllium-7 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "beryllium-7"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q463820"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isotopes_of_beryllium#Beryllium-7"^^xsd:string ;
+    rdfs:comment "Beryllium (4Be) has 11 known isotopes and 3 known isomers, but only one of these isotopes (9Be) is stable and a primordial nuclide.  As such, beryllium is considered a monoisotopic element. It is also a mononuclidic element, because its other isotopes have such short half-lives that none are primordial and their abundance is very low (standard atomic weight is 9.0121831(5)). Beryllium is unique as being the only monoisotopic element with both an even number of protons and an odd number of neutrons. There are 25 other monoisotopic elements but all have odd atomic numbers, and even numbers of neutrons."^^xsd:string .
+

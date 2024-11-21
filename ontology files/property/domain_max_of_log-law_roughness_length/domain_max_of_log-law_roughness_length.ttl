@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:domain_max_of_log-law_roughness_length a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "domain_max_of_log-law_roughness_length"^^xsd:string ;
+    svo:is_transformation_of :log-law_roughness_length ;
+    svo:is_transformed_by <http://scientificvariablesontology.org/svo/operation/domain_max> .
+

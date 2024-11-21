@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:boron a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "boron"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q618"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Boron"^^xsd:string ;
+    rdfs:comment "Boron is a chemical element with the symbol B and atomic number 5. In its crystalline form it is a brittle, dark, lustrous metalloid; in its amorphous form it is a brown powder. As the lightest element of the boron group it has three valence electrons for forming covalent bonds, resulting in many compounds such as boric acid, the mineral sodium borate, and the ultra-hard crystals of boron carbide and boron nitride."^^xsd:string .
+

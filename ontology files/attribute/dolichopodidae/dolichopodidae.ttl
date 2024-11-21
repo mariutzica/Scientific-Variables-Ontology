@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dolichopodidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "dolichopodidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1582901"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dolichopodidae"^^xsd:string ;
+    rdfs:comment "Dolichopodidae, the long-legged flies, are a large, cosmopolitan family of true flies with more than 7,000 described species in about 230 genera. The genus Dolichopus is the most speciose, with some 600 species."^^xsd:string .
+

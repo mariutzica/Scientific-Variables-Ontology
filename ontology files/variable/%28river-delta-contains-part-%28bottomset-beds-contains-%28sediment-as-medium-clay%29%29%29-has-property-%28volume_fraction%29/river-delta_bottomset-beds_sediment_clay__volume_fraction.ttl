@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28river-delta-contains-part-%28bottomset-beds-contains-%28sediment-as-medium-clay%29%29%29-has-property-%28volume_fraction%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "river-delta_bottomset-beds_sediment_clay__volume_fraction"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/clay>,
+        <http://scientificvariablesontology.org/svo/matter/sediment> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/bottomset-beds>,
+        <http://scientificvariablesontology.org/svo/phenomenon/river-delta> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/river-delta-contains-part-%28bottomset-beds-contains-%28sediment-as-medium-clay%29%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/volume_fraction> ;
+    svo:has_original_label "delta_beds~bottomset_sediment_clay__volume_fraction"^^xsd:string .
+

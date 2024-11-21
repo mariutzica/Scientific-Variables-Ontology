@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fine-structure_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "fine-structure_constant"^^xsd:string ;
+    svo:has_synonym "sommerfeld_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5997"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Fine-structure_constant"^^xsd:string ;
+    rdfs:comment "In physics, the fine-structure constant, also known as the Sommerfeld constant, commonly denoted by α (the Greek letter alpha), is a fundamental physical constant which quantifies the strength of the electromagnetic interaction between elementary charged particles. "^^xsd:string .
+

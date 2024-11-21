@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dust a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "dust"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q165632"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Dust"^^xsd:string ;
+    rdfs:comment "Dust is made of fine particles of solid matter. On Earth, it generally consists of particles in the atmosphere that come from various sources such as soil lifted by wind (an aeolian process), volcanic eruptions, and pollution. Dust in homes is composed of about 20–50% dead skin cells. The rest, and in  offices, and other human environments is composed of small amounts of plant pollen, human hairs, animal fur, textile fibers, paper fibers, minerals from outdoor soil, burnt meteorite particles, and many other materials which may be found in the local environment."^^xsd:string .
+

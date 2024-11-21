@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:infusion a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "infusion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q61951"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Infusion"^^xsd:string ;
+    rdfs:comment "Infusion is the process of extracting chemical compounds or flavors from plant material in a solvent such as water, oil or alcohol, by allowing the material to remain suspended in the solvent over time (a process often called steeping). An infusion is also the name for the resultant liquid. The process of infusion is distinct from both decoction—a method of extraction involving boiling the plant material—and percolation, in which water is passed through the material (as in a coffeemaker)."^^xsd:string .
+

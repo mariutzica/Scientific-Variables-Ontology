@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:insulation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "insulation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3361425"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/R-value_(insulation)"^^xsd:string ;
+    rdfs:comment "In the context of construction, the R-value is a measure of how well a two-dimensional barrier, such as a layer of insulation, a window or a complete wall or ceiling, resists the conductive flow of heat. R-value is the temperature difference per unit of heat flux needed to sustain one unit of heat flux between the warmer surface and colder surface of a barrier under steady-state conditions. The measure is therefore equally relevant for lowering energy bills for heating in the winter, for cooling in the summer, and for general comfort."^^xsd:string .
+

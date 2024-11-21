@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:spionidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "spionidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3610966"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Spionidae"^^xsd:string ;
+    rdfs:comment "Spionidae is a family of marine worms within the Polychaeta. Spionids are selective deposit feeders that use their two grooved palps to locate prey. However, some spionids are capable of interface feeding, i.e. switching between deposit and suspension feeding.Spionids produce tubes by cementing sand grains and detritus material with mucus produced by their glandular pouches. The Spionidae is one of the most studied polychaete families given their biological and commercial importance. Members of this family have been used in regeneration studies and some are capable of boring into calcareous substrate which has destructive implications for commercially important shellfish."^^xsd:string .
+

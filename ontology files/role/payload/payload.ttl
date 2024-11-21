@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:payload a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "payload"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7641034"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Payload"^^xsd:string ;
+    rdfs:comment "Payload is the object or the entity which is being carried by an aircraft or launch vehicle. Sometimes payload also refers to the carrying capacity of an aircraft or launch vehicle, usually measured in terms of weight. Depending on the nature of the flight or mission, the payload of a vehicle may include cargo, passengers, flight crew, munitions, scientific instruments or experiments, or other equipment. Extra fuel, when optionally carried, is also considered part of the payload.In a commercial context (i.e., an airline or air freight carrier), payload may refer only to revenue-generating cargo or paying passengers. A payload of ordnance carried by a combat aircraft is sometimes alternatively referred to as the aircraft's warload."^^xsd:string .
+

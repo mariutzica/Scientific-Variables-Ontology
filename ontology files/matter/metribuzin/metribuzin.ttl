@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:metribuzin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "metribuzin"^^xsd:string ;
+    svo:has_synonym "4-amino-6-tert-butyl-3-(methylthio)-as-triazin-5(4h)-one"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q421450"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Metribuzin"^^xsd:string ;
+    rdfs:comment "Metribuzin (4-amino-6-tert-butyl-3-(methylthio)-1,2,4-triazin-5(4H)-one) is a herbicide used both pre- and post-emergence in crops including soy bean, potatoes, tomatoes and sugar cane."^^xsd:string .
+

@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/operation/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:z-score a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "z-score"^^xsd:string ;
+    svo:has_synonym "standard score"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1050272"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Standard_score"^^xsd:string ;
+    rdfs:comment "In statistics, the standard score is the number of standard deviations by which the value of a raw score (i.e., an observed value or data point) is above or below the mean value of what is being observed or measured. Raw scores above the mean have positive standard scores, while those below the mean have negative standard scores. "^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:denude a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "denude"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q745430"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Denudation"^^xsd:string ;
+    rdfs:comment "Denudation is the geological process in which moving water, ice, wind, and waves erode the Earth's surface, leading to a reduction in elevation and in relief of landforms and landscapes. Although the terms erosion and denudation are used interchangeably, erosion is the transport of soil and rocks from one location to another, and denudation is the sum of processes, including erosion, that result in the lowering of Earth's surface. Endogenous processes such as volcanoes, earthquakes, and tectonic uplift can expose continental crust to the exogenous processes of weathering, erosion, and mass wasting. The effects of denudation have been recorded for millennia but the mechanics behind it have been debated for the past 200 years and have only begun to be understood in the past few decades."^^xsd:string .
+

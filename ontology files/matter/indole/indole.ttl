@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:indole a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "indole"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q319541"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Indole"^^xsd:string ;
+    rdfs:comment "Indole is an aromatic, heterocyclic, organic compound with the formula C8H7N. It has a bicyclic structure, consisting of a six-membered benzene ring fused to a five-membered pyrrole ring. Indole is widely distributed in the natural environment and can be produced by a variety of bacteria. As an intercellular signal molecule, indole regulates various aspects of bacterial physiology, including spore formation, plasmid stability, resistance to drugs, biofilm formation, and virulence. The amino acid tryptophan is an indole derivative and the precursor of the neurotransmitter serotonin."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:iron a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "iron"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q677"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Iron"^^xsd:string ;
+    rdfs:comment "Iron is a chemical element with the symbol Fe (from Latin  ferrum 'iron') and atomic number 26. It is a metal that belongs to the first transition series and group 8 of the periodic table. It is, by mass, the most common element on Earth, just ahead of oxygen (32.1% and 30.1%, respectively), forming much of Earth's outer and inner core. It is the fourth most common element in the Earth's crust, being mainly deposited by meteorites in its metallic state, with its ores also being found there."^^xsd:string .
+

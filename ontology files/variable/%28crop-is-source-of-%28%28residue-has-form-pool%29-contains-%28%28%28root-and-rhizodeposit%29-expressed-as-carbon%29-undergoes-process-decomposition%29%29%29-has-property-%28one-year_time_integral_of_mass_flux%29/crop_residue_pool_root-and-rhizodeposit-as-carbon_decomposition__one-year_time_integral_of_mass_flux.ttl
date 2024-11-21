@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28crop-is-source-of-%28%28residue-has-form-pool%29-contains-%28%28%28root-and-rhizodeposit%29-expressed-as-carbon%29-undergoes-process-decomposition%29%29%29-has-property-%28one-year_time_integral_of_mass_flux%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "crop_residue_pool_root-and-rhizodeposit-as-carbon_decomposition__one-year_time_integral_of_mass_flux"^^xsd:string ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/pool> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/carbon> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/one-year_time_integral> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/rhizodeposit>,
+        <http://scientificvariablesontology.org/svo/phenomenon/root> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/decomposition> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/mass_flux> ;
+    svo:contains_role_reference_to <http://scientificvariablesontology.org/svo/role/crop>,
+        <http://scientificvariablesontology.org/svo/role/residue> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/crop-is-source-of-%28%28residue-has-form-pool%29-contains-%28%28%28root-and-rhizodeposit%29-expressed-as-carbon%29-undergoes-process-decomposition%29%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/one-year_time_integral_of_mass_flux> ;
+    svo:has_original_label "crop_residue_pool_root-and-rhizodeposit_carbon__yearly_time_integral_of_decomposition_mass_flux"^^xsd:string .
+

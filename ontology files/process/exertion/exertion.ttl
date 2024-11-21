@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:exertion a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "exertion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q14536140"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Exertion"^^xsd:string ;
+    rdfs:comment "Exertion is the physical or perceived use of energy. Exertion traditionally connotes a strenuous or costly effort, resulting in generation of force, initiation of motion, or in the performance of work. It often relates to muscular activity and can be quantified, empirically and by measurable metabolic response."^^xsd:string .
+

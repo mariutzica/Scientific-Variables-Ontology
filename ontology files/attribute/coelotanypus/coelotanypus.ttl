@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:coelotanypus a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "coelotanypus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q14561499"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Coelotanypus"^^xsd:string ;
+    rdfs:comment "Coelotanypus is a genus of midges in the family Chironomidae. There are about 5 described species in Coelotanypus."^^xsd:string .
+

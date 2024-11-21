@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28venus-has-trajectory-orbit%29-has-abstraction-perihelion> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "venus_orbit_perihelion"^^xsd:string ;
+    svo:has_abstraction <http://scientificvariablesontology.org/svo/abstraction/perihelion> ;
+    svo:has_phenomenon :venus-has-trajectory-orbit .
+

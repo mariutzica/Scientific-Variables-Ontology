@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:soluble a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "soluble"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q170731"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Solubility"^^xsd:string ;
+    rdfs:comment "In chemistry, solubility is the ability of a substance, the solute, to form a solution with another substance, the solvent. Insolubility is the opposite property, the inability of the solute to form such a solution."^^xsd:string .
+

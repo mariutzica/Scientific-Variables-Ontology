@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:subduction a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "subduction"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q176318"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Subduction"^^xsd:string ;
+    rdfs:comment "Subduction is a geological process in which the oceanic lithosphere and some continental lithosphere is recycled into the Earth's mantle at convergent boundaries. Where the oceanic lithosphere of a tectonic plate converges with the less dense lithosphere of a second plate, the heavier plate dives beneath the second plate and sinks into the mantle. A region where this process occurs is known as a subduction zone, and its surface expression is known as an arc-trench complex. The process of subduction has created most of the Earth's continental crust. Rates of subduction are typically measured in centimeters per year, with rates of convergence as high as 11 cm/year."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:expression a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "expression"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6498784"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Expression_(mathematics)"^^xsd:string ;
+    rdfs:comment "In mathematics, an expression or mathematical expression is a finite combination of symbols that is well-formed according to rules that depend on the context.  Mathematical symbols can designate numbers (constants), variables, operations, functions, brackets, punctuation, and grouping to help determine order of operations and other aspects of logical syntax."^^xsd:string .
+

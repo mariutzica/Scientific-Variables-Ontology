@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tribromomethane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tribromomethane"^^xsd:string ;
+    svo:has_synonym "bromoform"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q409799"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bromoform"^^xsd:string ;
+    rdfs:comment "Bromoform (CHBr3) is a brominated organic solvent, colorless liquid at room temperature, with a high refractive index, very high density, and sweet odor is similar to that of chloroform. It is one of the four haloforms, the others being fluoroform, chloroform, and iodoform.  Currently its main use is as a laboratory reagent. It is soluble in about 800 parts water and is miscible with alcohol, benzene, chloroform, ether, petroleum ether, acetone and oils."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:benfluralin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "benfluralin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q421520"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Benfluralin"^^xsd:string ;
+    rdfs:comment "Benfluralin is an herbicide of the dinitroaniline class. The mechanism of action of benfluralin involves inhibition of root and shoot development.It is used to control grasses and other weeds. Annual use in the United States was approximately 700,000 pounds (320,000 kg) in 2004."^^xsd:string .
+

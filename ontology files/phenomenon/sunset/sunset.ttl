@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sunset a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "sunset"^^xsd:string ;
+    svo:has_synonym "sundown"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q166564"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sunset"^^xsd:string ;
+    rdfs:comment "Sunset, also known as sundown, is the daily disappearance of the Sun below the horizon due to Earth's rotation. As viewed from everywhere on Earth (except the North and South poles), the equinox Sun sets due west at the moment of both the spring and autumn equinoxes. As viewed from the Northern Hemisphere, the Sun sets to the northwest (or not at all) in the spring and summer, and to the southwest in the autumn and winter; these seasons are reversed for the Southern Hemisphere."^^xsd:string .
+

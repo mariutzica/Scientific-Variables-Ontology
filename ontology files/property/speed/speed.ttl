@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:speed a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "speed"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3711325"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Speed"^^xsd:string ;
+    rdfs:comment "In everyday use and in kinematics, the speed (commonly referred to as v) of an object is the magnitude of the change of its position over time or the magnitude of the change of its position per unit of time; it is thus a scalar quantity. The average speed of an object in an interval of time is the distance travelled by the object divided by the duration of the interval; the instantaneous speed is the limit of the average speed as the duration of the time interval approaches zero. Speed is the magnitude of velocity (a vector), which indicates additionally the direction of motion."^^xsd:string .
+

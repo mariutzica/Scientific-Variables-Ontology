@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28soil-contains-macropores~saturated%29-as-medium-has-property-%28horizontal_component_of_hydraulic_conductivity%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "soil_macropores~saturated__horizontal_component_of_hydraulic_conductivity"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/saturated> ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/macropore> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/soil> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/horizontal_component> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/hydraulic_conductivity> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28soil-contains-macropores~saturated%29-as-medium> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/horizontal_component_of_hydraulic_conductivity> ;
+    svo:has_original_label "soil_macropores__horizontal_saturated_hydraulic_conductivity"^^xsd:string .
+

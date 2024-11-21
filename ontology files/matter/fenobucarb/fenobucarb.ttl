@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fenobucarb a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "fenobucarb"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3268119"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fenobucarb"^^xsd:string ;
+    rdfs:comment "Fenobucarb is a carbamate insecticide, also widely known as BPMC. A pale yellow or pale red liquid, insoluble in water; used as an agricultural insecticide, especially for control of Hemipteran pests, on rice and cotton and moderately toxic for humans."^^xsd:string .
+

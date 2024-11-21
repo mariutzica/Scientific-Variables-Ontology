@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:terpene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "terpene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q212364"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Terpene"^^xsd:string ;
+    rdfs:comment "Terpenes () are a class of natural products consisting of compounds with the formula (C5H8)n for n ≥ 2.  Comprising more than 30,000 compounds, these unsaturated hydrocarbons are produced predominantly by plants, particularly conifers. Terpenes are further classified by the number of carbons: monoterpenes (C10), sesquiterpenes (C15), diterpenes (C20), as examples. The terpene alpha-pinene, is a major component of the common solvent, turpentine."^^xsd:string .
+

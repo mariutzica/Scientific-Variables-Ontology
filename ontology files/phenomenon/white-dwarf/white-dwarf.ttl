@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:white-dwarf a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "white-dwarf"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5871"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/White_dwarf"^^xsd:string ;
+    rdfs:comment "A white dwarf is a stellar core remnant composed mostly of electron-degenerate matter. A white dwarf is very dense: its mass is comparable to the Sun's, while its volume is comparable to the Earth's. A white dwarf's low luminosity comes from the emission of residual thermal energy; no fusion takes place in a white dwarf. The nearest known white dwarf is Sirius B, at 8.6 light years, the smaller component of the Sirius binary star. There are currently thought to be eight white dwarfs among the hundred star systems nearest the Sun. The unusual faintness of white dwarfs was first recognized in 1910.: 1  The name white dwarf was coined by Willem Luyten in 1922."^^xsd:string .
+

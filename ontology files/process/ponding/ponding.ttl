@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ponding a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "ponding"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7227734"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Ponding"^^xsd:string ;
+    rdfs:comment "Ponding is the (typically) unwanted pooling of water, typically on a flat roof or roadway. Ponding water accelerates the deterioration of many materials, including seam adhesives in single-ply roof systems, steel equipment supports, and particularly roofing asphalt. On low-slope asphalt roofs, ponding water allows the oil solvent components of the asphalt to leach out and evaporate, leaving the roof membrane brittle and susceptible to cracking and leaking in the ponding location. The time taken for water to saturate a zone, usually from rainfall, causing a pond to form, is referred to as the \"ponding time\" or \"time of ponding\"."^^xsd:string .
+

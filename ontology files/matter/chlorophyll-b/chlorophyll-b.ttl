@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlorophyll-b a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chlorophyll-b"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1943387"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chlorophyll_b"^^xsd:string ;
+    rdfs:comment "Chlorophyll b is a form of chlorophyll. Chlorophyll b helps in photosynthesis by absorbing light energy. It is more soluble than chlorophyll a in polar solvents because of its carbonyl group. Its color is green, and it primarily absorbs blue light.In land plants, the light-harvesting antennae around photosystem II contain the majority of chlorophyll b. Hence, in shade-adapted chloroplasts, which have an increased ratio of photosystem II to photosystem I, there is a higher ratio of chlorophyll b to chlorophyll a. This is adaptive, as increasing chlorophyll b increases the range of wavelengths absorbed by the shade chloroplasts."^^xsd:string .
+

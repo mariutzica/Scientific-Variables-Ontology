@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bumper a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "bumper"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q13697"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bumper_(car)"^^xsd:string ;
+    rdfs:comment "A bumper is a structure attached to or integrated with the front and rear ends of a motor vehicle, to absorb impact in a minor collision, ideally minimizing repair costs. Stiff metal bumpers appeared on automobiles as early as 1904 that had a mainly ornamental function. Numerous developments, improvements in materials and technologies, as well as greater focus on functionality for protecting vehicle components and improving safety have changed bumpers over the years. Bumpers ideally minimize height mismatches between vehicles and protect pedestrians from injury. Regulatory measures have been enacted to reduce vehicle repair costs and, more recently, impact on pedestrians."^^xsd:string .
+

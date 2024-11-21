@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:rainfall a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "rainfall"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7925"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Rain"^^xsd:string ;
+    rdfs:comment "Rain is water droplets that have condensed from atmospheric water vapor and then fall under gravity. Rain is a major component of the water cycle and is responsible for depositing most of the fresh water on the Earth. It provides water for hydroelectric power plants, crop irrigation, and suitable conditions for many types of ecosystems."^^xsd:string .
+

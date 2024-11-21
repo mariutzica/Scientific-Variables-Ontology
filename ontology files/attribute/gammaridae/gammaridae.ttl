@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gammaridae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "gammaridae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2171375"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gammaridae"^^xsd:string ;
+    rdfs:comment "Gammaridae is a  family of amphipods. In North America they are included among the folk taxonomic category of \"scuds\", and otherwise gammarids is usually used as a common name."^^xsd:string .
+

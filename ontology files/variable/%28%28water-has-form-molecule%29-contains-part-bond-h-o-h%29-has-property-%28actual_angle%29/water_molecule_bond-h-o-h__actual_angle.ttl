@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28water-has-form-molecule%29-contains-part-bond-h-o-h%29-has-property-%28actual_angle%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "water_molecule_bond-h-o-h__actual_angle"^^xsd:string ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/molecule> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/bond-h-o-h> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28water-has-form-molecule%29-contains-part-bond-h-o-h> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/actual_angle> ;
+    svo:has_original_label "water_molecule_h-o-h__actual_bond_angle"^^xsd:string .
+

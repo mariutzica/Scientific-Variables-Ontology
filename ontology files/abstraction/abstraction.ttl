@@ -1,0 +1,926 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/abstraction> a owl:Ontology ;
+    owl:imports <http://scientificvariablesontology.org/svo>,
+        <http://scientificvariablesontology.org/svo/attribute>,
+        <http://scientificvariablesontology.org/svo/direction> .
+
+:airfoil a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "airfoil"^^xsd:string ;
+    svo:has_synonym "aerofoil"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4698744"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Airfoil"^^xsd:string ;
+    rdfs:comment "An airfoil (American English) or aerofoil (British English) is the cross-sectional shape of an object whose motion through a gas is capable of generating significant lift, such as a wing, a sail, or the blades of propeller, rotor, or turbine.  Foils of similar function designed with water as the working fluid are called hydrofoils.  "^^xsd:string .
+
+:amphidromic-points a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "amphidromic-points"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q474837"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Amphidromic_point"^^xsd:string ;
+    rdfs:comment "An amphidromic point, also called a tidal node, is a geographical location which has zero tidal amplitude for one harmonic constituent of the tide. The tidal range (the peak-to-peak amplitude, or the height difference between high tide and low tide) for that harmonic constituent increases with distance from this point, though not uniformly. As such, the concept of amphidromic points is crucial to understanding tidal behaviour. The term derives from the Greek words amphi (\"around\") and dromos (\"running\"), referring to the rotary tides which circulate around amphidromic points.Amphidromic points occur because interference within oceanic basins, seas and bays, combined with the Coriolis effect, creates a wave pattern — called an amphidromic system — which rotates around the amphidromic point. At the amphidromic points of the dominant tidal constituent, there is almost no vertical change in sea level from tidal action; that is, there is little or no difference between high tide and low tide at these locations. There can still be tidal currents since the water levels on either side of the amphidromic point are not the same. A separate amphidromic system is created by each periodic tidal component.In most locations the \"principal lunar semi-diurnal\", known as M2, is the largest tidal constituent. Cotidal lines connect points which reach high tide at the same time and low tide at the same time. In Figure 1, the low tide lags or leads by 1 hr 2 min from its neighboring lines. Where the lines meet are amphidromes, and the tide rotates around them; for example, along the Chilean coast, and from southern Mexico to Peru, the tide propagates southward, while from Baja California to Alaska the tide propagates northward."^^xsd:string .
+
+:apex a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "apex"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2858200"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Apex_(geometry)"^^xsd:string ;
+    rdfs:comment "In geometry, an apex (plural apices) is the vertex which is in some sense the \"highest\" of the figure to which it belongs. The term is typically used to refer to the vertex opposite from some \"base\". The word is derived from the Latin for 'summit, peak, tip, top, extreme end'."^^xsd:string .
+
+:aphelion a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "aphelion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q83481"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Perihelion_and_aphelion"^^xsd:string ;
+    rdfs:comment "extreme point in an object's orbit"^^xsd:string .
+
+:atterberg-liquid-limit a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "atterberg-liquid-limit"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1143620"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Atterberg_limits#Liquid_limit"^^xsd:string ;
+    rdfs:comment "The Atterberg limits are a basic measure of the critical water contents of a fine-grained soil: its shrinkage limit, plastic limit, and liquid limit."^^xsd:string .
+
+:atterberg-plastic-limit a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "atterberg-plastic-limit"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1143620"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Atterberg_limits#Plastic_limit"^^xsd:string ;
+    rdfs:comment "The Atterberg limits are a basic measure of the critical water contents of a fine-grained soil: its shrinkage limit, plastic limit, and liquid limit."^^xsd:string .
+
+:atterberg-shrinkage-limit a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "atterberg-shrinkage-limit"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1143620"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Atterberg_limits#Shrinkage_limit"^^xsd:string ;
+    rdfs:comment "The Atterberg limits are a basic measure of the critical water contents of a fine-grained soil: its shrinkage limit, plastic limit, and liquid limit."^^xsd:string .
+
+<http://scientificvariablesontology.org/svo/abstraction/axis~east> a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "axis~east"^^xsd:string ;
+    svo:has_abstraction_root :axis ;
+    svo:has_direction <http://scientificvariablesontology.org/svo/direction/east> .
+
+<http://scientificvariablesontology.org/svo/abstraction/axis~vertical> a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "axis~vertical"^^xsd:string ;
+    svo:has_abstraction_root :axis ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/vertical> .
+
+<http://scientificvariablesontology.org/svo/abstraction/axis~x> a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "axis~x"^^xsd:string ;
+    svo:has_abstraction_root :axis ;
+    svo:has_direction <http://scientificvariablesontology.org/svo/direction/x> .
+
+:base-level a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "base-level"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q423794"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Base_level"^^xsd:string ;
+    rdfs:comment "In geology and geomorphology a base level is the lower limit for an erosion process. The modern term was introduced by John Wesley Powell in 1875. The term was subsequently appropriated by William Morris Davis who used it in his cycle of erosion theory. The \"ultimate base level\" is the plane that results from projection of the sea level under landmasses. It is to this base level that topography tends to approach due to erosion, eventually forming a peneplain close to the end of a cycle of erosion.There are also lesser structural base levels where erosion is delayed by resistant rocks. Examples of this include karst regions underlain by insoluble rock. Base levels may be local when large landmasses are far from the sea or disconnected from it, as in the case of endorheic basins. An example of this is the Messinian salinity crisis, in which the Mediterranean Sea dried up making the base level drop more than 1000 m below sea level.The height of a base level also influences the position of deltas and river terraces. Together with river discharge and sediment flux the position of the base level influences the gradient, width and bed conditions in rivers. A relative drop in base level can trigger re-adjustments in river profiles including knickpoint migration and abandonment of terraces leaving them \"hanging\". Base level fall is also known to result in progradation of deltas and river sediment at lakes or sea. If the base level falls below the continental shelf, rivers may form a plain of braided rivers until headward erosion penetrates enough inland from the shelfbreak.When base levels are stable or rising rivers may aggrade. Rising base levels may also drown the lower courses of rivers creating rias. This happened in the Nile during the Zanclean flood when its lower course became, in a relatively short time, a large estuary extending up to 900 km inland from the Mediterranean coast.Base level change may be related to the following factors:"^^xsd:string .
+
+:binary-mask a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "binary-mask"^^xsd:string .
+
+:black-body a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "black-body"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q161424"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Black_body"^^xsd:string ;
+    rdfs:comment "A black body or blackbody is an idealized physical body that absorbs all incident electromagnetic radiation, regardless of frequency or angle of incidence. The radiation emitted by a black body in thermal equilibrium with its environment is called black-body radiation. The name \"black body\" is given because it absorbs all colors of light. In contrast, a white body is one with a \"rough surface that reflects all incident rays completely and uniformly in all directions.\"A black body in thermal equilibrium (that is, at a constant temperature) emits electromagnetic black-body radiation. The radiation is emitted according to Planck's law, meaning that it has a spectrum that is determined by the temperature alone (see figure at right), not by the body's shape or composition."^^xsd:string .
+
+<http://scientificvariablesontology.org/svo/abstraction/boundary~seaward> a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "boundary~seaward"^^xsd:string ;
+    svo:has_abstraction_root :boundary ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/seaward> .
+
+:cantor-set a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "cantor-set"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q273188"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cantor_set"^^xsd:string ;
+    rdfs:comment "In mathematics, the Cantor set is a set of points lying on a single line segment that has a number of unintuitive properties.  It was discovered in 1874 by Henry John Stephen Smith and introduced by German mathematician Georg Cantor in 1883.Through consideration of this set, Cantor and others helped lay the foundations of modern point-set topology. The most common construction is the Cantor ternary set, built by removing the middle third of a line segment and then repeating the process with the remaining shorter segments. Cantor mentioned the ternary construction only in passing, as an example of a more general idea, that of a perfect set that is nowhere dense."^^xsd:string .
+
+:cell a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "cell"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3064117"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Face_(geometry)#Cell_or_3-face"^^xsd:string ;
+    rdfs:comment "In solid geometry, a face is a flat surface (a planar region) that forms part of the boundary of a solid object; a three-dimensional solid bounded exclusively by faces is a polyhedron."^^xsd:string .
+
+:center a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "center"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q23595"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Centre_(geometry)"^^xsd:string ;
+    rdfs:comment "In geometry, a centre (British English) or center (American English); (from Ancient Greek  κέντρον (kéntron) 'pointy object') of an object is a point in some sense in the middle of the object. According to the specific definition of center taken into consideration, an object might have no center. If geometry is regarded as the study of isometry groups, then a center is a fixed point of all the isometries that move the object onto itself."^^xsd:string .
+
+:centerline a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "centerline"^^xsd:string .
+
+:centroid a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "centroid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q511093"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Centroid"^^xsd:string ;
+    rdfs:comment "In mathematics and physics, the centroid, also known as geometric center or center of figure, of a plane figure or solid figure is the arithmetic mean position of all the points in the surface of the figure. The same definition extends to any object in n-dimensional Euclidean space.In geometry, one often assumes uniform mass density, in which case the barycenter or center of mass coincides with the centroid. Informally, it can be understood as the point at which a cutout of the shape (with uniformly distributed mass) could be perfectly balanced on the tip of a pin.In physics, if variations in gravity are considered, then a center of gravity can be defined as the weighted mean of all points weighted by their specific weight."^^xsd:string .
+
+:circle a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "circle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q17278"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Circle"^^xsd:string ;
+    rdfs:comment "A circle is a shape consisting of all points in a plane that are at a given distance from a given point, the centre. Equivalently, it is the curve traced out by a point that moves in a plane so that its distance from a given point is constant. The distance between any point of the circle and the centre is called the radius. Usually, the radius is required to be a positive number. A circle with "^^xsd:string .
+
+:column a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "column"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2088159"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Row_and_column_spaces"^^xsd:string ;
+    rdfs:comment "In linear algebra, the column space (also called the range or image) of a matrix A is the span (set of all possible linear combinations) of its column vectors. The column space of a matrix is the image or range of the corresponding matrix transformation."^^xsd:string .
+
+:contour a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "contour"^^xsd:string ;
+    svo:has_synonym "isocline"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6653802"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Contour_line"^^xsd:string ;
+    rdfs:comment "A contour line (also isoline, isopleth, or isarithm) of a function of two variables is a curve along which the function has a constant value, so that the curve joins points of equal value. It is a plane section of the three-dimensional graph of the function "^^xsd:string .
+
+:convection-diffusion-equation a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "convection-diffusion-equation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q343279"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Convection-diffusion_equation"^^xsd:string ;
+    rdfs:comment "combination of the diffusion and convection (advection) equations"^^xsd:string .
+
+:core-mantle-boundary a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "core-mantle-boundary"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1330051"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Core%E2%80%93mantle_boundary"^^xsd:string ;
+    rdfs:comment "The core–mantle boundary (CMB) of Earth lies between the planet's silicate mantle and its liquid iron-nickel outer core. This boundary is located at approximately 2,891 km (1,796 miles) depth beneath Earth's surface. The boundary is observed via the discontinuity in seismic wave velocities at that depth due to the differences between the acoustic impedances of the solid mantle and the molten outer core. P-wave velocities are much slower in the outer core than in the deep mantle while S-waves do not exist at all in the liquid portion of the core.  Recent evidence suggests a distinct boundary layer directly above the CMB possibly made of a novel phase of the basic perovskite mineralogy of the deep mantle named post-perovskite. Seismic tomography studies have shown significant irregularities within the boundary zone and appear to be dominated by the African and Pacific Large Low-Shear-Velocity Provinces (LLSVP).The uppermost section of the outer core is thought to be about 500–1,800 K hotter than the overlying mantle, creating a thermal boundary layer. The boundary is thought to harbor topography, much like Earth's surface, that is supported by solid-state convection within the overlying mantle.  Variations in the thermal properties of the core-mantle boundary may affect how the outer core's iron-rich fluids flow, which are ultimately responsible for Earth's magnetic field."^^xsd:string .
+
+:crest a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "crest"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q864673"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Crest_and_trough"^^xsd:string ;
+    rdfs:comment "A crest point on a wave is the maximum value of upward displacement within a cycle. A crest is a point on a surface wave where the displacement of the medium is at a maximum. A trough is the opposite of a crest, so the minimum or lowest point in a cycle."^^xsd:string .
+
+:crestline a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "crestline"^^xsd:string .
+
+:crust-mantle-boundary a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "crust-mantle-boundary"^^xsd:string .
+
+:curve a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "curve"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q161973"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Curve"^^xsd:string ;
+    rdfs:comment "In mathematics, a curve (also called a curved line in older texts) is an object similar to a line, but that does not have to be straight."^^xsd:string .
+
+:data-stream a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "data-stream"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1172540"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Data_stream"^^xsd:string ;
+    rdfs:comment "In connection-oriented communication, a data stream is the transmission of a sequence of digitally encoded signals to convey information. Typically, the transmitted symbols are grouped into a series of packets."^^xsd:string .
+
+<http://scientificvariablesontology.org/svo/abstraction/datum~vertical~tidal~mean-sea-level> a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "datum~vertical~tidal~mean-sea-level"^^xsd:string ;
+    svo:has_abstraction_root :datum ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/mean-sea-level>,
+        <http://scientificvariablesontology.org/svo/attribute/tidal>,
+        <http://scientificvariablesontology.org/svo/attribute/vertical> .
+
+:dual-cell a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "dual-cell"^^xsd:string .
+
+:dual-node a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "dual-node"^^xsd:string .
+
+:ecliptic a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "ecliptic"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q79852"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ecliptic"^^xsd:string ;
+    rdfs:comment "The ecliptic or ecliptic plane is the orbital plane of Earth around the Sun. From the perspective of an observer on Earth, the Sun's movement around the celestial sphere over the course of a year traces out a path along the ecliptic against the background of stars. The ecliptic is an important reference plane and is the basis of the ecliptic coordinate system."^^xsd:string .
+
+:ellipse a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "ellipse"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q40112"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Ellipse"^^xsd:string ;
+    rdfs:comment "In mathematics, an ellipse is a plane curve surrounding two focal points, such that for all points on the curve, the sum of the two distances to the focal points is a constant. It generalizes a circle, which is the special type of ellipse in which the two focal points are the same. The elongation of an ellipse is measured by its eccentricity "^^xsd:string .
+
+:ellipsoid a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "ellipsoid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q190046"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Ellipsoid"^^xsd:string ;
+    rdfs:comment "An ellipsoid is a surface that may be obtained from a sphere by deforming it by means of directional scalings, or more generally, of an affine transformation."^^xsd:string .
+
+:enclosing-curve a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "enclosing-curve"^^xsd:string .
+
+:endpoint a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "endpoint"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5376582"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Endpoint"^^xsd:string ;
+    rdfs:comment "An endpoint, end-point or end point may refer to:"^^xsd:string .
+
+:epicenter a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "epicenter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q106032"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Epicenter"^^xsd:string ;
+    rdfs:comment "The epicenter, epicentre () or epicentrum in seismology is the point on the Earth's surface directly above a hypocenter or focus, the point where an earthquake or an underground explosion originates. "^^xsd:string .
+
+:equation a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "equation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11345"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Equation"^^xsd:string ;
+    rdfs:comment "In mathematics, an equation is a formula that expresses the equality of two expressions, by connecting them with the equals sign =. The word equation and its cognates in other languages may have subtly different meanings; for example, in French an équation is defined as containing one or more variables, while in English, any well-formed formula consisting of two expressions related with an equals sign is an equation.Solving an equation containing variables consists of determining which values of the variables make the equality true. The variables for which the equation has to be solved are also called unknowns, and the values of the unknowns that satisfy the equality are called solutions of the equation. There are two kinds of equations: identities and conditional equations. An identity is true for all values of the variables. A conditional equation is only true for particular values of the variables.An equation is written as two expressions, connected by an equals sign (\"=\"). The expressions on the two sides of the equals sign are called the \"left-hand side\" and \"right-hand side\" of the equation. Very often the right-hand side of an equation is assumed to be zero. This does not reduce the generality, as this can be realized by subtracting the right-hand side from both sides."^^xsd:string .
+
+:equation-of-state a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "equation-of-state"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q214967"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Equation_of_state"^^xsd:string ;
+    rdfs:comment "In physics and chemistry, an equation of state is a thermodynamic equation relating state variables, which describe the state of matter under a given set of physical conditions, such as pressure, volume, temperature, or internal energy. Most modern equations of state are formulated in the Helmholtz free energy. Equations of state are useful in describing the properties of pure substances and mixtures in liquids, gases, and solid states as well as the state of matter in the interior of stars. "^^xsd:string .
+
+:equator a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "equator"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q23538"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Equator"^^xsd:string ;
+    rdfs:comment "The equator is a circle of latitude that divides a spheroid, such as Earth, into the northern and southern hemispheres. On Earth, it is an imaginary line located at 0 degrees latitude, about 40,075 km (24,901 mi) in circumference, halfway between the North and South poles. The term can also be used for any other celestial body that is roughly spherical."^^xsd:string .
+
+:equilibrium-line a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "equilibrium-line"^^xsd:string .
+
+:expression a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "expression"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6498784"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Expression_(mathematics)"^^xsd:string ;
+    rdfs:comment "In mathematics, an expression or mathematical expression is a finite combination of symbols that is well-formed according to rules that depend on the context.  Mathematical symbols can designate numbers (constants), variables, operations, functions, brackets, punctuation, and grouping to help determine order of operations and other aspects of logical syntax."^^xsd:string .
+
+:focus a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "focus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3568"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Focus_(geometry)"^^xsd:string ;
+    rdfs:comment "In geometry, focuses or foci (), singular focus, are special points with reference to which any of a variety of curves is constructed. For example, one or two foci can be used in defining conic sections, the four types of which are the circle, ellipse, parabola, and hyperbola. In addition, two foci are used to define the Cassini oval and the Cartesian oval, and more than two foci are used in defining an n-ellipse."^^xsd:string .
+
+:friedmann-universe a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "friedmann-universe"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q467736"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Friedmann_equations"^^xsd:string ;
+    rdfs:comment "The Friedmann equations are a set of equations in physical cosmology that govern the expansion of space in homogeneous and isotropic models of the universe within the context of general relativity. They were first derived by Alexander Friedmann in 1922 from Einstein's field equations of gravitation for the Friedmann–Lemaître–Robertson–Walker metric and a perfect fluid with a given mass density ρ and pressure p. The equations for negative spatial curvature were given by Friedmann in 1924."^^xsd:string .
+
+:function a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "function"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11348"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Function_(mathematics)"^^xsd:string ;
+    rdfs:comment "In mathematics, a function from a set X to a set Y assigns to each element of X exactly one element of Y. The set X is called the domain of the function and the set Y is called the codomain of the function.Functions were originally the idealization of how a varying quantity depends on another quantity. For example, the position of a planet is a function of time. Historically, the concept was elaborated with the infinitesimal calculus at the end of the 17th century, and, until the 19th century, the functions that were considered were differentiable (that is, they had a high degree of regularity). The concept of a function was formalized at the end of the 19th century in terms of set theory, and this greatly enlarged the domains of application of the concept."^^xsd:string .
+
+:geocenter a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "geocenter"^^xsd:string .
+
+:geodesic a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "geodesic"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q213488"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Geodesic"^^xsd:string ;
+    rdfs:comment "In geometry, a geodesic () is a curve representing in some sense the shortest path (arc) between two points in a surface, or more generally in a Riemannian manifold. The term also has meaning in any  differentiable manifold with a connection. It is a generalization of the notion of a \"straight line\"."^^xsd:string .
+
+:geodetic-datum a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "geodetic-datum"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1502887"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Geodetic_datum"^^xsd:string ;
+    rdfs:comment "A geodetic datum or geodetic system (also: geodetic reference datum, geodetic reference system, or geodetic reference frame) is a global datum reference or reference frame for precisely representing the position of locations on Earth or other planetary bodies by means of geodetic coordinates. Datums are crucial to any technology or technique based on spatial location, including geodesy, navigation, surveying, geographic information systems, remote sensing, and cartography. A horizontal datum is used to measure a location across the Earth's surface, in latitude and longitude or another coordinate system; a vertical datum is used to measure the elevation or depth relative to a standard origin, such as mean sea level (MSL). Since the rise of the global positioning system (GPS), the ellipsoid and datum  WGS 84 it uses has supplanted most others in many applications. The WGS 84 is intended for global use, unlike most earlier datums."^^xsd:string .
+
+:geoid a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "geoid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q185969"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Geoid"^^xsd:string ;
+    rdfs:comment "The geoid ( JEE-oyd) is the shape that the ocean surface would take under the influence of the gravity of Earth, including gravitational attraction and Earth's rotation, if other influences such as winds and tides were absent. This surface is extended through the continents (such as might be approximated with very narrow hypothetical canals). According to Gauss, who first described it, it is the \"mathematical figure of the Earth\", a smooth but irregular surface whose shape results from the uneven distribution of mass within and on the surface of Earth. It can be known only through extensive gravitational measurements and calculations. Despite being an important concept for almost 200 years in the history of geodesy and geophysics, it has been defined to high precision only since advances in satellite geodesy in the late 20th century."^^xsd:string .
+
+:graph a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "graph"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q141488"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)"^^xsd:string ;
+    rdfs:comment "In discrete mathematics, and more specifically in graph theory, a graph is a structure amounting to a set of objects in which some pairs of the objects are in some sense \"related\". The objects correspond to mathematical abstractions called vertices (also called nodes or points) and each of the related pairs of vertices is called an edge (also called link or line). Typically, a graph is depicted in diagrammatic form as a set of dots or circles for the vertices, joined by lines or curves for the edges. Graphs are one of the objects of study in discrete mathematics."^^xsd:string .
+
+:gravimetric-vertical-datum a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "vertical-gravimetric-datum"^^xsd:string .
+
+:grid a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "grid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6497118"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lattice_graph"^^xsd:string ;
+    rdfs:comment "In graph theory, a lattice graph, mesh graph, or grid graph is a graph whose drawing, embedded in some Euclidean space "^^xsd:string .
+
+:heat-equation a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "heat-equation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6510488"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Heat_equation"^^xsd:string ;
+    rdfs:comment "In mathematics and physics, the heat equation is a certain partial differential equation. Solutions of the heat equation are sometimes known as caloric functions. The theory of the heat equation was first developed by Joseph Fourier in 1822 for the purpose of modeling how a quantity such as heat diffuses through a given region."^^xsd:string .
+
+:hypocenter a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "hypocenter"^^xsd:string ;
+    svo:has_synonym "focus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q107410"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Hypocenter"^^xsd:string ;
+    rdfs:comment "In seismology, a hypocenter or hypocentre (from Ancient Greek  ὑπόκεντρον (hupόkentron) 'below the center') is the point of origin of an earthquake. A synonym is the focus of an earthquake."^^xsd:string .
+
+:image a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "image"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q478798"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Image"^^xsd:string ;
+    rdfs:comment "An image is a visual representation. An image can be two-dimensional, such as a drawing, painting, or photograph, or three-dimensional, such as a carving or sculpture. Images may be displayed through other media, including projection on a surface, activation of electronic signals, or digital displays; they can also be reproduced through mechanical means, such as photography, printmaking or photocopying. Images can also be animated through digital or physical processes."^^xsd:string .
+
+:instrument-response a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "instrument-response"^^xsd:string .
+
+:isocline a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "isocline"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6653802"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Contour_line"^^xsd:string ;
+    rdfs:comment "A contour line (also isoline, isopleth, or isarithm) of a function of two variables is a curve along which the function has a constant value, so that the curve joins points of equal value. It is a plane section of the three-dimensional graph of the function "^^xsd:string .
+
+:isosurface a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "isosurface"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1311829"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isosurface"^^xsd:string ;
+    rdfs:comment "An isosurface is a three-dimensional analog of an isoline.  It is a surface that represents points of a constant value (e.g. pressure, temperature, velocity, density) within a volume of space; in other words, it is a level set of a continuous function whose domain is 3-space."^^xsd:string .
+
+:land-mask a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "land-mask"^^xsd:string .
+
+:line a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "line"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q15878761"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Line"^^xsd:string ;
+    rdfs:comment "Line most often refers to:"^^xsd:string .
+
+:lithosphere-asthenosphere-boundary a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "lithosphere-asthenosphere-boundary"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q23581588"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lithosphere-Asthenosphere_boundary"^^xsd:string ;
+    rdfs:comment "level representing a mechanical difference between layers in Earth’s inner structure"^^xsd:string .
+
+:location a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "location"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2221906"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Location"^^xsd:string ;
+    rdfs:comment "In geography, location or place are used to denote a region (point, line, or area) on Earth's surface. The term location generally implies a higher degree of certainty than place, the latter often indicating an entity with an ambiguous boundary, relying more on human or social attributes of place identity and sense of place than on geometry. A populated place is called a settlement."^^xsd:string .
+
+:magnetic-north-pole a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "magnetic-north-pole"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q842763"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/North_Magnetic_Pole"^^xsd:string ;
+    rdfs:comment "point in the Arctic at which Earth's magnetic field points vertically downwards, at 86°N 175°E in the Arctic Ocean as of 2019"^^xsd:string .
+
+:magnetic-south-pole a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "magnetic-south-pole"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1043682"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/South_Magnetic_Pole"^^xsd:string ;
+    rdfs:comment "wandering point on the Earth where the geomagnetic field lines are directed vertically upwards, at 64°S 137°E as of 2015 in the Southern Ocean"^^xsd:string .
+
+:market-basket a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "market-basket"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1758955"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Market_basket"^^xsd:string ;
+    rdfs:comment "A market basket or commodity bundle is a fixed list of items, in given proportions.  Its most common use is to track the progress of inflation in an economy or specific market. That is, to measure the changes in the value of money over time.  A market basket is also used with the theory of purchasing price parity to measure the value of money in different places."^^xsd:string .
+
+:mask a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "mask"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q591605"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mask_(computing)"^^xsd:string ;
+    rdfs:comment "In computer science, a mask or bitmask is data that is used for bitwise operations, particularly in a bit field. Using a mask, multiple bits in a byte, nibble, word, etc. can be set either on or off, or inverted from on to off (or vice versa) in a single bitwise operation.  An additional use of masking involves predication in vector processing, where the bitmask is used to select which element operations in the vector are to be executed (mask bit is enabled) and which are not (mask bit is clear)."^^xsd:string .
+
+:model a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "model"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1979154"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Model"^^xsd:string ;
+    rdfs:comment "A model is an informative representation of an object, person or system. The term originally denoted the plans of a building in late 16th-century English, and derived via French and Italian ultimately from Latin modulus, a measure."^^xsd:string .
+
+:mohr-coulomb-plastic a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "mohr-coulomb-plastic"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3417792"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mohr%E2%80%93Coulomb_theory"^^xsd:string ;
+    rdfs:comment "Mohr–Coulomb theory is a mathematical model (see yield surface) describing the response of brittle materials such as concrete, or rubble piles, to shear stress as well as normal stress. Most of the classical engineering materials follow this rule in at least a portion of their shear failure envelope. Generally the theory applies to materials for which the compressive strength far exceeds the tensile strength.In geotechnical engineering it is used to define  shear strength of soils and rocks at different effective stresses."^^xsd:string .
+
+:msl-tidal-vertical-datum a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "msl-tidal-vertical-datum"^^xsd:string .
+
+:navier-stokes-equation a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "navier-stokes-equation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q201321"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Navier-Stokes_equations"^^xsd:string ;
+    rdfs:comment "nonlinear partial differential equation describing the motion of viscous fluids"^^xsd:string .
+
+:node a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "node"^^xsd:string .
+
+:north-pole a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "north-pole"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q416910"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/North_Pole_(disambiguation)"^^xsd:string ;
+    rdfs:comment "The North Pole (also known as the \"Geographic North Pole\" or \"Terrestrial North Pole\") is the point in the Northern Hemisphere where the Earth's axis of rotation meets its surface."^^xsd:string .
+
+:origin a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "origin"^^xsd:string .
+
+:parabola a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "parabola"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q48297"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Parabola"^^xsd:string ;
+    rdfs:comment "In mathematics, a parabola is a plane curve which is mirror-symmetrical and is approximately U-shaped. It fits several superficially different mathematical descriptions, which can all be proved to define exactly the same curves."^^xsd:string .
+
+:partition a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "partition"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2344169"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Partition_of_an_interval"^^xsd:string ;
+    rdfs:comment "In mathematics, a partition of an interval [a, b] on the real line is a finite sequence x0, x1, x2, …, xn of real numbers such that"^^xsd:string .
+
+:peano-curve a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "peano-curve"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1725409"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Peano_curve"^^xsd:string ;
+    rdfs:comment "In geometry, the Peano curve is the first example of a space-filling curve to be discovered, by Giuseppe Peano in 1890. Peano's curve is a surjective, continuous function from the unit interval onto the unit square, however it is not injective. Peano was motivated by an earlier result of Georg Cantor that these two sets have the same cardinality. Because of this example, some authors use the phrase \"Peano curve\" to refer more generally to any space-filling curve."^^xsd:string .
+
+:perihelion a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "perihelion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q83481"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Perihelion_and_aphelion"^^xsd:string ;
+    rdfs:comment "extreme point in an object's orbit"^^xsd:string .
+
+:plan a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "plan"^^xsd:string .
+
+:plane a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "plane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q17285"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Plane_(geometry)"^^xsd:string ;
+    rdfs:comment "flat, two-dimensional surface"^^xsd:string .
+
+:plug-layer a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "plug-layer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q383758"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Plug_flow"^^xsd:string ;
+    rdfs:comment "In fluid mechanics, plug flow is a simple model of the velocity profile of a fluid flowing in a pipe.  In plug flow, the velocity of the fluid is assumed to be constant across any cross-section of the pipe perpendicular to the axis of the pipe.   The plug flow model assumes there is no boundary layer adjacent to the inner wall of the pipe."^^xsd:string .
+
+:point a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "point"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q20380977"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Point"^^xsd:string ;
+    rdfs:comment "Point or points may refer to:"^^xsd:string .
+
+:point-pair a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "point-pair"^^xsd:string .
+
+:point-set a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "point-set"^^xsd:string .
+
+:poisson-equation a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "poisson-equation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q827688"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Poisson%27s_equation"^^xsd:string ;
+    rdfs:comment "Poisson's equation is an elliptic partial differential equation of broad utility in theoretical physics. For example, the solution to Poisson's equation is the potential field caused by a given electric charge or mass density distribution; with the potential field known, one can then calculate electrostatic or gravitational (force) field. It is a generalization of Laplace's equation, which is also frequently seen in physics.  The equation is named after French mathematician and physicist Siméon Denis Poisson."^^xsd:string .
+
+:pole a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "pole"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7209314"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Poles_of_astronomical_bodies"^^xsd:string ;
+    rdfs:comment "The poles of astronomical bodies are determined based on their axis of rotation in relation to the celestial poles of the celestial sphere. Astronomical bodies include stars, planets, dwarf planets and small Solar System bodies such as comets and minor planets (e.g., asteroids), as well as natural satellites and minor-planet moons."^^xsd:string .
+
+:polygon a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "polygon"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q37555"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Polygon"^^xsd:string ;
+    rdfs:comment "In geometry, a polygon () is a plane figure made up of line segments connected to form a closed polygonal chain."^^xsd:string .
+
+:polynomial a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "polynomial"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q43260"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Polynomial"^^xsd:string ;
+    rdfs:comment "In mathematics, a polynomial is an expression consisting of indeterminates (also called variables) and coefficients, that involves only the operations of addition, subtraction, multiplication, and positive-integer powers of variables. An example of a polynomial of a single indeterminate x is x2 − 4x + 7. An example with three indeterminates is x3 + 2xyz2 − yz + 1."^^xsd:string .
+
+:potential-temperature-isosurface a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "potential-temperature-isosurface"^^xsd:string .
+
+:primary-cell a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "primary-cell"^^xsd:string .
+
+:primary-node a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "primary-node"^^xsd:string .
+
+:profile a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "profile"^^xsd:string .
+
+:ray a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "ray"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q37105"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Line_(geometry)#Ray"^^xsd:string ;
+    rdfs:comment "In geometry, a line is an infinitely long object with no width, depth, or curvature. Thus, lines are one-dimensional objects, though they may exist embedded in two, three, or higher dimension spaces. The word line may also refer to a line segment in everyday life, which has two points to denote its ends (endpoints). A line can be referred to by two points that lie on it (e.g. "^^xsd:string .
+
+:response-filter a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "response-filter"^^xsd:string .
+
+:rooted-tree-graph a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "rooted-tree-graph"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q272735"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tree_(graph_theory)#Rooted_tree"^^xsd:string ;
+    rdfs:comment "In graph theory, a tree is an undirected graph in which any two vertices are connected by exactly one path, or equivalently a connected acyclic undirected graph. A forest is an undirected graph in which any two vertices are connected by at most one path, or equivalently an acyclic undirected graph, or equivalently a disjoint union of trees.A polytree (or directed tree or oriented tree or singly connected network) is a directed acyclic graph (DAG) whose underlying undirected graph is a tree. A polyforest (or directed forest or oriented forest) is a directed acyclic graph whose underlying undirected graph is a forest."^^xsd:string .
+
+:row a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "row"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2088159"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Row_and_column_spaces"^^xsd:string ;
+    rdfs:comment "In linear algebra, the column space (also called the range or image) of a matrix A is the span (set of all possible linear combinations) of its column vectors. The column space of a matrix is the image or range of the corresponding matrix transformation."^^xsd:string .
+
+:row-major-offset a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "row-major-offset"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7371746"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Row-_and_column-major_order"^^xsd:string ;
+    rdfs:comment "In computing, row-major order and column-major order are methods for storing multidimensional arrays in linear storage such as random access memory."^^xsd:string .
+
+:sea-mask a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "sea-mask"^^xsd:string .
+
+:seaward-boundary a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "seaward-boundary"^^xsd:string .
+
+:semi-major-axis a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "semi-major-axis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q21143897"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Semi-major_and_semi-minor_axes"^^xsd:string ;
+    rdfs:comment "In geometry, the major axis of an ellipse is its longest diameter: a line segment that runs through the center and both foci, with ends at the two most widely separated points of the perimeter. The semi-major axis (major semiaxis) is the longest semidiameter or one half of the major axis, and thus runs from the centre, through a focus, and to the perimeter. The semi-minor axis (minor semiaxis) of an ellipse or hyperbola is a line segment that is at right angles with the semi-major axis and has one end at the center of the conic section. For the special case of a circle, the lengths of the semi-axes are both equal to the radius of the circle."^^xsd:string .
+
+:semi-minor-axis a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "semi-minor-axis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q21143897"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Semi-major_and_semi-minor_axes"^^xsd:string ;
+    rdfs:comment "In geometry, the major axis of an ellipse is its longest diameter: a line segment that runs through the center and both foci, with ends at the two most widely separated points of the perimeter. The semi-major axis (major semiaxis) is the longest semidiameter or one half of the major axis, and thus runs from the centre, through a focus, and to the perimeter. The semi-minor axis (minor semiaxis) of an ellipse or hyperbola is a line segment that is at right angles with the semi-major axis and has one end at the center of the conic section. For the special case of a circle, the lengths of the semi-axes are both equal to the radius of the circle."^^xsd:string .
+
+:shape a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "shape"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q207961"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Shape"^^xsd:string ;
+    rdfs:comment "A shape or figure is a graphical representation of an object or its external boundary, outline, or external surface, as opposed to other properties such as color, texture, or material type."^^xsd:string .
+
+:shear-layer a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "shear-layer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2250602"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Shear_flow"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, shear flow is the flow induced by a force in a fluid. In solid mechanics, shear flow is the shear stress over a distance in a thin-walled structure."^^xsd:string .
+
+:shell a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "shell"^^xsd:string .
+
+:shoreline a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "shoreline"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q93352"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Coast"^^xsd:string ;
+    rdfs:comment "The coast, also known as the coastline, shoreline or seashore, is defined as the area where land meets the ocean, or as a line that forms the boundary between the land and the coastline. Shores are influenced by the topography of the surrounding landscape, as well as by water induced erosion, such as waves. The geological composition of rock and soil dictates the type of shore which is created. The Earth has around 620,000 kilometres (390,000 mi) of coastline. Coasts are important zones in natural ecosystems, often home to a wide range of biodiversity. On land, they harbor important ecosystems such as freshwater or estuarine wetlands, which are important for bird populations and other terrestrial animals. In wave-protected areas they harbor saltmarshes, mangroves or seagrasses, all of which can provide nursery habitat for finfish, shellfish, and other aquatic species. Rocky shores are usually found along exposed coasts and provide habitat for a wide range of sessile animals (e.g. mussels, starfish, barnacles) and various kinds of seaweeds. In physical oceanography, a shore is the wider fringe that is geologically modified by the action of the body of water past and present, while the beach is at the edge of the shore, representing the intertidal zone where there is one. Along tropical coasts with clear, nutrient-poor water, coral reefs can often be found between depths of 1–50 meters (3.3–164.0 feet)."^^xsd:string .
+
+:sierpinski-gasket a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "sierpinski-gasket"^^xsd:string ;
+    svo:has_synonym "sierpinski-triangle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q663365"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sierpinski_triangle"^^xsd:string ;
+    rdfs:comment "fractal composed of triangles"^^xsd:string .
+
+:sine-wave a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "sine-wave"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q207527"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sine_wave"^^xsd:string ;
+    rdfs:comment "A sine wave, sinusoidal wave, or just sinusoid is a mathematical curve defined in terms of the sine trigonometric function, of which it is the graph. It is a type of continuous wave and also a smooth periodic function. It occurs often in mathematics, as well as in physics, engineering, signal processing and many other fields. "^^xsd:string .
+
+:south-pole a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "south-pole"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q22679325"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/South_Pole_(disambiguation)"^^xsd:string ;
+    rdfs:comment "South Pole or Southpole may refer to:"^^xsd:string .
+
+:sphere a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "sphere"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q12507"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Sphere"^^xsd:string ;
+    rdfs:comment "A sphere (from Ancient Greek  σφαῖρα (sphaîra) 'globe, ball') is a geometrical object that is a three-dimensional analogue to a two-dimensional circle. A sphere is the set of points that are all at the same distance r from a given point in three-dimensional space. That given point is the centre of the sphere, and r is the sphere's radius. The earliest known mentions of spheres appear in the work of the ancient Greek mathematicians."^^xsd:string .
+
+:square a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "square"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q164"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Square"^^xsd:string ;
+    rdfs:comment "In Euclidean geometry, a square is a regular quadrilateral, which means that it has four equal sides and four equal angles (90-degree angles, π/2 radian angles, or right angles). It can also be defined as a rectangle with two equal-length adjacent sides. It is the only regular polygon whose internal angle, central angle, and external angle are all equal (90°), and whose diagonals are all equal in length. A square with vertices ABCD would be denoted"^^xsd:string .
+
+:streamline a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "streamline"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q112835448"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Streamlines,_streaklines,_and_pathlines"^^xsd:string ;
+    rdfs:comment "Streamlines, streaklines and pathlines are field lines in a fluid flow."^^xsd:string .
+
+<http://scientificvariablesontology.org/svo/abstraction/surface~0-to-100cm-below> a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "surface~0-to-100cm-below"^^xsd:string ;
+    svo:has_abstraction_root :surface ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/0-to-100cm-below> .
+
+<http://scientificvariablesontology.org/svo/abstraction/surface~0-to-10cm-below> a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "surface~0-to-10cm-below"^^xsd:string ;
+    svo:has_abstraction_root :surface ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/0-to-10cm-below> .
+
+<http://scientificvariablesontology.org/svo/abstraction/surface~10-to-40cm-below> a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "surface~10-to-40cm-below"^^xsd:string ;
+    svo:has_abstraction_root :surface ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/10-to-40cm-below> .
+
+<http://scientificvariablesontology.org/svo/abstraction/surface~100-to-200cm-below> a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "surface~100-to-200cm-below"^^xsd:string ;
+    svo:has_abstraction_root :surface ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/100-to-200cm-below> .
+
+<http://scientificvariablesontology.org/svo/abstraction/surface~10m-above> a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "surface~10m-above"^^xsd:string ;
+    svo:has_abstraction_root :surface ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/10m-above> .
+
+<http://scientificvariablesontology.org/svo/abstraction/surface~2m-above> a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "surface~2m-above"^^xsd:string ;
+    svo:has_abstraction_root :surface ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/2m-above> .
+
+<http://scientificvariablesontology.org/svo/abstraction/surface~40-to-100cm-below> a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "surface~40-to-100cm-below"^^xsd:string ;
+    svo:has_abstraction_root :surface ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/40-to-100cm-below> .
+
+<http://scientificvariablesontology.org/svo/abstraction/surface~horizontal> a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "surface~horizontal"^^xsd:string ;
+    svo:has_abstraction_root :surface ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/horizontal> .
+
+:target a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "target"^^xsd:string .
+
+:terrestrial-north-pole a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "terrestrial-north-pole"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q934"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/North_Pole"^^xsd:string ;
+    rdfs:comment "The North Pole, also known as the Geographic North Pole or Terrestrial North Pole, is the point in the Northern Hemisphere where the Earth's axis of rotation meets its surface. It is called the True North Pole to distinguish from the Magnetic North Pole."^^xsd:string .
+
+:terrestrial-south-pole a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "terrestrial-south-pole"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q933"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/South_Pole"^^xsd:string ;
+    rdfs:comment "The South Pole, also known as the Geographic South Pole, Terrestrial South Pole or 90th Parallel South, is the southernmost point on Earth and lies antipodally on the opposite side of Earth from the North Pole, at a distance of 12,430 miles (20,004 km) in all directions. It is one of the two points where Earth's axis of rotation intersects its surface."^^xsd:string .
+
+:tidal-vertical-datum a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "tidal-vertical-datum"^^xsd:string .
+
+:transect a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "transect"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1447141"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Transect"^^xsd:string ;
+    rdfs:comment "A transect is a path along which one counts and records occurrences of the objects of study (e.g. plants).There are several types of transect. Some are more effective than others.It requires an observer to move along a fixed path and to count occurrences along the path and, at the same time (in some procedures), obtain the distance of the object from the path. This results in an estimate of the area covered and an estimate of the way in which detectability increases from probability 0 (far from the path) towards 1 (near the path). Using the raw count and this probability function, one can arrive at an estimate of the actual density of objects."^^xsd:string .
+
+:trapezoid a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "trapezoid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q46303"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Trapezoid"^^xsd:string ;
+    rdfs:comment "In geometry, a trapezoid () in American and Canadian English, or trapezium () in British and other forms of English, is a quadrilateral that has at least one pair of parallel sides."^^xsd:string .
+
+:tree-graph a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "tree-graph"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q272735"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tree_(graph_theory)"^^xsd:string ;
+    rdfs:comment "In graph theory, a tree is an undirected graph in which any two vertices are connected by exactly one path, or equivalently a connected acyclic undirected graph. A forest is an undirected graph in which any two vertices are connected by at most one path, or equivalently an acyclic undirected graph, or equivalently a disjoint union of trees.A polytree (or directed tree or oriented tree or singly connected network) is a directed acyclic graph (DAG) whose underlying undirected graph is a tree. A polyforest (or directed forest or oriented forest) is a directed acyclic graph whose underlying undirected graph is a forest."^^xsd:string .
+
+:triangle a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "triangle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q19821"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Triangle"^^xsd:string ;
+    rdfs:comment "A triangle is a polygon with three edges and three vertices. It is one of the basic shapes in geometry. A triangle with vertices A, B, and C is denoted "^^xsd:string .
+
+:trough a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "trough"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q864673"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Crest_and_trough"^^xsd:string ;
+    rdfs:comment "A crest point on a wave is the maximum value of upward displacement within a cycle. A crest is a point on a surface wave where the displacement of the medium is at a maximum. A trough is the opposite of a crest, so the minimum or lowest point in a cycle."^^xsd:string .
+
+:vertex a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "vertex"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q26401"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vertex_(geometry)"^^xsd:string ;
+    rdfs:comment "In geometry, a vertex (in plural form: vertices or vertexes) is a point where two or more curves, lines, or edges meet. As a consequence of this definition, the point where two lines meet to form an angle and the corners of polygons and polyhedra are vertices."^^xsd:string .
+
+:vertical-axis a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "vertical-axis"^^xsd:string .
+
+:vertical-geodetic-datum a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "vertical-geodetic-datum"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7325529"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/National_Geodetic_Vertical_Datum_of_1929"^^xsd:string ;
+    rdfs:comment "The National Geodetic Vertical Datum of 1929 is the official name since 1973 of the vertical datum established for vertical control surveying in the United States of America by the General Adjustment of 1929.  Originally known as Sea Level Datum of 1929, NGVD 29 was determined and published by the United States Coast and Geodetic Survey and used to measure the elevation of a point above and depression below mean sea level (MSL)."^^xsd:string .
+
+:viewpoint a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "viewpoint"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2252759"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Perspective_(geometry)"^^xsd:string ;
+    rdfs:comment "Two figures in a plane are perspective from a point O, called the center of perspectivity if the lines joining corresponding points of the figures all meet at O. Dually, the figures are said to be perspective from a line if the points of intersection of corresponding lines all lie on one line. The proper setting for this concept is in projective geometry where there will be no special cases due to parallel lines since all lines meet. Although stated here for figures in a plane, the concept is easily extended to higher dimensions."^^xsd:string .
+
+:virtual-north-pole a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "virtual-north-pole"^^xsd:string .
+
+:wave a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "wave"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q37172"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Wave"^^xsd:string ;
+    rdfs:comment "In physics, mathematics, and related fields, a wave is a propagating dynamic disturbance (change from equilibrium) of one or more quantities. Waves can be periodic, in which case those quantities oscillate repeatedly about an equilibrium (resting) value at some frequency. When the entire waveform moves in one direction, it is said to be a traveling wave; by contrast, a pair of superimposed periodic waves traveling in opposite directions makes a standing wave. In a standing wave, the amplitude of vibration has nulls at some positions where the wave amplitude appears smaller or even zero. Waves are often described by a wave equation (standing wave field of two opposite waves) or a one-way wave equation for single wave propagation in a defined direction. "^^xsd:string .
+
+:x-axis a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "x-axis"^^xsd:string .
+
+:x-dual-node a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "x-dual-node"^^xsd:string .
+
+:x-primary-node a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "x-primary-node"^^xsd:string .
+
+<http://scientificvariablesontology.org/svo/abstraction/x-section~horizontal> a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "x-section~horizontal"^^xsd:string ;
+    svo:has_abstraction_root :x-section ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/horizontal> .
+
+<http://scientificvariablesontology.org/svo/abstraction/x-section~vertical> a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "x-section~vertical"^^xsd:string ;
+    svo:has_abstraction_root :x-section ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/vertical> .
+
+:y-dual-node a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "y-dual-node"^^xsd:string .
+
+:y-primary-node a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "y-primary-node"^^xsd:string .
+
+:z-dual-node a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "z-dual-node"^^xsd:string .
+
+:z-primary-node a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "z-primary-node"^^xsd:string .
+
+:boundary a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "boundary"^^xsd:string ;
+    svo:has_synonym "contour"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q875399"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Boundary_(topology)"^^xsd:string ;
+    rdfs:comment "In topology and mathematics in general, the boundary of a subset S of a topological space X is the set of points in the closure of S not belonging to the interior of S. An element of the boundary of S is called a boundary point of S. The term boundary operation refers to finding or taking the boundary of a set.  Notations used for boundary of a set S include "^^xsd:string .
+
+:datum a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "datum"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1047519"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Datum_reference"^^xsd:string ;
+    rdfs:comment "A datum reference or just datum (plural: datums) is some important part of an object—such as a point, line, plane, hole, set of holes, or pair of surfaces—that serves as a reference in defining the geometry of the object and (often) in measuring aspects of the actual geometry to assess how closely they match with the nominal value, which may be an ideal, standard, average, or desired value. For example, on a car's wheel, the lug nut holes define a bolt circle that is a datum from which the location of the rim can be defined and measured. This matters because the hub and rim need to be concentric to within close limits (or else the wheel will not roll smoothly). The concept of datums is used in many fields, including carpentry, metalworking, needlework, geometric dimensioning and tolerancing (GD&T), aviation, surveying, geodesy (geodetic datums), and others. "^^xsd:string .
+
+:x-section a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "x-section"^^xsd:string ;
+    svo:has_synonym "cross-section"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q845080"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cross_section_(geometry)"^^xsd:string ;
+    rdfs:comment "In geometry and science, a cross section is the non-empty intersection of a solid body in three-dimensional space with a plane, or the analog in higher-dimensional spaces. Cutting an object into slices creates many parallel cross-sections. The boundary of a cross-section in three-dimensional space that is parallel to two of the axes, that is, parallel to the plane determined by these axes, is sometimes referred to as a contour line; for example, if a plane cuts through mountains of a raised-relief map parallel to the ground, the result is a contour line in two-dimensional space showing points on the surface of the mountains of equal elevation."^^xsd:string .
+
+:axis a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "axis"^^xsd:string .
+
+:surface a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "surface"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3505239"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Surface_(mathematics)"^^xsd:string ;
+    rdfs:comment "In mathematics, a surface is a mathematical model of the common concept of a surface. It is a generalization of a plane, but, unlike a plane, it may be curved; this is analogous to a curve generalizing a straight line. "^^xsd:string .
+

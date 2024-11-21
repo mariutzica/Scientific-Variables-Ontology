@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28atmosphere-contains-%28air-contains-as-medium-%28radiation-has-trajectory-optical-path%29%29%29-has-property-%28length%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "atmosphere_air_radiation_optical-path__length"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/air> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/atmosphere>,
+        <http://scientificvariablesontology.org/svo/phenomenon/radiation> ;
+    svo:contains_trajectory_reference_to <http://scientificvariablesontology.org/svo/trajectory/optical-path> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/atmosphere-contains-%28air-contains-as-medium-%28radiation-has-trajectory-optical-path%29%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/length> .
+

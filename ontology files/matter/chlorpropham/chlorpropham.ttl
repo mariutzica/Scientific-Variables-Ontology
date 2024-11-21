@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlorpropham a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chlorpropham"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q904901"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chlorpropham"^^xsd:string ;
+    rdfs:comment "Chlorpropham or CIPC is a plant growth regulator and herbicide used as a sprout suppressant for grass weeds, alfalfa, lima and snap beans, blueberries, cane fruit, carrots, cranberries, ladino clover, garlic, seed grass, onions, spinach, sugar beets, tomatoes, safflower, soybeans, gladioli and woody nursery stock. It is also used to inhibit potato sprouting and for sucker control in tobacco. Chlorpropham is available in emulsifiable concentrate and liquid formulations."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:klebsiella a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "klebsiella"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q131854"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Klebsiella"^^xsd:string ;
+    rdfs:comment "Klebsiella is a genus of Gram-negative, oxidase-negative, rod-shaped bacteria with a prominent polysaccharide-based capsule.Klebsiella species are found everywhere in nature. This is thought to be due to distinct sublineages developing specific niche adaptations, with associated biochemical adaptations which make them better suited to a particular environment. They can be found in water, soil, plants, insects and other animals including humans.Klebsiella is named after German-Swiss microbiologist Edwin Klebs (1834–1913)."^^xsd:string .
+

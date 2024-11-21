@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:acentropus a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "acentropus"^^xsd:string ;
+    svo:has_synonym "acentria"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4673088"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Acentria"^^xsd:string ;
+    rdfs:comment "Acentria is a monotypic moth genus of the family Crambidae described by James Francis Stephens in 1829. Its only species, Acentria ephemerella, the watermilfoil moth or water veneer, was described by Michael Denis and Ignaz Schiffermüller in 1775. It is used as an agent of biological pest control against the noxious aquatic plant known as Eurasian watermilfoil (Myriophyllum spicatum)."^^xsd:string .
+

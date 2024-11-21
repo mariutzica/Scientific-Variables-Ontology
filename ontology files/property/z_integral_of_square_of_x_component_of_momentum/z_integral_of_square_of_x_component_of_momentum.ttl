@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:z_integral_of_square_of_x_component_of_momentum a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "z_integral_of_square_of_x_component_of_momentum"^^xsd:string ;
+    svo:is_transformation_of :square_of_x_component_of_momentum ;
+    svo:is_transformed_by <http://scientificvariablesontology.org/svo/operation/z_integral> .
+

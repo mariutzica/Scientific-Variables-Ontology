@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:2-methylbutane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "2-methylbutane"^^xsd:string ;
+    svo:has_synonym "isopentane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q422703"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isopentane"^^xsd:string ;
+    rdfs:comment "Isopentane, also called methylbutane or 2-methylbutane, is a branched-chain saturated hydrocarbon (an alkane) with five carbon atoms, with formula C5H12 or CH(CH3)2(C2H5)."^^xsd:string .
+

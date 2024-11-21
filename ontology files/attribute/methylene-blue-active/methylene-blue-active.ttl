@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:methylene-blue-active a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "methylene-blue-active"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q422134"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Methylene_blue"^^xsd:string ;
+    rdfs:comment "Methylthioninium chloride, commonly called methylene blue, is a salt used as a dye and as a medication. As a medication, it is mainly used to treat methemoglobinemia by chemically reducing the ferric iron in hemoglobin to ferrous iron. Specifically, it is used to treat methemoglobin levels that are greater than 30% or in which there are symptoms despite oxygen therapy. It has previously been used for treating cyanide poisoning and urinary tract infections, but this use is no longer recommended."^^xsd:string .
+

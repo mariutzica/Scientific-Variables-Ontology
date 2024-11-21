@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:isomer a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "isomer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q127950"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isomer"^^xsd:string ;
+    rdfs:comment "In chemistry, isomers are molecules or polyatomic ions with identical molecular formula – that is, same number of atoms of each element – but distinct arrangements of atoms in space. Isomerism is existence or possibility of isomers."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:phosphate-ion a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "phosphate-ion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q46220103"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Phosphate"^^xsd:string ;
+    rdfs:comment "In chemistry, a phosphate is an anion, salt, functional group or ester derived from a phosphoric acid.  It most commonly means orthophosphate, a derivative of orthophosphoric acid, aka. phosphoric acid H3PO4."^^xsd:string .
+

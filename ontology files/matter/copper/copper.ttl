@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:copper a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "copper"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q753"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Copper"^^xsd:string ;
+    rdfs:comment "Copper is a chemical element with the symbol Cu (from Latin: cuprum) and atomic number 29. It is a soft, malleable, and ductile metal with very high thermal and electrical conductivity. A freshly exposed surface of pure copper has a pinkish-orange color. Copper is used as a conductor of heat and electricity, as a building material, and as a constituent of various metal alloys, such as sterling silver used in jewelry, cupronickel used to make marine hardware and coins, and constantan used in strain gauges and thermocouples for temperature measurement."^^xsd:string .
+

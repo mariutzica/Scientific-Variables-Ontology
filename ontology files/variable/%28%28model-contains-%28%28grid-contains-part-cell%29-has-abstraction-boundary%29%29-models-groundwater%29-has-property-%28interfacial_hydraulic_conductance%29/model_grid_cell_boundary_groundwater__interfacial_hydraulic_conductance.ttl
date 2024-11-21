@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28model-contains-%28%28grid-contains-part-cell%29-has-abstraction-boundary%29%29-models-groundwater%29-has-property-%28interfacial_hydraulic_conductance%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "model_grid_cell_boundary_groundwater__interfacial_hydraulic_conductance"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/boundary>,
+        <http://scientificvariablesontology.org/svo/abstraction/cell>,
+        <http://scientificvariablesontology.org/svo/abstraction/grid> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/groundwater> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28model-contains-%28%28grid-contains-part-cell%29-has-abstraction-boundary%29%29-models-groundwater> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/interfacial_hydraulic_conductance> .
+

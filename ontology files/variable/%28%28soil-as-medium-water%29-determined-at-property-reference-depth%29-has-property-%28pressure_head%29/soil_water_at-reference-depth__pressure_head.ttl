@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28soil-as-medium-water%29-determined-at-property-reference-depth%29-has-property-%28pressure_head%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "soil_water_at-reference-depth__pressure_head"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/soil>,
+        <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28soil-as-medium-water%29-determined-at-property-reference-depth> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/pressure_head> ;
+    svo:has_original_label "soil_water__reference_depth_pressure_head"^^xsd:string .
+

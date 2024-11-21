@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:digestion a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "digestion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11978"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Digestion"^^xsd:string ;
+    rdfs:comment "Digestion is the breakdown of large insoluble food compounds into small water-soluble components so that they can be absorbed into the blood plasma. In certain organisms, these smaller substances are absorbed through the small intestine into the blood stream. Digestion is a form of catabolism that is often divided into two processes based on how food is broken down: mechanical and chemical digestion. The term mechanical digestion refers to the physical breakdown of large pieces of food into smaller pieces which can subsequently be accessed by digestive enzymes. Mechanical digestion takes place in the mouth through mastication and in the small intestine through segmentation contractions. In chemical digestion, enzymes break down food into the small compounds that the body can use."^^xsd:string .
+

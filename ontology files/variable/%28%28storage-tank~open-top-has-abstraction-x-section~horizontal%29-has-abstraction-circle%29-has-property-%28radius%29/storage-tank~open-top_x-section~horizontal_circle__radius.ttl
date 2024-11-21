@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28storage-tank~open-top-has-abstraction-x-section~horizontal%29-has-abstraction-circle%29-has-property-%28radius%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "storage-tank~open-top_x-section~horizontal_circle__radius"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/circle>,
+        <http://scientificvariablesontology.org/svo/abstraction/x-section> ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/horizontal>,
+        <http://scientificvariablesontology.org/svo/attribute/open-top> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/storage-tank> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28storage-tank~open-top-has-abstraction-x-section~horizontal%29-has-abstraction-circle> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/radius> ;
+    svo:has_original_label "tank~storage~open-top_x-section~horizontal_circle__radius"^^xsd:string .
+

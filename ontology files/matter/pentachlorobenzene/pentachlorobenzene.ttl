@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pentachlorobenzene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "pentachlorobenzene"^^xsd:string ;
+    svo:has_synonym "pecb"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q425468"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pentachlorobenzene"^^xsd:string ;
+    rdfs:comment "Pentachlorobenzene (PeCB) is a chemical compound with the molecular formula C6HCl5 which is a chlorinated aromatic hydrocarbon.  It consists of a benzene ring substituted with five chlorine atoms.  PeCB was once used industrially for a variety of uses, but because of environmental concerns there are currently no large scale uses of PeCB. Pentachlorobenzene is a known persistent organic pollutant (POP) and banned globally by the Stockholm Convention on Persistent Organic Pollutants in 2009."^^xsd:string .
+

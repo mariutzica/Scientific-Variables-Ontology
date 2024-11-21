@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/part/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:floor a svo:Part,
+        owl:NamedIndividual ;
+    rdfs:label "floor"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q217164"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Floor"^^xsd:string ;
+    rdfs:comment "A floor is the bottom surface of a room or vehicle. Floors vary from simple dirt in a cave to many layered surfaces made with modern technology. Floors may be stone, wood, bamboo, metal or any other material that can support the expected load."^^xsd:string .
+

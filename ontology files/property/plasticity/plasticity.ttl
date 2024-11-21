@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:plasticity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "plasticity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q472074"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Plasticity_(physics)"^^xsd:string ;
+    rdfs:comment "In physics and materials science, plasticity (also known as plastic deformation) is the ability of a solid material to undergo permanent deformation, a non-reversible change of shape in response to applied forces. For example, a solid piece of metal being bent or pounded into a new shape displays plasticity as permanent changes occur within the material itself. In engineering, the transition from elastic behavior to plastic behavior is known as yielding."^^xsd:string .
+

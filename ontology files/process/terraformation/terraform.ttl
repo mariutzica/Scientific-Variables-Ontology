@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:terraformation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "terraform"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q204520"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Terraforming"^^xsd:string ;
+    rdfs:comment "Terraforming or terraformation (\"Earth-shaping\") is the hypothetical process of deliberately modifying the atmosphere, temperature, surface topography or ecology of a planet, moon, or other body to be similar to the environment of Earth to make it habitable for humans to live on."^^xsd:string .
+

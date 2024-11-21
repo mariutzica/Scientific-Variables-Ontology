@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28air-undergoes-process-isochoric-process%29-has-property-%28volume-specific_heat_capacity%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "air_isochoric-process__volume-specific_heat_capacity"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/air> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/isochoric-process> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/air-undergoes-process-isochoric-process> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/volume-specific_heat_capacity> ;
+    svo:has_original_label "air__volume-specific_isochoric_heat_capacity"^^xsd:string .
+

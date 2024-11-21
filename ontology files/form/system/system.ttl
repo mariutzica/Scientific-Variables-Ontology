@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:system a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "system"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q58778"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/System"^^xsd:string ;
+    rdfs:comment "A system is a group of interacting or interrelated elements that act according to a set of rules to form a unified whole. A system, surrounded and influenced by its environment, is described by its boundaries, structure and purpose and is expressed in its functioning. Systems are the subjects of study of systems theory and other systems sciences."^^xsd:string .
+

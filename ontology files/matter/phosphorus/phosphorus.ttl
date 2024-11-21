@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:phosphorus a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "phosphorus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q674"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Phosphorus"^^xsd:string ;
+    rdfs:comment "Phosphorus is a chemical element with the symbol P and atomic number 15. Elemental phosphorus exists in two major forms, white phosphorus and red phosphorus, but because it is highly reactive, phosphorus is never found as a free element on Earth. It has a concentration in the Earth's crust of about one gram per kilogram (compare copper at about 0.06 grams). In minerals, phosphorus generally occurs as phosphate."^^xsd:string .
+

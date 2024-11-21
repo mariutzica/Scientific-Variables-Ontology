@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:isoborneol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "isoborneol"^^xsd:string ;
+    svo:has_synonym "borneol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q412435"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Borneol"^^xsd:string ;
+    rdfs:comment "Borneol is a bicyclic organic compound and a terpene derivative. The hydroxyl group in this compound is placed in an endo position. The exo diastereomer is called isoborneol. Being chiral, borneol exists as enantiomers, both of which are found in nature."^^xsd:string .
+

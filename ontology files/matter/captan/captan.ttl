@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:captan a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "captan"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2194382"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Captan"^^xsd:string ;
+    rdfs:comment "Captan is a general use pesticide (GUP) that belongs to the phthalimide class of fungicides.    It is a white solid, although commercial samples appear yellow or brownish."^^xsd:string .
+

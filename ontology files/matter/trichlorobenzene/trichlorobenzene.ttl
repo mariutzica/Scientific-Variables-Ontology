@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trichlorobenzene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "trichlorobenzene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q411921"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Trichlorobenzene"^^xsd:string ;
+    rdfs:comment "Trichlorobenzene (TCB) may refer to any of three isomeric chlorinated derivatives of benzene with the molecular formula C6H3Cl3. Trichlorobenzenes are man-made chemical compounds that occur in three different forms. Even though the forms have the same molecular weight and molecular formulae, they are structurally different by the positions of the chlorine atoms attached to the benzene ring. 1,2,3-Trichlorobenzene and 1,3,5-trichlorobenzene are colorless solids, but 1,2,4-trichlorobenzene is a colorless oil. The isomers may also have different chemical and toxicological properties."^^xsd:string .
+

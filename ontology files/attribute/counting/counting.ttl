@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:counting a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "counting"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q247154"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Counting"^^xsd:string ;
+    rdfs:comment "Counting is the process of determining the number of elements of a finite set of objects; that is, determining the size of a set. The traditional way of counting consists of continually increasing a (mental or spoken) counter by a unit for every element of the set, in some order, while marking (or displacing) those elements to avoid visiting the same element more than once, until no unmarked elements are left; if the counter was set to one after the first object, the value after visiting the final object gives the desired number of elements. The related term enumeration refers to uniquely identifying the elements of a finite (combinatorial) set or infinite set by assigning a number to each element."^^xsd:string .
+

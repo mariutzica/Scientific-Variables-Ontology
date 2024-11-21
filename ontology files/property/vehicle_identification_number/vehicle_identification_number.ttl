@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vehicle_identification_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "vehicle_identification_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q304948"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Vehicle_identification_number"^^xsd:string ;
+    rdfs:comment "A vehicle identification number (VIN) (also called a chassis number or frame number) is a unique code, including a serial number, used by the automotive industry to identify individual motor vehicles, towed vehicles, motorcycles, scooters and mopeds, as defined by the International Organization for Standardization in ISO 3779 (content and structure) and ISO 4030 (location and attachment).There are vehicle history services in several countries that help potential car owners use VINs to find vehicles that are defective or have been written off."^^xsd:string .
+

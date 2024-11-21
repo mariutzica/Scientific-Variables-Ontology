@@ -1,0 +1,16 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thunderstorm a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "thunderstorm"^^xsd:string ;
+    svo:has_synonym "storm~electrical"^^xsd:string,
+        "storm~lightning"^^xsd:string,
+        "thundershower"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2857578"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Thunderstorm"^^xsd:string ;
+    rdfs:comment "A thunderstorm, also known as an electrical storm or a lightning storm, is a storm characterized by the presence of lightning and its acoustic effect on the Earth's atmosphere, known as thunder. Relatively weak thunderstorms are sometimes called thundershowers. Thunderstorms occur in a type of cloud known as a cumulonimbus. They are usually accompanied by strong winds and often produce heavy rain and sometimes snow, sleet, or hail, but some thunderstorms produce little precipitation or no precipitation at all. Thunderstorms may line up in a series or become a rainband, known as a squall line. Strong or severe thunderstorms include some of the most dangerous weather phenomena, including large hail, strong winds, and tornadoes. Some of the most persistent severe thunderstorms, known as supercells, rotate as do cyclones. While most thunderstorms move with the mean wind flow through the layer of the troposphere that they occupy, vertical wind shear sometimes causes a deviation in their course at a right angle to the wind shear direction."^^xsd:string .
+

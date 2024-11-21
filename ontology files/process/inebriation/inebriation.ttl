@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:inebriation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "inebriation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q205972"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Alcohol_intoxication"^^xsd:string ;
+    rdfs:comment "Alcohol intoxication, also known in overdose as alcohol poisoning, commonly described as drunkenness or inebriation, is the behavior and physical effects caused by a recent consumption of alcohol. In addition to the toxicity of ethanol, the main psychoactive component of alcoholic beverages, other physiological symptoms may arise from the activity of acetaldehyde, a metabolite of alcohol. These effects may not arise until hours after ingestion and may contribute to the condition colloquially known as a hangover. The term intoxication is commonly used when large amount of alcohol is consumed along with physical symptoms and deleterious health effects. "^^xsd:string .
+

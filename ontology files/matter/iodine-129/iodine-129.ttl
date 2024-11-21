@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:iodine-129 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "iodine-129"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2515411"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Iodine-129"^^xsd:string ;
+    rdfs:comment "Iodine-129 (129I) is a long-lived radioisotope of iodine which occurs naturally, but also is of special interest in the monitoring and effects of man-made nuclear fission products, where it serves as both tracer and potential radiological contaminant."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ablation-zone a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "ablation-zone"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q322152"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ablation_zone"^^xsd:string ;
+    rdfs:comment "Ablation zone or ablation area refers to the low-altitude area of a glacier or ice sheet below firn with a net loss in ice mass due to melting, sublimation, evaporation, ice calving, aeolian processes like blowing snow, avalanche, and any other ablation.  The equilibrium line altitude (ELA) or snow line separates the ablation zone from the higher-altitude accumulation zone.  The ablation zone often contains meltwater features such as supraglacial lakes, englacial streams, and subglacial lakes. Sediments dropped in the ablation zone forming small mounds or hillocks are called kames. Kame and kettle hole topography is useful in identifying an ablation zone of a glacier.  The seasonally melting glacier deposits much sediment at its fringes in the ablation area.  Ablation constitutes a key part of the glacier mass balance.  "^^xsd:string .
+

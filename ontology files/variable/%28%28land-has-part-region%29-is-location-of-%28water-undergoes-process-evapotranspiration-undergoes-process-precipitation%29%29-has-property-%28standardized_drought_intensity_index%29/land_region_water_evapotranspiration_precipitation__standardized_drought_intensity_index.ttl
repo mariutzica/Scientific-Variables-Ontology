@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28land-has-part-region%29-is-location-of-%28water-undergoes-process-evapotranspiration-undergoes-process-precipitation%29%29-has-property-%28standardized_drought_intensity_index%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "land_region_water_evapotranspiration_precipitation__standardized_drought_intensity_index"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/region> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/land> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/evapotranspiration>,
+        <http://scientificvariablesontology.org/svo/process/precipitation> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28land-has-part-region%29-is-location-of-%28water-undergoes-process-evapotranspiration-undergoes-process-precipitation%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/standardized_drought_intensity_index> ;
+    svo:has_original_label "land_region_water__standardized_precipitation_evapotranspiration_drought_intensity_index"^^xsd:string .
+

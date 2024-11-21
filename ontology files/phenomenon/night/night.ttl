@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:night a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "night"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q575"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Night"^^xsd:string ;
+    rdfs:comment "Night (also described as nighttime, unconventionally spelled as \"nite\") is the period of ambient darkness from sunset to sunrise during each 24-hour day, when the Sun is below the horizon. The exact time when night begins and ends depends on the location and varies throughout the year, based on factors such as season and latitude."^^xsd:string .
+

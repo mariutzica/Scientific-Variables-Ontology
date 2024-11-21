@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:outlet a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "outlet"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7112160"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wiktionary.org/wiki/outlet#Noun"^^xsd:string ;
+    rdfs:comment "Outlet may refer to:"^^xsd:string .
+

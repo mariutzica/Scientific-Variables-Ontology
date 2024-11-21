@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:specific_energy a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "specific_energy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3023293"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Specific_energy"^^xsd:string ;
+    rdfs:comment "Specific energy or massic energy is energy per unit mass. It is also sometimes called gravimetric energy density, which is not to be confused with energy density, which is defined as energy per unit volume. It is used to quantify, for example, stored heat and other thermodynamic properties of substances such as specific internal energy, specific enthalpy, specific Gibbs free energy, and specific Helmholtz free energy.  It may also be used for the kinetic energy or potential energy of a body.  Specific energy is an intensive property, whereas energy and mass are extensive properties."^^xsd:string .
+

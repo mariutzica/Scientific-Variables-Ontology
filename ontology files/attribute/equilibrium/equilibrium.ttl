@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:equilibrium a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "equilibrium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6644161"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/List_of_types_of_equilibrium"^^xsd:string ;
+    rdfs:comment "This is a list of various types of equilibrium, the condition of a system in which all competing influences are balanced."^^xsd:string .
+

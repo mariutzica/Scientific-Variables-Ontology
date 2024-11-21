@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:defribillation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "defribillation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q954202"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Defibrillation"^^xsd:string ;
+    rdfs:comment "Defibrillation is a treatment for life-threatening cardiac arrhythmias, specifically ventricular fibrillation (V-Fib) and non-perfusing ventricular tachycardia (V-Tach). A defibrillator delivers a dose of electric current (often called a counter-shock) to the heart. Although not fully understood, this process depolarizes a large amount of the heart muscle, ending the arrhythmia. Subsequently, the body's natural pacemaker in the sinoatrial node of the heart is able to re-establish normal sinus rhythm. A heart which is in asystole (flatline) cannot be restarted by a defibrillator, but would be treated by cardiopulmonary resuscitation (CPR)."^^xsd:string .
+

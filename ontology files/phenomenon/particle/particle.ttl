@@ -1,0 +1,11 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:particle a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "particle"^^xsd:string ;
+    svo:has_form <http://scientificvariablesontology.org/svo/form/particle> .
+

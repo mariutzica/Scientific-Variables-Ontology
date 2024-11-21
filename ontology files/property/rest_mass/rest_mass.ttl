@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:rest_mass a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "rest_mass"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1097654"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Invariant_mass"^^xsd:string ;
+    rdfs:comment "The invariant mass, rest mass, intrinsic mass, proper mass, or in the case of bound systems simply mass, is the portion of the total mass of an object or system of objects that is independent of the overall motion of the system. More precisely, it is a characteristic of the system's total energy and momentum that is the same in all frames of reference related by Lorentz transformations. If a center-of-momentum frame exists for the system, then the invariant mass of a system is equal to its total mass in that \"rest frame\". In other reference frames, where the system's momentum is nonzero, the total mass (a.k.a. relativistic mass) of the system is greater than the invariant mass, but the invariant mass remains unchanged."^^xsd:string .
+

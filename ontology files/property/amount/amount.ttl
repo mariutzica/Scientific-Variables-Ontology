@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:amount a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "amount"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q309314"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Quantity"^^xsd:string ;
+    rdfs:comment "Quantity or amount is a property that can exist as a multitude or magnitude, which illustrate discontinuity and continuity. Quantities can be compared in terms of \"more\", \"less\", or \"equal\", or by assigning a numerical value multiple of a unit of measurement. Mass, time, distance, heat, and angle are among the familiar examples of quantitative properties."^^xsd:string .
+

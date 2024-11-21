@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:weathering a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "weathering"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q179177"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Weathering"^^xsd:string ;
+    rdfs:comment "Weathering  is the deterioration of rocks, soils and minerals (as well as wood and artificial materials) through contact with water, atmospheric gases, sunlight, and biological organisms. Weathering occurs in situ (on-site, with little or no movement), and so is distinct from erosion, which involves the transport of rocks and minerals by agents such as water, ice, snow, wind, waves and gravity."^^xsd:string .
+

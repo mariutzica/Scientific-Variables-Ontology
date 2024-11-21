@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28electron%29-has-property-%28mass-to-electric-charge_ratio%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/electron"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/mass-to-electric-charge_ratio"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/electron"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron__mass-to-electric-charge_ratio</rdfs:label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electron__mass-to-charge_ratio</svo:has_original_label>
+</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:reaeration_coefficient a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "reaeration_coefficient"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3019748"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Streeter%E2%80%93Phelps_equation#Estimation_of_reaeration_rate"^^xsd:string ;
+    rdfs:comment "The Streeter–Phelps equation is used in the study of water pollution as a water quality modelling tool. The model describes how dissolved oxygen (DO) decreases in a river or stream along a certain distance by degradation of biochemical oxygen demand (BOD). The equation was derived by H. W. Streeter, a sanitary engineer, and Earle B. Phelps, a consultant for the U.S. Public Health Service, in 1925, based on field data from the Ohio River. The equation is also known as the DO sag equation."^^xsd:string .
+

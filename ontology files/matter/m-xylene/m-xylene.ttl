@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:m-xylene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "m-xylene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3234708"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/M-Xylene"^^xsd:string ;
+    rdfs:comment "m-Xylene (meta-xylene)  is an aromatic hydrocarbon. It is one of the three isomers of dimethylbenzene known collectively as xylenes. The m- stands for meta-, indicating that the two methyl groups in m-xylene occupy positions 1 and 3 on a benzene ring. It is in the positions of the two methyl groups, their arene substitution pattern, that it differs from the other isomers, o-xylene and p-xylene.  All have the same chemical formula C6H4(CH3)2. All xylene isomers are colorless and highly flammable."^^xsd:string .
+

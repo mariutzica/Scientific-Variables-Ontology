@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:draft_depth a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "draft_depth"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q244777"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Draft_(hull)"^^xsd:string ;
+    rdfs:comment "The draft or draught of a ship is a determined depth of the vessel below the waterline, measured vertically to its hull's lowest—its propellers, or keel, or other reference point. Draft varies according to the loaded condition of the ship. A deeper draft means the ship will have greater vertical depth below the waterline. Draft is used in under keel clearance calculations, where the draft is calculated with the available dept of water (from Electronic navigational charts) to ensure the ship can navigate safely, without grounding. Navigators can determine their draught by calculation or by visual observation (of the ship's painted loadlines)."^^xsd:string .
+

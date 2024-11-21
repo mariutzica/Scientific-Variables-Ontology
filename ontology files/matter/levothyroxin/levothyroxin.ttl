@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:levothyroxin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "levothyroxin"^^xsd:string ;
+    svo:has_synonym "L-Tyrosine,-O-(4-hydroxy-3,5-diiodophenyl)-3,5-diiodo-"^^xsd:string,
+        "l-thyroxine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q773449"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Levothyroxine"^^xsd:string ;
+    rdfs:comment "Levothyroxine, also known as L-thyroxine, is a synthetic form of the thyroid hormone thyroxine (T4). It is used to treat thyroid hormone deficiency (hypothyroidism), including a severe form known as myxedema coma. It may also be used to treat and prevent certain types of thyroid tumors. It is not indicated for weight loss. Levothyroxine is taken by mouth or given by intravenous injection. Maximum effect from a specific dose can take up to six weeks to occur.Side effects from excessive doses include weight loss, trouble tolerating heat, sweating, anxiety, trouble sleeping, tremor, and fast heart rate. Use is not recommended in people who have had a recent heart attack. Use during pregnancy has been found to be safe. Dosing should be based on regular measurements of thyroid-stimulating hormone (TSH) and T4 levels in the blood. Much of the effect of levothyroxine is following its conversion to triiodothyronine (T3).Levothyroxine was first made in 1927. It is on the World Health Organization's List of Essential Medicines. Levothyroxine is available as a generic medication. In 2020, it was the second most commonly prescribed medication in the United States, with more than 98 million prescriptions."^^xsd:string .
+

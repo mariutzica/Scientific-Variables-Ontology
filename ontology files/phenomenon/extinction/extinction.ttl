@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:extinction a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "extinction"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q123509"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Extinction"^^xsd:string ;
+    rdfs:comment "Extinction is the termination of a kind of organism or of a group of kinds (taxon), usually a species. The moment of extinction is generally considered to be the death of the last individual of the species, although the capacity to breed and recover may have been lost before this point. Because a species' potential range may be very large, determining this moment is difficult, and is usually done retrospectively. This difficulty leads to phenomena such as Lazarus taxa, where a species presumed extinct abruptly \"reappears\" (typically in the fossil record) after a period of apparent absence."^^xsd:string .
+

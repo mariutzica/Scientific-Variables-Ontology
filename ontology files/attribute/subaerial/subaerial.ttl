@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:subaerial a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "subaerial"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2361456"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Subaerial"^^xsd:string ;
+    rdfs:comment "In natural science, subaerial (literally \"under the air\"), has been used since 1833, notably in geology and botany, to describe features and events occurring or formed on or near the Earth's land surface. They are thus exposed to Earth's atmosphere. This may be contrasted with subaqueous events or features located below a water surface, submarine events or features located below a sea surface, subterranean events or features located below ground, or subglacial events or features located below glacial ice such as ice sheets."^^xsd:string .
+

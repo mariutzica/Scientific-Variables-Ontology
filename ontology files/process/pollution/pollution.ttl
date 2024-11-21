@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pollution a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "pollution"^^xsd:string ;
+    svo:has_synonym "pollution"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q58734"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pollution"^^xsd:string ;
+    rdfs:comment "Pollution is the introduction of contaminants into the natural environment that cause adverse change. Pollution can take the form of any substance (solid, liquid, or gas) or energy (such as radioactivity, heat, sound, or light). Pollutants, the components of pollution, can be either foreign substances/energies or naturally occurring contaminants."^^xsd:string .
+

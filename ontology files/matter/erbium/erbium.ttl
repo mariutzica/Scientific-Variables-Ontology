@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:erbium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "erbium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1849"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Erbium"^^xsd:string ;
+    rdfs:comment "Erbium is a chemical element with the symbol Er and atomic number 68. A silvery-white solid metal when artificially isolated, natural erbium is always found in chemical combination with other elements. It is a lanthanide, a rare-earth element, originally found in the gadolinite mine in Ytterby, Sweden, which is the source of the element's name."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:balloon a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "balloon"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q9706"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Balloon"^^xsd:string ;
+    rdfs:comment "A balloon is a flexible bag that can be inflated with a gas, such as helium, hydrogen, nitrous oxide, oxygen, and air. For special tasks, balloons can be filled with smoke, liquid water, granular media (e.g. sand, flour or rice), or light sources. Modern day balloons are made from materials such as rubber, latex, polychloroprene, or a nylon fabric, and can come in many different colors. Some early balloons were made of dried animal bladders, such as the pig bladder. Some balloons are used for decorative purposes or entertaining purposes, while others are used for practical purposes such as meteorology, medical treatment, military defense, or transportation. A balloon's properties, including its low density and low cost, have led to a wide range of applications."^^xsd:string .
+

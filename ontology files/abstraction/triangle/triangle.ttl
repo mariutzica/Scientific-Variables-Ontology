@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:triangle a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "triangle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q19821"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Triangle"^^xsd:string ;
+    rdfs:comment "A triangle is a polygon with three edges and three vertices. It is one of the basic shapes in geometry. A triangle with vertices A, B, and C is denoted "^^xsd:string .
+

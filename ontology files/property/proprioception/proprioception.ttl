@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:proprioception a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "proprioception"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1129066"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Proprioception"^^xsd:string ;
+    rdfs:comment "Proprioception ( PROH-pree-o-SEP-shən), also referred to as kinaesthesia (or kinesthesia), is the sense of self-movement, force, and body position. It is sometimes described as the \"sixth sense\".Proprioception is mediated by proprioceptors, mechanosensory neurons located within muscles, tendons, and joints. Most animals possess multiple subtypes of proprioceptors, which detect distinct kinematic parameters, such as joint position, movement, and load. Although all mobile animals possess proprioceptors, the structure of the sensory organs can vary across species."^^xsd:string .
+

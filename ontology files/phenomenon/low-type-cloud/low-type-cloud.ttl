@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:low-type-cloud a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "low-type-cloud"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3281195"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/List_of_cloud_types#Low-level_stratocumuliform,_cumuliform,_and_stratiform"^^xsd:string ;
+    rdfs:comment "The list of cloud types groups all cloud genera as high (cirro-, cirrus), middle (alto-), multi-level (nimbo-, cumulo-, cumulus), and low (strato-, stratus). These groupings are determined by the altitude level or levels in the troposphere at which each of the various cloud types is normally found. Small cumulus are commonly grouped with the low clouds because they do not show significant vertical extent. Of the multi-level genus-types, those with the greatest convective activity are often grouped separately as towering vertical. The genus types all have Latin names."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:iodine-133 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "iodine-133"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1208453"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isotopes_of_iodine#Iodine-133"^^xsd:string ;
+    rdfs:comment "There are 37 known isotopes of iodine (53I) from 108I to 144I; all undergo radioactive decay except 127I, which is stable.  Iodine is thus a monoisotopic element."^^xsd:string .
+

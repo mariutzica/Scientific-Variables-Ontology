@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:aedes a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "aedes"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q310911"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Aedes"^^xsd:string ;
+    rdfs:comment "Aedes is a genus of mosquitoes originally found in tropical and subtropical zones, but now found on all continents except perhaps Antarctica. Some species have been spread by human activity: Aedes albopictus, a particularly invasive species, was spread to the New World, including the United States, in the 1980s, by the used-tire trade.First described and named by German entomologist Johann Wilhelm Meigen in 1818, the generic name comes from the Ancient Greek ἀηδής, aēdēs, meaning \"unpleasant\" or \"odious\". The type species for Aedes is Aedes cinereus."^^xsd:string .
+

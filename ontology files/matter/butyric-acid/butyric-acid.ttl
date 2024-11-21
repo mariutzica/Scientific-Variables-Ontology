@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:butyric-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "butyric-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q193213"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Butyric_acid"^^xsd:string ;
+    rdfs:comment "Butyric acid (; from Ancient Greek: βούτῡρον, meaning \"butter\"), also known under the systematic name butanoic acid, is a straight-chain alkyl carboxylic acid with the chemical formula CH3CH2CH2CO2H. It is an oily, colorless liquid with an unpleasant odor. Isobutyric acid (2-methylpropanoic acid) is an isomer. Salts and esters of butyric acid are known as butyrates or butanoates. The acid does not occur widely in nature, but its esters are widespread. It is a common industrial chemical and an important component in the mammalian gut."^^xsd:string .
+

@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:2-methylpentane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "2-methylpentane"^^xsd:string ;
+    svo:has_synonym "pentane,-2-methyl-"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q209445"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/2-Methylpentane"^^xsd:string ;
+    rdfs:comment "2-Methylpentane, trivially known as isohexane, is a branched-chain alkane with the molecular formula C6H14. It is a structural isomer of hexane composed of a methyl group bonded to the second carbon atom in a pentane chain. Using a quantitative structure-activity relationship (QSAR) prediction model, 2-Methylpentane has a research octane number (RON) of 75, motor octane number (MON) of 77, and cetane number (CN) of 29."^^xsd:string .
+

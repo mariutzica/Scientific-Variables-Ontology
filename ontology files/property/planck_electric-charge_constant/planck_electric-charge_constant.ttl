@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:planck_electric-charge_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "planck_electric-charge_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q468999"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Planck_charge"^^xsd:string ;
+    rdfs:comment "set of units of measurement defined exclusively in terms of universal physical constants proposed by physicist Max Planck"^^xsd:string .
+

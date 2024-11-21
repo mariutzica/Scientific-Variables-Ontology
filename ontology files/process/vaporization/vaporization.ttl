@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vaporization a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "vaporization"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6452502"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vaporization"^^xsd:string ;
+    rdfs:comment "Vaporization (or vaporisation) of an element or compound is a phase transition from the liquid phase to vapor. There are two types of vaporization: evaporation and boiling. Evaporation is a surface phenomenon, where as boiling is a bulk phenomenon."^^xsd:string .
+

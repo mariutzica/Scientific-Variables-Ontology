@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:rubidium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "rubidium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q895"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Rubidium"^^xsd:string ;
+    rdfs:comment "Rubidium is the chemical element with the symbol Rb and atomic number 37. It is a very soft, whitish-grey solid in the alkali metal group, similar to potassium and caesium. Rubidium is the first alkali metal in the group to have a density higher than water. On Earth, natural rubidium comprises two isotopes: 72% is a stable isotope 85Rb, and 28% is slightly radioactive 87Rb, with a half-life of 48.8 billion years—more than three times as long as the estimated age of the universe."^^xsd:string .
+

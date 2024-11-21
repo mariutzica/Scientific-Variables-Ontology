@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28crop-undergoes-process-planting%29-or-%28crop-undergoes-process-sowing%29> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "crop_planting_crop_sowing"^^xsd:string ;
+    svo:has_phenomenon :crop-undergoes-process-planting,
+        :crop-undergoes-process-sowing .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:electrocution a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "electrocution"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3587621"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Electrocution"^^xsd:string ;
+    rdfs:comment "Electrocution is death or severe injury  caused by electric shock from electric current passing through the body. The word is derived from \"electro\" and \"execution\", but it is also used for accidental death."^^xsd:string .
+

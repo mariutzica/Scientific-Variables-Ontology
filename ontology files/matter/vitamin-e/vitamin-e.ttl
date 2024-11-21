@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vitamin-e a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "vitamin-e"^^xsd:string ;
+    svo:has_synonym "tocopheryl"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q141180"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vitamin_E"^^xsd:string ;
+    rdfs:comment "Vitamin E is a group of eight fat soluble compounds that include four tocopherols and four tocotrienols. Vitamin E deficiency, which is rare and usually due to an underlying problem with digesting dietary fat rather than from a diet low in vitamin E, can cause nerve problems. Vitamin E is a fat-soluble antioxidant which may help protect cell membranes from reactive oxygen species. Worldwide, government organizations recommend adults consume in the range of 3 to 15 mg per day. As of 2016, consumption was below recommendations according to a worldwide summary of more than one hundred studies that reported a median dietary intake of 6.2 mg per day for alpha-tocopherol.Population studies suggested that people who consumed foods with more vitamin E, or who chose on their own to consume a vitamin E dietary supplement, had lower incidence of cardiovascular diseases, cancer, dementia, and other diseases. However, placebo-controlled clinical trials using alpha-tocopherol as a supplement, with daily amounts as high as 2,000 mg per day, could not always replicate these findings. In the United States vitamin E supplement use peaked around 2002, but has declined by more than half by 2006. The authors theorized that declining use may have been due to publications of large placebo-controlled studies that showed either no benefits or actual negative consequences from high-dose vitamin E.There is use of vitamin E in skincare and wound-treatment products, but no clinical evidence that it is effective.Both natural and synthetic tocopherols are subject to oxidation, and so in dietary supplements are esterified, creating tocopheryl acetate for stability purposes. Tocopherols and tocotrienols both occur in α (alpha), β (beta), γ (gamma) and δ (delta) forms, as determined by the number and position of methyl groups on the chromanol ring. All eight of these vitamers feature a chromane double ring, with a hydroxyl group that can donate a hydrogen atom to reduce free radicals, and a hydrophobic side chain which allows for penetration into biological membranes."^^xsd:string .
+

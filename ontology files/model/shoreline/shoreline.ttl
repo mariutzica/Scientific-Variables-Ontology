@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:shoreline a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "shoreline"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q93352"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Coast"^^xsd:string ;
+    rdfs:comment "The coast, also known as the coastline, shoreline or seashore, is defined as the area where land meets the ocean, or as a line that forms the boundary between the land and the coastline. Shores are influenced by the topography of the surrounding landscape, as well as by water induced erosion, such as waves. The geological composition of rock and soil dictates the type of shore which is created. The Earth has around 620,000 kilometres (390,000 mi) of coastline. Coasts are important zones in natural ecosystems, often home to a wide range of biodiversity. On land, they harbor important ecosystems such as freshwater or estuarine wetlands, which are important for bird populations and other terrestrial animals. In wave-protected areas they harbor saltmarshes, mangroves or seagrasses, all of which can provide nursery habitat for finfish, shellfish, and other aquatic species. Rocky shores are usually found along exposed coasts and provide habitat for a wide range of sessile animals (e.g. mussels, starfish, barnacles) and various kinds of seaweeds. In physical oceanography, a shore is the wider fringe that is geologically modified by the action of the body of water past and present, while the beach is at the edge of the shore, representing the intertidal zone where there is one. Along tropical coasts with clear, nutrient-poor water, coral reefs can often be found between depths of 1–50 meters (3.3–164.0 feet)."^^xsd:string .
+

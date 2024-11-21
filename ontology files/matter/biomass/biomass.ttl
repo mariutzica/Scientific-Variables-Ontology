@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:biomass a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "biomass"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2945560"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Biomass_(ecology)"^^xsd:string ;
+    rdfs:comment "Biomass is the mass of living biological organisms in a given area or ecosystem at a given time. Biomass can refer to species biomass, which is the mass of one or more species, or to community biomass, which is the mass of all species in the community. It can include microorganisms, plants or animals. The mass can be expressed as the average mass per unit area, or as the total mass in the community."^^xsd:string .
+

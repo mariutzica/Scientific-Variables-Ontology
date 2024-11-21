@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sunglint a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "sunglint"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7640233"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sunglint"^^xsd:string ;
+    rdfs:comment "Sunglint is a phenomenon that occurs when sunlight reflects off the surface of the ocean at the same angle that a satellite or other sensor is viewing the surface. In the affected area of the image, smooth ocean water becomes a silvery mirror, while rougher surface waters appear dark. Sometimes the sunglint region of satellite images reveals interesting ocean or atmospheric features that the sensor does not typically record."^^xsd:string .
+

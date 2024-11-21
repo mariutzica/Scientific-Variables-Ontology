@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fish a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "fish"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q152"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Fish"^^xsd:string ;
+    rdfs:comment "Fish are aquatic, craniate, gill-bearing animals that lack limbs with digits. Included in this definition are the living hagfish, lampreys, and cartilaginous and bony fish as well as various extinct related groups. Approximately 95% of living fish species are ray-finned fish, belonging to the class Actinopterygii, with around 99% of those being teleosts."^^xsd:string .
+

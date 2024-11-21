@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:channel a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "channel"^^xsd:string ;
+    svo:has_synonym "conduit"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1210950"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Channel_(geography)"^^xsd:string ;
+    rdfs:comment "In physical geography, a channel is a type of landform consisting of the outline of a path of relatively shallow and narrow body of water or of other fluids (e.g., lava), most commonly the confine of a river, river delta or strait.  The word is cognate to canal, and sometimes takes this form, e.g. the Hood Canal."^^xsd:string .
+

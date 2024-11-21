@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:subvocalization a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "subvocalization"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2600429"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Subvocalization"^^xsd:string ;
+    rdfs:comment "Subvocalization, or silent speech, is the internal speech typically made when reading; it provides the sound of the word as it is read. This is a natural process when reading, and it helps the mind to access meanings to comprehend and remember what is read, potentially reducing cognitive load."^^xsd:string .
+

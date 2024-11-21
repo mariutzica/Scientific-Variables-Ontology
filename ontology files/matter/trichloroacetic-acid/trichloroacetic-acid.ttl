@@ -1,0 +1,16 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trichloroacetic-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "trichloroacetic-acid"^^xsd:string ;
+    svo:has_synonym "tca"^^xsd:string,
+        "tcaa"^^xsd:string,
+        "trichloroethanoic-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q410116"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Trichloroacetic_acid"^^xsd:string ;
+    rdfs:comment "Trichloroacetic acid (TCA; TCAA; also known as trichloroethanoic acid) is an analogue of acetic acid in which the three hydrogen atoms of the methyl group have all been replaced by chlorine atoms. Salts and esters of trichloroacetic acid are called trichloroacetates."^^xsd:string .
+

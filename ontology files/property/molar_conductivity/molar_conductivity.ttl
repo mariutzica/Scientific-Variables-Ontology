@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:molar_conductivity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "molar_conductivity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1943278"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Molar_conductivity"^^xsd:string ;
+    rdfs:comment "The molar conductivity of an electrolyte solution is defined as its conductivity divided by its molar concentration."^^xsd:string .
+

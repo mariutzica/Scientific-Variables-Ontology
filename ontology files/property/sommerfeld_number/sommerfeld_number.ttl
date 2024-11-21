@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sommerfeld_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "sommerfeld_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6047623"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sommerfeld_number"^^xsd:string ;
+    rdfs:comment "In the design of fluid bearings, the Sommerfeld number (S) is a dimensionless quantity used extensively in hydrodynamic lubrication analysis. The Sommerfeld number is very important in lubrication analysis because it contains all the variables normally specified by the designer."^^xsd:string .
+

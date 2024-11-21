@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:birth a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "birth"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q14819852"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Birth"^^xsd:string ;
+    rdfs:comment "Birth is the act or process of bearing or bringing forth offspring, also referred to in technical contexts as parturition. In mammals, the process is initiated by hormones which cause the muscular walls of the uterus to contract, expelling the fetus at a developmental stage when it is ready to feed and breathe."^^xsd:string .
+

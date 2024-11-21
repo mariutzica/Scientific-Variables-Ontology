@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:breaking-wave a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "breaking-wave"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q661247"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Breaking_wave"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, a breaking wave or breaker is a wave whose amplitude reaches a critical level at which large amounts of wave energy transform into turbulent kinetic energy.  At this point, simple physical models that describe wave dynamics often become invalid, particularly those that assume linear behaviour."^^xsd:string .
+

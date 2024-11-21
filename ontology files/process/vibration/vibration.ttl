@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vibration a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "vibration"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3695508"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vibration"^^xsd:string ;
+    rdfs:comment "Vibration (from Latin  vibrō 'to shake') is a mechanical phenomenon whereby oscillations occur about an equilibrium point. Vibration may be deterministic if the oscillations can be characterised precisely (e.g. the periodic motion of a pendulum), or random if the oscillations can only be analysed statistically (e.g. the movement of a tire on a gravel road)."^^xsd:string .
+

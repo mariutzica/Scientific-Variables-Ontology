@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thiocyanate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "thiocyanate"^^xsd:string ;
+    svo:has_synonym "rhodanide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q77747995"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Thiocyanate"^^xsd:string ;
+    rdfs:comment "Thiocyanate (also known as rhodanide) is the anion [SCN]−, a salt or an ester of thiocyanic acid. It is the conjugate base of thiocyanic acid. Common derivatives include the colourless salts potassium thiocyanate and sodium thiocyanate.  Mercury(II) thiocyanate was formerly used in pyrotechnics."^^xsd:string .
+

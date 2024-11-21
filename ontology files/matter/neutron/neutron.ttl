@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:neutron a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "neutron"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2348"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Neutron"^^xsd:string ;
+    rdfs:comment "The neutron is a subatomic particle, symbol n or n0, which has a neutral (not positive or negative) charge, and a mass slightly greater than that of a proton. Protons and neutrons constitute the nuclei of atoms. Since protons and neutrons behave similarly within the nucleus, and each has a mass of approximately one atomic mass unit, they are both referred to as nucleons. Their properties and interactions are described by nuclear physics.  Protons and neutrons are not elementary particles; each is composed of three quarks."^^xsd:string .
+

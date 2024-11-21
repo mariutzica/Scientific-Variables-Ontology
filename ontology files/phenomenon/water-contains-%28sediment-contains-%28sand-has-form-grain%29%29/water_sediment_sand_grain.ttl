@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:water-contains-%28sediment-contains-%28sand-has-form-grain%29%29 a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "water_sediment_sand_grain"^^xsd:string ;
+    svo:has_containing_phenomenon :water ;
+    svo:has_primary_participant_phenomenon :sediment-contains-%28sand-has-form-grain%29 .
+

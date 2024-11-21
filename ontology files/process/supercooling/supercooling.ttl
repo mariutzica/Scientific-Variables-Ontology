@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:supercooling a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "supercooling"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q213659"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Supercooling"^^xsd:string ;
+    rdfs:comment "Supercooling, also known as undercooling, is the process of lowering the temperature of a liquid below its freezing point without it becoming a solid. It is achieved in the absence of a seed crystal or nucleus around which a crystal structure can form. The supercooling of water can be achieved without any special techniques other than chemical demineralization, down to −48.3 °C (−54.9 °F). Supercooled water can occur naturally, for example in the atmosphere, animals or plants."^^xsd:string .
+

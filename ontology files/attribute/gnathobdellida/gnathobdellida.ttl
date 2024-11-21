@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gnathobdellida a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "gnathobdellida"^^xsd:string ;
+    svo:has_synonym "hirudiniformes"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5771852"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hirudiniformes"^^xsd:string ;
+    rdfs:comment "The Hirudiniformes are one of the currently-accepted suborders of the proboscisless leeches (Arhynchobdellida). Their best-known member is the European medical leech, Hirudo medicinalis, and indeed most of the blood-sucking \"worms\" as which leeches are generally perceived belong to this group. In general, though some leeches suck blood, many are predators which hunt small invertebrates."^^xsd:string .
+

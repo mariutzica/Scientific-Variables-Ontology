@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cognition a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "cognition"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2200417"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cognition"^^xsd:string ;
+    rdfs:comment "Cognition is the \"mental action or process of acquiring knowledge and understanding through thought, experience, and the senses\". It encompasses all aspects of intellectual functions and processes such as: perception, attention, thought, imagination, intelligence, the formation of knowledge, memory and working memory, judgment and evaluation, reasoning and computation, problem-solving and decision-making, comprehension and production of language. Cognitive processes use existing knowledge and discover new knowledge."^^xsd:string .
+

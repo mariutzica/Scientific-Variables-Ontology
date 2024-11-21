@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:torsion_angle a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "torsion_angle"^^xsd:string ;
+    svo:has_synonym "dihedral_angle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q911907"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dihedral_angle"^^xsd:string ;
+    rdfs:comment "A dihedral angle is the angle between two intersecting planes or half-planes. In chemistry, it is the clockwise angle between half-planes through two sets of three atoms, having two atoms in common. In solid geometry, it is defined as the union of a line and two half-planes that have this line as a common edge.  In higher dimensions, a dihedral angle represents the angle between two hyperplanes."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:wilting a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "wilting"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2299244"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Wilting"^^xsd:string ;
+    rdfs:comment "Wilting is the loss of rigidity of non-woody parts of plants. This occurs when the turgor pressure in non-lignified plant cells falls towards zero, as a result of diminished water in the cells. Wilting also serves to reduce water loss, as it makes the leaves expose less surface area. The rate of loss of water from the plant is greater than the absorption of water in the plant. The process of wilting"^^xsd:string .
+

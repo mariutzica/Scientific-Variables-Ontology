@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:taylor_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "taylor_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1935046"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Taylor_number"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, the Taylor number (Ta) is a dimensionless quantity that characterizes the importance of centrifugal \"forces\" or so-called inertial forces due to rotation of a fluid about an axis, relative to viscous forces.In 1923 Geoffrey Ingram Taylor introduced this quantity in his article on the stability of flow.The typical context of the Taylor number is in characterization of the Couette flow between rotating colinear cylinders or rotating concentric spheres. In the case of a system which is not rotating uniformly, such as the case of cylindrical Couette flow, where the outer cylinder is stationary and the inner cylinder is rotating, inertial forces will often tend to destabilize a system, whereas viscous forces tend to stabilize a system and damp out perturbations and turbulence."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chloroxuron a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chloroxuron"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2964148"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chloroxuron"^^xsd:string ;
+    rdfs:comment "Chloroxuron is an organic compound with the chemical formula C15H15ClN2O2 used as an herbicide. It is classified as an extremely hazardous substance in the United States as defined in Section 302 of the U.S. Emergency Planning and Community Right-to-Know Act (42 U.S.C. 11002), and is subject to strict reporting requirements by facilities which produce, store, or use it in significant quantities."^^xsd:string .
+

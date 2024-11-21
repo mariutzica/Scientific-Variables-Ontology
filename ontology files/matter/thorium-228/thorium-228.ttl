@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thorium-228 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "thorium-228"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1895097"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isotopes_of_thorium#Thorium-228"^^xsd:string ;
+    rdfs:comment "Thorium (90Th) has seven naturally occurring isotopes but none are stable. One isotope, 232Th, is relatively stable, with a half-life of 1.405×1010 years, considerably longer than the age of the Earth, and even slightly longer than the generally accepted age of the universe. This isotope makes up nearly all natural thorium, so thorium was considered to be mononuclidic. However, in 2013, IUPAC reclassified thorium as binuclidic, due to large amounts of 230Th in deep seawater. Thorium has a characteristic terrestrial isotopic composition and thus a standard atomic weight can be given."^^xsd:string .
+

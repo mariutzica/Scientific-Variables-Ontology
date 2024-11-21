@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:time a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "time"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11471"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Time"^^xsd:string ;
+    rdfs:comment "Time is the continued sequence of existence and events that occurs in an apparently irreversible succession from the past, through the present, into the future. It is a component quantity of various measurements used to sequence events, to compare the duration of events or the intervals between them, and to quantify rates of change of quantities in material reality or in the conscious experience. Time is often referred to as a fourth dimension, along with three spatial dimensions.Time has long been an important subject of study in religion, philosophy, and science, but defining it in a manner applicable to all fields without circularity has consistently eluded scholars."^^xsd:string .
+

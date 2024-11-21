@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cladopelma a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "cladopelma"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5124947"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cladopelma"^^xsd:string ;
+    rdfs:comment "Cladopelma is a genus of non-biting midges in the subfamily Chironominae and tribe Chironomini of the bloodworm family Chironomidae. Species are distributed world-wide (Cranston et al. 1989, Yan et al. 2008), with species represented in the Palaearctic, Nearctic, Neotropical, Afrotropical, Sino-Indian, and Austroasian regions."^^xsd:string .
+

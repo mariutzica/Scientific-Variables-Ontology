@@ -1,0 +1,310 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/role> a owl:Ontology ;
+    owl:imports <http://scientificvariablesontology.org/svo>,
+        <http://scientificvariablesontology.org/svo/attribute> .
+
+:byproduct a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "byproduct"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1128255"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/By-product"^^xsd:string ;
+    rdfs:comment "A by-product or byproduct is a secondary product derived from a production process, manufacturing process or chemical reaction; it is not the primary product or service being produced."^^xsd:string .
+
+:cargo a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "cargo"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q319224"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cargo"^^xsd:string ;
+    rdfs:comment "Cargo consists of goods conveyed by water, air, or land. In economics, freight is cargo that is transported at a freight rate for commercial gain. Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. The term cargo is also used in case of goods in the cold-chain, because the perishable inventory is always in transit towards a final end-use, even when it is held in cold storage or other similar climate-controlled facilities. The term freight is commonly used to describe the movements of flows of goods being transported by any mode of transportation.Multi-modal container units, designed as reusable carriers to facilitate unit load handling of the goods contained, are also referred to as cargo, especially by shipping lines and logistics operators. When empty containers are shipped each unit is documented as a cargo and when goods are stored within, the contents are termed containerized cargo. Similarly, aircraft ULD boxes are also documented as cargo, with an associated packing list of"^^xsd:string .
+
+:cover a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "cover"^^xsd:string .
+
+<http://scientificvariablesontology.org/svo/role/crop~mature~dry> a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "crop~mature~dry"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/dry>,
+        <http://scientificvariablesontology.org/svo/attribute/mature> ;
+    svo:has_role_root :crop .
+
+:cultivar a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "cultivar"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4886"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cultivar"^^xsd:string ;
+    rdfs:comment "A cultivar is a kind of cultivated plant that people have selected for desired traits and when propagated retain those traits. Methods used to propagate cultivars include: division, root and stem cuttings, offsets, grafting, tissue culture, or carefully controlled seed production. Most cultivars arise from purposeful human manipulation, but some originate from wild plants that have distinctive characteristics. Cultivar names are chosen according to rules of the International Code of Nomenclature for Cultivated Plants (ICNCP), and not all cultivated plants qualify as cultivars. Horticulturists generally believe the word cultivar was coined as a term meaning \"cultivated variety\"."^^xsd:string .
+
+:debris a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "debris"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q637703"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Debris"^^xsd:string ;
+    rdfs:comment "Debris (UK: , US: ) is rubble, wreckage, ruins, litter and discarded garbage/refuse/trash, scattered remains of something destroyed, or, as in geology, large rock fragments left by a melting glacier, etc. Depending on context, debris can refer to a number of different things. The first apparent use of the French word in English is in a 1701 description of the army of Prince Rupert upon its retreat from a battle with the army of Oliver Cromwell, in England."^^xsd:string .
+
+:degradate a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "degradate"^^xsd:string .
+
+:deposit a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "deposit"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1987070"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Deposition_(geology)"^^xsd:string ;
+    rdfs:comment "Deposition is the geological process in which sediments, soil and rocks are added to a landform or landmass. Wind, ice, water, and gravity transport previously weathered surface material, which, at the loss of enough kinetic energy in the fluid, is deposited, building up layers of sediment."^^xsd:string .
+
+:diver a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "diver"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q395524"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Diver"^^xsd:string ;
+    rdfs:comment "Diver or divers may refer to:"^^xsd:string .
+
+:driver a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "driver"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q226733"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wiktionary.org/wiki/driver#Noun"^^xsd:string ;
+    rdfs:comment "Driver may refer to:"^^xsd:string .
+
+:entrance a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "entrance"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1307471"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Entrance"^^xsd:string ;
+    rdfs:comment "Entrance generally refers to the place of entering like a gate, door, or road or the permission to do so."^^xsd:string .
+
+:exit a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "exit"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q357919"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Exit"^^xsd:string ;
+    rdfs:comment "Exit(s) may refer to:"^^xsd:string .
+
+:farmer a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "farmer"^^xsd:string ;
+    svo:has_synonym "agriculturer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q131512"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Farmer"^^xsd:string ;
+    rdfs:comment "A farmer is a person engaged in agriculture, raising living organisms for food or raw materials. The term usually applies to people who do some combination of raising field crops, orchards, vineyards, poultry, or other livestock. A farmer might own the farm land or might work as a laborer on land owned by others. In most developed economies, a \"farmer\" is usually a farm owner (landowner), while employees of the farm are known as farm workers (or farmhands). However, in other older definitions a farmer was a person who promotes or improves the growth of plants, land or crops or raises animals (as livestock or fish) by labor and attention."^^xsd:string .
+
+:fertilizer a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "fertilizer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q83323"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fertilizer"^^xsd:string ;
+    rdfs:comment "A fertilizer (American English) or fertiliser (British English; see spelling differences) is any material of natural or synthetic origin that is applied to soil or to plant tissues to supply plant nutrients. Fertilizers may be distinct from liming materials or other non-nutrient soil amendments. Many sources of fertilizer exist, both natural and industrially produced. For most modern agricultural practices, fertilization focuses on three main macro nutrients: nitrogen (N), phosphorus (P), and potassium (K) with occasional addition of supplements like rock flour for micronutrients. Farmers apply these fertilizers in a variety of ways: through dry or pelletized or liquid application processes, using large agricultural equipment or hand-tool methods."^^xsd:string .
+
+:filter a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "filter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q244772"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Filtration"^^xsd:string ;
+    rdfs:comment "Filtration is a physical separation process that separates solid matter and fluid from a mixture using a filter medium that has a complex structure through which only the fluid can pass. Solid particles that cannot pass through the filter medium are described as oversize and the fluid that passes through is called the filtrate. Oversize particles may form a filter cake on top of the filter and may also block the filter lattice, preventing the fluid phase from crossing the filter, known as blinding. The size of the largest particles that can successfully pass through a filter is called the effective pore size of that filter. The separation of solid and fluid is imperfect; solids will be contaminated with some fluid and filtrate will contain fine particles (depending on the pore size, filter thickness and biological activity). Filtration occurs both in nature and in engineered systems; there are biological, geological, and industrial forms.Filtration is also used to describe biological and physical systems that not only separate solids from a fluid stream, but also remove chemical species and biological organisms by entrainment, phagocytosis, adsorption and absorption. Examples include slow sand filters and trickling filters. It is also used as a general term for microphagy in which organisms use a variety of means to filter small food particles from their environment. Examples range from the microscopic Vorticella up to the Basking shark, one of the largest fishes, and the baleen whales, all of which are described as  Filter feeders."^^xsd:string .
+
+:forage a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "forage"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q13377214"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Forage"^^xsd:string ;
+    rdfs:comment "Forage is a plant material (mainly plant leaves and stems) eaten by grazing livestock. Historically, the term forage has meant only plants eaten by the animals directly as pasture, crop residue, or immature cereal crops, but it is also used more loosely to include similar plants cut for fodder and carried to the animals, especially as hay or silage.While the term forage has a broad definition, the term forage crop is used to define crops, annual or biennial, which are grown to be utilized by grazing or harvesting as a whole crop."^^xsd:string .
+
+:garbage a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "garbage"^^xsd:string ;
+    svo:has_synonym "refuse"^^xsd:string,
+        "rubbish"^^xsd:string,
+        "trash"^^xsd:string,
+        "waste"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q48995880"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Garbage"^^xsd:string ;
+    rdfs:comment "Garbage, trash, rubbish, or refuse is waste material that is discarded by humans, usually due to a perceived lack of utility. The term generally does not encompass bodily waste products, purely liquid or gaseous wastes, or toxic waste products. Garbage is commonly sorted and classified into kinds of material suitable for specific kinds of disposal."^^xsd:string .
+
+:litter a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "litter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1780867"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Litter"^^xsd:string ;
+    rdfs:comment "Litter consists of waste products that have been discarded incorrectly, without consent, at an unsuitable location.  The word litter can also be used as a verb; to litter means to drop and leave objects, often man-made, such as aluminum cans, paper cups, food wrappers, cardboard boxes or plastic bottles on the ground, and leave them there indefinitely or for other people to dispose of as opposed to disposing of them correctly."^^xsd:string .
+
+:observer a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "observer"^^xsd:string .
+
+<http://scientificvariablesontology.org/svo/role/outlet~terminal> a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "outlet~terminal"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/terminal> ;
+    svo:has_role_root :outlet .
+
+:oxidizer a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "oxidizer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q187689"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Oxidizing_agent"^^xsd:string ;
+    rdfs:comment "An oxidizing agent (also known as an oxidant, oxidizer, electron recipient, or electron acceptor) is a substance in a redox chemical reaction that gains or \"accepts\"/\"receives\" an electron from a reducing agent (called the reductant, reducer, or electron donor). In other words, an oxidizer is any substance that oxidizes another substance. The oxidation state, which describes the degree of loss of electrons, of the oxidizer decreases while that of the reductant increases; this is expressed by saying that oxidizers \"undergo reduction\" and \"are reduced\" while reducers \"undergo oxidation\" and \"are oxidized\"."^^xsd:string .
+
+:pasture a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "pasture"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q30121"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pasture"^^xsd:string ;
+    rdfs:comment "Pasture (from the Latin pastus, past participle of pascere, \"to feed\") is land used for grazing. Pasture lands in the narrow sense are enclosed tracts of farmland, grazed by domesticated livestock, such as horses, cattle, sheep, or swine. The vegetation of tended pasture, forage, consists mainly of grasses, with an interspersion of legumes and other forbs (non-grass herbaceous plants). Pasture is typically grazed throughout the summer, in contrast to meadow which is ungrazed or used for grazing only after being mown to make hay for animal fodder. Pasture in a wider sense additionally includes rangelands, other unenclosed pastoral systems, and land types used by wild animals for grazing or browsing."^^xsd:string .
+
+:payload a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "payload"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7641034"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Payload"^^xsd:string ;
+    rdfs:comment "Payload is the object or the entity which is being carried by an aircraft or launch vehicle. Sometimes payload also refers to the carrying capacity of an aircraft or launch vehicle, usually measured in terms of weight. Depending on the nature of the flight or mission, the payload of a vehicle may include cargo, passengers, flight crew, munitions, scientific instruments or experiments, or other equipment. Extra fuel, when optionally carried, is also considered part of the payload.In a commercial context (i.e., an airline or air freight carrier), payload may refer only to revenue-generating cargo or paying passengers. A payload of ordnance carried by a combat aircraft is sometimes alternatively referred to as the aircraft's warload."^^xsd:string .
+
+:product a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "product"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q542929"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Product_(chemistry)"^^xsd:string ;
+    rdfs:comment "Products are the species formed from chemical reactions. During a chemical reaction, reactants are transformed into products after passing through a high energy transition state. This process results in the consumption of the reactants. It can be a spontaneous reaction or mediated by catalysts which lower the energy of the transition state, and by solvents which provide the chemical environment necessary for the reaction to take place. When represented in chemical equations, products are by convention drawn on the right-hand side, even in the case of reversible reactions. The properties of products such as their energies help determine several characteristics of a chemical reaction, such as whether the reaction is exergonic or endergonic. Additionally, the properties of a product can make it easier to extract and purify following a chemical reaction, especially if the product has a different state of matter than the reactants."^^xsd:string .
+
+:projectile a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "projectile"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q49393"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Projectile"^^xsd:string ;
+    rdfs:comment "A projectile is an object that is propelled by the application of an external force and then moves freely under the influence of gravity and air resistance. Although any objects in motion through space are projectiles, they are commonly found in warfare and sports (for example, a thrown baseball, kicked football, fired bullet, shot arrow, stone released from catapult).In ballistics mathematical equations of motion are used to analyze projectile trajectories through launch, flight, and impact."^^xsd:string .
+
+:propellant a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "propellant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1364934"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Propellant"^^xsd:string ;
+    rdfs:comment "A propellant (or propellent) is a mass that is expelled or expanded in such a way as to create a thrust or another motive force in accordance with Newton's third law of motion, and \"propel\" a vehicle, projectile, or fluid payload. In vehicles, the engine that expels the propellant is called a reaction engine. Although technically a propellant is the reaction mass used to create thrust, the term \"propellant\" is often used to describe a substance which is contains both the reaction mass and the fuel that holds the energy used to accelerate the reaction mass. For example, the term \"propellant\" is often used in chemical rocket design to describe a combined fuel/propellant, although the propellants should not be confused with the fuel that is used by an engine to produce the energy that expels the propellant. Even though the byproducts of substances used as fuel are also often used as a reaction mass to create the thrust, such as with a chemical rocket engine, propellant and fuel are two distinct concepts."^^xsd:string .
+
+<http://scientificvariablesontology.org/svo/role/residue~remaining> a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "residue~remaining"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/remaining> ;
+    svo:has_role_root :residue .
+
+<http://scientificvariablesontology.org/svo/role/residue~removed> a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "residue~removed"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/removed> ;
+    svo:has_role_root :residue .
+
+<http://scientificvariablesontology.org/svo/role/residue~retained> a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "residue~retained"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/retained> ;
+    svo:has_role_root :residue .
+
+<http://scientificvariablesontology.org/svo/role/residue~standing> a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "residue~standing"^^xsd:string ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/standing> ;
+    svo:has_role_root :residue .
+
+:scatterer a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "scatterer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q210028"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Scattering"^^xsd:string ;
+    rdfs:comment "Scattering is a term used in physics to describe a wide range of physical processes where moving particles or radiation of some form, such as light or sound, are forced to deviate from a straight trajectory by localized non-uniformities (including particles and radiation) in the medium through which they pass. In conventional use, this also includes deviation of reflected radiation from the angle predicted by the law of reflection. Reflections of radiation that undergo scattering are often called diffuse reflections and unscattered reflections are called specular (mirror-like) reflections. Originally, the term was confined to light scattering (going back at least as far as Isaac Newton in the 17th century). As more \"ray\"-like phenomena were discovered, the idea of scattering was extended to them, so that William Herschel could refer to the scattering of \"heat rays\" (not then recognized as electromagnetic in nature) in 1800. John Tyndall, a pioneer in light scattering research, noted the connection between light scattering and acoustic scattering in the 1870s. Near the end of the 19th century, the scattering of cathode rays (electron beams) and X-rays was observed and discussed. With the discovery of subatomic particles (e.g. Ernest Rutherford in 1911) and the development of quantum theory in the 20th century, the sense of the term became broader as it was recognized that the same mathematical frameworks used in light scattering could be applied to many other phenomena."^^xsd:string .
+
+:scuba-diver a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "scuba-diver"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1096878"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Scuba_diving"^^xsd:string ;
+    rdfs:comment "Scuba diving is a mode of underwater diving whereby divers use breathing equipment that is completely independent of a surface air supply, and therefore has a limited but variable endurance. The name \"scuba\", an acronym for \"Self-Contained Underwater Breathing Apparatus\", was coined by Christian J. Lambertsen in a patent submitted in 1952. Scuba divers carry their own source of breathing gas, usually compressed air, affording them greater independence and movement than surface-supplied divers, and more time underwater than free divers. Although the use of compressed air is common, a gas blend with a higher oxygen content, known as enriched air or nitrox, has become popular due to the reduced nitrogen intake during long and/or repetitive dives. Also, breathing gas diluted with helium may be used to reduce the likelihood and effects of nitrogen narcosis during deeper dives."^^xsd:string .
+
+:sink a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "sink"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q140565"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wiktionary.org/wiki/sink#Noun"^^xsd:string ;
+    rdfs:comment "A sink is a bowl-shaped plumbing fixture for washing hands, dishwashing, and other purposes. Sinks have a tap (faucet) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water; this drain may itself include a strainer and/or shut-off device and an overflow-prevention device. Sinks may also have an integrated soap dispenser. Many sinks, especially in kitchens, are installed adjacent to or inside a counter."^^xsd:string .
+
+:skydiver a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "skydiver"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q193210"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Parachuting"^^xsd:string ;
+    rdfs:comment "Parachuting, including also skydiving, is a method of transiting from a high point in the atmosphere to the surface of Earth with the aid of gravity, involving the control of speed during the descent using a parachute or parachutes."^^xsd:string .
+
+:solvent a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "solvent"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q146505"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Solvent"^^xsd:string ;
+    rdfs:comment "A solvent (from the Latin solvō, \"loosen, untie, solve\") is a substance that dissolves a solute, resulting in a solution. A solvent is usually a liquid but can also be a solid, a gas, or a supercritical fluid. Water is a solvent for polar molecules and the most common solvent used by living things; all the ions and proteins in a cell are dissolved in water within the cell."^^xsd:string .
+
+:source a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "source"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q224772"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wiktionary.org/wiki/source#Noun"^^xsd:string ;
+    rdfs:comment "Source may refer to:"^^xsd:string .
+
+:substrate a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "substrate"^^xsd:string .
+
+:target a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "target"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q230479"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Target"^^xsd:string ;
+    rdfs:comment "Target may refer to:              "^^xsd:string .
+
+:tracer a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "tracer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q447106"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tracer"^^xsd:string ;
+    rdfs:comment "Tracer may refer to:"^^xsd:string .
+
+:waste a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "waste"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q45701"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Waste"^^xsd:string ;
+    rdfs:comment "Waste (or wastes) are unwanted or unusable materials. Waste is any substance discarded after primary use, or is worthless, defective and of no use. A by-product, by contrast is a joint product of relatively minor economic value. A waste product may become a by-product, joint product or resource through an invention that raises a waste product's value above zero. "^^xsd:string .
+
+:water-source a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "water-source"^^xsd:string .
+
+:weed a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "weed"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q101879"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Weed"^^xsd:string ;
+    rdfs:comment "A weed is a plant considered undesirable in a particular situation, growing where it is not wanted. The concept of weeds is particularly significant in agriculture, where the aim is growing crops or pastures of a single species, or a mixture of a few desired species. In such environments, other plant species are considered undesirable and therefore weeds. Besides, some weeds have undesirable characteristics making them a plant pest in most human settings.Examples of weeds are plants unwanted in human-controlled settings, such as farm land, orchards, gardens, lawns, parks, residential and industrial areas. Taxonomically though, the term \"weed\" has no botanical significance, because a plant that is a weed in one context, is not a weed when growing in a situation where it is wanted. In the same way, volunteer plants are regarded as weeds in a subsequent crop. Some plants that are widely regarded as weeds are intentionally grown in gardens and other cultivated settings, in which case they are sometimes called beneficial weeds. The term weed is also applied to any plant that grows or reproduces aggressively, or is invasive outside its native habitat.More broadly, the term \"weed\" is occasionally applied pejoratively to species outside the plant kingdom, species that can survive in diverse environments and reproduce quickly; in this sense it has even been applied to humans.Weed control is important in agriculture and horticulture. Methods include hand cultivation with hoes, powered cultivation with cultivators, smothering with mulch or soil solarization, lethal wilting with high heat, burning, or chemical attack with herbicides and cultural methods such as  crop rotation and fallowing land to reduce the weed population."^^xsd:string .
+
+:crop a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "crop"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q235352"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Crop"^^xsd:string ;
+    rdfs:comment "A crop is a plant that can be grown and harvested extensively for profit or subsistence. When the plants of the same kind are cultivated at one place on a large scale, it is called a crop. Most crops are cultivated in agriculture or hydroponics. Crops may include macroscopic fungus (e.g. mushrooms) and marine macroalga (e.g. seaweed), some of which are grown in aquaculture."^^xsd:string .
+
+:outlet a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "outlet"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7112160"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wiktionary.org/wiki/outlet#Noun"^^xsd:string ;
+    rdfs:comment "Outlet may refer to:"^^xsd:string .
+
+:residue a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "residue"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5187955"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Crop_residue"^^xsd:string ;
+    rdfs:comment "Crop residues are waste materials generated by agriculture. The two types are:"^^xsd:string .
+

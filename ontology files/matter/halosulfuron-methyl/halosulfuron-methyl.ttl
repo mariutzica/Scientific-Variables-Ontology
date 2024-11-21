@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:halosulfuron-methyl a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "halosulfuron-methyl"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q22808250"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Halosulfuron-methyl"^^xsd:string ;
+    rdfs:comment "Halosulfuron-methyl is a sulfonylurea post-emergence herbicide used to control some annual and perennial broad-leaved weeds and sedges (such as nutsedge/nutgrass) in a range of crops (particularly rice), established landscape woody ornamentals and turfgrass. It is marketed under several tradenames including Sedgehammer and Sandea."^^xsd:string .
+

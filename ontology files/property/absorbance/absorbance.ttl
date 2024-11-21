@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:absorbance a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "absorbance"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q907315"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Absorbance"^^xsd:string ;
+    rdfs:comment "Absorbance is  defined as \"the logarithm of the ratio of incident to transmitted radiant power through a sample (excluding the effects on cell walls)\". Alternatively, for samples which scatter light, absorbance may be defined as \"the negative logarithm of one minus absorptance, as measured on a uniform sample\". The term is used in many technical areas to quantify the results of an experimental measurement. While the term has its origin in quantifying the absorption of light, it is often entangled with quantification of light which is “lost” to a detector system through other mechanisms. What these uses of the term tend to have in common is that they refer to a logarithm of the ratio of a quantity of light incident on a sample or material to that which is detected after the light has interacted with the sample.  "^^xsd:string .
+

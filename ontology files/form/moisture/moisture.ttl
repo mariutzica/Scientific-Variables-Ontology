@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:moisture a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "moisture"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q217651"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Moisture"^^xsd:string ;
+    rdfs:comment "Moisture is the presence of a liquid, especially water, often in trace amounts. Small amounts of water may be found, for example, in the air (humidity), in foods, and in some commercial products. Moisture also refers to the amount of water vapor present in the air."^^xsd:string .
+

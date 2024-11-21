@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:strouhal_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "strouhal_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q646627"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Strouhal_number"^^xsd:string ;
+    rdfs:comment "In dimensional analysis, the Strouhal number (St, or sometimes Sr to avoid the conflict with the Stanton number) is a dimensionless number describing oscillating flow mechanisms. The parameter is named after Vincenc Strouhal, a Czech physicist who experimented in 1878 with wires experiencing vortex shedding and singing in the wind. The Strouhal number is an integral part of the fundamentals of fluid mechanics."^^xsd:string .
+

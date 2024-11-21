@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cumacea a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "cumacea"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q72554"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cumacea"^^xsd:string ;
+    rdfs:comment "Cumacea is an order of small marine crustaceans of the superorder Peracarida, occasionally called hooded shrimp or comma shrimp. Their unique appearance and uniform body plan makes them easy to distinguish from other crustaceans. They live in soft-bottoms such as mud and sand, mostly in the marine environment. There are more than 1,500 species of cumaceans formally described. The species diversity of Cumacea increases with depth."^^xsd:string .
+

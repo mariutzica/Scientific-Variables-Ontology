@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28station-is-location-of-channel%29-has-property-%28hydraulic-geometry_depth-vs-discharge_exponent%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/station-is-location-of-channel"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/hydraulic-geometry_depth-vs-discharge_exponent"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/station"/>
+  <svo:contains_form_reference_to rdf:resource="http://scientificvariablesontology.org/svo/form/channel"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">station_channel__hydraulic-geometry_depth-vs-discharge_exponent</rdfs:label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">channel__station_hydraulic_geometry_depth-vs-discharge_exponent</svo:has_original_label>
+</owl:NamedIndividual>
+</rdf:RDF>

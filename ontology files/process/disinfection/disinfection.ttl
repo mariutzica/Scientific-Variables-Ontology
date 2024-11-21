@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:disinfection a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "disinfection"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q73984"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Disinfection"^^xsd:string ;
+    rdfs:comment "antimicrobial agent that is applied to non-living objects (compare: antisepsis) to reduce the number of microorganisms (unwanted germs and parasites) on them (compare:sterilization)"^^xsd:string .
+

@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:n-tetracosane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "n-tetracosane"^^xsd:string ;
+    svo:has_synonym "Tetracosane"^^xsd:string,
+        "tetrakosane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q150988"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tetracosane"^^xsd:string ;
+    rdfs:comment "Tetracosane, also called tetrakosane, is an alkane hydrocarbon with the structural formula H(CH2)24H. As with other alkanes, its name is derived from Greek for the number of carbon atoms, 24, in the molecule. It has 14,490,245 constitutional isomers, and 252,260,276 stereoisomers.n-Tetracosane is found in mineral called evenkite in the Evenki Region on Lower Tunguska River in Siberia and the Bucnik quarry near Konma in eastern Moravia, in former Czechoslovakia. Evenkite is found as colourless flakes and is reported to fluoresce yellow-orange."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:price_index a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "price_index"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q631360"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Price_index"^^xsd:string ;
+    rdfs:comment "A price index (plural: \"price indices\" or \"price indexes\") is a normalized average (typically a weighted average) of price relatives for a given class of goods or  services in a given region, during a given interval of time.  It is a statistic designed to help to compare how these price relatives, taken as a whole, differ between time periods or geographical locations."^^xsd:string .
+

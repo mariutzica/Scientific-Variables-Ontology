@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:crystal a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "crystal"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q43533"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Crystal"^^xsd:string ;
+    rdfs:comment "A crystal or crystalline solid is a solid material whose constituents (such as atoms, molecules, or ions) are arranged in a highly ordered microscopic structure, forming a crystal lattice that extends in all directions. In addition, macroscopic single crystals are usually identifiable by their geometrical shape, consisting of flat faces with specific, characteristic orientations. The scientific study of crystals and crystal formation is known as crystallography. The process of crystal formation via mechanisms of crystal growth is called crystallization or solidification."^^xsd:string .
+

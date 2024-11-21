@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:asellidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "asellidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1649470"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Asellidae"^^xsd:string ;
+    rdfs:comment "The Asellidae are a family of isopod crustaceans, one of the largest families of freshwater isopods, living in both epigean and hypogean habitats in North America and Europe. The family includes these genera:"^^xsd:string .
+

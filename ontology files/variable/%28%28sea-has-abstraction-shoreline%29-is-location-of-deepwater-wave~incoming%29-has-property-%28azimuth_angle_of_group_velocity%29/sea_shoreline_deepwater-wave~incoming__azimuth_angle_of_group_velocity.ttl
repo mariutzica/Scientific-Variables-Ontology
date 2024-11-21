@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28sea-has-abstraction-shoreline%29-is-location-of-deepwater-wave~incoming%29-has-property-%28azimuth_angle_of_group_velocity%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "sea_shoreline_deepwater-wave~incoming__azimuth_angle_of_group_velocity"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/shoreline> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/azimuth_angle> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/deepwater-wave>,
+        <http://scientificvariablesontology.org/svo/phenomenon/sea> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/azimuth_angle>,
+        <http://scientificvariablesontology.org/svo/property/group_velocity> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28sea-has-abstraction-shoreline%29-is-location-of-deepwater-wave~incoming> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/azimuth_angle_of_group_velocity> ;
+    svo:has_original_label "sea_shoreline_wave~incoming~deepwater__azimuth_angle_of_group_velocity"^^xsd:string .
+

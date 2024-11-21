@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:contraception a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "contraception"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q122224"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Birth_control"^^xsd:string ;
+    rdfs:comment "Birth control, also known as contraception, anticonception, and fertility control, is the use of methods or devices to prevent unintended pregnancy. Birth control has been used since ancient times, but effective and safe methods of birth control only became available in the 20th century. Planning, making available, and using human birth control is called family planning. Some cultures limit or discourage access to birth control because they consider it to be morally, religiously, or politically undesirable."^^xsd:string .
+

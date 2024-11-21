@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:formaldehyde a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "formaldehyde"^^xsd:string ;
+    svo:has_synonym "methanal"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q161210"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Formaldehyde"^^xsd:string ;
+    rdfs:comment "Formaldehyde ( (listen) for-MAL-di-hide, US also  (listen) fər-) (systematic name methanal) is a naturally occurring organic compound with the formula CH2O and structure H−CHO. The pure compound is a pungent, colourless gas that polymerises spontaneously into paraformaldehyde (refer to section Forms below), hence it is stored as an aqueous solution (formalin), which is also used to store animal specimens. It is the simplest of the aldehydes (R−CHO) and one of the simplest of the carbohydrates. The common name of this substance comes from its similarity and relation to formic acid."^^xsd:string .
+

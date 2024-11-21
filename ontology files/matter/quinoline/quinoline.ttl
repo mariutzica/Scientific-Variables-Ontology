@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:quinoline a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "quinoline"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q408384"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Quinoline"^^xsd:string ;
+    rdfs:comment "Quinoline is a heterocyclic aromatic organic compound with the chemical formula C9H7N.  It is a colorless hygroscopic liquid with a strong odor. Aged samples, especially if exposed to light, become yellow and later brown.  Quinoline is only slightly soluble in cold water but dissolves readily in hot water and most organic solvents. Quinoline itself has few applications, but many of its  derivatives are useful in diverse applications. A prominent example is quinine, an alkaloid found in plants. Over 200 biologically active quinoline and quinazoline alkaloids are identified. 4-Hydroxy-2-alkylquinolines (HAQs) are involved in antibiotic resistance."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:exhalation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "exhalation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2197000"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Exhalation"^^xsd:string ;
+    rdfs:comment "Exhalation (or expiration) is the flow of the breath out of an organism. In animals, it is the movement of air from the lungs out of the airways, to the external environment during breathing."^^xsd:string .
+

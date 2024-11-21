@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tannin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tannin"^^xsd:string ;
+    svo:has_synonym "tannoid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q187607"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tannin"^^xsd:string ;
+    rdfs:comment "Tannins (or tannoids) are a class of astringent, polyphenolic biomolecules that bind to and precipitate proteins and various other organic compounds including amino acids and alkaloids."^^xsd:string .
+

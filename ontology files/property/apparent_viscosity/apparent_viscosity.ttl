@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:apparent_viscosity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "apparent_viscosity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4780934"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Apparent_viscosity"^^xsd:string ;
+    rdfs:comment "In fluid mechanics, apparent viscosity (sometimes denoted η) is the shear stress applied to a fluid divided by the shear rate: "^^xsd:string .
+

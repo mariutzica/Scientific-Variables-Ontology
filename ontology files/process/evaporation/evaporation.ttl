@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:evaporation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "evaporation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q132814"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Evaporation"^^xsd:string ;
+    rdfs:comment "Evaporation is a type of vaporization that occurs on the surface of a liquid as it changes into the gas phase. High concentration of the evaporating substance in the surrounding gas significantly slows down evaporation, such as when humidity affects rate of evaporation of water. When the molecules of the liquid collide, they transfer energy to each other based on how they collide. When a molecule near the surface absorbs enough energy to overcome the vapor pressure, it will escape and enter the surrounding air as a gas. When evaporation occurs, the energy removed from the vaporized liquid will reduce the temperature of the liquid, resulting in evaporative cooling.On average, only a fraction of the molecules in a liquid have enough heat energy to escape from the liquid. The evaporation will continue until an equilibrium is reached when the evaporation of the liquid is equal to its condensation. In an enclosed environment, a liquid will evaporate until the surrounding air is saturated."^^xsd:string .
+

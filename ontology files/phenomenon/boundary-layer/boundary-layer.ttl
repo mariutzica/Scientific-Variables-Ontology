@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:boundary-layer a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "boundary-layer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q752193"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Boundary_layer"^^xsd:string ;
+    rdfs:comment "In physics and fluid mechanics, a boundary layer is the thin layer of fluid in the immediate vicinity of a bounding surface formed by the fluid flowing along the surface.  The fluid's interaction with the wall induces a no-slip boundary condition (zero velocity at the wall).  The flow velocity then monotonically increases above the surface until it returns to the bulk flow velocity.  The thin layer consisting of fluid whose velocity has not yet returned to the bulk flow velocity is called the velocity boundary layer."^^xsd:string .
+

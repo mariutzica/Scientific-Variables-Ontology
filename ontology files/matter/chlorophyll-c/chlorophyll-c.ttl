@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlorophyll-c a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chlorophyll-c"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q106695114"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chlorophyll_c"^^xsd:string ;
+    rdfs:comment "Chlorophyll c refers to forms of chlorophyll found in certain marine algae, including the photosynthetic Chromista (e.g. diatoms and brown algae) and dinoflagellates. These pigments are characterized by their unusual chemical structure, with a porphyrin as opposed to the chlorin (which has a reduced ring D) as the core; they also do not have an isoprenoid tail. Both these features stand out from the other chlorophylls commonly found in algae and plants.It has a blue-green color and is an accessory pigment, particularly significant in its absorption of light in the 447–52 nm wavelength region. Like chlorophyll a and chlorophyll b, it helps the organism gather light and passes a quanta of excitation energy through the light harvesting antennae to the photosynthetic reaction centre.Chlorophyll c can be further divided into chlorophyll c1, chlorophyll c2, and chlorophyll c3, plus at least eight other more recently found subtypes."^^xsd:string .
+

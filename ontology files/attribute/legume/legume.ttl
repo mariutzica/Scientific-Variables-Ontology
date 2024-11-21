@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:legume a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "legume"^^xsd:string ;
+    svo:has_synonym "pulse"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q145909"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Legume"^^xsd:string ;
+    rdfs:comment "A legume () is a plant in the family Fabaceae (or Leguminosae), or the fruit or seed of such a plant. When used as a dry grain, the seed is also called a pulse. Legumes are grown agriculturally, primarily for human consumption, for livestock forage and silage, and as soil-enhancing green manure.  Well-known legumes include beans, soybeans, chickpeas, peanuts, lentils, lupins, mesquite, carob, tamarind, alfalfa, and clover. Legumes produce a botanically unique type of fruit – a simple dry fruit that develops from a simple carpel and usually dehisces (opens along a seam) on two sides."^^xsd:string .
+

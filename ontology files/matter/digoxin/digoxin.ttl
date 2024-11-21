@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:digoxin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "digoxin"^^xsd:string ;
+    svo:has_synonym "lanoxin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q422222"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Digoxin"^^xsd:string ;
+    rdfs:comment "Digoxin (better known as Digitalis), sold under the brand name Lanoxin among others, is a medication used to treat various heart conditions. Most frequently it is used for atrial fibrillation, atrial flutter, and heart failure. Digoxin is one of the oldest medications used in the field of cardiology. It works by increasing myocardial contractility, increasing stroke volume and blood pressure, reducing heart rate, and somewhat extending the time frame of the contraction. Digoxin is taken by mouth or by injection into a vein. Digoxin has a half life of approximately 36 hours given at average doses in patients with normal renal function. It is excreted mostly unchanged in the urine."^^xsd:string .
+

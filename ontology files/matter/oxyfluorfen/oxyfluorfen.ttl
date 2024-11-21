@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:oxyfluorfen a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "oxyfluorfen"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2338639"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Oxyfluorfen"^^xsd:string ;
+    rdfs:comment "Oxyfluorfen is a chemical compound used as an herbicide. It is manufactured by Dow AgroSciences and Adama Agricultural Solutions under the trade names Goal and Galigan. Oxyfluorfen is used to control broadleaf and grassy weeds in a variety of nut, tree fruit, vine, and field crops, especially wine grapes and almonds. It is also used for residential weed control."^^xsd:string .
+

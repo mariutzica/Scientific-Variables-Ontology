@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:interpolation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "interpolation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q187631"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Interpolation"^^xsd:string ;
+    rdfs:comment "In the mathematical field of numerical analysis, interpolation is a type of estimation, a method of constructing (finding) new data points based on the range of a discrete set of known data points.In engineering and science, one often has a number of data points, obtained by sampling or experimentation, which represent the values of a function for a limited number of values of the independent variable. It is often required to interpolate; that is, estimate the value of that function for an intermediate value of the independent variable."^^xsd:string .
+

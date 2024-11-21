@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:carp a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "carp"^^xsd:string ;
+    svo:has_synonym "hypophthalmichthys"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2751223"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Carp"^^xsd:string ;
+    rdfs:comment "Carp are various species of oily freshwater fish from the family Cyprinidae, a very large group of fish native to Europe and Asia. While carp is consumed in many parts of the world, they are generally considered an invasive species in parts of Africa, Australia and most of the United States."^^xsd:string .
+

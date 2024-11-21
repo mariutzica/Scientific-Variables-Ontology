@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/property/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/property/">
+<owl:NamedIndividual rdf:about="stress">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stress</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Stress_(mechanics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q206175</svo:has_wikidata_page>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mechanical_stress</svo:has_synonym>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In continuum mechanics, stress is a physical quantity that describes forces present during deformation. An object being pulled apart, such as a stretched elastic band, is subject to tensile stress and may undergo elongation. An object being pushed together, such as a crumpled sponge, is subject to compressive stress and may undergo shortening. The greater the force and the smaller the cross-sectional area of the body on which it acts, the greater the stress. Stress has units of force per area, such as newtons per square meter (N/m2) or pascal (Pa).</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

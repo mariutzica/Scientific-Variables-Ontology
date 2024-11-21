@@ -1,0 +1,12 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28steel-spring%29-has-property-%28hooke-law_coefficient%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "steel-spring__hooke-law_coefficient"^^xsd:string ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/steel-spring> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/hooke-law_coefficient> ;
+    svo:has_original_label "spring~steel__hooke_law_coefficient"^^xsd:string .
+

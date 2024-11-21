@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28channel-contains-water%29-as-main-%28channel-has-part-bottom-has-abstraction-surface%29-as-main%29-has-property-%28product_of_depth_and_slope%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "channel_water_channel_bottom_surface__product_of_depth_and_slope"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/surface> ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/channel> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/product> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/bottom> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/depth>,
+        <http://scientificvariablesontology.org/svo/property/slope> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28channel-contains-water%29-as-main-%28channel-has-part-bottom-has-abstraction-surface%29-as-main> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/product_of_depth_and_slope> ;
+    svo:has_original_label "channel_water__depth-times-bottom-surface-slope"^^xsd:string .
+

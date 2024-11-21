@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:light-bulb a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "light-bulb"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1326621"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Electric_light"^^xsd:string ;
+    rdfs:comment "An electric light, lamp, or light bulb is an electrical component that produces light. It is the most common form of artificial lighting. Lamps usually have a base made of ceramic, metal, glass, or plastic, which secures the lamp in the socket of a light fixture, which is often called a \"lamp\" as well. The electrical connection to the socket may be made with a screw-thread base, two metal pins, two metal caps or a bayonet cap."^^xsd:string .
+

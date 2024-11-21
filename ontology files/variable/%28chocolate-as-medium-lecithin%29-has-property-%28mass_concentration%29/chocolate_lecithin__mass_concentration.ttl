@@ -1,0 +1,13 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28chocolate-as-medium-lecithin%29-has-property-%28mass_concentration%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "chocolate_lecithin__mass_concentration"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/chocolate>,
+        <http://scientificvariablesontology.org/svo/matter/lecithin> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/chocolate-as-medium-lecithin> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mass_concentration> .
+

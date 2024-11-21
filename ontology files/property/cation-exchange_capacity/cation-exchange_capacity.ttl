@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cation-exchange_capacity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "cation-exchange_capacity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q898477"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cation-exchange_capacity"^^xsd:string ;
+    rdfs:comment "Cation-exchange capacity (CEC) is a measure of how many cations can be retained on soil particle surfaces. Negative charges on the surfaces of soil particles bind positively-charged atoms or molecules (cations), but allow these to exchange with other positively charged particles in the surrounding soil water. This is one of the ways that solid materials in soil alter the chemistry of the soil. CEC affects many aspects of soil chemistry, and is used as a measure of soil fertility, as it indicates the capacity of the soil to retain several nutrients (e.g. K+, NH4+, Ca2+) in plant-available form. It also indicates the capacity to retain pollutant cations (e.g. Pb2+)."^^xsd:string .
+

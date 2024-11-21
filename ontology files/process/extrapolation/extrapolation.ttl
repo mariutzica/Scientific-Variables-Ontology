@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:extrapolation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "extrapolation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q744069"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Extrapolation"^^xsd:string ;
+    rdfs:comment "In mathematics, extrapolation is a type of estimation, beyond the original observation range, of the value of a variable on the basis of its relationship with another variable. It is similar to interpolation, which produces estimates between known observations, but extrapolation is subject to greater uncertainty and a higher risk of producing meaningless results.  Extrapolation may also mean extension of a method, assuming similar methods will be applicable. Extrapolation may also apply to human experience to project, extend, or expand known experience into an area not known or previously experienced so as to arrive at a (usually conjectural) knowledge of the unknown (e.g. a driver extrapolates road conditions beyond his sight while driving). The extrapolation method can be applied in the interior reconstruction problem."^^xsd:string .
+

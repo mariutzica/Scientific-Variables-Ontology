@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:triphenyl-phosphate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "triphenyl-phosphate"^^xsd:string ;
+    svo:has_synonym "tphp"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q418573"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Triphenyl_phosphate"^^xsd:string ;
+    rdfs:comment "Triphenyl phosphate (TPhP) is the chemical compound with the formula OP(OC6H5)3. This colourless solid is the ester (triester) of phosphoric acid and phenol. It is used as a plasticizer and a fire retardant in a wide variety of settings and products."^^xsd:string .
+

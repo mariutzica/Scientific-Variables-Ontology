@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dichlorofluoromethane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dichlorofluoromethane"^^xsd:string ;
+    svo:has_synonym "freon-21"^^xsd:string,
+        "r-21"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q418163"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dichlorofluoromethane"^^xsd:string ;
+    rdfs:comment "Dichlorofluoromethane or Freon 21 or R 21 is a halomethane or hydrochlorofluorocarbon with the formula CHCl2F. It is a colorless and odorless gas.  It is produced by fluorination of chloroform using a catalyst such as antimony trifluoride:"^^xsd:string .
+

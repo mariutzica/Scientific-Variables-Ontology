@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sulfate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "sulfate"^^xsd:string ;
+    svo:has_synonym "sulphate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q172290"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sulfate"^^xsd:string ;
+    rdfs:comment "The sulfate or sulphate ion is a polyatomic anion with the empirical formula SO2−4. Salts, acid derivatives, and peroxides of sulfate are widely used in industry. Sulfates occur widely in everyday life. Sulfates are salts of sulfuric acid and many are prepared from that acid."^^xsd:string .
+

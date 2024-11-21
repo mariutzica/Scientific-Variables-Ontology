@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:normalized_distance a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "normalized_distance"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7051852"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Normalized_compression_distance"^^xsd:string ;
+    rdfs:comment "Normalized compression distance (NCD) is a way of measuring the similarity between two objects, be it two documents, two letters, two emails, two music scores, two languages, two programs, two pictures, two systems,  two genomes, to name a few. Such a measurement should not be application dependent or arbitrary.  A reasonable definition for the similarity between two objects is how difficult it is to transform them into each other."^^xsd:string .
+

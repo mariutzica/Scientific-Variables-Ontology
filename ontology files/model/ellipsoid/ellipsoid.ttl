@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ellipsoid a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "ellipsoid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q190046"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Ellipsoid"^^xsd:string ;
+    rdfs:comment "An ellipsoid is a surface that may be obtained from a sphere by deforming it by means of directional scalings, or more generally, of an affine transformation."^^xsd:string .
+

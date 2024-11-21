@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bighead-carp a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "bighead-carp"^^xsd:string ;
+    svo:has_synonym "hypophthalmichthys nobilis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q754164"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bighead_carp"^^xsd:string ;
+    rdfs:comment "The bighead carp (Hypophthalmichthys nobilis) is a species of cyprinid freshwater fish native to East Asia, and is one of several Asian carps introduced into North America. It is one of the most intensively exploited fishes in fish farming, with an annual worldwide production of over three million tonnes in 2013, principally from China. Unlike the omnivorous common carp, bighead carp are primarily filter-feeders, preferentially consuming zooplankton but also phytoplankton and detritus."^^xsd:string .
+

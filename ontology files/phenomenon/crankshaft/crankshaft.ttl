@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:crankshaft a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "crankshaft"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q49718"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Crankshaft"^^xsd:string ;
+    rdfs:comment "A crankshaft is a mechanical component used in a piston engine to convert the reciprocating motion into rotational motion. The crankshaft is a rotating shaft containing one or more crankpins, that are driven by the pistons via the connecting rods.The crankpins are also called rod bearing journals, and they rotate within the \"big end\" of the connecting rods."^^xsd:string .
+

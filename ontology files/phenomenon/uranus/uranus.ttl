@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:uranus a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "uranus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q324"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Uranus"^^xsd:string ;
+    rdfs:comment "Uranus is the seventh planet from the Sun. It is named after Greek sky deity Uranus (Caelus), who in Greek mythology is the father of Cronus (Saturn), a grandfather of Zeus (Jupiter) and great-grandfather of Ares (Mars). Uranus has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. The planet is similar in composition to Neptune, and both have bulk chemical compositions which differ from those of the other two giant planets, Jupiter and Saturn (the gas giants). For this reason, scientists often distinguish Uranus and Neptune as \"ice giants\". "^^xsd:string .
+

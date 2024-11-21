@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:winnowing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "winnowing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q961751"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Winnowing"^^xsd:string ;
+    rdfs:comment "Winnowing is a process by which chaff is separated from grain. It can also be used to remove pests from stored grain. Winnowing usually follows threshing in grain preparation. In its simplest form, it involves throwing the mixture into the air so that the wind blows away the lighter chaff, while the heavier grains fall back down for recovery. Techniques included using a winnowing fan (a shaped basket shaken to raise the chaff) or using a tool (a winnowing fork or shovel) on a pile of harvested grain."^^xsd:string .
+

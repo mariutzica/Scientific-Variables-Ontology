@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28atmosphere-has-part-bottom%29-contains-air%29-has-property-%28min_of_temperature%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "atmosphere_bottom_air__min_of_temperature"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/air> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/min> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/bottom> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/atmosphere> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/temperature> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28atmosphere-has-part-bottom%29-contains-air> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/min_of_temperature> .
+

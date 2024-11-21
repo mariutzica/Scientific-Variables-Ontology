@@ -1,0 +1,17 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:garbage a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "garbage"^^xsd:string ;
+    svo:has_synonym "refuse"^^xsd:string,
+        "rubbish"^^xsd:string,
+        "trash"^^xsd:string,
+        "waste"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q48995880"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Garbage"^^xsd:string ;
+    rdfs:comment "Garbage, trash, rubbish, or refuse is waste material that is discarded by humans, usually due to a perceived lack of utility. The term generally does not encompass bodily waste products, purely liquid or gaseous wastes, or toxic waste products. Garbage is commonly sorted and classified into kinds of material suitable for specific kinds of disposal."^^xsd:string .
+

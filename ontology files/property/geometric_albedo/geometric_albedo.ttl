@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:geometric_albedo a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "geometric_albedo"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2832068"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Geometric_albedo"^^xsd:string ;
+    rdfs:comment "In astronomy, the geometric albedo of a celestial body is the ratio of its actual brightness as seen from the light source (i.e. at zero phase angle) to that of an idealized flat, fully reflecting, diffusively scattering (Lambertian) disk with the same cross-section. (This phase angle refers to the direction of the light paths and is not a phase angle in its normal meaning in optics or electronics.)"^^xsd:string .
+

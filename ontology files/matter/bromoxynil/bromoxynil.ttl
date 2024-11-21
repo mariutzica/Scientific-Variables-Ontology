@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bromoxynil a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "bromoxynil"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q408345"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bromoxynil"^^xsd:string ;
+    rdfs:comment "Bromoxynil is an organic compound with the formula HOBr2C6H2CN.  It is classified as a nitrile herbicide, and as such sold under many trade names.  It is a white solid.  It works by inhibiting photosynthesis. It is moderately toxic to mammals."^^xsd:string .
+

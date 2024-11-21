@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fertilizer a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "fertilizer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q83323"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fertilizer"^^xsd:string ;
+    rdfs:comment "A fertilizer (American English) or fertiliser (British English; see spelling differences) is any material of natural or synthetic origin that is applied to soil or to plant tissues to supply plant nutrients. Fertilizers may be distinct from liming materials or other non-nutrient soil amendments. Many sources of fertilizer exist, both natural and industrially produced. For most modern agricultural practices, fertilization focuses on three main macro nutrients: nitrogen (N), phosphorus (P), and potassium (K) with occasional addition of supplements like rock flour for micronutrients. Farmers apply these fertilizers in a variety of ways: through dry or pelletized or liquid application processes, using large agricultural equipment or hand-tool methods."^^xsd:string .
+

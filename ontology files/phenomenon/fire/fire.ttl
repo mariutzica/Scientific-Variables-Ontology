@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fire a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "fire"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3196"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fire"^^xsd:string ;
+    rdfs:comment "Fire is the rapid oxidation of a material (the fuel) in the exothermic chemical process of combustion, releasing heat, light, and various reaction products."^^xsd:string .
+

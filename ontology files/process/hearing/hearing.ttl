@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hearing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "hearing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q160289"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Hearing"^^xsd:string ;
+    rdfs:comment "Hearing, or auditory perception, is the ability to perceive sounds through an organ, such as an ear, by detecting vibrations as periodic changes in the pressure of a surrounding medium. The academic field concerned with hearing is auditory science."^^xsd:string .
+

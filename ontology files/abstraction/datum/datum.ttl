@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:datum a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "datum"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1047519"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Datum_reference"^^xsd:string ;
+    rdfs:comment "A datum reference or just datum (plural: datums) is some important part of an object—such as a point, line, plane, hole, set of holes, or pair of surfaces—that serves as a reference in defining the geometry of the object and (often) in measuring aspects of the actual geometry to assess how closely they match with the nominal value, which may be an ideal, standard, average, or desired value. For example, on a car's wheel, the lug nut holes define a bolt circle that is a datum from which the location of the rim can be defined and measured. This matters because the hub and rim need to be concentric to within close limits (or else the wheel will not roll smoothly). The concept of datums is used in many fields, including carpentry, metalworking, needlework, geometric dimensioning and tolerancing (GD&T), aviation, surveying, geodesy (geodetic datums), and others. "^^xsd:string .
+

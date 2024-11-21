@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:erpobdella a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "erpobdella"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5156106"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Erpobdella"^^xsd:string ;
+    rdfs:comment "Erpobdella is a genus of leeches in the family Erpobdellidae. Members of the genus have three or four pairs of eyes, but never have true jaws, and are typically 20–50 millimetres (0.8–2.0 in) long. All members do not feed on blood, but instead are predators of small aquatic invertebrates, which they often swallow whole."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sulfadimethoxine a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "sulfadimethoxine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4921678"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sulfadimethoxine"^^xsd:string ;
+    rdfs:comment "Sulfadimethoxine (or sulphadimethoxine, trade names Di-Methox or Albon) is a long-lasting sulfonamide antimicrobial medication used in veterinary medicine. It is used to treat many infections, including respiratory, urinary tract, enteric, and soft tissue infections and can be given as a standalone or combined with ormetoprim to broaden the target range. Like all sulfamides, sulfadimethoxine inhibits bacterial synthesis of folic acid by acting as a competitive inhibitor against PABA. It is the most common drug prescribed to dogs who have coccidiosis."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:probability a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "probability"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q9492"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Probability"^^xsd:string ;
+    rdfs:comment "Probability is the branch of mathematics concerning events and numerical descriptions of how likely they are to occur.  The probability of an event is a number between 0 and 1; the larger the probability, the more likely an event is to occur. The higher the probability of an event, the more likely it is that the event will occur. A simple example is the tossing of a fair (unbiased) coin. Since the coin is fair, the two outcomes (\"heads\" and \"tails\") are both equally probable; the probability of \"heads\" equals the probability of \"tails\"; and since no other outcomes are possible, the probability of either \"heads\" or \"tails\" is 1/2 (which could also be written as 0.5 or 50%)."^^xsd:string .
+

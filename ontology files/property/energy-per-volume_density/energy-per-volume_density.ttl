@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:energy-per-volume_density a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "energy-per-volume_density"^^xsd:string ;
+    svo:has_synonym "energy_content"^^xsd:string,
+        "energy_density"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q828402"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Energy_density"^^xsd:string ;
+    rdfs:comment "In physics, energy density is the amount of energy stored in a given system or region of space per unit volume. It is sometimes confused with energy per unit mass which is properly called specific energy or gravimetric energy density."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:rotation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "rotation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q107617"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Rotation"^^xsd:string ;
+    rdfs:comment "Rotation, or spin, is the circular movement of an object around a central axis. A two-dimensional rotating object has only one possible central axis and can rotate in either a clockwise or counterclockwise direction. A three-dimensional object has an infinite number of possible central axes and rotational directions."^^xsd:string .
+

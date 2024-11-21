@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:phenothrin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "phenothrin"^^xsd:string ;
+    svo:has_synonym "d-phenothrin"^^xsd:string,
+        "sumithrin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q999813"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Phenothrin"^^xsd:string ;
+    rdfs:comment "Phenothrin, also called sumithrin and d-phenothrin, is a synthetic pyrethroid that kills adult fleas and ticks. It has also been used to kill head lice in humans. d-Phenothrin is used as a component of aerosol insecticides for domestic use. It is often used with methoprene, an insect growth regulator that interrupts the insect's biological lifecycle by killing the eggs. "^^xsd:string .
+

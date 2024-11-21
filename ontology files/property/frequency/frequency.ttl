@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:frequency a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "frequency"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11652"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Frequency"^^xsd:string ;
+    rdfs:comment "Frequency (symbol f), most often measured in hertz (symbol: Hz), is the number of occurrences of a repeating event per unit of time. It is also occasionally referred to as temporal frequency for clarity and to distinguish it from spatial frequency.  Ordinary frequency is related to angular frequency (symbol ω, with SI unit radian per second) by a factor of 2π.  The period (symbol T) is the interval of time between events, so the period is the reciprocal of the frequency: f = 1/T.Frequency is an important parameter used in science and engineering to specify the rate of oscillatory and vibratory phenomena, such as mechanical vibrations, audio signals (sound), radio waves, and light."^^xsd:string .
+

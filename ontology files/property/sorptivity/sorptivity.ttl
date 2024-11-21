@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sorptivity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "sorptivity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7563669"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sorptivity"^^xsd:string ;
+    rdfs:comment "In 1957 John Philip introduced the term sorptivity and defined it as a measure of the capacity of the medium to absorb or desorb liquid by capillarity.According to C Hall and W D Hoff, the sorptivity expresses the tendency of a material to absorb and transmit water and other liquids by capillarity.The sorptivity is widely used in characterizing soils and porous construction materials such as brick, stone and concrete."^^xsd:string .
+

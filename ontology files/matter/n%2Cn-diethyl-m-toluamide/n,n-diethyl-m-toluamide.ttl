@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:n%2Cn-diethyl-m-toluamide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "n,n-diethyl-m-toluamide"^^xsd:string ;
+    svo:has_synonym "DEET"^^xsd:string,
+        "diethyltoulamide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q408389"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/DEET"^^xsd:string ;
+    rdfs:comment "N,N-Diethyl-meta-toluamide, also called DEET () or diethyltoluamide, is the most common active ingredient in insect repellents. It is a slightly yellow oil intended to be applied to the skin or to clothing and provides protection against mosquitoes, flies, ticks, fleas, chiggers, leeches and many biting insects."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:keulegan-carpenter_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "keulegan-carpenter_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1419014"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Keulegan%E2%80%93Carpenter_number"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, the Keulegan–Carpenter number, also called the period number, is a dimensionless quantity describing the relative importance of the drag forces over inertia forces for bluff objects in an oscillatory fluid flow.  Or similarly, for objects that oscillate in a fluid at rest. For small Keulegan–Carpenter number inertia dominates, while for large numbers the (turbulence) drag forces are important."^^xsd:string .
+

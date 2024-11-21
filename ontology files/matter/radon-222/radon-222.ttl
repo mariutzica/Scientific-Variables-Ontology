@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:radon-222 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "radon-222"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2334543"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isotopes_of_radon#Radon-222"^^xsd:string ;
+    rdfs:comment "There are 37 known isotopes of radon (86Rn), from 195Rn to 231Rn; all are radioactive. The most stable isotope is 222Rn with a half-life of 3.823 days, which decays into 218Po. Five isotopes of radon, 217, 218, 219, 220, 222Rn, occur in trace quantities in nature as decay products of, respectively, 217At, 218At, 223Ra, 224Ra, and 226Ra. 217Rn is produced in a rare branch in the decay chain of trace quantities of 237Np; 222Rn (and also 218Rn in a rare branch) is an intermediate step in the decay chain for 238U; 219Rn is an intermediate step in the decay chain for 235U; and 220Rn occurs in the decay chain for 232Th."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tetramethyllead a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tetramethyllead"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q425777"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tetramethyllead"^^xsd:string ;
+    rdfs:comment "Tetramethyllead, also called tetra methyllead and lead tetramethyl, is a chemical compound used as an antiknock additive for gasoline. Its use is being phased out for environmental considerations.The National Institute for Occupational Safety and Health (NIOSH) in the United States has identified tetramethyllead as a potential workplace hazard. The recommended time-weighted average exposure limit to tetramethyllead is 0.075 milligrams per cubic meter during a 10-hour workday; the OSHA permissible exposure limit is the same value assuming an 8-hour workday."^^xsd:string .
+

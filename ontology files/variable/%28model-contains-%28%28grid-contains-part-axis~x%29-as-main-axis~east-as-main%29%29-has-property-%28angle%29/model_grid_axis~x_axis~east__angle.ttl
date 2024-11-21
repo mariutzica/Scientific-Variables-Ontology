@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28model-contains-%28%28grid-contains-part-axis~x%29-as-main-axis~east-as-main%29%29-has-property-%28angle%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "model_grid_axis~x_axis~east__angle"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/axis>,
+        <http://scientificvariablesontology.org/svo/abstraction/grid> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/angle> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/model-contains-%28%28grid-contains-part-axis~x%29-as-main-axis~east-as-main%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/angle> ;
+    svo:has_original_label "model_grid_axis~x_axis~east__rotation_angle"^^xsd:string .
+

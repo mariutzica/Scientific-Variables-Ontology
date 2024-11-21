@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:carboxin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "carboxin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2937968"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Carboxin"^^xsd:string ;
+    rdfs:comment "Carboxin is a narrow-spectrum fungicide used as a seed treatment in agriculture to protect crops from fungal diseases. It was first marketed by Uniroyal in 1969 using their brand name Vitavax. The compound is an anilide which combines a heterocyclic acid with aniline to give an inhibitor of succinate dehydrogenase (SDHI)."^^xsd:string .
+

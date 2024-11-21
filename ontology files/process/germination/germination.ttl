@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:germination a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "germination"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q193838"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Germination"^^xsd:string ;
+    rdfs:comment "Germination is the process by which an organism grows from a seed or spore. The term is applied to the sprouting of a seedling from a seed of an angiosperm or gymnosperm, the growth of a sporeling from a spore, such as the spores of fungi, ferns, bacteria, and the growth of the pollen tube from the pollen grain of a seed plant."^^xsd:string .
+

@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28channel-undergoes-process-meandering%29-has-property-%28amplitude%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "channel_meandering__amplitude"^^xsd:string ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/channel> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/meandering> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/channel-undergoes-process-meandering> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/amplitude> ;
+    svo:has_original_label "channel__meander_amplitude"^^xsd:string .
+

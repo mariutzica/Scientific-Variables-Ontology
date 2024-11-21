@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:buoy a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "buoy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q30026"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Buoy"^^xsd:string ;
+    rdfs:comment "A buoy (; boy, BOO-ee) is a floating device that can have many purposes. It can be anchored (stationary) or allowed to drift with ocean currents."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:volume_rate a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "volume_rate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1134348"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Volumetric_flow_rate"^^xsd:string ;
+    rdfs:comment "In physics and engineering, in particular fluid dynamics, the volumetric flow rate (also known as volume flow rate, or volume velocity) is the volume of fluid which passes per unit time; usually it is represented by the symbol Q (sometimes V˙{\\displaystyle {\\dot {V}}}). It contrasts with mass flow rate, which is the other main type of fluid flow rate. In most contexts a mention of rate of fluid flow is likely to refer to the volumetric rate. In hydrometry, the volumetric flow rate is known as discharge. "^^xsd:string .
+

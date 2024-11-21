@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28atmosphere-contains-%28air-undergoes-process-flowing%29%29-has-property-%28elevation_angle_of_bolus_velocity%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "atmosphere_air_flowing__elevation_angle_of_bolus_velocity"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/air> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/elevation_angle> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/atmosphere> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/flowing> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/bolus_velocity>,
+        <http://scientificvariablesontology.org/svo/property/elevation_angle> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/atmosphere-contains-%28air-undergoes-process-flowing%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/elevation_angle_of_bolus_velocity> ;
+    svo:has_original_label "atmosphere_air_flow__elevation_angle_of_bolus_velocity"^^xsd:string .
+

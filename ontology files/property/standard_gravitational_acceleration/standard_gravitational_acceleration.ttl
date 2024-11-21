@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:standard_gravitational_acceleration a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "standard_gravitational_acceleration"^^xsd:string ;
+    svo:has_synonym "standard_gravity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q13400897"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Standard_gravity"^^xsd:string ;
+    rdfs:comment "The standard acceleration due to gravity (or standard acceleration of free fall), sometimes abbreviated as standard gravity, usually denoted by ɡ0 or ɡn, is the nominal gravitational acceleration of an object in a vacuum near the surface of the Earth. It is defined by standard as 9.80665 m/s2 (about 32.17405 ft/s2). This value was established by the 3rd General Conference on Weights and Measures (1901, CR 70) and used to define the standard weight of an object as the product of its mass and this nominal acceleration. The acceleration of a body near the surface of the Earth is due to the combined effects of gravity and centrifugal acceleration from the rotation of the Earth (but the latter is small enough to be negligible for most purposes); the total (the apparent gravity) is about 0.5% greater at the poles than at the Equator.Although the symbol ɡ is sometimes used for standard gravity, ɡ (without a suffix) can also mean the local acceleration due to local gravity and centrifugal acceleration, which varies depending on one's position on Earth (see Earth's gravity). The symbol ɡ should not be confused with G, the gravitational constant, or g, the symbol for gram. The ɡ is also used as a unit for any form of acceleration, with the value defined as above; see g-force."^^xsd:string .
+

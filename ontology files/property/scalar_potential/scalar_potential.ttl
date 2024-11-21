@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:scalar_potential a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "scalar_potential"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1856609"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Scalar_potential"^^xsd:string ;
+    rdfs:comment "In mathematical physics, scalar potential, simply stated, describes the situation where the difference in the potential energies of an object in two different positions depends only on the positions, not upon the path taken by the object in traveling from one position to the other.  It is a scalar field in three-space:  a directionless value (scalar) that depends only on its location.  A familiar example is potential energy due to gravity."^^xsd:string .
+

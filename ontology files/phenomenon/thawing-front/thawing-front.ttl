@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thawing-front a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "thawing-front"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1368357"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Thaw_(weather)"^^xsd:string ;
+    rdfs:comment "Thaw is the period when the snow and ice melt, at the end of the winter, in cold climates."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:radioactive a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "radioactive"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11448"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Radioactive_decay"^^xsd:string ;
+    rdfs:comment "Radioactive decay (also known as nuclear decay, radioactivity, radioactive disintegration, or nuclear disintegration) is the process by which an unstable atomic nucleus loses energy by radiation. A material containing unstable nuclei is considered radioactive. Three of the most common types of decay are alpha decay (α-decay), beta decay (β-decay), and gamma decay (γ-decay), all of which involve emitting one or more particles. The weak force is the mechanism that is responsible for beta decay, while the other two are governed by the electromagnetism and nuclear force. A fourth type of common decay is electron capture, in which an unstable nucleus captures an inner electron from one of the electron shells. The loss of that electron from the shell results in a cascade of electrons dropping down to that lower shell resulting in emission of discrete X-rays from the transitions. A common example is iodine-125 commonly used in medical settings."^^xsd:string .
+

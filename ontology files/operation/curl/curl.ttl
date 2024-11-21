@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/operation/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:curl a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "curl"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q206310"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Curl_(mathematics)"^^xsd:string ;
+    rdfs:comment "In vector calculus, the curl is a vector operator that describes the infinitesimal circulation of a vector field in three-dimensional Euclidean space. The curl at a point in the field is represented by a vector whose length and direction denote the magnitude and axis of the maximum circulation. The curl of a field is formally defined as the circulation density at each point of the field."^^xsd:string .
+

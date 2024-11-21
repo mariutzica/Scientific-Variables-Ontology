@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:physical_state a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "physical_state"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11430"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/State_of_matter"^^xsd:string ;
+    rdfs:comment "In physics, a state of matter is one of the distinct forms in which matter can exist. Four states of matter are observable in everyday life: solid, liquid, gas, and plasma. Many intermediate states are known to exist, such as liquid crystal, and some states only exist under extreme conditions, such as Bose–Einstein condensates and Fermionic condensates (in extreme cold), neutron-degenerate matter (in extreme density), and quark–gluon plasma (at extremely high energy). For a list of exotic states of matter, see the article List of states of matter."^^xsd:string .
+

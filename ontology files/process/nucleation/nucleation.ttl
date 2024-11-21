@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nucleation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "nucleation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q909022"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nucleation"^^xsd:string ;
+    rdfs:comment "In thermodynamics, nucleation is the first step in the formation of either a new thermodynamic phase or structure via self-assembly or self-organization within a substance or mixture. Nucleation is typically defined to be the process that determines how long an observer has to wait before the new phase or self-organized structure appears. For example, if a volume of water is cooled (at atmospheric pressure) below 0 °C, it will tend to freeze into ice, but volumes of water cooled only a few degrees below 0 °C often stay completely free of ice for long periods (supercooling). At these conditions, nucleation of ice is either slow or does not occur at all. However, at lower temperatures nucleation is fast, and ice crystals appear after little or no delay."^^xsd:string .
+

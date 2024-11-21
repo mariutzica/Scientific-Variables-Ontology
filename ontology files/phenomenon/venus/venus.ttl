@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:venus a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "venus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q313"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Venus"^^xsd:string ;
+    rdfs:comment "Venus is the second planet from the Sun and the only terrestrial object in the Solar System other than Earth that has a substantial atmosphere and is almost as massive and large as Earth. Like Mercury, Venus orbits the Sun always closer than Earth, resulting in it appearing in Earth's sky always inferior (close to the Sun) and at night as either a \"morning star\" or \"evening star\". Venus appears in Earth's sky also as the brightest natural object, aside from the Sun and Moon, due to its proximity to Earth and the Sun, its large size and high albedo. These prominent appearances of Venus in Earth's sky have made Venus a classical planet, a common and important object for humans, their cultures and astronomy."^^xsd:string .
+

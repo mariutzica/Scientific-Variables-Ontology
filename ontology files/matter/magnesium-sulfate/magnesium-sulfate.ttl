@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:magnesium-sulfate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "magnesium-sulfate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q288266"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Magnesium_sulfate"^^xsd:string ;
+    rdfs:comment "Magnesium sulfate or magnesium sulphate (in English-speaking countries other than the US) is a chemical compound, a salt with the formula MgSO4, consisting of magnesium cations Mg2+ (20.19% by mass) and sulfate anions SO2−4. It is a white crystalline solid, soluble in water but not in ethanol."^^xsd:string .
+

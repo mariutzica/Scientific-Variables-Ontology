@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:isoquinoline a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "isoquinoline"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q412316"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isoquinoline"^^xsd:string ;
+    rdfs:comment "Isoquinoline is a heterocyclic aromatic organic compound. It is a structural isomer of quinoline. Isoquinoline and quinoline are benzopyridines, which are composed of a benzene ring fused to a pyridine ring. In a broader sense, the term isoquinoline is used to make reference to isoquinoline derivatives. 1-Benzylisoquinoline is the structural backbone in naturally occurring alkaloids including papaverine. The isoquinoline ring in these natural compound derives from the aromatic amino acid tyrosine."^^xsd:string .
+

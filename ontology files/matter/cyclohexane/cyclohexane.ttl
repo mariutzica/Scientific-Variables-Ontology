@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cyclohexane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "cyclohexane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q211433"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cyclohexane"^^xsd:string ;
+    rdfs:comment "Cyclohexane is a cycloalkane with the molecular formula C6H12. Cyclohexane is non-polar. Cyclohexane is a colourless, flammable liquid with a distinctive detergent-like odor, reminiscent of cleaning products (in which it is sometimes used). Cyclohexane is mainly used for the industrial production of adipic acid and caprolactam, which are precursors to nylon.Cyclohexyl (C6H11) is the alkyl substituent of cyclohexane and is abbreviated Cy."^^xsd:string .
+

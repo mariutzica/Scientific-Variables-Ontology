@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:electron_affinity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "electron_affinity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q271580"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Electron_affinity"^^xsd:string ;
+    rdfs:comment "The electron affinity (Eea) of an atom or molecule is defined as the amount of energy released when an electron attaches to a neutral atom or molecule in the gaseous state to form an anion."^^xsd:string .
+

@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tetrahydrofuran a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tetrahydrofuran"^^xsd:string ;
+    svo:has_synonym "thf"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q278332"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tetrahydrofuran"^^xsd:string ;
+    rdfs:comment "Tetrahydrofuran (THF), or oxolane, is an organic compound with the formula (CH2)4O. The compound is classified as heterocyclic compound, specifically a cyclic ether.  It is a colorless, water-miscible organic liquid with low viscosity.  It is mainly used as a precursor to polymers.  Being polar and having a wide liquid range, THF is a versatile solvent."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:magnetic-south-pole a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "magnetic-south-pole"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1043682"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/South_Magnetic_Pole"^^xsd:string ;
+    rdfs:comment "wandering point on the Earth where the geomagnetic field lines are directed vertically upwards, at 64°S 137°E as of 2015 in the Southern Ocean"^^xsd:string .
+

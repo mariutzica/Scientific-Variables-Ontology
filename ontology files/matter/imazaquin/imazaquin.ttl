@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:imazaquin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "imazaquin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q15303948"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Imazaquin"^^xsd:string ;
+    rdfs:comment "Imazaquin is an imidazolinone herbicide, so named because it contains an imidazolinone core. This organic compound is used to control a broad spectrum of weed species. It is a colorless or white solid, although commercial samples can appear brown or tan."^^xsd:string .
+

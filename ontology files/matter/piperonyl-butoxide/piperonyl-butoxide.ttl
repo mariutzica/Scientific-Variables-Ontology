@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:piperonyl-butoxide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "piperonyl-butoxide"^^xsd:string ;
+    svo:has_synonym "pbo"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q420891"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Piperonyl_butoxide"^^xsd:string ;
+    rdfs:comment "Piperonyl butoxide (PBO) is a pale yellow to light brown liquid organic compound used as a synergist component of pesticide formulations. That is, despite having no pesticidal activity of its own, it enhances the potency of certain pesticides such as carbamates, pyrethrins, pyrethroids, and rotenone.  It is a semisynthetic derivative of safrole."^^xsd:string .
+

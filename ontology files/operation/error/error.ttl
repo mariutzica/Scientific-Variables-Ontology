@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/operation/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:error a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "error"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q29485"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Error"^^xsd:string ;
+    rdfs:comment "An error (from the Latin errāre, meaning 'to wander') is an inaccurate or incorrect action, thought, or judgement."^^xsd:string .
+

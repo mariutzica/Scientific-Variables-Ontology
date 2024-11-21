@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28soil-as-medium-water%29-determined-at-variable-%28field-has-property-capacity%29> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "soil_water_field-has-property-capacity"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :soil-as-medium-water ;
+    svo:has_reference_for_variable <http://scientificvariablesontology.org/svo/variable/%28field%29-has-property-%28capacity%29> .
+

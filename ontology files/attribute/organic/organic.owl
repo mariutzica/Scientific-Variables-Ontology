@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/attribute/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/attribute/">
+<owl:NamedIndividual rdf:about="organic">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Attribute"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Organic_compound</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q174211</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In chemistry, many authors consider an organic compound to be any chemical compound that contains carbon-hydrogen or carbon-carbon bonds, although the definition of "organic" versus "inorganic" varies from author to author, and is a topic of debate. For example, methane (CH4) is considered organic, but whether halides of carbon without hydrogen (e.g. carbon tetrachloride CCl4) are organic or inorganic varies from author to author.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

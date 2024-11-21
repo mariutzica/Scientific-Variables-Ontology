@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/attribute/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/attribute/">
+<owl:NamedIndividual rdf:about="lifting-condensation-level">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Attribute"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lifting-condensation-level</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Lifted_condensation_level</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3055189</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The lifted condensation level or lifting condensation level (LCL) is formally defined as the height at which the relative humidity (RH) of an air parcel will reach 100% with respect to liquid water when it is cooled by dry adiabatic lifting. The RH of air increases when it is cooled, since the amount of water vapor in the air (i.e., its specific humidity) remains constant, while the saturation vapor pressure decreases almost exponentially with decreasing temperature. If the air parcel is lifting further beyond the LCL, water vapor in the air parcel will begin condensing, forming cloud droplets. (In the real atmosphere, it is usually necessary for air to be slightly supersaturated, normally by around 0.5%, before condensation occurs; this translates into about 10 meters or so of additional lifting above the LCL.)  The LCL is a good approximation of the height of the cloud base which will be observed on days when air is lifted mechanically from the surface to the cloud base (e.g., due to convergence of airmasses).</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

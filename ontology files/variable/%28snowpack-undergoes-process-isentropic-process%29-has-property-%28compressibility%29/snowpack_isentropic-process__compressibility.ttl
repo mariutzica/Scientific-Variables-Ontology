@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28snowpack-undergoes-process-isentropic-process%29-has-property-%28compressibility%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "snowpack_isentropic-process__compressibility"^^xsd:string ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/snowpack> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/isentropic-process> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/snowpack-undergoes-process-isentropic-process> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/compressibility> ;
+    svo:has_original_label "snowpack__isentropic_compressibility"^^xsd:string .
+

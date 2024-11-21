@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:actinomycetes a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "actinomycetes"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q343452"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Actinomycetales"^^xsd:string ;
+    rdfs:comment "The Actinomycetales is an order of Actinomycetota. A member of the order is often called an actinomycete. Actinomycetales are generally gram-positive and anaerobic and have mycelia in a filamentous and branching growth pattern. Some actinomycetes can form rod- or coccoid-shaped forms, while others can form spores on aerial hyphae. Actinomycetales bacteria can be infected by bacteriophages, which are called actinophages. Actinomycetales can range from harmless bacteria to pathogens with resistance to antibiotics. "^^xsd:string .
+

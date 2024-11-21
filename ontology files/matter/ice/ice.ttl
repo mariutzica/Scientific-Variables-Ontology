@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ice a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "ice"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q23392"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Ice"^^xsd:string ;
+    rdfs:comment "Ice is water frozen into a solid state, typically forming at or below temperatures of 32 °F, 0 °C, or 273 °K. Depending on the presence of impurities such as particles of soil or bubbles of air, it can appear transparent or a more or less opaque bluish-white color."^^xsd:string .
+

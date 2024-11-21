@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:landslide a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "landslide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q167903"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Landslide"^^xsd:string ;
+    rdfs:comment "Landslides, also known as landslips, are several forms of mass wasting that may include a wide range of ground movements, such as rockfalls, mudflows, shallow or deep-seated slope failures and debris flows. Landslides occur in a variety of environments, characterized by either steep or gentle slope gradients, from mountain ranges to coastal cliffs or even underwater, in which case they are called submarine landslides."^^xsd:string .
+

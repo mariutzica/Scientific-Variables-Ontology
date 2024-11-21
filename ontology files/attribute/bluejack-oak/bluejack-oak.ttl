@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bluejack-oak a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "bluejack-oak"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4111870"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Quercus_incana"^^xsd:string ;
+    rdfs:comment "Quercus incana is a species of oak known by the common names bluejack oak, upland willow oak, sandjack oak, and cinnamon oak. It is native to the Atlantic and Gulf coastal plains of the United States, from Virginia around Florida to Texas and inland to Oklahoma and Arkansas."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:2-nitropropane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "2-nitropropane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q209453"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/2-Nitropropane"^^xsd:string ;
+    rdfs:comment "2-Nitropropane (2-NP) is a solvent.  It is a colorless liquid and is classified as a nitro compound."^^xsd:string .
+

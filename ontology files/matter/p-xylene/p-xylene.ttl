@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:p-xylene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "p-xylene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3314420"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/P-Xylene"^^xsd:string ;
+    rdfs:comment "p-Xylene (para-xylene) is an aromatic hydrocarbon. It is one of the three isomers of dimethylbenzene known collectively as xylenes. The p- stands for para-, indicating that the two methyl groups in p-xylene occupy the diametrically opposite substituent positions 1 and 4. It is in the positions of the two methyl groups, their arene substitution pattern, that it differs from the other isomers, o-xylene and m-xylene. All have the same chemical formula C6H4(CH3)2. All xylene isomers are colorless and highly flammable. The odor threshold of p-xylene is 0.62 parts per million (ppm)."^^xsd:string .
+

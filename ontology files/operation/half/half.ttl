@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/operation/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:half a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "half"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2114394"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/One_half"^^xsd:string ;
+    rdfs:comment "One half (pl. halves) is the irreducible fraction resulting from dividing one (1) by two (2), or the fraction resulting from dividing any number by its double."^^xsd:string .
+

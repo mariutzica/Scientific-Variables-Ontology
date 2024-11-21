@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sulfur-hexafluoride a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "sulfur-hexafluoride"^^xsd:string ;
+    svo:has_synonym "sulphur-hexafluoride"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q279055"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sulfur_hexafluoride"^^xsd:string ;
+    rdfs:comment "Sulfur hexafluoride or sulphur hexafluoride (British spelling) is an inorganic compound with the formula SF6. It is a colorless, odorless, non-flammable, and non-toxic gas. SF6 has an octahedral geometry, consisting of six fluorine atoms attached to a central sulfur atom.  It is a hypervalent molecule."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:radar a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "radar"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q47528"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Radar"^^xsd:string ;
+    rdfs:comment "Radar is a radiolocation system that uses radio waves to determine the distance (ranging), angle (azimuth), and radial velocity of objects relative to the site. It is used to detect and track aircraft, ships, spacecraft, guided missiles, and motor vehicles, and map weather formations, and terrain. A radar system consists of a transmitter producing electromagnetic waves in the radio or microwaves domain, a transmitting antenna, a receiving antenna (often the same antenna is used for transmitting and receiving) and a receiver and processor to determine properties of the objects. Radio waves (pulsed or continuous) from the transmitter reflect off the objects and return to the receiver, giving information about the objects' locations and speeds."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:acetaldehyde a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "acetaldehyde"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q61457"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Acetaldehyde"^^xsd:string ;
+    rdfs:comment "Acetaldehyde (IUPAC systematic name ethanal) is an organic chemical compound with the formula CH3CHO, sometimes abbreviated by chemists as MeCHO (Me = methyl). It is a colorless liquid or gas, boiling near room temperature. It is one of the most important aldehydes, occurring widely in nature and being produced on a large scale in industry. Acetaldehyde occurs naturally in coffee, bread, and ripe fruit, and is produced by plants. It is also produced by the partial oxidation of ethanol by the liver enzyme alcohol dehydrogenase and is a contributing cause of hangover after alcohol consumption. Pathways of exposure include air, water, land, or groundwater, as well as drink and smoke. Consumption of disulfiram inhibits acetaldehyde dehydrogenase, the enzyme responsible for the metabolism of acetaldehyde, thereby causing it to build up in the body."^^xsd:string .
+

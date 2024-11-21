@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:frost-front a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "frost-front"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1470555"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Frost_line"^^xsd:string ;
+    rdfs:comment "The frost line—also known as frost depth or freezing depth—is most commonly the depth to which the groundwater in soil is expected to freeze. The frost depth depends on the climatic conditions of an area, the heat transfer properties of the soil and adjacent materials, and on nearby heat sources. For example, snow cover and asphalt insulate the ground and homes can heat the ground (see also heat island). The line varies by latitude, it is deeper closer to the poles. Per Federal Highway Administration Publication Number FHWA-HRT-08-057, the maximum frost depth observed in the contiguous United States ranges from 0 to 8 feet (2.4 m). Below that depth, the temperature varies, but is always above 32 °F (0 °C)."^^xsd:string .
+

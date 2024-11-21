@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:drag_force a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "drag_force"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q206621"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Drag_(physics)"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, drag, sometimes referred to as fluid resistance, is a force acting opposite to the relative motion of any object, moving with respect to a surrounding fluid. This can exist between two fluid layers, two solid surfaces, or between a fluid and solid surface. Drag forces tend to decrease fluid velocity relative to the solid object in the fluid's path."^^xsd:string .
+

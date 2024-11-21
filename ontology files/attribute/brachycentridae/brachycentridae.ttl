@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:brachycentridae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "brachycentridae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1936330"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Brachycentridae"^^xsd:string ;
+    rdfs:comment "Brachycentridae is a family of humpless casemaker caddisflies in the order Trichoptera. It is found in North America, Europe, and Asia. Georg Ulmer first described it in Germany in 1903 as a subfamily of Sericostomatidae. The type genus for Brachycentridae is Brachycentrus J. Curtis, 1834."^^xsd:string .
+

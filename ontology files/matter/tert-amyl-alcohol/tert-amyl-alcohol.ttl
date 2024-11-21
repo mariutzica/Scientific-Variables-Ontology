@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tert-amyl-alcohol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tert-amyl-alcohol"^^xsd:string ;
+    svo:has_synonym "2-Methyl-2-butanol"^^xsd:string,
+        "taa"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q209428"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tert-Amyl_alcohol"^^xsd:string ;
+    rdfs:comment "tert-Amyl alcohol (TAA) or 2-methylbutan-2-ol (2M2B), is a branched pentanol."^^xsd:string .
+

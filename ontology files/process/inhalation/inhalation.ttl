@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:inhalation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "inhalation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q840343"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Inhalation"^^xsd:string ;
+    rdfs:comment "Inhalation (or inspiration) is the process of drawing air or other gases into the respiratory tract, primarily for the purpose of bringing oxygen into the body. It is a fundamental physiological function in humans and many other organisms, essential for sustaining life. Inhalation is the first phase of breathing, allowing the exchange of oxygen and carbon dioxide between the body and the environment, vital for the body's metabolic processes. This article delves into the mechanics of inhalation, its significance in various contexts, and its potential impact on health."^^xsd:string .
+

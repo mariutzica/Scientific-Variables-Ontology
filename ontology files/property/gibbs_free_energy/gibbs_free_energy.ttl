@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gibbs_free_energy a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "gibbs_free_energy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q334631"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gibbs_free_energy"^^xsd:string ;
+    rdfs:comment "In thermodynamics, the Gibbs free energy (or Gibbs energy as the recommended name; symbol "^^xsd:string .
+

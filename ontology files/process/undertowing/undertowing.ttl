@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:undertowing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "undertowing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7883828"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Undertow_(water_waves)"^^xsd:string ;
+    rdfs:comment "In physical oceanography, undertow is the undercurrent that moves offshore while waves approach the shore. Undertow is a natural and universal feature for almost any large body of water; it is a return flow compensating for the onshore-directed average transport of water by the waves in the zone above the wave troughs. The undertow's flow velocities are generally strongest in the surf zone, where the water is shallow and the waves are high due to shoaling."^^xsd:string .
+

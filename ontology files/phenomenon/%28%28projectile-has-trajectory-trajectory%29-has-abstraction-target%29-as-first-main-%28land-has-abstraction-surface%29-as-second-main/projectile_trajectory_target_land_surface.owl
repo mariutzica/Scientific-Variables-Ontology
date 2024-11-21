@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/phenomenon/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/phenomenon/">
+<owl:NamedIndividual rdf:about="%28%28projectile-has-trajectory-trajectory%29-has-abstraction-target%29-as-first-main-%28land-has-abstraction-surface%29-as-second-main">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Phenomenon"/>
+  <svo:has_first_participant_phenomenon rdf:resource="%28projectile-has-trajectory-trajectory%29-has-abstraction-target"/>
+  <svo:has_second_participant_phenomenon rdf:resource="land-has-abstraction-surface"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">projectile_trajectory_target_land_surface</rdfs:label>
+</owl:NamedIndividual>
+</rdf:RDF>

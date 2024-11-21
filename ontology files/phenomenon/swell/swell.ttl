@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:swell a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "swell"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q185411"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Swell_(ocean)"^^xsd:string ;
+    rdfs:comment "A swell, also sometimes referred to as ground swell, in the context of an ocean, sea or lake, is a series of mechanical waves that propagate along the interface between water and air under the predominating influence of gravity, and thus are often referred to as surface gravity waves. These surface gravity waves have their origin as wind waves, but are the consequence of dispersion of wind waves from distant weather systems, where wind blows for a duration of time over a fetch of water, and these waves move out from the source area at speeds that are a function of wave period and length. More generally, a swell consists of wind-generated waves that are not greatly affected by the local wind at that time. Swell waves often have a relatively long wavelength, as short wavelength waves carry less energy and dissipate faster, but this varies due to the size, strength, and duration of the weather system responsible for the swell and the size of the water body, and varies from event to event, and from the same event, over time. Occasionally, swells that are longer than 700m occur as a result of the most severe storms."^^xsd:string .
+

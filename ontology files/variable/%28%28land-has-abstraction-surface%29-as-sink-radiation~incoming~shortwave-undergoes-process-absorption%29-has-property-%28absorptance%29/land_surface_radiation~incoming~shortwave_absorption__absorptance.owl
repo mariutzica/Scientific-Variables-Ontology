@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28%28land-has-abstraction-surface%29-as-sink-radiation~incoming~shortwave-undergoes-process-absorption%29-has-property-%28absorptance%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/%28land-has-abstraction-surface%29-as-sink-radiation~incoming~shortwave-undergoes-process-absorption"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/absorptance"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/land"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/radiation"/>
+  <svo:contains_process_reference_to rdf:resource="http://scientificvariablesontology.org/svo/process/absorption"/>
+  <svo:contains_attribute_reference_to rdf:resource="http://scientificvariablesontology.org/svo/attribute/shortwave"/>
+  <svo:contains_abstraction_reference_to rdf:resource="http://scientificvariablesontology.org/svo/abstraction/surface"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">land_surface_radiation~incoming~shortwave_absorption__absorptance</rdfs:label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">land_surface_radiation~incoming~shortwave__absorptance</svo:has_original_label>
+</owl:NamedIndividual>
+</rdf:RDF>

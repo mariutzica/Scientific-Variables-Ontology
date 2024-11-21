@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:air-contains-as-medium-%28radiation-has-trajectory-optical-path%29 a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "air_radiation_optical-path"^^xsd:string ;
+    svo:has_containing_medium_phenomenon :air ;
+    svo:has_primary_participant_phenomenon :radiation-has-trajectory-optical-path .
+

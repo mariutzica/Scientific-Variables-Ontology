@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/property/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/property/">
+<owl:NamedIndividual rdf:about="attenuation_coefficient">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attenuation_coefficient</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Attenuation_coefficient</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q902086</svo:has_wikidata_page>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">narrow_beam_attenuation_coefficient</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extinction_coefficient</svo:has_synonym>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The linear attenuation coefficient, attenuation coefficient, or narrow-beam attenuation coefficient characterizes how easily a volume of material can be penetrated by a beam of light, sound, particles, or other energy or matter. A coefficient value that is large represents a beam becoming 'attenuated' as it passes through a given medium, while a small value represents that the medium had little effect on loss. The SI unit of attenuation coefficient is the reciprocal metre (m−1). Extinction coefficient is another term for this quantity, often used in meteorology and climatology. Most commonly, the quantity measures the exponential decay of intensity, that is, the value of downward e-folding distance of the original intensity as the energy of the intensity passes through a unit (e.g. one meter) thickness of material, so that an attenuation coefficient of 1 m−1 means that after passing through 1 metre, the radiation will be reduced by a factor of e, and for material with a coefficient of 2 m−1, it will be reduced twice by e, or e2. Other measures may use a different factor than e, such as the decadic attenuation coefficient below. The broad-beam attenuation coefficient counts forward-scattered radiation as transmitted rather than attenuated, and is more applicable to radiation shielding.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

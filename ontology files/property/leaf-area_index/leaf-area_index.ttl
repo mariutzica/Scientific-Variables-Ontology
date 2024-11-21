@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:leaf-area_index a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "leaf-area_index"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q446746"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Leaf_area_index"^^xsd:string ;
+    rdfs:comment "Leaf area index (LAI) is a dimensionless quantity that characterizes plant canopies. It is defined as the one-sided green leaf area per unit ground surface area (LAI = leaf area / ground area, m2 / m2) in broadleaf canopies.  In conifers, three definitions for LAI have been used:"^^xsd:string .
+

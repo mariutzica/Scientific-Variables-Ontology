@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cauterization a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "cauterization"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1136347"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cauterization"^^xsd:string ;
+    rdfs:comment "Cauterization (or cauterisation, or cautery) is a medical practice or technique of burning a part of a body to remove or close off a part of it. It destroys some tissue in an attempt to mitigate bleeding and damage, remove an undesired growth, or minimize other potential medical harm, such as infections when antibiotics are unavailable."^^xsd:string .
+

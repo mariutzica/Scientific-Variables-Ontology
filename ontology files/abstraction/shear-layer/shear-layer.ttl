@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:shear-layer a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "shear-layer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2250602"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Shear_flow"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, shear flow is the flow induced by a force in a fluid. In solid mechanics, shear flow is the shear stress over a distance in a thin-walled structure."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:abiotic a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "abiotic"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q461335"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Abiotic_component"^^xsd:string ;
+    rdfs:comment "In biology and ecology, abiotic components or abiotic factors are non-living chemical and physical parts of the environment that affect living organisms and the functioning of ecosystems. Abiotic factors and the phenomena associated with them underpin biology as a whole. They affect a plethora of species, in all forms of environmental conditions, such as marine or land animals. Humans can make or change abiotic factors in a species' environment. For instance, fertilizers can affect a snail's habitat, or the greenhouse gases which humans utilize can change marine pH levels."^^xsd:string .
+

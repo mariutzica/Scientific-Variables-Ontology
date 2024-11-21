@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:railway a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "railway"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3565868"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Railway"^^xsd:string ;
+    rdfs:comment "conveyance of passengers and goods by way of wheeled vehicles running on rail tracks"^^xsd:string .
+

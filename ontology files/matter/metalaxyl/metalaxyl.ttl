@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:metalaxyl a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "metalaxyl"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4778002"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Metalaxyl"^^xsd:string ;
+    rdfs:comment "Metalaxyl is an acylalanine fungicide with systemic function. Its chemical name is methyl N-(methoxyacetyl)-N-(2,6-xylyl)-DL-alaninate.  It can be used to control Pythium in a number of vegetable crops, and Phytophthora in peas. Metalaxyl-M is the ISO common name and Ridomil Gold is the trade name for the optically pure (-) / D / R active stereoisomer, which is also known as mefenoxam.It is the active ingredient in the seed treatment agent Apron XL LS.The fungicide has suffered severe resistance problems. The fungicide was marketed for use against Phytophthora infestans. However, in the summer of 1980, in the Republic of Ireland, the crop was devastated by a potato blight epidemic after a resistant race of the oomycete appeared. Irish farmers later successfully sued the company for their losses."^^xsd:string .
+

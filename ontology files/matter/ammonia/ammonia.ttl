@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ammonia a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "ammonia"^^xsd:string ;
+    svo:has_synonym "azane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4087"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ammonia"^^xsd:string ;
+    rdfs:comment "Ammonia is an inorganic compound of nitrogen and hydrogen with the formula NH3. A stable binary hydride, and the simplest pnictogen hydride, ammonia is a colourless gas with a distinct pungent smell. Biologically, it is a common nitrogenous waste, particularly among aquatic organisms, and it contributes significantly to the nutritional needs of terrestrial organisms by serving as a precursor to 45% of the world's food and fertilizers. Around 70% of ammonia is used to make fertilisers in various forms and composition, such as urea and Diammonium phosphate. Ammonia in pure form is also applied directly into the soil."^^xsd:string .
+

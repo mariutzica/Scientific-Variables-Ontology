@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:2-methyl-4%2C6-dinitrophenol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "2-methyl-4,6-dinitrophenol"^^xsd:string ;
+    svo:has_synonym "4,6-dinitro-o-cresol"^^xsd:string,
+        "dinitro-ortho-cresol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q209437"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dinitro-ortho-cresol"^^xsd:string ;
+    rdfs:comment "Dinitro-ortho-cresol (DNOC) is an organic compound with the structural formula CH3C6H2(NO2)2OH.  It is a yellow solid that is only slightly soluble in water. DNOC and some related derivatives have been used as herbicides."^^xsd:string .
+

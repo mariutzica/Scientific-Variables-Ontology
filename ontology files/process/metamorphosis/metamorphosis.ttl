@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:metamorphosis a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "metamorphosis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q33753"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Metamorphosis"^^xsd:string ;
+    rdfs:comment "Metamorphosis is a biological process by which an animal physically develops  including  birth transformation or hatching, involving a conspicuous and relatively abrupt change in the animal's body structure through cell growth and differentiation. Some insects, jellyfish, fish, amphibians, mollusks, crustaceans, cnidarians, echinoderms, and tunicates undergo metamorphosis, which is often accompanied by a change of nutrition source or behavior. Animals can be divided into species that undergo complete metamorphosis (\"holometaboly\"), incomplete metamorphosis (\"hemimetaboly\"), or no metamorphosis (\"ametaboly\")."^^xsd:string .
+

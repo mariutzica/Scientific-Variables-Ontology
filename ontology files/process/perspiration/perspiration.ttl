@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:perspiration a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "perspiration"^^xsd:string ;
+    svo:has_synonym "perspiration"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3503092"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Perspiration"^^xsd:string ;
+    rdfs:comment "Perspiration, also known as sweat, is the fluid secreted by sweat glands in the skin of mammals."^^xsd:string .
+

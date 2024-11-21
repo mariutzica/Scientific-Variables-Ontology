@@ -1,0 +1,18 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bis%282-ethylhexyl%29-phthalate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "bis(2-ethylhexyl)-phthalate"^^xsd:string ;
+    svo:has_synonym "DEHP"^^xsd:string,
+        "DOP"^^xsd:string,
+        "Di(2-ethylhexyl) phthalate"^^xsd:string,
+        "diethylhexyl-phthalate"^^xsd:string,
+        "dioctyl-phthalate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q418492"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bis(2-ethylhexyl)_phthalate"^^xsd:string ;
+    rdfs:comment "Bis(2-ethylhexyl) phthalate (di-2-ethylhexyl phthalate, diethylhexyl phthalate, diisooctyl phthalate, DEHP; incorrectly — dioctyl phthalate, DIOP) is an organic compound with the formula C6H4(CO2C8H17)2. DEHP is the most common member of the class of phthalates, which are used as plasticizers. It is the diester of phthalic acid and the branched-chain 2-ethylhexanol. This colorless viscous liquid is soluble in oil, but not in water."^^xsd:string .
+

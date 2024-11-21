@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:soil-horizon-b a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "soil-horizon-b"^^xsd:string ;
+    svo:has_synonym "subsoil"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q681004"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Subsoil"^^xsd:string ;
+    rdfs:comment "Subsoil is the layer of soil under the topsoil on the surface of the ground. Like topsoil, it is composed of a variable mixture of small particles such as sand, silt and clay, but with a much lower percentage of organic matter and humus, and it has a small amount of rocks which are smaller mixed with it. The subsoil is also called B Horizon. "^^xsd:string .
+

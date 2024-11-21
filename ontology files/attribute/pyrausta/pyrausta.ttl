@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pyrausta a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "pyrausta"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q15646499"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pyrausta"^^xsd:string ;
+    rdfs:comment "Pyrausta or pyrallis (πυραλλίς) (also called in Greek pyrigonos) is a mythological insect from Cyprus. It is a four-legged insect with filmy wings. It lived in the fire like a salamander and died if it went away from the fire."^^xsd:string .
+

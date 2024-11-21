@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:camphor a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "camphor"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q181559"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Camphor"^^xsd:string ;
+    rdfs:comment "Camphor () is a waxy, colorless solid with a strong aroma. It is classified as a terpenoid and a cyclic ketone.  It is found in the wood of the camphor laurel (Cinnamomum camphora), a large evergreen tree found in East Asia; and in the kapur tree (Dryobalanops sp.), a tall timber tree from South East Asia. It also occurs in some other related trees in the laurel family, notably Ocotea usambarensis. Rosemary leaves (Rosmarinus officinalis) contain 0.05 to 0.5% camphor, while camphorweed (Heterotheca) contains some 5%. A major source of camphor in Asia is camphor basil (the parent of African blue basil). Camphor can also be synthetically produced from oil of turpentine."^^xsd:string .
+

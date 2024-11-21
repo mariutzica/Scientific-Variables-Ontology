@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chloromethane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chloromethane"^^xsd:string ;
+    svo:has_synonym "methyl-chloride"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q422709"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chloromethane"^^xsd:string ;
+    rdfs:comment "Chloromethane, also called methyl chloride, Refrigerant-40, R-40 or HCC 40, is an organic compound with the chemical formula CH3Cl. One of the haloalkanes, it is a colorless, odorless, flammable gas. Methyl chloride is a crucial reagent in industrial chemistry, although it is rarely present in consumer products,  and was formerly utilized as a refrigerant."^^xsd:string .
+

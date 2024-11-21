@@ -1,0 +1,17 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mass-per-area_density a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "mass-per-area_density"^^xsd:string ;
+    svo:has_synonym "areal_density"^^xsd:string,
+        "density_thickness"^^xsd:string,
+        "superficial_density"^^xsd:string,
+        "surface_density"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1907514"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Area_density"^^xsd:string ;
+    rdfs:comment "The area density (also known as areal density, surface density, superficial density, areic density, mass thickness, column density, or density thickness) of a two-dimensional object is calculated as the mass per unit area. The SI derived unit is the kilogram per square metre (kg·m−2)."^^xsd:string .
+

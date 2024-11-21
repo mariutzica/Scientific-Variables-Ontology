@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tert-butyl-formate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tert-butyl-formate"^^xsd:string ;
+    svo:has_synonym "formic-acid-tert-butyl-ester"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5238768"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tert-Butyl_formate"^^xsd:string ;
+    rdfs:comment "tert-Butyl formate, also known as formic acid tert-butylester and TBF, is a chemical compound with molecular formula C5H10O2.  TBF is one of the possible daughter products of methyl tert-butyl ether biodegradation."^^xsd:string .
+

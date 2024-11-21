@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:photorespiration a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "photorespiration"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q842275"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Photorespiration"^^xsd:string ;
+    rdfs:comment "Photorespiration (also known as the oxidative photosynthetic carbon cycle or C2 cycle) refers to a process in plant metabolism where the enzyme RuBisCO oxygenates RuBP, wasting some of the energy produced by photosynthesis. The desired reaction is the addition of carbon dioxide to RuBP (carboxylation), a key step in the Calvin–Benson cycle, but approximately 25% of reactions by RuBisCO instead add oxygen to RuBP (oxygenation), creating a product that cannot be used within the Calvin–Benson cycle. This process lowers the efficiency of photosynthesis, potentially lowering photosynthetic output by 25% in C3 plants. Photorespiration involves a complex network of enzyme reactions that exchange metabolites between chloroplasts, leaf peroxisomes and mitochondria."^^xsd:string .
+

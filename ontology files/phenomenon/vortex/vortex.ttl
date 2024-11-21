@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vortex a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "vortex"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q732722"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vortex"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, a vortex (PL: vortices or vortexes) is a region in a fluid in which the flow revolves around an axis line, which may be straight or curved. Vortices form in stirred fluids, and may be observed in smoke rings, whirlpools in the wake of a boat, and the winds surrounding a tropical cyclone, tornado or dust devil. "^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nox a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "nox"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q20962970"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/NOx"^^xsd:string ;
+    rdfs:comment "In atmospheric chemistry, NOx is shorthand for nitric oxide (NO) and nitrogen dioxide (NO2), the nitrogen oxides that are most relevant for air pollution.  These gases contribute to the formation of smog and acid rain, as well as affecting tropospheric ozone."^^xsd:string .
+

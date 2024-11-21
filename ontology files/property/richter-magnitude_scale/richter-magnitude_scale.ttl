@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:richter-magnitude_scale a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "richter-magnitude_scale"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q38768"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Richter_magnitude_scale"^^xsd:string ;
+    rdfs:comment "The Richter scale (), also called the Richter magnitude scale, Richter's magnitude scale, and the Gutenberg–Richter scale, is a measure of the strength of earthquakes, developed by Charles Francis Richter and presented in his landmark 1935 paper, where he called it the \"magnitude scale\". This was later revised and renamed the local magnitude scale, denoted as ML or ML .Because of various shortcomings of the original ML  scale, most seismological authorities now use other similar scales such as the moment magnitude scale (Mw ) to report earthquake magnitudes, but much of the news media still erroneously refers to these as \"Richter\" magnitudes. All magnitude scales retain the logarithmic character of the original and are scaled to have roughly comparable numeric values (typically in the middle of the scale). Due to the variance in earthquakes,  it is essential to understand the Richter scale uses logarithms simply to make the measurements manageable (i.e., a magnitude 3 quake factors 10³ while a magnitude 5 quake is 100 times stronger than that)."^^xsd:string .
+

@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tert-butyl-acetate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tert-butyl-acetate"^^xsd:string ;
+    svo:has_synonym "tbac"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q285657"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tert-Butyl_acetate"^^xsd:string ;
+    rdfs:comment "tert-Butyl acetate, t-butyl acetate or TBAc is a colorless flammable liquid with a camphor- or blueberry-like smell.  It is used as a solvent in the production of lacquers, enamels, inks, adhesives, thinners and industrial cleaners.  It has recently gained EPA volatile organic compound (VOC) exempt status.It is manufactured from acetic acid and isobutylene. An attempt at Fischer esterification would lead to elimination of tert-butyl alcohol to isobutylene."^^xsd:string .
+

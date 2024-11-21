@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28earth-mantle-contains-material%29-has-property-%28shear_dynamic_viscosity%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "earth-mantle_material__shear_dynamic_viscosity"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/material> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/earth-mantle> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/earth-mantle-contains-material> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/shear_dynamic_viscosity> ;
+    svo:has_original_label "earth_mantle_material__dynamic_shear_viscosity"^^xsd:string .
+

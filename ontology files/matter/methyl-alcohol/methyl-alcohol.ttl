@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:methyl-alcohol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "methyl-alcohol"^^xsd:string ;
+    svo:has_synonym "Methanol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q14982"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Methanol"^^xsd:string ;
+    rdfs:comment "Methanol (also called methyl alcohol and wood spirit, amongst other names) is an organic chemical and the simplest aliphatic alcohol, with the formula CH3OH (a methyl group linked to a hydroxyl group, often abbreviated as MeOH). It is a light, volatile, colorless and flammable liquid with a distinctive alcoholic odour similar to that of ethanol (potable alcohol)."^^xsd:string .
+

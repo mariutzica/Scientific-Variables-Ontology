@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:zeldovich_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "zeldovich_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q30693539"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Zeldovich_number"^^xsd:string ;
+    rdfs:comment "The Zel'dovich number is a dimensionless number which provides a quantitative measure for the activation energy of a chemical reaction which appears in the Arrhenius exponent, named after the Russian scientist Yakov Borisovich Zel'dovich, who along with David A. Frank-Kamenetskii, first introduced in their paper in 1938. In 1983 ICDERS meeting at Poitiers, it was decided to name after Zel'dovich.It is defined as"^^xsd:string .
+

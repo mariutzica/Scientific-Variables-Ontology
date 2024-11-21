@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:jackknifing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "jackknifing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q937178"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Jackknifing"^^xsd:string ;
+    rdfs:comment "Jackknifing is the folding of an articulated vehicle so that it resembles the acute angle of a folding pocket knife. If a vehicle towing a trailer skids, the trailer can push the towing vehicle from behind until it spins the vehicle around and faces backwards. This may be caused by equipment failure, improper braking, or adverse road conditions such as an icy road surface. In extreme circumstances, a driver may attempt to jackknife the vehicle deliberately to halt it following brake failure."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:height a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "height"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q208826"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Height"^^xsd:string ;
+    rdfs:comment "Height is  measure of vertical distance, either vertical extent (how \"tall\" something or someone is) or vertical position (how \"high\" a point is)."^^xsd:string .
+

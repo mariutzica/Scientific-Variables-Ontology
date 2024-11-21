@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:magnetic-b-field a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "magnetic-b-field"^^xsd:string ;
+    svo:has_synonym "magnetic-field"^^xsd:string,
+        "magnetic_flux_density"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11408"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Magnetic_field#The_B-field"^^xsd:string ;
+    rdfs:comment "A magnetic field is a vector field that describes the magnetic influence on moving electric charges, electric currents,: ch1  and magnetic materials. A moving charge in a magnetic field experiences a force perpendicular to its own velocity and to the magnetic field.: ch13 : 278  A permanent magnet's magnetic field pulls on ferromagnetic materials such as iron, and attracts or repels other magnets.   In addition, a nonuniform magnetic field exerts minuscule forces on \"nonmagnetic\" materials by three other magnetic effects:  paramagnetism, diamagnetism, and antiferromagnetism, although these forces are usually so small they can only be detected by laboratory equipment.  Magnetic fields surround magnetized materials, and are created by electric currents such as those used in electromagnets, and by electric fields varying in time. Since both strength and direction of a magnetic field may vary with location, it is described mathematically by a function assigning a vector to each point of space, called a vector field."^^xsd:string .
+

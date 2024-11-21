@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hirudinea a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "hirudinea"^^xsd:string ;
+    svo:has_synonym "leech"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q43012"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Leech"^^xsd:string ;
+    rdfs:comment "Leeches are segmented parasitic or predatory worms that comprise the subclass Hirudinea within the phylum Annelida. They are closely related to the oligochaetes, which include the earthworm, and like them have soft, muscular segmented bodies that can lengthen and contract. Both groups are hermaphrodites and have a clitellum, but leeches typically differ from the oligochaetes in having suckers at both ends and in having ring markings that do not correspond with their internal segmentation. The body is muscular and relatively solid, and the coelom, the spacious body cavity found in other annelids, is reduced to small channels."^^xsd:string .
+

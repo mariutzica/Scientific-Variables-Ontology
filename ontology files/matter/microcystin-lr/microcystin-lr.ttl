@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:microcystin-lr a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "microcystin-lr"^^xsd:string ;
+    svo:has_synonym "mc-lr"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6839436"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Microcystin-LR"^^xsd:string ;
+    rdfs:comment "Microcystin-LR (MC-LR) is a toxin produced by cyanobacteria. It is the most toxic of the microcystins."^^xsd:string .
+

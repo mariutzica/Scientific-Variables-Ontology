@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/property/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/property/">
+<owl:NamedIndividual rdf:about="absorbance">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">absorbance</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Absorbance</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q907315</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Absorbance is  defined as "the logarithm of the ratio of incident to transmitted radiant power through a sample (excluding the effects on cell walls)". Alternatively, for samples which scatter light, absorbance may be defined as "the negative logarithm of one minus absorptance, as measured on a uniform sample". The term is used in many technical areas to quantify the results of an experimental measurement. While the term has its origin in quantifying the absorption of light, it is often entangled with quantification of light which is “lost” to a detector system through other mechanisms. What these uses of the term tend to have in common is that they refer to a logarithm of the ratio of a quantity of light incident on a sample or material to that which is detected after the light has interacted with the sample.  </rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

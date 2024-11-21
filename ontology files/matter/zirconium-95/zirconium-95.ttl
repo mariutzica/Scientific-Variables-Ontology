@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:zirconium-95 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "zirconium-95"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1190176"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isotopes_of_zirconium#Zirconium-95"^^xsd:string ;
+    rdfs:comment "Naturally occurring zirconium (40Zr) is composed of four stable isotopes (of which one may in the future be found radioactive), and one very long-lived radioisotope (96Zr), a primordial nuclide that decays via double beta decay with an observed half-life of 2.0×1019 years; it can also undergo single beta decay, which is not yet observed, but the theoretically predicted value of t1/2 is 2.4×1020 years. The second most stable radioisotope is 93Zr, which has a half-life of 1.53 million years. Thirty other radioisotopes have been observed. All have half-lives less than a day except for 95Zr (64.02 days), 88Zr (83.4 days), and 89Zr (78.41 hours). The primary decay mode is electron capture for isotopes lighter than 92Zr, and the primary mode for heavier isotopes is beta decay."^^xsd:string .
+

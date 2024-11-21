@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/propertyquantification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:index a svo:PropertyQuantification,
+        owl:NamedIndividual ;
+    rdfs:label "index"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q18208028"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Index_(statistics)"^^xsd:string ;
+    rdfs:comment "In statistics and research design, an index is a composite statistic – a measure of changes in a representative group of individual data points, or in other words, a compound measure that aggregates multiple indicators."^^xsd:string .
+

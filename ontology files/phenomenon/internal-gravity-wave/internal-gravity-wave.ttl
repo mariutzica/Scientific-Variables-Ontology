@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:internal-gravity-wave a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "internal-gravity-wave"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q382774"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Internal_wave"^^xsd:string ;
+    rdfs:comment "Internal waves are gravity waves that oscillate within a fluid medium, rather than on its surface. To exist, the fluid must be stratified: the density must change (continuously or discontinuously) with depth/height due to changes, for example, in temperature and/or salinity. If the density changes over a small vertical distance (as in the case of the thermocline in lakes and oceans or an atmospheric inversion), the waves propagate horizontally like surface waves, but do so at slower speeds as determined by the density difference of the fluid below and above the interface. If the density changes continuously, the waves can propagate vertically as well as horizontally through the fluid."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:grain a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "grain"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q466491"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Grain_size"^^xsd:string ;
+    rdfs:comment "Grain size (or particle size) is the diameter of individual grains of sediment, or the lithified particles in clastic rocks.  The term may also be applied to other granular materials. This is different from the crystallite size, which refers to the size of a single crystal inside a particle or grain. A single grain can be composed of several crystals. Granular material can range from very small colloidal particles, through clay, silt, sand, gravel, and cobbles, to boulders."^^xsd:string .
+

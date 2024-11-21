@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28bear-contains-part-brain%29-as-numerator-%28bear-contains-part-body%29-as-denominator%29-has-property-%28mass_ratio%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "bear_brain_body__mass_ratio"^^xsd:string ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/bear>,
+        <http://scientificvariablesontology.org/svo/phenomenon/body>,
+        <http://scientificvariablesontology.org/svo/phenomenon/brain> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28bear-contains-part-brain%29-as-numerator-%28bear-contains-part-body%29-as-denominator> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mass_ratio> ;
+    svo:has_original_label "bear_brain-to-body__mass_ratio"^^xsd:string .
+

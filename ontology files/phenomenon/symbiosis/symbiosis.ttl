@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:symbiosis a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "symbiosis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q121610"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Symbiosis"^^xsd:string ;
+    rdfs:comment "Symbiosis (from Greek συμβίωσις, symbíōsis, \"living together\", from σύν, sýn, \"together\", and βίωσις, bíōsis, \"living\") is any type of a close and long-term biological interaction between two biological organisms of different species, termed symbionts, be it mutualistic, commensalistic, or parasitic. In 1879, Heinrich Anton de Bary defined it as \"the living together of unlike organisms\". The term is sometimes used in the more restricted sense of a mutually beneficial interaction in which both symbionts contribute to each other's support.Symbiosis can be obligatory, which means that one or more of the symbionts depend on each other for survival, or facultative (optional), when they can generally live independently."^^xsd:string .
+

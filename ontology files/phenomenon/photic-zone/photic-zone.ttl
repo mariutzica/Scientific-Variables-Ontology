@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:photic-zone a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "photic-zone"^^xsd:string ;
+    svo:has_synonym "euphotic zone"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q579649"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Photic_zone"^^xsd:string ;
+    rdfs:comment "The photic zone, euphotic zone, epipelagic zone, or sunlight zone is the uppermost layer of a body of water that receives sunlight, allowing phytoplankton to perform photosynthesis. It undergoes a series of physical, chemical, and biological processes that supply nutrients into the upper water column. The photic zone is home to the majority of aquatic life due to the activity (primary production) of the phytoplankton."^^xsd:string .
+

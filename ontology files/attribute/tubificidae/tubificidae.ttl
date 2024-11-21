@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tubificidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "tubificidae"^^xsd:string ;
+    svo:has_synonym "naididae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q644633"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Naididae"^^xsd:string ;
+    rdfs:comment "The Naididae (including the former family Tubificidae) are a family of clitellate oligochaete worms like the sludge worm, Tubifex tubifex. They are key components of the benthic communities of many freshwater and marine ecosystems. In freshwater aquaria they may be referred to as detritus worms."^^xsd:string .
+

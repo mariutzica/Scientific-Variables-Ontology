@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:earth-inner-core a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "earth-inner-core"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q394352"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Earth's_inner_core"^^xsd:string ;
+    rdfs:comment "Earth's inner core is the innermost geologic layer of planet Earth. It is primarily a solid ball with a radius of about 1,220 km (760 mi), which is about 20% of Earth's radius or 70% of the Moon's radius.There are no samples of Earth's core accessible for direct measurement, as there are for Earth's mantle. Information about Earth's core mostly comes from analysis of seismic waves and Earth's magnetic field. The inner core is believed to be composed of an iron–nickel alloy with some other elements. The temperature at the inner core's surface is estimated to be approximately 5,700 K (5,430 °C; 9,800 °F), which is about the temperature at the surface of the Sun."^^xsd:string .
+

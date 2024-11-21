@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:giardia a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "giardia"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1469628"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Giardia"^^xsd:string ;
+    rdfs:comment "Giardia ( or ) is a genus of anaerobic flagellated protozoan parasites of the phylum Metamonada that colonise and reproduce in the small intestines of several vertebrates, causing the disease giardiasis. Their life cycle alternates between a swimming trophozoite and an infective, resistant cyst. Giardia were first described by the Dutch microscopist Antonie van Leeuwenhoek in 1681. The genus is named after French zoologist Alfred Mathieu Giard."^^xsd:string .
+

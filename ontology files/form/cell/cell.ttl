@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cell a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "cell"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7868"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cell_(biology)"^^xsd:string ;
+    rdfs:comment "The cell is the basic structural and functional unit of life forms. Every cell consists of a cytoplasm enclosed within a membrane, and contains many biomolecules such as proteins, DNA and RNA, as well as many small molecules of nutrients and metabolites.  The term comes from the Latin word cellula meaning 'small room'.Cells can acquire specified function and carry out various tasks within the cell such as replication, DNA repair, protein synthesis, and motility. Cells are capable of specialization and mobility within the cell. Most cells are measured in micrometers due to their small size."^^xsd:string .
+

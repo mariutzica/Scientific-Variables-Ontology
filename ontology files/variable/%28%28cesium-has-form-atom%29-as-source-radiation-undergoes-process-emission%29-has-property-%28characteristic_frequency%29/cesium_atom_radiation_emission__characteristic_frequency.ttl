@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28cesium-has-form-atom%29-as-source-radiation-undergoes-process-emission%29-has-property-%28characteristic_frequency%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "cesium_atom_radiation_emission__characteristic_frequency"^^xsd:string ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/atom> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/cesium> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/radiation> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/emission> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28cesium-has-form-atom%29-as-source-radiation-undergoes-process-emission> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/characteristic_frequency> ;
+    svo:has_original_label "cesium_atom__characteristic_emission_frequency"^^xsd:string .
+

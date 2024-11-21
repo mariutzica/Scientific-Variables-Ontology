@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:molannidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "molannidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q608884"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Molannidae"^^xsd:string ;
+    rdfs:comment "Molannidae is a family of Hood casemakers in the order Trichoptera. There are at least 3 genera and 40 described species in Molannidae."^^xsd:string .
+

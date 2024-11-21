@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:atomic_weight a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "atomic_weight"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q41377"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Atomic_weight"^^xsd:string ;
+    rdfs:comment "dimensionless physical quantity: ratio of the average mass of atoms of an element (in each sample) to one unified atomic mass unit. The unified atomic mass unit, symbol u, is defined being  1⁄12 of the mass of a carbon-12 atom"^^xsd:string .
+

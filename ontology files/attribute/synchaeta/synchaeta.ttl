@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:synchaeta a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "synchaeta"^^xsd:string ;
+    svo:has_synonym "gnaphalium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q41552"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gnaphalium"^^xsd:string ;
+    rdfs:comment "Gnaphalium is a genus of flowering plants in the family Asteraceae, commonly called cudweeds. They are widespread and common in temperate regions, although some are found on tropical mountains or in the subtropical regions of the world."^^xsd:string .
+

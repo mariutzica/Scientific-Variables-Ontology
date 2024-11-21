@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:heat_capacity_ratio a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "heat_capacity_ratio"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q503869"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Heat_capacity_ratio"^^xsd:string ;
+    rdfs:comment "In thermal physics and thermodynamics, the heat capacity ratio, also known as the adiabatic index, the ratio of specific heats, or Laplace's coefficient, is the ratio of the heat capacity at constant pressure (CP) to heat capacity at constant volume (CV). It is sometimes also known as the isentropic expansion factor and is denoted by γ (gamma) for an ideal gas or κ (kappa), the isentropic exponent for a real gas. The symbol γ is used by aerospace and chemical engineers."^^xsd:string .
+

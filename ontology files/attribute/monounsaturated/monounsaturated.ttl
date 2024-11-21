@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:monounsaturated a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "monounsaturated"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q61738980"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Monounsaturated_fat"^^xsd:string ;
+    rdfs:comment "In biochemistry and nutrition, a monounsaturated fat is a fat that contains a monounsaturated fatty acid (MUFA), a subclass of fatty acid characterized by having a double bond in the fatty acid chain with all of the remaining carbon atoms being single-bonded. By contrast, polyunsaturated fatty acids (PUFAs) have more than one double bond."^^xsd:string .
+

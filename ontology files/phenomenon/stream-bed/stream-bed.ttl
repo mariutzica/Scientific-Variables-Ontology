@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:stream-bed a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "stream-bed"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1429491"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Stream_bed"^^xsd:string ;
+    rdfs:comment "A stream bed or streambed is the bottom of a stream or river (bathymetry) or the physical confine of the normal water flow (channel).  The lateral confines or channel margins are known as the stream banks or river banks, during all but flood stage. Under certain conditions a river can branch from one stream bed to multiple stream beds. A flood occurs when a stream overflows its banks and flows onto its flood plain. As a general rule, the bed is the part of the channel up to the normal water line, and the banks are that part above the normal water line. However, because water flow varies, this differentiation is subject to local interpretation.  Usually, the bed is kept clear of terrestrial vegetation, whereas the banks are subjected to water flow only during unusual or perhaps infrequent high water stages and therefore might support vegetation some or much of the time."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:precession a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "precession"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q104225"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Precession"^^xsd:string ;
+    rdfs:comment "Precession is a change in the orientation of the rotational axis of a rotating body. In an appropriate reference frame it can be defined as a change in the first Euler angle, whereas the third Euler angle defines the rotation itself. In other words, if the axis of rotation of a body is itself rotating about a second axis, that body is said to be precessing about the second axis. A motion in which the second Euler angle changes is called nutation. In physics, there are two types of precession: torque-free and torque-induced."^^xsd:string .
+

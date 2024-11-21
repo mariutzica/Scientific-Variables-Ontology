@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:triage a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "triage"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q780067"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Triage"^^xsd:string ;
+    rdfs:comment "In medicine, triage () is a practice invoked when acute care cannot be provided due to a lack of resources. The process rations care towards those who are most in need of immediate care, and who will benefit most from it. More generally it refers to prioritisation of medical care as a whole. In its acute form it is most often required on the battlefield, during a pandemic, or at peacetime when an accident results in a mass casualty which swamps nearby healthcare facilities' capacity."^^xsd:string .
+

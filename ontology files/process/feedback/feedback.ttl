@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:feedback a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "feedback"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q183635"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Feedback"^^xsd:string ;
+    rdfs:comment "Feedback occurs when outputs of a system are routed back as inputs as part of a chain of cause-and-effect that forms a circuit or loop. The system can then be said to feed back into itself. The notion of cause-and-effect has to be handled carefully when applied to feedback systems:"^^xsd:string .
+

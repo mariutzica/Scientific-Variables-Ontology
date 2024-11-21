@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:porpoise a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "porpoise"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q10867"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Porpoise"^^xsd:string ;
+    rdfs:comment "Porpoises () are small dolphin-like cetaceans classified under the family Phocoenidae.  Although similar in appearance to dolphins, they are more closely related to narwhals and belugas than to the true dolphins. There are eight extant species of porpoise, all among the smallest of the toothed whales. Porpoises are distinguished from dolphins by their flattened, spade-shaped teeth distinct from the conical teeth of dolphins, and lack of a pronounced beak, although some dolphins (e.g. Hector's dolphin) also lack a pronounced beak. Porpoises, and other cetaceans, belong to the clade Cetartiodactyla with even-toed ungulates."^^xsd:string .
+

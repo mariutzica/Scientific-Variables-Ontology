@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:solifluction a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "solifluction"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q648379"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Solifluction"^^xsd:string ;
+    rdfs:comment "Solifluction is a collective name for gradual processes in which a mass moves down a slope (\"mass wasting\") related to freeze-thaw activity. This is the standard modern meaning of solifluction, which differs from the original meaning given to it by Johan Gunnar Andersson in 1906."^^xsd:string .
+

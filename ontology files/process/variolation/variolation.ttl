@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:variolation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "variolation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1899096"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Variolation"^^xsd:string ;
+    rdfs:comment "Variolation was the method of inoculation first used to immunize individuals against smallpox (Variola) with material taken from a patient or a recently variolated individual, in the hope that a mild, but protective, infection would result. Only 1–2% of those variolated died from the intentional infection compared to 30% who contracted smallpox naturally. Variolation is no longer used today. It was replaced by the smallpox vaccine, a safer alternative. This in turn led to the development of the many vaccines now available against other diseases."^^xsd:string .
+

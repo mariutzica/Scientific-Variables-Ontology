@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fluometuron a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "fluometuron"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5462798"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fluometuron"^^xsd:string ;
+    rdfs:comment "Fluometuron is an herbicide.  In the United States it was approved for use on cotton and sugarcane crops in 1974, but since 1986 is only approved for use on cotton."^^xsd:string .
+

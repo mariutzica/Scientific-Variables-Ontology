@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:golden-ratio_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "golden-ratio_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q41690"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Golden_ratio"^^xsd:string ;
+    rdfs:comment "In mathematics, two quantities are in the golden ratio if their ratio is the same as the ratio of their sum to the larger of the two quantities. Expressed algebraically, for quantities "^^xsd:string .
+

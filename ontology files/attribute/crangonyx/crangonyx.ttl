@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:crangonyx a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "crangonyx"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1383637"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Crangonyx"^^xsd:string ;
+    rdfs:comment "Crangonyx is a genus of crustacean in family Crangonyctidae.  Crangonyx species can live in marshes, savannas or swamps as well as caves.  It contains the following species:"^^xsd:string .
+

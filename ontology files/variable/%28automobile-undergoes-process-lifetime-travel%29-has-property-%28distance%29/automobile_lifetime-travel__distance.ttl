@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28automobile-undergoes-process-lifetime-travel%29-has-property-%28distance%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "automobile_lifetime-travel__distance"^^xsd:string ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/automobile> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/lifetime-travel> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/automobile-undergoes-process-lifetime-travel> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/distance> ;
+    svo:has_original_label "automobile__lifetime_travel_distance"^^xsd:string .
+

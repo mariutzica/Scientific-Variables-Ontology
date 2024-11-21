@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:red-blood-cell a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "red-blood-cell"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q37187"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Red_blood_cell"^^xsd:string ;
+    rdfs:comment "Red blood cells (RBCs), also referred to as red cells, red blood corpuscles (in humans or other animals not having nucleus in red blood cells), haematids, erythroid cells  or erythrocytes (from Greek erythros 'red' and kytos 'hollow vessel', with -cyte translated as 'cell' in modern usage), are the most common type of blood cell and the vertebrate's principal means of delivering oxygen (O2) to the body tissues—via blood flow through the circulatory system. RBCs take up oxygen in the lungs, or in fish the gills, and release it into tissues while squeezing through the body's capillaries."^^xsd:string .
+

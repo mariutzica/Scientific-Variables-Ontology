@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dieldrin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dieldrin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q423992"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dieldrin"^^xsd:string ;
+    rdfs:comment "Dieldrin is an organochloride originally produced in 1948 by J. Hyman & Co, Denver, as an insecticide. Dieldrin is closely related to aldrin, which reacts further to form dieldrin. Aldrin is not toxic to insects; it is oxidized in the insect to form dieldrin which is the active compound. Both dieldrin and aldrin are named after the Diels-Alder reaction which is used to form aldrin from a mixture of norbornadiene and hexachlorocyclopentadiene."^^xsd:string .
+

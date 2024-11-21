@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:coagulation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "coagulation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q179217"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Coagulation"^^xsd:string ;
+    rdfs:comment "Coagulation, also known as clotting, is the process by which blood changes from a liquid to a gel, forming a blood clot. It potentially results in hemostasis, the cessation of blood loss from a damaged vessel, followed by repair. The mechanism of coagulation involves activation, adhesion and aggregation of platelets, as well as deposition and maturation of fibrin."^^xsd:string .
+

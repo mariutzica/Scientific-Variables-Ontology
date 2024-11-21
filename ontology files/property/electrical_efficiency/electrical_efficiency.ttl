@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:electrical_efficiency a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "electrical_efficiency"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5042828"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Electrical_efficiency"^^xsd:string ;
+    rdfs:comment "The efficiency of a system in electronics and electrical engineering is defined as useful power output divided by the total electrical power consumed (a fractional expression), typically denoted by the Greek small letter eta (η – ήτα)."^^xsd:string .
+

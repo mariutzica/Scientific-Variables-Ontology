@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:n-tetradecane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "n-tetradecane"^^xsd:string ;
+    svo:has_synonym "Tetradecane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q150808"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tetradecane"^^xsd:string ;
+    rdfs:comment "Tetradecane  is an alkane hydrocarbon with the chemical formula CH3(CH2)12CH3."^^xsd:string .
+

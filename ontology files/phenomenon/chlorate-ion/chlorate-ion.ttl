@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlorate-ion a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "chlorate-ion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q217813"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chlorate"^^xsd:string ;
+    rdfs:comment "Chlorate is the common name of the ClO−3 anion, whose chlorine atom is in the +5 oxidation state. The term can also refer to chemical compounds containing this anion, with chlorates being the salts of chloric acid. Other oxyanions of chlorine can be named \"chlorate\" followed by a Roman numeral in parentheses denoting the oxidation state of chlorine: e.g., the ClO−4 ion commonly called perchlorate can also be called chlorate(VII)."^^xsd:string .
+

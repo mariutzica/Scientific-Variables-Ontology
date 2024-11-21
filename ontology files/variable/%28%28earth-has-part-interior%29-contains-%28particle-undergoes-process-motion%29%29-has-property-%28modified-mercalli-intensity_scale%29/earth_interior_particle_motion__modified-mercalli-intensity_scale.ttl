@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28earth-has-part-interior%29-contains-%28particle-undergoes-process-motion%29%29-has-property-%28modified-mercalli-intensity_scale%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "earth_interior_particle_motion__modified-mercalli-intensity_scale"^^xsd:string ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/particle> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/interior> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/earth> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/motion> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28earth-has-part-interior%29-contains-%28particle-undergoes-process-motion%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/modified-mercalli-intensity_scale> ;
+    svo:has_original_label "earth_interior_particle_motion__modified_mercalli_intensity"^^xsd:string .
+

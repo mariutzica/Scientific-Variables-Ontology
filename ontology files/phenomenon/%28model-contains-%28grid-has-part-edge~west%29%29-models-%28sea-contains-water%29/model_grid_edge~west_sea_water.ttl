@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28model-contains-%28grid-has-part-edge~west%29%29-models-%28sea-contains-water%29> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "model_grid_edge~west_sea_water"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :sea-contains-water ;
+    svo:is_modeled_by <http://scientificvariablesontology.org/svo/phenomenon/model-contains-%28grid-has-part-edge~west%29> .
+

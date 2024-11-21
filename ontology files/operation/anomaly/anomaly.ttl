@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/operation/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:anomaly a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "anomaly"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4769951"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Anomaly_(natural_sciences)"^^xsd:string ;
+    rdfs:comment "In the natural sciences, especially in atmospheric and Earth sciences involving applied statistics, an anomaly is a persisting deviation in a physical quantity from its expected value, e.g., the systematic difference between a measurement and a trend or a model prediction. "^^xsd:string .
+

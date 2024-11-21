@@ -1,0 +1,18 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:avobenzone a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "avobenzone"^^xsd:string ;
+    svo:has_synonym "escalol-517"^^xsd:string,
+        "eusolex-9020"^^xsd:string,
+        "milestab-1789"^^xsd:string,
+        "neo-heliopan-357"^^xsd:string,
+        "parsol-1789"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2775914"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Avobenzone"^^xsd:string ;
+    rdfs:comment "Avobenzone (trade names Parsol 1789, Milestab 1789, Eusolex 9020, Escalol 517, Neo Heliopan 357 and others, INCI Butyl Methoxydibenzoylmethane) is an oil-soluble ingredient used in sunscreen products to absorb the full spectrum of UVA rays."^^xsd:string .
+

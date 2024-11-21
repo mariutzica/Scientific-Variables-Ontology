@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/property/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/property/">
+<owl:NamedIndividual rdf:about="heat_energy_flux">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat_energy_flux</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Heat_flux</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1478382</svo:has_wikidata_page>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat_flux</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat_flow_rate_intensity</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal_flux</svo:has_synonym>
+  <svo:has_synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heat_flux_density</svo:has_synonym>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In physics and engineering, heat flux or thermal flux, sometimes also referred to as heat flux density, heat-flow density or heat flow rate intensity, is a flow of energy per unit area per unit time. Its SI units are watts per square metre (W/m2). It has both a direction and a magnitude, and so it is a vector quantity. To define the heat flux at a certain point in space, one takes the limiting case where the size of the surface becomes infinitesimally small.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:plutonium-239 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "plutonium-239"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1141329"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Plutonium-239"^^xsd:string ;
+    rdfs:comment "Plutonium-239 (239Pu or Pu-239) is an isotope of plutonium. Plutonium-239 is the primary fissile isotope used for the production of nuclear weapons, although uranium-235 is also  used for that purpose. Plutonium-239 is also one of the three main isotopes demonstrated usable as fuel in thermal spectrum nuclear reactors, along with uranium-235 and uranium-233. Plutonium-239 has a half-life of 24,110 years."^^xsd:string .
+

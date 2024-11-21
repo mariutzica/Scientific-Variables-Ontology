@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:storage-tank a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "storage-tank"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1047832"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Storage_tank"^^xsd:string ;
+    rdfs:comment "Storage tanks are containers that hold liquids or compressed gases. The term can be used for reservoirs (artificial lakes and ponds), and for manufactured containers. The usage of the word \"tank\" for reservoirs is uncommon in American English but is moderately common in British English. In other countries, the term tends to refer only to artificial containers. In the U.S., storage tanks operate under no (or very little) pressure, distinguishing them from pressure vessels."^^xsd:string .
+

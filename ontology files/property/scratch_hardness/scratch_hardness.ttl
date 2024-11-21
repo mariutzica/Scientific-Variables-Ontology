@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:scratch_hardness a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "scratch_hardness"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q17125523"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Scratch_hardness"^^xsd:string ;
+    rdfs:comment "Scratch hardness refers to the hardness of a material in terms of resistance to scratches and abrasion by a harder material forcefully drawn over its surface. Scratch hardness test or scratch test refers to any of a number of methods of measuring scratch hardness. Resistance to abrasion is less affected by surface variations than indentation methods. Scratch hardness is measured with a sclerometer."^^xsd:string .
+

@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28water-as-medium-scuba-diver-undergoes-process-dive%29-has-property-%28duration%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "water_scuba-diver_dive__duration"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/dive> ;
+    svo:contains_role_reference_to <http://scientificvariablesontology.org/svo/role/scuba-diver> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/water-as-medium-scuba-diver-undergoes-process-dive> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/duration> ;
+    svo:has_original_label "water_scuba-diver__dive_duration"^^xsd:string .
+

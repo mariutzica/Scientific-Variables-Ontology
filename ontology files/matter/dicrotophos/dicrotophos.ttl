@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dicrotophos a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dicrotophos"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q411748"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dicrotophos"^^xsd:string ;
+    rdfs:comment "Dicrotophos is an organophosphate acetylcholinesterase inhibitor used as an insecticide. Some common brand names for dicrotophos include Bidrin, Carbicron, Diapadrin, Dicron and Ektafos."^^xsd:string .
+

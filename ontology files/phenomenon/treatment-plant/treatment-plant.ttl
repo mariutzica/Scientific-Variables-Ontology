@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:treatment-plant a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "treatment-plant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1058719"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Water_treatment"^^xsd:string ;
+    rdfs:comment "Water treatment is any process that improves the quality of water to make it appropriate for a specific end-use. The end use may be drinking, industrial water supply, irrigation, river flow maintenance, water recreation or many other uses, including being safely returned to the environment.  Water treatment removes contaminants and undesirable components, or reduces their concentration so that the water becomes fit for its desired end-use. This treatment is crucial to human health and allows humans to benefit from both drinking and irrigation use."^^xsd:string .
+

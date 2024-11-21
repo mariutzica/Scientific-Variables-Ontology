@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:silicate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "silicate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7130787"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Silicate"^^xsd:string ;
+    rdfs:comment "In chemistry, a silicate is any member of a family of polyatomic anions consisting of silicon and oxygen, usually with the general formula [SiO(4-2x)−4−x]n, where 0 ≤ x < 2.  The family includes orthosilicate SiO4−4 (x = 0), metasilicate SiO2−3 (x = 1), and pyrosilicate Si2O6−7 (x = 0.5, n = 2).  The name is also used for any salt of such anions, such as sodium metasilicate; or any ester containing the corresponding chemical group, such as tetramethyl orthosilicate. The name \"silicate\" is sometimes extended to any anions containing silicon, even if they do not fit the general formula or contain other atoms besides oxygen; such as hexafluorosilicate [SiF6]2−.Most commonly, silicates are encountered as silicate minerals."^^xsd:string .
+

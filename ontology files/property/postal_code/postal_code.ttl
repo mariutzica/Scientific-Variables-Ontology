@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:postal_code a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "postal_code"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q37447"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Postal_code"^^xsd:string ;
+    rdfs:comment "A postal code (also known locally in various English-speaking countries throughout the world as a postcode, post code, PIN or ZIP Code) is a series of letters or digits or both, sometimes including spaces or punctuation, included in a postal address for the purpose of sorting mail."^^xsd:string .
+

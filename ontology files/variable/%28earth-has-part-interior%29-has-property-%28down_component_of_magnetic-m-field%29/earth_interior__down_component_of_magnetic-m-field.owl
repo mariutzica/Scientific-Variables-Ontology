@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28earth-has-part-interior%29-has-property-%28down_component_of_magnetic-m-field%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/earth-has-part-interior"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/down_component_of_magnetic-m-field"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/earth"/>
+  <svo:contains_part_reference_to rdf:resource="http://scientificvariablesontology.org/svo/part/interior"/>
+  <svo:contains_operation_reference_to rdf:resource="http://scientificvariablesontology.org/svo/operation/down_component"/>
+  <svo:contains_property_reference_to rdf:resource="http://scientificvariablesontology.org/svo/property/magnetic-m-field"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">earth_interior__down_component_of_magnetic-m-field</rdfs:label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">earth_interior__down_component_of_magnetization</svo:has_original_label>
+</owl:NamedIndividual>
+</rdf:RDF>

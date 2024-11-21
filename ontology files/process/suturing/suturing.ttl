@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:suturing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "suturing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q619800"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Surgical_suture"^^xsd:string ;
+    rdfs:comment "A surgical suture, also known as a stitch or stitches, is a medical device used to hold body tissues together and approximate wound edges after an injury or surgery. Application generally involves using a needle with an attached length of thread. There are numerous types of suture which differ by needle shape and size as well as thread material and characteristics. Selection of surgical suture should be determined by the characteristics and location of the wound or the specific body tissues being approximated."^^xsd:string .
+

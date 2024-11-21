@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/river-delta-contains-part-plain~subaqueous> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "river-delta_plain~subaqueous"^^xsd:string ;
+    svo:has_primary_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/plain~subaqueous> ;
+    svo:is_part_of_containing_phenomenon :river-delta .
+

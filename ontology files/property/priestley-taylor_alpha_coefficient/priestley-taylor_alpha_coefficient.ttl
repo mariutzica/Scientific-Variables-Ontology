@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:priestley-taylor_alpha_coefficient a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "priestley-taylor_alpha_coefficient"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7163111"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Penman%E2%80%93Monteith_equation#Priestley%E2%80%93Taylor"^^xsd:string ;
+    rdfs:comment "The Penman–Monteith equation approximates net evapotranspiration (ET) from meteorological data, as a replacement for direct measurement of evapotranspiration. The equation is widely used, and was derived by the United Nations Food and Agriculture Organization for modeling potential evapotranspiration ET0."^^xsd:string .
+

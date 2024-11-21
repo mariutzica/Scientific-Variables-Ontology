@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:phosmet a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "phosmet"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q421379"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Phosmet"^^xsd:string ;
+    rdfs:comment "Phosmet is a phthalimide-derived, non-systemic, organophosphate insecticide used on plants and animals. It is mainly used on apple trees for control of codling moth, though it is also used on a wide range of fruit crops, ornamentals, and vines for the control of aphids, suckers, mites, and fruit flies."^^xsd:string .
+

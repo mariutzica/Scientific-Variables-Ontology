@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:diaptomidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "diaptomidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3808840"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Diaptomidae"^^xsd:string ;
+    rdfs:comment "Diaptomidae is a family of freshwater pelagic copepods. It includes around 50 genera:"^^xsd:string .
+

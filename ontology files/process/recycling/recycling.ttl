@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:recycling a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "recycling"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q132580"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Recycling"^^xsd:string ;
+    rdfs:comment "Recycling is the process of converting waste materials into new materials and objects. This concept often includes the recovery of energy from waste materials. The recyclability of a material depends on its ability to reacquire the properties it had in its original state. It is an alternative to \"conventional\" waste disposal that can save material and help lower greenhouse gas emissions. It can also prevent the waste of potentially useful materials and reduce the consumption of fresh raw materials, reducing energy use, air pollution (from incineration) and water pollution (from landfilling)."^^xsd:string .
+

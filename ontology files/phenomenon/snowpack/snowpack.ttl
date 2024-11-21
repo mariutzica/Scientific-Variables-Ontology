@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:snowpack a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "snowpack"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q18575846"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Snowpack"^^xsd:string ;
+    rdfs:comment "Snowpack forms from layers of snow that accumulate in geographic regions and high elevations where the climate includes cold weather for extended periods during the year. Snowpacks are an important water resource that feed streams and rivers as they melt. Therefore, snowpacks are both the drinking water source for many communities and a potential source of flooding (in case of sudden melting). Snowpacks also contribute mass to glaciers in their accumulation zone."^^xsd:string .
+

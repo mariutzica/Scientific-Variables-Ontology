@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hail a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "hail"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q37602"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Hail"^^xsd:string ;
+    rdfs:comment "Hail is a form of solid precipitation. It is distinct from ice pellets (American English \"sleet\"), though the two are often confused. It consists of balls or irregular lumps of ice, each of which is called a hailstone. Ice pellets generally fall in cold weather, while hail growth is greatly inhibited during low surface temperatures."^^xsd:string .
+

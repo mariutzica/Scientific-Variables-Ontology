@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:linuron a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "linuron"^^xsd:string ;
+    svo:has_synonym "3-(3,4-dichlorophenyl)-1-methoxy-1-methylurea"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q421476"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Linuron"^^xsd:string ;
+    rdfs:comment "Linuron (3-(3,4-dichlorophenyl)-1-methoxy-1-methylurea) is a phenylurea herbicide that is used to control the growth of grass and weeds for the purpose of supporting the growth of crops like soybeans."^^xsd:string .
+

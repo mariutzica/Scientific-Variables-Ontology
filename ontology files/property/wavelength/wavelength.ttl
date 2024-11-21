@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:wavelength a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "wavelength"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q41364"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Wavelength"^^xsd:string ;
+    rdfs:comment "In physics, the wavelength is the spatial period of a periodic wave—the distance over which the wave's shape repeats. It is the distance between consecutive corresponding points of the same phase on the wave, such as two adjacent crests, troughs, or zero crossings, and is a characteristic of both traveling waves and standing waves, as well as other spatial wave patterns. The inverse of the wavelength is called the spatial frequency. Wavelength is commonly designated by the Greek letter lambda (λ)."^^xsd:string .
+

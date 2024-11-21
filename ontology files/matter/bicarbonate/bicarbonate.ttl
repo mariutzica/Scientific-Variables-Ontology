@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bicarbonate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "bicarbonate"^^xsd:string ;
+    svo:has_synonym "hydrogencarbonate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q409202"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bicarbonate"^^xsd:string ;
+    rdfs:comment "In inorganic chemistry, bicarbonate (IUPAC-recommended nomenclature: hydrogencarbonate) is an intermediate form in the deprotonation of carbonic acid. It is a polyatomic anion with the chemical formula HCO−3."^^xsd:string .
+

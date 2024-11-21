@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chaetopteridae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "chaetopteridae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3608325"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chaetopteridae"^^xsd:string ;
+    rdfs:comment "The Chaetopteridae are a family of marine filter-feeding polychaete worms that live in vertical or U-shaped tubes in tunnels buried in the sedimentary or hard substrate of marine environments.  The worms are highly adapted to the hard tube they secrete.  Inside the tube the animal is segmented and regionally specialized, with highly modified appendages on different segments for cutting the tunnel, feeding, or creating suction for the flow of water through the tube home. The modified segments for feeding are on the 12th segment from the head for members of this family."^^xsd:string .
+

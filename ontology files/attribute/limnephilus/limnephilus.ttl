@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:limnephilus a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "limnephilus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3241128"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Limnephilus"^^xsd:string ;
+    rdfs:comment "Limnephilus is a genus of caddisflies in the family Limnephilidae. There are over 180 species of Limnephilus, described between 1824 and 1999.Several species of Limnephilus are endangered, including Limnephilus perpusillus, Limnephilus parvulus and Limnephilus janus being listed as a species of special concern in Wisconsin, and Limnephilus pallens being listed as a species of special concern in Michigan.This genus is most important in lakes, spring ponds, and beaver ponds. Some of its species do well enough in spring creeks and slow pools to be important to trout there. Some Limnephilus species are multibrooded. It is fairly frequent in Leicestershire and Rutland, and common and widespread over much of Britain."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:skydiver a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "skydiver"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q193210"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Parachuting"^^xsd:string ;
+    rdfs:comment "Parachuting, including also skydiving, is a method of transiting from a high point in the atmosphere to the surface of Earth with the aid of gravity, involving the control of speed during the descent using a parachute or parachutes."^^xsd:string .
+
