@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:methyl-tert-butyl-ether a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "methyl-tert-butyl-ether"^^xsd:string ;
+    svo:has_synonym "mtbe"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q412346"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Methyl_tert-butyl_ether"^^xsd:string ;
+    rdfs:comment "Methyl tert-butyl ether (MTBE), also known as methyl tert-butyl ether and tert-butyl methyl ether, is an organic compound with a structural formula (CH3)3COCH3. MTBE is a volatile, flammable, and colorless liquid that is sparingly soluble in water. Primarily used as a fuel additive, MTBE is blended into gasoline to increase its octane rating and knock resistance, and reduce unwanted emissions."^^xsd:string .
+

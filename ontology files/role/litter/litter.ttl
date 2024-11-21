@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:litter a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "litter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1780867"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Litter"^^xsd:string ;
+    rdfs:comment "Litter consists of waste products that have been discarded incorrectly, without consent, at an unsuitable location.  The word litter can also be used as a verb; to litter means to drop and leave objects, often man-made, such as aluminum cans, paper cups, food wrappers, cardboard boxes or plastic bottles on the ground, and leave them there indefinitely or for other people to dispose of as opposed to disposing of them correctly."^^xsd:string .
+

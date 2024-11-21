@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:etovos_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "etovos_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2167245"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/E%C3%B6tv%C3%B6s_number"^^xsd:string ;
+    rdfs:comment "In fluid dynamics the Eötvös number (Eo), also called the Bond number (Bo), is a dimensionless number "^^xsd:string .
+

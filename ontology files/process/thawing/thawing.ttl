@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thawing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "thawing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q106080"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Melting"^^xsd:string ;
+    rdfs:comment "Melting, or fusion, is a physical process that results in the phase transition of a substance from a solid to a liquid. This occurs when the internal energy of the solid increases, typically by the application of heat or pressure, which increases the substance's temperature to the melting point. At the melting point, the ordering of ions or molecules in the solid breaks down to a less ordered state, and the solid melts to become a liquid."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:boltzmann_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "boltzmann_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5962"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Boltzmann_constant"^^xsd:string ;
+    rdfs:comment "The Boltzmann constant (kB or k) is the proportionality factor that relates the average relative thermal energy of particles in a gas with the thermodynamic temperature of the gas. It occurs in the definitions of the kelvin and the gas constant, and in Planck's law of black-body radiation and Boltzmann's entropy formula, and is used in calculating thermal noise in resistors. The Boltzmann constant has dimensions of energy divided by temperature, the same as entropy.  It is named after the Austrian scientist Ludwig Boltzmann."^^xsd:string .
+

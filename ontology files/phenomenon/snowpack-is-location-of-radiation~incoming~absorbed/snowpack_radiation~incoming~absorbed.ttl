@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/snowpack-is-location-of-radiation~incoming~absorbed> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "snowpack_radiation~incoming~absorbed"^^xsd:string ;
+    svo:has_location :snowpack ;
+    svo:has_primary_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/radiation~incoming~absorbed> .
+

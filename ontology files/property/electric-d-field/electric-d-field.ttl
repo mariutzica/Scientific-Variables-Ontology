@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:electric-d-field a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "electric-d-field"^^xsd:string ;
+    svo:has_synonym "electric_displacement"^^xsd:string,
+        "electric_displacement_field"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q371907"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Electric_displacement_field"^^xsd:string ;
+    rdfs:comment "In physics, the electric displacement field (denoted by D) or electric induction is a vector field that appears in Maxwell's equations.  It accounts for the effects of free and bound charge within materials. \"D\" stands for \"displacement\", as in the related concept of displacement current in dielectrics. In free space, the electric displacement field is equivalent to flux density, a concept that lends understanding of Gauss's law. In the International System of Units (SI), it is expressed in units of coulomb per meter square (C⋅m−2)."^^xsd:string .
+

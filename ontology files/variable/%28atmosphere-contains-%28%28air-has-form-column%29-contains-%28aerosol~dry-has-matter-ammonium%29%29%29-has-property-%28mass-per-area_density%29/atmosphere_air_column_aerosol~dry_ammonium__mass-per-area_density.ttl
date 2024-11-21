@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28atmosphere-contains-%28%28air-has-form-column%29-contains-%28aerosol~dry-has-matter-ammonium%29%29%29-has-property-%28mass-per-area_density%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "atmosphere_air_column_aerosol~dry_ammonium__mass-per-area_density"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/column> ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/dry> ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/aerosol> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/air>,
+        <http://scientificvariablesontology.org/svo/matter/ammonium> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/atmosphere> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/atmosphere-contains-%28%28air-has-form-column%29-contains-%28aerosol~dry-has-matter-ammonium%29%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mass-per-area_density> ;
+    svo:has_original_label "atmosphere_air-column_aerosol~dry_ammonium__mass-per-area_density"^^xsd:string .
+

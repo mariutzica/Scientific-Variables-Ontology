@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nanocladius a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "nanocladius"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6964012"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nanocladius"^^xsd:string ;
+    rdfs:comment "Nanocladius is a genus of non-biting midges of the bloodworm family Chironomidae. Larvae either live commensally on or as parasites of aquatic insects in nymphal stages; hosts include mayflies, stoneflies, dobsonflies, or damselflies. The larvae attach to their hosts by forming silken tubes which they later pupate in. They feed on the hemolymph of their host. "^^xsd:string .
+

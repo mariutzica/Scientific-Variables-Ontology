@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mating a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "mating"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q228395"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mating"^^xsd:string ;
+    rdfs:comment "In biology, mating is the pairing of either opposite-sex or hermaphroditic organisms for the purposes of sexual reproduction. Fertilization is the fusion of two gametes.Copulation is the union of the sex organs of two sexually reproducing animals for insemination and subsequent internal fertilization. Mating may also lead to external fertilization, as seen in amphibians, fishes and plants. For most species, mating is between two individuals of opposite sexes. However, for some hermaphroditic species, copulation is not required because the parent organism is capable of self-fertilization (autogamy); for example, banana slugs."^^xsd:string .
+

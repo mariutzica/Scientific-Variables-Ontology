@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:shear_stress a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "shear_stress"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q657936"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Shear_stress"^^xsd:string ;
+    rdfs:comment "Shear stress (often denoted by τ (Greek: tau)) is the component of stress coplanar with a material cross section. It arises from the shear force, the component of force vector parallel to the material cross section.  Normal stress, on the other hand, arises from the force vector component perpendicular to the material cross section on which it acts."^^xsd:string .
+

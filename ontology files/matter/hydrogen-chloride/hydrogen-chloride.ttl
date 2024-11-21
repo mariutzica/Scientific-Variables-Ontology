@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydrogen-chloride a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "hydrogen-chloride"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q211086"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydrogen_chloride"^^xsd:string ;
+    rdfs:comment "The compound hydrogen chloride has the chemical formula HCl and as such is a hydrogen halide. At room temperature, it is a colourless gas, which forms white fumes of hydrochloric acid upon contact with atmospheric water vapor. Hydrogen chloride gas and hydrochloric acid are important in technology and industry. Hydrochloric acid, the aqueous solution of hydrogen chloride, is also commonly given the formula HCl."^^xsd:string .
+

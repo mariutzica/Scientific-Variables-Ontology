@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28earth-mantle-contains-%28material-contains-%28p-seismic-wave-as-numerator-s-seismic-wave-as-denominator%29%29%29-has-property-%28velocity_ratio%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "earth-mantle_material_p-seismic-wave_s-seismic-wave__velocity_ratio"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/material> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/earth-mantle>,
+        <http://scientificvariablesontology.org/svo/phenomenon/p-seismic-wave>,
+        <http://scientificvariablesontology.org/svo/phenomenon/s-seismic-wave> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/earth-mantle-contains-%28material-contains-%28p-seismic-wave-as-numerator-s-seismic-wave-as-denominator%29%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/velocity_ratio> ;
+    svo:has_original_label "earth_mantle_material__p-wave_velocity_over_s-wave_velocity_ratio"^^xsd:string .
+

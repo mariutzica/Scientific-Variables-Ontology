@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:coring a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "coring"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5170558"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Coring"^^xsd:string ;
+    rdfs:comment "Coring happens when a heated alloy, such as a Cu-Ni system, cools in non-equilibrium conditions. The center of each grain, which is the first part to freeze, is rich in the high-melting element (e.g., nickel for this Cu–Ni system), whereas the concentration of the low-melting element increases with position from this region to the grain boundary. This is termed a 'cored structure', which gives rise to less than the optimal properties. The distribution of the two elements within the grains is nonuniform, a phenomenon termed 'segregation'; that is, concentration gradients are established across the grains. "^^xsd:string .
+

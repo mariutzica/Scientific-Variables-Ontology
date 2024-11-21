@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:solar-mean-day a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "solar-mean-day"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q192854"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Solar_time"^^xsd:string ;
+    rdfs:comment "Solar time is a calculation of the passage of time based on the position of the Sun in the sky. The fundamental unit of solar time is the day, based on the synodic rotation period. Traditionally, there are three types of time reckoning based on astronomical observations: apparent solar time and mean solar time (discussed in this article), and sidereal time, which is based on the apparent motions of stars other than the Sun."^^xsd:string .
+

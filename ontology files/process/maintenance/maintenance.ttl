@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:maintenance a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "maintenance"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1043452"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Maintenance"^^xsd:string ;
+    rdfs:comment "The technical meaning of maintenance involves functional checks, servicing, repairing or replacing of necessary devices, equipment, machinery, building infrastructure, and supporting utilities in industrial, business, and residential installations. Over time, this has come to include multiple wordings that describe various cost-effective practices to keep equipment operational; these activities occur  either before or after a failure."^^xsd:string .
+

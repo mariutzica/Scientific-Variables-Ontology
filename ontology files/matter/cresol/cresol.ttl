@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cresol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "cresol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q413524"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cresol"^^xsd:string ;
+    rdfs:comment "Cresols (also known as hydroxytoluene, toluenol, benzol or cresylic acid) are a group of aromatic organic compounds. They are widely-occurring phenols (sometimes called phenolics) which may be either natural or manufactured. They are also categorized as methylphenols. Cresols commonly occur as either solids or liquids because their melting points are generally close to room temperature. Like other types of phenols, they are slowly oxidized by exposure to air, and the resulting impurities often give the samples a yellow to brownish red tint. Cresols have an odor characteristic to that of other simple phenols, reminiscent to some of a \"coal tar\" smell. The name \"cresol\" is an adduct of phenol and their traditional source, creosote."^^xsd:string .
+

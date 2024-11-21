@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:radiation_stress a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "radiation_stress"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7280367"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Radiation_stress"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, the radiation stress is the depth-integrated – and thereafter phase-averaged – excess momentum flux caused by the presence of the surface gravity waves, which is exerted on the mean flow. The radiation stresses behave as a second-order tensor."^^xsd:string .
+

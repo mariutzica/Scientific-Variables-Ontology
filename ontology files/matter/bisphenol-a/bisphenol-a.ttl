@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bisphenol-a a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "bisphenol-a"^^xsd:string ;
+    svo:has_synonym "4,4'-Isopropylidenediphenol"^^xsd:string,
+        "BPA"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q271980"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bisphenol_A"^^xsd:string ;
+    rdfs:comment "Bisphenol A (BPA) is a chemical compound primarily used in the manufacturing of various plastics. It is a colourless solid which is soluble in most common organic solvents, but has very poor solubility in water. BPA is produced on an industrial scale by the condensation reaction of phenol and acetone, and has a global production scale which is expected to reach 10 million tonnes in 2022.BPA's largest single application is as a co-monomer in the production of polycarbonates, which accounts for 65–70% of all BPA production. The manufacturing of epoxy resins and vinyl ester resins account for 25–30% of BPA use. The remaining 5% is used as a major component of several high-performance plastics, and as a minor additive in PVC, polyurethane, thermal paper, and several other materials. It is not a plasticizer, although it is often wrongly labelled as such."^^xsd:string .
+

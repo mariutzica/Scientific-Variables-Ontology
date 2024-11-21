@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mass_flux a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "mass_flux"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3265048"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mass_flux"^^xsd:string ;
+    rdfs:comment "In physics and engineering, mass flux is the rate of mass flow. Its SI units are kg m−2 s−1. The common symbols are j, J, q, Q, φ, or Φ (Greek lower or capital Phi), sometimes with subscript m to indicate mass is the flowing quantity. Mass flux can also refer to an alternate form of flux in Fick's law that includes the molecular mass, or in Darcy's law that includes the mass density.Sometimes the defining equation for mass flux in this article is used interchangeably with the defining equation in mass flow rate. For example, Fluid Mechanics, Schaum's et al  uses the definition of mass flux as the equation in the mass flow rate article."^^xsd:string .
+

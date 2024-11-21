@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/propertytype/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dichotomous a svo:PropertyType,
+        owl:NamedIndividual ;
+    rdfs:label "dichotomous"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q10361123"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dichotomy"^^xsd:string ;
+    rdfs:comment "A dichotomy  is a partition of a whole (or a set) into two parts (subsets). In other words, this couple of parts must be"^^xsd:string .
+

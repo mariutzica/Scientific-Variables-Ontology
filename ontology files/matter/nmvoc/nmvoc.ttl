@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nmvoc a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "nmvoc"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q16963326"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Non-methane_volatile_organic_compound"^^xsd:string ;
+    rdfs:comment "Non-methane volatile organic compounds (NMVOCs) are a set of organic compounds that are typically photochemically reactive in the atmosphere—marked by the exclusion of methane. NMVOCs include a large variety of chemically different compounds, such as benzene, ethanol, formaldehyde, cyclohexane, 1,1,1-trichloroethane and acetone. Essentially, NMVOCs are identical to volatile organic compounds (VOCs), but with methane excluded.  Methane is excluded in air-pollution contexts because it is not toxic. It is however a very potent greenhouse gas, with low reactivity and thus a long lifetime in the atmosphere. An important subset of NMVOCs are the non-methane hydrocarbons (NMHCs)."^^xsd:string .
+

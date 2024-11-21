@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:crossbreed a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "crossbreed"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4390467"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Crossbreed"^^xsd:string ;
+    rdfs:comment "A crossbreed is an organism with purebred parents of two different breeds, varieties, or populations. Crossbreeding, sometimes called \"designer crossbreeding\", is the process of breeding such an organism. While crossbreeding is used to maintain health and viability of organisms, irresponsible crossbreeding can also produce organisms of inferior quality or dilute a purebred gene pool to the point of extinction of a given breed of organism.A domestic animal of unknown ancestry, where the breed status of only one parent or grandparent is known, may also be called a crossbreed though the term \"mixed breed\" is technically more accurate. Outcrossing is a type of crossbreeding used within a purebred breed to increase the genetic diversity within the breed, particularly when there is a need to avoid inbreeding."^^xsd:string .
+

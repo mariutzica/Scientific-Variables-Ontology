@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bromodichloromethane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "bromodichloromethane"^^xsd:string ;
+    svo:has_synonym "Dichlorobromomethane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q417426"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bromodichloromethane"^^xsd:string ;
+    rdfs:comment "Bromodichloromethane is a trihalomethane with formula CHBrCl2."^^xsd:string .
+

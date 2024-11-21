@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:stearic-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "stearic-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q209685"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Stearic_acid"^^xsd:string ;
+    rdfs:comment "Stearic acid ( STEER-ik,  stee-ARR-ik) is a saturated fatty acid with an 18-carbon chain.  The IUPAC name is octadecanoic acid. It is a waxy solid with the formula CH3(CH2)16CO2H. Its name comes from the Greek word στέαρ \"stéar\", which means tallow. The salts and esters of stearic acid are called stearates.  As its ester, stearic acid is one of the most common saturated fatty acids found in nature following palmitic acid. The triglyceride derived from three molecules of stearic acid is called stearin."^^xsd:string .
+

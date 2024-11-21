@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:superposition a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "superposition"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q284885"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Superposition_principle"^^xsd:string ;
+    rdfs:comment "The superposition principle, also known as superposition property, states that, for all linear systems, the net response caused by two or more stimuli is the sum of the responses that would have been caused by each stimulus individually. So that if input A produces response X and input B produces response Y then input (A + B) produces response (X + Y)."^^xsd:string .
+

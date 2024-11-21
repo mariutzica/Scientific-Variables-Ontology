@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:myclobutanil a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "myclobutanil"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q413587"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Myclobutanil"^^xsd:string ;
+    rdfs:comment "Myclobutanil is a triazole chemical used as a fungicide. It is a steroid demethylation inhibitor, specifically inhibiting ergosterol biosynthesis. Ergosterol is a critical component of fungal cell membranes."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:subsidence a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "subsidence"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q849953"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Subsidence"^^xsd:string ;
+    rdfs:comment "Subsidence is a general term for downward vertical movement of the Earth's surface, which can be caused by both natural processes and human activities. Subsidence involves little or no horizontal movement, which distinguishes it from slope movement.Processes that lead to subsidence include dissolution of underlying carbonate rock by groundwater; gradual compaction of sediments; withdrawal of fluid lava from beneath a solidified crust of rock; mining; pumping of subsurface fluids, such as groundwater or petroleum; or warping of the Earth's crust by tectonic forces. Subsidence resulting from tectonic deformation of the crust is known as tectonic subsidence and can create accommodation for sediments to accumulate and eventually lithify into sedimentary rock.Ground subsidence is of global concern to geologists, geotechnical engineers, surveyors, engineers, urban planners, landowners, and the public in general. Pumping of groundwater or petroleum has led to subsidence of as much as 9 meters (30 ft) in many locations around the world and incurring costs measured in hundreds of millions of US dollars."^^xsd:string .
+

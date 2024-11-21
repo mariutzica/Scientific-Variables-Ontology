@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:water-as-medium-%28diatoms-expressed-as-carbon%29 a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "water_diatoms_carbon"^^xsd:string ;
+    svo:has_medium_participant_phenomenon :water ;
+    svo:has_primary_participant_phenomenon :diatoms-expressed-as-carbon .
+

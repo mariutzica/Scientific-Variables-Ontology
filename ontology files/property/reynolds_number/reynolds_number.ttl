@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:reynolds_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "reynolds_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q178932"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Reynolds_number"^^xsd:string ;
+    rdfs:comment "In fluid mechanics, the Reynolds number (Re) is a dimensionless quantity that helps predict fluid flow patterns in different situations by measuring the ratio between inertial and viscous forces. At low Reynolds numbers, flows tend to be dominated by laminar (sheet-like) flow, while at high Reynolds numbers, flows tend to be turbulent.  The turbulence results from differences in the fluid's speed and direction, which may sometimes intersect or even move counter to the overall direction of the flow (eddy currents). These eddy currents begin to churn the flow, using up energy in the process, which for liquids increases the chances of cavitation."^^xsd:string .
+

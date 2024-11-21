@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:racing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "racing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q878123"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Racing"^^xsd:string ;
+    rdfs:comment "In sports, racing is a competition of speed, in which competitors try to complete a given task in the shortest amount of time. Typically this involves traversing some distance, but it can be any other task involving speed to reach a specific goal."^^xsd:string .
+

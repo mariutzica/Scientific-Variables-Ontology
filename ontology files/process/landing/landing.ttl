@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:landing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "landing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q844947"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Landing"^^xsd:string ;
+    rdfs:comment "Landing is the last part of a flight, where a flying animal, aircraft, or spacecraft returns to the ground. When the flying object returns to water, the process is called alighting, although it is commonly called \"landing\", \"touchdown\"a or \"splashdown\" as well. A normal aircraft flight would include several parts of flight including taxi, takeoff, climb, cruise, descent and landing."^^xsd:string .
+

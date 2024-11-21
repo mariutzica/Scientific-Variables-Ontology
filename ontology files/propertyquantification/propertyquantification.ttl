@@ -1,0 +1,41 @@
+@prefix : <http://scientificvariablesontology.org/svo/propertyquantification/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/propertyquantification> a owl:Ontology ;
+    owl:imports <http://scientificvariablesontology.org/svo> .
+
+:code a svo:PropertyQuantification,
+        owl:NamedIndividual ;
+    rdfs:label "code"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q188889"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Code"^^xsd:string ;
+    rdfs:comment "In communications and information processing, code is a system of rules to convert information—such as a letter, word, sound, image, or gesture—into another form, sometimes shortened or secret, for communication through a communication channel or storage in a storage medium. An early example is an invention of language, which enabled a person, through speech, to communicate what they thought, saw, heard, or felt to others. But speech limits the range of communication to the distance a voice can carry and limits the audience to those present when the speech is uttered. The invention of writing, which converted spoken language into visual symbols, extended the range of communication across space and time."^^xsd:string .
+
+:index a svo:PropertyQuantification,
+        owl:NamedIndividual ;
+    rdfs:label "index"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q18208028"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Index_(statistics)"^^xsd:string ;
+    rdfs:comment "In statistics and research design, an index is a composite statistic – a measure of changes in a representative group of individual data points, or in other words, a compound measure that aggregates multiple indicators."^^xsd:string .
+
+:rating a svo:PropertyQuantification,
+        owl:NamedIndividual ;
+    rdfs:label "rating"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1465769"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Rating"^^xsd:string ;
+    rdfs:comment "A rating is an evaluation or assessment of something, in terms of quality, quantity, or some combination of both."^^xsd:string .
+
+:scale a svo:PropertyQuantification,
+        owl:NamedIndividual ;
+    rdfs:label "scale"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q393789"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Scale"^^xsd:string ;
+    rdfs:comment "Scale or scales may refer to:"^^xsd:string .
+
+:stage a svo:PropertyQuantification,
+        owl:NamedIndividual ;
+    rdfs:label "stage"^^xsd:string .
+

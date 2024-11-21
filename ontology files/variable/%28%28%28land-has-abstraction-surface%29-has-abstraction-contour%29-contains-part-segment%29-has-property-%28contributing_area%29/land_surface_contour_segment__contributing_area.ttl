@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28%28land-has-abstraction-surface%29-has-abstraction-contour%29-contains-part-segment%29-has-property-%28contributing_area%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "land_surface_contour_segment__contributing_area"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/contour>,
+        <http://scientificvariablesontology.org/svo/abstraction/surface> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/segment> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/land> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28%28land-has-abstraction-surface%29-has-abstraction-contour%29-contains-part-segment> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/contributing_area> ;
+    svo:has_original_label "land_surface_contour_segment__total_contributing_area"^^xsd:string .
+

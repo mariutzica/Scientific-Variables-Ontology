@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:palladium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "palladium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1089"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Palladium"^^xsd:string ;
+    rdfs:comment "Palladium is a chemical element with the symbol Pd and atomic number 46. It is a rare and lustrous silvery-white metal discovered in 1803 by the English chemist William Hyde Wollaston. He named it after the asteroid Pallas, which was itself named after the epithet of the Greek goddess Athena, acquired by her when she slew Pallas. Palladium, platinum, rhodium, ruthenium, iridium and osmium form a group of elements referred to as the platinum group metals (PGMs). They have similar chemical properties, but palladium has the lowest melting point and is the least dense of them."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dioxygen a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dioxygen"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q428653"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Allotropes_of_oxygen#Dioxygen"^^xsd:string ;
+    rdfs:comment "There are several known allotropes of oxygen. The most familiar is molecular oxygen (O2), present at significant levels in Earth's atmosphere and also known as dioxygen or triplet oxygen. Another is the highly reactive ozone (O3). Others are:"^^xsd:string .
+

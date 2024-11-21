@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:planck_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "planck_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q122894"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Planck_constant"^^xsd:string ;
+    rdfs:comment "The Planck constant, or Planck's constant, is a fundamental physical constant of foundational importance in quantum mechanics. The constant gives the relationship between the energy of a photon and its frequency, and by the mass-energy equivalence, the relationship between mass and frequency. Specifically, a photon's energy is equal to its frequency multiplied by the Planck constant. The constant is generally denoted by "^^xsd:string .
+

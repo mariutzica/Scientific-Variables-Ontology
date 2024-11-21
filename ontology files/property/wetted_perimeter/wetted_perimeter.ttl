@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:wetted_perimeter a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "wetted_perimeter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1869697"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Wetted_perimeter"^^xsd:string ;
+    rdfs:comment "The wetted perimeter is the perimeter of the cross sectional area that is \"wet\". The length of line of the intersection of channel wetted surface with a cross sectional plane normal to the flow direction. The term wetted perimeter is common in civil engineering, environmental engineering, hydrology, geomorphology, and heat transfer applications; it is associated with the hydraulic diameter or hydraulic radius. Engineers commonly cite the cross sectional area of a river."^^xsd:string .
+

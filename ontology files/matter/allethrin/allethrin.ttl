@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:allethrin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "allethrin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1851694"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Allethrins"^^xsd:string ;
+    rdfs:comment "The allethrins are a group of related synthetic compounds used in insecticides. They are classified as pyrethroids, i.e. synthetic versions of pyrethrin, a chemical with insecticidal properties found naturally in Chrysanthemum flowers. They were first synthesized in the United States by Milton S. Schechter in 1949. Allethrin was the first pyrethroid."^^xsd:string .
+

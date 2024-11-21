@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ecosystem a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "ecosystem"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q37813"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Ecosystem"^^xsd:string ;
+    rdfs:comment "An ecosystem (or ecological system) consists of all the organisms and the  physical environment with which they interact.: 458  These biotic and abiotic components are linked together through nutrient cycles and energy flows. Energy enters the system through photosynthesis and is incorporated into plant tissue. By feeding on plants and on one another, animals play an important role in the movement of matter and energy through the system. They also influence the quantity of plant and microbial biomass present. By breaking down dead organic matter, decomposers release carbon back to the atmosphere and facilitate nutrient cycling by converting nutrients stored in dead biomass back to a form that can be readily used by plants and microbes."^^xsd:string .
+

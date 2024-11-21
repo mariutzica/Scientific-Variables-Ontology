@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/propertytype/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:boolean a svo:PropertyType,
+        owl:NamedIndividual ;
+    rdfs:label "boolean"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q520777"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Boolean_data_type"^^xsd:string ;
+    rdfs:comment "In computer science, the Boolean (sometimes shortened to Bool) is a data type that has one of two possible values (usually denoted true and false) which is intended to represent the two truth values of logic and Boolean algebra. It is named after George Boole, who first defined an algebraic system of logic in the mid 19th century. The Boolean data type is primarily associated with conditional statements, which allow different actions by changing control flow depending on whether a programmer-specified Boolean condition evaluates to true or false. It is a special case of a more general logical data type—logic does not always need to be Boolean  (see probabilistic logic)."^^xsd:string .
+

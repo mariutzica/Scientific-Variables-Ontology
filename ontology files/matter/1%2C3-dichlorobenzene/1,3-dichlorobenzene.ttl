@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:1%2C3-dichlorobenzene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "1,3-dichlorobenzene"^^xsd:string ;
+    svo:has_synonym "m-dichlorobenzene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2216854"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/1,3-Dichlorobenzene"^^xsd:string ;
+    rdfs:comment "1,3-Dichlorobenzene (also known as meta-dichlorobenzene) is an organic compound with the formula C6H4Cl2. It is the least common of the three isomers of dichlorobenzene, and it is a colorless liquid that is insoluble in water.  It is produced as a minor byproduct of the chlorination of benzene, but can also be prepared in a directed manner by the Sandmeyer reaction of 3-chloroaniline.  It also arises from the isomerization of the other dichlorobenzenes at high temperature."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nematomorpha a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "nematomorpha"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5186"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nematomorpha"^^xsd:string ;
+    rdfs:comment "Nematomorpha (sometimes called Gordiacea, and commonly known as horsehair worms, hairsnakes, or Gordian worms) are a phylum of parasitoid animals superficially similar to nematode worms in morphology, hence the name. Most species range in size from 50 to 100 millimetres (2.0 to 3.9 in) long, reaching 2 metres in extreme cases, and 1 to 3 millimetres (0.039 to 0.118 in) in diameter. Horsehair worms can be discovered in damp areas, such as watering troughs, swimming pools, streams, puddles, and cisterns. The adult worms are free-living, but the larvae are parasitic on arthropods, such as beetles, cockroaches, mantises, orthopterans, and crustaceans. About 351 freshwater species are known and a conservative estimate suggests that there may be about 2000 freshwater species worldwide. The name \"Gordian\" stems from the legendary Gordian knot. This relates to the fact that nematomorphs often coil themselves in tight balls that resemble knots."^^xsd:string .
+

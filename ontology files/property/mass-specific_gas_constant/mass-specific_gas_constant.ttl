@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mass-specific_gas_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "mass-specific_gas_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q182333"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gas_constant#Specific_gas_constant"^^xsd:string ;
+    rdfs:comment "The molar gas constant (also known as the gas constant, universal gas constant, or ideal gas constant) is denoted by the symbol R or R. It is the molar equivalent to the Boltzmann constant, expressed in units of energy per temperature increment per amount of substance, i.e. the pressure–volume product, rather than energy per temperature increment per particle. The constant is also a combination of the constants from Boyle's law, Charles's law, Avogadro's law, and Gay-Lussac's law.  It is a physical constant that is featured in many fundamental equations in the physical  sciences, such as the ideal gas law, the Arrhenius equation, and the Nernst equation."^^xsd:string .
+

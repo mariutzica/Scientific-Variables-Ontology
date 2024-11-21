@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chrysopetalidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "chrysopetalidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3916867"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chrysopetalidae"^^xsd:string ;
+    rdfs:comment "Chrysopetalidae is a family of polychaete worms. The body is short or elongated, with few or numerous segments. All segments bear on their dorsal side a fan or a transverse row of paleae. The cephalic lobe has tentacles and eyes and the buccal segment has two or four tentacular cirri on each side. The parapodia are uniramous or biramous, with dorsal cirri upon all segments. The ventral bristles are compound."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:propane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "propane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q131189"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Propane"^^xsd:string ;
+    rdfs:comment "Propane () is a three-carbon alkane with the molecular formula C3H8. It is a gas at standard temperature and pressure, but compressible to a transportable liquid. A by-product of natural gas processing and petroleum refining, it is commonly used as a fuel in domestic and industrial applications and in low-emissions public transportation. Discovered in 1857 by the French chemist Marcellin Berthelot, it became commercially available in the US by 1911. Propane is one of a group of liquefied petroleum gases (LP gases). The others include butane, propylene, butadiene, butylene, isobutylene, and mixtures thereof. Propane has lower volumetric energy density, but higher gravimetric energy density and burns more cleanly than gasoline and coal.Propane gas has become a popular choice for barbecues and portable stoves because its low −42 °C boiling point makes it vaporise inside pressurised liquid containers (2 phases). Propane powers buses, forklifts, taxis, outboard boat motors, and ice resurfacing machines and is used for heat and cooking in recreational vehicles and campers."^^xsd:string .
+

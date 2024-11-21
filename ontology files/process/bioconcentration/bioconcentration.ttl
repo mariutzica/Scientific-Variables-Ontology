@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bioconcentration a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "bioconcentration"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2904036"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bioconcentration"^^xsd:string ;
+    rdfs:comment "In aquatic toxicology, bioconcentration is the accumulation of a water-borne chemical substance in an organism exposed to the water.There are several ways in which to measure and assess bioaccumulation and bioconcentration.  These include: octanol-water partition coefficients (KOW), bioconcentration factors (BCF), bioaccumulation factors (BAF) and biota-sediment accumulation factor (BSAF).  Each of these can be calculated using either empirical data or measurements, as well as from mathematical models. One of these mathematical models is a fugacity-based BCF model developed by Don Mackay.Bioconcentration factor can also be expressed as the ratio of the concentration of a chemical in an organism to the concentration of the chemical in the surrounding environment. The BCF is a measure of the extent of chemical sharing between an organism and the surrounding environment.In surface water, the BCF is the ratio of a chemical's concentration in an organism to the chemical's aqueous concentration.  BCF is often expressed in units of liter per kilogram (ratio of mg of chemical per kg of organism to mg of chemical per liter of water). BCF can simply be an observed ratio, or it can be the prediction of a partitioning model. A partitioning model is based on assumptions that chemicals partition between water and aquatic organisms as well as the idea that chemical equilibrium exists between the organisms and the aquatic environment in which it is found"^^xsd:string .
+

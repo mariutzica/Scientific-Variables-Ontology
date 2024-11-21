@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydrozoa a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "hydrozoa"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q181989"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydrozoa"^^xsd:string ;
+    rdfs:comment "Hydrozoa (hydrozoans; from Ancient Greek  ὕδωρ (húdōr) 'water', and  ζῷον (zôion) 'animal') is a taxonomic class of individually very small, predatory animals, some solitary and some colonial, most of which inhabit saline water. The colonies of the colonial species can be large, and in some cases the specialized individual animals cannot survive outside the colony. A few genera within this class live in freshwater habitats. Hydrozoans are related to jellyfish and corals and belong to the phylum Cnidaria."^^xsd:string .
+

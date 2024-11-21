@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dissection a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "dissection"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q116646"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dissection"^^xsd:string ;
+    rdfs:comment "Dissection (from Latin dissecare \"to cut to pieces\"; also called anatomization) is the dismembering of the body of a deceased animal or plant to study its anatomical structure. Autopsy is used in pathology and forensic medicine to determine the cause of death in humans. Less extensive dissection of plants and smaller animals preserved in a formaldehyde solution is typically carried out or demonstrated in biology and natural science classes in middle school and high school, while extensive dissections of cadavers of adults and children, both fresh and preserved are carried out by medical students in medical schools as a part of the teaching in subjects such as anatomy, pathology and forensic medicine. Consequently, dissection is typically conducted in a morgue or in an anatomy lab."^^xsd:string .
+

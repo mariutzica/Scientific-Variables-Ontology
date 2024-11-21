@@ -1,0 +1,16 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:jerk a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "jerk"^^xsd:string ;
+    svo:has_synonym "jolt"^^xsd:string,
+        "lurch"^^xsd:string,
+        "surge"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q497332"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Jerk_(physics)"^^xsd:string ;
+    rdfs:comment "In physics, jerk or jolt is the rate at which an object's acceleration changes with respect to time. It is a vector quantity (having both magnitude and direction). Jerk is most commonly denoted by the symbol j and expressed in m/s3 (SI units) or standard gravities per second (g0/s)."^^xsd:string .
+

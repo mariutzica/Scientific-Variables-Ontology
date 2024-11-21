@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:weight a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "weight"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q25288"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Weight"^^xsd:string ;
+    rdfs:comment "In science and engineering, the weight of an object is the force acting on the object due to acceleration or gravity.Some standard textbooks define weight as a vector quantity, the gravitational force acting on the object. Others define weight as a scalar quantity, the magnitude of the gravitational force. Yet others define it as the magnitude of the reaction force exerted on a body by mechanisms that counteract the effects of gravity: the weight is the quantity that is measured by, for example, a spring scale. Thus, in a state of free fall, the weight would be zero. In this sense of weight, terrestrial objects can be weightless: ignoring air resistance, the famous apple falling from the tree, on its way to meet the ground near Isaac Newton, would be weightless."^^xsd:string .
+

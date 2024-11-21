@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:moderation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "moderation"^^xsd:string ;
+    svo:has_synonym "moderation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6888525"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Moderation"^^xsd:string ;
+    rdfs:comment "Moderation is the process or trait of eliminating, lessening, or avoiding extremes. It is used to ensure normality throughout the medium on which it is being conducted. Common uses of moderation include:"^^xsd:string .
+

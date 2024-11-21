@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bergeron-findeisen-process a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "bergeron-findeisen-process"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q285332"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Wegener%E2%80%93Bergeron%E2%80%93Findeisen_process"^^xsd:string ;
+    rdfs:comment "The Wegener–Bergeron–Findeisen process (after  Alfred Wegener, Tor Bergeron and Walter Findeisen), (or \"cold-rain process\") is a process of ice crystal growth that occurs in mixed phase clouds (containing a mixture of supercooled water and ice) in regions where the ambient vapor pressure falls between the saturation vapor pressure over water and the lower saturation vapor pressure over ice. This is a subsaturated environment for liquid water but a supersaturated environment for ice resulting in rapid evaporation of liquid water and rapid ice crystal growth through vapor deposition.  If the number density of ice is small compared to liquid water, the ice crystals can grow large enough to fall out of the cloud, melting into rain drops if lower level temperatures are warm enough."^^xsd:string .
+

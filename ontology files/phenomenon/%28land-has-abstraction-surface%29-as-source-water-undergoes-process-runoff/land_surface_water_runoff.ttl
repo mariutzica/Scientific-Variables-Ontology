@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28land-has-abstraction-surface%29-as-source-water-undergoes-process-runoff> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "land_surface_water_runoff"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :water ;
+    svo:has_source_participant_phenomenon :land-has-abstraction-surface ;
+    svo:undergoes_process <http://scientificvariablesontology.org/svo/process/runoff> .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:crater a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "crater"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3240715"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Crater"^^xsd:string ;
+    rdfs:comment "A crater is a landform consisting of a hole or depression on a planetary surface, usually caused either by an object hitting the surface, or by geological activity on the planet. A crater has classically been described as: \"a bowl-shaped pit that is formed by a volcano, an explosion, or a meteorite impact\". On Earth, craters are \"generally the result of volcanic eruptions\", while \"meteorite impact craters are common on the Moon, but are rare on Earth\".A 1961 New Scientist article speculating on the later-dismissed theory that the craters on the Moon might be volcanic in origin noted that \"craters produced by volcanism are blessed with advantages of terrain and mineralization not found on impact craters\". A crater may become a crater lake if conditions are suitable. This requires that the crater have relatively even and solid walls, and a source of water such as floodwaters, rain, snow, springs, or other groundwater."^^xsd:string .
+

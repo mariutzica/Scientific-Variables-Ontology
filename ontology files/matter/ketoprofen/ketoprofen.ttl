@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ketoprofen a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "ketoprofen"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q409192"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ketoprofen"^^xsd:string ;
+    rdfs:comment "Ketoprofen is one of the propionic acid class of nonsteroidal anti-inflammatory drugs (NSAID) with analgesic and antipyretic effects. It acts by inhibiting the body's production of prostaglandin."^^xsd:string .
+

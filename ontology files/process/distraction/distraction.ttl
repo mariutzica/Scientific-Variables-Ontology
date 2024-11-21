@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:distraction a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "distraction"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3030775"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Distraction"^^xsd:string ;
+    rdfs:comment "Distraction is the process of diverting the attention of an individual or group from a desired area of focus and thereby blocking or diminishing the reception of desired information. Distraction is caused by: the lack of ability to pay attention; lack of interest in the object of attention; or the great intensity, novelty or attractiveness of something other than the object of attention. Distractions come from both external sources, and internal sources. External distractions include factors such as visual triggers, social interactions, music, text messages, and phone calls. There are also internal distractions such as hunger, fatigue, illness, worrying, and daydreaming. Both external and internal distractions contribute to the interference of focus."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:potassium-40 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "potassium-40"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2251076"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Potassium-40"^^xsd:string ;
+    rdfs:comment "Potassium-40 (40K) is a radioactive isotope of potassium which has a long half-life of 1.25 billion years. It makes up about 0.012% (120 ppm) of the total amount of potassium found in nature."^^xsd:string .
+

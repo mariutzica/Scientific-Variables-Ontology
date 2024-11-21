@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlorotoluron a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chlorotoluron"^^xsd:string ;
+    svo:has_synonym "chlortoluron"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q411273"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chlortoluron"^^xsd:string ;
+    rdfs:comment "Chlortoluron or chlorotoluron are the common names for an organic compound of the phenylurea class of herbicides used to control broadleaf and annual grass weeds in cereal crops."^^xsd:string .
+

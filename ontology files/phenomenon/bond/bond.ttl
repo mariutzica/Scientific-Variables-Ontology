@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bond a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "bond"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q44424"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chemical_bond"^^xsd:string ;
+    rdfs:comment "A chemical bond is a lasting attraction between atoms or ions that enables the formation of molecules, crystals, and other structures. The bond may result from the electrostatic force between oppositely charged ions as in ionic bonds, or through the sharing of electrons as in covalent bonds. The strength of chemical bonds varies considerably; there are \"strong bonds\" or \"primary bonds\" such as covalent, ionic and metallic bonds, and \"weak bonds\" or \"secondary bonds\" such as dipole–dipole interactions, the London dispersion force, and hydrogen bonding.  "^^xsd:string .
+

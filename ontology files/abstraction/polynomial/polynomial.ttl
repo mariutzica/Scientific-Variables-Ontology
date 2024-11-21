@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:polynomial a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "polynomial"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q43260"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Polynomial"^^xsd:string ;
+    rdfs:comment "In mathematics, a polynomial is an expression consisting of indeterminates (also called variables) and coefficients, that involves only the operations of addition, subtraction, multiplication, and positive-integer powers of variables. An example of a polynomial of a single indeterminate x is x2 − 4x + 7. An example with three indeterminates is x3 + 2xyz2 − yz + 1."^^xsd:string .
+

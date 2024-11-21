@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:triaenodes a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "triaenodes"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7839919"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Triaenodes"^^xsd:string ;
+    rdfs:comment "Triaenodes is a genus of long-horned caddisflies in the family Leptoceridae. There are at least 170 described species in Triaenodes.The type species for Triaenodes is Leptocerus bicolor J. Curtis."^^xsd:string .
+

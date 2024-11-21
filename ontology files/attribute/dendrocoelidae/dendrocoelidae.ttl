@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dendrocoelidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "dendrocoelidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3022353"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dendrocoelidae"^^xsd:string ;
+    rdfs:comment "Dendrocoelidae is a family of freshwater tricladida flatworms that has a holarctic distribution.The largest freshwater triclad known belongs to this family, it's up to 40 cm in length and inhabits the Lake Baikal."^^xsd:string .
+

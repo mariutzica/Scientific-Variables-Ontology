@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bodenstein_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "bodenstein_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q370662"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bodenstein_number"^^xsd:string ;
+    rdfs:comment "The Bodenstein number (abbreviated Bo, named after Max Bodenstein) is a dimensionless parameter in chemical reaction engineering, which describes the ratio of the amount of substance introduced by convection to that introduced by diffusion. Hence, it characterises the backmixing in a system and allows statements whether and how much volume elements or substances within a chemical reactor mix due to the prevalent currents. It is defined as the ratio of the convection current to the dispersion current. The Bodenstein number is an element of the dispersion model of residence times and is therefore also called the dimensionless dispersion coefficient."^^xsd:string .
+

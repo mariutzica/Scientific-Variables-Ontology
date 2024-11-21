@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thermal_conductance a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "thermal_conductance"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q899628"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Thermal_conductance_and_resistance"^^xsd:string ;
+    rdfs:comment "In heat transfer, thermal engineering, and thermodynamics, thermal conductance and thermal resistance are fundamental concepts that describe the ability of materials or systems to conduct heat and the opposition they offer to the heat current. The ability to manipulate these properties allows engineers to control temperature gradient, prevent thermal shock, and maximize the efficiency of thermal systems. Furthermore, these principles find applications in a multitude of fields, including materials science, mechanical engineering, electronics, and energy management. Knowledge of these principles is crucial in various scientific, engineering, and everyday applications, from designing efficient temperature control, thermal insulation, and thermal management in industrial processes to optimizing the performance of electronic devices."^^xsd:string .
+

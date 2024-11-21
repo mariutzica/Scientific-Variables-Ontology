@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:boiling-point a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "boiling-point"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1003183"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Boiling_point"^^xsd:string ;
+    rdfs:comment "The boiling point of a substance is the temperature at which the vapor pressure of a liquid equals the pressure surrounding the liquid and the liquid changes into a vapor."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:culex a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "culex"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q276595"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Culex"^^xsd:string ;
+    rdfs:comment "Culex is a genus of mosquitoes, several species of which serve as vectors of one or more important diseases of birds, humans, and other animals. The diseases they vector include arbovirus infections such as West Nile virus, Japanese encephalitis, or St. Louis encephalitis, but also filariasis and avian malaria.  They occur worldwide except for the extreme northern parts of the temperate zone, and are the most common form of mosquito encountered in some major U.S. cities, such as Los Angeles."^^xsd:string .
+

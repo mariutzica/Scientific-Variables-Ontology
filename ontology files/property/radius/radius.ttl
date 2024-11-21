@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:radius a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "radius"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q173817"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Radius"^^xsd:string ;
+    rdfs:comment "In classical geometry, a radius (PL: radii) of a circle or sphere is any of the line segments from its center to its perimeter, and in more modern usage, it is also their length. The name comes from the latin radius, meaning ray but also the spoke of a chariot wheel. The plural of radius can be either radii (from the Latin plural) or the conventional English plural radiuses. The typical abbreviation and mathematical variable name for radius is R or r. By extension, the diameter D is defined as twice the radius:"^^xsd:string .
+

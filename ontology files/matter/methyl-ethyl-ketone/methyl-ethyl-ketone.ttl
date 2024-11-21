@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:methyl-ethyl-ketone a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "methyl-ethyl-ketone"^^xsd:string ;
+    svo:has_synonym "butanone"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q372291"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Butanone"^^xsd:string ;
+    rdfs:comment "Butanone, also known as methyl ethyl ketone (MEK), is an organic compound with the formula CH3C(O)CH2CH3. This colourless liquid ketone has a sharp, sweet odor reminiscent of acetone. It is produced industrially on a large scale, but occurs in nature only in trace amounts. It is partially soluble in water, and is commonly used as an industrial solvent. It is an isomer of another solvent, tetrahydrofuran."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tetrastemma a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "tetrastemma"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3830672"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tetrastemma"^^xsd:string ;
+    rdfs:comment "Tetrastemma is a genus of nemerteans belonging to the family Tetrastemmatidae."^^xsd:string .
+

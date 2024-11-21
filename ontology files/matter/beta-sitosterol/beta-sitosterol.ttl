@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:beta-sitosterol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "beta-sitosterol"^^xsd:string ;
+    svo:has_synonym "Stigmast-5-en-3-ol,-(3.beta.)-"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q121802"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Beta-Sitosterol"^^xsd:string ;
+    rdfs:comment "β-sitosterol (beta-sitosterol) is one of several phytosterols (plant sterols) with chemical structures similar to that of cholesterol. It is a white, waxy powder with a characteristic odor, and is one of the components of the food additive E499. Phytosterols are hydrophobic and soluble in alcohols."^^xsd:string .
+

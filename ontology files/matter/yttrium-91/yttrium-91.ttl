@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:yttrium-91 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "yttrium-91"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1190172"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isotopes_of_yttrium#Yttrium-91"^^xsd:string ;
+    rdfs:comment "Natural yttrium (39Y) is composed of a single isotope yttrium-89. The most stable radioisotopes are 88Y, which has a half-life of 106.6 days and 91Y with a half-life of 58.51 days. All the other isotopes have half-lives of less than a day, except 87Y, which has a half-life of 79.8 hours, and 90Y, with 64 hours. The dominant decay mode below the stable 89Y is electron capture and the dominant mode after it is beta emission. Thirty-five unstable isotopes have been characterized."^^xsd:string .
+

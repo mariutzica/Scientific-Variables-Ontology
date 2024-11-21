@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlortetracycline a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chlortetracycline"^^xsd:string ;
+    svo:has_synonym "aureomycin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q417948"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chlortetracycline"^^xsd:string ;
+    rdfs:comment "Chlortetracycline (trade name Aureomycin, Lederle Laboratories) is a tetracycline antibiotic, the first tetracycline to be identified. It was discovered in 1945 at Lederle Laboratories under the supervision of scientist Yellapragada Subbarow and Benjamin Minge Duggar. Duggar identified the antibiotic as the product of an actinomycete he cultured from a soil sample collected from Sanborn Field at the University of Missouri.  The organism was named Streptomyces aureofaciens and the isolated drug, Aureomycin, because of their golden color.It is on the World Health Organization's List of Essential Medicines."^^xsd:string .
+

@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:halon-1202 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "halon-1202"^^xsd:string ;
+    svo:has_synonym "dibromodifluoromethane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q905027"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dibromodifluoromethane"^^xsd:string ;
+    rdfs:comment "Dibromodifluoromethane is a mixed halomethane. It is a colorless non-flammable liquid."^^xsd:string .
+

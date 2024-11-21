@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:turbulent_kinetic_energy a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "turbulent_kinetic_energy"^^xsd:string ;
+    svo:has_synonym "turbulence_kinetic_energy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7854776"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Turbulence_kinetic_energy"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, turbulence kinetic energy (TKE) is the mean kinetic energy per unit mass associated with eddies in turbulent flow. Physically, the turbulence kinetic energy is characterised by measured root-mean-square (RMS) velocity fluctuations. In the Reynolds-averaged Navier Stokes equations, the turbulence kinetic energy can be calculated based on the closure method, i.e. a turbulence model."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:acetonitrile a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "acetonitrile"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q408047"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Acetonitrile"^^xsd:string ;
+    rdfs:comment "Acetonitrile, often abbreviated MeCN (methyl cyanide), is the chemical compound with the formula CH3CN and structure H3C−C≡N. This colourless liquid is the simplest organic nitrile (hydrogen cyanide is a simpler nitrile, but the cyanide anion is not classed as organic). It is produced mainly as a byproduct of acrylonitrile manufacture. It is used as a polar aprotic solvent in organic synthesis and in the purification of butadiene. The N≡C−C skeleton is linear with a short C≡N distance of 1.16 Å.Acetonitrile was first prepared in 1847 by the French chemist Jean-Baptiste Dumas."^^xsd:string .
+

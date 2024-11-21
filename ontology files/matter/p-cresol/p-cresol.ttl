@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:p-cresol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "p-cresol"^^xsd:string ;
+    svo:has_synonym "4-methylphenol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q312251"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/P-Cresol"^^xsd:string ;
+    rdfs:comment "para-Cresol, also 4-methylphenol, is an organic compound with the formula CH3C6H4(OH).  It is a colourless solid that is widely used intermediate in the production of other chemicals. It is a derivative of phenol and is an isomer of o-cresol and m-cresol."^^xsd:string .
+

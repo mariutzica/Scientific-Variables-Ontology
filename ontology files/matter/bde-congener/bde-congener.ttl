@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bde-congener a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "bde-congener"^^xsd:string ;
+    svo:has_synonym "pbde"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q205944"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Polybrominated_diphenyl_ethers"^^xsd:string ;
+    rdfs:comment "Polybrominated diphenyl ethers or PBDEs, are a class of organobromine compounds that are used as flame retardants. Like other brominated flame retardants, PBDEs have been used in a wide array of products, including building materials, electronics, furnishings, motor vehicles, airplanes, plastics, polyurethane foams, and textiles.  They are structurally akin to polychlorinated diphenyl ethers (PCDEs), polychlorinated biphenyls (PCBs) and other polyhalogenated compounds, consisting of two halogenated aromatic rings. PBDEs are classified according to the average number of bromine atoms in the molecule.  The health hazards of these chemicals have attracted increasing scrutiny, and they have been shown to reduce fertility in humans at levels found in households.  Because of their toxicity and persistence, the industrial production of some PBDEs is restricted under the Stockholm Convention, a treaty to control and phase out major persistent organic pollutants (POPs)."^^xsd:string .
+

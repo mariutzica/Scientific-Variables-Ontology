@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydrogenation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "hydrogenation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q214166"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydrogenation"^^xsd:string ;
+    rdfs:comment "Hydrogenation is a chemical reaction between molecular hydrogen (H2) and another compound or element, usually in the presence of a catalyst such as nickel, palladium or platinum. The process is commonly employed to reduce or saturate organic compounds. Hydrogenation typically constitutes the addition of pairs of hydrogen atoms to a molecule, often an alkene. Catalysts are required for the reaction to be usable; non-catalytic hydrogenation takes place only at very high temperatures. Hydrogenation reduces double and triple bonds in hydrocarbons."^^xsd:string .
+

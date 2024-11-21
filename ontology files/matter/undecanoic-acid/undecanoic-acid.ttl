@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:undecanoic-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "undecanoic-acid"^^xsd:string ;
+    svo:has_synonym "undecyclic-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q425988"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Undecylic_acid"^^xsd:string ;
+    rdfs:comment "Undecylic acid (systematically named undecanoic acid) is a carboxylic acid with chemical formula CH3(CH2)9COOH. It is often used as an antifungal agent, to treat ringworm and athlete's foot, for example. Like decanoic acid, it has a distinctive, unpleasant odor."^^xsd:string .
+

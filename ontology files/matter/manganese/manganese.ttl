@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:manganese a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "manganese"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q731"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Manganese"^^xsd:string ;
+    rdfs:comment "Manganese is a chemical element with the symbol Mn and atomic number 25. It is a hard, brittle, silvery metal, often found in minerals in combination with iron. Manganese is a transition metal with a multifaceted array of industrial alloy uses, particularly in stainless steels. It improves strength, workability, and resistance to wear. Manganese oxide is used as an oxidising agent; as a rubber additive; and in glass making, fertilisers, and ceramics. Manganese sulfate can be used as a fungicide."^^xsd:string .
+

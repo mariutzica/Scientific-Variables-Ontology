@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cotinine a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "cotinine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q421177"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cotinine"^^xsd:string ;
+    rdfs:comment "Cotinine is an alkaloid found in tobacco and is also the predominant metabolite of nicotine. An anagram of the word \"nicotine\", it is used as a biomarker for exposure to tobacco smoke. Cotinine is currently being studied as a treatment for depression, PTSD, schizophrenia, Alzheimer's disease and Parkinson's disease. Cotinine was developed as an antidepressant as a fumaric acid salt, cotinine fumarate, to be sold under the brand name Scotine but it was never marketed.Similarly to nicotine, cotinine binds to, activates, and desensitizes neuronal nicotinic acetylcholine receptors, though at much lower potency in comparison. It has demonstrated nootropic and antipsychotic-like effects in animal models. Cotinine treatment has also been shown to reduce depression, anxiety, and fear-related behavior as well as memory impairment in animal models of depression, PTSD, and Alzheimer's disease. Nonetheless, treatment with cotinine in humans was reported to have no significant physiologic, subjective, or performance effects in one study, though others suggest that this may not be the case.Because cotinine is the main metabolite to nicotine and has been shown to be pharmacologically active, it has been suggested that some of nicotine's effects in the nervous system may be mediated by cotinine and/or complex interactions with nicotine itself."^^xsd:string .
+

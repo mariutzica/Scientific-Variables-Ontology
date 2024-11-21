@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:liquid a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "liquid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11435"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Liquid"^^xsd:string ;
+    rdfs:comment "A liquid is a nearly incompressible fluid that conforms to the shape of its container but retains a nearly constant volume independent of pressure. It is one of the four fundamental states of matter (the others being solid, gas, and plasma), and is the only state with a definite volume but no fixed shape."^^xsd:string .
+

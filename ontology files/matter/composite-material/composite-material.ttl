@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:composite-material a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "composite-material"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q181790"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Composite_material"^^xsd:string ;
+    rdfs:comment "A composite material (also called a composition material or shortened to composite, which is the common name) is a material which is produced from two or more constituent materials. These constituent materials have notably dissimilar chemical or physical properties and are merged to create a material with properties unlike the individual elements. Within the finished structure, the individual elements remain separate and distinct, distinguishing composites from mixtures and solid solutions."^^xsd:string .
+

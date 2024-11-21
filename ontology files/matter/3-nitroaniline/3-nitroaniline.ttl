@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:3-nitroaniline a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "3-nitroaniline"^^xsd:string ;
+    svo:has_synonym "m-nitroaniline"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2668442"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/3-Nitroaniline"^^xsd:string ;
+    rdfs:comment "3-Nitroaniline, also known as meta-nitroaniline and m-nitroaniline, is a non-volatile stable solid commonly used as a raw material for dyes. 3-Nitroaniline is an aniline carrying a nitro functional group in position 3. It is stable in neutral, acidic or alkaline solutions and is classified as \"not readily biodegradable\" with \"low bioaccumulation potential\".It is used as a chemical intermediate for azo coupling component 17 and the dyes disperse yellow 5 and acid blue 29.  The chemical is changed to other substances (dyestuffs and m-nitrophenol) during the dyeing process."^^xsd:string .
+

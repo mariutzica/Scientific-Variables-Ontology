@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mohr-coulomb-plastic a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "mohr-coulomb-plastic"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3417792"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mohr%E2%80%93Coulomb_theory"^^xsd:string ;
+    rdfs:comment "Mohr–Coulomb theory is a mathematical model (see yield surface) describing the response of brittle materials such as concrete, or rubble piles, to shear stress as well as normal stress. Most of the classical engineering materials follow this rule in at least a portion of their shear failure envelope. Generally the theory applies to materials for which the compressive strength far exceeds the tensile strength.In geotechnical engineering it is used to define  shear strength of soils and rocks at different effective stresses."^^xsd:string .
+

@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28snowpack%29-has-property-%28degree-day_threshold_temperature%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "snowpack__degree-day_threshold_temperature"^^xsd:string ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/snowpack> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/degree-day_threshold_temperature> .
+

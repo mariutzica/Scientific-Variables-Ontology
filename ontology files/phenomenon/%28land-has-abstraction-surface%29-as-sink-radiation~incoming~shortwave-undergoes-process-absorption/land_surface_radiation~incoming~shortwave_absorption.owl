@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/phenomenon/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/phenomenon/">
+<owl:NamedIndividual rdf:about="%28land-has-abstraction-surface%29-as-sink-radiation~incoming~shortwave-undergoes-process-absorption">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Phenomenon"/>
+  <svo:has_primary_participant_phenomenon rdf:resource="radiation~incoming~shortwave"/>
+  <svo:has_sink_participant_phenomenon rdf:resource="land-has-abstraction-surface"/>
+  <svo:undergoes_process rdf:resource="http://scientificvariablesontology.org/svo/process/absorption"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">land_surface_radiation~incoming~shortwave_absorption</rdfs:label>
+</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:volume_fraction a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "volume_fraction"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q909482"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Volume_fraction"^^xsd:string ;
+    rdfs:comment "In chemistry and fluid mechanics, the volume fraction φi{\\displaystyle \\varphi _{i}} is defined as the volume of a constituent Vi divided by the volume of all constituents of the mixture V prior to mixing:"^^xsd:string .
+

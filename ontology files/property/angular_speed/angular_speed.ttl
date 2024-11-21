@@ -1,0 +1,19 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:angular_speed a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "angular_speed"^^xsd:string ;
+    svo:has_synonym "angular_frequency"^^xsd:string,
+        "curcular_frequency"^^xsd:string,
+        "orbital_frequency"^^xsd:string,
+        "pulsatance"^^xsd:string,
+        "radial_frequency"^^xsd:string,
+        "radian_frequency"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q834020"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Angular_speed, https://en.wikipedia.org/wiki/Angular_frequency"^^xsd:string ;
+    rdfs:comment "In physics, angular frequency \"ω\" (also referred to by the terms angular speed, angular rate, and pulsatance) is a scalar measure of rotation rate. It refers to the angular displacement per unit time (for example, in rotation) or the rate of change of the phase of a sinusoidal waveform (for example, in oscillations and waves), or as the rate of change of the argument of the sine function."^^xsd:string .
+

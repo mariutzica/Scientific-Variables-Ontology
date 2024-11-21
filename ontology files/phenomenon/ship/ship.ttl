@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ship a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "ship"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11446"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Ship"^^xsd:string ;
+    rdfs:comment "A ship is a large watercraft that travels the world's oceans and other sufficiently deep waterways, carrying cargo or passengers, or in support of specialized missions, such as defense, research and fishing. Ships are generally distinguished from boats, based on size, shape, load capacity and purpose. Ships have supported exploration, trade, warfare, migration, colonization, and science. After the 15th century, new crops that had come from and to the Americas via the European seafarers significantly contributed to world population growth. Ship transport is responsible for the largest portion of world commerce."^^xsd:string .
+

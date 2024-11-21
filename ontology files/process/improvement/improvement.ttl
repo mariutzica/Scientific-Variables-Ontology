@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:improvement a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "improvement"^^xsd:string ;
+    svo:has_synonym "improvement"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q21255975"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Improvement"^^xsd:string ;
+    rdfs:comment "Improvement is the process of a thing moving from one state to a state considered to be better, usually by a change or addition that improves.  The concept of improvement is important to governments and businesses, as well as to individuals."^^xsd:string .
+

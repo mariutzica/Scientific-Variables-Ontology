@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:etching a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "etching"^^xsd:string ;
+    svo:has_synonym "etching"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q186986"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Etching"^^xsd:string ;
+    rdfs:comment "Etching is traditionally the process of using strong acid or mordant to cut into the unprotected parts of a metal surface to create a design in intaglio (incised) in the metal. In modern manufacturing, other chemicals may be used on other types of material. As a method of printmaking, it is, along with engraving, the most important technique for old master prints, and remains in wide use today.  In a number of modern variants such as microfabrication etching and photochemical milling, it is a crucial technique in modern technology, including circuit boards."^^xsd:string .
+

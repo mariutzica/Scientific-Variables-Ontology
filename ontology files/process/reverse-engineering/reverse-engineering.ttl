@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:reverse-engineering a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "reverse-engineering"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q269608"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Reverse_engineering"^^xsd:string ;
+    rdfs:comment "Reverse engineering (also known as backwards engineering or back engineering) is a process or method through which one attempts to understand through deductive reasoning how a previously made device, process, system, or piece of software accomplishes a task with very little (if any) insight into exactly how it does so. Depending on the system under consideration and the technologies employed, the knowledge gained during reverse engineering can help with repurposing obsolete objects, doing security analysis, or learning how something works."^^xsd:string .
+

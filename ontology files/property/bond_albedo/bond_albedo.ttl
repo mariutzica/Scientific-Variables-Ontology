@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bond_albedo a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "bond_albedo"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2731139"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bond_albedo"^^xsd:string ;
+    rdfs:comment "The Bond albedo (also called spheric albedo, planetary albedo, and bolometric albedo), named after the American astronomer George Phillips Bond (1825–1865), who originally proposed it, is the fraction of power in the total electromagnetic radiation incident on an astronomical body that is scattered back out into space."^^xsd:string .
+

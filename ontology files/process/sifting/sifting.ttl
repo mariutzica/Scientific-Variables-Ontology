@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sifting a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "sifting"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q381155"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sieve"^^xsd:string ;
+    rdfs:comment "A sieve, fine mesh strainer, or sift, is a tool used for separating wanted elements from unwanted material or for controlling the particle size distribution of a sample, using a screen such as a woven mesh or net or perforated sheet material. The word sift derives from sieve."^^xsd:string .
+

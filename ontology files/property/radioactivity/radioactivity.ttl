@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:radioactivity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "radioactivity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11448"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Radioactive_decay"^^xsd:string ;
+    rdfs:comment "Radioactive decay (also known as nuclear decay, radioactivity, radioactive disintegration, or nuclear disintegration) is the process by which an unstable atomic nucleus loses energy by radiation. A material containing unstable nuclei is considered radioactive. Three of the most common types of decay are alpha, beta, and gamma decay. The weak force is the mechanism that is responsible for beta decay, while the other two are governed by the electromagnetism and nuclear force."^^xsd:string .
+

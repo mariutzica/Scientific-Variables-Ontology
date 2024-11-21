@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28river-delta-contains-part-plain%29-has-property-%28area%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "river-delta_plain__area"^^xsd:string ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/plain>,
+        <http://scientificvariablesontology.org/svo/phenomenon/river-delta> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/river-delta-contains-part-plain> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/area> ;
+    svo:has_original_label "delta_plain~total__area"^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:relative_molecular_mass a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "relative_molecular_mass"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q182854"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Molecular_mass"^^xsd:string ;
+    rdfs:comment "The molecular mass (m) is the mass of a given molecule: it is measured in daltons or atomic mass (Da or u). Different molecules of the same compound may have different molecular masses because they contain different isotopes of an element. The related quantity relative molecular mass, as defined by IUPAC, is the ratio of the mass of a molecule to the unified atomic mass unit (also known as the dalton) and is unitless. The molecular mass and relative molecular mass are distinct from but related to the molar mass. The molar mass is defined as the mass of a given substance divided by the amount of a substance and is expressed in g/mol. That makes the molar mass an average of many particles or molecules, and the molecular mass the mass of one specific particle or molecule. The molar mass is usually the more appropriate figure when dealing with macroscopic (weigh-able) quantities of a substance."^^xsd:string .
+

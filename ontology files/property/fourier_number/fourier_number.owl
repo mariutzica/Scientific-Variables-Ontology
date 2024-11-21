@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/property/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/property/">
+<owl:NamedIndividual rdf:about="fourier_number">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fourier_number</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Fourier_number</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q901793</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the study of heat conduction, the Fourier number,  is the ratio of time, t, to a characteristic time scale for heat diffusion, td. This dimensionless group is named in honor of J.B.J. Fourier, who formulated the modern understanding of heat conduction. The time scale for diffusion characterizes the time needed for heat to diffuse over a distance, L. For a medium with thermal diffusivity, α, this time scale is td = L2/α, so that the Fourier number is t/td = αt/L2. The Fourier number is often denoted as Fo or FoL.The Fourier number can also be used in the study of mass diffusion, if the thermal diffusivity is replaced by a mass diffusivity.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

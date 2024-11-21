@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:supply_elasticity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "supply_elasticity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2620132"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Price_elasticity_of_supply"^^xsd:string ;
+    rdfs:comment "The price elasticity of supply (PES or Es) is a measure used in economics to show the responsiveness, or elasticity, of the quantity supplied of a good or service to a change in its price. Price elasticity of supply, in application, is the percentage change of the quantity supplied resulting from a 1% change in price. Alternatively, PES is the percentage change in the quantity supplied divided by the percentage change in price."^^xsd:string .
+

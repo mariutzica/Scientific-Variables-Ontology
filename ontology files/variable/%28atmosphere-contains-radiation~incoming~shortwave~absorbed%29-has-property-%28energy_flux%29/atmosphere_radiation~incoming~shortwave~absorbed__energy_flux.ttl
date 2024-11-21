@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28atmosphere-contains-radiation~incoming~shortwave~absorbed%29-has-property-%28energy_flux%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "atmosphere_radiation~incoming~shortwave~absorbed__energy_flux"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/absorbed>,
+        <http://scientificvariablesontology.org/svo/attribute/shortwave> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/atmosphere>,
+        <http://scientificvariablesontology.org/svo/phenomenon/radiation> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/atmosphere-contains-radiation~incoming~shortwave~absorbed> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/energy_flux> ;
+    svo:has_original_label "atmosphere_radiation~incoming~shortwave__absorbed_energy_flux"^^xsd:string .
+

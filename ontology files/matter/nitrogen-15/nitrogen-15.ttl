@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nitrogen-15 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "nitrogen-15"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q470479"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isotopes_of_nitrogen#Nitrogen-15"^^xsd:string ;
+    rdfs:comment "Natural nitrogen (7N) consists of two stable isotopes: the vast majority (99.6%) of naturally occurring nitrogen is nitrogen-14, with the remainder being nitrogen-15. Fourteen radioisotopes are also known, with atomic masses ranging from 10 to 25, along with one nuclear isomer, 11mN. All of these radioisotopes are short-lived, the longest-lived being nitrogen-13 with a half-life of 9.965(4) min. All of the others have half-lives below 7.15 seconds, with most of these being below 620 milliseconds. Most of the isotopes with atomic mass numbers below 14 decay to isotopes of carbon, while most of the isotopes with masses above 15 decay to isotopes of oxygen. The shortest-lived known isotope is nitrogen-10, with a half-life of 143(36) yoctoseconds."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:infiltration a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "infiltration"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q295527"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Infiltration"^^xsd:string ;
+    rdfs:comment "Infiltration may refer to:"^^xsd:string .
+

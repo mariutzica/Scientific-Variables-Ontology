@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28observation-observes-%28crop-as-sink-nitrogen-fertilizer-undergoes-process-application%29%29-has-property-%28mass%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "observation_crop_nitrogen-fertilizer_application__mass"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/nitrogen-fertilizer> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/application>,
+        <http://scientificvariablesontology.org/svo/process/observation> ;
+    svo:contains_role_reference_to <http://scientificvariablesontology.org/svo/role/crop> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/observation-observes-%28crop-as-sink-nitrogen-fertilizer-undergoes-process-application%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mass> ;
+    svo:has_original_label "crop_fertilizer~nitrogen__observed_applied_mass"^^xsd:string .
+

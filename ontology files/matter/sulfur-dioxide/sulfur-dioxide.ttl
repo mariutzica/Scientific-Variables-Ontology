@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sulfur-dioxide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "sulfur-dioxide"^^xsd:string ;
+    svo:has_synonym "sulphur-dioxide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5282"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sulfur_dioxide"^^xsd:string ;
+    rdfs:comment "Sulfur dioxide (IUPAC-recommended spelling) or sulphur dioxide (traditional Commonwealth English) is the chemical compound with the formula SO2. It is a toxic gas responsible for the odor of burnt matches. It is released naturally by volcanic activity and is produced as a by-product of copper extraction and the burning of sulfur-bearing fossil fuels."^^xsd:string .
+

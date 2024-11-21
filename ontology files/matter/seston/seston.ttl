@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:seston a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "seston"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3180532"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Seston"^^xsd:string ;
+    rdfs:comment "Seston can simply be defined as the particles suspended in bodies of water such as lakes, oceans, ponds and rivers. The term \"seston\" applies to plankton, organic detritus, and minerals. Detritus is dead organic material and a mineral is a solid chemical compound. Small particles of seston may be formed by the breaking down of larger particles. This can happen by the crashing of waves, mixing of water currents, or by slow disintegration. Most seston in the water is made up of a combination of both organic and inorganic compounds. The inorganic compounds are from mineral origin and are essentially particles of mud suspended in the water column. The organic compounds are from biological origin and can be either living or dead."^^xsd:string .
+

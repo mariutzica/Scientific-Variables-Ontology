@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:domoic-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "domoic-acid"^^xsd:string ;
+    svo:has_synonym "da"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q424386"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Domoic_acid"^^xsd:string ;
+    rdfs:comment "Domoic acid (DA) is a kainic acid-type neurotoxin that causes amnesic shellfish poisoning (ASP). It is produced by algae and accumulates in shellfish, sardines, and anchovies. When sea lions, otters, cetaceans, humans, and other predators eat contaminated animals, poisoning may result. Exposure to this compound affects the brain, causing seizures, and possibly death."^^xsd:string .
+

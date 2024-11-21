@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cumulative_thermal_time a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "cumulative_thermal_time"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4672899"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Accumulated_thermal_unit"^^xsd:string ;
+    rdfs:comment "An accumulated thermal unit is a unit of measurement used to describe the cumulative effect of temperature over time. 1 ATU is equal to 1 degree Celsius for 1 day. For example, in an environment at a constant temperature of 5 °C, 5 ATU would accumulate per day, with 65 ATUs accumulated after 13 days."^^xsd:string .
+

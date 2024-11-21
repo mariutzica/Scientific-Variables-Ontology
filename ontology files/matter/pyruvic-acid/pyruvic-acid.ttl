@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pyruvic-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "pyruvic-acid"^^xsd:string ;
+    svo:has_synonym "Propanoic acid,-2-oxo-"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q213580"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pyruvic_acid"^^xsd:string ;
+    rdfs:comment "Pyruvic acid (IUPAC name: 2-oxopropanoic acid, also called acetoic acid) (CH3COCOOH) is the simplest of the alpha-keto acids, with a carboxylic acid and a ketone functional group. Pyruvate, the conjugate base, CH3COCOO−, is an intermediate in several metabolic pathways throughout the cell."^^xsd:string .
+

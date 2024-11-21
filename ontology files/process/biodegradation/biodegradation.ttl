@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:biodegradation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "biodegradation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q696715"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Biodegradation"^^xsd:string ;
+    rdfs:comment "Biodegradation is the breakdown of organic matter by microorganisms, such as bacteria and fungi. It is generally assumed to be a natural process, which differentiates it from composting. Composting is a human-driven process in which biodegradation occurs under a specific set of circumstances."^^xsd:string .
+

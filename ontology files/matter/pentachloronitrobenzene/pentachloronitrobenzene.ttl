@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pentachloronitrobenzene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "pentachloronitrobenzene"^^xsd:string ;
+    svo:has_synonym "pcnb"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q418683"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pentachloronitrobenzene"^^xsd:string ;
+    rdfs:comment "Pentachloronitrobenzene, typically abbreviated PCNB, is a registered fungicide formally derived from nitrobenzene. It is either an off-white or yellow solid, depending on its purity, with a musty odor."^^xsd:string .
+

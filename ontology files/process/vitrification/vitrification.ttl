@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vitrification a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "vitrification"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1072553"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vitrification"^^xsd:string ;
+    rdfs:comment "Vitrification (from Latin  vitrum 'glass', via French vitrifier) is the full or partial transformation of a substance into a glass, that is to say, a non-crystalline amorphous solid. Glasses differ from liquids structurally and glasses possess a higher degree of connectivity with the same Hausdorff dimensionality of bonds as crystals: dimH = 3. In the production of ceramics, vitrification is responsible for their impermeability to water."^^xsd:string .
+

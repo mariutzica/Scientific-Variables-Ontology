@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:serotyping a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "serotyping"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q848328"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Serotype"^^xsd:string ;
+    rdfs:comment "A serotype or serovar is a distinct variation within a species of bacteria or virus or among immune cells of different individuals. These microorganisms, viruses, or cells are classified together based on their surface antigens, allowing the epidemiologic classification of organisms to a level below the species. A group of serovars with common antigens is called a serogroup or sometimes serocomplex."^^xsd:string .
+

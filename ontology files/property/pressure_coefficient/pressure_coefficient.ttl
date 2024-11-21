@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pressure_coefficient a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "pressure_coefficient"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1260777"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pressure_coefficient"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, the pressure coefficient is a dimensionless number which describes the relative pressures throughout a flow field.  The pressure coefficient is used in aerodynamics and hydrodynamics.  Every point in a fluid flow field has its own unique pressure coefficient, Cp."^^xsd:string .
+

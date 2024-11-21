@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sesquiterpenes a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "sesquiterpenes"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q80218"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sesquiterpene"^^xsd:string ;
+    rdfs:comment "Sesquiterpenes are a class of terpenes that consist of three isoprene units and often have the molecular formula C15H24. Like monoterpenes, sesquiterpenes may be cyclic or contain rings, including many unique combinations. Biochemical modifications such as oxidation or rearrangement produce the related sesquiterpenoids.Sesquiterpenes are found naturally in plants and insects, as semiochemicals, e.g. defensive agents or pheromones."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:adsorption a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "adsorption"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q180254"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Adsorption"^^xsd:string ;
+    rdfs:comment "Adsorption is the adhesion of atoms, ions or molecules from a gas, liquid or dissolved solid to a surface.   This process creates a film of the adsorbate  (solute )* on the surface of the adsorbent(solvent). This process differs from absorption, in which a fluid (the absorbate) is dissolved by or permeates a liquid or solid (the absorbent). Adsorption is a surface phenomenon and does not penetrate through the surface to the bulk of the adsorbent , while absorption involves the whole volume of the material, although adsorption does often precede absorption. The term sorption encompasses both processes, while desorption is the reverse of it."^^xsd:string .
+

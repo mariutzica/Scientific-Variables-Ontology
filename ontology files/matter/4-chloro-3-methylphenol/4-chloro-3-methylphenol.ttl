@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:4-chloro-3-methylphenol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "4-chloro-3-methylphenol"^^xsd:string ;
+    svo:has_synonym "p-chloro-m-cresol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q302865"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/P-Chlorocresol"^^xsd:string ;
+    rdfs:comment "p-Chlorocresol, or 4-chloro-3-methylphenol (ClC6H3CH3OH), also known as p-chloro-m-cresol, is a potent disinfectant and antiseptic. It appears as a pinkish white crystalline solid.  It is also used as a preservative  in cosmetics and medicinal products for both humans and animals. It is used as an active ingredient in some preparations of veterinary medicines for tropical, oral and parenteral use. Normally, the concentration of p-Chlorocresol in oral and parenteral veterinary products are 0.1-0.2%. Concentrations are higher (~0.5%) in tropical veterinary products. p-Chlorocresol contains microbial activity against both gram positive and gram negative bacteria and fungi."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:extrusion a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "extrusion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q139143"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Extrusion"^^xsd:string ;
+    rdfs:comment "Extrusion is a process used to create objects of a fixed cross-sectional profile by pushing material through a die of the desired cross-section. Its two main advantages over other manufacturing processes are its ability to create very complex cross-sections; and to work materials that are brittle, because the material encounters only compressive and shear stresses. It also creates excellent surface finish and gives considerable freedom of form in the design process."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:momentum_flux a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "momentum_flux"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q679643"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Transport_phenomena#Momentum_transfer"^^xsd:string ;
+    rdfs:comment "In engineering, physics, and chemistry, the study of transport phenomena concerns the exchange of mass, energy, charge, momentum and angular momentum between observed and studied systems. While it draws from fields as diverse as continuum mechanics and thermodynamics, it places a heavy emphasis on the commonalities between the topics covered. Mass, momentum, and heat transport all share a very similar mathematical framework, and the parallels between them are exploited in the study of transport phenomena to draw deep mathematical connections that often provide very useful tools in the analysis of one field that are directly derived from the others."^^xsd:string .
+

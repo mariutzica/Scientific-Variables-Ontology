@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/operation/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:median a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "median"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q226995"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Median"^^xsd:string ;
+    rdfs:comment "In statistics and probability theory, the median is the value separating the higher half from the lower half of a data sample, a population, or a probability distribution. For a data set, it may be thought of as \"the middle\" value. The basic feature of the median in describing data compared to the mean (often simply described as the \"average\") is that it is not skewed by a small proportion of extremely large or small values, and therefore provides a better representation of the center. Median income, for example, may be a better way to describe center of the income distribution because increases in the largest incomes alone have no effect on median. For this reason, the median is of central importance in robust statistics."^^xsd:string .
+

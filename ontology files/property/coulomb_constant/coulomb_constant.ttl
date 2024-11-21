@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:coulomb_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "coulomb_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q9855158"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Coulomb_constant"^^xsd:string ;
+    rdfs:comment "The Coulomb constant, the electric force constant, or the electrostatic constant (denoted ke, k or K) is a proportionality constant in electrostatics equations. In SI base units it is equal to 8.9875517923(14)×109 kg⋅m3⋅s−4⋅A−2. It was named after the French physicist Charles-Augustin de Coulomb (1736–1806) who introduced Coulomb's law."^^xsd:string .
+

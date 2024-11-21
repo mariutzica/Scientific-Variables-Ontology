@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cfc-113 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "cfc-113"^^xsd:string ;
+    svo:has_synonym "1,1,2-Trichloro-1,2,2-trifluoroethane"^^xsd:string,
+        "Trichlorotrifluoroethane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q161276"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/1,1,2-Trichloro-1,2,2-trifluoroethane"^^xsd:string ;
+    rdfs:comment "1,1,2-Trichloro-1,2,2-trifluoroethane, also called trichlorotrifluoroethane or CFC-113, is a chlorofluorocarbon. It has the formula Cl2FC−CClF2. This colorless, volatile liquid is a versatile solvent."^^xsd:string .
+

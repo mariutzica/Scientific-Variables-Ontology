@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:diversity_index a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "diversity_index"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1230601"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Diversity_index"^^xsd:string ;
+    rdfs:comment "A diversity index is a quantitative measure that reflects how many different types (such as species) there are in a dataset (a community), and that can simultaneously take into account the phylogenetic relations among the individuals distributed among those types, such as richness, divergence or evenness. These indices are statistical  representations of biodiversity in different aspects (richness, evenness, and dominance)."^^xsd:string .
+

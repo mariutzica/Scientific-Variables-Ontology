@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:revolving a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "revolving"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q107617"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Rotation"^^xsd:string ;
+    rdfs:comment "Rotation or rotational motion is the circular movement of an object around a central line, known as axis of rotation. A plane figure can rotate in either a clockwise or counterclockwise sense around a perpendicular axis intersecting anywhere inside or outside the figure at a center of rotation. A solid figure has an infinite number of possible axes and angles of rotation, including chaotic rotation (between arbitrary orientations), in contrast to rotation around a fixed axis."^^xsd:string .
+

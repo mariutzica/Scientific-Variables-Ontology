@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cacao a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "cacao"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q42385"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Theobroma_cacao"^^xsd:string ;
+    rdfs:comment "Theobroma cacao (cacao tree or cocoa tree) is a small (6–12 m (20–39 ft) tall) evergreen tree in the family Malvaceae. Its seeds, cocoa beans, are used to make chocolate liquor, cocoa solids, cocoa butter and chocolate. The largest producer of cocoa beans in 2018 was Ivory Coast, 2.2 million tons."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:row a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "row"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2088159"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Row_and_column_spaces"^^xsd:string ;
+    rdfs:comment "In linear algebra, the column space (also called the range or image) of a matrix A is the span (set of all possible linear combinations) of its column vectors. The column space of a matrix is the image or range of the corresponding matrix transformation."^^xsd:string .
+

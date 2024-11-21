@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28sun-is-orbiting-center-of-mars%29-has-property-%28solar_constant%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "sun_mars__solar_constant"^^xsd:string ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/mars>,
+        <http://scientificvariablesontology.org/svo/phenomenon/sun> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/sun-is-orbiting-center-of-mars> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/solar_constant> ;
+    svo:has_original_label "mars__solar_irradiation_constant"^^xsd:string .
+

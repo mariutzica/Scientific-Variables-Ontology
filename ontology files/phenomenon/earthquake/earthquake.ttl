@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:earthquake a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "earthquake"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7944"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Earthquake"^^xsd:string ;
+    rdfs:comment "An earthquake (also known as a quake, tremor or temblor) is the shaking of the surface of the Earth resulting from a sudden release of energy in the Earth's lithosphere that creates seismic waves. Earthquakes can range in intensity, from those that are so weak that they cannot be felt, to those violent enough to propel objects and people into the air, damage critical infrastructure, and wreak destruction across entire cities. The seismic activity of an area is the frequency, type, and size of earthquakes experienced over a particular time. The seismicity at a particular location in the Earth is the average rate of seismic energy release per unit volume.  The word tremor is also used for non-earthquake seismic rumbling."^^xsd:string .
+

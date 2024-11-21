@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:carbonate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "carbonate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q181699"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Carbonate"^^xsd:string ;
+    rdfs:comment "A carbonate is a salt of carbonic acid (H2CO3), characterized by the presence of the carbonate ion, a polyatomic ion with the formula CO2−3. The word carbonate may also refer to a carbonate ester, an organic compound containing the carbonate group C(=O)(O–)2."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dewatering a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "dewatering"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2076369"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dewatering"^^xsd:string ;
+    rdfs:comment "Dewatering  is the removal of water from a location. This may be done by wet classification, centrifugation, filtration, or similar solid-liquid separation processes, such as removal of residual liquid from a filter cake by a filter press as part of various industrial processes."^^xsd:string .
+

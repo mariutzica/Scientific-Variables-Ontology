@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:isocline a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "isocline"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6653802"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Contour_line"^^xsd:string ;
+    rdfs:comment "A contour line (also isoline, isopleth, or isarithm) of a function of two variables is a curve along which the function has a constant value, so that the curve joins points of equal value. It is a plane section of the three-dimensional graph of the function "^^xsd:string .
+

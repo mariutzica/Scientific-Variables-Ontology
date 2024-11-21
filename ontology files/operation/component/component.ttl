@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/operation/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "component"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q44528"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Euclidean_vector#Decomposition"^^xsd:string ;
+    rdfs:comment "In mathematics, physics, and engineering, a Euclidean vector or simply a vector (sometimes called a geometric vector or spatial vector) is a geometric object that has magnitude (or length) and direction. Vectors can be added to other vectors according to vector algebra. A Euclidean vector is frequently represented by a directed line segment, or graphically as an arrow connecting an initial point A with a terminal point B, and denoted by "^^xsd:string .
+

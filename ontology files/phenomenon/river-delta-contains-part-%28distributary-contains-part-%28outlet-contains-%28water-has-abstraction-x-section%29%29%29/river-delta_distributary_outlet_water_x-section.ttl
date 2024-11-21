@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:river-delta-contains-part-%28distributary-contains-part-%28outlet-contains-%28water-has-abstraction-x-section%29%29%29 a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "river-delta_distributary_outlet_water_x-section"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :distributary-contains-part-%28outlet-contains-%28water-has-abstraction-x-section%29%29 ;
+    svo:is_part_of_containing_phenomenon :river-delta .
+

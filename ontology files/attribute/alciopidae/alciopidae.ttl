@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:alciopidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "alciopidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3920721"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Alciopidae"^^xsd:string ;
+    rdfs:comment "Alciopidae is a family of polychaetes belonging to the order Phyllodocida. Alciopids are notable for representing the fourth phylum — besides arthropods, chordates, and mollusks — to have evolved high-resolution vision, namely vision that can distinguish objects from the visual background, enabling interaction with said objects. This has been demonstrated in particular in Vanadis cf. formosa , Torrea candida, and Naiades cantrainii. "^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlorsulfuron a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chlorsulfuron"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q424796"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chlorsulfuron"^^xsd:string ;
+    rdfs:comment "Chlorsulfuron is an ALS (acetolactate synthase) inhibitor herbicide, and is a sulfonylurea compound. It was discovered by George Levitt in February 1976 while working at DuPont, which was the patent assignee."^^xsd:string .
+

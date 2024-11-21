@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:uranium-238 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "uranium-238"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1148503"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Uranium-238"^^xsd:string ;
+    rdfs:comment "Uranium-238 (238U or U-238) is the most common isotope of uranium found in nature, with a relative abundance of 99%. Unlike uranium-235, it is non-fissile, which means it cannot sustain a chain reaction in a thermal-neutron reactor. However, it is fissionable by fast neutrons, and is fertile, meaning it can be transmuted to fissile plutonium-239. 238U cannot support a chain reaction because inelastic scattering reduces neutron energy below the range where fast fission of one or more next-generation nuclei is probable. Doppler broadening of 238U's neutron absorption resonances, increasing absorption as fuel temperature increases, is also an essential negative feedback mechanism for reactor control."^^xsd:string .
+

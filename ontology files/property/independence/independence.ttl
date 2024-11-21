@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:independence a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "independence"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q37055"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Independence"^^xsd:string ;
+    rdfs:comment "Independence is a condition of a nation, country, or state, in which residents and population, or some portion thereof, exercise self-government, and usually sovereignty, over its territory. The opposite of independence is the status of a dependent territory. The commemoration of the independence day of a country or nation celebrates when a country is free from all forms of foreign colonialism; free to build a country or nation without any interference from other nations. "^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:calcivirus a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "calcivirus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1026758"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Caliciviridae"^^xsd:string ;
+    rdfs:comment "The Caliciviridae are a family of \"small round structured\" viruses, members of Class IV of the Baltimore scheme. Caliciviridae bear resemblance to enlarged picornavirus and was formerly a separate genus within the picornaviridae. They are positive-sense, single-stranded RNA which is not segmented. Thirteen species are placed in this family, divided among eleven genera. Diseases associated with this family include feline calicivirus (respiratory disease), rabbit hemorrhagic disease virus (often fatal hepatitis), and Norwalk group of viruses (gastroenteritis). Caliciviruses naturally infect vertebrates, and have been found in a number of organisms such as humans, cattle, pigs, cats, chickens, reptiles, dolphins and amphibians. The caliciviruses have a simple construction and are not enveloped. The capsid appears hexagonal/spherical and has icosahedral symmetry (T=1 or T=3) with a diameter of 35–39 nm.Caliciviruses are not very well studied because until recently, they could not be grown in culture, and they have a very narrow host range and no suitable animal model. However, the recent application of modern genomic technologies has led to an increased understanding of the virus family. A recent isolate from rhesus monkeys—Tulane virus—can be grown in culture, and this system promises to increase understanding of these viruses."^^xsd:string .
+

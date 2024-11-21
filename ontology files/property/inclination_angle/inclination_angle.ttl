@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:inclination_angle a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "inclination_angle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4112212"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Orbital_inclination"^^xsd:string ;
+    rdfs:comment "Orbital inclination measures the tilt of an object's orbit around a celestial body.  It is expressed as the angle between a reference plane and the orbital plane or axis of direction of the orbiting object."^^xsd:string .
+

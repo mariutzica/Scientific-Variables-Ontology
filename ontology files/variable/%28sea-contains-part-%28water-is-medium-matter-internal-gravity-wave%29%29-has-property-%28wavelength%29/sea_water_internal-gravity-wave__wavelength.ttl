@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28sea-contains-part-%28water-is-medium-matter-internal-gravity-wave%29%29-has-property-%28wavelength%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "sea_water_internal-gravity-wave__wavelength"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/internal-gravity-wave>,
+        <http://scientificvariablesontology.org/svo/phenomenon/sea> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/sea-contains-part-%28water-is-medium-matter-internal-gravity-wave%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/wavelength> ;
+    svo:has_original_label "sea_water_wave~internal__wavelength"^^xsd:string,
+        "sea_water_wave~internal~gravity__wavelength"^^xsd:string .
+

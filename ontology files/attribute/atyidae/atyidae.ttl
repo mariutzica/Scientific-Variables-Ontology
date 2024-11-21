@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:atyidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "atyidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q608554"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Atyidae"^^xsd:string ;
+    rdfs:comment "Atyidae is a family of shrimp, present in all tropical and most temperate waters of the world. Adults of this family are almost always confined to fresh water. This is the only family in the superfamily Atyoidea."^^xsd:string .
+

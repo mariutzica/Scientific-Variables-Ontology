@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28%28soil-is-medium-matter-phreatic-zone-has-part-top%29-as-sink-water-as-in-recharge%29-has-property-%28volume_flux%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/%28soil-is-medium-matter-phreatic-zone-has-part-top%29-as-sink-water-as-in-recharge"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/volume_flux"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/phreatic-zone"/>
+  <svo:contains_process_reference_to rdf:resource="http://scientificvariablesontology.org/svo/process/recharge"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/water"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/soil"/>
+  <svo:contains_part_reference_to rdf:resource="http://scientificvariablesontology.org/svo/part/top"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil_phreatic-zone_top_water_recharge__volume_flux</rdfs:label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil_water_sat-zone_top__recharge_volume_flux</svo:has_original_label>
+</owl:NamedIndividual>
+</rdf:RDF>

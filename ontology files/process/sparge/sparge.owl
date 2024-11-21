@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/process/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/process/">
+<owl:NamedIndividual rdf:about="sparge">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Process"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sparge</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Sparging_(chemistry)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2070459</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In chemistry, sparging, also known as gas flushing in metallurgy, is a technique in which a gas is bubbled through a liquid in order to remove other dissolved gas(es) and/or dissolved volatile liquid(s) from that liquid. It is a method of degassing. According to Henry's law, the concentration of each gas in a liquid is proportional to the partial pressure of that gas (in the gaseous state) in contact with the liquid. Sparging introduces a gas that has little or no partial pressure of the gas(es) to be removed, and increases the area of the gas-liquid interface, which encourages some of the dissolved gas(es) to diffuse into the sparging gas before the sparging gas escapes from the liquid. Many sparging processes, such as solvent removal, use air as the sparging gas. To remove oxygen, or for sensitive solutions or reactive molten metals, a chemically inert gas such as nitrogen, argon, or helium is used.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

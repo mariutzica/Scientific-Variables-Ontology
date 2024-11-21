@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:zirconium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "zirconium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1038"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Zirconium"^^xsd:string ;
+    rdfs:comment "Zirconium is a chemical element with the symbol Zr and atomic number 40. The name zirconium is derived from the name of the mineral zircon, the most important source of zirconium. The word is related to Persian zargun (zircon; zar-gun, \"gold-like\" or \"as gold\"). It is a lustrous, grey-white, strong transition metal that closely resembles hafnium and, to a lesser extent, titanium. Zirconium is mainly used as a refractory and opacifier, although small amounts are used as an alloying agent for its strong resistance to corrosion. Zirconium forms a variety of inorganic and organometallic compounds such as zirconium dioxide and zirconocene dichloride, respectively. Five isotopes occur naturally, four of which are stable. Zirconium compounds have no known biological role."^^xsd:string .
+

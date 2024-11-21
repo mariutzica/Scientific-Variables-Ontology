@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:erosion a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "erosion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q80026"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Erosion"^^xsd:string ;
+    rdfs:comment "Erosion is the action of surface processes (such as water flow or wind) that removes soil, rock, or dissolved material from one location on the Earth's crust and then transports it to another location where it is deposited. Erosion is distinct from weathering which involves no movement. Removal of rock or soil as clastic sediment is referred to as physical or mechanical erosion; this contrasts with chemical erosion, where soil or rock material is removed from an area by dissolution. Eroded sediment or solutes may be transported just a few millimetres, or for thousands of kilometres."^^xsd:string .
+

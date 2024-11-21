@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:macrothricidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "macrothricidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4565633"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Macrothricidae"^^xsd:string ;
+    rdfs:comment "Macrothricidae is a family of anomopods in the order Diplostraca. There are about 17 genera and at least 80 described species in Macrothricidae."^^xsd:string .
+

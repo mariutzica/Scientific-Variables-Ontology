@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:glyphosate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "glyphosate"^^xsd:string ;
+    svo:has_synonym "n-phosphonomethylglycine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q407232"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Glyphosate"^^xsd:string ;
+    rdfs:comment "Glyphosate (IUPAC name: N-(phosphonomethyl)glycine) is a broad-spectrum systemic herbicide and crop desiccant. It is an organophosphorus compound, specifically a phosphonate, which acts by inhibiting the plant enzyme 5-enolpyruvylshikimate-3-phosphate synthase. It is used to kill weeds, especially annual broadleaf weeds and grasses that compete with crops. Its herbicidal effectiveness was discovered by Monsanto chemist John E. Franz in 1970. Monsanto brought it to market for agricultural use in 1974 under the trade name Roundup. Monsanto's last commercially relevant United States patent expired in 2000."^^xsd:string .
+

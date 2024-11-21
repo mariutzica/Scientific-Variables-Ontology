@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/matter/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/matter/">
+<owl:NamedIndividual rdf:about="mineral">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Matter"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mineral</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Mineral</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q7946</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In geology and mineralogy, a mineral or mineral species is, broadly speaking, a solid substance with a fairly well-defined chemical composition and a specific crystal structure that occurs naturally in pure form.The geological definition of mineral normally excludes compounds that occur only in living organisms. However, some minerals are often biogenic (such as calcite) or are organic compounds in the sense of chemistry (such as mellite). Moreover, living organisms often synthesize inorganic minerals (such as hydroxylapatite) that also occur in rocks.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

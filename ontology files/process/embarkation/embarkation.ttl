@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:embarkation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "embarkation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q16775507"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Embarkation"^^xsd:string ;
+    rdfs:comment "Embarkment (sometimes embarcation or embarkation) is the process of loading a passenger ship or an airplane with passengers or military personnel, related to and overlapping with individual boarding on aircraft and ships."^^xsd:string .
+

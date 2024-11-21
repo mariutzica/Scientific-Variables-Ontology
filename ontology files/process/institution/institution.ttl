@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:institution a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "institution"^^xsd:string ;
+    svo:has_synonym "institution"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q178706"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Institution"^^xsd:string ;
+    rdfs:comment "Institutions (singular: institution) are humanly devised structures of rules and norms that shape and constrain individual behavior. All definitions of institutions generally entail that there is a level of persistence and continuity. Laws, rules, social conventions and norms are all examples of institutions. Institutions vary in their level of formality and informality.Institutions are a principal object of study in social sciences such as political science, anthropology, economics, and sociology (the latter described by Émile Durkheim as the \"science of institutions, their genesis and their functioning\"). Primary or meta-institutions are institutions such as the family or money that are broad enough to encompass sets of related institutions. Institutions are also a central concern for law, the formal mechanism for political rule-making and enforcement. Historians study and document the founding, growth, decay and development of institutions as part of political, economic and cultural history."^^xsd:string .
+

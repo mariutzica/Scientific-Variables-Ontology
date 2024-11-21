@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:luminescence a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "luminescence"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q184240"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Luminescence"^^xsd:string ;
+    rdfs:comment "Luminescence is the \"spontaneous emission of radiation from an electronically excited species (or from a vibrationally excited species) not in thermal equilibrium with its environment\", according to the IUPAC definition.  A luminescent object is emitting \"cold light\", in contrast to \"incandescence\", where an object only emits light after heating. Generally, the emission of light is due to the movement of electrons between different energy levels within an atom after excitation by external factors. However, the exact mechanism of light emission in \"vibrationally excited species\" is unknown, as seen in sonoluminescence. "^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tubifex a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "tubifex"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7178932"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tubifex"^^xsd:string ;
+    rdfs:comment "Tubifex  is a cosmopolitan genus of tubificid annelids that inhabits the sediments of lakes, rivers and occasionally sewer lines. At least 13 species of Tubifex have been identified, with the exact number not certain, as the species are not easily distinguishable from each other."^^xsd:string .
+

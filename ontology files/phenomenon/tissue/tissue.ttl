@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tissue a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "tissue"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q40397"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tissue_(biology)"^^xsd:string ;
+    rdfs:comment "In biology, tissue is a historically derived biological organizational level between cells and a complete organ. A tissue is therefore often thought of as an assembly of similar cells and their extracellular matrix from the same origin that together carry out a specific function. Organs are then formed by the functional grouping together of multiple tissues.The English word \"tissue\" derives from the French word \"tissu\", the past participle of the verb tisser, \"to weave\"."^^xsd:string .
+

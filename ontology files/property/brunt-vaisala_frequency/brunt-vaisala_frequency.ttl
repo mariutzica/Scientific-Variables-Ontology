@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:brunt-vaisala_frequency a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "brunt-vaisala_frequency"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q994205"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Brunt–Väisälä_frequency"^^xsd:string ;
+    rdfs:comment "In atmospheric dynamics, oceanography, asteroseismology and geophysics, the Brunt–Väisälä frequency, or buoyancy frequency, is a measure of the stability of a fluid to vertical displacements such as those caused by convection. More precisely it is the frequency at which a vertically displaced parcel will oscillate within a statically stable environment. It is named after David Brunt and Vilho Väisälä. It can be used as a measure of atmospheric stratification."^^xsd:string .
+

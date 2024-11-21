@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:glyoxal a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "glyoxal"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q413465"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Glyoxal"^^xsd:string ;
+    rdfs:comment "Glyoxal is an organic compound with the chemical formula OCHCHO. It is the smallest dialdehyde (a compound with two aldehyde groups). It is a crystalline solid, white at low temperatures and yellow near the melting point (15 °C).  The liquid is yellow, and the vapor is green.Pure glyoxal is not commonly encountered because glyoxal is usually handled as a 40% aqueous solution (density near 1.24 g/mL).  It forms a series of hydrates, including oligomers.  For many purposes, these hydrated oligomers behave equivalently to glyoxal. Glyoxal is produced industrially as a precursor to many products."^^xsd:string .
+

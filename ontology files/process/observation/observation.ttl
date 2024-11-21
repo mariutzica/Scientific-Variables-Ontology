@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:observation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "observation"^^xsd:string ;
+    svo:has_synonym "observation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q193181"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Observation"^^xsd:string ;
+    rdfs:comment "Observation in the natural sciences is an act or instance of noticing or perceiving  and the acquisition of information from a primary source. In living beings, observation employs the senses. In science, observation can also involve the perception and recording of data via the use of scientific instruments. The term may also refer to any data collected during the scientific activity. Observations can be qualitative, that is, the absence or presence of a property is noted and the observed phenomenon described, or quantitative if a numerical value is attached to the observed phenomenon by counting or measuring."^^xsd:string .
+

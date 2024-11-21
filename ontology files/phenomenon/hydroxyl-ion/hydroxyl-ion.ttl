@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydroxyl-ion a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "hydroxyl-ion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q427071"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydroxyl_radical"^^xsd:string ;
+    rdfs:comment "The hydroxyl radical is the diatomic molecule •OH. The hydroxyl radical is very stable as a dilute gas, but it decays very rapidly in the condensed phase. It is pervasive in some situations. Most notably the hydroxyl radicals are produced from the decomposition of hydroperoxides (ROOH) or, in atmospheric chemistry, by the reaction of excited atomic oxygen with water. It is also important in the field of radiation chemistry, since it leads to the formation of hydrogen peroxide and oxygen, which can enhance corrosion and SCC in coolant systems subjected to radioactive environments. "^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:remediation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "remediation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2019586"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Environmental_remediation"^^xsd:string ;
+    rdfs:comment "Environmental remediation is the cleanup of hazardous substances dealing with the removal, treatment and containment of pollution or contaminants from environmental media such as soil, groundwater, sediment. Remediation may be required by regulations before development of land revitalization projects. Developers who agree to voluntary cleanup may be offered incentives under state or municipal programs like New York State's Brownfield Cleanup Program. If remediation is done by removal the waste materials are simply transported off-site for disposal at another location. The waste material can also be contained by physical barriers like slurry walls. The use of slurry walls is well-established in the construction industry. The application of (low) pressure grouting, used to mitigate soil liquefaction risks in San Francisco and other earthquake zones, has achieved mixed results in field tests to create barriers, and site-specific results depend upon many variable conditions that can greatly impact outcomes."^^xsd:string .
+

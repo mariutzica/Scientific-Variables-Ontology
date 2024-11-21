@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:phytoplankton a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "phytoplankton"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q184755"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Phytoplankton"^^xsd:string ;
+    rdfs:comment "Phytoplankton () are the autotrophic (self-feeding) components of the plankton community and a key part of ocean and freshwater ecosystems. The name comes from the Greek words φυτόν (phyton), meaning 'plant', and πλαγκτός (planktos), meaning 'wanderer' or 'drifter'.Phytoplankton obtain their energy through photosynthesis, as do trees and other plants on land. This means phytoplankton must have light from the sun, so they live in the well-lit surface layers (euphotic zone) of oceans and lakes. In comparison with terrestrial plants, phytoplankton are distributed over a larger surface area, are exposed to less seasonal variation and have markedly faster turnover rates than trees (days versus decades). As a result, phytoplankton respond rapidly on a global scale to climate variations."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:neocataclysta a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "neocataclysta"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6992074"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Neocataclysta"^^xsd:string ;
+    rdfs:comment "Neocataclysta is a genus of moths of the family Crambidae. It contains only one species, Neocataclysta magnificalis, the scrollwork pyralid moth, which is found in North America, where it has been recorded from Florida, Georgia, Maine, Massachusetts, Mississippi, New Jersey, New York, North Carolina, Nova Scotia, Ohio, Ontario and South Carolina."^^xsd:string .
+

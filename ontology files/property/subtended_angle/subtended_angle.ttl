@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:subtended_angle a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "subtended_angle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5671969"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Subtended_angle"^^xsd:string ;
+    rdfs:comment "In geometry, an angle is subtended by an arc, line segment or any other section of a curve when its two rays pass through the endpoints of that arc, line segment or curve section.  Conversely, the arc, line segment or curve section confined within the rays of an angle is regarded as the corresponding subtension of that angle. We also sometimes say that an arc is intercepted or enclosed by that angle."^^xsd:string .
+

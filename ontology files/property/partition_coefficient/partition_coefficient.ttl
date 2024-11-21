@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:partition_coefficient a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "partition_coefficient"^^xsd:string ;
+    svo:has_synonym "distribution_coefficient"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q898797"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Partition_coefficient"^^xsd:string ;
+    rdfs:comment "In the physical sciences, a partition coefficient (P) or distribution coefficient (D) is the ratio of concentrations of a compound in a mixture of two immiscible solvents at equilibrium. This ratio is therefore a comparison of the solubilities of the solute in these two liquids. The partition coefficient generally refers to the concentration ratio of un-ionized species of compound, whereas the distribution coefficient refers to the concentration ratio of all species of the compound (ionized plus un-ionized).In the chemical and pharmaceutical sciences, both phases usually are solvents. Most commonly, one of the solvents is water, while the second is hydrophobic, such as 1-octanol. Hence the partition coefficient measures how hydrophilic (\"water-loving\") or hydrophobic (\"water-fearing\") a chemical substance is. Partition coefficients are useful in estimating the distribution of drugs within the body. Hydrophobic drugs with high octanol-water partition coefficients are mainly distributed to hydrophobic areas such as lipid bilayers of cells. Conversely, hydrophilic drugs (low octanol/water partition coefficients) are found primarily in aqueous regions such as blood serum.If one of the solvents is a gas and the other a liquid, a gas/liquid partition coefficient can be determined. For example, the blood/gas partition coefficient of a general anesthetic measures how easily the anesthetic passes from gas to blood. Partition coefficients can also be defined when one of the phases is solid, for instance, when one phase is a molten metal and the second is a solid metal, or when both phases are solids. The partitioning of a substance into a solid results in a solid solution."^^xsd:string .
+

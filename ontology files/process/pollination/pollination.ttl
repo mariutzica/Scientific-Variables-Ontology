@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pollination a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "pollination"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q134624"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pollination"^^xsd:string ;
+    rdfs:comment "Pollination is the transfer of pollen from an anther of a plant to the stigma of a plant, later enabling fertilisation and the production of seeds. Pollinating agents can be animals such as insects, for example beetles or butterflies; birds, and bats; water; wind; and even plants themselves. Pollinating animals travel from plant to plant carrying pollen on their bodies in a vital interaction that allows the transfer of genetic material critical to the reproductive system of most flowering plants. When self-pollination occurs within a closed flower. Pollination often occurs within a species. When pollination occurs between species, it can produce hybrid offspring in nature and in plant breeding work. "^^xsd:string .
+

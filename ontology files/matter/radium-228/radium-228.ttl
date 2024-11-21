@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:radium-228 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "radium-228"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q377262"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isotopes_of_radium#Radium-228"^^xsd:string ;
+    rdfs:comment "Radium (88Ra) has no stable or nearly stable isotopes, and thus a standard atomic weight cannot be given. The longest lived, and most common, isotope of radium is 226Ra with a half-life of 1600 years. 226Ra occurs in the decay chain of 238U (often referred to as the radium series). Radium has 33 known isotopes from 202Ra to 234Ra."^^xsd:string .
+

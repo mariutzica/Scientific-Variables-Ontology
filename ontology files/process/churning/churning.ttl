@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:churning a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "churning"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2916087"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Churning_(butter)"^^xsd:string ;
+    rdfs:comment "Churning is the process of shaking up cream or whole milk to make butter, usually using a device called butter churn. In Europe from the Middle Ages until the Industrial Revolution, a churn was usually as simple as a barrel with a plunger in it, moved by hand. These have mostly been replaced by mechanical churns."^^xsd:string .
+

@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bromine-chloride a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "bromine-chloride"^^xsd:string ;
+    svo:has_synonym "bromine-monochloride"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q421222"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bromine_monochloride"^^xsd:string ;
+    rdfs:comment "Bromine monochloride, also called bromine(I) chloride, bromochloride, and bromine chloride, is an interhalogen inorganic compound with chemical formula BrCl. It is a very reactive golden yellow gas with boiling point 5 °C and melting point −66 °C. Its CAS number is 13863-41-7, and its EINECS number is 237-601-4. It is a strong oxidizing agent."^^xsd:string .
+

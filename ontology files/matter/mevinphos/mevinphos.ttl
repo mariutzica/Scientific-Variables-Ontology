@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mevinphos a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "mevinphos"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q18479302"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mevinphos"^^xsd:string ;
+    rdfs:comment "Mevinphos is an organophosphate insecticide that acts as an acetylcholinesterase inhibitor to control insects in a wide range of crops.  It is most commonly used for the control of chewing and sucking insects, as well as spider mites. Common synonym names are duraphos, fosdrin, menite, mevinfos, mevinox, phosdrin, and phosdrine. It is not allowed in the EU anymore."^^xsd:string .
+

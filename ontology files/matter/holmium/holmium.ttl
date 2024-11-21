@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:holmium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "holmium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1846"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Holmium"^^xsd:string ;
+    rdfs:comment "Holmium is a chemical element with the symbol Ho and atomic number 67. It is a rare-earth element and the eleventh member of the lanthanide series. It is a relatively soft, silvery, fairly corrosion-resistant and malleable metal. Like a lot of other lanthanides, holmium is too reactive to be found in native form, as pure holmium slowly forms a yellowish oxide coating when exposed to air. When isolated, holmium is relatively stable in dry air at room temperature. However, it reacts with water and corrodes readily, and also burns in air when heated."^^xsd:string .
+

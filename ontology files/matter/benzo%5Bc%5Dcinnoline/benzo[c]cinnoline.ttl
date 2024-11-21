@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:benzo%5Bc%5Dcinnoline a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "benzo[c]cinnoline"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q10860326"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Benzo(c)cinnoline"^^xsd:string ;
+    rdfs:comment "Benzo[c]cinnoline is a tricyclic organic compound with the formula C12H8N2. Formally this species is derived by oxidative dehydrogenation of 2,2'-diaminobiphenyl. This heterocycle reacts with iron carbonyls to form C12H8N2Fe2(CO)6."^^xsd:string .
+

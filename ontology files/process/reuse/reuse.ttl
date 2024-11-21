@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:reuse a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "reuse"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q846574"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Reuse"^^xsd:string ;
+    rdfs:comment "Reuse is the action or practice of using an item, whether for its original purpose (conventional reuse) or to fulfill a different function (creative reuse or repurposing). It should be distinguished from recycling, which is the breaking down of used items to make raw materials for the manufacture of new products. Reuse—by taking, but not reprocessing, previously used items—helps save time, money, energy and resources. In broader economic terms, it can make quality products available to people and organizations with limited means, while generating jobs and business activity that contribute to the economy."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:phosphorylation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "phosphorylation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q242736"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Phosphorylation"^^xsd:string ;
+    rdfs:comment "In biochemistry, phosphorylation is the attachment of a phosphate group to a molecule or an ion. This process and its inverse, dephosphorylation, are common in biology. Protein phosphorylation often activates (or deactivates) many enzymes."^^xsd:string .
+

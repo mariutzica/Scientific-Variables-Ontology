@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:water a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "water"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q283"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Water"^^xsd:string ;
+    rdfs:comment "Water is an inorganic compound with the chemical formula H2O. It is a transparent, tasteless, odorless, and nearly colorless chemical substance, and it is the main constituent of Earth's hydrosphere and the fluids of all known living organisms (in which it acts as a solvent). It is vital for all known forms of life, despite not providing food, energy or organic micronutrients. Its chemical formula, H2O, indicates that each of its molecules contains one oxygen and two hydrogen atoms, connected by covalent bonds. The hydrogen atoms are attached to the oxygen atom at an angle of 104.45°. \"Water\" is also the name of the liquid state of H2O at standard temperature and pressure."^^xsd:string .
+

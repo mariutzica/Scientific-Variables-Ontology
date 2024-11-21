@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mud a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "mud"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q170449"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Mud"^^xsd:string ;
+    rdfs:comment "Mud is soil, loam, silt or clay mixed with water. It usually forms after rainfall or near water sources. Ancient mud deposits harden over geological time to form sedimentary rock such as shale or mudstone (generally called lutites). When geological deposits of mud are formed in estuaries, the resultant layers are termed bay muds."^^xsd:string .
+

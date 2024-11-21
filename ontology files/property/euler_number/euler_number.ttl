@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:euler_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "euler_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1340031"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Euler_number_(physics)"^^xsd:string ;
+    rdfs:comment "The Euler number (Eu) is a dimensionless number used in fluid flow calculations. It expresses the relationship between a local pressure drop caused by a restriction and the kinetic energy per volume of the flow, and is used to characterize energy losses in the flow, where a perfect frictionless flow corresponds to an Euler number of 0.  The inverse of the Euler number is referred to as the Ruark Number with the symbol Ru."^^xsd:string .
+

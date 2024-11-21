@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28drainage-basin-contains-part-outlet%29-is-location-of-%28channel-has-part-bottom%29%29-has-property-%28slope%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "drainage-basin_outlet_channel_bottom__slope"^^xsd:string ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/channel> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/bottom> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/drainage-basin> ;
+    svo:contains_role_reference_to <http://scientificvariablesontology.org/svo/role/outlet> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28drainage-basin-contains-part-outlet%29-is-location-of-%28channel-has-part-bottom%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/slope> ;
+    svo:has_original_label "basin_outlet_channel_bottom__slope"^^xsd:string .
+

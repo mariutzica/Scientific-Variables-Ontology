@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hummer a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "hummer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q213487"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hummer"^^xsd:string ;
+    rdfs:comment "Hummer (stylized in all caps) is a brand of pickups and SUVs first marketed in 1992 when AM General began selling a civilian version of the M998 Humvee. Although discontinued in 2010, Hummer returned as a model under GMC in 2020. In 1998, General Motors (GM) purchased the brand name from AM General and marketed three vehicles: the original Hummer H1, based on the military Humvee, as well as the new H2 and H3 models that were based on smaller, civilian-market GM platforms."^^xsd:string .
+

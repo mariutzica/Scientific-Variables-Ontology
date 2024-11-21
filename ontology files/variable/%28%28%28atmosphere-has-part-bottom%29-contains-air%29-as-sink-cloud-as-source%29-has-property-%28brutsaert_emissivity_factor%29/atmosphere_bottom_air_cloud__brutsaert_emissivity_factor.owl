@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28%28%28atmosphere-has-part-bottom%29-contains-air%29-as-sink-cloud-as-source%29-has-property-%28brutsaert_emissivity_factor%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/%28%28atmosphere-has-part-bottom%29-contains-air%29-as-sink-cloud-as-source"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/brutsaert_emissivity_factor"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/atmosphere"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/cloud"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/air"/>
+  <svo:contains_part_reference_to rdf:resource="http://scientificvariablesontology.org/svo/part/bottom"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atmosphere_bottom_air_cloud__brutsaert_emissivity_factor</rdfs:label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atmosphere_bottom_air__brutsaert_emissivity_cloud_factor</svo:has_original_label>
+</owl:NamedIndividual>
+</rdf:RDF>

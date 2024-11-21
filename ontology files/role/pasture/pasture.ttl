@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pasture a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "pasture"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q30121"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pasture"^^xsd:string ;
+    rdfs:comment "Pasture (from the Latin pastus, past participle of pascere, \"to feed\") is land used for grazing. Pasture lands in the narrow sense are enclosed tracts of farmland, grazed by domesticated livestock, such as horses, cattle, sheep, or swine. The vegetation of tended pasture, forage, consists mainly of grasses, with an interspersion of legumes and other forbs (non-grass herbaceous plants). Pasture is typically grazed throughout the summer, in contrast to meadow which is ungrazed or used for grazing only after being mown to make hay for animal fodder. Pasture in a wider sense additionally includes rangelands, other unenclosed pastoral systems, and land types used by wild animals for grazing or browsing."^^xsd:string .
+

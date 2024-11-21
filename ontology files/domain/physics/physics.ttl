@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/domain/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:physics a svo:Domain,
+        owl:NamedIndividual ;
+    rdfs:label "physics"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q413"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Physics"^^xsd:string ;
+    rdfs:comment "Physics is the natural science of matter, involving the study of matter, its fundamental constituents, its motion and behavior through space and time, and the related entities of energy and force. Physics is one of the most fundamental scientific disciplines, with its main goal being to understand how the universe behaves. A scientist who specializes in the field of physics is called a physicist."^^xsd:string .
+

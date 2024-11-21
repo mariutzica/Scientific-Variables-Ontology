@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:glycera a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "glycera"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1947598"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Glycera_(annelid)"^^xsd:string ;
+    rdfs:comment "The genus Glycera is a group of polychaetes (bristle worms) commonly known as bloodworms.  They are typically found on the bottom of shallow marine waters, and some species (e.g. common bloodworms) can grow up to 35 cm (14 in) in length."^^xsd:string .
+

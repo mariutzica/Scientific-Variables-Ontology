@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:n-nonane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "n-nonane"^^xsd:string ;
+    svo:has_synonym "Nonane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q150694"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nonane"^^xsd:string ;
+    rdfs:comment "Nonane is a linear alkane hydrocarbon with the chemical formula C9H20. It is a colorless, flammable liquid, occurring primarily in the component of the petroleum distillate fraction commonly called kerosene, which is used as a heating, tractor, and jet fuel. Nonane is also used as a solvent, distillation chaser, fuel additive, and a component in biodegradable detergents.Nonane has 35 structural isomers."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ekman_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "ekman_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1323330"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ekman_number"^^xsd:string ;
+    rdfs:comment "The Ekman number (Ek) is a dimensionless number used in fluid dynamics to describe the ratio of viscous forces to Coriolis forces. It is frequently used in describing geophysical phenomena in the oceans and atmosphere in order to characterise the ratio of viscous forces to the Coriolis forces arising from planetary rotation. It is named after the Swedish oceanographer Vagn Walfrid Ekman."^^xsd:string .
+

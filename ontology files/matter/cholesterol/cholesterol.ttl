@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cholesterol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "cholesterol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q43656"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Cholesterol"^^xsd:string ;
+    rdfs:comment "Cholesterol is any of a class of certain organic molecules called lipids. It is a sterol (or modified steroid), a type of lipid. Cholesterol is biosynthesized by all animal cells and is an essential structural component of animal cell membranes. When chemically isolated, it is a yellowish crystalline solid."^^xsd:string .
+

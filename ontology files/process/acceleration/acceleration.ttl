@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:acceleration a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "acceleration"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11376"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Acceleration"^^xsd:string ;
+    rdfs:comment "In mechanics, acceleration is the rate of change of the velocity of an object with respect to time. Accelerations are vector quantities (in that they have magnitude and direction). The orientation of an object's acceleration is given by the orientation of the net force acting on that object. The magnitude of an object's acceleration, as described by Newton's Second Law, is the combined effect of two causes:"^^xsd:string .
+

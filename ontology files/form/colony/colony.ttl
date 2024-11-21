@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:colony a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "colony"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q354341"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Colony_(biology)"^^xsd:string ;
+    rdfs:comment "In biology, a colony is composed of two or more conspecific individuals living in close association with, or connected to, one another. This association is usually for mutual benefit such as stronger defense or the ability to attack bigger prey.Colonies can form in various shapes and ways depending on the organism involved. For instance, the bacterial colony is a cluster of identical cells (clones). These colonies often form and grow on the surface of (or within) a solid medium, usually derived from a single parent cell.Colonies, in the context of development, may be composed of two or more unitary (or solitary) organisms or be modular organisms. Unitary organisms have determinate development (set life stages) from zygote to adult form and individuals or groups of individuals (colonies) are visually distinct. Modular organisms have indeterminate growth forms (life stages not set) through repeated iteration of genetically identical modules (or individuals), and it can be difficult to distinguish between the colony as a whole and the modules within. In the latter case, modules may have specific functions within the colony."^^xsd:string .
+

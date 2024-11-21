@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:critical_density a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "critical_density"^^xsd:string ;
+    svo:has_synonym "cosmological_critical_density"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q467736"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Friedmann_equations#Density_parameter"^^xsd:string ;
+    rdfs:comment "The Friedmann equations are a set of equations in physical cosmology that govern the expansion of space in homogeneous and isotropic models of the universe within the context of general relativity. They were first derived by Alexander Friedmann in 1922 from Einstein's field equations of gravitation for the Friedmann–Lemaître–Robertson–Walker metric and a perfect fluid with a given mass density ρ and pressure p. The equations for negative spatial curvature were given by Friedmann in 1924."^^xsd:string .
+

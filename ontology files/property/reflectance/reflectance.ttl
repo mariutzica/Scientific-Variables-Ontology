@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:reflectance a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "reflectance"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q663650"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Reflectance"^^xsd:string ;
+    rdfs:comment "The reflectance of the surface of a material is its effectiveness in reflecting radiant energy. It is the fraction of incident electromagnetic power that is reflected at the boundary. Reflectance is a component of the response of the electronic structure of the material to the electromagnetic field of light, and is in general a function of the frequency, or wavelength, of the light, its polarization, and the angle of incidence. The dependence of reflectance on the wavelength is called a reflectance spectrum or spectral reflectance curve."^^xsd:string .
+

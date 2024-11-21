@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tropical-cyclone a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "tropical-cyclone"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q8092"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tropical_cyclone"^^xsd:string ;
+    rdfs:comment "A tropical cyclone is a rapidly rotating storm system characterized by a low-pressure center, a closed low-level atmospheric circulation, strong winds, and a spiral arrangement of thunderstorms that produce heavy rain and squalls. Depending on its location and strength, a tropical cyclone is referred to by different names, including hurricane (), typhoon (), tropical storm, cyclonic storm, tropical depression, or simply cyclone. A hurricane is a strong tropical cyclone that occurs in the Atlantic Ocean or northeastern Pacific Ocean, and a typhoon occurs in the northwestern Pacific Ocean. In the Indian Ocean, South Pacific, or (rarely) South Atlantic, comparable storms are referred to as \"tropical cyclones\", and such storms in the Indian Ocean can also be called \"severe cyclonic storms\"."^^xsd:string .
+

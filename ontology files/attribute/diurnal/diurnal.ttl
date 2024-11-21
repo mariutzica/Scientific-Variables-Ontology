@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:diurnal a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "diurnal"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4284186"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Diurnality"^^xsd:string ;
+    rdfs:comment "Diurnality is a form of plant and animal behavior characterized by activity during daytime, with a period of sleeping or other inactivity at night. The common adjective used for daytime activity is \"diurnal\". The timing of activity by an animal depends on a variety of environmental factors such as the temperature, the ability to gather food by sight, the risk of predation, and the time of year. Diurnality is a cycle of activity within a 24-hour period; cyclic activities called circadian rhythms are endogenous cycles not dependent on external cues or environmental factors except for a zeitgeber. Animals active during twilight are crepuscular, those active during the night are nocturnal and animals active at sporadic times during both night and day are cathemeral."^^xsd:string .
+

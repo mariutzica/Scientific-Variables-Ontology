@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hole a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "hole"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q20204151"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wiktionary.org/wiki/hole#Noun"^^xsd:string ;
+    rdfs:comment "A hole is an opening in or through a particular medium, usually a solid body. Holes occur through natural and artificial processes, and may be useful for various purposes, or may represent a problem needing to be addressed in many fields of engineering. Depending on the material and the placement, a hole may be an indentation in a surface (such as a hole in the ground), or may pass completely through that surface (such as a hole created by a hole puncher in a piece of paper)."^^xsd:string .
+

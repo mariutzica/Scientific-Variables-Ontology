@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fusion a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "fusion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q398377"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fusion"^^xsd:string ;
+    rdfs:comment "Fusion, or synthesis, is the process of combining two or more distinct entities into a new whole."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:distance a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "distance"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q126017"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Distance"^^xsd:string ;
+    rdfs:comment "Distance is a numerical or occasionally qualitative measurement of how far apart objects or points are. In physics or everyday usage, distance may refer to a physical length or an estimation based on other criteria (e.g. \"two counties over\").  Since spatial cognition is a rich source of conceptual metaphors in human thought, the term is also frequently used metaphorically to mean a measurement of the amount of difference between two similar objects (such as statistical distance between probability distributions or edit distance between strings of text) or a degree of separation (as exemplified by distance between people in a social network).  Most such notions of distance, both physical and metaphorical, are formalized in mathematics using the notion of a metric space."^^xsd:string .
+

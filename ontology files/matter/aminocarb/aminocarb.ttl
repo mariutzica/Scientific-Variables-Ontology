@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:aminocarb a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "aminocarb"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3120938"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Aminocarb"^^xsd:string ;
+    rdfs:comment "Animocarb (Matacil) is an organic chemical compound with the molecular formula C11H16N2O2. It has a colorless or white crystal-like appearance and is most commonly used as an insecticide."^^xsd:string .
+

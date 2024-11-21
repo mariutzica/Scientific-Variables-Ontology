@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:methyl-salicylate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "methyl-salicylate"^^xsd:string ;
+    svo:has_synonym "wintergreen-oil"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q407669"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Methyl_salicylate"^^xsd:string ;
+    rdfs:comment "Methyl salicylate (oil of wintergreen or wintergreen oil) is an organic compound with the formula C8H8O3.  It is the methyl ester of salicylic acid. It is a colorless, viscous liquid with a sweet, fruity odor reminiscent of root beer, but often associatively called \"minty\", as it is an ingredient in mint candies. It is produced by many species of plants, particularly wintergreens. It is also produced synthetically, used as a fragrance and as a flavoring agent."^^xsd:string .
+

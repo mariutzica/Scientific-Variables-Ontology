@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:phenanthridine a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "phenanthridine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q400082"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Phenanthridine"^^xsd:string ;
+    rdfs:comment "Phenanthridine is a nitrogen heterocyclic compound that is the basis of DNA-binding fluorescent dyes through intercalation. Examples of such dyes are ethidium bromide and propidium iodide. It is an isomer of acridine."^^xsd:string .
+

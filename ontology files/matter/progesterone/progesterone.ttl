@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:progesterone a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "progesterone"^^xsd:string ;
+    svo:has_synonym "p4"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q26963"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Progesterone"^^xsd:string ;
+    rdfs:comment "Progesterone (P4) is an endogenous steroid and progestogen sex hormone involved in the menstrual cycle, pregnancy, and embryogenesis of humans and other species. It belongs to a group of steroid hormones called the progestogens and is the major progestogen in the body. Progesterone has a variety of important functions in the body. It is also a crucial metabolic intermediate in the production of other endogenous steroids, including the sex hormones and the corticosteroids, and plays an important role in brain function as a neurosteroid.In addition to its role as a natural hormone, progesterone is also used as a medication, such as in combination with estrogen for contraception, to reduce the risk of uterine or cervical cancer, in hormone replacement therapy, and in feminizing hormone therapy. It was first prescribed in 1934."^^xsd:string .
+

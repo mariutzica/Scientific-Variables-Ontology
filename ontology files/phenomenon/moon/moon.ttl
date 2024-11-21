@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:moon a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "moon"^^xsd:string ;
+    svo:has_synonym "natural-satellite"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2537"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Natural_satellite"^^xsd:string ;
+    rdfs:comment "A natural satellite is, in the most common usage, an astronomical body that orbits a planet, dwarf planet, or small Solar System body (or sometimes another natural satellite). Natural satellites are often colloquially referred to as moons, a derivation from the Moon of Earth."^^xsd:string .
+

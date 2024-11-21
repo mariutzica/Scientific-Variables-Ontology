@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:specific_kinetic_energy a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "specific_kinetic_energy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7574995"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Specific_kinetic_energy"^^xsd:string ;
+    rdfs:comment "Specific kinetic energy is kinetic energy of an object per unit of mass."^^xsd:string .
+

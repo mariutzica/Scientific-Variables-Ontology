@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28soil-contains-%28%28carbon-has-form-pool~stabilized%29-contains-carbon%29%29-has-property-%28year-end_mass%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/soil-contains-%28%28carbon-has-form-pool~stabilized%29-contains-carbon%29"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/year-end_mass"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/carbon"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/soil"/>
+  <svo:contains_form_reference_to rdf:resource="http://scientificvariablesontology.org/svo/form/pool"/>
+  <svo:contains_attribute_reference_to rdf:resource="http://scientificvariablesontology.org/svo/attribute/stabilized"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil_carbon_pool~stabilized_carbon__year-end_mass</rdfs:label>
+</owl:NamedIndividual>
+</rdf:RDF>

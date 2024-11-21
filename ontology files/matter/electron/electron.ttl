@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:electron a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "electron"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2225"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Electron"^^xsd:string ;
+    rdfs:comment "The electron (e− or β−) is a subatomic particle with a negative one elementary electric charge. Electrons belong to the first generation of the lepton particle family, and are generally thought to be elementary particles because they have no known components or substructure. The electron's mass is approximately 1/1836 that of the proton. Quantum mechanical properties of the electron include an intrinsic angular momentum (spin) of a half-integer value, expressed in units of the reduced Planck constant, ħ. Being fermions, no two electrons can occupy the same quantum state, per the Pauli exclusion principle. Like all elementary particles, electrons exhibit properties of both particles and waves: They can collide with other particles and can be diffracted like light. The wave properties of electrons are easier to observe with experiments than those of other particles like neutrons and protons because electrons have a lower mass and hence a longer de Broglie wavelength for a given energy."^^xsd:string .
+

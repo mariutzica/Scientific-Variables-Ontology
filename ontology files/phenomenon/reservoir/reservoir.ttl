@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:reservoir a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "reservoir"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q131681"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Reservoir"^^xsd:string ;
+    rdfs:comment "A reservoir (; from French réservoircode: fra promoted to code: fr  [ʁezɛʁvwaʁ]) is an enlarged lake behind a dam. Such a dam may be either artificial, built to store fresh water or it may be a natural formation."^^xsd:string .
+

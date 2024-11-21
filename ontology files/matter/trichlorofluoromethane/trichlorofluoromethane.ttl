@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trichlorofluoromethane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "trichlorofluoromethane"^^xsd:string ;
+    svo:has_synonym "freon-11"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q423000"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Trichlorofluoromethane"^^xsd:string ;
+    rdfs:comment "Trichlorofluoromethane, also called freon-11, CFC-11, or R-11,  is a chlorofluorocarbon (CFC).  It is a colorless, faintly ethereal, and sweetish-smelling liquid that boils around room temperature.  CFC-11 is a Class 1 ozone-depleting substance which damages Earth's protective stratospheric ozone layer."^^xsd:string .
+

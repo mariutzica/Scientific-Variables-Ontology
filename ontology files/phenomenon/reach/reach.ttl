@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:reach a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "reach"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7300165"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Reach_(geography)"^^xsd:string ;
+    rdfs:comment "A reach is a segment of a stream, river, or arm of the sea, usually suggesting a straight, level, uninterrupted stretch.They are traditionally defined by the capabilities of sailing boats, as a stretch of a watercourse which, because it is straightish, can be sailed in one reach (that is, without tacking)."^^xsd:string .
+

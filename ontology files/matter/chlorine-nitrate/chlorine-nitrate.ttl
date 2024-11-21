@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlorine-nitrate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chlorine-nitrate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2563692"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chlorine_nitrate"^^xsd:string ;
+    rdfs:comment "Chlorine nitrate, with chemical formula ClNO3 is an important atmospheric gas present in the stratosphere.  It is an important sink of chlorine that contributes to the depletion of ozone."^^xsd:string .
+

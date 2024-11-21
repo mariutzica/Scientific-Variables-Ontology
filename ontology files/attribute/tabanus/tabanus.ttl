@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tabanus a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "tabanus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2720956"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tabanus"^^xsd:string ;
+    rdfs:comment "Tabanus is a genus of biting horseflies of the family Tabanidae. Females have scissor-like mouthparts that aim to cut the skin. The horsefly can then lap up the blood. Horseflies of this genus are known to be potential vectors of anthrax, worms and trypanosomes. Some species, such as Tabanus bovinus, prefer bovine animals and are less harmful to humans. The genus contains hundreds of species and many species groups."^^xsd:string .
+

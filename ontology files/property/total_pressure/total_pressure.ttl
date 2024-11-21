@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:total_pressure a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "total_pressure"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7828135"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Total_pressure"^^xsd:string ;
+    rdfs:comment "In physics, the term total pressure may indicate two different quantities, both having the dimensions of a pressure:"^^xsd:string .
+

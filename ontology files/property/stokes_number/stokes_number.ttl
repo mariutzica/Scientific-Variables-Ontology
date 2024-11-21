@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:stokes_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "stokes_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1545546"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Stokes_number"^^xsd:string ;
+    rdfs:comment "The Stokes number (Stk), named after George Gabriel Stokes, is a dimensionless number characterising the behavior of particles suspended in a fluid flow.  The Stokes number is defined as the ratio of the characteristic time of a particle (or droplet) to a characteristic time of the flow or of an obstacle, or"^^xsd:string .
+

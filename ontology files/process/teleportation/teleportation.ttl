@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:teleportation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "teleportation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q204043"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Teleportation"^^xsd:string ;
+    rdfs:comment "Teleportation (in Islam: Tay al-Ard) is a fictional transfer of matter or energy from one point to another without traversing the physical space between them. It is a common subject in science fiction literature and in other popular culture. Teleportation is often paired with time travel, being that the travelling between the two points takes an unknown period of time, sometimes being immediate. An apport is a similar phenomenon featured in parapsychology and spiritualism.There is no known physical mechanism that would allow for teleportation. Frequently appearing scientific papers and media articles with the term teleportation typically report on so-called \"quantum teleportation\", a scheme for information transfer which, due to the no-communication theorem, still would not allow for faster-than-light communication."^^xsd:string .
+

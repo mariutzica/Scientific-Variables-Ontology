@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vaccination a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "vaccination"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q192995"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vaccination"^^xsd:string ;
+    rdfs:comment "Vaccination is the administration of a vaccine to help the immune system develop immunity from a disease. Vaccines contain a microorganism or virus in a weakened, live or killed state, or proteins or toxins from the organism. In stimulating the body's adaptive immunity, they help prevent sickness from an infectious disease. When a sufficiently large percentage of a population has been vaccinated, herd immunity results. Herd immunity protects those who may be immunocompromised and cannot get a vaccine because even a weakened version would harm them. The effectiveness of vaccination has been widely studied and verified. Vaccination is the most effective method of preventing infectious diseases; widespread immunity due to vaccination is largely responsible for the worldwide eradication of smallpox and the elimination of diseases such as polio and tetanus from much of the world. However, some diseases, such as measles outbreaks in America, have seen rising cases due to relatively low vaccination rates in the 2010s – attributed, in part, to vaccine hesitancy. According to the World Health Organization, vaccination prevents 3.5–5 million deaths per year."^^xsd:string .
+

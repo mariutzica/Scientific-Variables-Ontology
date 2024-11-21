@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28earth-has-abstraction-surface%29-is-location-of-ocean%29-has-property-%28area_fraction%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "earth_surface_ocean__area_fraction"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/surface> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/earth>,
+        <http://scientificvariablesontology.org/svo/phenomenon/ocean> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28earth-has-abstraction-surface%29-is-location-of-ocean> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/area_fraction> .
+

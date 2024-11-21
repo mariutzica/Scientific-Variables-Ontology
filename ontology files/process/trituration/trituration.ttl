@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trituration a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "trituration"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q961231"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Trituration"^^xsd:string ;
+    rdfs:comment "Trituration (Latin, grinding) is the name of several different methods used to process materials. In one sense, it is a form of comminution (reducing the particle size of a substance). In another sense, it is the production of a homogeneous powdered material by mixing and grinding component materials thoroughly. For example, a dental amalgam is formed by combining particles of a metal, usually gold or silver, with mercury. "^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:combustion_enthalpy a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "combustion_enthalpy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q902126"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Heat_of_combustion"^^xsd:string ;
+    rdfs:comment "The heating value (or energy value or calorific value) of a substance, usually a fuel or food (see food energy), is the amount of heat released during the combustion of a specified amount of it."^^xsd:string .
+

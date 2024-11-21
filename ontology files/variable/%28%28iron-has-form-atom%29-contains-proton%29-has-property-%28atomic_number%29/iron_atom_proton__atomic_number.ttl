@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28iron-has-form-atom%29-contains-proton%29-has-property-%28atomic_number%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "iron_atom_proton__atomic_number"^^xsd:string ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/atom> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/iron>,
+        <http://scientificvariablesontology.org/svo/matter/proton> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28iron-has-form-atom%29-contains-proton> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/atomic_number> ;
+    svo:has_original_label "iron_atom__proton_number"^^xsd:string .
+

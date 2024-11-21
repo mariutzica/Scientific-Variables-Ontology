@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/process/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/process/">
+<owl:NamedIndividual rdf:about="bioconcentration">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Process"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bioconcentration</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Bioconcentration</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2904036</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In aquatic toxicology, bioconcentration is the accumulation of a water-borne chemical substance in an organism exposed to the water.There are several ways in which to measure and assess bioaccumulation and bioconcentration.  These include: octanol-water partition coefficients (KOW), bioconcentration factors (BCF), bioaccumulation factors (BAF) and biota-sediment accumulation factor (BSAF).  Each of these can be calculated using either empirical data or measurements, as well as from mathematical models. One of these mathematical models is a fugacity-based BCF model developed by Don Mackay.Bioconcentration factor can also be expressed as the ratio of the concentration of a chemical in an organism to the concentration of the chemical in the surrounding environment. The BCF is a measure of the extent of chemical sharing between an organism and the surrounding environment.In surface water, the BCF is the ratio of a chemical's concentration in an organism to the chemical's aqueous concentration.  BCF is often expressed in units of liter per kilogram (ratio of mg of chemical per kg of organism to mg of chemical per liter of water). BCF can simply be an observed ratio, or it can be the prediction of a partitioning model. A partitioning model is based on assumptions that chemicals partition between water and aquatic organisms as well as the idea that chemical equilibrium exists between the organisms and the aquatic environment in which it is found</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

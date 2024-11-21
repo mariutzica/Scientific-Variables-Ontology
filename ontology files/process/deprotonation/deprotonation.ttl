@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:deprotonation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "deprotonation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2686738"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Deprotonation"^^xsd:string ;
+    rdfs:comment "Deprotonation (or dehydronation) is the removal (transfer) of a proton (or hydron, or hydrogen cation), (H+) from a Brønsted–Lowry acid in an acid–base reaction. The species formed is the conjugate base of that acid. The complementary process, when a proton is added (transferred) to a Brønsted–Lowry base, is protonation (or hydronation). The species formed is the conjugate acid of that base."^^xsd:string .
+

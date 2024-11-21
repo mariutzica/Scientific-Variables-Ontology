@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:silting a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "silting"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1408124"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Siltation"^^xsd:string ;
+    rdfs:comment "Siltation is water pollution caused by particulate terrestrial clastic material, with a particle size dominated by silt or clay. It refers both to the increased concentration of suspended sediments and to the increased accumulation (temporary or permanent) of fine sediments on bottoms where they are undesirable. Siltation is most often caused by soil erosion or sediment spill."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:critical-point a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "critical-point"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q111059"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Critical_point_(thermodynamics)"^^xsd:string ;
+    rdfs:comment "In thermodynamics, a critical point (or critical state) is the end point of a phase equilibrium curve. One example is the liquid–vapor critical point, the end point of the pressure–temperature curve that designates conditions under which a liquid and its vapor can coexist. At higher temperatures, the gas cannot be liquefied by pressure alone. At the critical point, defined by a critical temperature Tc and a critical pressure pc, phase boundaries vanish. Other examples include the liquid–liquid critical points in mixtures, and the ferromagnet–paramagnet transition (Curie temperature) in the absence of an external magnetic field."^^xsd:string .
+

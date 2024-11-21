@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:rhynchelmis a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "rhynchelmis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3702450"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Rhynchelmis"^^xsd:string ;
+    rdfs:comment "Rhynchelmis is the genus of 30 species of aquatic oligochaetes from the Northern Hemisphere, with 11 species from North America and 19 from Eurasia. They are part of the family Lumbriculidae, which are among the largest of the microdriles. They are generally defined as having atria in segment X and spermathecae in segment VIII (Fend & Brinkhurst, 2000). The prostomium generally has a proboscis, from which the genus has got its name."^^xsd:string .
+

@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28human-as-main-acoustic-wave-as-in-hearing%29-has-property-%28lower_limit_of_frequency%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "human_acoustic-wave_hearing__lower_limit_of_frequency"^^xsd:string ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/lower_limit> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/acoustic-wave>,
+        <http://scientificvariablesontology.org/svo/phenomenon/human> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/hearing> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/frequency> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/human-as-main-acoustic-wave-as-in-hearing> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/lower_limit_of_frequency> ;
+    svo:has_original_label "human__lower_limit_of_hearing_frequency"^^xsd:string .
+

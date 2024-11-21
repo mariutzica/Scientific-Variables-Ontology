@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/soil-has-form-layer~1~saturated> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "soil_layer~1~saturated"^^xsd:string ;
+    svo:has_form <http://scientificvariablesontology.org/svo/form/layer~1~saturated> ;
+    svo:has_matter <http://scientificvariablesontology.org/svo/matter/soil> .
+

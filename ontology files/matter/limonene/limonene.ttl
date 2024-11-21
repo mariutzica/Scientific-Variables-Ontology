@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:limonene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "limonene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q278809"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Limonene"^^xsd:string ;
+    rdfs:comment "Limonene is a colorless liquid aliphatic hydrocarbon classified as a cyclic monoterpene, and is the major component in the oil of citrus fruit peels. The D-isomer, occurring more commonly in nature as the fragrance of oranges, is a flavoring agent in food manufacturing. It is also used in chemical synthesis as a precursor to carvone and as a renewables-based solvent in cleaning products. The less common L-isomer has a piny, turpentine-like odor, and is found in the edible parts of such plants as caraway, dill, and bergamot orange plants.Limonene takes its name from Italian limone (\"lemon\"). Limonene is a chiral molecule, and biological sources produce one enantiomer: the principal industrial source, citrus fruit, contains D-limonene ((+)-limonene), which is the (R)-enantiomer. Racemic limonene is known as dipentene. D-Limonene is obtained commercially from citrus fruits through two primary methods: centrifugal separation or steam distillation."^^xsd:string .
+

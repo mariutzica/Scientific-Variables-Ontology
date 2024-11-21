@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:incandescent a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "incandescent"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q47616"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Incandescent_light_bulb"^^xsd:string ;
+    rdfs:comment "An incandescent light bulb, incandescent lamp or incandescent light globe is an electric light with a filament that is heated until it glows. The filament is enclosed in a glass bulb that is either evacuated or filled with inert gas to protect the filament from oxidation. Electric current is supplied to the filament by terminals or wires embedded in the glass. A bulb socket provides mechanical support and electrical connections."^^xsd:string .
+

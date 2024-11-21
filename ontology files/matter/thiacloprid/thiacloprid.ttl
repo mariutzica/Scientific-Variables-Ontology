@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thiacloprid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "thiacloprid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q416283"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Thiacloprid"^^xsd:string ;
+    rdfs:comment "Thiacloprid is an insecticide of the neonicotinoid class.  Its mechanism of action is similar to other neonicotinoids and involves disruption of the insect's nervous system by stimulating nicotinic acetylcholine receptors.  Thiacloprid was developed by Bayer CropScience for use on agricultural crops to control of a variety of sucking and chewing insects, primarily aphids and whiteflies."^^xsd:string .
+

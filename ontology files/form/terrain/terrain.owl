@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/form/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/form/">
+<owl:NamedIndividual rdf:about="terrain">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Form"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">terrain</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Terrain</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q186131</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terrain or relief (also topographical relief) involves the vertical and horizontal dimensions of land surface. The term bathymetry is used to describe underwater relief, while hypsometry studies terrain relative to sea level. The Latin word terra (the root of terrain) means "earth."</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

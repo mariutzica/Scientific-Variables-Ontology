@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:transmittance a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "transmittance"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1427863"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Transmittance"^^xsd:string ;
+    rdfs:comment "Transmittance of the surface of a material is its effectiveness in transmitting radiant energy. It is the fraction of incident electromagnetic power that is transmitted through a sample, in contrast to the transmission coefficient, which is the ratio of the transmitted to incident electric field.Internal transmittance refers to energy loss by absorption, whereas (total) transmittance is that due to absorption, scattering, reflection, etc."^^xsd:string .
+

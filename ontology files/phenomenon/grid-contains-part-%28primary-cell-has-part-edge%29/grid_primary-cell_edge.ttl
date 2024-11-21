@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:grid-contains-part-%28primary-cell-has-part-edge%29 a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "grid_primary-cell_edge"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :primary-cell-has-part-edge ;
+    svo:is_part_of_containing_phenomenon :grid .
+

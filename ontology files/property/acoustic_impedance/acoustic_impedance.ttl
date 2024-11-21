@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:acoustic_impedance a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "acoustic_impedance"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q975684"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Acoustic_impedance"^^xsd:string ;
+    rdfs:comment "Acoustic impedance and specific acoustic impedance are measures of the opposition that a system presents to the acoustic flow resulting from an acoustic pressure applied to the system. The SI unit of acoustic impedance is the pascal-second per cubic metre (Pa·s/m3), or in the MKS system the rayl per square metre (rayl/m2), while that of specific acoustic impedance is the pascal-second per metre (Pa·s/m), or in the MKS system the rayl. There is a close analogy with electrical impedance, which measures the opposition that a system presents to the electric current resulting from a voltage applied to the system."^^xsd:string .
+

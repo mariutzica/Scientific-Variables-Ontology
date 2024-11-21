@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:partial-melt a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "partial-melt"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2054924"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Partial_melting"^^xsd:string ;
+    rdfs:comment "Partial melting is the phenomenon that occurs when a rock is subjected to temperatures high enough to cause certain minerals to melt, but not all of them. Partial melting is an important part of the formation of all igneous rocks and some metamorphic rocks (e.g., migmatites), as evidenced by a multitude of geochemical, geophysical and petrological studies."^^xsd:string .
+

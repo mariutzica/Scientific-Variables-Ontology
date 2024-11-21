@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:isentropic-process a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "isentropic-process"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q907271"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isentropic_process"^^xsd:string ;
+    rdfs:comment "An isentropic process is an idealized  thermodynamic process that is both adiabatic and reversible. The work transfers of the system are frictionless, and there is no net transfer of heat or matter.   Such an idealized process is useful in engineering as a model of and basis of comparison for real processes. This process is idealized because reversible processes do not occur in reality; thinking of a process as both adiabatic and reversible would show that the initial and final entropies are the same, thus, the reason it is called isentropic (entropy does not change). Thermodynamic processes are named based on the effect they would have on the system (ex. isovolumetric: constant volume, isenthalpic: constant enthalpy).  Even though in reality it is not necessarily possible to carry out an isentropic process, some may be approximated as such."^^xsd:string .
+

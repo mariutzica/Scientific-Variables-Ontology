@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:grashof_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "grashof_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q868719"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Grashof_number"^^xsd:string ;
+    rdfs:comment "In fluid mechanics (especially fluid thermodynamics), the Grashof number (Gr, after Franz Grashof) is a dimensionless number which approximates the ratio of the buoyancy to viscous forces acting on a fluid. It frequently arises in the study of situations involving natural convection and is analogous to the Reynolds number (Re)."^^xsd:string .
+

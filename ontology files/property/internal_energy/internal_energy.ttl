@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:internal_energy a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "internal_energy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q180241"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Internal_energy"^^xsd:string ;
+    rdfs:comment "The internal energy of a thermodynamic system is the energy contained within it, measured as the quantity of energy necessary to bring the system from its  standard internal state to its present internal state of interest, accounting for the gains and losses of energy due to changes in its internal state, including such quantities as magnetization. It excludes the kinetic energy of motion and the potential energy of position of the system as a whole, with respect to its surroundings and external force fields, but it includes the thermal energy (i.e. internal kinetic energy). The internal energy of an isolated system cannot change, as expressed in the law of conservation of energy, a foundation of the first law of thermodynamics."^^xsd:string .
+

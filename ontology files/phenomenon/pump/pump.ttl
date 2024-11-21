@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pump a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "pump"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q134574"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Pump"^^xsd:string ;
+    rdfs:comment "A pump is a device that moves fluids (liquids or gases), or sometimes slurries, by mechanical action, typically converted from electrical energy into hydraulic energy."^^xsd:string .
+

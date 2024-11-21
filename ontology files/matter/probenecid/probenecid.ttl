@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:probenecid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "probenecid"^^xsd:string ;
+    svo:has_synonym "probalan"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q900898"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Probenecid"^^xsd:string ;
+    rdfs:comment "Probenecid, also sold under the brand name Probalan, is a medication that increases uric acid excretion in the urine. It is primarily used in treating gout and hyperuricemia."^^xsd:string .
+

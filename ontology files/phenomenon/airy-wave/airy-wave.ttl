@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:airy-wave a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "airy-wave"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4699087"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Airy_wave_theory#Mathematical_formulation_of_the_wave_motion"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, Airy wave theory (often referred to as linear wave theory) gives a linearised description of the propagation of gravity waves on the surface of a homogeneous fluid layer. The theory assumes that the fluid layer has a uniform mean depth, and that the fluid flow is inviscid, incompressible and irrotational. This theory was first published, in correct form, by George Biddell Airy in the 19th century.Airy wave theory is often applied in ocean engineering and coastal engineering for the modelling of random sea states – giving a description of the wave kinematics and dynamics of high-enough accuracy for many purposes. Further, several second-order nonlinear properties of surface gravity waves, and their propagation, can be estimated from its results. Airy wave theory is also a good approximation for tsunami waves in the ocean, before they steepen near the coast."^^xsd:string .
+

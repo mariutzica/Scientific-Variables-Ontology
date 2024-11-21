@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:acenaphthene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "acenaphthene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q415103"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Acenaphthene"^^xsd:string ;
+    rdfs:comment "Acenaphthene is a polycyclic aromatic hydrocarbon (PAH) consisting of naphthalene with an ethylene bridge connecting positions 1 and 8.  It is a colourless solid.  Coal tar consists of about 0.3% of this compound."^^xsd:string .
+

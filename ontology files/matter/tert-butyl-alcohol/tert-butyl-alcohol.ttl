@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tert-butyl-alcohol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tert-butyl-alcohol"^^xsd:string ;
+    svo:has_synonym "tba"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q285790"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tert-Butyl_alcohol"^^xsd:string ;
+    rdfs:comment "tert-Butyl alcohol is the simplest tertiary alcohol, with a formula of (CH3)3COH (sometimes represented as t-BuOH). Its isomers are 1-butanol, isobutanol, and butan-2-ol. tert-Butyl alcohol is a colorless solid, which melts near room temperature and has a camphor-like odor.  It is miscible with water, ethanol and diethyl ether."^^xsd:string .
+

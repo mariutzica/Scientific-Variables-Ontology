@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28sea-has-part-bottom%29-contains-%28sediment-as-medium-sand%29%29-has-property-%28volume_fraction%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "sea_bottom_sediment_sand__volume_fraction"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/sand>,
+        <http://scientificvariablesontology.org/svo/matter/sediment> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/bottom> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/sea> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28sea-has-part-bottom%29-contains-%28sediment-as-medium-sand%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/volume_fraction> .
+

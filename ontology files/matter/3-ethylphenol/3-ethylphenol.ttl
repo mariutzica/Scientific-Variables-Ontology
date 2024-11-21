@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:3-ethylphenol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "3-ethylphenol"^^xsd:string ;
+    svo:has_synonym "m-ethylphenol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4634135"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/3-Ethylphenol"^^xsd:string ;
+    rdfs:comment "3-Ethylphenol is an organic compound with the formula C2H5C6H4OH.  It is one of three isomeric ethylphenols. A colorless liquid, it occurs as an impurity in xylenols and as such is used in the production of commercial phenolic resins."^^xsd:string .
+

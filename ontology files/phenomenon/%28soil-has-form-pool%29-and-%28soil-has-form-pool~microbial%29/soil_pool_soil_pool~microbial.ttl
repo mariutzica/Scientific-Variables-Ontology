@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28soil-has-form-pool%29-and-%28soil-has-form-pool~microbial%29> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "soil_pool_soil_pool~microbial"^^xsd:string ;
+    svo:has_phenomenon :soil-has-form-pool,
+        <http://scientificvariablesontology.org/svo/phenomenon/soil-has-form-pool~microbial> .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:electric_energy a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "electric_energy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q206799"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Electrical_energy"^^xsd:string ;
+    rdfs:comment "Electrical energy is energy related to forces on electrically-charged particles and the movement of those particles (often electrons in wires, but not always). This energy is supplied by the combination of current and electric potential (often referred to as voltage because electric potential is measured in volts) that is delivered by a circuit (e.g., provided by an electric power utility). Motion (current) is not required; for example, if there is a voltage difference in combination with charged particles, such as static electricity or a charged capacitor, the moving electrical energy is typically converted to another form of energy (e.g., thermal, motion, sound, light, radio waves, etc.)."^^xsd:string .
+

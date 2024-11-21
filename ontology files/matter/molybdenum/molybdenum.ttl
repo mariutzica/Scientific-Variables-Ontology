@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:molybdenum a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "molybdenum"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1053"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Molybdenum"^^xsd:string ;
+    rdfs:comment "Molybdenum is a chemical element with the symbol Mo and atomic number 42 which is located in period 5 and group 6. The name is from Neo-Latin molybdaenum, which is based on Ancient Greek Μόλυβδος molybdos, meaning lead, since its ores were confused with lead ores. Molybdenum minerals have been known throughout history, but the element was discovered (in the sense of differentiating it as a new entity from the mineral salts of other metals) in 1778 by Carl Wilhelm Scheele. The metal was first isolated in 1781 by Peter Jacob Hjelm.Molybdenum does not occur naturally as a free metal on Earth; it is found only in various oxidation states in minerals. The free element, a silvery metal with a grey cast, has the sixth-highest melting point of any element. It readily forms hard, stable carbides in alloys, and for this reason most of the world production of the element (about 80%) is used in steel alloys, including high-strength alloys and superalloys."^^xsd:string .
+

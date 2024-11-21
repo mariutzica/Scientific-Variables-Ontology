@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:takeoff a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "takeoff"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q854248"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Takeoff"^^xsd:string ;
+    rdfs:comment "Takeoff is the phase of flight in which an aerospace vehicle leaves the ground and becomes airborne. For aircraft traveling vertically, this is known as liftoff."^^xsd:string .
+

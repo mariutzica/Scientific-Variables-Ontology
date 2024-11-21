@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:river a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "river"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4022"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/River"^^xsd:string ;
+    rdfs:comment "A river is a natural flowing watercourse, usually freshwater stream, flowing on the surface or inside caves towards another waterbody at a lower elevation, such as an ocean, sea, bay, lake, wetland, or another river. In some cases, a river flows into the ground or becomes dry at the end of its course without reaching another body of water. Small rivers can be referred to using names such as creek, brook, and rivulet. There are no official definitions for the generic term river as applied to geographic features, although in some countries or communities, a stream is defined by its size. Many names for small rivers are specific to geographic location; examples are \"run\" in some parts of the United States, \"burn\" in Scotland and Northeast England, and \"beck\" in Northern England. Sometimes a river is defined as being larger than a creek, but not always: the language is vague."^^xsd:string .
+

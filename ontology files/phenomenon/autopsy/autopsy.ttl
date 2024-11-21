@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:autopsy a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "autopsy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q41482"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Autopsy"^^xsd:string ;
+    rdfs:comment "An autopsy (post-mortem examination, obduction, necropsy, or autopsia cadaverum) is a surgical procedure that consists of a thorough examination of a corpse by dissection to determine the cause, mode, and manner of death; or the exam may be performed to evaluate any disease or injury that may be present for research or educational purposes. For  animals, the term necropsy is generally reserved."^^xsd:string .
+

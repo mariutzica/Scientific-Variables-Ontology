@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydrophilic a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "hydrophilic"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q192197"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydrophile"^^xsd:string ;
+    rdfs:comment "A hydrophile is a molecule or other molecular entity that is attracted to water molecules and tends to be dissolved by water.In contrast, hydrophobes are not attracted to water and may seem to be repelled by it. Hygroscopics are attracted to water, but are not dissolved by water."^^xsd:string .
+

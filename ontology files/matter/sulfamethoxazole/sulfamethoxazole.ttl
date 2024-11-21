@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sulfamethoxazole a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "sulfamethoxazole"^^xsd:string ;
+    svo:has_synonym "smx"^^xsd:string,
+        "smz"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q415843"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sulfamethoxazole"^^xsd:string ;
+    rdfs:comment "Sulfamethoxazole (SMZ or SMX) is an antibiotic. It is used for bacterial infections such as urinary tract infections, bronchitis, and prostatitis and is effective against both gram negative and positive bacteria such as Listeria monocytogenes and E. coli.Common side effects include nausea, vomiting, loss of appetite, and skin rashes. It is a sulfonamide and bacteriostatic. It resembles a component of folic acid. It prevents folic acid synthesis in the bacteria that must synthesize their own folic acid. Mammalian cells, and some bacteria, do not synthesize but require preformed folic acid (vitamin B9); they are therefore insensitive to sulfamethoxazole.It was introduced to the United States in 1961. It is now mostly used in combination with trimethoprim (abbreviated SMX-TMP). The SMX-TMP combination is on the WHO Model List of Essential medicines as a first-choice treatment for urinary tract infections. Other names include: sulfamethalazole, sulfisomezole, and sulfamethazole."^^xsd:string .
+

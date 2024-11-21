@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:feigenbaum_delta_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "feigenbaum_delta_constant"^^xsd:string ;
+    svo:has_synonym "Feigenbaum_first_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q673184"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Feigenbaum_constants"^^xsd:string ;
+    rdfs:comment "In mathematics, specifically bifurcation theory, the Feigenbaum constants  are two mathematical constants which both express ratios in a bifurcation diagram for a non-linear map. They are named after the physicist Mitchell J. Feigenbaum."^^xsd:string .
+

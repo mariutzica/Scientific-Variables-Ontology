@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:antoine-vapor-pressure_a_parameter a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "antoine-vapor-pressure_a_parameter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q585346"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Antoine_equation#The_equation"^^xsd:string ;
+    rdfs:comment "The Antoine equation is a class of semi-empirical correlations describing the relation between vapor pressure and temperature for pure substances. The Antoine equation is derived from the Clausius–Clapeyron relation.  The equation was presented in 1888 by the French engineer Louis Charles Antoine (1825–1897)."^^xsd:string .
+

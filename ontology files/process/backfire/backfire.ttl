@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:backfire a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "backfire"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1401308"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Back-fire"^^xsd:string ;
+    rdfs:comment "A backfire or afterburn is combustion or an explosion produced by a running internal combustion engine that occurs in the exhaust system, rather than inside the combustion chamber. It is also sometimes referred to as an afterfire, especially in cases where the word backfire is used to mean a fuel burn that occurs while an intake valve is open, causing the fire to move backward through the system and out through the intake instead of the exhaust. When the flame moves backward it may also be called a \"pop-back.\" A backfire can be caused either by ignition that happens with an exhaust valve open or unburnt fuel making its way in the hot exhaust system. A visible flame may momentarily shoot out of the exhaust pipe. A backfire is often a sign that the engine is improperly-tuned. "^^xsd:string .
+

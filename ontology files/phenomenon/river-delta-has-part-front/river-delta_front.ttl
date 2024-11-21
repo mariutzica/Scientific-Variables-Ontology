@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:river-delta-has-part-front a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "river-delta_front"^^xsd:string ;
+    svo:has_part <http://scientificvariablesontology.org/svo/part/front> ;
+    svo:has_phenomenon :river-delta .
+

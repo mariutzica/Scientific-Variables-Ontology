@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:engine-contains-part-%28cylinder-contains-part-piston%29 a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "engine_cylinder_piston"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :cylinder-contains-part-piston ;
+    svo:is_part_of_containing_phenomenon :engine .
+

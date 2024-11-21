@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:methyl-paraben a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "methyl-paraben"^^xsd:string ;
+    svo:has_synonym "Benzoic-acid,-4-hydroxy-,-methyl-ester"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q229987"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Methylparaben"^^xsd:string ;
+    rdfs:comment "Methylparaben, also methyl paraben, one of the parabens, is a preservative with the chemical formula CH3(C6H4(OH)COO). It is the methyl ester of p-hydroxybenzoic acid."^^xsd:string .
+

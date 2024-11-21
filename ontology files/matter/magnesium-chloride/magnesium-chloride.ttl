@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:magnesium-chloride a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "magnesium-chloride"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q265414"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Magnesium_chloride"^^xsd:string ;
+    rdfs:comment "Magnesium chloride is an inorganic compound with the formula MgCl2. It forms hydrates MgCl2·nH2O, where n can range from 1 to 12. These salts are colorless or white solids that are highly soluble in water. These compounds and their solutions, both of which occur in nature, have a variety of practical uses. Anhydrous magnesium chloride is the principal precursor to magnesium metal, which is produced on a large scale. Hydrated magnesium chloride is the form most readily available."^^xsd:string .
+

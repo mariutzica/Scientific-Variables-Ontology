@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:autografting a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "autografting"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q379071"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Autotransplantation"^^xsd:string ;
+    rdfs:comment "Autotransplantation is the transplantation of organs, tissues, or even particular proteins from one part of the body to another in the same person (auto- meaning \"self\" in Greek)."^^xsd:string .
+

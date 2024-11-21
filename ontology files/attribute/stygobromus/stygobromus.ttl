@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:stygobromus a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "stygobromus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q10682522"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Stygobromus"^^xsd:string ;
+    rdfs:comment "Stygobromus is a genus of amphipod crustaceans that live in subterranean habitats. The majority of the listed species are endemic to North America (one from Canada, the rest from the United States), a smaller number of species are also known from Eurasia. Most of the North American species live in areas which were not covered by the Laurentide Ice Sheet, although a few species seem to have survived under the ice. A number of species are on the IUCN Red List as endangered species (EN) or vulnerable species (VU); one species, S. lucifugus, is extinct."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:march a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "march"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1415628"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Marching"^^xsd:string ;
+    rdfs:comment "Marching refers to the organized, uniformed, steady walking forward in either rhythmic or route-step time; and, typically, it refers to overland movements on foot  of military troops and units under field orders. Marching is often performed to march music and is typically associated with military and civilian ceremonial parades. It is a major part of military basic training in most countries and usually involves a system of drill commands."^^xsd:string .
+

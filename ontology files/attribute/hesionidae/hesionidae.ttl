@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hesionidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "hesionidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3655255"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hesionidae"^^xsd:string ;
+    rdfs:comment "Hesionidae are a family of phyllodocid \"bristle worms\" (class Polychaeta). They are (like almost all polychaetes) marine organisms. Most are found on the continental shelf; Hesiocaeca methanicola is found on methane ice, where it feeds on bacterial biofilms.A characteristic apomorphy of the Hesionidae are the cirrophores of the anterior segments, which are well-developed cup-like sheaths; the cirri of the subsequent segments insert into the parapodia directly, or with just a vestigial cirrophore."^^xsd:string .
+

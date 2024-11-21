@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28%28benzene-has-form-molecule%29-contains-part-bond-c-c-c%29-has-property-%28angle%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/%28benzene-has-form-molecule%29-contains-part-bond-c-c-c"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/angle"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/bond-c-c-c"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/benzene"/>
+  <svo:contains_form_reference_to rdf:resource="http://scientificvariablesontology.org/svo/form/molecule"/>
+  <svo:contains_operation_reference_to rdf:resource="http://scientificvariablesontology.org/svo/operation/angle"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">benzene_molecule_bond-c-c-c__angle</rdfs:label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">benzene_molecule_c_c_c__bond_angle</svo:has_original_label>
+</owl:NamedIndividual>
+</rdf:RDF>

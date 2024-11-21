@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28%28land-has-abstraction-surface%29-is-location-of-%28snow-undergoes-process-accumulation%29%29-has-property-%28time_integral_of_mass_flux%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/%28land-has-abstraction-surface%29-is-location-of-%28snow-undergoes-process-accumulation%29"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/time_integral_of_mass_flux"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/land"/>
+  <svo:contains_process_reference_to rdf:resource="http://scientificvariablesontology.org/svo/process/accumulation"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/snow"/>
+  <svo:contains_abstraction_reference_to rdf:resource="http://scientificvariablesontology.org/svo/abstraction/surface"/>
+  <svo:contains_operation_reference_to rdf:resource="http://scientificvariablesontology.org/svo/operation/time_integral"/>
+  <svo:contains_property_reference_to rdf:resource="http://scientificvariablesontology.org/svo/property/mass_flux"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">land_surface_snow_accumulation__time_integral_of_mass_flux</rdfs:label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">land_surface_snow__time_integral_of_accumulation_mass_flux</svo:has_original_label>
+</owl:NamedIndividual>
+</rdf:RDF>

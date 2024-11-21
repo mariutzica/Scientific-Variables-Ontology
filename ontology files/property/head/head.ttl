@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:head a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "head"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q369743"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydraulic_head#.22Head.22_in_fluid_dynamics"^^xsd:string ;
+    rdfs:comment "Hydraulic head or piezometric head is a specific measurement of liquid pressure above a vertical datum.It is usually measured as a liquid surface elevation, expressed in units of length, at the entrance (or bottom) of a piezometer. In an aquifer, it can be calculated from the depth to water in a piezometric well (a specialized water well), and given information of the piezometer's elevation and screen depth. Hydraulic head can similarly be measured in a column of water using a standpipe piezometer by measuring the height of the water surface in the tube relative to a common datum. The hydraulic head can be used to determine a hydraulic gradient between two or more points."^^xsd:string .
+

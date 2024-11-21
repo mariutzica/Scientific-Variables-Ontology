@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:oxidation-reduction_potential a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "oxidation-reduction_potential"^^xsd:string ;
+    svo:has_synonym "orp"^^xsd:string,
+        "redox_potential"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q186487"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Reduction_potential"^^xsd:string ;
+    rdfs:comment "Redox potential (also known as oxidation / reduction potential, ORP, pe, "^^xsd:string .
+

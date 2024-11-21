@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28%28glacier-has-part-top%29-contains-ice%29-as-main-wind-as-in-scour%29-has-property-%28length-per-time_rate%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "glacier_top_ice_wind_scour__length-per-time_rate"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/ice> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/top> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/glacier>,
+        <http://scientificvariablesontology.org/svo/phenomenon/wind> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/scour> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28%28glacier-has-part-top%29-contains-ice%29-as-main-wind-as-in-scour> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/length-per-time_rate> ;
+    svo:has_original_label "glacier_top_ice_wind__scour_rate"^^xsd:string .
+

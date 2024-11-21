@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gelation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "gelation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q48995704"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gelation"^^xsd:string ;
+    rdfs:comment "In polymer chemistry, gelation (gel transition) is the formation of a gel from a system with polymers. Branched polymers can form links between the chains, which lead to progressively larger polymers. As the linking continues, larger branched polymers are obtained and at a certain extent of the reaction, links between the polymer result in the formation of a single macroscopic molecule. At that point in the reaction, which is defined as gel point, the system loses fluidity and viscosity becomes very large. The onset of gelation, or gel point, is accompanied by a sudden increase in viscosity. This \"infinite\" sized polymer is called the gel or network, which does not dissolve in the solvent, but can swell in it."^^xsd:string .
+

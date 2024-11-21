@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:crop a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "crop"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q235352"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Crop"^^xsd:string ;
+    rdfs:comment "A crop is a plant that can be grown and harvested extensively for profit or subsistence. When the plants of the same kind are cultivated at one place on a large scale, it is called a crop. Most crops are cultivated in agriculture or hydroponics. Crops may include macroscopic fungus (e.g. mushrooms) and marine macroalga (e.g. seaweed), some of which are grown in aquaculture."^^xsd:string .
+

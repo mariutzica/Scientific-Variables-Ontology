@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:methylcyclohexane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "methylcyclohexane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q419330"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Methylcyclohexane"^^xsd:string ;
+    rdfs:comment "Methylcyclohexane (cyclohexylmethane) is an organic compound with the molecular formula is CH3C6H11. Classified as saturated hydrocarbon, it is a colourless liquid with a faint odor.  Methylcyclohexane is used as a solvent. It is mainly converted in naphtha reformers to toluene. Methylcyclohexane is also used in some correction fluids (such as White-Out) as a solvent."^^xsd:string .
+

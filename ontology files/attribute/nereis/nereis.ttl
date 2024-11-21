@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nereis a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "nereis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q135309"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nereis"^^xsd:string ;
+    rdfs:comment "Nereis is a genus of polychaete worms in the family Nereididae. It comprises many species, most of which are marine. Nereis possess setae and parapodia for locomotion and gas exchange. They may have two types of setae, which are found on the parapodia. Acicular setae provide support. Locomotor setae are for crawling, and are the bristles that are visible on the exterior of the Polychaeta. They are cylindrical in shape, found not only in sandy areas, and they are adapted to burrow. They often cling to seagrass (posidonia) or other grass on rocks and sometimes gather in large groups. "^^xsd:string .
+

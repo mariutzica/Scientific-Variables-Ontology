@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hunting a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "hunting"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q36963"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hunting"^^xsd:string ;
+    rdfs:comment "Hunting is the human practice of seeking, pursuing, capturing, or killing wildlife or feral animals. The most common reasons for humans to hunt are to exploit the animal's body for meat and useful animal products (fur/hide, bone/tusks, horn/antler, etc.), for recreation/taxidermy (see trophy hunting), although it may also be done for non-exploitative reasons such as removing predators dangerous to humans or domestic animals (e.g. wolf hunting), to eliminate pests and nuisance animals that damage crops/livestock/poultry or spread diseases (see varminting), for trade/tourism (see safari), or for ecological conservation against overpopulation and invasive species."^^xsd:string .
+

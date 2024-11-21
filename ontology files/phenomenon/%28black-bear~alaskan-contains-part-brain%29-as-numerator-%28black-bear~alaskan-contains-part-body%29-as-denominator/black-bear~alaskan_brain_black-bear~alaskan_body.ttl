@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28black-bear~alaskan-contains-part-brain%29-as-numerator-%28black-bear~alaskan-contains-part-body%29-as-denominator> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "black-bear~alaskan_brain_black-bear~alaskan_body"^^xsd:string ;
+    svo:has_denominator_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/black-bear~alaskan-contains-part-body> ;
+    svo:has_numerator_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/black-bear~alaskan-contains-part-brain> .
+

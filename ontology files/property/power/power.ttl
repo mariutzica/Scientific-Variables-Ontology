@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:power a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "power"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q25342"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Power_(physics)"^^xsd:string ;
+    rdfs:comment "In physics, power is the amount of energy transferred or converted per unit time. In the International System of Units, the unit of power is the watt, equal to one joule per second. In older works, power is sometimes called activity. Power is a scalar quantity."^^xsd:string .
+

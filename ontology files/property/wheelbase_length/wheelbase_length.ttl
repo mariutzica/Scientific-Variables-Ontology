@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:wheelbase_length a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "wheelbase_length"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1128004"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Wheelbase"^^xsd:string ;
+    rdfs:comment "In both road and rail vehicles, the wheelbase is the horizontal distance between the centers of the front and rear wheels. For road vehicles with more than two axles (e.g. some trucks), the wheelbase is  the distance between the steering (front) axle and the centerpoint of the driving axle group. In the case of a tri-axle truck, the wheelbase would be the distance between the steering axle and a point midway between the two rear axles."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:regelation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "regelation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q909865"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Regelation"^^xsd:string ;
+    rdfs:comment "Regelation is the phenomenon of ice melting under pressure and refreezing when the pressure is reduced. This can be demonstrated by looping a fine wire around a block of ice, with a heavy weight attached to it. The pressure exerted on the ice slowly melts it locally, permitting the wire to pass through the entire block. The wire's track will refill as soon as pressure is relieved, so the ice block will remain intact even after wire passes completely through. This experiment is possible for ice at −10 °C or cooler, and while essentially valid, the details of the process by which the wire passes through the ice are complex. The phenomenon works best with high thermal conductivity materials such as copper, since latent heat of fusion from the top side needs to be transferred to the lower side to supply latent heat of melting. In short, the phenomenon in which ice converts to liquid due to applied pressure and then re-converts to ice once the pressure is removed is called regelation."^^xsd:string .
+

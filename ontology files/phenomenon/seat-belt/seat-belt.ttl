@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:seat-belt a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "seat-belt"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q200403"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Seat_belt"^^xsd:string ;
+    rdfs:comment "A seat belt, also known as a safety belt or spelled seatbelt, is a vehicle safety device designed to secure the driver or a passenger of a vehicle against harmful movement that may result during a collision or a sudden stop. A seat belt reduces the likelihood of death or serious injury in a traffic collision by reducing the force of secondary impacts with interior strike hazards, by keeping occupants positioned correctly for maximum effectiveness of the airbag (if equipped), and by preventing occupants being ejected from the vehicle in a crash or if the vehicle rolls over."^^xsd:string .
+

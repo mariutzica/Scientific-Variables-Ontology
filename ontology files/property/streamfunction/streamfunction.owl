@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/property/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/property/">
+<owl:NamedIndividual rdf:about="streamfunction">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Property"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">streamfunction</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Stream_function</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2029236</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The stream function is defined for incompressible (divergence-free) flows in two dimensions – as well as in three dimensions with axisymmetry. The flow velocity components can be expressed as the derivatives of the scalar stream function. The stream function can be used to plot streamlines, which represent the trajectories of particles in a steady flow. The two-dimensional Lagrange stream function was introduced by Joseph Louis Lagrange in 1781. The Stokes stream function is for axisymmetrical three-dimensional flow, and is named after George Gabriel Stokes.Considering the particular case of fluid dynamics, the difference between the stream function values at any two points gives the volumetric flow rate (or volumetric flux) through a line connecting the two points.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

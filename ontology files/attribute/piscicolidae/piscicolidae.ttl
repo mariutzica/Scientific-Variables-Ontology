@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:piscicolidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "piscicolidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4179511"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Piscicolidae"^^xsd:string ;
+    rdfs:comment "The Piscicolidae are a family of jawless leeches in the order Rhynchobdellida that are parasitic on fish. They occur in both freshwater and seawater, have cylindrical bodies, and typically have a large, bell-shaped, anterior sucker with which they cling to their host. Some of the leeches in this family have external gills, outgrowths of the body wall projecting laterally, the only group of leeches to exchange gases in this way."^^xsd:string .
+

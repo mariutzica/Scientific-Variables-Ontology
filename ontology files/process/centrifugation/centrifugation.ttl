@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:centrifugation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "centrifugation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1967135"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Centrifugation"^^xsd:string ;
+    rdfs:comment "Centrifugation is a mechanical process which involves the use of the centrifugal force to separate particles from a solution according to their size, shape, density, medium viscosity and rotor speed. The denser components of the mixture migrate away from the axis of the centrifuge, while the less dense components of the mixture migrate towards the axis. Chemists and biologists may increase the effective gravitational force of the test tube so that the precipitate (pellet) will travel quickly and fully to the bottom of the tube. The remaining liquid that lies above the precipitate is called a supernatant or supernate."^^xsd:string .
+

@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:arsenate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "arsenate"^^xsd:string ;
+    svo:has_synonym "AsO43-"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q76388571"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Arsenate"^^xsd:string ;
+    rdfs:comment "The arsenate ion has the formula "^^xsd:string .
+

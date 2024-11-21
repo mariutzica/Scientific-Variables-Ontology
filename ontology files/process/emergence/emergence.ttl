@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:emergence a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "emergence"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q215772"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Emergence"^^xsd:string ;
+    rdfs:comment "In philosophy, systems theory, science, and art, emergence occurs when an entity is observed to have properties its parts do not have on their own, properties or behaviors that emerge only when the parts interact in a wider whole."^^xsd:string .
+

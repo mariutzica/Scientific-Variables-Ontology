@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bromoethene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "bromoethene"^^xsd:string ;
+    svo:has_synonym "Vinyl bromide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q421041"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vinyl_bromide"^^xsd:string ;
+    rdfs:comment "Vinyl bromide is a simple vinyl halide. It is a colorless liquid.  It is produced from ethylene dibromide.  It is mainly used as a comonomer to confer fire retardant properties to acrylate polymers."^^xsd:string .
+

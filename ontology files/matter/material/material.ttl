@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:material a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "material"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q214609"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Material"^^xsd:string ;
+    rdfs:comment "Material is a substance or mixture of substances that constitutes an object. Materials can be pure or impure, living or non-living matter. Materials can be classified on the basis of their physical and chemical properties, or on their geological origin or biological function. Materials science is the study of materials, their properties and their applications."^^xsd:string .
+

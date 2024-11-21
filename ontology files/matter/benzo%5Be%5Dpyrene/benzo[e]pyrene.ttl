@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:benzo%5Be%5Dpyrene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "benzo[e]pyrene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2645019"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Benzo(e)pyrene"^^xsd:string ;
+    rdfs:comment "Benzo[e]pyrene is a polycyclic aromatic hydrocarbon with the chemical formula C20H12. It is listed as a Group 3 carcinogen by the IARC."^^xsd:string .
+

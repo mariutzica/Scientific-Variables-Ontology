@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/operation/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cosine a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "cosine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q93344"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Trigonometric_functions#cosine"^^xsd:string ;
+    rdfs:comment "In mathematics, the trigonometric functions (also called circular functions, angle functions or goniometric functions) are real functions which relate an angle of a right-angled triangle to ratios of two side lengths. They are widely used in all sciences that are related to geometry, such as navigation, solid mechanics, celestial mechanics, geodesy, and many others. They are among the simplest periodic functions, and as such are also widely used for studying periodic phenomena through Fourier analysis."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:circle a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "circle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q17278"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Circle"^^xsd:string ;
+    rdfs:comment "A circle is a shape consisting of all points in a plane that are at a given distance from a given point, the centre. Equivalently, it is the curve traced out by a point that moves in a plane so that its distance from a given point is constant. The distance between any point of the circle and the centre is called the radius. Usually, the radius is required to be a positive number. A circle with "^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:darcy_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "darcy_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q16954269"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Darcy_number"^^xsd:string ;
+    rdfs:comment "In fluid dynamics through porous media, the Darcy number (Da) represents the relative effect of the permeability of the medium versus its cross-sectional area—commonly the diameter squared.  The number is named after Henry Darcy and is found from nondimensionalizing the differential form of Darcy's Law.  This number should not be confused with the Darcy friction factor which applies to pressure drop in a pipe.  It is defined as"^^xsd:string .
+

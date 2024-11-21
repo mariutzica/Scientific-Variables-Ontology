@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28earth-has-abstraction-datum%29-has-abstraction-ellipsoid> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "earth_datum_ellipsoid"^^xsd:string ;
+    svo:has_abstraction <http://scientificvariablesontology.org/svo/abstraction/ellipsoid> ;
+    svo:has_phenomenon :earth-has-abstraction-datum .
+

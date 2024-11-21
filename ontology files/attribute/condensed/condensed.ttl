@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:condensed a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "condensed"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q166583"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Condensation"^^xsd:string ;
+    rdfs:comment "Condensation is    the change of the state of matter from the gas phase into the liquid phase, and is the reverse of vaporization. The word most often refers to the water cycle. It can also be defined as the change in the state of water vapor to liquid water when in contact with a liquid or solid surface or cloud condensation nuclei within the atmosphere. When the transition happens from the gaseous phase into the solid phase directly, the change is called deposition."^^xsd:string .
+

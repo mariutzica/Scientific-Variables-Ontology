@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chemical_affinity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "chemical_affinity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q382783"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Chemical_affinity"^^xsd:string ;
+    rdfs:comment "In chemical physics and physical chemistry, chemical affinity is the electronic property by which dissimilar chemical species are capable of forming chemical compounds.  Chemical affinity can also refer to the tendency of an atom or compound to combine by chemical reaction with atoms or compounds of unlike composition."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:black-body a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "black-body"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q161424"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Black_body"^^xsd:string ;
+    rdfs:comment "A black body or blackbody is an idealized physical body that absorbs all incident electromagnetic radiation, regardless of frequency or angle of incidence. The radiation emitted by a black body in thermal equilibrium with its environment is called black-body radiation. The name \"black body\" is given because it absorbs all colors of light. In contrast, a white body is one with a \"rough surface that reflects all incident rays completely and uniformly in all directions.\"A black body in thermal equilibrium (that is, at a constant temperature) emits electromagnetic black-body radiation. The radiation is emitted according to Planck's law, meaning that it has a spectrum that is determined by the temperature alone (see figure at right), not by the body's shape or composition."^^xsd:string .
+

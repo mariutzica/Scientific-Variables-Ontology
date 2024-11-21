@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:acrolein a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "acrolein"^^xsd:string ;
+    svo:has_synonym "propenal"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q342790"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Acrolein"^^xsd:string ;
+    rdfs:comment "Acrolein (systematic name: propenal) is the simplest unsaturated aldehyde. It is a colorless liquid with a piercing, acrid smell. The smell of burnt fat (as when cooking oil is heated to its smoke point) is caused by glycerol in the burning fat breaking down into acrolein. It is produced industrially from propene and mainly used as a biocide and a building block to other chemical compounds, such as the amino acid methionine."^^xsd:string .
+

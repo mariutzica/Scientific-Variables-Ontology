@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chloral-hydrate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chloral-hydrate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q412340"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chloral_hydrate"^^xsd:string ;
+    rdfs:comment "Chloral hydrate is a geminal diol with the formula C2H3Cl3O2. It is a colorless solid. It has limited use as a sedative and hypnotic pharmaceutical drug. It is also a useful laboratory chemical reagent and precursor. It is derived from chloral (trichloroacetaldehyde) by the addition of one equivalent of water."^^xsd:string .
+

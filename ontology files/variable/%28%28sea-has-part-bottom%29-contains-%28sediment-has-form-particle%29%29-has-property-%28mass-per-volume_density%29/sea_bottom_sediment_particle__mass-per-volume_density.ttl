@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28sea-has-part-bottom%29-contains-%28sediment-has-form-particle%29%29-has-property-%28mass-per-volume_density%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "sea_bottom_sediment_particle__mass-per-volume_density"^^xsd:string ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/particle> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/sediment> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/bottom> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/sea> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28sea-has-part-bottom%29-contains-%28sediment-has-form-particle%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mass-per-volume_density> ;
+    svo:has_original_label "sea_bottom_sediment__mass-per-volume_particle_density"^^xsd:string .
+

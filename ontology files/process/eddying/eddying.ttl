@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:eddying a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "eddying"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q994122"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Eddy_(fluid_dynamics)"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, an eddy  is the swirling of a fluid and the reverse current created when the fluid is in a turbulent flow regime. The moving fluid creates a space devoid of downstream-flowing fluid on the downstream side of the object. Fluid behind the obstacle flows into the void creating a swirl of fluid on each edge of the obstacle, followed by a short reverse flow of fluid behind the obstacle flowing upstream, toward the back of the obstacle. This phenomenon is naturally observed behind large emergent rocks in swift-flowing rivers."^^xsd:string .
+

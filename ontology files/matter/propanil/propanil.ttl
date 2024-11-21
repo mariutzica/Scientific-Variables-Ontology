@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:propanil a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "propanil"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q413507"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Propanil"^^xsd:string ;
+    rdfs:comment "Propanil is a widely used contact herbicide.  With an estimated use of about 8 million pounds in 2001, it is one of the more widely used herbicides in the United States. Propanil is said to be in use in approximately 400,000 acres of rice production each year."^^xsd:string .
+

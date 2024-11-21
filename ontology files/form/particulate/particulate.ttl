@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:particulate a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "particulate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q498957"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Particulates"^^xsd:string ;
+    rdfs:comment "Particulates – also known as atmospheric aerosol particles, atmospheric particulate matter, particulate matter (PM) or suspended particulate matter (SPM) – are microscopic particles of solid or liquid matter suspended in the air. The term aerosol commonly refers to the particulate/air mixture, as opposed to the particulate matter alone. Sources of particulate matter can be natural or anthropogenic. They have impacts on climate and precipitation that adversely affect human health, in ways additional to direct inhalation."^^xsd:string .
+

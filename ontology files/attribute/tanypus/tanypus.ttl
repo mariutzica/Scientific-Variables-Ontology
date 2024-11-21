@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tanypus a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "tanypus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7684088"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tanypus"^^xsd:string ;
+    rdfs:comment "Tanypus is a genus of non-biting midges in the family Chironomidae. There are at least 100 described species in Tanypus."^^xsd:string .
+

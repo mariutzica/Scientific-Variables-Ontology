@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bioremediation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "bioremediation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q816441"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bioremediation"^^xsd:string ;
+    rdfs:comment "Bioremediation broadly refers to any process wherein a biological system (typically bacteria, microalgae, fungi, and plants), living or dead, is employed for removing environmental pollutants from air, water, soil, flue gasses, industrial effluents etc., in natural or artificial settings. The natural ability of organisms to adsorb, accumulate, and degrade common and emerging pollutants has attracted the use of biological resources in treatment of contaminated environment. In comparison to conventional physicochemical treatment methods bioremediation may offer considerable advantages as it aims to be sustainable, eco-friendly, cheap, and scalable."^^xsd:string .
+

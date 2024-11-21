@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sphere a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "sphere"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q12507"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Sphere"^^xsd:string ;
+    rdfs:comment "A sphere (from Ancient Greek  σφαῖρα (sphaîra) 'globe, ball') is a geometrical object that is a three-dimensional analogue to a two-dimensional circle. A sphere is the set of points that are all at the same distance r from a given point in three-dimensional space. That given point is the centre of the sphere, and r is the sphere's radius. The earliest known mentions of spheres appear in the work of the ancient Greek mathematicians."^^xsd:string .
+

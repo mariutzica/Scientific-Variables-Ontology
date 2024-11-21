@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mercury a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "mercury"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q925"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mercury_(element)"^^xsd:string ;
+    rdfs:comment "Mercury is a chemical element with the symbol Hg and atomic number 80. It is also known as quicksilver and was formerly named hydrargyrum ( hy-DRAR-jər-əm) from the Greek words hydorcode: ell promoted to code: el  (water) and argyroscode: ell promoted to code: el  (silver). A heavy, silvery d-block element, mercury is the only metallic element that is known to be liquid at standard temperature and pressure; the only other element that is liquid under these conditions is the halogen bromine, though metals such as caesium, gallium, and rubidium melt just above room temperature."^^xsd:string .
+

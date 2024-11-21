@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:halogenated a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "halogenated"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q888529"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Halogenation"^^xsd:string ;
+    rdfs:comment "In chemistry, halogenation is a chemical reaction that entails the introduction of one or more halogens into a compound. Halide-containing compounds are pervasive, making this type of transformation important, e.g. in the production of polymers, drugs. This kind of conversion is in fact so common that a comprehensive overview is challenging.  This article mainly deals with halogenation using elemental halogens (F2, Cl2, Br2, I2).  Halides are also commonly introduced using salts of the halides and halogen acids.  Many specialized reagents exist for and introducing halogens into diverse substrates, e.g. thionyl chloride."^^xsd:string .
+

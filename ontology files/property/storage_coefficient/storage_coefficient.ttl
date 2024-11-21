@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:storage_coefficient a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "storage_coefficient"^^xsd:string ;
+    svo:has_synonym "storativity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1540011"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Specific_storage#Storativity"^^xsd:string ;
+    rdfs:comment "In the field of hydrogeology, storage properties are physical properties that characterize the capacity of an aquifer to release groundwater. These properties are storativity (S), specific storage (Ss) and specific yield (Sy). According to Groundwater, by Freeze and Cherry (1979), specific storage,"^^xsd:string .
+

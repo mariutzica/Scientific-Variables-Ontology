@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tantalum a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tantalum"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1123"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tantalum"^^xsd:string ;
+    rdfs:comment "Tantalum is a chemical element with the symbol Ta and atomic number 73. Previously known as tantalium, it is named after Tantalus, a figure in Greek mythology. Tantalum is a very hard, ductile, lustrous, blue-gray transition metal that is highly corrosion-resistant. It is part of the refractory metals group, which are widely used as components of strong high-melting-point alloys. It is a group 5 element, along with vanadium and niobium, and it always occurs in geologic sources together with the chemically similar niobium, mainly in the mineral groups tantalite, columbite and coltan."^^xsd:string .
+

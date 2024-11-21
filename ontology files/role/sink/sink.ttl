@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sink a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "sink"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q140565"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wiktionary.org/wiki/sink#Noun"^^xsd:string ;
+    rdfs:comment "A sink is a bowl-shaped plumbing fixture for washing hands, dishwashing, and other purposes. Sinks have a tap (faucet) that supply hot and cold water and may include a spray feature to be used for faster rinsing. They also include a drain to remove used water; this drain may itself include a strainer and/or shut-off device and an overflow-prevention device. Sinks may also have an integrated soap dispenser. Many sinks, especially in kitchens, are installed adjacent to or inside a counter."^^xsd:string .
+

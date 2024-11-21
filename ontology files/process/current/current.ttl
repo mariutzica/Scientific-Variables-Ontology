@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:current a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "current"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4456944"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Current_(fluid)"^^xsd:string ;
+    rdfs:comment "A current in a fluid is the magnitude and direction of flow within each portion of that fluid, such as a liquid or a gas."^^xsd:string .
+

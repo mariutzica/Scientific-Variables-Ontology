@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:plutonium-240 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "plutonium-240"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2330653"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Plutonium-240"^^xsd:string ;
+    rdfs:comment "Plutonium-240 (240Pu or Pu-240) is an isotope of plutonium formed when plutonium-239 captures a neutron. The detection of its spontaneous fission led to its discovery in 1944 at Los Alamos and had important consequences for the Manhattan Project.240Pu undergoes spontaneous fission as a secondary decay mode at a small but significant rate. The presence of 240Pu limits plutonium's use in a nuclear bomb, because the neutron flux from spontaneous fission initiates the chain reaction prematurely, causing an early release of energy that physically disperses the core before full implosion is reached."^^xsd:string .
+

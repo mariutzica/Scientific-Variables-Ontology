@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:maturation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "maturation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6791995"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Maturation"^^xsd:string ;
+    rdfs:comment "Maturation is the process of becoming mature; the emergence of individual and behavioral characteristics through growth processes over time."^^xsd:string .
+

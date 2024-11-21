@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tropopause a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "tropopause"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q186433"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tropopause"^^xsd:string ;
+    rdfs:comment "The tropopause is the atmospheric boundary that demarcates the troposphere from the stratosphere, which are the lowest two of the five layers of the atmosphere of Earth. The tropopause is a thermodynamic gradient-stratification layer, that marks the end of the troposphere, and is approximately 17 kilometres (11 mi) above the equatorial regions, and approximately 9 kilometres (5.6 mi) above the polar regions."^^xsd:string .
+

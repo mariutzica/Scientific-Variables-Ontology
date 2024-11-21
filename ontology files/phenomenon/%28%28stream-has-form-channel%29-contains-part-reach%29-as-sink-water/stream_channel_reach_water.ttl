@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28%28stream-has-form-channel%29-contains-part-reach%29-as-sink-water> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "stream_channel_reach_water"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :water ;
+    svo:has_sink_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28stream-has-form-channel%29-contains-part-reach> .
+

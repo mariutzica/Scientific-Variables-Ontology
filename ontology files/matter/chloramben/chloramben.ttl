@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chloramben a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chloramben"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5102912"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chloramben"^^xsd:string ;
+    rdfs:comment "Chloramben is a selective herbicide used to control the seedlings of broadleaf weeds and annual grasses.  It is mostly used for soybeans, but also for dry beans, peanuts, sunflowers, peppers, cotton, sweet potatoes, squash, hardwood trees, shrubs, and some conifers.Chloramben is considered practically nontoxic."^^xsd:string .
+

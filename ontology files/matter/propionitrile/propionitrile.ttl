@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:propionitrile a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "propionitrile"^^xsd:string ;
+    svo:has_synonym "Propanenitrile"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q414458"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Propionitrile"^^xsd:string ;
+    rdfs:comment "Propionitrile, also known as ethyl cyanide and propanenitrile, is an organic compound with the formula CH3CH2CN.  It is a simple aliphatic nitrile.  The compound is a colourless, water-soluble liquid.  It is used as a solvent and a precursor to other organic compounds."^^xsd:string .
+

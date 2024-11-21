@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:battery a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "battery"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q267298"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Battery_(electricity)"^^xsd:string ;
+    rdfs:comment "assembly of one or more electrochemical cells, used to provide devices with stored electrical energy"^^xsd:string .
+

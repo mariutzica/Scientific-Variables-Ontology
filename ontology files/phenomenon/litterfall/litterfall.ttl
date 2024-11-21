@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:litterfall a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "litterfall"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2512035"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Plant_litter"^^xsd:string ;
+    rdfs:comment "Plant litter (also leaf litter, tree litter, soil litter, litterfall or duff) is dead plant material (such as leaves, bark, needles, twigs, and cladodes) that have fallen to the ground. This detritus or dead organic material and its constituent nutrients are added to the top layer of soil, commonly known as the litter layer or O horizon (\"O\" for \"organic\"). Litter is an important factor in ecosystem dynamics, as it is indicative of ecological productivity and may be useful in predicting regional nutrient cycling and soil fertility."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mancozeb a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "mancozeb"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q409132"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mancozeb"^^xsd:string ;
+    rdfs:comment "Mancozeb is a dithiocarbamate non-systemic agricultural fungicide with multi-site, protective action on contact. It is a combination of two other dithiocarbamates: maneb and zineb. The mixture controls many fungal diseases in a wide range of field crops, fruits, nuts, vegetables, and ornamentals. It is marketed as Penncozeb, Trimanoc, Vondozeb, Dithane, Manzeb, Nemispot, and Manzane. In Canada, a mixture of zoxamide and mancozeb was registered for control of the mildew named Gavel as early as 2008."^^xsd:string .
+

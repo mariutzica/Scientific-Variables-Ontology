@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:estrone a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "estrone"^^xsd:string ;
+    svo:has_synonym "e1"^^xsd:string,
+        "oestrone"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q414986"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Estrone"^^xsd:string ;
+    rdfs:comment "Estrone (E1), also spelled oestrone, is a steroid, a weak estrogen, and a minor female sex hormone. It is one of three major endogenous estrogens, the others being estradiol and estriol. Estrone, as well as the other estrogens, are synthesized from cholesterol and secreted mainly from the gonads, though they can also be formed from adrenal androgens in adipose tissue. Relative to estradiol, both estrone and estriol have far weaker activity as estrogens. Estrone can be converted into estradiol, and serves mainly as a precursor or metabolic intermediate of estradiol. It is both a precursor and metabolite of estradiol.In addition to its role as a natural hormone, estrone has been used as a medication, for instance in menopausal hormone therapy; for information on estrone as a medication, see the estrone (medication) article."^^xsd:string .
+

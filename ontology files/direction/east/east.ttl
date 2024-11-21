@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/direction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:east a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "east"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q684"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/East"^^xsd:string ;
+    rdfs:comment "East or Orient is one of the four cardinal directions or points of the compass. It is the opposite direction from west and is the direction from which the Sun rises on the Earth."^^xsd:string .
+

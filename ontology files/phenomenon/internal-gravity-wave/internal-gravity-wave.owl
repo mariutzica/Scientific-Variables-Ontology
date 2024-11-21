@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/phenomenon/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/phenomenon/">
+<owl:NamedIndividual rdf:about="internal-gravity-wave">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Phenomenon"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">internal-gravity-wave</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Internal_wave</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q382774</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Internal waves are gravity waves that oscillate within a fluid medium, rather than on its surface. To exist, the fluid must be stratified: the density must change (continuously or discontinuously) with depth/height due to changes, for example, in temperature and/or salinity. If the density changes over a small vertical distance (as in the case of the thermocline in lakes and oceans or an atmospheric inversion), the waves propagate horizontally like surface waves, but do so at slower speeds as determined by the density difference of the fluid below and above the interface. If the density changes continuously, the waves can propagate vertically as well as horizontally through the fluid.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

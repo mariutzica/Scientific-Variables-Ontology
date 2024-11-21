@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:macronema a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "macronema"^^xsd:string ;
+    svo:has_synonym "ericameria"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1761521"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ericameria"^^xsd:string ;
+    rdfs:comment "Ericameria is a genus of North American shrubs in the family Asteraceae.Ericameria is known by the common names goldenbush, rabbitbrush, turpentine bush, and rabbitbush. Most are shrubs but one species (E. parishii) can reach tree stature. They are distributed in western Canada (Saskatchewan, Alberta, British Columbia) western United States (from the western Great Plains to the Pacific) and northern Mexico. Bright yellow flower heads adorn the plants in late summer. All the species have disc florets, while some have ray florets but others do not. Ericameria nauseosa, (synonym Chrysothamnus nauseosus), is known for its production of latex."^^xsd:string .
+

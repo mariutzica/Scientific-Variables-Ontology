@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:1-naphthylamine a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "1-naphthylamine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q161655"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/1-Naphthylamine"^^xsd:string ;
+    rdfs:comment "1-Naphthylamine is an aromatic amine derived from naphthalene. It can cause bladder cancer (transitional cell carcinoma). It crystallizes in colorless needles which melt at 50 °C. It possesses a disagreeable odor, sublimes readily, and turns brown on exposure to air.  It is the precursor to a variety of dyes."^^xsd:string .
+

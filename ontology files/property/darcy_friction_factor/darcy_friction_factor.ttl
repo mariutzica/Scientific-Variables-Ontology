@@ -1,0 +1,17 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:darcy_friction_factor a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "darcy_friction_factor"^^xsd:string ;
+    svo:has_synonym "darcy-weisbach_friction_factor"^^xsd:string,
+        "flow_coefficient"^^xsd:string,
+        "friction_factor"^^xsd:string,
+        "resistance_coefficient"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1142285"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Darcy%E2%80%93Weisbach_equation#Darcy_friction_factor"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, the Darcy–Weisbach equation is an empirical equation that relates the head loss, or pressure loss, due to friction along a given length of pipe to the average velocity of the fluid flow for an incompressible fluid. The equation is named after Henry Darcy and Julius Weisbach. Currently, there is no formula more accurate or universally applicable than the Darcy-Weisbach supplemented by the Moody diagram or Colebrook equation.The Darcy–Weisbach equation contains a dimensionless friction factor, known as the Darcy friction factor. This is also variously called the Darcy–Weisbach friction factor, friction factor, resistance coefficient, or flow coefficient."^^xsd:string .
+

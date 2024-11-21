@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28observation-observes-%28land-as-main-crop-as-in-allocation%29%29-has-property-%28area%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "observation_land_crop_allocation__area"^^xsd:string ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/land> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/allocation>,
+        <http://scientificvariablesontology.org/svo/process/observation> ;
+    svo:contains_role_reference_to <http://scientificvariablesontology.org/svo/role/crop> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/observation-observes-%28land-as-main-crop-as-in-allocation%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/area> ;
+    svo:has_original_label "land_crop__observed_allocated_area"^^xsd:string .
+

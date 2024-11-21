@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:occidentalia a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "occidentalia"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7075694"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Occidentalia"^^xsd:string ;
+    rdfs:comment "Occidentalia is a monotypic moth genus of the family Crambidae described by Harrison Gray Dyar Jr. and Carl Heinrich in 1927. It contains only one species, Occidentalia comptulatalis, described by George Duryea Hulst in 1886. It is found in North America, where it has been recorded from Alberta, Indiana, Maine, Manitoba, Minnesota, New York, Ontario, Quebec and Saskatchewan.The wingspan is 23–26 mm. The forewings are chocolate brown with dark brown dots in the terminal area. The hindwings are also chocolate brown. Adults are on wing from mid-July to August in one generation per year."^^xsd:string .
+

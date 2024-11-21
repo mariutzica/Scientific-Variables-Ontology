@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:radium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "radium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1128"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Radium"^^xsd:string ;
+    rdfs:comment "Radium is a chemical element with the symbol Ra and atomic number 88. It is the sixth element in group 2 of the periodic table, also known as the alkaline earth metals. Pure radium is silvery-white, but it readily reacts with nitrogen (rather than oxygen) upon exposure to air, forming a black surface layer of radium nitride (Ra3N2). All isotopes of radium are radioactive, the most stable isotope being radium-226 with a half-life of 1,600 years. When radium decays, it emits ionizing radiation as a by-product, which can excite fluorescent chemicals and cause radioluminescence."^^xsd:string .
+

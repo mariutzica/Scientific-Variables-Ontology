@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:idling a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "idling"^^xsd:string ;
+    svo:has_synonym "idling"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q278781"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Idleness"^^xsd:string ;
+    rdfs:comment "Idleness is a lack of motion or energy. In describing a person, idle suggests having no labor: \"idly passing the day\". "^^xsd:string .
+

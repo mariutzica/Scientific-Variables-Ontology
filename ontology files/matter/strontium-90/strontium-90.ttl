@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:strontium-90 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "strontium-90"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q544529"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Strontium-90"^^xsd:string ;
+    rdfs:comment "Strontium-90 (90Sr) is a radioactive isotope of strontium produced by nuclear fission, with a half-life of 28.8 years. It undergoes β− decay into yttrium-90, with a decay energy of 0.546 MeV. Strontium-90 has applications in medicine and industry and is an isotope of concern in fallout from nuclear weapons, nuclear weapons testing, and nuclear accidents."^^xsd:string .
+

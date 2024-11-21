@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:diving a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "diving"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7735"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Diving_(sport)"^^xsd:string ;
+    rdfs:comment "Diving is the sport of jumping or falling into water from a platform or springboard, usually while performing acrobatics. Diving is an internationally recognized sport that is part of the Olympic Games.  In addition, unstructured and non-competitive diving is a recreational pastime."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:repose_angle a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "repose_angle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q532078"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Angle_of_repose"^^xsd:string ;
+    rdfs:comment "The angle of repose, or critical angle of repose, of a granular material is the steepest angle of descent or dip  relative to the horizontal plane on which the material can be piled without slumping. At this angle, the material on the slope face is on the verge of sliding. The angle of repose can range from 0° to 90°. The morphology of the material affects the angle of repose; smooth, rounded sand grains cannot be piled as steeply as can rough, interlocking sands. The angle of repose can also be affected by additions of solvents. If a small amount of water is able to bridge the gaps between particles, electrostatic attraction of the water to mineral surfaces increases the angle of repose, and related quantities such as the soil strength."^^xsd:string .
+

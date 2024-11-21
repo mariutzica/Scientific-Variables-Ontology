@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:extensional_viscosity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "extensional_viscosity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q127694"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Extensional_viscosity"^^xsd:string ;
+    rdfs:comment "Extensional viscosity  (also known as elongational viscosity) is a viscosity coefficient when applied stress is extensional stress. It is often used for characterizing polymer solutions."^^xsd:string .
+

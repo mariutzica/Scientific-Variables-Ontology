@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hadronization a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "hadronization"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1456042"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hadronization"^^xsd:string ;
+    rdfs:comment "Hadronization (or hadronisation) is the process of the formation of hadrons out of quarks and gluons. There are two main branches of hadronization: quark-gluon plasma (QGP) transformation and colour string decay into hadrons. The transformation of quark-gluon plasma into hadrons is studied in lattice QCD numerical simulations, which are explored in relativistic heavy-ion experiments. Quark-gluon plasma hadronization occurred shortly after the Big Bang when the quark–gluon plasma cooled down to the Hagedorn temperature (about 150 MeV) when free quarks and gluons cannot exist. In string breaking new hadrons are forming out of quarks, antiquarks and sometimes gluons, spontaneously created from the vacuum."^^xsd:string .
+

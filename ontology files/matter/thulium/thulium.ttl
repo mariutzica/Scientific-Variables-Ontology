@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thulium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "thulium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1853"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Thulium"^^xsd:string ;
+    rdfs:comment "Thulium is a chemical element with the symbol Tm and atomic number 69. It is the thirteenth and third-last element in the lanthanide series. Like the other lanthanides, the most common oxidation state is +3, seen in its oxide, halides and other compounds; however, the +2 oxidation state can also be stable. In aqueous solution, like compounds of other late lanthanides, soluble thulium compounds form coordination complexes with nine water molecules."^^xsd:string .
+

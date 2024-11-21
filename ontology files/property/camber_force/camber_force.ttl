@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:camber_force a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "camber_force"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5025040"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Camber_thrust"^^xsd:string ;
+    rdfs:comment "Camber thrust and camber force are terms used to describe the force generated perpendicular to the direction of travel of a rolling tire due to its camber angle and finite contact patch. Camber thrust is generated when a point on the outer surface of a leaned and rotating tire, that would normally follow a path that is elliptical when projected onto the ground, is forced to follow a straight path while coming in contact with the ground, due to friction. This deviation towards the direction of the lean causes a deformation in the tire tread and carcass that is transmitted to the vehicle as a force in the direction of the lean."^^xsd:string .
+

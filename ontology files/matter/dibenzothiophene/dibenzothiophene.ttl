@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dibenzothiophene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dibenzothiophene"^^xsd:string ;
+    svo:has_synonym "dbt"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q544767"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dibenzothiophene"^^xsd:string ;
+    rdfs:comment "Dibenzothiophene (DBT, diphenylene sulfide) is the organosulfur compound consisting of two benzene rings fused to a central thiophene ring. It is a colourless solid that is chemically somewhat similar to anthracene. This tricyclic heterocycle, and especially its alkyl substituted derivatives, occur widely in heavier fractions of petroleum."^^xsd:string .
+

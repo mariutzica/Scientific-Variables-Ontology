@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28air-as-medium-%28helium-has-form-plume%29%29-has-property-%28richardson_number%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "air_helium_plume__richardson_number"^^xsd:string ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/plume> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/air>,
+        <http://scientificvariablesontology.org/svo/matter/helium> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/air-as-medium-%28helium-has-form-plume%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/richardson_number> ;
+    svo:has_original_label "air_helium-plume__richardson_number"^^xsd:string .
+

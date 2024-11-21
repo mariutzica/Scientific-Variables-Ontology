@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:naphthalene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "naphthalene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q179724"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Naphthalene"^^xsd:string ;
+    rdfs:comment "Naphthalene is an organic compound with formula C10H8. It is the simplest polycyclic aromatic hydrocarbon, and is a white crystalline solid with a characteristic odor that is detectable at concentrations as low as 0.08 ppm by mass. As an aromatic hydrocarbon, naphthalene's structure consists of a fused pair of benzene rings. It is best known as the main ingredient of traditional mothballs."^^xsd:string .
+

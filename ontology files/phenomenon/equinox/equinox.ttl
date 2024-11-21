@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:equinox a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "equinox"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1315"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Equinox"^^xsd:string ;
+    rdfs:comment "A solar equinox is a moment in time when the Sun crosses the Earth's equator, which is to say, appears directly above the equator, rather than north or south of the equator. On the day of the equinox, the Sun appears to rise \"due east\" and set \"due west\". This occurs twice each year, around 20 March and 23 September.More precisely, an equinox is traditionally defined as the time when the plane of Earth's equator passes through the geometric center of the Sun's disk. Equivalently, this is the moment when Earth's rotation axis is directly perpendicular to the Sun-Earth line, tilting neither toward nor away from the Sun. In modern times, since the Moon (and to a lesser extent the planets) causes Earth's orbit to vary slightly from a perfect ellipse, the equinox is officially defined by the Sun's more regular ecliptic longitude rather than by its declination. The instants of the equinoxes are currently defined to be when the apparent geocentric longitude of the Sun is 0° and 180°.The word is derived from the Latin aequinoctium, from aequus (equal) and nox (genitive noctis) (night). On the day of an equinox, daytime and nighttime are of approximately equal duration all over the planet. They are not exactly equal, however, because of the angular size of the Sun, atmospheric refraction, and the rapidly changing duration of the length of day that occurs at most latitudes around the equinoxes. Long before conceiving this equality, primitive equatorial cultures noted the day when the Sun rises due east and sets due west, and indeed this happens on the day closest to the astronomically defined event. As a consequence, according to a properly constructed and aligned sundial, the daytime duration is 12 hours."^^xsd:string .
+

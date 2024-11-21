@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vant-hoff_factor a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "vant-hoff_factor"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q899573"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Van_%27t_Hoff_factor"^^xsd:string ;
+    rdfs:comment "The van 't Hoff factor i (named after Dutch chemist Jacobus Henricus van 't Hoff) is a measure of the effect of a solute on colligative properties such as osmotic pressure, relative lowering in vapor pressure, boiling-point elevation and freezing-point depression. The van 't Hoff factor is the ratio between the actual concentration of particles produced when the substance is dissolved and the concentration of a substance as calculated from its mass. For most non-electrolytes dissolved in water, the van 't Hoff factor is essentially 1. For most ionic compounds dissolved in water, the van 't Hoff factor is equal to the number of discrete ions in a formula unit of the substance. This is true for ideal solutions only, as occasionally ion pairing occurs in solution. At a given instant a small percentage of the ions are paired and count as a single particle. Ion pairing occurs to some extent in all electrolyte solutions. This causes the measured van 't Hoff factor to be less than that predicted in an ideal solution. The deviation for the van 't Hoff factor tends to be greatest where the ions have multiple charges."^^xsd:string .
+

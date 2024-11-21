@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:methane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "methane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q37129"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Methane"^^xsd:string ;
+    rdfs:comment "Methane (US:  MEH-thayn, UK:  MEE-thayn) is a chemical compound with the chemical formula CH4 (one carbon atom bonded to four hydrogen atoms). It is a group-14 hydride, the simplest alkane, and the main constituent of natural gas. The relative abundance of methane on Earth makes it an economically attractive fuel, although capturing and storing it poses technical challenges due to its gaseous state under normal conditions for temperature and pressure."^^xsd:string .
+

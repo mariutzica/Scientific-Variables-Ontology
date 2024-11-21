@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:phosphorescence a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "phosphorescence"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q192275"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Phosphorescence"^^xsd:string ;
+    rdfs:comment "Phosphorescence is a type of photoluminescence related to fluorescence. When exposed to light (radiation) of a shorter wavelength, a phosphorescent substance will glow, absorbing the light and reemitting it at a longer wavelength. Unlike fluorescence, a phosphorescent material does not immediately reemit the radiation it absorbs. Instead, a phosphorescent material absorbs some of the radiation energy and reemits it for a much longer time after the radiation source is removed."^^xsd:string .
+

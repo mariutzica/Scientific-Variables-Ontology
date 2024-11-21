@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:downburst a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "downburst"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4847219"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Downburst"^^xsd:string ;
+    rdfs:comment "In meteorology, a downburst is a strong downward and outward gushing wind system that emanates from a point source above and blows radially, that is, in straight lines in all directions from the area of impact at surface level. It originates under deep, moist convective conditions like Cumulus congestus or Cumulonimbus. Capable of producing damaging winds, it may sometimes be confused with a tornado, where high-velocity winds circle a central area, and air moves inward and upward. These usually last for seconds to minutes. Downbursts are particularly strong downdrafts within thunderstorms (or deep, moist convection as sometimes downbursts emanate from cumulonimbus or even cumulus congestus clouds that are not producing lightning)."^^xsd:string .
+

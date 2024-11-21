@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ericksen_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "ericksen_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q31585"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ericksen_number"^^xsd:string ;
+    rdfs:comment "In the study of liquid crystals, the Ericksen number (Er) is a dimensionless number used to describe the deformation of the director field under flow. It is defined as the ratio of the viscous to elastic forces. In the limit of low Ericksen number the elastic forces will exceed the viscous forces and so the director field will not be strongly affected by the flow field. The Ericksen number is named after American mathematics professor Jerald Ericksen of the University of Minnesota.  The number is defined:"^^xsd:string .
+

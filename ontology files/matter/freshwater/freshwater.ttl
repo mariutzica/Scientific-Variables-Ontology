@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:freshwater a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "freshwater"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q102192"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fresh_water"^^xsd:string ;
+    rdfs:comment "Fresh water or freshwater is any naturally occurring liquid or frozen water containing low concentrations of dissolved salts and other total dissolved solids. Although the term specifically excludes seawater and brackish water, it does include non-salty mineral-rich waters such as chalybeate springs. Fresh water may encompass frozen and meltwater in ice sheets, ice caps, glaciers, snowfields and icebergs, natural precipitations such as rainfall, snowfall, hail/sleet and graupel, and surface runoffs that form inland bodies of water such as wetlands, ponds, lakes, rivers, streams, as well as groundwater contained in aquifers, subterranean rivers and lakes. Fresh water is the water resource that is of the most and immediate use to humans."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:adaptation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "adaptation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q483921"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Adaptation"^^xsd:string ;
+    rdfs:comment "In biology, adaptation has three related meanings. Firstly, it is the dynamic evolutionary process of natural selection that fits organisms to their environment, enhancing their evolutionary fitness. Secondly, it is a state reached by the population during that process. Thirdly, it is a phenotypic trait or adaptive trait, with a functional role in each individual organism, that is maintained and has evolved through natural selection. "^^xsd:string .
+

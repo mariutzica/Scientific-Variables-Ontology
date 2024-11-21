@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nitrapyrin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "nitrapyrin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1993935"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nitrapyrin"^^xsd:string ;
+    rdfs:comment "Nitrapyrin is an organic compound with the formula ClC5H3NCCl3, and is described as a white crystalline solid with a sweet odor.It is used as a nitrification inhibitor and bactericide, which is applied to soils for the growing of agricultural crops since 1974. Nitrapyrin was put up for review by the EPA and deemed safe for use in 2005. Nitrapyrin is an effective nitrification inhibitor to the bacteria Nitrosomonas and has been shown to drastically the reduce the amount of N2O emissions from the soil."^^xsd:string .
+

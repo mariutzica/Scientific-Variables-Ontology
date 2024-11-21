@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bubble-point a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "bubble-point"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1991828"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bubble_point"^^xsd:string ;
+    rdfs:comment "In thermodynamics, the bubble point is the temperature (at a given  pressure) where the first bubble of vapor is formed when heating a liquid consisting of two or more components. Given that vapor will probably have a different composition than the liquid, the bubble point (along with the dew point) at different compositions are useful data when designing distillation systems.For a single component the bubble point and the dew point are the same and are referred to as the boiling point."^^xsd:string .
+

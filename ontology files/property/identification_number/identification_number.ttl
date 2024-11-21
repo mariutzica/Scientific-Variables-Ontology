@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:identification_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "identification_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1140371"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/National_identification_number"^^xsd:string ;
+    rdfs:comment "A national identification number, national identity number, or national insurance number or JMBG/EMBG is used by the governments of many countries as a means of tracking their citizens, permanent residents, and temporary residents for the purposes of work, taxation, government benefits, health care, and other governmentally-related functions."^^xsd:string .
+

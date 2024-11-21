@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:parathion a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "parathion"^^xsd:string ;
+    svo:has_synonym "diethyl-parathion"^^xsd:string,
+        "parathion-ethyl"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q412556"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Parathion"^^xsd:string ;
+    rdfs:comment "Parathion, also called parathion-ethyl or diethyl parathion and locally known as \"Folidol\", is an organophosphate insecticide and acaricide. It was originally developed by IG Farben in the 1940s. It is highly toxic to non-target organisms, including humans, so its use has been banned or restricted in most countries. The basic structure is shared by parathion methyl."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:compton_wavelength a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "compton_wavelength"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1145377"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Compton_wavelength"^^xsd:string ;
+    rdfs:comment "The Compton wavelength is a quantum mechanical property of a particle. The Compton wavelength of a particle is equal to the wavelength of a photon whose energy is the same as the rest energy of that particle (see mass–energy equivalence). It was introduced by Arthur Compton in 1923 in his explanation of the scattering of photons by electrons (a process known as Compton scattering)."^^xsd:string .
+

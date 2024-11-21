@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:iron-59 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "iron-59"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1201493"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isotopes_of_iron#Iron-59"^^xsd:string ;
+    rdfs:comment "Naturally occurring iron (26Fe) consists of four stable isotopes: 5.845% of 54Fe (possibly radioactive with a half-life over 4.4×1020 years), 91.754% of 56Fe, 2.119% of 57Fe and 0.286% of 58Fe. There are 24 known radioactive isotopes, the most stable of which are 60Fe (half-life 2.6 million years) and 55Fe (half-life 2.7 years)."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydraulic-jump a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "hydraulic-jump"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q10359890"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydraulic_jump"^^xsd:string ;
+    rdfs:comment "A hydraulic jump is a phenomenon in the science of hydraulics which is frequently observed in open channel flow such as rivers and spillways. When liquid at high velocity discharges into a zone of lower velocity, a rather abrupt rise occurs in the liquid surface. The rapidly flowing liquid is abruptly slowed and increases in height, converting some of the flow's initial kinetic energy into an increase in potential energy, with some energy irreversibly lost through turbulence to heat. In an open channel flow, this manifests as the fast flow rapidly slowing and piling up on top of itself similar to how a shockwave forms."^^xsd:string .
+

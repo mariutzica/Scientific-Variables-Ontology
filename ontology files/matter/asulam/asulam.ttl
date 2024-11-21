@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:asulam a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "asulam"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2868667"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Asulam"^^xsd:string ;
+    rdfs:comment "Asulam is a herbicide invented by  May & Baker Ltd , internally called M&B9057, that is used in horticulture and agriculture to kill bracken and docks. It is also used as an antiviral agent. It is currently marketed, by United Phosphorus Ltd - UPL, as \"Asulox\" which contains 400 g/L of asulam sodium salt."^^xsd:string .
+

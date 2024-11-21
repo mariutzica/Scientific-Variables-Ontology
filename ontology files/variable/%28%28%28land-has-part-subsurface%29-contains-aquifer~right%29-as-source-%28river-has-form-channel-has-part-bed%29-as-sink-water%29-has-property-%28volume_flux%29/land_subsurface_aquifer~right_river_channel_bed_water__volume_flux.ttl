@@ -1,0 +1,20 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28%28land-has-part-subsurface%29-contains-aquifer~right%29-as-source-%28river-has-form-channel-has-part-bed%29-as-sink-water%29-has-property-%28volume_flux%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "land_subsurface_aquifer~right_river_channel_bed_water__volume_flux"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/right> ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/channel> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/bed>,
+        <http://scientificvariablesontology.org/svo/part/subsurface> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/aquifer>,
+        <http://scientificvariablesontology.org/svo/phenomenon/land>,
+        <http://scientificvariablesontology.org/svo/phenomenon/river> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28%28land-has-part-subsurface%29-contains-aquifer~right%29-as-source-%28river-has-form-channel-has-part-bed%29-as-sink-water> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/volume_flux> ;
+    svo:has_original_label "land_subsurface_aquifer~right_channel~river_bed_water__volume_flux"^^xsd:string .
+

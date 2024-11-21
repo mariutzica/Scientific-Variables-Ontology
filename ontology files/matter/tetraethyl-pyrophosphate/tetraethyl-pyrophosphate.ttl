@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tetraethyl-pyrophosphate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tetraethyl-pyrophosphate"^^xsd:string ;
+    svo:has_synonym "tepp"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q933664"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tetraethyl_pyrophosphate"^^xsd:string ;
+    rdfs:comment "Tetraethyl pyrophosphate, abbreviated TEPP, is an organophosphate compound with the formula [(C2H5O)2P(O)]2O. It is the tetraethyl derivative of pyrophosphate (P2O74-). It is a colorless oil that solidifies near room temperature.  It is used as an insecticide. The compound hydrolyzes rapidly."^^xsd:string .
+

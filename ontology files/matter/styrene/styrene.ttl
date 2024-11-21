@@ -1,0 +1,16 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:styrene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "styrene"^^xsd:string ;
+    svo:has_synonym "ethenylbenzene"^^xsd:string,
+        "phenylethene"^^xsd:string,
+        "vinylbenzene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q28917"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Styrene"^^xsd:string ;
+    rdfs:comment "Styrene is an organic compound with the chemical formula C6H5CH=CH2. This derivative of benzene is a colorless oily liquid, although aged samples can appear yellowish. The compound evaporates easily and has a sweet smell, although high concentrations have a less pleasant odor. Styrene is the precursor to polystyrene and several copolymers. Approximately 25 million tonnes of styrene were produced in 2010, increasing to around 35 million tonnes by 2018."^^xsd:string .
+

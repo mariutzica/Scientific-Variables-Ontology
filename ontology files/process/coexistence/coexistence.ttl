@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:coexistence a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "coexistence"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q230658"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Coexistence"^^xsd:string ;
+    rdfs:comment "Coexistence is the property of things existing at the same time and in a proximity close enough to affect each other, without causing harm to one another. The term is often used with respect to people of different persuasions existing together, particularly where there is some history of antipathy or violence between those groups."^^xsd:string .
+

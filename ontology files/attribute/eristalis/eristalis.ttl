@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:eristalis a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "eristalis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1921685"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Eristalis"^^xsd:string ;
+    rdfs:comment "Eristalis is a large genus of hoverflies, family Syrphidae, in the order Diptera. Several species are known as drone flies (or droneflies) because they bear a resemblance to honeybee drones."^^xsd:string .
+

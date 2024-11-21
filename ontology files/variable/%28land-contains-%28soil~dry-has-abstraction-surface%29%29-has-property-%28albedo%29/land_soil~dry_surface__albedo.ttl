@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28land-contains-%28soil~dry-has-abstraction-surface%29%29-has-property-%28albedo%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "land_soil~dry_surface__albedo"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/surface> ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/dry> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/soil> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/land> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/land-contains-%28soil~dry-has-abstraction-surface%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/albedo> .
+

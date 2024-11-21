@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pyridine a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "pyridine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q210385"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pyridine"^^xsd:string ;
+    rdfs:comment "Pyridine is a basic heterocyclic organic compound with the chemical formula C5H5N. It is structurally related to benzene, with one methine group (=CH−) replaced by a nitrogen atom.  It is a highly flammable, weakly alkaline, water-miscible liquid with a distinctive, unpleasant fish-like smell. Pyridine is colorless, but older or impure samples can appear yellow, due to the formation of extended, unsaturated polymeric chains, which show significant electrical conductivity.  The pyridine ring occurs in many important compounds, including agrochemicals, pharmaceuticals, and vitamins. Historically, pyridine was produced from coal tar. As of 2016, it is synthesized on the scale of about 20,000 tons per year worldwide."^^xsd:string .
+

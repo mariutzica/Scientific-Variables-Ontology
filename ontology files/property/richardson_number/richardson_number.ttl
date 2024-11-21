@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:richardson_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "richardson_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q961847"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Richardson_number"^^xsd:string ;
+    rdfs:comment "The Richardson number (Ri) is named after Lewis Fry Richardson (1881–1953).  It is the dimensionless number that expresses the ratio of the buoyancy term to the flow shear term:"^^xsd:string .
+

@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:perfluorooctanoic-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "perfluorooctanoic-acid"^^xsd:string ;
+    svo:has_synonym "Octanoic acid,-pentadecafluoro-"^^xsd:string,
+        "pfoa"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q418348"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Perfluorooctanoic_acid"^^xsd:string ;
+    rdfs:comment "Perfluorooctanoic acid (PFOA; conjugate base perfluorooctanoate; also known colloquially as C8, for its 8 carbon chain structure) is a perfluorinated carboxylic acid produced and used worldwide as an industrial surfactant in chemical processes and as a material feedstock. PFOA is considered a surfactant, or fluorosurfactant, due to its chemical structure, which consists of a perfluorinated, n-octyl \"tail group\" and a carboxylate \"head group\". The head group can be described as hydrophilic while the fluorocarbon tail is both hydrophobic and lipophobic.PFOA is one of many synthetic organofluorine compounds collectively known as per- and polyfluoroalkyl substances (PFASs)."^^xsd:string .
+

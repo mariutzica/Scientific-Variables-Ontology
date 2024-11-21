@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:head a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "head"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q23640"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Head"^^xsd:string ;
+    rdfs:comment "A head is the part of an organism which usually includes the ears, brain, forehead, cheeks, chin, eyes, nose, and mouth, each of which aid in various sensory functions such as sight, hearing, smell, and taste. Some very simple animals may not have a head, but many bilaterally symmetric forms do, regardless of size. "^^xsd:string .
+

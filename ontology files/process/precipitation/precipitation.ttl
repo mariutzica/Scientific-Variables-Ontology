@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:precipitation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "precipitation"^^xsd:string ;
+    svo:has_synonym "precipitation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q25257"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Precipitation"^^xsd:string ;
+    rdfs:comment "In meteorology, precipitation is any product of the condensation of atmospheric water vapor that falls from clouds due to gravitational pull.  The main forms of precipitation include drizzle, rain, sleet, snow, ice pellets, graupel and hail. Precipitation occurs when a portion of the atmosphere becomes saturated with water vapor (reaching 100% relative humidity), so that the water condenses and \"precipitates\" or falls. Thus, fog and mist are not precipitation but colloids, because the water vapor does not condense sufficiently to precipitate. Two processes, possibly acting together, can lead to air becoming saturated: cooling the air or adding water vapor to the air. Precipitation forms as smaller droplets coalesce via collision with other rain drops or ice crystals within a cloud. Short, intense periods of rain in scattered locations are called showers."^^xsd:string .
+

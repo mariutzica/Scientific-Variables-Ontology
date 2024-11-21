@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:interlock a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "interlock"^^xsd:string ;
+    svo:has_synonym "interlocking"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1817095"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Interlock_(engineering)"^^xsd:string ;
+    rdfs:comment "An interlock is a feature that makes the state of two mechanisms or functions mutually dependent. It may consist of any electrical, or mechanical devices or systems. In most applications, an interlock is used to help prevent any damage to the machine or to the operator handling the machine. For example, elevators are equipped with an interlock that prevents the moving elevator from opening its doors and prevents the stationary elevator (with open doors) from moving."^^xsd:string .
+

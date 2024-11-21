@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/part/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:region a svo:Part,
+        owl:NamedIndividual ;
+    rdfs:label "region"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q82794"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Region"^^xsd:string ;
+    rdfs:comment "In geography, regions, otherwise referred to as areas, zones, lands or territories, are portions of the Earth's surface that are broadly divided by physical characteristics (physical geography), human impact characteristics (human geography), and the interaction of humanity and the environment (environmental geography). Geographic regions and sub-regions are mostly described by their imprecisely defined, and sometimes transitory boundaries, except in human geography, where jurisdiction areas such as national borders are defined in law. More confined or well bounded portions are called locations or places."^^xsd:string .
+

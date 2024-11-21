@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:most-probable_number_count a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "most-probable_number_count"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3866144"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Most_probable_number"^^xsd:string ;
+    rdfs:comment "The most probable number method, otherwise known as the method of Poisson zeroes, is a method of getting quantitative data on concentrations of discrete items from positive/negative (incidence) data."^^xsd:string .
+

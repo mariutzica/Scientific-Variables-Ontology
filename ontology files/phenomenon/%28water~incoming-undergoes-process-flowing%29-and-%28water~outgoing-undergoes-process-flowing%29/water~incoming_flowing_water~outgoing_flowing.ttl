@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28water~incoming-undergoes-process-flowing%29-and-%28water~outgoing-undergoes-process-flowing%29> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "water~incoming_flowing_water~outgoing_flowing"^^xsd:string ;
+    svo:has_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/water~incoming-undergoes-process-flowing>,
+        <http://scientificvariablesontology.org/svo/phenomenon/water~outgoing-undergoes-process-flowing> .
+

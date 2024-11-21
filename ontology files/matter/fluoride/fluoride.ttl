@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fluoride a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "fluoride"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q44793182"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fluoride"^^xsd:string ;
+    rdfs:comment "Fluoride () is an inorganic, monatomic anion of fluorine, with the chemical formula F− (also written [F]−), whose salts are typically white or colorless. Fluoride salts typically have distinctive bitter tastes, and are odorless. Its salts and minerals are important chemical reagents and industrial chemicals, mainly used in the production of hydrogen fluoride for fluorocarbons. Fluoride is classified as a weak base since it only partially associates in solution, but concentrated fluoride is corrosive and can attack the skin."^^xsd:string .
+

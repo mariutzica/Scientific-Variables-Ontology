@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:peroxide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "peroxide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q107429"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Peroxide"^^xsd:string ;
+    rdfs:comment "In chemistry, peroxides are a group of compounds with the structure R−O−O−R, where R is any element. The O−O group in a peroxide is called the peroxide group or peroxy group (sometimes called peroxo group or peroxyl group). The nomenclature is somewhat variable, and the term was introduced by Thomas Thomson in 1804 for an oxide with the greatest quantity of oxygen.The most common peroxide is hydrogen peroxide (H2O2), colloquially known simply as \"peroxide\". It is marketed as solutions in water at various concentrations. Many organic peroxides are known as well."^^xsd:string .
+

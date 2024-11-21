@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:procambarus a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "procambarus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q141175"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Procambarus"^^xsd:string ;
+    rdfs:comment "Procambarus is a genus of crayfish in the family Cambaridae, all native to North and Central America. It includes a number of troglobitic species, and the marbled crayfish (marmorkrebs), which is parthenogenetic. Originally described as a subgenus for four species, it now contains around 161 species."^^xsd:string .
+

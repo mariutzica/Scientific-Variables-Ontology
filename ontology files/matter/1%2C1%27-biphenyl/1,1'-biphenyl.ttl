@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:1%2C1%27-biphenyl a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "1,1'-biphenyl"^^xsd:string ;
+    svo:has_synonym "biphenyl"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q410915"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Biphenyl"^^xsd:string ;
+    rdfs:comment "Biphenyl (also known as diphenyl, phenylbenzene, 1,1′-biphenyl, lemonene or BP) is an organic compound that forms colorless  crystals.  Particularly in older literature, compounds containing the functional group consisting of biphenyl less one hydrogen (the site at which it is attached) may use the prefixes xenyl or diphenylyl.It has a distinctively pleasant smell. Biphenyl is an aromatic hydrocarbon with a molecular formula (C6H5)2. It is notable as a starting material for the production of polychlorinated biphenyls (PCBs), which were once widely used as dielectric fluids and heat transfer agents."^^xsd:string .
+

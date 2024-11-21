@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mgk-264 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "mgk-264"^^xsd:string ;
+    svo:has_synonym "N-2-Ethylhexylbicycloheptenedicarboximide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6951386"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/N-Octyl_bicycloheptene_dicarboximide"^^xsd:string ;
+    rdfs:comment "N-Octyl bicycloheptene dicarboximide (MGK 264) is an ingredient in some common pesticides.  It has no intrinsic pesticidal qualities itself, but rather is a synergist enhancing the potency of pyrethroid ingredients.  It is used in a variety of household and veterinary products."^^xsd:string .
+

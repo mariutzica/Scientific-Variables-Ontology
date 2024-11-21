@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pendimethalin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "pendimethalin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q423895"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pendimethalin"^^xsd:string ;
+    rdfs:comment "Pendimethalin is an herbicide of the dinitroaniline class used in premergence and postemergence applications to control annual grasses and certain broadleaf weeds. It inhibits cell division and cell elongation. Pendimethalin is listed in the K1-group according to the Herbicide Resistance Action Committee (HRAC) classification and is approved in Europe, North America, South America, Africa, Asia and Oceania for different crops including cereals (wheat, barley, rye, triticale), corn, soybeans, rice, potato, legumes, fruits, vegetables, nuts as well as lawns and ornamental plants."^^xsd:string .
+

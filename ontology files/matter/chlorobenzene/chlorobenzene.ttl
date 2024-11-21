@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlorobenzene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chlorobenzene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q407768"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chlorobenzene"^^xsd:string ;
+    rdfs:comment "Chlorobenzene is an aromatic organic compound with the chemical formula C6H5Cl. This colorless, flammable liquid is a common solvent and a widely used intermediate in the manufacture of other chemicals."^^xsd:string .
+

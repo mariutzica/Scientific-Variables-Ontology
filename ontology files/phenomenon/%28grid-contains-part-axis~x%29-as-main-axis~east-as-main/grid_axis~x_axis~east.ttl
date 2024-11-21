@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28grid-contains-part-axis~x%29-as-main-axis~east-as-main> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "grid_axis~x_axis~east"^^xsd:string ;
+    svo:has_primary_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/axis~east>,
+        <http://scientificvariablesontology.org/svo/phenomenon/grid-contains-part-axis~x> .
+

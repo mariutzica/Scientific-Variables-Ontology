@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:terrain a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "terrain"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q186131"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Terrain"^^xsd:string ;
+    rdfs:comment "Terrain or relief (also topographical relief) involves the vertical and horizontal dimensions of land surface. The term bathymetry is used to describe underwater relief, while hypsometry studies terrain relative to sea level. The Latin word terra (the root of terrain) means \"earth.\""^^xsd:string .
+

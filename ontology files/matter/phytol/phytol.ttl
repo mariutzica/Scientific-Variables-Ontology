@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:phytol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "phytol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q415945"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Phytol"^^xsd:string ;
+    rdfs:comment "Phytol (florasol, phytosol) is an acyclic hydrogenated diterpene alcohol that can be used as a precursor for the manufacture of synthetic forms of vitamin E and vitamin K1.  In ruminants, the gut fermentation of ingested plant materials liberates phytol, a constituent of chlorophyll, which is then converted to phytanic acid and stored in fats.  In shark liver it yields pristane."^^xsd:string .
+

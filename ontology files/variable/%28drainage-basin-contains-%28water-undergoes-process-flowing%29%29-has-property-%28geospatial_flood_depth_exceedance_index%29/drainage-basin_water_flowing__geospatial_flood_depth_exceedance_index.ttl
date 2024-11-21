@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28drainage-basin-contains-%28water-undergoes-process-flowing%29%29-has-property-%28geospatial_flood_depth_exceedance_index%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "drainage-basin_water_flowing__geospatial_flood_depth_exceedance_index"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/drainage-basin> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/flowing> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/drainage-basin-contains-%28water-undergoes-process-flowing%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/geospatial_flood_depth_exceedance_index> ;
+    svo:has_original_label "watershed_water_flow__geospatial_flood_depth_exceedance_index"^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11158"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Acid"^^xsd:string ;
+    rdfs:comment "An acid is a molecule or ion capable of either donating a proton (i.e. hydrogen ion, H+), known as a Brønsted–Lowry acid, or forming a covalent bond with an electron pair, known as a Lewis acid.The first category of acids are the proton donors, or Brønsted–Lowry acids. In the special case of aqueous solutions, proton donors form the hydronium ion H3O+ and are known as Arrhenius acids. Brønsted and Lowry generalized the Arrhenius theory to include non-aqueous solvents. A Brønsted or Arrhenius acid usually contains a hydrogen atom bonded to a chemical structure that is still energetically favorable after loss of H+."^^xsd:string .
+

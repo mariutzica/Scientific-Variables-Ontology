@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chandrasekhar-limit_mass a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "chandrasekhar-limit_mass"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q51366"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chandrasekhar_limit"^^xsd:string ;
+    rdfs:comment "The Chandrasekhar limit () is the maximum mass of a stable white dwarf star. The currently accepted value of the Chandrasekhar limit is about 1.4 M☉ (2.765×1030 kg). The limit was named after Subrahmanyan Chandrasekhar. "^^xsd:string .
+

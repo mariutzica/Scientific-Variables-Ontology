@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:earthquake-is-source-of-rayleigh-seismic-wave a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "earthquake_rayleigh-seismic-wave"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :rayleigh-seismic-wave ;
+    svo:has_source_phenomenon :earthquake .
+

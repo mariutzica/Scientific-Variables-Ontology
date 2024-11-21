@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:benzyl-n-butyl-phthalate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "benzyl-n-butyl-phthalate"^^xsd:string ;
+    svo:has_synonym "Butyl benzyl phthalate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q414809"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Benzyl_butyl_phthalate"^^xsd:string ;
+    rdfs:comment "Benzyl butyl phthalate (BBP) is an organic compound historically used a plasticizer, but which has now been largely phased out due to health concerns. It is a phthalate ester of containing benzyl alcohol, and n-butanol tail groups. Like most phthalates, BBP is non-volatile and remains liquid over a wide range of temperatures. It was mostly used as a plasticizer for PVC, but was also a common plasticizer for PVCA and PVB."^^xsd:string .
+

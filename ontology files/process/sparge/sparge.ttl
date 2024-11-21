@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sparge a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "sparge"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2070459"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sparging_(chemistry)"^^xsd:string ;
+    rdfs:comment "In chemistry, sparging, also known as gas flushing in metallurgy, is a technique in which a gas is bubbled through a liquid in order to remove other dissolved gas(es) and/or dissolved volatile liquid(s) from that liquid. It is a method of degassing. According to Henry's law, the concentration of each gas in a liquid is proportional to the partial pressure of that gas (in the gaseous state) in contact with the liquid. Sparging introduces a gas that has little or no partial pressure of the gas(es) to be removed, and increases the area of the gas-liquid interface, which encourages some of the dissolved gas(es) to diffuse into the sparging gas before the sparging gas escapes from the liquid. Many sparging processes, such as solvent removal, use air as the sparging gas. To remove oxygen, or for sensitive solutions or reactive molten metals, a chemically inert gas such as nitrogen, argon, or helium is used."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:scavenging a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "scavenging"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q172867"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Scavenger"^^xsd:string ;
+    rdfs:comment "Scavengers are animals that consume dead organisms that have died from causes other than predation or have been killed by other predators. While scavenging generally refers to carnivores feeding on carrion, it is also a herbivorous feeding behavior. Scavengers play an important role in the ecosystem by consuming dead animal and plant material. Decomposers and detritivores complete this process, by consuming the remains left by scavengers."^^xsd:string .
+

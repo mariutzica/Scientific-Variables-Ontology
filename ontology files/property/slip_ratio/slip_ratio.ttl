@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:slip_ratio a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "slip_ratio"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q207450"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Induction_motor#Slip"^^xsd:string ;
+    rdfs:comment "An induction motor or asynchronous motor is an AC electric motor in which the electric current in the rotor needed to produce torque is obtained by electromagnetic induction from the magnetic field of the stator winding. An induction motor can therefore be made without electrical connections to the rotor. An induction motor's rotor can be either wound type or squirrel-cage type."^^xsd:string .
+

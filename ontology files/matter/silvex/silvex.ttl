@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:silvex a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "silvex"^^xsd:string ;
+    svo:has_synonym "fenoprop"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3092689"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fenoprop"^^xsd:string ;
+    rdfs:comment "Fenoprop, also called 2,4,5-TP, is the organic compound 2-(2,4,5-trichlorophenoxy)propionic acid. It is a phenoxy herbicide and a plant growth regulator, an analog of 2,4,5-T in which the latter's acetic acid sidechain is replaced with a propionate group (with an extra CH3). The addition of this extra methyl group creates a chiral centre in the molecule and useful biological activity is found only in the (2R)-isomer. The compound's mechanism of action is to mimic the growth hormone indoleacetic acid (IAA). When sprayed on plants it induces rapid, uncontrolled growth. As with 2,4,5-T, fenoprop is toxic to shrubs and trees."^^xsd:string .
+

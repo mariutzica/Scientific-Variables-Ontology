@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydrocarbon a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "hydrocarbon"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q43648"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydrocarbon"^^xsd:string ;
+    rdfs:comment "In organic chemistry, a hydrocarbon is an organic compound consisting entirely of hydrogen and carbon.: 620  Hydrocarbons are examples of group 14 hydrides. Hydrocarbons are generally colourless and hydrophobic; their odor is usually faint, and may be similar to that of gasoline or lighter fluid. They occur in a diverse range of molecular structures and phases: they can be gases (such as methane and propane), liquids (such as hexane and benzene), low melting solids (such as paraffin wax and naphthalene) or polymers (such as polyethylene and polystyrene)."^^xsd:string .
+

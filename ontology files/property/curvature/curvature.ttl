@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:curvature a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "curvature"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q214881"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Curvature"^^xsd:string ;
+    rdfs:comment "In mathematics, curvature is any of several strongly related concepts in geometry. Intuitively, the curvature is the amount by which a curve deviates from being a straight line, or a surface deviates from being a plane."^^xsd:string .
+

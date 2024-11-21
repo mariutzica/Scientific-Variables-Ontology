@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:arsenic-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "arsenic-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q413334"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Arsenic_acid"^^xsd:string ;
+    rdfs:comment "Arsenic acid or trihydrogen arsenate is the chemical compound with the formula H3AsO4. More descriptively written as AsO(OH)3, this colorless acid is the arsenic analogue of phosphoric acid. Arsenate and phosphate salts behave very similarly. Arsenic acid as such has not been isolated, but is only found in solution, where it is largely ionized. Its hemihydrate form (2H3AsO4·H2O) does form stable crystals. Crystalline samples dehydrate with condensation at 100 °C."^^xsd:string .
+

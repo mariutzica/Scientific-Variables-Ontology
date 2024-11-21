@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28crop-undergoes-process-production%29-has-property-%28seasonal_index%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "crop_production__seasonal_index"^^xsd:string ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/production> ;
+    svo:contains_role_reference_to <http://scientificvariablesontology.org/svo/role/crop> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/crop-undergoes-process-production> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/seasonal_index> ;
+    svo:has_original_label "crop__seasonal_production_index"^^xsd:string .
+

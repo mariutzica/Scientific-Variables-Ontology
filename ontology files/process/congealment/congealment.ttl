@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:congealment a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "congealment"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q16889688"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Congelation"^^xsd:string ;
+    rdfs:comment "Congelation (from Latin: congelātiō, lit. 'freezing, congealing') was a term used in medieval and early modern alchemy for the process known today as crystallization.In the Secreta alchymiae ('The Secret of Alchemy') attributed to Khalid ibn Yazid (c. 668–704 or 709), it is one of \"the four principal operations\", along with Solution, Albification ('whitening'), and Rubification ('reddening').It was one of the twelve alchemical operations involved in the creation of the philosophers' stone  as described by Sir George Ripley (c. 1415–1490) in his Compound of Alchymy, as well as by Antoine-Joseph Pernety in his Dictionnaire mytho-hermétique (1758)."^^xsd:string .
+

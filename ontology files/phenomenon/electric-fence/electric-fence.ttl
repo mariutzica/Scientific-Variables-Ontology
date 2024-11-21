@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:electric-fence a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "electric-fence"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1292216"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Electric_fence"^^xsd:string ;
+    rdfs:comment "An electric fence is a barrier that uses electric shocks to deter people and/or other animals from crossing a boundary. The voltage of the shock may have effects ranging from discomfort to death. Most electric fences are used for agricultural fencing and other forms of non-human animal control, although they are also used to protect high-security areas such as military installations or prisons, where potentially-lethal voltages may be used. Virtual electric fences for livestock using GPS technology have also been developed."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:eddy_viscosity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "eddy_viscosity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q128709"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Viscosity#Eddy_viscosity"^^xsd:string ;
+    rdfs:comment "The viscosity of a fluid is a measure of its resistance to deformation at a given rate. For liquids, it corresponds to the informal concept of \"thickness\": for example, syrup has a higher viscosity than water.Viscosity quantifies the internal frictional force between adjacent layers of fluid that are in relative motion. For instance, when a viscous fluid is forced through a tube, it flows more quickly near the tube's axis than near its walls. Experiments show that some stress (such as a pressure difference between the two ends of the tube) is needed to sustain the flow. This is because a force is required to overcome the friction between the layers of the fluid which are in relative motion. For a tube with a constant rate of flow, the strength of the compensating force is proportional to the fluid's viscosity."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:remineralization a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "remineralization"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7311813"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Remineralisation"^^xsd:string ;
+    rdfs:comment "In biogeochemistry, remineralisation (or remineralization) refers to the breakdown or transformation of organic matter (those molecules derived from a biological source) into its simplest inorganic forms. These transformations form a crucial link within ecosystems as they are responsible for liberating the energy stored in organic molecules and recycling matter within the system to be reused as nutrients by other organisms."^^xsd:string .
+

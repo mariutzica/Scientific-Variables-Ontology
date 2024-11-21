@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cypermethrin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "cypermethrin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q412024"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cypermethrin"^^xsd:string ;
+    rdfs:comment "Cypermethrin (CP) is a synthetic pyrethroid used as an insecticide in large-scale commercial agricultural applications as well as in consumer products for domestic purposes. It behaves as a fast-acting neurotoxin in insects. It is easily degraded on soil and plants but can be effective for weeks when applied to indoor inert surfaces. Exposure to sunlight, water and oxygen will accelerate its decomposition. Cypermethrin is highly toxic to fish, bees and aquatic insects, according to the National Pesticides Telecommunications Network (NPTN). It is found in many household ant and cockroach killers, including Raid, Ortho, Combat, ant chalk, and some products of Baygon in Southeast Asia."^^xsd:string .
+

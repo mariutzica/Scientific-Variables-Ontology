@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:methylation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "methylation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q518328"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Methylation"^^xsd:string ;
+    rdfs:comment "Methylation, in the chemical sciences, is the addition of a methyl group on a substrate, or the substitution of an atom (or group) by a methyl group. Methylation is a form of alkylation, with a methyl group replacing a hydrogen atom.  These terms are commonly used in chemistry, biochemistry, soil science, and biology."^^xsd:string .
+

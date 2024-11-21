@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gortler_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "gortler_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2093208"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/G%C3%B6rtler_vortices"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, Görtler vortices are secondary flows that appear in a boundary layer flow along a concave wall. If the boundary layer is thin compared to the radius of curvature of the wall, the pressure remains constant across the boundary layer. On the other hand, if the boundary layer thickness is comparable to the radius of curvature, the centrifugal action creates a pressure variation across the boundary layer. This leads to the centrifugal instability (Görtler instability) of the boundary layer and consequent formation of Görtler vortices."^^xsd:string .
+

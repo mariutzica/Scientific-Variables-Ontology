@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mitigation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "mitigation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6881760"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mitigation"^^xsd:string ;
+    rdfs:comment "Mitigation is the reduction of something harmful that has occurred or the reduction of its harmful effects. It may refer to measures taken to reduce the harmful effects of hazards that remain in potentia, or to manage harmful incidents that have already occurred. It is a stage or component of emergency management and of risk management. The theory of mitigation is a frequently used element in criminal law and is often used by a judge to try cases such as murder, where a perpetrator is subject to varying degrees of responsibility as a result of one's actions."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cooking a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "cooking"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q38695"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cooking"^^xsd:string ;
+    rdfs:comment "Cooking, also known as cookery or professionally as the culinary arts, is the art, science and craft of using heat to make food more palatable, digestible, nutritious, or safe. Cooking techniques and ingredients vary widely, from grilling food over an open fire, to using electric stoves, to baking in various types of ovens, reflecting local conditions."^^xsd:string .
+

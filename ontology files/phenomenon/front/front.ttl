@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:front a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "front"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q28458702"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Front_(physics)"^^xsd:string ;
+    rdfs:comment "In physics, a front can be understood as an interface between two different possible states (either stable or unstable) in a physical system. For example, a weather front is the interface between two different density masses of air, in combustion where the flame is the interface between burned and unburned material or in population dynamics where the front is the interface between populated and unpopulated places. Fronts can be static or mobile depending on the conditions of the system, and the causes of the motion can be the variation of a free energy, where the most energetically favorable state invades the less favorable one, according to Pomeau or shape induced motion due to non-variation dynamics in the system, according to Alvarez-Socorro, Clerc, González-Cortés and Wilson.From a mathematical point of view, fronts are solutions of spatially extended systems connecting two steady states, and from dynamical systems point of view, a front corresponds to a heteroclinic orbit of the system in the co-mobile frame (or proper frame)."^^xsd:string .
+

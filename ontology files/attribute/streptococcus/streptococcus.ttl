@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:streptococcus a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "streptococcus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q190161"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Streptococcus"^^xsd:string ;
+    rdfs:comment "Streptococcus is a genus of gram-positive coccus (plural cocci) or spherical bacteria that belongs to the family Streptococcaceae, within the order Lactobacillales (lactic acid bacteria), in the phylum Bacillota.  Cell division in streptococci occurs along a single axis, so as they grow, they tend to form pairs or chains that may appear bent or twisted. This differs from staphylococci, which divide along multiple axes, thereby generating irregular, grape-like clusters of cells. Most streptococci are oxidase-negative and catalase-negative, and many are facultative anaerobes (capable of growth both aerobically and anaerobically)."^^xsd:string .
+

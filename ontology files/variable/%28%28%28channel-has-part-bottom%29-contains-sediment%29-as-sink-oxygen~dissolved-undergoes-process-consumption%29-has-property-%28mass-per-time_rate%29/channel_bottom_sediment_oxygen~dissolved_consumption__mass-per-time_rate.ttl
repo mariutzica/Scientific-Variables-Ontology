@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28%28channel-has-part-bottom%29-contains-sediment%29-as-sink-oxygen~dissolved-undergoes-process-consumption%29-has-property-%28mass-per-time_rate%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "channel_bottom_sediment_oxygen~dissolved_consumption__mass-per-time_rate"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/dissolved> ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/channel> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/oxygen>,
+        <http://scientificvariablesontology.org/svo/matter/sediment> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/bottom> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/consumption> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28%28channel-has-part-bottom%29-contains-sediment%29-as-sink-oxygen~dissolved-undergoes-process-consumption> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mass-per-time_rate> ;
+    svo:has_original_label "channel_bottom_sediment_oxygen~dissolved__consumption_rate"^^xsd:string .
+

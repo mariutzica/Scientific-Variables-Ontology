@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vanadium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "vanadium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q722"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vanadium"^^xsd:string ;
+    rdfs:comment "Vanadium is a chemical element with the symbol V and atomic number 23. It is a hard, silvery-grey, malleable transition metal. The elemental metal is rarely found in nature, but once isolated artificially, the formation of an oxide layer (passivation) somewhat stabilizes the free metal against further oxidation."^^xsd:string .
+

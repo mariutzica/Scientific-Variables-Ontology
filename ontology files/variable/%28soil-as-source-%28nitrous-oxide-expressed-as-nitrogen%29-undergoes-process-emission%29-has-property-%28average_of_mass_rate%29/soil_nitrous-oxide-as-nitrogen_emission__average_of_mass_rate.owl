@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28soil-as-source-%28nitrous-oxide-expressed-as-nitrogen%29-undergoes-process-emission%29-has-property-%28average_of_mass_rate%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/soil-as-source-%28nitrous-oxide-expressed-as-nitrogen%29-undergoes-process-emission"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/average_of_mass_rate"/>
+  <svo:contains_process_reference_to rdf:resource="http://scientificvariablesontology.org/svo/process/emission"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/soil"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/nitrogen"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/nitrous-oxide"/>
+  <svo:contains_operation_reference_to rdf:resource="http://scientificvariablesontology.org/svo/operation/average"/>
+  <svo:contains_property_reference_to rdf:resource="http://scientificvariablesontology.org/svo/property/mass_rate"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil_nitrous-oxide-as-nitrogen_emission__average_of_mass_rate</rdfs:label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil_nitrous-oxide-as-nitrogen__average_of_mass_emission_rate</svo:has_original_label>
+</owl:NamedIndividual>
+</rdf:RDF>

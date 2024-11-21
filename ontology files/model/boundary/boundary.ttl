@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:boundary a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "boundary"^^xsd:string ;
+    svo:has_synonym "contour"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q875399"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Boundary_(topology)"^^xsd:string ;
+    rdfs:comment "In topology and mathematics in general, the boundary of a subset S of a topological space X is the set of points in the closure of S not belonging to the interior of S. An element of the boundary of S is called a boundary point of S. The term boundary operation refers to finding or taking the boundary of a set.  Notations used for boundary of a set S include "^^xsd:string .
+

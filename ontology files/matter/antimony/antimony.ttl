@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:antimony a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "antimony"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1099"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Antimony"^^xsd:string ;
+    rdfs:comment "Antimony is a chemical element with the symbol Sb (from Latin: stibium) and atomic number 51. A lustrous gray metalloid, it is found in nature mainly as the sulfide mineral stibnite (Sb2S3). Antimony compounds have been known since ancient times and were powdered for use as medicine and cosmetics, often known by the Arabic name kohl. The earliest known description of the metal in the West was written in 1540 by Vannoccio Biringuccio."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:diagenesis a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "diagenesis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q180621"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Diagenesis"^^xsd:string ;
+    rdfs:comment "Diagenesis () is the process that describes physical and chemical changes in sediments first caused by water-rock interactions, microbial activity, and compaction after their  deposition. Increased pressure and temperature only start to play a role as sediments become buried much deeper in the Earth's crust. In the early stages, the transformation of poorly consolidated sediments into sedimentary rock (lithification) is simply accompanied by a reduction in porosity and water expulsion (clay sediments), while their main mineralogical assemblages remain unaltered. As the rock is carried deeper by further deposition above, its organic content is progressively transformed into kerogens and bitumens. The process of diagenesis excludes surface alteration (weathering) and deep metamorphism. There is no sharp boundary between diagenesis and metamorphism, but the latter occurs at higher temperatures and pressures. Hydrothermal solutions, meteoric groundwater, rock porosity, permeability, dissolution/precipitation reactions, and time are all influential factors."^^xsd:string .
+

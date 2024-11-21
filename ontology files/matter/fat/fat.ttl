@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fat a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "fat"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q127980"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fat"^^xsd:string ;
+    rdfs:comment "In nutrition, biology, and chemistry, fat usually means any ester of fatty acids, or a mixture of such compounds, most commonly those that occur in living beings or in food.The term often refers specifically to triglycerides (triple esters of glycerol), that are the main components of vegetable oils and of fatty tissue in animals; or, even more narrowly, to triglycerides that are solid or semisolid at room temperature, thus excluding oils.  The term may also be used more broadly as a synonym of lipid—any substance of biological relevance, composed of carbon, hydrogen, or oxygen, that is insoluble in water but soluble in non-polar solvents.  In this sense, besides the triglycerides, the term would include several other types of compounds like mono- and diglycerides, phospholipids (such as lecithin), sterols (such as cholesterol), waxes (such as beeswax), and free fatty acids, which are usually present in human diet in smaller amounts.Fats are one of the three main macronutrient groups in human diet, along with carbohydrates and proteins, and the main components of common food products like milk, butter, tallow, lard, salt pork, and cooking oils. They are a major and dense source of food energy for many animals and play important structural and metabolic functions, in most living beings, including energy storage, waterproofing, and thermal insulation. The human body can produce the fat it requires from other food ingredients, except for a few essential fatty acids that must be included in the diet. Dietary fats are also the carriers of some flavor and aroma ingredients and vitamins that are not water-soluble."^^xsd:string .
+

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/abstraction/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/abstraction/">
+<owl:NamedIndividual rdf:about="transect">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Abstraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transect</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Transect</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q1447141</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A transect is a path along which one counts and records occurrences of the objects of study (e.g. plants).There are several types of transect. Some are more effective than others.It requires an observer to move along a fixed path and to count occurrences along the path and, at the same time (in some procedures), obtain the distance of the object from the path. This results in an estimate of the area covered and an estimate of the way in which detectability increases from probability 0 (far from the path) towards 1 (near the path). Using the raw count and this probability function, one can arrive at an estimate of the actual density of objects.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

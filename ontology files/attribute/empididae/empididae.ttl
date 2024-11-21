@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:empididae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "empididae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1326176"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Empididae"^^xsd:string ;
+    rdfs:comment "Empididae is a family of flies with over 3,000 described species occurring worldwide in all the biogeographic realms but the majority are found in the Holarctic. They are mainly predatory flies like most of their relatives in the Empidoidea, and exhibit a wide range of forms but are generally small to medium-sized, non-metallic and rather bristly."^^xsd:string .
+

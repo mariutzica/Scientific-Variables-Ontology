@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fenitrothion a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "fenitrothion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q417614"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fenitrothion"^^xsd:string ;
+    rdfs:comment "Fenitrothion (IUPAC name: O,O-dimethyl O-(3-methyl-4-nitrophenyl) phosphorothioate) is a phosphorothioate (organophosphate) insecticide that is inexpensive and widely used worldwide. Trade names include Sumithion, a 94.2% solution of fenitrothion."^^xsd:string .
+

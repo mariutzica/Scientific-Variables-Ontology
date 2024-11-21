@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:picophytoplankton a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "picophytoplankton"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3382533"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Photosynthetic_picoplankton"^^xsd:string ;
+    rdfs:comment "Photosynthetic picoplankton or picophytoplankton is the fraction of the photosynthetic phytoplankton of cell sizes between 0.2 and 2 µm (i.e. picoplankton). It is especially important in the central oligotrophic regions of the world oceans that have very low concentration of nutrients."^^xsd:string .
+

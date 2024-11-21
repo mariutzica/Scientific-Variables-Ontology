@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:turbulent a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "turbulent"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q190132"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Turbulence"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, turbulence or turbulent flow is fluid motion characterized by chaotic changes in pressure and flow velocity.  It is in contrast to a laminar flow, which occurs when a fluid flows in parallel layers, with no disruption between those layers."^^xsd:string .
+

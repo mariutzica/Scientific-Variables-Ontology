@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chloromethyl-methyl-ether a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chloromethyl-methyl-ether"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q158539"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chloromethyl_methyl_ether"^^xsd:string ;
+    rdfs:comment "Chloromethyl methyl ether (CMME) is a compound with formula CH3OCH2Cl.  A colorless liquid, it is a chloroalkyl ether.  It is used as an alkylating agent. In organic synthesis, it is used for introducing the methoxymethyl ether (MOM) protecting group, and is thus often called MOM-Cl or MOM chloride.  It also finds application as a chloromethylating agent in some variants of the Blanc chloromethylation."^^xsd:string .
+

@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/aerosol~dry-has-matter-ammonium> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "aerosol~dry_ammonium"^^xsd:string ;
+    svo:has_form <http://scientificvariablesontology.org/svo/form/aerosol~dry> ;
+    svo:has_matter <http://scientificvariablesontology.org/svo/matter/ammonium> .
+

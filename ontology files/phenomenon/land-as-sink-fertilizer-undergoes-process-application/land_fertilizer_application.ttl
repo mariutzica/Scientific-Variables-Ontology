@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:land-as-sink-fertilizer-undergoes-process-application a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "land_fertilizer_application"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :fertilizer ;
+    svo:has_sink_participant_phenomenon :land ;
+    svo:undergoes_process <http://scientificvariablesontology.org/svo/process/application> .
+

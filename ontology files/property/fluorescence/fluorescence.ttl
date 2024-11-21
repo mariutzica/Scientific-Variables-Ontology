@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fluorescence a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "fluorescence"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q191807"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fluorescence"^^xsd:string ;
+    rdfs:comment "Fluorescence is one of two kinds of emission of light by a substance that has absorbed light or other electromagnetic radiation. Fluorescence involves no change in electron spin multiplicity and generally it immediately follows absorption; phosphorescence involves spin change and is delayed.  Thus fluorescent materials generally cease to glow nearly immediately when the radiation source stops, while phosphorescent materials, which continue to emit light for some time after. "^^xsd:string .
+

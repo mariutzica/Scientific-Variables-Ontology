@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:spring a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "spring"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q102836"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Spring_(device)"^^xsd:string ;
+    rdfs:comment "A spring is a device consisting of an elastic but largely rigid material (typically metal) bent or molded into a form (especially  a coil) that can return into shape after being compressed or extended. Springs can store energy when compressed. In everyday use the term often refers to coil springs, but there are many different spring designs. Modern springs are typically manufactured from spring steel. An example of a non-metallic spring is the bow, made traditionally of flexible  yew wood, which when drawn stores energy to propel an arrow."^^xsd:string .
+

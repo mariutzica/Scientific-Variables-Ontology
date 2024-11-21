@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:heat-equation a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "heat-equation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6510488"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Heat_equation"^^xsd:string ;
+    rdfs:comment "In mathematics and physics, the heat equation is a certain partial differential equation. Solutions of the heat equation are sometimes known as caloric functions. The theory of the heat equation was first developed by Joseph Fourier in 1822 for the purpose of modeling how a quantity such as heat diffuses through a given region."^^xsd:string .
+

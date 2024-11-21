@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:viscous_stress a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "viscous_stress"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7935892"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Viscous_stress_tensor"^^xsd:string ;
+    rdfs:comment "The viscous stress tensor is a tensor used in continuum mechanics to model the part of the stress at a point within some material that can be attributed to the strain rate, the rate at which it is deforming around that point."^^xsd:string .
+

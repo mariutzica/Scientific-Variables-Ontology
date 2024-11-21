@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dictya a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "dictya"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q14659993"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dictya"^^xsd:string ;
+    rdfs:comment "Dictya is a genus of marsh flies in the family Sciomyzidae. There are at least 20 described species in Dictya."^^xsd:string .
+

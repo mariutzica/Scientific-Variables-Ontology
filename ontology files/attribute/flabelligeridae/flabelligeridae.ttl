@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:flabelligeridae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "flabelligeridae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3894026"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Flabelligeridae"^^xsd:string ;
+    rdfs:comment "Flabelligeridae is a family of polychaete worms, known as bristle-cage worms, notable for their cephalic cage: long slender chaetae forming a fan-like arrangement surrounding the eversible (able to be turned inside-out) head. Unlike many polychaetes, they also have large, pigmented, complex eyes."^^xsd:string .
+

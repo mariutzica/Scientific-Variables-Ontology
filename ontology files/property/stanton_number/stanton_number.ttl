@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:stanton_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "stanton_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q901845"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Stanton_number"^^xsd:string ;
+    rdfs:comment "The Stanton number, St, is a dimensionless number that measures the ratio of heat transferred into a fluid to the thermal capacity of fluid. The Stanton number is named after Thomas Stanton (engineer) (1865–1931).: 476  It is used to characterize heat transfer in forced convection flows."^^xsd:string .
+

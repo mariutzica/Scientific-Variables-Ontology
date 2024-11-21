@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:zooplankton a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "zooplankton"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q842627"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Zooplankton"^^xsd:string ;
+    rdfs:comment "Zooplankton are the animal component of the planktonic community (\"zoo\" comes from the Greek word for animal). Plankton are aquatic organisms that are unable to swim effectively against currents. Consequently, they drift or are carried along by currents in the ocean, or by currents in seas, lakes or rivers. "^^xsd:string .
+

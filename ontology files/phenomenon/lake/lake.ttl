@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lake a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "lake"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q23397"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Lake"^^xsd:string ;
+    rdfs:comment "A lake is a naturally occurring, relatively large body of water localized in a basin completely surrounded by dry land, with much slower-moving flow than any inflow or outflow streams that serve to feed or drain it. Lakes lie completely on land and are separate from the ocean, although, like the much larger oceans, they form part of the Earth's water cycle by serving as large standing pools of storage water. Most lakes are freshwater, but some are salt lakes with salinities even higher than that of seawater."^^xsd:string .
+

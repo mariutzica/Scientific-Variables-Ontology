@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:e_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "e_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q82435"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/E_(mathematical_constant)"^^xsd:string ;
+    rdfs:comment "The number e, also known as Euler's number, is a mathematical constant approximately equal to 2.71828 that can be characterized in many ways. It is the base of natural logarithms. It is the limit of (1 + 1/n)n as n approaches infinity, an expression that arises in the study of compound interest. It can also be calculated as the sum of the infinite series"^^xsd:string .
+

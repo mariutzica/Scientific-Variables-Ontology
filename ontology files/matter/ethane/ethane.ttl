@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ethane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "ethane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q52858"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Ethane"^^xsd:string ;
+    rdfs:comment "Ethane (US:  ETH-ayn, UK:  EE-thayn) is an organic chemical compound with chemical formula C2H6. At standard temperature and pressure, ethane is a colorless, odorless gas. Like many hydrocarbons, ethane is isolated on an industrial scale from natural gas and as a petrochemical by-product of petroleum refining. Its chief use is as feedstock for ethylene production."^^xsd:string .
+

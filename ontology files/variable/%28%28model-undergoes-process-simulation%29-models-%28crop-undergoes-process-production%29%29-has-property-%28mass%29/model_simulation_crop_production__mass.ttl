@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28model-undergoes-process-simulation%29-models-%28crop-undergoes-process-production%29%29-has-property-%28mass%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "model_simulation_crop_production__mass"^^xsd:string ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/production>,
+        <http://scientificvariablesontology.org/svo/process/simulation> ;
+    svo:contains_role_reference_to <http://scientificvariablesontology.org/svo/role/crop> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28model-undergoes-process-simulation%29-models-%28crop-undergoes-process-production%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mass> ;
+    svo:has_original_label "crop__simulated_produced_mass"^^xsd:string .
+

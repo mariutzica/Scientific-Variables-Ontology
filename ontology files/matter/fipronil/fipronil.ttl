@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fipronil a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "fipronil"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q415933"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fipronil"^^xsd:string ;
+    rdfs:comment "Fipronil is a broad-spectrum insecticide that belongs to the phenylpyrazole chemical family. Fipronil disrupts the insect central nervous system by blocking the ligand-gated ion channel of the GABAA receptor and glutamate-gated chloride (GluCl) channels. This causes hyperexcitation of contaminated insects' nerves and muscles. Fipronil's specificity towards insects is believed to be due to its greater binding affinity to the GABAA receptors of insects, than to those of mammals, and to its action on GluCl channels, which do not exist in mammals. As of 2017, there did not appear to be significant resistance among fleas to fipronil.Because of its effectiveness on various pests, fipronil is used as the active ingredient in flea control products for pets and home roach traps as well as field pest control for corn, golf courses, and commercial turf. Its widespread use makes its specific effects the subject of considerable attention. This includes ongoing observations on possible off-target harm to humans or ecosystems as well as the monitoring of resistance development."^^xsd:string .
+

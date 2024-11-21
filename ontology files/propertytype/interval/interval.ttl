@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/propertytype/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:interval a svo:PropertyType,
+        owl:NamedIndividual ;
+    rdfs:label "interval"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q951437"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Level_of_measurement#Interval_scale"^^xsd:string ;
+    rdfs:comment "Level of measurement or scale of measure is a classification that describes the nature of information within the values assigned to variables. Psychologist Stanley Smith Stevens developed the best-known classification with four levels, or scales, of measurement: nominal, ordinal, interval, and ratio. This framework of distinguishing levels of measurement originated in psychology and is widely criticized by scholars in other disciplines. Other classifications include those by Mosteller and Tukey, and by Chrisman."^^xsd:string .
+

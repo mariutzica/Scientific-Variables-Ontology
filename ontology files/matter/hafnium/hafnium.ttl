@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hafnium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "hafnium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1119"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hafnium"^^xsd:string ;
+    rdfs:comment "Hafnium is a chemical element with the symbol Hf and atomic number 72. A lustrous, silvery gray, tetravalent transition metal, hafnium chemically resembles zirconium and is found in many zirconium minerals. Its existence was predicted by Dmitri Mendeleev in 1869, though it was not identified until 1923, by Dirk Coster and George de Hevesy, making it the penultimate stable element to be discovered (the last being rhenium in 1925). Hafnium is named after Hafnia, the Latin name for Copenhagen, where it was discovered.Hafnium is used in filaments and electrodes.  Some semiconductor fabrication processes use its oxide for integrated circuits at 45 nanometers and smaller feature lengths. Some superalloys used for special applications contain hafnium in combination with niobium, titanium, or tungsten."^^xsd:string .
+

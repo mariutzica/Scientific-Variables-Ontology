@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:welding a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "welding"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q131172"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Welding"^^xsd:string ;
+    rdfs:comment "Welding is a fabrication process that joins materials, usually metals or thermoplastics, primarily by using high temperature to melt the parts together and allow them to cool, causing fusion. Common alternative methods include solvent welding (of thermoplastics) using chemicals to melt materials being bonded without heat, and solid-state welding processes which bond without melting, such as pressure, cold welding, and diffusion bonding. "^^xsd:string .
+

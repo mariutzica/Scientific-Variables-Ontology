@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:writing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "writing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q37260"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Writing"^^xsd:string ;
+    rdfs:comment "Writing is the act of creating a persistent representation of human language. A writing system uses a set of symbols and rules to encode aspects of spoken language, such as its lexicon and syntax. However, written language may take on characteristics distinct from those of any spoken language."^^xsd:string .
+

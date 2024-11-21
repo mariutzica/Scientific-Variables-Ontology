@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:seafloor a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "seafloor"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q468469"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Seabed"^^xsd:string ;
+    rdfs:comment "The seabed (also known as the seafloor, sea floor, ocean floor, and ocean bottom) is the bottom of the ocean. All floors of the ocean are known as 'seabeds'."^^xsd:string .
+

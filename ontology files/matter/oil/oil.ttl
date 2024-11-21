@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:oil a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "oil"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q42962"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Oil"^^xsd:string ;
+    rdfs:comment "An oil is any nonpolar chemical substance that is composed primarily of hydrocarbons and is hydrophobic (does not mix with water) & lipophilic (mixes with other oils). Oils are usually flammable and surface active. Most oils are unsaturated lipids that are liquid at room temperature."^^xsd:string .
+

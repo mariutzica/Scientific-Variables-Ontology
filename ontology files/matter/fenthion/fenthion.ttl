@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fenthion a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "fenthion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q418354"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fenthion"^^xsd:string ;
+    rdfs:comment "Fenthion is an organothiophosphate insecticide, avicide, and acaricide. Like most other organophosphates, its mode of action is via cholinesterase inhibition. Due to its relatively low toxicity towards humans and mammals, fenthion is listed as moderately toxic compound in U.S. Environmental Protection Agency and World Health Organization toxicity class."^^xsd:string .
+

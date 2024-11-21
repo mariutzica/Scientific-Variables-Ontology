@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dcpa a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dcpa"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5277322"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dimethyl_tetrachloroterephthalate"^^xsd:string ;
+    rdfs:comment "Dimethyl tetrachloroterephthalate (DCPA, with the main trade name Dacthal) is an organic compound with the formula C6Cl4(CO2CH3)2.  It is the dimethyl ester of tetrachloroterephthalic acid, used as a preemergent herbicide with the ISO common name chlorthal-dimethyl.  It kills annual grasses and many common weeds without killing sensitive plants such as turf grasses, flowers, fruits, vegetables, and cotton."^^xsd:string .
+

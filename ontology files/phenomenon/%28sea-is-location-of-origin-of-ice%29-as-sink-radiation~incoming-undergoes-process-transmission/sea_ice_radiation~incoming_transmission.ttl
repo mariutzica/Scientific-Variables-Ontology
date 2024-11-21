@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28sea-is-location-of-origin-of-ice%29-as-sink-radiation~incoming-undergoes-process-transmission> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "sea_ice_radiation~incoming_transmission"^^xsd:string ;
+    svo:has_primary_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/radiation~incoming> ;
+    svo:has_sink_participant_phenomenon :sea-is-location-of-origin-of-ice ;
+    svo:undergoes_process <http://scientificvariablesontology.org/svo/process/transmission> .
+

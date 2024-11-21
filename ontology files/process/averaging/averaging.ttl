@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:averaging a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "averaging"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q202785"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Average"^^xsd:string ;
+    rdfs:comment "In ordinary language, an average is a single number taken as representative of a list of numbers, usually the sum of the numbers divided by how many numbers are in the list (the arithmetic mean). For example, the average of the numbers 2, 3, 4, 7, and 9 (summing to 25) is 5. Depending on the context, an average might be another statistic such as the median, or mode. For example, the average personal income is often given as the median—the number below which are 50% of personal incomes and above which are 50% of personal incomes—because the mean would be higher by including personal incomes from a few billionaires. For this reason, it is recommended to avoid using the word \"average\" when discussing measures of central tendency."^^xsd:string .
+

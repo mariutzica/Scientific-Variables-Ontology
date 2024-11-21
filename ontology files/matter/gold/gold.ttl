@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gold a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "gold"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q897"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gold"^^xsd:string ;
+    rdfs:comment "Gold is a chemical element with the symbol Au (from Latin  aurum 'gold') and atomic number 79. This makes it one of the higher–atomic-number elements that occur naturally. It is a bright, slightly orange-yellow, dense, soft, malleable, and ductile metal in pure form. Chemically, gold is a transition metal and a group 11 element. It is one of the least reactive chemical elements and is solid under standard conditions."^^xsd:string .
+

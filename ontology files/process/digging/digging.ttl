@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:digging a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "digging"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4232202"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Digging"^^xsd:string ;
+    rdfs:comment "Digging, also referred to as excavation, is the process of using some implement such as claws, hands, manual tools or heavy equipment, to remove material from a solid surface, usually soil, sand or rock on the surface of Earth. Digging is actually the combination of two processes, the first being the breaking or cutting of the surface, and the second being the removal and relocation of the material found there. In a simple digging situation, this may be accomplished in a single motion, with the digging implement being used to break the surface and immediately fling the material away from the hole or other structure being dug."^^xsd:string .
+

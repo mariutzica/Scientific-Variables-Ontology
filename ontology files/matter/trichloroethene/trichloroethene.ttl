@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trichloroethene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "trichloroethene"^^xsd:string ;
+    svo:has_synonym "trichloroethylene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q407936"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Trichloroethylene"^^xsd:string ;
+    rdfs:comment "The chemical compound trichloroethylene (TCE) is a halocarbon with the formula C2HCl3, commonly used as an industrial solvent. It is a clear, colourless non-flammable liquid with a chloroform-like sweet smell. It should not be confused with the similar 1,1,1-trichloroethane, which is commonly known as chlorothene."^^xsd:string .
+

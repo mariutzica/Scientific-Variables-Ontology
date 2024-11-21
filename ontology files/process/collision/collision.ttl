@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:collision a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "collision"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q238053"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Collision"^^xsd:string ;
+    rdfs:comment "In physics, a collision is any event in which two or more bodies exert forces on each other in a relatively short time. Although the most common use of the word collision refers to incidents in which two or more objects collide with great force, the scientific use of the term implies nothing about the magnitude of the force."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:intrinsic a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "intrinsic"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q446907"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Intrinsic_and_extrinsic_properties"^^xsd:string ;
+    rdfs:comment "In science and engineering, an intrinsic property is a property of a specified subject that exists itself or within the subject. An extrinsic property is not essential or inherent to the subject that is being characterized. For example, mass is an intrinsic property of any physical object, whereas weight is an extrinsic property that depends on the strength of the gravitational field in which the object is placed."^^xsd:string .
+

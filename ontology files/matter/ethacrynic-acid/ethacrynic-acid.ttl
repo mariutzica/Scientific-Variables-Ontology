@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ethacrynic-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "ethacrynic-acid"^^xsd:string ;
+    svo:has_synonym "edecrin"^^xsd:string,
+        "etacrinic-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q418571"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Etacrynic_acid"^^xsd:string ;
+    rdfs:comment "Etacrynic acid (INN) or ethacrynic acid (USAN), trade name Edecrin, is a loop diuretic used to treat high blood pressure and the swelling caused by diseases like congestive heart failure, liver failure, and kidney failure. A con with etacyrnic acid compared to the other loop diuretic drugs such as furosemide is that it has a significantly steep dose-response curve, which means the drug's dosing is very important as small variance in dose can cause a significant difference in the biological response."^^xsd:string .
+

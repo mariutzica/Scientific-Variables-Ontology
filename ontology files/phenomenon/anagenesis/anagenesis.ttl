@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:anagenesis a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "anagenesis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q179440"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Anagenesis"^^xsd:string ;
+    rdfs:comment "Anagenesis is the gradual evolution of a species that continues to exist as an interbreeding population. This contrasts with cladogenesis, which occurs when there is branching or splitting, leading to two or more lineages and resulting in separate species. Anagenesis does not always lead to the formation of a new species from an ancestral species.  When speciation does occur as different lineages branch off and cease to interbreed, a core group may continue to be defined as the original species. The evolution of this group, without extinction or species selection, is anagenesis."^^xsd:string .
+

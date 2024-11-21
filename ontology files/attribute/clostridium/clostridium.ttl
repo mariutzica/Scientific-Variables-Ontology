@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:clostridium a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "clostridium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q327663"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Clostridium"^^xsd:string ;
+    rdfs:comment "Clostridium is a genus of anaerobic, Gram-positive bacteria. Species of Clostridium inhabit soils and the intestinal tract of animals, including humans. This genus includes several significant human pathogens, including the causative agents of botulism and tetanus. It also formerly included an important cause of diarrhea, Clostridioides difficile, which was reclassified into the Clostridioides genus in 2016."^^xsd:string .
+

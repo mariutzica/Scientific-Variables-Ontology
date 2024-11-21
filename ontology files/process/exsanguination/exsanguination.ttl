@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:exsanguination a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "exsanguination"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4241510"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Exsanguination"^^xsd:string ;
+    rdfs:comment "Exsanguination is death caused by loss of blood. Depending upon the health of the individual, people usually die from losing half to two-thirds of their blood; a loss of roughly one-third of the blood volume is considered very serious. Even a single deep cut can warrant suturing and hospitalization, especially if trauma, a vein or artery, or another comorbidity is involved. The word comes from the Latin 'sanguis', meaning blood."^^xsd:string .
+

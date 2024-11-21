@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gravimetric a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "gravimetric"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q499964"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gravimetry"^^xsd:string ;
+    rdfs:comment "Gravimetry is the measurement of the strength of a gravitational field. Gravimetry may be used when either the magnitude of a gravitational field or the properties of matter responsible for its creation are of interest. The study of gravity changes belongs to geodynamics."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:forging a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "forging"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q193057"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Forging"^^xsd:string ;
+    rdfs:comment "Forging is a manufacturing process involving the shaping of metal using localized compressive forces.  The blows are delivered with a hammer (often a power hammer) or a die.  Forging is often classified according to the temperature at which it is performed: cold forging (a type of cold working), warm forging, or hot forging (a type of hot working). For the latter two, the metal is heated, usually in a forge. Forged parts can range in weight from less than a kilogram to hundreds of metric tons. Forging has been done by smiths for millennia; the traditional products were kitchenware, hardware, hand tools, edged weapons, cymbals, and jewellery."^^xsd:string .
+

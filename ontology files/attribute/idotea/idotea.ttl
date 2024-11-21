@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:idotea a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "idotea"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q429414"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Idotea"^^xsd:string ;
+    rdfs:comment "Idotea is a genus of isopod crustaceans, mostly from cold temperate waters. The taxonomy of the genus is still in doubt, and many of the currently recognised species may be taxonomic synonyms, and others may be moved to different genera."^^xsd:string .
+

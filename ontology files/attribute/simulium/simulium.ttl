@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:simulium a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "simulium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3280744"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Simulium"^^xsd:string ;
+    rdfs:comment "Simulium is a genus of black flies, which may transmit diseases such as onchocerciasis (river blindness). It is a large genus with several hundred species, and 41 subgenera.The flies are pool feeders. Their saliva, which contains anticoagulants, a number of enzymes and histamine, is mixed with the blood, preventing clotting until it is ingested by the fly. These bites cause localized tissue damage, and if the number of feeding flies is sufficient, their feeding may produce a blood-loss anaemia."^^xsd:string .
+

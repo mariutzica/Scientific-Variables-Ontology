@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cfc-12 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "cfc-12"^^xsd:string ;
+    svo:has_synonym "Dichlorodifluoromethane"^^xsd:string,
+        "r-12"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q423021"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dichlorodifluoromethane"^^xsd:string ;
+    rdfs:comment "Dichlorodifluoromethane (R-12) is a colorless gas usually sold under the brand name Freon-12, and a chlorofluorocarbon halomethane (CFC) used as a refrigerant and aerosol spray propellant. Complying with the Montreal Protocol, its manufacture was banned in developed countries (non-article 5 countries) in 1996, and in developing countries (Article 5 countries) in 2010 out of concerns about its damaging effect on the ozone layer. Its only allowed usage is as a  fire retardant in submarines and aircraft. It is soluble in many organic solvents. R-12 cylinders are colored white."^^xsd:string .
+

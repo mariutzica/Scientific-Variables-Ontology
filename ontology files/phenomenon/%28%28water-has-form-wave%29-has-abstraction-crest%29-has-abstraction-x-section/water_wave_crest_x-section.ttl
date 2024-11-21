@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28%28water-has-form-wave%29-has-abstraction-crest%29-has-abstraction-x-section> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "water_wave_crest_x-section"^^xsd:string ;
+    svo:has_abstraction <http://scientificvariablesontology.org/svo/abstraction/x-section> ;
+    svo:has_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28water-has-form-wave%29-has-abstraction-crest> .
+

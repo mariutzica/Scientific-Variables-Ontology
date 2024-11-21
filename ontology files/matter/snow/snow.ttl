@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:snow a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "snow"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7561"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Snow"^^xsd:string ;
+    rdfs:comment "Snow comprises individual ice crystals that grow while suspended in the atmosphere—usually within clouds—and then fall, accumulating on the ground where they undergo further changes. It consists of frozen crystalline water throughout its life cycle, starting when, under suitable conditions, the ice crystals form in the atmosphere, increase to millimeter size, precipitate and accumulate on surfaces, then metamorphose in place, and ultimately melt, slide or sublimate away."^^xsd:string .
+

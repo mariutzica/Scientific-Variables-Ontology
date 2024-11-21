@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:osmium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "osmium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q751"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Osmium"^^xsd:string ;
+    rdfs:comment "Osmium (from Ancient Greek  ὀσμή (osmḗ) 'smell') is a chemical element with the symbol Os and atomic number 76. It is a hard, brittle, bluish-white transition metal in the platinum group that is found as a trace element in alloys, mostly in platinum ores. Osmium is the densest naturally occurring element. When experimentally measured using X-ray crystallography, it has a density of 22.59 g/cm3. Manufacturers use its alloys with platinum, iridium, and other platinum-group metals to make fountain pen nib tipping, electrical contacts, and in other applications that require extreme durability and hardness.Osmium is among the rarest elements in the Earth's crust, making up only 50 parts per trillion (ppt). It is estimated to be about 0.6 parts per billion in the universe and is therefore the rarest precious metal."^^xsd:string .
+

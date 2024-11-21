@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:conchostraca a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "conchostraca"^^xsd:string ;
+    svo:has_synonym "clam shrimp"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q500917"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Clam_shrimp"^^xsd:string ;
+    rdfs:comment "Clam shrimp are a group of bivalved branchiopod crustaceans that resemble the unrelated bivalved molluscs. They are extant and also known from the fossil record, from at least the Devonian period and perhaps before. They were originally classified in the former order Conchostraca, which later proved to be paraphyletic, due to the fact that water fleas are nested within clam shrimps. Clam shrimp are now divided into three orders, Cyclestherida, Laevicaudata, and Spinicaudata, in addition to the fossil family Leaiidae."^^xsd:string .
+

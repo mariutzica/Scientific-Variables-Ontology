@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:disulfoton a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "disulfoton"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q413904"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Disulfoton"^^xsd:string ;
+    rdfs:comment "Disulfoton is an organophosphate acetylcholinesterase inhibitor used as an insecticide.  It is manufactured under the name Di-Syston by Bayer CropScience. Disulfoton in its pure form is a colorless oil but the technical product used in vegetable fields is dark and yellowish with a sulfur odor. Disulfoton is processed as a liquid into carrier granules, these granules are mixed with fertilizer and clay to be made into a spike, designed to be driven into the ground. The pesticide is absorbed over time by the roots and translocated to all parts of the plant. The pesticide acts as a cholinesterase inhibitor and gives long lasting control."^^xsd:string .
+

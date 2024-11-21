@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gm a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "gm"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q81965"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/General_Motors"^^xsd:string ;
+    rdfs:comment "General Motors Company (GM) is an American multinational automotive manufacturing company headquartered in Detroit, Michigan, United States. The company is most known for owning and manufacturing four automobile brands, Chevrolet, GMC, Cadillac and Buick. By sales, it was the largest automaker in the United States in 2022, and was the largest in the world for 77 years before losing the top spot to Toyota in 2008."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:aldicarb a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "aldicarb"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q63088093"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Aldicarb"^^xsd:string ;
+    rdfs:comment "Aldicarb is a carbamate insecticide which is the active substance in the pesticide Temik.  It is effective against thrips, aphids, spider mites, lygus, fleahoppers, and leafminers, but is primarily used as a nematicide. Aldicarb is a cholinesterase inhibitor which prevents the breakdown of acetylcholine in the synapse. In case of severe poisoning, the victim dies of respiratory failure. "^^xsd:string .
+

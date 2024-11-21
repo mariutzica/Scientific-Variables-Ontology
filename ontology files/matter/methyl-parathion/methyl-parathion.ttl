@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:methyl-parathion a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "methyl-parathion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q421693"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Parathion_methyl"^^xsd:string ;
+    rdfs:comment "Parathion methyl, or methyl parathion, is an organophosphate insecticide, possessing an organothiophosphate group. It is structurally very similar to parathion-ethyl. It is not allowed for sale and import in nearly all countries around the world, while a few allow it under subject to specified conditions only."^^xsd:string .
+

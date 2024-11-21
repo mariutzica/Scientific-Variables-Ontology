@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sulfur-34 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "sulfur-34"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q468081"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isotopes_of_sulfur#Sulfur-34"^^xsd:string ;
+    rdfs:comment "Sulfur (16S) has 23 known isotopes with mass numbers ranging from 27 to 49, four of which are stable: 32S (95.02%), 33S (0.75%), 34S (4.21%), and 36S (0.02%). The preponderance of sulfur-32 is explained by its production from carbon-12 plus successive fusion capture of five helium-4 nuclei, in the so-called alpha process of exploding type II supernovas (see silicon burning)."^^xsd:string .
+

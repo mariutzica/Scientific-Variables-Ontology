@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:anthracene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "anthracene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q422152"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Anthracene"^^xsd:string ;
+    rdfs:comment "Anthracene is a solid polycyclic aromatic hydrocarbon (PAH) of formula C14H10, consisting of three fused benzene rings. It is a component of coal tar. Anthracene is used in the production of the red dye alizarin and other dyes. Anthracene is colorless but exhibits a blue (400–500 nm peak) fluorescence under ultraviolet radiation."^^xsd:string .
+

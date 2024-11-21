@@ -1,0 +1,115 @@
+@prefix : <http://scientificvariablesontology.org/svo/direction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/direction> a owl:Ontology ;
+    owl:imports <http://scientificvariablesontology.org/svo> .
+
+:clockwise a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "clockwise"^^xsd:string .
+
+:downward a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "downward"^^xsd:string .
+
+:downwelling a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "downwelling"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2315892"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Downwelling"^^xsd:string ;
+    rdfs:comment "Downwelling is the downward movement of a fluid parcel and its properties (e.g., salinity, temperature, pH) within a larger fluid.  It is closely related to upwelling, the upward movement of fluid. "^^xsd:string .
+
+:east a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "east"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q684"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/East"^^xsd:string ;
+    rdfs:comment "East or Orient is one of the four cardinal directions or points of the compass. It is the opposite direction from west and is the direction from which the Sun rises on the Earth."^^xsd:string .
+
+:eastward a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "eastward"^^xsd:string .
+
+:incoming a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "incoming"^^xsd:string ;
+    svo:has_synonym "into"^^xsd:string,
+        "inward"^^xsd:string .
+
+:north a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "north"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q659"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/North"^^xsd:string ;
+    rdfs:comment "North is one of the four compass points or cardinal directions. It is the opposite of south and is perpendicular to east and west. North is a noun, adjective, or adverb indicating direction or geography. "^^xsd:string .
+
+:northward a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "northward"^^xsd:string .
+
+:outgoing a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "outgoing"^^xsd:string ;
+    svo:has_synonym "moving-away-from"^^xsd:string,
+        "out-of"^^xsd:string,
+        "outward"^^xsd:string .
+
+:south a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "south"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q667"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/South"^^xsd:string ;
+    rdfs:comment "South is one of the cardinal directions or compass points. The direction is the opposite of north and is perpendicular to both east and west."^^xsd:string .
+
+:southward a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "southward"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q667"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/South"^^xsd:string ;
+    rdfs:comment "South is one of the cardinal directions or compass points. The direction is the opposite of north and is perpendicular to both west and east."^^xsd:string .
+
+:up a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "up"^^xsd:string .
+
+:upstream a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "upstream"^^xsd:string .
+
+:upward a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "upward"^^xsd:string .
+
+:upwelling a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "upwelling"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q215915"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Upwelling"^^xsd:string ;
+    rdfs:comment "Upwelling is  an oceanographic phenomenon that involves   wind-driven motion of dense, cooler, and usually nutrient-rich water from deep water towards the ocean surface. It replaces the warmer and usually nutrient-depleted surface water. The nutrient-rich upwelled water stimulates the growth and reproduction of primary producers such as phytoplankton. The biomass of phytoplankton and the presence of cool water in those regions allow upwelling zones to be identified by cool sea surface temperatures (SST) and high concentrations of chlorophyll-a.The increased availability of nutrients in upwelling regions results in high levels of primary production and thus fishery production.  Approximately 25% of the total global marine fish catches come from five upwellings, which occupy only 5% of the total ocean area. Upwellings that are driven by coastal currents or diverging open ocean have the greatest impact on nutrient-enriched waters and global fishery yields."^^xsd:string .
+
+:west a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "west"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q679"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/West"^^xsd:string ;
+    rdfs:comment "West or Occident is one of the four cardinal directions or points of the compass. It is the opposite direction from east and is the direction in which the Sun sets on the Earth."^^xsd:string .
+
+:westward a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "westward"^^xsd:string .
+
+:x a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "x"^^xsd:string .
+
+:y a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "y"^^xsd:string .
+
+:z a svo:Direction,
+        owl:NamedIndividual ;
+    rdfs:label "z"^^xsd:string .
+

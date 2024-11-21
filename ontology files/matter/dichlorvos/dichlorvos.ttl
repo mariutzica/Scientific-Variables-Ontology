@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dichlorvos a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dichlorvos"^^xsd:string ;
+    svo:has_synonym "2,2-dichlorovinyl-dimethyl-phosphate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q420622"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dichlorvos"^^xsd:string ;
+    rdfs:comment "Dichlorvos (2,2-dichlorovinyl dimethyl phosphate, commonly abbreviated as an DDVP) is an organophosphate widely used as an insecticide to control household pests, in public health, and protecting stored products from insects. The compound has been commercially available since 1961 and has become controversial because of its prevalence in urban waterways and the fact that its toxicity extends well beyond insects. Since 1988, dichlorvos cannot be used as a plant protection product in the EU."^^xsd:string .
+

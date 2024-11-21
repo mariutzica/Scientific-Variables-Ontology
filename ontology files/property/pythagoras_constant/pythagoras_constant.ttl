@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pythagoras_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "pythagoras_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q389813"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Square_root_of_2"^^xsd:string ;
+    rdfs:comment "The square root of 2 (approximately 1.4142) is a positive real number that, when multiplied by itself, equals the number 2. It may be written in mathematics as"^^xsd:string .
+

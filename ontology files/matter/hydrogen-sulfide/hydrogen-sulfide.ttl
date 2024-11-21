@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydrogen-sulfide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "hydrogen-sulfide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q170591"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydrogen_sulfide"^^xsd:string ;
+    rdfs:comment "Hydrogen sulfide is a chemical compound with the formula H2S. It is a colorless chalcogen-hydride gas, and is poisonous, corrosive, and flammable, with trace amounts in ambient atmosphere having a characteristic foul odor of rotten eggs. The underground mine gas term for foul-smelling hydrogen sulfide-rich gas mixtures is stinkdamp. Swedish chemist Carl Wilhelm Scheele is credited with having discovered the chemical composition of purified hydrogen sulfide in 1777. The British English spelling of this compound is hydrogen sulphide, a spelling no longer recommended by the Royal Society of Chemistry or the International Union of Pure and Applied Chemistry."^^xsd:string .
+

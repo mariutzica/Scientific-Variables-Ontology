@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:neureclipsis-crepuscularis a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "neureclipsis-crepuscularis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2135326"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Neureclipsis_crepuscularis"^^xsd:string ;
+    rdfs:comment "Neureclipsis crepuscularis is a species of tube maker caddisflies in the family Polycentropodidae. It is found in North America."^^xsd:string .
+

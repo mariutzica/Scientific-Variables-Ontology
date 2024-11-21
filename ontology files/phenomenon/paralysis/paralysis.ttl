@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paralysis a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "paralysis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q107231"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Paralysis"^^xsd:string ;
+    rdfs:comment "Paralysis (pl.: paralyses; also known as plegia) is a loss of motor function in one or more muscles. Paralysis can also be accompanied by a loss of feeling (sensory loss) in the affected area if there is sensory damage. In the United States, roughly 1 in 50 people have been diagnosed with some form of permanent or transient paralysis. The word \"paralysis\" derives from the Greek παράλυσις, meaning \"disabling of the nerves\" from παρά (para) meaning \"beside, by\" and λύσις (lysis) meaning \"making loose\". A paralysis accompanied by involuntary tremors is usually called \"palsy\"."^^xsd:string .
+

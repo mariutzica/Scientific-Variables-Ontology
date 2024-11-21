@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlorophyll-a a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chlorophyll-a"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q133878"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chlorophyll_a"^^xsd:string ;
+    rdfs:comment "Chlorophyll a is a specific form of chlorophyll used in oxygenic photosynthesis. It absorbs most energy from wavelengths of violet-blue and orange-red light, and it is a poor absorber of green and near-green portions of the spectrum. Chlorophyll does not reflect light but chlorophyll-containing tissues appear green because green light is diffusively reflected by structures like cell walls. This photosynthetic pigment is essential for photosynthesis in eukaryotes, cyanobacteria and prochlorophytes because of its role as primary electron donor in the electron transport chain. Chlorophyll a also transfers resonance energy in the antenna complex, ending in the reaction center where specific chlorophylls P680 and P700 are located."^^xsd:string .
+

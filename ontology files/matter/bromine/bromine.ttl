@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bromine a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "bromine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q879"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bromine"^^xsd:string ;
+    rdfs:comment "Bromine is a chemical element with the symbol Br and atomic number 35. It is a volatile red-brown liquid at room temperature that evaporates readily to form a similarly coloured vapour. Its properties are intermediate between those of chlorine and iodine. Isolated independently by two chemists, Carl Jacob Löwig (in 1825) and Antoine Jérôme Balard (in 1826), its name was derived from the Ancient Greek βρῶμος (bromos) meaning \"stench\", referring to its sharp and pungent smell."^^xsd:string .
+

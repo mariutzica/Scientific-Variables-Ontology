@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:declination a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "declination"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q76287"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Declination"^^xsd:string ;
+    rdfs:comment "In astronomy, declination (abbreviated dec; symbol δ) is one of the two angles that locate a point on the celestial sphere in the equatorial coordinate system, the other being hour angle. The declination angle is measured north (positive) or south (negative) of the celestial equator, along the hour circle passing through the point in question."^^xsd:string .
+

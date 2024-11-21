@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28earth-contains-material%29-has-property-%28down_component_of_electric-e-field%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "earth_material__down_component_of_electric-e-field"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/material> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/down_component> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/earth> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/electric-e-field> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/earth-contains-material> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/down_component_of_electric-e-field> .
+

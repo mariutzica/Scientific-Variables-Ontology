@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:canopy a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "canopy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1134228"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Canopy_(biology)"^^xsd:string ;
+    rdfs:comment "In biology, the canopy is the aboveground portion of a plant cropping or crop, formed by the collection of individual plant crowns. In forest ecology, canopy refers to the upper layer or habitat zone, formed by mature tree crowns and including other biological organisms (epiphytes, lianas, arboreal animals, etc.). The communities that inhabit the canopy layer are thought to be involved in maintaining forest diversity, resilience, and functioning. Shade trees normally have a dense canopy that blocks light from lower growing plants."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:deposit a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "deposit"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1987070"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Deposition_(geology)"^^xsd:string ;
+    rdfs:comment "Deposition is the geological process in which sediments, soil and rocks are added to a landform or landmass. Wind, ice, water, and gravity transport previously weathered surface material, which, at the loss of enough kinetic energy in the fluid, is deposited, building up layers of sediment."^^xsd:string .
+

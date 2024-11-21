@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:modulation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "modulation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q170474"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Modulation"^^xsd:string ;
+    rdfs:comment "In electronics and telecommunications, modulation is the process of varying one or more properties of a periodic waveform, called the carrier signal, with a separate signal called the modulation signal that typically contains information to be transmitted. For example, the modulation signal might be an audio signal representing sound from a microphone, a video signal representing moving images from a video camera, or a digital signal representing a sequence of binary digits, a bitstream from a computer. "^^xsd:string .
+

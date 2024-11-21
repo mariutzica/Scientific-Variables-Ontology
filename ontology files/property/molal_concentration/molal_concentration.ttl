@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:molal_concentration a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "molal_concentration"^^xsd:string ;
+    svo:has_synonym "molality"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q172623"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Molality"^^xsd:string ;
+    rdfs:comment "Molality is a measure of the number of moles of solute in a solution corresponding to 1 kg or 1000 g of solvent. This contrasts with the definition of molarity which is based on a specified volume of solution."^^xsd:string .
+

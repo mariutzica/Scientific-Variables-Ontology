@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cloud-covered a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "cloud-covered"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q830457"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cloud_cover"^^xsd:string ;
+    rdfs:comment "Cloud cover (also known as cloudiness, cloudage, or cloud amount) refers to the fraction of the sky obscured by clouds on average when observed from a particular location. Okta is the usual unit for measurement of the cloud cover. The cloud cover is correlated to the sunshine duration as the least cloudy locales are the sunniest ones while the cloudiest areas are the least sunny places, as clouds can block sunlight, especially at sunrise and sunset where sunlight is already limited."^^xsd:string .
+

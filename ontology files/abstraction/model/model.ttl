@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:model a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "model"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1979154"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Model"^^xsd:string ;
+    rdfs:comment "A model is an informative representation of an object, person or system. The term originally denoted the plans of a building in late 16th-century English, and derived via French and Italian ultimately from Latin modulus, a measure."^^xsd:string .
+

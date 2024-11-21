@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28crop-undergoes-process-rotation%29-contains-part-%28land-undergoes-process-tilling%29> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "crop_rotation_land_tilling"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :land-undergoes-process-tilling ;
+    svo:is_part_of_containing_phenomenon :crop-undergoes-process-rotation .
+

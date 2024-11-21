@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dibenzofuran a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dibenzofuran"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q419513"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dibenzofuran"^^xsd:string ;
+    rdfs:comment "Dibenzofuran is a heterocyclic organic compound with the chemical structure shown at right. It is an aromatic compound that has two benzene rings fused to a central furan ring. All the numbered carbon atoms have a hydrogen atom bonded to each of them. It is a volatile white solid that is soluble in nonpolar organic solvents.  It is obtained from coal tar, where it exists as a 1% component."^^xsd:string .
+

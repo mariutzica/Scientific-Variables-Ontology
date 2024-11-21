@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:door a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "door"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q36794"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Door"^^xsd:string ;
+    rdfs:comment "A door is a hinged or otherwise movable barrier that allows ingress (entry) into and egress (exit) from an enclosure. The created opening in the wall is a doorway or portal. A door's essential and primary purpose is to provide security by controlling access to the doorway (portal). Conventionally, it is a panel that fits into the doorway of a building, room, or vehicle. Doors are generally made of a material suited to the door's task. They are commonly attached by hinges, but can move by other means, such as slides or counterbalancing."^^xsd:string .
+

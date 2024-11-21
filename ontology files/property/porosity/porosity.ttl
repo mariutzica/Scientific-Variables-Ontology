@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:porosity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "porosity"^^xsd:string ;
+    svo:has_synonym "void_fraction"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q622669"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Porosity"^^xsd:string ;
+    rdfs:comment "Porosity or void fraction is a measure of the void (i.e. \"empty\") spaces in a material, and is a fraction of the volume of voids over the total volume, between 0 and 1, or as a percentage between 0% and 100%. Strictly speaking, some tests measure the \"accessible void\", the total amount of void space accessible from the surface (cf. closed-cell foam)."^^xsd:string .
+

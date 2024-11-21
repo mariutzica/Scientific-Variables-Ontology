@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:transect a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "transect"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1447141"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Transect"^^xsd:string ;
+    rdfs:comment "A transect is a path along which one counts and records occurrences of the objects of study (e.g. plants).There are several types of transect. Some are more effective than others.It requires an observer to move along a fixed path and to count occurrences along the path and, at the same time (in some procedures), obtain the distance of the object from the path. This results in an estimate of the area covered and an estimate of the way in which detectability increases from probability 0 (far from the path) towards 1 (near the path). Using the raw count and this probability function, one can arrive at an estimate of the actual density of objects."^^xsd:string .
+

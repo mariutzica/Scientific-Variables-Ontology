@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:simazine a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "simazine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q416160"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Simazine"^^xsd:string ;
+    rdfs:comment "Simazine is an herbicide of the triazine class. The compound is used to control broad-leaved weeds and annual grasses."^^xsd:string .
+

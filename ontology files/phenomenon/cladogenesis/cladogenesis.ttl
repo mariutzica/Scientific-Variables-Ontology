@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cladogenesis a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "cladogenesis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q631768"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cladogenesis"^^xsd:string ;
+    rdfs:comment "Cladogenesis is an evolutionary splitting of a parent species into two distinct species, forming a clade.This event usually occurs when a few organisms end up in new, often distant areas or when environmental changes cause several extinctions, opening up ecological niches for the survivors and causing population bottlenecks and founder effects changing allele frequencies of diverging populations compared to their ancestral population. The events that cause these species to originally separate from each other over distant areas may still allow both of the species to have equal chances of surviving, reproducing, and even evolving to better suit their environments while still being two distinct species due to subsequent natural selection, mutations and genetic drift.Cladogenesis is in contrast to anagenesis, in which an ancestral species gradually accumulates change, and eventually, when enough is accumulated, the species is sufficiently distinct and different enough from its original starting form that it can be labeled as a new form - a new species. Note that with anagenesis the lineage in a phylogenetic tree does not split."^^xsd:string .
+

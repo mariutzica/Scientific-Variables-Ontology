@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:settling a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "settling"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q923906"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Settling"^^xsd:string ;
+    rdfs:comment "Settling is the process by which particulates move towards the bottom of a liquid and form a sediment. Particles that experience a force, either due to gravity or due to centrifugal motion will tend to move in a uniform manner in the direction exerted by that force. For gravity settling, this means that the particles will tend to fall to the bottom of the vessel, forming sludge or slurry at the vessel base."^^xsd:string .
+

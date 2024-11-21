@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:purification a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "purification"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6602446"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Purification"^^xsd:string ;
+    rdfs:comment "Purification is the process of rendering something pure, i.e. clean of foreign elements and/or pollution, and may refer to:"^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chaetogaster a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "chaetogaster"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1058727"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chaetogaster"^^xsd:string ;
+    rdfs:comment "Chaetogaster is a genus belonging to the segmented worms (Annelida). It is classified in the family Naididae (subfamily Naidinae) in the order Oligochaeta. These are ca. 2–25 mm long transparent worms that are very common in fresh water and often form chains of individuals through asexual multiplication."^^xsd:string .
+

@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28atmosphere-contains-aerosol%29-contains-radiation~outgoing~longwave~downward%29-has-property-%28energy_flux%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "atmosphere_aerosol_radiation~outgoing~longwave~downward__energy_flux"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/longwave> ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/aerosol> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/atmosphere>,
+        <http://scientificvariablesontology.org/svo/phenomenon/radiation> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28atmosphere-contains-aerosol%29-contains-radiation~outgoing~longwave~downward> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/energy_flux> .
+

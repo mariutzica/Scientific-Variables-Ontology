@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/air-as-medium-nitrogen~atomic> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "air_nitrogen~atomic"^^xsd:string ;
+    svo:has_medium_participant_phenomenon :air ;
+    svo:has_primary_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/nitrogen~atomic> .
+

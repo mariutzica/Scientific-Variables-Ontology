@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:butachlor a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "butachlor"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q411950"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Butachlor"^^xsd:string ;
+    rdfs:comment "Butachlor is a herbicide of the acetanilide class.  It is used as a selective pre-emergent herbicide.  It is extensively used in India in the form of granules in rice as post emergence herbicide."^^xsd:string .
+

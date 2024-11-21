@@ -1,0 +1,13 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28snowpack%29-has-property-%28time_derivative_of_depth%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "snowpack__time_derivative_of_depth"^^xsd:string ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/time_derivative> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/depth> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/snowpack> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/time_derivative_of_depth> .
+

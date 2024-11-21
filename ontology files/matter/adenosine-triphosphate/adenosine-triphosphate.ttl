@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:adenosine-triphosphate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "adenosine-triphosphate"^^xsd:string ;
+    svo:has_synonym "atp"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q80863"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Adenosine_triphosphate"^^xsd:string ;
+    rdfs:comment "Adenosine triphosphate (ATP) is an organic compound that provides energy to drive and support many processes in living cells, such as muscle contraction, nerve impulse propagation, condensate dissolution, and chemical synthesis. Found in all known forms of life, ATP is often referred to as the \"molecular unit of currency\" of intracellular energy transfer.  When consumed in metabolic processes, it converts either to adenosine diphosphate (ADP) or to adenosine monophosphate (AMP). Other processes regenerate ATP. The human body recycles its own body weight equivalent in ATP each day.  It is also a precursor to DNA and RNA, and is used as a coenzyme."^^xsd:string .
+

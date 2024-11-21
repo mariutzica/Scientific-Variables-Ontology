@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:germanium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "germanium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q867"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Germanium"^^xsd:string ;
+    rdfs:comment "Germanium is a chemical element with the symbol Ge and atomic number 32. It is lustrous, hard-brittle, grayish-white and similar in appearance to silicon. It is a metalloid in the carbon group that is chemically similar to its group neighbors silicon and tin. Like silicon, germanium naturally reacts and forms complexes with oxygen in nature."^^xsd:string .
+

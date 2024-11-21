@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:wave_impedance a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "wave_impedance"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2496406"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Wave_impedance"^^xsd:string ;
+    rdfs:comment "The wave impedance of an electromagnetic wave is the ratio of the  transverse components of the electric and magnetic fields (the transverse components being those at right angles to the direction of propagation). For a transverse-electric-magnetic (TEM) plane wave traveling through a homogeneous medium, the wave impedance is everywhere equal to the intrinsic impedance of the medium. In particular, for a plane wave travelling through empty space, the wave impedance is equal to the impedance of free space. The symbol Z  is used to represent it and it is expressed in units of ohms. The symbol η (eta) may be used instead of Z for wave impedance to avoid confusion with electrical impedance."^^xsd:string .
+

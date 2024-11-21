@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:forest a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "forest"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4421"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Forest"^^xsd:string ;
+    rdfs:comment "A forest is an area of land dominated by trees. Hundreds of definitions of forest are used throughout the world, incorporating factors such as tree density, tree height, land use, legal standing, and ecological function. The United Nations' Food and Agriculture Organization (FAO) defines a forest as, \"Land spanning more than 0.5 hectares with trees higher than 5 meters and a canopy cover of more than 10 percent, or trees able to reach these thresholds in situ. It does not include land that is predominantly under agricultural or urban use.\" Using this definition, Global Forest Resources Assessment 2020 (FRA 2020) found that forests covered 4.06 billion hectares (10.0 billion acres; 40.6 million square kilometres; 15.7 million square miles), or approximately 31 percent of the world's land area in 2020.Forests are the predominant terrestrial ecosystem of Earth, and are found around the globe. More than half of the world's forests are found in only five countries (Brazil, Canada, China, Russia, and the United States). The largest share of forests (45 percent) are in the tropical latitudes, followed by those in the boreal, temperate, and subtropic domains.Forests account for 75% of the gross primary production of the Earth's biosphere, and contain 80% of the Earth's plant biomass. Net primary production is estimated at 21.9 gigatonnes of biomass per year for tropical forests, 8.1 for temperate forests, and 2.6 for boreal forests.Forests at different latitudes and elevations, and with different precipitation and evapotranspiration form distinctly different biomes: boreal forests around the North Pole, tropical moist forests and tropical dry forests around the Equator, and temperate forests at the middle latitudes. Areas at higher elevations tend to support forests similar to those at higher latitudes, and the amount of precipitation also affects forest composition."^^xsd:string .
+

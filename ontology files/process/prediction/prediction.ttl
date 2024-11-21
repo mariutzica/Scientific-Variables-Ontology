@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:prediction a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "prediction"^^xsd:string ;
+    svo:has_synonym "prediction"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q748250"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Prediction"^^xsd:string ;
+    rdfs:comment "A prediction (Latin præ-, \"before,\" and dictum, \"something said\") or  forecast is a statement about a future event or about future data. Predictions are often, but not always, based upon experience or knowledge of forecasters. There is no universal agreement about the exact difference between \"prediction\" and \"estimation\"; different authors and disciplines ascribe different connotations."^^xsd:string .
+

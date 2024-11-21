@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:goniadidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "goniadidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3921024"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Goniadidae"^^xsd:string ;
+    rdfs:comment "Goniadidae is a family of marine worms within the Polychaeta.  Goniadids have long, slender bodies and can grow up to 260mm in length, although most are less than 50mm long.  Goniadids have an eversible proboscis with a circlet of chitinous jaws around the terminal end."^^xsd:string .
+

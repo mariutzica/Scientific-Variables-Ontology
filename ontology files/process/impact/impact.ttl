@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:impact a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "impact"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4115667"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Impact_(mechanics)"^^xsd:string ;
+    rdfs:comment "In mechanics,  an impact is a high force or shock applied over a short time period when two or more bodies collide.  Such a force or acceleration usually has a greater effect than a lower force applied over a proportionally longer period. The effect depends critically on the relative velocity of the bodies to one another."^^xsd:string .
+

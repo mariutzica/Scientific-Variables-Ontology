@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:1-methylnaphthalene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "1-methylnaphthalene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q161656"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/1-Methylnaphthalene"^^xsd:string ;
+    rdfs:comment "1-Methylnaphthalene is an organic compound with the formula CH3C10H7. It is a colorless liquid. It is isomeric with 2-methylnaphthalene."^^xsd:string .
+

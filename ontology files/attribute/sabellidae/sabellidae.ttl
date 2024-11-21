@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sabellidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "sabellidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1400752"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sabellidae"^^xsd:string ;
+    rdfs:comment "Sabellidae, or feather duster worms, are a family of marine polychaete tube worms characterized by protruding feathery branchiae.  Sabellids build tubes out of a tough, parchment-like exudate, strengthened with sand and bits of shell. Unlike the other sabellids, the genus Glomerula secretes a tube of calcium carbonate instead. Sabellidae can be found in subtidal habitats around the world. Their oldest fossils are known from the Early Jurassic."^^xsd:string .
+

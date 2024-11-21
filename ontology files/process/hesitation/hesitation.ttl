@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hesitation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "hesitation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q12348865"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hesitation"^^xsd:string ;
+    rdfs:comment "Hesitation or hesitating is the psychological process of pausing in the course of making a decision or taking an action, typically due to uncertainty as to the best course of action. Hesitation is described in both positive and negative terms, with some perceiving it as an indication of thoughtfulness, while others characterize it as a sign of indecisiveness or lack of the will to act. In literature, a period of hesitation on the part of a key character has sometimes been depicted as having substantial consequences."^^xsd:string .
+

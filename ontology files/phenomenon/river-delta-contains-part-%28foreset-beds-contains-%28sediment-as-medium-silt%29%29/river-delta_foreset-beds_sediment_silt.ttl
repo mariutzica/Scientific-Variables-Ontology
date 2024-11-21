@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:river-delta-contains-part-%28foreset-beds-contains-%28sediment-as-medium-silt%29%29 a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "river-delta_foreset-beds_sediment_silt"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :foreset-beds-contains-%28sediment-as-medium-silt%29 ;
+    svo:is_part_of_containing_phenomenon :river-delta .
+

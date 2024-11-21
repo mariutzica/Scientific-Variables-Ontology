@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:plant a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "plant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q756"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Plant"^^xsd:string ;
+    rdfs:comment "Plants are predominantly photosynthetic eukaryotes, forming the kingdom Plantae. Many are multicellular. Historically, the plant kingdom encompassed all living things that were not animals, and included algae and fungi. All current definitions exclude the fungi and some of the algae. By one definition, plants form the clade Viridiplantae (Latin for \"green plants\") which consists of the green algae and the embryophytes or land plants. The latter include hornworts, liverworts, mosses, lycophytes, ferns, conifers and other gymnosperms, and flowering plants. A definition based on genomes includes the Viridiplantae, along with the red algae and the glaucophytes, in the clade Archaeplastida."^^xsd:string .
+

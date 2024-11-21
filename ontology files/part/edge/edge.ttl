@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/part/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:edge a svo:Part,
+        owl:NamedIndividual ;
+    rdfs:label "edge"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q26382"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Edge_(geometry)"^^xsd:string ;
+    rdfs:comment "In geometry, an edge is a particular type of line segment joining two vertices in a polygon, polyhedron, or higher-dimensional polytope. In a polygon, an edge is a line segment on the boundary, and is often called a polygon side. In a polyhedron or more generally a polytope, an edge is a line segment where two faces (or polyhedron sides) meet. A segment joining two vertices while passing through the interior or exterior is not an edge but instead is called a diagonal."^^xsd:string .
+

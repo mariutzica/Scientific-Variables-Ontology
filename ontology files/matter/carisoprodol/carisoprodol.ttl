@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:carisoprodol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "carisoprodol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q416905"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Carisoprodol"^^xsd:string ;
+    rdfs:comment "Carisoprodol, sold under the brand name Soma among others, is a medication used for musculoskeletal pain. Use is only approved for up to three weeks. Effects generally begin within half an hour and last for up to six hours. It is taken orally.Common side effects include headache, dizziness, and sleepiness. Serious side effect may include addiction, allergic reactions, and seizures. In people with a sulfa allergy certain formulations may result in problems. Safety during pregnancy and breastfeeding is not clear. How it works is not clear. Some of its effects are believed to occur following being converted into meprobamate.Carisoprodol was approved for medical use in the United States in 1959. Its approval in the European Union was withdrawn in 2008. It is available as a generic medication. In 2019, it was the 343rd most commonly prescribed medication in the United States, with more than 800 thousand prescriptions. In the United States, it is a Schedule IV controlled substance."^^xsd:string .
+

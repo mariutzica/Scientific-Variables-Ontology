@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hartree_energy_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "hartree_energy_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q476572"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hartree"^^xsd:string ;
+    rdfs:comment "The hartree (symbol: Eh or Ha), also known as the Hartree energy, is the unit of energy in the Hartree atomic units system, named after the British physicist Douglas Hartree. Its CODATA recommended value is Eh = 4.3597447222071(85)×10−18 J = 27.211386245988(53) eV.The hartree energy is approximately the electric potential energy of the hydrogen atom in its ground state and, by the virial theorem, approximately twice its ionization energy; the relationships are not exact because of the finite mass of the nucleus of the hydrogen atom and relativistic corrections."^^xsd:string .
+

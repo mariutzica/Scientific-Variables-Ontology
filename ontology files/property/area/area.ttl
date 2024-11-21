@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:area a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "area"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11500"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Area"^^xsd:string ;
+    rdfs:comment "Area is the measure of a region's size on a surface. The area of a plane region or plane area refers to the area of a shape or planar lamina, while surface area refers to the area of an open surface or the boundary of a three-dimensional object. Area can be understood as the amount of material with a given thickness that would be necessary to fashion a model of the shape, or the amount of paint necessary to cover the surface with a single coat. It is the two-dimensional analogue of the length of a curve (a one-dimensional concept) or the volume of a solid (a three-dimensional concept)."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dynamic_viscosity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "dynamic_viscosity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q128709"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Viscosity#Dynamic_viscosity"^^xsd:string ;
+    rdfs:comment "The viscosity of a fluid is a measure of its resistance to deformation at a given rate. For liquids, it corresponds to the informal concept of \"thickness\": for example, syrup has a higher viscosity than water. Viscosity is defined scientifically as a force multiplied by a time divided by an area. Thus its SI units are newton-seconds per square meter, or pascal-seconds."^^xsd:string .
+

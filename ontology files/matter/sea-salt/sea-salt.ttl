@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sea-salt a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "sea-salt"^^xsd:string ;
+    svo:has_synonym "seasalt"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q282694"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sea_salt"^^xsd:string ;
+    rdfs:comment "Sea salt is salt that is produced by the evaporation of seawater. It is used as a seasoning in foods, cooking, cosmetics and for preserving food. It is also called bay salt, solar salt, or simply salt. Like mined rock salt, production of sea salt has been dated to prehistoric times."^^xsd:string .
+

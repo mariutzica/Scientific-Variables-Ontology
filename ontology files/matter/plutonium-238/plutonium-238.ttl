@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:plutonium-238 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "plutonium-238"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2663606"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Plutonium-238"^^xsd:string ;
+    rdfs:comment "Plutonium-238 (238Pu or Pu-238) is a fissile, radioactive isotope of plutonium that has a half-life of 87.7 years."^^xsd:string .
+

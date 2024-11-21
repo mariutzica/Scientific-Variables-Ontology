@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:superheating a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "superheating"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q644139"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Superheating"^^xsd:string ;
+    rdfs:comment "In thermodynamics, superheating (sometimes referred to as boiling retardation, or boiling delay) is the phenomenon in which a liquid is heated to a temperature higher than its boiling point, without boiling. This is a so-called metastable state or metastate, where boiling might occur at any time, induced by external or internal effects. Superheating is achieved by heating a homogeneous substance in a clean container, free of nucleation sites, while taking care not to disturb the liquid. "^^xsd:string .
+

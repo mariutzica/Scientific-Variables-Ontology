@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28soil-contains-as-medium-%28as-nitrogen-undergoes-process-denitrification%29%29-has-property-%28average_of_mass_rate%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "soil_as-nitrogen_denitrification__average_of_mass_rate"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/nitrogen>,
+        <http://scientificvariablesontology.org/svo/matter/soil> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/average> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/denitrification> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/mass_rate> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/soil-contains-as-medium-%28as-nitrogen-undergoes-process-denitrification%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/average_of_mass_rate> ;
+    svo:has_original_label "soil_nitrogen__average_of_mass_denitrification_rate"^^xsd:string .
+

@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:synnecrosis a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "synnecrosis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1823478"^^xsd:string ;
+    rdfs:comment "effect that a pair of organisms (intraspecific or interspecific) living together in an ecosystem have on each other"^^xsd:string .
+

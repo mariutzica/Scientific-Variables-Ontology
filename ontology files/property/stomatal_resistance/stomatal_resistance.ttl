@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:stomatal_resistance a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "stomatal_resistance"^^xsd:string ;
+    svo:has_synonym "inverse_of_stomatal_conductance"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7618701"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Stomatal_conductance"^^xsd:string ;
+    rdfs:comment "Stomatal conductance, usually measured in mmol m−2 s−1 by a porometer, estimates the rate of gas exchange (i.e., carbon dioxide uptake) and transpiration (i.e., water loss as water vapor) through the leaf stomata as determined by the degree of stomatal aperture (and therefore the physical resistances to the movement of gases between the air and the interior of the leaf).The stomatal conductance, or its inverse, stomatal resistance, is under the direct biological control of the leaf through its guard cells, which surround the stomatal pore. The turgor pressure and osmotic potential of guard cells are directly related to the stomatal conductance."^^xsd:string .
+

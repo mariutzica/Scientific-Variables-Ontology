@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:farmer a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "farmer"^^xsd:string ;
+    svo:has_synonym "agriculturer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q131512"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Farmer"^^xsd:string ;
+    rdfs:comment "A farmer is a person engaged in agriculture, raising living organisms for food or raw materials. The term usually applies to people who do some combination of raising field crops, orchards, vineyards, poultry, or other livestock. A farmer might own the farm land or might work as a laborer on land owned by others. In most developed economies, a \"farmer\" is usually a farm owner (landowner), while employees of the farm are known as farm workers (or farmhands). However, in other older definitions a farmer was a person who promotes or improves the growth of plants, land or crops or raises animals (as livestock or fish) by labor and attention."^^xsd:string .
+

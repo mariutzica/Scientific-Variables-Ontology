@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:atom a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "atom"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q9121"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Atom"^^xsd:string ;
+    rdfs:comment "An atom is a particle that consists of a nucleus of protons and neutrons surrounded by a cloud of electrons. The atom is the basic particle of the chemical elements, and the chemical elements are distinguished from each other by the number of protons that are in their atoms. For example, any atom that contains 11 protons is sodium, and any atom that contains 29 protons is copper. The number of neutrons defines the isotope of the element."^^xsd:string .
+

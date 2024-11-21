@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:comminution a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "comminution"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q191671"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Comminution"^^xsd:string ;
+    rdfs:comment "Comminution is the reduction of solid materials from one average particle size to a smaller average particle size, by crushing, grinding, cutting, vibrating, or other processes. In geology, it occurs naturally during faulting in the upper part of the Earth's crust. In industry, it is an important unit operation in mineral processing, ceramics, electronics, and other fields, accomplished with many types of mill. In dentistry, it is the result of mastication of food. In general medicine, it is one of the most traumatic forms of bone fracture."^^xsd:string .
+

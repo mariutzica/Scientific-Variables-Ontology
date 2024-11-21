@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:amphidromic a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "amphidromic"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q474837"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Amphidromic_point"^^xsd:string ;
+    rdfs:comment "An amphidromic point, also called a tidal node, is a geographical location which has zero tidal amplitude for one harmonic constituent of the tide. The tidal range (the peak-to-peak amplitude, or the height difference between high tide and low tide) for that harmonic constituent increases with distance from this point, though not uniformly. As such, the concept of amphidromic points is crucial to understanding tidal behaviour. The term derives from the Greek words amphi (\"around\") and dromos (\"running\"), referring to the rotary tides which circulate around amphidromic points. It was first discovered by William Whewell, who extrapolated the cotidal lines from the coast of the North Sea and found that the lines must meet at some point."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bulk_richardson_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "bulk_richardson_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1004118"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bulk_Richardson_number"^^xsd:string ;
+    rdfs:comment "The Bulk Richardson Number (BRN) is an approximation of the Gradient Richardson number. The BRN is a dimensionless ratio in meteorology related to the consumption of turbulence divided by the shear production (the generation of turbulence kinetic energy caused by wind shear) of turbulence. It is used to show dynamic stability and the formation of turbulence."^^xsd:string .
+

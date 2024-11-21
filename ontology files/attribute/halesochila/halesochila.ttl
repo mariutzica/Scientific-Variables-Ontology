@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:halesochila a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "halesochila"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q18523578"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Halesochila"^^xsd:string ;
+    rdfs:comment "Halesochila is a genus of northern caddisflies in the family Limnephilidae. There is one described species in Halesochila, H. taylori."^^xsd:string .
+

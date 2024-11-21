@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mole_fraction a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "mole_fraction"^^xsd:string ;
+    svo:has_synonym "molar_fraction"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q125264"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mole_fraction"^^xsd:string ;
+    rdfs:comment "In chemistry, the mole fraction or molar fraction (xi or χi) is defined as unit of the amount of a constituent (expressed in moles), ni, divided by the total amount of all constituents in a mixture (also expressed in moles), ntot. This expression is given below:"^^xsd:string .
+

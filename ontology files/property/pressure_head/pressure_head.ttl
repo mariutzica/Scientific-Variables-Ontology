@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pressure_head a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "pressure_head"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1190625"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pressure_head"^^xsd:string ;
+    rdfs:comment "In fluid mechanics, pressure head is the height of a liquid column that corresponds to a particular pressure exerted by the liquid column on the base of its container. It may also be called static pressure head or simply static head (but not static head pressure). "^^xsd:string .
+

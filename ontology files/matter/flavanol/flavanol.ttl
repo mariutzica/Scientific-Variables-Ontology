@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:flavanol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "flavanol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q20898120"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Flavan-3-ol"^^xsd:string ;
+    rdfs:comment "Flavan-3-ols (sometimes referred to as flavanols) are a subgroup of flavonoids. They are derivatives of flavans that possess a 2-phenyl-3,4-dihydro-2H-chromen-3-ol skeleton. Flavan-3-ols are structurally diverse and include a range of compounds, such as catechin, epicatechin gallate, epigallocatechin, epigallocatechin gallate, proanthocyanidins, theaflavins, thearubigins. They play a part in plant defense and are present in the majority of plants."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:inorganic a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "inorganic"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q190065"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Inorganic_compound"^^xsd:string ;
+    rdfs:comment "In chemistry, an inorganic compound is typically a chemical compound that lacks carbon–hydrogen bonds, that is, a compound that is not an organic compound. The study of inorganic compounds is a subfield of chemistry known as inorganic chemistry."^^xsd:string .
+

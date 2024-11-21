@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lifting-condensation-level a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "lifting-condensation-level"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3055189"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lifted_condensation_level"^^xsd:string ;
+    rdfs:comment "The lifted condensation level or lifting condensation level (LCL) is formally defined as the height at which the relative humidity (RH) of an air parcel will reach 100% with respect to liquid water when it is cooled by dry adiabatic lifting. The RH of air increases when it is cooled, since the amount of water vapor in the air (i.e., its specific humidity) remains constant, while the saturation vapor pressure decreases almost exponentially with decreasing temperature. If the air parcel is lifting further beyond the LCL, water vapor in the air parcel will begin condensing, forming cloud droplets. (In the real atmosphere, it is usually necessary for air to be slightly supersaturated, normally by around 0.5%, before condensation occurs; this translates into about 10 meters or so of additional lifting above the LCL.)  The LCL is a good approximation of the height of the cloud base which will be observed on days when air is lifted mechanically from the surface to the cloud base (e.g., due to convergence of airmasses)."^^xsd:string .
+

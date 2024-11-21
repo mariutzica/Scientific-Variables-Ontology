@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:decomposed a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "decomposed"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q339062"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Decomposition"^^xsd:string ;
+    rdfs:comment "Decomposition or rot is the process by which dead organic substances are broken down into simpler organic or inorganic matter such as carbon dioxide, water, simple sugars and mineral salts. The process is a part of the nutrient cycle and is essential for recycling the finite matter that occupies physical space in the biosphere. Bodies of living organisms begin to decompose shortly after death. Animals, such as earthworms, also help decompose the organic materials. Organisms that do this are known as decomposers or detritivores. Although no two organisms decompose in the same way, they all undergo the same sequential stages of decomposition. The science which studies decomposition is generally referred to as taphonomy from the Greek word taphos, meaning tomb. Decomposition can also be a gradual process for organisms that have extended periods of dormancy."^^xsd:string .
+

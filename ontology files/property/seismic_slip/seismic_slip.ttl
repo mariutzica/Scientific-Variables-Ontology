@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:seismic_slip a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "seismic_slip"^^xsd:string ;
+    svo:has_synonym "slip_vector"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q47089"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fault_(geology)#Slip.2C_heave.2C_throw"^^xsd:string ;
+    rdfs:comment "In geology, a fault is a planar fracture or discontinuity in a volume of rock across which there has been significant displacement as a result of rock-mass movements. Large faults within Earth's crust result from the action of plate tectonic forces, with the largest forming the boundaries between the plates, such as the megathrust faults of subduction zones or transform faults. Energy release associated with rapid movement on active faults is the cause of most earthquakes. Faults may also displace slowly, by aseismic creep.A fault plane is the plane that represents the fracture surface of a fault. A fault trace or fault line is a place where the fault can be seen or mapped on the surface. A fault trace is also the line commonly plotted on geologic maps to represent a fault.A fault zone is a cluster of parallel faults. However, the term is also used for the zone of crushed rock along a single fault. Prolonged motion along closely spaced faults can blur the distinction, as the rock between the faults is converted to fault-bound lenses of rock and then progressively crushed."^^xsd:string .
+

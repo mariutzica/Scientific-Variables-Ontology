@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bosmina a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "bosmina"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q618980"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bosmina"^^xsd:string ;
+    rdfs:comment "Bosmina is a genus in the order Cladocera, the water fleas. Its members can be distinguished from those of Bosminopsis (the only other genus in the family Bosminidae) by the separation of the antennae; in Bosminopsis, the antennae are fused at their bases.Bosmina are filter feeders consuming algae and protozoans about 1–3 μm long. Bosmina are known to have a dual feeding mechanism. They can filter the water using their second and third legs and the first leg will grab the particles. The second and third legs have small setules attached to the seta to make a mesh-like structure for filtering.Some Bosmina species are non-native species, many of which pose a great threat to aquatic ecosystems."^^xsd:string .
+

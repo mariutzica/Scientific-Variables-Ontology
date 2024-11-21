@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dibutyltin-diacetate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dibutyltin-diacetate"^^xsd:string ;
+    svo:has_synonym "Stannane,-bis(acetyloxy)dibutyl-"^^xsd:string,
+        "dibutyltin-dilaurate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q15632742"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dibutyltin_dilaurate"^^xsd:string ;
+    rdfs:comment "Dibutyltin dilaurate (abbreviated DBTDL) is an organotin compound with the formula (CH3(CH2)10CO2)2Sn((CH2)3CH3)2. It is a colorless viscous and oily liquid. It is used as a catalyst ."^^xsd:string .
+

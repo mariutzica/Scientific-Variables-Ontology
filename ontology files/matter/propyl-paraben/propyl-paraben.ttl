@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:propyl-paraben a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "propyl-paraben"^^xsd:string ;
+    svo:has_synonym "Benzoic-acid,-4-hydroxy-,-propyl-ester"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q511627"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Propylparaben"^^xsd:string ;
+    rdfs:comment "Propylparaben, the n-propyl ester of p-hydroxybenzoic acid, occurs as a natural substance found in many plants and some insects, although it is manufactured synthetically for use in cosmetics, pharmaceuticals, and foods. It is a member of the class of parabens.  It is a preservative typically found in many water-based cosmetics, such as creams, lotions, shampoos, and bath products.  As a food additive, it has the E number E216."^^xsd:string .
+

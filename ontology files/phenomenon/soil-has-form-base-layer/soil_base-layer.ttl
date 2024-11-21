@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:soil-has-form-base-layer a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "soil_base-layer"^^xsd:string ;
+    svo:has_form <http://scientificvariablesontology.org/svo/form/base-layer> ;
+    svo:has_matter <http://scientificvariablesontology.org/svo/matter/soil> .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sodium-adsorption-ratio_sodicity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "sodium-adsorption-ratio_sodicity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7553296"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sodium_adsorption_ratio"^^xsd:string ;
+    rdfs:comment "The sodium adsorption ratio (SAR) is an irrigation water quality parameter used in the management of sodium-affected soils. It is an indicator of the suitability of water for use in agricultural irrigation, as determined from the concentrations of the main alkaline and earth alkaline cations present in the water. It is also a standard diagnostic parameter for the sodicity hazard of a soil, as determined from analysis of pore water extracted from the soil.The formula for calculating the sodium adsorption ratio (SAR) is:"^^xsd:string .
+

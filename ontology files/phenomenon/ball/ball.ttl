@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ball a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "ball"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q18545"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Ball"^^xsd:string ;
+    rdfs:comment "A ball is a round object (usually spherical, but can sometimes be ovoid) with several uses. It is used in ball games, where the play of the game follows the state of the ball as it is hit, kicked or thrown by players. Balls can also be used for simpler activities, such as catch or juggling. Balls made from hard-wearing materials are used in engineering applications to provide very low friction bearings, known as ball bearings. Black-powder weapons use stone and metal balls as projectiles."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:refraction a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "refraction"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q72277"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Refraction"^^xsd:string ;
+    rdfs:comment "In physics, refraction is the redirection of a wave as it passes from one medium to another. The redirection can be caused by the wave's change in speed or by a change in the medium. Refraction of light is the most commonly observed phenomenon, but other waves such as sound waves and water waves also experience refraction. How much a wave is refracted is determined by the change in wave speed and the initial direction of wave propagation relative to the direction of change in speed."^^xsd:string .
+

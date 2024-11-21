@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:automobile a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "automobile"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1420"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Car"^^xsd:string ;
+    rdfs:comment "A car or automobile is a motor vehicle with wheels. Most definitions of cars say that they run primarily on roads, seat one to eight people, have four wheels, and mainly transport people (rather than goods).French inventor Nicolas-Joseph Cugnot built the first steam-powered road vehicle in 1769, while Swiss inventor François Isaac de Rivaz designed and constructed the first internal combustion powered automobile in 1808. The modern car—a practical, marketable automobile for everyday use—was invented in 1886, when German inventor Carl Benz patented his Benz Patent-Motorwagen. Commercial cars became widely available during the 20th century. One of the first cars affordable by the masses was the 1908 Model T, an American car manufactured by the Ford Motor Company. Cars were rapidly adopted in the US, where they replaced horse-drawn carriages. In Europe and other parts of the world, demand for automobiles did not increase until after World War II. The car is considered an essential part of the developed economy."^^xsd:string .
+

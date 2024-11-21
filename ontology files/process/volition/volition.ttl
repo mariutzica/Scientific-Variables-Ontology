@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:volition a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "volition"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1441519"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Volition_(psychology)"^^xsd:string ;
+    rdfs:comment "Volition or will is the cognitive process by which an individual decides on and commits to a particular course of action. It is defined as purposive striving and is one of the primary human psychological functions. Others include affect (feeling or emotion), motivation (goals and expectations), and cognition (thinking). Volitional processes can be applied consciously or they can be automatized as habits over time."^^xsd:string .
+

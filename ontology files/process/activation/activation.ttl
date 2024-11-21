@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:activation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "activation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4661718"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Activation"^^xsd:string ;
+    rdfs:comment "Activation, in chemistry and biology, is the process whereby something is prepared or excited for a subsequent reaction."^^xsd:string .
+

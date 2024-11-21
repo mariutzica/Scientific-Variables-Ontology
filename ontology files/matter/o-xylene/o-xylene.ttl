@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:o-xylene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "o-xylene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2988108"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/O-Xylene"^^xsd:string ;
+    rdfs:comment "o-Xylene (ortho-xylene) is an aromatic hydrocarbon with the formula C6H4(CH3)2, with two methyl substituents bonded to adjacent carbon atoms of a benzene ring (the ortho configuration). It is a constitutional isomer of m-xylene and p-xylene, the mixture being called xylene or xylenes.  o-Xylene is a colourless slightly oily flammable liquid."^^xsd:string .
+

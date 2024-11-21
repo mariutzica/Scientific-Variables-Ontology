@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28soil-contains-macropores%29-as-medium-water> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "soil_macropores_water"^^xsd:string ;
+    svo:has_medium_participant_phenomenon :soil-contains-macropores ;
+    svo:has_primary_participant_phenomenon :water .
+

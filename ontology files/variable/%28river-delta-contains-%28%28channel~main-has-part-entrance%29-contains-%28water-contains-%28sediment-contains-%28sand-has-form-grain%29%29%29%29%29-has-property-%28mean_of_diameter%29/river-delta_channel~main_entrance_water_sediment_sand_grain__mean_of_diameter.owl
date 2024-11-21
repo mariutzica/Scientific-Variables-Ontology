@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28river-delta-contains-%28%28channel~main-has-part-entrance%29-contains-%28water-contains-%28sediment-contains-%28sand-has-form-grain%29%29%29%29%29-has-property-%28mean_of_diameter%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/river-delta-contains-%28%28channel~main-has-part-entrance%29-contains-%28water-contains-%28sediment-contains-%28sand-has-form-grain%29%29%29%29"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/mean_of_diameter"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/grain"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/river-delta"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/water"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/sediment"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/sand"/>
+  <svo:contains_form_reference_to rdf:resource="http://scientificvariablesontology.org/svo/form/channel"/>
+  <svo:contains_attribute_reference_to rdf:resource="http://scientificvariablesontology.org/svo/attribute/main"/>
+  <svo:contains_role_reference_to rdf:resource="http://scientificvariablesontology.org/svo/role/entrance"/>
+  <svo:contains_operation_reference_to rdf:resource="http://scientificvariablesontology.org/svo/operation/mean"/>
+  <svo:contains_property_reference_to rdf:resource="http://scientificvariablesontology.org/svo/property/diameter"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">river-delta_channel~main_entrance_water_sediment_sand_grain__mean_of_diameter</rdfs:label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">delta_channel~main_entrance_water_sediment_sand_grain__mean_of_diameter</svo:has_original_label>
+</owl:NamedIndividual>
+</rdf:RDF>

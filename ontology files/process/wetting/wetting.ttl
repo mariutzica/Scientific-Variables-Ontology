@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:wetting a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "wetting"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q817136"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Wetting"^^xsd:string ;
+    rdfs:comment "Wetting is the ability of a liquid to maintain contact with a solid surface, resulting from intermolecular interactions when the two are brought together. This happens in presence of a gaseous phase or another liquid phase not miscible with the first one. The degree of wetting (wettability) is determined by a force balance between adhesive and cohesive forces. There are two types of wetting: non-reactive wetting and reactive wetting."^^xsd:string .
+

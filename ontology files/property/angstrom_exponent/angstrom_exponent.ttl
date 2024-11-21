@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:angstrom_exponent a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "angstrom_exponent"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2575475"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Angstrom_exponent"^^xsd:string ;
+    rdfs:comment "The Angstrom exponent or Ångström exponent is a parameter that describes how the optical thickness of an aerosol typically depends on the wavelength of the light."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:noctuidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "noctuidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q459180"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Noctuidae"^^xsd:string ;
+    rdfs:comment "The Noctuidae, commonly known as owlet moths, cutworms or armyworms, are a family of moths. They are considered the most controversial family in the superfamily Noctuoidea because many of the clades are constantly changing, along with the other families of the Noctuoidea. It was considered the largest family in Lepidoptera for a long time, but after regrouping Lymantriinae, Catocalinae and Calpinae within the family Erebidae, the latter holds this title now. Currently, Noctuidae is the second largest family in Noctuoidea, with about 1,089 genera and 11,772 species. This classification is still contingent, as more changes continue to appear between Noctuidae and Erebidae."^^xsd:string .
+

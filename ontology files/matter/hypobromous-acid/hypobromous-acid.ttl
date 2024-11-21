@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hypobromous-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "hypobromous-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q414695"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hypobromous_acid"^^xsd:string ;
+    rdfs:comment "Hypobromous acid is a weak, unstable acid with chemical formula of HOBr.  It is mainly produced and handled in an aqueous solution.  It is generated both biologically and commercially as a disinfectant. Salts of hypobromite are rarely isolated as solids."^^xsd:string .
+

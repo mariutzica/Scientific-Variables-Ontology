@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:isothermal a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "isothermal"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q486921"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isothermal_process"^^xsd:string ;
+    rdfs:comment "In thermodynamics, an isothermal process is a type of thermodynamic process in which the temperature T of a system remains constant: ΔT = 0. This typically occurs when a system is in contact with an outside thermal reservoir, and a change in the system occurs slowly enough to allow the system to be continuously adjusted to the temperature of the reservoir through heat exchange (see quasi-equilibrium). In contrast, an adiabatic process is where a system exchanges no heat with its surroundings (Q = 0)."^^xsd:string .
+

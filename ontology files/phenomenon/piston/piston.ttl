@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:piston a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "piston"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q45227"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Piston"^^xsd:string ;
+    rdfs:comment "A piston is a component of reciprocating engines, reciprocating pumps, gas compressors, hydraulic cylinders and pneumatic cylinders, among other similar mechanisms. It is the moving component that is contained by a cylinder and is made gas-tight by piston rings. In an engine, its purpose is to transfer force from expanding gas in the cylinder to the crankshaft via a piston rod and/or connecting rod. In a pump, the function is reversed and force is transferred from the crankshaft to the piston for the purpose of compressing or ejecting the fluid in the cylinder. In some engines, the piston also acts as a valve by covering and uncovering ports in the cylinder."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlordane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chlordane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q417134"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chlordane"^^xsd:string ;
+    rdfs:comment "Chlordane, or chlordan, is an organochlorine compound that was used as a pesticide. It is a white solid.  In the United States, chlordane was used for termite-treatment of approximately 30 million homes until it was banned in 1988. Chlordane was banned 10 years earlier for food crops like corn and citrus, and on lawns and domestic gardens.Like other chlorinated cyclodiene insecticides, chlordane is classified as an organic pollutant hazardous for human health. It is resistant to degradation in the environment and in humans/animals and readily accumulates in lipids (fats) of humans and animals. Exposure to the compound has been linked to cancers, diabetes, and neurological disorders."^^xsd:string .
+

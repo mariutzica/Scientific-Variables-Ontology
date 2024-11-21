@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:2%2C3%2C4-trimethylpentane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "2,3,4-trimethylpentane"^^xsd:string ;
+    svo:has_synonym "pentane,-2,3,4-trimethyl-"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2813774"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/2,3,4-Trimethylpentane"^^xsd:string ;
+    rdfs:comment "2,3,4-Trimethylpentane is a branched alkane.  It is one of the isomers of octane."^^xsd:string .
+

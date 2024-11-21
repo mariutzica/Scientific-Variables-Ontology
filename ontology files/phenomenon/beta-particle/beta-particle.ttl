@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:beta-particle a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "beta-particle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q103531"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Beta_particle"^^xsd:string ;
+    rdfs:comment "A beta particle, also called beta ray or beta radiation (symbol β), is a high-energy, high-speed electron or positron emitted by the radioactive decay of an atomic nucleus during the process of beta decay. There are two forms of beta decay, β− decay and β+ decay, which produce electrons and positrons respectively.Beta particles with an energy of 0.5 MeV have a range of about one metre in the air; the distance is dependent on the particle energy."^^xsd:string .
+

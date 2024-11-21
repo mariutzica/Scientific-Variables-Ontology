@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydrogen-peroxide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "hydrogen-peroxide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q171877"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydrogen_peroxide"^^xsd:string ;
+    rdfs:comment "Hydrogen peroxide is a chemical compound with the formula H2O2. In its pure form, it is a very pale blue liquid that is slightly more viscous than water. It is used as an oxidizer, bleaching agent, and antiseptic, usually as a dilute solution (3%–6% by weight) in water for consumer use, and in higher concentrations for industrial use. Concentrated hydrogen peroxide, or \"high-test peroxide\", decomposes explosively when heated and has been used as a propellant in rocketry.Hydrogen peroxide is a reactive oxygen species and the simplest peroxide, a compound having an oxygen–oxygen single bond. It decomposes slowly into water and elemental oxygen when exposed to light, and rapidly in the presence of organic or reactive compounds. It is typically stored with a stabilizer in a weakly acidic solution in a dark bottle to block light. Hydrogen peroxide is found in biological systems including the human body. Enzymes that use or decompose hydrogen peroxide are classified as peroxidases."^^xsd:string .
+

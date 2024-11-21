@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:blister a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "blister"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q276469"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Blister"^^xsd:string ;
+    rdfs:comment "A blister is a small pocket of body fluid (lymph, serum, plasma, blood, or pus) within the upper layers of the skin, usually caused by forceful rubbing (friction), burning, freezing, chemical exposure or infection. Most blisters are filled with a clear fluid, either serum or plasma. However, blisters can be filled with blood (known as \"blood blisters\") or with pus (for instance, if they become infected)."^^xsd:string .
+

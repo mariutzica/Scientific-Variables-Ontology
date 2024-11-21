@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:accumulation-zone a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "accumulation-zone"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3428388"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Accumulation_zone"^^xsd:string ;
+    rdfs:comment "On a glacier, the accumulation zone  is the area above the firn line, where snowfall accumulates and exceeds the losses from ablation, (melting, evaporation, and sublimation). The annual equilibrium line separates the accumulation and ablation zone annually. The accumulation zone is also defined as the part of a glacier's surface, usually at higher elevations, on which there is net accumulation of snow, which subsequently turns into firn and then glacier ice. Part of the glacier where snow builds up and turns to ice moves outward from there."^^xsd:string .
+

@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:crop-has-matter-biomass a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "crop_biomass"^^xsd:string ;
+    svo:has_matter <http://scientificvariablesontology.org/svo/matter/biomass> ;
+    svo:has_role <http://scientificvariablesontology.org/svo/role/crop> .
+

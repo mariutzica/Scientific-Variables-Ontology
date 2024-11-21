@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:iron%28ii%29-ion a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "iron(ii)-ion"^^xsd:string ;
+    svo:has_synonym "ferrous"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q65122087"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ferrous"^^xsd:string ;
+    rdfs:comment "In chemistry, the adjective ferrous indicates a compound that contains iron(II), meaning iron in its +2 oxidation state, possibly as the divalent cation Fe2+. It is opposed to ferric, or iron(III), meaning iron in its +3 oxidation state, such as the trivalent cation Fe3+. This usage has been largely replaced by the IUPAC nomenclature, which calls for the oxidation state being indicated by Roman numerals in parentheses, such as iron(II) oxide for ferrous oxide (FeO), iron(III) oxide for ferric oxide (Fe2O3), and iron(II,III) oxide for the oxide Fe3O4 that contains both forms of iron."^^xsd:string .
+

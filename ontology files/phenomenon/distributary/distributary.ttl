@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:distributary a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "distributary"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q591942"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Distributary"^^xsd:string ;
+    rdfs:comment "A distributary, or a distributary channel, is a stream that branches off and flows away from a main stream channel, a phenomenon known as river bifurcation. A distributary is effectively the opposite of a tributary, a stream that flows towards and into another, larger stream or river. Distributaries are often found where a stream approaches a lake or an ocean; as such, they are a common feature of river deltas. They can also occur inland, on alluvial fans, or where a tributary stream bifurcates as it nears its confluence with a larger stream. In some cases, a minor distributary can divert so much water from the main channel that it can later become the main route."^^xsd:string .
+

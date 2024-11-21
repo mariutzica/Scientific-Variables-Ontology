@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:natural a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "natural"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4785462"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Natural_(archaeology)"^^xsd:string ;
+    rdfs:comment "In archaeology, natural is a term to denote a layer (stratum) in the stratigraphic record where there is no evidence of human impact on the environment.  While there may be \"natural\" layers interbedded with archaeologically interesting layers, such as when a site was abandoned for long periods between occupations, the top (or horizon) of the natural layer below which there is no anthropogenic activity on site, and thus where the archaeological record begins, is the point to terminate digging.  Usually it is the underlying geological makeup of the site that was formed by geologic processes. It is the goal of complete excavation to remove the entirety of the archaeological record all the way to the \"natural\", leaving only the natural deposits of pre-human activity on site.  "^^xsd:string .
+

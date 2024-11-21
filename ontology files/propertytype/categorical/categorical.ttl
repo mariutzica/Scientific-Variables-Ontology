@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/propertytype/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:categorical a svo:PropertyType,
+        owl:NamedIndividual ;
+    rdfs:label "categorical"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2285707"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Categorical_variable"^^xsd:string ;
+    rdfs:comment "In statistics, a categorical variable (also called qualitative variable) is a variable that can take on one of a limited, and usually fixed, number of possible values, assigning each individual or other unit of observation to a particular group or nominal category on the basis of some qualitative property. In computer science and some branches of mathematics, categorical variables are referred to as enumerations or enumerated types. Commonly (though not in this article), each of the possible values of a categorical variable is referred to as a level. The probability distribution associated with a random categorical variable is called a categorical distribution."^^xsd:string .
+

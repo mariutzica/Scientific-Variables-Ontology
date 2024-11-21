@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ceraclea a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "ceraclea"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q9186618"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ceraclea"^^xsd:string ;
+    rdfs:comment "Ceraclea is a genus of long-horned caddisflies in the family Leptoceridae. There are more than 140 described species in Ceraclea."^^xsd:string .
+

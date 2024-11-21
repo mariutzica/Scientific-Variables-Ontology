@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:plasma a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "plasma"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q79749"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Blood_plasma"^^xsd:string ;
+    rdfs:comment "Blood plasma is a light amber-colored liquid component of blood in which blood cells are absent, but which contains proteins and other constituents of whole blood in suspension. It makes up about 55% of the body's total blood volume. It is the intravascular part of extracellular fluid (all body fluid outside cells). It is mostly water (up to 95% by volume), and contains important dissolved proteins (6–8%; e.g., serum albumins, globulins, and fibrinogen), glucose, clotting factors, electrolytes (Na+, Ca2+, Mg2+, HCO3−, Cl−, etc.), hormones, carbon dioxide (plasma being the main medium for excretory product transportation), and oxygen. It plays a vital role in an intravascular osmotic effect that keeps electrolyte concentration balanced and protects the body from infection and other blood-related disorders.Blood plasma is separated from the blood by spinning a vessel of fresh blood containing an anticoagulant in a centrifuge until the blood cells fall to the bottom of the tube. The blood plasma is then poured or drawn off. For point-of-care testing applications, plasma can be extracted from whole blood via filtration or via agglutination to allow for rapid testing of specific biomarkers. Blood plasma has a density of approximately 1,025 kg/m3 (1.025 g/ml). Blood serum is blood plasma without clotting factors. Plasmapheresis is a medical therapy that involves blood plasma extraction, treatment, and reintegration."^^xsd:string .
+

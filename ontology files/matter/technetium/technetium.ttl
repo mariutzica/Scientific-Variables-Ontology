@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:technetium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "technetium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1054"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Technetium"^^xsd:string ;
+    rdfs:comment "Technetium is a chemical element with the symbol Tc and atomic number 43. It is the lightest element whose isotopes are all radioactive. All available technetium is produced as a synthetic element. Naturally occurring technetium is a spontaneous fission product in uranium ore and thorium ore, the most common source, or the product of neutron capture in molybdenum ores. This silvery gray, crystalline transition metal lies between manganese and rhenium in group 7 of the periodic table, and its chemical properties are intermediate between those of both adjacent elements. The most common naturally occurring isotope is 99Tc, in traces only."^^xsd:string .
+

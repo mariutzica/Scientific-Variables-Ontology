@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lubrication a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "lubrication"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1455803"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lubrication"^^xsd:string ;
+    rdfs:comment "Lubrication is the process or technique of using a lubricant to reduce friction and wear and tear in a contact between two surfaces. The study of lubrication is a discipline in the field of tribology."^^xsd:string .
+

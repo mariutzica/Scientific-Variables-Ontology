@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28earth-crust-contains-material%29-reference-for-determination-of-variable-%28isothermal-process-has-property-compressibility%29> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "earth-crust_material_isothermal-process-has-property-compressibility"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :earth-crust-contains-material ;
+    svo:is_reference_for_variable <http://scientificvariablesontology.org/svo/variable/%28isothermal-process%29-has-property-%28compressibility%29> .
+

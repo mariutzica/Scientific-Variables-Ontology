@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:surveying a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "surveying"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q816425"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Surveying"^^xsd:string ;
+    rdfs:comment "Surveying or land surveying is the technique, profession, art, and science of determining the terrestrial two-dimensional or three-dimensional positions of points and the distances and angles between them. These points are usually on the surface of the Earth, and they are often used to establish maps and boundaries for ownership, locations, such as the designed positions of structural components for construction or the surface location of subsurface features, or other purposes required by government or civil law, such as property sales."^^xsd:string .
+

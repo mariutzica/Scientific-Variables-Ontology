@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gammarus a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "gammarus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q548451"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gammarus"^^xsd:string ;
+    rdfs:comment "Gammarus is an amphipod crustacean genus in the family Gammaridae. It contains more than 200 described species, making it one of the most species-rich genera of crustaceans. Different species have different optimal conditions, particularly in terms of salinity, and different tolerances; Gammarus pulex, for instance, is a purely freshwater species, while Gammarus locusta is estuarine, only living where the salinity is greater than 25‰.Species of Gammarus are the typical \"scuds\" of North America and range widely throughout the Holarctic. A considerable number are also found southwards into the Northern Hemisphere tropics, particularly in Southeast Asia."^^xsd:string .
+

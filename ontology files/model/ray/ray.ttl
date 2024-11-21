@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ray a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "ray"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q37105"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Line_(geometry)#Ray"^^xsd:string ;
+    rdfs:comment "In geometry, a line is an infinitely long object with no width, depth, or curvature. Thus, lines are one-dimensional objects, though they may exist embedded in two, three, or higher dimension spaces. The word line may also refer to a line segment in everyday life, which has two points to denote its ends (endpoints). A line can be referred to by two points that lie on it (e.g. "^^xsd:string .
+

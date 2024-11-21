@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/operation/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:square a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "square"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q111124"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Square_(algebra)"^^xsd:string ;
+    rdfs:comment "In mathematics, a square is the result of multiplying a number by itself. The verb \"to square\" is used to denote this operation. Squaring is the same as raising to the power 2, and is denoted by a superscript 2; for instance, the square of 3 may be written as 32, which is the number 9."^^xsd:string .
+

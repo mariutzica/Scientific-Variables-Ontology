@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pristane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "pristane"^^xsd:string ;
+    svo:has_synonym "Pentadecane,-2,6,10,14-tetramethyl-"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q425446"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pristane"^^xsd:string ;
+    rdfs:comment "Pristane is a natural saturated terpenoid alkane obtained primarily from shark liver oil, from which its name is derived (Latin pristis, \"shark\"). It is also found in the stomach oil of birds in the order Procellariiformes and in mineral oil and some foods. Pristane and phytane are used in the fields of geology and environmental science as biomarkers to characterize origins and evolution of petroleum hydrocarbons and coal.It is a transparent oily liquid that is immiscible with water, but soluble in diethyl ether, benzene, chloroform and carbon tetrachloride."^^xsd:string .
+

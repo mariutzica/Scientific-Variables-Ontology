@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:young_modulus a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "young_modulus"^^xsd:string ;
+    svo:has_synonym "elastic_modulus"^^xsd:string,
+        "youngs_modulus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2091584"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Young%27s_modulus"^^xsd:string ;
+    rdfs:comment "Young's modulus "^^xsd:string .
+

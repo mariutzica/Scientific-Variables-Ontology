@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:psilopa a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "psilopa"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7256036"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Psilopa"^^xsd:string ;
+    rdfs:comment "Psilopa is a genus of flies. The Petroleum fly, formerly P. petrolei, which is the only known insect to develop in naturally occurring crude oil, was transferred to genus Helaeomyia."^^xsd:string .
+

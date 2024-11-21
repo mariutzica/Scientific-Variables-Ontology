@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28%28earth-has-abstraction-surface%29-is-location-of-viewpoint%29-as-perspective-mercury-undergoes-process-rising%29-has-property-%28time%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "earth_surface_viewpoint_mercury_rising__time"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/surface>,
+        <http://scientificvariablesontology.org/svo/abstraction/viewpoint> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/time> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/earth>,
+        <http://scientificvariablesontology.org/svo/phenomenon/mercury> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/rising> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28%28earth-has-abstraction-surface%29-is-location-of-viewpoint%29-as-perspective-mercury-undergoes-process-rising> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/time> ;
+    svo:has_original_label "earth_surface_viewpoint_mercury__rise_time"^^xsd:string .
+

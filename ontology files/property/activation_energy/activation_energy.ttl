@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:activation_energy a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "activation_energy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q190474"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Activation_energy"^^xsd:string ;
+    rdfs:comment "In chemistry and physics, activation energy is the minimum amount of energy that must be provided for compounds to result in a chemical reaction. The activation energy (Ea) of a reaction is measured in joules per mole (J/mol), kilojoules per mole (kJ/mol) or kilocalories per mole (kcal/mol). Activation energy can be thought of as the magnitude of the potential barrier (sometimes called the energy barrier) separating minima of the potential energy surface pertaining to the initial and final thermodynamic state. For a chemical reaction to proceed at a reasonable rate, the temperature of the system should be high enough such that there exists an appreciable number of molecules with translational energy equal to or greater than the activation energy. The term \"activation energy\" was introduced in 1889 by the Swedish scientist Svante Arrhenius."^^xsd:string .
+

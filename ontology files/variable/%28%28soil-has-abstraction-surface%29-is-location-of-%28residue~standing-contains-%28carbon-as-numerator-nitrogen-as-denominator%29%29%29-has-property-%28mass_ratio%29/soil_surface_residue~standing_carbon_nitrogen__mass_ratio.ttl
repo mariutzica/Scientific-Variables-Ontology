@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28soil-has-abstraction-surface%29-is-location-of-%28residue~standing-contains-%28carbon-as-numerator-nitrogen-as-denominator%29%29%29-has-property-%28mass_ratio%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "soil_surface_residue~standing_carbon_nitrogen__mass_ratio"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/surface> ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/standing> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/carbon>,
+        <http://scientificvariablesontology.org/svo/matter/nitrogen>,
+        <http://scientificvariablesontology.org/svo/matter/soil> ;
+    svo:contains_role_reference_to <http://scientificvariablesontology.org/svo/role/residue> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28soil-has-abstraction-surface%29-is-location-of-%28residue~standing-contains-%28carbon-as-numerator-nitrogen-as-denominator%29%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mass_ratio> ;
+    svo:has_original_label "soil_surface_residue~standing_carbon-to-nitrogen__mass_ratio"^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:invasion a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "invasion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q467011"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Invasion"^^xsd:string ;
+    rdfs:comment "An invasion is a military offensive of combatants of one geopolitical entity, usually in large numbers, entering territory controlled by another similar entity, generally with the objective of either: conquering; liberating or re-establishing control or authority over a territory; forcing the partition of a country; altering the established government or gaining concessions from said government; or a combination thereof. An invasion can be the cause of a war, be a part of a larger strategy to end a war, or it can constitute an entire war in itself. Due to the large scale of the operations associated with invasions, they are usually strategic in planning and execution. Not every military offense with the goal to capture territory or remove a government is an invasion."^^xsd:string .
+

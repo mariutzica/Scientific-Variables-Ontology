@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ethylation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "ethylation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1371525"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ethyl_group"^^xsd:string ;
+    rdfs:comment "In organic chemistry, an ethyl group (abbr. Et) is an alkyl substituent with the formula  −CH2CH3, derived from ethane (C2H6).  Ethyl is used in the International Union of Pure and Applied Chemistry's nomenclature of organic chemistry for a saturated two-carbon moiety in a molecule, while the prefix \"eth-\" is used to indicate the presence of two carbon atoms in the molecule."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/operation/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:time_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "time_derivative"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q29175"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Derivative"^^xsd:string ;
+    rdfs:comment "In mathematics, the derivative of a function of a real variable measures the sensitivity to change of the function value (output value) with respect to a change in its argument (input value). Derivatives are a fundamental tool of calculus.  For example, the derivative of the position of a moving object with respect to time is the object's velocity: this measures how quickly the position of the object changes when time advances."^^xsd:string .
+

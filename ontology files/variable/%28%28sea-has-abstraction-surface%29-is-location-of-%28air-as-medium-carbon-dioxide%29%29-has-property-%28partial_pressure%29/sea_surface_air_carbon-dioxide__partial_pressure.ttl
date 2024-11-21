@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28sea-has-abstraction-surface%29-is-location-of-%28air-as-medium-carbon-dioxide%29%29-has-property-%28partial_pressure%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "sea_surface_air_carbon-dioxide__partial_pressure"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/surface> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/air>,
+        <http://scientificvariablesontology.org/svo/matter/carbon-dioxide> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/sea> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28sea-has-abstraction-surface%29-is-location-of-%28air-as-medium-carbon-dioxide%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/partial_pressure> .
+

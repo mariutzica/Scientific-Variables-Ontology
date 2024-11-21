@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:benzyl-alcohol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "benzyl-alcohol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q52353"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Benzyl_alcohol"^^xsd:string ;
+    rdfs:comment "Benzyl alcohol (also known as α-Cresol) is an aromatic alcohol with the formula C6H5CH2OH. The benzyl group is often abbreviated \"Bn\" (not to be confused with \"Bz\" which is used for benzoyl), thus benzyl alcohol is denoted as BnOH.  Benzyl alcohol is a colorless liquid with a mild pleasant aromatic odor.  It is a useful solvent due to its polarity, low toxicity, and low vapor pressure. Benzyl alcohol has moderate solubility in water (4 g/100 mL) and is miscible in alcohols and diethyl ether.  The anion produced by deprotonation of the alcohol group is known as benzylate or benzyloxide."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:surface_tension a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "surface_tension"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q170749"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Surface_tension"^^xsd:string ;
+    rdfs:comment "Surface tension is the tendency of liquid surfaces at rest to shrink into the minimum surface area possible. Surface tension is what allows objects with a higher density than water such as razor blades and insects (e.g. water striders) to float on a water surface without becoming even partly submerged."^^xsd:string .
+

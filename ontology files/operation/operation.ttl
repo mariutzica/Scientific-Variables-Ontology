@@ -1,0 +1,896 @@
+@prefix : <http://scientificvariablesontology.org/svo/operation/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/operation> a owl:Ontology ;
+    owl:imports <http://scientificvariablesontology.org/svo> .
+
+:1-sigma-csu a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "1-sigma-csu"^^xsd:string .
+
+:2-sigma-csu a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "2-sigma-csu"^^xsd:string .
+
+:allowed_max a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "allowed_max"^^xsd:string .
+
+:allowed_min a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "allowed_min"^^xsd:string .
+
+:angle a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "angle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11352"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Angle"^^xsd:string ;
+    rdfs:comment "In Euclidean geometry, an angle is the figure formed by two rays, called the sides of the angle, sharing a common endpoint, called the vertex of the angle."^^xsd:string .
+
+:anomaly a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "anomaly"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4769951"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Anomaly_(natural_sciences)"^^xsd:string ;
+    rdfs:comment "In the natural sciences, especially in atmospheric and Earth sciences involving applied statistics, an anomaly is a persisting deviation in a physical quantity from its expected value, e.g., the systematic difference between a measurement and a trend or a model prediction. "^^xsd:string .
+
+:antigradient a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "antigradient"^^xsd:string .
+
+:area_weighted_average a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "area_weighted_average"^^xsd:string .
+
+:arithmetic_mean a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "mean"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2796622"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mean"^^xsd:string ;
+    rdfs:comment "There are several kinds of mean in mathematics, especially in statistics. Each mean serves to summarize a given group of data, often to better understand the overall value (magnitude and sign) of a given data set. "^^xsd:string .
+
+:average a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "average"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q202785"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Average"^^xsd:string ;
+    rdfs:comment "In ordinary language, an average is a single number taken as representative of a list of numbers, usually the sum of the numbers divided by how many numbers are in the list (the arithmetic mean). For example, the average of the numbers 2, 3, 4, 7, and 9 (summing to 25) is 5. Depending on the context, an average might be another statistic such as the median, or mode. For example, the average personal income is often given as the median—the number below which are 50% of personal incomes and above which are 50% of personal incomes—because the mean would be higher by including personal incomes from a few billionaires. For this reason, it is recommended to avoid using the word \"average\" when discussing measures of central tendency."^^xsd:string .
+
+:azimuth_angle a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "azimuth_angle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q124274"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Azimuth"^^xsd:string ;
+    rdfs:comment "An azimuth ( (listen); from Arabic: اَلسُّمُوت, romanized: as-sumūt, lit. 'the directions') is an angular measurement in a spherical coordinate system. More specifically, it is the horizontal angle from a cardinal direction, most commonly north. "^^xsd:string .
+
+:change a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "change"^^xsd:string .
+
+:change_from_one-year_min a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "change_from_one-year_min"^^xsd:string .
+
+:component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "component"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q44528"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Euclidean_vector#Decomposition"^^xsd:string ;
+    rdfs:comment "In mathematics, physics, and engineering, a Euclidean vector or simply a vector (sometimes called a geometric vector or spatial vector) is a geometric object that has magnitude (or length) and direction. Vectors can be added to other vectors according to vector algebra. A Euclidean vector is frequently represented by a directed line segment, or graphically as an arrow connecting an initial point A with a terminal point B, and denoted by "^^xsd:string .
+
+:correlation a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "correlation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q186290"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Correlation"^^xsd:string ;
+    rdfs:comment "In statistics, correlation  or dependence  is any statistical relationship, whether causal or not, between two random variables or bivariate data. Although in the broadest sense, \"correlation\" may indicate any type of association, in statistics it usually refers to the degree to which a pair of variables are linearly related.  "^^xsd:string .
+
+:cosine a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "cosine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q93344"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Trigonometric_functions#cosine"^^xsd:string ;
+    rdfs:comment "In mathematics, the trigonometric functions (also called circular functions, angle functions or goniometric functions) are real functions which relate an angle of a right-angled triangle to ratios of two side lengths. They are widely used in all sciences that are related to geometry, such as navigation, solid mechanics, celestial mechanics, geodesy, and many others. They are among the simplest periodic functions, and as such are also widely used for studying periodic phenomena through Fourier analysis."^^xsd:string .
+
+:counting_error a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "counting_error"^^xsd:string .
+
+:cross-stream_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "cross-stream_component"^^xsd:string .
+
+:cross-stream_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "cross-stream_derivative"^^xsd:string .
+
+:cumulative_anomaly a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "cumulative_anomaly"^^xsd:string .
+
+:cumulative_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "cumulative_time_integral"^^xsd:string .
+
+:cumulative_z-score a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "cumulative_z-score"^^xsd:string .
+
+:curl a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "curl"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q206310"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Curl_(mathematics)"^^xsd:string ;
+    rdfs:comment "In vector calculus, the curl is a vector operator that describes the infinitesimal circulation of a vector field in three-dimensional Euclidean space. The curl at a point in the field is represented by a vector whose length and direction denote the magnitude and axis of the maximum circulation. The curl of a field is formally defined as the circulation density at each point of the field."^^xsd:string .
+
+:day-specific_anomaly a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "day-specific_anomaly"^^xsd:string .
+
+:dekad_one-day_mean a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "dekad_one-day_mean"^^xsd:string .
+
+:depression a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "depression"^^xsd:string .
+
+:difference a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "difference"^^xsd:string .
+
+:direction a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "direction"^^xsd:string .
+
+:directional_variance a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "directional_variance"^^xsd:string .
+
+:diurnal_max a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "diurnal_max"^^xsd:string .
+
+:diurnal_mean a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "diurnal_mean"^^xsd:string .
+
+:diurnal_min a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "diurnal_min"^^xsd:string .
+
+:diurnal_range a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "diurnal_range"^^xsd:string .
+
+:diurnal_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "diurnal_time_integral"^^xsd:string .
+
+:domain_max a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "domain_max"^^xsd:string .
+
+:domain_min a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "domain_min"^^xsd:string .
+
+:domain_range a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "domain_range"^^xsd:string .
+
+:domain_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "domain_time_integral"^^xsd:string .
+
+:domain_time_max a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "domain_time_max"^^xsd:string .
+
+:domain_time_min a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "domain_time_min"^^xsd:string .
+
+:down_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "down_component"^^xsd:string .
+
+:down_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "down_derivative"^^xsd:string .
+
+:down_east_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "down_east_component"^^xsd:string .
+
+:down_north_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "down_north_component"^^xsd:string .
+
+:down_z_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "down_z_derivative"^^xsd:string .
+
+:downstream_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "downstream_component"^^xsd:string .
+
+:downstream_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "downstream_derivative"^^xsd:string .
+
+:downward_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "downward_component"^^xsd:string .
+
+:drop a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "drop"^^xsd:string .
+
+:east_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "east_component"^^xsd:string .
+
+:east_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "east_derivative"^^xsd:string .
+
+:east_down_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "east_down_component"^^xsd:string .
+
+:east_east_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "east_east_component"^^xsd:string .
+
+:east_north_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "east_north_component"^^xsd:string .
+
+:east_up_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "east_up_component"^^xsd:string .
+
+:elevation_angle a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "elevation_angle"^^xsd:string .
+
+:error a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "error"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q29485"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Error"^^xsd:string ;
+    rdfs:comment "An error (from the Latin errāre, meaning 'to wander') is an inaccurate or incorrect action, thought, or judgement."^^xsd:string .
+
+:fifteen-day_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "fifteen-day_time_integral"^^xsd:string .
+
+:fifth_pentad_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "fifth_pentad_time_integral"^^xsd:string .
+
+:first_dekad_one-day_mean a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "first_dekad_one-day_mean"^^xsd:string .
+
+:first_dekad_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "first_dekad_time_integral"^^xsd:string .
+
+:first_pentad_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "first_pentad_time_integral"^^xsd:string .
+
+:five-day_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "five-day_time_integral"^^xsd:string .
+
+:forecast a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "forecast"^^xsd:string .
+
+:fourth_pentad_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "fourth_pentad_time_integral"^^xsd:string .
+
+:fraction a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "fraction"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q66055"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fraction_(mathematics)"^^xsd:string ;
+    rdfs:comment "mathematical representation of a portion of a whole"^^xsd:string .
+
+:gain a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "gain"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q854659"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gain_(electronics)"^^xsd:string ;
+    rdfs:comment "In electronics, gain is a measure of the ability of a two-port circuit (often an amplifier) to increase the power or amplitude of a signal from the input to the output port by adding energy converted from some power supply to the signal. It is usually defined as the mean ratio of the signal amplitude or power at the output port to the amplitude or power at the input port. It is often expressed using the logarithmic  decibel (dB) units (\"dB gain\").  A gain greater than one (greater than zero dB), that is amplification, is the defining property of an active component or circuit, while a passive circuit will have a gain of less than one.The term gain alone is ambiguous, and can refer to the ratio of output to input  voltage (voltage gain), current (current gain) or electric power (power gain).  In the field of audio and general purpose amplifiers, especially operational amplifiers, the term usually refers to voltage gain,  but in radio frequency amplifiers it usually refers to power gain.  Furthermore, the term gain is also applied in systems such as sensors where the input and output have different units; in such cases the gain units must be specified, as in \"5 microvolts per photon\" for the responsivity of a photosensor. The \"gain\" of a bipolar transistor normally refers to forward current transfer ratio, either hFE (\"beta\", the static ratio of Ic divided by Ib at some operating point), or sometimes hfe (the small-signal current gain, the slope of the graph of Ic against Ib at a point)."^^xsd:string .
+
+:geologic_time_average a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "geologic_time_average"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q202785"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Average"^^xsd:string ;
+    rdfs:comment "In ordinary language, an average is a single number taken as representative of a list of numbers, usually the sum of the numbers divided by how many numbers are in the list (the arithmetic mean). For example, the average of the numbers 2, 3, 4, 7, and 9 (summing to 25) is 5. Depending on the context, an average might be another statistic such as the median, or mode. For example, the average personal income is often given as the median—the number below which are 50% of personal incomes and above which are 50% of personal incomes—because the mean would be higher by including personal incomes from a few billionaires. For this reason, it is recommended to avoid using the word \"average\" when discussing measures of central tendency."^^xsd:string .
+
+:globe_time_average a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "globe_time_average"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q202785"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Average"^^xsd:string ;
+    rdfs:comment "In ordinary language, an average is a single number taken as representative of a list of numbers, usually the sum of the numbers divided by how many numbers are in the list (the arithmetic mean). For example, the average of the numbers 2, 3, 4, 7, and 9 (summing to 25) is 5. Depending on the context, an average might be another statistic such as the median, or mode. For example, the average personal income is often given as the median—the number below which are 50% of personal incomes and above which are 50% of personal incomes—because the mean would be higher by including personal incomes from a few billionaires. For this reason, it is recommended to avoid using the word \"average\" when discussing measures of central tendency."^^xsd:string .
+
+:gradient a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "gradient"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q173582"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gradient"^^xsd:string ;
+    rdfs:comment "In vector calculus, the gradient of a scalar-valued differentiable function "^^xsd:string .
+
+:half a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "half"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2114394"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/One_half"^^xsd:string ;
+    rdfs:comment "One half (pl. halves) is the irreducible fraction resulting from dividing one (1) by two (2), or the fraction resulting from dividing any number by its double."^^xsd:string .
+
+:horizontal_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "horizontal_component"^^xsd:string .
+
+:imcooming_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "imcooming_component"^^xsd:string .
+
+:incoming_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "incoming_component"^^xsd:string .
+
+:increment a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "increment"^^xsd:string .
+
+:inverse a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "inverse"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q224353"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Inverse_(mathematics)"^^xsd:string ;
+    rdfs:comment "Wikimedia disambiguation page"^^xsd:string .
+
+:laplacian a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "laplacian"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q203484"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Laplace_operator"^^xsd:string ;
+    rdfs:comment "In mathematics, the Laplace operator or Laplacian is a differential operator given by the divergence of the gradient of a scalar function on Euclidean space. It is usually denoted by the symbols "^^xsd:string .
+
+:lateral_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "lateral_component"^^xsd:string .
+
+:left_normal a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "left_normal"^^xsd:string .
+
+:length_rate a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "rate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1144560"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Rate_(mathematics)"^^xsd:string ;
+    rdfs:comment "In mathematics, a rate is the ratio between two related quantities in different units. If the denominator of the ratio is expressed as a single unit of one of these quantities, and if it is assumed that this quantity can be changed systematically (i.e., is an independent variable), then the numerator of the ratio expresses the corresponding rate of change in the other (dependent) variable.  "^^xsd:string .
+
+:limit a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "limit"^^xsd:string .
+
+:log10 a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "log10"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11197"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Logarithm"^^xsd:string ;
+    rdfs:comment "In mathematics, the logarithm is the inverse function to exponentiation. That means the logarithm of a number x to the base b is the exponent to which b must be raised, to produce x. For example, since 1000 = 103, the logarithm base 10 of 1000 is 3, or log10 (1000) = 3. The logarithm of x to base b is denoted as logb (x), or without parentheses, logb x, or even without the explicit base, log x, when no confusion is possible, or when the base does not matter such as in big O notation."^^xsd:string .
+
+:loss a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "loss"^^xsd:string .
+
+:lower_limit a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "lower_limit"^^xsd:string .
+
+:magnitude a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "magnitude"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2091629"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Magnitude_(mathematics)"^^xsd:string ;
+    rdfs:comment "In mathematics, the magnitude or size of a mathematical object is a property which determines whether the object is larger or smaller than other objects of the same kind. More formally, an object's magnitude is the displayed result of an ordering (or ranking)—of the class of objects to which it belongs."^^xsd:string .
+
+:max a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "max"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q845060"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Maxima_and_minima"^^xsd:string ;
+    rdfs:comment "largest and smallest value taken by a function in a given range"^^xsd:string .
+
+:max_summation a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "max_sum"^^xsd:string .
+
+:mean a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "mean"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q202785"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Average"^^xsd:string ;
+    rdfs:comment "In ordinary language, an average is a single number taken as representative of a list of numbers, usually the sum of the numbers divided by how many numbers are in the list (the arithmetic mean). For example, the average of the numbers 2, 3, 4, 7, and 9 (summing to 25) is 5. Depending on the context, an average might be another statistic such as the median, or mode. For example, the average personal income is often given as the median—the number below which are 50% of personal incomes and above which are 50% of personal incomes—because the mean would be higher by including personal incomes from a few billionaires. For this reason, it is recommended to avoid using the word \"average\" when discussing measures of central tendency."^^xsd:string .
+
+:median a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "median"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q226995"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Median"^^xsd:string ;
+    rdfs:comment "In statistics and probability theory, the median is the value separating the higher half from the lower half of a data sample, a population, or a probability distribution. For a data set, it may be thought of as \"the middle\" value. The basic feature of the median in describing data compared to the mean (often simply described as the \"average\") is that it is not skewed by a small proportion of extremely large or small values, and therefore provides a better representation of the center. Median income, for example, may be a better way to describe center of the income distribution because increases in the largest incomes alone have no effect on median. For this reason, the median is of central importance in robust statistics."^^xsd:string .
+
+:mid-range a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "mid-range"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3260254"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mid-range"^^xsd:string ;
+    rdfs:comment "In statistics, the mid-range or mid-extreme is a measure of central tendency of a  sample defined as the arithmetic mean of the maximum and minimum values of the data set:"^^xsd:string .
+
+:min a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "min"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q845060"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Maxima_and_minima"^^xsd:string ;
+    rdfs:comment "largest and smallest value taken by a function in a given range"^^xsd:string .
+
+:min_summation a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "min_sum"^^xsd:string .
+
+:month-specific_anomaly a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "month-specific_anomaly"^^xsd:string .
+
+:month-specific_z-score a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "month-specific_z-score"^^xsd:string .
+
+:normal_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "normal_component"^^xsd:string .
+
+:north_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "north_component"^^xsd:string .
+
+:north_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "north_derivative"^^xsd:string .
+
+:north_down_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "north_down_component"^^xsd:string .
+
+:north_north_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "north_north_component"^^xsd:string .
+
+:north_up_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "north_up_component"^^xsd:string .
+
+:one-day_max a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "one-day_max"^^xsd:string .
+
+:one-day_min a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "one-day_min"^^xsd:string .
+
+:one-day_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "one-day_time_integral"^^xsd:string .
+
+:one-hour_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "one-hour_time_integral"^^xsd:string .
+
+:one-month_anomaly a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "one-month_anomaly"^^xsd:string .
+
+:one-month_one-day_mean a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "one-month_one-day_mean"^^xsd:string .
+
+:one-month_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "one-month_time_integral"^^xsd:string .
+
+:one-year_average a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "one-year_average"^^xsd:string .
+
+:one-year_change a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "one-year_change"^^xsd:string .
+
+:one-year_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "one-year_time_integral"^^xsd:string .
+
+:one-year_time_max a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "one-year_time_max"^^xsd:string .
+
+:parity a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "parity"^^xsd:string .
+
+:peak_time a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "peak_time"^^xsd:string .
+
+:per-area_flow_rate a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "flux"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6485344"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Flux#Flux_as_flow_rate_per_unit_area"^^xsd:string ;
+    rdfs:comment "Flux describes any effect that appears to pass or travel (whether it actually moves or not) through a surface or substance. Flux is a concept in applied mathematics and vector calculus which has many applications to physics.  For transport phenomena, flux is a vector quantity, describing the magnitude and direction of the flow of a substance or property. In vector calculus flux is a scalar quantity, defined as the surface integral of the perpendicular component of a vector field over a surface."^^xsd:string .
+
+:product a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "product"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q901718"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Product_(mathematics)"^^xsd:string ;
+    rdfs:comment "In mathematics, a product is the result of multiplication, or an expression that identifies objects (numbers or variables) to be multiplied, called factors. For example, 30 is the product of 6 and 5 (the result of multiplication), and"^^xsd:string .
+
+:projection a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "projection"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2734388"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vector_projection"^^xsd:string ;
+    rdfs:comment "The vector projection of a vector a on (or onto) a nonzero vector b, sometimes denoted "^^xsd:string .
+
+:range a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "range"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q438399"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Range_(mathematics)"^^xsd:string ;
+    rdfs:comment "Wikimedia disambiguation page"^^xsd:string .
+
+:rate a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "rate"^^xsd:string .
+
+:ratio a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "ratio"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3481047"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Ratio"^^xsd:string ;
+    rdfs:comment "In mathematics, a ratio () shows how many times one number contains another. For example, if there are eight oranges and six lemons in a bowl of fruit, then the ratio of oranges to lemons is eight to six (that is, 8:6, which is equivalent to the ratio 4:3). Similarly, the ratio of lemons to oranges is 6:8 (or 3:4) and the ratio of oranges to the total amount of fruit is 8:14 (or 4:7)."^^xsd:string .
+
+:reduction a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "reduction"^^xsd:string .
+
+:second_dekad_one-day_mean a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "second_dekad_one-day_mean"^^xsd:string .
+
+:second_dekad_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "second_dekad_time_integral"^^xsd:string .
+
+:second_invariant a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "second_invariant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q9009080"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Invariants_of_tensors"^^xsd:string ;
+    rdfs:comment "In mathematics, in the fields of multilinear algebra and representation theory, the principal invariants of the second rank tensor "^^xsd:string .
+
+:second_pentad_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "second_pentad_time_integral"^^xsd:string .
+
+:second_spatial_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "second_spatial_derivative"^^xsd:string .
+
+:south_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "south_component"^^xsd:string .
+
+:south_east_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "south_east_component"^^xsd:string .
+
+:south_south_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "south_south_component"^^xsd:string .
+
+:spatial_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "spatial_derivative"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q29175"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Derivative"^^xsd:string ;
+    rdfs:comment "In mathematics, the derivative of a function of a real variable measures the sensitivity to change of the function value (output value) with respect to a change in its argument (input value). Derivatives are a fundamental tool of calculus.  For example, the derivative of the position of a moving object with respect to time is the object's velocity: this measures how quickly the position of the object changes when time advances."^^xsd:string .
+
+:spatial_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "spatial_integral"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q80091"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Integral"^^xsd:string ;
+    rdfs:comment "In mathematics, an integral is the continuous analog of a sum, which is used to calculate areas, volumes, and their generalizations. Integration, the process of computing an integral, is one of the two fundamental operations of calculus, the other being differentiation. Integration started as a method to solve problems in mathematics and physics, such as finding the area under a curve, or determining displacement from velocity. Today integration is used in a wide variety of scientific fields."^^xsd:string .
+
+:square a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "square"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q111124"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Square_(algebra)"^^xsd:string ;
+    rdfs:comment "In mathematics, a square is the result of multiplying a number by itself. The verb \"to square\" is used to denote this operation. Squaring is the same as raising to the power 2, and is denoted by a superscript 2; for instance, the square of 3 may be written as 32, which is the number 9."^^xsd:string .
+
+:standard_deviation a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "standard_deviation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q159375"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Standard_deviation"^^xsd:string ;
+    rdfs:comment "In statistics, the standard deviation is a measure of the amount of variation of a random variable expected about its mean. A low standard deviation indicates that the values tend to be close to the mean (also called the expected value) of the set, while a high standard deviation indicates that the values are spread out over a wider range. The standard deviation is commonly used in the determination of what constitutes an outlier and what does not."^^xsd:string .
+
+:step a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "step"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q594799"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Step"^^xsd:string ;
+    rdfs:comment "Step(s) or STEP may refer to:"^^xsd:string .
+
+:summation a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "summation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q218005"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Summation"^^xsd:string ;
+    rdfs:comment "In mathematics, summation is the addition of a sequence of any kind of numbers, called addends or summands; the result is their sum or total. Beside numbers, other types of values can be summed as well: functions, vectors, matrices, polynomials and, in general, elements of any type of mathematical objects on which an operation denoted \"+\" is defined."^^xsd:string .
+
+:temperature_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "temperature_derivative"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q29175"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Derivative"^^xsd:string ;
+    rdfs:comment "In mathematics, the derivative of a function of a real variable measures the sensitivity to change of the function value (output value) with respect to a change in its argument (input value). Derivatives are a fundamental tool of calculus.  For example, the derivative of the position of a moving object with respect to time is the object's velocity: this measures how quickly the position of the object changes when time advances."^^xsd:string .
+
+:ten-day_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "ten-day_time_integral"^^xsd:string .
+
+:third_dekad_one-day_mean a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "third_dekad_one-day_mean"^^xsd:string .
+
+:third_dekad_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "third_dekad_time_integral"^^xsd:string .
+
+:third_pentad_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "third_pentad_time_integral"^^xsd:string .
+
+:three-month_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "three-month_time_integral"^^xsd:string .
+
+:time a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "time"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11471"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Time"^^xsd:string ;
+    rdfs:comment "Time is the continued sequence of existence and events that occurs in an apparently irreversible succession from the past, through the present, and into the future. It is a component quantity of various measurements used to sequence events, to compare the duration of events or the intervals between them, and to quantify rates of change of quantities in material reality or in the conscious experience. Time is often referred to as a fourth dimension, along with three spatial dimensions."^^xsd:string .
+
+:time_average a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "time_average"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q202785"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Average"^^xsd:string ;
+    rdfs:comment "In ordinary language, an average is a single number taken as representative of a list of numbers, usually the sum of the numbers divided by how many numbers are in the list (the arithmetic mean). For example, the average of the numbers 2, 3, 4, 7, and 9 (summing to 25) is 5. Depending on the context, an average might be another statistic such as the median, or mode. For example, the average personal income is often given as the median—the number below which are 50% of personal incomes and above which are 50% of personal incomes—because the mean would be higher by including personal incomes from a few billionaires. For this reason, it is recommended to avoid using the word \"average\" when discussing measures of central tendency."^^xsd:string .
+
+:time_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "time_derivative"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q29175"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Derivative"^^xsd:string ;
+    rdfs:comment "In mathematics, the derivative of a function of a real variable measures the sensitivity to change of the function value (output value) with respect to a change in its argument (input value). Derivatives are a fundamental tool of calculus.  For example, the derivative of the position of a moving object with respect to time is the object's velocity: this measures how quickly the position of the object changes when time advances."^^xsd:string .
+
+:time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "time_integral"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q80091"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Integral"^^xsd:string ;
+    rdfs:comment "In mathematics, an integral is the continuous analog of a sum, which is used to calculate areas, volumes, and their generalizations. Integration, the process of computing an integral, is one of the two fundamental operations of calculus, the other being differentiation. Integration started as a method to solve problems in mathematics and physics, such as finding the area under a curve, or determining displacement from velocity. Today integration is used in a wide variety of scientific fields."^^xsd:string .
+
+:time_integral_from_start a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "time_integral_from_start"^^xsd:string .
+
+:time_max a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "time_max"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q845060"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Maxima_and_minima"^^xsd:string ;
+    rdfs:comment "largest and smallest value taken by a function in a given range"^^xsd:string .
+
+:time_mean a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "time_mean"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2796622"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mean"^^xsd:string ;
+    rdfs:comment "There are several kinds of mean in mathematics, especially in statistics. Each mean serves to summarize a given group of data, often to better understand the overall value (magnitude and sign) of a given data set. "^^xsd:string .
+
+:time_median a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "time_median"^^xsd:string .
+
+:time_min a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "time_min"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q845060"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Maxima_and_minima"^^xsd:string ;
+    rdfs:comment "largest and smallest value taken by a function in a given range"^^xsd:string .
+
+:time_rate a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "rate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1144560"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Rate_(mathematics)"^^xsd:string ;
+    rdfs:comment "In mathematics, a rate is the ratio between two related quantities in different units. If the denominator of the ratio is expressed as a single unit of one of these quantities, and if it is assumed that this quantity can be changed systematically (i.e., is an independent variable), then the numerator of the ratio expresses the corresponding rate of change in the other (dependent) variable.  "^^xsd:string .
+
+:two-month_time_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "two-month_time_integral"^^xsd:string .
+
+:u_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "u_component"^^xsd:string .
+
+:up_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "up_component"^^xsd:string .
+
+:up_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "up_derivative"^^xsd:string .
+
+:up_south_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "up_south_component"^^xsd:string .
+
+:up_up_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "up_up_component"^^xsd:string .
+
+:upper_limit a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "upper_limit"^^xsd:string .
+
+:upstream_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "upstream_component"^^xsd:string .
+
+:upward_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "upward_component"^^xsd:string .
+
+:v_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "v_component"^^xsd:string .
+
+:variance a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "variance"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q175199"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Variance"^^xsd:string ;
+    rdfs:comment "In probability theory and statistics, variance is the expectation of the squared deviation of a random variable from its population mean or sample mean. Variance is a measure of dispersion, meaning it is a measure of how far a set of numbers is spread out from their average value. Variance has a central role in statistics, where some ideas that use it include descriptive statistics, statistical inference, hypothesis testing, goodness of fit, and Monte Carlo sampling. Variance is an important tool in the sciences, where statistical analysis of data is common. The variance is the square of the standard deviation, the second central moment of a distribution, and the covariance of the random variable with itself, and it is often represented by "^^xsd:string .
+
+:vertical_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "vertical_component"^^xsd:string .
+
+:west_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "west_component"^^xsd:string .
+
+:x_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "x_component"^^xsd:string .
+
+:x_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "x_derivative"^^xsd:string .
+
+:x_x_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "x_x_component"^^xsd:string .
+
+:x_x_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "x_x_derivative"^^xsd:string .
+
+:x_y_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "x_y_component"^^xsd:string .
+
+:x_y_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "x_y_derivative"^^xsd:string .
+
+:x_z_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "x_z_component"^^xsd:string .
+
+:y_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "y_component"^^xsd:string .
+
+:y_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "y_derivative"^^xsd:string .
+
+:y_y_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "y_y_component"^^xsd:string .
+
+:y_y_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "y_y_derivative"^^xsd:string .
+
+:y_z_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "y_z_component"^^xsd:string .
+
+:year-specific_anomaly a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "year-specific_anomaly"^^xsd:string .
+
+:z-score a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "z-score"^^xsd:string ;
+    svo:has_synonym "standard score"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1050272"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Standard_score"^^xsd:string ;
+    rdfs:comment "In statistics, the standard score is the number of standard deviations by which the value of a raw score (i.e., an observed value or data point) is above or below the mean value of what is being observed or measured. Raw scores above the mean have positive standard scores, while those below the mean have negative standard scores. "^^xsd:string .
+
+:z_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "z_component"^^xsd:string .
+
+:z_derivative a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "z_derivative"^^xsd:string .
+
+:z_integral a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "z_integral"^^xsd:string .
+
+:z_mean a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "z_mean"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2796622"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mean"^^xsd:string ;
+    rdfs:comment "There are several kinds of mean in mathematics, especially in statistics. Each mean serves to summarize a given group of data, often to better understand the overall value (magnitude and sign) of a given data set. "^^xsd:string .
+
+:z_x_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "z_x_component"^^xsd:string .
+
+:z_y_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "z_y_component"^^xsd:string .
+
+:z_z_component a svo:Operation,
+        owl:NamedIndividual ;
+    rdfs:label "z_z_component"^^xsd:string .
+

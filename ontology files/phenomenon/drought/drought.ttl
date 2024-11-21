@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:drought a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "drought"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q43059"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Drought"^^xsd:string ;
+    rdfs:comment "A drought is a period of drier-than-normal conditions.: 1157  A drought can last for days, months or years. Drought often has large impacts on the ecosystems and agriculture of affected regions, and causes harm to the local economy. Annual dry seasons in the tropics significantly increase the chances of a drought developing and subsequent wildfires. Periods of heat can significantly worsen drought conditions by hastening evaporation of water vapour."^^xsd:string .
+

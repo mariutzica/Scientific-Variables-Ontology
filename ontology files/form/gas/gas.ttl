@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gas a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "gas"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11432"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gas"^^xsd:string ;
+    rdfs:comment "Gas is one of the four fundamental states of matter. The others are solid, liquid, and plasma.A pure gas may be made up of individual atoms (e.g. a noble gas like neon), elemental molecules made from one type of atom (e.g. oxygen), or compound molecules made from a variety of atoms (e.g. carbon dioxide). A gas mixture, such as air, contains a variety of pure gases. What distinguishes a gas from liquids and solids is the vast separation of the individual gas particles. This separation usually makes a colourless gas invisible to the human observer."^^xsd:string .
+

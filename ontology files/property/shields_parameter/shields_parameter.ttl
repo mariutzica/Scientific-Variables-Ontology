@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:shields_parameter a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "shields_parameter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q107630151"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Shields_parameter"^^xsd:string ;
+    rdfs:comment "The Shields parameter, also called the Shields criterion or Shields number, is a nondimensional number used to calculate the initiation of motion of sediment in a fluid flow. It is a nondimensionalization of a shear stress, and is typically denoted "^^xsd:string .
+

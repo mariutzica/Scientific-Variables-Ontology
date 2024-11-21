@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:biopoiesis a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "biopoiesis"^^xsd:string ;
+    svo:has_synonym "abiogenesis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q231218"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Abiogenesis"^^xsd:string ;
+    rdfs:comment "In biology, abiogenesis (from a- 'not' + Greek bios 'life' + genesis 'origin') or the origin of life is the natural process by which life has arisen from non-living matter, such as simple organic compounds. The prevailing scientific hypothesis is that the transition from non-living to living entities on Earth was not a single event, but a process of increasing complexity involving the formation of a habitable planet, the prebiotic synthesis of organic molecules, molecular self-replication, self-assembly, autocatalysis, and the emergence of cell membranes. Many proposals have been made for different stages of the process."^^xsd:string .
+

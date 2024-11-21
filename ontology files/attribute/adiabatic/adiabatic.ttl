@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:adiabatic a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "adiabatic"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q182453"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Adiabatic_process"^^xsd:string ;
+    rdfs:comment "In thermodynamics, an adiabatic process (Greek: adiábatos, \"impassable\") is a type of thermodynamic process that occurs without transferring heat or mass between the thermodynamic system and its environment. Unlike an isothermal process, an adiabatic process transfers energy to the surroundings only as work. As a key concept in thermodynamics, the adiabatic process supports the theory that explains the first law of thermodynamics."^^xsd:string .
+

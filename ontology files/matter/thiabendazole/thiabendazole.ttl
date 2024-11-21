@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thiabendazole a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "thiabendazole"^^xsd:string ;
+    svo:has_synonym "tbz"^^xsd:string,
+        "tiabendazole"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q424986"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tiabendazole"^^xsd:string ;
+    rdfs:comment "Tiabendazole (INN, BAN), also known as thiabendazole (AAN, USAN) or TBZ and the trade names Mintezol, Tresaderm, and Arbotect, is a preservative, an antifungal agent, and an antiparasitic agent."^^xsd:string .
+

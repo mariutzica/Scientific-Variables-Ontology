@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28river-delta-has-part-front%29-contains-%28sediment-has-form-grain%29%29-has-property-%28mean_of_diameter%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "river-delta_front_sediment_grain__mean_of_diameter"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/sediment> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/mean> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/front> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/grain>,
+        <http://scientificvariablesontology.org/svo/phenomenon/river-delta> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/diameter> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28river-delta-has-part-front%29-contains-%28sediment-has-form-grain%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mean_of_diameter> ;
+    svo:has_original_label "delta_front_sediment_grain__mean_diameter"^^xsd:string .
+

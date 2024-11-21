@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:atmosphere-as-source-sleet-undergoes-process-precipitation a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "atmosphere_sleet_precipitation"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :sleet ;
+    svo:has_source_participant_phenomenon :atmosphere ;
+    svo:undergoes_process <http://scientificvariablesontology.org/svo/process/precipitation> .
+

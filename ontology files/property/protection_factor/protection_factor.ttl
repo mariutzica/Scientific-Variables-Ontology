@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:protection_factor a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "protection_factor"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7638720"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sun_protective_clothing#UPF_rating"^^xsd:string ;
+    rdfs:comment "Sun protective clothing is clothing specifically designed for sun protection and is produced from a fabric rated for its level of ultraviolet (UV) protection. A novel weave structure and denier (related to thread count per inch) may produce sun protective properties. In addition, some textiles and fabrics employed in the use of sun protective clothing may be pre-treated with UV-inhibiting ingredients during manufacture to enhance their effectiveness."^^xsd:string .
+

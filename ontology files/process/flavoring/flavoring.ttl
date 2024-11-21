@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:flavoring a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "flavoring"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4173974"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Flavoring"^^xsd:string ;
+    rdfs:comment "A flavoring (or flavouring), also known as flavor (or flavour) or flavorant, is a food additive used to improve the taste or smell of food. It changes the perceptual impression of food as determined primarily by the chemoreceptors of the gustatory and olfactory systems. Along with additives, other components like sugars determine the taste of food.  "^^xsd:string .
+

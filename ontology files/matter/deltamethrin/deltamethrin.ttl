@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:deltamethrin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "deltamethrin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q422257"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Deltamethrin"^^xsd:string ;
+    rdfs:comment "Deltamethrin is a pyrethroid ester insecticide. Deltamethrin plays a key role in controlling malaria vectors, and is used in the manufacture of long-lasting insecticidal mosquito nets; however, resistance of mosquitos and bed bugs to deltamethrin has seen a widespread increase. "^^xsd:string .
+

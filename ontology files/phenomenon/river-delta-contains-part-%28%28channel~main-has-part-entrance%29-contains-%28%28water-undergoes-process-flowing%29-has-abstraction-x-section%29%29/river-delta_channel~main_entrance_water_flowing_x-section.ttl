@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/river-delta-contains-part-%28%28channel~main-has-part-entrance%29-contains-%28%28water-undergoes-process-flowing%29-has-abstraction-x-section%29%29> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "river-delta_channel~main_entrance_water_flowing_x-section"^^xsd:string ;
+    svo:has_primary_participant_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28channel~main-has-part-entrance%29-contains-%28%28water-undergoes-process-flowing%29-has-abstraction-x-section%29> ;
+    svo:is_part_of_containing_phenomenon :river-delta .
+

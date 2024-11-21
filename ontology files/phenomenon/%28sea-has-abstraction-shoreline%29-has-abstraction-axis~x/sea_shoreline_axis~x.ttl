@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28sea-has-abstraction-shoreline%29-has-abstraction-axis~x> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "sea_shoreline_axis~x"^^xsd:string ;
+    svo:has_abstraction <http://scientificvariablesontology.org/svo/abstraction/axis~x> ;
+    svo:has_phenomenon :sea-has-abstraction-shoreline .
+

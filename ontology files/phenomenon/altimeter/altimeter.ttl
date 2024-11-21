@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:altimeter a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "altimeter"^^xsd:string ;
+    svo:has_synonym "altitude_meter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q216197"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Altimeter"^^xsd:string ;
+    rdfs:comment "An altimeter or an altitude meter is an instrument used to measure the altitude of an object above a fixed level. The measurement of altitude is called altimetry, which is related to the term bathymetry, the measurement of depth under water. The most common unit for altimeter calibration worldwide is hectopascals (hPa), except for North America (other than Canada"^^xsd:string .
+

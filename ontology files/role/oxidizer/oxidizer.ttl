@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:oxidizer a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "oxidizer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q187689"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Oxidizing_agent"^^xsd:string ;
+    rdfs:comment "An oxidizing agent (also known as an oxidant, oxidizer, electron recipient, or electron acceptor) is a substance in a redox chemical reaction that gains or \"accepts\"/\"receives\" an electron from a reducing agent (called the reductant, reducer, or electron donor). In other words, an oxidizer is any substance that oxidizes another substance. The oxidation state, which describes the degree of loss of electrons, of the oxidizer decreases while that of the reductant increases; this is expressed by saying that oxidizers \"undergo reduction\" and \"are reduced\" while reducers \"undergo oxidation\" and \"are oxidized\"."^^xsd:string .
+

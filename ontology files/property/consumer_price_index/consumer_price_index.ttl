@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:consumer_price_index a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "consumer_price_index"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q180687"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Consumer_price_index"^^xsd:string ;
+    rdfs:comment "A consumer price index (CPI) is a price index, the price of a weighted average market basket of consumer goods and services purchased by households. Changes in measured CPI track changes in prices over time."^^xsd:string .
+

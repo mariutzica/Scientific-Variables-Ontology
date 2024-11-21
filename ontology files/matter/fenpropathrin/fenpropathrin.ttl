@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fenpropathrin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "fenpropathrin"^^xsd:string ;
+    svo:has_synonym "danitol"^^xsd:string,
+        "meothrin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1404816"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fenpropathrin"^^xsd:string ;
+    rdfs:comment "Fenpropathrin, or fenopropathrin, is a widely used pyrethroid insecticide in agriculture and household. Fenpropathrin is an ingestion and contact synthetic pyrethroid. Its mode of action is similar to other natural (pyrethrum) and synthetic pyrethroids where in they interfere with the kinetics of voltage gated sodium channels causing paralysis and death of the pest. Fenpropathrin was the first of the light-stable synthetic pyrethroids to be synthesized in 1971, but it was not commercialized until 1980. Like other pyrethroids with an α-cyano group, fenpropathrin also belongs to the termed type II pyrethroids (e.g. cyfluthrin, cyhalothrin, cypermethrin, deltamethrin and esfenvalerate). Type II pyrethroids are a more potent toxicant than type I in depolarizing insect nerves. Application rates of fenpropathrin in agriculture according to US environmental protection agency (EPA) varies by crop but is not to exceed 0.4 lb ai/acre."^^xsd:string .
+

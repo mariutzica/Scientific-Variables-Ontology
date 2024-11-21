@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:material-has-model-abstraction-mohr-coulomb-plastic a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "material_mohr-coulomb-plastic"^^xsd:string ;
+    svo:has_matter <http://scientificvariablesontology.org/svo/matter/material> ;
+    svo:is_modeled_by <http://scientificvariablesontology.org/svo/abstraction/mohr-coulomb-plastic> .
+

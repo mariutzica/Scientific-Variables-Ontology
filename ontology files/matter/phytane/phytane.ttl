@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:phytane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "phytane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q171701"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Phytane"^^xsd:string ;
+    rdfs:comment "Phytane is the isoprenoid alkane formed when phytol, a constituent of chlorophyll, loses its hydroxyl group. When phytol loses one carbon atom, it yields pristane. Other sources of phytane and pristane have also been proposed than phytol.Pristane and phytane are common constituents in petroleum and have been used as proxies for depositional redox conditions, as well as for correlating oil and its source rock (i.e. elucidating where oil formed). In environmental studies, pristane and phytane are target compounds for investigating oil spills."^^xsd:string .
+

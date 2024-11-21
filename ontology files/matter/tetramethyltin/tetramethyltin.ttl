@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tetramethyltin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tetramethyltin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q413135"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tetramethyltin"^^xsd:string ;
+    rdfs:comment "Tetramethyltin is an organometallic compound with the formula (CH3)4Sn. This liquid, one of the simplest organotin compounds, is useful for transition-metal mediated conversion of acid chlorides to methyl ketones and aryl halides to aryl methyl ketones.  It is volatile and toxic, so care should be taken when using it in the laboratory."^^xsd:string .
+

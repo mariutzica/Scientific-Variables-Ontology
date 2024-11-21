@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:floe a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "floe"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q368930"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ice_floe"^^xsd:string ;
+    rdfs:comment "An ice floe () is a large pack of floating ice often defined as a flat piece at least 20 m across at its widest point, and up to more than 10 km across. Drift ice is a floating field of sea ice composed of several ice floes. They may cause ice jams on freshwater rivers, and in the open ocean may damage the hulls of ships."^^xsd:string .
+

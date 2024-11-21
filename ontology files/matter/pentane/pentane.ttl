@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pentane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "pentane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q150429"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pentane"^^xsd:string ;
+    rdfs:comment "Pentane is an organic compound with the formula C5H12—that is, an alkane with five carbon atoms. The term may refer to any of three structural isomers, or to a mixture of them: in the IUPAC nomenclature, however, pentane means exclusively the n-pentane isomer; the other two are called isopentane (methylbutane) and neopentane (dimethylpropane). Cyclopentane is not an isomer of pentane because it has only 10 hydrogen atoms where pentane has 12."^^xsd:string .
+

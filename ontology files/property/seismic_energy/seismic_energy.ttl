@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:seismic_energy a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "seismic_energy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q186167"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Seismic_wave"^^xsd:string ;
+    rdfs:comment "A seismic wave is a mechanical wave of acoustic energy that travels through the Earth or another planetary body. It can result from an earthquake (or generally, a quake), volcanic eruption, magma movement, a large landslide and a large man-made explosion that produces low-frequency acoustic energy. Seismic waves are studied by seismologists, who record the waves using seismometers, hydrophones (in water), or accelerometers.  Seismic waves are distinguished from seismic noise (ambient vibration), which is persistent low-amplitude vibration arising from a variety of natural and anthropogenic sources."^^xsd:string .
+

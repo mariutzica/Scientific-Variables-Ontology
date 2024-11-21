@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:spallation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "spallation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q576621"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Spallation"^^xsd:string ;
+    rdfs:comment "Spallation is a process in which fragments of material (spall) are ejected from a body due to impact or stress. In the context of impact mechanics it describes ejection of material from a target during impact by a projectile. In planetary physics, spallation describes meteoritic impacts on a planetary surface and the effects of stellar winds and cosmic rays on planetary atmospheres and surfaces. In the context of mining or geology, spallation can refer to pieces of rock breaking off a rock face due to the internal stresses in the rock; it commonly occurs on mine shaft walls. In the context of anthropology, spallation is a process used to make stone tools such as arrowheads by knapping. In nuclear physics, spallation is the process in which a heavy nucleus emits numerous nucleons as a result of being hit by a high-energy particle, thus greatly reducing its atomic weight. In industrial processes and bioprocessing the loss of tubing material due to the repeated flexing of the tubing within a peristaltic pump is termed spallation."^^xsd:string .
+

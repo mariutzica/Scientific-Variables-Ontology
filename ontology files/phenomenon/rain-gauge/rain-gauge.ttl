@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:rain-gauge a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "rain-gauge"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q190052"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Rain_gauge"^^xsd:string ;
+    rdfs:comment "A rain gauge (also known as udometer, pluvia metior, pluviometer, ombrometer, and hyetometer) is an instrument used by meteorologists and hydrologists to gather and measure the amount of liquid precipitation over a predefined area, over a period of time. It is used for determining the depth of precipitation (usually in mm) that occurs over a unit area and thus measuring rainfall amount."^^xsd:string .
+

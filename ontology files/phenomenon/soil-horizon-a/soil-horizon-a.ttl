@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:soil-horizon-a a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "soil-horizon-a"^^xsd:string ;
+    svo:has_synonym "topsoil"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1247456"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Topsoil"^^xsd:string ;
+    rdfs:comment "Topsoil is the upper layer of soil. It has the highest concentration of organic matter and microorganisms and is where most of the Earth's biological soil activity occurs."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:aging a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "aging"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q332154"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ageing"^^xsd:string ;
+    rdfs:comment "Ageing or aging is the process of becoming older. The term refers mainly to humans, many other animals, and fungi, whereas for example, bacteria, perennial plants and some simple animals are potentially biologically immortal. In a broader sense, ageing can refer to single cells within an organism which have ceased dividing, or to the population of a species.In humans, ageing represents the accumulation of changes in a human being over time and can encompass physical, psychological, and social changes. Reaction time, for example, may slow with age, while memories and general knowledge typically increase. Ageing increases the risk of human diseases such as cancer, Alzheimer's disease, diabetes, cardiovascular disease, stroke and many more. Of the roughly 150,000 people who die each day across the globe, about two-thirds die from age-related causes."^^xsd:string .
+

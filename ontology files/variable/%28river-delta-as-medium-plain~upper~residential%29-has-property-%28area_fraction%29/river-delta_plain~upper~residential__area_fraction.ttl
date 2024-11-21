@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28river-delta-as-medium-plain~upper~residential%29-has-property-%28area_fraction%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "river-delta_plain~upper~residential__area_fraction"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/residential>,
+        <http://scientificvariablesontology.org/svo/attribute/upper> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/plain>,
+        <http://scientificvariablesontology.org/svo/phenomenon/river-delta> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/river-delta-as-medium-plain~upper~residential> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/area_fraction> ;
+    svo:has_original_label "delta_plain~upper~residential__area_fraction"^^xsd:string .
+

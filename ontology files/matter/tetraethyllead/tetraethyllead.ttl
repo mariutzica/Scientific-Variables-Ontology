@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tetraethyllead a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tetraethyllead"^^xsd:string ;
+    svo:has_synonym "tel"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q266210"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tetraethyllead"^^xsd:string ;
+    rdfs:comment "Tetraethyllead (commonly styled tetraethyl lead), abbreviated TEL, is an organolead compound with the formula Pb(C2H5)4. It is a fuel additive, first being mixed with gasoline beginning in the 1920s as a patented octane rating booster that allowed engine compression to be raised substantially. This in turn increased vehicle performance and fuel economy. TEL was first synthesised by German chemist Carl Jacob Löwig in 1853. American chemical engineer Thomas Midgley Jr., who was working for General Motors, was the first to discover its effectiveness as an antiknock agent in 1921, after spending several years attempting to find an additive that was both highly effective and inexpensive."^^xsd:string .
+

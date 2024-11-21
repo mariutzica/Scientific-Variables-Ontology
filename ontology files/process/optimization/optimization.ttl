@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:optimization a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "optimization"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q141495"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mathematical_optimization"^^xsd:string ;
+    rdfs:comment "Mathematical optimization (alternatively spelled optimisation) or mathematical programming is the selection of a best element, with regard to some criterion, from some set of available alternatives. It is generally divided into two subfields: discrete optimization and continuous optimization. Optimization problems arise in all quantitative disciplines from computer science and engineering to operations research and economics, and the development of solution methods has been of interest in mathematics for centuries."^^xsd:string .
+

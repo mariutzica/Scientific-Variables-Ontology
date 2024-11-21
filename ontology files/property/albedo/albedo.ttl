@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:albedo a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "albedo"^^xsd:string ;
+    svo:has_synonym "reflection_coefficient"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q101038"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Albedo"^^xsd:string ;
+    rdfs:comment "Albedo (; from Latin  albedo 'whiteness') is the measure of the diffuse reflection of solar radiation out of the total solar radiation and measured on a scale from 0, corresponding to a black body that absorbs all incident radiation, to 1, corresponding to a body that reflects all incident radiation."^^xsd:string .
+

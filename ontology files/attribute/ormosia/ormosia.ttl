@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ormosia a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "ormosia"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2872596"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ormosia"^^xsd:string ;
+    rdfs:comment "Ormosia is a genus of legumes (family Fabaceae). The more than 100 living species, mostly trees or large shrubs, are distributed throughout the tropical regions of the world, some extending into temperate zones, especially in East Asia. A few species are threatened by habitat destruction, while the Hainan ormosia (Ormosia howii) is probably extinct already."^^xsd:string .
+

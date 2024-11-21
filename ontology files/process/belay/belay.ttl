@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:belay a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "belay"^^xsd:string ;
+    svo:has_synonym "belay"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2626848"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Belaying"^^xsd:string ;
+    rdfs:comment "Belaying is a variety of techniques climbers use to create friction within a climbing system, particularly on a climbing rope, so that a falling climber does not fall very far. A climbing partner typically applies tension at the other end of the rope whenever the climber is not moving, and removes the tension from the rope whenever the climber needs more rope to continue climbing."^^xsd:string .
+

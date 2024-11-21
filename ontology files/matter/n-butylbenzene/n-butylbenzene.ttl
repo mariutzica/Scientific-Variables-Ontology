@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:n-butylbenzene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "n-butylbenzene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q16081199"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/N-Butylbenzene"^^xsd:string ;
+    rdfs:comment "n-Butylbenzene is the organic compound with the formula C6H5C4H9.  Of two isomers of butylbenzene, n-butylbenzene consists of a phenyl group attached to the 1 position of a butyl group.  It is a slightly greasy, colorless liquid.  "^^xsd:string .
+

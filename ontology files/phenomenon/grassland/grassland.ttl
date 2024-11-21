@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:grassland a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "grassland"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1006733"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Grassland"^^xsd:string ;
+    rdfs:comment "A grassland is an area where the vegetation is dominated by grasses (Poaceae). However, sedge (Cyperaceae) and rush (Juncaceae) can also be found along with variable proportions of legumes, like clover, and other herbs. Grasslands occur naturally on all continents except Antarctica and are found in most ecoregions of the Earth. Furthermore, grasslands are one of the largest biomes on earth and dominate the landscape worldwide. There are different types of grasslands: natural grasslands, semi-natural grasslands, and agricultural grasslands. They cover 31–69% of the Earth's land area."^^xsd:string .
+

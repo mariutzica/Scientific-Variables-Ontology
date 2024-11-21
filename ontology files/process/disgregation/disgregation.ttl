@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:disgregation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "disgregation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5282180"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Disgregation"^^xsd:string ;
+    rdfs:comment "In the history of thermodynamics, disgregation is an early formulation of the concept of entropy. It was defined in 1862 by Rudolf Clausius as the magnitude of the degree in which the molecules of a body are separated from each other. Disgregation was the stepping stone for Clausius to create the mathematical expression for the Second Law of Thermodynamics. Clausius modeled the concept on certain passages in French physicist Sadi Carnot's 1824 paper On the Motive Power of Fire which characterized the transformations of working substances (particles of a thermodynamic system) of an engine cycle, namely \"mode of aggregation\". The concept was later extended by Clausius in 1865 in the formulation of entropy, and in Ludwig Boltzmann's 1870s developments including the diversities of the motions of the microscopic constituents of matter, described in terms of order and disorder. In 1949, Edward Armand Guggenheim developed the concept of energy dispersal. The terms disgregation and dispersal are near in meaning."^^xsd:string .
+

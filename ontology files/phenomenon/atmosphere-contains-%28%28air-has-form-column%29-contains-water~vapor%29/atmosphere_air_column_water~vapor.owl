@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/phenomenon/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/phenomenon/">
+<owl:NamedIndividual rdf:about="atmosphere-contains-%28%28air-has-form-column%29-contains-water~vapor%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Phenomenon"/>
+  <svo:has_primary_participant_phenomenon rdf:resource="%28air-has-form-column%29-contains-water~vapor"/>
+  <svo:has_containing_phenomenon rdf:resource="atmosphere"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atmosphere_air_column_water~vapor</rdfs:label>
+</owl:NamedIndividual>
+</rdf:RDF>

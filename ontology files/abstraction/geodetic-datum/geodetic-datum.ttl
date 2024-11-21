@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:geodetic-datum a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "geodetic-datum"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1502887"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Geodetic_datum"^^xsd:string ;
+    rdfs:comment "A geodetic datum or geodetic system (also: geodetic reference datum, geodetic reference system, or geodetic reference frame) is a global datum reference or reference frame for precisely representing the position of locations on Earth or other planetary bodies by means of geodetic coordinates. Datums are crucial to any technology or technique based on spatial location, including geodesy, navigation, surveying, geographic information systems, remote sensing, and cartography. A horizontal datum is used to measure a location across the Earth's surface, in latitude and longitude or another coordinate system; a vertical datum is used to measure the elevation or depth relative to a standard origin, such as mean sea level (MSL). Since the rise of the global positioning system (GPS), the ellipsoid and datum  WGS 84 it uses has supplanted most others in many applications. The WGS 84 is intended for global use, unlike most earlier datums."^^xsd:string .
+

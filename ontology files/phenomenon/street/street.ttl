@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:street a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "street"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q79007"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Street"^^xsd:string ;
+    rdfs:comment "A street is a public thoroughfare in a built environment. It is a public parcel of land adjoining buildings in an urban context, on which people may freely assemble, interact, and move about. A street can be as simple as a level patch of dirt, but is more often paved with a hard, durable surface such as tarmac, concrete, cobblestone or brick. Portions may also be smoothed with asphalt, embedded with rails, or otherwise prepared to accommodate non-pedestrian traffic."^^xsd:string .
+

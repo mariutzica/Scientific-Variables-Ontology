@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mineral a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "mineral"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7946"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mineral"^^xsd:string ;
+    rdfs:comment "In geology and mineralogy, a mineral or mineral species is, broadly speaking, a solid substance with a fairly well-defined chemical composition and a specific crystal structure that occurs naturally in pure form.The geological definition of mineral normally excludes compounds that occur only in living organisms. However, some minerals are often biogenic (such as calcite) or are organic compounds in the sense of chemistry (such as mellite). Moreover, living organisms often synthesize inorganic minerals (such as hydroxylapatite) that also occur in rocks."^^xsd:string .
+

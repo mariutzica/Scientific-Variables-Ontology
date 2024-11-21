@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:enterobacter a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "enterobacter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q134281"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Enterobacter"^^xsd:string ;
+    rdfs:comment "Enterobacter is a genus of common Gram-negative, facultatively anaerobic, rod-shaped, non-spore-forming bacteria of the family Enterobacteriaceae.  It is the type genus of the order Enterobacterales.  Several strains of these bacteria are pathogenic and cause opportunistic infections in immunocompromised (usually hospitalized) hosts and in those who are on mechanical ventilation.  The urinary and respiratory tracts are the most common sites of infection.  The genus Enterobacter is a member of the coliform group of bacteria. It does not belong to the fecal coliforms (or thermotolerant coliforms) group of bacteria, unlike Escherichia coli, because it is incapable of growth at 44.5 °C in the presence of bile salts.  Some of them show quorum sensing properties.One clinically important species from this genus is E. cloacae."^^xsd:string .
+

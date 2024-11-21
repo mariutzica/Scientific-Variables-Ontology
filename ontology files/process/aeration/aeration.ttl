@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:aeration a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "aeration"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q381105"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Aeration"^^xsd:string ;
+    rdfs:comment "Aeration (also called aerification or aeriation) is the process by which air is circulated through, mixed with or dissolved in a liquid or other substances that act as a fluid (such as soil). Aeration processes create additional surface area in the mixture, allowing greater chemical or suspension reactions."^^xsd:string .
+

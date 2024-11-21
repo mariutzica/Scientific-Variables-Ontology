@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/propertytype/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ordinal a svo:PropertyType,
+        owl:NamedIndividual ;
+    rdfs:label "ordinal"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7100785"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ordinal_data"^^xsd:string ;
+    rdfs:comment "Ordinal data is a categorical, statistical data type where the variables have natural, ordered categories and the distances between the categories are not known.: 2  These data exist on an ordinal scale, one of four levels of measurement described by S. S. Stevens in 1946. The ordinal scale is distinguished from the nominal scale by having a ranking. It also differs from the interval scale and ratio scale by not having category widths that represent equal increments of the underlying attribute."^^xsd:string .
+

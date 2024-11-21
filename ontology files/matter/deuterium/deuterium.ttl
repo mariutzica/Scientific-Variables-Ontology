@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:deuterium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "deuterium"^^xsd:string ;
+    svo:has_synonym "hydrogen-2"^^xsd:string,
+        "hydrogen~heavy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q102296"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Deuterium"^^xsd:string ;
+    rdfs:comment "Deuterium (or hydrogen-2, symbol 2H or D, also known as heavy hydrogen) is one of two stable isotopes of hydrogen (the other being protium, or hydrogen-1). The nucleus of a deuterium atom, called a deuteron, contains one proton and one neutron, whereas the far more common protium has no neutrons in the nucleus. Deuterium has a natural abundance in Earth's oceans of about one atom of deuterium among every 6,420 atoms of hydrogen (see heavy water). Thus deuterium accounts for approximately 0.0156% by number (0.0312% by mass) of all the naturally occurring hydrogen in the oceans, while protium accounts for more than 99.98%. The abundance of deuterium changes slightly from one kind of natural water to another (see Vienna Standard Mean Ocean Water). (Tritium is yet another hydrogen isotope with symbol 3H or T. It has two neutrons, and is radioactive and far more rare than deuterium.)"^^xsd:string .
+

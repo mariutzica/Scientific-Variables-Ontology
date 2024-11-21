@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:omethoate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "omethoate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2204769"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Omethoate"^^xsd:string ;
+    rdfs:comment "Omethoate (C5H12NO4PS) is a systemic organophosphorous insecticide and acaricide available as a soluble concentrate. It is used to control insects and mites in horticulture and agriculture, as well as in the home garden."^^xsd:string .
+

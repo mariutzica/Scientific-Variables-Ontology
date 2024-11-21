@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:rayleigh_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "rayleigh_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q898249"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Rayleigh_number"^^xsd:string ;
+    rdfs:comment "In fluid mechanics, the Rayleigh number (Ra, after Lord Rayleigh) for a fluid is a dimensionless number associated with buoyancy-driven flow, also known as free (or natural) convection. It characterises the fluid's flow regime: a value in a certain lower range denotes laminar flow; a value in a higher range, turbulent flow. Below a certain critical value, there is no fluid motion and heat transfer is by conduction rather than convection. For most engineering purposes, the Rayleigh number is large, somewhere around 106 to 108."^^xsd:string .
+

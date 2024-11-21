@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ionic_conductivity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "ionic_conductivity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6063658"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ionic_conductivity_(solid_state)"^^xsd:string ;
+    rdfs:comment "Ionic conductivity (denoted by λ) is a measure of a substance's tendency towards ionic conduction. Ionic conduction is the movement of ions.  The phenomenon is observed in solids and solutions. Ionic conduction is one mechanism of current."^^xsd:string .
+

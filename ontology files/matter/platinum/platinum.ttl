@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:platinum a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "platinum"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q880"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Platinum"^^xsd:string ;
+    rdfs:comment "Platinum is a chemical element with the symbol Pt and atomic number 78. It is a dense, malleable, ductile, highly unreactive, precious, silverish-white transition metal. Its name originates from Spanish platina, a diminutive of plata \"silver\".Platinum is a member of the platinum group of elements and group 10 of the periodic table of elements. It has six naturally occurring isotopes. It is one of the rarer elements in Earth's crust, with an average abundance of approximately 5 μg/kg. It occurs in some nickel and copper ores along with some native deposits, mostly in South Africa, which accounts for ~80% of the world production. Because of its scarcity in Earth's crust, only a few hundred tonnes are produced annually, and given its important uses, it is highly valuable and is a major precious metal commodity.Platinum is one of the least reactive metals. It has remarkable resistance to corrosion, even at high temperatures, and is therefore considered a noble metal. Consequently, platinum is often found chemically uncombined as native platinum. Because it occurs naturally in the alluvial sands of various rivers, it was first used by pre-Columbian South American natives to produce artifacts. It was referenced in European writings as early as the 16th century, but it was not until Antonio de Ulloa published a report on a new metal of Colombian origin in 1748 that it began to be investigated by scientists."^^xsd:string .
+

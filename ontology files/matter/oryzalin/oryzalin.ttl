@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:oryzalin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "oryzalin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q410996"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Oryzalin"^^xsd:string ;
+    rdfs:comment "Oryzalin is an herbicide of the dinitroaniline class.  It acts through the disruption (depolymerization) of microtubules, thus blocking anisotropic growth of plant cells. It can also be used to induce polyploidy in plants as an alternative to colchicine."^^xsd:string .
+

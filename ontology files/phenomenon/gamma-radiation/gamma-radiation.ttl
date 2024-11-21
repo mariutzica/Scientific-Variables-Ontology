@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gamma-radiation a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "gamma-radiation"^^xsd:string ;
+    svo:has_synonym "gamma rays"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11523"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gamma_Radiation"^^xsd:string ;
+    rdfs:comment "electromagnetic radiation of high frequency and therefore high energy"^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:convective_available_potential_energy a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "convective_available_potential_energy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1129355"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Convective_available_potential_energy"^^xsd:string ;
+    rdfs:comment "In meteorology, convective available potential energy (commonly abbreviated as CAPE), is the integrated amount of work that the upward (positive) buoyancy force would perform on a given mass of air (called an air parcel) if it rose vertically through the entire atmosphere. Positive CAPE will cause the air parcel to rise, while negative CAPE will cause the air parcel to sink. "^^xsd:string .
+

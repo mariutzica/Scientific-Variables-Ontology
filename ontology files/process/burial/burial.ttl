@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:burial a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "burial"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q331055"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Burial"^^xsd:string ;
+    rdfs:comment "Burial, also known as interment or inhumation, is a method of final disposition whereby a dead body is placed into the ground, sometimes with objects. This is usually accomplished by excavating a pit or trench, placing the deceased and objects in it, and covering it over. A funeral is a ceremony that accompanies the final disposition. Evidence suggests that some archaic and early modern humans buried their dead. Burial is often seen as indicating respect for the dead. It has been used to prevent the odor of decay, to give family members closure and prevent them from witnessing the decomposition of their loved ones, and in many cultures it has been seen as a necessary step for the deceased to enter the afterlife or to give back to the cycle of life."^^xsd:string .
+

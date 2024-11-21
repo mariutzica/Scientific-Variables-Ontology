@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:desublimation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "desublimation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q871279"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Desublimation"^^xsd:string ;
+    rdfs:comment "transition from a gas to a solid"^^xsd:string .
+

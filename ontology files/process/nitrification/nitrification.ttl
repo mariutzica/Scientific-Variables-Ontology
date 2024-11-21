@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nitrification a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "nitrification"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q668677"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nitrification"^^xsd:string ;
+    rdfs:comment "Nitrification is the biological oxidation of ammonia to nitrate via the intermediary nitrite. Nitrification is an important step in the nitrogen cycle in soil. The process of complete nitrification may occur through separate organisms or entirely within one organism, as in comammox bacteria. The transformation of ammonia to nitrite is usually the rate limiting step of nitrification. Nitrification is an aerobic process performed by small groups of autotrophic bacteria and archaea."^^xsd:string .
+

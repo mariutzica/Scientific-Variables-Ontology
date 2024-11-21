@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/%28atmosphere-has-part-bottom%29-contains-%28air-has-form-bulk%29> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "atmosphere_bottom_air_bulk"^^xsd:string ;
+    svo:has_containing_phenomenon :atmosphere-has-part-bottom ;
+    svo:has_primary_participant_phenomenon :air-has-form-bulk .
+

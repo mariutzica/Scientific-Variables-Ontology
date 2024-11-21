@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28sea-contains-%28water-undergoes-process-flowing%29%29-has-property-%28x_component_of_momentum%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "sea_water_flowing__x_component_of_momentum"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/x_component> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/sea> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/flowing> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/momentum> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/sea-contains-%28water-undergoes-process-flowing%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/x_component_of_momentum> ;
+    svo:has_original_label "sea_water_flow__x_component_of_momentum"^^xsd:string .
+

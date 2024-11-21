@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/storage-tank~open-top-contains-part-%28outlet-contains-%28water-undergoes-process-flowing%29%29> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "storage-tank~open-top_outlet_water_flowing"^^xsd:string ;
+    svo:has_primary_participant_phenomenon :outlet-contains-%28water-undergoes-process-flowing%29 ;
+    svo:is_part_of_containing_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/storage-tank~open-top> .
+

@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dredging a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "dredging"^^xsd:string ;
+    svo:has_synonym "dredging"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q852170"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dredging"^^xsd:string ;
+    rdfs:comment "Dredging is the excavation of material from a water environment. Possible reasons for dredging include improving existing water features; reshaping land and water features to alter drainage, navigability, and commercial use; constructing dams, dikes, and other controls for streams and shorelines; and recovering valuable mineral deposits or marine life having commercial value. In all but a few situations the excavation is undertaken by a specialist floating plant, known as a dredger."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:decapoda a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "decapoda"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4610"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Decapoda"^^xsd:string ;
+    rdfs:comment "The Decapoda or decapods (literally \"ten-footed\") are an order of crustaceans within the class Malacostraca, including many familiar groups, such as crabs, lobsters, crayfish, shrimp, and prawns. Most decapods are scavengers. The order is estimated to contain nearly 15,000 species in around 2,700 genera, with around 3,300 fossil species. Nearly half of these species are crabs, with the shrimp (about 3,000 species) and Anomura including hermit crabs, porcelain crabs, squat lobsters (about 2500 species) making up the bulk of the remainder. The earliest fossil decapod is the Devonian Palaeopalaemon."^^xsd:string .
+

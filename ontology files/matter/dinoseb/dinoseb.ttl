@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dinoseb a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dinoseb"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q415111"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dinoseb"^^xsd:string ;
+    rdfs:comment "Dinoseb is a common industry name for 6-sec-butyl-2,4-dinitrophenol, a herbicide in the dinitrophenol family. It is a crystalline orange solid which does not readily dissolve in water. Dinoseb is banned as an herbicide in the European Union (EU) and the United States because of its toxicity."^^xsd:string .
+

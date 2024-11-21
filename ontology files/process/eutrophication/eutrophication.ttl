@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:eutrophication a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "eutrophication"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q156698"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Eutrophication"^^xsd:string ;
+    rdfs:comment "Eutrophication is a general term describing a process in which nutrients accumulate in a body of water, resulting in an increased growth of microorganisms that may deplete the water of oxygen. Although eutrophication is a natural process, manmade or cultural eutrophication is far more common and is a rapid process caused by a variety of polluting inputs including poorly treated sewage, industrial wastewater, and fertilizer runoff. Such nutrient pollution usually causes algal blooms and bacterial growth, resulting in the depletion of dissolved oxygen in water and causing substantial environmental degradation."^^xsd:string .
+

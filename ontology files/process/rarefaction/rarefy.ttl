@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:rarefaction a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "rarefy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7294544"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Rarefaction"^^xsd:string ;
+    rdfs:comment "Rarefaction is the reduction of an item's density, the opposite of compression. Like compression, which can travel in waves (sound waves, for instance), rarefaction waves also exist in nature. A common rarefaction wave is the area of low relative pressure following a shock wave (see picture)."^^xsd:string .
+

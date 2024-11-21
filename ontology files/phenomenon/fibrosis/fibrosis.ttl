@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fibrosis a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "fibrosis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q605709"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fibrosis"^^xsd:string ;
+    rdfs:comment "Fibrosis, also known as fibrotic scarring, is a pathological wound healing in which connective tissue replaces normal parenchymal tissue to the extent that it goes unchecked, leading to considerable tissue remodelling and the formation of permanent scar tissue.Repeated injuries, chronic inflammation and repair are susceptible to fibrosis, where an accidental excessive accumulation of extracellular matrix components, such as the collagen, is produced by fibroblasts, leading to the formation of a permanent fibrotic scar.In response to injury, this is called scarring, and if fibrosis arises from a single cell line, this is called a fibroma. Physiologically, fibrosis acts to deposit connective tissue, which can interfere with or totally inhibit the normal architecture and function of the underlying organ or tissue. Fibrosis can be used to describe the pathological state of excess deposition of fibrous tissue, as well as the process of connective tissue deposition in healing. Defined by the pathological accumulation of extracellular matrix (ECM) proteins, fibrosis results in scarring and thickening of the affected tissue — it is in essence an exaggerated wound healing response which interferes with normal organ function."^^xsd:string .
+

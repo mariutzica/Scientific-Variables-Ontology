@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28earth-mantle-contains-%28material-undergoes-process-isothermal-process%29%29-has-property-%28temperature_derivative_of_compressibility%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "earth-mantle_material_isothermal-process__temperature_derivative_of_compressibility"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/material> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/temperature_derivative> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/earth-mantle> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/isothermal-process> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/compressibility> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/earth-mantle-contains-%28material-undergoes-process-isothermal-process%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/temperature_derivative_of_compressibility> ;
+    svo:has_original_label "earth_mantle_material__temperature_derivative_of_isothermal_incompressibility"^^xsd:string .
+

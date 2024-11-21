@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:amphinomidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "amphinomidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q696598"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Amphinomidae"^^xsd:string ;
+    rdfs:comment "Amphinomidae, also known as the bristle worms or sea mice, are a family of marine polychaetes, many species of which bear chaetae mineralized with carbonate.  The best-known amphinomids are the fireworms, which can cause great pain if their toxin-coated chaetae are touched or trodden on.  Their relationship to other polychaete groups is somewhat poorly resolved."^^xsd:string .
+

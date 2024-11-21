@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bulk a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "bulk"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q343050"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bulk"^^xsd:string ;
+    rdfs:comment "Bulk can refer to:"^^xsd:string .
+

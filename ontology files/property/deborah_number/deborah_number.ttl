@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:deborah_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "deborah_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1138045"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Deborah_number"^^xsd:string ;
+    rdfs:comment "The Deborah number (De) is a dimensionless number, often used in rheology to characterize the fluidity of materials under specific flow conditions. It quantifies the observation that given enough time even a solid-like material might flow, or a fluid-like material can act solid when it is deformed rapidly enough. Materials that have low relaxation times flow easily and as such show relatively rapid stress decay."^^xsd:string .
+

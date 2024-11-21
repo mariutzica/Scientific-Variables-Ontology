@@ -1,0 +1,11 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:snow a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "snow"^^xsd:string ;
+    svo:has_matter <http://scientificvariablesontology.org/svo/matter/snow> .
+

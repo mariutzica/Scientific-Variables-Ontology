@@ -1,0 +1,11 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/phenomenon/material~mineral-phase-has-model-abstraction-equation-of-state> a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "material~mineral-phase_equation-of-state"^^xsd:string ;
+    svo:has_matter <http://scientificvariablesontology.org/svo/matter/material~mineral-phase> ;
+    svo:is_modeled_by <http://scientificvariablesontology.org/svo/abstraction/equation-of-state> .
+

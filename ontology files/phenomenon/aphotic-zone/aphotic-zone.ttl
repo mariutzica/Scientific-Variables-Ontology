@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:aphotic-zone a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "aphotic-zone"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q618477"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Aphotic_zone"^^xsd:string ;
+    rdfs:comment "The aphotic zone (aphotic from Greek prefix ἀ- + φῶς \"without light\") is the portion of a lake or ocean where there is little or no sunlight. It is formally defined as the depths beyond which less than 1 percent of sunlight penetrates. Above the aphotic zone is the photic zone, which consists of the euphotic zone and the disphotic zone. The euphotic zone is the layer of water in which there is enough light for net photosynthesis to occur. The disphotic zone, also known as the twilight zone, is the layer of water with enough light for predators to see but not enough for the rate of photosynthesis to be greater than the rate of respiration."^^xsd:string .
+

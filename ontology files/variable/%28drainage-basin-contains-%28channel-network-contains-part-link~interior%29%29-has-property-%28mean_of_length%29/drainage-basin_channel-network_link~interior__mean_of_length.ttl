@@ -1,0 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28drainage-basin-contains-%28channel-network-contains-part-link~interior%29%29-has-property-%28mean_of_length%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "drainage-basin_channel-network_link~interior__mean_of_length"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/interior> ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/link> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/mean> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/channel-network>,
+        <http://scientificvariablesontology.org/svo/phenomenon/drainage-basin> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/length> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/drainage-basin-contains-%28channel-network-contains-part-link~interior%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mean_of_length> ;
+    svo:has_original_label "basin_channel-network_link~interior__mean_of_length"^^xsd:string .
+

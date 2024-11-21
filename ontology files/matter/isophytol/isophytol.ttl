@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:isophytol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "isophytol"^^xsd:string ;
+    svo:has_synonym "1-Hexadecen-3-ol,-3,7,11,15-tetramethyl-"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q26841319"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isophytol"^^xsd:string ;
+    rdfs:comment "Isophytol is a terpenoid alcohol that is used as a fragrance and as an intermediate in the production of vitamin E and K1."^^xsd:string .
+

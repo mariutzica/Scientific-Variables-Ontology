@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:enrobing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "enrobing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4544011"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Enrober"^^xsd:string ;
+    rdfs:comment "An enrober is a machine used in the confectionery industry to coat a food item with a coating medium, typically chocolate. Foods that are coated by enrobers include nuts, ice cream, toffee, chocolate bars, biscuits and cookies. Enrobing with chocolate extends a confection's shelf life."^^xsd:string .
+

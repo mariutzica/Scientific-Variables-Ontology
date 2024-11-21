@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28glacier-has-part-top-has-abstraction-surface%29-has-property-%28max_of_elevation%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "glacier_top_surface__max_of_elevation"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/surface> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/max> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/top> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/glacier> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/elevation> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/glacier-has-part-top-has-abstraction-surface> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/max_of_elevation> .
+

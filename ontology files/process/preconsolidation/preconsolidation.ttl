@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:preconsolidation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "preconsolidation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7239571"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Preconsolidation_pressure"^^xsd:string ;
+    rdfs:comment "Preconsolidation pressure is the maximum effective vertical overburden stress that a particular soil sample has sustained in the past. This quantity is important in geotechnical engineering, particularly for finding the expected settlement of foundations and embankments. Alternative names for the preconsolidation pressure are preconsolidation stress, pre-compression stress, pre-compaction stress, and preload stress. A soil is called overconsolidated if the current effective stress acting on the soil is less than the historical maximum."^^xsd:string .
+

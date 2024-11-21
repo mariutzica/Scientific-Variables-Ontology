@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:inert a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "inert"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q262175"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chemically_inert"^^xsd:string ;
+    rdfs:comment "In chemistry, the term chemically inert is used to describe a substance that is not chemically reactive. From a thermodynamic perspective, a substance is inert, or nonlabile, if it is thermodynamically unstable (positive standard Gibbs free energy of formation) yet decomposes at a slow, or negligible rate.Most of the noble gases, which appear in the last column of the periodic table, are classified as inert (or unreactive). These elements are stable in their naturally occurring form (gaseous form) and they are called inert gases."^^xsd:string .
+

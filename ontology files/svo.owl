@@ -20,9 +20,15 @@
   <rdfs:range rdf:resource="#Property"/>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_domain"/>
+<owl:ObjectProperty rdf:about="#has_domain">
+  <rdfs:domain rdf:resource="#Phenomenon"/>
+  <rdfs:range rdf:resource="#Domain"/>
+</owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#has_phenomenon"/>
+<owl:ObjectProperty rdf:about="#has_phenomenon">
+  <rdfs:domain rdf:resource="#Phenomenon"/>
+  <rdfs:range rdf:resource="#Phenomenon"/>
+</owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#has_matter">
   <rdfs:domain rdf:resource="#Phenomenon"/>

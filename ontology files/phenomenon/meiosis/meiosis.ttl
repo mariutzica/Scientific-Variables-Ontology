@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:meiosis a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "meiosis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q16424695"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Meiosis"^^xsd:string ;
+    rdfs:comment "Meiosis ( (listen); from Ancient Greek  μείωσις (meíōsis) 'lessening', since it is a reductional division) is a special type of cell division of germ cells in sexually-reproducing organisms that produces the gametes, such as sperm or egg cells. It involves two rounds of division that ultimately result in four cells with only one copy of each chromosome (haploid). Additionally, prior to the division, genetic material from the paternal and maternal copies of each chromosome is crossed over, creating new combinations of code on each chromosome. Later on, during fertilisation, the haploid cells produced by meiosis from a male and female will fuse to create a cell with two copies of each chromosome again, the zygote."^^xsd:string .
+

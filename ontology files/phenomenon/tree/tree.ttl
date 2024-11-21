@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tree a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "tree"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q10884"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tree"^^xsd:string ;
+    rdfs:comment "In botany, a tree is a perennial plant with an elongated stem, or trunk, usually supporting branches and leaves. In some usages, the definition of a tree may be narrower, including only woody plants with secondary growth, plants that are usable as lumber or plants above a specified height. In wider definitions, the taller palms, tree ferns, bananas, and bamboos are also trees. "^^xsd:string .
+

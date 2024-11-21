@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:terminal_speed a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "terminal_speed"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q614981"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Terminal_velocity"^^xsd:string ;
+    rdfs:comment "Terminal velocity is the maximum velocity (speed) attainable by an object as it falls through a fluid (air is the most common example). It occurs when the sum of the drag force (Fd) and the buoyancy is equal to the downward force of gravity (FG) acting on the object. Since the net force on the object is zero, the object has zero acceleration. For objects falling through regular air, the buoyant force is usually dismissed and not taken into account as its effects are negligible."^^xsd:string .
+

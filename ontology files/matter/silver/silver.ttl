@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:silver a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "silver"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1090"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Silver"^^xsd:string ;
+    rdfs:comment "Silver is a chemical element with the symbol Ag (from Latin  argentum 'silver', derived from the Proto-Indo-European h₂erǵ 'shiny, white') and atomic number 47. A soft, white, lustrous transition metal, it exhibits the highest electrical conductivity, thermal conductivity, and reflectivity of any metal. The metal is found in the Earth's crust in the pure, free elemental form (\"native silver\"), as an alloy with gold and other metals, and in minerals such as argentite and chlorargyrite. Most silver is produced as a byproduct of copper, gold, lead, and zinc refining."^^xsd:string .
+

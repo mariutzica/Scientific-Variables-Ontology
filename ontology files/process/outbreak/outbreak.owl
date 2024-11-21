@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/process/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/process/">
+<owl:NamedIndividual rdf:about="outbreak">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Process"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outbreak</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Disease_outbreak</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q3241045</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In epidemiology, an outbreak is a sudden increase in occurrences of a disease when cases are in excess of normal expectancy for the location or season. It may affect a small and localized group or impact upon thousands of people across an entire continent. The number of cases varies according to the disease-causing agent, and the size and type of previous and existing exposure to the agent. Outbreaks include many epidemics, which term is normally only for infectious diseases, as well as diseases with an environmental origin, such as a water or foodborne disease.  They may affect a region in a country or a group of countries. Pandemics are near-global disease outbreaks when multiple and various countries around the Earth are soon infected.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

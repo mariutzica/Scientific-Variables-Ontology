@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:strontium a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "strontium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q938"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Strontium"^^xsd:string ;
+    rdfs:comment "Strontium is the chemical element with the symbol Sr and atomic number 38. An alkaline earth metal, strontium is a soft silver-white yellowish metallic element that is highly chemically reactive. The metal forms a dark oxide layer when it is exposed to air. Strontium has physical and chemical properties similar to those of its two vertical neighbors in the periodic table, calcium and barium. It occurs naturally mainly in the minerals celestine and strontianite, and is mostly mined from these."^^xsd:string .
+

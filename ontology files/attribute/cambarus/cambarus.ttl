@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cambarus a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "cambarus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q309206"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cambarus"^^xsd:string ;
+    rdfs:comment "Cambarus is a large and diverse genus of crayfish from the United States and Canada. The adults range in size from about 5 cm (2.0 in) up to approximately 15 cm (5.9 in)."^^xsd:string .
+

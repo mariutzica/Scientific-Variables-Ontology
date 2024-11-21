@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28model-contains-%28grid-contains-part-%28%28primary-cell-has-part-edge%29-has-abstraction-center%29%29%29-models-water%29-has-property-%28depth%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "model_grid_primary-cell_edge_center_water__depth"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/center>,
+        <http://scientificvariablesontology.org/svo/abstraction/grid>,
+        <http://scientificvariablesontology.org/svo/abstraction/primary-cell> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/edge> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28model-contains-%28grid-contains-part-%28%28primary-cell-has-part-edge%29-has-abstraction-center%29%29%29-models-water> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/depth> ;
+    svo:has_original_label "model_grid_cell~primary_edge_center__depth"^^xsd:string .
+

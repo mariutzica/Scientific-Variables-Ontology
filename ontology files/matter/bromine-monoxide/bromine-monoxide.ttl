@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bromine-monoxide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "bromine-monoxide"^^xsd:string ;
+    svo:has_synonym "dibromine-monoxide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q15142952"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dibromine_monoxide"^^xsd:string ;
+    rdfs:comment "Dibromine monoxide is the chemical compound composed of bromine and oxygen with the formula Br2O. It is a dark brown solid which is stable below −40 °C and is used in bromination reactions. It is similar to dichlorine monoxide, the monoxide of its halogen neighbor one period higher on the periodic table. The molecule is bent, with C2v molecular symmetry. The Br−O bond length is 1.85 Å and the Br−O−Br bond angle is 112°, similar to dichlorine monoxide."^^xsd:string .
+

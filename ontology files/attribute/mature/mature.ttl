@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mature a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "mature"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q16876573"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mature"^^xsd:string ;
+    rdfs:comment "Mature is the adjectival form of maturity, as immature is the adjectival form of immaturity, which have several meanings."^^xsd:string .
+

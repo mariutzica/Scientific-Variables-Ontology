@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:proton a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "proton"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2294"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Proton"^^xsd:string ;
+    rdfs:comment "A proton is a stable subatomic particle, symbol p, H+, or 1H+ with a positive electric charge of +1 e (elementary charge). Its mass is slightly less than that of a neutron and 1,836 times the mass of an electron (the proton-to-electron mass ratio). Protons and neutrons, each with masses of approximately one atomic mass unit, are jointly referred to as \"nucleons\" (particles present in atomic nuclei)."^^xsd:string .
+

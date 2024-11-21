@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:detritus a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "detritus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q736879"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Detritus"^^xsd:string ;
+    rdfs:comment "In biology, detritus () is dead particulate organic material, as distinguished from dissolved organic material. Detritus typically includes the bodies or fragments of bodies of dead organisms, and fecal material. Detritus typically hosts communities of microorganisms that colonize and decompose (i.e. remineralize) it. In terrestrial ecosystems it is present as leaf litter and other organic matter that is intermixed with soil, which is denominated \"soil organic matter\". The detritus of aquatic ecosystems is organic material that is suspended in the water and accumulates in depositions on the floor of the body of water; when this floor is a seabed, such a deposition is denominated \"marine snow\"."^^xsd:string .
+

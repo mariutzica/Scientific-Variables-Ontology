@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:particulate-filter a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "particulate-filter"^^xsd:string ;
+    svo:has_synonym "air filter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q583488"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Air_filter"^^xsd:string ;
+    rdfs:comment "A particulate air filter is a device composed of fibrous, or porous materials which removes solid particulates such as dust, pollen, mold, and bacteria from the air. Filters containing an adsorbent or catalyst such as charcoal (carbon) may also remove odors and gaseous pollutants such as volatile organic compounds or ozone. Air filters are used in applications where air quality is important, notably in building ventilation systems and in engines."^^xsd:string .
+

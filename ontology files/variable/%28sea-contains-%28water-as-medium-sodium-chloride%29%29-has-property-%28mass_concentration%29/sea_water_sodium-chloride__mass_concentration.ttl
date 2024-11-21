@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28sea-contains-%28water-as-medium-sodium-chloride%29%29-has-property-%28mass_concentration%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "sea_water_sodium-chloride__mass_concentration"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/sodium-chloride>,
+        <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/sea> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/sea-contains-%28water-as-medium-sodium-chloride%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mass_concentration> .
+

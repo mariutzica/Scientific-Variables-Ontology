@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:inertia a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "inertia"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q122508"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Inertia"^^xsd:string ;
+    rdfs:comment "Inertia is the idea that an object will continue its current motion until some force causes its speed or direction to change. The term is properly understood as shorthand for \"the principle of inertia\" as described by Newton in his first law of motion.After some other definitions, Newton states in his first law of motion:"^^xsd:string .
+

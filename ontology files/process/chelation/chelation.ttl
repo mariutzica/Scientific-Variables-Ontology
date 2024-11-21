@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chelation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "chelation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q319827"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chelation"^^xsd:string ;
+    rdfs:comment "Chelation  is a type of bonding of ions and the molecules to metal ions. It involves the formation or presence of two or more separate coordinate bonds between a polydentate (multiple bonded) ligand and a single central metal atom.  These ligands are called chelants, chelators, chelating agents, or sequestering agents.  They are usually organic compounds, but this is not a necessity."^^xsd:string .
+

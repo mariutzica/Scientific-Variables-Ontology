@@ -1,0 +1,30 @@
+@prefix : <http://scientificvariablesontology.org/svo/domain/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/domain> a owl:Ontology ;
+    owl:imports <http://scientificvariablesontology.org/svo> .
+
+:forestry a svo:Domain,
+        owl:NamedIndividual ;
+    rdfs:label "forestry"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q38112"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Forestry"^^xsd:string ;
+    rdfs:comment "Forestry is the science and craft of creating, managing, planting, using, conserving and repairing forests and woodlands for associated resources for human and environmental benefits. Forestry is practiced in plantations and natural stands. The science of forestry has elements that belong to the biological, physical, social, political and managerial sciences. Forest management play essential role of creation and modification of habitats and affect ecosystem services provisioning.Modern forestry generally embraces a broad range of concerns, in what is known as multiple-use management, including: the provision of timber, fuel wood, wildlife habitat, natural water quality management, recreation, landscape and community protection, employment, aesthetically appealing landscapes, biodiversity management, watershed management, erosion control, and preserving forests as \"sinks\" for atmospheric carbon dioxide."^^xsd:string .
+
+:math a svo:Domain,
+        owl:NamedIndividual ;
+    rdfs:label "math"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q395"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mathematics"^^xsd:string ;
+    rdfs:comment "Mathematics is an area of knowledge that includes the topics of numbers, formulas and related structures, shapes and the spaces in which they are contained, and quantities and their changes. These topics are represented in modern mathematics with the major subdisciplines of number theory, algebra, geometry, and analysis, respectively. There is no general consensus among mathematicians about a common definition for their academic discipline."^^xsd:string .
+
+:physics a svo:Domain,
+        owl:NamedIndividual ;
+    rdfs:label "physics"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q413"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Physics"^^xsd:string ;
+    rdfs:comment "Physics is the natural science of matter, involving the study of matter, its fundamental constituents, its motion and behavior through space and time, and the related entities of energy and force. Physics is one of the most fundamental scientific disciplines, with its main goal being to understand how the universe behaves. A scientist who specializes in the field of physics is called a physicist."^^xsd:string .
+

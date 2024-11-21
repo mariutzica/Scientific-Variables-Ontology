@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:drowning a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "drowning"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q506616"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Drowning"^^xsd:string ;
+    rdfs:comment "Drowning is a type of suffocation induced by the submersion of the mouth and nose in a liquid. Most instances of fatal drowning occur alone or in situations where others present are either unaware of the victim's situation or unable to offer assistance. After successful resuscitation, drowning victims may experience breathing problems, vomiting, confusion, or unconsciousness. Occasionally, victims may not begin experiencing these symptoms until several hours after they are rescued. An incident of drowning can also cause further complications for victims due to low body temperature, aspiration of vomit, or acute respiratory distress syndrome (respiratory failure from lung inflammation)."^^xsd:string .
+

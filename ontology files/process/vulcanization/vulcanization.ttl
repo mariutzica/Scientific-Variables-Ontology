@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vulcanization a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "vulcanization"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q188631"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vulcanization"^^xsd:string ;
+    rdfs:comment "Vulcanization (British English: Vulcanisation) is a range of processes for hardening rubbers. The term originally referred exclusively to the treatment of natural rubber with sulfur, which remains the most common practice. It has also grown to include the hardening of other (synthetic) rubbers via various means. Examples include silicone rubber via room temperature vulcanizing and chloroprene rubber (neoprene) using metal oxides. "^^xsd:string .
+

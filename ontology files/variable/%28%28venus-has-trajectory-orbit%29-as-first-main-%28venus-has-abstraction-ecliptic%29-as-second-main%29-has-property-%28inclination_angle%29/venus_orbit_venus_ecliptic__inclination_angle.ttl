@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28venus-has-trajectory-orbit%29-as-first-main-%28venus-has-abstraction-ecliptic%29-as-second-main%29-has-property-%28inclination_angle%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "venus_orbit_venus_ecliptic__inclination_angle"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/ecliptic> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/venus> ;
+    svo:contains_trajectory_reference_to <http://scientificvariablesontology.org/svo/trajectory/orbit> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28venus-has-trajectory-orbit%29-as-first-main-%28venus-has-abstraction-ecliptic%29-as-second-main> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/inclination_angle> ;
+    svo:has_original_label "venus_orbit-to-ecliptic__inclination_angle"^^xsd:string .
+

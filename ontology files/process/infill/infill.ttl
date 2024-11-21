@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:infill a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "infill"^^xsd:string ;
+    svo:has_synonym "infilling"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q811475"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Infill"^^xsd:string ;
+    rdfs:comment "In urban planning, infill, or in-fill, is the rededication of land in an urban environment, usually open-space, to new construction. Infill also applies, within an urban polity, to construction on any undeveloped land that is not on the urban margin. The slightly broader term \"land recycling\" is sometimes used instead. Infill has been promoted as an economical use of existing infrastructure and a remedy for urban sprawl. Detractors view increased urban density as overloading urban services, including increased traffic congestion and pollution, and decreasing urban green-space. Many also dislike it for social and historical reasons, partly due to its unproven effects and its similarity with gentrification."^^xsd:string .
+

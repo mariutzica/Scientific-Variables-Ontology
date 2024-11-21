@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:embrittle a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "embrittle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2919530"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Embrittlement"^^xsd:string ;
+    rdfs:comment "Embrittlement is a significant decrease of ductility of a material, which makes the material brittle. Embrittlement is used to describe any phenomena where the environment compromises a stressed material's mechanical performance, such as temperature or environmental composition. This is oftentimes undesirable as brittle fracture occurs quicker and can much more easily propagate than ductile fracture, leading to complete failure of the equipment. Various materials have different mechanisms of embrittlement, therefore it can manifest in a variety of ways, from slow crack growth to a reduction of tensile ductility and toughness."^^xsd:string .
+

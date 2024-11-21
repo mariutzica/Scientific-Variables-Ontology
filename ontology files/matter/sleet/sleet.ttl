@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sleet a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "sleet"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11050195"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ice_pellets"^^xsd:string ;
+    rdfs:comment "Ice pellets (Commonwealth English) or \"sleet\" (American English) is a form of precipitation consisting of small, hard, translucent balls of ice.  Ice pellets are different from graupel (\"soft hail\"), which is made of frosty white opaque rime, and from a mixture of rain and snow, which is a slushy liquid or semisolid.  Ice pellets often bounce when they hit the ground or other solid objects, and make a higher-pitched \"tap\" when striking objects like jackets, windshields, and dried leaves, compared to the dull splat of liquid raindrops.  Pellets generally do not freeze into other solid masses unless mixed with freezing rain.  The METAR code for ice pellets is PL (PE before November 1998)."^^xsd:string .
+

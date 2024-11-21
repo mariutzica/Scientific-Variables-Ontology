@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tetrachlorophenol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tetrachlorophenol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q18028440"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tetrachlorophenol"^^xsd:string ;
+    rdfs:comment "A tetrachlorophenol is any organochloride of phenol that contains four covalently bonded chlorine atoms. Tetrachlorophenols are produced by electrophilic halogenation of phenol with chlorine. Different isomers of tetrachlorophenol exist according to which ring positions on the phenol contain chlorine atoms. "^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chrysendeton a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "chrysendeton"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5114575"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chrysendeton"^^xsd:string ;
+    rdfs:comment "Chrysendeton is a genus of moths of the family Crambidae described by Augustus Radcliffe Grote in 1881."^^xsd:string .
+

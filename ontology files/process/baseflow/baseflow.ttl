@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:baseflow a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "baseflow"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q30036"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Baseflow"^^xsd:string ;
+    rdfs:comment "Baseflow (also called drought flow, groundwater recession flow, low flow, low-water flow, low-water discharge and sustained or fair-weather runoff) is the portion of the streamflow that is sustained between precipitation events, fed to streams by delayed pathways. It should not be confused with groundwater flow. Fair weather flow is also called base flow."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:volume a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "volume"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q39297"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Volume"^^xsd:string ;
+    rdfs:comment "Volume is a measure of three-dimensional space. It is often quantified numerically using SI derived units (such as the cubic metre and litre) or by various imperial or US customary units (such as the gallon, quart, cubic inch). The definition of length (cubed) is interrelated with volume. The volume of a container is generally understood to be the capacity of the container; i.e., the amount of fluid (gas or liquid) that the container could hold, rather than the amount of space the container itself displaces."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ctenophora a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "ctenophora"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q102778"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ctenophora"^^xsd:string ;
+    rdfs:comment "Ctenophora (; SG ctenophore ; from Ancient Greek  κτείς (kteis) 'comb', and  φέρω (pherō) 'to carry') comprise a phylum of marine invertebrates, commonly known as comb jellies, that inhabit sea waters worldwide. They are notable for the groups of cilia they use for swimming (commonly referred to as \"combs\"), and they are the largest animals to swim with the help of cilia."^^xsd:string .
+

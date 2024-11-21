@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:enthalpy a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "enthalpy"^^xsd:string ;
+    svo:has_synonym "thermodynamic_potential"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q161064"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Enthalpy"^^xsd:string ;
+    rdfs:comment "Enthalpy  (listen), a property of a thermodynamic system, is the sum of the system's internal energy and the product of its pressure and volume. It is a state function used in many measurements in chemical, biological, and physical systems at a constant pressure, which is conveniently provided by the large ambient atmosphere. The pressure–volume term expresses the work required to establish the system's physical dimensions, i.e. to make room for it by displacing its surroundings. The pressure-volume term is very small for solids and liquids at common conditions, and fairly small for gases. Therefore, enthalpy is a stand-in for energy in chemical systems; bond, lattice, solvation and other \"energies\" in chemistry are actually enthalpy differences. As a state function, enthalpy depends only on the final configuration of internal energy, pressure, and volume, not on the path taken to achieve it."^^xsd:string .
+

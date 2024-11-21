@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:atherix-variegata a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "atherix-variegata"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q14191113"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Atherix_variegata"^^xsd:string ;
+    rdfs:comment "Atherix variegata is a species of watersnipe fly in the family Athericidae. It is found in Canada and the United States."^^xsd:string .
+

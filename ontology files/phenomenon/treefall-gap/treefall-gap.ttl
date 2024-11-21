@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:treefall-gap a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "treefall-gap"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q16946951"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Treefall_gap"^^xsd:string ;
+    rdfs:comment "A treefall gap is a distinguishable hole in the canopy of a forest with vertical sides extending through all levels down to an average height of 2 m (6.6 ft) above ground. These holes occur as result of a fallen tree or large limb. The ecologist who developed this definition used two meters because he believed that \"a regrowth height of 2 m was sufficient\" for a gap to be considered closed, but not all scientists agree. For example, Runkle believed that regrowth should be 10–20 m (33–66 ft) above the ground. Alternatively, a treefall gap is \"the smallest gap [that must] be readily distinguishable amid the complexity of forest structure.\"There is no upper limit in gap size. However, it must be caused by a tree or a large limb. For example, a field would not be considered a treefall gap. Tree falls are commonly caused by old age, natural hazards, or parasitic plants (or certain epiphytes)."^^xsd:string .
+

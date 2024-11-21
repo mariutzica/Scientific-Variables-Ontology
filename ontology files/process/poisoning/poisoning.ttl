@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:poisoning a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "poisoning"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q18621601"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Poisoning"^^xsd:string ;
+    rdfs:comment "Poisoning is the harmful effect which occurs when toxic substances are introduced into the body.  The term \"poisoning\" is a derivative of poison, a term describing any chemical substance that may harm or kill a living organism upon ingestion. Poisoning can be brought on by swallowing, inhaling, injecting or absorbing toxins through the skin. Toxicology is the practice and study of symptoms, mechanisms, diagnoses, and treatments correlated to poisoning."^^xsd:string .
+

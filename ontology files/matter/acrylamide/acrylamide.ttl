@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:acrylamide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "acrylamide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q342939"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Acrylamide"^^xsd:string ;
+    rdfs:comment "Acrylamide (or acrylic amide) is an organic compound with the chemical formula CH2=CHC(O)NH2. It is a white odorless solid, soluble in water and several organic solvents. From the chemistry perspective, acrylamide is a vinyl-substituted primary amide (CONH2). It is produced industrially mainly as a precursor to polyacrylamides, which find many uses as water-soluble thickeners and flocculation agents."^^xsd:string .
+

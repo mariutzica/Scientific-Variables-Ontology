@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:isochoric a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "isochoric"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q208388"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isochoric_process"^^xsd:string ;
+    rdfs:comment "In thermodynamics, an isochoric process, also called a constant-volume process, an isovolumetric process, or an isometric process, is a thermodynamic process during which the volume of the closed system undergoing such a process remains constant. An isochoric process is exemplified by the heating or the cooling of the contents of a sealed, inelastic container: The thermodynamic process is the addition or removal of heat; the isolation of the contents of the container establishes the closed system; and the inability of the container to deform imposes the constant-volume condition. The isochoric process here should be a quasi-static process."^^xsd:string .
+

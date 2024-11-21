@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydrogen-bromide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "hydrogen-bromide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2447"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydrogen_bromide"^^xsd:string ;
+    rdfs:comment "Hydrogen bromide is the inorganic compound with the formula HBr. It is a hydrogen halide consisting of hydrogen and bromine.  A colorless gas, it dissolves in water, forming hydrobromic acid, which is saturated at 68.85% HBr by weight at room temperature. Aqueous solutions that are 47.6% HBr by mass form a constant-boiling azeotrope mixture that boils at 124.3 °C. Boiling less concentrated solutions releases H2O until the constant-boiling mixture composition is reached."^^xsd:string .
+

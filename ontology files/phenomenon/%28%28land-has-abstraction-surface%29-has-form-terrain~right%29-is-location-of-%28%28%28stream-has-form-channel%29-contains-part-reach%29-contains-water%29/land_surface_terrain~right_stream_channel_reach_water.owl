@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/phenomenon/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/phenomenon/">
+<owl:NamedIndividual rdf:about="%28%28land-has-abstraction-surface%29-has-form-terrain~right%29-is-location-of-%28%28%28stream-has-form-channel%29-contains-part-reach%29-contains-water%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Phenomenon"/>
+  <svo:has_primary_participant_phenomenon rdf:resource="%28%28stream-has-form-channel%29-contains-part-reach%29-contains-water"/>
+  <svo:has_location rdf:resource="%28land-has-abstraction-surface%29-has-form-terrain~right"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">land_surface_terrain~right_stream_channel_reach_water</rdfs:label>
+</owl:NamedIndividual>
+</rdf:RDF>

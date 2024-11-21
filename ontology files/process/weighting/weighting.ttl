@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:weighting a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "weighting"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q856577"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Weighting"^^xsd:string ;
+    rdfs:comment "The process of weighting involves emphasizing the contribution of particular aspects of a phenomenon (or of a set of data) over others to an outcome or result; thereby highlighting those aspects in comparison to others in the analysis. That is, rather than each variable in the data set contributing equally to the final result, some of the data is adjusted to make a greater contribution than others. This is analogous to the practice of adding (extra) weight to one side of a pair of scales in order to favour either the buyer or seller."^^xsd:string .
+

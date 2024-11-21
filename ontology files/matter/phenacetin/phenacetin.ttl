@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:phenacetin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "phenacetin"^^xsd:string ;
+    svo:has_synonym "acetophenetidin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q419175"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Phenacetin"^^xsd:string ;
+    rdfs:comment "Phenacetin (acetophenetidin, N-(4-ethoxyphenyl)acetamide) is a pain-relieving and fever-reducing drug, which was widely used following its introduction in 1887. It was withdrawn from medicinal use as dangerous from the 1970s (e.g., withdrawn in Canada in 1973, and by the U.S. Food and Drug Administration in 1983)."^^xsd:string .
+

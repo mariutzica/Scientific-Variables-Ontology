@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:orthophosphate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "orthophosphate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q15511048"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Phosphoric_acids_and_phosphates#Orthophosphate"^^xsd:string ;
+    rdfs:comment "A phosphoric acid, in the general sense, is a  phosphorus oxoacid in which each phosphorus (P) atom is in the oxidation state +5, and is bonded to four oxygen (O) atoms, one of them through a double bond, arranged as the corners of a tetrahedron. Two or more of these PO4 tetrahedra may be connected by shared single-bonded oxygens, forming linear or branched chains, cycles, or more complex structures. The single-bonded oxygen atoms that are not shared are completed with acidic hydrogen atoms. The general formula of a phosphoric acid is Hn+2−2xPnO3n+1−x, where n is the number of phosphorus atoms and x is the number of fundamental cycles in the molecule's structure, between 0 and (n+2)/2."^^xsd:string .
+

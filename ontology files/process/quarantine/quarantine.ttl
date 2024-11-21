@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:quarantine a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "quarantine"^^xsd:string ;
+    svo:has_synonym "quarantine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q182899"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Quarantine"^^xsd:string ;
+    rdfs:comment "A quarantine is a restriction on the movement of people, animals and goods which is intended to prevent the spread of disease or pests. It is often used in connection to disease and illness, preventing the movement of those who may have been exposed to a communicable disease, yet do not have a confirmed medical diagnosis. It is distinct from medical isolation, in which those confirmed to be infected with a communicable disease are isolated from the healthy population. Quarantine considerations are often one aspect of border control."^^xsd:string .
+

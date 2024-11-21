@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:entrance a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "entrance"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1307471"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Entrance"^^xsd:string ;
+    rdfs:comment "Entrance generally refers to the place of entering like a gate, door, or road or the permission to do so."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:salmonella a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "salmonella"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q150839"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Salmonella"^^xsd:string ;
+    rdfs:comment "Salmonella is a genus of rod-shaped (bacillus) Gram-negative bacteria of the family Enterobacteriaceae. The two species of Salmonella are Salmonella enterica and Salmonella bongori. S. enterica is the type species and is further divided into six subspecies that include over 2,600 serotypes. Salmonella was named after Daniel Elmer Salmon (1850–1914), an American veterinary surgeon."^^xsd:string .
+

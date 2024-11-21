@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nitrous-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "nitrous-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q211891"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nitrous_acid"^^xsd:string ;
+    rdfs:comment "Nitrous acid (molecular formula HNO2) is a weak and monoprotic acid known only in solution, in the gas phase and in the form of nitrite (NO−2) salts.  Nitrous acid is used to make diazonium salts from amines.  The resulting diazonium salts are reagents in azo coupling reactions to give azo dyes."^^xsd:string .
+

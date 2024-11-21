@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tetanocera a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "tetanocera"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q14660033"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tetanocera"^^xsd:string ;
+    rdfs:comment "Tetanocera is a genus of marsh flies, insects in the family Sciomyzidae. There are at least 50 described species in Tetanocera."^^xsd:string .
+

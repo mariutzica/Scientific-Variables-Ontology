@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:center a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "center"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q23595"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Centre_(geometry)"^^xsd:string ;
+    rdfs:comment "In geometry, a centre (British English) or center (American English); (from Ancient Greek  κέντρον (kéntron) 'pointy object') of an object is a point in some sense in the middle of the object. According to the specific definition of center taken into consideration, an object might have no center. If geometry is regarded as the study of isometry groups, then a center is a fixed point of all the isometries that move the object onto itself."^^xsd:string .
+

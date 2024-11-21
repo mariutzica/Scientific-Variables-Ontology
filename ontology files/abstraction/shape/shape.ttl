@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:shape a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "shape"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q207961"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Shape"^^xsd:string ;
+    rdfs:comment "A shape or figure is a graphical representation of an object or its external boundary, outline, or external surface, as opposed to other properties such as color, texture, or material type."^^xsd:string .
+

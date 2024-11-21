@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mass_rate a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "mass_rate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1366187"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mass_flow_rate"^^xsd:string ;
+    rdfs:comment "In physics and engineering, mass flow rate is the mass of a substance which passes per unit of time.  Its unit is kilogram per second in SI units, and slug per second or pound per second in US customary units.  The common symbol is m˙{\\displaystyle {\\dot {m}}} (ṁ, pronounced \"m-dot\"), although sometimes μ (Greek lowercase mu) is used."^^xsd:string .
+

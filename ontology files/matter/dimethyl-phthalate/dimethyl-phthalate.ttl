@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dimethyl-phthalate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dimethyl-phthalate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q423551"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dimethyl_phthalate"^^xsd:string ;
+    rdfs:comment "Dimethyl phthalate (DMP) is an organic compound and phthalate ester. it is a colourless and oily liquid that is soluble in organic solvents, but which is only poorly soluble in water (~4 g/L)."^^xsd:string .
+

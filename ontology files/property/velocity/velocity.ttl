@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:velocity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "velocity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11465"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Velocity"^^xsd:string ;
+    rdfs:comment "Velocity is the speed in combination with the direction of motion of an object. Velocity is a fundamental concept in kinematics, the branch of classical mechanics that describes the motion of bodies."^^xsd:string .
+

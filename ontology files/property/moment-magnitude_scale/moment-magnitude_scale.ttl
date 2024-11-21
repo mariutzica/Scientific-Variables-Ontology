@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:moment-magnitude_scale a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "moment-magnitude_scale"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q201605"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Moment_magnitude_scale"^^xsd:string ;
+    rdfs:comment "The moment magnitude scale (MMS; denoted explicitly with Mw  or Mw, and generally implied with use of a single M for magnitude) is a measure of an earthquake's magnitude (\"size\" or strength) based on its seismic moment. It was defined in a 1979 paper by Thomas C. Hanks and Hiroo Kanamori. Similar to the local magnitude/Richter scale (ML ) defined by Charles Francis Richter in 1935, it uses a logarithmic scale; small earthquakes have approximately the same magnitudes on both scales. Despite the difference, news media often says \"Richter scale\" when referring to the moment magnitude scale."^^xsd:string .
+

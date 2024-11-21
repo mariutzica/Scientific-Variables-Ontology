@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:antimony-125 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "antimony-125"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q736812"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isotopes_of_antimony#Antimony-125"^^xsd:string ;
+    rdfs:comment "Antimony (51Sb) occurs in two stable isotopes, 121Sb and 123Sb. There are 35 artificial radioactive isotopes, the longest-lived of which are 125Sb, with a half-life of 2.75856 years; 124Sb, with a half-life of 60.2 days; and 126Sb, with a half-life of 12.35 days. All other isotopes have half-lives less than 4 days, most less than an hour."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:acenaphthylene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "acenaphthylene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q415128"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Acenaphthylene"^^xsd:string ;
+    rdfs:comment "Acenaphthylene, a polycyclic aromatic hydrocarbon is an ortho- and peri-fused tricyclic hydrocarbon.  The molecule resembles naphthalene with positions 1 and 8 connected by a -CH=CH- unit. It is a yellow solid.  Unlike many polycyclic aromatic hydrocarbons, it has no fluorescence."^^xsd:string .
+

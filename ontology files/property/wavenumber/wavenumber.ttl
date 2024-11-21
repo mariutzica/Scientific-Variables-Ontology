@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:wavenumber a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "wavenumber"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q192510"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Wavenumber"^^xsd:string ;
+    rdfs:comment "In the physical sciences, the wavenumber (or wave number), also known as repetency, is the spatial frequency of a wave, measured in cycles per unit distance (ordinary wavenumber) or radians per unit distance (angular wavenumber). It is analogous to temporal frequency, which is defined as the number of wave cycles per unit time (ordinary frequency) or radians per unit time (angular frequency)."^^xsd:string .
+

@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/abstraction/datum~vertical~tidal~mean-sea-level> a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "datum~vertical~tidal~mean-sea-level"^^xsd:string ;
+    svo:has_abstraction_root :datum ;
+    svo:has_attribute <http://scientificvariablesontology.org/svo/attribute/mean-sea-level>,
+        <http://scientificvariablesontology.org/svo/attribute/tidal>,
+        <http://scientificvariablesontology.org/svo/attribute/vertical> .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mean-sea-level a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "mean-sea-level"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q125465"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sea_level"^^xsd:string ;
+    rdfs:comment "Mean sea level (MSL, often shortened to sea level) is an average surface level of one or more among Earth's coastal bodies of water from which heights such as elevation may be measured. The global MSL is a type of vertical datum – a standardised geodetic datum – that is used, for example, as a chart datum in cartography and marine navigation, or, in aviation, as the standard sea level at which atmospheric pressure is measured to calibrate altitude and, consequently, aircraft flight levels. A common and relatively straightforward mean sea-level standard is instead the midpoint between a mean low and mean high tide at a particular location.Sea levels can be affected by many factors and are known to have varied greatly over geological time scales. Current sea level rise is mainly caused by human-induced climate change. When temperatures rise, mountain glaciers and the polar ice caps melt, increasing the amount of water in water bodies. Because most of human settlement and infrastructure was built in response to a more normalized sea level with limited expected change, populations affected by climate change in connection to sea level rise will need to invest in climate adaptation to mitigate the worst effects or when populations are in extreme risk, a process of managed retreat. "^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:saccharification a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "saccharification"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q22911576"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Saccharification"^^xsd:string ;
+    rdfs:comment "In biochemistry, saccharification is a term for denoting any chemical change wherein a monosaccharide molecule remains intact after becoming unbound from another saccharide."^^xsd:string .
+

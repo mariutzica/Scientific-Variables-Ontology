@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:aquifer a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "aquifer"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q208791"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Aquifer"^^xsd:string ;
+    rdfs:comment "An aquifer is an underground layer of water-bearing, permeable rock, rock fractures, or unconsolidated materials (gravel, sand, or silt). Groundwater from aquifers can be extracted using a water well. Aquifers vary greatly in their characteristics. The study of water flow in aquifers and the characterization of aquifers is called hydrogeology. Related terms include aquitard, which is a bed of low permeability along an aquifer, and aquiclude (or aquifuge), which is a solid, impermeable area underlying or overlying an aquifer, the pressure of which could create a confined aquifer. The classification of aquifers is as follows: Saturated versus unsaturated; aquifers versus aquitards; confined versus unconfined; isotropic versus anisotropic; porous, karst, or fractured; transboundary aquifer. "^^xsd:string .
+

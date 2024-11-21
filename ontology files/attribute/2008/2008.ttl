@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:2008 a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "2008"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2004"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/2008"^^xsd:string ;
+    rdfs:comment "2008 (MMVIII) was a leap year starting on Tuesday of the Gregorian calendar, the 2008th year of the Common Era (CE) and Anno Domini (AD) designations, the 8th  year of the 3rd millennium and the 21st century, and the  9th   year of the 2000s decade.  "^^xsd:string .
+

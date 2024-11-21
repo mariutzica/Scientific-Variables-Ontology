@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:seating a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "seating"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q16685058"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Seating_capacity"^^xsd:string ;
+    rdfs:comment "Seating capacity is the number of people who can be seated in a specific space, in terms of both the physical space available, and limitations set by law. Seating capacity can be used in the description of anything ranging from an automobile that seats two to a stadium that seats hundreds of thousands of people. The largest sporting venue in the world, the Indianapolis Motor Speedway, has a permanent seating capacity for more than 235,000 people and infield seating that raises capacity to an approximate 400,000."^^xsd:string .
+

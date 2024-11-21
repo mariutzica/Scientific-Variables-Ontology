@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:paraoxon a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "paraoxon"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q416108"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Paraoxon"^^xsd:string ;
+    rdfs:comment "Paraoxon is a parasympathomimetic which acts as an cholinesterase inhibitor. It is an organophosphate oxon, and the active metabolite of the insecticide parathion.  It is also used as an ophthalmological drug against glaucoma. Paraoxon is one of the most potent acetylcholinesterase-inhibiting insecticides available, around 70% as potent as the nerve agent sarin, and so is now rarely used as an insecticide due to the risk of poisoning to humans and other animals. Paraoxon has been used by scientists to study acute and chronic effects of organophosphate intoxication. It is easily absorbed through skin, and was allegedly used as an assassination weapon by the apartheid-era South African chemical weapons program Project Coast."^^xsd:string .
+

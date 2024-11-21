@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dasyhelea a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "dasyhelea"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5226999"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dasyhelea"^^xsd:string ;
+    rdfs:comment "Dasyhelea is a genus of biting midges and the only genus of its subfamily, the Dasyheleinae. Larvae of species in this genus are characterized by an anal segment with retractile posterior prolegs.  Larvae are aquatic and adults do not feed on vertebrate blood, nor do they prey on other insects.  They take nectar only, an unusual feeding behavior within the Ceratopogonidae."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:cobalt a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "cobalt"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q740"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cobalt"^^xsd:string ;
+    rdfs:comment "Cobalt is a chemical element with the symbol Co and atomic number 27. As with nickel, cobalt is found in the Earth's crust only in a chemically combined form, save for small deposits found in alloys of natural meteoric iron. The free element, produced by reductive smelting, is a hard, lustrous, silver metal."^^xsd:string .
+

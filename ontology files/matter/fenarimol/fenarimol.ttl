@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fenarimol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "fenarimol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q906987"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fenarimol"^^xsd:string ;
+    rdfs:comment "Fenarimol, sold under the tradenames Bloc, Rimidin and Rubigan, is a fungicide which acts against rusts, blackspot and mildew fungi. It is used on ornamental plants, trees, lawns, tomatoes, peppers, eggplants, cucumbers and melons. It is mainly used to control powdery mildew. It works by inhibiting the fungus's biosynthesis of important steroid molecules (via blockade of the CYP51 enzyme)."^^xsd:string .
+

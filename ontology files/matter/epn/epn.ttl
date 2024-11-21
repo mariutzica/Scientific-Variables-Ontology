@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:epn a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "epn"^^xsd:string ;
+    svo:has_synonym "O-Ethyl O-(p-nitrophenyl) phenylphosphonothioate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2007270"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/EPN_(insecticide)"^^xsd:string ;
+    rdfs:comment "EPN is an insecticide of the phosphonothioate class. It is used against pests such as European corn borer, rice stem borer, bollworm, tobacco budworm, and boll weevil."^^xsd:string .
+

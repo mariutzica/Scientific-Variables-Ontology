@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:volume-specific_heat_capacity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "volume-specific_heat_capacity"^^xsd:string ;
+    svo:has_synonym "thermal_inertia"^^xsd:string,
+        "volumetric_heat_capacity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q900661"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Volumetric_heat_capacity"^^xsd:string ;
+    rdfs:comment "The volumetric heat capacity of a material is the heat capacity of a sample of the substance divided by the volume of the sample.  It is the amount of energy that must be added, in the form of heat, to one unit of volume of the material in order to cause an increase of one unit in its temperature.  The SI unit of volumetric heat capacity is joule per kelvin per cubic meter, J⋅K−1⋅m−3."^^xsd:string .
+

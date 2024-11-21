@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:projectile a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "projectile"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q49393"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Projectile"^^xsd:string ;
+    rdfs:comment "A projectile is an object that is propelled by the application of an external force and then moves freely under the influence of gravity and air resistance. Although any objects in motion through space are projectiles, they are commonly found in warfare and sports (for example, a thrown baseball, kicked football, fired bullet, shot arrow, stone released from catapult).In ballistics mathematical equations of motion are used to analyze projectile trajectories through launch, flight, and impact."^^xsd:string .
+

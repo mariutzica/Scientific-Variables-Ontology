@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:viewpoint a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "viewpoint"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2252759"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Perspective_(geometry)"^^xsd:string ;
+    rdfs:comment "Two figures in a plane are perspective from a point O, called the center of perspectivity if the lines joining corresponding points of the figures all meet at O. Dually, the figures are said to be perspective from a line if the points of intersection of corresponding lines all lie on one line. The proper setting for this concept is in projective geometry where there will be no special cases due to parallel lines since all lines meet. Although stated here for figures in a plane, the concept is easily extended to higher dimensions."^^xsd:string .
+

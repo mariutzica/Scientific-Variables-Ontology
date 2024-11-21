@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:grain a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "grain"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2995529"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Grain"^^xsd:string ;
+    rdfs:comment "A grain is a small, hard, dry fruit (caryopsis) – with or without an attached hull layer – harvested for human or animal consumption. A grain crop is a grain-producing plant. The two main types of commercial grain crops are cereals and legumes."^^xsd:string .
+

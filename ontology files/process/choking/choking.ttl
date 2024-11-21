@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:choking a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "choking"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q19275831"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Choking"^^xsd:string ;
+    rdfs:comment "Choking, also known as foreign body airway obstruction (FBAO), is a phenomenon that occurs when breathing is impeded by a blockage inside of the respiratory tract. An obstruction that prevents oxygen from entering the lungs results in oxygen deprivation. Although oxygen stored in the blood and lungs can keep a person alive for several minutes after breathing stops, choking often leads to death."^^xsd:string .
+

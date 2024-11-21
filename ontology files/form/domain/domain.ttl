@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:domain a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "domain"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q183366"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Territory"^^xsd:string ;
+    rdfs:comment "A territory is an area of land, sea, or space, belonging or connected to a particular country, person, or animal.In international politics, a territory is either the total area from which a state may extract power resources or else an administrative division, i.e. an area that is under the jurisdiction of a sovereign state. "^^xsd:string .
+

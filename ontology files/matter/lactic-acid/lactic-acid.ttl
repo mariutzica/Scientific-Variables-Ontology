@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lactic-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "lactic-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q161249"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lactic_acid"^^xsd:string ;
+    rdfs:comment "Lactic acid is an organic acid. It has a molecular formula CH3CH(OH)COOH. It is white in the solid state and it is miscible with water. When in the dissolved state, it forms a colorless solution. Production includes both artificial synthesis as well as natural sources. Lactic acid is an alpha-hydroxy acid (AHA) due to the presence of a hydroxyl group adjacent to the carboxyl group. It is used as a synthetic intermediate in many organic synthesis industries and in various biochemical industries. The conjugate base of lactic acid is called lactate (or the lactate anion). The name of the derived acyl group is lactoyl."^^xsd:string .
+

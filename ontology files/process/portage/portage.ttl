@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:portage a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "portage"^^xsd:string ;
+    svo:has_synonym "portage"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q120638097"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Portage"^^xsd:string ;
+    rdfs:comment "Portage or portaging (CA: ; US: ) is the practice of carrying water craft or cargo over land, either around an obstacle in a river, or between two bodies of water. A path where items are regularly carried between bodies of water is also called a portage. The term comes from French, where porter means \"to carry\", as in \"portable\". In Canada, the term \"carrying-place\" was sometimes used."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:schwarzchild_radius a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "schwarzchild_radius"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q72755"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Schwarzschild_radius"^^xsd:string ;
+    rdfs:comment "The Schwarzschild radius or the gravitational radius is a physical parameter in the Schwarzschild solution to Einstein's field equations that corresponds to the radius defining the event horizon of a Schwarzschild black hole. It is a characteristic radius associated with any quantity of mass. The Schwarzschild radius was named after the German astronomer Karl Schwarzschild, who calculated this exact solution for the theory of general relativity in 1916."^^xsd:string .
+

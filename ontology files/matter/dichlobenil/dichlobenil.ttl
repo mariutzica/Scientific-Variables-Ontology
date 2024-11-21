@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dichlobenil a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dichlobenil"^^xsd:string ;
+    svo:has_synonym "2,6-dichlorobenzonitrile"^^xsd:string,
+        "dcbn"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q416231"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/2,6-Dichlorobenzonitrile"^^xsd:string ;
+    rdfs:comment "2,6-Dichlorobenzonitrile (DCBN or dichlobenil) is an organic compound with the chemical formula C6H3Cl2CN.  It is a white solid that is soluble in organic solvents.  It is widely used as an herbicide."^^xsd:string .
+

@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28earth-crust-contains-%28material~melt-as-medium-carbonatite%29%29-has-property-%28mass_fraction%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "earth-crust_material~melt_carbonatite__mass_fraction"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/melt> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/carbonatite>,
+        <http://scientificvariablesontology.org/svo/matter/material> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/earth-crust> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/earth-crust-contains-%28material~melt-as-medium-carbonatite%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mass_fraction> ;
+    svo:has_original_label "earth_crust_material__carbonatite_melt_fraction"^^xsd:string .
+

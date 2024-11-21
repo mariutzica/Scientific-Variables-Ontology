@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:diethyl-phthalate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "diethyl-phthalate"^^xsd:string ;
+    svo:has_synonym "dep"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q419811"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Diethyl_phthalate"^^xsd:string ;
+    rdfs:comment "Diethyl phthalate (DEP) is a phthalate ester. It occurs as a colourless liquid without significant odour but has a bitter, disagreeable taste. It is more dense than water and insoluble in water; hence, it sinks in water."^^xsd:string .
+

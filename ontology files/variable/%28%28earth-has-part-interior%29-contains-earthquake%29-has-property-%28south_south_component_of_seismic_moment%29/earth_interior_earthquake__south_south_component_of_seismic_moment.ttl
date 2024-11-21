@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28earth-has-part-interior%29-contains-earthquake%29-has-property-%28south_south_component_of_seismic_moment%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "earth_interior_earthquake__south_south_component_of_seismic_moment"^^xsd:string ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/south_south_component> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/interior> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/earth>,
+        <http://scientificvariablesontology.org/svo/phenomenon/earthquake> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/seismic_moment> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28earth-has-part-interior%29-contains-earthquake> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/south_south_component_of_seismic_moment> ;
+    svo:has_original_label "earth_interior_earthquake__south_south_component_of_moment_tensor"^^xsd:string .
+

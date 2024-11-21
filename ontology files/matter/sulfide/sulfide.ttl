@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sulfide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "sulfide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q221205"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sulfide"^^xsd:string ;
+    rdfs:comment "Sulfide (British English also sulphide) is an inorganic anion of sulfur with the chemical formula S2− or a compound containing one or more S2− ions.  Solutions of sulfide salts are corrosive. Sulfide also refers to chemical compounds large families of inorganic and organic compounds, e.g. lead sulfide and dimethyl sulfide. Hydrogen sulfide (H2S) and bisulfide (SH−) are the conjugate acids of sulfide."^^xsd:string .
+

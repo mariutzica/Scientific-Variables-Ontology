@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sample a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "sample"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q485146"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sample_(material)"^^xsd:string ;
+    rdfs:comment "In general, a sample is a limited quantity of something which is intended to be similar to and represent a larger amount of that thing(s). The things could be countable objects such as individual items available as units for sale, or an uncountable material. Even though the word \"sample\" implies a smaller quantity taken from a larger amount, sometimes full biological or mineralogical specimens are called samples if they are taken for analysis, testing, or investigation like other samples. They are also considered samples in the sense that even whole specimens are \"samples\" of the full population of many individual organisms. The act of obtaining a sample is called \"sampling\" and can be performed manually by a person or by automatic process. Samples of material can be taken or provided for testing, analysis, investigation, quality control, demonstration, or trial use. Sometimes, sampling may be performed continuously."^^xsd:string .
+

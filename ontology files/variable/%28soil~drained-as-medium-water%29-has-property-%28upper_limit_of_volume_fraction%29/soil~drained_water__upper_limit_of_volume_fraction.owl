@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28soil~drained-as-medium-water%29-has-property-%28upper_limit_of_volume_fraction%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/soil~drained-as-medium-water"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/upper_limit_of_volume_fraction"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/water"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/soil"/>
+  <svo:contains_attribute_reference_to rdf:resource="http://scientificvariablesontology.org/svo/attribute/drained"/>
+  <svo:contains_operation_reference_to rdf:resource="http://scientificvariablesontology.org/svo/operation/upper_limit"/>
+  <svo:contains_property_reference_to rdf:resource="http://scientificvariablesontology.org/svo/property/volume_fraction"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soil~drained_water__upper_limit_of_volume_fraction</rdfs:label>
+</owl:NamedIndividual>
+</rdf:RDF>

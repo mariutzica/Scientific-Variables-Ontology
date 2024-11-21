@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:first_radiation_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "first_radiation_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q212986"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Planck%27s_law#First_and_second_radiation_constants"^^xsd:string ;
+    rdfs:comment "In physics, Planck's law describes the spectral density of electromagnetic radiation emitted by a black body in thermal equilibrium at a given temperature T, when there is no net flow of matter or energy between the body and its environment.At the end of the 19th century, physicists were unable to explain why the observed spectrum of black-body radiation, which by then had been accurately measured, diverged significantly at higher frequencies from that predicted by existing theories. In 1900, German physicist Max Planck heuristically derived a formula for the observed spectrum by assuming that a hypothetical electrically charged oscillator in a cavity that contained black-body radiation could only change its energy in a minimal increment, E, that was proportional to the frequency of its associated electromagnetic wave. While Planck originally regarded the hypothesis of dividing energy into increments as a mathematical artifice, introduced merely to get the correct answer, other physicists including Albert Einstein built on his work, and Planck's insight is now recognized to be of fundamental importance to quantum theory."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fumigation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "fumigation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q60915"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fumigation"^^xsd:string ;
+    rdfs:comment "Fumigation is a method of pest control or the removal of harmful microorganisms by completely filling an area with gaseous pesticides, or fumigants, to suffocate or poison the pests within. It is used to control pests in buildings (structural fumigation), soil, grain, and produce. Fumigation is also used during the processing of goods for import  or export to prevent the transfer of exotic organisms."^^xsd:string .
+

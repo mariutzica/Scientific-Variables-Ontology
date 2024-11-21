@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vitamin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "vitamin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q34956"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vitamin"^^xsd:string ;
+    rdfs:comment "A vitamin is an organic molecule (or a set of closely related molecules called vitamers) that are essential to an organism in small quantities for proper metabolic function. Essential nutrients cannot be synthesized in the organism in sufficient quantities for survival, and therefore must be obtained through the diet. For example, Vitamin C can be synthesized by some species but not by others; it is not considered a vitamin in the first instance but is in the second.  Most vitamins are not single molecules, but groups of related molecules called vitamers. For example, there are eight vitamers of vitamin E: four tocopherols and four tocotrienols."^^xsd:string .
+

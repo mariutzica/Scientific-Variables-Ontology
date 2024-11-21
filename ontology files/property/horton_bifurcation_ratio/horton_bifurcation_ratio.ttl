@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:horton_bifurcation_ratio a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "horton_bifurcation_ratio"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1422857"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Strahler_number#Bifurcation_ratio"^^xsd:string ;
+    rdfs:comment "In mathematics, the Strahler number or Horton–Strahler number of a mathematical tree is a numerical measure of its branching complexity."^^xsd:string .
+

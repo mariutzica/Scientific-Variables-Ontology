@@ -1,0 +1,18 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pentaerythritol-tetranitrate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "pentaerythritol-tetranitrate"^^xsd:string ;
+    svo:has_synonym "corpent"^^xsd:string,
+        "pent"^^xsd:string,
+        "penta"^^xsd:string,
+        "penthrite"^^xsd:string,
+        "petn"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q189334"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pentaerythritol_tetranitrate"^^xsd:string ;
+    rdfs:comment "Pentaerythritol tetranitrate (PETN), also known as PENT, PENTA, (ПЕНТА, primarily in Russian) TEN, corpent, or penthrite (or, rarely and primarily in German, as nitropenta), is an explosive material. It is the nitrate ester of pentaerythritol, and is structurally very similar to nitroglycerin. Penta refers to the five carbon atoms of the neopentane skeleton. PETN is a very powerful explosive material with a relative effectiveness factor of 1.66. When mixed with a plasticizer, PETN forms a plastic explosive. Along with RDX it is the main ingredient of Semtex and C4."^^xsd:string .
+

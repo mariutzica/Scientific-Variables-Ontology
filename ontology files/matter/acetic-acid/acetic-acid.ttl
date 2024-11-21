@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:acetic-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "acetic-acid"^^xsd:string ;
+    svo:has_synonym "ethanoic acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q47512"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Acetic_acid"^^xsd:string ;
+    rdfs:comment "Acetic acid , systematically named ethanoic acid , is an acidic, colourless liquid and organic compound with the chemical formula CH3COOH (also written as CH3CO2H, C2H4O2, or HC2H3O2). Vinegar is at least 4% acetic acid by volume, making acetic acid the main component of vinegar apart from water and other trace elements."^^xsd:string .
+

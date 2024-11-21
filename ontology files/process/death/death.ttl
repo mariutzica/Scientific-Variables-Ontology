@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:death a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "death"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Death"^^xsd:string ;
+    rdfs:comment "Death is the irreversible cessation of all biological functions that sustain a living organism. The remains of a former organism normally begin to decompose shortly after death. Death eventually and inevitably occurs in all organisms. Some organisms, such as Turritopsis dohrnii, are biologically immortal, however they can still die from means other than aging. Death is generally applied to whole organisms; the equivalent for individual components of an organism, such as cells or tissues, is necrosis. Something that is not considered an organism, such as a virus, can be physically destroyed but is not said to die, as a virus is not considered alive in the first place."^^xsd:string .
+

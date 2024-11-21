@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:boiling a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "boiling"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q41716"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Boiling"^^xsd:string ;
+    rdfs:comment "Boiling or ebullition is the rapid phase transition from liquid to gas or vapor; the reverse of boiling is condensation. Boiling occurs when a liquid is heated to its boiling point, so that the vapour pressure of the liquid is equal to the pressure exerted on the liquid by the surrounding atmosphere. Boiling and evaporation are the two main forms of liquid vapourization."^^xsd:string .
+

@@ -15,6 +15,51 @@ from owlready2 import *
 import csv
 import pandas as pd
 import urllib.parse
+from rdflib import Graph
+
+def parse_owl_file(filepath):
+
+    owl_content = {}
+    with open(filepath, 'r') as f:
+        text = f.readlines()
+
+    header_line = text[0]
+    owl_content['header'] = header_line
+
+    line_index = 1
+    current_line = text[line_index]
+    while '>' not in current_line:
+        line_index += 1
+        current_line = text[line_index]
+    
+    line_index += 1
+    namespace_lines = ''.join(text[1:line_index])
+    owl_content['namespace'] = namespace_lines
+
+    end_tag = text[-1]
+    owl_content['end_tag'] = end_tag
+
+    current_line = text[line_index]
+    start_section = '<owl:NamedIndividual rdf:about='
+    end_section = '</owl:NamedIndividual>'
+    while current_line != end_tag:
+        while start_section not in current_line:
+            line_index += 1
+            current_line = text[line_index]
+        start_index = line_index
+        while end_section not in current_line:
+            line_index += 1
+            current_line = text[line_index]
+        line_index += 1
+        current_line = text[line_index]
+        end_index = line_index
+        entity_name = text[start_index].split('"')[1]
+        section_text = ''.join(text[start_index:end_index])
+        owl_content[entity_name] = section_text
+        while current_line == '\n':
+            line_index += 1
+            current_line = text[line_index]
+    return owl_content
 
 # Set up input files.
 script_path               = os.path.dirname(__file__)
@@ -870,22 +915,42 @@ phenomenon_individuals.imported_ontologies.append(domain_individuals)
 phenomenon_individuals.imported_ontologies.append(part_individuals)
 phenomenon_individuals.imported_ontologies.append(trajectory_individuals)
 
-# Write ontology relationships to owl/rdf.        
-onto.save('ontology files/svo.owl')
-phenomenon_individuals.save('ontology files/phenomenon.owl')
-matter_individuals.save('ontology files/matter.owl')
-abstraction_individuals.save('ontology files/abstraction.owl')
-process_individuals.save('ontology files/process.owl')
-property_individuals.save('ontology files/property.owl')
-operation_individuals.save('ontology files/operation.owl')
-variable_individuals.save('ontology files/variable.owl')
-attribute_individuals.save('ontology files/attribute.owl')
-direction_individuals.save('ontology files/direction.owl')
-form_individuals.save('ontology files/form.owl')
-role_individuals.save('ontology files/role.owl')
-trajectory_individuals.save('ontology files/trajectory.owl')
-part_individuals.save('ontology files/part.owl')
-propertyrole_individuals.save('ontology files/propertyrole.owl')
-propertytype_individuals.save('ontology files/propertytype.owl')
-propertyquantification_individuals.save('ontology files/propertyquantification.owl')
-domain_individuals.save('ontology files/domain.owl')
+# Write ontology relationships to owl/rdf and ttl
+ontology_dir = 'ontology files'
+svo_filename = 'svo.owl'
+svo_filepath = os.path.join(ontology_dir, svo_filename)
+onto.save(svo_filepath)
+for category, items in class_mapping.items():
+    category_dir = os.path.join(ontology_dir, category)
+    os.makedirs(category_dir, exist_ok=True)
+    category_individuals = items['individuals']
+    category_filename = f'{category}.owl'
+    category_filepath = os.path.join(category_dir, category_filename)
+    category_individuals.save(category_filepath)
+
+    # convert to ttl
+    g = Graph()
+    g.parse(category_filepath)
+    ttl_filepath = category_filepath.replace('.owl','.ttl')
+    g.serialize(ttl_filepath)
+
+    parsed_owl = parse_owl_file(category_filepath)
+
+    for cat_individual in category_individuals.individuals():
+        ind_extension = cat_individual.iri.split('/')[-1]
+        ind_label = cat_individual.label[0]
+        ind_dir = os.path.join(category_dir,ind_extension)
+        os.makedirs(ind_dir, exist_ok=True)
+        ind_filename = f'{ind_label}.owl'
+        ind_filepath = os.path.join(ind_dir,ind_filename)
+        ind_file_text = ''.join([
+            parsed_owl['header'], parsed_owl['namespace'], parsed_owl[ind_extension], parsed_owl['end_tag']
+        ])
+        with open(ind_filepath, 'w') as f:
+            f.write(ind_file_text)
+
+        # convert to ttl
+        g = Graph()
+        g.parse(ind_filepath)
+        ttl_filepath = ind_filepath.replace('.owl','.ttl')
+        g.serialize(ttl_filepath)

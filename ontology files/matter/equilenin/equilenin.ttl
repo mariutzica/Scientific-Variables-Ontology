@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:equilenin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "equilenin"^^xsd:string ;
+    svo:has_synonym "Estra-1,3,5,7,9-pentaen-17-one,-3-hydroxy-,-6,8-didehydroesterone"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5384461"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Equilenin"^^xsd:string ;
+    rdfs:comment "Equilenin, also known as 6,8-didehydroestrone, as well as estra-1,3,5(10),6,8-pentaen-3-ol-17-one, is a naturally occurring steroidal estrogen obtained from the urine of pregnant mares. It is used as one of the components in conjugated estrogens (brand name Premarin). It was the first complex natural product to be fully synthesized, in work reported by 1940 by Bachmann and Wilds."^^xsd:string .
+

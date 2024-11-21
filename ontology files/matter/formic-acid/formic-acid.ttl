@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:formic-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "formic-acid"^^xsd:string ;
+    svo:has_synonym "methanoic-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q161233"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Formic_acid"^^xsd:string ;
+    rdfs:comment "Formic acid (from Latin  formica 'ant'), systematically named methanoic acid, is the simplest carboxylic acid, and has the chemical formula HCOOH and structure H−C(=O)−O−H. It is an important intermediate in chemical synthesis and occurs naturally, most notably in some ants. Esters, salts and the anion derived from formic acid are called formates. Industrially, formic acid is produced from methanol."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:alloy a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "alloy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q37756"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Alloy"^^xsd:string ;
+    rdfs:comment "An alloy is a mixture of chemical elements of which at least one is a metal. Unlike chemical compounds with metallic bases, an alloy will retain all the properties of a metal in the resulting material, such as electrical conductivity, ductility, opacity, and luster, but may have properties that differ from those of the pure metals, such as increased strength or hardness. In some cases, an alloy may reduce the overall cost of the material while preserving important properties. In other cases, the mixture imparts synergistic properties to the constituent metal elements such as corrosion resistance or mechanical strength."^^xsd:string .
+

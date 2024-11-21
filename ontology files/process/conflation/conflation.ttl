@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:conflation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "conflation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q14946528"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Conflation"^^xsd:string ;
+    rdfs:comment "Conflation is the merging of two or more sets of information, texts, ideas or opinions into one, often in error. Conflation is defined as 'fusing blending', but is often used colloquially as 'being equal to' - treating two similar but disparate concepts as the same. Merriam Webster suggested this shift in usage happened relatively recently, entering their dictionary in 1973.In logic, it is the practice of treating two distinct concepts as one, which produces errors or misunderstandings as a fusion of distinct subjects tends to obscure analysis of relationships which are emphasized by contrasts. However, if the distinctions between the two concepts may appear to be superficial, intentional conflation can be desirable for the sake of conciseness and recall."^^xsd:string .
+

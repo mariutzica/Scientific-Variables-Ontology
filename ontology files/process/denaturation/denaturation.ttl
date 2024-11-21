@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:denaturation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "denaturation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q273186"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Denaturation_(biochemistry)"^^xsd:string ;
+    rdfs:comment "In biochemistry, denaturation is a process in which proteins or nucleic acids lose the quaternary structure, tertiary structure, and secondary structure which is present in their native state, by application of some external stress or compound, such as a strong acid or base, a concentrated inorganic salt, an organic solvent (e.g., alcohol or chloroform), agitation and radiation, or heat. If proteins in a living cell are denatured, this results in disruption of cell activity and possibly cell death. Protein denaturation is also a consequence of cell death. Denatured proteins can exhibit a wide range of characteristics, from conformational change and loss of solubility or dissociation of cofactors to aggregation due to the exposure of hydrophobic groups. The loss of solubility as a result of denaturation is called coagulation. Denatured proteins lose their 3D structure, and therefore, cannot function."^^xsd:string .
+

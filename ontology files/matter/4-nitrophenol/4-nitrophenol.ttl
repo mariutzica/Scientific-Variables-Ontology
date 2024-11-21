@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:4-nitrophenol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "4-nitrophenol"^^xsd:string ;
+    svo:has_synonym "4-hydroxynitrobenzene"^^xsd:string,
+        "p-nitrophenol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q656269"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/4-Nitrophenol"^^xsd:string ;
+    rdfs:comment "4-Nitrophenol (also called p-nitrophenol or 4-hydroxynitrobenzene) is a phenolic compound that has a nitro group at the opposite position of the hydroxyl group on the benzene ring."^^xsd:string .
+

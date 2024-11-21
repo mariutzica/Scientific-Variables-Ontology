@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:3-nitrotoluene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "3-nitrotoluene"^^xsd:string ;
+    svo:has_synonym "m-nitrotoluene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2816005"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/3-Nitrotoluene"^^xsd:string ;
+    rdfs:comment "3-Nitrotoluene or meta-nitrotoluene is an organic compound with the formula CH3C6H4NO2.  It is one of three isomers of nitrotoluene.  A yellow liquid, it is used in the manufacture of meta-toluidine, which is an intermediate in the production of various dyes."^^xsd:string .
+

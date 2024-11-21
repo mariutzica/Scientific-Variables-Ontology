@@ -1,0 +1,21 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28soil-has-abstraction-profile-has-part-bottom%29-is-source-of-%28%28water-undergoes-process-drainage%29-contains-as-medium-%28ammonium-undergoes-process-leaching%29%29%29-has-property-%28time_integral_of_mass_flux%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "soil_profile_bottom_water_drainage_ammonium_leaching__time_integral_of_mass_flux"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/profile> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/ammonium>,
+        <http://scientificvariablesontology.org/svo/matter/soil>,
+        <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/time_integral> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/bottom> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/drainage>,
+        <http://scientificvariablesontology.org/svo/process/leaching> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/mass_flux> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28soil-has-abstraction-profile-has-part-bottom%29-is-source-of-%28%28water-undergoes-process-drainage%29-contains-as-medium-%28ammonium-undergoes-process-leaching%29%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/time_integral_of_mass_flux> ;
+    svo:has_original_label "soil_profile_bottom_water_ammonium__time_integral_of_drainage_leaching_mass_flux"^^xsd:string .
+

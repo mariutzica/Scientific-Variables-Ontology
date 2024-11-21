@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tolbutamide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tolbutamide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q414275"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tolbutamide"^^xsd:string ;
+    rdfs:comment "Tolbutamide is a first-generation potassium channel blocker, sulfonylurea oral hypoglycemic medication. This drug may be used in the management of type 2 diabetes if diet alone is not effective. Tolbutamide stimulates the secretion of insulin by the pancreas."^^xsd:string .
+

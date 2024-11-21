@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:supersaturated a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "supersaturated"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q334104"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Supersaturation"^^xsd:string ;
+    rdfs:comment "In physical chemistry, supersaturation occurs with a solution when the concentration of a solute exceeds the concentration specified by the value of solubility at equilibrium. Most commonly the term is applied to a solution of a solid in a liquid, but it can also be applied to liquids and gases dissolved in a liquid. A supersaturated solution is in a metastable state; it may return to equilibrium by separation of the excess of solute from the solution, by dilution of the solution by adding solvent, or by increasing the solubility of the solute in the solvent."^^xsd:string .
+

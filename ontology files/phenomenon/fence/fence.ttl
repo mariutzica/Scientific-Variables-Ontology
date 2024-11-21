@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fence a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "fence"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q148571"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fence"^^xsd:string ;
+    rdfs:comment "A fence is a structure that encloses an area, typically outdoors, and is usually constructed from posts that are connected by boards, wire, rails or netting. A fence differs from a wall in not having a solid foundation along its whole length.Alternatives to fencing include a ditch (sometimes filled with water, forming a moat)."^^xsd:string .
+

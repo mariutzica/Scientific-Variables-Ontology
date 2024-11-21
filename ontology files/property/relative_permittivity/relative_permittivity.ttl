@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:relative_permittivity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "relative_permittivity"^^xsd:string ;
+    svo:has_synonym "dielectric_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4027242"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Relative_permittivity"^^xsd:string ;
+    rdfs:comment "The relative permittivity (in older texts, dielectric constant) is the permittivity of a material expressed as a ratio with the electric permittivity of a vacuum. A dielectric is an insulating material, and the dielectric constant of an insulator measures the ability of the insulator to store electric energy in an electrical field."^^xsd:string .
+

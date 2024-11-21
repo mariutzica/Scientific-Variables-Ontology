@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:magnetic_susceptibility a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "magnetic_susceptibility"^^xsd:string ;
+    svo:has_synonym "volume_magnetic_susceptibility"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q691463"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Magnetic_susceptibility"^^xsd:string ;
+    rdfs:comment "In electromagnetism, the magnetic susceptibility (from Latin  susceptibilis 'receptive'; denoted χ, chi) is a measure of how much a material will become magnetized in an applied magnetic field. It is the ratio of magnetization M (magnetic moment per unit volume) to the applied magnetizing field intensity H. This allows a simple classification, into two categories, of most materials' responses to an applied magnetic field: an alignment with the magnetic field, χ > 0, called paramagnetism, or an alignment against the field, χ < 0, called diamagnetism."^^xsd:string .
+

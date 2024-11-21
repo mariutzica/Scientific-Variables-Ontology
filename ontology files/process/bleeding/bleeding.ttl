@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bleeding a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "bleeding"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q166019"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bleeding"^^xsd:string ;
+    rdfs:comment "Bleeding, hemorrhage, haemorrhage or blood loss, is blood escaping from the circulatory system from damaged blood vessels. Bleeding can occur internally, or externally either through a natural opening such as the mouth, nose, ear, urethra, vagina or anus, or through a puncture in the skin."^^xsd:string .
+

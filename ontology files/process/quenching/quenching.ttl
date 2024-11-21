@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:quenching a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "quenching"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q871335"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Quenching"^^xsd:string ;
+    rdfs:comment "In materials science, quenching is the rapid cooling of a workpiece in water, gas, oil, polymer, air, or other fluids to obtain certain material properties. A type of heat treating, quenching prevents undesired low-temperature processes, such as phase transformations, from occurring. It does this by reducing the window of time during which these undesired reactions are both thermodynamically favorable and kinetically accessible; for instance, quenching can reduce the crystal grain size of both metallic and plastic materials, increasing their hardness."^^xsd:string .
+

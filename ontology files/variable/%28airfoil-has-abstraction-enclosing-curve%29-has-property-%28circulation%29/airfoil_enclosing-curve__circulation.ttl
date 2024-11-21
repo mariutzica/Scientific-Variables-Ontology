@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28airfoil-has-abstraction-enclosing-curve%29-has-property-%28circulation%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "airfoil_enclosing-curve__circulation"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/airfoil>,
+        <http://scientificvariablesontology.org/svo/abstraction/enclosing-curve> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/airfoil-has-abstraction-enclosing-curve> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/circulation> ;
+    svo:has_original_label "airfoil_curve~enclosing__circulation"^^xsd:string .
+

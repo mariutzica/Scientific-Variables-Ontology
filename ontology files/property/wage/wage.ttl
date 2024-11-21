@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:wage a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "wage"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6821213"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Wage"^^xsd:string ;
+    rdfs:comment "A wage is payment made by an employer to an employee for work done in a specific period of time. Some examples of wage payments include compensatory payments such as minimum wage, prevailing wage, and yearly bonuses, and remunerative payments such as prizes and tip payouts. Wages are part of the expenses that are involved in running a business. It is an obligation to the employee regardless of the profitability of the company."^^xsd:string .
+

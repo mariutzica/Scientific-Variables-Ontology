@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:plutonium-241 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "plutonium-241"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7205705"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Plutonium-241"^^xsd:string ;
+    rdfs:comment "Plutonium-241 (241Pu or Pu-241) is an isotope of plutonium formed when plutonium-240 captures a neutron. Like some other plutonium isotopes (especially 239Pu), 241Pu is fissile, with a neutron absorption cross section about one-third greater than that of 239Pu, and a similar probability of fissioning on neutron absorption, around 73%. In the non-fission case, neutron capture produces plutonium-242. In general, isotopes with an odd number of neutrons are both more likely to absorb a neutron, and more likely to undergo fission on neutron absorption, than isotopes with an even number of neutrons."^^xsd:string .
+

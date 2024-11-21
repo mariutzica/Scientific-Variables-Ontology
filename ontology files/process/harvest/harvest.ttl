@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:harvest a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "harvest"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q213753"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Harvest"^^xsd:string ;
+    rdfs:comment "Harvesting is the process of gathering a ripe crop from the fields. Reaping is the cutting of grain or pulse for harvest, typically using a scythe, sickle, or reaper. On smaller farms with minimal mechanization, harvesting is the most labor-intensive activity of the growing season. On large mechanized farms, harvesting uses the most expensive and sophisticated farm machinery, such as the combine harvester. Process automation has increased the efficiency of both the seeding and harvesting processes. Specialized harvesting equipment utilizing conveyor belts to mimic gentle gripping and mass-transport replaces the manual task of removing each seedling by hand. The term \"harvesting\" in general usage may include immediate postharvest handling, including cleaning, sorting, packing, and cooling."^^xsd:string .
+

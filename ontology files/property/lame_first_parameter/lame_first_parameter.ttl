@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lame_first_parameter a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "lame_first_parameter"^^xsd:string ;
+    svo:has_synonym "lame_lambda_parameter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1066623"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lam%C3%A9_parameters"^^xsd:string ;
+    rdfs:comment "In continuum mechanics,  Lamé parameters (also called the Lamé coefficients, Lamé constants or Lamé moduli) are two material-dependent quantities denoted by λ and μ that arise in strain-stress relationships. In general, λ and μ are individually referred to as Lamé's first parameter and Lamé's second parameter, respectively. Other names are sometimes employed for one or both parameters, depending on context. For example, the parameter μ is referred to in fluid dynamics as the dynamic viscosity of a fluid(not the same units); whereas in the context of elasticity, μ is called the shear modulus,: p.333  and is sometimes denoted by G instead of μ. Typically the notation G is seen paired with the use of Young's modulus E, and the notation μ is paired with the use of λ."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bopyridae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "bopyridae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2910574"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bopyridae"^^xsd:string ;
+    rdfs:comment "The Bopyridae are a family of isopod crustaceans in the suborder Cymothoida. There are 1223 individual species contained in this family. Members of the family are ectoparasites of crabs and shrimp. They live in the gill cavities or under the carapace where they cause a noticeable swelling. Fossil crustaceans have occasionally been observed to have a similar characteristic bulge."^^xsd:string .
+

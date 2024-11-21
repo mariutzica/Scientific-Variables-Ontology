@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gaussian_curvature a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "gaussian_curvature"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q945953"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gaussian_curvature"^^xsd:string ;
+    rdfs:comment "In differential geometry, the Gaussian curvature or Gauss curvature Κ of a smooth surface in three-dimensional space at a point is the product of the principal curvatures, κ1 and κ2, at the given point:"^^xsd:string .
+

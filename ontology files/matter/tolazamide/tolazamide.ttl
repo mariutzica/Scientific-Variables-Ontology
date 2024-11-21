@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tolazamide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tolazamide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7814101"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tolazamide"^^xsd:string ;
+    rdfs:comment "Tolazamide is an oral blood glucose lowering drug used for people with Type 2 diabetes. It is part of the sulfonylurea family (ATC A10BB)."^^xsd:string .
+

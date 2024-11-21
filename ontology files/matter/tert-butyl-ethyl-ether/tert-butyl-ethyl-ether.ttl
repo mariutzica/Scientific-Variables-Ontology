@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tert-butyl-ethyl-ether a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tert-butyl-ethyl-ether"^^xsd:string ;
+    svo:has_synonym "Ethyl tert-butyl ether"^^xsd:string,
+        "etbe"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q424480"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ethyl_tert-butyl_ether"^^xsd:string ;
+    rdfs:comment "Ethyl tertiary-butyl ether (ETBE), also known as ethyl tert-butyl ether, is commonly used as an oxygenate gasoline additive in the production of gasoline from crude oil.  ETBE offers equal or greater air quality benefits than ethanol, while being technically and logistically less challenging. Unlike ethanol, ETBE does not induce evaporation of gasoline, which is one of the causes of smog, and does not absorb moisture from the atmosphere."^^xsd:string .
+

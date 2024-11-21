@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:potassium-chloride a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "potassium-chloride"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q184630"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Potassium_chloride"^^xsd:string ;
+    rdfs:comment "Potassium chloride (KCl, or potassium salt) is a metal halide salt composed of potassium and chlorine. It is odorless and has a white or colorless vitreous crystal appearance. The solid dissolves readily in water, and its solutions have a salt-like taste. Potassium chloride can be obtained from ancient dried lake deposits. KCl is used as a fertilizer, in medicine, in scientific applications, domestic water softeners (as a substitute for sodium chloride salt), and in food processing, where it may be known as E number additive E508."^^xsd:string .
+

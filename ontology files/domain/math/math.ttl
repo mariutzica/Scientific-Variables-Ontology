@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/domain/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:math a svo:Domain,
+        owl:NamedIndividual ;
+    rdfs:label "math"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q395"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mathematics"^^xsd:string ;
+    rdfs:comment "Mathematics is an area of knowledge that includes the topics of numbers, formulas and related structures, shapes and the spaces in which they are contained, and quantities and their changes. These topics are represented in modern mathematics with the major subdisciplines of number theory, algebra, geometry, and analysis, respectively. There is no general consensus among mathematicians about a common definition for their academic discipline."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:drainage_density a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "drainage_density"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5305552"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Drainage_density"^^xsd:string ;
+    rdfs:comment "Drainage density is a quantity used to describe physical parameters of a drainage basin. First described by Robert E. Horton, drainage density is defined as the total length of channel in a drainage basin divided by the total area, represented by the following equation:"^^xsd:string .
+

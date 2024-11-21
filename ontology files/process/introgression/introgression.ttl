@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:introgression a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "introgression"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2094405"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Introgression"^^xsd:string ;
+    rdfs:comment "Introgression, also known as introgressive hybridization, in genetics is the transfer of genetic material from one species into the gene pool of another by the repeated backcrossing of an interspecific hybrid with one of its parent species. Introgression is a long-term process, even when artificial; it may take many hybrid generations before significant backcrossing occurs. This process is distinct from most forms of gene flow in that it occurs between two populations of different species, rather than two populations of the same species."^^xsd:string .
+

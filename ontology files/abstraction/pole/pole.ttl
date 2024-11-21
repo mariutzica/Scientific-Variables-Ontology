@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pole a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "pole"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7209314"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Poles_of_astronomical_bodies"^^xsd:string ;
+    rdfs:comment "The poles of astronomical bodies are determined based on their axis of rotation in relation to the celestial poles of the celestial sphere. Astronomical bodies include stars, planets, dwarf planets and small Solar System bodies such as comets and minor planets (e.g., asteroids), as well as natural satellites and minor-planet moons."^^xsd:string .
+

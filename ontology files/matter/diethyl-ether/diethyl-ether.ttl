@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:diethyl-ether a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "diethyl-ether"^^xsd:string ;
+    svo:has_synonym "Ethyl ether"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q202218"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Diethyl_ether"^^xsd:string ;
+    rdfs:comment "Diethyl ether, or simply ether, is an organic compound in the ether class with the formula (CH3CH2)2O or (C2H5)2O, sometimes abbreviated as Et2O, where Et stands for monovalent ethyl group CH3CH2 which is often written as C2H5 (see Pseudoelement symbols). It is a colourless, highly volatile, sweet-smelling (\"ethereal odour\"), extremely flammable liquid. It is commonly used as a solvent in laboratories and as a starting fluid for some engines. It was formerly used as a general anesthetic, until non-flammable drugs were developed, such as halothane. It has been used as a recreational drug to cause intoxication."^^xsd:string .
+

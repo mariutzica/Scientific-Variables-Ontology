@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:shovelnose-sturgeon a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "shovelnose-sturgeon"^^xsd:string ;
+    svo:has_synonym "scaphirhynchus platorynchus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2701034"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Shovelnose_sturgeon"^^xsd:string ;
+    rdfs:comment "The shovelnose sturgeon (Scaphirhynchus platorynchus) is the smallest species of freshwater sturgeon native to North America. It is often called hackleback, sand sturgeon, or switchtail. Switchtail refers to the long filament found on the upper lobe of the caudal fin (often broken off as adults). Shovelnose sturgeon are the most abundant sturgeon found in the Missouri River and Mississippi River systems, and were formerly a commercially fished sturgeon in the United States of America (Pflieger 1997).  In 2010, they were listed as threatened under the U.S. Endangered Species Act due to their resemblance to the endangered pallid sturgeon (S. albus), with which shovelnose sturgeon are sympatric."^^xsd:string .
+

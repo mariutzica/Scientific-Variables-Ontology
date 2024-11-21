@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:shear_strength a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "shear_strength"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q901396"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Shear_strength"^^xsd:string ;
+    rdfs:comment "In engineering, shear strength is the strength of a material or component against the type of yield or structural failure when the material or component fails in shear. A shear load is a force that tends to produce a sliding failure on a material along a plane that is parallel to the direction of the force. When a paper is cut with scissors, the paper fails in shear."^^xsd:string .
+

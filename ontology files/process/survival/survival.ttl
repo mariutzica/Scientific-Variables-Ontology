@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:survival a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "survival"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q104482419"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Survival"^^xsd:string ;
+    rdfs:comment "Survival or survivorship, the act of surviving, is the propensity of something to continue existing, particularly when this is done despite conditions that might kill or destroy it. The concept can be applied to humans and other living things (or, hypothetically, any sentient being), to physical object, and to abstract things such as beliefs or ideas. Living things generally have a self-preservation instinct to survive, while objects intended for use in harsh conditions are designed for survivability."^^xsd:string .
+

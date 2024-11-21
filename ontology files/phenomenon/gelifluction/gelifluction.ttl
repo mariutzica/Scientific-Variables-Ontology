@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gelifluction a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "gelifluction"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q654840"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gelifluction"^^xsd:string ;
+    rdfs:comment "Gelifluction, very similar to solifluction, is the seasonal freeze-thaw action upon waterlogging topsoils which induces downslope movement. Gelifluction is prominent in periglacial regions where snow falls during six to eight months of the year. In spring, the snow and ice melt, and the landscape is effectively inundated with half a year's worth of rainfall in the space of a couple of days. The top soil becomes waterlogged, and flows like a liquid. Because the wet soil behaves like a fluid, gelifluction is a form of mass movement that can occur on slopes with a slope angle of less than half a degree."^^xsd:string .
+

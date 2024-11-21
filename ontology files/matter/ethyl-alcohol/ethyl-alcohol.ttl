@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ethyl-alcohol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "ethyl-alcohol"^^xsd:string ;
+    svo:has_synonym "Ethanol"^^xsd:string,
+        "drinking-alcohol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q153"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ethanol"^^xsd:string ;
+    rdfs:comment "Ethanol (abbr. EtOH; also called ethyl alcohol, grain alcohol, drinking alcohol, or simply alcohol) is an organic compound. It is an alcohol with the chemical formula C2H6O. Its formula can also be written as CH3−CH2−OH or C2H5OH (an ethyl group linked to a hydroxyl group). Ethanol is a volatile, flammable, colorless liquid with a characteristic wine-like odor and pungent taste. It is a psychoactive recreational drug, and the active ingredient in alcoholic drinks."^^xsd:string .
+

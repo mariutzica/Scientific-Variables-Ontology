@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:reflux a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "reflux"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q898610"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Reflux"^^xsd:string ;
+    rdfs:comment "Reflux is a technique involving the condensation of vapors and the return of this condensate to the system from which it originated. It is used in industrial and laboratory distillations. It is also used in chemistry to supply energy to reactions over a long period of time."^^xsd:string .
+

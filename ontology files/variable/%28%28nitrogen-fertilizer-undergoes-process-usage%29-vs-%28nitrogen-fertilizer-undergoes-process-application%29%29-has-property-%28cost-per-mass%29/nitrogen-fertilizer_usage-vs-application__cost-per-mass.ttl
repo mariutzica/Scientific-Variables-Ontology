@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28nitrogen-fertilizer-undergoes-process-usage%29-vs-%28nitrogen-fertilizer-undergoes-process-application%29%29-has-property-%28cost-per-mass%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "nitrogen-fertilizer_usage-vs-application__cost-per-mass"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/nitrogen-fertilizer> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/application>,
+        <http://scientificvariablesontology.org/svo/process/usage> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28nitrogen-fertilizer-undergoes-process-usage%29-vs-%28nitrogen-fertilizer-undergoes-process-application%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/cost-per-mass> ;
+    svo:has_original_label "fertilizer~nitrogen__usage-cost-per-applied-mass"^^xsd:string .
+

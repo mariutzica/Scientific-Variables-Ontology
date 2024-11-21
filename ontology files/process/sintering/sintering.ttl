@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sintering a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "sintering"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q844613"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Sintering"^^xsd:string ;
+    rdfs:comment "Sintering or frittage is the process of compacting and forming a solid mass of material by pressure or heat without melting it to the point of liquefaction. Sintering happens as part of a manufacturing process used with metals, ceramics, plastics, and other materials. The nanoparticles in the sintered material diffuse across the boundaries of the particles, fusing the particles together and creating a solid piece."^^xsd:string .
+

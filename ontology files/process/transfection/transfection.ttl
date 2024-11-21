@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:transfection a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "transfection"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1429031"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Transfection"^^xsd:string ;
+    rdfs:comment "Transfection is the process of deliberately introducing naked or purified nucleic acids into eukaryotic cells. It may also refer to other methods and cell types, although other terms are often preferred: \"transformation\" is typically used to describe non-viral DNA transfer in bacteria and non-animal eukaryotic cells, including plant cells. In animal cells, transfection is the preferred term as transformation is also used to refer to progression to a cancerous state (carcinogenesis) in these cells. Transduction is often used to describe virus-mediated gene transfer into eukaryotic cells."^^xsd:string .
+

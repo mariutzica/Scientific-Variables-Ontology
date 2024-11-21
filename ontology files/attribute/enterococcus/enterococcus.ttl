@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:enterococcus a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "enterococcus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q517258"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Enterococcus"^^xsd:string ;
+    rdfs:comment "Enterococcus is a large genus of lactic acid bacteria of the phylum Bacillota. Enterococci are gram-positive cocci that often occur in pairs (diplococci) or short chains, and are difficult to distinguish from streptococci on physical characteristics alone. Two species are common commensal organisms in the intestines of humans: E. faecalis (90–95%) and E. faecium (5–10%). Rare clusters of infections occur with other species, including E. casseliflavus, E. gallinarum, and E. raffinosus."^^xsd:string .
+

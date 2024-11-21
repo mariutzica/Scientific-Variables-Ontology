@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:carbonate-rock a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "carbonate-rock"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q777913"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Carbonate_rock"^^xsd:string ;
+    rdfs:comment "Carbonate rocks are a class of sedimentary rocks composed primarily of carbonate minerals. The two major types are limestone, which is composed of calcite or aragonite (different crystal forms of CaCO3), and dolomite rock (also known as dolostone), which is composed of mineral dolomite (CaMg(CO3)2). They are usually classified based on texture and grain size. Importantly, carbonate rocks can exist as metamorphic and igneous rocks, too. When recrystallized carbonate rocks are metamorphosed, marble is created. Rare igneous carbonate rocks even exist as intrusive carbonatites and, even rarer, there exists volcanic carbonate lava."^^xsd:string .
+

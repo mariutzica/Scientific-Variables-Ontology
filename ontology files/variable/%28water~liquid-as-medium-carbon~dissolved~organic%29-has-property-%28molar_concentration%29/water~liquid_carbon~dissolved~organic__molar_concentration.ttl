@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28water~liquid-as-medium-carbon~dissolved~organic%29-has-property-%28molar_concentration%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "water~liquid_carbon~dissolved~organic__molar_concentration"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/dissolved>,
+        <http://scientificvariablesontology.org/svo/attribute/liquid>,
+        <http://scientificvariablesontology.org/svo/attribute/organic> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/carbon>,
+        <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/water~liquid-as-medium-carbon~dissolved~organic> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/molar_concentration> ;
+    svo:has_original_label "water~liquid_carbon~dissolved~organic__mole_concentration"^^xsd:string .
+

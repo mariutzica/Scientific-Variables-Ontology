@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28sea-has-abstraction-surface%29-as-source-radiation~incoming~shortwave-undergoes-process-reflection%29-has-property-%28reflectance%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "sea_surface_radiation~incoming~shortwave_reflection__reflectance"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/surface> ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/shortwave> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/radiation>,
+        <http://scientificvariablesontology.org/svo/phenomenon/sea> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/reflection> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28sea-has-abstraction-surface%29-as-source-radiation~incoming~shortwave-undergoes-process-reflection> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/reflectance> ;
+    svo:has_original_label "sea_surface_radiation~incoming~shortwave__reflectance"^^xsd:string .
+

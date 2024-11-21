@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlorobenzilate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chlorobenzilate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2079440"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chlorobenzilate"^^xsd:string ;
+    rdfs:comment "Chlorobenzilate is a pesticide that is not currently used in the United States or Europe.  It was originally developed by Ciba-Geigy and introduced in 1952. It was used as an acaricide against mites on citrus trees, including deciduous fruit trees. It has been detected as a residue on tomatoes found in Japanese markets in 2005. It is a non-systemic pesticide that works through contact and as a neurotoxin: it disrupts the functioning of the nervous system."^^xsd:string .
+

@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:armament a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "armament"^^xsd:string ;
+    svo:has_synonym "armament"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q728"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Weapon"^^xsd:string ;
+    rdfs:comment "A weapon, arm, or armament is any implement or device that is used to deter, threaten, inflict physical damage, harm, or kill. Weapons are used to increase the efficacy and efficiency of activities such as hunting, crime (e.g. murder), law enforcement, self-defense, warfare, or suicide. In broader context, weapons may be construed to include anything used to gain a tactical, strategic, material, or mental advantage over an adversary or enemy target."^^xsd:string .
+

@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dichlorofenthion a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "dichlorofenthion"^^xsd:string ;
+    svo:has_synonym "Dichlofenthion"^^xsd:string,
+        "o-2,4-dichlorophenyl-o,o-diethyl-phosphorothioate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3026533"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dichlofenthion"^^xsd:string ;
+    rdfs:comment "Dichlofenthion (IUPAC name: O-(2,4-dichlorophenyl) O,O-diethyl phosphorothioate) is a phosphorothioate which is primarily used as a pesticide and nematicide."^^xsd:string .
+

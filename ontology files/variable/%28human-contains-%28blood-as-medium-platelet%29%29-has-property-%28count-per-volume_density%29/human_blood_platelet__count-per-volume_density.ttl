@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28human-contains-%28blood-as-medium-platelet%29%29-has-property-%28count-per-volume_density%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "human_blood_platelet__count-per-volume_density"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/blood> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/human>,
+        <http://scientificvariablesontology.org/svo/phenomenon/platelet> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/human-contains-%28blood-as-medium-platelet%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/count-per-volume_density> ;
+    svo:has_original_label "human_blood_cell~platelet__count-per-volume"^^xsd:string .
+

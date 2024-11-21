@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28human-contains-part-white-blood-cell%29-has-property-%28count-per-volume_density%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "human_white-blood-cell__count-per-volume_density"^^xsd:string ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/human>,
+        <http://scientificvariablesontology.org/svo/phenomenon/white-blood-cell> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/human-contains-part-white-blood-cell> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/count-per-volume_density> ;
+    svo:has_original_label "human_blood_cell~white__count-per-volume"^^xsd:string .
+

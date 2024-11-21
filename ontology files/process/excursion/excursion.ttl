@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:excursion a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "excursion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1156976"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Excursion"^^xsd:string ;
+    rdfs:comment "An excursion is a trip by a group of people, usually made for leisure, education, or physical purposes. It is often an adjunct to a longer journey or visit to a place, sometimes for other (typically work-related) purposes."^^xsd:string .
+

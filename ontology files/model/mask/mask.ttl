@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mask a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "mask"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q591605"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mask_(computing)"^^xsd:string ;
+    rdfs:comment "In computer science, a mask or bitmask is data that is used for bitwise operations, particularly in a bit field. Using a mask, multiple bits in a byte, nibble, word, etc. can be set either on or off, or inverted from on to off (or vice versa) in a single bitwise operation.  An additional use of masking involves predication in vector processing, where the bitmask is used to select which element operations in the vector are to be executed (mask bit is enabled) and which are not (mask bit is clear)."^^xsd:string .
+

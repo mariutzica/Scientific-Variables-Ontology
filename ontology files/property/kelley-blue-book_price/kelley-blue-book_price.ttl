@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:kelley-blue-book_price a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "kelley-blue-book_price"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6385722"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Kelley_Blue_Book"^^xsd:string ;
+    rdfs:comment "Kelley Blue Book Co., Inc. is a vehicle valuation and automotive research company which is recognized by both consumers and the automotive industry.  Based in Irvine, California, the company is owned by the Cox Automotive subsidiary of Cox Enterprises."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:caster_angle a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "caster_angle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1503275"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Caster_angle"^^xsd:string ;
+    rdfs:comment "The caster angle or castor angle is the angular displacement of the steering axis from the vertical axis of a steered wheel in a car, motorcycle, bicycle, other vehicle or a vessel, as seen from the side of the vehicle. The steering axis in a car with dual ball joint suspension is an imaginary line that runs through the center of the upper ball joint to the center of the lower ball joint, or through the center of the kingpin for vehicles having a kingpin. "^^xsd:string .
+

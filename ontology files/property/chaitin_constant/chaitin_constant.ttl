@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chaitin_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "chaitin_constant"^^xsd:string ;
+    svo:has_synonym "chaitin_omega_number"^^xsd:string,
+        "halting_probability"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q735775"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Chaitin_constant"^^xsd:string ;
+    rdfs:comment "number that represents the probability that a randomly constructed program will halt"^^xsd:string .
+

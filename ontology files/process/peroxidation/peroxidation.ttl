@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:peroxidation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "peroxidation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q898539"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lipid_peroxidation"^^xsd:string ;
+    rdfs:comment "Lipid peroxidation, or lipid oxidation, is a complex chemical process that leads to oxidative degradation of lipids, resulting in the formation of peroxide and hydroperoxide derivatives. It occurs when free radicals, specifically reactive oxygen species (ROS), interact with lipids within cell membranes, typically polyunsaturated fatty acids (PUFAs) as they have carbon–carbon double bonds. This reaction leads to the formation of lipid radicals, collectively referred to as lipid peroxides or lipid oxidation products (LOPs), which in turn react with other oxidizing agents, leading to a chain reaction that results in oxidative stress and cell damage."^^xsd:string .
+

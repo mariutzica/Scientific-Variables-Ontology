@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:von-karman_constant a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "von-karman_constant"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4516306"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Von_K%C3%A1rm%C3%A1n_constant"^^xsd:string ;
+    rdfs:comment "In fluid dynamics, the von Kármán constant (or Kármán's constant), named for Theodore von Kármán, is a dimensionless constant involved in the logarithmic law describing the distribution of the longitudinal velocity in the wall-normal direction of a turbulent fluid flow near a boundary with a no-slip condition.  The equation for such boundary layer flow profiles is:"^^xsd:string .
+

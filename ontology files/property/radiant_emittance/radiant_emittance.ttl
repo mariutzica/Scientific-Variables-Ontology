@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:radiant_emittance a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "radiant_emittance"^^xsd:string ;
+    svo:has_synonym "radiant_exitance"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q15054698"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Radiant_exitance"^^xsd:string ;
+    rdfs:comment "In radiometry, radiant exitance or radiant emittance is the radiant flux emitted by a surface per unit area, whereas spectral exitance or spectral emittance is the radiant exitance of a surface per unit frequency or wavelength, depending on whether the spectrum is taken as a function of frequency or of wavelength. This is the emitted component of radiosity. The SI unit of radiant exitance is the watt per square metre (W/m2), while that of spectral exitance in frequency is the watt per square metre per hertz (W·m−2·Hz−1) and that of spectral exitance in wavelength is the watt per square metre per metre (W·m−3)—commonly the watt per square metre per nanometre (W·m−2·nm−1). The CGS unit erg per square centimeter per second (erg·cm−2·s−1) is often used in astronomy. Radiant exitance is often called \"intensity\" in branches of physics other than radiometry, but in radiometry this usage leads to confusion with radiant intensity."^^xsd:string .
+

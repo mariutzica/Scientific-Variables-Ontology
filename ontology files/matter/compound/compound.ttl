@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:compound a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "compound"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11173"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chemical_compound"^^xsd:string ;
+    rdfs:comment "A chemical compound is a chemical substance composed of many identical molecules (or molecular entities) containing atoms from more than one chemical element held together by chemical bonds. A molecule consisting of atoms of only one element is therefore not a compound. A compound can be transformed into a different substance by a chemical reaction, which may involve interactions with other substances. In this process, bonds between atoms may be broken and/or new bonds formed."^^xsd:string .
+

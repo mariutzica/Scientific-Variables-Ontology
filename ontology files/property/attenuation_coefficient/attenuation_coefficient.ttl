@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:attenuation_coefficient a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "attenuation_coefficient"^^xsd:string ;
+    svo:has_synonym "extinction_coefficient"^^xsd:string,
+        "narrow_beam_attenuation_coefficient"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q902086"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Attenuation_coefficient"^^xsd:string ;
+    rdfs:comment "The linear attenuation coefficient, attenuation coefficient, or narrow-beam attenuation coefficient characterizes how easily a volume of material can be penetrated by a beam of light, sound, particles, or other energy or matter. A coefficient value that is large represents a beam becoming 'attenuated' as it passes through a given medium, while a small value represents that the medium had little effect on loss. The SI unit of attenuation coefficient is the reciprocal metre (m−1). Extinction coefficient is another term for this quantity, often used in meteorology and climatology. Most commonly, the quantity measures the exponential decay of intensity, that is, the value of downward e-folding distance of the original intensity as the energy of the intensity passes through a unit (e.g. one meter) thickness of material, so that an attenuation coefficient of 1 m−1 means that after passing through 1 metre, the radiation will be reduced by a factor of e, and for material with a coefficient of 2 m−1, it will be reduced twice by e, or e2. Other measures may use a different factor than e, such as the decadic attenuation coefficient below. The broad-beam attenuation coefficient counts forward-scattered radiation as transmitted rather than attenuated, and is more applicable to radiation shielding."^^xsd:string .
+

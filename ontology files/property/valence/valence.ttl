@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:valence a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "valence"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q107414"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Valence_electron"^^xsd:string ;
+    rdfs:comment "In chemistry and physics, valence electrons are electrons in the outermost shell of an atom, and that can participate in the formation of a chemical bond if the outermost shell is not closed. In a single covalent bond, a shared pair forms with both atoms in the bond each contributing one valence electron."^^xsd:string .
+

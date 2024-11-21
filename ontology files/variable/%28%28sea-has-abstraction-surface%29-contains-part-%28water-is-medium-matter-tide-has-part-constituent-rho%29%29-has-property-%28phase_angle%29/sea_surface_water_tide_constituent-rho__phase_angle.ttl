@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28sea-has-abstraction-surface%29-contains-part-%28water-is-medium-matter-tide-has-part-constituent-rho%29%29-has-property-%28phase_angle%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "sea_surface_water_tide_constituent-rho__phase_angle"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/surface> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_part_reference_to <http://scientificvariablesontology.org/svo/part/constituent-rho> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/sea>,
+        <http://scientificvariablesontology.org/svo/phenomenon/tide> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28sea-has-abstraction-surface%29-contains-part-%28water-is-medium-matter-tide-has-part-constituent-rho%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/phase_angle> ;
+    svo:has_original_label "sea_surface_water_tide_constituent~rho__phase_angle"^^xsd:string .
+

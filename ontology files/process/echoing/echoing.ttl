@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:echoing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "echoing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q182767"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Echo"^^xsd:string ;
+    rdfs:comment "In audio signal processing and acoustics, an echo is a reflection of sound that arrives at the listener with a delay after the direct sound. The delay is directly proportional to the distance of the reflecting surface from the source and the listener. Typical examples are the echo produced by the bottom of a well, by a building, or by the walls of an enclosed room and an empty room."^^xsd:string .
+

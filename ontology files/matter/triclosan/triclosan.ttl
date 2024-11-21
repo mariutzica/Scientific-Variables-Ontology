@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:triclosan a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "triclosan"^^xsd:string ;
+    svo:has_synonym "tcs"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q408646"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Triclosan"^^xsd:string ;
+    rdfs:comment "Triclosan (sometimes abbreviated as TCS) is an antibacterial and antifungal agent present in some consumer products, including toothpaste, soaps, detergents, toys, and surgical cleaning treatments. It is similar in its uses and mechanism of action to triclocarban. Its efficacy as an antimicrobial agent, the risk of antimicrobial resistance, and its possible role in disrupted hormonal development remains controversial.  Additional research seeks to understand its potential effects on organisms and environmental health."^^xsd:string .
+

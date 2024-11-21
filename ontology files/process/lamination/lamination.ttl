@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lamination a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "lamination"^^xsd:string ;
+    svo:has_synonym "lamination"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q384943"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lamination"^^xsd:string ;
+    rdfs:comment "Lamination is the technique/process of manufacturing a material in multiple layers, so that the composite material achieves improved strength, stability, sound insulation, appearance, or other properties from the use of the differing materials, such as plastic. A laminate is a permanently assembled object created using heat, pressure, welding, or adhesives.  Various coating machines, machine presses and calendering equipment are used."^^xsd:string .
+

@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28constituent-state-as-medium-land~ice-covered%29-has-property-%28area_fraction%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "constituent-state_land~ice-covered__area_fraction"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/ice-covered> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/constituent-state>,
+        <http://scientificvariablesontology.org/svo/phenomenon/land> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/constituent-state-as-medium-land~ice-covered> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/area_fraction> ;
+    svo:has_original_label "region_state_land~ice-covered__area_fraction"^^xsd:string .
+

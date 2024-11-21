@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:eye-region a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "eye-region"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q640404"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Eye_(cyclone)"^^xsd:string ;
+    rdfs:comment "The eye is a region of mostly calm weather at the center of tropical cyclones. The eye of a storm is a roughly circular area, typically 30–65 kilometers (19–40 miles) in diameter. It is surrounded by the eyewall, a ring of towering thunderstorms where the most severe weather and highest winds occur. The cyclone's lowest barometric pressure occurs in the eye and can be as much as 15 percent lower than the pressure outside the storm.In strong tropical cyclones, the eye is characterized by light winds and clear skies, surrounded on all sides by a towering, symmetric eyewall. In weaker tropical cyclones, the eye is less well defined and can be covered by the central dense overcast, an area of high, thick clouds that show up brightly on satellite imagery. Weaker or disorganized storms may also feature an eyewall that does not completely encircle the eye or have an eye that features heavy rain. In all storms, however, the eye is the location of the storm's minimum barometric pressure—where the atmospheric pressure at sea level is the lowest."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:farnesol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "farnesol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q60194891"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Farnesol"^^xsd:string ;
+    rdfs:comment "Farnesol is a natural 15-carbon  organic compound which is an acyclic sesquiterpene alcohol. Under standard conditions, it is a colorless liquid. It is hydrophobic, and thus insoluble in water, but miscible with oils."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:drizzle a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "drizzle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q211521"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Drizzle"^^xsd:string ;
+    rdfs:comment "Drizzle is a light precipitation consisting of liquid water drops smaller than those of rain – generally smaller than 0.5 mm (0.02 in) in diameter. Drizzle is normally produced by low stratiform clouds and stratocumulus clouds. Precipitation rates from drizzle are on the order of a millimetre (0.04 in) per day or less at the ground. Owing to the small size of drizzle drops, under many circumstances drizzle largely evaporates before reaching the surface and so may be undetected by observers on the ground. The METAR code for drizzle is DZ and for freezing drizzle is FZDZ."^^xsd:string .
+

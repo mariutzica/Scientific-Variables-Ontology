@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:marangoni_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "marangoni_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1861030"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Marangoni_number"^^xsd:string ;
+    rdfs:comment "The Marangoni number (Ma) is, as usually defined, the dimensionless number that compares the rate of transport due to Marangoni flows, with the rate of transport of diffusion. The Marangoni effect is flow of a liquid due to gradients in the surface tension of the liquid. Diffusion is of whatever is creating the gradient in the surface tension. Thus as the Marangoni number compares flow and diffusion timescales it is a type of Péclet number."^^xsd:string .
+

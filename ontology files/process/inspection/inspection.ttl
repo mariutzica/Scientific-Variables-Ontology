@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:inspection a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "inspection"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1137655"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Inspection"^^xsd:string ;
+    rdfs:comment "An inspection is, most generally, an organized examination or formal evaluation exercise. In engineering activities inspection involves the measurements, tests, and gauges applied to certain characteristics in regard to  an object or activity. The results are usually compared to specified requirements and standards for determining whether the item or activity is in line with these targets, often with a Standard Inspection Procedure in place to ensure consistent checking. Inspections are usually non-destructive."^^xsd:string .
+

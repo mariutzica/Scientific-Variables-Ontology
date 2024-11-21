@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:barium-140 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "barium-140"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2555200"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isotopes_of_barium#Barium-140"^^xsd:string ;
+    rdfs:comment "Naturally occurring barium (56Ba) is a mix of six stable isotopes and one very long-lived radioactive primordial isotope, barium-130, identified as being unstable by geochemical means (from analysis of the presence of its daughter xenon-130 in rocks) in 2001. This nuclide decays by double electron capture (absorbing two electrons and emitting two neutrinos), with a half-life of (0.5–2.7)×1021 years (about 1011 times the age of the universe)."^^xsd:string .
+

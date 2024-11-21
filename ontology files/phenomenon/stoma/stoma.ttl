@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:stoma a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "stoma"^^xsd:string ;
+    svo:has_synonym "stomate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q216635"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Stoma"^^xsd:string ;
+    rdfs:comment "In botany, a stoma (from Greek στόμα, \"mouth\", plural \"stomata\"), also called a stomate (plural \"stomates\"), is a pore found in the epidermis of leaves, stems, and other organs, that controls the rate of gas exchange. The pore is bordered by a pair of specialized parenchyma cells known as guard cells that regulate the size of the stomatal opening."^^xsd:string .
+

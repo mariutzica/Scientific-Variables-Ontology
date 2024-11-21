@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28sea-has-abstraction-surface%29-contains-%28water-has-form-wave%29%29-has-property-%28time_integral_from_start_of_cosine_of_product_of_angular_frequency_and_time%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "sea_surface_water_wave__time_integral_from_start_of_cosine_of_product_of_angular_frequency_and_time"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/surface> ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/wave> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/cosine>,
+        <http://scientificvariablesontology.org/svo/operation/product>,
+        <http://scientificvariablesontology.org/svo/operation/time>,
+        <http://scientificvariablesontology.org/svo/operation/time_integral_from_start> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/sea> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/angular_frequency>,
+        <http://scientificvariablesontology.org/svo/property/time> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28sea-has-abstraction-surface%29-contains-%28water-has-form-wave%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/time_integral_from_start_of_cosine_of_product_of_angular_frequency_and_time> ;
+    svo:has_original_label "sea_surface_water_wave__time_integral_from_start_of_cos_of_angular_frequency_times_time"^^xsd:string .
+

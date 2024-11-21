@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:torque-per-volume_density a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "torque-per-volume_density"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7826794"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Torque_density"^^xsd:string ;
+    rdfs:comment "Torque density is a measure of the torque-carrying capability of a mechanical component. It is the ratio of torque capability to volume and is expressed in units of torque per volume.  Torque density is a system property since it depends on the design of each element of the component being examined and their interconnection.  "^^xsd:string .
+

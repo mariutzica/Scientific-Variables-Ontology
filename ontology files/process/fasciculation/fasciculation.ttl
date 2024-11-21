@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fasciculation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "fasciculation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1397878"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fasciculation"^^xsd:string ;
+    rdfs:comment "A fasciculation, or muscle twitch, is a spontaneous, involuntary muscle contraction and relaxation, involving fine muscle fibers. They are common, with as many as 70% of people experiencing them. They can be benign, or associated with more serious conditions.  When no cause or pathology is identified, they are diagnosed as benign fasciculation syndrome."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:scuba-diver a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "scuba-diver"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1096878"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Scuba_diving"^^xsd:string ;
+    rdfs:comment "Scuba diving is a mode of underwater diving whereby divers use breathing equipment that is completely independent of a surface air supply, and therefore has a limited but variable endurance. The name \"scuba\", an acronym for \"Self-Contained Underwater Breathing Apparatus\", was coined by Christian J. Lambertsen in a patent submitted in 1952. Scuba divers carry their own source of breathing gas, usually compressed air, affording them greater independence and movement than surface-supplied divers, and more time underwater than free divers. Although the use of compressed air is common, a gas blend with a higher oxygen content, known as enriched air or nitrox, has become popular due to the reduced nitrogen intake during long and/or repetitive dives. Also, breathing gas diluted with helium may be used to reduce the likelihood and effects of nitrogen narcosis during deeper dives."^^xsd:string .
+

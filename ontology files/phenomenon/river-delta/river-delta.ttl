@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:river-delta a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "river-delta"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q43197"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/River_delta"^^xsd:string ;
+    rdfs:comment "A river delta is a landform shaped like a triangle, created by deposition of sediment that is carried by a river  and enters slower-moving or stagnant water. This occurs where a river enters an ocean, sea, estuary, lake, reservoir, or (more rarely) another river that cannot carry away the supplied sediment. It is so named because its triangle shape resembles the Greek letter Delta. The size and shape of a delta is controlled by the balance between watershed processes that supply sediment, and receiving basin processes that redistribute, sequester, and export that sediment. The size, geometry, and location of the receiving basin also plays an important role in delta evolution. "^^xsd:string .
+

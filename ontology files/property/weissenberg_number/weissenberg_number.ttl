@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:weissenberg_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "weissenberg_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1753014"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Weissenberg_number"^^xsd:string ;
+    rdfs:comment "The Weissenberg number (Wi) is a dimensionless number used in the study of viscoelastic flows. It is named after Karl Weissenberg. The dimensionless number compares the elastic forces to the viscous forces. It can be variously defined, but it is usually given by the relation of stress relaxation time of the fluid and a specific process time. For instance, in simple steady shear, the Weissenberg number, often abbreviated as Wi or We, is defined as the shear rate "^^xsd:string .
+

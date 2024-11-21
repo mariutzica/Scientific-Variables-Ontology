@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:protozoa a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "protozoa"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q101274"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Protozoa"^^xsd:string ;
+    rdfs:comment "Protozoa (singular: protozoan or protozoon; alternative plural: protozoans) are a group of single-celled eukaryotes, either free-living or parasitic, that feed on organic matter such as other microorganisms or organic tissues and debris. Historically, protozoans were regarded as \"one-celled animals\", because they often possess animal-like behaviours, such as motility and predation, and lack a cell wall, as found in plants and many algae.When first introduced by Georg Goldfuss (originally spelled Goldfuß) in 1818, the taxon Protozoa was erected as a class within the Animalia, with the word 'protozoa' meaning \"first animals\". In later classification schemes it was elevated to a variety of higher ranks, including phylum, subkingdom and kingdom, and sometimes included within Protocista or Protista. The approach of classifying Protozoa within the context of Animalia was widespread in the 19th and early 20th century, but not universal. By the 1970s, it became usual to require that all taxa be monophyletic (derived from a common ancestor that would also be regarded as protozoan), and holophyletic (containing all of the known descendants of that common ancestor). The taxon 'Protozoa' fails to meet these standards, and the practices of grouping protozoa with animals, and treating them as closely related, are no longer justifiable. The term continues to be used in a loose way to describe single-celled protists (that is, eukaryotes that are not animals, plants, or fungi) that feed by heterotrophy. Some examples of protozoa are Amoeba, Paramecium, Euglena and Trypanosoma."^^xsd:string .
+

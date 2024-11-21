@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:thallium-208 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "thallium-208"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q28223"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isotopes_of_thallium#Thallium-208"^^xsd:string ;
+    rdfs:comment "Thallium (81Tl) has 41 isotopes with atomic masses that range from 176 to 216. 203Tl and 205Tl are the only stable isotopes and 204Tl is the most stable radioisotope with a half-life of 3.78 years. 207Tl, with a half-life of 4.77 minutes, has the longest half-life of naturally occurring Tl radioisotopes. All isotopes of thallium are either radioactive or observationally stable, meaning that they are predicted to be radioactive but no actual decay has been observed."^^xsd:string .
+

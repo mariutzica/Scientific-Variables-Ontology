@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chloroacetic-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chloroacetic-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q409013"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chloroacetic_acid"^^xsd:string ;
+    rdfs:comment "Chloroacetic acid, industrially known as monochloroacetic acid (MCA), is the organochlorine compound with the formula ClCH2CO2H. This carboxylic acid is a useful building block in organic synthesis. It is a colorless solid.  Related compounds are dichloroacetic acid and trichloroacetic acid."^^xsd:string .
+

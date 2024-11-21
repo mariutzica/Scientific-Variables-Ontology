@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tefluthrin a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tefluthrin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q424921"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tefluthrin"^^xsd:string ;
+    rdfs:comment "Tefluthrin is the ISO common name for an organic compound that is used as a pesticide. It is a pyrethroid, a class of synthetic insecticides that mimic the structure and properties of the naturally occurring insecticide pyrethrin which is present in the flowers of Chrysanthemum cinerariifolium. Pyrethroids such as tefluthrin are often preferred as active ingredients in agricultural insecticides because they are more cost-effective and longer acting than natural pyrethrins."^^xsd:string .
+

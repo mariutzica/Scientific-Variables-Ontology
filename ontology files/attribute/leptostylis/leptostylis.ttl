@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:leptostylis a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "leptostylis"^^xsd:string ;
+    svo:has_synonym "pycnandra"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3004059"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Pycnandra"^^xsd:string ;
+    rdfs:comment "Pycnandra is a genus of trees in the family Sapotaceae described as a genus in 1876.it is the largest endemic genus of flowering plants of New Caledonia. Its closest relative is the Australian Niemeyera."^^xsd:string .
+

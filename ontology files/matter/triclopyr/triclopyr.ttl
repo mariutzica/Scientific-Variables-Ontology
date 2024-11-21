@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:triclopyr a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "triclopyr"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2303660"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Triclopyr"^^xsd:string ;
+    rdfs:comment "Triclopyr (3,5,6-trichloro-2-pyridinyloxyacetic acid) is an organic compound in the pyridine group that is used as a systemic foliar herbicide and fungicide."^^xsd:string .
+

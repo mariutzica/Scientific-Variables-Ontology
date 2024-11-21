@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:stellar-day a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "stellar-day"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q244743"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Earth%27s_rotation#Stellar_day"^^xsd:string ;
+    rdfs:comment "Earth's rotation or Earth's spin is the rotation of planet Earth around its own axis, as well as changes in the orientation of the rotation axis in space. Earth rotates eastward, in prograde motion. As viewed from the northern polar star Polaris, Earth turns counterclockwise."^^xsd:string .
+

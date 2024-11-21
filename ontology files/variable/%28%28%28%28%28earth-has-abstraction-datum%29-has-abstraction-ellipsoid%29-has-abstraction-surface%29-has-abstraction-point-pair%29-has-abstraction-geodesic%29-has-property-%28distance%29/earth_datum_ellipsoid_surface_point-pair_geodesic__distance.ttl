@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28%28%28%28earth-has-abstraction-datum%29-has-abstraction-ellipsoid%29-has-abstraction-surface%29-has-abstraction-point-pair%29-has-abstraction-geodesic%29-has-property-%28distance%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "earth_datum_ellipsoid_surface_point-pair_geodesic__distance"^^xsd:string ;
+    svo:contains_abstraction_reference_to <http://scientificvariablesontology.org/svo/abstraction/datum>,
+        <http://scientificvariablesontology.org/svo/abstraction/ellipsoid>,
+        <http://scientificvariablesontology.org/svo/abstraction/geodesic>,
+        <http://scientificvariablesontology.org/svo/abstraction/point-pair>,
+        <http://scientificvariablesontology.org/svo/abstraction/surface> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/earth> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28%28%28%28earth-has-abstraction-datum%29-has-abstraction-ellipsoid%29-has-abstraction-surface%29-has-abstraction-point-pair%29-has-abstraction-geodesic> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/distance> .
+

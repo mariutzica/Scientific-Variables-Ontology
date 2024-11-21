@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:kjeldahl-nitrogen a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "kjeldahl-nitrogen"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q898934"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Kjeldahl_method#Total_Kjeldahl_nitrogen"^^xsd:string ;
+    rdfs:comment "The Kjeldahl method or Kjeldahl digestion (Danish pronunciation: [ˈkʰelˌtɛˀl]) in analytical chemistry is a method for the quantitative determination of nitrogen contained in organic substances plus the nitrogen contained in the inorganic compounds ammonia and ammonium (NH3/NH4+). Without modification, other forms of inorganic nitrogen, for instance nitrate, are not included in this measurement. Using an empirical relation between Kjeldahl nitrogen content and protein content it is an important method for analyzing proteins. This method was developed by Johan Kjeldahl in 1883."^^xsd:string .
+

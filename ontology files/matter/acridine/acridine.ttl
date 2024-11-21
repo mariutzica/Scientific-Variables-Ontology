@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:acridine a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "acridine"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q342713"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Acridine"^^xsd:string ;
+    rdfs:comment "Acridine is an organic compound and a nitrogen heterocycle with the formula C13H9N. Acridines are substituted derivatives of the parent ring.  It is a planar molecule that is structurally related to anthracene with one of the central CH groups replaced by nitrogen. Like the related molecules pyridine and quinoline, acridine is mildly basic. It is an almost colorless solid, which crystallizes in needles.  There are few commercial applications of acridines; at one time acridine dyes were popular, but they are now relegated to niche applications, such as with acridine orange. The name is a reference to the acrid odour and acrid skin-irritating effect of the compound."^^xsd:string .
+

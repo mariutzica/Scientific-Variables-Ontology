@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bioturbation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "bioturbation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q864907"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bioturbation"^^xsd:string ;
+    rdfs:comment "Bioturbation is defined as the reworking of soils and sediments by animals or plants. It includes burrowing, ingestion, and defecation of sediment grains. Bioturbating activities have a profound effect on the environment and  are thought to be a primary driver of biodiversity. The formal study of bioturbation began in the 1800s by Charles Darwin experimenting in his garden. The disruption of aquatic sediments and terrestrial soils through bioturbating activities provides significant ecosystem services. These include the alteration of nutrients in aquatic sediment and overlying water, shelter to other species in the form of burrows in terrestrial and water ecosystems, and soil production on land.Bioturbators are deemed ecosystem engineers because they alter resource availability to other species through the physical changes they make to their environments. This type of ecosystem change affects the evolution of cohabitating species and the environment, which is evident in trace fossils left in marine and terrestrial sediments. Other bioturbation effects include altering the texture of sediments (diagenesis), bioirrigation, and displacement of microorganisms and non-living particles. Bioturbation is sometimes confused with the process of bioirrigation, however these processes differ in what they are mixing; bioirrigation refers to the mixing of water and solutes in sediments and is an effect of bioturbation.Walruses, salmon, and pocket gophers are examples of large bioturbators. Although the activities of these large macrofaunal bioturbators are more conspicuous, the dominant bioturbators are small invertebrates, such as earthworms, polychaetes, ghost shrimp, mud shrimp, and midge larvae. The activities of these small invertebrates, which include burrowing and ingestion and defecation of sediment grains, contribute to mixing and the alteration of sediment structure."^^xsd:string .
+

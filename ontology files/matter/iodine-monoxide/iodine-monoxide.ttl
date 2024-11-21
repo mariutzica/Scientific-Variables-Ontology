@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:iodine-monoxide a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "iodine-monoxide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q860404"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Iodine_oxide"^^xsd:string ;
+    rdfs:comment "Iodine oxides are chemical compounds of oxygen and iodine. Iodine has only two stable oxides which are isolatable in bulk, iodine tetroxide and iodine pentoxide, but a number of other oxides are formed in trace quantities or have been hypothesized to exist."^^xsd:string .
+

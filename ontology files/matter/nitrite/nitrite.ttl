@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nitrite a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "nitrite"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q72158415"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nitrite"^^xsd:string ;
+    rdfs:comment "The nitrite ion has the chemical formula NO−2. Nitrite (mostly sodium nitrite) is widely used throughout chemical and pharmaceutical industries. The nitrite anion is a pervasive intermediate in the nitrogen cycle in nature. The name nitrite also refers to organic compounds having the –ONO group, which are esters of nitrous acid."^^xsd:string .
+

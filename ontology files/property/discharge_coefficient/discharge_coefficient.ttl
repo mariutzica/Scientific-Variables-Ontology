@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:discharge_coefficient a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "discharge_coefficient"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1261059"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Discharge_coefficient"^^xsd:string ;
+    rdfs:comment "In a nozzle or other constriction, the discharge coefficient (also known as coefficient of discharge or efflux coefficient) is the ratio of the actual discharge to the ideal discharge, i.e., the ratio of the mass flow rate at the discharge end of the nozzle to that of an ideal nozzle which expands an identical working fluid from the same initial conditions to the same exit pressures."^^xsd:string .
+

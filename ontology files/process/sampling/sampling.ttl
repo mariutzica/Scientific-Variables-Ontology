@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:sampling a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "sampling"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1570376"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wiktionary.org/wiki/sample#Verb"^^xsd:string ;
+    rdfs:comment "Sample or samples may refer to:"^^xsd:string .
+

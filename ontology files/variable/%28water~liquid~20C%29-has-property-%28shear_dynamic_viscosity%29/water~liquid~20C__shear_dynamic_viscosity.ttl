@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28water~liquid~20C%29-has-property-%28shear_dynamic_viscosity%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "water~liquid~20C__shear_dynamic_viscosity"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/20C>,
+        <http://scientificvariablesontology.org/svo/attribute/liquid> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/water~liquid~20C> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/shear_dynamic_viscosity> ;
+    svo:has_original_label "water~liquid~20C__dynamic_shear_viscosity"^^xsd:string .
+

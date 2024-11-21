@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:phenol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "phenol"^^xsd:string ;
+    svo:has_synonym "phenolic-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q130336"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Phenol"^^xsd:string ;
+    rdfs:comment "Phenol (systematically named Benzenol, also called carbolic acid or phenolic acid) is an aromatic organic compound with the molecular formula C6H5OH. It is a white crystalline solid that is volatile. The molecule consists of a phenyl group (−C6H5) bonded to a hydroxy group (−OH). Mildly acidic, it requires careful handling because it can cause chemical burns."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lepidostomatidae a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "lepidostomatidae"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1936570"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lepidostomatidae"^^xsd:string ;
+    rdfs:comment "Lepidostomatidae is a family in the order Trichoptera. It is widely dispersed around the world. Larvae shapes vary. Larvae are normally found near bodies of water. It was first discovered by Georg Ulmer in 1903."^^xsd:string .
+

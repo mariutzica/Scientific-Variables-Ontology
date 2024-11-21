@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:coriolis_frequency a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "coriolis_frequency"^^xsd:string ;
+    svo:has_synonym "coriolis_coefficient"^^xsd:string,
+        "coriolis_parameter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2568075"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Coriolis_frequency"^^xsd:string ;
+    rdfs:comment "The Coriolis frequency ƒ, also called the Coriolis parameter or Coriolis coefficient, is equal to twice the rotation rate Ω of the Earth multiplied by the sine of the latitude "^^xsd:string .
+

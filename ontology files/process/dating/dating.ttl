@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dating a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "dating"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q173412"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Radiocarbon_dating"^^xsd:string ;
+    rdfs:comment "Radiocarbon dating (also referred to as carbon dating or carbon-14 dating) is a method for determining the age of an object containing organic material by using the properties of radiocarbon, a radioactive isotope of carbon."^^xsd:string .
+

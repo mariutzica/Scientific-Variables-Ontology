@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tungsten a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tungsten"^^xsd:string ;
+    svo:has_synonym "wolfram"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q743"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tungsten"^^xsd:string ;
+    rdfs:comment "Tungsten, or wolfram, is a chemical element with the symbol W and atomic number 74. Tungsten is a rare metal found naturally on Earth almost exclusively as compounds with other elements. It was identified as a new element in 1781 and first isolated as a metal in 1783. Its important ores include scheelite and wolframite, the latter lending the element its alternate name."^^xsd:string .
+

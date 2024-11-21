@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:benzo%5Bb%5Dfluoranthene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "benzo[b]fluoranthene"^^xsd:string ;
+    svo:has_synonym "Benz(e)acephenanthrylene"^^xsd:string,
+        "Benzo(b)fluoranthene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2380192"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Benz(e)acephenanthrylene"^^xsd:string ;
+    rdfs:comment "Benz[e]acephenanthrylene is an organic compound with the chemical formula C20H12. It is a polycyclic aromatic hydrocarbon (PAH) made of four benzene rings around a 5-membered ring."^^xsd:string .
+

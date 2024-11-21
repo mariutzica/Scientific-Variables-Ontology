@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hibernation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "hibernation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q159408"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hibernation"^^xsd:string ;
+    rdfs:comment "Hibernation is a state of minimal activity and metabolic depression undergone by some animal species. Hibernation is a seasonal heterothermy characterized by low body-temperature, slow breathing and heart-rate, and low metabolic rate. It most commonly occurs during winter months."^^xsd:string .
+

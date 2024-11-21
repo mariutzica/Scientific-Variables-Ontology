@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hardness a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "hardness"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3236003"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hardness"^^xsd:string ;
+    rdfs:comment "In materials science, hardness (antonym: softness) is a measure of the resistance to localized plastic deformation, such as an indentation (over an area) or a scratch (linear), induced mechanically either by pressing or abrasion. In general, different materials differ in their hardness; for example hard metals such as titanium and beryllium are harder than soft metals such as sodium and metallic tin, or wood and common plastics. Macroscopic hardness is generally characterized by strong intermolecular bonds, but the behavior of solid materials under force is complex; therefore, hardness can be measured in different ways, such as scratch hardness, indentation hardness, and rebound hardness. Hardness is dependent on ductility, elastic stiffness, plasticity, strain, strength, toughness, viscoelasticity, and viscosity. Common examples of hard matter are ceramics, concrete, certain metals, and superhard materials, which can be contrasted with soft matter."^^xsd:string .
+

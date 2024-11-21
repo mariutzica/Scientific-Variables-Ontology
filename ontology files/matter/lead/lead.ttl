@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:lead a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "lead"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q708"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Lead"^^xsd:string ;
+    rdfs:comment "Lead is a chemical element with the symbol Pb (from the Latin plumbum) and atomic number 82. It is a heavy metal that is denser than most common materials. Lead is soft and malleable, and also has a relatively low melting point. When freshly cut, lead is a shiny gray with a hint of blue. It tarnishes to a dull gray color when exposed to air. Lead has the highest atomic number of any stable element and three of its isotopes are endpoints of major nuclear decay chains of heavier elements. Lead is toxic, even in small amounts, especially to children."^^xsd:string .
+

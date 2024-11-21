@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bendiocarb a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "bendiocarb"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q417017"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bendiocarb"^^xsd:string ;
+    rdfs:comment "Bendiocarb is an acutely toxic carbamate insecticide used in public health and agriculture and is effective against a wide range of nuisance and disease vector insects. Many bendiocarb products are or were sold under the tradenames \"Ficam\" and \"Turcam.\""^^xsd:string .
+

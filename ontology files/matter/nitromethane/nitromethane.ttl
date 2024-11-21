@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nitromethane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "nitromethane"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q407733"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nitromethane"^^xsd:string ;
+    rdfs:comment "Nitromethane, sometimes shortened to simply \"nitro\", is an organic compound with the chemical formula CH3NO2. It is the simplest organic nitro compound.  It is a polar liquid commonly used as a solvent in a variety of industrial applications such as in extractions, as a reaction medium, and as a cleaning solvent.  As an intermediate in organic synthesis, it is used widely in the manufacture of pesticides, explosives, fibers, and coatings.  Nitromethane is used as a fuel additive in various motorsports and hobbies, e.g.  Top Fuel drag racing and miniature internal combustion engines in radio control, control line and free flight model aircraft."^^xsd:string .
+

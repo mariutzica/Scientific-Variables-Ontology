@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:titration a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "titration"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q191010"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Titration"^^xsd:string ;
+    rdfs:comment "Titration (also known as titrimetry and volumetric analysis) is a common laboratory method of quantitative chemical analysis to determine the concentration of an identified analyte (a substance to be analyzed). A reagent, termed the titrant or titrator, is prepared as a standard solution of known concentration and volume. The titrant reacts with a solution of analyte (which may also be termed the titrand) to determine the analyte's concentration. The volume of titrant that reacted with the analyte is termed the titration volume."^^xsd:string .
+

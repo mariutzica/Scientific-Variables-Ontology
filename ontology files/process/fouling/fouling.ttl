@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:fouling a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "fouling"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1439803"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Fouling"^^xsd:string ;
+    rdfs:comment "Fouling is the accumulation of unwanted material on solid surfaces. The fouling materials can consist of either living organisms (biofouling, organic) or a non-living substance (inorganic). Fouling is usually distinguished from other surface-growth phenomena in that it occurs on a surface of a component, system, or plant performing a defined and useful function and that the fouling process impedes or interferes with this function."^^xsd:string .
+

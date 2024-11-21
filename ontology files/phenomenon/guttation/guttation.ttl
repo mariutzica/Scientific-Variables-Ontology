@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:guttation a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "guttation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q623379"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Guttation"^^xsd:string ;
+    rdfs:comment "Guttation is the exudation of drops of xylem sap on the tips or edges of leaves of some vascular plants, such as grasses, and a number of fungi, which are not plants but were previously categorized as such and studied as part of botany. Guttation (from Latin gutta drop) is not to be confused with dew, which condenses from the atmosphere onto the plant or fungus surface and does not originate from within them. Guttation generally happens at night."^^xsd:string .
+

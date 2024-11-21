@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:shoaling a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "shoaling"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1132245"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Shoaling_and_schooling"^^xsd:string ;
+    rdfs:comment "In biology, any group of fish that stay together for social reasons are shoaling, and if the group is swimming in the same direction in a coordinated manner, they are schooling. In common usage, the terms are sometimes used rather loosely. About one quarter of fish species shoal all their lives, and about one half shoal for part of their lives."^^xsd:string .
+

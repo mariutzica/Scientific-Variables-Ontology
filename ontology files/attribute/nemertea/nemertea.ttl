@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nemertea a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "nemertea"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q185631"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nemertea"^^xsd:string ;
+    rdfs:comment "Nemertea is a phylum of animals also known as ribbon worms or proboscis worms, consisting of 1300 known species.  Most ribbon worms are very slim, usually only a few millimeters wide, although a few have relatively short but wide bodies. Many have patterns of yellow, orange, red and green coloration."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:constituent-state a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "constituent-state"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q56061"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Administrative_division"^^xsd:string ;
+    rdfs:comment "Administrative division, administrative unit,  administrative region, subnational entity, constituent state, as well as many similar terms, are generic names for geographical areas into which a particular, independent sovereign state (country) is divided. Such a unit usually has an administrative authority with the power to take administrative or policy decisions for its area.Usually, countries have several levels of administrative division. The common names for the principal (largest) administrative divisions are: states (i.e. \"subnational states\", rather than sovereign states), provinces, lands, oblasts, governorates, cantons, prefectures, counties, regions, departments, and emirates. These, in turn, are often subdivided into smaller administrative units known by names such as circuits, counties, comarcas, raions, județe, or districts, which are further subdivided into municipalities, communes or communities constituting the smallest units of subdivision (the local governments)."^^xsd:string .
+

@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28nitrogen-undergoes-process-immobilization%29-has-property-%28average_of_gross_mass_rate%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "nitrogen_immobilization__average_of_gross_mass_rate"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/nitrogen> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/average> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/immobilization> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/gross_mass_rate> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/nitrogen-undergoes-process-immobilization> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/average_of_gross_mass_rate> ;
+    svo:has_original_label "nitrogen__average_of_gross_mass_immobilization_rate"^^xsd:string .
+

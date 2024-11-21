@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:photosynthetically-active a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "photosynthetically-active"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q900892"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Photosynthetically_active_radiation"^^xsd:string ;
+    rdfs:comment "Photosynthetically active radiation (PAR) designates the spectral range (wave band) of solar radiation from 400 to 700 nanometers that photosynthetic organisms are able to use in the process of photosynthesis. This spectral region corresponds more or less with the range of light visible to the human eye. Photons at shorter wavelengths tend to be so energetic that they can be damaging to cells and tissues, but are mostly filtered out by the ozone layer in the stratosphere. Photons at longer wavelengths do not carry enough energy to allow photosynthesis to take place."^^xsd:string .
+

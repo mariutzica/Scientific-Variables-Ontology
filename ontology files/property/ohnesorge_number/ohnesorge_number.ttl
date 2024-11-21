@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ohnesorge_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "ohnesorge_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1302335"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ohnesorge_number"^^xsd:string ;
+    rdfs:comment "The Ohnesorge number (Oh) is a dimensionless number that relates the viscous forces to inertial and surface tension forces.  The number was defined by Wolfgang von Ohnesorge in his 1936 doctoral thesis.It is defined as:"^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:waterproofing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "waterproofing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2326110"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Waterproofing"^^xsd:string ;
+    rdfs:comment "Waterproofing is the process of making an object, person or structure waterproof or water-resistant so that it remains relatively unaffected by water or resisting the ingress of water under specified conditions. Such items may be used in wet environments or underwater to specified depths."^^xsd:string .
+

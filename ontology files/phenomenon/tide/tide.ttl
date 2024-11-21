@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tide a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "tide"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q23384"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Tide"^^xsd:string ;
+    rdfs:comment "Tides are the rise and fall of sea levels caused by the combined effects of the gravitational forces exerted by the Moon (and to a much lesser extent, the Sun) and are also caused by the Earth and Moon orbiting one another."^^xsd:string .
+

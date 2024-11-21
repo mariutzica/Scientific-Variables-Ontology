@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:irritation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "irritation"^^xsd:string ;
+    svo:has_synonym "irritation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q77776"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Irritation"^^xsd:string ;
+    rdfs:comment "Irritation, in biology and physiology, is a state of inflammation or painful reaction to allergy or cell-lining damage. A stimulus or agent which induces the state of irritation is an irritant. Irritants are typically thought of as chemical agents (for example phenol and capsaicin) but mechanical, thermal (heat), and radiative stimuli (for example ultraviolet light or ionising radiations) can also be irritants. Irritation also has non-clinical usages referring to bothersome physical or psychological pain or discomfort."^^xsd:string .
+

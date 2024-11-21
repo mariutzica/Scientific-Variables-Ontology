@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:flight a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "flight"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q206021"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Flight"^^xsd:string ;
+    rdfs:comment "Flight or flying is the process by which an object moves through a space without contacting any planetary surface, either within an atmosphere (i.e. air flight or aviation) or through the vacuum of outer space (i.e. spaceflight). This can be achieved by generating aerodynamic lift associated with gliding or propulsive thrust, aerostatically using buoyancy, or by ballistic movement."^^xsd:string .
+

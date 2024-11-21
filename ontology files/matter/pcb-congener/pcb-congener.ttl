@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pcb-congener a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "pcb-congener"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q211171"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Polychlorinated_biphenyl"^^xsd:string ;
+    rdfs:comment "Polychlorinated biphenyls (PCBs) are highly carcinogenic chemical compounds, formerly used in industrial and consumer products, whose production was banned in the United States by the Toxic Substances Control Act in 1979 and internationally by the Stockholm Convention on Persistent Organic Pollutants in 2001. They are organic chlorine compounds with the formula C12H10−xClx; they were once widely used in the manufacture of carbonless copy paper, as heat transfer fluids, and as dielectric and coolant fluids for electrical equipment.Because of their longevity, PCBs are still widely in use, even though their manufacture has declined drastically since the 1960s, when a host of problems were identified. With the discovery of PCBs' environmental toxicity, and classification as persistent organic pollutants, their production was banned by United States federal law in 1978, and by the Stockholm Convention on Persistent Organic Pollutants in 2001.The International Agency for Research on Cancer (IARC) rendered PCBs as definite carcinogens in humans. According to the U.S. Environmental Protection Agency (EPA), PCBs cause cancer in animals and are probable human carcinogens. Many rivers and buildings, including schools, parks, and other sites, are contaminated with PCBs and there has been contamination of food supplies with the substances. Moreover, because of their use as a coolant in electric transformers, PCBs still persist in built environments.Some PCBs share a structural similarity and toxic mode of action with dioxins. Other toxic effects such as endocrine disruption (notably blocking of thyroid system functioning) and neurotoxicity are known. The bromine analogues of PCBs are polybrominated biphenyls (PBBs), which have analogous applications and environmental concerns."^^xsd:string .
+

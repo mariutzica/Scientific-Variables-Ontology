@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hydration_enthalpy a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "hydration_enthalpy"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1640124"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hydration_energy"^^xsd:string ;
+    rdfs:comment "In chemistry, hydration energy (also hydration enthalpy) is the amount of energy released when one mole of ions undergoes hydration.  Hydration energy is one component in the quantitative analysis of solvation. It is a particular special case of water. The value of hydration energies is one of the most challenging aspects of structural prediction.  Upon dissolving a salt in water, the cations and anions interact with the positive and negative dipoles of the water.  The trade-off of these interactions vs those within the crystalline solid comprises the hydration energy."^^xsd:string .
+

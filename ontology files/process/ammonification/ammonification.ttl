@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ammonification a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "ammonification"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q82551"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nitrogen_cycle#Ammonification"^^xsd:string ;
+    rdfs:comment "The nitrogen cycle is the biogeochemical cycle by which nitrogen is converted into multiple chemical forms as it circulates among atmospheric, terrestrial, and marine ecosystems. The conversion of nitrogen can be carried out through both biological and physical processes. Important processes in the nitrogen cycle include fixation, ammonification, nitrification, and denitrification. The majority of Earth's atmosphere (78%) is atmospheric nitrogen, making it the largest source of nitrogen. However, atmospheric nitrogen has limited availability for biological use, leading to a scarcity of usable nitrogen in many types of ecosystems."^^xsd:string .
+

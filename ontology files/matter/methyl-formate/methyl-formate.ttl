@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:methyl-formate a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "methyl-formate"^^xsd:string ;
+    svo:has_synonym "methyl-methanoate"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q422779"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Methyl_formate"^^xsd:string ;
+    rdfs:comment "Methyl formate, also called methyl methanoate, is the methyl ester of formic acid. The simplest example of an ester, it is a colorless liquid with an ethereal odour, high vapor pressure, and low surface tension.  It is a precursor to many other compounds of commercial interest."^^xsd:string .
+

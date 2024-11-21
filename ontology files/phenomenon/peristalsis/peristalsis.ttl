@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:peristalsis a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "peristalsis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q308695"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Peristalsis"^^xsd:string ;
+    rdfs:comment "Peristalsis ( PERR-ih-STAL-siss, US also  -⁠STAWL-) is a radially symmetrical contraction and relaxation of muscles that propagate in a wave down a tube, in an anterograde direction. Peristalsis is progression of coordinated contraction of involuntary circular muscles, which is preceded by a simultaneous contraction of the longitudinal muscle and relaxation of the circular muscle in the lining of the gut.In much of a digestive tract such as the human gastrointestinal tract, smooth muscle tissue contracts in sequence to produce a peristaltic wave, which propels a ball of food (called a bolus before being transformed into chyme in the stomach) along the tract. The peristaltic movement comprises relaxation of circular smooth muscles, then their contraction behind the chewed material to keep it from moving backward, then longitudinal contraction to push it forward."^^xsd:string .
+

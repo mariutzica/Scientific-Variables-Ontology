@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:eccentricity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "eccentricity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q104486"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Eccentricity_(mathematics)"^^xsd:string ;
+    rdfs:comment "In mathematics, the eccentricity of a conic section is a non-negative real number that uniquely characterizes its shape."^^xsd:string .
+

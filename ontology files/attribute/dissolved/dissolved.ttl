@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dissolved a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "dissolved"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q739398"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dissolution_(chemistry)"^^xsd:string ;
+    rdfs:comment "attraction and association of molecules of a solvent with molecules or ions of a solute"^^xsd:string .
+

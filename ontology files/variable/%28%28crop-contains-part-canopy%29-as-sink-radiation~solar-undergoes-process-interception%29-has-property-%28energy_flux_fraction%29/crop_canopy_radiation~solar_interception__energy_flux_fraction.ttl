@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28crop-contains-part-canopy%29-as-sink-radiation~solar-undergoes-process-interception%29-has-property-%28energy_flux_fraction%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "crop_canopy_radiation~solar_interception__energy_flux_fraction"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/solar> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/canopy>,
+        <http://scientificvariablesontology.org/svo/phenomenon/radiation> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/interception> ;
+    svo:contains_role_reference_to <http://scientificvariablesontology.org/svo/role/crop> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28crop-contains-part-canopy%29-as-sink-radiation~solar-undergoes-process-interception> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/energy_flux_fraction> ;
+    svo:has_original_label "crop_canopy_radiation~solar__interception_energy_flux_fraction"^^xsd:string .
+

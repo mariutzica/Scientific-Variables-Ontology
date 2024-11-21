@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:innovation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "innovation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q174165"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Innovation"^^xsd:string ;
+    rdfs:comment "Innovation is the practical implementation of ideas that result in the introduction of new goods or services or improvement in offering goods or services. ISO TC 279 in the standard ISO 56000:2020 defines innovation as \"a new or changed entity, realizing or redistributing value\". Others have different definitions; a common element in the definitions is a focus on newness, improvement, and spread of ideas or technologies."^^xsd:string .
+

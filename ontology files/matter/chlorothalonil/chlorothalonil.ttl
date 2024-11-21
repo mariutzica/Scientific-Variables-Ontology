@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chlorothalonil a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "chlorothalonil"^^xsd:string ;
+    svo:has_synonym "2,4,5,6-tetrachloroisophthalonitrile"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q418320"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chlorothalonil"^^xsd:string ;
+    rdfs:comment "Chlorothalonil (2,4,5,6-tetrachloroisophthalonitrile) is an organic compound mainly used as a broad spectrum, nonsystemic fungicide, with other uses as a wood protectant, pesticide, acaricide, and to control mold, mildew, bacteria, algae. Chlorothalonil-containing products are sold under the names Bravo, Echo, and Daconil. It was first registered for use in the US in 1966. In 1997, the most recent year for which data are available, it was the third most used fungicide in the US, behind only sulfur and copper, with 12 million pounds (5.4 million kilograms) used in agriculture that year. Including nonagricultural uses, the United States Environmental Protection Agency (EPA) estimates, on average, almost 15 million lb (6.8 million kg) were used annually from 1990 to 1996."^^xsd:string .
+

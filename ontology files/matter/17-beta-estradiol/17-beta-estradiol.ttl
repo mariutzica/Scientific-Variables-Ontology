@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:17-beta-estradiol a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "17-beta-estradiol"^^xsd:string ;
+    svo:has_synonym "estradiol"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q422416"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Estradiol"^^xsd:string ;
+    rdfs:comment "Estradiol (E2), also spelled oestradiol, is an estrogen steroid hormone and the major female sex hormone. It is involved in the regulation of the estrous and menstrual female reproductive cycles. Estradiol is responsible for the development of female secondary sexual characteristics such as the breasts, widening of the hips and a female-associated pattern of fat distribution. It is also important in the development and maintenance of female reproductive tissues such as the mammary glands, uterus and vagina during puberty, adulthood and pregnancy. It also has important effects in many other tissues including bone, fat, skin, liver, and the brain."^^xsd:string .
+

@@ -1,0 +1,12 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:soil-contains-as-medium-%28as-nitrogen-undergoes-process-denitrification%29 a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "soil_as-nitrogen_denitrification"^^xsd:string ;
+    svo:has_containing_medium_phenomenon :soil ;
+    svo:has_primary_participant_phenomenon :as-nitrogen-undergoes-process-denitrification .
+

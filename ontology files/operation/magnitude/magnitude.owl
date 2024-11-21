@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/operation/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/operation/">
+<owl:NamedIndividual rdf:about="magnitude">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Operation"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnitude</rdfs:label>
+  <svo:has_wikipedia_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Magnitude_(mathematics)</svo:has_wikipedia_page>
+  <svo:has_wikidata_page rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.wikidata.org/wiki/Q2091629</svo:has_wikidata_page>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mathematics, the magnitude or size of a mathematical object is a property which determines whether the object is larger or smaller than other objects of the same kind. More formally, an object's magnitude is the displayed result of an ordering (or ranking)—of the class of objects to which it belongs.</rdfs:comment>
+</owl:NamedIndividual>
+</rdf:RDF>

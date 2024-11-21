@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:xenotransplantation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "xenotransplantation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q55505"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Xenotransplantation"^^xsd:string ;
+    rdfs:comment "Xenotransplantation (xenos- from the Greek meaning \"foreign\" or strange), or heterologous transplant, is the transplantation of living cells, tissues or organs from one species to another. Such cells, tissues or organs are called xenografts or xenotransplants. It is contrasted with allotransplantation (from other individual of same species), syngeneic transplantation or isotransplantation (grafts transplanted between two genetically identical individuals of the same species) and autotransplantation (from one part of the body to another in the same person). Xenotransplantation is an artificial method of creating an animal-human chimera, that is, a human with a subset of animal cells. In contrast, an individual where each cell contains genetic material from a human and an animal is called a human–animal hybrid."^^xsd:string .
+

@@ -1,0 +1,16 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28drainage-basin-contains-part-%28outlet-contains-part-river-bank~right%29%29-has-property-%28longitude%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "drainage-basin_outlet_river-bank~right__longitude"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/right> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/drainage-basin>,
+        <http://scientificvariablesontology.org/svo/phenomenon/river-bank> ;
+    svo:contains_role_reference_to <http://scientificvariablesontology.org/svo/role/outlet> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/drainage-basin-contains-part-%28outlet-contains-part-river-bank~right%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/longitude> ;
+    svo:has_original_label "basin_outlet_bank~right__longitude"^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:monoterpene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "monoterpene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q32528"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Monoterpene"^^xsd:string ;
+    rdfs:comment "Monoterpenes are a class of terpenes that consist of two isoprene units and have the molecular formula C10H16. Monoterpenes may be linear (acyclic) or contain rings (monocyclic and bicyclic). Modified terpenes, such as those containing oxygen functionality or missing a methyl group, are called monoterpenoids. Monoterpenes and monoterpenoids are diverse. They have relevance to the pharmaceutical, cosmetic, agricultural, and food industries."^^xsd:string .
+

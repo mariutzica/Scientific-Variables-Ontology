@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:geopotential_height a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "geopotential_height"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q12432978"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Geopotential_height"^^xsd:string ;
+    rdfs:comment "Geopotential height or geopotential altitude is a vertical coordinate referenced to Earth's mean sea level (assumed zero geopotential) that represents the work involved in lifting one unit of mass over one unit of length through a hypothetical space in which the acceleration of gravity is assumed constant."^^xsd:string .
+

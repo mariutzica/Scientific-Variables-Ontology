@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/role/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:debris a svo:Role,
+        owl:NamedIndividual ;
+    rdfs:label "debris"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q637703"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Debris"^^xsd:string ;
+    rdfs:comment "Debris (UK: , US: ) is rubble, wreckage, ruins, litter and discarded garbage/refuse/trash, scattered remains of something destroyed, or, as in geology, large rock fragments left by a melting glacier, etc. Depending on context, debris can refer to a number of different things. The first apparent use of the French word in English is in a 1701 description of the army of Prince Rupert upon its retreat from a battle with the army of Oliver Cromwell, in England."^^xsd:string .
+

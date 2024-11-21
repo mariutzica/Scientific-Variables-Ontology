@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:trihalomethane a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "trihalomethane"^^xsd:string ;
+    svo:has_synonym "thm"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q127488"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Trihalomethane"^^xsd:string ;
+    rdfs:comment "In chemistry, trihalomethanes (THMs) are chemical compounds in which three of the four hydrogen atoms of methane (CH4) are replaced by halogen atoms.  Many trihalomethanes find uses in industry as solvents or refrigerants.  THMs are also environmental pollutants, and many are considered carcinogenic. Trihalomethanes with all the same halogen atoms are called haloforms."^^xsd:string .
+

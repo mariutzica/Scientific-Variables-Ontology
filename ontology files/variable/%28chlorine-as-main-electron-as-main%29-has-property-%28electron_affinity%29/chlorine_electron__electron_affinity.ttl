@@ -1,0 +1,14 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28chlorine-as-main-electron-as-main%29-has-property-%28electron_affinity%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "chlorine_electron__electron_affinity"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/chlorine>,
+        <http://scientificvariablesontology.org/svo/matter/electron> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/chlorine-as-main-electron-as-main> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/electron_affinity> ;
+    svo:has_original_label "chlorine_electron__affinity"^^xsd:string .
+

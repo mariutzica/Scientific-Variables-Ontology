@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chicken-pox-virus a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "chicken-pox-virus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q6868"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Varicella_zoster_virus"^^xsd:string ;
+    rdfs:comment "Varicella zoster virus (VZV), also known as human herpesvirus 3 (HHV-3, HHV3) or Human alphaherpesvirus 3 (taxonomically), is one of nine known herpes viruses that can infect humans. It causes chickenpox (varicella) commonly affecting children and young adults, and shingles (herpes zoster) in adults but rarely in children. VZV infections are species-specific to humans. The virus can survive in external environments for a few hours.VZV multiplies in the tonsils, and causes a wide variety of symptoms. Similar to the herpes simplex viruses, after primary infection with VZV (chickenpox), the virus lies dormant in neurons, including the cranial nerve ganglia, dorsal root ganglia, and autonomic ganglia.  Many years after the person has recovered from initial chickenpox infection, VZV can reactivate to cause shingles."^^xsd:string .
+

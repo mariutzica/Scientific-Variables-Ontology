@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mechanical-wave a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "mechanical-wave"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1132631"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mechanical_wave"^^xsd:string ;
+    rdfs:comment "In physics, a mechanical wave is a wave that is an oscillation of matter, and therefore transfers energy through a medium. While waves can move over long distances, the movement of the medium of transmission—the material—is limited. Therefore, the oscillating material does not move far from its initial equilibrium position. Mechanical waves can be produced only in media which possess elasticity and inertia. There are three types of mechanical waves: transverse waves, longitudinal waves, and surface waves. Some of the most common examples of mechanical waves are water waves, sound waves, and seismic waves."^^xsd:string .
+

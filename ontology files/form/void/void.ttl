@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/form/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:void a svo:Form,
+        owl:NamedIndividual ;
+    rdfs:label "void"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q19689164"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Void_(composites)"^^xsd:string ;
+    rdfs:comment "A void is a pore that remains unfilled with polymer and fibers in a composite material.  Voids are typically the result of poor manufacturing of the material and are generally deemed undesirable.  Voids can affect the mechanical properties and lifespan of the composite.  They degrade mainly the matrix-dominated properties such as interlaminar shear strength, longitudinal compressive strength, and transverse tensile strength. Voids can act as crack initiation sites as well as allow moisture to penetrate the composite and contribute to the anisotropy of the composite. For aerospace applications, a void content of approximately 1% is still acceptable, while for less sensitive applications, the allowance limit is 3-5%.  Although a small increase in void content may not seem to cause significant issues, a 1-3% increase in void content of carbon fiber reinforced composite  can reduce the mechanical properties by up to 20%   Void content in composites is represented as a ratio, also called void ratio, where the volume of voids, solid material, and bulk volume are taken into account.  Void ratio can be calculated by the formula below where e is the void ratio of the composite, Vv is the volume of the voids, and Vt is the volume of the bulk material."^^xsd:string .
+

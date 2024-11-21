@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mitosis a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "mitosis"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q14763008"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mitosis"^^xsd:string ;
+    rdfs:comment "Mitosis () is a part of the cell cycle in which replicated chromosomes are separated into two new nuclei. Cell division by mitosis is an equational division which gives rise to genetically identical cells in which the total number of chromosomes is maintained. Mitosis is preceded by the S phase of interphase (during which DNA replication occurs) and is followed by telophase and cytokinesis, which divide the cytoplasm, organelles, and cell membrane of one cell into two new cells containing roughly equal shares of these cellular components. The different stages of mitosis altogether define the mitotic phase (M phase) of a cell cycle—the division of the mother cell into two daughter cells genetically identical to each other."^^xsd:string .
+

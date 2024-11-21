@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:annihilation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "annihilation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q188721"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Annihilation"^^xsd:string ;
+    rdfs:comment "In particle physics, annihilation is the process that occurs when a subatomic particle collides with its respective antiparticle to produce other particles, such as an electron colliding with a positron to produce two photons. The total energy and momentum of the initial pair are conserved in the process and distributed among a set of other particles in the final state. Antiparticles have exactly opposite additive quantum numbers from particles, so the sums of all quantum numbers of such an original pair are zero. Hence, any set of particles may be produced whose total quantum numbers are also zero as long as conservation of energy and conservation of momentum are obeyed.During a low-energy annihilation, photon production is favored, since these particles have no mass. High-energy particle colliders produce annihilations where a wide variety of exotic heavy particles are created."^^xsd:string .
+

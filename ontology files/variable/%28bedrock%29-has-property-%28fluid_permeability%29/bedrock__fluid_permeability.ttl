@@ -1,0 +1,12 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28bedrock%29-has-property-%28fluid_permeability%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "bedrock__fluid_permeability"^^xsd:string ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/bedrock> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/fluid_permeability> ;
+    svo:has_original_label "bedrock__permeability"^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:axle a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "axle"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q188209"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Axle"^^xsd:string ;
+    rdfs:comment "An axle or axletree is a central shaft for a rotating wheel or gear. On wheeled vehicles, the axle may be fixed to the wheels, rotating with them, or fixed to the vehicle, with the wheels rotating around the axle. In the former case, bearings or bushings are provided at the mounting points where the axle is supported.  In the latter case, a bearing or bushing sits inside a central hole in the wheel to allow the wheel or gear to rotate around the axle.  Sometimes, especially on bicycles, the latter type of axle is referred to as a spindle."^^xsd:string .
+

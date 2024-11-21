@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:backscatter a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "backscatter"^^xsd:string ;
+    svo:has_synonym "backscatter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q916258"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Backscattering"^^xsd:string ;
+    rdfs:comment "reflection of waves, particles, or signals back to the approximate direction from which they came"^^xsd:string .
+

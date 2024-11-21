@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:jupiter a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "jupiter"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q319"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Jupiter"^^xsd:string ;
+    rdfs:comment "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, and slightly less than one one-thousandth the mass of the Sun. Jupiter is the third brightest natural object in the Earth's night sky after the Moon and Venus, and it has been observed since prehistoric times. It was named after Jupiter, the chief deity of ancient Roman religion."^^xsd:string .
+

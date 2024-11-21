@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:tebupirimfos a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "tebupirimfos"^^xsd:string ;
+    svo:has_synonym "phostebupirim"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2398875"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Tebupirimfos"^^xsd:string ;
+    rdfs:comment "Tebupirimfos, also known as phostebupirim, is an organothiophosphate insecticide.  It is used on corn crops, including popcorn."^^xsd:string .
+

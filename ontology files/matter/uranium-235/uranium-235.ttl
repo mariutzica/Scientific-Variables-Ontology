@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:uranium-235 a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "uranium-235"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q848497"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Uranium-235"^^xsd:string ;
+    rdfs:comment "Uranium-235 (235U or U-235) is an isotope of uranium making up about 0.72% of natural uranium. Unlike the predominant isotope uranium-238, it is fissile, i.e., it can sustain a nuclear chain reaction. It is the only fissile isotope that exists in nature as a primordial nuclide."^^xsd:string .
+

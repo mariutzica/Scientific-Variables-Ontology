@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:seclusion a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "seclusion"^^xsd:string ;
+    svo:has_synonym "seclusion"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3815274"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Seclusion"^^xsd:string ;
+    rdfs:comment "Seclusion is the act of secluding (i.e. isolating from society), the state of being secluded, or a place that facilitates it (a secluded place). A person, couple, or larger group may go to a secluded place for privacy or peace and quiet. The seclusion of an individual is called solitude."^^xsd:string .
+

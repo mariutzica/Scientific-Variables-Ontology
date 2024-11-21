@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:curve_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "curve_number"^^xsd:string ;
+    svo:has_synonym "runoff curve number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q320048"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Runoff_curve_number"^^xsd:string ;
+    rdfs:comment "The runoff curve number (also called a curve number or simply CN) is an empirical parameter used in hydrology for predicting direct runoff or infiltration from rainfall excess. The curve number method was developed by the USDA Natural Resources Conservation Service, which was formerly called the Soil Conservation Service or SCS — the number is still popularly known as a \"SCS runoff curve number\" in the literature.  The runoff curve number was developed from an empirical analysis of runoff from small catchments and hillslope plots monitored by the USDA. It is widely used and is an efficient method for determining the approximate amount of direct runoff from a rainfall event in a particular area."^^xsd:string .
+

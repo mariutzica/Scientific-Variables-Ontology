@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:simulation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "simulation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q45045"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Simulation"^^xsd:string ;
+    rdfs:comment "A simulation is an imitative representation of a process or system that could exist in the real world. In this broad sense, simulation can often be used interchangeably with model. Sometimes a clear distinction between the two terms is made, in which simulations require the use of models; the model represents the key characteristics or behaviors of the selected system or process, whereas the simulation represents the evolution of the model over time. Another way to distinguish between the terms is to define simulation as experimentation with the help of a model. This definition includes time-independent simulations. Often, computers are used to execute the simulation."^^xsd:string .
+

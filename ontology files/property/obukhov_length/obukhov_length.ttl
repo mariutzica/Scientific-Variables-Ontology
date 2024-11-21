@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:obukhov_length a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "obukhov_length"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3110303"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Monin–Obukhov_length"^^xsd:string ;
+    rdfs:comment "The Obukhov length is used to describe the effects of buoyancy on turbulent flows, particularly in the lower tenth of the atmospheric boundary layer.  It was first defined by Alexander Obukhov in 1946. It is also known as the Monin–Obukhov length because of its important role in the similarity theory developed by Monin and Obukhov. A simple definition of the Monin-Obukhov length is that height at which turbulence is generated more by buoyancy than by wind shear."^^xsd:string .
+

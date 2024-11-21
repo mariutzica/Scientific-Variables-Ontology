@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:calcium-chloride a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "calcium-chloride"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q208451"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Calcium_chloride"^^xsd:string ;
+    rdfs:comment "Calcium chloride is an inorganic compound, a salt with the chemical formula CaCl2. It is a white crystalline solid at room temperature, and it is highly soluble in water. It can be created by neutralising hydrochloric acid with calcium hydroxide."^^xsd:string .
+

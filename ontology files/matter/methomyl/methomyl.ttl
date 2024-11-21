@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:methomyl a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "methomyl"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q423398"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Methomyl"^^xsd:string ;
+    rdfs:comment "Methomyl is a carbamate insecticide introduced in 1966.  It is highly toxic to humans, livestock, pets, and wildlife."^^xsd:string .
+

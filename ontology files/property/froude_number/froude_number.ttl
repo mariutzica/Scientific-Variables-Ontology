@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:froude_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "froude_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q273090"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Froude_number"^^xsd:string ;
+    rdfs:comment "In continuum mechanics, the Froude number (Fr, after William Froude, ) is a dimensionless number defined as the ratio of the flow inertia to the external field (the latter in many applications simply due to gravity). The Froude number is based on the speed–length ratio which he defined as:"^^xsd:string .
+

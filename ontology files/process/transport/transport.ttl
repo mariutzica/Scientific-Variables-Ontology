@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:transport a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "transport"^^xsd:string ;
+    svo:has_synonym "transport"^^xsd:string,
+        "transportation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7590"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wiktionary.org/wiki/transport#Verb"^^xsd:string ;
+    rdfs:comment "Transport (in British English), or transportation (in American English), is the intentional movement of humans, animals, and goods from one location to another. Modes of transport include air, land (rail and road), water, cable, pipeline, and space. The field can be divided into infrastructure, vehicles, and operations. Transport enables human trade, which is essential for the development of civilizations."^^xsd:string .
+

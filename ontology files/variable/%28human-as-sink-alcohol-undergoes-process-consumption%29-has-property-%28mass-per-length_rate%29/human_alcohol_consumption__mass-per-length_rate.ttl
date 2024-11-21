@@ -1,0 +1,15 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28human-as-sink-alcohol-undergoes-process-consumption%29-has-property-%28mass-per-length_rate%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "human_alcohol_consumption__mass-per-length_rate"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/alcohol> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/human> ;
+    svo:contains_process_reference_to <http://scientificvariablesontology.org/svo/process/consumption> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/human-as-sink-alcohol-undergoes-process-consumption> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mass-per-length_rate> ;
+    svo:has_original_label "human_alcohol__consumption_rate"^^xsd:string .
+

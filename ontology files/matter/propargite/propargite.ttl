@@ -1,0 +1,16 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:propargite a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "propargite"^^xsd:string ;
+    svo:has_synonym "comite"^^xsd:string,
+        "mitex"^^xsd:string,
+        "omite"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q168065"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Propargite"^^xsd:string ;
+    rdfs:comment "Propargite (IUPAC name 2-(4-tert-butylphenoxy)cyclohexyl prop-2-yne-1-sulfonate, trade names Mitex, Omite and Comite) is a pesticide used to kill mites (an acaricide). Symptoms of excessive exposure are eye and skin irritation, and possibly sensitization. It is highly toxic to amphibians, fish, and zooplankton, as well as having potential carcinogenity."^^xsd:string .
+

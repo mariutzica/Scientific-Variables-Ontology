@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:nusselt_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "nusselt_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q898280"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Nusselt_number"^^xsd:string ;
+    rdfs:comment "In thermal fluid dynamics, the Nusselt number (Nu, after Wilhelm Nusselt: 336 ) is the ratio of convective to conductive heat transfer at a boundary in a fluid. Convection includes both advection (fluid motion) and diffusion (conduction). The conductive component is measured under the same conditions as the convective but for a hypothetically motionless fluid. It is a dimensionless number, closely related to the fluid's Rayleigh number.: 466 A Nusselt number of value one (zero) represents heat transfer by pure conduction.: 336  A value between one (zero) and 10 is characteristic of slug flow or laminar flow. A larger Nusselt number corresponds to more active convection, with turbulent flow typically in the 100–1000 range.A similar non-dimensional property is the Biot number, which concerns thermal conductivity for a solid body rather than a fluid. The mass transfer analogue of the Nusselt number is the Sherwood number."^^xsd:string .
+

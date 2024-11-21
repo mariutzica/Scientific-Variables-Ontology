@@ -1,0 +1,19 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28river-delta-contains-part-%28channel~main-contains-part-%28entrance-contains-%28water-as-medium-sediment~suspended%29%29%29%29-has-property-%28mass_concentration%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "river-delta_channel~main_entrance_water_sediment~suspended__mass_concentration"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/main>,
+        <http://scientificvariablesontology.org/svo/attribute/suspended> ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/channel> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/sediment>,
+        <http://scientificvariablesontology.org/svo/matter/water> ;
+    svo:contains_phenomenon_reference_to <http://scientificvariablesontology.org/svo/phenomenon/river-delta> ;
+    svo:contains_role_reference_to <http://scientificvariablesontology.org/svo/role/entrance> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/river-delta-contains-part-%28channel~main-contains-part-%28entrance-contains-%28water-as-medium-sediment~suspended%29%29%29> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/mass_concentration> ;
+    svo:has_original_label "delta_channel~main_entrance_water_sediment~suspended__mass_concentration"^^xsd:string .
+

@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:crest_factor a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "crest_factor"^^xsd:string ;
+    svo:has_synonym "crest-factor_ratio"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q448559"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Crest_factor"^^xsd:string ;
+    rdfs:comment "Crest factor is a parameter of a waveform, such as alternating current or sound, showing the ratio of peak values to the effective value. In other words, crest factor indicates how extreme the peaks are in a waveform. Crest factor 1 indicates no peaks, such as direct current or a square wave. Higher crest factors indicate peaks, for example sound waves tend to have high crest factors."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:uplift a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "uplift"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q731798"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Uplift"^^xsd:string ;
+    rdfs:comment "Uplift may refer to:"^^xsd:string .
+

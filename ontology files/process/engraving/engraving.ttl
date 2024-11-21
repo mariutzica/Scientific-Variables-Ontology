@@ -1,0 +1,15 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:engraving a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "engraving"^^xsd:string ;
+    svo:has_synonym "engravement"^^xsd:string,
+        "engraving"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q139106"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Engraving"^^xsd:string ;
+    rdfs:comment "Engraving is the practice of incising a design onto a hard, usually flat surface by cutting grooves into it with a burin. The result may be a decorated object in itself, as when silver, gold, steel, or glass are engraved, or may provide an intaglio printing plate, of copper or another metal, for printing images on paper as prints or illustrations; these images are also called \"engravings\". Engraving is one of the oldest and most important techniques in printmaking."^^xsd:string .
+

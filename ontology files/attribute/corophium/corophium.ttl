@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:corophium a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "corophium"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3933889"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Corophium"^^xsd:string ;
+    rdfs:comment "Corophium is a genus of the amphipod family Corophiidae. Formerly a much larger genus, many species have been transferred to segregate genera such as Monocorophium and Crassicorophium."^^xsd:string .
+

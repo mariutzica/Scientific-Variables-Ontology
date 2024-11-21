@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:isoprene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "isoprene"^^xsd:string ;
+    svo:has_synonym "2-methyl-1,3-butadiene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q271943"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Isoprene"^^xsd:string ;
+    rdfs:comment "Isoprene, or 2-methyl-1,3-butadiene, is a common volatile organic compound with the formula CH2=C(CH3)−CH=CH2. In its pure form it is a colorless volatile liquid. It is produced by many plants and animals (including humans) and its polymers are the main component of natural rubber.  C. G. Williams named the compound in 1860 after obtaining it from the pyrolysis of natural rubber; he correctly deduced the empirical formula C5H8."^^xsd:string .
+

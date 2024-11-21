@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:alkalinity a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "alkalinity"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q432016"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Alkalinity"^^xsd:string ;
+    rdfs:comment "Alkalinity (from Arabic: القلوية, romanized: al-qaly, lit. 'ashes of the saltwort') is the capacity of water to resist acidification. It should not be confused with basicity, which is an absolute measurement on the pH scale. Alkalinity is the strength of a buffer solution composed of weak acids and their conjugate bases. It is measured by titrating the solution with an acid such as HCl until its pH changes abruptly, or it reaches a known endpoint where that happens. Alkalinity is expressed in units of concentration, such as meq/L (milliequivalents per liter), μeq/kg (microequivalents per kilogram), or mg/L CaCO3 (milligrams per liter of calcium carbonate).  Each of these measurements corresponds to an amount of acid added as a titrant."^^xsd:string .
+

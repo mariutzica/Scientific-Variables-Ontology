@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:market-basket a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "market-basket"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1758955"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Market_basket"^^xsd:string ;
+    rdfs:comment "A market basket or commodity bundle is a fixed list of items, in given proportions.  Its most common use is to track the progress of inflation in an economy or specific market. That is, to measure the changes in the value of money over time.  A market basket is also used with the theory of purchasing price parity to measure the value of money in different places."^^xsd:string .
+

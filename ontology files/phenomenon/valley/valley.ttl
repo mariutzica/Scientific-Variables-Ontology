@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:valley a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "valley"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q39816"^^xsd:string ;
+    svo:has_wikipedia_page "http://en.wikipedia.org/wiki/Valley"^^xsd:string ;
+    rdfs:comment "A valley is an elongated low area often running between hills or mountains, which will typically contain a river or stream running from one end to the other. Most valleys are formed by erosion of the land surface by rivers or streams over a very long period. Some valleys are formed through erosion by glacial ice. These glaciers may remain present in valleys in high mountains or polar areas. "^^xsd:string .
+

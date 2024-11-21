@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dephosphorylation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "dephosphorylation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1101143"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dephosphorylation"^^xsd:string ;
+    rdfs:comment "In biochemistry, dephosphorylation is the removal of a phosphate (PO43−) group from an organic compound by hydrolysis. It is a reversible post-translational modification. Dephosphorylation and its counterpart, phosphorylation, activate and deactivate enzymes by detaching or attaching phosphoric esters and anhydrides. A  notable occurrence of dephosphorylation is the conversion of ATP to ADP and inorganic phosphate."^^xsd:string .
+

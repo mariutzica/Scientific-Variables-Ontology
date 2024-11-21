@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://scientificvariablesontology.org/svo/variable/"
+         xmlns:svo="http://scientificvariablesontology.org/svo#"
+         xmlns="http://scientificvariablesontology.org/svo/variable/">
+<owl:NamedIndividual rdf:about="%28atmosphere-as-source-water-undergoes-process-precipitation%29-has-property-%28second_dekad_time_integral_of_leq_volume_flux%29">
+  <rdf:type rdf:resource="http://scientificvariablesontology.org/svo#Variable"/>
+  <svo:describes_phenomenon rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/atmosphere-as-source-water-undergoes-process-precipitation"/>
+  <svo:describes_property rdf:resource="http://scientificvariablesontology.org/svo/property/second_dekad_time_integral_of_leq_volume_flux"/>
+  <svo:contains_phenomenon_reference_to rdf:resource="http://scientificvariablesontology.org/svo/phenomenon/atmosphere"/>
+  <svo:contains_process_reference_to rdf:resource="http://scientificvariablesontology.org/svo/process/precipitation"/>
+  <svo:contains_matter_reference_to rdf:resource="http://scientificvariablesontology.org/svo/matter/water"/>
+  <svo:contains_operation_reference_to rdf:resource="http://scientificvariablesontology.org/svo/operation/second_dekad_time_integral"/>
+  <svo:contains_property_reference_to rdf:resource="http://scientificvariablesontology.org/svo/property/leq_volume_flux"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atmosphere_water_precipitation__second_dekad_time_integral_of_leq_volume_flux</rdfs:label>
+  <svo:has_original_label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atmosphere_water__second_dekad_time_integral_of_precipitation_leq_volume_flux</svo:has_original_label>
+</owl:NamedIndividual>
+</rdf:RDF>

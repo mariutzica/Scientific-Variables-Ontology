@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:ski a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "ski"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q172226"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Ski"^^xsd:string ;
+    rdfs:comment "A ski is a narrow strip of semi-rigid material worn underfoot to glide over snow. Substantially longer than they are wide, and characteristically employed in pairs, skis are attached to ski boots with ski bindings, with either a free, lockable, or partially secured heel. For climbing slopes, ski skins (originally made of seal fur, but now made of synthetic materials) can be attached at the base of the ski."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:backspin a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "backspin"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q490309"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Backspin"^^xsd:string ;
+    rdfs:comment "In sports, backspin or underspin refers to the reverse rotation of a ball, in relation to the ball's trajectory, that is imparted on the ball by a slice or chop shot. Backspin generates an upward force that lifts the ball (see Magnus effect). While a normal hit bounces well forward as well as up, backspin shots bounce higher and less forward. Backspin is the opposite of topspin."^^xsd:string .
+

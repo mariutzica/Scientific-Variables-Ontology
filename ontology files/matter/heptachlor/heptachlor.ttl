@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:heptachlor a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "heptachlor"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q417891"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Heptachlor"^^xsd:string ;
+    rdfs:comment "Heptachlor is an organochlorine compound that was used as an insecticide. Usually sold as a white or tan powder, heptachlor is one of the cyclodiene insecticides.  In 1962, Rachel Carson's Silent Spring questioned the safety of heptachlor and other chlorinated insecticides.  Due to its highly stable structure, heptachlor can persist in the environment for decades. In the United States, the Environmental Protection Agency has limited the sale of heptachlor products to the specific application of fire ant control in underground transformers. The amount that can be present in different foods is regulated."^^xsd:string .
+

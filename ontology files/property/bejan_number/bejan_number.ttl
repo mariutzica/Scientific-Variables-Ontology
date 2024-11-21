@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:bejan_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "bejan_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q110800801"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Bejan_number"^^xsd:string ;
+    rdfs:comment "There are two different Bejan numbers (Be) used in the scientific domains of thermodynamics and fluid mechanics. Bejan numbers are named after Adrian Bejan."^^xsd:string .
+

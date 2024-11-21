@@ -1,0 +1,17 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28%28soil-has-form-pool~stabilized%29-contains-carbon%29-has-property-%28change_of_mass%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "soil_pool~stabilized_carbon__change_of_mass"^^xsd:string ;
+    svo:contains_attribute_reference_to <http://scientificvariablesontology.org/svo/attribute/stabilized> ;
+    svo:contains_form_reference_to <http://scientificvariablesontology.org/svo/form/pool> ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/carbon>,
+        <http://scientificvariablesontology.org/svo/matter/soil> ;
+    svo:contains_operation_reference_to <http://scientificvariablesontology.org/svo/operation/change> ;
+    svo:contains_property_reference_to <http://scientificvariablesontology.org/svo/property/mass> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/%28soil-has-form-pool~stabilized%29-contains-carbon> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/change_of_mass> .
+

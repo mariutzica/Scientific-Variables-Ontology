@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:markstein_number a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "markstein_number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1900928"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Markstein_number"^^xsd:string ;
+    rdfs:comment "In combustion engineering and explosion studies, the Markstein number characterizes the effect of local heat release of a propagating flame on variations in the surface topology along the flame and the associated local flame front curvature. The dimensionless Markstein number is defined as:"^^xsd:string .
+

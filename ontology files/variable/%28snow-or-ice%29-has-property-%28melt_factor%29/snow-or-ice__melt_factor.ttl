@@ -1,0 +1,13 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://scientificvariablesontology.org/svo/variable/%28snow-or-ice%29-has-property-%28melt_factor%29> a svo:Variable,
+        owl:NamedIndividual ;
+    rdfs:label "snow-or-ice__melt_factor"^^xsd:string ;
+    svo:contains_matter_reference_to <http://scientificvariablesontology.org/svo/matter/ice>,
+        <http://scientificvariablesontology.org/svo/matter/snow> ;
+    svo:describes_phenomenon <http://scientificvariablesontology.org/svo/phenomenon/snow-or-ice> ;
+    svo:describes_property <http://scientificvariablesontology.org/svo/property/melt_factor> .
+

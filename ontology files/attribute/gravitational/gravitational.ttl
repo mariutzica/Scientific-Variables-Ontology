@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:gravitational a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "gravitational"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q11412"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Gravity"^^xsd:string ;
+    rdfs:comment "In physics, gravity (from Latin  gravitas 'weight') is a fundamental interaction which causes mutual attraction between all things that have mass. Gravity is, by far, the weakest of the four fundamental interactions, approximately 1038 times weaker than the strong interaction, 1036 times weaker than the electromagnetic force and 1029 times weaker than the weak interaction. As a result, it has no significant influence at the level of subatomic particles. However, gravity is the most significant interaction between objects at the macroscopic scale, and it determines the motion of planets, stars, galaxies, and even light."^^xsd:string .
+

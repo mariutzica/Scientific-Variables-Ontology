@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:pressure_lapse_rate a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "pressure_lapse_rate"^^xsd:string ;
+    svo:has_synonym "vertical_pressure_variation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q7922848"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Vertical_pressure_variation"^^xsd:string ;
+    rdfs:comment "Vertical pressure variation is the variation in pressure as a function of elevation. Depending on the fluid in question and the context being referred to, it may also vary significantly in dimensions perpendicular to elevation as well, and these variations have relevance in the context of pressure gradient force and its effects. However, the vertical variation is especially significant, as it results from the pull of gravity on the fluid; namely, for the same given fluid, a decrease in elevation within it corresponds to a taller column of fluid weighing down on that point."^^xsd:string .
+

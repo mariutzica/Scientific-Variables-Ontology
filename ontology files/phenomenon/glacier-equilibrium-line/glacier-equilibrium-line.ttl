@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/phenomenon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:glacier-equilibrium-line a svo:Phenomenon,
+        owl:NamedIndividual ;
+    rdfs:label "glacier-equilibrium-line"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q52120"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Glaciology#Glacier_equilibrium_line_and_ELA"^^xsd:string ;
+    rdfs:comment "Glaciology (from Latin  glacies 'frost, ice', and Ancient Greek  λόγος (logos) 'subject matter'; lit. 'study of ice') is the scientific study of glaciers, or more generally ice and natural phenomena that involve ice."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:eurycercus a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "eurycercus"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q4569876"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Eurycercus"^^xsd:string ;
+    rdfs:comment "Eurycercus is a genus of crustaceans belonging to the suborder Anomopoda. It is the only genus in the monotypic family Eurycercidae. Eurycercus are relatively large anomopods, reaching sizes as large as 6 mm (0.2 in)."^^xsd:string .
+

@@ -1,0 +1,14 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:perforation a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "perforation"^^xsd:string ;
+    svo:has_synonym "perforation"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1508510"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Perforation"^^xsd:string ;
+    rdfs:comment "A perforation is a small hole in a thin material or web. There is usually more than one perforation in an organized fashion, where all of the holes collectively are called a perforation. The process of creating perforations is called perforating, which involves removing bits of the workpiece with a tool. Old-fashioned lick-and-stick postage stamps are perforated. When a tool makes small cuts in the material (without removing anything) it is called 'rouletting', because that tool often resembles a roulette wheel, with blades around the edge. Raffle tickets are a good example of rouletting."^^xsd:string .
+

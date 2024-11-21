@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:curing a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "curing"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1595418"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Cure"^^xsd:string ;
+    rdfs:comment "A cure is a substance or procedure that ends a medical condition, such as a medication, a surgical operation, a change in lifestyle or even a philosophical mindset that helps end a person's sufferings; or the state of being healed, or cured. The medical condition could be a disease, mental illness, genetic disorder, or simply a condition a person considers socially undesirable, such as baldness or lack of breast tissue."^^xsd:string .
+

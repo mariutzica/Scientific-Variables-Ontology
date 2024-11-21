@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:contamination a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "contamination"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q60528603"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Contamination"^^xsd:string ;
+    rdfs:comment "Contamination is the presence of a constituent, impurity, or some other undesirable element that renders something unsuitable, unfit or harmful for both physical body, natural environment, workplace, etc."^^xsd:string .
+

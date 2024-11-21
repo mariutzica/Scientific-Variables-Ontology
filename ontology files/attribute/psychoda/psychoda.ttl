@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:psychoda a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "psychoda"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q3410057"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Psychoda"^^xsd:string ;
+    rdfs:comment "Psychoda is a genus of moth flies in the family Psychodidae. There are more than 400 described species in Psychoda."^^xsd:string .
+

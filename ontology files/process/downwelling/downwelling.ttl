@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:downwelling a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "downwelling"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2315892"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Downwelling"^^xsd:string ;
+    rdfs:comment "Downwelling is the process of accumulation and sinking of higher density material beneath lower density material, such as cold or saline water beneath warmer or fresher water or cold air beneath warm air. It is the sinking limb of a convection cell. Upwelling is the opposite process, and together, these two forces are responsible in the oceans for the thermohaline circulation.  The sinking of the cold lithosphere at subduction zones is another example of downwelling in plate tectonics."^^xsd:string .
+

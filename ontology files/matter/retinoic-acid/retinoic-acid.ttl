@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:retinoic-acid a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "retinoic-acid"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q425517"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Retinoic_acid"^^xsd:string ;
+    rdfs:comment "Retinoic acid (used simplified here for all-trans-retinoic acid) is a metabolite of vitamin A1 (all-trans-retinol) that mediates the functions of vitamin A1 required for growth and development.  All-trans-retinoic acid is required in chordate animals, which includes all higher animals from fish to humans. During early embryonic development, all-trans-retinoic acid generated in a specific region of the embryo helps determine position along the embryonic anterior/posterior axis by serving as an intercellular signaling molecule that guides development of the posterior portion of the embryo. It acts through Hox genes, which ultimately control anterior/posterior patterning in early developmental stages.All-trans-retinoic acid (ATRA) is the major occurring retinoic acid, while isomers like 13-cis- and 9-cis-retinoic acid are also present in much lower levels.The key role of all-trans-retinoic acid in embryonic development mediates the high teratogenicity of retinoid pharmaceuticals, such as isotretinoin (13-cis-retinoic acid) used for treatment of cancer and acne. Oral megadoses of preformed vitamin A (retinyl palmitate), and all-trans-retinoic acid itself, also have teratogenic potential by this same mechanism."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:mixing_ratio a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "mixing_ratio"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q171293"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Mixing_ratio"^^xsd:string ;
+    rdfs:comment "In chemistry and physics, the dimensionless mixing ratio is the abundance of one component of a mixture relative to that of all other components. The term can refer either to mole ratio (see concentration) or mass ratio (see stoichiometry)."^^xsd:string .
+

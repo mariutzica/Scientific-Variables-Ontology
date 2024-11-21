@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/process/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:immigration a svo:Process,
+        owl:NamedIndividual ;
+    rdfs:label "immigration"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q131288"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Immigration"^^xsd:string ;
+    rdfs:comment "Immigration is the international movement of people to a destination country of which they are not usual residents or where they do not possess nationality in order to settle as permanent residents. Commuters, tourists, and other short-term stays in a destination country do not fall under the definition of immigration or migration; seasonal labour immigration is sometimes included, however."^^xsd:string .
+

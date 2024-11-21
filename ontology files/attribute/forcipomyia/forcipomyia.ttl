@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:forcipomyia a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "forcipomyia"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q14546007"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Forcipomyia"^^xsd:string ;
+    rdfs:comment "Forcipomyia is a genus of biting midges in the subfamily Forcipomyiinae. Species of the subgenus Lasiohelea suck vertebrate blood. Some species are ectoparasites on larger insects. Other species in the genus are important pollinators of the cacao tree (Theobroma cacao). There are at least 1,000 described species in Forcipomyia."^^xsd:string .
+

@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/attribute/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dugesia a svo:Attribute,
+        owl:NamedIndividual ;
+    rdfs:label "dugesia"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q310745"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dugesia"^^xsd:string ;
+    rdfs:comment "Dugesia (pronounced, /duˈd͡ʒiʒ(i)ə/) is a genus of dugesiid triclads that contains some common representatives of the class Turbellaria. These common flatworms are found in freshwater habitats of Africa, Eurasia, and Australia. Dugesia is best known to non-specialists because of its regeneration capacities.Dugesia is the type genus of the family Dugesiidae."^^xsd:string .
+

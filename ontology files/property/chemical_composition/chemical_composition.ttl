@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:chemical_composition a svo:Property,
+        owl:NamedIndividual ;
+    rdfs:label "chemical_composition"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1263816"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Chemical_composition"^^xsd:string ;
+    rdfs:comment "A chemical composition specifies the identity, arrangement, and ratio of the chemical elements making up a compound by way of chemical and atomic bonds."^^xsd:string .
+

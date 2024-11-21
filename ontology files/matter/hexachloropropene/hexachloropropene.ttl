@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/matter/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:hexachloropropene a svo:Matter,
+        owl:NamedIndividual ;
+    rdfs:label "hexachloropropene"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q5748700"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Hexachloropropene"^^xsd:string ;
+    rdfs:comment "Hexachloropropene is a toxic compound of chlorine and carbon. Its linear formula is CCl3CCl=CCl2.Hexachloropropene can be produced by the elimination reaction of 1,1,1,2,2,3,3-heptachloropropane by potassium hydroxide in methanol solution.Hexachloropropene can be used to produce other compounds such as uranium tetrachloride, anhydrous niobium pentachloride and tungsten hexachloride."^^xsd:string .
+

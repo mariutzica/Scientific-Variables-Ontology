@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/abstraction/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:peano-curve a svo:Abstraction,
+        owl:NamedIndividual ;
+    rdfs:label "peano-curve"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q1725409"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Peano_curve"^^xsd:string ;
+    rdfs:comment "In geometry, the Peano curve is the first example of a space-filling curve to be discovered, by Giuseppe Peano in 1890. Peano's curve is a surjective, continuous function from the unit interval onto the unit square, however it is not injective. Peano was motivated by an earlier result of Georg Cantor that these two sets have the same cardinality. Because of this example, some authors use the phrase \"Peano curve\" to refer more generally to any space-filling curve."^^xsd:string .
+

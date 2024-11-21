@@ -1,0 +1,13 @@
+@prefix : <http://scientificvariablesontology.org/svo/propertytype/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix svo: <http://scientificvariablesontology.org/svo#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:dimensionless-number a svo:PropertyType,
+        owl:NamedIndividual ;
+    rdfs:label "dimensionless-number"^^xsd:string ;
+    svo:has_wikidata_page "https://www.wikidata.org/wiki/Q2994934"^^xsd:string ;
+    svo:has_wikipedia_page "https://en.wikipedia.org/wiki/Dimensionless_physical_constant"^^xsd:string ;
+    rdfs:comment "In physics, a dimensionless physical constant is a physical constant that is dimensionless, i.e. a pure number having no units attached and having a numerical value that is independent of whatever system of units may be used."^^xsd:string .
+
